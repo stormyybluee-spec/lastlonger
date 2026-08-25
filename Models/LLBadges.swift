@@ -103,6 +103,12 @@ enum BadgeEvaluator {
     /// Deterministic pass over the full history. Cheap enough to run on the main
     /// actor for realistic session counts; move to a background task if history
     /// ever exceeds a few thousand records.
+    ///
+    /// `@MainActor` because it calls `StatsStore.bestDayStreak`, and `StatsStore`
+    /// is a `@MainActor` type (so its statics inherit that isolation). The
+    /// isolation matches the "run on the main actor" note above, and the only
+    /// caller is a SwiftUI `View`, which is already main-actor-isolated.
+    @MainActor
     static func evaluate(sessions: [StatsSessionRecord],
                          completedPrograms: Int = 0,
                          calendar: Calendar = .current) -> [BadgeProgress] {

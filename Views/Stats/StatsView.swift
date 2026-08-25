@@ -161,7 +161,7 @@ struct StatsView: View {
             .chartYAxis {
                 AxisMarks(position: .leading, values: [0, 0.5, 1.0]) { _ in
                     AxisGridLine().foregroundStyle(LL.C.grid)
-                    AxisValueLabel(format: .percent)
+                    AxisValueLabel(format: FloatingPointFormatStyle<Double>.Percent())
                         .font(LLFont.terminal(9))
                         .foregroundStyle(LL.C.dim)
                 }

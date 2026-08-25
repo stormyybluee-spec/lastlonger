@@ -89,8 +89,12 @@ final class PixelBurstUIView: UIView {
         cell.scaleSpeed = -0.55           // shrink to nothing, keeps edges crisp
         cell.spin = 0                     // no rotation: pixels stay axis-aligned
         cell.alphaSpeed = -0.9
-        cell.magnificationFilter = .nearest   // hard pixel edges, no interpolation
-        cell.minificationFilter = .nearest
+        // `CAEmitterCell.magnificationFilter` / `minificationFilter` are typed as
+        // plain `String` (unlike `CALayer`'s, which use `CALayerContentsFilter`),
+        // so the `.nearest` shorthand does not resolve here. Pass the filter
+        // constant's raw string value — still "nearest", just correctly typed.
+        cell.magnificationFilter = CALayerContentsFilter.nearest.rawValue   // hard pixel edges, no interpolation
+        cell.minificationFilter = CALayerContentsFilter.nearest.rawValue
         return cell
     }
 
