@@ -383,7 +383,14 @@ final class LiveSessionModel: ObservableObject {
     private func observeEngine() {
         // Drive the interrupt scheduler off the engine's clock so there is
         // one source of elapsed time in the app.
-        engine.elapsedPublisher
+        //
+        // `SessionEngine` exposes elapsed time as `@Published private(set) var
+        // elapsed`, not a bespoke `elapsedPublisher`. `$elapsed` is that
+        // property's projected publisher; it emits the current value on
+        // subscription and then every tick, which is exactly the stream this
+        // observer wants. Using it also gives the closure parameter a concrete
+        // type (`TimeInterval`), resolving the type-inference error.
+        engine.$elapsed
             .sink { [weak self] elapsed in
                 guard let self else { return }
                 self.interrupt.tick(elapsed: elapsed)

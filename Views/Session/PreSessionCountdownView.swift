@@ -210,7 +210,7 @@ struct SessionHandoffView: View {
             Image(systemName: "chevron.up")
                 .font(.system(size: 26, weight: .light))
                 .foregroundStyle(Theme.inkFaint)
-                .symbolEffect(.pulse, options: .repeating)
+                .pulsingSymbol()
 
             VStack(spacing: 8) {
                 Text("Session running")
@@ -303,4 +303,38 @@ struct SessionFlowView: View {
         }
         .animation(.easeInOut(duration: 0.25), value: stage)
     }
+}
+
+// MARK: - Availability shims
+
+/// A repeating pulse on a symbol.
+///
+/// `symbolEffect(.pulse, options: .repeating)` is iOS 17+, but the project
+/// deploys to 16.0. On 17 it is used as intended; on 16 it falls back to a
+/// hand-rolled opacity pulse that reads the same. Reduce Motion suppresses the
+/// fallback entirely, matching the app's motion discipline elsewhere.
+///
+/// The identical iOS-17 `symbolEffect(.variableColor…)` in OnboardingFlow needs
+/// its own gate — availability is per call site, so this shim does not reach it.
+private struct PulsingSymbol: ViewModifier {
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @State private var dim = false
+
+    func body(content: Content) -> some View {
+        if #available(iOS 17.0, *) {
+            content.symbolEffect(.pulse, options: .repeating)
+        } else if reduceMotion {
+            content
+        } else {
+            content
+                .opacity(dim ? 0.4 : 1.0)
+                .animation(.easeInOut(duration: 0.9).repeatForever(autoreverses: true),
+                           value: dim)
+                .onAppear { dim = true }
+        }
+    }
+}
+
+private extension View {
+    func pulsingSymbol() -> some View { modifier(PulsingSymbol()) }
 }

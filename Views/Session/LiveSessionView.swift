@@ -47,7 +47,7 @@ struct LiveSessionView: View {
         .sheet(isPresented: $model.showEndGoalSheet) {
             EndSessionSheet(model: model) { dismiss() }
                 .presentationDetents([.height(340)])
-                .presentationBackground(Theme.bg)
+                .darkSheetBackground(Theme.bg)
         }
         .fullScreenCover(isPresented: $model.showResetProtocol) {
             ResetProtocolView(model: model) { dismiss() }
@@ -491,6 +491,27 @@ struct EmergencyLayer: View {
                 .padding(.bottom, 28)
             }
             .padding(.horizontal, 24)
+        }
+    }
+}
+
+// MARK: - Availability shims
+
+private extension View {
+    /// `presentationBackground` is iOS 16.4+, but the project deploys to 16.0.
+    /// Apply it only where available; on 16.0–16.3 the sheet keeps its default
+    /// system material. The app is dark-only, so that is a mild cosmetic
+    /// regression on those two point releases, not a functional one.
+    ///
+    /// The clean alternative is to raise the deployment target to iOS 16.4,
+    /// which removes this shim and the identical `presentationBackground` calls
+    /// in ModeSelectionView and HomeView in one move.
+    @ViewBuilder
+    func darkSheetBackground(_ color: Color) -> some View {
+        if #available(iOS 16.4, *) {
+            self.presentationBackground(color)
+        } else {
+            self
         }
     }
 }
