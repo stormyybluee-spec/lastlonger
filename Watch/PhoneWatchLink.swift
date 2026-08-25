@@ -27,6 +27,14 @@
 //  the single worst bug in this app.
 //
 
+//  PLATFORM GUARD — added during consolidation.
+//
+//  iOS-only: `WCSession.isPaired` and `.isWatchAppInstalled` exist only on the
+//  phone side, and `WCSessionDelegate` requires `sessionDidBecomeInactive` /
+//  `sessionDidDeactivate` on iOS alone. Inert on watchOS.
+
+#if os(iOS)
+
 import Foundation
 import WatchConnectivity
 
@@ -144,3 +152,5 @@ extension PhoneWatchLink: WCSessionDelegate {
         session.activate()
     }
 }
+
+#endif

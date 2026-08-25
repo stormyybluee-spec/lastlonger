@@ -55,7 +55,7 @@ enum SessionAttribute {
 /// Flat, Codable representation of one session. This is the export contract —
 /// changing a key here changes the CSV header and the JSON shape, so treat it
 /// as a public interface once users have exports in the wild.
-struct SessionRecord: Codable {
+struct ExportedSessionRecord: Codable {
     let id: String
     let startedAt: Date?
     let endedAt: Date?
@@ -118,7 +118,7 @@ struct SessionExportEnvelope: Codable {
     let schemaVersion: Int
     let exportedAt: Date
     let sessionCount: Int
-    let sessions: [SessionRecord]
+    let sessions: [ExportedSessionRecord]
 }
 
 // MARK: - Errors
@@ -168,7 +168,7 @@ enum DataExportManager {
 
     // MARK: Fetch
 
-    static func fetchSessions(in context: NSManagedObjectContext) throws -> [SessionRecord] {
+    static func fetchSessions(in context: NSManagedObjectContext) throws -> [ExportedSessionRecord] {
         guard context.persistentStoreCoordinator?
             .managedObjectModel
             .entitiesByName[SessionAttribute.entityName] != nil else {
@@ -186,7 +186,7 @@ enum DataExportManager {
     /// Reads one managed object defensively. `value(forKey:)` on an absent key
     /// raises an ObjC exception that Swift cannot catch, so every access checks
     /// `entity.attributesByName` first.
-    private static func record(from object: NSManagedObject) -> SessionRecord {
+    private static func record(from object: NSManagedObject) -> ExportedSessionRecord {
         let present = Set(object.entity.attributesByName.keys)
 
         func raw(_ key: String) -> Any? {
@@ -215,7 +215,7 @@ enum DataExportManager {
             return []
         }()
 
-        return SessionRecord(
+        return ExportedSessionRecord(
             id: str(SessionAttribute.id, default: object.objectID.uriRepresentation().lastPathComponent),
             startedAt: date(SessionAttribute.startedAt),
             endedAt: date(SessionAttribute.endedAt),
@@ -241,9 +241,9 @@ enum DataExportManager {
 
     // MARK: Serialise
 
-    static func csvData(from records: [SessionRecord]) -> Data {
+    static func csvData(from records: [ExportedSessionRecord]) -> Data {
         var out = "\u{FEFF}"                      // BOM so Excel reads UTF-8 correctly
-        out += SessionRecord.csvHeader.map(csvField).joined(separator: ",")
+        out += ExportedSessionRecord.csvHeader.map(csvField).joined(separator: ",")
         out += "\r\n"                             // RFC 4180 line terminator
 
         for record in records {
@@ -253,7 +253,7 @@ enum DataExportManager {
         return Data(out.utf8)
     }
 
-    static func jsonData(from records: [SessionRecord]) throws -> Data {
+    static func jsonData(from records: [ExportedSessionRecord]) throws -> Data {
         let envelope = SessionExportEnvelope(
             schemaVersion: schemaVersion,
             exportedAt: Date(),

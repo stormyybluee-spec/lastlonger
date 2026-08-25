@@ -3,7 +3,7 @@
 //  LAST LONGER
 //
 //  Pure value types + aggregation. No CoreData imports here on purpose: the
-//  store maps NSManagedObject -> SessionRecord at the boundary so every
+//  store maps NSManagedObject -> StatsSessionRecord at the boundary so every
 //  computation below stays testable and preview-able without a persistent
 //  container.
 //
@@ -13,7 +13,7 @@ import SwiftUI
 
 // MARK: - Record
 
-struct SessionRecord: Identifiable, Hashable {
+struct StatsSessionRecord: Identifiable, Hashable {
     let id: UUID
     let date: Date
     let durationSeconds: Int
@@ -136,17 +136,17 @@ struct StatsSummary {
 @MainActor
 final class StatsStore: ObservableObject {
 
-    @Published var sessions: [SessionRecord]
+    @Published var sessions: [StatsSessionRecord]
     @Published var range: StatsRange = .month
 
     private let calendar = Calendar.current
 
-    init(sessions: [SessionRecord] = []) {
+    init(sessions: [StatsSessionRecord] = []) {
         self.sessions = sessions.sorted { $0.date < $1.date }
     }
 
     // Sessions inside the selected window.
-    var scoped: [SessionRecord] {
+    var scoped: [StatsSessionRecord] {
         guard let days = range.dayCount,
               let cutoff = calendar.date(byAdding: .day, value: -days, to: Date())
         else { return sessions }
@@ -161,7 +161,7 @@ final class StatsStore: ObservableObject {
         let today = calendar.startOfDay(for: Date())
         guard let interval = calendar.dateInterval(of: .month, for: today) else { return [] }
 
-        var buckets: [Date: [SessionRecord]] = [:]
+        var buckets: [Date: [StatsSessionRecord]] = [:]
         for s in sessions {
             buckets[calendar.startOfDay(for: s.date), default: []].append(s)
         }
@@ -232,7 +232,7 @@ final class StatsStore: ObservableObject {
         return out
     }
 
-    static func bestDayStreak(in sessions: [SessionRecord], calendar: Calendar) -> Int {
+    static func bestDayStreak(in sessions: [StatsSessionRecord], calendar: Calendar) -> Int {
         let days = Set(sessions.map { calendar.startOfDay(for: $0.date) }).sorted()
         guard !days.isEmpty else { return 0 }
         var best = 1, run = 1
@@ -278,8 +278,8 @@ final class StatsStore: ObservableObject {
 
 enum InsightEngine {
 
-    static func evaluate(_ scoped: [SessionRecord],
-                         all: [SessionRecord],
+    static func evaluate(_ scoped: [StatsSessionRecord],
+                         all: [StatsSessionRecord],
                          calendar: Calendar) -> [Insight] {
         var out: [Insight] = []
         guard scoped.count >= 3 else {
@@ -351,9 +351,9 @@ enum StatsSample {
     @MainActor
     static func store() -> StatsStore { StatsStore(sessions: sessions()) }
 
-    static func sessions(count: Int = 34) -> [SessionRecord] {
+    static func sessions(count: Int = 34) -> [StatsSessionRecord] {
         let cal = Calendar.current
-        var out: [SessionRecord] = []
+        var out: [StatsSessionRecord] = []
         var score = 38.0
 
         for i in stride(from: count, through: 1, by: -1) {
@@ -365,7 +365,7 @@ enum StatsSample {
             let pullback = min(0.97, max(0.28, score / 100 + Double.random(in: -0.16...0.12)))
             let finished = Double.random(in: 0...1) > (0.30 + score / 260)
 
-            out.append(SessionRecord(
+            out.append(StatsSessionRecord(
                 id: UUID(),
                 date: date,
                 durationSeconds: Int(Double.random(in: 5...26) * 60),

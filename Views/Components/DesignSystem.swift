@@ -17,17 +17,11 @@ import UIKit
 
 // MARK: - Color tokens
 
-extension Color {
-    init(hex: UInt32, alpha: Double = 1.0) {
-        self.init(
-            .sRGB,
-            red: Double((hex >> 16) & 0xFF) / 255.0,
-            green: Double((hex >> 8) & 0xFF) / 255.0,
-            blue: Double(hex & 0xFF) / 255.0,
-            opacity: alpha
-        )
-    }
-}
+// An `init(hex:alpha:)` on Color lived here. Theme.swift declares
+// `init(hex:opacity:)`, and because the second parameter of each has a default
+// value, every one of the ~56 bare `Color(hex: 0x1C1C1E)` calls in the app would
+// have been ambiguous between the two. No call site passed `alpha:`, so this one
+// is removed outright and `init(hex:opacity:)` is the single hex initialiser.
 
 enum LLColor {
     /// The void. Pure black, unreflective. OLED burn-friendly.
@@ -74,29 +68,12 @@ enum LLMetrics {
 // If the font is missing, `LLFont.pixel` degrades to a heavy monospaced system
 // face rather than crashing. Ugly, but it builds.
 
-enum LLFont {
-    static let pixelPostScriptName = "PressStart2P-Regular"
-
-    private static let pixelAvailable: Bool = UIFont(name: pixelPostScriptName, size: 12) != nil
-
-    /// Heavy bitmap display face. Headers, wordmarks, section titles.
-    static func pixel(_ size: CGFloat, relativeTo style: Font.TextStyle = .headline) -> Font {
-        guard pixelAvailable else {
-            return .system(size: size, weight: .black, design: .monospaced)
-        }
-        return .custom(pixelPostScriptName, size: size, relativeTo: style)
-    }
-
-    /// Small uppercase sans-serif. Labels, captions, row titles.
-    static func label(_ size: CGFloat = 12, weight: Font.Weight = .semibold) -> Font {
-        .system(size: size, weight: weight, design: .default)
-    }
-
-    /// Terminal face. Numbers, commission rates, file sizes, timestamps.
-    static func mono(_ size: CGFloat = 12, weight: Font.Weight = .medium) -> Font {
-        .system(size: size, weight: weight, design: .monospaced)
-    }
-}
+// `LLFont` was declared both here and in LLDesignSystem.swift with overlapping
+// but not identical members — this version had `mono`, that one had `readout`
+// and `terminal`, and both had a `pixel` whose two signatures would have been
+// ambiguous at every bare `LLFont.pixel(11)` call site. The two are merged into
+// the single `LLFont` in LLDesignSystem.swift, which keeps `relativeTo:` from
+// this version and tries both bitmap faces before falling back.
 
 extension View {
     /// Small uppercase sans-serif label with the wide tracking the spec calls for.
@@ -112,45 +89,12 @@ extension View {
 
 /// Horizontal scanlines drawn across the whole screen. Applied once at the root
 /// of a screen, never per-row — per-row Canvas layers tank scroll performance.
-struct ScanlineOverlay: View {
-    var spacing: CGFloat = 3
-    var lineHeight: CGFloat = 1
-    var intensity: Double = 0.30
+// `ScanlineOverlay` removed during consolidation — Effects.swift vends the
+// single surviving version. See the note in CRTEffects.swift.
 
-    @Environment(\.accessibilityReduceTransparency) private var reduceTransparency
-
-    var body: some View {
-        if reduceTransparency {
-            Color.clear
-        } else {
-            Canvas(rendersAsynchronously: false) { context, size in
-                var y: CGFloat = 0
-                while y < size.height {
-                    context.fill(
-                        Path(CGRect(x: 0, y: y, width: size.width, height: lineHeight)),
-                        with: .color(.black.opacity(intensity))
-                    )
-                    y += spacing
-                }
-            }
-            .allowsHitTesting(false)
-            .accessibilityHidden(true)
-        }
-    }
-}
-
-/// Faint vertical vignette so the panel edges fall off like a curved tube.
-struct CRTVignette: View {
-    var body: some View {
-        LinearGradient(
-            colors: [.black.opacity(0.55), .clear, .clear, .black.opacity(0.55)],
-            startPoint: .top,
-            endPoint: .bottom
-        )
-        .allowsHitTesting(false)
-        .accessibilityHidden(true)
-    }
-}
+// `CRTVignette` removed during consolidation — CRTEffects.swift declared one of
+// the same name. That version is kept: it uses a radial falloff, which is what
+// the callers in PreSessionCountdownView and `crtScreen()` were written against.
 
 extension View {
     /// Wraps a screen in the void + CRT treatment. Apply at the top of each screen.

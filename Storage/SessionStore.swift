@@ -78,10 +78,10 @@ final class SessionStore {
     private static func makeModel() -> NSManagedObjectModel {
         let model = NSManagedObjectModel()
 
-        // ── SessionRecord
+        // ── SessionRecord (entity name; class is CDSessionRow)
         let session = NSEntityDescription()
         session.name = "SessionRecord"
-        session.managedObjectClassName = NSStringFromClass(SessionRecord.self)
+        session.managedObjectClassName = NSStringFromClass(CDSessionRow.self)
 
         // ── ArousalSample
         let arousal = NSEntityDescription()
@@ -188,8 +188,8 @@ final class SessionStore {
 
 // MARK: - Managed objects
 
-@objc(SessionRecord)
-final class SessionRecord: NSManagedObject {
+@objc(CDSessionRow)
+final class CDSessionRow: NSManagedObject {
     @NSManaged var id: UUID
     @NSManaged var startedAt: Date
     @NSManaged var endedAt: Date?
@@ -212,11 +212,11 @@ final class SessionRecord: NSManagedObject {
     @NSManaged var arousalSamples: NSSet?
     @NSManaged var emergencyEvents: NSSet?
 
-    static func fetchRequest() -> NSFetchRequest<SessionRecord> {
-        NSFetchRequest<SessionRecord>(entityName: "SessionRecord")
+    static func fetchRequest() -> NSFetchRequest<CDSessionRow> {
+        NSFetchRequest<CDSessionRow>(entityName: "SessionRecord")
     }
 
-    static func recent(limit: Int = 30, in context: NSManagedObjectContext) -> [SessionRecord] {
+    static func recent(limit: Int = 30, in context: NSManagedObjectContext) -> [CDSessionRow] {
         let request = fetchRequest()
         request.sortDescriptors = [NSSortDescriptor(key: "startedAt", ascending: false)]
         request.fetchLimit = limit
@@ -230,7 +230,7 @@ final class ArousalSample: NSManagedObject {
     @NSManaged var timestamp: Date
     @NSManaged var elapsed: Double
     @NSManaged var level: Int16
-    @NSManaged var session: SessionRecord?
+    @NSManaged var session: CDSessionRow?
 }
 
 @objc(EmergencyEvent)
@@ -240,7 +240,7 @@ final class EmergencyEvent: NSManagedObject {
     @NSManaged var elapsedAtTrigger: Double
     @NSManaged var completed: Bool
     @NSManaged var triggeredFromWatch: Bool
-    @NSManaged var session: SessionRecord?
+    @NSManaged var session: CDSessionRow?
 }
 
 // MARK: - Writer
@@ -252,17 +252,17 @@ final class EmergencyEvent: NSManagedObject {
 final class SessionLogWriter {
 
     private let store: SessionStore
-    private var record: SessionRecord?
+    private var record: CDSessionRow?
 
     init(store: SessionStore = .shared) {
         self.store = store
     }
 
-    var currentRecord: SessionRecord? { record }
+    var currentRecord: CDSessionRow? { record }
 
     func beginSession(plan: SessionPlan) {
         let context = store.viewContext
-        let record = SessionRecord(context: context)
+        let record = CDSessionRow(context: context)
         record.id = UUID()
         record.startedAt = Date()
         record.primaryMode = plan.primary.name

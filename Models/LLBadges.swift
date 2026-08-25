@@ -103,7 +103,7 @@ enum BadgeEvaluator {
     /// Deterministic pass over the full history. Cheap enough to run on the main
     /// actor for realistic session counts; move to a background task if history
     /// ever exceeds a few thousand records.
-    static func evaluate(sessions: [SessionRecord],
+    static func evaluate(sessions: [StatsSessionRecord],
                          completedPrograms: Int = 0,
                          calendar: Calendar = .current) -> [BadgeProgress] {
 

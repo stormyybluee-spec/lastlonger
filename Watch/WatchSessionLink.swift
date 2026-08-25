@@ -12,6 +12,18 @@
 //  minutes stale.
 //
 
+//  PLATFORM GUARD — added during consolidation.
+//
+//  This file is watchOS-only, but consolidation moved it into a tree that the
+//  iOS target compiles wholesale. Guarding only `import WatchKit` is not enough:
+//  the body below also refers to WatchKit and watchOS-only HealthKit types that
+//  simply do not exist on iOS, so the file has to compile to nothing there.
+//
+//  Add it to the watchOS target's Compile Sources; the guard makes it inert if
+//  it is also a member of the iOS target.
+
+#if os(watchOS)
+
 import Foundation
 import WatchConnectivity
 
@@ -137,3 +149,5 @@ extension WatchSessionLink: WCSessionDelegate {
         Task { @MainActor in self.handle(applicationContext) }
     }
 }
+
+#endif

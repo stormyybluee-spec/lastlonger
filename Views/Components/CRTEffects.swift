@@ -57,28 +57,11 @@ struct PrecisionGrid: View {
 
 // MARK: - Scanlines
 
-struct ScanlineOverlay: View {
-    var spacing: CGFloat = 3
-    /// Strength of the dark bars. Above ~0.25 the screen reads as dirty
-    /// rather than as a CRT.
-    var strength: Double = 0.16
-
-    var body: some View {
-        Canvas { context, size in
-            var path = Path()
-            var y: CGFloat = 0
-            while y <= size.height {
-                path.addRect(CGRect(x: 0, y: y, width: size.width, height: 1))
-                y += spacing
-            }
-            context.fill(path, with: .color(.black))
-        }
-        .opacity(strength)
-        .blendMode(.multiply)
-        .allowsHitTesting(false)
-        .drawingGroup()
-    }
-}
+// `ScanlineOverlay` was declared here, in DesignSystem.swift and in Effects.swift —
+// three times in one module. Effects.swift's is the one kept: it is the only
+// `public` version and its `init(spacing:opacity:)` matches every call site,
+// including OnboardingFlow's `ScanlineOverlay(spacing: 3, opacity: 0.10)`.
+// This one took `strength:` instead and would not have accepted that call.
 
 // MARK: - Vignette
 
@@ -128,6 +111,26 @@ struct GlitchText: View {
     var font: Font
     var color: Color = Theme.ink
     var active: Bool = false
+
+    /// Explicit form. Used by the countdown and mode-selection headers, which
+    /// pass a fully-built `Typeface.pixel(...)` font.
+    init(text: String, font: Font, color: Color = Theme.ink, active: Bool = false) {
+        self.text = text
+        self.font = font
+        self.color = color
+        self.active = active
+    }
+
+    /// Point-size form, carried over from the `GlitchText` that LLDesignSystem.swift
+    /// declared before consolidation merged the two. That version took
+    /// `(text:size:tint:)` and resolved the face itself; keeping this initialiser
+    /// means the stats, regimen, partner and recovery screens compile untouched.
+    init(text: String, size: CGFloat = 14, tint: Color = LL.C.text, active: Bool = false) {
+        self.text = text
+        self.font = LLFont.pixel(size)
+        self.color = tint
+        self.active = active
+    }
 
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
 

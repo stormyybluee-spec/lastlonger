@@ -13,7 +13,11 @@ import UIKit
 
 // MARK: - Badge model
 
-struct Badge: Identifiable, Equatable {
+// RENAMED from `Badge` during consolidation. LLBadges.swift declares the badge
+// catalogue as `Badge` (with a `tier`), and ChallengesView reads it. This is the
+// unlock screen's presentation model, which carries a `tint` the catalogue type
+// does not, so it was renamed rather than merged.
+struct UnlockedBadge: Identifiable, Equatable {
     let id: String
     let title: String
     let requirement: String
@@ -182,7 +186,7 @@ struct PixelBurst: UIViewRepresentable {
 
 struct BadgeUnlockOverlay: View {
 
-    let badge: Badge
+    let badge: UnlockedBadge
     let onDismiss: () -> Void
 
     @EnvironmentObject private var haptics: HapticEngine

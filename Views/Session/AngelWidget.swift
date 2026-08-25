@@ -18,7 +18,12 @@ import SwiftUI
 
 // MARK: - State
 
-enum AngelState: Equatable {
+// RENAMED from `AngelState` during consolidation. DomainModels.swift declares a
+// different `AngelState` — a String-backed, Codable domain enum
+// (safe/rising/edge/emergency/cooldown/ended) that HomeView stores. This one is
+// the widget's animation state and carries an associated colour, so the two
+// could not be merged; the domain one kept the shorter name.
+enum AngelVisualState: Equatable {
     case idle
     case active(tint: Color)
     case threshold
@@ -44,7 +49,7 @@ enum AngelState: Equatable {
 @MainActor
 struct AngelWidget: View {
 
-    var state: AngelState = .idle
+    var state: AngelVisualState = .idle
 
     /// Wing spread, 0 (folded) … 1 (fully open). Driven by the breath pacer,
     /// the tempo beat, or held at 1 during an emergency.
@@ -223,7 +228,7 @@ struct AngelWidget: View {
 @MainActor
 struct TappableAngel: View {
 
-    var state: AngelState
+    var state: AngelVisualState
     var spread: Double
     var pulse: Double
     let onTap: (Date) -> Void

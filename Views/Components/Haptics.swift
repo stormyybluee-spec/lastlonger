@@ -14,21 +14,10 @@
 import CoreHaptics
 import UIKit
 
-enum HapticIntensity: String, CaseIterable, Codable, Identifiable {
-    case low, medium, high
-    var id: String { rawValue }
-
-    var label: String { rawValue.uppercased() }
-
-    /// Multiplier applied to every event's intensity and sharpness.
-    var scale: Float {
-        switch self {
-        case .low:    return 0.45
-        case .medium: return 0.75
-        case .high:   return 1.0
-        }
-    }
-}
+// `HapticIntensity` was declared here and in DomainModels.swift. The DomainModels.swift declaration is the one
+// kept — it is public, Sendable and carries the stable raw values the store
+// persists. Members unique to this version were moved onto it in
+// Models/ModelCompat.swift, so call sites are unchanged.
 
 /// Named haptic vocabulary. Each case has a distinct rhythm.
 enum HapticCue {

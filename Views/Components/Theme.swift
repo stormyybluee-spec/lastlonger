@@ -34,6 +34,68 @@ enum LL {
 
         static let hairline     = Color.white.opacity(0.10)
         static let hairlineData = Color(hex: 0x0A84FF, opacity: 0.28)
+
+        // MARK: Restored aliases
+        //
+        // A second Theme.swift shipped in another Part declared `LL.Palette`
+        // with this set of names. Consolidation dropped that file, but the
+        // screens written against it survived — Effects.swift asks for
+        // `.circuit`, the stats and regimen screens for `.edge` / `.safe` /
+        // `.rising`, the onboarding copy for `.void` / `.text` / `.textDim`.
+        // Same hex values as the names above, exposed under both spellings so
+        // neither set of call sites has to be rewritten.
+        static let void         = Color(hex: 0x000000)
+        static let rule         = Color(hex: 0x2C2C2E)
+        static let text         = Color(hex: 0xFFFFFF)
+        static let textDim      = Color(hex: 0x8E8E93)
+        static let circuit      = Color(hex: 0x0A84FF)
+        static let edge         = Color(hex: 0xFF3B30)
+        static let safe         = Color(hex: 0x34C759)
+        static let rising       = Color(hex: 0xFFCC00)
+
+        // Glow accents from the same dropped file.
+        static let glowSafe      = Color(hex: 0xE5F6FF)
+        static let glowRising    = Color(hex: 0xFFD60A)
+        static let glowEdge      = Color(hex: 0xFF453A)
+        static let glowEmergency = Color(hex: 0xFF0000)
+        static let glowCooldown  = Color(hex: 0x32D74B)
+    }
+
+    // MARK: Palette (LLDesignSystem spelling)
+
+    /// The `LL.C` palette merged in from LLDesignSystem.swift, which declared a
+    /// second `enum LL`. Two enums of the same name in one module is an invalid
+    /// redeclaration, and the members were disjoint, so they are nested here
+    /// instead — every `LL.C.*` and `LL.Metric.*` call site is unchanged.
+    enum C {
+        // Core
+        static let bg          = Color(hex: 0x000000)
+        static let card        = Color(hex: 0x1C1C1E)
+        static let red         = Color(hex: 0xFF3B30)   // threshold / danger
+        static let green       = Color(hex: 0x34C759)   // safe / trained
+        static let yellow      = Color(hex: 0xFFCC00)   // rising / warning
+        static let blue        = Color(hex: 0x0A84FF)   // data
+
+        // Neutrals
+        static let text        = Color.white
+        static let label       = Color(hex: 0x8E8E93)
+        static let dim         = Color(hex: 0x5A5A5F)
+        static let grid        = Color(hex: 0x232326)
+        static let graphite    = Color(hex: 0x0E0E10)
+        static let hairline    = Color(hex: 0x2C2C2E)
+
+        // Printed circuit board (heat map only)
+        static let pcbDeep     = Color(hex: 0x030B16)
+        static let pcbSub      = Color(hex: 0x07182B)
+        static let pcbTrace    = Color(hex: 0xC9A227)   // gold
+        static let pcbTraceHot = Color(hex: 0xF2D673)
+        static let silkscreen  = Color(hex: 0xE6EDF5)
+    }
+
+    enum Metric {
+        static let corner: CGFloat = 12
+        static let tap: CGFloat    = 60
+        static let gutter: CGFloat = 14
     }
 
     // MARK: Metrics
@@ -187,37 +249,10 @@ struct Scanlines: View {
     }
 }
 
-/// Faint blue grid — the "circuit" substrate behind telemetry panels.
-struct CircuitGrid: View {
-    var cell: CGFloat = 22
-    var opacity: Double = 0.16
-
-    @Environment(\.accessibilityReduceTransparency) private var reduceTransparency
-
-    var body: some View {
-        if reduceTransparency {
-            Color.clear
-        } else {
-            Canvas { context, size in
-                let stroke = GraphicsContext.Shading.color(LL.Palette.data.opacity(opacity))
-                var x: CGFloat = 0
-                while x < size.width {
-                    context.stroke(Path { $0.move(to: .init(x: x, y: 0)); $0.addLine(to: .init(x: x, y: size.height)) },
-                                   with: stroke, lineWidth: 0.5)
-                    x += cell
-                }
-                var y: CGFloat = 0
-                while y < size.height {
-                    context.stroke(Path { $0.move(to: .init(x: 0, y: y)); $0.addLine(to: .init(x: size.width, y: y)) },
-                                   with: stroke, lineWidth: 0.5)
-                    y += cell
-                }
-            }
-            .allowsHitTesting(false)
-            .accessibilityHidden(true)
-        }
-    }
-}
+// `CircuitGrid` removed during consolidation — Effects.swift declared one of the
+// same name. That version is kept because it is `public` and its
+// `init(spacing:color:lineWidth:)` accepts OnboardingFlow's `CircuitGrid(spacing: 34)`;
+// this one took `cell:` and would have rejected that call.
 
 // MARK: - CRT panel
 
@@ -246,9 +281,13 @@ struct CRTPanel<Content: View>: View {
 }
 
 extension View {
-    func crtPanel(tint: Color = LL.Palette.hairline, showsGrid: Bool = false) -> some View {
-        CRTPanel(tint: tint, showsGrid: showsGrid) { self }
-    }
+    // A `crtPanel(tint:showsGrid:)` modifier lived here. It is removed rather
+    // than renamed: LLDesignSystem.swift vends `crtPanel(tint:corner:)`, and
+    // because every parameter of both had a default value, the twenty bare
+    // `.crtPanel()` call sites in the stats, regimen and partner screens would
+    // have been ambiguous between them. No call site passed `showsGrid:` as a
+    // modifier — the three that want a grid use the `CRTPanel { … }` container
+    // above directly — so nothing needed rewriting.
 
     /// Full-bleed black backdrop with scanlines. Root of every screen.
     func voidBackground(scanlines: Bool = true) -> some View {

@@ -425,7 +425,7 @@ final class LiveSessionModel: ObservableObject {
         }
     }
 
-    var angelState: AngelState {
+    var angelState: AngelVisualState {
         if emergency.isActive { return .emergency }
         switch engine.phase {
         case .hold, .fast:                 return .threshold

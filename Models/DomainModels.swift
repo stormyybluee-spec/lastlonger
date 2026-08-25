@@ -9,92 +9,18 @@
 import Foundation
 
 // MARK: - Session Mode
-
-/// The eight training modes. `rawValue` is the stable persistence key —
-/// never renumber these, only append.
-public enum SessionMode: String, Codable, CaseIterable, Sendable, Identifiable {
-    case freeEdge          = "free_edge"
-    case beginner532       = "beginner_532"
-    case thresholdLadder   = "threshold_ladder"
-    case randomThreshold   = "random_threshold"
-    case disciplineDrill   = "discipline_drill"
-    case gripRepair        = "grip_repair"
-    case pressureRelease   = "pressure_release"
-    case zen               = "zen"
-
-    public var id: String { rawValue }
-
-    public var title: String {
-        switch self {
-        case .freeEdge:        return "FREE EDGE"
-        case .beginner532:     return "5-3-2"
-        case .thresholdLadder: return "LADDER"
-        case .randomThreshold: return "RANDOM"
-        case .disciplineDrill: return "DISCIPLINE"
-        case .gripRepair:      return "GRIP REPAIR"
-        case .pressureRelease: return "PRESSURE RELEASE"
-        case .zen:             return "ZEN"
-        }
-    }
-
-    /// One line. Lowercase sentence case. No selling.
-    public var blurb: String {
-        switch self {
-        case .freeEdge:        return "No structure. Breath reminders only."
-        case .beginner532:     return "Five slow, three fast, two stopped. Three rounds."
-        case .thresholdLadder: return "30s, then a minute, then longer. Cooldown between."
-        case .randomThreshold: return "Prompts land when you don't expect them."
-        case .disciplineDrill: return "Reach the line. Back off 30 seconds. Again."
-        case .gripRepair:      return "Grip and pace corrections every two minutes."
-        case .pressureRelease: return "Finish fast on purpose. This one is a reset."
-        case .zen:             return "Nothing on screen. Sensation only."
-        }
-    }
-
-    public var symbol: String {
-        switch self {
-        case .freeEdge:        return "wind"
-        case .beginner532:     return "square.stack.3d.up.fill"
-        case .thresholdLadder: return "chart.line.uptrend.xyaxis"
-        case .randomThreshold: return "dice.fill"
-        case .disciplineDrill: return "arrow.uturn.backward.circle.fill"
-        case .gripRepair:      return "hand.raised.fill"
-        case .pressureRelease: return "arrow.down.circle.fill"
-        case .zen:             return "eye.slash.fill"
-        }
-    }
-
-    public var difficulty: Difficulty {
-        switch self {
-        case .freeEdge:        return .none
-        case .beginner532:     return .low
-        case .gripRepair:      return .low
-        case .pressureRelease: return .low
-        case .zen:             return .low
-        case .thresholdLadder: return .medium
-        case .randomThreshold: return .medium
-        case .disciplineDrill: return .high
-        }
-    }
-
-    /// Minutes. Used for the estimate label on the mode card.
-    public var estimatedMinutes: Int {
-        switch self {
-        case .freeEdge:        return 10
-        case .beginner532:     return 12
-        case .thresholdLadder: return 20
-        case .randomThreshold: return 15
-        case .disciplineDrill: return 20
-        case .gripRepair:      return 10
-        case .pressureRelease: return 5
-        case .zen:             return 15
-        }
-    }
-
-    public enum Difficulty: String, Codable, Sendable {
-        case none, low, medium, high
-    }
-}
+//
+// `SessionMode` was declared here AND in Models/SessionMode.swift, with three of
+// its eight cases spelled differently (randomThreshold/gripRepair/pressureRelease
+// here, randomEdge/gripPressureRepair/release there) and different raw values.
+// Models/SessionMode.swift is the surviving declaration: ModeDriver.swift
+// switches over those case names to pick a driver per mode, and it also carries
+// `atlasOrder`, `suppressesVisuals` and `allowsPairing`, which this version
+// lacked. The two members only this version had — `title` and `estimatedMinutes`,
+// both of which HomeView calls through `SessionConfig` — were moved onto it.
+//
+// The three call sites below in `RegimenProgram.task(for:)` were respelled to
+// match.
 
 // MARK: - Coach Persona
 
@@ -615,12 +541,12 @@ public enum RegimenProgram: String, Codable, CaseIterable, Sendable, Identifiabl
         switch self {
         case .beginner:
             let week = (clamped - 1) / 7
-            let mode: SessionMode = [.freeEdge, .beginner532, .thresholdLadder, .randomThreshold][min(week, 3)]
+            let mode: SessionMode = [.freeEdge, .beginner532, .thresholdLadder, .randomEdge][min(week, 3)]
             return RegimenTask(day: clamped, mode: mode, minutes: 10 + week * 5)
         case .gripRecovery:
-            return RegimenTask(day: clamped, mode: .gripRepair, minutes: 10)
+            return RegimenTask(day: clamped, mode: .gripPressureRepair, minutes: 10)
         case .anxietyReset:
-            let mode: SessionMode = clamped.isMultiple(of: 3) ? .pressureRelease : .zen
+            let mode: SessionMode = clamped.isMultiple(of: 3) ? .release : .zen
             return RegimenTask(day: clamped, mode: mode, minutes: 12)
         }
     }

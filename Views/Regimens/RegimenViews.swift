@@ -332,7 +332,7 @@ struct RegimenDetailSheet: View {
 
 #Preview("Regimens") {
     RegimenBrowserView(store: RegimenStore(
-        enrollment: RegimenEnrollment(
+        enrollment: RegimenEnrollmentState(
             regimenID: "beginner_30",
             startedAt: Calendar.current.date(byAdding: .day, value: -11, to: Date())!,
             completedDays: [1, 2, 3, 5, 6, 8, 9, 10]

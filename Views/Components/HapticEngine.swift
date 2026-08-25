@@ -27,20 +27,10 @@ import UIKit
 
 // MARK: - Intensity preference
 
-enum HapticIntensity: String, CaseIterable, Identifiable {
-    case low, medium, high
-    var id: String { rawValue }
-
-    var scale: Float {
-        switch self {
-        case .low: return 0.45
-        case .medium: return 0.75
-        case .high: return 1.0
-        }
-    }
-
-    var title: String { rawValue.uppercased() }
-}
+// `HapticIntensity` was declared here and in DomainModels.swift. The DomainModels.swift declaration is the one
+// kept — it is public, Sendable and carries the stable raw values the store
+// persists. Members unique to this version were moved onto it in
+// Models/ModelCompat.swift, so call sites are unchanged.
 
 // MARK: - Pattern vocabulary
 
@@ -287,7 +277,14 @@ import WatchKit
 
 /// Watch-side mapping. These fire while the phone is backgrounded, which is the
 /// only reliable tactile channel once the session minimises.
-enum WatchHaptics {
+///
+/// RENAMED during consolidation, from `WatchHaptics` to `WatchPatternHaptics`.
+/// WatchHaptics.swift declares a `WatchHaptics` class — also watchOS-only — and
+/// two types of that name in the watch target is an invalid redeclaration. The
+/// class is the one the watch UI actually calls (`WatchHaptics.shared`), so it
+/// kept the name. This enum maps `HapticPattern`, which that class does not
+/// cover, so it is preserved rather than deleted.
+enum WatchPatternHaptics {
     static func play(_ pattern: HapticPattern) {
         let device = WKInterfaceDevice.current()
         switch pattern {

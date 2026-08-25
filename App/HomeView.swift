@@ -602,7 +602,13 @@ struct SessionEntryStub: View {
     let route: HomeView.Route
     let onClose: () -> Void
 
-    @State private var angel: AngelState = .safe
+    // Was `AngelState = .safe`. `AngelWidget(state:)` takes the widget's own
+    // animation state, which consolidation renamed to `AngelVisualState` to free
+    // the name for the domain enum in DomainModels.swift. `.safe` belongs to that
+    // domain enum and was never a case of the widget's — this stub only compiled
+    // while the two types were in separate Parts. `.idle` is the widget's
+    // resting case and is what it was reaching for.
+    @State private var angel: AngelVisualState = .idle
     @State private var streak = 0
 
     var body: some View {

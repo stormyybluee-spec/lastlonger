@@ -78,7 +78,7 @@ struct RecoveryState {
         }
     }
 
-    static func from(sessions: [SessionRecord], windowHours: Int) -> RecoveryState {
+    static func from(sessions: [StatsSessionRecord], windowHours: Int) -> RecoveryState {
         RecoveryState(lastEndGoal: sessions.last(where: \.reachedEndGoal)?.date,
                       windowHours: windowHours)
     }

@@ -131,4 +131,31 @@ enum SessionMode: String, CaseIterable, Codable, Identifiable {
         [.freeEdge, .beginner532, .thresholdLadder, .randomEdge,
          .disciplineDrill, .gripPressureRepair, .release, .zen]
     }
+
+    // MARK: - Merged from DomainModels.swift
+    //
+    // DomainModels.swift declared a second `SessionMode` with three cases
+    // spelled differently. This declaration won (see the note there); these are
+    // the two members only that version had.
+
+    /// Uppercase short form. `SessionConfig` and the Home screen playlist rows
+    /// render this, not `name`.
+    var title: String {
+        switch self {
+        case .freeEdge:           return "FREE EDGE"
+        case .beginner532:        return "5-3-2"
+        case .thresholdLadder:    return "LADDER"
+        case .randomEdge:         return "RANDOM"
+        case .disciplineDrill:    return "DISCIPLINE"
+        case .gripPressureRepair: return "GRIP REPAIR"
+        case .release:            return "PRESSURE RELEASE"
+        case .zen:                return "ZEN"
+        }
+    }
+
+    /// Whole minutes, for callers that want a number rather than
+    /// `estimatedDuration`'s `TimeInterval` or `estimatedLabel`'s string.
+    var estimatedMinutes: Int {
+        Int((estimatedDuration / 60).rounded())
+    }
 }

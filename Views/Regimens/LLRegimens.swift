@@ -177,7 +177,12 @@ enum RegimenCatalog {
 
 // MARK: - Enrollment
 
-struct RegimenEnrollment: Codable, Equatable {
+// RENAMED from `RegimenEnrollment` during consolidation. DomainModels.swift
+// declares a different `RegimenEnrollment` — keyed by `RegimenProgram` with an
+// Int day count — which Repository, HomeView and the CoreData row all use. This
+// one is the UserDefaults-backed store's own shape (String id, `Set<Int>` of
+// completed days), so it was renamed rather than merged.
+struct RegimenEnrollmentState: Codable, Equatable {
     let regimenID: String
     let startedAt: Date
     var completedDays: Set<Int>
@@ -186,16 +191,16 @@ struct RegimenEnrollment: Codable, Equatable {
 @MainActor
 final class RegimenStore: ObservableObject {
 
-    @Published private(set) var enrollment: RegimenEnrollment?
+    @Published private(set) var enrollment: RegimenEnrollmentState?
 
     private let calendar = Calendar.current
     private let defaultsKey = "ll.regimen.enrollment"
 
-    init(enrollment: RegimenEnrollment? = nil) {
+    init(enrollment: RegimenEnrollmentState? = nil) {
         if let enrollment {
             self.enrollment = enrollment
         } else if let data = UserDefaults.standard.data(forKey: defaultsKey),
-                  let decoded = try? JSONDecoder().decode(RegimenEnrollment.self, from: data) {
+                  let decoded = try? JSONDecoder().decode(RegimenEnrollmentState.self, from: data) {
             self.enrollment = decoded
         }
     }
@@ -238,7 +243,7 @@ final class RegimenStore: ObservableObject {
     // MARK: Mutation
 
     func enroll(in regimen: Regimen) {
-        enrollment = RegimenEnrollment(regimenID: regimen.id, startedAt: Date(), completedDays: [])
+        enrollment = RegimenEnrollmentState(regimenID: regimen.id, startedAt: Date(), completedDays: [])
         persist()
     }
 
