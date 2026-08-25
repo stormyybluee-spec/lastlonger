@@ -450,3 +450,136 @@ final class LiveSessionModel: ObservableObject {
 
     var peakHeartRate: Int { heartRateSamples.max() ?? 0 }
 }
+
+// MARK: - Recovery tracker
+//
+// RESTORED during consolidation, and placed here rather than in
+// RecoveryTracker.swift on purpose.
+//
+// Two different files were originally both named RecoveryTracker.swift. They
+// were not duplicates: one held this ObservableObject engine (session-gap
+// history, the recovery-window estimate, UserDefaults persistence); the other
+// held the `RecoveryState` value type and the `RecoveryHomeCard` view. The
+// by-filename dedup kept the value-type file and deleted this engine, which is
+// the type `LiveSessionModel` above constructs (`RecoveryTracker()`), calls
+// (`recovery.logEndGoal()`) and forwards change notifications from
+// (`forward(recovery)` needs the `ObservableObject` conformance).
+//
+// It lives here because LiveSessionModel is its only consumer and this is the
+// file that has to compile. If you prefer it back alongside RecoveryState, move
+// this whole section into Views/Components/RecoveryTracker.swift verbatim —
+// nothing here depends on anything in this file.
+
+@MainActor
+final class RecoveryTracker: ObservableObject {
+
+    @Published private(set) var lastEndGoalAt: Date?
+    @Published private(set) var historicalGaps: [TimeInterval] = []
+
+    /// Used until the user has `minimumSamples` of their own history.
+    private let defaultInterval: TimeInterval = 24 * 3600
+    private let minimumSamples = 3
+    private let maximumSamples = 20
+
+    private let gapsKey = "lastlonger.recovery.gaps"
+    private let lastKey = "lastlonger.recovery.lastEndGoal"
+
+    init() {
+        let defaults = UserDefaults.standard
+        historicalGaps = defaults.array(forKey: gapsKey) as? [TimeInterval] ?? []
+        lastEndGoalAt = defaults.object(forKey: lastKey) as? Date
+    }
+
+    // MARK: - Logging
+
+    func logEndGoal(at date: Date = Date()) {
+        if let previous = lastEndGoalAt {
+            let gap = date.timeIntervalSince(previous)
+            // Ignore gaps outside a plausible band — a 3-minute gap is a
+            // double-tap on the log button, a 3-week gap is a holiday, and
+            // neither says anything about recovery.
+            if gap > 1800, gap < 14 * 24 * 3600 {
+                historicalGaps.append(gap)
+                if historicalGaps.count > maximumSamples {
+                    historicalGaps.removeFirst(historicalGaps.count - maximumSamples)
+                }
+            }
+        }
+        lastEndGoalAt = date
+        persist()
+    }
+
+    private func persist() {
+        let defaults = UserDefaults.standard
+        defaults.set(historicalGaps, forKey: gapsKey)
+        defaults.set(lastEndGoalAt, forKey: lastKey)
+    }
+
+    func reset() {
+        historicalGaps.removeAll()
+        lastEndGoalAt = nil
+        persist()
+    }
+
+    // MARK: - Estimate
+
+    /// Trimmed mean of the user's own gaps, or the default before there's
+    /// enough history to say anything.
+    var baselineInterval: TimeInterval {
+        guard historicalGaps.count >= minimumSamples else { return defaultInterval }
+        let sorted = historicalGaps.sorted()
+        // Drop the extremes once there's enough to afford it.
+        let trimmed = sorted.count >= 5 ? Array(sorted.dropFirst().dropLast()) : sorted
+        return trimmed.reduce(0, +) / Double(trimmed.count)
+    }
+
+    var isEstimateFromOwnHistory: Bool { historicalGaps.count >= minimumSamples }
+
+    /// Suggested window, bounded so intensity adjustments can't run away.
+    ///
+    /// - Parameter emergencyPullbacks: more pullbacks means a more demanding
+    ///   session, which nudges the suggestion later — by a few percent, not by
+    ///   a factor.
+    func suggestedWindow(emergencyPullbacks: Int = 0,
+                         sessionDuration: TimeInterval = 0) -> ClosedRange<TimeInterval> {
+        var interval = baselineInterval
+
+        let intensityBump = min(Double(emergencyPullbacks) * 0.04, 0.20)
+        let lengthBump = min(sessionDuration / 3600 * 0.03, 0.12)
+        interval *= (1 + intensityBump + lengthBump)
+
+        // Wide when we're guessing, narrower once it's the user's own data.
+        let spread = isEstimateFromOwnHistory ? 0.20 : 0.35
+        return (interval * (1 - spread))...(interval * (1 + spread))
+    }
+
+    /// Time until the suggested window opens, from the last logged end goal.
+    func timeUntilWindow(emergencyPullbacks: Int = 0,
+                         sessionDuration: TimeInterval = 0,
+                         now: Date = Date()) -> TimeInterval? {
+        guard let lastEndGoalAt else { return nil }
+        let window = suggestedWindow(emergencyPullbacks: emergencyPullbacks,
+                                     sessionDuration: sessionDuration)
+        let opensAt = lastEndGoalAt.addingTimeInterval(window.lowerBound)
+        let remaining = opensAt.timeIntervalSince(now)
+        return remaining > 0 ? remaining : 0
+    }
+
+    // MARK: - Display
+
+    func windowLabel(emergencyPullbacks: Int = 0,
+                     sessionDuration: TimeInterval = 0) -> String {
+        let window = suggestedWindow(emergencyPullbacks: emergencyPullbacks,
+                                     sessionDuration: sessionDuration)
+        let low = Int((window.lowerBound / 3600).rounded())
+        let high = Int((window.upperBound / 3600).rounded())
+        return low == high ? "\(low) hours" : "\(low)–\(high) hours"
+    }
+
+    var confidenceNote: String {
+        if isEstimateFromOwnHistory {
+            return "Based on your last \(historicalGaps.count) logged gaps."
+        }
+        return "A starting default. This adapts once you've logged a few sessions."
+    }
+}

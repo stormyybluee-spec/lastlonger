@@ -21,7 +21,10 @@ public struct CircuitGrid: View {
     private let color: Color
     private let lineWidth: CGFloat
 
-    public init(spacing: CGFloat = 28, color: Color = LL.Palette.circuit, lineWidth: CGFloat = 0.5) {
+    // `init` is internal, not public: its default `LL.Palette.circuit` is an
+    // internal type, and a public initializer cannot expose one. The struct
+    // stays public; nothing outside the app module constructs it anyway.
+    init(spacing: CGFloat = 28, color: Color = LL.Palette.circuit, lineWidth: CGFloat = 0.5) {
         self.spacing = spacing
         self.color = color
         self.lineWidth = lineWidth

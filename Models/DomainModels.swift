@@ -302,8 +302,8 @@ public struct SessionRecord: Codable, Hashable, Sendable, Identifiable {
     public var startedAt: Date
     /// Seconds.
     public var duration: TimeInterval
-    public var primaryMode: SessionMode
-    public var secondaryMode: SessionMode?
+    var primaryMode: SessionMode
+    var secondaryMode: SessionMode?
     /// Minutes into the session at which mode 2 takes over. `nil` = manual.
     public var switchAfterMinutes: Int?
 
@@ -318,7 +318,7 @@ public struct SessionRecord: Codable, Hashable, Sendable, Identifiable {
     public var watchVerified: Bool
     public var finished: Bool
 
-    public init(
+    init(
         id: UUID = UUID(),
         startedAt: Date = .now,
         duration: TimeInterval = 0,
@@ -414,8 +414,8 @@ public enum BinauralPreset: String, Codable, CaseIterable, Sendable {
 
 /// Everything the user can set before a session. Saved verbatim inside a Playlist.
 public struct SessionConfig: Codable, Hashable, Sendable {
-    public var primaryMode: SessionMode
-    public var secondaryMode: SessionMode?
+    var primaryMode: SessionMode
+    var secondaryMode: SessionMode?
     public var switchAfterMinutes: Int?
     public var persona: CoachPersona
     public var voiceVolume: Double          // 0…1
@@ -432,7 +432,7 @@ public struct SessionConfig: Codable, Hashable, Sendable {
     public var tagIDs: [String]
     public var runRitual: Bool
 
-    public init(
+    init(
         primaryMode: SessionMode = .freeEdge,
         secondaryMode: SessionMode? = nil,
         switchAfterMinutes: Int? = nil,
@@ -554,7 +554,7 @@ public enum RegimenProgram: String, Codable, CaseIterable, Sendable, Identifiabl
 
 public struct RegimenTask: Codable, Hashable, Sendable {
     public var day: Int
-    public var mode: SessionMode
+    var mode: SessionMode
     public var minutes: Int
 
     public var label: String { "\(mode.title) (\(minutes) MIN)" }
@@ -649,7 +649,7 @@ public struct UserSettings: Codable, Hashable, Sendable {
     public var voiceEnabled: Bool
     public var voiceVolume: Double
     public var hapticIntensity: HapticIntensity
-    public var defaultMode: SessionMode
+    var defaultMode: SessionMode
     public var binaural: BinauralPreset
     public var distractionQuestions: Bool
     public var coachInterrupt: Bool
@@ -662,7 +662,7 @@ public struct UserSettings: Codable, Hashable, Sendable {
     public var hasCompletedOnboarding: Bool
     public var lastFinishedAt: Date?
 
-    public init(
+    init(
         persona: CoachPersona = .drillSergeant,
         voiceEnabled: Bool = true,
         voiceVolume: Double = 0.8,

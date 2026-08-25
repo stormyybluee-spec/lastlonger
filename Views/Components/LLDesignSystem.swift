@@ -83,7 +83,6 @@ enum LLFont {
         .system(size: size, weight: weight, design: .monospaced)
     }
 }
-}
 
 // MARK: - Label primitive
 
@@ -104,6 +103,7 @@ struct LLLabel: View {
             .tracking(1.1)
             .foregroundStyle(color)
     }
+}
 
 // MARK: - CRT panel
 

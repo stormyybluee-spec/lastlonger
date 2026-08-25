@@ -84,7 +84,7 @@ public struct PixelText: View {
     private let tracking: CGFloat
     private let color: Color
 
-    public init(_ text: String, pixel: CGFloat = 4, tracking: CGFloat = 1, color: Color = LL.Palette.text) {
+    init(_ text: String, pixel: CGFloat = 4, tracking: CGFloat = 1, color: Color = LL.Palette.text) {
         self.text = text
         self.pixel = pixel
         self.tracking = tracking
@@ -134,7 +134,7 @@ public struct Wordmark: View {
     private let pixel: CGFloat
     private let color: Color
 
-    public init(pixel: CGFloat = 4, color: Color = LL.Palette.text) {
+    init(pixel: CGFloat = 4, color: Color = LL.Palette.text) {
         self.pixel = pixel
         self.color = color
     }
