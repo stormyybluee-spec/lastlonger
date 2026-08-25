@@ -167,7 +167,11 @@ final class AppSettings: ObservableObject {
         let earned = Set(badges.filter(\.isEarned).map(\.badge.id))
         return Set(AngelSkin.allCases.filter { skin in
             guard let required = skin.unlockBadgeID else { return true }
-            return earned.contains(required)
+            // `earned` is a Set<String> of badge ids (`Badge.id` is a String),
+            // while `unlockBadgeID` is a `BadgeID` enum. Compare on the enum's
+            // raw value, whose strings are the same badge ids the catalogue uses
+            // ("first_threshold", …), so membership lines up exactly.
+            return earned.contains(required.rawValue)
         })
     }
 }
