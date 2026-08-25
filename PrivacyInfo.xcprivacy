@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+    <!--
+      LAST LONGER — Privacy Manifest
+
+      Required by Apple for all App Store submissions. Xcode aggregates this with
+      any SDK manifests at build time; since this app links no third-party SDKs,
+      this file is the complete privacy picture for the binary.
+
+      NSPrivacyTracking = false and an empty NSPrivacyCollectedDataTypes array are
+      what produce the "Data Not Collected" label on the product page. If a single
+      analytics or crash-reporting SDK is ever added, both of these become false
+      statements and the label must change.
+    -->
+
+    <key>NSPrivacyTracking</key>
+    <false/>
+
+    <key>NSPrivacyTrackingDomains</key>
+    <array/>
+
+    <!-- Nothing is collected. Not linked, not unlinked, not aggregated. -->
+    <key>NSPrivacyCollectedDataTypes</key>
+    <array/>
+
+    <key>NSPrivacyAccessedAPITypes</key>
+    <array>
+
+        <!-- UserDefaults: session preferences, onboarding flag, Focus Filter state. -->
+        <dict>
+            <key>NSPrivacyAccessedAPIType</key>
+            <string>NSPrivacyAccessedAPICategoryUserDefaults</string>
+            <key>NSPrivacyAccessedAPITypeReasons</key>
+            <array>
+                <string>CA92.1</string>
+            </array>
+        </dict>
+
+        <!-- File timestamps: CoreData store housekeeping and CSV/JSON export. -->
+        <dict>
+            <key>NSPrivacyAccessedAPIType</key>
+            <string>NSPrivacyAccessedAPICategoryFileTimestamp</string>
+            <key>NSPrivacyAccessedAPITypeReasons</key>
+            <array>
+                <string>C617.1</string>
+            </array>
+        </dict>
+
+        <!-- Disk space: checked before writing an export file. -->
+        <dict>
+            <key>NSPrivacyAccessedAPIType</key>
+            <string>NSPrivacyAccessedAPICategoryDiskSpace</string>
+            <key>NSPrivacyAccessedAPITypeReasons</key>
+            <array>
+                <string>E174.1</string>
+            </array>
+        </dict>
+
+        <!-- System boot time: monotonic clock for session timing that survives
+             wall-clock changes. Remove this block if the session timer is
+             reimplemented without systemUptime. -->
+        <dict>
+            <key>NSPrivacyAccessedAPIType</key>
+            <string>NSPrivacyAccessedAPICategorySystemBootTime</string>
+            <key>NSPrivacyAccessedAPITypeReasons</key>
+            <array>
+                <string>35F9.1</string>
+            </array>
+        </dict>
+
+    </array>
+</dict>
+</plist>
