@@ -41,11 +41,18 @@ enum LLFont {
     static let pixelFamily = "Silkscreen"
     static let pixelFallbackFamily = "PressStart2P-Regular"
 
-    /// Whichever bitmap face is actually present in the bundle, if either.
+    /// Whichever bitmap face is actually present in the bundle, if any.
+    ///
+    /// `UIFont(name:)` wants a PostScript name, not a family name, and the two
+    /// differ for every face listed here — Info.plist bundles
+    /// `Silkscreen-Bold.ttf`, whose PostScript name is `Silkscreen-Bold`, so a
+    /// lookup for the bare family `Silkscreen` returns nil. `PixelFont` in
+    /// Theme.swift already resolves `Silkscreen-Bold`; this list is ordered to
+    /// match it so the two type stacks cannot pick different faces.
     private static let resolvedPixelFamily: String? = {
-        if UIFont(name: pixelFamily, size: 12) != nil { return pixelFamily }
-        if UIFont(name: pixelFallbackFamily, size: 12) != nil { return pixelFallbackFamily }
-        return nil
+        let candidates = ["Silkscreen-Bold", pixelFamily,
+                          pixelFallbackFamily, "DepartureMono-Regular"]
+        return candidates.first { UIFont(name: $0, size: 12) != nil }
     }()
 
     /// Heavy pixel/bitmap — section headers only. Never body copy.

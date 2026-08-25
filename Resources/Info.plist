@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+    LAST LONGER — iPhone target Info.plist
+
+    Merged from Info-plist-additions.xml (which is a fragment, not a usable
+    plist) plus the keys Xcode's template would otherwise generate. Set the
+    target's INFOPLIST_FILE to this file, and set
+    GENERATE_INFOPLIST_FILE = NO, or Xcode will synthesise a second plist and
+    silently ignore this one.
+
+    Two keys are deliberately NOT here and belong on the watchOS target only:
+      • NSMotionUsageDescription — the phone does not read motion, and shipping
+        that string on the phone contradicts the paywall's privacy claim.
+      • NSHealthUpdateUsageDescription — see the note on the HealthKit block.
+-->
+<plist version="1.0">
+<dict>
+
+    <!-- ══ IDENTITY ══════════════════════════════════════════════════════════
+         CFBundleDisplayName is what appears under the icon. Kept deliberately
+         plain: the app is used in private and the home screen is not private.
+    -->
+    <key>CFBundleDevelopmentRegion</key>
+    <string>$(DEVELOPMENT_LANGUAGE)</string>
+    <key>CFBundleDisplayName</key>
+    <string>Last Longer</string>
+    <key>CFBundleExecutable</key>
+    <string>$(EXECUTABLE_NAME)</string>
+    <key>CFBundleIdentifier</key>
+    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>CFBundleName</key>
+    <string>$(PRODUCT_NAME)</string>
+    <key>CFBundlePackageType</key>
+    <string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
+    <key>CFBundleShortVersionString</key>
+    <string>$(MARKETING_VERSION)</string>
+    <key>CFBundleVersion</key>
+    <string>$(CURRENT_PROJECT_VERSION)</string>
+
+    <!-- ══ BACKGROUND EXECUTION ══════════════════════════════════════════════
+         Audio only. This is what keeps AVSpeechSynthesizer and the binaural
+         generator alive once the app minimises behind external media. Without
+         it the audio session is torn down on resign-active and the coach goes
+         silent the moment the user leaves the app.
+
+         Do NOT add other modes. App Review scrutinises background audio: the
+         app must produce continuous audible output during a session, which it
+         does. Adding "processing" or "fetch" invites rejection and buys
+         nothing this app needs.
+    -->
+    <key>UIBackgroundModes</key>
+    <array>
+        <string>audio</string>
+    </array>
+
+    <!-- ══ APPEARANCE ════════════════════════════════════════════════════════
+         Dark only, at the OS level. Prevents any system-drawn surface (share
+         sheet, alerts, the StoreKit sheet) from flashing white at night.
+    -->
+    <key>UIUserInterfaceStyle</key>
+    <string>Dark</string>
+
+    <!-- ══ PURPOSE STRINGS ═══════════════════════════════════════════════════
+         Every string here is user-facing and must survive being read aloud in
+         a screenshot. Clinical, specific, no euphemism, no marketing.
+    -->
+
+    <!-- INFocusStatusCenter. Reading Focus state only; iOS provides no API to
+         set a Focus. See FocusModeController.swift. -->
+    <key>NSFocusStatusUsageDescription</key>
+    <string>Lets the app respond when your Training Focus is on. Focus state is read on device and never leaves it.</string>
+
+    <!-- HealthKit heart rate.
+         Include this pair ONLY once the HealthKit capability is actually
+         enabled on the target — App Review flags purpose strings for
+         entitlements the binary does not carry.
+
+         On iPhone the app only ever READS heart rate relayed from the Watch,
+         so NSHealthShareUsageDescription alone is correct here.
+         NSHealthUpdateUsageDescription belongs on the watchOS target, where
+         HKWorkoutSession requires share authorisation to start at all — see
+         the header of Watch/HeartRateMonitor.swift. -->
+    <key>NSHealthShareUsageDescription</key>
+    <string>Reads heart rate during a session so the coach can pace you. Heart rate stays on this device and is never uploaded.</string>
+
+    <!-- ══ FONTS ═════════════════════════════════════════════════════════════
+         Bitmap display face. Add the .ttf to Copy Bundle Resources and confirm
+         the PostScript name matches PixelFont.postScriptName in Theme.swift —
+         the filename and the PostScript name are frequently different, and a
+         mismatch fails silently to the system fallback.
+
+         Use an SIL Open Font License face (Silkscreen, Departure Mono, Press
+         Start 2P). Bundling a commercially licensed font without a
+         desktop-plus-app licence is a real legal exposure on a paid app, and
+         the OFL requires shipping LICENSE.txt in the bundle alongside it.
+    -->
+    <key>UIAppFonts</key>
+    <array>
+        <string>Silkscreen-Bold.ttf</string>
+    </array>
+
+    <!-- ══ EXPORT COMPLIANCE ═════════════════════════════════════════════════
+         No custom cryptography; only the OS-provided HTTPS used by StoreKit.
+         Setting this skips the export-compliance questionnaire on every upload.
+    -->
+    <key>ITSAppUsesNonExemptEncryption</key>
+    <false/>
+
+    <!-- ══ ORIENTATION ═══════════════════════════════════════════════════════
+         Portrait only. The overlay widget, the countdown and every panel are
+         laid out for one-handed portrait use.
+    -->
+    <key>UISupportedInterfaceOrientations</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+    </array>
+
+    <!-- ══ LAUNCH SCREEN ═════════════════════════════════════════════════════
+         Pure black, no content. SplashView.swift draws the real splash; the
+         launch screen exists only so there is no white flash before it.
+         "LaunchBackground" is the colour set in Assets.xcassets, #000000 for
+         both Any and Dark appearances.
+    -->
+    <key>UILaunchScreen</key>
+    <dict>
+        <key>UIColorName</key>
+        <string>LaunchBackground</string>
+    </dict>
+
+    <!-- ══ SCENE MANIFEST ════════════════════════════════════════════════════
+         Empty on purpose. LastLongerApp.swift is a SwiftUI App with a
+         WindowGroup, so there is no UIKit scene delegate to declare. The key
+         itself must still be present.
+    -->
+    <key>UIApplicationSceneManifest</key>
+    <dict>
+        <key>UIApplicationSupportsMultipleScenes</key>
+        <false/>
+    </dict>
+
+    <!-- Status bar is hidden during a session by the views themselves; this
+         only stops UIKit animating it on launch. -->
+    <key>UIStatusBarHidden</key>
+    <false/>
+    <key>UIViewControllerBasedStatusBarAppearance</key>
+    <true/>
+
+</dict>
+</plist>

@@ -271,7 +271,7 @@ struct BadgeUnlockOverlay: View {
 
 #Preview {
     BadgeUnlockOverlay(
-        badge: Badge(
+        badge: UnlockedBadge(
             id: "threshold_master",
             title: "Threshold Master",
             requirement: "Ten consecutive holds in one session",

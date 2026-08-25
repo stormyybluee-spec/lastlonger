@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+    LAST LONGER — watchOS app target Info.plist
+
+    Separate from the iPhone Info.plist because the two targets need different
+    purpose strings, and shipping the union on both is what gets purpose-string
+    rejections at review.
+
+    Only the watch reads motion and only the watch starts an HKWorkoutSession,
+    so NSMotionUsageDescription and NSHealthUpdateUsageDescription live here and
+    NOT on the phone.
+
+    Required capabilities to set on this target, which no plist key can stand in
+    for (Signing & Capabilities):
+      • HealthKit
+      • Background Modes → Workout Processing
+
+    Without Workout Processing the watch app is suspended the moment the wrist
+    drops, which stops heart rate, the four control buttons, and the emergency
+    haptic — see the header of Watch/HeartRateMonitor.swift.
+-->
+<plist version="1.0">
+<dict>
+
+    <key>CFBundleDevelopmentRegion</key>
+    <string>$(DEVELOPMENT_LANGUAGE)</string>
+    <key>CFBundleDisplayName</key>
+    <string>Last Longer</string>
+    <key>CFBundleExecutable</key>
+    <string>$(EXECUTABLE_NAME)</string>
+    <key>CFBundleIdentifier</key>
+    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>CFBundleName</key>
+    <string>$(PRODUCT_NAME)</string>
+    <key>CFBundlePackageType</key>
+    <string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
+    <key>CFBundleShortVersionString</key>
+    <string>$(MARKETING_VERSION)</string>
+    <key>CFBundleVersion</key>
+    <string>$(CURRENT_PROJECT_VERSION)</string>
+
+    <!-- Must match the iPhone target's bundle identifier exactly, or the two
+         will not pair and WCSession never activates. -->
+    <key>WKCompanionAppBundleIdentifier</key>
+    <string>$(PRODUCT_BUNDLE_IDENTIFIER:base)</string>
+
+    <key>WKApplication</key>
+    <true/>
+    <key>WKRunsIndependentlyOfCompanionApp</key>
+    <false/>
+
+    <!-- ══ HEALTHKIT ═════════════════════════════════════════════════════════
+         Both strings are required on this target. `share` is needed even though
+         the app writes nothing: HKWorkoutSession will not start without it, and
+         the builder is discarded rather than saved so no workout is ever
+         written to Health.
+    -->
+    <key>NSHealthShareUsageDescription</key>
+    <string>Reads heart rate during a session so the coach can pace you. Heart rate stays on this device and is never uploaded.</string>
+    <key>NSHealthUpdateUsageDescription</key>
+    <string>Starts a workout session so the Watch can read heart rate continuously. Nothing is saved to Health — the session is discarded when training ends.</string>
+
+    <!-- ══ COREMOTION ════════════════════════════════════════════════════════
+         Wrist motion for the grip-tension heuristic. Watch only.
+    -->
+    <key>NSMotionUsageDescription</key>
+    <string>Uses Apple Watch wrist motion to detect excessive grip tension. Motion data stays on your Watch and iPhone.</string>
+
+    <key>UIBackgroundModes</key>
+    <array>
+        <string>workout-processing</string>
+    </array>
+
+    <key>ITSAppUsesNonExemptEncryption</key>
+    <false/>
+
+</dict>
+</plist>
