@@ -264,17 +264,26 @@ final class RitualRunner: ObservableObject {
 
     private func speak(_ text: String) {
         guard voiceEnabled else { return }
+        // `persona` is a `CoachPersona`, whose speech parameters live on
+        // `persona.voice` (a `VoiceProfile`) — the same path CoachVoice.speak
+        // uses. The previous code read `persona.resolvedRate/.pitch/.volume`,
+        // which are `VoicePersona`/`VoiceProfile` members that `CoachPersona`
+        // does not expose, and assigned the `VoiceProfile` itself to
+        // `AVSpeechUtterance.voice` (which needs an `AVSpeechSynthesisVoice`).
+        let profile = persona.voice
         let u = AVSpeechUtterance(string: text)
-        u.voice = persona.voice
-        u.rate = persona.resolvedRate
-        u.pitchMultiplier = persona.pitch
-        u.volume = persona.volume
+        u.voice = CoachVoice.voice(for: profile)
+        u.rate = profile.rate
+        u.pitchMultiplier = profile.pitch
+        u.volume = profile.volume
         u.postUtteranceDelay = 0.15
         synth.speak(u)
     }
 
     private func haptic(_ style: UIImpactFeedbackGenerator.FeedbackStyle) {
-        guard hapticIntensity != .off else { return }
+        // `HapticIntensity` is low/medium/high — the `.off` case was removed in
+        // consolidation, and haptics are gated at the settings layer, not here.
+        // `.scale` is always > 0, so play at the configured intensity.
         let generator = UIImpactFeedbackGenerator(style: style)
         generator.impactOccurred(intensity: hapticIntensity.scale)
     }
