@@ -285,6 +285,7 @@ final class RitualRunner: ObservableObject {
         // consolidation, and haptics are gated at the settings layer, not here.
         // `.scale` is always > 0, so play at the configured intensity.
         let generator = UIImpactFeedbackGenerator(style: style)
-        generator.impactOccurred(intensity: hapticIntensity.scale)
+        // `.scale` is a Float; `impactOccurred(intensity:)` wants a CGFloat.
+        generator.impactOccurred(intensity: CGFloat(hapticIntensity.scale))
     }
 }
