@@ -396,7 +396,7 @@ final class ReleaseDriver: ModeDriver {
     func tick(elapsed: TimeInterval) -> SessionDirective? {
         guard !didNudge, elapsed >= 90 else { return nil }
         didNudge = true
-        return .cue(.encouragement, category: .encouragement, haptic: .tap, force: true)
+        return .cue(.finishing, category: .encouragement, haptic: .tap, force: true)
     }
 }
 
