@@ -74,7 +74,7 @@ final class HapticEngine: ObservableObject {
     func prepare() async {
         guard supportsHaptics else { return }
         guard engine == nil else {
-            try? engine?.start()
+            try? await engine?.start()
             return
         }
         do {
@@ -94,7 +94,7 @@ final class HapticEngine: ObservableObject {
                 self?.emergencyPlayer = nil
             }
 
-            try engine.start()
+            try await engine.start()
             self.engine = engine
         } catch {
             log.error("Haptic engine unavailable: \(error.localizedDescription, privacy: .public)")
