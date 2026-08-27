@@ -64,6 +64,34 @@ final class ModeSelectionModel: ObservableObject {
             settings: settings
         )
     }
+
+    /// The persisted, Codable shape for saving the current selection + tuning as
+    /// a Playlist. Mirrors `makePlan()` but flattens into `SessionConfig`.
+    func makeConfig() -> SessionConfig? {
+        guard let primary else { return nil }
+        let switchMinutes: Int? = {
+            guard isSplit, let seconds = autoSwitch.resolvedSwitchTime() else { return nil }
+            return Int((seconds / 60).rounded())
+        }()
+        return SessionConfig(
+            primaryMode: primary,
+            secondaryMode: secondary,
+            switchAfterMinutes: switchMinutes,
+            persona: settings.persona.coachPersona,
+            voiceVolume: settings.voiceVolume,
+            hapticIntensity: settings.hapticIntensity,
+            binaural: settings.binaural.preset,
+            distractionQuestions: settings.randomDistractions,
+            coachInterrupt: settings.coachInterrupt,
+            silentMode: settings.silentMode,
+            tempoLock: settings.tempoLock,
+            focusModeOnStart: settings.focusModeAutoEnable,
+            durationCap: settings.durationCap.interval,
+            talkFrequency: settings.coachFrequency.talkFrequency,
+            tagIDs: settings.enhancementStack.map(\.rawValue).sorted(),
+            runRitual: settings.usePreSessionRitual
+        )
+    }
 }
 
 // MARK: - View

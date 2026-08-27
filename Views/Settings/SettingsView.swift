@@ -21,6 +21,7 @@ struct SettingsView: View {
     // writes straight through to UserDefaults (see AppSettings).
     @StateObject private var settings = AppSettings()
     @ObservedObject private var watch = PhoneWatchLink.shared
+    @Environment(\.openURL) private var openURL
 
     // Export
     @State private var exportURL: IdentifiedURL?
@@ -41,6 +42,7 @@ struct SettingsView: View {
                     // 1–5, 7 — owned by Parts A–D.
                     coachSection
                     sessionDefaultsSection
+                    siriSection
                     ritualSection
                     regimenSection
                     watchSection
@@ -110,21 +112,48 @@ struct SettingsView: View {
 
     private var coachSection: some View {
         LLSection(title: "Coach") {
-            menuRow(symbol: "waveform", title: "Persona",
-                    selection: $settings.persona,
-                    options: CoachPersona.allCases,
-                    label: { $0.title.capitalized })
+            // Split into groups: one ViewBuilder closure tops out at 10 children.
+            Group {
+                menuRow(symbol: "waveform", title: "Persona",
+                        selection: $settings.persona,
+                        options: CoachPersona.allCases,
+                        label: { $0.title.capitalized })
+                LLDivider()
+                toggleRow(symbol: "speaker.wave.2.fill", title: "Voice",
+                          detail: "Spoken coaching (text-to-speech)",
+                          isOn: $settings.voiceEnabled)
+                LLDivider()
+                sliderRow(symbol: "speaker.wave.3.fill", title: "Voice Volume",
+                          value: $settings.voiceVolume)
+                    .disabled(!settings.voiceEnabled)
+                    .opacity(settings.voiceEnabled ? 1 : 0.4)
+                LLDivider()
+                toggleRow(symbol: "bubble.left.and.exclamationmark.bubble.right.fill",
+                          title: "Coach Interrupt",
+                          detail: "Periodic “arousal level?” check-ins",
+                          isOn: $settings.coachInterrupt)
+            }
             LLDivider()
-            toggleRow(symbol: "speaker.wave.2.fill", title: "Voice", isOn: $settings.voiceEnabled)
-            LLDivider()
-            LLRow(symbol: "text.quote", title: "Custom Phrases",
-                  detail: "\(settings.customPhrases.count) of 10",
-                  showsChevron: false) {}
-            LLDivider()
-            menuRow(symbol: "figure.wave", title: "Angel Skin",
-                    selection: $settings.angelSkin,
-                    options: AngelSkin.allCases,
-                    label: { $0.title.capitalized })
+            Group {
+                toggleRow(symbol: "questionmark.circle.fill",
+                          title: "Distraction Questions",
+                          detail: "Arithmetic prompts to pull focus",
+                          isOn: $settings.distractionQuestions)
+                LLDivider()
+                NavigationLink {
+                    CustomPhrasesView(settings: settings)
+                } label: {
+                    LLRow(symbol: "text.quote", title: "Custom Phrases",
+                          detail: "\(settings.customPhrases.count) of 10 used",
+                          showsChevron: true)
+                }
+                .buttonStyle(.plain)
+                LLDivider()
+                menuRow(symbol: "figure.wave", title: "Angel Skin",
+                        selection: $settings.angelSkin,
+                        options: AngelSkin.allCases,
+                        label: { $0.title.capitalized })
+            }
         }
     }
 
@@ -152,6 +181,15 @@ struct SettingsView: View {
             }
             LLDivider()
             Group {
+                menuRow(symbol: "timer", title: "Default Duration Cap",
+                        selection: $settings.durationCap,
+                        options: DurationCap.allCases,
+                        label: { $0 == .none ? "None" : "\($0.rawValue) min" })
+                LLDivider()
+                toggleRow(symbol: "metronome.fill", title: "Tempo Lock",
+                          detail: "Haptic metronome during active phases",
+                          isOn: $settings.tempoLock)
+                LLDivider()
                 toggleRow(symbol: "speaker.slash.fill", title: "Silent Mode", isOn: $settings.silentModeDefault)
                 LLDivider()
                 toggleRow(symbol: "moon.fill", title: "Focus Mode",
@@ -164,6 +202,25 @@ struct SettingsView: View {
                         label: { $0.title })
             }
         }
+    }
+
+    // MARK: - Siri
+
+    private var siriSection: some View {
+        LLSection(title: "Siri & Shortcuts", subtitle: "“Hey Siri, start a session.”") {
+            LLRow(symbol: "mic.fill", title: "Siri Shortcut",
+                  detail: "Set up “Start a session” in the Shortcuts app",
+                  showsChevron: true,
+                  action: openShortcuts)
+        }
+    }
+
+    private func openShortcuts() {
+        // App Shortcuts (AppShortcutsProvider) are available to Siri with no
+        // setup; this just takes the user to the Shortcuts app to add or
+        // customise them.
+        UISelectionFeedbackGenerator().selectionChanged()
+        if let url = URL(string: "shortcuts://") { openURL(url) }
     }
 
     // MARK: - 3. Ritual  (PART C)
@@ -232,6 +289,33 @@ struct SettingsView: View {
             }
         }
         .buttonStyle(.plain)
+    }
+
+    /// A full-width labelled slider row (0…100%), padded to match LLRow.
+    private func sliderRow(
+        symbol: String,
+        title: String,
+        value: Binding<Double>
+    ) -> some View {
+        VStack(alignment: .leading, spacing: 8) {
+            HStack(spacing: 12) {
+                Image(systemName: symbol)
+                    .font(.system(size: 15, weight: .semibold))
+                    .foregroundStyle(LLColor.text)
+                    .frame(width: 22, alignment: .center)
+                Text(title)
+                    .llLabelStyle(13, color: LLColor.text)
+                Spacer(minLength: 8)
+                Text("\(Int((value.wrappedValue * 100).rounded()))%")
+                    .font(LLFont.mono(11))
+                    .foregroundStyle(LLColor.textDim)
+            }
+            Slider(value: value, in: 0...1)
+                .tint(LLColor.primary)
+                .padding(.leading, 34)
+        }
+        .padding(.horizontal, LLMetrics.gutter)
+        .padding(.vertical, LLMetrics.rowVerticalPadding)
     }
 
     /// A row with a trailing toggle bound straight to the settings store.

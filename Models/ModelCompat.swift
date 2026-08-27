@@ -79,3 +79,69 @@ extension DurationCap {
     /// Minutes, or nil when uncapped.
     var minutes: Int? { self == .none ? nil : rawValue }
 }
+
+// MARK: - Settings ↔ Config bridges
+
+// `SessionSettings` (the per-session tuning object the config sheet drives) and
+// `SessionConfig` (the persisted, Codable shape a Playlist stores) carry the
+// same preferences under differently-named enums. These map one to the other so
+// a session's settings can be saved as a playlist and vice-versa.
+
+extension VoicePersona {
+    /// The domain `CoachPersona` this settings persona corresponds to. The two
+    /// share case names but not raw values, so map by case.
+    var coachPersona: CoachPersona {
+        switch self {
+        case .drillSergeant:  return .drillSergeant
+        case .calmYogi:       return .calmYogi
+        case .dominant:       return .dominant
+        case .hypnotherapist: return .hypnotherapist
+        }
+    }
+}
+
+extension CoachPersona {
+    /// The settings `VoicePersona` for this domain persona (inverse of the above).
+    var voicePersona: VoicePersona {
+        switch self {
+        case .drillSergeant:  return .drillSergeant
+        case .calmYogi:       return .calmYogi
+        case .dominant:       return .dominant
+        case .hypnotherapist: return .hypnotherapist
+        }
+    }
+}
+
+extension BinauralProgram {
+    /// The persisted `BinauralPreset`. `.beta` maps to `.lowBeta` (both 14 Hz).
+    var preset: BinauralPreset {
+        switch self {
+        case .off:   return .off
+        case .theta: return .theta
+        case .alpha: return .alpha
+        case .beta:  return .lowBeta
+        }
+    }
+}
+
+extension BinauralPreset {
+    /// The settings-side `BinauralProgram` for this preset.
+    var program: BinauralProgram {
+        switch self {
+        case .off:     return .off
+        case .theta:   return .theta
+        case .alpha:   return .alpha
+        case .lowBeta: return .beta
+        }
+    }
+}
+
+extension CoachFrequency {
+    /// Same raw values as `TalkFrequency`; falls back to `.normal`.
+    var talkFrequency: TalkFrequency { TalkFrequency(rawValue: rawValue) ?? .normal }
+}
+
+extension TalkFrequency {
+    /// Same raw values as `CoachFrequency`; falls back to `.normal`.
+    var coachFrequency: CoachFrequency { CoachFrequency(rawValue: rawValue) ?? .normal }
+}

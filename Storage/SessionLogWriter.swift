@@ -115,18 +115,3 @@ final class SessionLogWriter {
         return Int((seconds / 60).rounded())
     }
 }
-
-// MARK: - Persona bridge
-
-private extension VoicePersona {
-    /// The domain `CoachPersona` the settings' `VoicePersona` corresponds to.
-    /// The two enums share case names but not raw values, so map by case.
-    var coachPersona: CoachPersona {
-        switch self {
-        case .drillSergeant:  return .drillSergeant
-        case .calmYogi:       return .calmYogi
-        case .dominant:       return .dominant
-        case .hypnotherapist: return .hypnotherapist
-        }
-    }
-}

@@ -22,11 +22,17 @@ struct SessionConfigSheet: View {
     @State private var newPhrase = ""
     @FocusState private var phraseFieldFocused: Bool
 
+    // Save-as-playlist
+    @State private var showSavePlaylist = false
+    @State private var playlistName = ""
+    @State private var savedConfirmation = false
+
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
                 summary
                 startRow
+                savePlaylistButton
 
                 Rule()
 
@@ -47,6 +53,59 @@ struct SessionConfigSheet: View {
         .scrollDismissesKeyboard(.interactively)
         .background(Theme.bg)
         .preferredColorScheme(.dark)
+        .alert("Save as Playlist", isPresented: $showSavePlaylist) {
+            TextField("Playlist name", text: $playlistName)
+            Button("Save", action: savePlaylist)
+                .disabled(playlistName.trimmingCharacters(in: .whitespaces).isEmpty)
+            Button("Cancel", role: .cancel) { playlistName = "" }
+        } message: {
+            Text("Save this mode and every setting above as a reusable playlist on your Home screen.")
+        }
+        .alert("Playlist saved", isPresented: $savedConfirmation) {
+            Button("OK") {}
+        } message: {
+            Text("Find it on your Home screen under Playlists.")
+        }
+    }
+
+    // MARK: - Save as playlist
+
+    private var savePlaylistButton: some View {
+        Button(action: presentSavePlaylist) {
+            HStack(spacing: 8) {
+                Image(systemName: "bookmark.fill").font(.system(size: 11, weight: .bold))
+                Text("Save as Playlist")
+                    .font(Typeface.label(11))
+                    .uppercaseLabel(tracking: 1.4)
+            }
+            .foregroundStyle(Theme.data)
+            .frame(maxWidth: .infinity)
+            .frame(height: 44)
+            .overlay(
+                RoundedRectangle(cornerRadius: Theme.Metric.cardRadius)
+                    .strokeBorder(Theme.data.opacity(0.5), lineWidth: 1)
+            )
+        }
+        .buttonStyle(.plain)
+        .disabled(model.selection.isEmpty)
+        .opacity(model.selection.isEmpty ? 0.4 : 1)
+        .accessibilityHint("Saves the current mode and settings as a reusable playlist.")
+    }
+
+    private func presentSavePlaylist() {
+        Haptics.shared.play(.tap)
+        // Seed a sensible default name from the selected mode(s).
+        playlistName = model.selection.map(\.name).joined(separator: " → ")
+        showSavePlaylist = true
+    }
+
+    private func savePlaylist() {
+        let name = playlistName.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !name.isEmpty, let config = model.makeConfig() else { return }
+        Repository.shared.save(Playlist(name: name, config: config))
+        playlistName = ""
+        Haptics.shared.play(.phaseChange)
+        savedConfirmation = true
     }
 
     // MARK: - Summary
