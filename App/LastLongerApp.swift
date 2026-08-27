@@ -140,6 +140,18 @@ final class AudioSessionController: ObservableObject {
         }
     }
 
+    /// Static convenience for callers that don't hold the injected instance
+    /// (e.g. CoachVoice). Mirrors `configure()`: spoken-audio playback that
+    /// ducks/mixes with the user's external media rather than interrupting it.
+    static func activateForCoaching(duckOthers: Bool = true) {
+        let session = AVAudioSession.sharedInstance()
+        let options: AVAudioSession.CategoryOptions = duckOthers
+            ? [.mixWithOthers, .duckOthers]
+            : [.mixWithOthers]
+        try? session.setCategory(.playback, mode: .spokenAudio, options: options)
+        try? session.setActive(true, options: [])
+    }
+
     /// Call when a session ends so the user's media returns to full volume immediately
     /// rather than waiting for the system to notice we went idle.
     func deactivate() {

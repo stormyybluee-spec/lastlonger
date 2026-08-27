@@ -294,24 +294,31 @@ public struct HomeView: View {
             if !recent.isEmpty {
                 VStack(alignment: .leading, spacing: 10) {
                     Text("RECENT").llLabelStyle()
-                    VStack(spacing: 0) {
-                        ForEach(Array(recent.enumerated()), id: \.element.id) { index, session in
-                            SessionRow(session: session)
-                            if index < recent.count - 1 {
-                                Rectangle()
-                                    .fill(LL.Palette.rule)
-                                    .frame(height: LL.Metric.hairline)
-                            }
-                        }
-                    }
-                    .background(LL.Palette.card, in: RoundedRectangle(cornerRadius: LL.Metric.corner, style: .continuous))
-                    .overlay(
-                        RoundedRectangle(cornerRadius: LL.Metric.corner, style: .continuous)
-                            .strokeBorder(LL.Palette.rule, lineWidth: 1)
-                    )
+                    recentSessionsList(recent)
                 }
             }
         }
+    }
+
+    // Extracted from `recentSessions` so the type-checker does not have to solve
+    // the whole nested VStack/ForEach/background/overlay expression at once —
+    // that combination tripped "unable to type-check in reasonable time".
+    private func recentSessionsList(_ recent: [SessionRecord]) -> some View {
+        VStack(spacing: 0) {
+            ForEach(Array(recent.enumerated()), id: \.element.id) { index, session in
+                SessionRow(session: session)
+                if index < recent.count - 1 {
+                    Rectangle()
+                        .fill(LL.Palette.rule)
+                        .frame(height: LL.Metric.hairline)
+                }
+            }
+        }
+        .background(LL.Palette.card, in: RoundedRectangle(cornerRadius: LL.Metric.corner, style: .continuous))
+        .overlay(
+            RoundedRectangle(cornerRadius: LL.Metric.corner, style: .continuous)
+                .strokeBorder(LL.Palette.rule, lineWidth: 1)
+        )
     }
 }
 

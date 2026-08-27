@@ -51,12 +51,20 @@ enum HapticPattern: Equatable {
     case success(streak: Int)
     /// Breath pacer beat. `inhale` is a soft rise, otherwise a soft fall.
     case breath(inhale: Bool)
+    /// Light UI tick — tab changes, row taps. HomeView/OnboardingFlow vocabulary.
+    case tick
+    /// Pull-back gesture confirmation. Same feel as `backOff`.
+    case pullback
 }
 
 // MARK: - Engine
 
 @MainActor
 final class HapticEngine: ObservableObject {
+
+    /// Shared engine used by screens that reach for haptics directly
+    /// (HomeView, OnboardingFlow) rather than through an injected instance.
+    static let shared = HapticEngine()
 
     @Published var intensity: HapticIntensity = .medium
     @Published private(set) var supportsHaptics = CHHapticEngine.capabilitiesForHardware().supportsHaptics
@@ -148,10 +156,15 @@ final class HapticEngine: ObservableObject {
                 transient(intensity: 1.0 * s, sharpness: 0.90, at: 0)
             ], parameters: [])
 
-        case .backOff:
+        case .backOff, .pullback:
             return try CHHapticPattern(events: [
                 transient(intensity: 0.85 * s, sharpness: 0.80, at: 0),
                 transient(intensity: 0.85 * s, sharpness: 0.80, at: 0.12)
+            ], parameters: [])
+
+        case .tick:
+            return try CHHapticPattern(events: [
+                transient(intensity: 0.35 * s, sharpness: 0.65, at: 0)
             ], parameters: [])
 
         case .sessionEnd:
@@ -255,7 +268,7 @@ final class HapticEngine: ObservableObject {
         switch pattern {
         case .threshold:
             UIImpactFeedbackGenerator(style: .rigid).impactOccurred()
-        case .backOff, .breath:
+        case .backOff, .breath, .pullback:
             UIImpactFeedbackGenerator(style: .medium).impactOccurred()
         case .emergency:
             UINotificationFeedbackGenerator().notificationOccurred(.error)
@@ -263,7 +276,7 @@ final class HapticEngine: ObservableObject {
             UINotificationFeedbackGenerator().notificationOccurred(.success)
         case .warning:
             UINotificationFeedbackGenerator().notificationOccurred(.warning)
-        case .selection:
+        case .selection, .tick:
             UISelectionFeedbackGenerator().selectionChanged()
         }
         #endif

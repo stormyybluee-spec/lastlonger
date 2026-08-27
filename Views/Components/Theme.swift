@@ -96,6 +96,14 @@ enum LL {
         static let corner: CGFloat = 12
         static let tap: CGFloat    = 60
         static let gutter: CGFloat = 14
+
+        // Restored from the files(7) LL.Metric that HomeView/OnboardingFlow were
+        // written against; consolidation kept the LLDesignSystem spelling above
+        // and dropped these. `tapTarget` is the same 60pt floor as `tap`.
+        static let tapTarget: CGFloat = 60
+        static let cardPadding: CGFloat = 16
+        static let hairline: CGFloat = 1
+        static let angelSize: CGFloat = 70
     }
 
     // MARK: Metrics
@@ -117,6 +125,8 @@ enum LL {
         static let stateFade: Animation = .easeInOut(duration: 0.30)
         static let panelIn: Animation = .easeOut(duration: 0.22)
         static let burstDuration: TimeInterval = 0.60
+        /// Button-press spring, restored from the files(7) LL.Motion.
+        static let press: Animation = .spring(response: 0.24, dampingFraction: 0.7)
     }
 
     // MARK: Copy
@@ -383,5 +393,42 @@ struct OutlineActionStyle: ButtonStyle {
                 RoundedRectangle(cornerRadius: LL.Metrics.buttonRadius, style: .continuous)
                     .strokeBorder(tint.opacity(0.35), lineWidth: LL.Metrics.hairlineWidth)
             }
+    }
+}
+
+// MARK: - Restored view vocabulary (files(7))
+//
+// HomeView and OnboardingFlow came from the "files (7)" part and use this type
+// and card vocabulary. Consolidation kept a different Theme.swift and dropped
+// these; they are restored verbatim here. `llLabelStyle` is NOT re-declared —
+// DesignSystem.swift already vends it.
+
+public extension Font {
+    /// Small uppercase label. Tight, wide-tracked, deliberately quiet.
+    static func llLabel(_ size: CGFloat = 11) -> Font {
+        .system(size: size, weight: .semibold, design: .default)
+    }
+
+    /// Large numeric readout. Rounded is wrong here — this is an instrument.
+    static func llReadout(_ size: CGFloat) -> Font {
+        .system(size: size, weight: .heavy, design: .default)
+    }
+
+    /// Dense monospaced data. Session logs, breakdown rows, export previews.
+    static func llData(_ size: CGFloat = 12) -> Font {
+        .system(size: size, weight: .medium, design: .monospaced)
+    }
+}
+
+public extension View {
+    /// The standard card surface.
+    func llCard(padding: CGFloat = LL.Metric.cardPadding) -> some View {
+        self.padding(padding)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .background(LL.Palette.card, in: RoundedRectangle(cornerRadius: LL.Metric.corner, style: .continuous))
+            .overlay(
+                RoundedRectangle(cornerRadius: LL.Metric.corner, style: .continuous)
+                    .strokeBorder(LL.Palette.rule, lineWidth: LL.Metric.hairline)
+            )
     }
 }
