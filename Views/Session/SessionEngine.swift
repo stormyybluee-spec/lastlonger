@@ -64,6 +64,13 @@ final class SessionEngine: ObservableObject {
 
     // MARK: - Scheduled side channels
 
+    /// Live Activity update throttle. `tick()` runs 4x a second; the Dynamic
+    /// Island only needs the clock about once a second.
+    private var lastActivityPush: TimeInterval = -1
+    /// Set by LiveSessionModel - the emergency lives there, not here, but the
+    /// island has to show it.
+    private var isEmergencyActive = false
+
     private var nextTempoTick: TimeInterval = 0
     private var nextDistractionAt: TimeInterval = .infinity
     private var nextInterruptAt: TimeInterval = .infinity
@@ -129,6 +136,10 @@ final class SessionEngine: ObservableObject {
 
         if let directive = driver?.begin() { apply(directive) }
         startTicker()
+
+        isEmergencyActive = false
+        lastActivityPush = -1
+        startLiveActivity(title: plan.displayTitle)
     }
 
     func pause() {
@@ -162,6 +173,8 @@ final class SessionEngine: ObservableObject {
 
         UIApplication.shared.isIdleTimerDisabled = false
 
+        endLiveActivity()
+
         // Give the closing line time to land before dropping the session.
         Task { [weak self] in
             try? await Task.sleep(for: .seconds(4))
@@ -179,6 +192,7 @@ final class SessionEngine: ObservableObject {
         state = .finished
         phase = .complete
         UIApplication.shared.isIdleTimerDisabled = false
+        endLiveActivity()
     }
 
     /// User reports having gone past the edge. Not a failure state — the
@@ -246,6 +260,8 @@ final class SessionEngine: ObservableObject {
         }
         detail = driver?.detail ?? ""
 
+        pushLiveActivityIfNeeded()
+
         // 4. Tempo Lock metronome.
         if plan.settings.tempoLock, phase.isActive, elapsed >= nextTempoTick {
             let beat = 60.0 / Double(max(plan.settings.tempoBPM, 20))
@@ -266,6 +282,70 @@ final class SessionEngine: ObservableObject {
             haptics.play(.warning)
             if let line = coach.speak(.interrupt, force: true) { lastCoachLine = line }
         }
+    }
+
+    // MARK: - Live Activity (Dynamic Island)
+    //
+    // Every call here is a no-op unless the Widget Extension exists, the device
+    // supports Live Activities, and the user has them enabled - so the session
+    // behaves identically with or without the Dynamic Island.
+    //
+    // REQUIRES: Widgets/SessionDynamicIsland.swift in the APP target (it defines
+    // SessionActivityAttributes and the controller). See Widgets/SETUP.md.
+
+    /// Mirrors the phase onto the small vocabulary the widget renders.
+    private var activityPhase: SessionActivityAttributes.ContentState.Phase {
+        if isEmergencyActive { return .emergency }
+        switch phase {
+        case .hold, .fast, .finishing:     return .hold
+        case .warmup, .slow, .sensation:   return .rising
+        case .cooldown, .recovery, .still: return .cooldown
+        case .free, .idle:                 return .safe
+        case .complete:                    return .ended
+        }
+    }
+
+    private var activityState: SessionActivityAttributes.ContentState {
+        .init(phase: activityPhase, elapsedLabel: elapsedLabel, streak: 0)
+    }
+
+    private func startLiveActivity(title: String) {
+        #if canImport(ActivityKit)
+        if #available(iOS 16.1, *) {
+            SessionLiveActivityController.shared.start(title: title, state: activityState)
+        }
+        #endif
+    }
+
+    /// Called from `tick()`; throttled to roughly one push per second.
+    private func pushLiveActivityIfNeeded() {
+        guard elapsed - lastActivityPush >= 1.0 else { return }
+        lastActivityPush = elapsed
+        pushLiveActivity()
+    }
+
+    private func pushLiveActivity() {
+        #if canImport(ActivityKit)
+        if #available(iOS 16.1, *) {
+            SessionLiveActivityController.shared.update(activityState)
+        }
+        #endif
+    }
+
+    private func endLiveActivity() {
+        #if canImport(ActivityKit)
+        if #available(iOS 16.1, *) {
+            SessionLiveActivityController.shared.end()
+        }
+        #endif
+    }
+
+    /// The emergency protocol is owned by `LiveSessionModel`; it calls this so
+    /// the island can turn deep red immediately rather than on the next tick.
+    func setEmergencyActive(_ active: Bool) {
+        guard isEmergencyActive != active else { return }
+        isEmergencyActive = active
+        pushLiveActivity()
     }
 
     // MARK: - Directives

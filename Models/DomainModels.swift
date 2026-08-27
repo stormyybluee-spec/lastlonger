@@ -32,12 +32,14 @@ public enum CoachPersona: String, Codable, CaseIterable, Sendable, Identifiable 
 
     public var id: String { rawValue }
 
+    /// Kept in step with `VoicePersona.name` - onboarding shows this, the
+    /// session config sheet shows that one, and they must not disagree.
     public var title: String {
         switch self {
-        case .drillSergeant:  return "DRILL SERGEANT"
-        case .calmYogi:       return "CALM YOGI"
-        case .dominant:       return "DOMINANT"
-        case .hypnotherapist: return "HYPNOTHERAPIST"
+        case .drillSergeant:  return "BRUCE"
+        case .calmYogi:       return "WILLOW"
+        case .dominant:       return "ANGEL"
+        case .hypnotherapist: return "AVA"
         }
     }
 
@@ -71,7 +73,7 @@ public enum CoachPersona: String, Codable, CaseIterable, Sendable, Identifiable 
         case .dominant:
             return VoiceProfile(rate: 0.48, pitch: 0.60, volume: 1.00, preferredGender: .female)
         case .hypnotherapist:
-            return VoiceProfile(rate: 0.34, pitch: 0.90, volume: 0.70, preferredGender: .male)
+            return VoiceProfile(rate: 0.34, pitch: 0.90, volume: 0.70, preferredGender: .female)
         }
     }
 

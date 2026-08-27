@@ -39,7 +39,10 @@ public final class CoachVoice: NSObject, ObservableObject {
 
         let profile = persona.voice
         let utterance = AVSpeechUtterance(string: text)
-        utterance.voice = Self.voice(for: profile)
+        // Prefer the persona's pinned, device-tested voice so the onboarding
+        // preview is literally the voice the session will use. `voice(for:)` is
+        // the gender-based fallback for when that voice is not installed.
+        utterance.voice = persona.voicePersona.resolveVoice() ?? Self.voice(for: profile)
         utterance.rate = profile.rate
         utterance.pitchMultiplier = profile.pitch
         utterance.volume = Float(volume) * profile.volume

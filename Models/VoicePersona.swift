@@ -24,12 +24,16 @@ enum VoicePersona: String, CaseIterable, Codable, Identifiable {
 
     var id: String { rawValue }
 
+    /// Display name. These are the voices as tested on device - the case names
+    /// are kept (they are the persisted raw values, and renaming them would
+    /// invalidate every stored session and setting) but what the user sees is
+    /// the voice's own name.
     var name: String {
         switch self {
-        case .drillSergeant:  return "Drill Sergeant"
-        case .calmYogi:       return "Calm Yogi"
-        case .dominant:       return "Dominant"
-        case .hypnotherapist: return "Hypnotherapist"
+        case .drillSergeant:  return "Bruce"
+        case .calmYogi:       return "Willow"
+        case .dominant:       return "Angel"
+        case .hypnotherapist: return "Ava"
         }
     }
 
@@ -93,8 +97,8 @@ enum VoicePersona: String, CaseIterable, Codable, Identifiable {
     @available(iOS 17.0, *)
     var preferredGender: AVSpeechSynthesisVoiceGender {
         switch self {
-        case .drillSergeant, .hypnotherapist: return .male
-        case .calmYogi, .dominant:            return .female
+        case .drillSergeant:                            return .male
+        case .calmYogi, .dominant, .hypnotherapist:     return .female
         }
     }
 
@@ -127,12 +131,32 @@ enum VoicePersona: String, CaseIterable, Codable, Identifiable {
                    AVSpeechUtteranceMaximumSpeechRate)
     }
 
+    /// The exact system voice chosen for this persona, verified on device.
+    ///
+    /// This is the identity of the character, so it is tried first and the
+    /// heuristics below are only a safety net: a Siri voice is not guaranteed
+    /// to be present on every device or OS version, and `AVSpeechSynthesisVoice`
+    /// returns nil for an identifier that is not installed.
+    var voiceIdentifier: String {
+        switch self {
+        case .drillSergeant:  return "com.apple.ttsbundle.siri_Bruce_en-US_compact"
+        case .calmYogi:       return "com.apple.ttsbundle.siri_Allison_en-US_compact"   // Willow
+        case .dominant:       return "com.apple.ttsbundle.siri_Joelle_en-US_compact"    // Angel
+        case .hypnotherapist: return "com.apple.ttsbundle.siri_Ava_en-US_compact"       // Ava
+        }
+    }
+
     /// Best available system voice for this persona.
     ///
-    /// Gender metadata only exists on iOS 17+. Below that we fall back to a
-    /// known-good identifier, and below *that* to the system default — so the
-    /// coach always speaks even on a device with no downloaded voices.
+    /// Order: the pinned voice above, then (iOS 17+) the best-quality voice of
+    /// the right gender, then a known-good identifier, then the system default —
+    /// so the coach always speaks even on a device with no downloaded voices.
     func resolveVoice(language: String = "en-US") -> AVSpeechSynthesisVoice? {
+        // 1. The tested voice for this persona.
+        if let pinned = AVSpeechSynthesisVoice(identifier: voiceIdentifier) {
+            return pinned
+        }
+
         let candidates = AVSpeechSynthesisVoice.speechVoices()
             .filter { $0.language.hasPrefix(String(language.prefix(2))) }
 
@@ -156,11 +180,11 @@ enum VoicePersona: String, CaseIterable, Codable, Identifiable {
 
     private var fallbackIdentifiers: [String] {
         switch self {
-        case .drillSergeant, .hypnotherapist:
+        case .drillSergeant:
             return ["com.apple.voice.enhanced.en-US.Aaron",
                     "com.apple.ttsbundle.siri_Aaron_en-US_compact",
                     "com.apple.voice.compact.en-US.Fred"]
-        case .calmYogi, .dominant:
+        case .calmYogi, .dominant, .hypnotherapist:
             return ["com.apple.voice.enhanced.en-US.Ava",
                     "com.apple.ttsbundle.siri_Nicky_en-US_compact",
                     "com.apple.voice.compact.en-US.Samantha"]

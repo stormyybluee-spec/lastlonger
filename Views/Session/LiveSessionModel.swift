@@ -251,6 +251,9 @@ final class LiveSessionModel: ObservableObject {
         interrupt.cancel()
         breath.stop()
         emergency.trigger()
+        // The engine owns the Live Activity; tell it so the Dynamic Island
+        // turns deep red now rather than on the next tick.
+        engine.setEmergencyActive(true)
     }
 
     private func wireEmergency() {
@@ -265,6 +268,7 @@ final class LiveSessionModel: ObservableObject {
                                   fromWatch: self.lastEmergencyFromWatch)
             let count = self.streak.logEmergencyPullback()
             ToneGenerator.shared.playSuccess(streak: count)
+            self.engine.setEmergencyActive(false)
             self.emergency.dismiss()
             self.tempo.resumeIfLocked()
             self.startBreathPacer()
@@ -275,6 +279,7 @@ final class LiveSessionModel: ObservableObject {
             self.log.logEmergency(elapsed: self.engine.elapsed,
                                   completed: false,
                                   fromWatch: self.lastEmergencyFromWatch)
+            self.engine.setEmergencyActive(false)
             self.tempo.resumeIfLocked()
         }
     }
