@@ -17,6 +17,11 @@ struct SettingsView: View {
     @Environment(\.managedObjectContext) private var context
     @Environment(\.scenePhase) private var scenePhase
 
+    // Live, persisted preference store. Every control below binds to this and
+    // writes straight through to UserDefaults (see AppSettings).
+    @StateObject private var settings = AppSettings()
+    @ObservedObject private var watch = PhoneWatchLink.shared
+
     // Export
     @State private var exportURL: IdentifiedURL?
     @State private var isExporting = false
@@ -105,13 +110,21 @@ struct SettingsView: View {
 
     private var coachSection: some View {
         LLSection(title: "Coach") {
-            LLRow(symbol: "waveform", title: "Persona", detail: "Drill Sergeant", showsChevron: true) {}
+            menuRow(symbol: "waveform", title: "Persona",
+                    selection: $settings.persona,
+                    options: CoachPersona.allCases,
+                    label: { $0.title.capitalized })
             LLDivider()
-            LLRow(symbol: "speaker.wave.2.fill", title: "Voice", detail: "On", showsChevron: true) {}
+            toggleRow(symbol: "speaker.wave.2.fill", title: "Voice", isOn: $settings.voiceEnabled)
             LLDivider()
-            LLRow(symbol: "text.quote", title: "Custom Phrases", detail: "0 of 10", showsChevron: true) {}
+            LLRow(symbol: "text.quote", title: "Custom Phrases",
+                  detail: "\(settings.customPhrases.count) of 10",
+                  showsChevron: false) {}
             LLDivider()
-            LLRow(symbol: "figure.wave", title: "Angel Skin", detail: "Default", showsChevron: true) {}
+            menuRow(symbol: "figure.wave", title: "Angel Skin",
+                    selection: $settings.angelSkin,
+                    options: AngelSkin.allCases,
+                    label: { $0.title.capitalized })
         }
     }
 
@@ -119,17 +132,37 @@ struct SettingsView: View {
 
     private var sessionDefaultsSection: some View {
         LLSection(title: "Session Defaults") {
-            LLRow(symbol: "square.grid.2x2.fill", title: "Default Mode", detail: "Free Hold", showsChevron: true) {}
+            // Split into two groups: a single ViewBuilder closure tops out at
+            // 10 child views, and rows-plus-dividers exceeds that.
+            Group {
+                menuRow(symbol: "square.grid.2x2.fill", title: "Default Mode",
+                        selection: $settings.defaultMode,
+                        options: TrainingMode.allCases,
+                        label: { $0.title })
+                LLDivider()
+                menuRow(symbol: "iphone.radiowaves.left.and.right", title: "Haptic Intensity",
+                        selection: $settings.haptics,
+                        options: HapticIntensity.allCases,
+                        label: { $0.rawValue.capitalized })
+                LLDivider()
+                menuRow(symbol: "waveform.path", title: "Binaural Beats",
+                        selection: $settings.binaural,
+                        options: BinauralDefault.allCases,
+                        label: { $0.title })
+            }
             LLDivider()
-            LLRow(symbol: "iphone.radiowaves.left.and.right", title: "Haptic Intensity", detail: "Medium", showsChevron: true) {}
-            LLDivider()
-            LLRow(symbol: "waveform.path", title: "Binaural Beats", detail: "Off", showsChevron: true) {}
-            LLDivider()
-            LLRow(symbol: "speaker.slash.fill", title: "Silent Mode", detail: "Off", showsChevron: true) {}
-            LLDivider()
-            LLRow(symbol: "moon.fill", title: "Focus Mode", detail: "Auto-enable during sessions", showsChevron: true) {}
-            LLDivider()
-            LLRow(symbol: "bell.fill", title: "Reminders", detail: "Off", showsChevron: true) {}
+            Group {
+                toggleRow(symbol: "speaker.slash.fill", title: "Silent Mode", isOn: $settings.silentModeDefault)
+                LLDivider()
+                toggleRow(symbol: "moon.fill", title: "Focus Mode",
+                          detail: "Prompt to enable Focus during sessions",
+                          isOn: $settings.focusModePrompt)
+                LLDivider()
+                menuRow(symbol: "bell.fill", title: "Reminders",
+                        selection: $settings.milestoneFrequency,
+                        options: MilestoneFrequency.allCases,
+                        label: { $0.title })
+            }
         }
     }
 
@@ -153,9 +186,65 @@ struct SettingsView: View {
 
     private var watchSection: some View {
         LLSection(title: "Apple Watch") {
-            LLRow(symbol: "applewatch", title: "Connection", detail: "Not paired", showsChevron: true) {}
+            LLRow(symbol: "applewatch", title: "Connection", detail: watchStatus, showsChevron: false) {}
             LLDivider()
-            LLRow(symbol: "hand.raised.fill", title: "Grip Tension Alerts", detail: "Requires watch", showsChevron: true) {}
+            toggleRow(symbol: "hand.raised.fill", title: "Grip Tension Alerts",
+                      detail: "Requires a paired Apple Watch",
+                      isOn: $settings.antiGripPressure)
+        }
+    }
+
+    private var watchStatus: String {
+        if !watch.isPaired { return "Not paired" }
+        if !watch.isWatchAppInstalled { return "Paired — Watch app not installed" }
+        return watch.isReachable ? "Connected" : "Paired — not reachable"
+    }
+
+    // MARK: - Reusable controls
+
+    /// A row whose whole surface opens a menu picker, with the current choice
+    /// shown as the detail line.
+    private func menuRow<T: Hashable>(
+        symbol: String,
+        title: String,
+        selection: Binding<T>,
+        options: [T],
+        label: @escaping (T) -> String
+    ) -> some View {
+        Menu {
+            ForEach(options, id: \.self) { option in
+                Button {
+                    selection.wrappedValue = option
+                    UISelectionFeedbackGenerator().selectionChanged()
+                } label: {
+                    if option == selection.wrappedValue {
+                        Label(label(option), systemImage: "checkmark")
+                    } else {
+                        Text(label(option))
+                    }
+                }
+            }
+        } label: {
+            LLRow(symbol: symbol, title: title, detail: label(selection.wrappedValue)) {
+                Image(systemName: "chevron.up.chevron.down")
+                    .font(.system(size: 11, weight: .bold))
+                    .foregroundStyle(LLColor.textFaint)
+            }
+        }
+        .buttonStyle(.plain)
+    }
+
+    /// A row with a trailing toggle bound straight to the settings store.
+    private func toggleRow(
+        symbol: String,
+        title: String,
+        detail: String? = nil,
+        isOn: Binding<Bool>
+    ) -> some View {
+        LLRow(symbol: symbol, title: title, detail: detail) {
+            Toggle("", isOn: isOn)
+                .labelsHidden()
+                .tint(LLColor.primary)
         }
     }
 

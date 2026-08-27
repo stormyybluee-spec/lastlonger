@@ -98,7 +98,14 @@ final class AppSettings: ObservableObject {
     @Published var talkFrequency: TalkFrequency   { didSet { d.set(talkFrequency.rawValue, forKey: K.talkFrequency) } }
     @Published var focusModePrompt: Bool          { didSet { d.set(focusModePrompt, forKey: K.focusPrompt) } }
     @Published var tempoLock: Bool                { didSet { d.set(tempoLock, forKey: K.tempoLock) } }
-    @Published var milestoneFrequency: MilestoneFrequency { didSet { d.set(milestoneFrequency.rawValue, forKey: K.milestones) } }
+    @Published var milestoneFrequency: MilestoneFrequency {
+        didSet {
+            d.set(milestoneFrequency.rawValue, forKey: K.milestones)
+            // Re-arm the local reminder immediately so a change takes effect
+            // now, not only on next launch.
+            MilestoneNotifier.reschedule()
+        }
+    }
 
     // Watch
     @Published var antiGripPressure: Bool         { didSet { d.set(antiGripPressure, forKey: K.antiGrip) } }

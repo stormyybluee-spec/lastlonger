@@ -17,11 +17,10 @@ import SwiftUI
 
 public struct RootTabView: View {
     @StateObject private var repository = Repository.shared
-    // Stats/Challenges read a StatsStore. Until a SessionRecord→StatsSessionRecord
-    // bridge exists, this is seeded with sample data so the real screens are
-    // reachable and render; swap `StatsSample.store()` for a store built from
-    // `repository` once the converter lands.
-    @StateObject private var statsStore = StatsSample.store()
+    // Stats/Challenges read a StatsStore built from real persisted sessions.
+    // `Repository.recentSessions` (domain `SessionRecord`s) is bridged into
+    // `StatsSessionRecord`s and kept in sync below.
+    @StateObject private var statsStore = StatsStore(sessions: [])
     @State private var tab: Tab = .home
 
     enum Tab: Hashable { case home, stats, challenges, settings }
@@ -51,6 +50,16 @@ public struct RootTabView: View {
         .tint(LL.Palette.text)
         .preferredColorScheme(.dark)
         .onChange(of: tab) { _, _ in HapticEngine.shared.play(.tick) }
+        .onAppear(perform: syncStatsStore)
+        .onReceive(repository.$recentSessions) { sessions in
+            statsStore.sessions = sessions.map(StatsSessionRecord.init(from:))
+        }
+    }
+
+    /// Bridge whatever the repository already holds into the stats store on
+    /// first appearance (the publisher above then keeps it current).
+    private func syncStatsStore() {
+        statsStore.sessions = repository.recentSessions.map(StatsSessionRecord.init(from:))
     }
 }
 
@@ -76,8 +85,13 @@ struct PlaceholderTab: View {
 public struct HomeView: View {
 
     @EnvironmentObject private var repository: Repository
+    @Environment(\.scenePhase) private var scenePhase
     @State private var showingBreakdown = false
     @State private var route: Route?
+
+    /// UserDefaults flag set by `StartSessionIntent` (Siri / App Shortcuts).
+    /// Consumed here so "Hey Siri, start a session" opens Quick Start.
+    private static let pendingQuickStartKey = "pendingQuickStart"
 
     enum Route: Hashable, Identifiable {
         case modeSelection
@@ -134,6 +148,21 @@ public struct HomeView: View {
                 route = nil
             }
         }
+        .onAppear(perform: consumePendingQuickStart)
+        .onChange(of: scenePhase) { _, newPhase in
+            // Siri may fire the intent while the app is backgrounded; pick up
+            // the flag when we come back to the foreground.
+            if newPhase == .active { consumePendingQuickStart() }
+        }
+    }
+
+    /// If the Siri intent asked for a session, launch Quick Start and clear
+    /// the flag so it fires exactly once.
+    private func consumePendingQuickStart() {
+        let defaults = UserDefaults.standard
+        guard defaults.bool(forKey: Self.pendingQuickStartKey) else { return }
+        defaults.removeObject(forKey: Self.pendingQuickStartKey)
+        route = .quickStart
     }
 
     // MARK: - Header

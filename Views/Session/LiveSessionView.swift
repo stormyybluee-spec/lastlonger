@@ -146,7 +146,11 @@ struct LiveSessionView: View {
                 state: model.angelState,
                 spread: model.angelSpread,
                 pulse: model.angelPulse,
-                onTap: model.angelTapped
+                onTap: model.angelTapped,
+                onHold: {
+                    Haptics.shared.play(.warning)
+                    model.showEndGoalSheet = true
+                }
             )
             .frame(maxHeight: 240)
 

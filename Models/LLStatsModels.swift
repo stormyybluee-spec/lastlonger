@@ -37,6 +37,42 @@ struct StatsSessionRecord: Identifiable, Hashable {
     var minutes: Double { Double(durationSeconds) / 60 }
 }
 
+// MARK: - Domain bridge
+
+extension StatsSessionRecord {
+
+    /// Maps a persisted domain `SessionRecord` (what `Repository` stores) into
+    /// the value type the Stats and Challenges screens compute over.
+    ///
+    /// Fields the domain record does not carry yet map to sensible zeros:
+    /// `staminaScoreAfter` (the score is recomputed from the whole history, not
+    /// snapshotted per session) and `guidedCooldowns` mirrors `pullbacks`, the
+    /// controlled-cooldown count.
+    init(from record: SessionRecord) {
+        let thresholds = record.thresholds
+        let successfulPullbacks = record.pullbacks + record.emergencyPullbacks
+        let rate = thresholds > 0
+            ? min(1.0, Double(successfulPullbacks) / Double(thresholds))
+            : 0
+
+        self.init(
+            id: record.id,
+            date: record.startedAt,
+            durationSeconds: Int(record.duration),
+            thresholdCount: thresholds,
+            bestThresholdStreak: record.bestStreak,
+            pullbackSuccessRate: rate,
+            reachedEndGoal: record.finished,
+            emergencyPullbacks: record.emergencyPullbacks,
+            guidedCooldowns: record.pullbacks,
+            staminaScoreAfter: 0,
+            silentMode: record.silentMode,
+            tags: record.tagIDs,
+            watchVerified: record.watchVerified
+        )
+    }
+}
+
 // MARK: - Range
 
 enum StatsRange: String, CaseIterable, Identifiable {

@@ -232,6 +232,9 @@ struct TappableAngel: View {
     var spread: Double
     var pulse: Double
     let onTap: (Date) -> Void
+    /// Held for 2 seconds → open the End Session sheet. Optional so display-only
+    /// callers can omit it; the live HUD wires it to `model.showEndGoalSheet`.
+    var onHold: (() -> Void)? = nil
 
     var body: some View {
         AngelWidget(state: state, spread: spread, pulse: pulse)
@@ -240,7 +243,15 @@ struct TappableAngel: View {
                 DragGesture(minimumDistance: 0)
                     .onEnded { _ in onTap(Date()) }
             )
+            // A 2-second press ends the session. Kept separate from the tap
+            // gesture above so a quick tempo tap never trips it, and only
+            // attached when a handler is provided.
+            .simultaneousGesture(
+                LongPressGesture(minimumDuration: 2)
+                    .onEnded { _ in onHold?() },
+                including: onHold == nil ? .subviews : .all
+            )
             .accessibilityAddTraits(.isButton)
-            .accessibilityHint("Tap to set tempo. Triple tap for the emergency protocol.")
+            .accessibilityHint("Tap to set tempo. Hold for two seconds to end. Triple tap for the emergency protocol.")
     }
 }
