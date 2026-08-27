@@ -17,6 +17,11 @@ import SwiftUI
 
 public struct RootTabView: View {
     @StateObject private var repository = Repository.shared
+    // Stats/Challenges read a StatsStore. Until a SessionRecord→StatsSessionRecord
+    // bridge exists, this is seeded with sample data so the real screens are
+    // reachable and render; swap `StatsSample.store()` for a store built from
+    // `repository` once the converter lands.
+    @StateObject private var statsStore = StatsSample.store()
     @State private var tab: Tab = .home
 
     enum Tab: Hashable { case home, stats, challenges, settings }
@@ -29,15 +34,16 @@ public struct RootTabView: View {
                 .tabItem { Label("Home", systemImage: "house.fill") }
                 .tag(Tab.home)
 
-            PlaceholderTab(title: "STATS", symbol: "chart.bar.fill")
+            StatsView(store: statsStore)
                 .tabItem { Label("Stats", systemImage: "chart.bar.fill") }
                 .tag(Tab.stats)
 
-            PlaceholderTab(title: "CHALLENGES", symbol: "trophy.fill")
+            ChallengesView(store: statsStore)
                 .tabItem { Label("Challenges", systemImage: "trophy.fill") }
                 .tag(Tab.challenges)
 
-            PlaceholderTab(title: "SETTINGS", symbol: "gearshape.fill")
+            SettingsView()
+                .environment(\.managedObjectContext, PersistenceController.shared.viewContext)
                 .tabItem { Label("Settings", systemImage: "gearshape.fill") }
                 .tag(Tab.settings)
         }
@@ -122,7 +128,11 @@ public struct HomeView: View {
         // Every path that starts a session lands here so the routing is
         // already exercised when the real screens arrive.
         .fullScreenCover(item: $route) { destination in
-            SessionEntryStub(route: destination) { route = nil }
+            // The real, engine-backed flow: mode selection (or a one-tap Focus
+            // session for Quick Start) → countdown → live session → summary.
+            SessionFlowView(entry: destination == .quickStart ? .quick : .select) {
+                route = nil
+            }
         }
     }
 
@@ -605,100 +615,6 @@ struct SegmentedProgress: View {
 
 /// Stands in for mode selection and the session engine. Kept live rather
 /// than commented out so the Home routing is testable today.
-// Session-entry coordinator.
-//
-// Every Home route that starts a session lands here. It runs the real flow:
-//
-//   .modeSelection  → the 8-card ModeSelectionView → countdown → session
-//   everything else → a default Focus plan → countdown → session
-//
-// The full session engine (SessionEngine + LiveSessionView) is Section 2; until
-// it lands, `SessionRunView` stands in as the running-session screen. The
-// gesture instructions live there, on the session screen — never on Mode
-// Selection, which is a grid of mode cards.
-struct SessionEntryStub: View {
-    let route: HomeView.Route
-    let onClose: () -> Void
-
-    @State private var plan: SessionPlan?
-    @State private var running = false
-
-    var body: some View {
-        Group {
-            if running, let plan {
-                SessionRunView(plan: plan, onClose: onClose)
-            } else if let plan {
-                PreSessionCountdownView(
-                    plan: plan,
-                    onBegin: { running = true },
-                    onCancel: onClose
-                )
-            } else if route == .modeSelection {
-                // The real Precision Atlas — eight mode cards.
-                ModeSelectionView { chosen in plan = chosen }
-            } else {
-                // Quick Start / playlist / program: Focus mode, last-used
-                // settings, straight into the countdown.
-                Color.clear
-                    .onAppear {
-                        plan = SessionPlan(
-                            primary: .zen,          // "Focus" — the quick-start default
-                            secondary: nil,
-                            autoSwitch: .manual,
-                            settings: SettingsStore.load()
-                        )
-                    }
-            }
-        }
-    }
-}
-
-/// Placeholder for the running session until the full SessionEngine flow lands.
-/// This is the only screen that shows the tap-gesture legend.
-struct SessionRunView: View {
-    let plan: SessionPlan
-    let onClose: () -> Void
-
-    @State private var angel: AngelVisualState = .idle
-    @State private var streak = 0
-
-    var body: some View {
-        VStack(spacing: 28) {
-            HStack {
-                Button("End", action: onClose)
-                    .font(.llLabel(13))
-                    .foregroundStyle(LL.Palette.textDim)
-                Spacer()
-                Text(plan.displayTitle)
-                    .font(.llData(11))
-                    .foregroundStyle(LL.Palette.circuit)
-            }
-
-            Spacer()
-
-            AngelWidget(state: angel, spread: 0.6)
-                .frame(maxHeight: 200)
-                .contentShape(Rectangle())
-                .onTapGesture {
-                    HapticEngine.shared.play(.threshold)
-                    ToneGenerator.shared.playSuccess(streak: streak)
-                    streak += 1
-                    angel = (angel == .threshold) ? .cooldown : .threshold
-                }
-
-            Text("Tap: hold · Double: recover\nTriple or two fingers: emergency · Hold 2s: end")
-                .font(.llData(11))
-                .foregroundStyle(LL.Palette.rule)
-                .multilineTextAlignment(.center)
-
-            Spacer()
-        }
-        .padding(LL.Metric.gutter)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .llBackground(gridAnchor: .center)
-    }
-}
-
 // MARK: - Button style
 
 struct PressScale: ButtonStyle {

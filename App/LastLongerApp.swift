@@ -45,6 +45,9 @@ struct LastLongerApp: App {
                 .task {
                     audio.configure()
                     await haptics.prepare()
+                    // Schedule "come back and train" reminders per the
+                    // Settings → Milestone Notifications frequency.
+                    MilestoneNotifier.reschedule()
                 }
                 .onChange(of: scenePhase) { _, newPhase in
                     // CoreHaptics tears its engine down on resign; rebuild on return.
@@ -88,7 +91,9 @@ struct RootView: View {
                 .transition(.opacity)
 
             case .home:
-                HomeView()
+                // RootTabView is the real tab bar: Home / Stats / Challenges /
+                // Settings. (HomeView alone showed no tabs.)
+                RootTabView()
                     .transition(.opacity)
             }
         }

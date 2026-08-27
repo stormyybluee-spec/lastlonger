@@ -257,48 +257,74 @@ struct SessionHandoffView: View {
 @MainActor
 struct SessionFlowView: View {
 
-    @StateObject private var coach = VoiceCoach()
-    @StateObject private var binaural = BinauralEngine()
+    /// How the flow is entered: full mode selection, or a one-tap Focus session.
+    enum Entry { case select, quick }
+
+    let entry: Entry
+    let onClose: () -> Void
+
+    @StateObject private var coach: VoiceCoach
+    @StateObject private var binaural: BinauralEngine
     @StateObject private var engine: SessionEngine
+    @StateObject private var liveModel: LiveSessionModel
 
     @State private var stage: Stage = .selecting
 
     private enum Stage: Equatable {
         case selecting
         case countdown(SessionPlan)
-        case handoff
+        case live
     }
 
-    init() {
+    init(entry: Entry = .select, onClose: @escaping () -> Void = {}) {
+        self.entry = entry
+        self.onClose = onClose
+
+        // One object graph, shared by the engine, the live model and the HUD.
         let coach = VoiceCoach()
         let binaural = BinauralEngine()
+        let engine = SessionEngine(coach: coach, binaural: binaural)
         _coach = StateObject(wrappedValue: coach)
         _binaural = StateObject(wrappedValue: binaural)
-        _engine = StateObject(wrappedValue: SessionEngine(coach: coach, binaural: binaural))
+        _engine = StateObject(wrappedValue: engine)
+        _liveModel = StateObject(wrappedValue: LiveSessionModel(engine: engine,
+                                                                coach: coach,
+                                                                binaural: binaural))
     }
 
     var body: some View {
         Group {
             switch stage {
             case .selecting:
-                ModeSelectionView { plan in
-                    stage = .countdown(plan)
+                if entry == .quick {
+                    // Quick Start: Focus mode, last-used settings, straight to
+                    // the countdown — no mode-selection screen.
+                    Color.clear.onAppear {
+                        stage = .countdown(
+                            SessionPlan(primary: .zen,          // "Focus"
+                                        secondary: nil,
+                                        autoSwitch: .manual,
+                                        settings: SettingsStore.load())
+                        )
+                    }
+                } else {
+                    ModeSelectionView { plan in stage = .countdown(plan) }
                 }
 
             case .countdown(let plan):
                 PreSessionCountdownView(
                     plan: plan,
                     onBegin: {
-                        engine.start(plan)
-                        stage = .handoff
+                        liveModel.begin(plan: plan)   // starts the engine + coach
+                        stage = .live
                     },
-                    onCancel: { stage = .selecting }
+                    onCancel: onClose
                 )
 
-            case .handoff:
-                SessionHandoffView(engine: engine) {
-                    // Part B: push the live session HUD here.
-                }
+            case .live:
+                // The real HUD. Its own Done/End path (EndSessionSheet →
+                // dismiss) closes the whole flow.
+                LiveSessionView(model: liveModel)
             }
         }
         .animation(.easeInOut(duration: 0.25), value: stage)
