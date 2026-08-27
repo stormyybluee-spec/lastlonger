@@ -26,6 +26,7 @@ struct LiveSessionView: View {
     // just double every redraw.
     @ObservedObject var model: LiveSessionModel
     @Environment(\.dismiss) private var dismiss
+    @Environment(\.scenePhase) private var scenePhase
 
     private var engine: SessionEngine { model.engine }
 
@@ -51,6 +52,14 @@ struct LiveSessionView: View {
         }
         .fullScreenCover(isPresented: $model.showResetProtocol) {
             ResetProtocolView(model: model) { dismiss() }
+        }
+        .onChange(of: scenePhase) { _, newPhase in
+            // A phone call, Siri, or another app's audio can interrupt and tear
+            // down our session while backgrounded. On return to the foreground,
+            // re-assert the coaching category so TTS + binaural keep going.
+            guard newPhase == .active,
+                  engine.state == .running || engine.state == .paused else { return }
+            AudioSessionController.activateForCoaching()
         }
     }
 
@@ -335,23 +344,25 @@ struct LiveSessionView: View {
                 }
                 .buttonStyle(.plain)
 
-                // Long press, per spec — ending is consequential enough that
-                // it shouldn't be one stray tap away.
-                Text("End")
-                    .font(Typeface.label(10)).uppercaseLabel(tracking: 1.4)
-                    .foregroundStyle(Theme.inkDim)
-                    .frame(maxWidth: .infinity)
-                    .frame(height: 44)
-                    .background(Theme.card)
-                    .clipShape(RoundedRectangle(cornerRadius: Theme.Metric.cardRadius))
-                    .contentShape(Rectangle())
-                    .onLongPressGesture(minimumDuration: 0.6) {
-                        Haptics.shared.play(.warning)
-                        model.showEndGoalSheet = true
-                    }
-                    .accessibilityAddTraits(.isButton)
-                    .accessibilityLabel("End session")
-                    .accessibilityHint("Long press to end")
+                // A tap opens the end sheet; the sheet itself is the
+                // confirmation step, so ending is never a single stray tap that
+                // drops the session outright.
+                Button {
+                    Haptics.shared.play(.warning)
+                    model.showEndGoalSheet = true
+                } label: {
+                    Text("End")
+                        .font(Typeface.label(10)).uppercaseLabel(tracking: 1.4)
+                        .foregroundStyle(Theme.inkDim)
+                        .frame(maxWidth: .infinity)
+                        .frame(height: 44)
+                        .background(Theme.card)
+                        .clipShape(RoundedRectangle(cornerRadius: Theme.Metric.cardRadius))
+                        .contentShape(Rectangle())
+                }
+                .buttonStyle(.plain)
+                .accessibilityLabel("End session")
+                .accessibilityHint("Ends the session and returns to Home")
             }
         }
         .padding(.bottom, 16)
