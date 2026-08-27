@@ -17,6 +17,12 @@ struct PaywallView: View {
     @EnvironmentObject private var haptics: HapticEngine
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
+    #if DEBUG
+    // Shared with RootView via the same key, so the beta bypass can force the
+    // onboarding flow to show even after a previous run marked it complete.
+    @AppStorage("hasCompletedOnboarding") private var hasCompletedOnboarding = false
+    #endif
+
     @ScaledMetric(relativeTo: .largeTitle) private var markSize: CGFloat = 40
 
     var body: some View {
@@ -141,6 +147,9 @@ struct PaywallView: View {
             // while testing. Not compiled into release builds.
             Button("FOUNDER BETA — ENTER WITHOUT PURCHASE") {
                 haptics.play(.selection)
+                // Force onboarding to show after the bypass, even if a prior
+                // run already completed it.
+                hasCompletedOnboarding = false
                 store.enableFounderBeta()
             }
             .buttonStyle(OutlineActionStyle())

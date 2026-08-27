@@ -38,6 +38,7 @@ struct LastLongerApp: App {
                 .environmentObject(store)
                 .environmentObject(audio)
                 .environmentObject(haptics)
+                .environmentObject(Repository.shared)   // HomeView reads this
                 // Dark only. Belt and braces alongside UIUserInterfaceStyle in Info.plist.
                 .preferredColorScheme(.dark)
                 .tint(LL.Palette.primary)
@@ -77,16 +78,17 @@ struct RootView: View {
                 .transition(.opacity)
 
             case .onboarding:
-                // Part B deliverable. Placeholder keeps the router compiling standalone.
-                OnboardingPlaceholderView {
+                OnboardingFlow { persona in
+                    // Persist the chosen coach so AppSettings picks it up
+                    // (same UserDefaults key it loads from).
+                    UserDefaults.standard.set(persona.rawValue, forKey: "ll.persona")
                     hasCompletedOnboarding = true
                     phase = .home
                 }
                 .transition(.opacity)
 
             case .home:
-                // Part C deliverable.
-                HomePlaceholderView()
+                HomeView()
                     .transition(.opacity)
             }
         }
