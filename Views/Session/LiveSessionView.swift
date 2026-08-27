@@ -424,21 +424,6 @@ struct TelemetryChip: View {
     var tint: Color = Theme.data
     var symbol: String?
 
-    /// Foreground-only quick log. A shake is the fastest one-handed action when
-    /// the phone is in view: it logs a Recover if the Angel is already at
-    /// threshold (the natural next move), otherwise a Hold. Background control
-    /// goes through the watch or the Siri commands instead - motion events only
-    /// fire while the app is foreground.
-    private func handleShake() {
-        guard engine.state == .running, !model.emergency.isActive else { return }
-        Haptics.shared.play(.tap)
-        if model.angelState == .threshold {
-            model.logCooldown()
-        } else {
-            model.logThreshold()
-        }
-    }
-
     var body: some View {
         VStack(alignment: .leading, spacing: 3) {
             HStack(spacing: 4) {
@@ -480,21 +465,6 @@ struct ActionButton: View {
 
     @State private var isPressed = false
 
-    /// Foreground-only quick log. A shake is the fastest one-handed action when
-    /// the phone is in view: it logs a Recover if the Angel is already at
-    /// threshold (the natural next move), otherwise a Hold. Background control
-    /// goes through the watch or the Siri commands instead - motion events only
-    /// fire while the app is foreground.
-    private func handleShake() {
-        guard engine.state == .running, !model.emergency.isActive else { return }
-        Haptics.shared.play(.tap)
-        if model.angelState == .threshold {
-            model.logCooldown()
-        } else {
-            model.logThreshold()
-        }
-    }
-
     var body: some View {
         Button(action: action) {
             VStack(spacing: 6) {
@@ -524,21 +494,6 @@ struct ActionButton: View {
 struct EmergencyLayer: View {
 
     @ObservedObject var protocolState: EmergencyProtocol
-
-    /// Foreground-only quick log. A shake is the fastest one-handed action when
-    /// the phone is in view: it logs a Recover if the Angel is already at
-    /// threshold (the natural next move), otherwise a Hold. Background control
-    /// goes through the watch or the Siri commands instead - motion events only
-    /// fire while the app is foreground.
-    private func handleShake() {
-        guard engine.state == .running, !model.emergency.isActive else { return }
-        Haptics.shared.play(.tap)
-        if model.angelState == .threshold {
-            model.logCooldown()
-        } else {
-            model.logThreshold()
-        }
-    }
 
     var body: some View {
         ZStack {
