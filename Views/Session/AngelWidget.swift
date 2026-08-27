@@ -6,6 +6,12 @@
 //  tempo taps land on it, the triple-tap emergency comes from it, the breath
 //  pacer animates its wings, and the emergency freezes them open.
 //
+//  TODO: Replace the Canvas sprite below with the custom AngelFigure asset
+//  from Assets.xcassets once it is ready. The sprite is NOT an SF Symbol -
+//  swapping it means replacing `sprite(spread:)` and the Canvas with an
+//  Image("AngelFigure"), keeping the same state/spread/pulse inputs and the
+//  glow modifiers so every caller keeps working unchanged.
+//
 //  It is drawn as genuine pixel art — a 25×21 cell grid rasterised into a
 //  Canvas — rather than as a smooth vector shape with a pixel filter over
 //  it. That matters for the "Neural Kaleidoscope" direction: real pixel art
@@ -42,6 +48,65 @@ enum AngelVisualState: Equatable {
 
     /// Emergency freezes the wings fully open and shakes the whole sprite.
     var isFrozen: Bool { self == .emergency }
+
+    // MARK: Glow
+    //
+    // The bloom around the sprite is the fastest read on the screen - the user
+    // is not always looking directly at the phone, and colour plus pulse rate
+    // carries the state from the corner of the eye. Colour follows the sprite
+    // tint except during cooldown, which glows blue to read as "rest" rather
+    // than as the green "safe" of an active phase.
+
+    var glowColor: Color {
+        switch self {
+        case .idle:              return Theme.inert
+        case .active(let tint):  return tint
+        case .threshold:         return Theme.edge
+        case .cooldown:          return Theme.data
+        case .emergency:         return Theme.edge
+        }
+    }
+
+    /// Blur radius before the pulse multiplier.
+    var glowRadius: CGFloat {
+        switch self {
+        case .idle:      return 4
+        case .active:    return 14
+        case .threshold: return 22
+        case .cooldown:  return 12
+        case .emergency: return 30
+        }
+    }
+
+    var glowOpacity: Double {
+        switch self {
+        case .idle:      return 0.22
+        case .active:    return 0.70
+        case .threshold: return 0.85
+        case .cooldown:  return 0.50
+        case .emergency: return 1.00
+        }
+    }
+
+    /// Seconds for one breath of the pulse. 0 holds the glow steady.
+    var glowPeriod: Double {
+        switch self {
+        case .idle:      return 0
+        case .active:    return 2.2
+        case .threshold: return 0.8
+        case .cooldown:  return 3.0
+        case .emergency: return 0.45
+        }
+    }
+
+    /// How far the radius swings, as a fraction of `glowRadius`.
+    var glowDepth: Double {
+        switch self {
+        case .emergency: return 0.80
+        case .threshold: return 0.55
+        default:         return 0.30
+        }
+    }
 }
 
 // MARK: - Widget
@@ -63,6 +128,10 @@ struct AngelWidget: View {
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @State private var shakeOffset: CGSize = .zero
     @State private var shakeTimer: Timer?
+
+    /// 0...1, driven by a repeating animation whose period comes from the
+    /// state. Reduce Motion pins it at 0 and the glow sits steady.
+    @State private var glowPulse: Double = 0
 
     // Sprite grid: 25 wide, 21 tall.
     private let gridWidth = 25
@@ -90,10 +159,21 @@ struct AngelWidget: View {
             }
         }
         .aspectRatio(CGFloat(gridWidth) / CGFloat(gridHeight), contentMode: .fit)
+        // Two stacked shadows: a tight core and a wide bloom. Both are driven
+        // by the same pulse, so the whole halo breathes together. When the
+        // session ends the state falls back to `.idle`, whose radius and
+        // opacity are near zero - that is the "fades out" case.
+        .shadow(color: state.glowColor.opacity(state.glowOpacity),
+                radius: currentGlowRadius)
+        .shadow(color: state.glowColor.opacity(state.glowOpacity * 0.55),
+                radius: currentGlowRadius * 1.9)
+        .animation(.easeInOut(duration: 0.6), value: state)
         .offset(shakeOffset)
         .animation(.easeInOut(duration: 0.28), value: spread)
+        .onAppear(perform: restartGlow)
         .onChange(of: state) { _, newValue in
             newValue == .emergency ? startShake() : stopShake()
+            restartGlow()
         }
         .onDisappear(perform: stopShake)
         .accessibilityElement()
@@ -196,6 +276,23 @@ struct AngelWidget: View {
         }
 
         return cells.filter { $0.x >= 0 && $0.x < gridWidth && $0.y >= 0 && $0.y < gridHeight }
+    }
+
+    // MARK: - Glow
+
+    private var currentGlowRadius: CGFloat {
+        state.glowRadius * CGFloat(1 + glowPulse * state.glowDepth)
+    }
+
+    /// Restart the breathing animation at the new state's tempo. Called on
+    /// appear and on every state change so the pulse rate always matches what
+    /// the Angel is currently doing.
+    private func restartGlow() {
+        withAnimation(.linear(duration: 0)) { glowPulse = 0 }
+        guard !reduceMotion, state.glowPeriod > 0 else { return }
+        withAnimation(.easeInOut(duration: state.glowPeriod).repeatForever(autoreverses: true)) {
+            glowPulse = 1
+        }
     }
 
     // MARK: - Shake

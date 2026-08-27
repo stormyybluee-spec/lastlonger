@@ -87,6 +87,7 @@ public struct HomeView: View {
     @EnvironmentObject private var repository: Repository
     @Environment(\.scenePhase) private var scenePhase
     @State private var showingBreakdown = false
+    @State private var showingProgramPicker = false
     @State private var route: Route?
 
     /// UserDefaults flag set by `StartSessionIntent` (Siri / App Shortcuts).
@@ -112,6 +113,11 @@ public struct HomeView: View {
 
                 if let enrollment = repository.enrollment {
                     ProgramCard(enrollment: enrollment) { route = .programSession }
+                } else {
+                    ProgramEnrollCard {
+                        HapticEngine.shared.play(.tick)
+                        showingProgramPicker = true
+                    }
                 }
 
                 if !repository.playlists.isEmpty {
@@ -137,6 +143,9 @@ public struct HomeView: View {
             ScoreBreakdownSheet(score: repository.score)
                 .presentationDetents([.medium])
                 .presentationBackground(LL.Palette.void)
+        }
+        .sheet(isPresented: $showingProgramPicker) {
+            ProgramPickerSheet()
         }
         // Mode selection, the countdown and the session engine are Section 2.
         // Every path that starts a session lands here so the routing is
@@ -516,6 +525,13 @@ struct ProgramCard: View {
                     .foregroundStyle(LL.Palette.circuit)
             }
 
+            // What the program is actually for. One line - enough to remind
+            // the user why they enrolled without crowding today's task.
+            Text(enrollment.program.summary)
+                .font(.system(size: 12))
+                .foregroundStyle(LL.Palette.textDim)
+                .fixedSize(horizontal: false, vertical: true)
+
             SegmentedProgress(fraction: enrollment.progress, tint: LL.Palette.circuit)
 
             Text(enrollment.todaysTask.label)
@@ -534,6 +550,111 @@ struct ProgramCard: View {
             .buttonStyle(PressScale())
         }
         .llCard()
+    }
+}
+
+/// Shown in place of `ProgramCard` when nothing is enrolled. Tapping opens the
+/// picker - without it the Home screen simply hid programs from anyone who had
+/// never found the feature.
+struct ProgramEnrollCard: View {
+    let onTap: () -> Void
+
+    var body: some View {
+        Button(action: onTap) {
+            HStack(spacing: 12) {
+                Image(systemName: "calendar.badge.plus")
+                    .font(.system(size: 19, weight: .semibold))
+                    .foregroundStyle(LL.Palette.circuit)
+
+                VStack(alignment: .leading, spacing: 3) {
+                    Text("TRAINING PROGRAM")
+                        .font(.llLabel(12))
+                        .kerning(1.6)
+                        .foregroundStyle(LL.Palette.text)
+                    Text("No program enrolled - tap to start one.")
+                        .font(.system(size: 12))
+                        .foregroundStyle(LL.Palette.textDim)
+                }
+
+                Spacer(minLength: 8)
+
+                Image(systemName: "chevron.right")
+                    .font(.system(size: 12, weight: .bold))
+                    .foregroundStyle(LL.Palette.rule)
+            }
+            .frame(maxWidth: .infinity)
+            .llCard()
+            .contentShape(Rectangle())
+        }
+        .buttonStyle(PressScale())
+        .accessibilityLabel("Training program")
+        .accessibilityHint("No program enrolled. Opens the list of programs.")
+    }
+}
+
+/// Enrolment picker. Each row is the program's name, length and what it is for,
+/// so the choice is made on substance rather than on the title alone.
+@MainActor
+struct ProgramPickerSheet: View {
+
+    @Environment(\.dismiss) private var dismiss
+
+    var body: some View {
+        ZStack {
+            LL.Palette.void.ignoresSafeArea()
+
+            ScrollView {
+                VStack(alignment: .leading, spacing: 12) {
+                    Text("CHOOSE A PROGRAM")
+                        .font(.llLabel(13))
+                        .kerning(1.8)
+                        .foregroundStyle(LL.Palette.text)
+                        .padding(.bottom, 2)
+
+                    ForEach(RegimenProgram.allCases) { program in
+                        Button {
+                            enroll(program)
+                        } label: {
+                            VStack(alignment: .leading, spacing: 6) {
+                                HStack {
+                                    Text(program.title)
+                                        .font(.llLabel(12))
+                                        .kerning(1.4)
+                                        .foregroundStyle(LL.Palette.text)
+                                    Spacer()
+                                    Text("\(program.totalDays) DAYS")
+                                        .font(.llData(11))
+                                        .foregroundStyle(LL.Palette.circuit)
+                                }
+                                Text(program.summary)
+                                    .font(.system(size: 12))
+                                    .foregroundStyle(LL.Palette.textDim)
+                                    .multilineTextAlignment(.leading)
+                                    .fixedSize(horizontal: false, vertical: true)
+                            }
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .llCard()
+                            .contentShape(Rectangle())
+                        }
+                        .buttonStyle(PressScale())
+                    }
+
+                    Text("One program at a time. Enrolling replaces any program already running.")
+                        .font(.system(size: 11))
+                        .foregroundStyle(LL.Palette.rule)
+                        .padding(.top, 4)
+                }
+                .padding(.horizontal, LL.Metric.gutter)
+                .padding(.vertical, 22)
+            }
+        }
+        .preferredColorScheme(.dark)
+    }
+
+    private func enroll(_ program: RegimenProgram) {
+        HapticEngine.shared.play(.threshold)
+        Repository.shared.enroll(in: program)
+        dismiss()
     }
 }
 

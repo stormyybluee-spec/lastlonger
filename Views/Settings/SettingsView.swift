@@ -208,6 +208,9 @@ struct SettingsView: View {
 
     // MARK: - Personalisation (not available in the mode card)
 
+    // The Angel Skin selector lived here and is removed: the skins did not
+    // change anything on screen yet. `AppSettings.angelSkin` and the AngelSkin
+    // unlock rules are left intact for when the skins are real.
     private var personalisationSection: some View {
         LLSection(title: "Personalisation") {
             NavigationLink {
@@ -218,11 +221,6 @@ struct SettingsView: View {
                       showsChevron: true)
             }
             .buttonStyle(.plain)
-            LLDivider()
-            menuRow(symbol: "figure.wave", title: "Angel Skin",
-                    selection: $settings.angelSkin,
-                    options: AngelSkin.allCases,
-                    label: { $0.title.capitalized })
         }
     }
 

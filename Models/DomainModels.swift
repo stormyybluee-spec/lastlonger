@@ -535,6 +535,20 @@ public enum RegimenProgram: String, Codable, CaseIterable, Sendable, Identifiabl
         }
     }
 
+    /// One line of context for the Home card and the enrolment picker. Names
+    /// the modes the program actually schedules in `task(forDay:)`, so the
+    /// description cannot drift from what the program does.
+    public var summary: String {
+        switch self {
+        case .beginner:
+            return "Build control from the ground up. Start with Free Hold, then progress to Beginner 5-3-2, Threshold Ladder and Random Hold."
+        case .gripRecovery:
+            return "Retrain sensitivity. Focus on touch quality and grip pressure."
+        case .anxietyReset:
+            return "Reset and rebuild. Focus on breathing and relaxation."
+        }
+    }
+
     /// Day is 1-based.
     public func task(forDay day: Int) -> RegimenTask {
         let clamped = max(1, min(day, totalDays))
