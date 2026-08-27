@@ -403,7 +403,11 @@ struct OutlineActionStyle: ButtonStyle {
 // these; they are restored verbatim here. `llLabelStyle` is NOT re-declared —
 // DesignSystem.swift already vends it.
 
-public extension Font {
+// `internal`, not `public`: `llCard`'s default argument references
+// `LL.Metric.cardPadding`, and `enum LL` is internal — a public function cannot
+// expose an internal type in a default value. Internal is correct for a single
+// app module anyway.
+extension Font {
     /// Small uppercase label. Tight, wide-tracked, deliberately quiet.
     static func llLabel(_ size: CGFloat = 11) -> Font {
         .system(size: size, weight: .semibold, design: .default)
@@ -420,7 +424,7 @@ public extension Font {
     }
 }
 
-public extension View {
+extension View {
     /// The standard card surface.
     func llCard(padding: CGFloat = LL.Metric.cardPadding) -> some View {
         self.padding(padding)
