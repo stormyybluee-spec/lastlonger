@@ -22,7 +22,12 @@ struct StatsView: View {
                 durationGraph
                 pullbackGraph
                 metrics
-                correlation
+                // CUT for v1 (App Store compliance): the Stack Correlation
+                // section surfaces substance→performance claims (e.g. a tag's
+                // effect on session length), which read as supplement-efficacy
+                // claims. Deferred per the compliance checklist; the `correlation`
+                // view still exists but is not shown.
+                // correlation
                 insights
                 Color.clear.frame(height: 40)
             }

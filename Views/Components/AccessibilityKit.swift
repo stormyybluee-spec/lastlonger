@@ -180,7 +180,7 @@ enum WidgetAccessibility {
         "\(state). \(holds) consecutive \(holds == 1 ? "hold" : "holds")."
     }
 
-    static let hint = "Use the rotor actions to log a hold, back off, or end the session."
+    static let hint = "Use the rotor actions to log a hold, recover, or end the session."
 
     struct Actions {
         var logHold: () -> Void
@@ -195,7 +195,7 @@ extension View {
     func widgetAccessibilityActions(_ actions: WidgetAccessibility.Actions) -> some View {
         self
             .accessibilityAction(named: Text("Log hold at threshold"), actions.logHold)
-            .accessibilityAction(named: Text("Log back off"), actions.backOff)
+            .accessibilityAction(named: Text("Log recover"), actions.backOff)
             .accessibilityAction(named: Text("Emergency protocol"), actions.emergency)
             .accessibilityAction(named: Text("End session"), actions.endSession)
     }

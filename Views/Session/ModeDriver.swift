@@ -239,7 +239,7 @@ final class ThresholdLadderDriver: ModeDriver {
     func begin() -> SessionDirective? {
         rung = 0; isHolding = true; segmentStart = 0
         phase = .hold
-        return .spoken(.hold, "Threshold Ladder. Rung one. Thirty seconds. To the edge and hold.",
+        return .spoken(.hold, "Threshold Ladder. Rung one. Thirty seconds. To the threshold and hold.",
                        haptic: .thresholdHold)
     }
 
@@ -268,7 +268,7 @@ final class ThresholdLadderDriver: ModeDriver {
         let seconds = Int(rungs[rung])
         let spoken = seconds >= 60 ? "\(seconds / 60) minute" + (seconds == 60 ? "" : "s")
                                    : "\(seconds) seconds"
-        return .spoken(.hold, "Rung \(rung + 1). \(spoken). Back to the edge.",
+        return .spoken(.hold, "Rung \(rung + 1). \(spoken). Back to the threshold.",
                        haptic: .thresholdHold)
     }
 }
@@ -287,7 +287,7 @@ final class RandomEdgeDriver: ModeDriver {
     func begin() -> SessionDirective? {
         nextEventAt = TimeInterval.random(in: 45...120)
         phase = .free
-        return .spoken(.free, "Random Edge. Prompts arrive without warning. Stay ready.",
+        return .spoken(.free, "Random Hold. Prompts arrive without warning. Stay ready.",
                        haptic: .phaseChange)
     }
 

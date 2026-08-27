@@ -100,12 +100,12 @@ enum PhraseLibrary {
             .thresholdPrompt: [
                 "Take it to the line. Not past it.",
                 "Close. Closer. Hold there.",
-                "Right to the edge. Stop.",
+                "Right to the threshold. Stop.",
                 "That's the line. Do not cross it.",
                 "Approach. Hold. Do not rush this."
             ],
             .cooldown: [
-                "Back off. All the way off.",
+                "Recover. All the way down.",
                 "Hands still. Breathe out.",
                 "Down. Recover. That's an order.",
                 "Reset. Let it drop.",
@@ -190,7 +190,7 @@ enum PhraseLibrary {
                 "Breathe in through the nose. Beginning now."
             ],
             .thresholdPrompt: [
-                "Move toward the edge, and rest there.",
+                "Move toward the threshold, and rest there.",
                 "Approach slowly. Notice the moment before.",
                 "Come close. Stay curious, not urgent.",
                 "Find the threshold. Breathe into it.",
@@ -282,7 +282,7 @@ enum PhraseLibrary {
                 "Listen carefully. We begin now."
             ],
             .thresholdPrompt: [
-                "Take it to the edge. Stop where I tell you.",
+                "Take it to the threshold. Stop where I tell you.",
                 "Closer. Closer. That's far enough.",
                 "You go until I say stop. Go.",
                 "Right there. You hold that for me.",
@@ -314,7 +314,7 @@ enum PhraseLibrary {
             ],
             .warning: [
                 "Slow down. Now.",
-                "Your heart rate is too high. Back off.",
+                "Your heart rate is too high. Recover.",
                 "Stop pushing. Breathe.",
                 "You're going too hard. Ease it."
             ],
@@ -374,7 +374,7 @@ enum PhraseLibrary {
             ],
             .thresholdPrompt: [
                 "Drifting closer … closer … and stopping there.",
-                "Toward the edge … slowly … and holding.",
+                "Toward the threshold … slowly … and holding.",
                 "Notice how close you are … and stay.",
                 "Right at the boundary … suspended there.",
                 "Approaching … and pausing … just before."

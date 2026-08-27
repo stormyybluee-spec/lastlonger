@@ -26,11 +26,11 @@ enum TrainingMode: String, CaseIterable, Identifiable, Codable {
         case .freeThreshold:      return "Free Threshold"
         case .beginner532:        return "Beginner 5-3-2"
         case .thresholdLadder:    return "Threshold Ladder"
-        case .randomThreshold:    return "Random Threshold"
+        case .randomThreshold:    return "Random Hold"
         case .disciplineDrill:    return "Discipline Drill"
         case .gripPressureRepair: return "Grip Pressure Repair"
-        case .releaseMode:        return "Release Mode"
-        case .zen:                return "Zen Mode"
+        case .releaseMode:        return "Reset"
+        case .zen:                return "Focus"
         }
     }
 

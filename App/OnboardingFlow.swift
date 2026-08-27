@@ -26,21 +26,21 @@ struct OnboardingPage: Identifiable {
         .init(
             id: 0,
             symbol: "figure.run",
-            headline: "You finish too fast.",
-            subtext: "You know it. She knows it. Now fix it.",
+            headline: "Control slips first. Fix the timing.",
+            subtext: "Train your response. Build your stamina.",
             cta: "NEXT"
         ),
         .init(
             id: 1,
             symbol: "bolt.fill",
-            headline: "External media is your gym.",
-            subtext: "Every session is a rep. Train while you watch. No one knows.",
+            headline: "Your session is the gym.",
+            subtext: "Every session is a rep. Train while you focus.",
             cta: "NEXT"
         ),
         .init(
             id: 2,
             symbol: "mic.slash",
-            headline: "Zero recordings. Zero servers. Zero evidence.",
+            headline: "Zero recordings. Zero servers.",
             subtext: "Everything stays on this phone. Forever.",
             cta: "NEXT"
         ),

@@ -6,7 +6,7 @@
 //
 //  A batch delete leaves the SQLite file, its -wal journal and its -shm shared
 //  memory index on disk with recoverable pages inside them. For an app whose
-//  entire pitch is "zero evidence", that is not good enough. This destroys the
+//  entire pitch is "zero recordings", that is not good enough. This destroys the
 //  store outright and rebuilds an empty one.
 //
 

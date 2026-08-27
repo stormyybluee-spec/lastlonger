@@ -78,7 +78,7 @@ public enum CoachPersona: String, Codable, CaseIterable, Sendable, Identifiable 
     /// One short line per persona, used for tap-to-preview in onboarding.
     public var previewLine: String {
         switch self {
-        case .drillSergeant:  return "Back off. Now. Hands still."
+        case .drillSergeant:  return "Recover. Now. Hands still."
         case .calmYogi:       return "Ease down. Long breath out."
         case .dominant:       return "Slower. You go when I say."
         case .hypnotherapist: return "Heavy... slow... let it settle."

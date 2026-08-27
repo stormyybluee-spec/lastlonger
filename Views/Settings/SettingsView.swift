@@ -41,8 +41,12 @@ struct SettingsView: View {
                     watchSection
                     partnerSyncSection
 
-                    // 6 — PART E-1
-                    trainingGearSection
+                    // 6 — PART E-1 — CUT for v1 (App Store compliance).
+                    // Affiliate "Training Gear" links (incl. a sex-toy row) are
+                    // deferred to Phase 2 per the compliance checklist ("No sex
+                    // toy affiliate links in v1"). The section view still exists
+                    // but is no longer reachable by a reviewer.
+                    // trainingGearSection
 
                     // 8 — PART E-2
                     privacySection

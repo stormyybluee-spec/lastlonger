@@ -217,7 +217,7 @@ struct SessionHandoffView: View {
                     .font(Typeface.pixel(20))
                     .foregroundStyle(Theme.ink)
 
-                Text("Swipe up to leave the app. The coach keeps going, and the widget follows you to the Lock Screen.")
+                Text("Your session is running. The voice coach and haptics continue while the screen is off.")
                     .font(Typeface.body(12))
                     .foregroundStyle(Theme.inkDim)
                     .multilineTextAlignment(.center)

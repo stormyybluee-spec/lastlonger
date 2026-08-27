@@ -50,14 +50,14 @@ enum SessionMode: String, CaseIterable, Codable, Identifiable {
 
     var name: String {
         switch self {
-        case .freeEdge:           return "Free Edge"
+        case .freeEdge:           return "Free Hold"
         case .beginner532:        return "Beginner 5-3-2"
         case .thresholdLadder:    return "Threshold Ladder"
-        case .randomEdge:         return "Random Edge"
+        case .randomEdge:         return "Random Hold"
         case .disciplineDrill:    return "Discipline Drill"
         case .gripPressureRepair: return "Grip Pressure Repair"
-        case .release:            return "Release Mode"
-        case .zen:                return "Zen Mode"
+        case .release:            return "Reset"
+        case .zen:                return "Focus"
         }
     }
 
@@ -142,14 +142,14 @@ enum SessionMode: String, CaseIterable, Codable, Identifiable {
     /// render this, not `name`.
     var title: String {
         switch self {
-        case .freeEdge:           return "FREE EDGE"
+        case .freeEdge:           return "FREE HOLD"
         case .beginner532:        return "5-3-2"
         case .thresholdLadder:    return "LADDER"
-        case .randomEdge:         return "RANDOM"
+        case .randomEdge:         return "RANDOM HOLD"
         case .disciplineDrill:    return "DISCIPLINE"
         case .gripPressureRepair: return "GRIP REPAIR"
-        case .release:            return "PRESSURE RELEASE"
-        case .zen:                return "ZEN"
+        case .release:            return "RESET"
+        case .zen:                return "FOCUS"
         }
     }
 

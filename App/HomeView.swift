@@ -195,7 +195,7 @@ public struct HomeView: View {
                         .font(.llLabel(13))
                         .kerning(1.8)
                         .foregroundStyle(LL.Palette.text)
-                    Text("Free Edge · Last-used settings")
+                    Text("Free Hold · Last-used settings")
                         .font(.system(size: 12, weight: .regular))
                         .foregroundStyle(LL.Palette.textDim)
                 }
@@ -648,7 +648,7 @@ struct SessionEntryStub: View {
                     angel = (angel == .threshold) ? .cooldown : .threshold
                 }
 
-            Text("Tap: threshold · Double: back off\nTriple or two fingers: emergency · Hold 2s: end")
+            Text("Tap: hold · Double: recover\nTriple or two fingers: emergency · Hold 2s: end")
                 .font(.llData(11))
                 .foregroundStyle(LL.Palette.rule)
                 .multilineTextAlignment(.center)

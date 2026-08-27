@@ -287,7 +287,7 @@ enum DataExportManager {
             .appendingPathComponent("Exports", isDirectory: true)
     }
 
-    /// Deliberately neutral filename. The app's promise is "zero evidence" — an
+    /// Deliberately neutral filename. The app's promise is "zero recordings" — an
     /// export that lands in Files or a shared album should not announce itself.
     private static func filename(for format: Format) -> String {
         let stamp = DateFormatter()
