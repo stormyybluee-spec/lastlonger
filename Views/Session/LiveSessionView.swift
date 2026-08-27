@@ -18,6 +18,7 @@
 
 import SwiftUI
 import AVFoundation
+import UIKit
 
 @MainActor
 struct LiveSessionView: View {
@@ -57,6 +58,21 @@ struct LiveSessionView: View {
         }
     }
 
+    /// Foreground-only quick log. A shake is the fastest one-handed action when
+    /// the phone is in view: it logs a Recover if the Angel is already at
+    /// threshold (the natural next move), otherwise a Hold. Background control
+    /// goes through the watch or the Siri commands instead - motion events only
+    /// fire while the app is foreground.
+    private func handleShake() {
+        guard engine.state == .running, !model.emergency.isActive else { return }
+        Haptics.shared.play(.tap)
+        if model.angelState == .threshold {
+            model.logCooldown()
+        } else {
+            model.logThreshold()
+        }
+    }
+
     var body: some View {
         ZStack {
             sessionLayer
@@ -80,6 +96,7 @@ struct LiveSessionView: View {
         .fullScreenCover(isPresented: $model.showResetProtocol) {
             ResetProtocolView(model: model) { dismiss() }
         }
+        .background(ShakeDetector(onShake: handleShake))
         .onAppear(perform: configureAudioSession)
         .onChange(of: scenePhase) { _, newPhase in
             // A phone call, Siri, or another app's audio can interrupt and tear
@@ -407,6 +424,21 @@ struct TelemetryChip: View {
     var tint: Color = Theme.data
     var symbol: String?
 
+    /// Foreground-only quick log. A shake is the fastest one-handed action when
+    /// the phone is in view: it logs a Recover if the Angel is already at
+    /// threshold (the natural next move), otherwise a Hold. Background control
+    /// goes through the watch or the Siri commands instead - motion events only
+    /// fire while the app is foreground.
+    private func handleShake() {
+        guard engine.state == .running, !model.emergency.isActive else { return }
+        Haptics.shared.play(.tap)
+        if model.angelState == .threshold {
+            model.logCooldown()
+        } else {
+            model.logThreshold()
+        }
+    }
+
     var body: some View {
         VStack(alignment: .leading, spacing: 3) {
             HStack(spacing: 4) {
@@ -448,6 +480,21 @@ struct ActionButton: View {
 
     @State private var isPressed = false
 
+    /// Foreground-only quick log. A shake is the fastest one-handed action when
+    /// the phone is in view: it logs a Recover if the Angel is already at
+    /// threshold (the natural next move), otherwise a Hold. Background control
+    /// goes through the watch or the Siri commands instead - motion events only
+    /// fire while the app is foreground.
+    private func handleShake() {
+        guard engine.state == .running, !model.emergency.isActive else { return }
+        Haptics.shared.play(.tap)
+        if model.angelState == .threshold {
+            model.logCooldown()
+        } else {
+            model.logThreshold()
+        }
+    }
+
     var body: some View {
         Button(action: action) {
             VStack(spacing: 6) {
@@ -477,6 +524,21 @@ struct ActionButton: View {
 struct EmergencyLayer: View {
 
     @ObservedObject var protocolState: EmergencyProtocol
+
+    /// Foreground-only quick log. A shake is the fastest one-handed action when
+    /// the phone is in view: it logs a Recover if the Angel is already at
+    /// threshold (the natural next move), otherwise a Hold. Background control
+    /// goes through the watch or the Siri commands instead - motion events only
+    /// fire while the app is foreground.
+    private func handleShake() {
+        guard engine.state == .running, !model.emergency.isActive else { return }
+        Haptics.shared.play(.tap)
+        if model.angelState == .threshold {
+            model.logCooldown()
+        } else {
+            model.logThreshold()
+        }
+    }
 
     var body: some View {
         ZStack {
@@ -534,6 +596,41 @@ struct EmergencyLayer: View {
                 .padding(.bottom, 28)
             }
             .padding(.horizontal, 24)
+        }
+    }
+}
+
+// MARK: - Shake detector
+
+/// Catches the device shake by becoming first responder and implementing
+/// `motionEnded`. Self-contained so no UIWindow subclass or AppDelegate hook is
+/// needed. Only fires while the app is in the foreground, which is exactly the
+/// intended scope for the shake shortcut.
+struct ShakeDetector: UIViewControllerRepresentable {
+    let onShake: () -> Void
+
+    func makeUIViewController(context: Context) -> ShakeViewController {
+        let controller = ShakeViewController()
+        controller.onShake = onShake
+        return controller
+    }
+
+    func updateUIViewController(_ controller: ShakeViewController, context: Context) {
+        controller.onShake = onShake
+    }
+
+    final class ShakeViewController: UIViewController {
+        var onShake: (() -> Void)?
+
+        override var canBecomeFirstResponder: Bool { true }
+
+        override func viewDidAppear(_ animated: Bool) {
+            super.viewDidAppear(animated)
+            becomeFirstResponder()
+        }
+
+        override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+            if motion == .motionShake { onShake?() }
         }
     }
 }

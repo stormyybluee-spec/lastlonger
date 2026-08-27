@@ -55,6 +55,7 @@ final class LiveSessionModel: ObservableObject {
 
     private var heartRateSamples: [Int] = []
     private var lastEmergencyFromWatch = false
+    private var commandObserver: NSObjectProtocol?
 
     // MARK: - Init
 
@@ -72,6 +73,35 @@ final class LiveSessionModel: ObservableObject {
         wireEmergency()
         wireWatch()
         observeEngine()
+        observeRemoteCommands()
+    }
+
+    deinit {
+        if let commandObserver { NotificationCenter.default.removeObserver(commandObserver) }
+    }
+
+    // MARK: - Remote commands (Siri / Live Activity)
+
+    /// Hold / Recover / Emergency / End posted by the App Intents in
+    /// FocusModeController (voice) or the Live Activity buttons. All arrive on
+    /// the same notification so the session can be driven with the screen off.
+    private func observeRemoteCommands() {
+        commandObserver = NotificationCenter.default.addObserver(
+            forName: .llSessionCommand, object: nil, queue: .main
+        ) { [weak self] note in
+            guard let raw = note.object as? String,
+                  let command = SessionCommand(rawValue: raw) else { return }
+            MainActor.assumeIsolated { self?.handleRemoteCommand(command) }
+        }
+    }
+
+    private func handleRemoteCommand(_ command: SessionCommand) {
+        switch command {
+        case .hold:      logThreshold()
+        case .recover:   logCooldown()
+        case .emergency: triggerEmergency(fromWatch: false)
+        case .end:       showEndGoalSheet = true
+        }
     }
 
     // MARK: - Lifecycle

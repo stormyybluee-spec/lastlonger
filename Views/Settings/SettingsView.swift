@@ -587,19 +587,23 @@ struct SettingsInfoSheet: View {
 
 // MARK: - Siri instructions
 
-/// Honest, step-by-step setup for the one App Shortcut the app actually ships:
-/// "Start a session". Voice logging *inside* a running session (log hold, etc.)
-/// is not available yet and is deliberately not promised here.
+/// The voice commands the app registers: Start a session, plus the four in-
+/// session commands (Log a hold / recover, Emergency, End). Each is a real
+/// AppIntent (see FocusModeController), so these phrases actually work and also
+/// show up as actions in the Shortcuts app for custom phrases.
 struct SiriInstructionsSheet: View {
 
     let onOpenShortcuts: () -> Void
     @Environment(\.dismiss) private var dismiss
 
-    private let steps: [(String, String)] = [
-        ("1", "The “Start a session” shortcut is added automatically when you install the app - no setup needed."),
-        ("2", "Say “Hey Siri, start a session” to open LAST LONGER and jump straight into Quick Start."),
-        ("3", "To rename the phrase, open the Shortcuts app, find LAST LONGER under App Shortcuts, and edit it there."),
-        ("4", "Prefer a Home Screen or Lock Screen button? Add the shortcut as a widget from the Shortcuts app.")
+    /// The in-session voice commands, exactly as the app registers them. Each
+    /// also appears as an action in the Shortcuts app, where a shorter custom
+    /// phrase (e.g. just "log hold") can be assigned.
+    private let commands: [(phrase: String, does: String)] = [
+        ("“Hey Siri, log a hold in LAST LONGER”",     "Logs a Hold"),
+        ("“Hey Siri, log a recover in LAST LONGER”",  "Logs a Recover"),
+        ("“Hey Siri, emergency in LAST LONGER”",      "Triggers Emergency Protocol"),
+        ("“Hey Siri, end session in LAST LONGER”",    "Ends the session")
     ]
 
     var body: some View {
@@ -616,25 +620,31 @@ struct SiriInstructionsSheet: View {
                             .llLabelStyle(14, color: LLColor.text)
                     }
 
-                    VStack(alignment: .leading, spacing: 14) {
-                        ForEach(steps, id: \.0) { number, text in
-                            HStack(alignment: .top, spacing: 12) {
-                                Text(number)
+                    Text("Control a running session by voice, with the phone away. Say:")
+                        .font(LLFont.mono(11))
+                        .foregroundStyle(LLColor.textDim)
+                        .fixedSize(horizontal: false, vertical: true)
+
+                    VStack(alignment: .leading, spacing: 12) {
+                        ForEach(commands, id: \.phrase) { command in
+                            VStack(alignment: .leading, spacing: 3) {
+                                Text(command.phrase)
                                     .font(LLFont.mono(12, weight: .bold))
-                                    .foregroundStyle(LLColor.background)
-                                    .frame(width: 22, height: 22)
-                                    .background(LLColor.secondary)
-                                    .clipShape(Circle())
-                                Text(text)
-                                    .font(LLFont.mono(12))
-                                    .foregroundStyle(LLColor.textDim)
-                                    .lineSpacing(3)
+                                    .foregroundStyle(LLColor.text)
                                     .fixedSize(horizontal: false, vertical: true)
+                                Text(command.does)
+                                    .font(LLFont.mono(10))
+                                    .foregroundStyle(LLColor.textFaint)
                             }
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .padding(.vertical, 8)
+                            .padding(.horizontal, 12)
+                            .background(LLColor.card)
+                            .clipShape(RoundedRectangle(cornerRadius: LLMetrics.buttonRadius))
                         }
                     }
 
-                    Text("Voice commands during a live session (log a hold by voice) are not available yet. For in-session control while your phone is away, use an Apple Watch.")
+                    Text("These commands only do something while a session is running. To shorten a phrase, open the Shortcuts app, find the action under LAST LONGER, and set your own - like just “log hold”.")
                         .font(LLFont.mono(10))
                         .foregroundStyle(LLColor.textFaint)
                         .lineSpacing(3)
