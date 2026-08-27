@@ -632,30 +632,21 @@ struct SessionEntryStub: View {
 
             Spacer()
 
-            AngelWidget(
-                state: angel,
-                streak: streak,
-                size: 140,
-                onThreshold: {
+            // Stub demo. The real AngelWidget is display-only
+            // (state/spread/pulse); it has no per-gesture callbacks, `streak`
+            // or `size` parameters, and `AngelVisualState` is idle/active/
+            // threshold/cooldown/emergency (no `.edge`/`.ended`, which are the
+            // domain AngelState). A single tap cycles the states so Home routing
+            // and the Angel render can be exercised without the session engine.
+            AngelWidget(state: angel, spread: 0.6)
+                .frame(maxHeight: 200)
+                .contentShape(Rectangle())
+                .onTapGesture {
                     HapticEngine.shared.play(.threshold)
-                    angel = .edge
+                    ToneGenerator.shared.playSuccess(streak: streak)
                     streak += 1
-                },
-                onPullback: {
-                    HapticEngine.shared.play(.pullback)
-                    ToneGenerator.shared.successChime(streak: streak)
-                    angel = .cooldown
-                },
-                onEmergency: {
-                    HapticEngine.shared.play(.emergency)
-                    angel = .emergency
-                },
-                onEnd: {
-                    HapticEngine.shared.play(.sessionEnd)
-                    HapticEngine.shared.stopEmergency()
-                    angel = .ended
+                    angel = (angel == .threshold) ? .cooldown : .threshold
                 }
-            )
 
             Text("Tap: threshold · Double: back off\nTriple or two fingers: emergency · Hold 2s: end")
                 .font(.llData(11))
