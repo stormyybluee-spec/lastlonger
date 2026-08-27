@@ -17,6 +17,7 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 @MainActor
 struct LiveSessionView: View {
@@ -29,6 +30,32 @@ struct LiveSessionView: View {
     @Environment(\.scenePhase) private var scenePhase
 
     private var engine: SessionEngine { model.engine }
+
+    /// Put the shared audio session into background-capable playback the moment
+    /// the HUD appears — before the countdown fires and before the coach speaks
+    /// its first line — so TTS and binaural are never the thing that first
+    /// activates the session mid-utterance. `.mixWithOthers`/`.duckOthers` keeps
+    /// the user's external media playing, dipping under each coach line.
+    ///
+    /// NOTE: this keeps the *session* configured, but iOS still suspends an app
+    /// that produces no audio. Between spoken lines (with binaural off) there is
+    /// no continuous output, so the system can suspend the app and the next line
+    /// won't fire until the user returns. Reliable background coaching needs a
+    /// continuous (near-silent) audio source for the whole session AND the
+    /// target's Background Modes → Audio capability enabled. See the reply.
+    private func configureAudioSession() {
+        let session = AVAudioSession.sharedInstance()
+        do {
+            try session.setCategory(.playback,
+                                    mode: .spokenAudio,
+                                    options: [.mixWithOthers, .duckOthers])
+            try session.setActive(true, options: [])
+        } catch {
+            #if DEBUG
+            print("LiveSessionView: audio session setup failed — \(error)")
+            #endif
+        }
+    }
 
     var body: some View {
         ZStack {
@@ -53,6 +80,7 @@ struct LiveSessionView: View {
         .fullScreenCover(isPresented: $model.showResetProtocol) {
             ResetProtocolView(model: model) { dismiss() }
         }
+        .onAppear(perform: configureAudioSession)
         .onChange(of: scenePhase) { _, newPhase in
             // A phone call, Siri, or another app's audio can interrupt and tear
             // down our session while backgrounded. On return to the foreground,

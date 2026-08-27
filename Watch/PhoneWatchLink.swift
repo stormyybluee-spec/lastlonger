@@ -54,12 +54,19 @@ final class PhoneWatchLink: NSObject, ObservableObject {
         WCSession.isSupported() ? WCSession.default : nil
     }
 
+    /// True once we've logged "no watch" so a session's ~1 Hz state updates
+    /// don't repeat the same line for its whole duration.
+    private var didLogNoWatch = false
+
     private override init() {
         super.init()
     }
 
     // MARK: - Activation
 
+    /// Activating an unpaired session is correct and cheap — it's how we learn
+    /// when a watch later pairs. What spams the console is *sending* while no
+    /// watch is paired, so the guard lives in `send(_:)`, not here.
     func activate() {
         guard let session else { return }
         session.delegate = self
@@ -67,6 +74,26 @@ final class PhoneWatchLink: NSObject, ObservableObject {
             session.activate()
         }
         refreshStatus()
+    }
+
+    /// A paired watch with the app installed is required for any transfer to
+    /// succeed; without it WCSession logs "not paired"/"not installed" on every
+    /// call. Read live off the session rather than the cached flags so a watch
+    /// that paired mid-run is picked up immediately.
+    private func canDeliver(on session: WCSession) -> Bool {
+        guard session.activationState == .activated,
+              session.isPaired,
+              session.isWatchAppInstalled else {
+            #if DEBUG
+            if !didLogNoWatch {
+                print("PhoneWatchLink: no paired watch — watch transfers suppressed.")
+                didLogNoWatch = true
+            }
+            #endif
+            return false
+        }
+        didLogNoWatch = false
+        return true
     }
 
     private func refreshStatus() {
@@ -79,7 +106,9 @@ final class PhoneWatchLink: NSObject, ObservableObject {
     // MARK: - Outbound
 
     func send(_ signal: SessionSignal) {
-        guard let session, session.activationState == .activated else { return }
+        // No paired/installed watch → nothing to send, and attempting it is
+        // exactly what floods the console. Silently no-op.
+        guard let session, canDeliver(on: session) else { return }
 
         switch signal {
         case .stateUpdate:
