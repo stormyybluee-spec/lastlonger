@@ -13,6 +13,7 @@
 
 import SwiftUI
 import WidgetKit
+import AppIntents
 
 #if canImport(ActivityKit)
 import ActivityKit
