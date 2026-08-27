@@ -34,6 +34,10 @@ final class StoreManager: ObservableObject {
     private var updateListener: Task<Void, Never>?
     private let log = Logger(subsystem: "com.lastlonger.app", category: "store")
 
+    /// Set by the DEBUG-only Founder BETA bypass so a later `refreshEntitlement`
+    /// (fired by init or a transaction update) can't undo the override.
+    private var betaOverride = false
+
     init() {
         updateListener = listenForTransactions()
         Task {
@@ -118,6 +122,8 @@ final class StoreManager: ObservableObject {
     // MARK: - Entitlement
 
     func refreshEntitlement() async {
+        // Keep the Founder BETA bypass sticky for the session.
+        if betaOverride { isUnlocked = true; return }
         for await result in Transaction.currentEntitlements {
             guard let transaction = try? verify(result) else { continue }
             if transaction.productID == Self.unlockProductID, transaction.revocationDate == nil {
@@ -153,4 +159,18 @@ final class StoreManager: ObservableObject {
     func clearError() {
         if case .failed = state { state = .idle }
     }
+
+#if DEBUG
+    // MARK: - Founder BETA (DEBUG only)
+
+    /// Grants the unlock entitlement without a purchase so the app can be
+    /// entered for testing. Gated to DEBUG so it is never compiled into a
+    /// release/App Store build — a "skip payment" path in production would be an
+    /// instant App Review rejection and a revenue bypass.
+    func enableFounderBeta() {
+        betaOverride = true
+        isUnlocked = true
+        state = .idle
+    }
+#endif
 }

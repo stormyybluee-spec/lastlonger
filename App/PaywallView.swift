@@ -135,6 +135,18 @@ struct PaywallView: View {
                 .foregroundStyle(LL.Palette.textTertiary)
 
             statusLine
+
+            #if DEBUG
+            // DEBUG-only bypass so the app can be entered without a purchase
+            // while testing. Not compiled into release builds.
+            Button("FOUNDER BETA — ENTER WITHOUT PURCHASE") {
+                haptics.play(.selection)
+                store.enableFounderBeta()
+            }
+            .buttonStyle(OutlineActionStyle())
+            .padding(.top, 8)
+            .accessibilityHint("Developer bypass. Unlocks the app for testing.")
+            #endif
         }
     }
 
