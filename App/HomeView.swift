@@ -605,39 +605,77 @@ struct SegmentedProgress: View {
 
 /// Stands in for mode selection and the session engine. Kept live rather
 /// than commented out so the Home routing is testable today.
+// Session-entry coordinator.
+//
+// Every Home route that starts a session lands here. It runs the real flow:
+//
+//   .modeSelection  → the 8-card ModeSelectionView → countdown → session
+//   everything else → a default Focus plan → countdown → session
+//
+// The full session engine (SessionEngine + LiveSessionView) is Section 2; until
+// it lands, `SessionRunView` stands in as the running-session screen. The
+// gesture instructions live there, on the session screen — never on Mode
+// Selection, which is a grid of mode cards.
 struct SessionEntryStub: View {
     let route: HomeView.Route
     let onClose: () -> Void
 
-    // Was `AngelState = .safe`. `AngelWidget(state:)` takes the widget's own
-    // animation state, which consolidation renamed to `AngelVisualState` to free
-    // the name for the domain enum in DomainModels.swift. `.safe` belongs to that
-    // domain enum and was never a case of the widget's — this stub only compiled
-    // while the two types were in separate Parts. `.idle` is the widget's
-    // resting case and is what it was reaching for.
+    @State private var plan: SessionPlan?
+    @State private var running = false
+
+    var body: some View {
+        Group {
+            if running, let plan {
+                SessionRunView(plan: plan, onClose: onClose)
+            } else if let plan {
+                PreSessionCountdownView(
+                    plan: plan,
+                    onBegin: { running = true },
+                    onCancel: onClose
+                )
+            } else if route == .modeSelection {
+                // The real Precision Atlas — eight mode cards.
+                ModeSelectionView { chosen in plan = chosen }
+            } else {
+                // Quick Start / playlist / program: Focus mode, last-used
+                // settings, straight into the countdown.
+                Color.clear
+                    .onAppear {
+                        plan = SessionPlan(
+                            primary: .zen,          // "Focus" — the quick-start default
+                            secondary: nil,
+                            autoSwitch: .manual,
+                            settings: SettingsStore.load()
+                        )
+                    }
+            }
+        }
+    }
+}
+
+/// Placeholder for the running session until the full SessionEngine flow lands.
+/// This is the only screen that shows the tap-gesture legend.
+struct SessionRunView: View {
+    let plan: SessionPlan
+    let onClose: () -> Void
+
     @State private var angel: AngelVisualState = .idle
     @State private var streak = 0
 
     var body: some View {
         VStack(spacing: 28) {
             HStack {
-                Button("Close", action: onClose)
+                Button("End", action: onClose)
                     .font(.llLabel(13))
                     .foregroundStyle(LL.Palette.textDim)
                 Spacer()
-                Text(label)
+                Text(plan.displayTitle)
                     .font(.llData(11))
                     .foregroundStyle(LL.Palette.circuit)
             }
 
             Spacer()
 
-            // Stub demo. The real AngelWidget is display-only
-            // (state/spread/pulse); it has no per-gesture callbacks, `streak`
-            // or `size` parameters, and `AngelVisualState` is idle/active/
-            // threshold/cooldown/emergency (no `.edge`/`.ended`, which are the
-            // domain AngelState). A single tap cycles the states so Home routing
-            // and the Angel render can be exercised without the session engine.
             AngelWidget(state: angel, spread: 0.6)
                 .frame(maxHeight: 200)
                 .contentShape(Rectangle())
@@ -658,15 +696,6 @@ struct SessionEntryStub: View {
         .padding(LL.Metric.gutter)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .llBackground(gridAnchor: .center)
-    }
-
-    private var label: String {
-        switch route {
-        case .modeSelection:  return "MODE SELECTION"
-        case .quickStart:     return "QUICK START"
-        case .playlist:       return "PLAYLIST"
-        case .programSession: return "PROGRAM"
-        }
     }
 }
 
