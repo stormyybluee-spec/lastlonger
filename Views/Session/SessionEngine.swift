@@ -96,6 +96,11 @@ final class SessionEngine: ObservableObject {
 
         if plan.settings.binaural != .off {
             binaural.start(plan.settings.binaural)
+        } else {
+            // No audible program: run an inaudible keep-alive so the app keeps
+            // producing audio in the background and the coach isn't cut off
+            // between spoken lines. `finish()` stops it.
+            binaural.startKeepAlive()
         }
 
         // Clock.
