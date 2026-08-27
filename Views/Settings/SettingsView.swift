@@ -34,6 +34,7 @@ struct SettingsView: View {
 
     // Info sheets (the "what does this do" explanations)
     @State private var infoTopic: SettingsInfoTopic?
+    @State private var showingSiriHelp = false
 
     // Wipe
     @State private var showWipeConfirmation = false
@@ -63,7 +64,6 @@ struct SettingsView: View {
                         personalisationSection
                         remindersSection
                         siriSection
-                        regimenSection
                         watchSection
                     }
 
@@ -85,6 +85,10 @@ struct SettingsView: View {
         .sheet(item: $infoTopic) { topic in
             SettingsInfoSheet(topic: topic)
                 .presentationDetents([.height(300)])
+        }
+        .sheet(isPresented: $showingSiriHelp) {
+            SiriInstructionsSheet(onOpenShortcuts: openShortcuts)
+                .presentationDetents([.medium, .large])
         }
         .sheet(item: $exportURL) { wrapped in
             ShareSheet(items: [wrapped.url]) { exportURL = nil }
@@ -239,9 +243,17 @@ struct SettingsView: View {
     // MARK: - Siri
 
     private var siriSection: some View {
-        LLSection(title: "Siri & Shortcuts", subtitle: "“Hey Siri, start a session.”") {
-            LLRow(symbol: "mic.fill", title: "Siri Shortcut",
-                  detail: "Set up “Start a session” in the Shortcuts app",
+        LLSection(title: "Siri & Shortcuts", subtitle: "Start a session hands-free.") {
+            LLRow(symbol: "text.book.closed.fill", title: "How to set up Siri",
+                  detail: "Step-by-step instructions",
+                  showsChevron: true,
+                  action: {
+                      UISelectionFeedbackGenerator().selectionChanged()
+                      showingSiriHelp = true
+                  })
+            LLDivider()
+            LLRow(symbol: "arrow.up.forward.app.fill", title: "Open Shortcuts App",
+                  detail: "Add or edit “Start a session”",
                   showsChevron: true,
                   action: openShortcuts)
         }
@@ -253,14 +265,6 @@ struct SettingsView: View {
         // customise them.
         UISelectionFeedbackGenerator().selectionChanged()
         if let url = URL(string: "shortcuts://") { openURL(url) }
-    }
-
-    // MARK: - 4. Regimens  (PART C)
-
-    private var regimenSection: some View {
-        LLSection(title: "Training Regimens") {
-            LLRow(symbol: "calendar.badge.clock", title: "Current Program", detail: "None", showsChevron: true) {}
-        }
     }
 
     // MARK: - 5. Watch  (PART B)
@@ -444,18 +448,19 @@ struct SettingsView: View {
         isExporting = true
         UIImpactFeedbackGenerator(style: .rigid).impactOccurred()
 
-        // The fetch and serialise run off the main thread; a heavy history would
-        // otherwise stall the scroll view mid-tap.
-        let container = PersistenceController.shared.container
-        container.performBackgroundTask { backgroundContext in
+        // Gather the real, persisted sessions on the main actor (Repository is
+        // MainActor-isolated), then serialise + write off the main thread so a
+        // heavy history doesn't stall the scroll view mid-tap.
+        let records = Repository.shared.recentSessions.map(ExportedSessionRecord.init(from:))
+        Task.detached {
             do {
-                let url = try DataExportManager.writeExport(format: format, context: backgroundContext)
-                DispatchQueue.main.async {
+                let url = try DataExportManager.writeExport(format: format, records: records)
+                await MainActor.run {
                     isExporting = false
                     exportURL = IdentifiedURL(url: url)
                 }
             } catch {
-                DispatchQueue.main.async {
+                await MainActor.run {
                     isExporting = false
                     exportError = error.localizedDescription
                 }
@@ -575,6 +580,83 @@ struct SettingsInfoSheet: View {
             .padding(.horizontal, LLMetrics.gutter)
             .padding(.top, 24)
             .padding(.bottom, 20)
+        }
+        .preferredColorScheme(.dark)
+    }
+}
+
+// MARK: - Siri instructions
+
+/// Honest, step-by-step setup for the one App Shortcut the app actually ships:
+/// "Start a session". Voice logging *inside* a running session (log hold, etc.)
+/// is not available yet and is deliberately not promised here.
+struct SiriInstructionsSheet: View {
+
+    let onOpenShortcuts: () -> Void
+    @Environment(\.dismiss) private var dismiss
+
+    private let steps: [(String, String)] = [
+        ("1", "The “Start a session” shortcut is added automatically when you install the app - no setup needed."),
+        ("2", "Say “Hey Siri, start a session” to open LAST LONGER and jump straight into Quick Start."),
+        ("3", "To rename the phrase, open the Shortcuts app, find LAST LONGER under App Shortcuts, and edit it there."),
+        ("4", "Prefer a Home Screen or Lock Screen button? Add the shortcut as a widget from the Shortcuts app.")
+    ]
+
+    var body: some View {
+        ZStack {
+            LLColor.background.ignoresSafeArea()
+
+            ScrollView {
+                VStack(alignment: .leading, spacing: 18) {
+                    HStack(spacing: 10) {
+                        Image(systemName: "mic.fill")
+                            .font(.system(size: 17, weight: .semibold))
+                            .foregroundStyle(LLColor.dataBlue)
+                        Text("Set up Siri")
+                            .llLabelStyle(14, color: LLColor.text)
+                    }
+
+                    VStack(alignment: .leading, spacing: 14) {
+                        ForEach(steps, id: \.0) { number, text in
+                            HStack(alignment: .top, spacing: 12) {
+                                Text(number)
+                                    .font(LLFont.mono(12, weight: .bold))
+                                    .foregroundStyle(LLColor.background)
+                                    .frame(width: 22, height: 22)
+                                    .background(LLColor.secondary)
+                                    .clipShape(Circle())
+                                Text(text)
+                                    .font(LLFont.mono(12))
+                                    .foregroundStyle(LLColor.textDim)
+                                    .lineSpacing(3)
+                                    .fixedSize(horizontal: false, vertical: true)
+                            }
+                        }
+                    }
+
+                    Text("Voice commands during a live session (log a hold by voice) are not available yet. For in-session control while your phone is away, use an Apple Watch.")
+                        .font(LLFont.mono(10))
+                        .foregroundStyle(LLColor.textFaint)
+                        .lineSpacing(3)
+                        .fixedSize(horizontal: false, vertical: true)
+
+                    Button {
+                        UIImpactFeedbackGenerator(style: .rigid).impactOccurred()
+                        dismiss()
+                        onOpenShortcuts()
+                    } label: {
+                        Text("Open Shortcuts App")
+                            .llLabelStyle(13, color: LLColor.background)
+                            .frame(maxWidth: .infinity)
+                            .frame(height: LLMetrics.minTapTarget)
+                            .background(LLColor.text)
+                            .clipShape(RoundedRectangle(cornerRadius: LLMetrics.buttonRadius))
+                    }
+                    .buttonStyle(.plain)
+                }
+                .padding(.horizontal, LLMetrics.gutter)
+                .padding(.vertical, 24)
+            }
         }
         .preferredColorScheme(.dark)
     }

@@ -113,6 +113,42 @@ struct ExportedSessionRecord: Codable {
     }
 }
 
+extension ExportedSessionRecord {
+    /// Build directly from the domain `SessionRecord` the app actually persists
+    /// (via Repository / CDSession). The old path fetched a `TrainingSession`
+    /// entity that never shipped, so every export threw `entityNotFound`; this
+    /// reads the real, populated data instead.
+    ///
+    /// Fields the domain record does not carry map to zeros: there is no per-
+    /// session stamina snapshot or average heart rate in `SessionRecord`.
+    init(from r: SessionRecord) {
+        let successful = r.pullbacks + r.emergencyPullbacks
+        self.init(
+            id: r.id.uuidString,
+            startedAt: r.startedAt,
+            endedAt: r.startedAt.addingTimeInterval(r.duration),
+            durationSeconds: Int(r.duration),
+            primaryMode: r.primaryMode.name,
+            secondaryMode: r.secondaryMode?.name ?? "",
+            holdCount: r.thresholds,
+            pullbackCount: r.pullbacks,
+            pullbackSuccessRate: r.thresholds > 0
+                ? min(1.0, Double(successful) / Double(r.thresholds)) : 0,
+            bestHoldStreak: r.bestStreak,
+            emergencyPullbacks: r.emergencyPullbacks,
+            staminaScoreAfter: 0,
+            staminaDelta: 0,
+            didFinish: r.finished,
+            coachPersona: r.persona.rawValue,
+            silentMode: r.silentMode,
+            watchVerified: r.watchVerified,
+            averageHeartRate: 0,
+            stackTags: r.tagIDs,
+            regimenDay: 0
+        )
+    }
+}
+
 /// Wrapper so the JSON file self-describes rather than being a bare array.
 struct SessionExportEnvelope: Codable {
     let schemaVersion: Int
@@ -296,9 +332,11 @@ enum DataExportManager {
         return "training-log-\(stamp.string(from: Date())).\(format.fileExtension)"
     }
 
+    /// Preferred entry point: serialise already-fetched records. The caller
+    /// gathers `ExportedSessionRecord`s from the domain layer (Repository) on
+    /// the main actor, then hands them here to serialise and write off-thread.
     @discardableResult
-    static func writeExport(format: Format, context: NSManagedObjectContext) throws -> URL {
-        let records = try fetchSessions(in: context)
+    static func writeExport(format: Format, records: [ExportedSessionRecord]) throws -> URL {
         guard !records.isEmpty else { throw DataExportError.nothingToExport }
 
         let payload: Data
