@@ -86,7 +86,7 @@ final class ModeSelectionModel: ObservableObject {
             silentMode: settings.silentMode,
             tempoLock: settings.tempoLock,
             focusModeOnStart: settings.focusModeAutoEnable,
-            durationCap: settings.durationCap.interval,
+            durationCap: settings.durationCapInterval,
             talkFrequency: settings.coachFrequency.talkFrequency,
             tagIDs: settings.enhancementStack.map(\.rawValue).sorted(),
             runRitual: settings.usePreSessionRitual

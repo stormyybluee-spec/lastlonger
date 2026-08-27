@@ -225,8 +225,8 @@ public struct HomeView: View {
             route = .quickStart
         } label: {
             HStack(spacing: 12) {
-                Image(systemName: "bolt.fill")
-                    .font(.system(size: 15, weight: .bold))
+                Image(systemName: "play.circle.fill")
+                    .font(.system(size: 19, weight: .semibold))
                     .foregroundStyle(LL.Palette.rising)
 
                 VStack(alignment: .leading, spacing: 2) {
@@ -234,7 +234,9 @@ public struct HomeView: View {
                         .font(.llLabel(13))
                         .kerning(1.8)
                         .foregroundStyle(LL.Palette.text)
-                    Text("Free Hold · Last-used settings")
+                    // SessionFlowView's `.quick` entry starts Focus, not Free
+                    // Hold - the old subtitle named the wrong mode.
+                    Text("Focus · Last-used settings")
                         .font(.system(size: 12, weight: .regular))
                         .foregroundStyle(LL.Palette.textDim)
                 }
@@ -246,13 +248,24 @@ public struct HomeView: View {
                     .foregroundStyle(LL.Palette.rule)
             }
             .padding(.horizontal, 16)
+            .frame(maxWidth: .infinity)
             .frame(height: LL.Metric.tapTarget)
+            .background(
+                LL.Palette.void,
+                in: RoundedRectangle(cornerRadius: LL.Metric.corner, style: .continuous)
+            )
             .overlay(
                 RoundedRectangle(cornerRadius: LL.Metric.corner, style: .continuous)
                     .strokeBorder(LL.Palette.rule, lineWidth: 1)
             )
+            // Without this the label only hit-tests where it actually draws, so
+            // the gaps between the icon, the text and the chevron swallowed the
+            // tap. Makes the whole rectangle the tap target.
+            .contentShape(RoundedRectangle(cornerRadius: LL.Metric.corner, style: .continuous))
         }
         .buttonStyle(PressScale())
+        .accessibilityLabel("Quick start")
+        .accessibilityHint("Starts a Focus session with your last-used settings.")
     }
 
     // MARK: - Playlists
@@ -609,7 +622,7 @@ struct SessionRow: View {
 
             Spacer()
 
-            Text(session.pullbackRate.map { "\(Int($0 * 100))%" } ?? "—")
+            Text(session.pullbackRate.map { "\(Int($0 * 100))%" } ?? "-")
                 .font(.llReadout(15))
                 .foregroundStyle(session.finished ? LL.Palette.textDim : LL.Palette.safe)
                 .monospacedDigit()

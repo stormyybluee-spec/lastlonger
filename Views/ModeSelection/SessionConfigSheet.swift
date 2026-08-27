@@ -296,20 +296,42 @@ struct SessionConfigSheet: View {
 
     private var boundsSection: some View {
         ConfigSection(title: "Bounds", symbol: "timer") {
-            SegmentRow(title: "Duration cap") {
-                ForEach(DurationCap.allCases) { cap in
-                    SegmentChip(title: cap.label,
-                                isOn: model.settings.durationCap == cap,
-                                tint: Theme.edge) {
-                        model.settings.durationCap = cap
-                        Haptics.shared.play(.select)
-                    }
-                }
-            }
+            durationCapPicker
 
             ToggleRow(title: "Auto-enable Focus",
                       subtitle: "Prompts you to turn on a Focus before the countdown. iOS does not let an app switch Focus on your behalf.",
                       isOn: $model.settings.focusModeAutoEnable)
+        }
+    }
+
+    /// iOS timer-wheel for the hard stop. Drag from None (0) upward in
+    /// 5-minute steps; the wheel supplies its own selection haptics.
+    private var durationCapPicker: some View {
+        VStack(alignment: .leading, spacing: 4) {
+            HStack {
+                Text("Duration cap")
+                    .font(Typeface.label(9)).uppercaseLabel(tracking: 0.9)
+                    .foregroundStyle(Theme.inkFaint)
+                Spacer()
+                Text(model.settings.durationCap == 0
+                     ? "No cap"
+                     : "\(model.settings.durationCap) min")
+                    .font(Typeface.numeric(12))
+                    .foregroundStyle(Theme.edge)
+            }
+
+            Picker("Duration cap", selection: $model.settings.durationCap) {
+                ForEach(SessionSettings.durationCapOptions, id: \.self) { minutes in
+                    Text(minutes == 0 ? "None" : "\(minutes) min")
+                        .font(Typeface.numeric(17))
+                        .foregroundStyle(Theme.ink)
+                        .tag(minutes)
+                }
+            }
+            .pickerStyle(.wheel)
+            .frame(height: 118)
+            .clipped()
+            .accessibilityLabel("Duration cap in minutes")
         }
     }
 

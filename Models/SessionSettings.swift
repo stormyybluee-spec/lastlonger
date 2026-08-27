@@ -147,7 +147,14 @@ struct SessionSettings: Codable, Equatable {
     var binaural: BinauralProgram = .off
 
     // Bounds
-    var durationCap: DurationCap = .none
+    //
+    // Minutes, 0 = uncapped. Was a `DurationCap` enum with four fixed cases
+    // (0/10/20/30); the session sheet now offers any 5-minute step, which the
+    // enum could not express. `DurationCap` was already Int-raw-valued and
+    // Codable, so its persisted JSON (`"durationCap": 20`) decodes into this
+    // Int unchanged - no migration needed. The enum itself is untouched and
+    // still backs `AppSettings.durationCap`.
+    var durationCap: Int = 0
 
     // System
     var focusModeAutoEnable: Bool = false
@@ -185,6 +192,14 @@ struct SessionSettings: Codable, Equatable {
 
     /// Silent Mode overrides the volume slider entirely.
     var effectiveVoiceVolume: Float { silentMode ? 0 : Float(voiceVolume) }
+
+    /// The cap as a duration, or nil when uncapped.
+    var durationCapInterval: TimeInterval? {
+        durationCap > 0 ? TimeInterval(durationCap * 60) : nil
+    }
+
+    /// Minute values the session sheet's wheel offers: None, then 5...120.
+    static let durationCapOptions: [Int] = [0] + stride(from: 5, through: 120, by: 5).map { $0 }
 }
 
 // MARK: - Plan
@@ -211,12 +226,12 @@ struct SessionPlan: Codable, Equatable {
     func switchTime() -> TimeInterval? {
         guard isSplit else { return nil }
         if let explicit = autoSwitch.resolvedSwitchTime() { return explicit }
-        if let cap = settings.durationCap.interval { return cap / 2 }
+        if let cap = settings.durationCapInterval { return cap / 2 }
         return nil   // manual
     }
 
     /// Hard stop, if any.
-    var hardStop: TimeInterval? { settings.durationCap.interval }
+    var hardStop: TimeInterval? { settings.durationCapInterval }
 }
 
 // MARK: - Persistence

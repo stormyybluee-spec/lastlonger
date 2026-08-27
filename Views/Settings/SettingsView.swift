@@ -2,11 +2,15 @@
 //  SettingsView.swift
 //  LAST LONGER
 //
-//  PART E — Settings container.
+//  PART E - Settings container.
 //
-//  Sections 1–5 and 7 are navigation stubs owned by Parts A–D; each is marked
-//  with the part that fills it in. Sections 6 (Training Gear), 8 (Privacy) and
-//  9 (About) are fully implemented here as Part E deliverables.
+//  Settings deliberately does NOT duplicate the per-session controls. Persona,
+//  voice, volume, coach interrupt, distraction questions, default mode and the
+//  duration cap all live in the Mode Selection card (SessionConfigSheet), which
+//  is where they are actually chosen. What remains here is: the two reference
+//  guides, plain-language explanations of the session controls, the settings
+//  that exist nowhere else (custom phrases, angel skin, reminders, watch),
+//  Siri, privacy and about.
 //
 
 import SwiftUI
@@ -28,6 +32,9 @@ struct SettingsView: View {
     @State private var isExporting = false
     @State private var exportError: String?
 
+    // Info sheets (the "what does this do" explanations)
+    @State private var infoTopic: SettingsInfoTopic?
+
     // Wipe
     @State private var showWipeConfirmation = false
     @State private var showWipeFinalWarning = false
@@ -39,26 +46,33 @@ struct SettingsView: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 0) {
 
-                    // 1–5, 7 — owned by Parts A–D.
-                    coachSection
-                    sessionDefaultsSection
-                    siriSection
-                    ritualSection
-                    regimenSection
-                    watchSection
-                    partnerSyncSection
+                    // Grouped so the list stays under the 10-child
+                    // ViewBuilder limit as sections are added.
+                    Group {
+                        // Reference first: what the gestures and words mean.
+                        angelGuideSection
+                        modeFunctionsGuideSection
 
-                    // 6 — PART E-1 — CUT for v1 (App Store compliance).
-                    // Affiliate "Training Gear" links (incl. a sex-toy row) are
-                    // deferred to Phase 2 per the compliance checklist ("No sex
-                    // toy affiliate links in v1"). The section view still exists
-                    // but is no longer reachable by a reviewer.
+                        // Explanations only - these are set per session in
+                        // the Mode Selection card, not here.
+                        sessionInfoSection
+                    }
+
+                    Group {
+                        // Settings that exist nowhere else.
+                        personalisationSection
+                        remindersSection
+                        siriSection
+                        regimenSection
+                        watchSection
+                    }
+
+                    // Affiliate "Training Gear" links are CUT for v1 per the
+                    // App Store compliance checklist; the section view still
+                    // exists but is not reachable.
                     // trainingGearSection
 
-                    // 8 — PART E-2
                     privacySection
-
-                    // 9
                     aboutSection
                 }
                 .padding(.top, 8)
@@ -67,6 +81,10 @@ struct SettingsView: View {
             .navigationTitle("Settings")
             .navigationBarTitleDisplayMode(.inline)
             .toolbarBackground(LLColor.background, for: .navigationBar)
+        }
+        .sheet(item: $infoTopic) { topic in
+            SettingsInfoSheet(topic: topic)
+                .presentationDetents([.height(300)])
         }
         .sheet(item: $exportURL) { wrapped in
             ShareSheet(items: [wrapped.url]) { exportURL = nil }
@@ -85,7 +103,7 @@ struct SettingsView: View {
             Button("Continue", role: .destructive) { showWipeFinalWarning = true }
             Button("Cancel", role: .cancel) {}
         } message: {
-            Text("Sessions, streaks, badges, regimens, rituals and custom phrases. There is no backup — nothing is stored off this phone.")
+            Text("Sessions, streaks, badges, regimens, rituals and custom phrases. There is no backup - nothing is stored off this phone.")
         }
         .alert("Last chance", isPresented: $showWipeFinalWarning) {
             Button("Erase all data", role: .destructive) { performWipe() }
@@ -108,99 +126,115 @@ struct SettingsView: View {
         }
     }
 
-    // MARK: - 1. Coach  (PART A)
+    // MARK: - Guides
 
-    private var coachSection: some View {
-        LLSection(title: "Coach") {
-            // Split into groups: one ViewBuilder closure tops out at 10 children.
-            Group {
-                menuRow(symbol: "waveform", title: "Persona",
-                        selection: $settings.persona,
-                        options: CoachPersona.allCases,
-                        label: { $0.title.capitalized })
-                LLDivider()
-                toggleRow(symbol: "speaker.wave.2.fill", title: "Voice",
-                          detail: "Spoken coaching (text-to-speech)",
-                          isOn: $settings.voiceEnabled)
-                LLDivider()
-                sliderRow(symbol: "speaker.wave.3.fill", title: "Voice Volume",
-                          value: $settings.voiceVolume)
-                    .disabled(!settings.voiceEnabled)
-                    .opacity(settings.voiceEnabled ? 1 : 0.4)
-                LLDivider()
-                toggleRow(symbol: "bubble.left.and.exclamationmark.bubble.right.fill",
-                          title: "Coach Interrupt",
-                          detail: "Periodic “arousal level?” check-ins",
-                          isOn: $settings.coachInterrupt)
-            }
+    private var angelGuideSection: some View {
+        LLSection(title: "Tapping Angel Guide",
+                  subtitle: "Every gesture during a session happens on the Angel.") {
+            guideRow("hand.tap.fill", "Tap once",
+                     "Logs a Hold - you've reached the threshold.")
             LLDivider()
-            Group {
-                toggleRow(symbol: "questionmark.circle.fill",
-                          title: "Distraction Questions",
-                          detail: "Arithmetic prompts to pull focus",
-                          isOn: $settings.distractionQuestions)
-                LLDivider()
-                NavigationLink {
-                    CustomPhrasesView(settings: settings)
-                } label: {
-                    LLRow(symbol: "text.quote", title: "Custom Phrases",
-                          detail: "\(settings.customPhrases.count) of 10 used",
-                          showsChevron: true)
-                }
-                .buttonStyle(.plain)
-                LLDivider()
-                menuRow(symbol: "figure.wave", title: "Angel Skin",
-                        selection: $settings.angelSkin,
-                        options: AngelSkin.allCases,
-                        label: { $0.title.capitalized })
-            }
+            guideRow("hand.tap", "Tap twice",
+                     "Logs a Recover - you've backed off.")
+            LLDivider()
+            guideRow("exclamationmark.triangle.fill", "Triple tap",
+                     "Emergency Protocol - stops you from finishing.",
+                     tint: LLColor.primary)
+            LLDivider()
+            guideRow("stop.circle.fill", "Hold 2 seconds",
+                     "Ends the session.")
         }
     }
 
-    // MARK: - 2. Session defaults  (PART A / C)
-
-    private var sessionDefaultsSection: some View {
-        LLSection(title: "Session Defaults") {
-            // Split into two groups: a single ViewBuilder closure tops out at
-            // 10 child views, and rows-plus-dividers exceeds that.
-            Group {
-                menuRow(symbol: "square.grid.2x2.fill", title: "Default Mode",
-                        selection: $settings.defaultMode,
-                        options: TrainingMode.allCases,
-                        label: { $0.title })
-                LLDivider()
-                menuRow(symbol: "iphone.radiowaves.left.and.right", title: "Haptic Intensity",
-                        selection: $settings.haptics,
-                        options: HapticIntensity.allCases,
-                        label: { $0.rawValue.capitalized })
-                LLDivider()
-                menuRow(symbol: "waveform.path", title: "Binaural Beats",
-                        selection: $settings.binaural,
-                        options: BinauralDefault.allCases,
-                        label: { $0.title })
-            }
+    private var modeFunctionsGuideSection: some View {
+        LLSection(title: "Mode Functions Guide",
+                  subtitle: "What the words on the session screen mean.") {
+            guideRow("flame.fill", "Hold",
+                     "You've reached the edge. Log it.", tint: LLColor.primary)
             LLDivider()
-            Group {
-                menuRow(symbol: "timer", title: "Default Duration Cap",
-                        selection: $settings.durationCap,
-                        options: DurationCap.allCases,
-                        label: { $0 == .none ? "None" : "\($0.rawValue) min" })
-                LLDivider()
-                toggleRow(symbol: "metronome.fill", title: "Tempo Lock",
-                          detail: "Haptic metronome during active phases",
-                          isOn: $settings.tempoLock)
-                LLDivider()
-                toggleRow(symbol: "speaker.slash.fill", title: "Silent Mode", isOn: $settings.silentModeDefault)
-                LLDivider()
-                toggleRow(symbol: "moon.fill", title: "Focus Mode",
-                          detail: "Prompt to enable Focus during sessions",
-                          isOn: $settings.focusModePrompt)
-                LLDivider()
-                menuRow(symbol: "bell.fill", title: "Reminders",
-                        selection: $settings.milestoneFrequency,
-                        options: MilestoneFrequency.allCases,
-                        label: { $0.title })
+            guideRow("wind", "Recover",
+                     "You've backed off. Log it.", tint: LLColor.secondary)
+            LLDivider()
+            guideRow("exclamationmark.triangle.fill", "Emergency",
+                     "Urgent stop. Prevents finishing.", tint: LLColor.primary)
+            LLDivider()
+            guideRow("gauge.with.needle", "Threshold",
+                     "The point just before losing control.")
+            LLDivider()
+            guideRow("moon.zzz.fill", "Cooldown",
+                     "Rest period after a Recover.", tint: LLColor.secondary)
+        }
+    }
+
+    /// Read-only reference row: icon, term, meaning. No control, no action.
+    private func guideRow(_ symbol: String,
+                          _ title: String,
+                          _ detail: String,
+                          tint: Color = LLColor.text) -> some View {
+        LLRow(symbol: symbol, title: title, detail: detail, tint: tint)
+    }
+
+    // MARK: - Session controls (explanations only)
+
+    private var sessionInfoSection: some View {
+        LLSection(title: "Session Controls",
+                  subtitle: "Chosen per session in the mode card. Tap any row for what it does.") {
+            infoRow(.hapticSensitivity)
+            LLDivider()
+            infoRow(.binauralBeats)
+            LLDivider()
+            infoRow(.tempoLock)
+            LLDivider()
+            infoRow(.silentMode)
+            LLDivider()
+            infoRow(.focusMode)
+        }
+    }
+
+    private func infoRow(_ topic: SettingsInfoTopic) -> some View {
+        LLRow(symbol: topic.symbol,
+              title: topic.title,
+              showsChevron: false,
+              action: {
+                  UISelectionFeedbackGenerator().selectionChanged()
+                  infoTopic = topic
+              }) {
+            Image(systemName: "info.circle")
+                .font(.system(size: 15, weight: .semibold))
+                .foregroundStyle(LLColor.dataBlue)
+        }
+        .accessibilityHint("Explains what \(topic.title) does.")
+    }
+
+    // MARK: - Personalisation (not available in the mode card)
+
+    private var personalisationSection: some View {
+        LLSection(title: "Personalisation") {
+            NavigationLink {
+                CustomPhrasesView(settings: settings)
+            } label: {
+                LLRow(symbol: "text.quote", title: "Custom Phrases",
+                      detail: "\(settings.customPhrases.count) of 10 used",
+                      showsChevron: true)
             }
+            .buttonStyle(.plain)
+            LLDivider()
+            menuRow(symbol: "figure.wave", title: "Angel Skin",
+                    selection: $settings.angelSkin,
+                    options: AngelSkin.allCases,
+                    label: { $0.title.capitalized })
+        }
+    }
+
+    // MARK: - Reminders
+
+    private var remindersSection: some View {
+        LLSection(title: "Reminders",
+                  subtitle: "Local notifications only. Nothing leaves this device.") {
+            menuRow(symbol: "bell.fill", title: "Milestone Notifications",
+                    selection: $settings.milestoneFrequency,
+                    options: MilestoneFrequency.allCases,
+                    label: { $0.title })
         }
     }
 
@@ -221,14 +255,6 @@ struct SettingsView: View {
         // customise them.
         UISelectionFeedbackGenerator().selectionChanged()
         if let url = URL(string: "shortcuts://") { openURL(url) }
-    }
-
-    // MARK: - 3. Ritual  (PART C)
-
-    private var ritualSection: some View {
-        LLSection(title: "Pre-Session Ritual") {
-            LLRow(symbol: "list.bullet.rectangle", title: "Edit Ritual", detail: "Not configured", showsChevron: true) {}
-        }
     }
 
     // MARK: - 4. Regimens  (PART C)
@@ -253,8 +279,8 @@ struct SettingsView: View {
 
     private var watchStatus: String {
         if !watch.isPaired { return "Not paired" }
-        if !watch.isWatchAppInstalled { return "Paired — Watch app not installed" }
-        return watch.isReachable ? "Connected" : "Paired — not reachable"
+        if !watch.isWatchAppInstalled { return "Paired - Watch app not installed" }
+        return watch.isReachable ? "Connected" : "Paired - not reachable"
     }
 
     // MARK: - Reusable controls
@@ -291,33 +317,6 @@ struct SettingsView: View {
         .buttonStyle(.plain)
     }
 
-    /// A full-width labelled slider row (0…100%), padded to match LLRow.
-    private func sliderRow(
-        symbol: String,
-        title: String,
-        value: Binding<Double>
-    ) -> some View {
-        VStack(alignment: .leading, spacing: 8) {
-            HStack(spacing: 12) {
-                Image(systemName: symbol)
-                    .font(.system(size: 15, weight: .semibold))
-                    .foregroundStyle(LLColor.text)
-                    .frame(width: 22, alignment: .center)
-                Text(title)
-                    .llLabelStyle(13, color: LLColor.text)
-                Spacer(minLength: 8)
-                Text("\(Int((value.wrappedValue * 100).rounded()))%")
-                    .font(LLFont.mono(11))
-                    .foregroundStyle(LLColor.textDim)
-            }
-            Slider(value: value, in: 0...1)
-                .tint(LLColor.primary)
-                .padding(.leading, 34)
-        }
-        .padding(.horizontal, LLMetrics.gutter)
-        .padding(.vertical, LLMetrics.rowVerticalPadding)
-    }
-
     /// A row with a trailing toggle bound straight to the settings store.
     private func toggleRow(
         symbol: String,
@@ -332,14 +331,6 @@ struct SettingsView: View {
         }
     }
 
-    // MARK: - 7. Partner Sync  (PART C)
-
-    private var partnerSyncSection: some View {
-        LLSection(title: "Partner Sync", subtitle: "Local only. Nothing is transmitted.") {
-            LLRow(symbol: "person.2.fill", title: "Send Encouragement", showsChevron: true) {}
-        }
-    }
-
     // MARK: - 6. Training Gear  (PART E-1)
 
     private var trainingGearSection: some View {
@@ -350,7 +341,7 @@ struct SettingsView: View {
                 LLRow(
                     symbol: "shippingbox.fill",
                     title: "Browse Gear",
-                    detail: "\(TrainingGearCatalog.items.count) items — topical, devices, supplements",
+                    detail: "\(TrainingGearCatalog.items.count) items - topical, devices, supplements",
                     tint: LLColor.dataBlue,
                     showsChevron: true
                 )
@@ -428,7 +419,7 @@ struct SettingsView: View {
             VStack(alignment: .leading, spacing: 6) {
                 Text("Disclaimer")
                     .llLabelStyle(11, color: LLColor.textDim)
-                Text("Educational purposes. Not medical advice. Persistent difficulty with ejaculatory control is treatable — a urologist or a sex therapist can help, and this app is not a substitute for either.")
+                Text("Educational purposes. Not medical advice. Persistent difficulty with ejaculatory control is treatable - a urologist or a sex therapist can help, and this app is not a substitute for either.")
                     .font(LLFont.mono(10))
                     .foregroundStyle(LLColor.textFaint)
                     .lineSpacing(3)
@@ -443,8 +434,8 @@ struct SettingsView: View {
 
     private static var versionString: String {
         let info = Bundle.main.infoDictionary
-        let short = info?["CFBundleShortVersionString"] as? String ?? "—"
-        let build = info?["CFBundleVersion"] as? String ?? "—"
+        let short = info?["CFBundleShortVersionString"] as? String ?? "-"
+        let build = info?["CFBundleVersion"] as? String ?? "-"
         return "\(short) (\(build))"
     }
 
@@ -483,6 +474,111 @@ struct SettingsView: View {
             UINotificationFeedbackGenerator().notificationOccurred(.error)
             wipeError = error.localizedDescription
         }
+    }
+}
+
+// MARK: - Info topics
+
+/// The five session controls Settings explains rather than duplicates. Each is
+/// actually chosen per session in the Mode Selection card; this is the
+/// plain-language description behind the info button.
+enum SettingsInfoTopic: String, Identifiable, CaseIterable {
+    case hapticSensitivity
+    case binauralBeats
+    case tempoLock
+    case silentMode
+    case focusMode
+
+    var id: String { rawValue }
+
+    var title: String {
+        switch self {
+        case .hapticSensitivity: return "Haptic Sensitivity"
+        case .binauralBeats:     return "Binaural Beats"
+        case .tempoLock:         return "Tempo Lock"
+        case .silentMode:        return "Silent Mode"
+        case .focusMode:         return "Focus Mode"
+        }
+    }
+
+    var symbol: String {
+        switch self {
+        case .hapticSensitivity: return "iphone.radiowaves.left.and.right"
+        case .binauralBeats:     return "waveform.path"
+        case .tempoLock:         return "metronome.fill"
+        case .silentMode:        return "speaker.slash.fill"
+        case .focusMode:         return "moon.fill"
+        }
+    }
+
+    var explanation: String {
+        switch self {
+        case .hapticSensitivity:
+            return "Controls the intensity of haptic feedback during sessions. Low = subtle, High = strong."
+        case .binauralBeats:
+            return "Plays binaural frequencies to help with focus and relaxation. Theta (6Hz), Alpha (10Hz), Low Beta (14Hz). Needs headphones - through a speaker the two tones mix in the air and the effect is lost."
+        case .tempoLock:
+            return "Locks onto your stroking rhythm and gradually slows it down to build control."
+        case .silentMode:
+            return "Replaces all voice coaching with haptic patterns only. Great for quiet environments."
+        case .focusMode:
+            return "Blocks notifications during sessions to keep you focused."
+        }
+    }
+}
+
+// MARK: - Info sheet
+
+/// Bottom sheet behind each info button. Dark-only, matching the rest of the app.
+struct SettingsInfoSheet: View {
+
+    let topic: SettingsInfoTopic
+    @Environment(\.dismiss) private var dismiss
+
+    var body: some View {
+        ZStack {
+            LLColor.background.ignoresSafeArea()
+
+            VStack(alignment: .leading, spacing: 16) {
+                HStack(spacing: 10) {
+                    Image(systemName: topic.symbol)
+                        .font(.system(size: 17, weight: .semibold))
+                        .foregroundStyle(LLColor.dataBlue)
+                    Text(topic.title)
+                        .llLabelStyle(14, color: LLColor.text)
+                }
+
+                Text(topic.explanation)
+                    .font(LLFont.mono(12))
+                    .foregroundStyle(LLColor.textDim)
+                    .lineSpacing(4)
+                    .fixedSize(horizontal: false, vertical: true)
+
+                Text("Set this per session in the mode card, before you start.")
+                    .font(LLFont.mono(10))
+                    .foregroundStyle(LLColor.textFaint)
+                    .fixedSize(horizontal: false, vertical: true)
+
+                Spacer(minLength: 0)
+
+                Button {
+                    UIImpactFeedbackGenerator(style: .rigid).impactOccurred()
+                    dismiss()
+                } label: {
+                    Text("Got it")
+                        .llLabelStyle(13, color: LLColor.background)
+                        .frame(maxWidth: .infinity)
+                        .frame(height: LLMetrics.minTapTarget)
+                        .background(LLColor.text)
+                        .clipShape(RoundedRectangle(cornerRadius: LLMetrics.buttonRadius))
+                }
+                .buttonStyle(.plain)
+            }
+            .padding(.horizontal, LLMetrics.gutter)
+            .padding(.top, 24)
+            .padding(.bottom, 20)
+        }
+        .preferredColorScheme(.dark)
     }
 }
 
