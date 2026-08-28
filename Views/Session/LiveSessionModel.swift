@@ -107,8 +107,9 @@ final class LiveSessionModel: ObservableObject {
     // MARK: - Lifecycle
 
     /// Set the first time `end(reachedEndGoal:)` runs, so a second call (the
-    /// Reset Protocol offers two exits) cannot spend a second Trial round.
-    private var didSpendTrialRound = false
+    /// Reset Protocol offers two exits) cannot double-count this one session -
+    /// for the Trial round or the review funnel.
+    private var didFinalizeSession = false
 
     func begin(plan: SessionPlan) {
         self.plan = plan
@@ -143,13 +144,17 @@ final class LiveSessionModel: ObservableObject {
         log.updateHeartRate(average: averageHeartRate, peak: peakHeartRate)
         log.endSession(duration: duration, streak: streak, reachedEndGoal: reachedEndGoal)
 
-        // Soft paywall: a Trial round is spent HERE, once the session is over -
-        // never on start and never on launch. Starting a round the user then
-        // abandons must not cost them a life. `end` is reachable twice from the
-        // Reset Protocol, so the guard keeps one session to one round.
-        if !didSpendTrialRound {
-            didSpendTrialRound = true
+        // Session bookkeeping happens HERE, once the session is over - never on
+        // start and never on launch. `end` is reachable twice from the Reset
+        // Protocol, so the guard keeps one session to one increment.
+        if !didFinalizeSession {
+            didFinalizeSession = true
+            // Soft paywall: spend a Trial round (a round the user abandons on
+            // start must not cost them a life).
             TrialManager.shared.recordCompletedSession(duration: duration)
+            // Review funnel: count this completed session toward the 5/10/20
+            // stage thresholds.
+            ReviewManager.shared.recordCompletedSession()
         }
 
         watchLink.send(.sessionEnded(reachedEndGoal: reachedEndGoal))

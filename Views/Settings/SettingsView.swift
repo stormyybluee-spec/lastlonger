@@ -430,6 +430,23 @@ struct SettingsView: View {
 
             LLDivider()
 
+            // Legal links. App Review requires a reachable Privacy Policy, and a
+            // Terms of Use link next to it for the subscriptions. Both open in
+            // the browser; the chevron signals they leave the app.
+            LLRow(symbol: "doc.text.fill", title: "Privacy Policy",
+                  detail: "How your data is handled. Opens in browser.",
+                  showsChevron: true,
+                  action: { openLegal(LegalLink.privacy) })
+
+            LLDivider()
+
+            LLRow(symbol: "doc.text", title: "Terms of Use",
+                  detail: "Subscription and usage terms. Opens in browser.",
+                  showsChevron: true,
+                  action: { openLegal(LegalLink.terms) })
+
+            LLDivider()
+
             ForEach(Array(DataExportManager.Format.allCases.enumerated()), id: \.element) { index, format in
                 if index > 0 { LLDivider() }
                 LLRow(
@@ -493,6 +510,22 @@ struct SettingsView: View {
         let short = info?["CFBundleShortVersionString"] as? String ?? "-"
         let build = info?["CFBundleVersion"] as? String ?? "-"
         return "\(short) (\(build))"
+    }
+
+    // MARK: - Legal links
+
+    /// The two hosted legal pages. These are PLACEHOLDER URLs - swap the host
+    /// for the real site before shipping (App Review checks the Privacy Policy
+    /// link resolves). Kept here so both live in one place.
+    private enum LegalLink {
+        static let privacy = "https://your-site.netlify.app/privacy"
+        static let terms   = "https://your-site.netlify.app/terms"
+    }
+
+    private func openLegal(_ urlString: String) {
+        UISelectionFeedbackGenerator().selectionChanged()
+        guard let url = URL(string: urlString) else { return }
+        openURL(url)
     }
 
     // MARK: - Actions

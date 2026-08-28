@@ -94,6 +94,11 @@ public struct HomeView: View {
     /// Non-nil while the soft paywall is up over Home.
     @State private var paywall: PaywallContext?
 
+    /// Review funnel. The banner reads live from this; the popup is driven by
+    /// the flag below so it presents exactly once.
+    @StateObject private var review = ReviewManager.shared
+    @State private var showReviewPopup = false
+
     /// UserDefaults flag set by `StartSessionIntent` (Siri / App Shortcuts).
     /// Consumed here so "Hey Siri, start a session" opens Quick Start.
     private static let pendingQuickStartKey = "pendingQuickStart"
@@ -136,6 +141,14 @@ public struct HomeView: View {
 
                 recentSessions
 
+                // Stage 1 of the review funnel: a subtle, dismissible banner.
+                // Last in the scroll so it sits above the tab bar and never
+                // covers content.
+                if review.shouldShowBanner {
+                    ReviewBanner(review: review)
+                        .transition(.opacity.combined(with: .move(edge: .bottom)))
+                }
+
                 Color.clear.frame(height: 12)
             }
             .padding(.horizontal, LL.Metric.gutter)
@@ -160,13 +173,38 @@ public struct HomeView: View {
             SessionFlowView(entry: destination == .quickStart ? .quick : .select,
                             quickMode: quickStartMode) {
                 route = nil
+                // Let the cover finish dismissing, then ask - a calm moment,
+                // never mid-transition.
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
+                    evaluateReviewStages()
+                }
             }
         }
-        .onAppear(perform: consumePendingQuickStart)
+        .sheet(isPresented: $showReviewPopup) {
+            ReviewPopup(review: review) { showReviewPopup = false }
+                .presentationDetents([.medium, .large])
+                .presentationBackground(LL.Palette.background)
+        }
+        .onAppear {
+            consumePendingQuickStart()
+            evaluateReviewStages()
+        }
         .onChange(of: scenePhase) { _, newPhase in
             // Siri may fire the intent while the app is backgrounded; pick up
             // the flag when we come back to the foreground.
             if newPhase == .active { consumePendingQuickStart() }
+        }
+    }
+
+    /// Decides which review stage, if any, fires now. Stage 3's popup wins over
+    /// Stage 2's native prompt; both are one-shots, so calling this on Home
+    /// appear and after each session cannot double-ask.
+    private func evaluateReviewStages() {
+        if review.shouldShowPopup {
+            review.markPopupShown()
+            withAnimation(LL.Motion.stateFade) { showReviewPopup = true }
+        } else {
+            review.requestNativePromptIfDue()
         }
     }
 

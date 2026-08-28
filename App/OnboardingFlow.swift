@@ -99,29 +99,38 @@ public struct OnboardingFlow: View {
             VStack(alignment: .leading, spacing: 0) {
                 header
 
-                Spacer(minLength: 24)
-
-                ScrollView {
-                    Group {
-                        if index == OnboardingPage.coachPickerIndex {
-                            coachPicker
-                        } else {
-                            statement
+                // The content sits in the space between the header and the
+                // button, vertically CENTERED rather than pinned to the top.
+                // A plain ScrollView is greedy and top-aligns its content, which
+                // is what shifted the short statement pages (1, 2, 5) upward.
+                // Forcing the scroll content to at least the viewport height and
+                // centering it fixes that, while pages that genuinely overflow
+                // (the privacy list, the coach picker, large type sizes) still
+                // scroll from the top instead of clipping.
+                GeometryReader { geo in
+                    ScrollView {
+                        Group {
+                            if index == OnboardingPage.coachPickerIndex {
+                                coachPicker
+                            } else {
+                                statement
+                            }
                         }
+                        .id(index)
+                        .transition(reduceMotion ? .opacity : .asymmetric(
+                            insertion: .opacity.combined(with: .offset(x: 6)),
+                            removal: .opacity
+                        ))
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.vertical, 24)
+                        .frame(minHeight: geo.size.height, alignment: .center)
                     }
-                    .id(index)
-                    .transition(reduceMotion ? .opacity : .asymmetric(
-                        insertion: .opacity.combined(with: .offset(x: 6)),
-                        removal: .opacity
-                    ))
-                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .scrollIndicators(.hidden)
+                    .scrollBounceBehavior(.basedOnSize)
                 }
-                .scrollIndicators(.hidden)
-                .scrollBounceBehavior(.basedOnSize)
-
-                Spacer(minLength: 24)
 
                 advanceButton
+                    .padding(.top, 8)
             }
             .padding(.horizontal, LL.Metric.gutter)
             .padding(.bottom, 28)
