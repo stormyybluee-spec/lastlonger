@@ -35,6 +35,7 @@ struct SettingsView: View {
     // Info sheets (the "what does this do" explanations)
     @State private var infoTopic: SettingsInfoTopic?
     @State private var showingSiriHelp = false
+    @State private var showingWatchInstallHelp = false
 
     // Wipe
     @State private var showWipeConfirmation = false
@@ -127,6 +128,12 @@ struct SettingsView: View {
         }
         .onChange(of: scenePhase) { phase in
             if phase == .background { DataExportManager.purgeExports() }
+        }
+        .onAppear { watch.activate() }
+        .alert("Install on Apple Watch", isPresented: $showingWatchInstallHelp) {
+            Button("OK") {}
+        } message: {
+            Text("Open the Apple Watch app on your iPhone, scroll to LAST LONGER under Available Apps, and tap Install. iOS does not allow an app to install its Watch app for you.")
         }
     }
 
@@ -271,18 +278,51 @@ struct SettingsView: View {
 
     private var watchSection: some View {
         LLSection(title: "Apple Watch") {
-            LLRow(symbol: "applewatch", title: "Connection", detail: watchStatus, showsChevron: false) {}
+            LLRow(symbol: "applewatch", title: "Connection", detail: watchStatus) {
+                Circle()
+                    .fill(watchStatusColor)
+                    .frame(width: 9, height: 9)
+            }
+
+            // Only when a watch is paired but the companion app is missing.
+            if watch.isPaired && !watch.isWatchAppInstalled {
+                LLDivider()
+                LLRow(symbol: "square.and.arrow.down.fill",
+                      title: "Install on Apple Watch",
+                      detail: "Get the watch companion to control sessions from your wrist",
+                      tint: LLColor.secondary,
+                      showsChevron: true,
+                      action: openWatchAppInstall)
+            }
+
             LLDivider()
-            toggleRow(symbol: "hand.raised.fill", title: "Grip Tension Alerts",
-                      detail: "Requires a paired Apple Watch",
+            toggleRow(symbol: "hand.raised.fill", title: "Anti-Death Grip",
+                      detail: "Buzzes your wrist when you grip too hard. Requires a paired Apple Watch.",
                       isOn: $settings.antiGripPressure)
         }
     }
 
+    /// Connection status - exactly the three states requested, plus a benign
+    /// "Connected" whether or not the watch is reachable this instant
+    /// (reachability flaps every time the watch screen sleeps, so surfacing it
+    /// as a status would read as broken when it is not).
     private var watchStatus: String {
-        if !watch.isPaired { return "Not paired" }
-        if !watch.isWatchAppInstalled { return "Paired - Watch app not installed" }
-        return watch.isReachable ? "Connected" : "Paired - not reachable"
+        if !watch.isPaired { return "Not Paired" }
+        if !watch.isWatchAppInstalled { return "Not Installed" }
+        return "Connected"
+    }
+
+    private var watchStatusColor: Color {
+        if !watch.isPaired { return LLColor.textFaint }
+        if !watch.isWatchAppInstalled { return LLColor.warning }
+        return LLColor.secondary
+    }
+
+    /// There is no public API to open the Watch app or install a watch app
+    /// programmatically, so the honest action is clear instructions.
+    private func openWatchAppInstall() {
+        UISelectionFeedbackGenerator().selectionChanged()
+        showingWatchInstallHelp = true
     }
 
     // MARK: - Reusable controls
