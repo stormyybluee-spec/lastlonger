@@ -75,6 +75,40 @@ final class BinauralEngine: ObservableObject {
     /// spoken coach lines when no binaural program is selected.
     private let keepAliveAmplitude: Double = 0.00015
 
+    private var configObserver: NSObjectProtocol?
+    private var interruptionObserver: NSObjectProtocol?
+
+    init() {
+        let center = NotificationCenter.default
+
+        // AVSpeechSynthesizer shares the app audio session; each time it starts
+        // or stops speaking it can reconfigure the session and STOP this engine
+        // (AVAudioEngine does not restart itself). If that goes unhandled, the
+        // keep-alive tone dies after the first coach line, the app produces no
+        // audio between lines, and iOS suspends it 1-2s after backgrounding -
+        // exactly the "voice fades out on the Home Screen" bug. Rebuild and
+        // restart whenever the engine's configuration changes.
+        configObserver = center.addObserver(
+            forName: .AVAudioEngineConfigurationChange, object: engine, queue: .main
+        ) { [weak self] _ in
+            MainActor.assumeIsolated { self?.handleConfigurationChange() }
+        }
+
+        // A phone call / Siri / another app interrupts the session; on `.ended`
+        // reactivate and restart so coaching resumes.
+        interruptionObserver = center.addObserver(
+            forName: AVAudioSession.interruptionNotification, object: nil, queue: .main
+        ) { [weak self] note in
+            MainActor.assumeIsolated { self?.handleInterruption(note) }
+        }
+    }
+
+    deinit {
+        let center = NotificationCenter.default
+        if let configObserver { center.removeObserver(configObserver) }
+        if let interruptionObserver { center.removeObserver(interruptionObserver) }
+    }
+
     var requiresHeadphones: Bool {
         let headphoneTypes: Set<AVAudioSession.Port> = [
             .headphones, .bluetoothA2DP, .bluetoothLE, .bluetoothHFP, .airPlay, .usbAudio
@@ -147,6 +181,7 @@ final class BinauralEngine: ObservableObject {
         guard isRunning || keepAliveActive || engine.isRunning else { return }
         tone.envelopeTarget = 0
         keepAliveActive = false
+        isRunning = false          // stops the observers restarting during teardown
 
         // Let the envelope fall before tearing the graph down, otherwise the
         // tone cuts with an audible click.
@@ -165,6 +200,57 @@ final class BinauralEngine: ObservableObject {
     /// own media, so the ceiling is deliberately low.
     func setAmplitude(_ value: Double) {
         tone.amplitude = min(max(value, 0), 0.2)
+    }
+
+    // MARK: - Resilience
+
+    /// The engine stopped (config change / interruption). Rebuild the graph
+    /// against the current output format and start again, restoring whichever
+    /// tone was playing. No-op unless a session's audio was actually running.
+    private func restart() {
+        guard keepAliveActive || isRunning, !engine.isRunning else { return }
+
+        if let node = sourceNode {
+            engine.detach(node)
+            sourceNode = nil
+        }
+        buildGraph()
+        applyToneForCurrentMode()
+
+        do {
+            try engine.start()
+            tone.envelopeTarget = 1.0
+        } catch {
+            #if DEBUG
+            print("BinauralEngine: restart failed — \(error)")
+            #endif
+        }
+    }
+
+    private func applyToneForCurrentMode() {
+        if keepAliveActive {
+            tone.amplitude = keepAliveAmplitude
+            tone.configure(carrier: 60, beat: 0, sampleRate: sampleRate)
+        } else if isRunning {
+            tone.amplitude = programAmplitude
+            tone.configure(carrier: program.carrierFrequency,
+                           beat: program.beatFrequency,
+                           sampleRate: sampleRate)
+        }
+    }
+
+    private func handleConfigurationChange() {
+        guard keepAliveActive || isRunning, !engine.isRunning else { return }
+        restart()
+    }
+
+    private func handleInterruption(_ note: Notification) {
+        guard let raw = note.userInfo?[AVAudioSessionInterruptionTypeKey] as? UInt,
+              let type = AVAudioSession.InterruptionType(rawValue: raw) else { return }
+        guard type == .ended, keepAliveActive || isRunning else { return }
+        // Re-activate the shared session, then bring the engine back.
+        try? AVAudioSession.sharedInstance().setActive(true, options: [])
+        restart()
     }
 
     // MARK: - Graph
