@@ -56,6 +56,32 @@
         <string>audio</string>
     </array>
 
+    <!-- ══ LIVE ACTIVITY (Dynamic Island) ════════════════════════════════════
+         Required for the app to start a Live Activity at all. Without this key
+         `ActivityAuthorizationInfo().areActivitiesEnabled` is false, so the
+         session's start/update/end calls silently no-op and nothing appears on
+         the Dynamic Island. Belongs on the APP target, not the widget's plist.
+    -->
+    <key>NSSupportsLiveActivities</key>
+    <true/>
+
+    <!-- ══ URL SCHEME ════════════════════════════════════════════════════════
+         Lets the Live Activity's `.widgetURL("lastlonger://session")` open the
+         app when the compact Dynamic Island is tapped. Handled in
+         LastLongerApp's onOpenURL.
+    -->
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleURLName</key>
+            <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>lastlonger</string>
+            </array>
+        </dict>
+    </array>
+
     <!-- ══ APPEARANCE ════════════════════════════════════════════════════════
          Dark only, at the OS level. Prevents any system-drawn surface (share
          sheet, alerts, the StoreKit sheet) from flashing white at night.

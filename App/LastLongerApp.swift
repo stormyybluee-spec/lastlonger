@@ -53,7 +53,26 @@ struct LastLongerApp: App {
                     // CoreHaptics tears its engine down on resign; rebuild on return.
                     if newPhase == .active { Task { await haptics.prepare() } }
                 }
+                .onOpenURL(perform: handleDeepLink)
         }
+    }
+
+    /// Entry point for `lastlonger://` links - today only the Live Activity's
+    /// `lastlonger://session`, fired when the compact Dynamic Island is tapped.
+    ///
+    /// The activity only exists while a session is running, and the live HUD is
+    /// already presented over Home, so tapping the island simply brings the app
+    /// forward onto it - there is deliberately nothing to navigate here.
+    ///
+    /// It is NOT wired to launch a session: the app runs a session inside a
+    /// `fullScreenCover` over the `.home` phase, so the phase alone cannot tell
+    /// "no session" from "session running", and forcing Quick Start could try to
+    /// present a second cover over the live one. The handler just claims the
+    /// scheme so the tap opens the app cleanly.
+    private func handleDeepLink(_ url: URL) {
+        guard url.scheme == "lastlonger" else { return }
+        // Reserved for future hosts (e.g. deep links into Stats). `session`
+        // needs no action beyond the foreground the system already did.
     }
 }
 
