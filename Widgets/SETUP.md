@@ -7,9 +7,9 @@ Files involved:
 
 | File | Belongs to |
 |---|---|
-| `SessionDynamicIsland.swift` | **Both** targets (app + widget) |
-| `DynamicIslandView.swift` | **Widget target only** |
-| `Views/Settings/FocusModeController.swift` | **Both** targets (the button intents) |
+| `Widgets/SessionDynamicIsland.swift` | **Both** targets (app + widget) |
+| `Widgets/SessionCommandIntents.swift` | **Both** targets (the button intents) |
+| `Widgets/DynamicIslandView.swift` | **Widget target only** |
 
 ---
 
@@ -33,8 +33,18 @@ Select each file, open the **File Inspector** (right panel, ⌥⌘1), and set
 **Target Membership**:
 
 - `SessionDynamicIsland.swift` → ✅ LAST LONGER **and** ✅ LastLongerWidgets
+- `SessionCommandIntents.swift` → ✅ LAST LONGER **and** ✅ LastLongerWidgets
 - `DynamicIslandView.swift` → ✅ LastLongerWidgets **only** (untick the app)
-- `FocusModeController.swift` → ✅ LAST LONGER **and** ✅ LastLongerWidgets
+
+> Do NOT add `FocusModeController.swift` to the widget target - the button
+> intents were moved to `SessionCommandIntents.swift` precisely so the widget
+> doesn't drag in the app's Focus-status code.
+
+> The error `Cannot find 'SessionLiveActivityWidget' in scope` in the bundle
+> file means `DynamicIslandView.swift` is not yet a member of the widget target.
+> `Cannot find 'SessionActivityAttributes'` or `'LogHoldIntent'` means the two
+> shared files above are not members of the widget target. Fix by ticking the
+> boxes here.
 
 > `SessionDynamicIsland.swift` must stay in the **app** target — `SessionEngine`
 > references `SessionActivityAttributes` and the controller. If you remove it

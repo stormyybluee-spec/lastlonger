@@ -152,75 +152,11 @@ struct StartSessionIntent: AppIntent {
     }
 }
 
-// MARK: - In-session voice commands
-//
-// These four let the user control a running session by voice (or from a Live
-// Activity button) without touching the screen - the point of the app is that
-// the phone is away while external media plays.
-//
-// Each intent just posts a local notification; the running `LiveSessionModel`
-// observes it and performs the action. `openAppWhenRun = false` so logging a
-// hold does not yank the user out of whatever they are watching. If no session
-// is active the post is a harmless no-op (nothing is observing).
-//
-// The app is kept alive in the background during a session by the audio
-// keep-alive, so the intent runs in-process and the notification reaches the
-// live model. App Shortcut phrases must contain the app name; users can add a
-// shorter custom phrase ("log hold") in the Shortcuts app.
-
-extension Notification.Name {
-    static let llSessionCommand = Notification.Name("ll.session.command")
-}
-
-/// The vocabulary shared by the Siri intents, the Live Activity buttons and the
-/// live model's handler.
-enum SessionCommand: String {
-    case hold, recover, emergency, end
-
-    fileprivate func post() {
-        NotificationCenter.default.post(name: .llSessionCommand, object: rawValue)
-    }
-}
-
-struct LogHoldIntent: AppIntent {
-    static var title: LocalizedStringResource = "Log a hold"
-    static var description = IntentDescription("Logs a Hold in the running session - you've reached the threshold.")
-    static var openAppWhenRun: Bool = false
-    func perform() async throws -> some IntentResult & ProvidesDialog {
-        SessionCommand.hold.post()
-        return .result(dialog: "Hold logged.")
-    }
-}
-
-struct LogRecoverIntent: AppIntent {
-    static var title: LocalizedStringResource = "Log a recover"
-    static var description = IntentDescription("Logs a Recover in the running session - you've backed off.")
-    static var openAppWhenRun: Bool = false
-    func perform() async throws -> some IntentResult & ProvidesDialog {
-        SessionCommand.recover.post()
-        return .result(dialog: "Recover logged.")
-    }
-}
-
-struct EmergencyIntent: AppIntent {
-    static var title: LocalizedStringResource = "Emergency protocol"
-    static var description = IntentDescription("Triggers the Emergency Protocol in the running session.")
-    static var openAppWhenRun: Bool = false
-    func perform() async throws -> some IntentResult & ProvidesDialog {
-        SessionCommand.emergency.post()
-        return .result(dialog: "Emergency protocol.")
-    }
-}
-
-struct EndSessionIntent: AppIntent {
-    static var title: LocalizedStringResource = "End the session"
-    static var description = IntentDescription("Ends the running session.")
-    static var openAppWhenRun: Bool = false
-    func perform() async throws -> some IntentResult & ProvidesDialog {
-        SessionCommand.end.post()
-        return .result(dialog: "Ending the session.")
-    }
-}
+// The in-session voice-command intents (LogHold / LogRecover / Emergency /
+// EndSession), the SessionCommand vocabulary and the .llSessionCommand
+// notification moved to Widgets/SessionCommandIntents.swift so the Widget
+// Extension can share them without importing this file's Focus-status code.
+// LastLongerShortcuts below still registers them (same module, app target).
 
 struct LastLongerShortcuts: AppShortcutsProvider {
     static var appShortcuts: [AppShortcut] {
