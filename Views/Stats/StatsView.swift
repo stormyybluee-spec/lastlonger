@@ -34,7 +34,7 @@ struct StatsView: View {
             .padding(.horizontal, 18)
             .padding(.top, 8)
         }
-        .background(LL.C.bg.ignoresSafeArea())
+        .llBackground(gridAnchor: .init(x: 0.85, y: 0.08))
         .scrollIndicators(.hidden)
     }
 

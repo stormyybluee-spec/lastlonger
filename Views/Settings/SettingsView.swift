@@ -36,6 +36,7 @@ struct SettingsView: View {
     @State private var infoTopic: SettingsInfoTopic?
     @State private var showingSiriHelp = false
     @State private var showingWatchInstallHelp = false
+    @State private var showingWatchGuide = false
 
     // Wipe
     @State private var showWipeConfirmation = false
@@ -90,6 +91,10 @@ struct SettingsView: View {
         .sheet(isPresented: $showingSiriHelp) {
             SiriInstructionsSheet(onOpenShortcuts: openShortcuts)
                 .presentationDetents([.medium, .large])
+        }
+        .sheet(isPresented: $showingWatchGuide) {
+            WatchGuideSheet()
+                .presentationDetents([.medium])
         }
         .sheet(item: $exportURL) { wrapped in
             ShareSheet(items: [wrapped.url]) { exportURL = nil }
@@ -299,6 +304,15 @@ struct SettingsView: View {
             toggleRow(symbol: "hand.raised.fill", title: "Anti-Death Grip",
                       detail: "Buzzes your wrist when you grip too hard. Requires a paired Apple Watch.",
                       isOn: $settings.antiGripPressure)
+
+            LLDivider()
+            LLRow(symbol: "applewatch.watchface", title: "Apple Watch Guide",
+                  detail: "How the watch buttons and readouts work",
+                  showsChevron: true,
+                  action: {
+                      UISelectionFeedbackGenerator().selectionChanged()
+                      showingWatchGuide = true
+                  })
         }
     }
 
@@ -709,6 +723,113 @@ struct SiriInstructionsSheet: View {
             }
         }
         .preferredColorScheme(.dark)
+    }
+}
+
+// MARK: - Apple Watch guide
+
+/// Full pop-up reference for the watch companion: what each button does and what
+/// each readout shows during a session. Dark-only, matching the rest of the app.
+/// Reachable from the Apple Watch section, under the Anti-Death Grip toggle.
+struct WatchGuideSheet: View {
+
+    @Environment(\.dismiss) private var dismiss
+
+    /// One row per control on the watch face. Symbol, title, plain-language use.
+    private let features: [(symbol: String, title: String, detail: String)] = [
+        ("flame.fill", "HOLD Button",
+         "Tap to log a Hold when you reach the threshold."),
+        ("wind", "RECOVER Button",
+         "Tap to log a Recover when you have backed off."),
+        ("exclamationmark.triangle.fill", "EMERGENCY Button",
+         "Tap to trigger the Emergency Protocol. Stops you from finishing."),
+        ("stop.circle.fill", "END Button",
+         "Tap to end the session."),
+        ("heart.fill", "Heart Rate Display",
+         "Shows your heart rate during the session."),
+        ("number.circle.fill", "Hold Streak Counter",
+         "Shows your current consecutive holds."),
+        ("hand.raised.fill", "Anti-Death Grip",
+         "Buzzes your wrist when grip is too tight. Enable in Settings above.")
+    ]
+
+    var body: some View {
+        ZStack {
+            LLColor.background.ignoresSafeArea()
+
+            VStack(spacing: 0) {
+                ScrollView {
+                    VStack(alignment: .leading, spacing: 18) {
+                        HStack(spacing: 10) {
+                            Image(systemName: "applewatch")
+                                .font(.system(size: 17, weight: .semibold))
+                                .foregroundStyle(LLColor.dataBlue)
+                            Text("Apple Watch Guide")
+                                .llLabelStyle(14, color: LLColor.text)
+                        }
+
+                        Text("Learn how to use your Apple Watch with LAST LONGER during sessions.")
+                            .font(LLFont.mono(11))
+                            .foregroundStyle(LLColor.textDim)
+                            .lineSpacing(3)
+                            .fixedSize(horizontal: false, vertical: true)
+
+                        Rectangle()
+                            .fill(LLColor.hairline)
+                            .frame(height: 1)
+
+                        VStack(alignment: .leading, spacing: 16) {
+                            ForEach(features, id: \.title) { feature in
+                                featureRow(feature)
+                            }
+                        }
+
+                        Rectangle()
+                            .fill(LLColor.hairline)
+                            .frame(height: 1)
+                    }
+                    .padding(.horizontal, LLMetrics.gutter)
+                    .padding(.top, 24)
+                    .padding(.bottom, 16)
+                }
+
+                Button {
+                    UIImpactFeedbackGenerator(style: .rigid).impactOccurred()
+                    dismiss()
+                } label: {
+                    Text("Got it")
+                        .llLabelStyle(13, color: LLColor.background)
+                        .frame(maxWidth: .infinity)
+                        .frame(height: LLMetrics.minTapTarget)
+                        .background(LLColor.text)
+                        .clipShape(RoundedRectangle(cornerRadius: LLMetrics.buttonRadius))
+                }
+                .buttonStyle(.plain)
+                .padding(.horizontal, LLMetrics.gutter)
+                .padding(.bottom, 20)
+            }
+        }
+        .preferredColorScheme(.dark)
+    }
+
+    private func featureRow(_ feature: (symbol: String, title: String, detail: String)) -> some View {
+        HStack(alignment: .top, spacing: 12) {
+            Image(systemName: feature.symbol)
+                .font(.system(size: 15, weight: .semibold))
+                .foregroundStyle(LLColor.dataBlue)
+                .frame(width: 22, alignment: .center)
+
+            VStack(alignment: .leading, spacing: 3) {
+                Text(feature.title)
+                    .llLabelStyle(12, color: LLColor.text)
+                Text(feature.detail)
+                    .font(LLFont.mono(10))
+                    .foregroundStyle(LLColor.textFaint)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .accessibilityElement(children: .combine)
     }
 }
 

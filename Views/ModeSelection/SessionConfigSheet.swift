@@ -42,7 +42,6 @@ struct SessionConfigSheet: View {
                 boundsSection
                 enhancementSection
                 customPhraseSection
-                ritualSection
 
                 Color.clear.frame(height: 24)
             }
@@ -421,16 +420,6 @@ struct SessionConfigSheet: View {
         newPhrase = ""
         phraseFieldFocused = false
         Haptics.shared.play(.select)
-    }
-
-    // MARK: - Ritual
-
-    private var ritualSection: some View {
-        ConfigSection(title: "Pre-Session Ritual", symbol: "checklist") {
-            ToggleRow(title: "Run saved ritual",
-                      subtitle: "Plays your saved setup checklist before the countdown.",
-                      isOn: $model.settings.usePreSessionRitual)
-        }
     }
 }
 
