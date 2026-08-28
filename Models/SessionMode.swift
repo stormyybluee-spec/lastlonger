@@ -123,11 +123,26 @@ enum SessionMode: String, CaseIterable, Codable, Identifiable {
     // MARK: - Trial entitlement
 
     /// The one mode the free Trial includes. Everything else is Armory.
+    ///
+    /// Note the case is `.freeEdge` — that is the raw case whose display name is
+    /// "Free Hold" (see `name`). There is no `.freeHold` case; a switch that
+    /// names one will not compile.
     static let trialMode: SessionMode = .freeEdge
 
     /// True only for Free Hold. Drives the lock badge on the Atlas card and the
     /// access decision in `TrialManager.decide(for:)`.
-    var isIncludedInTrial: Bool { self == Self.trialMode }
+    ///
+    /// Written as an explicit switch so the property is self-contained and does
+    /// not depend on any other declaration being compiled first. Keep the `true`
+    /// case in step with `trialMode` above.
+    var isIncludedInTrial: Bool {
+        switch self {
+        case .freeEdge:   // "Free Hold" — the only mode the Trial covers
+            return true
+        default:
+            return false
+        }
+    }
 
     /// Zen suppresses all visual content and dims the screen to black.
     var suppressesVisuals: Bool { self == .zen }
