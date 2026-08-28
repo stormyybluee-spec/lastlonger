@@ -31,11 +31,16 @@ enum PaywallContext: Equatable, Identifiable {
     case lockedMode(SessionMode)
     /// Both Trial rounds are spent.
     case trialComplete
+    /// The post-onboarding upsell. Shown once, right after onboarding, before
+    /// the user has any round telemetry - so it argues the feature set, not
+    /// numbers, and is dismissible.
+    case intro
 
     var id: String {
         switch self {
         case .lockedMode(let mode): return "locked.\(mode.rawValue)"
         case .trialComplete:        return "trialComplete"
+        case .intro:                return "intro"
         }
     }
 }

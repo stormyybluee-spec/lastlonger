@@ -12,12 +12,14 @@ import os
 
 // MARK: - Launch phases
 
-/// The app is a free download, so there is no paywall phase: nothing gates
-/// launch. The soft paywall is raised on demand, as a sheet, by whichever
-/// screen the user actually reached past (see `PaywallContext`).
+/// The app is a free download, so nothing gates launch. The soft paywall is
+/// raised on demand elsewhere (see `PaywallContext`). The one scripted spot is
+/// right after onboarding: `.paywall(.intro)` shows the upsell once, and it is
+/// dismissible - closing it drops straight to Home, still free.
 enum AppPhase: Equatable {
     case splash
     case onboarding
+    case paywall(PaywallContext)
     case home
 }
 
@@ -105,8 +107,18 @@ struct RootView: View {
                     // (same UserDefaults key it loads from).
                     UserDefaults.standard.set(persona.rawValue, forKey: "ll.persona")
                     hasCompletedOnboarding = true
-                    phase = .home
+                    // After screen 5 ("Accept the Terms of Engagement"), show
+                    // the paywall once. Dismissing it lands on Home.
+                    phase = .paywall(.intro)
                 }
+                .transition(.opacity)
+
+            case .paywall(let context):
+                PaywallView(
+                    context: context,
+                    onUnlocked: { phase = .home },
+                    onDismiss: { phase = .home }
+                )
                 .transition(.opacity)
 
             case .home:

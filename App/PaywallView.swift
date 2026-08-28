@@ -28,6 +28,7 @@ struct PaywallView: View {
     @EnvironmentObject private var store: StoreManager
     @EnvironmentObject private var trial: TrialManager
     @EnvironmentObject private var haptics: HapticEngine
+    @Environment(\.openURL) private var openURL
 
     @ScaledMetric(relativeTo: .largeTitle) private var markSize: CGFloat = 40
 
@@ -41,6 +42,7 @@ struct PaywallView: View {
                 switch context {
                 case .trialComplete:          trialDebrief
                 case .lockedMode(let mode):   armoryListing(blocked: mode)
+                case .intro:                  armoryListing(blocked: nil)
                 }
 
                 purchaseBlock
@@ -124,7 +126,7 @@ struct PaywallView: View {
                 .lineSpacing(3)
                 .fixedSize(horizontal: false, vertical: true)
         }
-        .padding(.top, 44)
+        .padding(.top, 8)
         .frame(maxWidth: .infinity, alignment: .leading)
     }
 
@@ -184,12 +186,14 @@ struct PaywallView: View {
         return percent >= 0 ? LL.Palette.secondary : LL.Palette.primary
     }
 
-    // MARK: - Armory listing (reached for a locked mode)
+    // MARK: - Armory listing (locked mode, or the post-onboarding intro)
 
-    private func armoryListing(blocked mode: SessionMode) -> some View {
+    /// `mode == nil` is the intro upsell shown right after onboarding; a mode
+    /// means the user reached past the Trial for that specific locked mode.
+    private func armoryListing(blocked mode: SessionMode?) -> some View {
         VStack(alignment: .leading, spacing: 22) {
             VStack(alignment: .leading, spacing: 14) {
-                Image(systemName: "lock.fill")
+                Image(systemName: mode == nil ? "flame.fill" : "lock.fill")
                     .font(.system(size: markSize, weight: .black))
                     .foregroundStyle(
                         LinearGradient(colors: [LL.Palette.warning, LL.Palette.primary],
@@ -197,10 +201,9 @@ struct PaywallView: View {
                     )
                     .accessibilityHidden(true)
 
-                DisplayText(text: "LAST LONGER", size: 32, tracking: 3)
-                    .accessibilityAddTraits(.isHeader)
+                wordmark
 
-                Text("\(mode.name) is part of the Full Armory. The Trial covers Free Hold only.")
+                Text(armorySubtitle(for: mode))
                     .font(PixelFont.label(15, weight: .medium))
                     .foregroundStyle(LL.Palette.textSecondary)
                     .fixedSize(horizontal: false, vertical: true)
@@ -219,8 +222,60 @@ struct PaywallView: View {
                 }
             }
         }
-        .padding(.top, 44)
+        .padding(.top, 8)
         .frame(maxWidth: .infinity, alignment: .leading)
+    }
+
+    private func armorySubtitle(for mode: SessionMode?) -> String {
+        if let mode {
+            return "\(mode.name) is part of the Full Armory. The Trial covers Free Hold only."
+        }
+        return "Your Trial covers 2 rounds of Free Hold. The Full Armory unlocks everything else, any time."
+    }
+
+    // MARK: - Wordmark (hidden developer taps)
+
+    /// "LAST LONGER", rendered exactly as before. In DEBUG builds each word is a
+    /// concealed control - tapping "LAST" grants the Founder bypass and "LONGER"
+    /// resets the Trial counter, with no visual tell. Both underlying calls are
+    /// DEBUG-only (a live unlock/reset must never ship), so in release the
+    /// wordmark is plain, inert text.
+    private var wordmark: some View {
+        HStack(spacing: 14) {
+            lastWord
+            longerWord
+        }
+        .accessibilityElement(children: .ignore)
+        .accessibilityAddTraits(.isHeader)
+        .accessibilityLabel("LAST LONGER")
+    }
+
+    @ViewBuilder
+    private var lastWord: some View {
+        #if DEBUG
+        DisplayText(text: "LAST", size: 32, tracking: 3)
+            .contentShape(Rectangle())
+            .onTapGesture {
+                haptics.play(.selection)
+                store.enableFounderBeta()
+            }
+        #else
+        DisplayText(text: "LAST", size: 32, tracking: 3)
+        #endif
+    }
+
+    @ViewBuilder
+    private var longerWord: some View {
+        #if DEBUG
+        DisplayText(text: "LONGER", size: 32, tracking: 3)
+            .contentShape(Rectangle())
+            .onTapGesture {
+                haptics.play(.selection)
+                trial.resetTrial()
+            }
+        #else
+        DisplayText(text: "LONGER", size: 32, tracking: 3)
+        #endif
     }
 
     private func capability(_ symbol: String, _ title: String, _ detail: String) -> some View {
@@ -266,23 +321,9 @@ struct PaywallView: View {
 
             statusLine
 
-            #if DEBUG
-            // DEBUG-only bypasses. Never compiled into a release build.
-            VStack(spacing: 8) {
-                Button("FOUNDER BETA - ENTER WITHOUT PURCHASE") {
-                    haptics.play(.selection)
-                    store.enableFounderBeta()
-                }
-                .buttonStyle(OutlineActionStyle())
-
-                Button("RESET TRIAL COUNTER") {
-                    haptics.play(.selection)
-                    trial.resetTrial()
-                }
-                .buttonStyle(OutlineActionStyle())
-            }
-            .padding(.top, 8)
-            #endif
+            // The visible "Founder Beta" and "Reset Trial Counter" buttons were
+            // removed. In DEBUG both are still reachable, now as the concealed
+            // taps on the "LAST" / "LONGER" wordmark (see `wordmark`).
         }
     }
 
@@ -365,6 +406,13 @@ struct PaywallView: View {
 
     // MARK: - Legal
 
+    /// PLACEHOLDER URLs - swap the host for the real site before shipping. Kept
+    /// in one place so the Settings copy and this footer cannot drift apart.
+    private enum LegalLink {
+        static let privacy = "https://your-site.netlify.app/privacy"
+        static let terms   = "https://your-site.netlify.app/terms"
+    }
+
     private var legalBlock: some View {
         VStack(spacing: 10) {
             Text("Subscription automatically renews unless canceled at least 24 hours before the end of the current period. You can cancel anytime in Settings > Apple ID > Subscriptions.")
@@ -374,12 +422,31 @@ struct PaywallView: View {
                 .lineSpacing(2)
                 .fixedSize(horizontal: false, vertical: true)
 
-            Text(LL.Copy.disclaimer)
-                .font(PixelFont.label(10, weight: .regular))
-                .foregroundStyle(LL.Palette.textTertiary)
-                .multilineTextAlignment(.center)
+            // Clickable legal links. A dot separates them - never an em dash.
+            HStack(spacing: 8) {
+                legalLink("Privacy Policy", LegalLink.privacy)
+                Text("·")
+                    .font(PixelFont.label(11, weight: .regular))
+                    .foregroundStyle(LL.Palette.textTertiary)
+                legalLink("Terms of Use", LegalLink.terms)
+            }
         }
         .frame(maxWidth: .infinity)
+    }
+
+    private func legalLink(_ title: String, _ urlString: String) -> some View {
+        Button {
+            haptics.play(.selection)
+            if let url = URL(string: urlString) { openURL(url) }
+        } label: {
+            Text(title)
+                .font(PixelFont.label(11, weight: .medium))
+                .foregroundStyle(LL.Palette.textSecondary)
+                .underline()
+        }
+        .buttonStyle(.plain)
+        .accessibilityAddTraits(.isLink)
+        .accessibilityHint("Opens in your browser.")
     }
 
     @ViewBuilder
@@ -425,6 +492,13 @@ struct PaywallView: View {
 
 #Preview("Locked mode") {
     PaywallView(context: .lockedMode(.disciplineDrill), onUnlocked: {}, onDismiss: {})
+        .environmentObject(StoreManager())
+        .environmentObject(TrialManager())
+        .environmentObject(HapticEngine())
+}
+
+#Preview("Intro (post-onboarding)") {
+    PaywallView(context: .intro, onUnlocked: {}, onDismiss: {})
         .environmentObject(StoreManager())
         .environmentObject(TrialManager())
         .environmentObject(HapticEngine())
