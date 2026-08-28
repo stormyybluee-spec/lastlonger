@@ -21,8 +21,8 @@ enum LL {
     // MARK: Palette
 
     enum Palette {
-        static let background   = Color(hex: 0x000000)   // The Void
-        static let card         = Color(hex: 0x1C1C1E)   // Panel fill
+        static let background   = Color(hex: 0x1A1A1E)   // Deep Slate
+        static let card         = Color(hex: 0x2C2C2E)   // Elevated Grey panel fill
         static let primary      = Color(hex: 0xFF3B30)   // Threshold / danger
         static let secondary    = Color(hex: 0x34C759)   // Safe / success
         static let warning      = Color(hex: 0xFFCC00)   // Rising
@@ -44,8 +44,8 @@ enum LL {
         // `.rising`, the onboarding copy for `.void` / `.text` / `.textDim`.
         // Same hex values as the names above, exposed under both spellings so
         // neither set of call sites has to be rewritten.
-        static let void         = Color(hex: 0x000000)
-        static let rule         = Color(hex: 0x2C2C2E)
+        static let void         = Color(hex: 0x1A1A1E)
+        static let rule         = Color(hex: 0x3A3A3C)
         static let text         = Color(hex: 0xFFFFFF)
         static let textDim      = Color(hex: 0x8E8E93)
         static let circuit      = Color(hex: 0x0A84FF)
@@ -69,8 +69,8 @@ enum LL {
     /// instead — every `LL.C.*` and `LL.Metric.*` call site is unchanged.
     enum C {
         // Core
-        static let bg          = Color(hex: 0x000000)
-        static let card        = Color(hex: 0x1C1C1E)
+        static let bg          = Color(hex: 0x1A1A1E)
+        static let card        = Color(hex: 0x2C2C2E)
         static let red         = Color(hex: 0xFF3B30)   // threshold / danger
         static let green       = Color(hex: 0x34C759)   // safe / trained
         static let yellow      = Color(hex: 0xFFCC00)   // rising / warning
@@ -82,7 +82,7 @@ enum LL {
         static let dim         = Color(hex: 0x5A5A5F)
         static let grid        = Color(hex: 0x232326)
         static let graphite    = Color(hex: 0x0E0E10)
-        static let hairline    = Color(hex: 0x2C2C2E)
+        static let hairline    = Color(hex: 0x3A3A3C)
 
         // Printed circuit board (heat map only)
         static let pcbDeep     = Color(hex: 0x030B16)

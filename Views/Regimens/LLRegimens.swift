@@ -140,7 +140,7 @@ enum RegimenCatalog {
                 index: i,
                 mode: .gripPressureRepair,
                 targetMinutes: 12,
-                directive: "Target pressure: \(target). Grip reminder every \(cadence) min. If sensation drops, stop and reset — do not compensate with pressure."
+                directive: "Target pressure: \(target). Grip reminder every \(cadence) min. If sensation drops, stop and reset - do not compensate with pressure."
             )
         }
         return Regimen(id: "grip_21",
@@ -162,7 +162,7 @@ enum RegimenCatalog {
                 mode: mode,
                 targetMinutes: i <= 7 ? 8 : 12,
                 directive: i % 3 == 0
-                    ? "Eyes closed. No external media. Sensation only — you are re-learning the signal without the noise."
+                    ? "Eyes closed. No external media. Sensation only - you are re-learning the signal without the noise."
                     : "Release Mode with 5-7-8 pacing and a hypnosis snippet on close. No performance target today."
             )
         }

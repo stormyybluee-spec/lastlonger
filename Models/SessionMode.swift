@@ -120,6 +120,15 @@ enum SessionMode: String, CaseIterable, Codable, Identifiable {
         return "~\(minutes) min"
     }
 
+    // MARK: - Trial entitlement
+
+    /// The one mode the free Trial includes. Everything else is Armory.
+    static let trialMode: SessionMode = .freeEdge
+
+    /// True only for Free Hold. Drives the lock badge on the Atlas card and the
+    /// access decision in `TrialManager.decide(for:)`.
+    var isIncludedInTrial: Bool { self == Self.trialMode }
+
     /// Zen suppresses all visual content and dims the screen to black.
     var suppressesVisuals: Bool { self == .zen }
 

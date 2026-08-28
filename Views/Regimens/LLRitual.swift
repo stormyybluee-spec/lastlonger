@@ -43,7 +43,7 @@ enum RitualCatalog {
             id: "reverse_kegel", title: "Reverse Kegels", symbol: "arrow.down.to.line", tint: LL.C.blue,
             defaultDuration: 40, isRepBased: true, defaultReps: 5,
             cue: "Reverse kegels. Bear down gently and release. Do not clench.",
-            detail: "Lengthens the pelvic floor. The opposite of a kegel — release, do not squeeze."
+            detail: "Lengthens the pelvic floor. The opposite of a kegel - release, do not squeeze."
         ),
         RitualBlockKind(
             id: "pelvic_floor", title: "Pelvic Floor Release", symbol: "hand.point.up.left.fill", tint: LL.C.yellow,

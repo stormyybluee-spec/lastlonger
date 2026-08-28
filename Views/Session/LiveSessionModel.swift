@@ -106,6 +106,10 @@ final class LiveSessionModel: ObservableObject {
 
     // MARK: - Lifecycle
 
+    /// Set the first time `end(reachedEndGoal:)` runs, so a second call (the
+    /// Reset Protocol offers two exits) cannot spend a second Trial round.
+    private var didSpendTrialRound = false
+
     func begin(plan: SessionPlan) {
         self.plan = plan
 
@@ -129,11 +133,24 @@ final class LiveSessionModel: ObservableObject {
     func end(reachedEndGoal: Bool) {
         tempo.suspend()
         interrupt.cancel()
+
+        // Read the clock before `finish()` stops the ticker, so the Trial
+        // records the length the user actually trained.
+        let duration = engine.elapsed
         engine.finish()
 
         log.updateTempo(locked: tempo.originalBPM, final: tempo.currentBPM)
         log.updateHeartRate(average: averageHeartRate, peak: peakHeartRate)
-        log.endSession(duration: engine.elapsed, streak: streak, reachedEndGoal: reachedEndGoal)
+        log.endSession(duration: duration, streak: streak, reachedEndGoal: reachedEndGoal)
+
+        // Soft paywall: a Trial round is spent HERE, once the session is over -
+        // never on start and never on launch. Starting a round the user then
+        // abandons must not cost them a life. `end` is reachable twice from the
+        // Reset Protocol, so the guard keeps one session to one round.
+        if !didSpendTrialRound {
+            didSpendTrialRound = true
+            TrialManager.shared.recordCompletedSession(duration: duration)
+        }
 
         watchLink.send(.sessionEnded(reachedEndGoal: reachedEndGoal))
 

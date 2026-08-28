@@ -111,13 +111,13 @@ enum CoachProfileBuilder {
             openingLine: opening(for: brief),
             positionCues: cues(for: brief.position),
             advisory: brief.isHighAnxiety
-                ? "You logged high anxiety. This mode trains mechanics — it does not treat the anxiety itself, and performance anxiety responds well to treatment. Worth raising with a clinician."
+                ? "You logged high anxiety. This mode trains mechanics - it does not treat the anxiety itself, and performance anxiety responds well to treatment. Worth raising with a clinician."
                 : nil
         )
     }
 
     private static func toneLabel(assertiveness: Double, anxiety: Int) -> String {
-        if anxiety >= 8 { return "Pacer — pressure off" }
+        if anxiety >= 8 { return "Pacer - pressure off" }
         switch assertiveness {
         case ..<0.5:  return "Low pressure"
         case ..<0.72: return "Steady"
@@ -131,7 +131,7 @@ enum CoachProfileBuilder {
         }
         switch brief.context {
         case .new:
-            return "New partner. Tempo discipline from the first minute — that is where it gets away from you."
+            return "New partner. Tempo discipline from the first minute - that is where it gets away from you."
         case .casual:
             return "\(brief.durationGoalMinutes) minute goal. Hold the count. Reset early rather than late."
         case .committed:
@@ -146,7 +146,7 @@ enum CoachProfileBuilder {
             return [
                 "Shallow range. Depth is where the count goes.",
                 "Loose hips. Rigid hips drive tempo up without you noticing.",
-                "Weight on your forearms — shoulder tension reads straight through to the pelvic floor."
+                "Weight on your forearms - shoulder tension reads straight through to the pelvic floor."
             ]
         case .doggy:
             return [

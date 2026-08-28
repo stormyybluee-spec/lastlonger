@@ -252,7 +252,7 @@ struct ResetProtocolView: View {
             }
 
             // Reverse kegel cue, shown only during the exhale.
-            Text(kegelPhase ? "Reverse kegel — let everything go slack and bear down gently"
+            Text(kegelPhase ? "Reverse kegel - let everything go slack and bear down gently"
                             : "Let the pelvic floor rest")
                 .font(Typeface.body(12))
                 .foregroundStyle(kegelPhase ? Theme.rising : Theme.inkFaint)

@@ -8,6 +8,12 @@
 //  auto-switch control that only exists once a second mode is chosen, and a
 //  configuration sheet that rises as soon as anything is selected.
 //
+//  The Atlas is also where the soft paywall is enforced. Free Hold is the one
+//  mode the Trial includes; the other seven are dimmed and badged with a lock.
+//  Tapping a locked card, or Free Hold once both Trial rounds are spent, raises
+//  the paywall instead of selecting. `TrialManager.decide(for:)`
+//  makes that call so the rule lives in exactly one place.
+//
 
 import SwiftUI
 
@@ -100,7 +106,12 @@ final class ModeSelectionModel: ObservableObject {
 struct ModeSelectionView: View {
 
     @StateObject private var model = ModeSelectionModel()
+    @EnvironmentObject private var trial: TrialManager
     @Environment(\.dismiss) private var dismiss
+
+    /// Non-nil while the paywall is up. The context decides which of the two
+    /// paywall screens is shown.
+    @State private var paywall: PaywallContext?
 
     /// Handed the finished plan; the caller pushes the countdown.
     let onStart: (SessionPlan) -> Void
@@ -115,6 +126,7 @@ struct ModeSelectionView: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 0) {
                     header
+                    if !trial.isSubscribed { trialBanner }
                     grid
                     if model.isSplit { autoSwitchControl }
                     Color.clear.frame(height: model.isConfigPresented ? 140 : 40)
@@ -146,6 +158,13 @@ struct ModeSelectionView: View {
             .toolbarBackground(.visible, for: .navigationBar)
         }
         .preferredColorScheme(.dark)
+        .fullScreenCover(item: $paywall) { context in
+            PaywallView(
+                context: context,
+                onUnlocked: { paywall = nil },
+                onDismiss: { paywall = nil }
+            )
+        }
         .sheet(isPresented: $model.isConfigPresented) {
             SessionConfigSheet(model: model) { plan in
                 SettingsStore.save(plan.settings)
@@ -156,6 +175,63 @@ struct ModeSelectionView: View {
             .presentationBackground(Theme.bg)
             .interactiveDismissDisabled(false)
         }
+    }
+
+    // MARK: - Gate
+
+    /// Every tap on a mode card enters here. A blocked tap raises the paywall
+    /// and changes nothing else; an allowed one behaves exactly as before.
+    private func select(_ mode: SessionMode) {
+        switch trial.decide(for: mode) {
+        case .allowed:
+            model.toggle(mode)
+        case .blocked(let context):
+            Haptics.shared.play(.warning)
+            paywall = context
+        }
+    }
+
+    /// Reads back what the Trial has left, so the lock badges have a reason
+    /// on screen rather than only in the paywall.
+    private var trialBanner: some View {
+        HStack(spacing: 8) {
+            Image(systemName: trial.hasSpentTrial ? "lock.fill" : "shield.lefthalf.filled")
+                .font(.system(size: 10, weight: .bold))
+                .foregroundStyle(trial.hasSpentTrial ? Theme.edge : Theme.data)
+
+            Text(trial.hasSpentTrial
+                 ? "Trial complete. Free Hold is spent."
+                 : "Trial: \(trial.remainingLabel) of Free Hold.")
+                .font(Typeface.label(10))
+                .uppercaseLabel(tracking: 0.8)
+                .foregroundStyle(Theme.inkDim)
+                .lineLimit(1)
+                .minimumScaleFactor(0.8)
+
+            Spacer(minLength: 4)
+
+            Text("Unlock")
+                .font(Typeface.label(10))
+                .uppercaseLabel(tracking: 0.8)
+                .foregroundStyle(Theme.data)
+        }
+        .padding(.horizontal, 12)
+        .padding(.vertical, 10)
+        .background(Theme.card)
+        .overlay(
+            RoundedRectangle(cornerRadius: Theme.Metric.cardRadius)
+                .strokeBorder(Theme.data.opacity(0.35), lineWidth: 1)
+        )
+        .clipShape(RoundedRectangle(cornerRadius: Theme.Metric.cardRadius))
+        .padding(.bottom, Theme.Metric.gutter)
+        .contentShape(Rectangle())
+        .onTapGesture {
+            Haptics.shared.play(.tap)
+            paywall = trial.hasSpentTrial ? .trialComplete : .lockedMode(.thresholdLadder)
+        }
+        .accessibilityElement(children: .combine)
+        .accessibilityAddTraits(.isButton)
+        .accessibilityHint("Shows subscription options.")
     }
 
     // MARK: - Header
@@ -187,9 +263,10 @@ struct ModeSelectionView: View {
                 ModeCardView(
                     mode: mode,
                     selectionIndex: model.index(of: mode),
-                    isBlocked: model.isBlocked(mode)
+                    isBlocked: model.isBlocked(mode),
+                    isLocked: trial.isLocked(mode)
                 ) {
-                    model.toggle(mode)
+                    select(mode)
                 }
             }
         }

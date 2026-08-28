@@ -12,9 +12,11 @@ import os
 
 // MARK: - Launch phases
 
+/// The app is a free download, so there is no paywall phase: nothing gates
+/// launch. The soft paywall is raised on demand, as a sheet, by whichever
+/// screen the user actually reached past (see `PaywallContext`).
 enum AppPhase: Equatable {
     case splash
-    case paywall
     case onboarding
     case home
 }
@@ -25,6 +27,7 @@ enum AppPhase: Equatable {
 struct LastLongerApp: App {
 
     @StateObject private var store = StoreManager()
+    @StateObject private var trial = TrialManager.shared
     @StateObject private var audio = AudioSessionController()
     @StateObject private var haptics = HapticEngine()
 
@@ -36,6 +39,7 @@ struct LastLongerApp: App {
         WindowGroup {
             RootView(phase: $phase)
                 .environmentObject(store)
+                .environmentObject(trial)
                 .environmentObject(audio)
                 .environmentObject(haptics)
                 .environmentObject(Repository.shared)   // HomeView reads this
@@ -81,8 +85,10 @@ struct LastLongerApp: App {
 struct RootView: View {
 
     @Binding var phase: AppPhase
-    @EnvironmentObject private var store: StoreManager
     @AppStorage("hasCompletedOnboarding") private var hasCompletedOnboarding = false
+
+    @EnvironmentObject private var store: StoreManager
+    @EnvironmentObject private var trial: TrialManager
 
     var body: some View {
         ZStack {
@@ -92,12 +98,6 @@ struct RootView: View {
             case .splash:
                 SplashView { advanceFromSplash() }
                     .transition(.opacity)
-
-            case .paywall:
-                PaywallView(onUnlocked: {
-                    phase = hasCompletedOnboarding ? .home : .onboarding
-                })
-                .transition(.opacity)
 
             case .onboarding:
                 OnboardingFlow { persona in
@@ -117,21 +117,19 @@ struct RootView: View {
             }
         }
         .animation(LL.Motion.stateFade, value: phase)
+        // The gate reads entitlement from TrialManager so that non-View callers
+        // (LiveSessionModel) can see it too. Mirror it here, at the one place
+        // that is always mounted.
+        .task { trial.setSubscribed(store.isUnlocked) }
         .onChange(of: store.isUnlocked) { _, unlocked in
-            // Entitlement can resolve asynchronously after launch, or be revoked.
-            guard phase != .splash else { return }
-            if unlocked, phase == .paywall {
-                phase = hasCompletedOnboarding ? .home : .onboarding
-            } else if !unlocked {
-                phase = .paywall
-            }
+            trial.setSubscribed(unlocked)
         }
     }
 
+    /// Free download: the splash hands straight to onboarding, then Home.
+    /// Entitlement is irrelevant here - it only decides what a session tap does.
     private func advanceFromSplash() {
-        phase = store.isUnlocked
-            ? (hasCompletedOnboarding ? .home : .onboarding)
-            : .paywall
+        phase = hasCompletedOnboarding ? .home : .onboarding
     }
 }
 

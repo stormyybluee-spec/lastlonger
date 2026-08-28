@@ -85,10 +85,14 @@ struct PlaceholderTab: View {
 public struct HomeView: View {
 
     @EnvironmentObject private var repository: Repository
+    @EnvironmentObject private var trial: TrialManager
     @Environment(\.scenePhase) private var scenePhase
     @State private var showingBreakdown = false
     @State private var showingProgramPicker = false
     @State private var route: Route?
+
+    /// Non-nil while the soft paywall is up over Home.
+    @State private var paywall: PaywallContext?
 
     /// UserDefaults flag set by `StartSessionIntent` (Siri / App Shortcuts).
     /// Consumed here so "Hey Siri, start a session" opens Quick Start.
@@ -153,7 +157,8 @@ public struct HomeView: View {
         .fullScreenCover(item: $route) { destination in
             // The real, engine-backed flow: mode selection (or a one-tap Focus
             // session for Quick Start) → countdown → live session → summary.
-            SessionFlowView(entry: destination == .quickStart ? .quick : .select) {
+            SessionFlowView(entry: destination == .quickStart ? .quick : .select,
+                            quickMode: quickStartMode) {
                 route = nil
             }
         }
@@ -171,7 +176,13 @@ public struct HomeView: View {
         let defaults = UserDefaults.standard
         guard defaults.bool(forKey: Self.pendingQuickStartKey) else { return }
         defaults.removeObject(forKey: Self.pendingQuickStartKey)
-        route = .quickStart
+        // Siri is another door into the same session, so it takes the same
+        // gate. A spent Trial raises the paywall rather than silently
+        // dropping the request.
+        switch trial.decide(for: quickStartMode) {
+        case .allowed:            route = .quickStart
+        case .blocked(let ctx):   paywall = ctx
+        }
     }
 
     // MARK: - Header
@@ -228,10 +239,24 @@ public struct HomeView: View {
         .buttonStyle(PressScale())
     }
 
+    /// Quick Start skips the Atlas, so it has to apply the Trial gate itself.
+    /// Focus is an Armory mode: while the user is on the Trial, Quick Start
+    /// runs Free Hold instead, and the subtitle below says so rather than
+    /// naming a mode they cannot reach.
+    private var quickStartMode: SessionMode {
+        trial.isSubscribed ? .zen : .trialMode
+    }
+
     private var quickStartButton: some View {
         Button {
             HapticEngine.shared.play(.tick)
-            route = .quickStart
+            switch trial.decide(for: quickStartMode) {
+            case .allowed:
+                route = .quickStart
+            case .blocked(let context):
+                HapticEngine.shared.play(.warning)
+                paywall = context
+            }
         } label: {
             HStack(spacing: 12) {
                 Image(systemName: "play.circle.fill")
@@ -243,9 +268,8 @@ public struct HomeView: View {
                         .font(.llLabel(13))
                         .kerning(1.8)
                         .foregroundStyle(LL.Palette.text)
-                    // SessionFlowView's `.quick` entry starts Focus, not Free
-                    // Hold - the old subtitle named the wrong mode.
-                    Text("Focus · Last-used settings")
+                    // Names whichever mode the tap will actually run.
+                    Text("\(quickStartMode.name) · Last-used settings")
                         .font(.system(size: 12, weight: .regular))
                         .foregroundStyle(LL.Palette.textDim)
                 }
@@ -273,8 +297,18 @@ public struct HomeView: View {
             .contentShape(RoundedRectangle(cornerRadius: LL.Metric.corner, style: .continuous))
         }
         .buttonStyle(PressScale())
+        // Attached here, not next to the `$route` cover above: SwiftUI honours
+        // only one `fullScreenCover` per view, and `$route` already owns that
+        // slot on the screen's root.
+        .fullScreenCover(item: $paywall) { context in
+            PaywallView(
+                context: context,
+                onUnlocked: { paywall = nil },
+                onDismiss: { paywall = nil }
+            )
+        }
         .accessibilityLabel("Quick start")
-        .accessibilityHint("Starts a Focus session with your last-used settings.")
+        .accessibilityHint("Starts a \(quickStartMode.name) session with your last-used settings.")
     }
 
     // MARK: - Playlists
@@ -790,4 +824,8 @@ struct PressScale: ButtonStyle {
 
 #Preview {
     RootTabView()
+        .environmentObject(Repository.shared)
+        .environmentObject(StoreManager())
+        .environmentObject(TrialManager.shared)
+        .environmentObject(HapticEngine())
 }

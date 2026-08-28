@@ -1,85 +1,131 @@
 {
-  "identifier" : "A1B2C3D4-LAST-LONGER-STOREKIT",
-  "nonRenewingSubscriptions" : [
-
-  ],
-  "products" : [
+  "identifier": "A1B2C3D4-LAST-LONGER-STOREKIT",
+  "nonRenewingSubscriptions": [],
+  "products": [
     {
-      "displayPrice" : "9.99",
-      "familyShareable" : false,
-      "internalID" : "1000000001",
-      "localizations" : [
+      "displayPrice": "9.99",
+      "familyShareable": false,
+      "internalID": "1000000001",
+      "localizations": [
         {
-          "description" : "Unlocks every session mode, all four coach voices, Apple Watch control, full statistics, badges, and training programmes. One-time purchase. No subscription. No account.",
-          "displayName" : "Unlock Forever",
-          "locale" : "en_US"
+          "description": "Unlocks every session mode, all four coach voices, Apple Watch control, full statistics, badges, and training programmes. One-time purchase. No subscription. No account.",
+          "displayName": "Unlock Forever",
+          "locale": "en_US"
         }
       ],
-      "productID" : "com.lastlonger.app.unlock.lifetime",
-      "referenceName" : "Lifetime Unlock",
-      "type" : "NonConsumable"
+      "productID": "com.lastlonger.app.unlock.lifetime",
+      "referenceName": "Lifetime Unlock (retired, legacy owners only)",
+      "type": "NonConsumable"
     }
   ],
-  "settings" : {
-    "_applicationInternalID" : "6000000001",
-    "_developerTeamID" : "REPLACE_WITH_TEAM_ID",
-    "_failTransactionsEnabled" : false,
-    "_lastSynchronizedDate" : 0,
-    "_locale" : "en_US",
-    "_storefront" : "USA",
-    "_storeKitErrors" : [
+  "settings": {
+    "_applicationInternalID": "6000000001",
+    "_developerTeamID": "REPLACE_WITH_TEAM_ID",
+    "_failTransactionsEnabled": false,
+    "_lastSynchronizedDate": 0,
+    "_locale": "en_US",
+    "_storeKitErrors": [
       {
-        "current" : null,
-        "enabled" : false,
-        "name" : "Load Products"
+        "current": null,
+        "enabled": false,
+        "name": "Load Products"
       },
       {
-        "current" : null,
-        "enabled" : false,
-        "name" : "Purchase"
+        "current": null,
+        "enabled": false,
+        "name": "Purchase"
       },
       {
-        "current" : null,
-        "enabled" : false,
-        "name" : "Verification"
+        "current": null,
+        "enabled": false,
+        "name": "Verification"
       },
       {
-        "current" : null,
-        "enabled" : false,
-        "name" : "App Store Sync"
+        "current": null,
+        "enabled": false,
+        "name": "App Store Sync"
       },
       {
-        "current" : null,
-        "enabled" : false,
-        "name" : "Subscription Status"
+        "current": null,
+        "enabled": false,
+        "name": "Subscription Status"
       },
       {
-        "current" : null,
-        "enabled" : false,
-        "name" : "App Transaction"
+        "current": null,
+        "enabled": false,
+        "name": "App Transaction"
       },
       {
-        "current" : null,
-        "enabled" : false,
-        "name" : "Manage Subscriptions Sheet"
+        "current": null,
+        "enabled": false,
+        "name": "Manage Subscriptions Sheet"
       },
       {
-        "current" : null,
-        "enabled" : false,
-        "name" : "Refund Request Sheet"
+        "current": null,
+        "enabled": false,
+        "name": "Refund Request Sheet"
       },
       {
-        "current" : null,
-        "enabled" : false,
-        "name" : "Offer Code Redeem Sheet"
+        "current": null,
+        "enabled": false,
+        "name": "Offer Code Redeem Sheet"
       }
-    ]
+    ],
+    "_storefront": "USA"
   },
-  "subscriptionGroups" : [
-
+  "subscriptionGroups": [
+    {
+      "id": "20000001",
+      "localizations": [],
+      "name": "Full Armory",
+      "subscriptions": [
+        {
+          "adHocOffers": [],
+          "codeOffers": [],
+          "displayPrice": "1.99",
+          "familyShareable": false,
+          "groupNumber": 1,
+          "internalID": "2000000001",
+          "introductoryOffer": null,
+          "localizations": [
+            {
+              "description": "Unlocks all 8 training modes, the full voice coach library, Apple Watch control, heat maps and statistics. Billed weekly.",
+              "displayName": "Unlock the Challenge",
+              "locale": "en_US"
+            }
+          ],
+          "productID": "com.lastlonger.app.sub.weekly",
+          "recurringSubscriptionPeriod": "P1W",
+          "referenceName": "Unlock the Challenge (Weekly)",
+          "subscriptionGroupID": "20000001",
+          "type": "RecurringSubscription"
+        },
+        {
+          "adHocOffers": [],
+          "codeOffers": [],
+          "displayPrice": "39.99",
+          "familyShareable": false,
+          "groupNumber": 2,
+          "internalID": "2000000002",
+          "introductoryOffer": null,
+          "localizations": [
+            {
+              "description": "Unlocks all 8 training modes, the full voice coach library, Apple Watch control, heat maps and statistics. Billed yearly.",
+              "displayName": "Commander's Pass",
+              "locale": "en_US"
+            }
+          ],
+          "productID": "com.lastlonger.app.sub.yearly",
+          "recurringSubscriptionPeriod": "P1Y",
+          "referenceName": "Commander's Pass (Yearly)",
+          "subscriptionGroupID": "20000001",
+          "type": "RecurringSubscription"
+        }
+      ]
+    }
   ],
-  "version" : {
-    "major" : 4,
-    "minor" : 0
+  "version": {
+    "major": 4,
+    "minor": 0
   }
 }

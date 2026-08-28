@@ -25,9 +25,9 @@ import UIKit
 
 enum LLColor {
     /// The void. Pure black, unreflective. OLED burn-friendly.
-    static let background = Color(hex: 0x000000)
+    static let background = Color(hex: 0x1A1A1E)
     /// Panel fill. Meant to be ignored so numbers and the Angel carry the screen.
-    static let card = Color(hex: 0x1C1C1E)
+    static let card = Color(hex: 0x2C2C2E)
 
     static let primary = Color(hex: 0xFF3B30)   // Red    — threshold / destructive
     static let secondary = Color(hex: 0x34C759) // Green  — safe / confirmed

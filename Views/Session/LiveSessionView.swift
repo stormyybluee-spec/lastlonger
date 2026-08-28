@@ -230,7 +230,7 @@ struct LiveSessionView: View {
             if model.breath.isRunning {
                 breathReadout
             } else if case .learning = model.tempo.state {
-                Text("Tempo — tap the Angel  \(model.tempo.learningLabel)")
+                Text("Tempo - tap the Angel  \(model.tempo.learningLabel)")
                     .font(Typeface.label(9))
                     .uppercaseLabel()
                     .foregroundStyle(Theme.data)
@@ -260,7 +260,7 @@ struct LiveSessionView: View {
                 .font(Typeface.pixel(16))
                 .foregroundStyle(Theme.ink)
 
-            Text("Tap the Angel — once, twice, or three times")
+            Text("Tap the Angel - once, twice, or three times")
                 .font(Typeface.body(11))
                 .foregroundStyle(Theme.inkFaint)
 

@@ -299,7 +299,7 @@ struct BadgeDetailSheet: View {
                 LLLabel(item.isEarned ? "Earned" : "Progress",
                         color: item.isEarned ? LL.C.green : LL.C.label, size: 10)
                 Text(item.isEarned
-                     ? (item.earnedAt?.formatted(.dateTime.month(.abbreviated).day().year()) ?? "—")
+                     ? (item.earnedAt?.formatted(.dateTime.month(.abbreviated).day().year()) ?? "-")
                      : item.standing)
                     .font(LLFont.readout(17))
                     .foregroundStyle(LL.C.text)

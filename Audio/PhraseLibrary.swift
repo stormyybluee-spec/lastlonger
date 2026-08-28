@@ -77,7 +77,7 @@ enum PhraseLibrary {
             report.append("\(persona.name): \(total) lines")
             for category in PhraseCategory.allCases where category != .custom {
                 if (table[category] ?? []).isEmpty {
-                    report.append("  ⚠︎ empty: \(category.rawValue)")
+                    report.append("  EMPTY: \(category.rawValue)")
                 }
             }
         }

@@ -162,7 +162,7 @@ struct RecoveryDetailSheet: View {
             .padding(14)
             .crtPanel()
 
-            Text("This window is yours to set. The app does not estimate your refractory period — it counts hours against the number you choose. Set it from what you actually observe.")
+            Text("This window is yours to set. The app does not estimate your refractory period - it counts hours against the number you choose. Set it from what you actually observe.")
                 .font(LLFont.terminal(10))
                 .foregroundStyle(LL.C.dim)
                 .fixedSize(horizontal: false, vertical: true)

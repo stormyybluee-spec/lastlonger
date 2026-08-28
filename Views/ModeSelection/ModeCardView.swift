@@ -6,6 +6,10 @@
 //  the card shows 1 or 2, which is the whole affordance for "mode one runs
 //  first, mode two runs second".
 //
+//  A locked card is dimmed and carries a lock badge, but stays tappable: the
+//  tap is how the user reaches the paywall. `isBlocked` is the unrelated
+//  "selection is already full" state, which really is inert.
+//
 
 import SwiftUI
 
@@ -17,6 +21,8 @@ struct ModeCardView: View {
     let selectionIndex: Int?
     /// Selection is full and this card isn't part of it.
     let isBlocked: Bool
+    /// Outside the free Trial and not subscribed. Dimmed, badged, still tappable.
+    var isLocked: Bool = false
     let action: () -> Void
 
     @State private var isPressed = false
@@ -26,6 +32,20 @@ struct ModeCardView: View {
     private var borderColor: Color {
         if isSelected { return mode.difficulty.dot }
         return Theme.hairline
+    }
+
+    /// Locked cards read back from the grid, but never so far that the mode
+    /// name stops being legible - the user has to know what they are buying.
+    private var dimming: Double {
+        if isBlocked { return 0.32 }
+        if isLocked { return 0.55 }
+        return 1
+    }
+
+    private var accessibilityHintText: String {
+        if isLocked { return "Locked. Double tap to see subscription options." }
+        if isBlocked { return "Deselect another mode first" }
+        return "Double tap to select"
     }
 
     var body: some View {
@@ -41,7 +61,17 @@ struct ModeCardView: View {
 
                     Spacer(minLength: 0)
 
-                    if let index = selectionIndex {
+                    if isLocked {
+                        // SF Symbol, not an emoji. Sits where the selection
+                        // badge would be, because a locked card can never
+                        // carry one.
+                        Image(systemName: "lock.fill")
+                            .font(.system(size: 11, weight: .bold))
+                            .foregroundStyle(Theme.inkDim)
+                            .frame(width: 22, height: 22)
+                            .background(Theme.cardRaised,
+                                        in: RoundedRectangle(cornerRadius: Theme.Metric.chipRadius))
+                    } else if let index = selectionIndex {
                         Text("\(index)")
                             .font(Typeface.numeric(13))
                             .foregroundStyle(Theme.bg)
@@ -117,10 +147,11 @@ struct ModeCardView: View {
                 }
             }
             .clipShape(RoundedRectangle(cornerRadius: Theme.Metric.cardRadius))
-            .opacity(isBlocked ? 0.32 : 1)
+            .opacity(dimming)
             .scaleEffect(isPressed ? 0.975 : 1)
         }
         .buttonStyle(.plain)
+        // Locked cards stay live: tapping one is how the paywall is reached.
         .disabled(isBlocked)
         .animation(.snappy(duration: 0.18), value: selectionIndex)
         .animation(.easeOut(duration: 0.12), value: isPressed)
@@ -130,8 +161,10 @@ struct ModeCardView: View {
                 .onEnded { _ in isPressed = false }
         )
         .accessibilityElement(children: .combine)
-        .accessibilityLabel("\(mode.name). \(mode.blurb) Difficulty \(mode.difficulty.label). \(mode.estimatedLabel).")
-        .accessibilityValue(selectionIndex.map { "Selected, position \($0)" } ?? "Not selected")
-        .accessibilityHint(isBlocked ? "Deselect another mode first" : "Double tap to select")
+        .accessibilityLabel("\(mode.name).\(isLocked ? " Locked." : "") \(mode.blurb) Difficulty \(mode.difficulty.label). \(mode.estimatedLabel).")
+        .accessibilityValue(isLocked
+                            ? "Locked"
+                            : (selectionIndex.map { "Selected, position \($0)" } ?? "Not selected"))
+        .accessibilityHint(accessibilityHintText)
     }
 }

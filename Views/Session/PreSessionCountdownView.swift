@@ -257,10 +257,14 @@ struct SessionHandoffView: View {
 @MainActor
 struct SessionFlowView: View {
 
-    /// How the flow is entered: full mode selection, or a one-tap Focus session.
+    /// How the flow is entered: full mode selection, or a one-tap session that
+    /// skips it.
     enum Entry { case select, quick }
 
     let entry: Entry
+    /// The mode a `.quick` entry runs. Focus for a subscriber; Free Hold while
+    /// the caller is still on the Trial, since Focus is not part of it.
+    let quickMode: SessionMode
     let onClose: () -> Void
 
     @StateObject private var coach: VoiceCoach
@@ -276,8 +280,11 @@ struct SessionFlowView: View {
         case live
     }
 
-    init(entry: Entry = .select, onClose: @escaping () -> Void = {}) {
+    init(entry: Entry = .select,
+         quickMode: SessionMode = .zen,
+         onClose: @escaping () -> Void = {}) {
         self.entry = entry
+        self.quickMode = quickMode
         self.onClose = onClose
 
         // One object graph, shared by the engine, the live model and the HUD.
@@ -297,11 +304,12 @@ struct SessionFlowView: View {
             switch stage {
             case .selecting:
                 if entry == .quick {
-                    // Quick Start: Focus mode, last-used settings, straight to
-                    // the countdown — no mode-selection screen.
+                    // Quick Start: one mode, last-used settings, straight to
+                    // the countdown — no mode-selection screen. The caller has
+                    // already cleared `quickMode` with the Trial gate.
                     Color.clear.onAppear {
                         stage = .countdown(
-                            SessionPlan(primary: .zen,          // "Focus"
+                            SessionPlan(primary: quickMode,
                                         secondary: nil,
                                         autoSwitch: .manual,
                                         settings: SettingsStore.load())

@@ -2,10 +2,14 @@
 //  OnboardingFlow.swift
 //  LAST LONGER
 //
-//  Four screens. Copy is verbatim from the spec — it is doing a job
-//  (name the problem, reframe the habit, make the privacy claim, pick a
-//  voice) and softening any of it would break the fourth screen's premise
-//  that the app is telling the truth.
+//  Five screens. Copy is verbatim from the spec - it is doing a job (name the
+//  problem, reframe the habit, make the privacy claim, pick a voice, then set
+//  the terms of the Trial) and softening any of it would break the third
+//  screen's premise that the app is telling the truth.
+//
+//  Screen 5 is the soft paywall's opening move: it states the two free rounds
+//  up front, before the user has spent either, so the Trial Complete paywall
+//  later is a promise kept rather than an ambush.
 //
 //  The pixel-noise transition respects Reduce Motion and falls back to a
 //  plain cross-fade.
@@ -33,14 +37,14 @@ struct OnboardingPage: Identifiable {
         .init(
             id: 1,
             symbol: "bolt.fill",
-            headline: "Your session is the gym.",
+            headline: "THE CALL TO DUTY",
             subtext: "Every session is a rep. Train while you focus.",
             cta: "NEXT"
         ),
         .init(
             id: 2,
             symbol: "mic.slash",
-            headline: "Zero recordings. Zero servers.",
+            headline: "Zero recordings. Zero servers. Zero evidence.",
             subtext: "Everything stays on this phone. Forever.",
             cta: "NEXT"
         ),
@@ -49,9 +53,22 @@ struct OnboardingPage: Identifiable {
             symbol: "figure.wave",
             headline: "Meet your coach.",
             subtext: "Choose your voice. Change it anytime.",
-            cta: "START TRAINING"
+            cta: "NEXT"
+        ),
+        .init(
+            id: 4,
+            symbol: "shield.lefthalf.filled",
+            headline: "You have 2 lives.",
+            subtext: "The Trial gives you 2 complete rounds of 'Free Hold' training. These are your test runs. Survive the trial. Walk away, and your progress resets to zero.",
+            cta: "ACCEPT THE TERMS OF ENGAGEMENT"
         ),
     ]
+
+    /// The coach picker replaces the statement layout on exactly one screen.
+    static let coachPickerIndex = 3
+
+    /// The Trial terms. Renders the two lives as a ledger under the statement.
+    static let trialTermsIndex = 4
 }
 
 // MARK: - Flow
@@ -84,18 +101,23 @@ public struct OnboardingFlow: View {
 
                 Spacer(minLength: 24)
 
-                Group {
-                    if index == 3 {
-                        coachPicker
-                    } else {
-                        statement
+                ScrollView {
+                    Group {
+                        if index == OnboardingPage.coachPickerIndex {
+                            coachPicker
+                        } else {
+                            statement
+                        }
                     }
+                    .id(index)
+                    .transition(reduceMotion ? .opacity : .asymmetric(
+                        insertion: .opacity.combined(with: .offset(x: 6)),
+                        removal: .opacity
+                    ))
+                    .frame(maxWidth: .infinity, alignment: .leading)
                 }
-                .id(index)
-                .transition(reduceMotion ? .opacity : .asymmetric(
-                    insertion: .opacity.combined(with: .offset(x: 6)),
-                    removal: .opacity
-                ))
+                .scrollIndicators(.hidden)
+                .scrollBounceBehavior(.basedOnSize)
 
                 Spacer(minLength: 24)
 
@@ -155,7 +177,8 @@ public struct OnboardingFlow: View {
                 .channelSplit(active: glitch.intensity > 0.2, amount: 3)
 
             Text(page.headline)
-                .font(.system(size: 40, weight: .heavy))
+                .font(.system(size: index == OnboardingPage.trialTermsIndex ? 34 : 40,
+                              weight: .heavy))
                 .foregroundStyle(LL.Palette.text)
                 .lineSpacing(-2)
                 .fixedSize(horizontal: false, vertical: true)
@@ -167,6 +190,10 @@ public struct OnboardingFlow: View {
 
             if index == 2 {
                 privacyLedger
+            }
+
+            if index == OnboardingPage.trialTermsIndex {
+                trialLedger
             }
         }
         .frame(maxWidth: .infinity, alignment: .leading)
@@ -195,6 +222,43 @@ public struct OnboardingFlow: View {
             }
         }
         .padding(.top, 6)
+    }
+
+    /// Screen 5 makes a commercial promise, so it shows the terms as a ledger
+    /// rather than burying them in the paragraph. Two lives, spent only on a
+    /// finished round, and what the rest of the Armory costs to reach.
+    private var trialLedger: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            trialLedgerRow(symbol: "shield.lefthalf.filled",
+                           term: "2 ROUNDS",
+                           value: "FREE HOLD")
+            trialLedgerRow(symbol: "checkmark.circle",
+                           term: "SPENT ON",
+                           value: "FINISHED ROUNDS ONLY")
+            trialLedgerRow(symbol: "lock.fill",
+                           term: "7 MORE MODES",
+                           value: "LOCKED")
+        }
+        .padding(.top, 6)
+    }
+
+    private func trialLedgerRow(symbol: String, term: String, value: String) -> some View {
+        HStack(spacing: 10) {
+            Image(systemName: symbol)
+                .font(.system(size: 10, weight: .black))
+                .foregroundStyle(LL.Palette.circuit)
+                .frame(width: 12)
+            Text(term)
+                .font(.llData(11))
+                .kerning(1.2)
+                .foregroundStyle(LL.Palette.text)
+            Spacer()
+            Text(value)
+                .font(.llData(11))
+                .kerning(1.0)
+                .foregroundStyle(LL.Palette.textDim)
+        }
+        .accessibilityElement(children: .combine)
     }
 
     // MARK: - Coach picker
@@ -236,6 +300,9 @@ public struct OnboardingFlow: View {
                 .font(.llLabel(15))
                 .kerning(2)
                 .foregroundStyle(LL.Palette.text)
+                .lineLimit(1)
+                .minimumScaleFactor(0.7)
+                .padding(.horizontal, 12)
                 .frame(maxWidth: .infinity)
                 .frame(height: LL.Metric.tapTarget)
                 .background(
