@@ -2,8 +2,8 @@
 //  HomeView.swift
 //  LAST LONGER
 //
-//  The command centre. Everything above the fold answers one question —
-//  "can I start right now" — and everything below it is evidence that the
+//  The command centre. Everything above the fold answers one question -
+//  "can I start right now" - and everything below it is evidence that the
 //  last few sessions happened.
 //
 //  Sections collapse when they are empty rather than showing zero-state
@@ -28,38 +28,172 @@ public struct RootTabView: View {
     public init() {}
 
     public var body: some View {
-        TabView(selection: $tab) {
-            HomeView()
-                .tabItem { Label("Home", systemImage: "house.fill") }
-                .tag(Tab.home)
+        // The system tab bar is hidden per tab and replaced by InstrumentTabBar.
+        // TabView is kept underneath rather than swapped for a switch, because
+        // it is what preserves each tab's view state and scroll position.
+        ZStack(alignment: .bottom) {
+            TabView(selection: $tab) {
+                chrome(HomeView())
+                    .tag(Tab.home)
 
-            StatsView(store: statsStore)
-                .tabItem { Label("Stats", systemImage: "chart.bar.fill") }
-                .tag(Tab.stats)
+                chrome(StatsView(store: statsStore))
+                    .tag(Tab.stats)
 
-            ChallengesView(store: statsStore)
-                .tabItem { Label("Challenges", systemImage: "trophy.fill") }
-                .tag(Tab.challenges)
+                chrome(ChallengesView(store: statsStore))
+                    .tag(Tab.challenges)
 
-            SettingsView()
-                .environment(\.managedObjectContext, PersistenceController.shared.viewContext)
-                .tabItem { Label("Settings", systemImage: "gearshape.fill") }
-                .tag(Tab.settings)
+                chrome(SettingsView()
+                    .environment(\.managedObjectContext, PersistenceController.shared.viewContext))
+                    .tag(Tab.settings)
+            }
+
+            InstrumentTabBar(selection: $tab)
         }
         .environmentObject(repository)
         .tint(LL.Palette.text)
         .preferredColorScheme(.dark)
-        .onChange(of: tab) { _, _ in HapticEngine.shared.play(.tick) }
+        .tabSplash(on: tab)
         .onAppear(perform: syncStatsStore)
         .onReceive(repository.$recentSessions) { sessions in
             statsStore.sessions = sessions.map(StatsSessionRecord.init(from:))
         }
     }
 
+    /// Hides the system tab bar and reserves the exact height the custom bar
+    /// occupies, so no screen has to know the bar exists.
+    private func chrome<V: View>(_ view: V) -> some View {
+        view
+            .toolbar(.hidden, for: .tabBar)
+            .safeAreaInset(edge: .bottom) {
+                Color.clear.frame(height: InstrumentTabBar.height)
+            }
+    }
+
     /// Bridge whatever the repository already holds into the stats store on
     /// first appearance (the publisher above then keeps it current).
     private func syncStatsStore() {
         statsStore.sessions = repository.recentSessions.map(StatsSessionRecord.init(from:))
+    }
+}
+
+// MARK: - Instrument tab bar
+
+/// The bottom navigation, built as a control-panel strip rather than a stock
+/// tab bar: a bezel, hairline-separated cells, and a lit indicator that slides
+/// to whichever control is engaged.
+///
+/// Design rules it holds to:
+///  - Nothing glows except the indicator, and it is one accent colour.
+///  - Selection reads from the LED first, colour second, never from size.
+///  - The press is a short spring, not a bounce. This is a switch, not a toy.
+struct InstrumentTabBar: View {
+
+    /// Content height, excluding the home-indicator safe area. `RootTabView`
+    /// reserves exactly this much so nothing is covered.
+    static let height: CGFloat = 58
+
+    @Binding var selection: RootTabView.Tab
+    @Namespace private var led
+
+    /// Mature, instrument-flavoured symbols. No house, no trophy, no gear.
+    private struct Item {
+        let tab: RootTabView.Tab
+        let symbol: String
+        let label: String
+    }
+
+    private let items: [Item] = [
+        .init(tab: .home,       symbol: "square.grid.2x2.fill",  label: "HOME"),
+        .init(tab: .stats,      symbol: "waveform.path.ecg",     label: "STATS"),
+        .init(tab: .challenges, symbol: "target",                label: "CHALLENGES"),
+        .init(tab: .settings,   symbol: "slider.horizontal.3",   label: "SETTINGS")
+    ]
+
+    var body: some View {
+        VStack(spacing: 0) {
+            Rectangle()
+                .fill(LL.Palette.rule)
+                .frame(height: 1)
+
+            HStack(spacing: 0) {
+                ForEach(Array(items.enumerated()), id: \.offset) { index, item in
+                    if index > 0 {
+                        Rectangle()
+                            .fill(LL.Palette.rule.opacity(0.55))
+                            .frame(width: 1)
+                            .padding(.vertical, 12)
+                    }
+                    cell(item)
+                }
+            }
+            .frame(height: Self.height)
+        }
+        .background(LL.Palette.card.ignoresSafeArea(edges: .bottom))
+        .animation(LL.Motion.panelIn, value: selection)
+    }
+
+    private func cell(_ item: Item) -> some View {
+        let isOn = selection == item.tab
+
+        return Button {
+            guard selection != item.tab else { return }
+            HapticEngine.shared.play(.tick)
+            selection = item.tab
+        } label: {
+            VStack(spacing: 6) {
+                // The lit indicator. Slides between cells rather than blinking
+                // on and off, so the movement reads as one mechanism.
+                ZStack {
+                    Color.clear.frame(height: 2)
+                    if isOn {
+                        Rectangle()
+                            .fill(LL.Palette.circuit)
+                            .frame(height: 2)
+                            .shadow(color: LL.Palette.circuit.opacity(0.75), radius: 5)
+                            .matchedGeometryEffect(id: "led", in: led)
+                    }
+                }
+
+                Spacer(minLength: 0)
+
+                Image(systemName: item.symbol)
+                    .font(.system(size: 16, weight: .semibold))
+
+                Text(item.label)
+                    .font(.system(size: 8, weight: .semibold))
+                    .kerning(1.1)
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.7)
+
+                Spacer(minLength: 0)
+            }
+            .padding(.bottom, 8)
+            .foregroundStyle(isOn ? LL.Palette.text : LL.Palette.textDim)
+            .frame(maxWidth: .infinity)
+            .frame(height: Self.height)
+            // Lit from the indicator down, so the LED and its cell read as one part.
+            .background(
+                LinearGradient(colors: [LL.Palette.circuit.opacity(isOn ? 0.10 : 0),
+                                        .clear],
+                               startPoint: .top, endPoint: .bottom)
+            )
+            .contentShape(Rectangle())
+        }
+        .buttonStyle(InstrumentPressStyle())
+        .accessibilityLabel(item.label.capitalized)
+        .accessibilityAddTraits(isOn ? [.isButton, .isSelected] : .isButton)
+    }
+}
+
+/// A short, firm press. Deliberately not bouncy - the reference is a switch
+/// being thrown, not a bubble being popped.
+private struct InstrumentPressStyle: ButtonStyle {
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .scaleEffect(reduceMotion ? 1 : (configuration.isPressed ? 0.95 : 1))
+            .animation(LL.Motion.press, value: configuration.isPressed)
     }
 }
 
@@ -434,7 +568,7 @@ public struct HomeView: View {
     }
 
     // Extracted from `recentSessions` so the type-checker does not have to solve
-    // the whole nested VStack/ForEach/background/overlay expression at once —
+    // the whole nested VStack/ForEach/background/overlay expression at once -
     // that combination tripped "unable to type-check in reasonable time".
     private func recentSessionsList(_ recent: [SessionRecord]) -> some View {
         VStack(spacing: 0) {
