@@ -426,13 +426,17 @@ public struct HomeView: View {
             Text("TODAY").llLabelStyle()
 
             LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 10), count: 2), spacing: 10) {
-                StatTile(label: "THRESHOLDS", value: "\(stats.thresholds)", tint: LL.Palette.edge)
-                StatTile(label: "SESSIONS", value: "\(stats.sessions)", tint: LL.Palette.circuit)
-                StatTile(label: "DAY STREAK", value: "\(stats.dayStreak)", tint: LL.Palette.safe)
-                StatTile(
+                LiquidGlassTile(label: "THRESHOLDS", value: "\(stats.thresholds)",
+                                tint: LL.Palette.edge, index: 0)
+                LiquidGlassTile(label: "SESSIONS", value: "\(stats.sessions)",
+                                tint: LL.Palette.circuit, index: 1)
+                LiquidGlassTile(label: "DAY STREAK", value: "\(stats.dayStreak)",
+                                tint: LL.Palette.safe, index: 2)
+                LiquidGlassTile(
                     label: "LAST FINISHED",
                     value: stats.lastFinished.map(Self.elapsed(since:)) ?? "NEVER",
-                    tint: LL.Palette.textDim
+                    tint: LL.Palette.textDim,
+                    index: 3
                 )
             }
         }
@@ -473,11 +477,16 @@ public struct HomeView: View {
                 }
             }
         }
-        .background(LL.Palette.card, in: RoundedRectangle(cornerRadius: LL.Metric.corner, style: .continuous))
-        .overlay(
-            RoundedRectangle(cornerRadius: LL.Metric.corner, style: .continuous)
-                .strokeBorder(LL.Palette.rule, lineWidth: 1)
-        )
+        .modifier(RecentGlassPanel())
+    }
+}
+
+/// Wraps the RECENT list in the liquid glass surface. Extracted as a modifier
+/// for the same reason `recentSessionsList` was extracted from its caller: the
+/// type-checker was already close to its limit on this expression.
+private struct RecentGlassPanel: ViewModifier {
+    func body(content: Content) -> some View {
+        LiquidGlassBox(phaseOffset: 4.4) { content }
     }
 }
 
@@ -786,25 +795,6 @@ struct ChallengeCard: View {
                 .foregroundStyle(LL.Palette.textDim)
         }
         .llCard()
-    }
-}
-
-struct StatTile: View {
-    let label: String
-    let value: String
-    let tint: Color
-
-    var body: some View {
-        VStack(alignment: .leading, spacing: 6) {
-            Text(label).llLabelStyle(10)
-            Text(value)
-                .font(.llReadout(30))
-                .foregroundStyle(tint)
-                .monospacedDigit()
-                .minimumScaleFactor(0.6)
-                .lineLimit(1)
-        }
-        .llCard(padding: 14)
     }
 }
 

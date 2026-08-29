@@ -53,6 +53,30 @@ enum LL {
         static let safe         = Color(hex: 0x34C759)
         static let rising       = Color(hex: 0xFFCC00)
 
+        // MARK: Liquid glass (Home tiles only)
+        //
+        // Added for the Home screen's liquid glass surfaces. Additive: no
+        // existing token changed. Kept out of general UI use - a glass panel
+        // anywhere other than Home would dilute the effect.
+        static let glass        = Color(hex: 0xFFFFFF, opacity: 0.06)
+        static let chromeLight  = Color(hex: 0xE8F0FF)   // specular highlight
+        static let chromeDark   = Color(hex: 0x0B0D12)   // steel shadow
+        static let liquidEdge   = Color(hex: 0x0A84FF)   // same blue as circuit
+        static let chromaViolet = Color(hex: 0x6640FF)
+        static let chromaAmber  = Color(hex: 0xFF6B00)
+
+        /// The chroma ramp, in order. Data blue into violet into crimson into
+        /// amber - cold to hot, which is the direction the rest of the app
+        /// already reads in.
+        static let chromaStops: [Color] = [
+            Color(hex: 0x0A84FF), Color(hex: 0x6640FF),
+            Color(hex: 0xFF3B30), Color(hex: 0xFF6B00)
+        ]
+
+        /// Closed loop of the ramp, for shading a border that has to meet
+        /// itself without a seam.
+        static let chromaLoop: [Color] = chromaStops + [chromaStops[0]]
+
         // Glow accents from the same dropped file.
         static let glowSafe      = Color(hex: 0xE5F6FF)
         static let glowRising    = Color(hex: 0xFFD60A)
