@@ -176,6 +176,11 @@ public struct HomeView: View {
             .padding(.bottom, 24)
         }
         .scrollIndicators(.hidden)
+        // Layer order, back to front: void + circuit grid + scanlines
+        // (llBackground), then the generative field, then the content. The
+        // field is applied first so it sits directly behind the cards and in
+        // front of the static grid.
+        .background(GenerativeBackground())
         .llBackground(gridAnchor: .init(x: 0.78, y: 0.10))
         .sheet(isPresented: $showingBreakdown) {
             ScoreBreakdownSheet(score: repository.score)

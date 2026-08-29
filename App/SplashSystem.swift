@@ -2,17 +2,18 @@
 //  SplashSystem.swift
 //  LAST LONGER
 //
-//  The tab-transition splash. Two combos over the same flame-and-wordmark
-//  mark, chosen by a weighted roll on every transition:
+//  The tab-transition splash. Two splashes, deliberately unalike, chosen by a
+//  weighted roll on every transition:
 //
-//    Full   (25%)  the onboarding splash in full - pixel noise behind the
-//                  mark, a blue scan line sweeping down over it.
-//    Glitch (75%)  the mark hit by a black/white pixel burst, like signal
-//                  interference cutting across the channel.
+//    Glitch   (75%)  Pure signal interference. A black and white pixel burst
+//                    on the void. No flame, no wordmark, nothing to read.
+//    Original (25%)  The complete onboarding splash: pixel noise, the flame,
+//                    the wordmark, and the blue scan line sweeping down.
 //
-//  Both share the flame and the wordmark; only the treatment over them
-//  changes. Both run 0.5s (fade in, hold, fade out) with a light tap on
-//  appearance.
+//  They share the ground and the envelope and nothing else. That is the point:
+//  the common case is a hard cut of noise the user passes straight through,
+//  and one time in four the brand actually shows up. A splash that always
+//  carries the wordmark stops being a moment and becomes furniture.
 //
 //  Integration notes are at the bottom of this file.
 //
@@ -21,16 +22,16 @@ import SwiftUI
 
 // MARK: - Variant
 
-/// Which of the two combos this appearance shows.
+/// Which of the two splashes this appearance shows.
 enum SplashVariant {
-    case full
     case glitch
+    case original
 
     /// The one and only source of randomness. A fresh, independent roll:
-    /// 1-in-4 is Full (25%), the rest Glitch (75%). Nothing else weights,
-    /// overrides, or sequences the choice - repeats are allowed and expected.
+    /// 1-in-4 is Original (25%), the rest Glitch (75%). Nothing else weights,
+    /// overrides or sequences the choice, and repeats are expected.
     static func random() -> SplashVariant {
-        Int.random(in: 1...4) == 1 ? .full : .glitch
+        Int.random(in: 1...4) == 1 ? .original : .glitch
     }
 }
 
@@ -51,31 +52,50 @@ struct SplashSystem: View {
     static var duration: TimeInterval { fadeIn + hold + fadeOut }
 
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
-    @ScaledMetric(relativeTo: .largeTitle) private var markSize: CGFloat = 46
 
     /// Rolled once, when this instance is created. `TabSplashModifier` gives
-    /// each transition a fresh instance (via `.id`), so each one re-rolls.
+    /// each transition a fresh instance via `.id`, so each one re-rolls.
     @State private var variant: SplashVariant = .random()
-    /// Stable per appearance so the noise field does not flicker between frames.
-    @State private var noiseSeed: UInt64 = .random(in: 0..<UInt64.max)
 
     @State private var opacity: Double = 0
-    @State private var markScale: CGFloat = 0.94
-    @State private var sweep: CGFloat = 0        // Full: scan-line position, 0...1
-    @State private var glitchIntensity: Double = 1  // Glitch: burst strength, ramps to 0
 
     var body: some View {
         ZStack {
             LL.Palette.background.ignoresSafeArea()
 
-            // Full: subtle black/white noise behind the mark.
-            if variant == .full {
-                PixelNoise(seed: noiseSeed, intensity: 0.12, cell: 10)
-                    .ignoresSafeArea()
-                    .allowsHitTesting(false)
+            switch variant {
+            case .glitch:   glitchSplash
+            case .original: originalSplash
             }
+        }
+        .opacity(opacity)
+        // Decorative and short-lived: never eat a tap, never announce itself.
+        .allowsHitTesting(false)
+        .accessibilityHidden(true)
+        .task { await run() }
+    }
 
-            // The mark. Common to both combos.
+    // MARK: Glitch (75%)
+
+    /// Pure interference. Deliberately empty of anything to read - no mark, no
+    /// type, no sweep. `GlitchOverlay` animates itself and already renders a
+    /// single static frame under Reduce Motion.
+    private var glitchSplash: some View {
+        GlitchOverlay(intensity: 1.0)
+            .ignoresSafeArea()
+    }
+
+    // MARK: Original (25%)
+
+    /// The complete onboarding splash, all four elements together.
+    private var originalSplash: some View {
+        ZStack {
+            // 1. Pixel noise, behind everything.
+            PixelNoise(seed: noiseSeed, intensity: 0.12, cell: 10)
+                .ignoresSafeArea()
+                .allowsHitTesting(false)
+
+            // 2 and 3. The flame and the wordmark.
             VStack(spacing: 22) {
                 Image(systemName: "flame.fill")
                     .font(.system(size: markSize, weight: .black))
@@ -86,24 +106,19 @@ struct SplashSystem: View {
                 PixelText("LAST LONGER", pixel: 3, tracking: 1.4, color: LL.Palette.text)
             }
 
-            // The treatment over the mark.
-            switch variant {
-            case .full:
-                scanLine
-            case .glitch:
-                GlitchOverlay(intensity: glitchIntensity)
-                    .ignoresSafeArea()
-            }
+            // 4. The scan line, over the mark.
+            scanLine
         }
-        .opacity(opacity)
-        // Decorative and short-lived: never eat a tap, never announce itself.
-        .allowsHitTesting(false)
-        .accessibilityHidden(true)
-        .task { await run() }
     }
 
-    /// Full combo: a single blue line sweeping top to bottom, screen-blended so
-    /// it lifts the mark as it passes. Suppressed under Reduce Motion.
+    @ScaledMetric(relativeTo: .largeTitle) private var markSize: CGFloat = 46
+    /// Stable per appearance so the noise field does not flicker frame to frame.
+    @State private var noiseSeed: UInt64 = .random(in: 0..<UInt64.max)
+    @State private var markScale: CGFloat = 0.94
+    @State private var sweep: CGFloat = 0
+
+    /// A single blue line sweeping top to bottom, screen-blended so it lifts
+    /// the mark as it passes. Suppressed under Reduce Motion.
     @ViewBuilder
     private var scanLine: some View {
         if !reduceMotion {
@@ -124,6 +139,8 @@ struct SplashSystem: View {
         }
     }
 
+    // MARK: Envelope
+
     private func run() async {
         HapticEngine.shared.play(.tick)
 
@@ -132,15 +149,10 @@ struct SplashSystem: View {
             if !reduceMotion { markScale = 1 }
         }
 
-        // Kick off the variant's own motion alongside the fade.
-        if !reduceMotion {
-            switch variant {
-            case .full:
-                withAnimation(.linear(duration: Self.fadeIn + Self.hold)) { sweep = 1 }
-            case .glitch:
-                // Burst hard, then resolve as the mark settles.
-                withAnimation(.easeOut(duration: Self.fadeIn + Self.hold)) { glitchIntensity = 0 }
-            }
+        // Only Original has anything of its own to animate; Glitch drives
+        // itself from its own TimelineView.
+        if variant == .original, !reduceMotion {
+            withAnimation(.linear(duration: Self.fadeIn + Self.hold)) { sweep = 1 }
         }
 
         try? await Task.sleep(for: .seconds(Self.fadeIn + Self.hold))
@@ -216,20 +228,26 @@ extension View {
 //  1. Put `.tabSplash(on:)` on the container. On a child it would be torn down
 //     by the very swap it is meant to cover.
 //
-//  2. The variant is rolled once per appearance, in SplashVariant.random(),
-//     and nothing else influences it. The `.id(run)` above is what gives each
+//  2. The variant is rolled once per appearance in SplashVariant.random() and
+//     nothing else influences it. The `.id(run)` above is what gives each
 //     transition a fresh instance and therefore a fresh roll.
 //
 //  3. To disable it at runtime (a Settings toggle, say):
 //
 //         .tabSplash(on: tab, enabled: settings.tabSplashesEnabled)
 //
-//  4. To preview one combo directly, override the state default in a copy, or
-//     just run the previews below a few times - the roll shows both.
 
-// MARK: - Preview
+// MARK: - Previews
 
-#Preview("Splash - rolls both") {
+#Preview("Glitch - 75%") {
+    ZStack {
+        LL.Palette.background.ignoresSafeArea()
+        GlitchOverlay(intensity: 1.0).ignoresSafeArea()
+    }
+    .preferredColorScheme(.dark)
+}
+
+#Preview("Rolls both") {
     SplashSystem()
         .preferredColorScheme(.dark)
 }
