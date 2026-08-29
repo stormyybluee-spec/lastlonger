@@ -47,7 +47,12 @@ public struct RootTabView: View {
                     .tag(Tab.settings)
             }
 
+            // Pinned flush to the bottom of the ZStack. The bar already
+            // frames itself to InstrumentTabBar.height internally; stating it
+            // again here keeps the call site explicit and immune to any
+            // intrinsic-size drift from sibling layers.
             InstrumentTabBar(selection: $tab)
+                .frame(height: InstrumentTabBar.height)
         }
         .environmentObject(repository)
         .tint(LL.Palette.text)

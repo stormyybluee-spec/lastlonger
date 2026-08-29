@@ -4,26 +4,25 @@
 //
 //  The liquid glass surface, and the large-box form of it. Home screen only.
 //
-//  Five layers, bottom to top:
+//  Three layers, bottom to top. The liquid lives ONLY on the perimeter -
+//  there is deliberately nothing filling the interior.
 //
-//    1. Background blur   .ultraThinMaterial, so the circuit grid and the
-//                         generative field behind Home warp through the panel.
-//    2. Glass body        A cool vertical sheen over the blur, plus a hairline
-//                         chrome rim that is bright at the top and steel at
-//                         the bottom, which is what makes it read as a solid
-//                         with thickness rather than a translucent rectangle.
-//    3. Chrome specular   A soft highlight that slides with gravity. Drawn in
-//                         the same Canvas as the edge, clipped to the shape.
-//    4. Content           Whatever the caller puts in.
-//    5. Liquid edge       A wave travelling around the border, shaded with the
-//                         chroma ramp, amplitude and drift biased by tilt.
+//    1. Glass body    A clean, semi-transparent DARK fill. No material and no
+//                     blur: those lightened the black ground and washed the
+//                     Home background out, so the panel now darkens the ground
+//                     it sits on rather than lifting it. A hairline chrome rim
+//                     gives it edge thickness.
+//    2. Content       Whatever the caller puts in.
+//    3. Liquid edge   A wave travelling around the border, shaded with the
+//                     chroma ramp, amplitude and drift biased by tilt. Border
+//                     only.
 //
 //  `LiquidGlassTile` is a thin wrapper over this, so both forms share one
 //  surface and cannot drift apart.
 //
 //  Performance: exactly ONE TimelineView per surface, running at 30fps, and
-//  only the Canvas is inside it. The material, the sheen, the rim and the
-//  content all sit outside and never re-evaluate on a tick.
+//  only the border Canvas is inside it. The fill, the rim and the content sit
+//  outside and never re-evaluate on a tick.
 //
 
 import SwiftUI
@@ -63,31 +62,13 @@ struct LiquidGlassSurface<Content: View>: View {
 
     // MARK: 1 + 2. Blur and glass body
 
-    @ViewBuilder
     private var glassBody: some View {
-        ZStack {
-            // Reduce Transparency: drop the blur entirely and sit on the solid
-            // card colour. The panel keeps its shape and rim, loses the depth.
-            if reduceTransparency {
-                shape.fill(LL.Palette.card)
-            } else {
-                shape.fill(.ultraThinMaterial)
-                shape.fill(LL.Palette.glass)
-            }
-
-            // Cool sheen, brighter at the top edge where light would land.
-            shape.fill(
-                LinearGradient(
-                    colors: [
-                        LL.Palette.chromeLight.opacity(reduceTransparency ? 0.05 : 0.11),
-                        Color.clear,
-                        LL.Palette.chromeDark.opacity(0.28)
-                    ],
-                    startPoint: .top,
-                    endPoint: .bottom
-                )
-            )
-        }
+        // Clean, minimal, and DARK. No material and no blur: the previous
+        // .ultraThinMaterial sampled the screen behind the panel and lightened
+        // the black ground, which is what washed the Home background out. A
+        // plain semi-transparent card fill darkens the ground instead of
+        // lifting it. Reduce Transparency goes fully solid.
+        shape.fill(reduceTransparency ? LL.Palette.card : LL.Palette.card.opacity(0.7))
     }
 
     // MARK: 2b. Chrome rim
@@ -108,8 +89,11 @@ struct LiquidGlassSurface<Content: View>: View {
         .allowsHitTesting(false)
     }
 
-    // MARK: 3 + 5. Specular and liquid edge
+    // MARK: The liquid edge
 
+    /// The wave travelling around the border, and nothing else. The interior
+    /// chrome specular that used to fill the panel is gone: the liquid now
+    /// lives ONLY on the perimeter, never inside.
     private var liquidLayer: some View {
         TimelineView(.animation(minimumInterval: 1.0 / 30.0, paused: isPaused)) { timeline in
             Canvas { ctx, size in
@@ -121,7 +105,6 @@ struct LiquidGlassSurface<Content: View>: View {
                 let motion = LiquidMotionManager.shared
                 let tilt = CGPoint(x: motion.tiltX, y: motion.tiltY)
 
-                drawSpecular(&ctx, size: size, t: t, tilt: tilt)
                 drawLiquidEdge(&ctx, size: size, t: t, tilt: tilt)
             }
         }
@@ -131,35 +114,6 @@ struct LiquidGlassSurface<Content: View>: View {
 
     private var isPaused: Bool {
         reduceMotion || scenePhase != .active
-    }
-
-    /// The chrome highlight. Sits where gravity says the light pools, drifting
-    /// slowly when the phone is flat so the glass is never fully still.
-    private func drawSpecular(_ ctx: inout GraphicsContext,
-                              size: CGSize, t: Double, tilt: CGPoint) {
-
-        let driftX = cos(t * 0.6) * 0.16
-        let driftY = sin(t * 0.42) * 0.16
-        let cx = size.width  * (0.5 + driftX - tilt.x * 0.30)
-        let cy = size.height * (0.5 + driftY - tilt.y * 0.30)
-        let radius = max(size.width, size.height) * 0.62
-
-        var layer = ctx
-        layer.clip(to: shape.path(in: CGRect(origin: .zero, size: size)))
-        layer.blendMode = .plusLighter
-        layer.fill(
-            Path(ellipseIn: CGRect(x: cx - radius, y: cy - radius,
-                                   width: radius * 2, height: radius * 2)),
-            with: .radialGradient(
-                Gradient(colors: [
-                    LL.Palette.chromeLight.opacity(reduceTransparency ? 0.05 : 0.13),
-                    Color.clear
-                ]),
-                center: CGPoint(x: cx, y: cy),
-                startRadius: 0,
-                endRadius: radius
-            )
-        )
     }
 
     /// The wave travelling around the border.

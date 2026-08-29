@@ -40,9 +40,9 @@ struct GenerativeBackground: View {
     /// Data blue. The field is telemetry, not decoration.
     var tint: Color = LL.Palette.circuit
 
-    /// Atmospheric, never dominant. 0.12 is the visible-but-quiet setting; push
-    /// past ~0.16 and it starts competing with the Home cards for attention.
-    var fieldOpacity: Double = 0.12
+    /// Atmospheric, never dominant. 0.08 is the quiet default; the field is
+    /// meant to be felt more than seen, so it stays well below the Home cards.
+    var fieldOpacity: Double = 0.08
 
     /// Point footprint in points. At the 400-point design scale a 1pt dot was
     /// nearly imperceptible over the grid backdrop; 1.4pt gives the field enough
