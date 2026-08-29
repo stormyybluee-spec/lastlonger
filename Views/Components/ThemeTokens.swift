@@ -26,7 +26,7 @@ import SwiftUI
 enum Theme {
 
     // MARK: - Surface
-    static let bg          = Color(hex: 0x1A1A1E)   // deep slate
+    static let bg          = Color(hex: 0x000000)   // pure black
     static let card        = Color(hex: 0x2C2C2E)
     static let cardRaised  = Color(hex: 0x3A3A3C)   // one step above card
     static let cardPressed = Color(hex: 0x0E0E10)

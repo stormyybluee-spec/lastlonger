@@ -21,7 +21,7 @@ enum LL {
     // MARK: Palette
 
     enum Palette {
-        static let background   = Color(hex: 0x1A1A1E)   // Deep Slate
+        static let background   = Color(hex: 0x000000)   // Pure black
         static let card         = Color(hex: 0x2C2C2E)   // Elevated Grey panel fill
         static let primary      = Color(hex: 0xFF3B30)   // Threshold / danger
         static let secondary    = Color(hex: 0x34C759)   // Safe / success
@@ -44,7 +44,7 @@ enum LL {
         // `.rising`, the onboarding copy for `.void` / `.text` / `.textDim`.
         // Same hex values as the names above, exposed under both spellings so
         // neither set of call sites has to be rewritten.
-        static let void         = Color(hex: 0x1A1A1E)
+        static let void         = Color(hex: 0x000000)
         static let rule         = Color(hex: 0x3A3A3C)
         static let text         = Color(hex: 0xFFFFFF)
         static let textDim      = Color(hex: 0x8E8E93)
@@ -93,7 +93,7 @@ enum LL {
     /// instead — every `LL.C.*` and `LL.Metric.*` call site is unchanged.
     enum C {
         // Core
-        static let bg          = Color(hex: 0x1A1A1E)
+        static let bg          = Color(hex: 0x000000)
         static let card        = Color(hex: 0x2C2C2E)
         static let red         = Color(hex: 0xFF3B30)   // threshold / danger
         static let green       = Color(hex: 0x34C759)   // safe / trained
