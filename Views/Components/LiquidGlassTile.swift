@@ -35,15 +35,14 @@ struct LiquidGlassTile: View {
                 Text(label)
                     .llLabelStyle(10)
 
-                Text(value)
-                    .font(.llReadout(30))
-                    .foregroundStyle(tint)
-                    .monospacedDigit()
-                    .minimumScaleFactor(0.6)
-                    .lineLimit(1)
-                    // A faint bloom under the numeral, so the readout looks
-                    // lit from inside the glass rather than printed on it.
-                    .shadow(color: tint.opacity(0.35), radius: 9)
+                // Bitmap digits, matching the wordmark's pixel face. The tint
+                // fills the lit cells; a faint bloom under them makes the
+                // readout look lit from inside the glass rather than printed on
+                // it. Every string elapsed() can produce - digits, "H", "D",
+                // "NEVER", "<1H" - now has a glyph, so nothing falls back to a
+                // solid block.
+                PixelText(value, pixel: 3, tracking: 1, color: tint)
+                    .shadow(color: tint.opacity(0.35), radius: 7)
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding(14)

@@ -63,12 +63,12 @@ struct LiquidGlassSurface<Content: View>: View {
     // MARK: 1 + 2. Blur and glass body
 
     private var glassBody: some View {
-        // Clean, minimal, and DARK. No material and no blur: the previous
-        // .ultraThinMaterial sampled the screen behind the panel and lightened
-        // the black ground, which is what washed the Home background out. A
+        // Clean, minimal, and DARK. No blur material of any kind: the earlier
+        // blur sampled the screen behind the panel and lightened the black
+        // ground, which is what washed the Home background out. A
         // plain semi-transparent card fill darkens the ground instead of
         // lifting it. Reduce Transparency goes fully solid.
-        shape.fill(reduceTransparency ? LL.Palette.card : LL.Palette.card.opacity(0.7))
+        shape.fill(reduceTransparency ? LL.Palette.card : LL.Palette.card.opacity(0.6))
     }
 
     // MARK: 2b. Chrome rim
