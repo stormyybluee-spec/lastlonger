@@ -40,9 +40,14 @@ struct GenerativeBackground: View {
     /// Data blue. The field is telemetry, not decoration.
     var tint: Color = LL.Palette.circuit
 
-    /// Atmospheric, never dominant. Above about 0.12 it starts competing with
-    /// the Home cards for attention.
-    var fieldOpacity: Double = 0.08
+    /// Atmospheric, never dominant. 0.12 is the visible-but-quiet setting; push
+    /// past ~0.16 and it starts competing with the Home cards for attention.
+    var fieldOpacity: Double = 0.12
+
+    /// Point footprint in points. At the 400-point design scale a 1pt dot was
+    /// nearly imperceptible over the grid backdrop; 1.4pt gives the field enough
+    /// presence to read as a texture without turning it into a solid line.
+    var pointSize: CGFloat = 1.4
 
     /// How fast `t` advances, per second. The sketch ran at PI/30 per frame,
     /// which is roughly 6.3 per second and far too busy to sit behind content.
@@ -84,9 +89,9 @@ struct GenerativeBackground: View {
                     let p = Self.sample(x: Double(i % 200),
                                         y: Double(i) * yStep,
                                         t: t)
-                    let px = (p.x - half) * scale + dx
-                    let py = (p.y - half) * scale + dy
-                    field.addRect(CGRect(x: px, y: py, width: 1, height: 1))
+                    let px = (p.x - half) * scale + dx - pointSize / 2
+                    let py = (p.y - half) * scale + dy - pointSize / 2
+                    field.addRect(CGRect(x: px, y: py, width: pointSize, height: pointSize))
                 }
 
                 ctx.fill(field, with: .color(tint.opacity(fieldOpacity)))
@@ -95,6 +100,12 @@ struct GenerativeBackground: View {
         .ignoresSafeArea()
         .allowsHitTesting(false)
         .accessibilityHidden(true)
+        #if DEBUG
+        // Confirms the view mounts. If this never prints, the file is not in
+        // the build target; if it prints but nothing draws, it is a layer or
+        // opacity problem, not a wiring one.
+        .onAppear { print("GenerativeBackground mounted, paused=\(isPaused)") }
+        #endif
         // No .drawingGroup() here on purpose. Canvas already renders through
         // Metal, and drawingGroup caches nothing when the content changes every
         // frame - it just adds an offscreen pass per frame. It helps a static

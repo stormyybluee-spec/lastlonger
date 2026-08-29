@@ -87,15 +87,11 @@ struct SplashSystem: View {
 
     // MARK: Original (25%)
 
-    /// The complete onboarding splash, all four elements together.
+    /// The onboarding splash: flame, wordmark, and the scan line. No pixel
+    /// noise - the void stays clean behind the mark.
     private var originalSplash: some View {
         ZStack {
-            // 1. Pixel noise, behind everything.
-            PixelNoise(seed: noiseSeed, intensity: 0.12, cell: 10)
-                .ignoresSafeArea()
-                .allowsHitTesting(false)
-
-            // 2 and 3. The flame and the wordmark.
+            // The flame and the wordmark.
             VStack(spacing: 22) {
                 Image(systemName: "flame.fill")
                     .font(.system(size: markSize, weight: .black))
@@ -106,14 +102,12 @@ struct SplashSystem: View {
                 PixelText("LAST LONGER", pixel: 3, tracking: 1.4, color: LL.Palette.text)
             }
 
-            // 4. The scan line, over the mark.
+            // The scan line, over the mark.
             scanLine
         }
     }
 
     @ScaledMetric(relativeTo: .largeTitle) private var markSize: CGFloat = 46
-    /// Stable per appearance so the noise field does not flicker frame to frame.
-    @State private var noiseSeed: UInt64 = .random(in: 0..<UInt64.max)
     @State private var markScale: CGFloat = 0.94
     @State private var sweep: CGFloat = 0
 
