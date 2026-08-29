@@ -118,25 +118,24 @@ struct LiquidGlassSurface<Content: View>: View {
 
     /// The wave travelling around the border.
     ///
-    /// Every sample carries an outward normal, so the displacement pushes out
-    /// of the shape rather than sideways - that is what keeps it reading as a
-    /// liquid clinging to the rim instead of a wobbling outline.
+    /// Rides the rim itself, NOT an inset interior loop. The earlier version sat
+    /// the wave several points inside the edge with a blur bloom, which read as
+    /// a glowing coloured outline filling the tile. This one is centred on the
+    /// border, a hair inside the rim, with a small swing so the surface's own
+    /// clipShape trims its outer half. What survives is a thin, subtle liquid
+    /// line exactly on the perimeter. No bloom, no glow, nothing in the middle.
     private func drawLiquidEdge(_ ctx: inout GraphicsContext,
                                 size: CGSize, t: Double, tilt: CGPoint) {
 
-        // Inset by the full wave swing, plus a hair, so no peak is clipped by
-        // the surface's own clipShape. The liquid then sits just inside the
-        // rim rather than being sliced in half by it.
-        let inset = amplitude * 2.1 + 1.5
+        let inset: CGFloat = 1.5
         let rect = CGRect(origin: .zero, size: size).insetBy(dx: inset, dy: inset)
         let waveRadius = max(2, cornerRadius - inset)
         guard rect.width > waveRadius * 2, rect.height > waveRadius * 2 else { return }
 
-        // Gravity does two things: pulls the wave deeper on the low side, and
-        // speeds its travel in the direction of the pull.
+        // Subtle. A gentle swell of about a point, biased lightly by tilt.
         let pull = min(1.0, (abs(tilt.x) + abs(tilt.y)))
-        let amp = amplitude * (1 + pull * 1.6)
-        let drift = t * 1.4 + (tilt.x + tilt.y) * 1.8
+        let amp = amplitude * 0.42 * (1 + pull * 0.8)
+        let drift = t * 1.2 + (tilt.x + tilt.y) * 1.2
 
         let samples = 132
         var wave = Path()
@@ -149,11 +148,11 @@ struct LiquidGlassSurface<Content: View>: View {
             let w1 = sin(u * .pi * 6 + drift)
             let w2 = sin(u * .pi * 10 - drift * 0.7 + phaseOffset)
 
-            // Gravity deepens the side the phone is tilted toward.
+            // Gravity deepens the side the phone is tilted toward, gently.
             let facing = normal.dx * tilt.x + normal.dy * tilt.y
-            let gravity = CGFloat(facing) * amp * 0.9
+            let gravity = CGFloat(facing) * amp * 0.6
 
-            let offset = CGFloat(w1 * 0.65 + w2 * 0.35) * amp + gravity
+            let offset = CGFloat(w1 * 0.6 + w2 * 0.4) * amp + gravity
             let p = CGPoint(x: point.x + normal.dx * offset,
                             y: point.y + normal.dy * offset)
             i == 0 ? wave.move(to: p) : wave.addLine(to: p)
@@ -166,14 +165,13 @@ struct LiquidGlassSurface<Content: View>: View {
             endPoint: CGPoint(x: rect.maxX, y: rect.maxY)
         )
 
-        // Bloom first, then the core, so the edge glows rather than outlines.
+        // One thin, half-opacity core stroke. No bloom pass, so the edge is a
+        // quiet moving line rather than a glowing loop.
         ctx.drawLayer { layer in
-            layer.addFilter(.blur(radius: 4))
+            layer.opacity = 0.5
             layer.stroke(wave, with: shading,
-                         style: StrokeStyle(lineWidth: 2.4, lineJoin: .round))
+                         style: StrokeStyle(lineWidth: 1, lineJoin: .round))
         }
-        ctx.stroke(wave, with: shading,
-                   style: StrokeStyle(lineWidth: 0.9, lineJoin: .round))
     }
 
     // MARK: Perimeter

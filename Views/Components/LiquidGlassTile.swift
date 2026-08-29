@@ -36,13 +36,11 @@ struct LiquidGlassTile: View {
                     .llLabelStyle(10)
 
                 // Bitmap digits, matching the wordmark's pixel face. The tint
-                // fills the lit cells; a faint bloom under them makes the
-                // readout look lit from inside the glass rather than printed on
-                // it. Every string elapsed() can produce - digits, "H", "D",
-                // "NEVER", "<1H" - now has a glyph, so nothing falls back to a
-                // solid block.
+                // fills the lit cells - clean, with no glow or bloom behind
+                // them, so the interior stays flat text on dark glass. Every
+                // string elapsed() can produce - digits, "H", "D", "NEVER",
+                // "<1H" - has a glyph, so nothing falls back to a solid block.
                 PixelText(value, pixel: 3, tracking: 1, color: tint)
-                    .shadow(color: tint.opacity(0.35), radius: 7)
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding(14)
