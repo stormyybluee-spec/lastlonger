@@ -68,7 +68,7 @@ struct LiquidGlassSurface<Content: View>: View {
         // ground, which is what washed the Home background out. A
         // plain semi-transparent card fill darkens the ground instead of
         // lifting it. Reduce Transparency goes fully solid.
-        shape.fill(reduceTransparency ? LL.Palette.card : LL.Palette.card.opacity(0.6))
+        shape.fill(reduceTransparency ? LL.Palette.card : LL.Palette.card.opacity(0.8))
     }
 
     // MARK: 2b. Chrome rim

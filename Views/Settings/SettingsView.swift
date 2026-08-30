@@ -492,7 +492,7 @@ struct SettingsView: View {
             VStack(alignment: .leading, spacing: 6) {
                 Text("Disclaimer")
                     .llLabelStyle(11, color: LLColor.textDim)
-                Text("Educational purposes. Not medical advice. Persistent difficulty with ejaculatory control is treatable - a urologist or a sex therapist can help, and this app is not a substitute for either.")
+                Text("Educational purposes. Not medical advice. Persistent difficulty with ejaculatory control is treatable. A urologist or a sex therapist can help, and this app is not a substitute for either.")
                     .font(LLFont.mono(10))
                     .foregroundStyle(LLColor.textFaint)
                     .lineSpacing(3)
@@ -502,7 +502,6 @@ struct SettingsView: View {
             .padding(.horizontal, LLMetrics.gutter)
             .padding(.vertical, 16)
         }
-        .padding(.bottom, 60)
     }
 
     private static var versionString: String {
