@@ -56,12 +56,55 @@ h3 { font-weight: 600; font-size: 18px; line-height: 1.25; }
 .dek { max-width: 68ch; color: var(--muted); margin: 0; }
 .stamp { display: flex; flex-wrap: wrap; gap: 8px 18px; font: 13px/1.4 var(--f-data); color: var(--muted); }
 .stamp b { color: var(--ink); font-weight: 600; }
-nav.toc { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--sheet); border-bottom: 1px solid var(--rule); }
+header.sitebar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 6; background: var(--sheet); border-bottom: 1px solid var(--rule); }
+.bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 6px 12px; padding-block: 10px; }
+.brand { font: 800 15px/1.2 var(--f-display); font-stretch: 112%; color: var(--ink); text-decoration: none; letter-spacing: .01em; }
+.tabs { display: flex; gap: 4px; }
+.tabs a { font: 600 14px/1 var(--f-body); padding: 9px 12px; border-radius: 8px; color: var(--muted); text-decoration: none; }
+.tabs a:hover { color: var(--ink); background: var(--paper); }
+.tabs a[aria-current="page"] { background: var(--ink); color: var(--paper); }
+nav.toc { border-top: 1px solid var(--rule); }
+.planwrap { display: grid; gap: 24px; padding-block: 32px 72px; }
+.propose { padding: 20px 22px; display: grid; gap: 12px; }
+.propose h2 { font-size: 20px; }
+.formrow { display: grid; gap: 6px; }
+.formrow label { font: 600 12px/1.2 var(--f-data); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.formrow select, .formrow textarea { font: 15px/1.5 var(--f-body); padding: 10px 12px; border-radius: 8px; border: 1px solid var(--rule); background: var(--paper); color: var(--ink); width: 100%; }
+.formrow.actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.proplist { display: grid; gap: 8px; }
+.prop { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; padding: 10px 0; border-top: 1px solid var(--rule); font-size: 14.5px; }
+.prop .k { font: 600 11px/1.6 var(--f-data); text-transform: uppercase; letter-spacing: .06em; color: var(--gold); }
+.prop .d { grid-column: 2; font: 12px var(--f-data); color: var(--muted); }
+.md { padding: 24px 28px; min-width: 0; }
+.md > * { max-width: 78ch; }
+.md h1 { font-size: 30px; margin: 4px 0 12px; }
+.md h2 { font-size: 23px; margin: 36px 0 10px; padding-top: 18px; border-top: 1px solid var(--rule); }
+.md h3 { font-size: 17px; margin: 22px 0 8px; }
+.md p, .md li { font-size: 15.5px; }
+.md ul, .md ol { padding-left: 22px; }
+.md li { margin: 4px 0; }
+.md blockquote { margin: 12px 0; padding: 10px 16px; border-left: 3px solid var(--gold); background: var(--paper); border-radius: 0 8px 8px 0; }
+.md code { font: 13px var(--f-data); background: var(--paper); padding: 1px 5px; border-radius: 4px; }
+.md pre { max-width: 100%; overflow-x: auto; background: var(--paper); padding: 14px; border-radius: 8px; border: 1px solid var(--rule); }
+.md pre code { background: none; padding: 0; }
+.md .tablebox { max-width: 100%; margin: 12px 0; }
+.md hr { border: 0; border-top: 1px solid var(--rule); margin: 24px 0; }
+.qa { padding: 20px 22px; display: grid; gap: 12px; }
+.qa .qhead { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; font: 12px/1 var(--f-data); color: var(--muted); }
+.qa .ask { font: 600 17px/1.45 var(--f-body); margin: 0; max-width: 72ch; }
+.qa .ans p { margin: 0 0 10px; max-width: 72ch; }
+.qa .ans p:last-child { margin-bottom: 0; }
+.qa .three { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.qa .three div { background: var(--paper); border-radius: 8px; padding: 10px 12px; font-size: 13.5px; line-height: 1.5; }
+.qa .three b { display: block; font: 600 11px/1.4 var(--f-data); letter-spacing: .06em; text-transform: uppercase; color: var(--gold); margin-bottom: 2px; }
+.qa.mod { border-style: dashed; }
+.r2group { display: grid; gap: 14px; scroll-margin-top: 110px; }
+@media (max-width: 860px) { .qa .three { grid-template-columns: minmax(0, 1fr); } .md { padding: 18px; } }
 nav.toc .wrap { display: flex; gap: 4px; overflow-x: auto; padding-block: 8px; scrollbar-width: thin; }
 nav.toc a { flex: none; font: 600 13px/1 var(--f-body); color: var(--muted); text-decoration: none; padding: 8px 10px; border-radius: 6px; }
 nav.toc a:hover { color: var(--ink); background: var(--paper); }
 main .wrap { display: grid; gap: 56px; padding-block: 40px 72px; }
-section { display: grid; gap: 18px; min-width: 0; scroll-margin-top: 64px; }
+section { display: grid; gap: 18px; min-width: 0; scroll-margin-top: 112px; }
 section > p, .prose p { max-width: 70ch; margin: 0; }
 .prose { display: grid; gap: 12px; }
 .lead { font-size: 18px; line-height: 1.6; max-width: 66ch; margin: 0; }
@@ -152,6 +195,37 @@ footer .wrap { padding-block: 24px; display: grid; gap: 6px; font-size: 13px; co
 @media (prefers-reduced-motion: no-preference) { .bar i { transition: width .4s ease; } }
 </style>
 
+<header class="sitebar">
+  <div class="wrap bar">
+    <a class="brand" href="#desk">Monetary Futures Desk</a>
+    <nav class="tabs" aria-label="Pages">
+      <a href="#desk" data-view="desk">Desk</a>
+      <a href="#round2" data-view="round2">Round 2</a>
+      <a href="#plan" data-view="plan">Plan</a>
+    </nav>
+  </div>
+  <nav class="toc" aria-label="Desk sections" data-for="desk">
+    <div class="wrap">
+      <a href="#answer">The answer</a>
+      <a href="#debt">Fed and Treasury</a>
+      <a href="#board">The new board</a>
+      <a href="#scenarios">Scenarios</a>
+      <a href="#views">Three viewpoints</a>
+      <a href="#tiers">Tiers and UHI</a>
+      <a href="#audit">Thesis audit</a>
+      <a href="#method">Why this beats a chatbot</a>
+      <a href="#watch">What to watch</a>
+      <a href="#cards">Thesis cards</a>
+      <a href="#ledger">Claims ledger</a>
+    </div>
+  </nav>
+  <nav class="toc" aria-label="Round 2 sections" data-for="round2" hidden>
+    <div class="wrap" id="r2toc"></div>
+  </nav>
+</header>
+
+<div class="view" id="view-desk">
+
 <header class="mast">
   <div class="wrap">
     <div class="eyebrow">Intelligence core · Round 1</div>
@@ -166,21 +240,7 @@ footer .wrap { padding-block: 24px; display: grid; gap: 6px; font-size: 13px; co
   </div>
 </header>
 
-<nav class="toc" aria-label="Sections">
-  <div class="wrap">
-    <a href="#answer">The answer</a>
-    <a href="#debt">Fed and Treasury</a>
-    <a href="#board">The new board</a>
-    <a href="#scenarios">Scenarios</a>
-    <a href="#views">Three viewpoints</a>
-    <a href="#tiers">Tiers and UHI</a>
-    <a href="#audit">Thesis audit</a>
-    <a href="#method">Why this beats a chatbot</a>
-    <a href="#watch">What to watch</a>
-    <a href="#cards">Thesis cards</a>
-    <a href="#ledger">Claims ledger</a>
-  </div>
-</nav>
+
 
 <main>
 <div class="wrap">
@@ -437,6 +497,52 @@ footer .wrap { padding-block: 24px; display: grid; gap: 6px; font-size: 13px; co
 </div>
 </main>
 
+</div>
+
+<div class="view" id="view-round2" hidden>
+  <header class="mast">
+    <div class="wrap">
+      <div class="eyebrow">Round 2 · your ten questions</div>
+      <h1>What happens to Set 1, UHI, founders and the next generation?</h1>
+      <p class="dek">Five research tracks and one cross-examination panel on the questions Round 1 left open, plus questions the moderator added. Each answer carries a status, a confidence score, a horizon, and what it means for governments, businesses and ordinary people.</p>
+      <div class="stamp" id="r2stamp"><span>Facts as of <b>2026-10-22</b></span></div>
+    </div>
+  </header>
+  <main><div class="wrap" id="r2main"></div></main>
+</div>
+
+<div class="view" id="view-plan" hidden>
+  <header class="mast">
+    <div class="wrap">
+      <div class="eyebrow">Backend</div>
+      <h1>The master plan</h1>
+      <p class="dek">The method, the origin case, the owner's thesis, the question tree and the round log. This page renders PLAN.md from the repository, so it updates whenever the plan does. Any future AI should start here.</p>
+    </div>
+  </header>
+  <main>
+    <div class="wrap planwrap">
+      <section class="propose sheet" aria-labelledby="propTitle">
+        <h2 id="propTitle">Propose a question or option</h2>
+        <p class="note">Entries are saved with this page. Claude reads them at the start of the next research round and adds the good ones to the plan.</p>
+        <form id="propForm" hidden>
+          <div class="formrow">
+            <label for="propKind">Type</label>
+            <select id="propKind"><option value="question">Question to research</option><option value="option">New option or feature</option><option value="source">Source to check</option><option value="correction">Correction</option></select>
+          </div>
+          <div class="formrow">
+            <label for="propText">Your proposal</label>
+            <textarea id="propText" rows="3" maxlength="2000" placeholder="e.g. How would a digital euro change UHI design in Europe?"></textarea>
+          </div>
+          <div class="formrow actions"><button class="more" type="submit" id="propSend">Add to the plan queue</button><span class="note" id="propMsg" role="status"></span></div>
+        </form>
+        <p class="note" id="propReadonly">Proposals can be added by people with Contributor access or above. The queue appears below when the page can reach its database.</p>
+        <div id="propList" class="proplist"></div>
+      </section>
+      <article class="md sheet" id="planDoc"><p>Loading PLAN.md…</p></article>
+    </div>
+  </main>
+</div>
+
 <footer>
   <div class="wrap">
     <span>Sources include US Treasury, Federal Reserve, OCC, IMF COFER, World Gold Council, BLS, USDA ERS, Japan MoF, Banque de France and expert interviews (Musk, Alden, Tait, Staudt, Collins, Mallers), each dated in the ledger.</span>
@@ -444,6 +550,7 @@ footer .wrap { padding-block: 24px; display: grid; gap: 6px; font-size: 13px; co
   </div>
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
 <script>
 const SCEN = {
   H0: { label: "H0 · now to 2028", S1: 62, S2: 15, S3: 1, S4: 22 },
@@ -604,5 +711,139 @@ function el(tag, attrs, text) {
     body.replaceChildren();
     const tr = el("tr"); tr.appendChild(el("td", { colspan: "6" }, "The ledger file did not load. It is also in the repository as claims.json.")); body.appendChild(tr);
   });
+})();
+
+/* ROUND2_DATA_START */
+const R2 = null;
+/* ROUND2_DATA_END */
+
+(function round2() {
+  const host = document.getElementById("r2main"), toc = document.getElementById("r2toc");
+  if (!R2) { host.appendChild(el("p", { class: "note" }, "Round 2 is still running. Answers appear here when the research and cross-examination finish.")); return; }
+  if (R2.lead) {
+    const sec = el("section", { id: "r2-lead" });
+    sec.appendChild(el("div", { class: "eyebrow" }, "The short version"));
+    sec.appendChild(el("h2", null, R2.lead.title));
+    const box = el("div", { class: "answer sheet" });
+    for (const t of R2.lead.paras) box.appendChild(el("p", null, t));
+    sec.appendChild(box);
+    host.appendChild(sec);
+    toc.appendChild(el("a", { href: "#r2-lead" }, "Short version"));
+  }
+  for (const g of R2.groups) {
+    const sec = el("section", { class: "r2group", id: g.id });
+    sec.appendChild(el("div", { class: "eyebrow" }, g.eyebrow));
+    sec.appendChild(el("h2", null, g.title));
+    if (g.intro) sec.appendChild(el("p", null, g.intro));
+    for (const q of g.items) {
+      const card = el("article", { class: "qa sheet" + (q.mod ? " mod" : ""), id: "q-" + q.id });
+      const head = el("div", { class: "qhead" });
+      head.appendChild(el("span", null, (q.mod ? "Moderator " : "Your question ") + q.id + " · " + q.h));
+      head.appendChild(el("span", { class: "pill p-" + q.s }, q.s.toUpperCase()));
+      head.appendChild(el("span", null, q.c + "/100"));
+      card.appendChild(head);
+      card.appendChild(el("p", { class: "ask" }, q.q));
+      const ans = el("div", { class: "ans" });
+      for (const t of q.a) ans.appendChild(el("p", null, t));
+      card.appendChild(ans);
+      if (q.v) {
+        const three = el("div", { class: "three" });
+        for (const [k, label] of [["g", "Governance"], ["b", "Business"], ["p", "Ordinary person"]]) {
+          const d = el("div"); d.appendChild(el("b", null, label)); d.appendChild(document.createTextNode(q.v[k])); three.appendChild(d);
+        }
+        card.appendChild(three);
+      }
+      sec.appendChild(card);
+    }
+    host.appendChild(sec);
+    toc.appendChild(el("a", { href: "#" + g.id }, g.nav));
+  }
+  if (R2.extra) for (const x of R2.extra) {
+    const sec = el("section", { id: x.id });
+    sec.appendChild(el("div", { class: "eyebrow" }, x.eyebrow));
+    sec.appendChild(el("h2", null, x.title));
+    const wrap = el("div", { class: "tablebox" }), t = el("table"), th = el("thead"), hr = el("tr");
+    for (const c of x.cols) hr.appendChild(el("th", null, c));
+    th.appendChild(hr); t.appendChild(th);
+    const tb = el("tbody");
+    for (const r of x.rows) { const tr = el("tr"); r.forEach((c, i) => tr.appendChild(el("td", i > 0 && x.num && x.num.includes(i) ? { class: "num" } : null, c))); tb.appendChild(tr); }
+    t.appendChild(tb); wrap.appendChild(t); sec.appendChild(wrap);
+    if (x.note) sec.appendChild(el("p", { class: "note" }, x.note));
+    host.appendChild(sec);
+    toc.appendChild(el("a", { href: "#" + x.id }, x.nav));
+  }
+})();
+
+let planLoaded = false;
+function loadPlan() {
+  if (planLoaded) return; planLoaded = true;
+  const doc = document.getElementById("planDoc");
+  fetch("PLAN.md").then(r => { if (!r.ok) throw new Error(r.status); return r.text(); }).then(md => {
+    if (!window.marked) { doc.replaceChildren(el("pre", null, md)); return; }
+    doc.innerHTML = window.marked.parse(md);
+    doc.querySelectorAll("table").forEach(t => { const w = el("div", { class: "tablebox" }); t.parentNode.insertBefore(w, t); w.appendChild(t); });
+    doc.querySelectorAll("a[href^='http']").forEach(a => { a.target = "_blank"; a.rel = "noopener"; });
+  }).catch(() => { doc.replaceChildren(el("p", null, "PLAN.md did not load. It is in the repository at Research/MonetaryFutures/PLAN.md.")); });
+}
+
+(async function proposals() {
+  const list = document.getElementById("propList"), form = document.getElementById("propForm");
+  const msg = document.getElementById("propMsg"), ro = document.getElementById("propReadonly");
+  const db = await (window.claude?.use?.("db") ?? Promise.resolve(null)).catch(() => null);
+  if (!db) return;
+  const user = await (window.claude?.use?.("user") ?? Promise.resolve(null)).catch(() => null);
+  const canWrite = user ? await Promise.resolve(user.can ? user.can("data.write") : null).catch(() => null) : null;
+  if (canWrite !== false) { form.hidden = false; ro.hidden = true; }
+  const KIND = { question: "Question", option: "Option", source: "Source", correction: "Correction" };
+  db.collection("proposals").orderBy("createdAt", "desc").limit(200).onSnapshot(snap => {
+    list.replaceChildren();
+    if (snap.empty) { list.appendChild(el("p", { class: "note" }, "No proposals yet. Add the first question you want the next round to research.")); return; }
+    for (const d of snap.docs) {
+      const v = d.data() || {};
+      const row = el("div", { class: "prop" });
+      row.appendChild(el("span", { class: "k" }, KIND[v.kind] || "Note"));
+      row.appendChild(el("span", null, String(v.text || "")));
+      row.appendChild(el("span", { class: "d" }, (String(v.createdAt || "").slice(0, 10)) + " · " + (v.status || "new")));
+      list.appendChild(row);
+    }
+  }, () => { list.replaceChildren(el("p", { class: "note" }, "The proposal queue is unavailable in this view.")); });
+  form.addEventListener("submit", async e => {
+    e.preventDefault();
+    const text = document.getElementById("propText").value.trim();
+    if (text.length < 5) { msg.textContent = "Write at least a few words."; return; }
+    const btn = document.getElementById("propSend"); btn.disabled = true; msg.textContent = "Saving…";
+    try {
+      const author = user && user.id ? await user.id() : null;
+      await db.collection("proposals").add({ text, kind: document.getElementById("propKind").value, status: "new", createdAt: new Date().toISOString(), author });
+      document.getElementById("propText").value = ""; msg.textContent = "Added. Claude will review it next round.";
+    } catch (err) {
+      const code = err && err.code;
+      msg.textContent = code === "quota_exceeded" ? "The queue is full. Ask the owner to clear old entries." : code === "invalid_argument" ? "Your access level cannot add proposals." : "Could not save. Try again in a moment.";
+      if (code === "invalid_argument") { form.hidden = true; ro.hidden = false; }
+    } finally { btn.disabled = false; }
+  });
+})();
+
+(function router() {
+  const views = { desk: document.getElementById("view-desk"), round2: document.getElementById("view-round2"), plan: document.getElementById("view-plan") };
+  const tabs = document.querySelectorAll(".tabs a"), tocs = document.querySelectorAll("nav.toc");
+  function show(name, anchor) {
+    for (const k in views) views[k].hidden = k !== name;
+    tabs.forEach(t => t.getAttribute("data-view") === name ? t.setAttribute("aria-current", "page") : t.removeAttribute("aria-current"));
+    tocs.forEach(n => n.hidden = n.getAttribute("data-for") !== name);
+    if (name === "plan") loadPlan();
+    if (anchor) { const a = document.getElementById(anchor); if (a) { a.scrollIntoView(); return; } }
+    window.scrollTo(0, 0);
+  }
+  function route() {
+    const h = decodeURIComponent((location.hash || "").slice(1));
+    if (!h || h === "desk") return show("desk");
+    if (views[h]) return show(h);
+    const t = document.getElementById(h);
+    if (!t) return show("desk");
+    for (const k in views) if (views[k].contains(t)) return show(k, h);
+  }
+  window.addEventListener("hashchange", route);
+  route();
 })();
 </script>
