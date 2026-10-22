@@ -1,0 +1,351 @@
+{
+ "dc-lead": {
+  "title": "Reading the plan from the actions",
+  "oneLine": "Politicians rarely state the plan, so the panel grades decoded claims D1 to D4 from what actors do with money, law and appointments, and keeps what they want apart from what will happen.",
+  "picture": "Think of a poker player who never says what cards they hold. You learn more from how they bet than from what they say at the table. Decoding intent means watching the bets (money moved, laws passed, people appointed) and checking whether several independent watchers read the same hand.",
+  "steps": [
+   "Start from the record: money moved (T0), law (T1), officials on record (T2), market prices (T3).",
+   "Name who decodes a claim, what they gain from it, and whether their past decodings came true.",
+   "Count independent decoders who reach the same reading from different starting points.",
+   "Grade it: D1 decoded-strong, D2 decoded-plausible, D3 folklore, D4 debunked, plus a probability that the intent is real.",
+   "Separate intent from outcome. Trump wants cheap money (D1, 85), but a Fed that cuts on his demand by 2029 is only 25.",
+   "Name the tell: the next observable event with a date, such as GENIUS taking effect on 2027-01-18."
+  ],
+  "terms": [
+   {
+    "t": "Decoded intent",
+    "d": "A goal read from an actor's actions and record rather than from an announcement."
+   },
+   {
+    "t": "D grades",
+    "d": "The panel's scale for decoded claims: D1 decoded-strong, D2 decoded-plausible, D3 folklore, D4 debunked."
+   },
+   {
+    "t": "Tell",
+    "d": "The next thing you would see, with a date, if a decoded claim is true."
+   },
+   {
+    "t": "Intent versus outcome",
+    "d": "What an actor wants versus what actually happens. An actor can want something and fail."
+   },
+   {
+    "t": "Convergence",
+    "d": "Several decoders who start from different places and reach the same reading."
+   },
+   {
+    "t": "Say/do gap",
+    "d": "The distance between what an actor says and what their money and laws actually do."
+   }
+  ],
+  "why": "Most monetary history that mattered was decided before it was announced. Grading decoded claims in the open lets you take the real ones seriously and drop the folklore, instead of believing everything or nothing.",
+  "connects": [
+   {
+    "id": "dc-trump",
+    "how": "The Trump group applies the method to a president who repeats himself."
+   },
+   {
+    "id": "dc-reset",
+    "how": "The reset group grades the conspiracy versions of a Great Reset."
+   },
+   {
+    "id": "dc-tables",
+    "how": "The leaderboard ranks all 16 decoded claims with grades and dated tells."
+   }
+  ],
+  "check": {
+   "q": "Why can a claim be D1 for intent but unlikely as an outcome?",
+   "a": "Because the grade measures whether the actor really wants it, not whether they get it. Trump openly wants rates near 1% (D1), but his own Fed chair hiked and the courts kept Governor Cook, so a Fed that cuts on demand by 2029 is only 25."
+  },
+  "visual": "tiers"
+ },
+ "dc-trump": {
+  "title": "The landlord's monetary system",
+  "oneLine": "Trump wants foreigners to pay, a cheaper but dominant dollar, cheap money from a Fed he controls and an owner society, and he is winning on rails and losing on rates.",
+  "picture": "Picture a landlord who owns the only toll road in town. He wants every tenant to pay in his currency, wants his own mortgage cheap, and wants the neighbours to pay for the security guard. He does not want to tear the road down. He wants more traffic on it.",
+  "steps": [
+   "1987: a paid newspaper letter says \"Tax these wealthy nations, not America\" and complains of \"a weak yen against a strong dollar\".",
+   "Foreigners pay: tariffs, allies paying for protection, $1M gold card visas. The Supreme Court struck the emergency tariffs 6-3 on 2026-02-20, and the effective rate fell to about 7%.",
+   "Weak but dominant: he called a four-year dollar low \"doing great\" (2026-01-27) while backing stablecoins that must hold Treasury bills.",
+   "Cheap money: he wants rates \"near 1% or lower\", but Fed chair Warsh hiked 12-0 on 2026-09-16 and the 10-year yield is 5.13%.",
+   "The secret powers are mostly visible: the Treasury-market establishment, crypto donors (Fairshake about $193M), family crypto income (about $2.3B pretax) and foreign money buying access.",
+   "No gold standard, no Bitcoin standard, no planned crash: zero federal Bitcoin bought, gold still booked at $42.2222."
+  ],
+  "terms": [
+   {
+    "t": "Tariff",
+    "d": "A tax on imported goods, paid by the importer when goods cross the border."
+   },
+   {
+    "t": "Effective tariff rate",
+    "d": "Tariff revenue divided by the value of imports, the average rate actually paid."
+   },
+   {
+    "t": "Fed independence",
+    "d": "The rule that the President cannot fire Fed governors over policy, only for cause."
+   },
+   {
+    "t": "Stablecoin",
+    "d": "A token meant to stay worth one dollar, backed by cash and short government bills."
+   },
+   {
+    "t": "Super PAC",
+    "d": "A US political committee that can raise and spend unlimited money but may not coordinate with candidates."
+   },
+   {
+    "t": "Mar-a-Lago accord",
+    "d": "Analysts' name for a hoped-for deal pushing allies to strengthen their currencies or hold very long US bonds. No such deal exists."
+   }
+  ],
+  "why": "It tells you which way the pressure on your mortgage rate, import prices and the dollar will push, and that the courts and the bond market, not Congress, are the brakes.",
+  "connects": [
+   {
+    "id": "dc-reset",
+    "how": "A pliant Fed is what would turn today's plumbing into classic repression."
+   },
+   {
+    "id": "dc-gold",
+    "how": "The rails he backs keep seigniorage and the freeze button with the state."
+   },
+   {
+    "id": "dc-tables",
+    "how": "The leaderboard grades each of his wants with a dated tell."
+   }
+  ],
+  "check": {
+   "q": "Which of Trump's four wants is he losing so far, and what is the next test?",
+   "a": "Cheap money. His own Fed chair hiked 12-0 and the 10-year yield is 5.13%. The next test is the White House hearing on removing Governor Cook on 2026-11-05."
+  },
+  "visual": "recycle-loop"
+ },
+ "dc-musk": {
+  "title": "Belief, not a build",
+  "oneLine": "Musk sincerely believes money will one day be measured in energy and mass, but he has never designed an energy standard and everything he has built runs on dollars.",
+  "picture": "Think of someone who says that one day everyone will travel by teleporter, while running the best car dealership in town. He may mean it, and the claim also makes his dealership look like the future. But today he sells cars, for dollars.",
+  "steps": [
+   "2023: \"money is a database for resource allocation\". 2026-10-20: currency \"will be measured in ... wattage and tonnage\".",
+   "An energy standard needs an issuer, a fixed rate, reserves and redemption. Musk has described none of the four.",
+   "What he describes is an energy unit of account in a post-scarcity world, close to the 1930s Technocracy plan his grandfather supported.",
+   "What he built: X Money, a dollar wallet on Cross River Bank with a Visa card. Tesla holds the same 11,509 Bitcoin it has held since 2022.",
+   "The story also lifts valuations: eight of nine 2025 to 2026 statements fall within about a month of a capital event.",
+   "Odds: belief and narrative together 65, a Musk energy- or compute-redeemable money by 2035 under 5."
+  ],
+  "terms": [
+   {
+    "t": "Energy standard",
+    "d": "A currency you can hand in for a fixed amount of energy, the way gold-standard notes could be swapped for gold."
+   },
+   {
+    "t": "Unit of account",
+    "d": "The measuring stick prices are written in, with no promise to swap it for anything."
+   },
+   {
+    "t": "Redemption",
+    "d": "The right to hand in money and receive the thing that backs it."
+   },
+   {
+    "t": "Technocracy",
+    "d": "A 1930s movement that wanted engineers to run the economy with energy certificates instead of prices."
+   },
+   {
+    "t": "Compute",
+    "d": "Processing power from AI chips in data centers, rented by the hour and paid in dollars."
+   },
+   {
+    "t": "Valuation narrative",
+    "d": "A story that makes investors pay more for a company's shares."
+   }
+  ],
+  "why": "It separates the investable part (power and compute are scarce and priced in dollars) from the part nobody will pay you in (kilowatt-hours as wages).",
+  "connects": [
+   {
+    "id": "dc-gold",
+    "how": "The captive-demand claim explains why a kilowatt-hour token cannot be a US payment stablecoin."
+   },
+   {
+    "id": "dc-lead",
+    "how": "The lead explains how belief and narrative can both earn a D1."
+   },
+   {
+    "id": "dc-tables",
+    "how": "The leaderboard places the Musk claim among the 16."
+   }
+  ],
+  "check": {
+   "q": "What single product launch would move the verdict toward Musk building an energy or compute money?",
+   "a": "A transferable compute credit or energy credit balance inside X Money or the Tesla app that users can send to each other."
+  },
+  "visual": "watt"
+ },
+ "dc-reset": {
+  "title": "Who carries the loss, decided by decree",
+  "oneLine": "A disorderly reset is a change in who pays for a debt overhang, done fast by decree after a market breaks, and the US digital dollar will be private, bill-backed and freezable rather than a Fed CBDC.",
+  "picture": "Think of a restaurant bill nobody can pay. An orderly ending is the group agreeing in advance who covers what. A disorderly ending is the waiter calling the manager, the doors being locked, and the manager deciding on the spot who pays and how much.",
+  "steps": [
+   "Every overhang is paid by money holders (inflation), debt holders (caps, haircuts) or taxpayers (austerity).",
+   "The disorderly sequence: trigger, market failure, forced central bank buying, repression, capital controls, inflation, restructuring or revaluation, new framework.",
+   "The US borrows in dollars it prints, so its version is inflation plus repression, not default. Foreigners hold $9.33T of Treasuries and share the loss.",
+   "Now: stage 0 (net interest 19.46% of receipts), stage 1 triggers active, stages 2 and 3 not hit (MOVE 95.9 against 120).",
+   "Digital money: the US banned a Fed CBDC to 2030-12-31 and chose GENIUS stablecoins from 2027-01-18, which must hold bills and freeze on order.",
+   "Programmable or expiring money on general balances in the G7 by 2035: 5. Rising state visibility with any digital money: 80."
+  ],
+  "terms": [
+   {
+    "t": "Financial repression",
+    "d": "Rules that push savers into government debt at interest rates below inflation, so the debt shrinks in real terms."
+   },
+   {
+    "t": "Yield cap",
+    "d": "A central bank promise to buy whatever bonds it takes to keep their interest rate below a set level."
+   },
+   {
+    "t": "Capital controls",
+    "d": "Limits on moving money out of a country."
+   },
+   {
+    "t": "CBDC",
+    "d": "Central bank digital currency: digital money that is a direct claim on the central bank."
+   },
+   {
+    "t": "Wholesale CBDC",
+    "d": "Central bank digital money used only between banks to settle with each other."
+   },
+   {
+    "t": "Tokenized deposit",
+    "d": "An ordinary bank deposit recorded on a blockchain, still the bank's promise."
+   }
+  ],
+  "why": "The realistic risk for a US household is not a bank holiday but years of prices rising faster than savings. And privacy is set by freeze rules on stablecoins and banks, not by whether the Fed issues a coin.",
+  "connects": [
+   {
+    "id": "dc-trump",
+    "how": "Trump's cheap-money want is the political push toward stage 3."
+   },
+   {
+    "id": "dc-gold",
+    "how": "Gold revaluation is stage 7, and its arithmetic is small."
+   },
+   {
+    "id": "dc-tables",
+    "how": "The stages and digital options tables lay this out row by row."
+   }
+  ],
+  "check": {
+   "q": "Why does a retail CBDC compete with banks while a GENIUS stablecoin feeds the Treasury?",
+   "a": "A retail CBDC moves deposits from banks onto the central bank's balance sheet. A stablecoin issuer must buy Treasury bills with the money it receives, so new token money becomes demand for government debt."
+  },
+  "visual": "seasons"
+ },
+ "dc-gold": {
+  "title": "Two state powers and a narrow insurance",
+  "oneLine": "Seigniorage and the freeze button live where the state controls the ledgers, gold insures states against frozen reserves rather than backing money, and Treasuries are what most money is backed by.",
+  "picture": "Think of a casino. The house earns on every chip because chips pay no interest, and it can void any chip at the cashier. Gold is the cash a player keeps in a safe at home: the casino cannot void it, but it is awkward to spend at the table.",
+  "steps": [
+   "Seigniorage: issue a 0% liability, hold an interest-paying asset, keep the spread. Cash ($2.49T) saves the government about $106B a year.",
+   "Fed payments to the Treasury were $107.4B in 2021 and zero since September 2022, because reserves now earn more than the Fed's old bonds pay.",
+   "Sanctions run through Fedwire ($4.59T a day), CHIPS and US correspondent banks. One directive froze Russia's central bank assets on 2022-02-28.",
+   "Gold supply grows about 1.6% a year. Reserves are 21.5% of all gold ever, and asteroids hold only about 1 gram per tonne.",
+   "Revaluing US gold to $20,000 covers 16% of the debt held by the public. Covering all of it needs about $124,600 an ounce.",
+   "Money is not bonds, but bonds back most money: the Fed holds $4.57T of Treasuries against $5.51T of base money."
+  ],
+  "terms": [
+   {
+    "t": "Seigniorage",
+    "d": "The profit from issuing money: the issuer pays no interest on it but earns interest on what it buys."
+   },
+   {
+    "t": "Deferred asset",
+    "d": "The Fed's running shortfall, which must be earned back before it pays the Treasury again."
+   },
+   {
+    "t": "Correspondent bank",
+    "d": "A US bank that holds dollar accounts for foreign banks, so their payments pass through US books."
+   },
+   {
+    "t": "Revaluation",
+    "d": "Raising the official price of the government's gold, which books a paper gain."
+   },
+   {
+    "t": "Reserves (mining)",
+    "d": "Gold in the ground that is proven and economic to mine at today's prices."
+   },
+   {
+    "t": "Base money",
+    "d": "Cash plus the reserves banks hold at the Fed, the Fed's own liabilities."
+   }
+  ],
+  "why": "It explains why your cash and stablecoins earn the issuer the interest, why any dollar balance can be frozen, and why buying gold expecting a $20,000 government price is the wrong reason to own it.",
+  "connects": [
+   {
+    "id": "dc-reset",
+    "how": "The reset group places gold revaluation as stage 7 of a reset."
+   },
+   {
+    "id": "dc-trump",
+    "how": "The Trump group shows the rails that keep seigniorage with the state."
+   },
+   {
+    "id": "dc-tables",
+    "how": "The gold math and money layers tables give the numbers."
+   }
+  ],
+  "check": {
+   "q": "Why does a gold revaluation not cover the debt?",
+   "a": "At market ($4,078) the US gold gain is about $1.06T, 3.2% of the $32.57T debt held by the public, and even at $20,000 it is 16%. The gain also arrives as new base money, so it saves almost no interest while reserves pay near the bill rate."
+  },
+  "visual": "money-layers"
+ },
+ "dc-tables": {
+  "title": "The decoded numbers",
+  "oneLine": "Five tables: the 16-claim leaderboard, the stages of a reset, the digital money options, the gold revaluation math and the money layers.",
+  "picture": "Think of a field guide for birdwatchers. The stories tell you what to look for, and the tables tell you how to tell a hawk from a crow at a glance.",
+  "steps": [
+   "Leaderboard: 16 decoded claims ranked by importance, each with grade, odds, decoders and a dated tell. Top: the captive-demand digital dollar (D1, 80).",
+   "Reset stages: nine stages from overhang to new framework, with historical cases and where the US stands now.",
+   "Digital money options: nine designs by whose liability they are, what backs them, privacy, programmability and status in the US, EU and China.",
+   "Gold math: the price per ounce at which the US gold gain equals a target, from the Treasury's cash balance ($3,420) to all public debt ($124,579).",
+   "Money layers: base money $5.51T, deposits $19.6T, stablecoins $0.30T, Treasuries $32.57T, and gold beside them as nobody's liability."
+  ],
+  "terms": [
+   {
+    "t": "Grade (D1 to D4)",
+    "d": "How well a decoded claim holds up, from decoded-strong to debunked."
+   },
+   {
+    "t": "Tripwire",
+    "d": "A level of an indicator that, once crossed, changes the reading."
+   },
+   {
+    "t": "Book value",
+    "d": "The price an asset is recorded at in accounts, which can differ from its market price."
+   },
+   {
+    "t": "Liability",
+    "d": "A promise to pay. Your bank deposit is the bank's liability."
+   },
+   {
+    "t": "Model",
+    "d": "Arithmetic on stated inputs, not measured data."
+   }
+  ],
+  "why": "Tables let you check each answer yourself and see which dated event would change it.",
+  "connects": [
+   {
+    "id": "dc-lead",
+    "how": "The lead explains the grades used in the leaderboard."
+   },
+   {
+    "id": "dc-reset",
+    "how": "The stages and digital options tables back the reset group."
+   },
+   {
+    "id": "dc-gold",
+    "how": "The gold math and money layers tables back the gold group."
+   }
+  ],
+  "check": {
+   "q": "In the gold math table, what price makes the US gold gain equal 10% of the debt held by the public?",
+   "a": "About $12,496 an ounce, about 3.1 times today's $4,078."
+  },
+  "visual": "stack"
+ }
+}

@@ -185,3 +185,13 @@ Points:
 | R-16 | The ESF September 2026 statement is not yet posted | T0 (absence) | Unresolved | https://home.treasury.gov/system/files/206/ESF-September-2026-FS-Trunc-Notes.pdf (404) | 2026-10-22 |
 | R-17 | Moody's France review on 2026-10-23 and the National Assembly budget vote on 2026-10-27 | T4 | Unresolved (primary not reachable) | Allianz via L5-16 | 2026-10-09 |
 | R-18 | No public GPU-hour index history was found, so there is no compute vs power correlation evidence | none | Unresolved | https://www.silicondata.com/, https://www.eia.gov/electricity/wholesale/ | 2026-10-22 |
+
+## Round 3 corrections
+
+Applied 2026-10-22 from round3/DEBATE_R3.md section 5 (R3D-1, accepted). The R-13 row above is kept as written.
+
+- **R-13 refined.** Old: "The bottom 50% hold 0.6% of directly held equities and mutual fund shares, unchanged for years." New: "The bottom 50% hold 0.58% of directly held equities and mutual fund shares (2026 Q2), a floor of 0.53% to 0.66% since 2010 after a fall from 1.65% in 1996. Including DC pensions the share fell from 3.35% (1994) to 1.46%." Source: Fed DFA (T0).
+- **FIMA wording (R3A-3, R3A-5).** Where Round 1 (L1, L5) calls FIMA repo the chosen tool for Japan, read "announced but unused": FIMA repo sat at zero in 41 weekly H.4.1 releases (18 February to 14 October 2026). T4 claims of Japanese FIMA use and of a $350B pool are refuted (the H.4.1 pool is $332B in total).
+- **L4 UHI odds (R3B-4, judgment).** By 2035 a cash UHI or AI dividend about 10%, and AI equity routed into Trump Accounts or a public fund about 25%. H0 below 3% and 2050 about 40% are unchanged.
+- **Dc-03 (R3B-3).** The third condition (gains must land in taxable income) is failing in H0: corporate receipts fell 15.6% in FY2026, which CBO attributes to the 2025 law's investment deductions. Confidence stays 75.
+- **Db-09 scenario odds.** H1 44/23/3/30, H2 31/28/10/31, H0 unchanged. Likeliest H0 S4 path: an oil-shock inflation and term-premium episode with the euro periphery as the weak link, met by a Fed that hikes.

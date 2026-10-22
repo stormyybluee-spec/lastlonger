@@ -1,7 +1,7 @@
 # Monetary Futures Intelligence Core: Master Plan
 
-Version 2.2. Last updated 2026-10-22. Status: Rounds 0, 1 and 2 complete. Round 3 queued (section 5.5).
-Live site: https://claude.ai/artifact/2QJg4KuARQPAhm6FRbKmLq (pages: Desk and Plan). Private until the owner shares it. The Plan page sits behind a password gate (ask the owner). The gate is a courtesy screen, not security: PLAN.md is also a published file of the artifact.
+Version 3.0. Last updated 2026-10-22. Status: Rounds 0 to 3 complete, plus a decoded-intent segment and a what-if lane. Round 4 queue in section 5.6.
+Live site: https://claude.ai/artifact/2QJg4KuARQPAhm6FRbKmLq (header: Intelligence (sub-pages Desk and Landscape), Rulebook, Plan). Private until the owner shares it. The Plan page sits behind a password gate (ask the owner). The gate is a courtesy screen, not security: PLAN.md is also a published file of the artifact.
 
 This file is the backend. It is written so that any future AI (or human) can pick the project up cold and continue without the original conversation. Do not over-summarize when editing it. Keep the origin case (section 2) and the owner's thesis (section 3) intact: they define what "good" looks like.
 
@@ -37,6 +37,9 @@ This file is the backend. It is written so that any future AI (or human) can pic
 | `claims.json` | Claims ledger, rebuilt by `tools/build_ledger.py` |
 | `tools/build_ledger.py` | Extracts claims tables into the ledger: `python3 -I tools/build_ledger.py .` |
 | `site/index.html` | Source of the live site. One page with two views: Desk (Rounds 1 and 2 merged) and Plan (renders this file behind a password gate) |
+| `site/landscape.json`, `site/rulebook.json` | Long-form pages: Landscape (ordered synthesis and epilogue) and the Monetary 101 Rulebook, rendered by the chapter renderer |
+| `round3/` | Round 3 lanes, court, scen.json, r3_data.json, decode/ lanes, DECODE_PANEL.md, dc_data.json, wif_group.json |
+| `tools/build_site.py` | Injects all page data (R2, R3, decoded, 101s, odds, Rulebook, Landscape) into site/index.html: `python3 -I tools/build_site.py .` |
 | `site/learn101.json` | Beginner "101" explainers, one per Desk section, injected between the LEARN_DATA markers |
 | `site/r2_odds.json` | "Show the odds" data for Round 2 plausible answers, injected between the ODDS_DATA markers |
 
@@ -155,6 +158,12 @@ The owner wrote a newsletter series ("Ledger Age") as a mental practice of how m
 
 Status: Confirmed (T0 or T1 support), Plausible (T2 or T3 plus a coherent mechanism), Speculative (T4 or T5 only), Refuted (T0 to T3 contradict).
 
+### 4.1b Decoded intent (added Round 3)
+Politicians rarely state the plan, so analysts decode it, and some decodings surface as "conspiracy theories". This segment is sourced and graded, not dismissed. For each decoded claim record: the decoders (named) and their track record, convergence across independent decoders, action fit (T0 to T3 facts for and against), motive and capability, and the tell to watch with a date. Grades: D1 decoded-strong, D2 decoded-plausible, D3 folklore, D4 debunked, plus a probability. Always separate intent (what they want) from outcome (what will happen). Brief: round3/BRIEF_DECODE.md.
+
+### 4.1c Market-odds rule (added Round 3)
+Where a prediction market with more than $1M traded prices the same event, compare. If the desk's number differs by more than 15 points, write down why. Score the desk's calls on each resolution date. Public no-key sources: Polymarket Gamma API and Kalshi public market data.
+
 ### 4.2 Say/do gap
 For every major actor record what they say, what they do, and the gap. The gap is the most valuable data in the project.
 
@@ -202,6 +211,12 @@ M1 who earns the stablecoin float, and what if bill yields fall to zero. M2 if d
 11. Does the bottom half's share of equities move at all once child accounts are funded?
 12. Does electric freight just swap oil dependence for battery dependence?
 Also read the Plan page proposal queue before starting Round 3.
+
+### 5.6 Round 4 queue
+- Open questions from the Landscape epilogue (site/landscape.json, "questions").
+- Resolution scoring: FOMC 10-28 and 12-09, Treasury refunding 11-04, Cook hearing 11-05, China truce 11-10, NY Fed Q3 FX report (mid-November), WGC Q3 gold, GENIUS go-live 2027-01-18.
+- Re-check memory-tagged figures in the decode lanes (1947 inflation peak, UK 2022 gilt purchases, 1934 gold profit split, gold cover end date).
+- Proposals in the Plan page queue.
 
 ### 5.4 Options backlog (owner and friends add here, or through the Plan page box)
 - Weekly scheduled refresh of the policy-sensitive lanes (Fed and Treasury, law, geopolitics, quant). Not yet created. Ask the owner first.
@@ -320,5 +335,9 @@ Headline answers (status, confidence):
 
 Corrections to Round 1: Saudi Arabia left mBridge on 2025-05-13 (not 2026). TBAC's $6.6T is a ceiling, not a forecast. The exorbitant privilege covers dollar-priced imports, not domestic energy. Trump Accounts give today's 18-year-olds no seed and have no business exception.
 Note: one Round 2 lane mistakenly sent the owner's email in a request header to bls.gov once. Agents must never put the owner's email in any request.
+
+### Round 3 (2026-10-22): the moderator's questions, decoded intent, what-ifs
+Five lanes (R3A dollar plumbing, R3B supply, tax and UHI bills, R3C hardware geopolitics, R3D ownership and markets, R3E market-odds calibration), court in round3/DEBATE_R3.md. Scenario odds now H0 62/15/1/22, H1 44/23/3/30, H2 31/28/10/31. Market check corrected the FOMC timing (hold 10-28, hike priced 12-09). Decoded-intent segment (Trump, Musk, reset and CBDC, seigniorage and gold) graded D1 to D4 in round3/DECODE_PANEL.md. What-if lane (China capital account opening, a one-time US revaluation reset) in round3/decode/WIF-whatif.md. Ledger 725+ claims.
+Site: header is Intelligence (Desk, Landscape), Rulebook, Plan. Plan shows the $35 per month early insider membership and waitlist (db collection waitlist, readable by the owner only) to everyone, and gates PLAN.md and the proposal queue behind the founders' password. Rulebook chapter titles in the sidebar stay blurred except the chapter being read.
 
 Site update after Round 2 (2026-10-22): Round 2 merged into the Desk. Added the animated future-of-money map, 101 explainers on every section, odds toggles on plausible answers, collapsible sources and ledger, and the Plan password gate.

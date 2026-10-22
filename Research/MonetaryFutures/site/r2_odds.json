@@ -33,8 +33,8 @@
   ],
   "watch": "Stablecoin supply against the tripwire of $500B or 10% of T-bills, with reserve rules live from 2027-01-18",
   "byHorizon": {
-   "H0": 70,
-   "H1": 60
+   "H0": 65,
+   "H1": 55
   }
  },
  "Q3": {
