@@ -1,7 +1,7 @@
 # Monetary Futures Intelligence Core: Master Plan
 
-Version 2.1. Last updated 2026-10-22. Status: Rounds 0, 1 and 2 complete. Round 3 queued (section 5.5).
-Live site: https://claude.ai/artifact/2QJg4KuARQPAhm6FRbKmLq (pages: Desk, Round 2, Plan). Private until the owner shares it.
+Version 2.2. Last updated 2026-10-22. Status: Rounds 0, 1 and 2 complete. Round 3 queued (section 5.5).
+Live site: https://claude.ai/artifact/2QJg4KuARQPAhm6FRbKmLq (pages: Desk and Plan). Private until the owner shares it. The Plan page sits behind a password gate (ask the owner). The gate is a courtesy screen, not security: PLAN.md is also a published file of the artifact.
 
 This file is the backend. It is written so that any future AI (or human) can pick the project up cold and continue without the original conversation. Do not over-summarize when editing it. Keep the origin case (section 2) and the owner's thesis (section 3) intact: they define what "good" looks like.
 
@@ -36,7 +36,9 @@ This file is the backend. It is written so that any future AI (or human) can pic
 | `round2/r2_data.json` | Round 2 page data (rendered on the Round 2 page) |
 | `claims.json` | Claims ledger, rebuilt by `tools/build_ledger.py` |
 | `tools/build_ledger.py` | Extracts claims tables into the ledger: `python3 -I tools/build_ledger.py .` |
-| `site/index.html`, `site/round2.html`, `site/plan.html` | Source of the live site. `plan.html` renders this file |
+| `site/index.html` | Source of the live site. One page with two views: Desk (Rounds 1 and 2 merged) and Plan (renders this file behind a password gate) |
+| `site/learn101.json` | Beginner "101" explainers, one per Desk section, injected between the LEARN_DATA markers |
+| `site/r2_odds.json` | "Show the odds" data for Round 2 plausible answers, injected between the ODDS_DATA markers |
 
 ---
 
@@ -266,6 +268,27 @@ Transcripts are fetched with the vidIQ connector tool (`mcp__MCP_Server__vidiq_v
 
 ---
 
+## 8.1 Site design rules (keep when editing the site)
+- Desk is one long page, but every heavy block is collapsed: Round 2 answers show the first paragraph with "Read the full answer", moderator questions sit behind a button, Round 2 tables share one chip switcher, sources and the claims ledger open from buttons in Raw evidence.
+- Every Desk section has a "101" button that opens a beginner explainer (one-line idea, everyday analogy, optional diagram, steps, key words, why it matters, how it connects to other sections, a self-check). Teaching method: chunking, one vivid analogy, plain definitions, links between sections, retrieval practice.
+- Round 2 answers with status plausible get a "Show the odds" panel: likely vs could be wrong, optional confidence by horizon, what would raise or lower the odds, and the one thing to watch.
+- The future-of-money map (section "future") draws bands from the scenario table (SCEN in the page script). Update SCEN and the map redraws.
+- To refresh data after a round: rebuild claims.json, re-inject r2_data.json, learn101.json, r2_odds.json between their markers, republish with claims.json and PLAN.md as files.
+
+## 8.2 External projects worth borrowing from (scouted 2026-10-22)
+| Project | What it does | What this project can borrow |
+|---|---|---|
+| STORM (github.com/stanford-oval/storm) | Stanford pre-writing system: perspective-guided questions and simulated expert conversations before outlining | The debate court already mirrors this. Borrow its perspective discovery step to pick lane roles automatically |
+| GPT Researcher (github.com/assafelovic/gpt-researcher) | Planner plus parallel crawler agents producing cited reports, about $0.10 per run | Its source-scoring and deduplication for the claims ledger |
+| Open Deep Research (github.com/langchain-ai/open_deep_research) | LangGraph graph: clarify, plan, parallel researcher subgraphs, synthesize, with MCP support | A reference design if this pipeline is ever run outside Claude Code on a schedule |
+| TradingAgents (github.com/TauricResearch/TradingAgents) | Multi-agent firm with bull and bear researchers, risk team and trader (v0.2.4, April 2026, research only) | Its bull versus bear debate rounds and risk-team veto as a second-opinion pass for the scenario odds. Its published returns are disputed, so borrow the structure, not the claims |
+| FinRobot (github.com/AI4Finance-Foundation/FinRobot) | Layered agent platform for equity research with a financial chain-of-thought | Its document-analysis agents for reading 10-K and central bank PDFs |
+| OpenBB Platform (github.com/OpenBB-finance/OpenBB, AGPLv3) | One Python interface to many data providers (macro, fixed income, FX, crypto) with a REST API | A single data layer for the quant lane instead of hand-built curl calls (FRED CSV is bot-blocked here, OpenBB with a FRED key would fix that) |
+| Awesome Deep Research (github.com/DavidZWZ/Awesome-Deep-Research) | Curated list of deep research agents and papers | Scout list for future upgrades |
+| Prediction markets (Kalshi, Polymarket public APIs) | Market-implied odds on Fed decisions, elections, some macro events | Calibration check: compare this desk's odds with market odds where both exist, and log the gap in each round |
+
+Decision for now: no code is cloned. Claude Code's parallel agents already run the plan, source, debate, reloop, confirm loop. The two upgrades with the most value are (1) a market-odds calibration step and (2) an OpenBB or FRED-key data layer for the quant lane. Ask the owner before adding API keys.
+
 ## 9. Continuous mode
 - Every round is versioned in git on branch `claude/agent-financial-futures-framework-5s5jlr`. Each refresh is a readable diff.
 - Refresh triggers: FOMC meetings, Treasury refunding (quarterly), NY Fed FX reports, major laws, the owner's proposals.
@@ -297,3 +320,5 @@ Headline answers (status, confidence):
 
 Corrections to Round 1: Saudi Arabia left mBridge on 2025-05-13 (not 2026). TBAC's $6.6T is a ceiling, not a forecast. The exorbitant privilege covers dollar-priced imports, not domestic energy. Trump Accounts give today's 18-year-olds no seed and have no business exception.
 Note: one Round 2 lane mistakenly sent the owner's email in a request header to bls.gov once. Agents must never put the owner's email in any request.
+
+Site update after Round 2 (2026-10-22): Round 2 merged into the Desk. Added the animated future-of-money map, 101 explainers on every section, odds toggles on plausible answers, collapsible sources and ledger, and the Plan password gate.
