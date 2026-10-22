@@ -1,12 +1,13 @@
 {
  "built": "2026-10-22",
- "count": 240,
+ "count": 258,
  "by_status": {
-  "confirmed": 148,
-  "plausible": 68,
+  "confirmed": 160,
+  "plausible": 70,
   "speculative": 12,
   "unverified": 1,
-  "refuted": 11
+  "refuted": 11,
+  "other": 4
  },
  "claims": [
   {
@@ -2648,6 +2649,204 @@
    "as_of": "",
    "falsifier": "n/a",
    "file": "round0/calibration.md"
+  },
+  {
+   "id": "R-01",
+   "claim": "On the 2026-09-16 hike day, the 2y rose 7 bp, the 10y rose 1 bp, the 30y fell 1 bp and the 10y breakeven fell 5 bp",
+   "tier": "T3",
+   "status": "Confirmed (market data)",
+   "source": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/all/202609?type=daily_treasury_yield_curve&field_tdr_date_value_month=202609&page&_format=csv",
+   "source_date": "2026-09-16",
+   "as_of": "",
+   "falsifier": "",
+   "file": "round1/RELOOP.md"
+  },
+  {
+   "id": "R-02",
+   "claim": "ACM 10y term premium fell from 0.705 (09-15) to 0.607 (09-17), about -10 bp over two days around the hike",
+   "tier": "T4",
+   "status": "Plausible (model on T3)",
+   "source": "https://www.newyorkfed.org/medialibrary/media/research/data_indicators/ACMTermPremium.xls",
+   "source_date": "2026-09-17",
+   "as_of": "",
+   "falsifier": "",
+   "file": "round1/RELOOP.md"
+  },
+  {
+   "id": "R-03",
+   "claim": "From 09-17 to 10-05 the 10y rose 37 bp, almost all term premium (+36 bp ACM) and real yield (+34 bp), breakeven +3 bp",
+   "tier": "T3/T4",
+   "status": "Plausible",
+   "source": "Treasury par and real curves, ACM file (above)",
+   "source_date": "2026-10-05",
+   "as_of": "",
+   "falsifier": "",
+   "file": "round1/RELOOP.md"
+  },
+  {
+   "id": "R-04",
+   "claim": "The post-hike term premium surge reversed: ACM 10y TP 0.730 on 10-20, +3 bp vs pre-hike. 10y at 5.13% on 10-21",
+   "tier": "T3/T4",
+   "status": "Confirmed (data)",
+   "source": "Treasury par curve, ACM file",
+   "source_date": "2026-10-21",
+   "as_of": "",
+   "falsifier": "",
+   "file": "round1/RELOOP.md"
+  },
+  {
+   "id": "R-05",
+   "claim": "10y real par yield peaked at 2.95% on 2026-10-05 and has not crossed 3.00%",
+   "tier": "T3",
+   "status": "Confirmed (data)",
+   "source": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/all/202610?type=daily_treasury_real_yield_curve&field_tdr_date_value_month=202610&page&_format=csv",
+   "source_date": "2026-10-21",
+   "as_of": "",
+   "falsifier": "",
+   "file": "round1/RELOOP.md"
+  },
+  {
+   "id": "R-06",
+   "claim": "CBO estimates the FY2026 deficit at $2.0T, $218B more than FY2025",
+   "tier": "T2 (near T0)",
+   "status": "Confirmed",
+   "source": "https://www.cbo.gov/publication/61985 (via https://www.cbo.gov/publications/all/rss.xml)",
+   "source_date": "2026-10-08",
+   "as_of": "",
+   "falsifier": "",
+   "file": "round1/RELOOP.md"
+  },
+  {
+   "id": "R-07",
+   "claim": "CBO published deficit and debt projections under two higher-interest-rate scenarios against its February 2026 baseline",
+   "tier": "T2",
+   "status": "Confirmed (existence), content unresolved",
+   "source": "https://www.cbo.gov/publication/62809",
+   "source_date": "2026-10-08",
+   "as_of": "",
+   "falsifier": "",
+   "file": "round1/RELOOP.md"
+  },
+  {
+   "id": "R-08",
+   "claim": "CME and Silicon Data planned H100 and B200 rental-index futures for 2026-10-05, pending regulatory review",
+   "tier": "T2",
+   "status": "Confirmed (plan)",
+   "source": "https://www.prnewswire.com/news-releases/cme-group-and-silicon-data-to-launch-compute-futures-on-october-5-to-unlock-new-way-to-hedge-ai-risks-302848593.html",
+   "source_date": "2026-08-11",
+   "as_of": "",
+   "falsifier": "",
+   "file": "round1/RELOOP.md"
+  },
+  {
+   "id": "R-09",
+   "claim": "No CME release confirming first trade of compute futures exists through 2026-10-22, and the Q3 earnings release does not mention them",
+   "tier": "T2 (absence)",
+   "status": "Unresolved",
+   "source": "https://www.prnewswire.com/news/cme-group/",
+   "source_date": "2026-10-21",
+   "as_of": "",
+   "falsifier": "",
+   "file": "round1/RELOOP.md"
+  },
+  {
+   "id": "R-10",
+   "claim": "Architect launched a live auction exchange for LLM inference (Liquid Inference)",
+   "tier": "T2",
+   "status": "Confirmed",
+   "source": "https://www.prnewswire.com/news-releases/architect-financial-technologies-launches-liquid-inference-a-real-time-exchange-for-ai-inference-302900862.html",
+   "source_date": "2026-10-07",
+   "as_of": "",
+   "falsifier": "",
+   "file": "round1/RELOOP.md"
+  },
+  {
+   "id": "R-11",
+   "claim": "Top 1% of US households hold 32.5% of net worth in 2026 Q2, the highest in the DFA series (top 0.1%: 15.0%)",
+   "tier": "T0",
+   "status": "Confirmed",
+   "source": "https://www.federalreserve.gov/releases/z1/dataviz/download/zips/dfa.zip",
+   "source_date": "2026-09-15",
+   "as_of": "",
+   "falsifier": "",
+   "file": "round1/RELOOP.md"
+  },
+  {
+   "id": "R-12",
+   "claim": "Top 10% hold 68.9% of net worth, still below 2019 Q4 (69.9%)",
+   "tier": "T0",
+   "status": "Confirmed",
+   "source": "DFA zip (above)",
+   "source_date": "2026-09-15",
+   "as_of": "",
+   "falsifier": "",
+   "file": "round1/RELOOP.md"
+  },
+  {
+   "id": "R-13",
+   "claim": "Top 10% hold 88.1% of directly held corporate equities and mutual fund shares, bottom 50% hold 0.6%",
+   "tier": "T0",
+   "status": "Confirmed",
+   "source": "DFA zip (above)",
+   "source_date": "2026-09-15",
+   "as_of": "",
+   "falsifier": "",
+   "file": "round1/RELOOP.md"
+  },
+  {
+   "id": "R-14",
+   "claim": "The NY Fed Q3 2026 FX operations report is not yet published. The latest is the Q2 \"did not intervene\" notice",
+   "tier": "T2",
+   "status": "Confirmed",
+   "source": "https://www.newyorkfed.org/markets/international-market-operations/foreign-exchange-operations",
+   "source_date": "2026-08-13",
+   "as_of": "",
+   "falsifier": "",
+   "file": "round1/RELOOP.md"
+  },
+  {
+   "id": "R-15",
+   "claim": "The ESF bought $500M of yen with $500M of euros on 2026-07-31, settled 2026-08-05",
+   "tier": "T0",
+   "status": "Confirmed",
+   "source": "https://home.treasury.gov/system/files/206/ESF-August-2026-FS-Trunc-Notes.pdf",
+   "source_date": "2026-08-31",
+   "as_of": "",
+   "falsifier": "",
+   "file": "round1/RELOOP.md"
+  },
+  {
+   "id": "R-16",
+   "claim": "The ESF September 2026 statement is not yet posted",
+   "tier": "T0 (absence)",
+   "status": "Unresolved",
+   "source": "https://home.treasury.gov/system/files/206/ESF-September-2026-FS-Trunc-Notes.pdf (404)",
+   "source_date": "2026-10-22",
+   "as_of": "",
+   "falsifier": "",
+   "file": "round1/RELOOP.md"
+  },
+  {
+   "id": "R-17",
+   "claim": "Moody's France review on 2026-10-23 and the National Assembly budget vote on 2026-10-27",
+   "tier": "T4",
+   "status": "Unresolved (primary not reachable)",
+   "source": "Allianz via L5-16",
+   "source_date": "2026-10-09",
+   "as_of": "",
+   "falsifier": "",
+   "file": "round1/RELOOP.md"
+  },
+  {
+   "id": "R-18",
+   "claim": "No public GPU-hour index history was found, so there is no compute vs power correlation evidence",
+   "tier": "none",
+   "status": "Unresolved",
+   "source": "https://www.silicondata.com/, https://www.eia.gov/electricity/wholesale/",
+   "source_date": "2026-10-22",
+   "as_of": "",
+   "falsifier": "",
+   "file": "round1/RELOOP.md"
   }
  ]
 }

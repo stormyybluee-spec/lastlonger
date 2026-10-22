@@ -1,0 +1,608 @@
+<title>Monetary Futures Desk</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@112,600;112,800&family=Public+Sans:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: one ledger column, ruled like a Treasury statement. Summary first, evidence below, raw claims last. */
+:root {
+  --paper: #f3f6f4;
+  --sheet: #ffffff;
+  --ink: #14201b;
+  --muted: #56665f;
+  --rule: #d3ddd8;
+  --accent: #1d6a53;
+  --gold: #8a5a10;
+  --ok: #2b7a4b;
+  --warn: #a8700c;
+  --spec: #5f6487;
+  --bad: #b03636;
+  --ok-bg: #e3f1e8;
+  --warn-bg: #f7ecd6;
+  --spec-bg: #e8e9f2;
+  --bad-bg: #f6e1e1;
+  --bar: #cfe3da;
+  --f-display: "Archivo", "Arial Narrow", system-ui, sans-serif;
+  --f-body: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-data: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0e1412; --sheet: #151d1a; --ink: #e4ebe7; --muted: #95a59e; --rule: #26332e;
+    --accent: #62c29d; --gold: #d8a748; --ok: #6cc48d; --warn: #e0ae4a; --spec: #a3a8d0; --bad: #ec7d7d;
+    --ok-bg: #173023; --warn-bg: #352a12; --spec-bg: #23253a; --bad-bg: #3a1c1c; --bar: #1f3a30;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #0e1412; --sheet: #151d1a; --ink: #e4ebe7; --muted: #95a59e; --rule: #26332e;
+  --accent: #62c29d; --gold: #d8a748; --ok: #6cc48d; --warn: #e0ae4a; --spec: #a3a8d0; --bad: #ec7d7d;
+  --ok-bg: #173023; --warn-bg: #352a12; --spec-bg: #23253a; --bad-bg: #3a1c1c; --bar: #1f3a30;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--paper); color: var(--ink); font: 16px/1.6 var(--f-body); }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--sheet); }
+a { color: var(--accent); }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.wrap { max-width: 1080px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+header.mast { background: var(--sheet); border-bottom: 1px solid var(--rule); }
+header.mast .wrap { padding-block: 28px 22px; display: grid; gap: 10px; }
+.eyebrow { font: 600 12px/1.2 var(--f-data); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+h1, h2, h3 { font-family: var(--f-display); font-stretch: 112%; text-wrap: balance; margin: 0; }
+h1 { font-weight: 800; font-size: clamp(30px, 5vw, 46px); line-height: 1.05; }
+h2 { font-weight: 800; font-size: clamp(22px, 3vw, 28px); line-height: 1.15; }
+h3 { font-weight: 600; font-size: 18px; line-height: 1.25; }
+.dek { max-width: 68ch; color: var(--muted); margin: 0; }
+.stamp { display: flex; flex-wrap: wrap; gap: 8px 18px; font: 13px/1.4 var(--f-data); color: var(--muted); }
+.stamp b { color: var(--ink); font-weight: 600; }
+nav.toc { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--sheet); border-bottom: 1px solid var(--rule); }
+nav.toc .wrap { display: flex; gap: 4px; overflow-x: auto; padding-block: 8px; scrollbar-width: thin; }
+nav.toc a { flex: none; font: 600 13px/1 var(--f-body); color: var(--muted); text-decoration: none; padding: 8px 10px; border-radius: 6px; }
+nav.toc a:hover { color: var(--ink); background: var(--paper); }
+main .wrap { display: grid; gap: 56px; padding-block: 40px 72px; }
+section { display: grid; gap: 18px; min-width: 0; scroll-margin-top: 64px; }
+section > p, .prose p { max-width: 70ch; margin: 0; }
+.prose { display: grid; gap: 12px; }
+.lead { font-size: 18px; line-height: 1.6; max-width: 66ch; margin: 0; }
+.sheet { background: var(--sheet); border: 1px solid var(--rule); border-radius: 10px; }
+.figures { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 1px; background: var(--rule); border: 1px solid var(--rule); border-radius: 10px; overflow: hidden; }
+.fig { background: var(--sheet); padding: 14px 16px; display: grid; gap: 4px; align-content: start; }
+.fig .v { font: 600 22px/1.15 var(--f-data); font-variant-numeric: tabular-nums; }
+.fig .k { font-size: 13px; color: var(--muted); line-height: 1.4; }
+.fig .s { font: 11px/1.3 var(--f-data); color: var(--muted); }
+.answer { padding: 22px 24px; display: grid; gap: 14px; border-left: 4px solid var(--gold); }
+.answer p { margin: 0; max-width: 72ch; }
+.horizons { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.hz { background: var(--sheet); border: 1px solid var(--rule); border-radius: 10px; padding: 14px 16px; display: grid; gap: 6px; align-content: start; }
+.hz .tag { font: 600 12px/1 var(--f-data); color: var(--gold); letter-spacing: .06em; }
+.hz .when { font: 12px/1.3 var(--f-data); color: var(--muted); }
+.hz p { margin: 0; font-size: 14px; line-height: 1.5; }
+.tablebox { overflow-x: auto; border: 1px solid var(--rule); border-radius: 10px; background: var(--sheet); }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--rule); }
+th { font: 600 11px/1.3 var(--f-data); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); background: var(--sheet); }
+tr:last-child td { border-bottom: 0; }
+td.num { font-family: var(--f-data); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.pill { display: inline-block; font: 600 11px/1 var(--f-data); letter-spacing: .04em; padding: 5px 7px; border-radius: 999px; white-space: nowrap; }
+.p-confirmed { color: var(--ok); background: var(--ok-bg); }
+.p-plausible { color: var(--warn); background: var(--warn-bg); }
+.p-speculative { color: var(--spec); background: var(--spec-bg); }
+.p-refuted { color: var(--bad); background: var(--bad-bg); }
+.p-chosen { color: var(--ok); background: var(--ok-bg); }
+.p-partial { color: var(--warn); background: var(--warn-bg); }
+.p-not { color: var(--muted); background: var(--paper); border: 1px solid var(--rule); }
+.scen td.cell { position: relative; font-family: var(--f-data); font-variant-numeric: tabular-nums; min-width: 110px; }
+.scen .barwrap { display: grid; gap: 4px; }
+.scen .bar { height: 6px; border-radius: 3px; background: var(--bar); overflow: hidden; }
+.scen .bar i { display: block; height: 100%; background: var(--accent); }
+.scen tr.lead-row td.cell b { color: var(--accent); }
+.views { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.view { padding: 18px; display: grid; gap: 10px; align-content: start; }
+.view ul { margin: 0; padding-left: 18px; display: grid; gap: 8px; font-size: 14.5px; }
+.board { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; }
+.slot { padding: 14px 16px; display: grid; gap: 4px; align-content: start; }
+.slot .k { font: 600 11px/1.3 var(--f-data); letter-spacing: .06em; text-transform: uppercase; color: var(--gold); }
+.slot p { margin: 0; font-size: 14px; line-height: 1.5; }
+.compare { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.col { padding: 16px; display: grid; gap: 8px; align-content: start; }
+.col p { margin: 0; font-size: 14px; }
+.col .who { font: 600 12px/1.2 var(--f-data); color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+.col.win { border-color: var(--accent); }
+.filters { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.chip { font: 600 13px/1 var(--f-body); padding: 8px 12px; border-radius: 999px; border: 1px solid var(--rule); background: var(--sheet); color: var(--muted); cursor: pointer; }
+.chip[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+.card { padding: 14px 16px; display: grid; gap: 10px; align-content: start; }
+.card .top { display: flex; justify-content: space-between; gap: 8px; align-items: center; font: 12px/1 var(--f-data); color: var(--muted); }
+.card h3 { font-size: 16px; font-stretch: 100%; font-family: var(--f-body); font-weight: 600; line-height: 1.4; }
+.meter { display: grid; grid-template-columns: 1fr auto; gap: 8px; align-items: center; font: 12px/1 var(--f-data); color: var(--muted); }
+.meter .bar { height: 5px; background: var(--rule); border-radius: 3px; overflow: hidden; }
+.meter .bar i { display: block; height: 100%; background: var(--accent); }
+.cal { display: grid; gap: 0; }
+.cal .row { display: grid; grid-template-columns: 112px 1fr; gap: 14px; padding: 10px 0; border-bottom: 1px solid var(--rule); }
+.cal .row:last-child { border-bottom: 0; }
+.cal .d { font: 600 13px/1.5 var(--f-data); color: var(--accent); font-variant-numeric: tabular-nums; }
+.cal p { margin: 0; font-size: 14.5px; }
+.cal p span { color: var(--muted); }
+.split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px; }
+.ledger-tools { display: flex; flex-wrap: wrap; gap: 8px; }
+.ledger-tools input, .ledger-tools select { font: 14px var(--f-body); padding: 9px 12px; border-radius: 8px; border: 1px solid var(--rule); background: var(--sheet); color: var(--ink); }
+.ledger-tools input { flex: 1 1 240px; min-width: 0; }
+#ledger td { font-size: 13px; }
+#ledger td.id { font-family: var(--f-data); white-space: nowrap; }
+#ledger td.src a { word-break: break-all; }
+.more { justify-self: start; font: 600 14px var(--f-body); padding: 10px 14px; border-radius: 8px; border: 1px solid var(--rule); background: var(--sheet); color: var(--ink); cursor: pointer; }
+.note { font-size: 13px; color: var(--muted); max-width: 72ch; margin: 0; }
+.ladder { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 8px; }
+.rung { padding: 10px 12px; display: grid; gap: 2px; }
+.rung b { font: 600 14px var(--f-data); color: var(--accent); }
+.rung span { font-size: 12.5px; color: var(--muted); line-height: 1.4; }
+footer { border-top: 1px solid var(--rule); background: var(--sheet); }
+footer .wrap { padding-block: 24px; display: grid; gap: 6px; font-size: 13px; color: var(--muted); }
+@media (max-width: 860px) {
+  .horizons, .views, .compare { grid-template-columns: minmax(0, 1fr); }
+  .split { grid-template-columns: minmax(0, 1fr); }
+  .ladder { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 480px) {
+  .cal .row { grid-template-columns: minmax(0, 1fr); gap: 2px; }
+  .ladder { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (prefers-reduced-motion: no-preference) { .bar i { transition: width .4s ease; } }
+</style>
+
+<header class="mast">
+  <div class="wrap">
+    <div class="eyebrow">Intelligence core · Round 1</div>
+    <h1>Will energy replace money?</h1>
+    <p class="dek">A multi-agent research desk on the future of the monetary system. Seven research tracks, four debate panels, one calibration test. Every claim is tagged by evidence strength and dated, so this page can be re-run as policy moves.</p>
+    <div class="stamp">
+      <span>Facts as of <b>2026-10-22</b></span>
+      <span><b id="claimCount">258</b> dated claims</span>
+      <span><b>46</b> thesis cards</span>
+      <span>Next refresh trigger <b>FOMC 10-28</b></span>
+    </div>
+  </div>
+</header>
+
+<nav class="toc" aria-label="Sections">
+  <div class="wrap">
+    <a href="#answer">The answer</a>
+    <a href="#debt">Fed and Treasury</a>
+    <a href="#board">The new board</a>
+    <a href="#scenarios">Scenarios</a>
+    <a href="#views">Three viewpoints</a>
+    <a href="#tiers">Tiers and UHI</a>
+    <a href="#audit">Thesis audit</a>
+    <a href="#method">Why this beats a chatbot</a>
+    <a href="#watch">What to watch</a>
+    <a href="#cards">Thesis cards</a>
+    <a href="#ledger">Claims ledger</a>
+  </div>
+</nav>
+
+<main>
+<div class="wrap">
+
+<section id="answer">
+  <div class="eyebrow">Core question</div>
+  <h2>Energy will not replace the dollar. It is replacing gold's old job.</h2>
+  <div class="answer sheet">
+    <p><b>What energy replaces.</b> Until 1971 gold was the scarce physical thing that capped how much real output any money could claim. After 1971 the cap became political: how much debt the bond market would absorb. In an AI and robot economy, output scales with delivered electric power, and power cannot be printed. So energy becomes the real ceiling on what every dollar can buy. Gold's old job, done by watts.</p>
+    <p><b>How.</b> Energy is entering the system as collateral, inside the dollar. Power plants, data center campuses, power purchase agreements and GPUs now back tens of billions of new dollar loans, and the first compute futures settle in dollars. Call it the <b>watt-dollar</b>, heir to the 1974 petrodollar. It strengthens whichever currency prices the watts. Today that is the dollar.</p>
+    <p><b>Why not as money you spend.</b> A kilowatt-hour is perishable, tied to a place (PJM wholesale power rose 41% in 2026 while California hit record lows), and keeps getting cheaper as solar scales. A coin pegged to a kWh would lose value. Every energy currency since Henry Ford's 1921 proposal failed for these reasons.</p>
+    <p><b>Musk's version.</b> On 2026-10-20 Musk said currency "will be measured in fundamental physics metrics like power, wattage and tonnage". He ties it to an economy "a million times" larger than today's, after robots and space. That is a post-scarcity accounting unit. It is close to the 1930s Technocracy "energy certificate" plan (his grandfather was a member). Its real problem is who sets the allocations.</p>
+  </div>
+  <div class="horizons">
+    <div class="hz"><span class="tag">H0</span><span class="when">now to 2028</span><p>Energy is the <b>binding constraint</b> and a growing <b>collateral</b> layer behind dollar credit. Confirmed.</p></div>
+    <div class="hz"><span class="tag">H1</span><span class="when">2028 to 2035</span><p>kWh and GPU-hours become <b>shadow price indices</b> inside machine commerce. Settlement stays in dollar stablecoins.</p></div>
+    <div class="hz"><span class="tag">H2</span><span class="when">2035 to 2050</span><p>Possible <b>energy-indexed</b> bonds or income transfers. No bill proposes this yet.</p></div>
+    <div class="hz"><span class="tag">H3</span><span class="when">post-scarcity</span><p>Physics <b>accounting units</b> for allocation. The fight moves to who controls power, launch and compute.</p></div>
+  </div>
+  <p class="note">Confidence in this answer: 65 (Plausible). The near-term parts are backed by money that has already moved. The H2 and H3 parts are reasoned forecasts.</p>
+</section>
+
+<section id="debt">
+  <div class="eyebrow">How the Fed and Treasury are tackling the debt</div>
+  <h2>They are not shrinking the debt. They are engineering who must buy it.</h2>
+  <div class="figures">
+    <div class="fig"><span class="v">$40.44T</span><span class="k">Gross federal debt</span><span class="s">Treasury, 2026-10-20</span></div>
+    <div class="fig"><span class="v">$1,051.8B</span><span class="k">FY2026 net interest, above defense ($965.2B) for a third year</span><span class="s">MTS, 2026-09-30</span></div>
+    <div class="fig"><span class="v">3.52% → 5.13%</span><span class="k">Average cost of debt vs today's 10y yield. 70% reprices within 5 years</span><span class="s">Treasury, 2026-10-21</span></div>
+    <div class="fig"><span class="v">2.9% of GDP</span><span class="k">Primary deficit. This, not interest rates, drives the debt ratio</span><span class="s">computed, L7</span></div>
+    <div class="fig"><span class="v">3.75 to 4.00%</span><span class="k">Fed funds after the 2026-09-16 hike under Warsh, 12-0</span><span class="s">FOMC</span></div>
+    <div class="fig"><span class="v">$305B</span><span class="k">Stablecoins, 4.3% of T-bills. Small now, wired by law to grow into bills</span><span class="s">DefiLlama, 2026-10-21</span></div>
+  </div>
+  <div class="tablebox">
+    <table>
+      <thead><tr><th>Exit route</th><th>Revealed choice</th><th>Evidence (what money and law did)</th></tr></thead>
+      <tbody>
+        <tr><td><b>Captive demand</b> for Treasuries</td><td><span class="pill p-chosen">CHOSEN</span></td><td>Stablecoin law forces reserves into bills of 93 days or less (live 2027-01-18). Bank leverage relief. Bills sized to money funds. Long-bond buybacks up to $6B per operation. Bessent likened the stablecoin law to Lincoln's 1863 National Currency Act.</td></tr>
+        <tr><td><b>Inflate it away</b> (financial repression)</td><td><span class="pill p-partial">PASSIVE</span></td><td>The Fed is hiking, so not by intent. But nominal growth near 6% beats the 3.5% average debt cost, holding the ratio's drift to about 0.4pp a year.</td></tr>
+        <tr><td><b>Grow out</b> with AI</td><td><span class="pill p-partial">HOPED</span></td><td>Not in the data yet. AI capex is raising yields now. AI fixes the debt only if spending and real rates do not rise with growth.</td></tr>
+        <tr><td><b>Devalue</b> via a currency accord</td><td><span class="pill p-partial">SELECTIVE</span></td><td>Weaker dollar against the yen and yuan (6.67, a 4-year high). Broad dollar up 2.8% this year. No formal accord.</td></tr>
+        <tr><td><b>Revalue</b> gold or buy Bitcoin</td><td><span class="pill p-not">NOT CHOSEN</span></td><td>Gold still booked at $42.22/oz ($11B vs $1.08T market). No federal Bitcoin purchases. The White House says buying needs Congress.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="split">
+    <div class="prose">
+      <h3>Say versus do</h3>
+      <p><b>Bessent</b> criticized Yellen's bill-heavy issuance, then issued even more bills. His notepad said "$5-10 bil" for the yen operation. Treasury's own fund statement shows $500M.</p>
+      <p><b>Warsh</b> argued for cuts as a candidate, then hiked as chair, and kept Fed money out of the yen trade.</p>
+      <p><b>Japan</b> pledges alliance support while its Treasury holdings fell $171B from February to August.</p>
+    </div>
+    <div class="prose">
+      <h3>The weak spot</h3>
+      <p>The plan shortens the debt and ties federal interest to the Fed's rate, just as official foreign buyers leave and leveraged private buyers replace them. A lasting oil-driven inflation shock (Brent near $110, Hormuz still mostly closed) could force the Fed to cap yields. That is the path to the disorderly scenario.</p>
+    </div>
+  </div>
+</section>
+
+<section id="board">
+  <div class="eyebrow">Your "new monopoly board" question</div>
+  <h2>Not a merger. An acquisition. The old system is buying the new rails.</h2>
+  <p>You asked whether gold, bonds and credit (Set 1) and crypto, stablecoins and AI rails (Set 2) merge into a new board. The evidence says Set 2 is being absorbed into the dollar system rather than replacing it. Confidence 65.</p>
+  <div class="board">
+    <div class="slot sheet"><span class="k">The bank</span><p>The Federal Reserve. Fedwire stays final settlement. Crypto firms get limited payment accounts.</p></div>
+    <div class="slot sheet"><span class="k">What backs it</span><p>Short Treasury bills, by law. Every compliant stablecoin dollar must buy them.</p></div>
+    <div class="slot sheet"><span class="k">Who issues</span><p>Federally permitted issuers and tokenized bank deposits. A government CBDC is banned by statute until 2030-12-31.</p></div>
+    <div class="slot sheet"><span class="k">The rails</span><p>Blockchains for retail and machine payments. AI agents pay in dollar stablecoins, not a new unit.</p></div>
+    <div class="slot sheet"><span class="k">Toll booths</span><p>Issuers keep the float yield (holders get none by law). Custodians, compliance freeze points, Treasury's cheaper funding.</p></div>
+    <div class="slot sheet"><span class="k">Neutral corner</span><p>Physical gold between nations, now worth more than euro reserves at market prices. Mostly a price effect.</p></div>
+    <div class="slot sheet"><span class="k">Bitcoin</span><p>A frozen government stockpile and ETF asset (1.29M BTC). A favoured risk asset, not a reserve asset yet.</p></div>
+    <div class="slot sheet"><span class="k">Rival boards</span><p>China chose the opposite: a public e-CNY and a stablecoin ban. The EU plans a digital euro around 2029.</p></div>
+  </div>
+</section>
+
+<section id="scenarios">
+  <div class="eyebrow">Probabilities</div>
+  <h2>Which system describes the world at the end of each horizon</h2>
+  <div class="tablebox scen">
+    <table>
+      <thead><tr><th>Horizon</th><th>S1 Dollar extension</th><th>S2 Neutral reserve layer</th><th>S3 Energy / compute standard</th><th>S4 Disorderly reset</th></tr></thead>
+      <tbody id="scenBody"></tbody>
+    </table>
+  </div>
+  <div class="prose">
+    <p><b>S1</b> stablecoins and tokenized Treasuries carry the dollar onto new rails. <b>S2</b> gold and possibly Bitcoin settle between nations while the dollar stays for daily use. <b>S3</b> a physics-referenced unit for machine commerce. <b>S4</b> fiscal dominance forces inflation, yield caps or crisis first, and a new system is built after.</p>
+    <p class="note">Each row sums to 100. The scenarios can coexist, so S2 growing does not mean S1 fails. These are judgment calls (Speculative, 50), anchored to the evidence in the cards below.</p>
+  </div>
+</section>
+
+<section id="views">
+  <div class="eyebrow">Three standpoints</div>
+  <h2>What it means for each seat at the table</h2>
+  <div class="views">
+    <div class="view sheet">
+      <h3>Governance</h3>
+      <ul>
+        <li>The real lever is the primary deficit. Stabilizing debt needs about 2.9% of GDP of adjustment or 5.5% real growth.</li>
+        <li>Captive demand buys time, not solvency.</li>
+        <li>Energy policy is now monetary policy. Power capacity sets the ceiling on real output.</li>
+        <li>A cash UHI of $30k per adult is 24% of GDP. Deficit-financed, debt passes 200% of GDP within 5 years. Any UHI must be part ownership or offset.</li>
+        <li>Keep energy and compute priced in dollars, since China owns most solar hardware.</li>
+      </ul>
+    </div>
+    <div class="view sheet">
+      <h3>Business and investors</h3>
+      <ul>
+        <li>Firm power and grid connections are the scarce asset. PJM capacity cleared at its price cap.</li>
+        <li>AI gains are landing in margins: unit profits up 43% annualized, labor share at a record low 52.8%.</li>
+        <li>Stablecoin rails become dollar distribution channels from 2027.</li>
+        <li>Treasury supply stays heavy and short. Real yields carry the cost of capital, not inflation fear.</li>
+        <li>Food: commodity operators get squeezed, experience and human-made venues gain.</li>
+      </ul>
+    </div>
+    <div class="view sheet">
+      <h3>Wage earners and UHI recipients</h3>
+      <ul>
+        <li>Income stays in dollars through at least 2030. No energy or compute payments are planned.</li>
+        <li>The underclass risk is not losing credit. US law already makes lenders count steady government income.</li>
+        <li>The real gap is ownership. The bottom half of US households own 0.6% of stocks. Asset values follow the capital share, wages do not.</li>
+        <li>Rising power prices near data centers erode fixed incomes.</li>
+        <li>Be skeptical of "escape the permanent underclass" pitches. The phrase started as a tech meme and is used to sell products.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="tiers">
+  <div class="eyebrow">Asset owners, UHI, workers</div>
+  <h2>Three tiers collapse into two classes: owners and income-stream dependents</h2>
+  <div class="tablebox">
+    <table>
+      <thead><tr><th>Your question</th><th>Finding</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>Do UHI recipients lose access to credit?</td><td>No, under current law. Lenders may not discriminate against public assistance income (ECOA), and Fannie Mae counts it if it continues 3 years. Exception: a UHI set yearly by politicians, like Alaska's dividend.</td><td><span class="pill p-refuted">REFUTED</span> 80</td></tr>
+        <tr><td>Then what creates a permanent underclass?</td><td>Access to ownership. The top 10% hold 88.1% of US stocks and funds, the bottom half 0.6% (Fed, Q2 2026). A $2,500/month income supports about a $178k mortgage, while asset prices compound with the capital share.</td><td><span class="pill p-plausible">PLAUSIBLE</span> 70</td></tr>
+        <tr><td>What prevents it?</td><td>Paying part of UHI as ownership. Live precedents: Trump Accounts (about 70M children enrolled, $1,000 seed), the Alaska Permanent Fund. Bessent reportedly wants AI equity in Trump Accounts. Sanders proposes a 50% AI stock levy.</td><td><span class="pill p-plausible">PLAUSIBLE</span> 60</td></tr>
+        <tr><td>What does a worker get paid in?</td><td>Cash, by law (minimum wage must be cash at par). For tasks robots can do, wages drift toward the robot's hourly cost, about $2 to $10. AI-complemented roles earn a premium. Compute or energy only as extras.</td><td><span class="pill p-plausible">PLAUSIBLE</span> 65</td></tr>
+        <tr><td>What does a UHI recipient get?</td><td>Dollars through H1. Possibly energy- or compute-indexed in H2. A fixed kWh allotment would lose value as energy gets cheaper, so any energy design should be a share of output, not a kWh count.</td><td><span class="pill p-plausible">PLAUSIBLE</span> 60</td></tr>
+        <tr><td>Will robots make food cheap and kill small F&amp;B?</td><td>Labor is about half the food dollar. Land, energy, taxes and inputs are not automatable. Ceiling by 2035-2050: restaurants 10 to 25% cheaper in real terms, groceries 5 to 12%. Commodity small operators squeezed, experience-led ones gain.</td><td><span class="pill p-plausible">PLAUSIBLE</span> 70</td></tr>
+        <tr><td>How fast do robots replace labor?</td><td>Not at macro scale before 2030. Optimus external deliveries around end-2027. About 14.5k humanoids shipped in 2025, 90% Chinese.</td><td><span class="pill p-plausible">PLAUSIBLE</span> 85</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="audit">
+  <div class="eyebrow">Your newsletter thesis, checked</div>
+  <h2>What survives, and the corrected wording</h2>
+  <div class="tablebox">
+    <table>
+      <thead><tr><th>Claim</th><th>Verdict</th><th>What the data shows and how to fix it</th></tr></thead>
+      <tbody>
+        <tr><td>Gold (~$30-50T) × 10 leverage = ~$500T world debt</td><td><span class="pill p-refuted">REFUTED</span></td><td>Gold is worth $29.6T, debt about $365T (12×). The ratio wandered from 35× (1971) to 53× (2000) to 12× now, so it is a coincidence, not a mechanism. Fix: "Since 1971 nothing physical caps credit. The collateral that anchors the system is US Treasuries."</td></tr>
+        <tr><td>Fractional reserve multiplies money × 10</td><td><span class="pill p-refuted">REFUTED</span></td><td>Your own newsletter cites the Bank of England 2014 paper, which says loans create deposits with no fixed multiplier. Delete the × 10 line to stay consistent.</td></tr>
+        <tr><td>Money printing is "maxed out"</td><td><span class="pill p-refuted">REFUTED</span></td><td>There is no hard ceiling. The limit is the primary deficit plus real rates plus inflation tolerance. Real rate minus growth is only +0.26pp. Your phrase "scarce settlement capacity" is the better framing.</td></tr>
+        <tr><td>Bitcoin 21M × 10 collateral = ~$300T</td><td><span class="pill p-refuted">REFUTED</span></td><td>That implies $1.43M per BTC (gold parity, then × 10). All crypto-backed lending is $56B, about 0.05× BTC's value, and over-collateralized.</td></tr>
+        <tr><td>Putin said in 2026 the US uses Bitcoin to devalue its debt</td><td><span class="pill p-refuted">MISATTRIBUTED</span></td><td>It was Putin adviser Anton Kobyakov, 2025-09-06, about stablecoins: "when part of the US national debt is placed in stablecoins, the country's authorities will devalue this debt."</td></tr>
+        <tr><td>$15k per person of money in the world</td><td><span class="pill p-plausible">OUTDATED</span></td><td>That was world broad money per person in 2020 ($15.4k). Now about $19.5k. US M2 divided by world population is only $2.8k.</td></tr>
+        <tr><td>Interest on US debt exceeds military spending (Musk)</td><td><span class="pill p-confirmed">CONFIRMED</span></td><td>Net interest topped defense in FY2024, FY2025 and FY2026.</td></tr>
+        <tr><td>Bessent "sold France to help Japan"</td><td><span class="pill p-refuted">REFUTED</span></td><td>The US sold euros, not dollars (a true first), but only $500M. The France-Germany spread stayed flat in August and blew out from mid-September after the Fed and BoJ hikes and the budget fight. Narrow version (Plausible, 50): the US routed the cost onto the euro rather than the dollar.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="method">
+  <div class="eyebrow">Why this beats a chatbot answer</div>
+  <h2>The calibration test: same tweet, three answers</h2>
+  <p>The research engine got only the raw X post about Bessent, France and Japan, with no podcast transcript. Here is how its answer compares.</p>
+  <div class="compare">
+    <div class="col sheet"><span class="who">Grok, first answer</span><p>Asked "did Bessent officially say this?" Concluded "unproven". Intent is never announced, so this frame always ends there.</p></div>
+    <div class="col sheet"><span class="who">Expert podcast</span><p>Spotted the anomaly (euros sold, not dollars), mapped incentives, built a chain. Never tested the timing or the size.</p></div>
+    <div class="col sheet win"><span class="who">This desk</span><p>Found the same anomaly, then checked the money: $500M from Treasury's own fund statement against Japan's ~$97B, and a spread that only moved six weeks later. A sharper verdict than either.</p></div>
+  </div>
+  <div class="prose">
+    <h3>The method in seven moves</h3>
+    <p>1. Spot the anomaly. 2. State the default move. 3. Map every actor's incentives. 4. Read the actor's own history. 5. Build the mechanism chain. 6. Name observable tests and check them. 7. Separate fact from inference.</p>
+  </div>
+  <div class="ladder">
+    <div class="rung sheet"><b>T0</b><span>Money moved</span></div>
+    <div class="rung sheet"><b>T1</b><span>Law and binding rules</span></div>
+    <div class="rung sheet"><b>T2</b><span>Officials on record</span></div>
+    <div class="rung sheet"><b>T3</b><span>Market prices</span></div>
+    <div class="rung sheet"><b>T4</b><span>Specialist analysis</span></div>
+    <div class="rung sheet"><b>T5</b><span>Commentary</span></div>
+  </div>
+  <p class="note">When tiers conflict, the higher one wins. A thesis is Confirmed only with T0 or T1 support.</p>
+</section>
+
+<section id="watch">
+  <div class="eyebrow">Tripwires and calendar</div>
+  <h2>What would tell us which scenario is winning</h2>
+  <div class="split">
+    <div class="sheet" style="padding: 6px 18px;">
+      <div class="cal">
+        <div class="row"><span class="d">2026-10-23</span><p>Moody's review of France (Aa3) <span>· euro stress</span></p></div>
+        <div class="row"><span class="d">2026-10-27</span><p>French budget vote, government could fall</p></div>
+        <div class="row"><span class="d">2026-10-28</span><p>FOMC decision, a second hike is priced <span>· S4 risk</span></p></div>
+        <div class="row"><span class="d">2026-10-29</span><p>US Q3 GDP and PCE <span>· AI growth vs inflation</span></p></div>
+        <div class="row"><span class="d">2026-11-04</span><p>Treasury refunding: coupon sizes, buybacks <span>· tests captive-demand strategy</span></p></div>
+        <div class="row"><span class="d">2026-11-05</span><p>Lisa Cook removal hearing <span>· Fed independence</span></p></div>
+        <div class="row"><span class="d">Mid-Nov</span><p>NY Fed Q3 FX report confirms the euro sale size. Foreign Treasury holdings for September.</p></div>
+        <div class="row"><span class="d">2027-01-18</span><p>Stablecoin law switches on. Reserves must sit in short bills.</p></div>
+        <div class="row"><span class="d">2030-12-31</span><p>Statutory CBDC ban expires</p></div>
+      </div>
+    </div>
+    <div class="tablebox">
+      <table>
+        <thead><tr><th>Indicator</th><th>Now</th><th>Tripwire</th></tr></thead>
+        <tbody>
+          <tr><td>France-Germany 10y spread</td><td class="num">157.5bp</td><td>175bp ECB tweaks, 200bp backstop (TPI)</td></tr>
+          <tr><td>Net interest / receipts</td><td class="num">19.5%</td><td>25% signals fiscal dominance</td></tr>
+          <tr><td>Stablecoins / T-bills</td><td class="num">4.3%</td><td>10% makes S1 a real funding channel</td></tr>
+          <tr><td>USD/JPY</td><td class="num">~158</td><td>160 to 164 intervention zone</td></tr>
+          <tr><td>10y real yield</td><td class="num">2.76%</td><td>Above real growth (2.5%) widens the debt spiral</td></tr>
+          <tr><td>Fed bill purchases</td><td class="num">paused</td><td>Restart signals yield support, S4 path</td></tr>
+          <tr><td>CME GPU compute futures</td><td class="num">planned</td><td>First trade makes compute a dollar-priced commodity</td></tr>
+          <tr><td>Energy- or compute-indexed transfer bill</td><td class="num">none</td><td>First bill opens S3 in H2</td></tr>
+          <tr><td>US labor share</td><td class="num">52.8%</td><td>Further record lows strengthen the ownership-gap case</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="cards">
+  <div class="eyebrow">Debate court rulings</div>
+  <h2>Thesis cards</h2>
+  <p>Each card survived a six-role panel: proponent, skeptic, accountant, historian, incentive mapper, judge. Confidence is the judge's probability that the statement is true.</p>
+  <div class="filters" role="group" aria-label="Filter by cluster" id="clusterChips"></div>
+  <div class="filters" role="group" aria-label="Filter by status" id="statusChips"></div>
+  <div class="cards" id="cardGrid"></div>
+</section>
+
+<section id="ledger">
+  <div class="eyebrow">Raw evidence</div>
+  <h2>Claims ledger</h2>
+  <p>Every claim from the research tracks, with evidence tier, status, source and date. Search it to check anything above.</p>
+  <div class="ledger-tools">
+    <input id="q" type="search" placeholder="Search claims, e.g. stablecoin, yen, gold" aria-label="Search claims">
+    <select id="st" aria-label="Status"><option value="">All statuses</option><option>confirmed</option><option>plausible</option><option>speculative</option><option>refuted</option></select>
+    <select id="lane" aria-label="Track"><option value="">All tracks</option><option value="L1">Fed and Treasury</option><option value="L2">Law</option><option value="L3">Energy</option><option value="L4">Labor and UHI</option><option value="L5">Geopolitics</option><option value="L6">Experts</option><option value="L7">Quant</option><option value="C">Calibration</option><option value="R">Reloop</option></select>
+  </div>
+  <div class="tablebox">
+    <table id="ledger">
+      <thead><tr><th>ID</th><th>Claim</th><th>Tier</th><th>Status</th><th>Source</th><th>Date</th></tr></thead>
+      <tbody id="ledgerBody"><tr><td colspan="6">Loading the ledger…</td></tr></tbody>
+    </table>
+  </div>
+  <button class="more" id="more" type="button" hidden>Show more</button>
+</section>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Sources include US Treasury, Federal Reserve, OCC, IMF COFER, World Gold Council, BLS, USDA ERS, Japan MoF, Banque de France and expert interviews (Musk, Alden, Tait, Staudt, Collins, Mallers), each dated in the ledger.</span>
+    <span>General research, not personal financial advice. Round 1 run 2026-10-22. Gaps carried to Round 2 include the NY Fed FX report, CBO baseline and Q3 GDP.</span>
+  </div>
+</footer>
+
+<script>
+const SCEN = {
+  H0: { label: "H0 · now to 2028", S1: 62, S2: 15, S3: 1, S4: 22 },
+  H1: { label: "H1 · 2028 to 2035", S1: 45, S2: 22, S3: 3, S4: 30 },
+  H2: { label: "H2 · 2035 to 2050", S1: 32, S2: 28, S3: 10, S4: 30 }
+};
+const CLUSTERS = { energy: "Energy as money", strategy: "US strategy and reserves", debt: "AI, robots and debt", tiers: "Tiers, credit and food" };
+const CARDS = [
+  ["Da-01","energy","Energy becomes money people spend","refuted",5,"H1"],
+  ["Da-02","energy","Watt-dollar: energy and compute as collateral behind dollar credit","plausible",75,"H0"],
+  ["Da-03","energy","Energy is the binding real constraint on the AI economy","confirmed",80,"H0"],
+  ["Da-04","energy","An energy or compute unit of account for machine commerce","speculative",25,"H1"],
+  ["Da-05","energy","Musk's physics-denominated currency becomes real","speculative",15,"H3"],
+  ["Da-06","energy","A kWh-pegged unit is unstable and needs a scarcity rule, recreating the gold problem","plausible",80,"H2"],
+  ["Da-07","energy","Bitcoin is energy-priced, not energy-backed. Miners pivoting to AI is revealed preference","confirmed",85,"H0"],
+  ["Da-08","energy","Energy replaces gold's job as the real ceiling and becomes collateral inside the dollar","plausible",65,"H1"],
+  ["Da-09","energy","China as the energy mint, so the US keeps energy priced in dollars","plausible",50,"H1"],
+  ["Da-10","energy","Energy repricing erodes fixed-dollar incomes","plausible",60,"H1"],
+  ["Db-01","strategy","Captive demand for Treasuries is the dominant revealed debt strategy","confirmed",75,"H0"],
+  ["Db-02","strategy","Stablecoins as the petrodollar of the 2020s: right in function by H1, not at today's size","plausible",55,"H1"],
+  ["Db-03","strategy","US chose private stablecoin rails, China chose a public CBDC","confirmed",80,"H0"],
+  ["Db-04","strategy","Gold is the neutral reserve layer between nations, mostly by price effect","confirmed",75,"H0"],
+  ["Db-05","strategy","Bitcoin today is a politically favoured risk asset, not a reserve asset","confirmed",80,"H0"],
+  ["Db-06","strategy","Bessent sold France to help Japan (literal version)","refuted",85,"H0"],
+  ["Db-06N","strategy","Narrow version: the US chose euros and repo lines, routing the cost onto the euro area","plausible",50,"H0"],
+  ["Db-07","strategy","Dollar devaluation is selective against Asian currencies, not broad","plausible",65,"H0"],
+  ["Db-08","strategy","Managed financial repression is the likeliest fiscal exit","plausible",60,"H1"],
+  ["Db-09","strategy","Scenario probabilities S1 to S4 by horizon","speculative",50,"H0"],
+  ["Db-10","strategy","The merger is an acquisition: Set 1 absorbs Set 2","plausible",65,"H1"],
+  ["Db-11","strategy","Bitcoin becomes a neutral reserve between nations","speculative",20,"H2"],
+  ["Db-12","strategy","Official Treasury holders leaving, leveraged private holders replacing them","confirmed",80,"H0"],
+  ["Dc-01","debt","Musk: only AI and robots can solve the US debt","refuted",70,"H1"],
+  ["Dc-02","debt","The debt treadmill is driven by the primary deficit, not interest rates minus growth","confirmed",80,"H0"],
+  ["Dc-03","debt","AI fixes the debt only if spending and real rates do not rise with growth","confirmed",75,"H1"],
+  ["Dc-04","debt","Near term, AI is inflationary (energy, chips, capex). Goods disinflation later, but bounded","plausible",65,"H0"],
+  ["Dc-05","debt","Robots are not a macro labor substitute before 2030","plausible",85,"H0"],
+  ["Dc-06","debt","Rising capital share is the real channel from AI into the monetary system","plausible",55,"H1"],
+  ["Dc-07","debt","The Fed's 2026 hike is gasoline on the fire (Mallers). On hike day the 10y term premium fell","refuted",75,"H0"],
+  ["Dc-08","debt","A deficit-financed UHI makes the debt explosive","confirmed",90,"H1"],
+  ["Dc-09","debt","The default exit is passive inflation and repression through market plumbing","plausible",60,"H1"],
+  ["Dc-10","debt","The AI debt dividend is really a bet on energy supply","plausible",55,"H1"],
+  ["Dc-11","debt","Net interest exceeds defense spending","confirmed",95,"H0"],
+  ["Dd-01","tiers","Three tiers collapse into two classes: owners and income-stream dependents","plausible",65,"H1"],
+  ["Dd-02","tiers","UHI recipients lose access to credit","refuted",80,"H1"],
+  ["Dd-03","tiers","The real underclass mechanism is access to ownership, not credit","plausible",70,"H1"],
+  ["Dd-04","tiers","UHI paid partly in ownership prevents an underclass","plausible",60,"H1"],
+  ["Dd-05","tiers","Workers paid in cash, capped near robot-hour cost for substitutable tasks","plausible",65,"H1"],
+  ["Dd-06","tiers","UHI form by horizon: dollars, then indexed, then physics allocations","plausible",60,"H2"],
+  ["Dd-07","tiers","Robots lower food prices modestly, not dramatically","plausible",70,"H2"],
+  ["Dd-08","tiers","Small F&B splits: commodity squeezed, experience-led gains","plausible",60,"H1"],
+  ["Dd-09","tiers","'Permanent underclass' is a sold narrative with a real but slow core","plausible",65,"H1"],
+  ["Dd-10","tiers","Ordinary positioning: own broad productive assets, keep income documented","plausible",60,"H0"],
+  ["Dd-11","tiers","Whether UHI can be pledged is the hidden design variable","plausible",60,"H1"],
+  ["Dd-12","tiers","A high cash UHI cannot be funded from current receipts","confirmed",75,"H1"]
+];
+
+function el(tag, attrs, text) {
+  const n = document.createElement(tag);
+  if (attrs) for (const k in attrs) n.setAttribute(k, attrs[k]);
+  if (text != null) n.textContent = text;
+  return n;
+}
+
+(function scenarios() {
+  const body = document.getElementById("scenBody");
+  for (const h of ["H0", "H1", "H2"]) {
+    const r = SCEN[h], tr = el("tr");
+    tr.appendChild(el("td", null, r.label));
+    const max = Math.max(r.S1, r.S2, r.S3, r.S4);
+    for (const s of ["S1", "S2", "S3", "S4"]) {
+      const td = el("td", { class: "cell" });
+      const w = el("div", { class: "barwrap" });
+      const num = el(r[s] === max ? "b" : "span", null, r[s] + "%");
+      const bar = el("div", { class: "bar" });
+      const fill = el("i"); fill.style.width = r[s] + "%";
+      bar.appendChild(fill); w.appendChild(num); w.appendChild(bar); td.appendChild(w); tr.appendChild(td);
+    }
+    body.appendChild(tr);
+  }
+})();
+
+(function cards() {
+  const state = { cluster: "", status: "" };
+  const grid = document.getElementById("cardGrid");
+  function chipRow(host, items, key) {
+    for (const [val, label] of items) {
+      const b = el("button", { class: "chip", type: "button", "aria-pressed": val === "" ? "true" : "false" }, label);
+      b.addEventListener("click", () => {
+        state[key] = val;
+        host.querySelectorAll(".chip").forEach(c => c.setAttribute("aria-pressed", c === b ? "true" : "false"));
+        render();
+      });
+      host.appendChild(b);
+    }
+  }
+  chipRow(document.getElementById("clusterChips"), [["", "All clusters"], ...Object.entries(CLUSTERS)], "cluster");
+  chipRow(document.getElementById("statusChips"), [["", "All statuses"], ["confirmed", "Confirmed"], ["plausible", "Plausible"], ["speculative", "Speculative"], ["refuted", "Refuted"]], "status");
+  function render() {
+    grid.replaceChildren();
+    for (const [id, cl, title, st, conf, hz] of CARDS) {
+      if (state.cluster && cl !== state.cluster) continue;
+      if (state.status && st !== state.status) continue;
+      const c = el("article", { class: "card sheet" });
+      const top = el("div", { class: "top" });
+      top.appendChild(el("span", null, id + " · " + hz));
+      top.appendChild(el("span", { class: "pill p-" + st }, st.toUpperCase()));
+      c.appendChild(top);
+      c.appendChild(el("h3", null, title));
+      const m = el("div", { class: "meter" });
+      const bar = el("div", { class: "bar" }); const f = el("i"); f.style.width = conf + "%"; bar.appendChild(f);
+      m.appendChild(bar); m.appendChild(el("span", null, conf + "/100"));
+      c.appendChild(m);
+      c.appendChild(el("span", { class: "note" }, CLUSTERS[cl]));
+      grid.appendChild(c);
+    }
+    if (!grid.children.length) grid.appendChild(el("p", { class: "note" }, "No cards match these filters."));
+  }
+  render();
+})();
+
+(function ledger() {
+  const body = document.getElementById("ledgerBody"), more = document.getElementById("more");
+  const q = document.getElementById("q"), st = document.getElementById("st"), lane = document.getElementById("lane");
+  let rows = [], shown = 40;
+  function bucket(s) { s = (s || "").toLowerCase(); for (const k of ["refuted", "speculative", "plausible", "confirmed"]) if (s.includes(k)) return k; return ""; }
+  function render() {
+    const term = q.value.trim().toLowerCase();
+    const list = rows.filter(r => (!st.value || bucket(r.status) === st.value)
+      && (!lane.value || r.id.startsWith(lane.value))
+      && (!term || (r.claim + " " + r.source + " " + r.id).toLowerCase().includes(term)));
+    body.replaceChildren();
+    for (const r of list.slice(0, shown)) {
+      const tr = el("tr");
+      tr.appendChild(el("td", { class: "id" }, r.id));
+      tr.appendChild(el("td", null, r.claim));
+      tr.appendChild(el("td", { class: "num" }, r.tier));
+      const b = bucket(r.status), tdS = el("td");
+      tdS.appendChild(el("span", { class: "pill p-" + (b || "not") }, (r.status || "").slice(0, 40)));
+      tr.appendChild(tdS);
+      const tdSrc = el("td", { class: "src" });
+      const m = (r.source || "").match(/https?:\/\/[^\s)\]]+/);
+      if (m) { const a = el("a", { href: m[0], target: "_blank", rel: "noopener" }, m[0].replace(/^https?:\/\//, "").slice(0, 48)); tdSrc.appendChild(a); }
+      else tdSrc.textContent = (r.source || "").slice(0, 80);
+      tr.appendChild(tdSrc);
+      tr.appendChild(el("td", { class: "num" }, r.source_date || r.as_of || ""));
+      body.appendChild(tr);
+    }
+    if (!list.length) { const tr = el("tr"); tr.appendChild(el("td", { colspan: "6" }, "No claims match. Clear the search or filters.")); body.appendChild(tr); }
+    more.hidden = list.length <= shown;
+  }
+  [q, st, lane].forEach(n => n.addEventListener("input", () => { shown = 40; render(); }));
+  more.addEventListener("click", () => { shown += 60; render(); });
+  fetch("claims.json").then(r => r.json()).then(d => {
+    rows = d.claims || [];
+    document.getElementById("claimCount").textContent = rows.length;
+    render();
+  }).catch(() => {
+    body.replaceChildren();
+    const tr = el("tr"); tr.appendChild(el("td", { colspan: "6" }, "The ledger file did not load. It is also in the repository as claims.json.")); body.appendChild(tr);
+  });
+})();
+</script>
