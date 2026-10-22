@@ -1,0 +1,407 @@
+{
+ "Q1": {
+  "likely": 70,
+  "headline": "About 7 in 10: the court thinks it fairly likely that gold, bonds and bank credit stay central, with the new token rails built on top of them rather than replacing them.",
+  "up": [
+   "Stablecoin supply passes $500B or 10% of T-bills while reserves stay in short bills, so more token money sits on Set 1 bonds",
+   "Central banks keep buying gold near the 2025 pace (863t) as sanctions reach more channels",
+   "The federal tax base starts moving to capital, energy or compute as the labor share falls"
+  ],
+  "down": [
+   "Treasury receipts stay wage-based while the labor share keeps falling from 52.8%, which weakens Treasuries as prime collateral in H2",
+   "A GENIUS amendment or the Basel crypto review lets non-Treasury assets back compliant tokens",
+   "Unsecured, income-underwritten lending on chain passes $50B by 2028"
+  ],
+  "watch": "Stablecoin reserve rules switch on 2027-01-18, then the stablecoin share of T-bills (4.3% now, tripwire 10%)",
+  "byHorizon": {
+   "H0": 80,
+   "H1": 70,
+   "H2": 60
+  }
+ },
+ "Q2": {
+  "likely": 65,
+  "headline": "About 2 in 3: likely that loans based on your future income stay with regulated lenders, while the old petrodollar recycling job passes to stablecoins.",
+  "up": [
+   "Crypto-backed lending stays tiny next to bank loans (now $56.2B, about 0.4%)",
+   "Issuer attestations and TIC data show stablecoin demand is mostly new foreign dollar demand, not switching out of US deposits (Round 3 question R3-01)"
+  ],
+  "down": [
+   "Unsecured, income-underwritten lending on chain passes $50B, or the bank-funded share of consumer credit falls sharply by 2028",
+   "Stablecoin growth turns out to be mostly switching out of US money funds and bank deposits",
+   "Gulf Treasury holdings rise more than 20% in a year, a sign that old-style recycling is back"
+  ],
+  "watch": "Stablecoin supply against the tripwire of $500B or 10% of T-bills, with reserve rules live from 2027-01-18",
+  "byHorizon": {
+   "H0": 70,
+   "H1": 60
+  }
+ },
+ "Q3": {
+  "likely": 65,
+  "headline": "About 2 in 3: likely that crypto replaces how money moves but not what backs it, and that gold stays mainly a reserve for states rather than everyday money.",
+  "up": [
+   "Compliant stablecoins keep gold out of their reserves (GENIUS lists no gold)",
+   "Tokenized gold stays a niche, now about $5.15B for XAUT plus PAXG, about 0.02% of the gold stock"
+  ],
+  "down": [
+   "Bill yields fall below about 1.5% and Congress widens stablecoin reserves to include gold (Round 3 question R3-10)",
+   "Clearing houses start accepting tokenized gold as margin",
+   "The Texas bullion-backed payment rail draws real volume after it opens"
+  ],
+  "watch": "Texas bullion-backed payments open 2027-05-01, and any amendment to GENIUS Sec. 4 on eligible reserves"
+ },
+ "Q4": {
+  "likely": 80,
+  "headline": "8 in 10: very likely under current law that a UHI can count as income for a loan, but cannot be sold or pledged as a stream.",
+  "up": [
+   "Any UHI bill keeps an anti-assignment clause like 42 USC 407 for Social Security",
+   "Lenders and Fannie Mae keep counting steady public income that continues at least 3 years"
+  ],
+  "down": [
+   "A US UHI or AI dividend bill makes the payments pledgeable or open to payroll-style deductions",
+   "Congress allows regulated borrowing against, or a business exception for, Trump Accounts",
+   "UHI amounts get reset each year by politicians, like Alaska's dividend, which makes them hard to underwrite"
+  ],
+  "watch": "Text of any US UHI or AI dividend bill: its CBO score and any assignment or deduction clauses (Round 3 question R3-08)"
+ },
+ "Q5": {
+  "likely": 70,
+  "headline": "About 7 in 10: likely that each country pays its own UHI from its own taxes, funds and currency, at very different real values.",
+  "up": [
+   "More countries ration transfers with residency rules, as Macau did with 183 days for 2025",
+   "Emerging-market central banks answer dollar tokens with stablecoin limits, capital controls or their own digital currencies"
+  ],
+  "down": [
+   "A large printed UHI in a non-reserve currency keeps its real value for several years",
+   "US energy prices fall while dollar oil prices rise, which would mean the US privilege reaches further than the court allows"
+  ],
+  "watch": "Any US UHI bill that pays in dollar stablecoins, which would add dollarization pressure on weaker currencies"
+ },
+ "Q6": {
+  "likely": 70,
+  "headline": "About 7 in 10: likely that the route from first job to owning assets is still open at 18, but it has changed shape, with a broken housing rung and a crowded launch rung.",
+  "up": [
+   "Unemployment for ages 20 to 24 keeps falling from 8.0%",
+   "Payment hours on a median home stay near 68, confirming the housing rung is the broken one",
+   "Child accounts or AI equity grants get funded at a scale that matters"
+  ],
+  "down": [
+   "A verified 1990 median home price more than 10% away from $92,000, or payment hours below 50 for 3 years",
+   "Asset returns beat wages, housing supply stays blocked and ownership grants stay token-sized into H1, which would make the gap permanent",
+   "The gap between graduate and all-worker unemployment widens as AI thins entry postings further"
+  ],
+  "watch": "NAR first-time buyer profile in November 2026 (median buyer age now a record 40)",
+  "byHorizon": {
+   "H0": 75,
+   "H1": 65
+  }
+ },
+ "Q7": {
+  "likely": 70,
+  "headline": "About 7 in 10: likely that the same arithmetic holds everywhere: a UHI's real value depends on how it is funded, and a digital token does not change that.",
+  "up": [
+   "New transfers repeat the pattern: funded ones stay stable (Hong Kong), printed ones erode (Iran, Mongolia)",
+   "Calibrating the model's foreign absorption and overshoot inputs against IMF pass-through data confirms the country ranking"
+  ],
+  "down": [
+   "The interest paid on bank reserves is set near zero with no inflation response",
+   "A printed transfer above 5% of GDP runs with CPI below 2%"
+  ],
+  "watch": "The robot supply response (Round 3 question R3-02): nonfarm productivity sustained above 3%, and core services inflation as AI spreads"
+ },
+ "Q8": {
+  "likely": 70,
+  "headline": "About 7 in 10: likely that robots and cheap energy make products somewhat cheaper but brands barely, and that freight shocks shrink only slowly.",
+  "up": [
+   "Store brands keep gaining share (a record 24% of units in H1 2026)",
+   "Electric trucks pass 5% of new class 8 truck sales"
+  ],
+  "down": [
+   "US battery cell capacity stays well under 20 GW by 2028, keeping electric freight tied to Chinese batteries",
+   "Platform take rates and ad prices fall sharply, which would make branded goods cheaper too"
+  ],
+  "watch": "EO 14421 rules due 24 December 2026, and US battery cell capacity against 20 GW by 2028",
+  "byHorizon": {
+   "H0": 75,
+   "H1": 70,
+   "H2": 65
+  }
+ },
+ "Q9": {
+  "likely": 65,
+  "headline": "About 2 in 3: likely that rivals' strongest card against the US plan is energy hardware, not currency, at least through 2028.",
+  "up": [
+   "The 10 November 2026 suspension lapses so China's October 2025 rare-earth package takes effect, and the solar know-how ban is finalized",
+   "Yuan-financed panels and batteries flow to the Global South at scale"
+  ],
+  "down": [
+   "China drops its hardware controls for good while a Gulf state signs a yuan crude term contract",
+   "US battery cell capacity passes 20 GW by 2028 and China falls below 25% of US lithium-ion imports"
+  ],
+  "watch": "10 November 2026, when China's rare-earth truce lapses or is renewed, then the final solar catalogue after 15 November",
+  "byHorizon": {
+   "H0": 70,
+   "H1": 60
+  }
+ },
+ "Q10": {
+  "likely": 70,
+  "headline": "About 7 in 10: likely that 'In Time' is wrong literally but partly right: goods got cheaper in hours of work, while homes, health cover and entry assets got dearer.",
+  "up": [
+   "Payment hours on a median home stay near 68",
+   "New Fed wealth data keep showing owners capturing most of the gains"
+  ],
+  "down": [
+   "A verified 1990 median home price more than 10% away from $92,000, or payment hours below 50 for 3 years",
+   "The bottom half's equity share rises once child accounts are funded"
+  ],
+  "watch": "Fed distributional wealth data, next due about December 2026"
+ },
+ "M1": {
+  "likely": 75,
+  "headline": "3 in 4: the court is fairly sure the interest on stablecoin reserves goes to issuers and distributors, not holders, and that the business breaks if bill yields fall near zero.",
+  "up": [
+   "Next Circle results again show most reserve income paid to distributors (61.5% in Q2 2026)",
+   "If yields fall, issuers waive fees or fold into banks, as money funds did under zero rates"
+  ],
+  "down": [
+   "GENIUS is amended to allow yield to holders",
+   "Exchange rewards (3.75% in the model) are ruled legal at scale from 2027-01-18, passing most of the float to holders"
+  ],
+  "watch": "Fed rate path and issuer earnings against the roughly 1.5% breakeven bill yield (10-year real yield 2.76% now)"
+ },
+ "M2": {
+  "likely": 60,
+  "headline": "6 in 10, a lean: deposits mostly stay inside banks but get more expensive, and part of new money creation tilts from bank loans toward Treasury bills.",
+  "up": [
+   "Stablecoins head toward TBAC's projected $2T by 2028, held mostly in bills",
+   "Deposit rates rise and banks keep shifting to funding nonbank lenders (loans to nonbanks up 19.9% to $2.06T)"
+  ],
+  "down": [
+   "Issuers park cash in money funds that use the Fed's reverse repo, so deposits really do leave the banking system",
+   "Stablecoin growth stalls well below $500B, which leaves the tilt toward bills small"
+  ],
+  "watch": "Stablecoin share of T-bills (4.3% now, tripwire 10%) and Fed H.8 bank loans to nonbank lenders"
+ },
+ "M3": {
+  "likely": 80,
+  "headline": "8 in 10: very likely an accurate snapshot of today. Gold is cheap for banks to own, costly to fund, and kept outside compliant dollar tokens.",
+  "up": [
+   "Tether's Q3 2026 attestation confirms gold stays in USDT reserves, not in its compliant token USAT",
+   "Aave keeps a 0% loan to value on gold tokens on its main market"
+  ],
+  "down": [
+   "The Basel crypto review changes how gold or tokens are treated",
+   "A GENIUS amendment adds gold as an eligible reserve",
+   "The World Gold Council pooled gold pilot goes live and clearing houses accept tokenized gold as margin"
+  ],
+  "watch": "Tether Q3 2026 attestation (gold tonnage, bill share), due about 31 October 2026"
+ },
+ "M4": {
+  "likely": 60,
+  "headline": "6 in 10, a lean: a robot and solar economy shrinks the oil anchor, and the recycling job passes to stablecoins, Gulf equity in US AI and loans backed by energy assets.",
+  "up": [
+   "Oil displaced by electric vehicles keeps growing toward the IEA's roughly 5 million barrels a day by 2030",
+   "Gulf funds keep buying US AI infrastructure, as in the MGX and BlackRock $40B Aligned deal",
+   "The UAE gets its swap line instead of turning to the yuan"
+  ],
+  "down": [
+   "A Gulf state signs a yuan term crude contract",
+   "Gulf Treasury holdings rise more than 20% in a year, meaning old-style recycling is back",
+   "A WTO or UNCTAD table puts oil's share of world trade well above the rough 5% used here"
+  ],
+  "watch": "Outcome of the UAE swap line request, and FIMA repo use in the next crisis (Round 3 question R3-09)",
+  "byHorizon": {
+   "H1": 55,
+   "H2": 65
+  }
+ },
+ "M5": {
+  "likely": 80,
+  "headline": "8 in 10: very likely that past cash transfers sort by how they were financed: small and funded stays safe, large and printed erodes within two to five years.",
+  "up": [
+   "Singapore's vouchers, the one open gap, turn out to fit the funded pattern",
+   "New national transfers show the same split by financing"
+  ],
+  "down": [
+   "A large printed transfer in a floating non-reserve currency keeps its real value for five years",
+   "Re-analysis credits Mongolia's poverty fall to its 17.3% growth boom rather than the transfer"
+  ],
+  "watch": "Research on Singapore's vouchers, the precedent Round 2 did not cover"
+ },
+ "M6": {
+  "likely": 55,
+  "headline": "Just over even: the toy model's ranking of countries is a fair lean, but its US inflation figures are a floor, not a forecast.",
+  "up": [
+   "Calibrating foreign absorption and overshoot against IMF pass-through panels confirms the ranking",
+   "The measured robot supply response comes in near the model's strong case, where robots meet 80% of extra demand"
+  ],
+  "down": [
+   "Adding an interest rate channel reorders the countries (Japan's yen fell from about 110 to about 158 through rate gaps)",
+   "A printed transfer above 5% of GDP runs with CPI below 2%"
+  ],
+  "watch": "Nonfarm productivity sustained above 3%, and PJM capacity prices, as clues to the robot supply response (Round 3 question R3-02)"
+ },
+ "M7": {
+  "likely": 85,
+  "headline": "About 85 in 100: the court is quite sure US law bars pledging or selling Social Security payments, and the record of abuse explains why.",
+  "up": [
+   "Courts keep reading 42 USC 407 broadly, as the Supreme Court did in Philpott (1973)",
+   "Regulators keep acting against pension advance products"
+  ],
+  "down": [
+   "Congress makes a new UHI or benefit stream assignable",
+   "Evidence appears of a current, legal loan product secured by Alaska dividends"
+  ],
+  "watch": "Assignment and deduction clauses in any US UHI or AI dividend bill (Round 3 question R3-08)"
+ },
+ "M8": {
+  "likely": 65,
+  "headline": "About 2 in 3: likely that a token balance you already received can be pledged in DeFi, but a future UHI stream only if the payer designs it that way.",
+  "up": [
+   "Token UHI pilots copy Shenzhen-style rules: not transferable, spendable only at listed shops, unspent money recovered",
+   "The US ban on a retail digital dollar holds, so any token UHI rides on private stablecoins that pay holders no yield"
+  ],
+  "down": [
+   "A permissive issuer makes the UHI stream a transferable streaming-payment token",
+   "Unsecured, income-underwritten lending on chain passes $50B"
+  ],
+  "watch": "Token-payment provisions in any US UHI bill, and the CBDC ban expiry on 2030-12-31"
+ },
+ "M9": {
+  "likely": 80,
+  "headline": "8 in 10: very likely that the entry job market is soft but not collapsing. AI as the main cause is rated lower, at 55.",
+  "up": [
+   "Next BLS releases keep unemployment for ages 20 to 24 near 8%",
+   "NY Fed data keep showing recent graduates above the all-worker rate (5.6% against 4.2%)"
+  ],
+  "down": [
+   "Unemployment for ages 20 to 24 climbs back above the 9.2% of a year earlier",
+   "Entry postings in AI-exposed jobs fall well below the current 44.7% share"
+  ],
+  "watch": "The gap between recent-graduate and all-worker unemployment, about 1.4 points now"
+ },
+ "M10": {
+  "likely": 60,
+  "headline": "6 in 10, a lean: AI cuts the cost of starting a business, but not the odds of success, so it offsets the underclass meme only for the top tail.",
+  "up": [
+   "Ad prices and platform fees keep rising faster than production costs fall (Round 3 question R3-07)",
+   "Top-tenth solo founders keep pulling away from the median (61 times in 2025)"
+  ],
+  "down": [
+   "Median solo-founder revenue rises two years running while ad prices fall",
+   "Solo founders win a growing share of priced-round money (14.7% now)"
+  ],
+  "watch": "Meta's average price per ad in its 10-Q filings, and whether Amazon removes its 3.5% surcharge"
+ },
+ "M11": {
+  "likely": 80,
+  "headline": "8 in 10: very likely that the Trump Account rules are as stated, and that the values follow from plain compounding on the stated returns.",
+  "up": [
+   "IRS rules stay unchanged as the first seeded cohort grows toward 18 in 2043",
+   "Treasury data by income confirm that family contributions, not the seed, drive balances"
+  ],
+  "down": [
+   "Congress adds a business start-up withdrawal exception or allows borrowing against the account",
+   "Real returns over 18 years land below the table's 3% low case"
+  ],
+  "watch": "Treasury data on contributions by income, and any AI equity routed into Trump Accounts (Round 3 question R3-11)"
+ },
+ "M12": {
+  "likely": 70,
+  "headline": "About 7 in 10: likely that past mobility windows reopened when non-owners got a large asset or credential paired with credit. Whether a modern version works is less certain.",
+  "up": [
+   "The Goldin and Katz high school figures, now from memory, are verified",
+   "A modern program that pairs a large grant with credit shows mobility gains"
+  ],
+  "down": [
+   "Evidence that a past window reopened without a large asset or credential",
+   "Large modern grants fail to move the bottom half's equity share"
+  ],
+  "watch": "Fed distributional wealth data, next due about December 2026, for any move in the bottom half's equity share"
+ },
+ "M13": {
+  "likely": 75,
+  "headline": "3 in 4: fairly sure that making the product is a small part of a cosmetic's price, and that robots cut factory costs but not retailer or platform cuts.",
+  "up": [
+   "Next filings keep marketing near a quarter of net sales at e.l.f. and Estee Lauder",
+   "Ad prices keep rising as cheap AI creative floods the auctions"
+  ],
+  "down": [
+   "Retailer margins or platform take rates fall sharply",
+   "Robot savings show up as large shelf-price cuts in branded goods"
+  ],
+  "watch": "Amazon's seller-services share of sales and Meta's average price per ad (Round 3 question R3-07)"
+ },
+ "M14": {
+  "likely": 70,
+  "headline": "About 7 in 10: the 2026 freight prices are confirmed, while the timelines for driverless and electric freight are only plausible.",
+  "up": [
+   "Aurora reaches about 200 driverless trucks by end 2026",
+   "Tesla Semi deliveries scale up after the September 2026 start"
+  ],
+  "down": [
+   "Timelines slip again, as when Tesla dropped its 2026 volume forecast",
+   "The IMO carbon framework session pencilled for 2026-12-04 slips or fails"
+  ],
+  "watch": "IMO carbon framework session pencilled for 2026-12-04, and Aurora's driverless truck count at end 2026",
+  "byHorizon": {
+   "H0": 80,
+   "H1": 70,
+   "H2": 60
+  }
+ },
+ "M15": {
+  "likely": 55,
+  "headline": "Just over even: attention, distribution and trust are what sell, but a cash price premium for 'human-made' is not yet proven.",
+  "up": [
+   "A controlled study finds a measurable price premium for human-made or founder-trusted goods",
+   "AI content labeling rules make human-made claims verifiable"
+  ],
+  "down": [
+   "Retailers keep cloning what works (store brands at a record 24% unit share)",
+   "Marketplace data with provenance labels show no price premium"
+  ],
+  "watch": "Marketplace price data with provenance labels, and any AI labeling rules (Round 3 question R3-06)"
+ },
+ "M16": {
+  "likely": 65,
+  "headline": "About 2 in 3: the ranking that puts hardware levers (threat 3.20, 3.20 and 3.00) far above money levers (0.12 for a BRICS currency) is a fair judgment, but it is judgment, not data.",
+  "up": [
+   "Rare-earth controls return when the 10 November 2026 suspension lapses",
+   "The critical minerals ban suspended to 27 November 2026 comes back into force"
+  ],
+  "down": [
+   "A Gulf state signs a yuan crude term contract",
+   "China speeds up Treasury sales well beyond the gradual run-down from $694B to $590.7B"
+  ],
+  "watch": "10 and 27 November 2026, the two supply-chain suspension dates"
+ },
+ "M17": {
+  "likely": 75,
+  "headline": "3 in 4: fairly sure that time prices split cleanly, with traded goods cheaper in hours of work and assets and local services dearer, and that owners captured most dollar gains.",
+  "up": [
+   "Verified 1990 inputs (home and car prices) match the memory figures",
+   "The next Fed wealth release keeps the top 0.1% share rising (15.0% in 2026 Q2)"
+  ],
+  "down": [
+   "A verified 1990 median home price more than 10% away from $92,000",
+   "Wages outrun home and health costs in hours of work for several years"
+  ],
+  "watch": "Verification of the 1990 median existing-home price ($92,000), the single input both lanes rest on"
+ },
+ "M18": {
+  "likely": 65,
+  "headline": "About 2 in 3: likely that the US exports inflation only when the dollar is strong, and that in 2026 it is not insulated itself.",
+  "up": [
+   "Oil-importing allies keep spending to defend their currencies (Japan spent about $170B to $175B)",
+   "US energy prices keep rising with world oil prices"
+  ],
+  "down": [
+   "US energy prices fall while dollar oil prices rise",
+   "The 2026 currency falls in Asia turn out to be mostly an oil shock rather than a dollar shock"
+  ],
+  "watch": "USD/JPY near the 160 to 164 intervention zone, and Japan's next intervention"
+ }
+}
