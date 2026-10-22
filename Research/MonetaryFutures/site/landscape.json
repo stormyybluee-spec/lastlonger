@@ -1557,7 +1557,7 @@
      "type": "steps",
      "items": [
       "Hormuz oil drives the French bond spread: the France to Germany spread was flat in August and blew out from 87 to 157.5 basis points only after Brent passed $100, alongside the Fed and Bank of Japan hikes, which is why the project now sees the likeliest near-term disorderly path as oil-shock inflation with the euro periphery as the weak link.",
-      "Japan's yen defense drives US mortgage rates: instead of borrowing through the unused FIMA line, foreign official holders sold $254 billion of Treasuries in 2026, and the 10-year yield went from 4.68% on 30 July to 5.13% in October.",
+      "Japan's yen defense feeds into US mortgage rates: instead of borrowing through the unused FIMA line, foreign official holders sold $254 billion of Treasuries in 2026, and the 10-year yield went from 4.68% on 30 July to 5.13% in October.",
       "AI investment weakens the collateral under money: firms expensing AI capex cut corporate tax to 7.1% of receipts while wages carry 86.2%, so Treasuries rest more on a labor share that is already at a record low 52.8%, which moved one point from S1 to S4 for 2035 to 2050.",
       "Data centers drive household budgets: PJM capacity cleared at its cap with a 6,623 MW shortfall, wholesale power there rose 41%, and US energy prices rose 20.4% while real hourly earnings fell 0.7%, so the AI boom is already taxing every fixed income, including any future UHI.",
       "China's solar know-how ban targets the watt-dollar: if AI output is capped by delivered power, the country that controls 97% of wafer capacity holds a lever over the dollar's new collateral, which is why solar technology controls now top the threat table at 3.00.",
@@ -1801,6 +1801,128 @@
      "how": "The links that drive each act."
     }
    ]
+  }
+ ],
+ "rulebook": [
+  {
+   "n": 1,
+   "rule": "The debt's engine is the primary deficit, not the interest rate.",
+   "why": "At market rates the primary deficit ($940.7B, 2.92% of GDP) explains 92% to 102% of the yearly rise in the debt ratio. Real rates sit only 0.26 points above trend growth."
+  },
+  {
+   "n": 2,
+   "rule": "Washington manages who must buy the debt, not how big it is.",
+   "why": "Bills, bank rule relief, buybacks and the stablecoin reserve rule all create captive buyers. Captive demand is Confirmed (75). No one in power is using gold, Bitcoin or default."
+  },
+  {
+   "n": 3,
+   "rule": "New money rails sit on old assets.",
+   "why": "From 2027-01-18 every compliant dollar token must hold Treasury bills of 93 days or less. Set 1 is buying Set 2, not merging with it."
+  },
+  {
+   "n": 4,
+   "rule": "Idle cash and zero-yield tokens pay someone else.",
+   "why": "$50,000 earns about $2,125 a year in bills, $190 in average savings and $0 from a stablecoin issuer. The float is private seigniorage."
+  },
+  {
+   "n": 5,
+   "rule": "An announced backstop is not a used one.",
+   "why": "The Fed's FIMA line sat at zero from February to October 2026 while foreign governments sold $254B of Treasuries. Check the weekly balance sheet, not the press release."
+  },
+  {
+   "n": 6,
+   "rule": "Gold is insurance between states, not the backing of your dollar.",
+   "why": "Central banks bought 863t in 2025 because dollar rails can be frozen. The gold to debt ratio has wandered from 12x to 53x, so no formula links them."
+  },
+  {
+   "n": 7,
+   "rule": "Energy is the ceiling and the collateral, not the cash.",
+   "why": "Delivered power now limits AI output (PJM cleared at its cap, 6,623 MW short), and power assets back dollar loans. A kWh coin fails as money because it is perishable, local and getting cheaper."
+  },
+  {
+   "n": 8,
+   "rule": "A UHI check is worth what it buys, and housing decides what it buys.",
+   "why": "40% to 48% of UHI spending goes to shelter, whose supply grows about 1% a year. A printed Musk-scale UHI runs about 5.8% to 9.8% inflation today."
+  },
+  {
+   "n": 9,
+   "rule": "Count a benefit as income. Never sell the stream.",
+   "why": "Lenders must count steady public income, about $69k of mortgage per $1,000 a month. Buyers of benefit streams have paid 30 to 60 cents on the dollar, at APRs up to 183%."
+  },
+  {
+   "n": 10,
+   "rule": "Ownership, not income, decides who keeps up.",
+   "why": "The top 10% took 67.5% of the $78.1T rise in household wealth since late 2019. The bottom half hold 0.58% of directly held stocks."
+  },
+  {
+   "n": 11,
+   "rule": "Cheap production does not reach you on its own.",
+   "why": "Land takes the savings where it is most of a home's value (68.4% in San Jose), and platforms take a rising slice of each sale (Amazon ads 41.9% of seller services)."
+  },
+  {
+   "n": 12,
+   "rule": "Rivals' real lever is hardware, not currency.",
+   "why": "Solar technology controls score 3.00 on the threat table, a BRICS currency 0.12. The Treasury can issue bills, but it cannot issue a magnet."
+  },
+  {
+   "n": 13,
+   "rule": "The likeliest US reset is slow repression, not a crash.",
+   "why": "The reserve issuer borrows in its own currency, so the loss arrives as years of inflation above coupons and savings rates. Explicit default is judged below 5%."
+  },
+  {
+   "n": 14,
+   "rule": "Grade intent and outcome separately, and follow money over words.",
+   "why": "Trump's cheap-money want is D1 but he is not getting it. Musk's energy money is a sincere belief with nothing built. The say and do gap is the most valuable data."
+  }
+ ],
+ "questions": [
+  {
+   "q": "Who actually holds dollar stablecoins, country by country?",
+   "a": "Nobody publishes it. The Fed's September 2026 note says chain data lack geography, and Tether reports 650 million users with no country split. The project's model puts about two thirds of growth-phase supply abroad (range 55% to 81%). The first hard test is the 2028-07-18 ban on non-permitted coins for US persons."
+  },
+  {
+   "q": "Is the 2026 rise in real interest rates driven by AI capital demand or by oil, Japan and term premium?",
+   "a": "The real 10-year yield rose 82 basis points in 2026 to 2.76%, now above the 2.5% real growth line. No decomposition exists yet. It matters most of all, because if AI pushes real rates up one for one with growth, the AI dividend does nothing for the debt (129% of GDP either way)."
+  },
+  {
+   "q": "Will the 2028 Fed leadership turnover bring a Fed-Treasury accord on yields?",
+   "a": "Warsh has floated the idea of a new accord, and markets price the Powell governor seat vacated by early 2028 at 64% to 72%. The decoders grade yield support after the turnover D2, about 40 by 2032. An explicit cap or accord by 2035 is judged about 25."
+  },
+  {
+   "q": "Does the corporate tax collapse reverse when AI capex growth slows?",
+   "a": "Corporate receipts fell 15.6% in FY2026 to $381.4B as firms expensed investment, and corporate tax is now 7.1% of receipts. The skeptic's case is that this is a timing effect that reverses. The test is the corporate share climbing back above 10% while capex keeps growing."
+  },
+  {
+   "q": "Next time Japan defends the yen, will it borrow through FIMA or sell Treasuries again?",
+   "a": "In 2026 it said it planned to use FIMA and did not. Foreign official custody fell $254B to $2,549.1B. The tripwires are a FIMA draw above $1B during an intervention and custody below $2.5T. USD/JPY is 157.10, below the 160 to 164 intervention zone."
+  },
+  {
+   "q": "Do Gulf states get dollar lines from the Treasury, and on what conditions?",
+   "a": "The UAE asked in April, Bessent pointed to the Exchange Stabilization Fund (about $219B), and no line was announced by 22 October. The ESF monthly statements were not read, so a quiet line cannot be ruled out. Conditional access is the small push behind S2 gaining a point."
+  },
+  {
+   "q": "Does conditional dollar access show up in central bank gold buying?",
+   "a": "The link is inference so far, which is why the court moved only one point toward a neutral reserve layer. The WGC's Q3 2026 data, due in late October or early November, is the next check. Above 200 tonnes a quarter would confirm."
+  },
+  {
+   "q": "How fast can US housing supply actually respond in the 2020s?",
+   "a": "This is the single input that most limits any UHI and any robot dividend, and the project lacks a 2020s supply elasticity. Broad upzoning worked in Auckland and Austin. Narrow reforms produced little. FHFA land shares after 2022 are also missing."
+  },
+  {
+   "q": "Will China pair its solar know-how ban with yuan finance for the Global South?",
+   "a": "So far the yuan leg is thin: 94% of Chinese energy loans in 2010 to 2021 were in dollars and the Global South solar boom is bought for cash. The yuan grows by refinancing old debt instead, as in Kenya, where its share of external debt rose from 5% to 11.7%."
+  },
+  {
+   "q": "Is there a real cash premium for human-made goods?",
+   "a": "Experiments show a label effect on ratings and purchase intent, and a preregistered auction study finds bids fall as AI involvement rises, but its effect size was not seen. No transaction-based estimate exists, and platforms such as Etsy capture part of any premium."
+  },
+  {
+   "q": "Why was producer price inflation for finished consumer goods flat in 2026 while energy CPI rose 20.4%?",
+   "a": "Unresolved. Both are official series as published. The likely cause is the energy weight and coverage of the producer series. It matters because it decides how much of the 2026 shock is still in the pipeline for 2027."
+  },
+  {
+   "q": "If a UHI or AI dividend law passes, will payments be pledgeable or programmable?",
+   "a": "No bill found makes payments assignable, tokenized or programmable, and none is money-financed. A cash UHI written into the Social Security Act would inherit its anti-assignment rule. The Sanders bill's payment mechanics and any CBO score are still to be read."
   }
  ]
 }
