@@ -2,43 +2,52 @@
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@112,600;112,800&family=Public+Sans:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=Newsreader:ital,opsz,wght@0,6..72,300..500;1,6..72,300..400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
 <style>
 /* Layout: one ledger column, ruled like a Treasury statement. Summary first, evidence below, raw claims last. */
+/* Layout: a forecaster's bulletin. Grey paper, contour rings, punched holes, red threads for connections, network-blue for data. */
 :root {
-  --paper: #f3f6f4;
-  --sheet: #ffffff;
-  --ink: #14201b;
-  --muted: #56665f;
-  --rule: #d3ddd8;
-  --accent: #1d6a53;
-  --gold: #8a5a10;
-  --ok: #2b7a4b;
-  --warn: #a8700c;
-  --spec: #5f6487;
-  --bad: #b03636;
-  --ok-bg: #e3f1e8;
-  --warn-bg: #f7ecd6;
-  --spec-bg: #e8e9f2;
-  --bad-bg: #f6e1e1;
-  --bar: #cfe3da;
+  --paper: #ebeae6;
+  --sheet: #f5f4f1;
+  --ink: #1b1b1d;
+  --muted: #66666a;
+  --rule: #cdccc7;
+  --accent: #1d3f94;
+  --gold: #8a8474;
+  --thread: #d4141c;
+  --ok: #1d3f94;
+  --warn: #7a5a1c;
+  --spec: #b8465f;
+  --bad: #d4141c;
+  --ok-bg: transparent;
+  --warn-bg: transparent;
+  --spec-bg: transparent;
+  --bad-bg: transparent;
+  --bar: #d6d5d0;
+  --ring: rgba(27, 27, 29, .10);
+  --perf: #c9c8c3;
+  --frost: rgba(250, 249, 247, .78);
+  --bloom: rgba(212, 20, 28, .26);
   --f-display: "Archivo", "Arial Narrow", system-ui, sans-serif;
-  --f-body: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-body: "Archivo", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-serif: "Newsreader", Georgia, "Times New Roman", serif;
   --f-data: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --paper: #0e1412; --sheet: #151d1a; --ink: #e4ebe7; --muted: #95a59e; --rule: #26332e;
-    --accent: #62c29d; --gold: #d8a748; --ok: #6cc48d; --warn: #e0ae4a; --spec: #a3a8d0; --bad: #ec7d7d;
-    --ok-bg: #173023; --warn-bg: #352a12; --spec-bg: #23253a; --bad-bg: #3a1c1c; --bar: #1f3a30;
+    --paper: #111112; --sheet: #19191b; --ink: #e9e8e4; --muted: #9b9a9f; --rule: #2f2f33;
+    --accent: #87a3ff; --gold: #b7b09c; --thread: #ff4148; --ok: #87a3ff; --warn: #d6aa5c; --spec: #ef8ea4; --bad: #ff4148;
+    --ok-bg: transparent; --warn-bg: transparent; --spec-bg: transparent; --bad-bg: transparent; --bar: #2a2a2e;
+    --ring: rgba(233, 232, 228, .09); --perf: #2b2b2f; --frost: rgba(30, 30, 33, .80); --bloom: rgba(255, 65, 72, .22);
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --paper: #0e1412; --sheet: #151d1a; --ink: #e4ebe7; --muted: #95a59e; --rule: #26332e;
-  --accent: #62c29d; --gold: #d8a748; --ok: #6cc48d; --warn: #e0ae4a; --spec: #a3a8d0; --bad: #ec7d7d;
-  --ok-bg: #173023; --warn-bg: #352a12; --spec-bg: #23253a; --bad-bg: #3a1c1c; --bar: #1f3a30;
-  color-scheme: dark;
+    --paper: #111112; --sheet: #19191b; --ink: #e9e8e4; --muted: #9b9a9f; --rule: #2f2f33;
+    --accent: #87a3ff; --gold: #b7b09c; --thread: #ff4148; --ok: #87a3ff; --warn: #d6aa5c; --spec: #ef8ea4; --bad: #ff4148;
+    --ok-bg: transparent; --warn-bg: transparent; --spec-bg: transparent; --bad-bg: transparent; --bar: #2a2a2e;
+    --ring: rgba(233, 232, 228, .09); --perf: #2b2b2f; --frost: rgba(30, 30, 33, .80); --bloom: rgba(255, 65, 72, .22);
+    color-scheme: dark;
 }
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
@@ -279,6 +288,124 @@ footer .wrap { padding-block: 24px; display: grid; gap: 6px; font-size: 13px; co
   .ladder { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (prefers-reduced-motion: no-preference) { .bar i { transition: width .4s ease; } }
+
+/* ===== Forecast bulletin theme layer ===== */
+body { font: 16px/1.62 var(--f-body); letter-spacing: .002em; }
+h1, h2, h3 { font-family: var(--f-display); }
+h1 { font-stretch: 66%; font-weight: 800; text-transform: uppercase; font-size: clamp(46px, 9vw, 112px); line-height: .9; letter-spacing: -.01em; }
+h2 { font-stretch: 70%; font-weight: 800; text-transform: uppercase; font-size: clamp(28px, 4.4vw, 46px); line-height: .98; letter-spacing: 0; }
+h3 { font-stretch: 85%; font-weight: 700; }
+.eyebrow { font: 500 11.5px/1.2 var(--f-data); letter-spacing: .14em; color: var(--ink); }
+section > .eyebrow, .secbar > .eyebrow { display: flex; align-items: center; gap: 12px; }
+section > .eyebrow::after, .secbar > .eyebrow::after { content: ""; width: 72px; height: 1px; background: var(--ink); opacity: .7; }
+.sheet { border-radius: 3px; border-color: var(--rule); background: var(--sheet); }
+.tablebox, .figures, .mapbox { border-radius: 3px; }
+.pill { background: transparent !important; border: 1px solid currentColor; border-radius: 2px; padding: 4px 6px; font-weight: 500; letter-spacing: .08em; }
+.p-not { color: var(--muted); }
+.chip { border-radius: 2px; font: 500 12.5px/1 var(--f-data); letter-spacing: .04em; text-transform: uppercase; padding: 9px 12px; }
+.chip[aria-pressed="true"] { background: var(--ink); color: var(--sheet); }
+.more { border-radius: 2px; font: 500 12.5px var(--f-data); letter-spacing: .05em; text-transform: uppercase; }
+th { letter-spacing: .1em; }
+a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+
+/* site bar */
+header.sitebar { background: color-mix(in srgb, var(--paper) 88%, transparent); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
+.brand { font: 800 15px/1 var(--f-display); font-stretch: 70%; text-transform: uppercase; letter-spacing: .04em; display: inline-flex; align-items: center; gap: 8px; }
+.brand::before { content: ""; width: 10px; height: 10px; border-radius: 50%; background: var(--thread); box-shadow: 14px 0 0 -3px var(--accent); margin-right: 8px; }
+.tabs a { border-radius: 2px; font: 500 12.5px/1 var(--f-data); letter-spacing: .08em; text-transform: uppercase; }
+nav.toc a { font: 500 12px/1 var(--f-data); letter-spacing: .04em; border-radius: 2px; }
+
+/* hero: contour rings, punched holes, red threads */
+header.mast { position: relative; overflow: hidden; background-color: var(--paper); border-bottom: 1px solid var(--rule); }
+header.mast.hero { background-image: repeating-radial-gradient(circle at 82% 18%, transparent 0 46px, var(--ring) 46px 47px); }
+header.mast .wrap { position: relative; z-index: 1; padding-block: 34px 30px; gap: 14px; }
+header.mast.hero .wrap { padding-block: 40px 36px; }
+.decor { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; }
+.decor .hole { fill: var(--perf); }
+.decor .thr { stroke: var(--thread); stroke-width: 1.1; fill: none; vector-effect: non-scaling-stroke; opacity: .9; }
+.mark { width: 40px; height: 28px; justify-self: center; }
+.mark circle { fill: var(--ink); } .mark path { stroke: var(--ink); stroke-width: 1.2; fill: none; }
+header.mast.hero .eyebrow { justify-self: center; text-align: center; }
+header.mast.hero h1 { text-align: center; max-width: 12ch; justify-self: center; }
+.serifline { font: 300 clamp(22px, 3.2vw, 38px)/1.05 var(--f-serif); text-align: center; margin: -4px 0 6px; color: var(--ink); }
+.forecast { margin: 6px 0 4px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2px 40px; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); padding-block: 10px; }
+.forecast div { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; min-width: 0; }
+.forecast dt, .forecast dd { margin: 0; font: 600 clamp(17px, 2.4vw, 27px)/1.25 var(--f-display); font-stretch: 72%; text-transform: uppercase; letter-spacing: .01em; }
+.forecast dt::after { content: ":"; }
+.forecast dd { font-variant-numeric: tabular-nums; }
+header.mast.hero .dek { font: 400 14.5px/1.55 var(--f-body); text-align: center; justify-self: center; max-width: 62ch; color: var(--ink); }
+header.mast .stamp { justify-content: center; font-size: 11.5px; }
+header.mast:not(.hero) h1 { font-size: clamp(40px, 7vw, 84px); }
+
+/* frosted acrylic card with red blooms and a cord */
+.answer { position: relative; overflow: hidden; border: 1px solid var(--rule); border-left-width: 1px; background:
+  radial-gradient(60% 55% at 0% 100%, var(--bloom), transparent 70%),
+  radial-gradient(45% 45% at 100% 0%, var(--bloom), transparent 70%),
+  var(--frost); backdrop-filter: blur(6px); }
+.answer { padding-bottom: 54px; }
+.answer::after { content: ""; position: absolute; left: 30%; right: -12%; bottom: 26px; height: 2px; background: var(--thread); transform: rotate(-4deg); transform-origin: right center; opacity: .85; pointer-events: none; }
+.answer p { position: relative; z-index: 1; }
+.r2callout, .mapinfo { border-left: 1px solid var(--rule); }
+
+/* full breakdown 101 button */
+.learn { border-radius: 2px; border: 1px solid var(--thread); color: var(--thread); font: 500 11.5px/1 var(--f-data); letter-spacing: .08em; text-transform: uppercase; padding: 8px 11px; }
+.learn:hover, .learn:focus-visible { background: var(--thread); color: var(--sheet); }
+
+/* figures as forecast readouts */
+.fig .v { font: 700 30px/1 var(--f-display); font-stretch: 70%; letter-spacing: 0; }
+.fig .k { font-size: 13.5px; }
+.hz { border-radius: 3px; background: var(--sheet); }
+.hz .tag { color: var(--thread); }
+.slot .k { color: var(--thread); }
+.qa { border-radius: 3px; }
+.qa .ask { font: 400 21px/1.3 var(--f-serif); }
+.qa .three b { color: var(--accent); }
+.qa .three div { border-radius: 2px; }
+.odds { border-radius: 2px; border: 1px dashed var(--rule); }
+.splitbar i { background: var(--accent); }
+.hzbars .bar i { background: var(--thread); }
+.card h3 { font-family: var(--f-serif); font-weight: 400; font-size: 18px; font-stretch: 100%; }
+.meter .bar i { background: var(--accent); }
+.cal .d { color: var(--thread); }
+.rung b { color: var(--accent); }
+.lead, section > p { font-size: 16.5px; }
+.note { font-size: 13px; }
+
+/* map: radar rings behind the flows */
+.mapbox { background-color: var(--sheet); background-image: repeating-radial-gradient(circle at 50% 50%, transparent 0 38px, var(--ring) 38px 39px); }
+.m-tick { stroke: var(--thread); }
+.m-col { fill: var(--ink); letter-spacing: .1em; }
+
+/* network motif */
+.netbg { position: absolute; top: -8px; right: 0; width: min(48%, 520px); height: 300px; pointer-events: none; z-index: 0; opacity: .3; }
+.netbg line { stroke: var(--accent); stroke-width: .7; vector-effect: non-scaling-stroke; }
+.netbg circle { fill: var(--accent); }
+.netwrap { position: relative; overflow: hidden; }
+.netwrap > *:not(.netbg) { position: relative; z-index: 1; }
+
+/* 101 dialog as a frosted plate */
+dialog#learnDlg { border-radius: 4px; background:
+  radial-gradient(50% 40% at 100% 0%, var(--bloom), transparent 70%),
+  radial-gradient(45% 35% at 0% 100%, var(--bloom), transparent 70%),
+  var(--frost); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); }
+dialog#learnDlg::backdrop { background: rgba(20, 20, 22, .42); backdrop-filter: blur(2px); }
+.dlgbody h2 { font-size: clamp(28px, 5vw, 40px); }
+.dlgbody .one { font: 400 21px/1.4 var(--f-serif); }
+.dlgbody .pic { border-left: 2px solid var(--thread); border-radius: 0; background: color-mix(in srgb, var(--sheet) 70%, transparent); }
+.dlghead .x { border-radius: 2px; font: 500 12px var(--f-data); text-transform: uppercase; letter-spacing: .06em; }
+.vis { border-radius: 2px; background: var(--sheet); }
+
+/* plan gate and markdown */
+.gate h2 { font-size: clamp(28px, 4vw, 40px); }
+.md h1 { font-stretch: 70%; font-size: clamp(34px, 5vw, 52px); }
+.md h2 { font-size: clamp(24px, 3.4vw, 32px); }
+.md blockquote { border-left: 2px solid var(--thread); border-radius: 0; }
+footer { background: var(--paper); }
+footer .wrap { font: 12px/1.6 var(--f-data); }
+@media (max-width: 640px) {
+  .forecast { grid-template-columns: minmax(0, 1fr); gap: 2px; }
+  header.mast.hero { background-image: repeating-radial-gradient(circle at 90% 8%, transparent 0 34px, var(--ring) 34px 35px); }
+}
 </style>
 
 <header class="sitebar">
@@ -316,17 +443,28 @@ footer .wrap { padding-block: 24px; display: grid; gap: 6px; font-size: 13px; co
 
 <div class="pageview" id="view-desk">
 
-<header class="mast">
+<header class="mast hero">
+  <svg class="decor" id="heroDecor" aria-hidden="true" preserveAspectRatio="none"></svg>
   <div class="wrap">
-    <div class="eyebrow">Intelligence core · Rounds 1 and 2</div>
+    <svg class="mark" viewBox="0 0 40 28" aria-hidden="true"><circle cx="8" cy="20" r="3.2"/><circle cx="20" cy="6" r="3.2"/><circle cx="32" cy="20" r="3.2"/><path d="M8 20 L20 6 L32 20 M8 20 L32 20"/></svg>
+    <div class="eyebrow">Intelligence bulletin · Rounds 1 to 3</div>
     <h1>Will energy replace money?</h1>
-    <p class="dek">A multi-agent research desk on the future of the monetary system. Twelve research tracks, five debate panels, one calibration test. Every claim is tagged by evidence strength and dated, so this page can be re-run as policy moves. New to finance? Press <b>101</b> next to any section for a beginner explainer.</p>
+    <p class="serifline">a monetary futures forecasting collective</p>
+    <dl class="forecast">
+      <div><dt>US debt</dt><dd>$40.44T</dd></div>
+      <div><dt>Net interest</dt><dd>$1,051.8B</dd></div>
+      <div><dt>10y yield</dt><dd>5.13%</dd></div>
+      <div><dt>Fed funds</dt><dd>3.75 to 4.00%</dd></div>
+      <div><dt>Dollar road, 2028</dt><dd>62%</dd></div>
+      <div><dt>Reset risk, 2028</dt><dd>22%</dd></div>
+    </dl>
+    <p class="dek">A multi-agent research desk on the future of the monetary system. Every claim is tagged by evidence strength and dated, so the bulletin can be re-run as policy moves. New to finance? Press <b>Full breakdown 101</b> beside any section.</p>
     <div class="stamp">
       <span>Facts as of <b>2026-10-22</b></span>
       <span><b id="claimCount">419</b> dated claims</span>
       <span><b>46</b> thesis cards</span>
       <span><b>28</b> Round 2 rulings</span>
-      <span>Next refresh trigger <b>FOMC 10-28</b></span>
+      <span>Next refresh <b>FOMC 10-28</b></span>
     </div>
   </div>
 </header>
@@ -662,7 +800,7 @@ footer .wrap { padding-block: 24px; display: grid; gap: 6px; font-size: 13px; co
 
 <dialog id="learnDlg" aria-labelledby="learnTitle">
   <div class="dlghead">
-    <span class="eyebrow">101 · plain-English explainer</span>
+    <span class="eyebrow">Full breakdown 101 · plain English</span>
     <button class="x" type="button" id="learnClose" aria-label="Close explainer">Close</button>
   </div>
   <div class="dlgbody" id="learnBody"></div>
@@ -1185,7 +1323,7 @@ const Learn = (function learn() {
       const eb = sec.querySelector(":scope > .eyebrow"); if (!eb || eb.parentElement.classList.contains("secbar")) return;
       const bar = el("div", { class: "secbar" });
       eb.replaceWith(bar); bar.appendChild(eb);
-      const b = el("button", { class: "learn", type: "button", "aria-label": "Open the 101 explainer for this section" }, "101");
+      const b = el("button", { class: "learn", type: "button", "aria-label": "Open the full breakdown 101 for this section" }, "Full breakdown 101");
       b.addEventListener("click", () => open(id));
       bar.appendChild(b);
     });
@@ -1287,6 +1425,49 @@ function loadPlan() {
       if (code === "invalid_argument") { form.hidden = true; ro.hidden = false; }
     } finally { btn.disabled = false; }
   });
+})();
+
+
+/* ---------- Decor: punched holes, red threads, network graphs ---------- */
+(function decor() {
+  const NS = "http://www.w3.org/2000/svg";
+  function rng(seed) { return () => { seed |= 0; seed = seed + 0x6D2B79F5 | 0; let t = Math.imul(seed ^ seed >>> 15, 1 | seed); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+  const mk = (tag, a, parent) => { const n = document.createElementNS(NS, tag); for (const k in a) n.setAttribute(k, a[k]); parent.appendChild(n); return n; };
+  const hero = document.getElementById("heroDecor");
+  if (hero) {
+    hero.setAttribute("viewBox", "0 0 1000 640"); hero.setAttribute("preserveAspectRatio", "xMidYMid slice");
+    const r = rng(1971);
+    for (let i = 0; i < 70; i++) {
+      const x = r() * 1000, y = r() * 640;
+      const central = x > 220 && x < 780 && y > 90 && y < 560;
+      if (central && r() < 0.86) continue;
+      mk("circle", { cx: x.toFixed(1), cy: y.toFixed(1), r: (6 + r() * 6).toFixed(1), class: "hole" }, hero);
+    }
+    const edge = () => { const side = Math.floor(r() * 4), t = r(); return side === 0 ? [-40, t * 640] : side === 1 ? [1040, t * 640] : side === 2 ? [t * 1000, -40] : [t * 1000, 680]; };
+    for (let i = 0; i < 11; i++) { const a = edge(); let b = edge(); while (Math.abs(a[0] - b[0]) + Math.abs(a[1] - b[1]) < 700) b = edge(); mk("line", { x1: a[0], y1: a[1], x2: b[0], y2: b[1], class: "thr" }, hero); }
+  }
+  function network(host, seed, n) {
+    if (!host) return;
+    const svg = document.createElementNS(NS, "svg");
+    svg.setAttribute("class", "netbg"); svg.setAttribute("aria-hidden", "true");
+    svg.setAttribute("viewBox", "0 0 600 320"); svg.setAttribute("preserveAspectRatio", "xMaxYMid meet");
+    const r = rng(seed), pts = [];
+    while (pts.length < n) {
+      const a = r() * Math.PI * 2, rad = Math.sqrt(r()), wob = 1 + 0.25 * Math.sin(a * 3 + seed);
+      pts.push([380 + Math.cos(a) * rad * 200 * wob, 160 + Math.sin(a) * rad * 130 * wob]);
+    }
+    const seen = new Set();
+    pts.forEach((p, i) => {
+      const near = pts.map((q, j) => [j, (p[0] - q[0]) ** 2 + (p[1] - q[1]) ** 2]).filter(x => x[0] !== i).sort((a, b) => a[1] - b[1]).slice(0, 3);
+      for (const [j] of near) { const key = Math.min(i, j) + "-" + Math.max(i, j); if (seen.has(key)) continue; seen.add(key); mk("line", { x1: p[0].toFixed(1), y1: p[1].toFixed(1), x2: pts[j][0].toFixed(1), y2: pts[j][1].toFixed(1) }, svg); }
+      if (r() < 0.06) { const j = Math.floor(r() * n); mk("line", { x1: p[0].toFixed(1), y1: p[1].toFixed(1), x2: pts[j][0].toFixed(1), y2: pts[j][1].toFixed(1) }, svg); }
+    });
+    for (const p of pts) mk("circle", { cx: p[0].toFixed(1), cy: p[1].toFixed(1), r: 1.8 }, svg);
+    host.classList.add("netwrap"); host.insertBefore(svg, host.firstChild);
+  }
+  network(document.getElementById("r2-lead"), 7, 90);
+  network(document.getElementById("r3-lead"), 23, 80);
+  network(document.getElementById("evidence"), 11, 70);
 })();
 
 /* ---------- Router ---------- */
