@@ -1,4 +1,4 @@
-# Monetary Futures Desk: Round 1 Report
+# Monetary Futures Desk: Report (Rounds 1 and 2)
 
 Facts as of 2026-10-22. Live page: https://claude.ai/artifact/2QJg4KuARQPAhm6FRbKmLq (private until shared from its Share menu).
 
@@ -18,6 +18,9 @@ They are managing who must buy it, not shrinking it. Captive demand is the chose
 ## Calibration result
 Given only the raw X post, the engine rebuilt the expert's anomaly (euros sold, not dollars) and went further: Treasury's own fund statement shows the US leg was $500M against Japan's ~$97B, and the France-Germany spread only blew out six weeks later. Verdict: the literal "Bessent sold France" is Refuted, the narrow version (cost routed onto the euro) is Plausible.
 
+## Round 2 in one paragraph
+New rails, old anchors. Money changes its plumbing (stablecoins, tokenized funds, AI agents paying in dollar tokens) while the anchors stay: Treasuries back the tokens by law, gold is the neutral asset between states, and borrowing against future income stays with regulated lenders. UHI can help you qualify for credit but should not be pledgeable as cash, and every country can only pay what its taxes, funds and currency carry. For an 18-year-old the old ladder still exists but its housing rung is broken and its launch rung is cheaper but crowded. Ownership, not credit, decides who keeps up. Full answers on the Round 2 page and in round2/DEBATE_R2.md.
+
 ## Where everything lives
 | File | What |
 |---|---|
@@ -27,8 +30,9 @@ Given only the raw X post, the engine rebuilt the expert's anomaly (euros sold, 
 | round1/lanes/L1 to L7 | Seven research tracks with tiered, dated claims |
 | round1/debates/Da, Db, Dc, Dd | Debate court rulings and thesis cards |
 | round1/RELOOP.md | Gap-filling round |
-| claims.json | 258 claims ledger, rebuilt by tools/build_ledger.py |
-| site/index.html | Source of the live page |
+| claims.json | 419 claims ledger, rebuilt by tools/build_ledger.py |
+| site/index.html | Source of the live site (Desk, Round 2, Plan views) |
+| round2/ | Round 2 brief, five lanes, cross-examination, page data |
 
-## Carried to Round 2
+## Open items carried forward
 NY Fed Q3 FX report (mid-Nov), Treasury refunding (11-04), FOMC (10-28), Q3 GDP and PCE (10-29), CBO higher-rates report 62809, CME compute futures launch, French budget vote, WGC Q3 gold, stablecoin holdings by issuer, AI-agent payment volumes. Note: the session's web search budget ran out during Round 1, so later items were checked by fetching primary pages directly.

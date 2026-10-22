@@ -1,6 +1,6 @@
 # Monetary Futures Intelligence Core: Master Plan
 
-Version 2. Last updated 2026-10-22. Status: Round 0 and Round 1 complete. Round 2 in progress.
+Version 2.1. Last updated 2026-10-22. Status: Rounds 0, 1 and 2 complete. Round 3 queued (section 5.5).
 Live site: https://claude.ai/artifact/2QJg4KuARQPAhm6FRbKmLq (pages: Desk, Round 2, Plan). Private until the owner shares it.
 
 This file is the backend. It is written so that any future AI (or human) can pick the project up cold and continue without the original conversation. Do not over-summarize when editing it. Keep the origin case (section 2) and the owner's thesis (section 3) intact: they define what "good" looks like.
@@ -33,6 +33,7 @@ This file is the backend. It is written so that any future AI (or human) can pic
 | `round2/BRIEF_R2.md` | Round 2 questions (owner's Q1 to Q10 plus moderator M1 to M18) |
 | `round2/lanes/R2A..R2E` | Round 2 research tracks |
 | `round2/DEBATE_R2.md` | Round 2 cross-examination and final answers |
+| `round2/r2_data.json` | Round 2 page data (rendered on the Round 2 page) |
 | `claims.json` | Claims ledger, rebuilt by `tools/build_ledger.py` |
 | `tools/build_ledger.py` | Extracts claims tables into the ledger: `python3 -I tools/build_ledger.py .` |
 | `site/index.html`, `site/round2.html`, `site/plan.html` | Source of the live site. `plan.html` renders this file |
@@ -185,6 +186,21 @@ Q10. With a primary deficit the reserve issuer cannot solve, wealth keeps expand
 ### 5.3 Moderator questions (added by the AI moderator to deepen Round 2)
 M1 who earns the stablecoin float, and what if bill yields fall to zero. M2 if deposits leave banks for stablecoins, what replaces bank credit creation. M3 gold's regulatory and on-chain status. M4 does a robot and solar economy need an oil anchor at all. M5 cash transfer precedents in non-reserve countries (Mongolia, Iran, Macau, Hong Kong, Singapore, Alaska, Kenya). M6 three-country money-financed UHI model, nominal vs real. M7 can benefit streams be pledged. M8 programmable UHI tokens and DeFi pledging. M9 entry-level labor data. M10 does AI lower startup capital needs. M11 Trump Account at 18 and credit routes for 18-year-olds. M12 history of closing and reopening mobility windows. M13 consumer brand cost structure. M14 freight, bunker fuel, autonomous trucking. M15 what sells for human founders. M16 rival countermoves with teeth. M17 "In Time" test with Cantillon data and time prices. M18 can the US export inflation, and who absorbs it.
 
+### 5.5 Round 3 queue (from the Round 2 panel, the AI moderator's open questions)
+1. How much stablecoin demand is new foreign demand for dollars vs money moving out of US money funds and deposits?
+2. How much of extra demand can robot and AI output actually meet? This one number moves a printed Musk-scale UHI from 0.9% to 9.5% inflation.
+3. Will the federal tax base shift to capital, energy or compute as labor's share falls?
+4. Does China let the 2026-11-10 export-control truce lapse, finalize the solar know-how ban, and pair it with yuan-financed supply to the Global South?
+5. Can housing reopen through supply (robot-built homes, zoning), or do land prices absorb the savings?
+6. Is there a measurable cash price premium for human-made goods?
+7. Do attention costs (ad prices, platform fees) rise faster than production costs fall?
+8. When a US UHI bill appears, how is it financed, and can payments be pledged or programmed?
+9. In a crisis, do Gulf and Asian states get dollars (swap lines, FIMA repo) or turn to the yuan?
+10. If T-bill yields fall below about 1.5%, does Congress widen stablecoin reserves (longer bills, gold) or do issuers fold into banks?
+11. Does the bottom half's share of equities move at all once child accounts are funded?
+12. Does electric freight just swap oil dependence for battery dependence?
+Also read the Plan page proposal queue before starting Round 3.
+
 ### 5.4 Options backlog (owner and friends add here, or through the Plan page box)
 - Weekly scheduled refresh of the policy-sensitive lanes (Fed and Treasury, law, geopolitics, quant). Not yet created. Ask the owner first.
 - Borrow-at-6.19%, earn-13.6% spread math from the newsletter: needs its own round (volatility drag, sequence risk, margin calls).
@@ -265,5 +281,19 @@ Engine given only the raw X post. Reached and exceeded expert depth. See 2.9.
 ### Round 1 (2026-10-22): the energy question
 Seven lanes, four debate panels, one reloop, 258 claims. Main answers in 5.1 and on the Desk page. Open items carried forward: NY Fed Q3 FX report (mid-November), Treasury refunding 2026-11-04, FOMC 2026-10-28, Q3 GDP 2026-10-29, CBO higher-rates report 62809, CME compute futures launch, French budget vote, WGC Q3 gold, stablecoin holdings by issuer, AI-agent payment volumes.
 
-### Round 2 (2026-10-22, in progress): the owner's ten questions
-Five lanes: R2A Set 1 survival (Q1 to Q3, M1 to M4), R2B UHI collateral and the world (Q4, Q5, Q7, M5 to M8), R2C the 18-year-old entry route (Q6, M9 to M12), R2D founders, goods and logistics (Q8, M13 to M15), R2E rivals and "In Time" (Q9, Q10, M16 to M18). Then one cross-examination panel. Results go to the Round 2 page.
+### Round 2 (2026-10-22): the owner's ten questions
+Five lanes: R2A Set 1 survival (Q1 to Q3, M1 to M4), R2B UHI collateral and the world (Q4, Q5, Q7, M5 to M8), R2C the 18-year-old entry route (Q6, M9 to M12), R2D founders, goods and logistics (Q8, M13 to M15), R2E rivals and "In Time" (Q9, Q10, M16 to M18). Then one cross-examination panel (`round2/DEBATE_R2.md`), which resolved 11 contradictions and issued 28 rulings. Page data: `round2/r2_data.json` (injected into `site/index.html` between the ROUND2_DATA markers). Ledger now 419 claims.
+
+Headline answers (status, confidence):
+- Q1 Set 1 does not disappear. Gold grows as the neutral reserve of states, Treasuries become the required backing of stablecoins, bank credit gets split up (plausible 70).
+- Q2 The petrodollar never backed the dollar. Its recycling job moves to foreign savers buying dollar stablecoins. Someone with $50,000 can hold it in tokens but still borrows from a regulated lender against income, because DeFi lends only against assets already owned ($56.2B vs $14.10T bank loans) (plausible 65).
+- Q3 Crypto replaces the rails (how money moves), not the balance sheet (what backs it). Gold is mainly a state asset, tokenized gold is about 0.02% of the stock (plausible 65).
+- Q4 UHI can count as income for loans (protected by ECOA), cannot be pledged if modeled on Social Security (42 USC 407), and only ownership-paid UHI could be borrowed against (confirmed 80).
+- Q5 and Q7 Every country pays its own UHI from taxes, fund income and the money people will hold. Money-financed UHI keeps about 96% of value in a US-like economy, about 64% in imported goods in an Argentina-like one. Iran's fixed transfer lost about 58% of real value in 5 years. A digital token changes distribution, programmability and pledgeability, not the budget constraint (plausible 70).
+- Q6 The 18-year-old route is narrowing and moving rungs, not closed. Housing as first collateral is the broken rung (10.0 years of saving for a down payment vs 6.2 in 1990, model). Launching a business got far cheaper but payoffs are skewed (plausible 70).
+- Q8 For a $10 cosmetic, everything robots and energy touch is about $1.76. Retail margin, marketing and platform fees are the new toll booths (plausible 70).
+- Q9 Rivals' strongest card is energy hardware (rare earths, solar know-how, batteries), not yuan oil. The China export-control truce expires 2026-11-10 (plausible 65).
+- Q10 "In Time" fits newcomers without assets (housing, health cover, tuition dearer in hours of work) but not goods (food, cars, TVs cheaper in hours) (plausible 70).
+
+Corrections to Round 1: Saudi Arabia left mBridge on 2025-05-13 (not 2026). TBAC's $6.6T is a ceiling, not a forecast. The exorbitant privilege covers dollar-priced imports, not domestic energy. Trump Accounts give today's 18-year-olds no seed and have no business exception.
+Note: one Round 2 lane mistakenly sent the owner's email in a request header to bls.gov once. Agents must never put the owner's email in any request.
