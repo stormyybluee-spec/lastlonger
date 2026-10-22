@@ -1,0 +1,37 @@
+{
+ "WQ1": {
+  "likely": 90,
+  "headline": "About 9 in 10: China keeps its capital controls through 2035 and opens only by quotas and pilots. Full convertibility is 3 in 100 by 2030 and 8 by 2035, and if it came, money would flow out first and help the dollar.",
+  "up": [
+   "SAFE keeps the $50,000 individual quota and issues QDII only when the yuan is strong",
+   "Reserves or the yuan come under pressure, as in 2015 to 2016, and outflow rules tighten",
+   "US-China sanctions risk rises, which makes Beijing value control over openness"
+  ],
+  "down": [
+   "SAFE lifts the individual quota to $200,000 or more, or turns it into a registration",
+   "QDII and Southbound Connect quotas are abolished rather than topped up",
+   "The PBoC widens the 2% daily band or stops guiding the fixing for months"
+  ],
+  "watch": "SAFE quota releases and monthly reserves (7th of each month), then COFER Q3 2026 in late December 2026 (CNY 2.11% now, tell above 3%)",
+  "byHorizon": {
+   "H0": 98,
+   "H1": 92,
+   "H2": 75
+  }
+ },
+ "WQ2": {
+  "likely": 55,
+  "headline": "A bit better than even: the likeliest path is slow erosion, inflation wiping about a fifth of the debt's real value by 2035 with captive buyers holding it. A one-time revaluation clearing 50% to 80% is about 1 in 100.",
+  "up": [
+   "The 10-year breakeven rises above 2.75% while real yields fall",
+   "The Fed buys long bonds or uses yield language in a market-functioning episode",
+   "Stablecoins pass 10% of T-bills after the GENIUS reserve rules switch on 2027-01-18"
+  ],
+  "down": [
+   "The Warsh Fed keeps hiking and inflation returns to about 2%",
+   "Primary deficits shrink sharply, so the debt is paid rather than eroded",
+   "Treasury changes the $42.2222 gold book value or Congress touches 31 U.S.C. 5117, the first sign of a one-time route"
+  ],
+  "watch": "10-year breakeven against 2.75% (2.37% now), then FOMC on 2026-12-09 and the Cook removal hearing on 2026-11-05"
+ }
+}
