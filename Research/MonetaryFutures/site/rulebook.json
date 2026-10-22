@@ -1,0 +1,3046 @@
+{
+ "title": "The Monetary 101 Rulebook",
+ "subtitle": "Money and value from the ground up, written to be passed down, so each generation keeps what the last one learned and does not repeat what it forgot.",
+ "intro": [
+  "Most people use money every day and never learn how it works. Nobody teaches it at home, school teaches a little arithmetic, and the news speaks a language of rates, yields and deficits that seems designed to keep outsiders out. This guide is meant to open that locked room, slowly and clearly, one idea at a time.",
+  "It starts at the very bottom, with what money actually is, and climbs step by step: gold coins and the gold standard, the wars that broke it, the 1944 system that crowned the dollar, the 1971 night that cut the dollar loose from gold, the oil money that followed, and the way banks create most of our money today with a few keystrokes. Then it turns to the questions that matter for your life: why debt never seems to go away, why prices move in long seasons, why empires and their currencies fall, why the ruler we measure prices with keeps stretching, and how a new player with no inheritance can get onto the board.",
+  "It is written like a rulebook passed from one generation to the next. Each chapter ends with rules. The book ends with a full rulebook and a list of the mistakes each generation made, from Rome to the 2020s, so that their intelligence and their errors are both preserved.",
+  "The guide honors the ideas of the person who commissioned it, an owner who wrote a newsletter series about money called Ledger Age, and quotes their questions in their own words. Where their intuition is right, the guide says so and builds on it. Where it needs correcting, the guide corrects it gently and shows the evidence.",
+  "History and economics here are kept to what is well established. Where scholars disagree, the guide says so. Current numbers, as of October 22, 2026, come from this project's own research files. This is general education about how money works, not financial advice for any person's situation."
+ ],
+ "howToRead": [
+  "Read the chapters in order the first time. Each one builds on the one before, and later chapters assume the earlier ideas.",
+  "Do not rush. Each chapter has one big picture to hold in your head, usually in a box marked Picture this. If you remember the picture, you will remember the idea.",
+  "Try every self-check before reading the answer. Saying an answer out loud, even a wrong one, is how the idea moves from the page into your head.",
+  "Watch for the insider boxes. They point to things most people never notice, often hiding in plain sight in official numbers.",
+  "Myth and reality boxes are not there to mock anyone. Most myths are half true, and the reality usually keeps the true half.",
+  "Use the glossary whenever a word feels slippery. Every technical term in the guide is defined there in plain words.",
+  "Read the rulebook at the end once a year. Rules that feel obvious now will feel very different in a crisis.",
+  "This is education, not advice. Test any rule against your own situation, and get a second opinion before big decisions."
+ ],
+ "chapters": [
+  {
+   "id": "rb-01",
+   "num": "01",
+   "title": "What money really is",
+   "kicker": "Money is not a thing you hold. It is a promise that a whole society agrees to keep track of.",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Ask ten people what a dollar is and most will say paper, or numbers in an app, or the stuff you buy things with. All three answers describe what money looks like. None of them says what money is. This chapter fixes that, because every later chapter stands on it."
+    },
+    {
+     "type": "p",
+     "text": "Here is the short version. Money is a record of who owes what to whom, written in a unit that everyone agrees to use. The paper, the coin and the app are only the places where the record is kept. Once you see money as a record, a lot of confusing things in finance suddenly make sense."
+    },
+    {
+     "type": "h",
+     "text": "The story you were taught"
+    },
+    {
+     "type": "p",
+     "text": "Most textbooks tell a neat story. Long ago people bartered. A baker wanted shoes, but the shoemaker did not want bread. Trade was clumsy. So people picked one handy good, like silver or shells, that everyone would accept. That good became money. Later, banks and credit were built on top of it."
+    },
+    {
+     "type": "p",
+     "text": "Adam Smith told a version of this story in The Wealth of Nations in 1776, with his butcher, brewer and baker. A century later the economist William Stanley Jevons gave the problem a name: the double coincidence of wants. Barter only works when each side happens to want what the other has, at the same moment."
+    },
+    {
+     "type": "callout",
+     "label": "Picture this",
+     "text": "Imagine a school lunchroom with no money. You have a sandwich and want an apple. The kid with the apple wants cookies, not your sandwich. You would need to find a third kid, trade the sandwich for cookies, then trade cookies for the apple. Lunch would be over before you ate. That is the barter problem, and it is real. The question is whether people ever actually lived that way."
+    },
+    {
+     "type": "h",
+     "text": "What the records actually show"
+    },
+    {
+     "type": "p",
+     "text": "When historians and anthropologists went looking for whole societies that ran on barter, they did not find them. What they found, again and again, was credit. People kept running tabs with neighbors. They settled up later, often at harvest time, and they measured the debts in a shared unit."
+    },
+    {
+     "type": "list",
+     "items": [
+      "Mesopotamia, about 5,000 years ago: temple and palace clerks kept clay tablet accounts. Debts and prices were written in weights of silver and measures of barley. Most farmers never touched the silver. The silver was a unit for keeping score, not a coin in every pocket.",
+      "Medieval England: the royal treasury, the Exchequer, recorded tax debts on notched hazel sticks called tallies. The stick was split in two, and each side kept half. Tallies were used from the 1100s until 1826. When officials burned the old sticks in 1834, the fire got out of control and burned down most of the Palace of Westminster.",
+      "The island of Yap in the Pacific: people used huge carved stone discs called rai. Big stones rarely moved. Everyone simply remembered who owned which stone. One stone was said to lie at the bottom of the sea after a canoe accident, and it still counted as wealth, because the community agreed it existed."
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Each case says the same thing. The core of money was the shared memory of who owed what. The physical object, when there was one, was a token of that memory."
+    },
+    {
+     "type": "quote",
+     "text": "No example of a barter economy, pure and simple, has ever been described, let alone the emergence from it of money.",
+     "by": "Caroline Humphrey, anthropologist, 1985"
+    },
+    {
+     "type": "myth",
+     "myth": "Money was invented to fix barter, and credit came later.",
+     "reality": "In most of the record, credit and accounts came first, and coins came much later. Barter does show up, but mostly between strangers who do not trust each other, or when a money system breaks down, as in prisoner of war camps where cigarettes became currency, or in Russia in the 1990s. Some economists still defend the barter story as a useful thought experiment rather than history. That is a fair use, as long as nobody mistakes it for what happened."
+    },
+    {
+     "type": "diagram",
+     "key": "barter-to-money",
+     "caption": "The textbook path runs from barter to coins to credit. The historical record mostly runs the other way: credit and accounts first, coins later, and barter mainly when trust or money breaks down."
+    },
+    {
+     "type": "h",
+     "text": "The three jobs of money"
+    },
+    {
+     "type": "p",
+     "text": "Whatever form it takes, money does three jobs. Learn these three words well. They come back in every chapter."
+    },
+    {
+     "type": "table",
+     "cols": [
+      "Job",
+      "Plain meaning",
+      "Everyday example",
+      "What breaks it"
+     ],
+     "rows": [
+      [
+       "Medium of exchange",
+       "The thing people hand over to settle a trade",
+       "Tapping your card for groceries",
+       "Nobody will accept it, so you cannot spend it"
+      ],
+      [
+       "Store of value",
+       "A way to carry buying power from today into the future",
+       "Savings you will use next year",
+       "Prices rise fast, so the same money buys less later"
+      ],
+      [
+       "Unit of account",
+       "The measuring stick for prices, wages and debts",
+       "Your rent is written as $1,500 a month",
+       "The unit keeps changing size, so contracts become guesses"
+      ]
+     ]
+    },
+    {
+     "type": "diagram",
+     "key": "functions",
+     "caption": "Money does three jobs at once: it settles trades, it carries value through time, and it measures everything. A good money does all three. Many things do one or two."
+    },
+    {
+     "type": "callout",
+     "label": "Picture this",
+     "text": "Think of money as the scoreboard in a game that the whole country plays at once. The scoreboard does not make the points. Players make the points by working, building and trading. The scoreboard just records them so everyone can see the score, compare it and carry it into the next round. If someone can secretly change the scoreboard, the game stops being fair. Hold on to this picture. We will use it again and again."
+    },
+    {
+     "type": "insider",
+     "text": "The quietest job is the most powerful one. Whoever controls the unit of account controls the terms of every contract written in it. Your wage, your mortgage, your rent and the national debt are all written in dollars. If the dollar shrinks in value, every one of those contracts changes meaning without anyone signing anything new. That is why governments defend the unit of account harder than anything else."
+    },
+    {
+     "type": "h",
+     "text": "Trust is the hidden ingredient"
+    },
+    {
+     "type": "p",
+     "text": "A dollar bill is worth something to you because you expect the next person to take it. That person accepts it because they expect the person after them to take it. Money is a long chain of expectations. Break the chain and money becomes paper again."
+    },
+    {
+     "type": "p",
+     "text": "Governments help hold the chain together in a simple way. They demand taxes in their own money. If you must pay the tax office in dollars, you need dollars, so dollars have value. The German economist Georg Friedrich Knapp built a whole theory on this idea in 1905. Economists still argue about how much taxes matter compared with habit, law and the sheer convenience of using what everyone else uses. Most agree that all of these help."
+    },
+    {
+     "type": "quote",
+     "text": "It exists not by nature but by law.",
+     "by": "Aristotle, on money, Nicomachean Ethics, about 350 BC"
+    },
+    {
+     "type": "p",
+     "text": "When trust breaks, it breaks fast. Germany in 1923 and Zimbabwe in 2008 saw prices doubling in days. People stopped using the local money and fled to foreign currency, to gold, or to goods. The paper did not change. The promise behind it did."
+    },
+    {
+     "type": "h",
+     "text": "The owner's four phases, read carefully"
+    },
+    {
+     "type": "p",
+     "text": "The author of this project, writing a newsletter called Ledger Age, described four phases of value. Phase 1 was physical (gold and silver, stored labor plus scarcity). Phase 2 was symbolic (paper as a promise of gold). Phase 3 was political (fiat money, a promise of control). Phase 4 is digital (credit, crypto and ledgers, a promise of data). In the owner's words, Phase 4 did not end the game, it removed the referee."
+    },
+    {
+     "type": "p",
+     "text": "This is a strong way to see the big arc, and the rulebook keeps it. Two gentle corrections make it sharper. First, the phases overlap rather than follow one another, because credit and ledgers are the oldest layer, not the newest. Mesopotamian clerks were running Phase 4 style ledgers in clay. Second, the referee has not left. Central banks, courts and regulators still referee the game, as later chapters show. What digital ledgers changed is speed and reach: the scoreboard now updates in seconds, everywhere at once."
+    },
+    {
+     "type": "check",
+     "q": "Your friend says money is valuable because it is backed by gold. Using this chapter, what is a better answer?",
+     "a": "Money is valuable because people trust that others will accept it, because the government demands it for taxes, and because debts and prices are written in it. Gold backing is one way to build that trust, but the dollar has not been backed by gold since 1971."
+    },
+    {
+     "type": "check",
+     "q": "Which of the three jobs of money is failing when prices rise 50% in a year?",
+     "a": "Mainly the store of value, because savings lose buying power. The unit of account also suffers, because prices and contracts become hard to compare over time."
+    }
+   ],
+   "rules": [
+    "Money is a record of who owes what. Ask who made the promise and who keeps the ledger.",
+    "Check all three jobs. A money that fails one of them will eventually fail the others."
+   ],
+   "connects": [
+    {
+     "id": "rb-02",
+     "how": "Gold coins were one way to make the promise trustworthy, and the next chapter shows what that cost."
+    },
+    {
+     "id": "rb-06",
+     "how": "Today most money is born as a bank ledger entry, which is the modern version of the clay tablet."
+    },
+    {
+     "id": "rb-10",
+     "how": "The unit of account job returns as the yardstick problem."
+    }
+   ]
+  },
+  {
+   "id": "rb-02",
+   "num": "02",
+   "title": "Commodity money and the gold standard",
+   "kicker": "Tying money to a metal makes it honest. It also makes it stiff, and stiff money breaks people who owe it.",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Chapter 1 showed that money is a promise. The oldest way to make a promise believable is to tie it to something hard to fake. For thousands of years that something was metal, mostly silver and gold. This chapter is about what metal money did well and why it was finally abandoned."
+    },
+    {
+     "type": "h",
+     "text": "Coins: a promise you can bite"
+    },
+    {
+     "type": "p",
+     "text": "The first known coins appeared around 600 BC in Lydia, in what is now Turkey. They were lumps of electrum, a natural mix of gold and silver, stamped with a mark. The stamp was the important part. It said: the king guarantees the weight and purity of this metal. You no longer had to weigh and test every piece."
+    },
+    {
+     "type": "p",
+     "text": "Metal money has a built-in brake. Nobody can create gold by decree. It must be mined, which takes work and time. That scarcity is why people trusted it as a store of value."
+    },
+    {
+     "type": "callout",
+     "label": "Picture this",
+     "text": "Think of a coin as a sealed jar of honey with a royal label. The label saves you from opening and tasting every jar. But the label is only as good as the person who sealed the jar. If the king starts adding water and keeping the label, the jars still look the same while the honey gets thinner."
+    },
+    {
+     "type": "h",
+     "text": "Debasement: watering the honey"
+    },
+    {
+     "type": "p",
+     "text": "Rulers who needed more money than they had found a trick. Melt the coins, mix in cheaper metal, strike more coins with the same face. This is called debasement. It is the ancient version of printing money."
+    },
+    {
+     "type": "p",
+     "text": "Rome is the classic case. The silver denarius, introduced around 211 BC, was nearly pure silver for a long time. Under Nero in the 60s AD its weight and silver content were trimmed. Through the crisis years of the 200s AD, emperors who had to pay armies kept cutting. By the 260s and 270s the denarius and its successor coins held only a few percent of silver, a thin coating over bronze. Prices soared. In 301 AD the emperor Diocletian issued an edict fixing maximum prices for over a thousand goods, on pain of death. It failed. Goods vanished from markets, and the edict was quietly ignored."
+    },
+    {
+     "type": "insider",
+     "text": "Debasement and modern inflation share a pattern. The first people to spend the new coins, the emperor and his soldiers, got full value. By the time the extra coins spread through the economy, prices had risen, and the last people to receive them lost. Chapter 13 calls this the Cantillon effect."
+    },
+    {
+     "type": "h",
+     "text": "Gresham's law: bad money drives out good"
+    },
+    {
+     "type": "p",
+     "text": "When two coins have the same face value but one contains more real metal, people spend the bad one and hoard the good one. The good coins disappear from circulation. This is Gresham's law, named after Sir Thomas Gresham, a financial agent to Queen Elizabeth I. The idea is older. Nicole Oresme in the 1300s and Nicolaus Copernicus in 1526 described it. The name was attached in 1858."
+    },
+    {
+     "type": "p",
+     "text": "You can see Gresham's law today. In the United States, silver dimes and quarters minted before 1965 vanished from pockets within a few years after cheaper copper-nickel coins arrived. People kept the silver ones."
+    },
+    {
+     "type": "h",
+     "text": "The classical gold standard, about 1870 to 1914"
+    },
+    {
+     "type": "p",
+     "text": "Britain drifted onto a gold standard after 1717, when Isaac Newton, as Master of the Mint, set a gold price for the guinea that left silver undervalued. Britain made it law in 1821. After 1871 the newly united Germany switched to gold, and much of the world followed. The United States stopped coining silver dollars in 1873, resumed paying gold for its paper in 1879 and made gold the legal standard in 1900."
+    },
+    {
+     "type": "p",
+     "text": "The rule was simple. Each currency was defined as a fixed weight of gold. Banks and central banks promised to swap paper notes for gold at that fixed rate. Because every major currency was tied to gold, they were also tied to each other. A pound was worth about $4.86 for decades."
+    },
+    {
+     "type": "diagram",
+     "key": "goldstd",
+     "caption": "Under the gold standard, paper notes are claims on gold at a fixed price. Because each currency is fixed to gold, exchange rates between currencies are fixed too."
+    },
+    {
+     "type": "p",
+     "text": "The system had an automatic balancing idea, first described by the Scottish philosopher David Hume in 1752. A country that imported too much paid in gold. Gold flowed out. Its money supply shrank. Prices and wages fell. Its goods got cheaper, exports recovered, and gold flowed back. Elegant on paper. Painful in real life, because falling wages and prices mean layoffs and bankruptcies."
+    },
+    {
+     "type": "table",
+     "cols": [
+      "What the gold standard did well",
+      "What it did badly"
+     ],
+     "rows": [
+      [
+       "Kept long-run prices fairly stable",
+       "Could not expand money when the economy needed it"
+      ],
+      [
+       "Made exchange rates predictable for trade and lending",
+       "Forced painful deflation on countries losing gold"
+      ],
+      [
+       "Limited a government's ability to print its way out of trouble",
+       "Tied money growth to mining luck, not to the needs of the economy"
+      ],
+      [
+       "Built trust for international investment",
+       "Turned every banking panic into a scramble for scarce gold"
+      ]
+     ]
+    },
+    {
+     "type": "h",
+     "text": "Why fixed money hurt debtors"
+    },
+    {
+     "type": "p",
+     "text": "Here is a key idea of the whole rulebook. When money is fixed but the economy grows, there is more stuff to buy with the same amount of money. Prices fall. That is deflation. Falling prices sound pleasant until you owe money."
+    },
+    {
+     "type": "callout",
+     "label": "Picture this",
+     "text": "A farmer in Kansas borrows $1,000 in 1880 when wheat sells for $1 a bushel. The debt is worth 1,000 bushels. By 1894 wheat sells for about half that. The farmer still owes $1,000, but now it takes about 2,000 bushels to pay. The farmer works twice as hard to pay the same debt. The lender, without lifting a finger, is repaid in money that buys twice as much wheat."
+    },
+    {
+     "type": "p",
+     "text": "That is roughly what happened. From 1873 to 1896, prices in the United States and Britain drifted downward for more than two decades. The economy grew, but farmers and other debtors were crushed by rising real debts. The American Populist movement demanded more money, especially free coinage of silver, to stop the squeeze."
+    },
+    {
+     "type": "quote",
+     "text": "You shall not crucify mankind upon a cross of gold.",
+     "by": "William Jennings Bryan, Democratic National Convention, 1896"
+    },
+    {
+     "type": "p",
+     "text": "Bryan lost the 1896 election. Then something unplanned ended the deflation anyway: new gold. Huge finds in South Africa and the Klondike, plus a new chemical process for extracting gold from ore, expanded the world's gold supply. From 1897 prices rose gently, and farm distress eased. The money supply had been set by miners, not by anyone's plan."
+    },
+    {
+     "type": "myth",
+     "myth": "Gold-backed money is always fair to everyone.",
+     "reality": "Gold money is fair to lenders and savers in a growing economy, because it gains buying power. It is harsh on borrowers, because their debts get heavier as prices fall. Whether a money is fair depends on whether you owe it or own it, and on which way prices are moving. Chapter 8 calls these the seasons of money."
+    },
+    {
+     "type": "insider",
+     "text": "The owner's project tested a popular claim that the world's gold, times ten, equals the world's debt. The ratio is real today, about 12 times, but in the past it wandered from about 35 times in 1971 to about 53 times in 2000 and 23 times in 2010. A real mechanism would show a stable ratio. This one moves mainly with the gold price, so it is a coincidence, not a rule. No legal link between gold and dollar credit has existed since 1971."
+    },
+    {
+     "type": "check",
+     "q": "Why did falling prices from 1873 to 1896 hurt farmers more than bankers?",
+     "a": "Farmers owed fixed dollar debts while the prices they received for crops fell, so each dollar of debt took more crops to repay. Bankers were owed those fixed dollars, which bought more as prices fell."
+    },
+    {
+     "type": "check",
+     "q": "What is Gresham's law, in one sentence?",
+     "a": "When two moneys have the same face value but different real value, people spend the worse one and hoard the better one, so the bad money circulates and the good money disappears."
+    }
+   ],
+   "rules": [
+    "Hard money protects savers and squeezes borrowers. Know which one you are.",
+    "When rulers need money they cannot raise honestly, they water down the currency. Watch for it.",
+    "When two moneys circulate side by side, the one people hoard is the one they trust."
+   ],
+   "connects": [
+    {
+     "id": "rb-01",
+     "how": "Metal was one answer to the trust problem from Chapter 1."
+    },
+    {
+     "id": "rb-03",
+     "how": "War broke the gold standard, and Bretton Woods tried to rebuild it around the dollar."
+    },
+    {
+     "id": "rb-08",
+     "how": "The 1873 to 1896 squeeze is the first deflationary season in the seasons chapter."
+    }
+   ]
+  },
+  {
+   "id": "rb-03",
+   "num": "03",
+   "title": "War, Bretton Woods and the dollar's crown",
+   "kicker": "Two world wars moved the world's gold to America, and in 1944 the dollar became the hub of every other currency.",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "The gold standard of Chapter 2 worked best in peacetime. War is the most expensive thing a nation ever does, and governments at war will always choose victory over a fixed gold price. This chapter follows how the wars broke the old system and how a new one was designed in a New Hampshire hotel."
+    },
+    {
+     "type": "h",
+     "text": "The wars break the rules"
+    },
+    {
+     "type": "p",
+     "text": "When the First World War began in 1914, the warring countries suspended gold convertibility. They printed money and borrowed heavily to pay for the fighting. Between 1914 and 1920 prices roughly doubled in the United States, rose even more in Britain, and rose far more again in Germany."
+    },
+    {
+     "type": "p",
+     "text": "After the war, countries tried to rebuild the gold standard. Britain returned to gold in 1925 at its old prewar rate of about $4.86, a decision made by Winston Churchill as Chancellor. The pound was now overvalued, so British exports were too expensive, and the country suffered high unemployment. John Maynard Keynes attacked the decision in a pamphlet called The Economic Consequences of Mr. Churchill."
+    },
+    {
+     "type": "quote",
+     "text": "In truth, the gold standard is already a barbarous relic.",
+     "by": "John Maynard Keynes, A Tract on Monetary Reform, 1923"
+    },
+    {
+     "type": "p",
+     "text": "When the Great Depression struck after 1929, the gold standard spread the damage. Countries losing gold had to raise interest rates and shrink their money supply in the middle of a collapse. Britain left gold in 1931. The United States effectively left domestic gold in 1933, when President Roosevelt ordered citizens to hand in most gold coins and bullion, then raised the official price from $20.67 to $35 an ounce in 1934. Research by economists Barry Eichengreen and Jeffrey Sachs found that countries that left gold earlier generally recovered sooner."
+    },
+    {
+     "type": "h",
+     "text": "Why America ended up with the gold"
+    },
+    {
+     "type": "p",
+     "text": "Through the 1930s and the Second World War, gold poured into the United States. Europeans sent gold to safety. Allied countries paid for American weapons, food and fuel. By the late 1940s the US government held roughly two thirds of all the gold owned by the world's governments. America also had the only large industrial economy that had not been bombed."
+    },
+    {
+     "type": "callout",
+     "label": "Picture this",
+     "text": "Imagine a long poker night where every player keeps losing chips to one player who also owns the casino's only working kitchen. By dawn that player holds most of the chips. When the others want to start a new game, they have little choice but to use that player's chips as the house standard. That is roughly the position of the United States in 1944."
+    },
+    {
+     "type": "h",
+     "text": "Bretton Woods, July 1944"
+    },
+    {
+     "type": "p",
+     "text": "In July 1944, delegates from 44 Allied nations met at the Mount Washington Hotel in Bretton Woods, New Hampshire. Two men shaped the talks. Keynes, for Britain, proposed a new international clearing unit called bancor, which would push both deficit and surplus countries to adjust. Harry Dexter White, for the US Treasury, proposed a system built around the dollar. The country with the gold won the argument."
+    },
+    {
+     "type": "list",
+     "items": [
+      "The US dollar was fixed to gold at $35 an ounce. Foreign central banks, not private citizens, could swap dollars for gold at that price.",
+      "Other currencies were pegged to the dollar at fixed rates, allowed to move only about 1% either way. Pegs could be changed only for a serious imbalance.",
+      "The International Monetary Fund (IMF) was created to lend to countries with short-term payment problems, so they would not need to devalue or crash their economies.",
+      "The International Bank for Reconstruction and Development, now part of the World Bank, was created to finance rebuilding and development."
+     ]
+    },
+    {
+     "type": "diagram",
+     "key": "bw-system",
+     "caption": "Bretton Woods, 1944: other currencies pegged to the dollar, and the dollar pegged to gold at $35 an ounce. The dollar became the hub, gold the anchor."
+    },
+    {
+     "type": "insider",
+     "text": "This made the dollar the hub of a wheel. To defend its peg, a country needed a stock of dollars to buy its own currency when it fell. So central banks around the world began to hold dollars, and soon US Treasury bills, as their main reserves. The reserve role of the dollar, which still shapes your mortgage rate today, was born in this design."
+    },
+    {
+     "type": "h",
+     "text": "A system that worked, then strained"
+    },
+    {
+     "type": "p",
+     "text": "For about two decades the system delivered. Europe and Japan rebuilt quickly. The United States gave about $13 billion in Marshall Plan aid from 1948 to 1952, which put dollars into European hands. Trade grew fast, and inflation was mostly moderate. Many economists call the 1950s and 1960s a golden age of growth."
+    },
+    {
+     "type": "p",
+     "text": "But the system had a crack in its foundation, spotted early by the Belgian economist Robert Triffin. He laid it out in testimony to Congress in 1959 and in a book in 1960."
+    },
+    {
+     "type": "h",
+     "text": "The Triffin dilemma"
+    },
+    {
+     "type": "p",
+     "text": "The world needed more and more dollars as trade grew. The only way foreigners could get more dollars was for the United States to send more dollars abroad than it took back, by buying imports, investing overseas, or spending on military bases and aid. Year after year, that piled up dollars in foreign hands."
+    },
+    {
+     "type": "p",
+     "text": "But each of those dollars was a claim on American gold at $35. As foreign dollar holdings grew, they eventually exceeded the gold the US held. By the early 1960s that line had been crossed. If everyone asked for gold at once, the US could not pay."
+    },
+    {
+     "type": "callout",
+     "label": "Picture this",
+     "text": "A popular bakery issues tickets, each good for one loaf. Tickets are so trusted that the whole town uses them as money. The town grows and wants more tickets. The bakery keeps printing them, but it cannot bake much more bread. Every new ticket makes the town happier today and the bakery's promise weaker tomorrow. If the bakery stops printing, the town's trade seizes up. If it keeps printing, one day a crowd shows up wanting bread for every ticket. That is the Triffin dilemma."
+    },
+    {
+     "type": "p",
+     "text": "The dilemma is this. If the US stops supplying dollars, the world economy runs short of money. If it keeps supplying them, confidence in the gold link erodes. Either way, the system is on a timer."
+    },
+    {
+     "type": "p",
+     "text": "Governments tried patches. In 1961 the US and European central banks formed the London Gold Pool to hold the market price of gold at $35. France, under President Charles de Gaulle, began swapping its dollars for gold and publicly called for a return to a pure gold standard in 1965. The French finance minister Valery Giscard d'Estaing complained of America's exorbitant privilege: the ability to pay for things with its own currency that others must earn. The Gold Pool collapsed in 1968. The countdown to 1971, the subject of Chapter 5, had begun."
+    },
+    {
+     "type": "myth",
+     "myth": "The US took the world's gold by force or trickery.",
+     "reality": "Most of it arrived through ordinary channels: European capital fleeing war and instability in the 1930s, and Allied payments for American goods during the war. The result gave the US enormous leverage at Bretton Woods, but it was mostly the product of the US being the safe, unbombed workshop of the world, not a heist."
+    },
+    {
+     "type": "insider",
+     "text": "The United States still holds about 261.5 million ounces of gold, about 8,134 tonnes, according to the Treasury's own records for September 2026. It books that gold at $42.22 an ounce, a price set by law in 1973, so the official value is about $11 billion. At market prices it is worth about $1.08 trillion. The gap is a fossil of the Bretton Woods era still sitting in today's government accounts."
+    },
+    {
+     "type": "check",
+     "q": "Under Bretton Woods, could an American citizen walk into a bank and swap dollars for gold?",
+     "a": "No. Only foreign central banks and governments could convert dollars to gold at $35. American citizens were not even allowed to own most gold bullion from 1933 until 1975."
+    },
+    {
+     "type": "check",
+     "q": "State the Triffin dilemma in two sentences.",
+     "a": "The world needed a growing supply of dollars, which the US could only provide by running deficits with the rest of the world. But the more dollars piled up abroad, the less believable the promise to convert them into gold became."
+    }
+   ],
+   "rules": [
+    "Wars break money rules. Expect any fixed money promise to be suspended in a great crisis.",
+    "The country that holds the reserves usually writes the rules of the next system.",
+    "A promise that must grow to keep the world supplied will eventually outgrow what backs it."
+   ],
+   "connects": [
+    {
+     "id": "rb-02",
+     "how": "Bretton Woods was a softened gold standard, with the dollar standing between gold and everyone else."
+    },
+    {
+     "id": "rb-04",
+     "how": "The habit of holding dollars and Treasuries that began here is the engine of the next chapter."
+    },
+    {
+     "id": "rb-05",
+     "how": "The Triffin dilemma ended in the 1971 closing of the gold window."
+    }
+   ]
+  },
+  {
+   "id": "rb-04",
+   "num": "04",
+   "title": "How the world gets its dollars",
+   "kicker": "Americans buy more than they sell, foreigners earn the difference in dollars, and those dollars come home as loans to the US government.",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Chapter 3 ended with a puzzle. The world wants dollars. How does it get them? The answer is the most important circuit in modern finance. Once you see it, you will notice it in the price of your phone, your mortgage rate and the news about sanctions."
+    },
+    {
+     "type": "h",
+     "text": "The loop in one breath"
+    },
+    {
+     "type": "steps",
+     "items": [
+      "Americans, as a group, buy more goods and services from the world than they sell to it. This is the trade or current account deficit.",
+      "Paying for those imports sends dollars abroad. Foreign exporters now hold dollars.",
+      "The exporters, or their central banks, need somewhere safe to keep those dollars that also pays interest.",
+      "The deepest, safest place is US government debt: Treasury bills, notes and bonds. So they buy Treasuries, or other US assets such as stocks, companies and property.",
+      "The dollars flow back into the US financial system, help fund the US government's deficit and keep US interest rates lower than they would otherwise be.",
+      "With rates lower and goods cheap, Americans keep buying, and the loop turns again."
+     ]
+    },
+    {
+     "type": "diagram",
+     "key": "recycle-loop",
+     "caption": "The recycling loop: the US deficit sends dollars abroad, foreigners earn them by exporting, and they send them back by buying US Treasuries and other US assets."
+    },
+    {
+     "type": "callout",
+     "label": "Picture this",
+     "text": "Imagine a family that shops every day at a neighbor's store and pays with IOUs. The neighbor does not cash the IOUs. Instead, the neighbor deposits them right back with the family, which pays a little interest. The family keeps shopping, the neighbor keeps selling, and the neighbor's pile of IOUs keeps growing. Both are happy as long as the neighbor trusts the family's IOUs. That is the dollar loop, in kitchen terms."
+    },
+    {
+     "type": "h",
+     "text": "Level one: you, the individual"
+    },
+    {
+     "type": "p",
+     "text": "The loop touches your life in at least two ways, even if you never think about foreign exchange."
+    },
+    {
+     "type": "list",
+     "items": [
+      "Cheap imports. Because foreign makers are happy to be paid in dollars and to hold them, Americans can buy goods from all over the world at low prices. The project's time price data show a television costs roughly 99.5% fewer hours of work than in 1993. Clothing, electronics and toys are cheap partly because of this loop.",
+      "Lower borrowing costs. When foreigners buy Treasuries, they push up their prices and push down their yields. Since mortgage rates and car loan rates follow Treasury yields, American borrowers benefit. One well known study by Francis and Veronica Warnock estimated that foreign buying lowered the 10-year Treasury yield by close to a percentage point in the mid-2000s."
+     ]
+    },
+    {
+     "type": "p",
+     "text": "The flip side for individuals is quieter. If your job was in a factory that competed with imports, the same loop may have cost you that job. More on that below."
+    },
+    {
+     "type": "h",
+     "text": "Level two: businesses"
+    },
+    {
+     "type": "p",
+     "text": "Picture a Japanese carmaker selling cars in Ohio. It is paid in dollars. It needs yen to pay its workers at home, so it can sell the dollars. But if every exporter sold dollars at once, the yen would soar and Japanese goods would become expensive. So a lot of those dollars stay as dollars. Some are invested by the company in US factories and assets. Some are swapped with Japanese banks and pension funds, who buy Treasuries. Some are absorbed by Japan's central bank and Ministry of Finance as reserves."
+    },
+    {
+     "type": "p",
+     "text": "The same pattern holds for a Chinese electronics maker, a German machine builder or a Gulf oil company. The project's files show a modern version: Gulf sovereign funds now recycle their dollars into US artificial intelligence infrastructure as owners, for example a roughly $40 billion deal by MGX and BlackRock for a large data center company."
+    },
+    {
+     "type": "insider",
+     "text": "When a foreign company sells you a product, it often ends up lending you, the US taxpayer, the money you paid it. Your dollars leave as payment and come back as a loan to the US government. The trade deficit and the foreign holding of US debt are two sides of the same coin."
+    },
+    {
+     "type": "h",
+     "text": "Level three: governments"
+    },
+    {
+     "type": "p",
+     "text": "At the top level, foreign governments hold dollars as reserves: a rainy day fund to defend their currency, pay for imports in a crisis and reassure investors. As of August 2026, Japan held about $1,068 billion of US Treasuries, the United Kingdom about $1,010 billion and China about $591 billion, according to US Treasury data gathered by this project. Foreign official accounts held about $2.55 trillion in custody at the New York Fed in mid-October 2026."
+    },
+    {
+     "type": "p",
+     "text": "For the US government the loop brings two powers. First, it can borrow cheaply and at enormous scale, because the world needs its debt as a safe asset. Second, because most international payments pass through dollar accounts at US banks, the US can cut a country or a company out of the system. In 2022, after Russia invaded Ukraine, Western governments froze roughly $300 billion of Russia's central bank reserves. That showed every government on earth that dollar reserves come with a political condition."
+    },
+    {
+     "type": "diagram",
+     "key": "three-levels",
+     "caption": "The same dollar loop seen at three levels: individuals get cheap imports and lower loan rates, businesses earn dollars and invest them in US assets, governments hold Treasuries as reserves while the US gains borrowing and sanctions power."
+    },
+    {
+     "type": "h",
+     "text": "Why the model works"
+    },
+    {
+     "type": "table",
+     "cols": [
+      "Pillar",
+      "Plain meaning"
+     ],
+     "rows": [
+      [
+       "Deep markets",
+       "The US has about $31.8 trillion of marketable Treasury debt. You can buy or sell billions in minutes without moving the price much. No other safe asset is that large or liquid."
+      ],
+      [
+       "Rule of law",
+       "Courts enforce contracts and property rights fairly reliably, even for foreigners. Investors fear arbitrary seizure less in the US than in most alternatives."
+      ],
+      [
+       "Network effects",
+       "Oil, commodities, loans and trade are already priced in dollars, so everyone needs dollars, so more things get priced in dollars. Like a language, the more people use it, the harder it is to switch."
+      ],
+      [
+       "Open capital account",
+       "Money can enter and leave the US freely. China, the largest rival economy, still restricts this, which limits the yuan as a reserve."
+      ],
+      [
+       "Military and alliances",
+       "The US security umbrella over allies such as Japan, South Korea, Germany and the Gulf states gives them extra reasons to hold dollars."
+      ]
+     ]
+    },
+    {
+     "type": "h",
+     "text": "What the model costs"
+    },
+    {
+     "type": "list",
+     "items": [
+      "Hollowed industry. A strong dollar makes US exports expensive and imports cheap. Economists David Autor, David Dorn, Gordon Hanson and coauthors estimated that the surge of Chinese imports in the 2000s cost around a million US manufacturing jobs, and perhaps two million jobs in all. Whole towns felt it.",
+      "Persistent deficits. The US has run trade deficits almost every year since the mid-1970s. Foreign claims on the US keep growing.",
+      "Borrowing becomes easy, maybe too easy. With the world eager to buy its debt, Washington faces little market pressure to balance its budget, until the price of borrowing finally rises, as Chapter 13 shows it now has.",
+      "Dependence on foreign buyers. If foreign governments slow their buying or sell, US rates rise. In 2026 Japan's Treasury holdings fell about $171 billion from February to August as it defended the yen, and long-term US yields rose."
+     ]
+    },
+    {
+     "type": "myth",
+     "myth": "The trade deficit shows the US is losing.",
+     "reality": "Economists disagree about what drives the deficit. One view, associated with Ben Bernanke's 2005 'global saving glut' speech, says foreigners save too much and push their savings into the US, so the deficit is partly caused abroad. Another view, argued by Michael Pettis and others, says surplus countries hold down their own consumption, which forces deficits onto the US. A third view blames low US saving. All three agree the deficit is the mirror image of foreign capital flowing into the US, and that this brings benefits and real costs to different groups of Americans."
+    },
+    {
+     "type": "quote",
+     "text": "The dollar is our currency, but your problem.",
+     "by": "John Connally, US Treasury Secretary, to European finance ministers, 1971"
+    },
+    {
+     "type": "p",
+     "text": "Connally said this as the Bretton Woods system cracked. It captures the deal in one line. Because the world holds dollars, American decisions about the dollar land on everyone else. The next chapter shows the moment that line was spoken in earnest."
+    },
+    {
+     "type": "check",
+     "q": "If foreign central banks stopped buying US Treasuries, what would likely happen to US mortgage rates, and why?",
+     "a": "They would likely rise. Fewer buyers for Treasuries means lower prices and higher yields, and mortgage rates follow Treasury yields."
+    },
+    {
+     "type": "check",
+     "q": "Name one benefit and one cost of the dollar loop for an ordinary American.",
+     "a": "Benefit: cheaper imported goods and lower loan rates. Cost: jobs lost in industries that compete with imports, and a government that can borrow without much discipline."
+    }
+   ],
+   "rules": [
+    "Every trade deficit is also a capital inflow. Follow the dollars both ways.",
+    "Cheap imports and cheap loans are paid for somewhere, often by the workers whose industries shrink.",
+    "Reserves held in someone else's currency come with someone else's conditions."
+   ],
+   "connects": [
+    {
+     "id": "rb-03",
+     "how": "The habit of holding dollar reserves began with the Bretton Woods design."
+    },
+    {
+     "id": "rb-05",
+     "how": "After 1971, oil money joined this loop and became the petrodollar."
+    },
+    {
+     "id": "rb-12",
+     "how": "Stablecoins are becoming a new channel in this same recycling loop."
+    },
+    {
+     "id": "rb-13",
+     "how": "Sanctions power through dollar plumbing is one of the eye-openers."
+    }
+   ]
+  },
+  {
+   "id": "rb-05",
+   "num": "05",
+   "title": "1971, oil and the petrodollar",
+   "kicker": "On a Sunday night in August 1971, the last thread between the dollar and gold was cut, and oil quietly took gold's place in the loop.",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Chapter 3 ended with a timer. Foreign governments held more dollars than the US held gold. Chapter 4 showed why the world kept piling up dollars anyway. This chapter is the moment the timer ran out, and the surprising thing that happened next."
+    },
+    {
+     "type": "h",
+     "text": "The run on the bakery"
+    },
+    {
+     "type": "p",
+     "text": "Through the late 1960s, US spending rose on two fronts at once: the Vietnam War abroad and the Great Society programs at home. Inflation crept up. Foreign central banks looked at their growing piles of dollars and at America's shrinking pile of gold, and started asking for gold. In the summer of 1971 Britain reportedly asked to protect a large part of its dollar holdings. The bakery in our Chapter 3 picture had a crowd at the door."
+    },
+    {
+     "type": "h",
+     "text": "August 15, 1971"
+    },
+    {
+     "type": "p",
+     "text": "President Richard Nixon gathered his advisers at Camp David and then went on national television on a Sunday evening. He announced a package: a 90-day freeze on wages and prices, a 10% surcharge on imports, and the step that changed the world's money."
+    },
+    {
+     "type": "quote",
+     "text": "I have directed Secretary Connally to suspend temporarily the convertibility of the dollar into gold or other reserve assets.",
+     "by": "Richard Nixon, televised address, August 15, 1971"
+    },
+    {
+     "type": "p",
+     "text": "Temporarily turned out to mean permanently. Foreign central banks could no longer swap dollars for gold. The dollar was now backed by nothing physical at all. It was backed by the US government's promise, the US economy, and the fact that the whole world already used it."
+    },
+    {
+     "type": "diagram",
+     "key": "nixon-1971",
+     "caption": "Before August 1971: dollar convertible to gold at $35 for foreign central banks. After: the gold window closed, and by 1973 the major currencies floated against each other."
+    },
+    {
+     "type": "h",
+     "text": "From fixed to floating"
+    },
+    {
+     "type": "p",
+     "text": "Governments tried to patch the system. In December 1971 the Smithsonian Agreement devalued the dollar to $38 an ounce of gold and reset other pegs. In February 1973 the official price was raised again to $42.22. By March 1973 the major currencies gave up pegs and began to float, meaning their prices against each other were set every day by markets."
+    },
+    {
+     "type": "insider",
+     "text": "That $42.22 is still in the US government's books today. The Treasury values its 261.5 million ounces of gold at exactly $42.2222 an ounce, as of September 2026, while the market price is around $4,100. A number set in a 1973 emergency is still sitting in the national accounts."
+    },
+    {
+     "type": "myth",
+     "myth": "Gold still backs the dollar.",
+     "reality": "It does not. No one can swap dollars for gold at a fixed price, and no law ties the amount of dollars to the amount of gold. The US government still owns a lot of gold, but it is an asset on the shelf, not a backing for the currency. What anchors the dollar today is the taxing power of the US government, the size of the US economy, and the Federal Reserve's management of interest rates."
+    },
+    {
+     "type": "h",
+     "text": "Oil enters the loop"
+    },
+    {
+     "type": "p",
+     "text": "Two years after Nixon's announcement, in October 1973, Arab members of OPEC (the Organization of the Petroleum Exporting Countries) imposed an oil embargo on the United States and other countries over the Arab Israeli war. Oil prices roughly quadrupled within months, from about $3 a barrel to about $12. Suddenly, oil exporters were collecting a flood of dollars."
+    },
+    {
+     "type": "p",
+     "text": "Where would that flood go? In 1974, US Treasury Secretary William Simon traveled to Saudi Arabia. The two governments reached an understanding. Saudi Arabia would invest a large share of its oil earnings in US Treasury securities, through special arrangements that kept its purchases out of the normal auctions and kept its holdings secret. In return the US offered military cooperation and security. Oil continued to be priced in dollars, which was already the norm."
+    },
+    {
+     "type": "p",
+     "text": "The details stayed hidden for decades. In 2016 a Freedom of Information Act request by Bloomberg News uncovered the arrangement, and the US Treasury published Saudi Arabia's Treasury holdings for the first time."
+    },
+    {
+     "type": "callout",
+     "label": "Picture this",
+     "text": "Recall the neighbor who deposits the family's IOUs right back with the family. Now give that neighbor a gas station that every driver in the world must use, with prices quoted in the family's IOUs. The neighbor's pile of IOUs grows enormously, and the neighbor parks it with the family. That is the petrodollar: oil priced in dollars, and the oil money recycled into US government debt."
+    },
+    {
+     "type": "h",
+     "text": "What the petrodollar was, and what it was not"
+    },
+    {
+     "type": "list",
+     "items": [
+      "It was three things: oil invoiced in dollars, Gulf oil surpluses recycled into Treasuries and US banks, and a security relationship between Washington and Riyadh.",
+      "It was not the dollar's backing. The dollar would remain the world's main currency without it, because of the pillars in Chapter 4.",
+      "It is not suddenly over. A viral story claimed a 50-year petrodollar pact expired in June 2024. This project's research found that claim false. There was no such dated pact to expire.",
+      "It is fading slowly. Saudi Arabia now holds about $141 billion of Treasuries, about 1.5% of foreign holdings, and in 2026 Gulf states borrowed in markets more than they recycled. Electric vehicles are slowly eating into oil demand."
+     ]
+    },
+    {
+     "type": "insider",
+     "text": "In the 1970s, banks also recycled petrodollars by lending them to developing countries in Latin America. When US interest rates jumped in the early 1980s, those borrowers could not pay. Mexico defaulted in 1982 and much of Latin America lost a decade. Recycled money always lands somewhere, and the landing is not always soft."
+    },
+    {
+     "type": "h",
+     "text": "The Great Inflation"
+    },
+    {
+     "type": "p",
+     "text": "With no gold anchor and two oil shocks (1973 and again after the Iranian revolution in 1979), US inflation climbed through the decade. Consumer price inflation peaked near 14.8% in early 1980. Savers who held cash or long-term bonds watched their wealth melt. Workers saw wages chase prices in a race they kept losing. Borrowers with fixed-rate loans, by contrast, quietly gained, because they repaid in cheaper dollars."
+    },
+    {
+     "type": "p",
+     "text": "Policymakers tried wage and price controls, which caused shortages, and stop and go policy, which tightened just long enough to cause pain and then loosened again before inflation was beaten. People came to expect inflation, and expectations started to drive it."
+    },
+    {
+     "type": "h",
+     "text": "Volcker breaks the fever"
+    },
+    {
+     "type": "p",
+     "text": "In August 1979 President Jimmy Carter appointed Paul Volcker to chair the Federal Reserve. On October 6, 1979, Volcker announced a new approach that let interest rates rise as high as needed to slow money growth. The federal funds rate, the Fed's key rate, reached close to 20% in 1980 and 1981. Mortgage rates went above 18%."
+    },
+    {
+     "type": "p",
+     "text": "The cure was brutal. The US went through two recessions in quick succession. Unemployment reached 10.8% at the end of 1982. Farmers drove tractors to Washington to protest. But inflation fell to around 3% by 1983, and the Fed earned back its credibility. A 40-year era of falling interest rates began, which Chapter 8 calls the long bond summer."
+    },
+    {
+     "type": "table",
+     "cols": [
+      "Year",
+      "Event",
+      "What it meant for money"
+     ],
+     "rows": [
+      [
+       "1971",
+       "Gold window closed",
+       "The dollar became a pure promise"
+      ],
+      [
+       "1973",
+       "Floating rates, oil embargo",
+       "Currencies traded freely, oil prices quadrupled"
+      ],
+      [
+       "1974",
+       "US and Saudi arrangement",
+       "Oil dollars recycled into Treasuries"
+      ],
+      [
+       "1979",
+       "Second oil shock, Volcker appointed",
+       "Inflation peaked, then rates soared"
+      ],
+      [
+       "1982",
+       "Deep recession, Mexico default",
+       "Inflation broken, debt crisis abroad"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "The owner's Ledger Age series listed five effects of 1971: the dollar became a pure promise, unlimited printing became possible, inflation became the default, the petrodollar arrived, and cheap credit flowed to those who could borrow and buy assets. All five are well supported, with one sharpening. Printing became possible without a gold limit, but it is not unlimited in practice. The limits moved from metal to politics and markets: how much inflation voters will tolerate, and how much debt the bond market will absorb at what price. Volcker proved the limit is real when it is enforced."
+    },
+    {
+     "type": "check",
+     "q": "After 1971, what does the dollar's value rest on, if not gold?",
+     "a": "On trust in the US government and its taxing power, the size and openness of the US economy, the Fed's management of interest rates and inflation, and the network effect of the whole world already using dollars."
+    },
+    {
+     "type": "check",
+     "q": "Who gained and who lost in the 1970s inflation?",
+     "a": "Borrowers with fixed-rate loans and owners of real assets like gold, land and oil gained. Savers in cash and bonds, people on fixed incomes and workers whose wages lagged prices lost."
+    }
+   ],
+   "rules": [
+    "A temporary suspension of a money promise often becomes permanent. Plan for that.",
+    "When a currency has no metal anchor, its limit is political. Watch inflation tolerance and bond market patience.",
+    "Inflation that people come to expect is far harder to stop than inflation that surprises them."
+   ],
+   "connects": [
+    {
+     "id": "rb-03",
+     "how": "The Triffin dilemma from Chapter 3 is what finally broke in 1971."
+    },
+    {
+     "id": "rb-04",
+     "how": "Oil money slotted into the recycling loop from Chapter 4."
+    },
+    {
+     "id": "rb-07",
+     "how": "Credit expansion became structural once the gold brake was gone."
+    },
+    {
+     "id": "rb-08",
+     "how": "The 1970s are the clearest inflationary season of the last century."
+    }
+   ]
+  },
+  {
+   "id": "rb-06",
+   "num": "06",
+   "title": "How money is born today",
+   "kicker": "Most new money is not printed by the government. It is typed into existence by a bank when it makes a loan.",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "With gold gone, where does new money come from? Most people imagine a government printing press. That picture is mostly wrong. This chapter shows the actual machinery, step by step, with a simple set of books. It is the chapter to reread if any later one feels confusing."
+    },
+    {
+     "type": "h",
+     "text": "Three kinds of dollars"
+    },
+    {
+     "type": "p",
+     "text": "Not all dollars are the same kind of thing. There are layers, each a promise from a different promiser."
+    },
+    {
+     "type": "table",
+     "cols": [
+      "Layer",
+      "Who promises",
+      "Who can hold it",
+      "Rough size, US, 2026"
+     ],
+     "rows": [
+      [
+       "Base money: paper cash and bank reserves",
+       "The Federal Reserve",
+       "Cash: anyone. Reserves: only banks and a few institutions with Fed accounts",
+       "Bank reserves about $3.0 trillion (October 2026)"
+      ],
+      [
+       "Bank deposits",
+       "Your commercial bank",
+       "Anyone with a bank account",
+       "About $19.6 trillion (September 2026)"
+      ],
+      [
+       "Treasury securities",
+       "The US government",
+       "Anyone, through a broker or bank",
+       "About $31.8 trillion of marketable debt held by the public"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "The money you use day to day is almost all the second layer: bank deposits. When you pay with a card or an app, you are moving bank deposits. Paper cash is a small share."
+    },
+    {
+     "type": "h",
+     "text": "Loans create deposits"
+    },
+    {
+     "type": "p",
+     "text": "In 2014 the Bank of England, the central bank of the United Kingdom, published a short paper that surprised many readers. It described what bankers already knew."
+    },
+    {
+     "type": "quote",
+     "text": "Whenever a bank makes a loan, it simultaneously creates a matching deposit in the borrower's bank account, thereby creating new money.",
+     "by": "Bank of England, Money creation in the modern economy, 2014"
+    },
+    {
+     "type": "p",
+     "text": "A bank does not lend out a pile of savings it was holding. It writes two new entries in its books at the same moment. Let us watch it happen."
+    },
+    {
+     "type": "callout",
+     "label": "Worked example",
+     "text": "Maria borrows $20,000 from her bank to buy a car. Before the loan, the bank's books show nothing about Maria. The moment the loan is approved, the bank adds an asset: a $20,000 loan that Maria owes the bank. It also adds a liability: a $20,000 deposit in Maria's account that the bank owes Maria. Both sides grow by $20,000. Maria's own books mirror this: she now has a $20,000 deposit (an asset) and a $20,000 debt (a liability). No one else's deposit went down. The economy has $20,000 more money than it had a minute ago."
+    },
+    {
+     "type": "diagram",
+     "key": "loan-creates-deposit",
+     "caption": "Double-entry: the bank records a new loan as an asset and a new deposit as a liability at the same instant. The deposit is new money."
+    },
+    {
+     "type": "steps",
+     "items": [
+      "Maria pays the car dealer. Her deposit moves to the dealer's account, maybe at another bank.",
+      "Between the two banks, the payment settles in reserves at the Federal Reserve. Banks keep reserve accounts at the Fed for exactly this.",
+      "The dealer now has $20,000 in deposits. The money keeps circulating, paying wages, suppliers and taxes.",
+      "As Maria repays the loan, her payments cancel both her debt and an equal amount of deposits. Repaying a bank loan destroys money, just as making one created it."
+     ]
+    },
+    {
+     "type": "insider",
+     "text": "When you deposit your paycheck, you are lending money to your bank. Your deposit is the bank's debt to you. You are an unsecured lender, protected by government deposit insurance up to $250,000 per depositor, per bank, per ownership category. This is why bank runs happen: depositors are creditors who can all ask for their money back at once."
+    },
+    {
+     "type": "h",
+     "text": "What limits banks, then?"
+    },
+    {
+     "type": "p",
+     "text": "If banks can create money by lending, why not lend infinitely? Because lending has real limits, just not the ones in the old textbook."
+    },
+    {
+     "type": "list",
+     "items": [
+      "Capital rules: regulators require banks to fund a share of their loans with their owners' money, so losses hit shareholders first.",
+      "Borrower demand: someone has to want the loan and be judged able to repay it.",
+      "Profit: the loan must earn more than it costs the bank to fund and manage.",
+      "Interest rates: the Fed sets the price of reserves, which ripples out to the price of every loan. Higher rates mean fewer borrowers."
+     ]
+    },
+    {
+     "type": "myth",
+     "myth": "Banks can lend about ten times their reserves, so every dollar of base money becomes ten dollars of loans.",
+     "reality": "This is the old money multiplier from textbooks, and the owner's notes used it, for example multiplying gold or Bitcoin by ten. The Bank of England's 2014 paper, which the owner also cites, says the reverse: banks lend first, and the central bank supplies reserves as needed at its chosen interest rate. In the United States, reserve requirements have been zero since March 2020. There is no fixed multiplier. The binding limits are capital, demand, profit and the interest rate. The owner's instinct that money is debt is correct. The fixed ten times rule is not."
+    },
+    {
+     "type": "h",
+     "text": "The government's part: the Treasury"
+    },
+    {
+     "type": "p",
+     "text": "The US Treasury is the government's money manager. It keeps its main checking account, the Treasury General Account, at the Federal Reserve. In mid-October 2026 it held about $886 billion. When the government spends, say on a Social Security payment, money moves from that account to the recipient's bank. The recipient's deposit rises and the bank's reserves at the Fed rise. Government spending adds money to the private economy."
+    },
+    {
+     "type": "p",
+     "text": "When you pay taxes, the reverse happens. Your deposit falls, your bank's reserves fall, and the Treasury's account at the Fed rises. Taxes drain money out of the private economy."
+    },
+    {
+     "type": "p",
+     "text": "Because the government spends more than it taxes, it borrows the difference. It does this through primary auctions. Treasury announces how many bills, notes and bonds it will sell. A group of about two dozen large banks, called primary dealers, must bid. Pension funds, money market funds, foreign central banks and individuals bid too, directly or through the dealers. Buyers pay with deposits and reserves, which move into the Treasury's account."
+    },
+    {
+     "type": "insider",
+     "text": "The Fed is not allowed to buy new Treasuries straight from the government at auction, apart from rolling over bonds it already owns. When the Fed does buy Treasuries, it buys them from banks and investors in the open market. That is what quantitative easing was: the Fed creating reserves to buy bonds that were already out there."
+    },
+    {
+     "type": "h",
+     "text": "The owner's loop, corrected and kept"
+    },
+    {
+     "type": "p",
+     "text": "The owner sketched the money circuit as Treasury to Fed to banks to public to IRS (the tax office) to Treasury. That is a real loop, and the core insight, that modern money is a circuit of debts, is right. Here it is with the parts in their correct places."
+    },
+    {
+     "type": "steps",
+     "items": [
+      "Congress decides spending and taxes. Treasury spends from its account at the Fed, which adds deposits for the public and reserves for their banks.",
+      "Treasury covers the gap between spending and taxes by auctioning Treasury securities to dealers, banks, funds, foreigners and individuals, not to the Fed directly.",
+      "Banks create most new money by making loans to households and businesses. The Fed does not hand banks money to lend. It sets the interest rate on reserves and lends to banks against good collateral when needed.",
+      "The public spends, saves and repays loans. Repaying bank loans destroys deposits.",
+      "The public pays taxes to the IRS, which moves deposits and reserves back into Treasury's account at the Fed.",
+      "The Fed sometimes buys or lets run off Treasury securities in the open market, and when it makes a profit it sends it to the Treasury."
+     ]
+    },
+    {
+     "type": "p",
+     "text": "The owner also wrote that the Fed controls the speed of credit expansion, not the amount. That is close to right. The Fed sets the price of money, the interest rate, and banks and borrowers decide the quantity at that price. In September 2026 the Fed, now chaired by Kevin Warsh, raised its target rate to 3.75 to 4.00%, a sign that it is trying to slow the speed."
+    },
+    {
+     "type": "check",
+     "q": "Maria repays her entire $20,000 car loan. What happens to the money supply?",
+     "a": "It shrinks by $20,000. Her repayment cancels both her loan, an asset of the bank, and an equal amount of deposits, a liability of the bank. Money created by a loan is destroyed when the loan is repaid."
+    },
+    {
+     "type": "check",
+     "q": "Does the Federal Reserve lend money to the Treasury when the government runs a deficit?",
+     "a": "Not directly. The Treasury borrows by selling securities at auction to dealers and investors. The Fed may later buy some of those securities in the open market, which is one reason people say the Fed finances deficits indirectly."
+    }
+   ],
+   "rules": [
+    "Most money is bank credit. Every deposit is somebody's loan somewhere.",
+    "A loan creates money, and repaying it destroys money. Watch both directions.",
+    "Do not trust a fixed money multiplier. Watch capital, demand and the interest rate instead."
+   ],
+   "connects": [
+    {
+     "id": "rb-01",
+     "how": "This is the modern form of the ledger from Chapter 1: money as a record of debts."
+    },
+    {
+     "id": "rb-07",
+     "how": "Because repaying loans destroys money, the musical chairs worry comes next."
+    },
+    {
+     "id": "rb-12",
+     "how": "Stablecoins add a new layer on top of these three, backed by the Treasury layer."
+    }
+   ]
+  },
+  {
+   "id": "rb-07",
+   "num": "07",
+   "title": "The musical chairs question",
+   "kicker": "If all money is borrowed and interest is owed on top, can everyone ever pay? The honest answer is yes in a quiet world, and not always in a real one.",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Chapter 6 showed that money is born as debt. That raises a question almost everyone hits sooner or later, and the owner of this project put it in a sharp form."
+    },
+    {
+     "type": "quote",
+     "text": "Imagine I give a person my own currency YYY$10, but I tell them they must pay me back 5% interest, but no matter how much they work they can't repay if there is only YYY$10 in circulation.",
+     "by": "The owner of this project, in their own words"
+    },
+    {
+     "type": "p",
+     "text": "It feels like musical chairs. Ten chairs, ten and a half people. Someone must always be left standing, or someone must always borrow more to keep the music playing. Let us test the intuition carefully, because it is half right, and the half that is right matters a great deal."
+    },
+    {
+     "type": "diagram",
+     "key": "musical-chairs",
+     "caption": "The worry: YYY$10 in circulation, YYY$10.50 owed. If the stock of money is all there is, someone must default or borrow more."
+    },
+    {
+     "type": "h",
+     "text": "Why it feels impossible"
+    },
+    {
+     "type": "p",
+     "text": "The worry treats money as a fixed pile, a stock. You hand out 10. You ask for 10.50 back. There are only 10 in existence. Arithmetic seems to say no."
+    },
+    {
+     "type": "p",
+     "text": "The missing piece is time. Money is not used once. It moves. The same coin can pay many debts in a year, because each person who receives it spends it again. Economists call how often money changes hands its velocity. Debts are paid from flows over time, not from the stock all at once."
+    },
+    {
+     "type": "h",
+     "text": "The real mechanism: the lender spends"
+    },
+    {
+     "type": "callout",
+     "label": "Picture this",
+     "text": "You are the lender on a small island. You lend YYY$10 to Bea, a fisher, at 5% a year. Each year Bea owes you YYY$0.50 of interest. Where does she get it? From you. You need to eat, so you buy YYY$0.50 of fish from Bea each year. She takes that YYY$0.50 and pays you the interest. Next year, the same thing. The money supply never changes. It stays at YYY$10. Bea pays her interest forever. Nobody is left standing."
+    },
+    {
+     "type": "table",
+     "cols": [
+      "Year",
+      "Money in circulation",
+      "Bea's loan",
+      "Interest Bea pays you",
+      "You spend back on fish",
+      "Anyone short?"
+     ],
+     "rows": [
+      [
+       "1",
+       "YYY$10",
+       "YYY$10",
+       "YYY$0.50",
+       "YYY$0.50",
+       "No"
+      ],
+      [
+       "2",
+       "YYY$10",
+       "YYY$10",
+       "YYY$0.50",
+       "YYY$0.50",
+       "No"
+      ],
+      [
+       "10",
+       "YYY$10",
+       "YYY$10",
+       "YYY$0.50",
+       "YYY$0.50",
+       "No"
+      ],
+      [
+       "Total over 10 years",
+       "Still YYY$10",
+       "Still YYY$10",
+       "YYY$5.00 paid",
+       "YYY$5.00 spent",
+       "No"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Interest is a payment for a service, the use of money over time. As long as the person who receives interest spends it back into the economy, on goods, wages, rent or taxes, the money circulates and can be earned again. Even repaying the principal is possible. Bea can sell you more fish over time and pay down the YYY$10. When she finishes, the money she borrowed is gone, because the loan that created it is gone. That is not a failure. It is the loop from Chapter 6 running in reverse."
+    },
+    {
+     "type": "p",
+     "text": "Economists who modeled this carefully, including critics of mainstream economics such as Steve Keen, have shown that a pure credit economy can pay interest in a steady state without needing endless new loans. So the strict version of the musical chairs claim, that interest can never be paid without more debt, is not correct."
+    },
+    {
+     "type": "myth",
+     "myth": "Because banks only create the principal and never the interest, the system needs ever more debt just to pay interest, or it collapses.",
+     "reality": "Interest is paid out of the circulating flow of money, and banks spend their interest income on salaries, rent, dividends and taxes, which puts it back into circulation. In a steady state, interest can be paid indefinitely. The real dangers come from somewhere else, and they are listed below."
+    },
+    {
+     "type": "h",
+     "text": "Where the intuition is right"
+    },
+    {
+     "type": "p",
+     "text": "Now the important part. The owner's instinct points at real weaknesses. They are just different from the arithmetic one."
+    },
+    {
+     "type": "list",
+     "items": [
+      "Savers who do not spend. If the people receiving interest save it instead of spending it, money piles up with them and drains from everyone else. If savers as a group want their savings to keep growing, someone else must keep going deeper into debt. This is an accounting fact, made famous by the economist Wynne Godley: for every saver accumulating financial assets, some sector, households, businesses, government or foreigners, must be adding debt.",
+      "Debt can outgrow income. Paying interest is possible. Paying more and more interest on debts that grow faster than incomes is not sustainable. Global debt is about $365 trillion, roughly 310% of world output, according to the Institute of International Finance in 2026.",
+      "Repayment destroys money. If many borrowers try to pay down debt at once, deposits vanish, spending falls, prices and incomes drop, and the remaining debts get harder to pay.",
+      "Panics need cash now, not over time. In a crisis everyone wants to settle at once. Then the stock of money really is too small for the pile of claims, unless a central bank steps in."
+     ]
+    },
+    {
+     "type": "quote",
+     "text": "The more the debtors pay, the more they owe.",
+     "by": "Irving Fisher, The Debt-Deflation Theory of Great Depressions, 1933"
+    },
+    {
+     "type": "p",
+     "text": "Fisher saw this in the Great Depression. When everyone sells assets and cuts spending to repay debt, prices fall. Falling prices make each remaining dollar of debt heavier. Paying down debt can make debt burdens worse."
+    },
+    {
+     "type": "h",
+     "text": "Minsky: stability breeds instability"
+    },
+    {
+     "type": "p",
+     "text": "The economist Hyman Minsky described three kinds of borrowers. Hedge borrowers can pay both interest and principal from income. Speculative borrowers can pay interest from income but must keep rolling over the principal. Ponzi borrowers cannot even pay the interest from income, and must borrow more or sell assets that they hope keep rising."
+    },
+    {
+     "type": "p",
+     "text": "Minsky's key idea is that long calm periods push people from the first kind toward the third. Good times make lenders and borrowers confident, so they take on more debt against rising asset prices. Then a small shock, like a dip in house prices, reveals that many borrowers were Ponzi borrowers all along. The 2008 crisis is often called a Minsky moment, a phrase coined by economist Paul McCulley."
+    },
+    {
+     "type": "diagram",
+     "key": "treadmill",
+     "caption": "The debt treadmill: when debt grows faster than income, the interest bill rises, so more borrowing is needed just to keep pace. Calm years tempt more people onto the faster belt."
+    },
+    {
+     "type": "h",
+     "text": "Why credit growth became structural after 1971"
+    },
+    {
+     "type": "p",
+     "text": "Under gold, a bank boom eventually ran into a gold shortage and stopped. After 1971 that brake was gone. Each time a slump threatened, central banks could cut rates and governments could borrow, so recessions were shorter but debt rarely got cleared out. Over decades, debt grew faster than incomes. The system became like a bicycle that is stable only while it keeps moving forward."
+    },
+    {
+     "type": "p",
+     "text": "The US government is the clearest current case. According to Treasury data gathered by this project, the government spent about $7.40 trillion in fiscal year 2026 and collected about $5.40 trillion, a deficit of about $1.99 trillion. Even before interest, it ran a primary deficit of about $941 billion, close to 2.9% of the economy. Interest itself cost about $1.05 trillion. The average rate on its marketable debt is about 3.5%, but new borrowing costs closer to 4.9%, and about 36% of the debt reprices within a year. Unless deficits shrink or rates fall, the interest bill climbs on its own."
+    },
+    {
+     "type": "insider",
+     "text": "The owner's notes say there is only about $15,000 of liquid money per person on earth against about $346 trillion of global debt, and conclude that we live in a world of scarce settlement capacity, not scarce money. The figures need updating: world broad money is now about $19,500 per person, and global debt is about $365 trillion. But the insight is sharp. Normally debts are paid slowly from flows, so a small stock of money services a huge stock of debt. In a panic, everyone wants settlement at once, and the stock is far too small. That is exactly why central banks act as lenders of last resort in a crisis."
+    },
+    {
+     "type": "check",
+     "q": "In the island story, what single behavior would turn the YYY$10 economy into a real musical chairs game?",
+     "a": "If you, the lender, stopped spending your interest and hoarded it. Then money would drain out of circulation into your savings, and Bea would eventually be unable to pay without borrowing more or defaulting."
+    },
+    {
+     "type": "check",
+     "q": "Is it true that interest can never be paid without new loans?",
+     "a": "No. In a steady state, interest can be paid indefinitely as long as interest income is spent back into circulation. The real risks are debt growing faster than income, savers hoarding, mass repayment shrinking the money supply, and panics."
+    }
+   ],
+   "rules": [
+    "Interest can be paid from a circulating flow. Debt that grows faster than income cannot be paid forever.",
+    "When everyone repays at once, money shrinks and debts get heavier. Pace your debt so you never have to sell in a panic.",
+    "Calm years breed risky borrowing. Be most careful when lending feels safest."
+   ],
+   "connects": [
+    {
+     "id": "rb-06",
+     "how": "The circulation in this chapter is the loop of Chapter 6 seen over time."
+    },
+    {
+     "id": "rb-08",
+     "how": "Deleveraging and debt deflation are the dark side of the deflationary seasons."
+    },
+    {
+     "id": "rb-09",
+     "how": "Debt that outgrows income is a recurring feature of declining empires."
+    },
+    {
+     "id": "rb-11",
+     "how": "Who gets the new credit decides who can enter the board game."
+    }
+   ]
+  },
+  {
+   "id": "rb-08",
+   "num": "08",
+   "title": "The seasons of money",
+   "kicker": "Money has weather. In some decades it melts, in others it hardens, and the same choice can make you rich in one season and poor in the next.",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "So far we have looked at how money is made. Now we look at how it behaves over time. Prices do not move in a straight line. They move in long seasons, some inflationary, some deflationary. Most people live through only two or three seasons, so they assume the one they grew up in is normal. The rulebook exists so you do not make that mistake."
+    },
+    {
+     "type": "h",
+     "text": "Two kinds of weather"
+    },
+    {
+     "type": "list",
+     "items": [
+      "Inflation: prices in general rise, so each unit of money buys less. Debts get lighter in real terms. Savings in cash shrink in real terms.",
+      "Deflation: prices in general fall, so each unit of money buys more. Debts get heavier in real terms. Cash gains real value, but jobs and incomes usually suffer."
+     ]
+    },
+    {
+     "type": "callout",
+     "label": "Picture this",
+     "text": "Think of money as ice. In a warm season, inflation, ice held in your hand melts, so you want to turn it into something that does not melt, like a house or a tool, and owing ice to someone is cheap because it shrinks while you owe it. In a cold season, deflation, ice keeps its shape and even grows, so holding ice is smart and owing ice is dangerous because your debt grows heavier."
+    },
+    {
+     "type": "h",
+     "text": "A timeline of seasons, 1870 to 2026"
+    },
+    {
+     "type": "diagram",
+     "key": "seasons",
+     "caption": "Seasons of money from 1870 to 2026: inflationary eras (wars, the 1970s, 2021 onward) and deflationary or disinflationary eras (1873 to 1896, 1929 to 1933, 1982 to 2020)."
+    },
+    {
+     "type": "table",
+     "cols": [
+      "Years",
+      "Season",
+      "Main cause",
+      "Who tended to win",
+      "Who tended to lose"
+     ],
+     "rows": [
+      [
+       "1873 to 1896",
+       "Long deflation",
+       "Gold standard, money growth slower than output",
+       "Lenders, savers",
+       "Farmers and other debtors"
+      ],
+      [
+       "1897 to 1914",
+       "Mild inflation",
+       "New gold discoveries",
+       "Debtors, farmers",
+       "Fixed-income holders, slightly"
+      ],
+      [
+       "1914 to 1920",
+       "War inflation",
+       "War spending, gold suspended",
+       "Debtors, governments",
+       "Savers, bondholders"
+      ],
+      [
+       "1929 to 1933",
+       "Deflationary collapse",
+       "Bank failures, money supply fell about a third",
+       "Holders of safe cash",
+       "Debtors, workers, banks"
+      ],
+      [
+       "1941 to 1951",
+       "War and postwar inflation with capped rates",
+       "War debt, Fed held rates down",
+       "The government as debtor",
+       "Savers in bonds and deposits"
+      ],
+      [
+       "1966 to 1981",
+       "The Great Inflation",
+       "Deficits, oil shocks, loose policy, no gold anchor",
+       "Fixed-rate borrowers, owners of gold and real assets",
+       "Savers, bondholders, fixed incomes"
+      ],
+      [
+       "1982 to 2007",
+       "Disinflation, long bond summer",
+       "Volcker's credibility, globalization",
+       "Bondholders, stock owners",
+       "Late borrowers at high fixed rates"
+      ],
+      [
+       "2008 to 2020",
+       "Low inflation, zero rates",
+       "Debt overhang after 2008, cautious banks",
+       "Asset owners",
+       "Savers earning nearly nothing"
+      ],
+      [
+       "2021 to 2023",
+       "Inflation surge",
+       "Pandemic spending, supply shocks, energy",
+       "Borrowers with low fixed mortgages",
+       "Renters, savers, long bond holders"
+      ],
+      [
+       "2024 to 2026",
+       "Sticky, energy-led inflation",
+       "Oil shock, deficits, AI investment boom",
+       "Owners of energy and real assets",
+       "Wage earners whose pay lags prices"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "The last row comes from this project's 2026 data. US consumer energy prices rose about 20.4% over a year, oil traded near $98 a barrel in October, and a key inflation measure ran at 5.0% annualized in the second quarter. Real hourly pay fell about 0.7% in the year to September 2026. The Fed under Kevin Warsh raised rates in September 2026, against the President's wishes."
+    },
+    {
+     "type": "insider",
+     "text": "Financial repression is the polite name for a quiet trick governments use to shrink debt. They keep interest rates below inflation, so lenders to the government lose real value every year. Economists Carmen Reinhart and Belen Sbrancia showed in 2011 that the US and UK used this after the Second World War to cut their debt burdens substantially. A mild version is happening now: the average interest rate on US government debt is about 3.2 to 3.5%, while nominal income has grown about 5.7% a year over the past decade, so inflation is quietly shrinking the debt relative to the economy."
+    },
+    {
+     "type": "h",
+     "text": "Why governments prefer mild inflation"
+    },
+    {
+     "type": "list",
+     "items": [
+      "It shrinks debt. A government that owes trillions benefits when each future dollar is worth a little less.",
+      "Wages are sticky downward. People resist pay cuts. With mild inflation, a business can let real wages adjust by giving smaller raises instead of cutting pay, which keeps more people employed.",
+      "It leaves room to cut rates. If inflation is 2% and rates are 4%, a central bank can cut rates enough to make borrowing cheap in real terms during a slump. With zero inflation, there is less room.",
+      "Deflation is scarier. Once people expect falling prices, they delay buying, firms delay hiring, and debts grow heavier. That spiral is hard to stop."
+     ]
+    },
+    {
+     "type": "p",
+     "text": "New Zealand adopted the first formal inflation target in 1990. The Federal Reserve formally adopted a 2% target in 2012. The owner calls inflation a circulation incentive, a leaking bucket that pushes people to spend or invest rather than hoard cash. That is a fair description of how a mild target works, and it is also why holding idle cash is a slow loss in most modern seasons."
+    },
+    {
+     "type": "quote",
+     "text": "Inflation is always and everywhere a monetary phenomenon.",
+     "by": "Milton Friedman, 1963"
+    },
+    {
+     "type": "p",
+     "text": "Friedman's line is famous and partly true. Over long periods, sustained high inflation does come with fast money growth. But most economists today add that supply shocks, like the oil embargoes of the 1970s or the 2026 energy shock, can drive prices up for a while even without fast money growth, and that expectations matter a great deal. Where scholars disagree is how much weight to give each."
+    },
+    {
+     "type": "h",
+     "text": "Deflation traps"
+    },
+    {
+     "type": "p",
+     "text": "The United States from 1929 to 1933 is the classic trap. About 9,000 banks failed. The money supply fell by about a third, as Milton Friedman and Anna Schwartz documented. Prices fell by about a quarter. Unemployment reached about 25%. Fisher's debt deflation, from Chapter 7, ran at full speed."
+    },
+    {
+     "type": "p",
+     "text": "Japan is the modern case. After its stock and property bubble burst around 1990, banks were slow to admit losses, households and firms paid down debt for years, and prices drifted slightly downward for much of the period from the late 1990s to the early 2010s. The Nikkei stock index did not regain its 1989 peak until 2024. The economist Richard Koo called this a balance sheet recession: everyone repaying debt at once, so nobody borrows to spend."
+    },
+    {
+     "type": "h",
+     "text": "A store of value changes jobs with the season"
+    },
+    {
+     "type": "p",
+     "text": "Here is a subtle point that most people never notice. An asset is not simply safe or risky. It is a tool that works in some seasons and fails in others."
+    },
+    {
+     "type": "table",
+     "cols": [
+      "Asset",
+      "Works as a store of value in",
+      "Fails in",
+      "Example"
+     ],
+     "rows": [
+      [
+       "Cash and savings accounts",
+       "Deflation",
+       "Inflation",
+       "Cash gained real value in 1930 to 1933, lost it in the 1970s"
+      ],
+      [
+       "Long-term government bonds",
+       "Disinflation and deflation",
+       "Inflation and rising rates",
+       "Great from 1982 to 2020, lost close to half their market value from 2020 to 2023"
+      ],
+      [
+       "Gold",
+       "Inflation, crisis and loss of trust",
+       "Disinflation with high real rates",
+       "Rose from $35 to $850 by January 1980, then fell to around $255 by 1999 to 2001"
+      ],
+      [
+       "Fixed-rate debt (as a borrower)",
+       "Inflation",
+       "Deflation",
+       "A 3% mortgage from 2021 became a gift as prices rose"
+      ],
+      [
+       "Stocks of strong companies",
+       "Moderate inflation and growth",
+       "Deep deflation and very high real rates",
+       "Fell sharply in 1929 to 1932 and in 1973 to 1974"
+      ]
+     ]
+    },
+    {
+     "type": "insider",
+     "text": "Gold is usually called an inflation hedge, but from 1980 to 2001, a period that still had inflation, gold lost most of its value in real terms. What gold really hedges is a loss of trust in the money or the people managing it. When trust is high and real interest rates are high, gold tends to struggle. When trust falls, gold shines. In 2025 central banks bought about 863 tonnes of gold, a sign that some governments trust the system less."
+    },
+    {
+     "type": "myth",
+     "myth": "There is one safe asset you can buy and forget.",
+     "reality": "Safety depends on the season. Long-term US government bonds are free of default risk, but holders lost close to half their market value from 2020 to 2023 as rates rose. Cash is safe from crashes but loses value to inflation. The most reliable protection is to understand which season you are in and to avoid betting everything on one season continuing."
+    },
+    {
+     "type": "check",
+     "q": "You have a fixed-rate mortgage and inflation jumps to 8%. Are you better or worse off in real terms?",
+     "a": "Better off as a borrower, as long as your income keeps up. Your fixed payments and remaining debt shrink in real terms because each dollar you repay buys less."
+    },
+    {
+     "type": "check",
+     "q": "Why did Japan's long stagnation happen even though interest rates were near zero?",
+     "a": "Households, firms and banks were focused on repairing their balance sheets after the 1990 bust, so they paid down debt instead of borrowing to spend. Cheap money did not help when nobody wanted to borrow."
+    }
+   ],
+   "rules": [
+    "Know your season. Ask whether money is melting or hardening before you decide to save, borrow or invest.",
+    "Mild inflation is the default policy goal. Idle cash slowly loses in most modern seasons.",
+    "No asset is safe in every season. Spread your bets across seasons, not just across names."
+   ],
+   "connects": [
+    {
+     "id": "rb-02",
+     "how": "The 1873 to 1896 deflation was the first season on the timeline."
+    },
+    {
+     "id": "rb-05",
+     "how": "The 1970s inflation is the clearest warm season, and Volcker's cure began the long cold one."
+    },
+    {
+     "id": "rb-07",
+     "how": "Deflation traps are Fisher's debt deflation, the dark side of the musical chairs question."
+    },
+    {
+     "id": "rb-10",
+     "how": "Measuring seasons requires a yardstick, and Chapter 10 shows why that yardstick moves."
+    }
+   ]
+  },
+  {
+   "id": "rb-09",
+   "num": "09",
+   "title": "Why empires and their currencies fall",
+   "kicker": "No money has ruled forever. The ones that fell usually fell the same way: war, debt and a slow watering down of the promise.",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "The dollar has been the world's main money for about a century. Before it, other currencies held that role and lost it. This chapter walks through the most famous cases, looks for the common pattern, and then asks honestly what is different today. It is the chapter where humility matters most, because history rhymes but never repeats exactly."
+    },
+    {
+     "type": "h",
+     "text": "Rome: the long watering down"
+    },
+    {
+     "type": "p",
+     "text": "Chapter 2 told the story of the denarius. Rome's army and borders were enormously expensive. As conquest slowed, new silver stopped arriving, but the bills kept coming. Emperors filled the gap by debasing the coin. By the late 200s AD the coinage had collapsed, prices had soared and the state increasingly collected taxes in goods rather than in its own worthless coins."
+    },
+    {
+     "type": "insider",
+     "text": "The story has a twist that few people know. The emperor Constantine introduced a gold coin, the solidus, in the early 300s. In the eastern half of the empire, which became Byzantium, the solidus kept its gold content for roughly 700 years, until it was debased in the 1000s. It was the dollar of the medieval Mediterranean. A money can stay honest for centuries when the state that issues it chooses to keep it so."
+    },
+    {
+     "type": "h",
+     "text": "Spain: rich in silver, poor in the end"
+    },
+    {
+     "type": "p",
+     "text": "In 1545 Spanish colonizers found a mountain of silver at Potosi, in today's Bolivia. Silver from Potosi and Mexico flooded into Spain for over a century, and the Spanish silver coin, the piece of eight, became a world money used from China to the American colonies."
+    },
+    {
+     "type": "p",
+     "text": "Yet the Spanish crown went bankrupt again and again. Philip II stopped payments to his bankers in 1557, 1560, 1575 and 1596. The silver was spent on wars across Europe and on imports, and it flowed out as fast as it came in. Prices across Europe rose several-fold over the 1500s, an episode called the price revolution. Historians still debate how much of that inflation came from American silver and how much from population growth. What is clear is that easy money without a productive base did not make Spain lastingly strong."
+    },
+    {
+     "type": "h",
+     "text": "The Dutch: the first modern financial center"
+    },
+    {
+     "type": "p",
+     "text": "In the 1600s the small Dutch Republic became the trading and financial center of Europe. Amsterdam created the Dutch East India Company in 1602, one of the first companies with tradable shares, and the Bank of Amsterdam in 1609, whose bank money was trusted across Europe. Dutch guilders and bills of exchange financed world trade."
+    },
+    {
+     "type": "p",
+     "text": "Decline came through a mix of costly wars with England and France, rising debt, and loss of trading edge as Britain grew. A disastrous war with Britain from 1780 to 1784 hit hard. It later emerged that the Bank of Amsterdam had secretly lent heavily to the struggling East India Company and the city, which undermined trust in its money. The company was dissolved in 1799 and the bank was wound down in 1819."
+    },
+    {
+     "type": "h",
+     "text": "Britain: the pound sterling"
+    },
+    {
+     "type": "p",
+     "text": "Britain built the most successful money of the 1800s. The Bank of England, founded in 1694, and the gold standard of Chapter 2 made sterling the currency of world trade and London the world's banker. Britain carried enormous debt after the Napoleonic Wars, more than twice its economy, but the Industrial Revolution grew the economy fast enough to carry it. High debt alone did not sink Britain."
+    },
+    {
+     "type": "p",
+     "text": "Two world wars did. Britain sold overseas investments and borrowed heavily from the United States to fight. After 1945 it was a large debtor with a weakened industry. The decline of sterling then took decades: a convertibility crisis in 1947, American financial pressure during the Suez crisis of 1956, a devaluation in 1967, and a loan from the IMF in 1976. The economist Barry Eichengreen showed that the dollar actually overtook sterling as a reserve currency as early as the mid-1920s, fell back in the 1930s, and only pulled clearly ahead after the Second World War. Changes at the top are slow and messy, not sudden."
+    },
+    {
+     "type": "h",
+     "text": "The common pattern"
+    },
+    {
+     "type": "diagram",
+     "key": "empire-cycle",
+     "caption": "A common pattern in past declines: rising power and trust, a peak with a trusted currency and financial center, then war costs, rising debt, debasement or inflation, and a rival taking the lead. A framework, not a law."
+    },
+    {
+     "type": "steps",
+     "items": [
+      "A rising power wins trust through productive strength, trade and sound money.",
+      "Its currency becomes the world's preferred money, and its capital becomes the financial center. Borrowing becomes cheap.",
+      "Cheap borrowing funds wars, overseas commitments and consumption. Debt rises faster than the productive base.",
+      "To pay the bills, the state debases its coin or inflates its paper, and trust starts to fade.",
+      "A rival with stronger production offers an alternative. The center of money moves, usually after a great war."
+     ]
+    },
+    {
+     "type": "p",
+     "text": "A popular chart, often shown by investment firms, lists the leading currencies of the last 600 years with lifespans of roughly 80 to 110 years each: Portugal, Spain, the Netherlands, France, Britain and the United States. Treat it with care. Historians argue about whether reserve currency even means much before the 1800s, the dates are rough, and as the sterling story shows, top currencies often share the stage for decades. The chart is a conversation starter, not a countdown clock."
+    },
+    {
+     "type": "h",
+     "text": "Dalio's big cycle: one framework"
+    },
+    {
+     "type": "p",
+     "text": "The investor Ray Dalio, in his 2021 book Principles for Dealing with the Changing World Order, describes a big cycle of empires. He tracks measures such as education, innovation, competitiveness, economic output, share of world trade, military strength, financial center strength and reserve currency status. In his account, empires rise as education and innovation improve, peak when their currency and financial center dominate, and decline as debts mount, money is printed, wealth gaps widen, internal conflict grows and a rival rises."
+    },
+    {
+     "type": "p",
+     "text": "The framework is useful because it makes you look at many measures at once. It is not a law of nature. Critics point out that the sample of empires is small, that the stages are easier to see in hindsight than in real time, and that very different histories get squeezed into one shape. Use it as a checklist for questions, not a calendar for predictions."
+    },
+    {
+     "type": "quote",
+     "text": "If something cannot go on forever, it will stop.",
+     "by": "Herbert Stein, economist and adviser to Presidents Nixon and Ford, 1980s"
+    },
+    {
+     "type": "h",
+     "text": "What looks familiar now"
+    },
+    {
+     "type": "list",
+     "items": [
+      "Interest now costs more than defense. In fiscal year 2026 the US paid about $1,052 billion in net interest against about $965 billion for national defense, the third year in a row. The historian Niall Ferguson has argued that a great power spending more on debt service than on defense is a warning sign.",
+      "Debt rising faster than the economy. US debt held by the public is about 100% of GDP, and the deficit was about $1.99 trillion in 2026.",
+      "Allies hedging. Foreign official holdings of Treasuries at the New York Fed fell about $254 billion from February to October 2026, and central banks bought about 863 tonnes of gold in 2025.",
+      "A tax base leaning on wages. About 86% of federal receipts in 2026 came from individual income and payroll taxes, while machines and capital are taking a larger share of income."
+     ]
+    },
+    {
+     "type": "h",
+     "text": "What is genuinely different"
+    },
+    {
+     "type": "list",
+     "items": [
+      "No ready successor. The euro has no single government bond market and no single treasury behind it. China keeps controls on money leaving the country, which limits the yuan as a reserve. This project's research found that rivals' strongest cards today are in hardware, like rare earth magnets, batteries and solar technology, not in currency.",
+      "US debt is in its own currency. Spain owed its bankers in silver it could not create. The US owes dollars it can create. It is unlikely to default outright. The risk is inflation and higher interest rates, which is a slower, quieter kind of decline.",
+      "Digital rails may extend the dollar's reach. Most of the growth in dollar stablecoins went to holders outside the US, spreading dollar use rather than shrinking it.",
+      "Network effects are global and instant. Payments, oil, loans and contracts all run on dollar plumbing, and switching costs are enormous."
+     ]
+    },
+    {
+     "type": "table",
+     "cols": [
+      "Scenario (this project's desk view)",
+      "Now to 2028",
+      "2028 to 2035",
+      "2035 to 2050"
+     ],
+     "rows": [
+      [
+       "S1: the dollar system extends, absorbing new rails",
+       "62%",
+       "45%",
+       "32%"
+      ],
+      [
+       "S2: a neutral layer (for example gold or a neutral token) gains a real role",
+       "15%",
+       "22%",
+       "28%"
+      ],
+      [
+       "S3: energy or compute becomes a monetary anchor",
+       "1%",
+       "3%",
+       "10%"
+      ],
+      [
+       "S4: a disorderly reset",
+       "22%",
+       "30%",
+       "30%"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "These are this project's own judgment, made in October 2026, not facts. Notice two things. The dollar stays the most likely single outcome for years. But the chance of something messier grows the further out you look. Both of those can be true at once."
+    },
+    {
+     "type": "check",
+     "q": "What do Rome, Spain and Britain have in common in the decline of their money?",
+     "a": "Each faced war costs and debts larger than their productive base could carry, leaned on debasement, borrowing or inflation to pay, and saw trust and leadership shift to a stronger rival."
+    },
+    {
+     "type": "check",
+     "q": "Why is Dalio's big cycle a framework rather than a law?",
+     "a": "It is based on a small number of historical cases, its stages are clearer in hindsight than in real time, and very different histories are fitted to one shape. It is useful for asking questions, not for predicting dates."
+    }
+   ],
+   "rules": [
+    "Watch the ratio of interest to defense, and of debt to output. Those ratios have warned before.",
+    "Money centers move slowly and messily. Do not bet on a sudden collapse or on permanence.",
+    "A strong money needs a strong productive base. Easy money without production has never lasted."
+   ],
+   "connects": [
+    {
+     "id": "rb-02",
+     "how": "Rome's debasement and the gold standard's discipline are two ends of the same story."
+    },
+    {
+     "id": "rb-04",
+     "how": "The pillars of the dollar loop are what make this empire's currency different."
+    },
+    {
+     "id": "rb-07",
+     "how": "Debt outgrowing income, from the musical chairs chapter, is the engine of decline."
+    },
+    {
+     "id": "rb-12",
+     "how": "The rivals and new rails on today's board are the live test of this chapter."
+    }
+   ]
+  },
+  {
+   "id": "rb-10",
+   "num": "10",
+   "title": "The yardstick problem",
+   "kicker": "We measure prices with money, but money itself keeps changing size. It is like measuring a room with a rubber ruler.",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Chapter 8 talked about prices rising and falling. But compared to what? Every price is measured in money, and money's value is itself moving. This chapter gives you the tools to see through the moving ruler: nominal versus real, time prices, and the difference between consumer prices and asset prices."
+    },
+    {
+     "type": "callout",
+     "label": "Picture this",
+     "text": "Imagine measuring your child's height every year with a tape measure made of rubber that stretches a little each year. The marks say your child grew 10 centimeters. But the tape stretched 4. Your child really grew about 6. Money is that rubber tape. Every price, wage and savings balance you see is read off a tape that keeps stretching."
+    },
+    {
+     "type": "diagram",
+     "key": "yardstick",
+     "caption": "A stretching yardstick: if the ruler (money) stretches, numbers rise even when the real thing has not grown. Real values strip out the stretch."
+    },
+    {
+     "type": "h",
+     "text": "Nominal and real"
+    },
+    {
+     "type": "list",
+     "items": [
+      "Nominal means the number on the label, in today's money. Your salary is $50,000. A house costs $417,500.",
+      "Real means the number adjusted for the change in money's buying power, so you can compare across time.",
+      "The basic formula: real value equals nominal value divided by (1 plus inflation). The same idea works for growth rates: real growth is roughly nominal growth minus inflation."
+     ]
+    },
+    {
+     "type": "callout",
+     "label": "Worked example",
+     "text": "You earn $50,000. You get a 3% raise, to $51,500. Prices rose 5% over the same year. In last year's dollars your new pay is $51,500 divided by 1.05, which is about $49,048. Your nominal pay went up $1,500. Your real pay went down about $950, or about 1.9%. You can buy less than last year, even though your paycheck says you got a raise."
+    },
+    {
+     "type": "p",
+     "text": "The same logic applies to savings. This project found that the average US savings account paid about 0.38% in 2026. With inflation running around 3.5% that year, the real return on that savings account was roughly minus 3% a year. A Treasury bill paying about 4.25% at the same time had a real return of a little under plus 1%. Both are very safe. The real results are very different."
+    },
+    {
+     "type": "insider",
+     "text": "When the news says the economy grew 5%, ask: nominal or real? In the second quarter of 2026 US nominal GDP grew at about an 8.5% annualized rate, but real GDP grew only about 2.2%. Most of the nominal growth was the ruler stretching."
+    },
+    {
+     "type": "h",
+     "text": "Time prices: measuring in hours of life"
+    },
+    {
+     "type": "p",
+     "text": "One way around the rubber ruler is to measure prices in hours of work. How many hours must an ordinary worker labor to buy something? This sidesteps the changing size of the dollar, because wages and prices are both in the same money. The owner wrote, time is the real currency for now. Time prices take that seriously."
+    },
+    {
+     "type": "table",
+     "cols": [
+      "Item",
+      "Then",
+      "Now",
+      "Change in hours of work"
+     ],
+     "rows": [
+      [
+       "All consumer prices (the CPI basket)",
+       "1990",
+       "2026",
+       "About 19% fewer hours"
+      ],
+      [
+       "Food at home",
+       "1990",
+       "2026",
+       "About 24% fewer hours"
+      ],
+      [
+       "New cars, adjusted for quality",
+       "1990",
+       "2026",
+       "About 54% fewer hours"
+      ],
+      [
+       "Televisions",
+       "1993",
+       "2026",
+       "About 99.5% fewer hours"
+      ],
+      [
+       "Median existing home, full price",
+       "1990",
+       "2026",
+       "About 42% more hours (about 9,000 to 12,800 hours)"
+      ],
+      [
+       "Monthly payment on a median home",
+       "early 2020",
+       "2026",
+       "About 40 to 68 hours a month"
+      ],
+      [
+       "Family health insurance premium",
+       "1999",
+       "2025",
+       "About twice the hours (429 to 861)"
+      ],
+      [
+       "Published public 4-year college tuition",
+       "1995 to 1996",
+       "2025 to 2026",
+       "About 58% more hours"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "These figures come from this project's research, using the average hourly wage of production and nonsupervisory workers: about $10.20 in 1990 and $32.60 in September 2026. A few 1990 inputs are from memory sources and not perfectly verified, so read the house rows as approximate. The pattern, though, is strong and confirmed by independent studies."
+    },
+    {
+     "type": "insider",
+     "text": "Goods that can be made in factories and traded across borders keep getting cheaper in hours of work. Things tied to land, local services and institutions, like housing, health care and college, keep getting more expensive. Your hour buys more food and electronics than in 1990, and less of a house than in 2020. Most arguments about whether life is getting better or worse are really people looking at different halves of this table."
+    },
+    {
+     "type": "h",
+     "text": "Asset inflation versus consumer inflation"
+    },
+    {
+     "type": "p",
+     "text": "The Consumer Price Index (CPI) measures the prices of things people buy to use: food, rent, fuel, clothes, medical care. It does not include the prices of things people buy to own: stocks, bonds and houses as investments. For housing, CPI counts rent and an estimate of what owners would pay to rent their own homes, not the purchase price."
+    },
+    {
+     "type": "p",
+     "text": "That gap matters. From February 2020 to 2026, average hourly pay rose about 32.5% and consumer prices about 30.3%, so real pay barely moved. Over a similar period, house prices rose about 59% and the S&P 500 stock index about 140%. If you only watch CPI, you miss that the price of entering ownership ran far ahead of pay."
+    },
+    {
+     "type": "table",
+     "cols": [
+      "Measure, about 2020 to 2026",
+      "Rise"
+     ],
+     "rows": [
+      [
+       "Average hourly pay",
+       "About 32.5%"
+      ],
+      [
+       "Consumer prices (CPI)",
+       "About 30.3%"
+      ],
+      [
+       "House prices",
+       "About 59%"
+      ],
+      [
+       "S&P 500 stock index",
+       "About 140%"
+      ]
+     ]
+    },
+    {
+     "type": "myth",
+     "myth": "If inflation is low, your money is holding its value.",
+     "reality": "Low consumer inflation means your money holds its value for buying groceries and gadgets. It says nothing about whether your money can still buy a house, a business or a share of the stock market. When new money flows mainly into assets, consumer inflation can stay modest while ownership slips out of reach. This is asset inflation, and it is invisible in the headline number."
+    },
+    {
+     "type": "h",
+     "text": "Other rulers people propose"
+    },
+    {
+     "type": "p",
+     "text": "Some people say: measure everything in gold. Gold is not a stable ruler either. In the year to October 2026 gold went from a high of about $5,586 an ounce to about $4,131. Others say: measure everything in energy, such as kilowatt-hours. This project worked through the arithmetic. Because solar panels have become dramatically cheaper (module costs fell from about $132 per watt in 1975 to about $0.27 in 2024, in today's dollars), a fixed kilowatt-hour tends to buy less over time. Goods priced in kilowatt-hours would show inflation, not stability, while energy keeps getting cheaper."
+    },
+    {
+     "type": "p",
+     "text": "There is no perfect ruler. The practical skill is to know which ruler you are using, and to check important decisions with more than one: dollars, real dollars, hours of work and perhaps a hard asset."
+    },
+    {
+     "type": "check",
+     "q": "Your rent rises from $1,500 to $1,575 and your pay rises from $4,000 to $4,100 a month. Did rent take a bigger or smaller share of your pay?",
+     "a": "Bigger. Rent went from 37.5% of pay to about 38.4%, because rent rose 5% while pay rose only 2.5%."
+    },
+    {
+     "type": "check",
+     "q": "Why can house prices double while official inflation stays moderate?",
+     "a": "Because the consumer price index counts rents and an estimate of owners' rental cost, not the purchase price of homes as assets. Asset prices can surge without showing up in the headline inflation number."
+    }
+   ],
+   "rules": [
+    "Always ask: nominal or real? A raise below inflation is a pay cut.",
+    "Measure what matters to you in hours of work, not just dollars.",
+    "Watch asset prices as well as consumer prices. The price of ownership is the price of your future."
+   ],
+   "connects": [
+    {
+     "id": "rb-01",
+     "how": "The unit of account job from Chapter 1 is exactly this ruler."
+    },
+    {
+     "id": "rb-08",
+     "how": "Seasons only make sense once you correct for the moving ruler."
+    },
+    {
+     "id": "rb-11",
+     "how": "Asset prices outrunning pay is why the board game is hard to enter."
+    },
+    {
+     "id": "rb-12",
+     "how": "Energy as a ruler returns when we look at energy as collateral."
+    }
+   ]
+  },
+  {
+   "id": "rb-11",
+   "num": "11",
+   "title": "The new board game",
+   "kicker": "In Monopoly the bank hands every player $1,500. In real life nobody does. So how does a new player get onto the board?",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "The owner asked a question that sits under every fear about the future of money."
+    },
+    {
+     "type": "quote",
+     "text": "If a new board game runs but no players have the starting money, how can a new player with no royal lineage and no inherited wealth start?",
+     "by": "The owner of this project, in their own words"
+    },
+    {
+     "type": "p",
+     "text": "This chapter answers it in three parts: how money actually enters the board, the ladder of rungs a newcomer climbs, and what history says about times when the ladder was rebuilt. Then it looks at the routes open in 2026, using this project's own research."
+    },
+    {
+     "type": "h",
+     "text": "How money enters the board"
+    },
+    {
+     "type": "p",
+     "text": "In Monopoly, every player starts with $1,500 from the bank. In the real economy there is no starting allowance. Chapter 6 showed the real doors through which money arrives."
+    },
+    {
+     "type": "list",
+     "items": [
+      "Wages and sales: a business pays you for your work or buys what you make. This is the main door for most people.",
+      "Bank loans: a bank creates a deposit when it lends to you. This door opens only if a lender believes you can repay, often because you already have income or something to pledge.",
+      "Government spending and transfers: the government pays wages, contracts and benefits, which adds money to private hands. Programs like child tax credits, education grants and, in some proposals, universal income payments enter here."
+     ]
+    },
+    {
+     "type": "callout",
+     "label": "Picture this",
+     "text": "The real board game has no starting cash pile. Instead there are three ways onto the board. You can work for a player already on it, who pays you. You can persuade the bank to lend you chips, which usually requires showing chips you already have or wages coming in. Or the game's organizer can hand out chips, which happens rarely and in small amounts. Most players start through the first door, then use the chips they earn to climb."
+    },
+    {
+     "type": "diagram",
+     "key": "board-start",
+     "caption": "Entering the board: money arrives through wages and sales, bank loans, or government spending. Each door leads to the ladder: job, savings, credit, collateral, ownership."
+    },
+    {
+     "type": "h",
+     "text": "The ladder of rungs"
+    },
+    {
+     "type": "steps",
+     "items": [
+      "Job: trade time and skill for income. This gives you a flow of money.",
+      "Savings: keep part of that flow. This gives you a stock of money and a buffer against shocks.",
+      "Credit: a record of reliably repaying small debts. This lets lenders trust you with larger ones.",
+      "Collateral: an asset you can pledge, like a house deposit, equipment or a business's sales history. This unlocks cheaper and larger loans.",
+      "Ownership: a share of something that earns without your time, like a home, a business or stocks. This is where wealth compounds."
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Each rung converts what you have into what you need for the next one. Wages become savings. Savings plus a repayment record become credit. Credit plus savings buy collateral. Collateral and its income become ownership. The owner's Ledger Age series describes three mindsets: the Worker chases today's cash, the Investor studies the maze, and the Architect borrows tomorrow's cash today, puts it to work and owns the maze. The ladder is the path from Worker to Architect."
+    },
+    {
+     "type": "myth",
+     "myth": "The Architect's play is simple: borrow at about 6% and invest in stocks that return about 13.6% a year.",
+     "reality": "Borrowing to own assets is how many fortunes were built, and the owner is right that ownership, not wages, decides who keeps up. But the 13.6% is a recent ten-year average, not a promise. From 2000 to 2009 the S&P 500 returned roughly nothing. Borrowed money must be repaid on schedule even when assets fall, which is how the 2008 crisis ruined many leveraged owners. The Architect's rule of survival is to borrow only what you can service through a bad season without selling."
+    },
+    {
+     "type": "h",
+     "text": "When the ladder was rebuilt before"
+    },
+    {
+     "type": "table",
+     "cols": [
+      "Program",
+      "What it gave non-owners",
+      "Scale",
+      "Who was left out"
+     ],
+     "rows": [
+      [
+       "Homestead Act, 1862",
+       "Free land, the main productive asset of the age, for living on and farming it",
+       "About 270 million acres, about 10% of US land. Nearly 4 million claims, about 1.6 million completed deeds",
+       "Native nations whose land it was, and many Black Americans in practice"
+      ],
+      [
+       "Public high school movement, about 1910 to 1940",
+       "A free credential that raised earning power",
+       "The share of young people with a high school diploma rose from about 9% to about half",
+       "Many Black students in segregated, underfunded schools"
+      ],
+      [
+       "GI Bill, 1944",
+       "Paid education and government-backed home loans for veterans",
+       "About 7.8 million of 16 million veterans trained. Nearly 2.4 million home loans from 1944 to 1952",
+       "Many Black veterans, through local discrimination, and most women"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Each reopening gave non-owners a productive asset or a credential that was large relative to the economy, and paired it with credit. Each also had exclusions, and the people left out became the next generation shut outside the board. The research of Raj Chetty and colleagues found that 90% of Americans born in 1940 out-earned their parents, against only about 50% of those born in the 1980s."
+    },
+    {
+     "type": "h",
+     "text": "Today's routes, from this project's research"
+    },
+    {
+     "type": "table",
+     "cols": [
+      "Rung",
+      "What the 2026 data say"
+     ],
+     "rows": [
+      [
+       "First job",
+       "Unemployment for ages 20 to 24 was 8.0% in September 2026, down from 9.2% a year earlier. Entry roles in fields exposed to AI are thinning, and recent graduates face 5.6% unemployment against 4.2% overall."
+      ],
+      [
+       "Credit file",
+       "Under age 21, a credit card needs independent income or a cosigner. Realistic paths: authorized user on a parent's card, a secured card, or a credit-builder loan."
+      ],
+      [
+       "Savings and housing",
+       "The broken rung. Median first-time home buyer age is a record 40. Saving a 10% down payment on a median home at 10% of young pay took about 6.2 years in 1990 and about 10 years now. About 49% of adults under 30 live with a parent."
+      ],
+      [
+       "Launching a business",
+       "The cheap but steep rung. A digital brand can launch for about $525 to $2,850, a small physical brand for about $1,900 to $7,400. But median solo founder revenue fell 23% in 2025 while the top tenth rose 19%, and platforms charge a growing toll for attention."
+      ],
+      [
+       "Ownership",
+       "The bottom half of US households hold about 0.58% of directly held stocks and funds. Since late 2019, the top 10% took about 67.5% of the $78 trillion rise in household wealth, and the bottom half about 3.1%."
+      ],
+      [
+       "Child accounts",
+       "Trump Accounts give a $1,000 seed to children born 2025 to 2028. The seed alone grows to about $2,400 in today's money by 18 at 5% real return. Adding $50 a month reaches about $19,500. Today's 18-year-olds get no seed."
+      ]
+     ]
+    },
+    {
+     "type": "insider",
+     "text": "The owner worried that people living on a universal income would lose access to credit and assets, locking out their children. Under current law, this project found that worry is not supported: a steady benefit can count as income for a loan, roughly $69,000 of mortgage capacity per $1,000 a month. The real dividing line is not income source but ownership. Wage earners and benefit receivers are squeezed in the same places, housing, health cover and energy. The three tiers behave like two classes: owners, and people who depend on an income stream."
+    },
+    {
+     "type": "h",
+     "text": "What actually moves a newcomer up"
+    },
+    {
+     "type": "list",
+     "items": [
+      "Get an income door open early, ideally in work that AI complements or that needs physical trust and licensing.",
+      "Build a thin credit file before you need it, and never miss a payment.",
+      "Own something from your first paycheck, even a small, diversified slice of the stock market. Ownership compounds while you sleep.",
+      "Treat a cheap business launch as a skills and equity lottery ticket, not a plan to quit everything.",
+      "Watch housing supply politics in your city. Broad, by-right zoning, as in Auckland after 2016, lowered rents in a measurable way. Land, not the house, is most of the price in expensive cities."
+     ]
+    },
+    {
+     "type": "check",
+     "q": "In the real economy, what are the three doors through which money reaches a new player?",
+     "a": "Wages or sales from someone already on the board, loans from a bank that creates new deposits, and government spending or transfers."
+    },
+    {
+     "type": "check",
+     "q": "What did the Homestead Act, public high schools and the GI Bill have in common?",
+     "a": "Each gave non-owners a productive asset or credential that was large relative to the economy, often paired with credit, and each excluded some groups, who were left behind."
+    }
+   ],
+   "rules": [
+    "There is no starting cash. Open an income door first, then climb: savings, credit, collateral, ownership.",
+    "Own something from your first paycheck. Ownership, not income, decides who keeps up.",
+    "Leverage is a ladder and a trapdoor. Borrow only what you can carry through a bad season.",
+    "Reopenings worked when they gave real assets at scale. Judge any new program by that test."
+   ],
+   "connects": [
+    {
+     "id": "rb-06",
+     "how": "The doors onto the board are the money creation channels of Chapter 6."
+    },
+    {
+     "id": "rb-10",
+     "how": "Asset prices outrunning pay is why the housing rung broke."
+    },
+    {
+     "id": "rb-12",
+     "how": "Tokens and new rails change how money moves, but not who owns the assets underneath."
+    }
+   ]
+  },
+  {
+   "id": "rb-12",
+   "num": "12",
+   "title": "Today's board: old anchors, new rails",
+   "kicker": "The money in your app may look new, but under it sit the oldest anchors in the system: government bonds, bank credit and gold.",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Every chapter so far has built toward this one. Here is the board as it stands in October 2026. The owner divided it into two sets. Set 1 is gold, Treasury bonds and bank credit. Set 2 is stablecoins, tokens and crypto rails. The big question is whether Set 2 replaces Set 1. This project's answer, after three rounds of research, is no. Set 1 is absorbing Set 2. In the project's phrase, it is an acquisition, not a merger."
+    },
+    {
+     "type": "h",
+     "text": "The layers of money today"
+    },
+    {
+     "type": "diagram",
+     "key": "money-layers",
+     "caption": "The layers of money in 2026: gold at the base for nations, then central bank money, bank deposits and Treasuries, with tokens and stablecoins sitting on top and backed by Treasuries."
+    },
+    {
+     "type": "table",
+     "cols": [
+      "Layer",
+      "What backs it",
+      "Size, from this project's data",
+      "Who uses it"
+     ],
+     "rows": [
+      [
+       "Gold",
+       "Nothing but itself. No issuer, no promise",
+       "About 222,600 tonnes above ground, worth about $29.6 trillion. Central banks hold about 39,000 tonnes",
+       "Central banks as a neutral reserve, savers as insurance"
+      ],
+      [
+       "Central bank money",
+       "The Fed's balance sheet and its legal authority",
+       "Fed total assets about $6.76 trillion. Bank reserves about $3.0 trillion",
+       "Banks, the government, and you through paper cash"
+      ],
+      [
+       "Treasuries",
+       "The taxing power of the US government",
+       "Gross federal debt about $40.4 trillion. Marketable debt about $31.8 trillion",
+       "Everyone: foreign governments, banks, funds, stablecoin issuers"
+      ],
+      [
+       "Bank deposits",
+       "Bank loans, bank capital and deposit insurance up to $250,000",
+       "About $19.6 trillion of US deposits",
+       "Households and businesses for daily money"
+      ],
+      [
+       "Stablecoins",
+       "By law, cash, bank deposits and Treasury bills of 93 days or less",
+       "About $304 billion, flat for a year. Tether about $183 billion, USDC about $73 billion",
+       "Traders, cross-border users, people in weak-currency countries"
+      ],
+      [
+       "Bitcoin and crypto",
+       "Scarcity by code and network belief, no issuer",
+       "About 20.1 million bitcoin at about $84,000, roughly $1.7 trillion",
+       "Holders seeking an asset outside the system"
+      ]
+     ]
+    },
+    {
+     "type": "h",
+     "text": "Set 1: three jobs, not one layer"
+    },
+    {
+     "type": "list",
+     "items": [
+      "Gold is the neutral reserve. It has no issuer to default and cannot be frozen if you hold it at home. Central banks bought about 863 tonnes in 2025. That buying rose after Russia's reserves were frozen in 2022.",
+      "Treasuries are the prime collateral. Stablecoins, banks, money funds and foreign governments all hold them. They are the asset that the rest of the system stands on.",
+      "Bank credit decides who can borrow against future income. A mortgage, a car loan or a first business loan still needs someone who studies your income and absorbs the loss if you fail."
+     ]
+    },
+    {
+     "type": "h",
+     "text": "Set 2: new rails on old anchors"
+    },
+    {
+     "type": "p",
+     "text": "Stablecoins are tokens on a blockchain that promise to be worth one dollar each. Under the US GENIUS Act, from January 18, 2027, every compliant stablecoin must be backed by cash, bank deposits or Treasury bills of 93 days or less. That means every new stablecoin dollar is new demand for Set 1 assets. Stablecoins cannot pay holders interest by law. And they cannot lend. They move money, they do not create credit."
+    },
+    {
+     "type": "insider",
+     "text": "Stablecoin issuers keep the interest. When you hold a dollar stablecoin, the issuer invests your dollar in Treasury bills and keeps the yield. Circle, the issuer of USDC, earned about $668 million of reserve income in one quarter of 2026 and paid about 61.5% of it to distribution partners such as Coinbase. Across the market, this float is worth roughly $11.7 billion a year at a 4.25% bill rate. Idle stablecoins cost you the interest you could have earned."
+    },
+    {
+     "type": "myth",
+     "myth": "Crypto will replace banks, so people with savings will stop borrowing from banks.",
+     "reality": "Crypto is replacing some rails, how money moves and settles, not the balance sheet behind it. All crypto-backed lending was about $56 billion in mid-2026, roughly 0.4% of US bank loans, and it only lends against assets you already own. A loan against your future income still comes from a regulated lender. Banks are adapting too: JPMorgan launched a deposit token on a public blockchain in 2025."
+    },
+    {
+     "type": "myth",
+     "myth": "Bitcoin's 21 million coins, times ten, can support about $300 trillion of credit.",
+     "reality": "That figure works out to bitcoin at the same total value as all gold, about $1.43 million per coin, then multiplied by ten. Real crypto lending runs the other way: borrowers pledge about $2 of crypto to borrow $1, and all crypto-backed lending is about 0.05 times bitcoin's value, not 10 times."
+    },
+    {
+     "type": "h",
+     "text": "Digital central bank money"
+    },
+    {
+     "type": "list",
+     "items": [
+      "United States: a federal ban on a retail central bank digital currency is now law, carried in the same bill as a 2026 housing act. The Fed cannot issue a retail digital dollar. Digital dollars will come from private stablecoins and bank tokens.",
+      "Europe: a digital euro is under negotiation, with a holding cap of around 3,000 euros discussed and issuance in 2029 at the earliest.",
+      "China: the digital yuan, e-CNY, runs domestic pilots, including programmable payments that expire. The cross-border mBridge platform has settled about $55 billion in total. Saudi Arabia left it in May 2025."
+     ]
+    },
+    {
+     "type": "h",
+     "text": "Energy as collateral and ceiling"
+    },
+    {
+     "type": "p",
+     "text": "This project's central research question was whether energy will become money. The answer: energy will not replace the dollar you spend. It is taking over gold's old job as the scarce physical thing that caps how much real output any money can claim. In an economy of AI and robots, output grows with delivered electric power, and power cannot be printed."
+    },
+    {
+     "type": "p",
+     "text": "Energy is also entering the system as collateral inside the dollar. Power plants, data centers, long electricity contracts and computer chips back new dollar loans. The project calls this the watt-dollar, a descendant of the 1974 petrodollar. US data centers used about 176 terawatt-hours of electricity in 2023, about 4.4% of US power, and projections for 2028 range from 325 to 580. Consumer energy prices rose about 20.4% in the year to September 2026."
+    },
+    {
+     "type": "diagram",
+     "key": "watt",
+     "caption": "Energy as collateral and as ceiling: dollar loans are increasingly backed by power plants, data centers and chips, while delivered power caps how much real output money can buy."
+    },
+    {
+     "type": "p",
+     "text": "Energy fails as everyday money because a kilowatt-hour is perishable, tied to a place, and keeps getting cheaper as solar spreads. Elon Musk's suggestion of a currency measured in watts and tonnage is closer to a post-scarcity accounting idea, similar to the 1930s Technocracy movement's energy certificates. Its real problem is the same as every planned money: who decides the allocations."
+    },
+    {
+     "type": "insider",
+     "text": "The rivals' strongest card is hardware, not currency. China's money moves, like selling some Treasuries or building alternative payment rails, have little bite so far. Its export controls on rare earth magnets, battery materials and, since October 2026, solar manufacturing know-how go straight at the watt-dollar, because the US Treasury can issue bills but not magnets."
+    },
+    {
+     "type": "h",
+     "text": "The toll booths"
+    },
+    {
+     "type": "p",
+     "text": "On any board, some players earn by owning the squares others must cross. In 2026 the biggest toll booths are not always banks."
+    },
+    {
+     "type": "table",
+     "cols": [
+      "Toll booth",
+      "What it charges",
+      "From this project's data"
+     ],
+     "rows": [
+      [
+       "Banks on savings",
+       "The gap between what they pay you and what safe bills pay",
+       "Average savings 0.38% against bills about 4.25%. On $50,000 that is about $1,935 a year kept by the bank"
+      ],
+      [
+       "Stablecoin issuers",
+       "The full interest on reserves",
+       "Holders get 0% by law. Float worth about $11.7 billion a year"
+      ],
+      [
+       "Online marketplaces",
+       "Fees and ads on each sale",
+       "Advertising reached about 41.9% of Amazon's seller services revenue in early 2026, up from 23.5% in 2019. Etsy's take rate rose from 16.5% to 24.2%"
+      ],
+      [
+       "Dollar plumbing",
+       "Access to the payment system itself",
+       "Sanctions can cut a country out. Hormuz shipping tolls in 2026 were partly demanded in yuan"
+      ],
+      [
+       "Land",
+       "Rent and price of location",
+       "Land is about 68% of single-family home value in San Jose and Los Angeles, about 40% nationally"
+      ]
+     ]
+    },
+    {
+     "type": "check",
+     "q": "Under the GENIUS Act, what must back a compliant US stablecoin, and who earns the interest?",
+     "a": "Cash, bank deposits and Treasury bills of 93 days or less. The issuer and its distribution partners earn the interest. Holders cannot be paid interest by the issuer."
+    },
+    {
+     "type": "check",
+     "q": "Why does this project say energy is replacing gold's old job rather than the dollar?",
+     "a": "Because delivered energy is the scarce physical limit on how much real output money can buy, as gold once was, and energy assets increasingly back dollar loans. But a kilowatt-hour is perishable, local and getting cheaper, so it fails as spendable money."
+    }
+   ],
+   "rules": [
+    "New rails, old anchors. Ask what sits under any new money, and who earns the interest on it.",
+    "Gold is insurance against the system, not a tool inside it. Hold it as insurance, not as income.",
+    "Find the toll booths. The people who own the crossing points earn whether players win or lose."
+   ],
+   "connects": [
+    {
+     "id": "rb-06",
+     "how": "Stablecoins add a new layer to the money layers of Chapter 6, backed by the Treasury layer."
+    },
+    {
+     "id": "rb-04",
+     "how": "Stablecoins are becoming a new channel in the dollar recycling loop."
+    },
+    {
+     "id": "rb-05",
+     "how": "The watt-dollar is a descendant of the 1974 petrodollar."
+    },
+    {
+     "id": "rb-13",
+     "how": "Several of the eye-openers live on this board."
+    }
+   ]
+  },
+  {
+   "id": "rb-13",
+   "num": "13",
+   "title": "Eye-openers: what most people never notice",
+   "kicker": "Sixteen quiet facts about money that, once seen, cannot be unseen.",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Each chapter so far has hidden a few surprises. This chapter gathers them in one place, with a few new ones. Each is something that sits in plain sight in the official numbers, yet most people go their whole lives without noticing it. Read them slowly. For each one, ask yourself where it touches your own money."
+    },
+    {
+     "type": "h",
+     "text": "About your own money"
+    },
+    {
+     "type": "insider",
+     "text": "1. Your bank deposit is a loan you made to the bank. The balance in your account is the bank's debt to you. You are an unsecured lender, protected by deposit insurance up to $250,000 per depositor, per bank, per ownership category. Above that, you are trusting the bank's books. That is why depositors ran from Silicon Valley Bank in March 2023."
+    },
+    {
+     "type": "insider",
+     "text": "2. Banks create money when they lend. They do not lend out your savings. A new loan creates a new deposit at the same instant, as the Bank of England explained in 2014. In the United States, reserve requirements have been zero since March 2020. Bank lending is limited by capital, demand, profit and the interest rate, not by a fixed multiple of reserves."
+    },
+    {
+     "type": "insider",
+     "text": "3. Treasury bills are the cash of the rich. In 2026 the average US savings account paid about 0.38%, while a three-month Treasury bill paid about 4.25%. On $50,000 that is about $190 a year against about $2,125. Wealthier savers and companies keep their cash in bills and money market funds. Many ordinary savers leave it in accounts that pay almost nothing, and the bank keeps the difference."
+    },
+    {
+     "type": "insider",
+     "text": "4. Most money is not cash at all. Paper notes and coins are a small share of the money supply. Most money is bank deposits, which are entries in ledgers. When people say the government prints money, what usually grows is ledger entries at banks and at the Fed."
+    },
+    {
+     "type": "h",
+     "text": "About the government's money"
+    },
+    {
+     "type": "insider",
+     "text": "5. Inflation is a silent tax. No law is passed and no vote is taken, yet inflation moves buying power from people holding money and fixed-rate claims to people who owe money, and the largest debtor is the government. In 2026 the average interest rate on US government debt was about 3.2 to 3.5%, while nominal income had grown about 5.7% a year over the decade. That gap quietly shrinks the debt relative to the economy, paid for by bondholders and savers."
+    },
+    {
+     "type": "quote",
+     "text": "There is no subtler, no surer means of overturning the existing basis of society than to debauch the currency.",
+     "by": "John Maynard Keynes, The Economic Consequences of the Peace, 1919"
+    },
+    {
+     "type": "insider",
+     "text": "6. Seigniorage: issuing money is profitable. A $100 bill costs a few cents to print and buys $100 of goods. More importantly, the Fed buys interest-paying bonds with money it creates, earns the interest, and in normal years sends its profits to the Treasury. Stablecoin issuers have found a private version: they take your dollar, buy Treasury bills and keep the yield."
+    },
+    {
+     "type": "insider",
+     "text": "7. The Fed can lose money and keep running. From late 2022, the Fed paid more interest on bank reserves than it earned on its bonds. Instead of asking for a bailout, it recorded the losses as a deferred asset, an IOU to itself to be repaid from future profits before it resumes sending money to the Treasury. A central bank that creates its own currency cannot run out of it. It can only lose credibility."
+    },
+    {
+     "type": "insider",
+     "text": "8. Interest on the national debt now exceeds defense. In fiscal year 2026 the US spent about $1,052 billion on net interest and about $965 billion on national defense. Interest was higher in 2024, 2025 and 2026. Interest took about 19.5% of all federal revenue. About 36% of the government's marketable debt reprices within a year, so if rates stay high, the bill keeps climbing."
+    },
+    {
+     "type": "insider",
+     "text": "9. US gold is still booked at $42.22 an ounce. The Treasury owns about 261.5 million ounces of gold and records it at the 1973 legal price, about $11 billion in total. At market prices it is worth about $1.08 trillion. Revaluing it would raise about one year of interest payments, once. It is a one-time gain, not a fix for deficits that recur every year."
+    },
+    {
+     "type": "insider",
+     "text": "10. Workers carry most of the federal tax load. In 2026 about 86% of federal receipts came from individual income and payroll taxes, and only about 7% from corporate taxes, down from about 11% two years earlier as companies expensed huge investments in AI. As machines take a larger share of income, this tax base is under quiet pressure."
+    },
+    {
+     "type": "h",
+     "text": "About the world's money"
+    },
+    {
+     "type": "insider",
+     "text": "11. Sanctions run through dollar plumbing. Most international payments pass through dollar accounts at US banks. That gives Washington the power to cut a country, bank or person out of the system. When Western governments froze about $300 billion of Russia's reserves in 2022, every central bank noticed. Central banks then bought gold at a record pace, about 863 tonnes in 2025, because gold held at home cannot be frozen by someone else."
+    },
+    {
+     "type": "insider",
+     "text": "12. The Cantillon effect. In the 1700s the banker and writer Richard Cantillon noticed that new money does not reach everyone at once. Those who receive it first spend it before prices rise. Those who receive it last face higher prices first. This project's data refine the idea: in 2020 and 2021, checks sent directly to households lifted the bottom half's share of wealth from 1.7% to 2.4%. But owners of assets captured most of the dollar gains. Since late 2019 the top 10% took about 67.5% of the $78 trillion rise in household wealth."
+    },
+    {
+     "type": "insider",
+     "text": "13. Stablecoin issuers keep the interest. Under the GENIUS Act, holders of compliant US stablecoins cannot be paid interest by the issuer. The issuer invests the reserves in Treasury bills and keeps the yield, often sharing it with distributors. At a 4.25% bill rate, the whole market's float is worth about $11.7 billion a year. Each $1,000 left idle in a stablecoin gives up about $42.50 a year."
+    },
+    {
+     "type": "insider",
+     "text": "14. Mortgage rates are set more by the bond market than by the Fed. The Fed sets a short-term rate. Mortgage rates follow long-term Treasury yields, which reflect inflation fears, debt supply and foreign demand. In October 2026 the Fed's rate was 3.75 to 4.00%, while the 10-year Treasury yield was about 5.13% and the 30-year about 5.42%. In late 2024 the Fed cut rates and long-term yields rose anyway."
+    },
+    {
+     "type": "insider",
+     "text": "15. Safe assets are only safe in a given season. Long-term US Treasury bonds have essentially no risk of default, yet they lost close to half their market value from 2020 to 2023 as rates rose. Silicon Valley Bank failed in 2023 largely because it held safe bonds bought in a different season. Safety is a property of an asset in a season, not of the asset alone."
+    },
+    {
+     "type": "insider",
+     "text": "16. Platforms are the new toll booths. Producing goods has not become cheaper in dollar terms since 2019, but the cut taken by platforms has grown. Advertising rose from about 23.5% to about 41.9% of Amazon's seller services revenue between 2019 and early 2026. Etsy's take rate rose from 16.5% to 24.2%. None of this shows up as a separate line in the consumer price index."
+    },
+    {
+     "type": "check",
+     "q": "Pick the eye-opener that most affects you this month, and say why.",
+     "a": "Any is fine. For many readers it is number 3: moving idle savings from a near-zero account to a Treasury bill or government money market fund can earn many times more for the same safety. For others it is number 14, because mortgage rates do not simply follow the Fed."
+    },
+    {
+     "type": "check",
+     "q": "Why can the Fed lose money without failing?",
+     "a": "Because it creates the currency its debts are paid in. It records losses as a deferred asset to be covered from future profits. Its real risk is a loss of credibility, not running out of money."
+    }
+   ],
+   "rules": [
+    "Read the official numbers yourself. The biggest secrets in money are published.",
+    "Ask who receives new money first. They usually gain most.",
+    "Never confuse free of default with free of risk."
+   ],
+   "connects": [
+    {
+     "id": "rb-06",
+     "how": "Eye-openers 1, 2 and 4 come straight from how money is born."
+    },
+    {
+     "id": "rb-07",
+     "how": "The rising interest bill in number 8 is the debt treadmill in action."
+    },
+    {
+     "id": "rb-08",
+     "how": "Number 15 is the seasons idea in one sentence."
+    },
+    {
+     "id": "rb-12",
+     "how": "Numbers 13 and 16 are toll booths on today's board."
+    }
+   ]
+  },
+  {
+   "id": "rb-14",
+   "num": "14",
+   "title": "The Rulebook",
+   "kicker": "What each generation learned the hard way, written down so the next one does not have to.",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Families pass down recipes, tools and stories. They rarely pass down money lessons, because money talk feels private or shameful, and because each generation's crisis feels unique while it is happening. So each generation relearns the same lessons at full price. This chapter is the remedy: a short rulebook, and a list of the mistakes behind it."
+    },
+    {
+     "type": "quote",
+     "text": "Those who cannot remember the past are condemned to repeat it.",
+     "by": "George Santayana, The Life of Reason, 1905"
+    },
+    {
+     "type": "h",
+     "text": "How to use the rulebook"
+    },
+    {
+     "type": "steps",
+     "items": [
+      "Read the rules once straight through. Most will now feel obvious, because the chapters built them.",
+      "Pick three rules that you are breaking today. Write them where you will see them.",
+      "Before any big money decision, such as a loan, a house, a business or an investment, scan the list and ask which rules apply.",
+      "Read the mistakes list with someone younger than you. Ask which mistake they think their own generation is making now.",
+      "Add your own rule when life teaches you one. A rulebook that stops growing stops being useful."
+     ]
+    },
+    {
+     "type": "h",
+     "text": "The shape of the rules"
+    },
+    {
+     "type": "table",
+     "cols": [
+      "Group",
+      "What the rules protect",
+      "Chapters"
+     ],
+     "rows": [
+      [
+       "What money is",
+       "Your understanding: see the promise behind the paper",
+       "1, 2, 6"
+      ],
+      [
+       "Seasons and rulers",
+       "Your savings: know what melts and what hardens",
+       "8, 10"
+      ],
+      [
+       "Debt",
+       "Your freedom: never become a forced seller",
+       "7"
+      ],
+      [
+       "Power and plumbing",
+       "Your judgment: see who sets the rules and who earns the tolls",
+       "3, 4, 5, 9, 12, 13"
+      ],
+      [
+       "Getting on the board",
+       "Your future: turn income into ownership",
+       "11"
+      ]
+     ]
+    },
+    {
+     "type": "callout",
+     "label": "Picture this",
+     "text": "Think of the rulebook as a ship's logbook kept across generations. Each captain wrote down the storms they met, the rocks they hit and the stars that guided them home. The next captain cannot avoid every storm. But a captain who has read the log will recognize the sky before the storm arrives."
+    },
+    {
+     "type": "p",
+     "text": "The full rulebook and the generational mistakes follow this chapter. They are written to be copied, shared and argued with. They are general education about how money works, not financial advice for any particular person. Where a rule touches your own situation, test it against your own numbers, and against a second opinion."
+    },
+    {
+     "type": "check",
+     "q": "Which rule from the whole guide would have saved the most people in 2008?",
+     "a": "Several apply, but the strongest is: borrow only what you can service through a bad season without selling. Many households and banks were forced sellers when house prices fell."
+    },
+    {
+     "type": "check",
+     "q": "Why does each generation repeat money mistakes?",
+     "a": "Because the last crisis fades from memory, calm years breed confidence, and each new boom tells a story about why this time is different. Writing lessons down and passing them on is the cheapest defense."
+    }
+   ],
+   "rules": [
+    "Write your lessons down and pass them on. Memory fades, logs do not.",
+    "Each generation's crisis wears a new costume. Look for the old pattern underneath."
+   ],
+   "connects": [
+    {
+     "id": "rb-01",
+     "how": "The first rule, that money is a promise, comes from Chapter 1."
+    },
+    {
+     "id": "rb-07",
+     "how": "The debt rules are the answer to the musical chairs question."
+    },
+    {
+     "id": "rb-11",
+     "how": "The ownership rules are the answer to the board game question."
+    }
+   ]
+  }
+ ],
+ "rulebook": [
+  {
+   "n": 1,
+   "rule": "Money is a promise kept in a ledger. Ask who made the promise and who keeps the ledger.",
+   "why": "The form of money keeps changing, from clay to coins to code. The promise behind it is the thing that holds or fails."
+  },
+  {
+   "n": 2,
+   "rule": "Check all three jobs: medium of exchange, store of value, unit of account.",
+   "why": "Few things do all three well. Use each money for the job it is good at."
+  },
+  {
+   "n": 3,
+   "rule": "Every deposit is somebody's loan, and every bank loan creates a deposit.",
+   "why": "Modern money is mostly bank credit, so the health of money depends on the health of lending."
+  },
+  {
+   "n": 4,
+   "rule": "Interest can be paid from money that circulates. Debt that grows faster than income cannot be paid forever.",
+   "why": "The musical chairs problem appears when savers hoard and debts outgrow incomes, not because interest is unpayable."
+  },
+  {
+   "n": 5,
+   "rule": "Borrow only what you can service through a bad season without selling.",
+   "why": "Forced sellers sell at the bottom. Leverage turns a temporary fall into a permanent loss."
+  },
+  {
+   "n": 6,
+   "rule": "Know your season. Ask whether money is melting or hardening.",
+   "why": "The same choice, like holding cash or long bonds, wins in one season and loses in the next."
+  },
+  {
+   "n": 7,
+   "rule": "Nominal is not real. Divide by inflation before you celebrate.",
+   "why": "Money is a rubber ruler. A raise below inflation is a pay cut."
+  },
+  {
+   "n": 8,
+   "rule": "Measure what matters in hours of work.",
+   "why": "Hours sidestep the moving ruler and show what is really getting cheaper or dearer."
+  },
+  {
+   "n": 9,
+   "rule": "Watch asset prices, not only consumer prices.",
+   "why": "The price of entering ownership can run far ahead of pay while headline inflation looks calm."
+  },
+  {
+   "n": 10,
+   "rule": "Own something productive from your first paycheck.",
+   "why": "Ownership compounds while you sleep. Wages stop when you stop."
+  },
+  {
+   "n": 11,
+   "rule": "Keep idle cash where it earns the safe rate.",
+   "why": "Banks and token issuers keep the gap between what safe bills pay and what they pay you."
+  },
+  {
+   "n": 12,
+   "rule": "No asset is safe in every season. Spread your bets across seasons, not just across names.",
+   "why": "Cash failed in the 1970s, long bonds failed from 2020 to 2023, stocks failed from 1929 to 1932."
+  },
+  {
+   "n": 13,
+   "rule": "Gold is insurance against the system, not income.",
+   "why": "It pays nothing and can fall for twenty years, but it shines when trust in money breaks."
+  },
+  {
+   "n": 14,
+   "rule": "When rulers need money they cannot raise honestly, they water down the currency.",
+   "why": "From Rome's denarius to modern inflation, debasement is the oldest hidden tax."
+  },
+  {
+   "n": 15,
+   "rule": "A temporary suspension of a money promise often becomes permanent.",
+   "why": "The 1971 gold suspension was announced as temporary and never ended."
+  },
+  {
+   "n": 16,
+   "rule": "Reserves held in someone else's currency come with someone else's conditions.",
+   "why": "Russia's frozen reserves in 2022 taught every government this rule."
+  },
+  {
+   "n": 17,
+   "rule": "Every trade deficit is also a capital inflow. Follow the dollars both ways.",
+   "why": "Cheap imports and cheap loans are two halves of the same loop, and someone pays for each."
+  },
+  {
+   "n": 18,
+   "rule": "Calm years breed risky borrowing. Be most careful when lending feels safest.",
+   "why": "Minsky showed that stability itself pushes people toward fragile debt."
+  },
+  {
+   "n": 19,
+   "rule": "When everyone repays at once, money shrinks. Keep a cash buffer for that day.",
+   "why": "Fisher showed that mass repayment can make debts heavier, so liquidity matters most when it is scarcest."
+  },
+  {
+   "n": 20,
+   "rule": "Watch interest against defense, and debt against output.",
+   "why": "These ratios have signaled decline in past empires, and interest now exceeds US defense spending."
+  },
+  {
+   "n": 21,
+   "rule": "New rails, old anchors. Ask what sits under any new money and who earns the interest.",
+   "why": "Stablecoins look new but are backed by Treasury bills, and the issuer keeps the yield."
+  },
+  {
+   "n": 22,
+   "rule": "Find the toll booths, and where you can, own one.",
+   "why": "Owners of crossing points, platforms, land and payment rails earn whether players win or lose."
+  },
+  {
+   "n": 23,
+   "rule": "Expect any fixed money promise to bend in a great war or crisis.",
+   "why": "Gold promises were suspended in 1914, 1933 and 1971."
+  },
+  {
+   "n": 24,
+   "rule": "Stop inflation early. Inflation people expect is far harder to stop than inflation that surprises.",
+   "why": "The 1970s show what happens when expectations take root, and Volcker shows the price of uprooting them."
+  },
+  {
+   "n": 25,
+   "rule": "Judge any plan to open the board by whether it gives real assets or credentials at scale.",
+   "why": "The Homestead Act and the GI Bill worked because they gave land, schooling and loan guarantees large enough to matter."
+  },
+  {
+   "n": 26,
+   "rule": "Separate the story from the mechanism. A ratio that only works today is a coincidence.",
+   "why": "The barter myth and the gold times ten idea both sound right and fail the test of history."
+  },
+  {
+   "n": 27,
+   "rule": "Check big decisions with more than one ruler: dollars, real dollars, hours and a hard asset.",
+   "why": "Every ruler moves. Agreement across several rulers is the closest thing to truth."
+  },
+  {
+   "n": 28,
+   "rule": "Pass on the mistakes, not just the successes.",
+   "why": "Each generation forgets its parents' crisis. Written lessons are the cheapest inheritance."
+  }
+ ],
+ "mistakes": [
+  {
+   "generation": "Rome, the 200s AD",
+   "mistake": "Paid for armies by debasing the silver coin, then tried to stop the resulting price surge with a price edict in 301 AD.",
+   "lesson": "Price controls cannot hold back a watered-down money. Goods simply disappear from markets."
+  },
+  {
+   "generation": "The 1890s, gold standard era",
+   "mistake": "Kept money fixed to gold while the economy grew, so prices fell for two decades and debtors, mostly farmers, were crushed.",
+   "lesson": "A money that cannot grow with the economy punishes borrowers, and its supply should not depend on mining luck."
+  },
+  {
+   "generation": "The 1920s",
+   "mistake": "Bought stocks with borrowed money, often putting down a small fraction of the price, in the belief that prosperity was permanent.",
+   "lesson": "Leverage plus euphoria produces forced selling. When prices turn, borrowed money must still be repaid."
+  },
+  {
+   "generation": "The early 1930s policymakers",
+   "mistake": "Let thousands of banks fail, allowed the money supply to shrink by about a third, clung to the gold standard and raised tariffs.",
+   "lesson": "In a panic, the central bank must lend freely against good collateral. Countries that left gold earlier recovered sooner."
+  },
+  {
+   "generation": "The 1960s",
+   "mistake": "Paid for war and new programs at once while promising gold at $35, ignoring the Triffin warning.",
+   "lesson": "A promise that must keep growing will eventually outgrow what backs it. Plan the exit before the run."
+  },
+  {
+   "generation": "The 1970s",
+   "mistake": "Treated inflation as a small price for jobs, tried wage and price controls, and tightened only briefly before easing again.",
+   "lesson": "Once people expect inflation, it feeds itself. Stopping it late costs far more than stopping it early."
+  },
+  {
+   "generation": "Latin American borrowers and their lenders, around 1980",
+   "mistake": "Recycled oil dollars into loans at floating interest rates in a currency the borrowers could not print.",
+   "lesson": "Borrowing in someone else's currency at floating rates hands your fate to their central bank."
+  },
+  {
+   "generation": "Japan in the 1990s",
+   "mistake": "Let banks hide bad loans and kept failing firms alive, so the economy repaired its balance sheets slowly for decades.",
+   "lesson": "Recognize losses quickly and recapitalize banks. Slow cleanup turns a bust into a lost generation."
+  },
+  {
+   "generation": "The 2000s, up to 2008",
+   "mistake": "Believed house prices could not fall nationwide, lent to borrowers who could not repay and stacked leverage on top.",
+   "lesson": "Housing is not risk-free. Stability bred the fragile debt that Minsky warned about."
+  },
+  {
+   "generation": "The 2010s",
+   "mistake": "Assumed near-zero interest rates would last and loaded up on long-term bonds and cheap fixed debt for assets.",
+   "lesson": "Safe assets are safe only in a season. When rates rose, banks like Silicon Valley Bank failed holding them."
+  },
+  {
+   "generation": "The early 2020s",
+   "mistake": "Called the inflation surge transitory for too long, and chased high crypto yields from lenders that re-lent customer assets.",
+   "lesson": "Every yield has a source. If you cannot see where the return comes from, you may be the return."
+  }
+ ],
+ "glossary": [
+  {
+   "t": "Asset",
+   "d": "Something you own that has value, such as cash, a house, a bond or a share in a company."
+  },
+  {
+   "t": "Liability",
+   "d": "Something you owe, such as a loan. One person's liability is always another's asset."
+  },
+  {
+   "t": "Medium of exchange",
+   "d": "Whatever people hand over to settle a trade. Money's spending job."
+  },
+  {
+   "t": "Store of value",
+   "d": "A way to carry buying power from today into the future. Money's saving job."
+  },
+  {
+   "t": "Unit of account",
+   "d": "The measuring unit for prices, wages and debts, such as the dollar. Money's measuring job."
+  },
+  {
+   "t": "Barter",
+   "d": "Trading goods directly for other goods, with no money in between."
+  },
+  {
+   "t": "Credit",
+   "d": "Trust that lets someone receive something now and pay later. Also the debt that results."
+  },
+  {
+   "t": "Debasement",
+   "d": "Lowering the precious metal in coins while keeping their face value. The ancient form of printing money."
+  },
+  {
+   "t": "Gresham's law",
+   "d": "When two moneys have the same face value, people spend the worse one and hoard the better one."
+  },
+  {
+   "t": "Gold standard",
+   "d": "A system where a currency is defined as a fixed weight of gold and paper notes can be swapped for gold."
+  },
+  {
+   "t": "Deflation",
+   "d": "A general fall in prices, so each unit of money buys more. Debts get heavier in real terms."
+  },
+  {
+   "t": "Inflation",
+   "d": "A general rise in prices, so each unit of money buys less. Debts get lighter in real terms."
+  },
+  {
+   "t": "Bretton Woods",
+   "d": "The 1944 system that pegged other currencies to the dollar and the dollar to gold at $35 an ounce."
+  },
+  {
+   "t": "IMF",
+   "d": "The International Monetary Fund, created in 1944 to lend to countries with payment problems and oversee exchange rates."
+  },
+  {
+   "t": "Peg",
+   "d": "A fixed exchange rate between one currency and another, defended by a central bank."
+  },
+  {
+   "t": "Floating exchange rate",
+   "d": "A currency whose price against others is set by markets every day."
+  },
+  {
+   "t": "Reserve currency",
+   "d": "A currency that foreign governments hold in large amounts as savings and for crisis use. Today mainly the dollar."
+  },
+  {
+   "t": "Triffin dilemma",
+   "d": "The conflict between supplying the world with enough of a reserve currency and keeping that currency's backing believable."
+  },
+  {
+   "t": "Current account deficit",
+   "d": "When a country pays more to the world for imports and income than it receives, it must borrow or sell assets to cover the gap."
+  },
+  {
+   "t": "Treasury securities",
+   "d": "Debts of the US government. Bills last up to a year, notes 2 to 10 years, bonds 20 or 30 years."
+  },
+  {
+   "t": "Treasury bill (T-bill)",
+   "d": "Short-term US government debt, sold at a discount and repaid at full value within a year."
+  },
+  {
+   "t": "Yield",
+   "d": "The return on a bond or investment, expressed as a yearly percentage of its price."
+  },
+  {
+   "t": "Petrodollar",
+   "d": "The 1970s arrangement in which oil was priced in dollars and Gulf oil money was recycled into US Treasuries and banks."
+  },
+  {
+   "t": "Federal Reserve (the Fed)",
+   "d": "The US central bank. It sets short-term interest rates, supervises banks and acts as lender of last resort."
+  },
+  {
+   "t": "Central bank",
+   "d": "A public bank that issues a country's base money and manages its interest rates."
+  },
+  {
+   "t": "Base money",
+   "d": "Paper cash plus the reserves that banks hold at the central bank."
+  },
+  {
+   "t": "Bank reserves",
+   "d": "Money that commercial banks keep in accounts at the central bank, used to settle payments between banks."
+  },
+  {
+   "t": "Bank deposit",
+   "d": "Money in a bank account. Legally it is the bank's debt to you."
+  },
+  {
+   "t": "Money multiplier",
+   "d": "An old textbook idea that banks lend a fixed multiple of their reserves. Central banks now say it does not describe how lending works."
+  },
+  {
+   "t": "Primary dealer",
+   "d": "One of about two dozen large banks that must bid at US Treasury auctions."
+  },
+  {
+   "t": "Treasury General Account",
+   "d": "The US government's main checking account, held at the Federal Reserve."
+  },
+  {
+   "t": "Quantitative easing (QE)",
+   "d": "When a central bank creates reserves to buy bonds in the open market, to push down long-term interest rates."
+  },
+  {
+   "t": "Velocity",
+   "d": "How many times a unit of money is spent in a given period."
+  },
+  {
+   "t": "Primary deficit",
+   "d": "The government's deficit before counting interest payments."
+  },
+  {
+   "t": "Financial repression",
+   "d": "Keeping interest rates below inflation so that debts, especially government debts, shrink in real terms."
+  },
+  {
+   "t": "Nominal",
+   "d": "Measured in current money, without adjusting for inflation."
+  },
+  {
+   "t": "Real",
+   "d": "Adjusted for inflation, so values can be compared across time."
+  },
+  {
+   "t": "Time price",
+   "d": "The number of hours of work needed to buy something."
+  },
+  {
+   "t": "CPI",
+   "d": "The Consumer Price Index, which tracks the prices of a basket of goods and services households buy."
+  },
+  {
+   "t": "Collateral",
+   "d": "Something valuable you pledge to a lender, which the lender can take if you do not repay."
+  },
+  {
+   "t": "Leverage",
+   "d": "Using borrowed money to buy assets. It magnifies gains and losses."
+  },
+  {
+   "t": "Cantillon effect",
+   "d": "The idea that those who receive new money first gain, while those who receive it last face higher prices first."
+  },
+  {
+   "t": "Seigniorage",
+   "d": "The profit from issuing money, the gap between what money costs to make and what it buys."
+  },
+  {
+   "t": "Minsky moment",
+   "d": "The point when a long calm period of rising debt suddenly turns into forced selling and crisis."
+  },
+  {
+   "t": "Debt deflation",
+   "d": "A spiral where paying down debt pushes prices down, which makes remaining debts heavier."
+  },
+  {
+   "t": "Stablecoin",
+   "d": "A crypto token designed to stay worth one unit of a currency, usually one dollar, backed by reserves."
+  },
+  {
+   "t": "GENIUS Act",
+   "d": "The US law setting rules for payment stablecoins, including reserves of cash, deposits and short Treasury bills, and no interest to holders."
+  },
+  {
+   "t": "CBDC",
+   "d": "Central bank digital currency: digital money issued directly by a central bank to the public. A retail US version is banned by law."
+  },
+  {
+   "t": "Watt-dollar",
+   "d": "This project's name for dollar loans backed by energy assets such as power plants, data centers and chips."
+  },
+  {
+   "t": "Toll booth",
+   "d": "In this guide, any player who earns by owning a crossing point others must pass, such as a platform, a payment rail or land."
+  }
+ ],
+ "questions": [
+  {
+   "q": "If the government can create money, why does it borrow and tax at all?",
+   "a": "Taxes give money its demand and keep spending from overheating the economy. Borrowing lets the government spend more than it taxes without the central bank directly creating new money for it, which the law restricts. If a government simply created money for all its spending, inflation would follow, as many countries have shown."
+  },
+  {
+   "q": "Why not just print enough money to pay off the national debt?",
+   "a": "The money would flood into the economy and push prices up, eroding everyone's savings. Also, much of the debt is held as savings by pension funds, banks and families, so paying it off with new money would turn their safe assets into cash during an inflation."
+  },
+  {
+   "q": "Is the dollar going to collapse?",
+   "a": "Nobody can promise anything, but this project's October 2026 view gives the dollar system about a 62% chance of continuing to extend its role through 2028, with the chance of a disorderly reset rising over longer horizons. Currencies at the top usually decline slowly, over decades, not overnight."
+  },
+  {
+   "q": "Is my money safe in the bank?",
+   "a": "In the United States, deposits are insured up to $250,000 per depositor, per bank, per ownership category. Below that limit, your deposit is very safe. Above it, you are trusting the bank's own finances."
+  },
+  {
+   "q": "Should I buy gold?",
+   "a": "This guide is not financial advice. Gold is best understood as insurance against a loss of trust in money and its managers. It pays no income and can fall for long stretches, as it did from 1980 to 2001. Many people who hold it keep it as a modest slice, not their whole savings."
+  },
+  {
+   "q": "Is Bitcoin money?",
+   "a": "It works as a medium of exchange in some places and as a store of value for some holders, but it is too volatile to be a good unit of account. Today it acts mostly as an asset held outside the banking system, not as everyday money."
+  },
+  {
+   "q": "Why does inflation exist at all? Could we have zero?",
+   "a": "Most central banks aim for about 2% because mild inflation makes wage adjustments easier, leaves room to cut rates and keeps the economy away from deflation traps. Zero is possible but risky, because a small shock can tip it into deflation."
+  },
+  {
+   "q": "Who decides interest rates?",
+   "a": "The Fed sets a short-term rate for overnight lending between banks. Longer-term rates, such as mortgage rates, are set by markets based on inflation expectations, government borrowing and demand for safe assets."
+  },
+  {
+   "q": "Why does the US have so much debt and still borrow cheaply?",
+   "a": "Because the world needs dollars and safe dollar assets, US Treasuries have a large built-in demand. That demand is not unlimited, which is why yields rose in 2026 as debt grew and some foreign buyers sold."
+  },
+  {
+   "q": "What happens if China sells all its Treasuries?",
+   "a": "Yields would rise and the dollar might weaken, but China would also lose money on its sales and push up its own currency, hurting its exports. This project rates a fire sale as very unlikely. China has instead reduced its holdings gradually, from about $694 billion in February 2026 to about $591 billion in August."
+  },
+  {
+   "q": "Will stablecoins replace banks?",
+   "a": "They are replacing some ways money moves, not the lending that banks do. Stablecoins cannot lend or pay interest by law, and they are backed by Treasury bills. Loans against your future income still come from regulated lenders."
+  },
+  {
+   "q": "Can the US just revalue its gold to pay the debt?",
+   "a": "Revaluing its gold to market price would book about $1.07 trillion, roughly one year of net interest, once. The deficit recurs every year, so it would not solve the problem."
+  },
+  {
+   "q": "If interest is never created, how can all loans be repaid?",
+   "a": "Interest is paid out of money that circulates. When lenders spend their interest income, it returns to borrowers through wages and sales. The real risk is debt growing faster than incomes, or everyone trying to repay at the same moment."
+  },
+  {
+   "q": "Why do house prices rise faster than inflation?",
+   "a": "House prices are mostly land prices in expensive cities, and land cannot be made. Low interest rates, limited building and zoning rules push prices up, while the consumer price index counts rents, not purchase prices."
+  },
+  {
+   "q": "Will AI and robots make everything free?",
+   "a": "They are already making many goods cheaper in hours of work. But housing, land, health care and attention are not getting cheaper, and this project's research found that robots can meet only part of any extra demand while housing supply grows about 1% a year."
+  },
+  {
+   "q": "What is the single most useful habit from this guide?",
+   "a": "Own something productive from your first paycheck, and borrow only what you can carry through a bad season. Those two rules protect you in almost every season of money."
+  }
+ ]
+}

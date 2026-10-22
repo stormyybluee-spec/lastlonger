@@ -20,8 +20,8 @@
   }
  },
  "Q2": {
-  "likely": 65,
-  "headline": "About 2 in 3: likely that loans based on your future income stay with regulated lenders, while the old petrodollar recycling job passes to stablecoins.",
+  "likely": 60,
+  "headline": "About 3 in 5: likely that loans based on your future income stay with regulated lenders, while stablecoins take only a cyclical part of the old petrodollar recycling job.",
   "up": [
    "Crypto-backed lending stays tiny next to bank loans (now $56.2B, about 0.4%)",
    "Issuer attestations and TIC data show stablecoin demand is mostly new foreign dollar demand, not switching out of US deposits (Round 3 question R3-01)"
@@ -118,10 +118,10 @@
    "Electric trucks pass 5% of new class 8 truck sales"
   ],
   "down": [
-   "US battery cell capacity stays well under 20 GW by 2028, keeping electric freight tied to Chinese batteries",
+   "Non-China anode and LFP cathode supply stays below demand outside China, keeping electric freight tied to Chinese batteries",
    "Platform take rates and ad prices fall sharply, which would make branded goods cheaper too"
   ],
-  "watch": "EO 14421 rules due 24 December 2026, and US battery cell capacity against 20 GW by 2028",
+  "watch": "EO 14421 rules due 24 December 2026, and IEA N-1 bars for anode and LFP cathode in GEVO 2027, May 2027",
   "byHorizon": {
    "H0": 75,
    "H1": 70,
@@ -137,7 +137,7 @@
   ],
   "down": [
    "China drops its hardware controls for good while a Gulf state signs a yuan crude term contract",
-   "US battery cell capacity passes 20 GW by 2028 and China falls below 25% of US lithium-ion imports"
+   "Non-China anode and LFP cathode capacity passes demand outside China and China falls below 25% of US lithium-ion imports"
   ],
   "watch": "10 November 2026, when China's rare-earth truce lapses or is renewed, then the final solar catalogue after 15 November",
   "byHorizon": {
@@ -367,7 +367,7 @@
  },
  "M16": {
   "likely": 65,
-  "headline": "About 2 in 3: the ranking that puts hardware levers (threat 3.20, 3.20 and 3.00) far above money levers (0.12 for a BRICS currency) is a fair judgment, but it is judgment, not data.",
+  "headline": "About 2 in 3: the ranking that puts hardware levers (threat 3.00, 2.56 and 2.40) far above money levers (0.12 for a BRICS currency) is a fair judgment, but it is judgment, not data.",
   "up": [
    "Rare-earth controls return when the 10 November 2026 suspension lapses",
    "The critical minerals ban suspended to 27 November 2026 comes back into force"

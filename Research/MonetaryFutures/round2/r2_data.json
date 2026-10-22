@@ -27,7 +27,7 @@
      "a": [
       "No. Set 1 is three jobs, and none of them is going away soon. Gold is the neutral reserve with no issuer, Treasuries are the prime collateral, and banks create most credit. The new rails are built on top of these jobs, not instead of them. Every compliant US stablecoin must hold cash, deposits or Treasury bills of 93 days or less from 2027-01-18, so each new stablecoin dollar is new demand for Set 1 bonds.",
       "Gold is getting more important as a state asset, not less. Central banks bought 863t in 2025 and 289t in Q2 2026, buying into a price about 27% below its January high (about $4,116 now). US secondary sanctions now reach dollar, digital and gold channels, which pushes states to hold metal at home. Gold loses its scarcity only if asteroid mining becomes real, and there is no evidence for that before H3.",
-      "What does change is bank credit. Payments and some deposits move to tokens, and banks move upstream: their loans to nonbank lenders rose 19.9% in a year to $2.06T (Fed H.8, September 2026), and nonbanks already make about 64% of home purchase loans. The long-run risk to Treasuries is fiscal, not technological. They are claims on future taxes, and taxes today rest mostly on wages. If robots shrink the wage base, the state has to learn to tax robot and energy output."
+      "What does change is bank credit. Payments and some deposits move to tokens, and banks move upstream: their loans to nonbank lenders rose 19.9% in a year to $2.06T (Fed H.8, September 2026), and nonbanks already make about 64% of home purchase loans. The long-run risk to Treasuries is fiscal, not technological. They are claims on future taxes, and taxes today rest mostly on wages. If robots shrink the wage base, the state has to tax capital income and equity, because a tax on watts or compute would raise under 1% of federal receipts at plausible rates."
      ],
      "v": {
       "g": "The state keeps Set 1 because seigniorage and sanctions power live there. It absorbs the new rails rather than letting them compete.",
@@ -40,10 +40,10 @@
      "mod": false,
      "h": "H0 to H1",
      "s": "plausible",
-     "c": 65,
+     "c": 60,
      "q": "Since stablecoins are basically backed by T-bills, once the robots and space equation enters, is the old petrodollar backing gone? Put another way: if someone has $50,000 of cash today, will they stop borrowing from a bank on the traditional rails?",
      "a": [
-      "The petrodollar was never the dollar's backing. It had three parts: oil invoiced in dollars, Gulf surpluses recycled into Treasuries, and the 1974 security deal (a secret Treasury-purchase arrangement revealed by a 2016 FOIA request). The viral claim that a 50-year petrodollar pact expired in June 2024 is false. Invoicing erodes slowly (electric vehicles displaced about 1.7 million barrels a day in 2025, about 5 million by 2030 per the IEA). Recycling is already small: Saudi Arabia holds $141.2B of Treasuries, 1.5% of foreign holdings, and in 2026 Gulf states borrowed rather than recycled. Security still binds. Stablecoins take over the recycling job, because foreign savers who want dollars now buy T-bills through tokens.",
+      "The petrodollar was never the dollar's backing. It had three parts: oil invoiced in dollars, Gulf surpluses recycled into Treasuries, and the 1974 security deal (a secret Treasury-purchase arrangement revealed by a 2016 FOIA request). The viral claim that a 50-year petrodollar pact expired in June 2024 is false. Invoicing erodes slowly (electric vehicles displaced about 1.7 million barrels a day in 2025, about 5 million by 2030 per the IEA). Recycling is already small: Saudi Arabia holds $141.2B of Treasuries, 1.5% of foreign holdings, and in 2026 Gulf states borrowed rather than recycled. Security still binds. Stablecoins can take over part of the recycling job when crypto demand grows, and when they grew about two thirds went to foreign holders (model). In the 12 months to October 2026 they did not grow at all ($304.9B to $303.8B), and the bill-buying job was done by the Fed (+$370B of bills) and money funds (+$505B of assets).",
       "The $50,000 holder should move some cash, but should not expect to stop borrowing from banks. For one year (model): bank savings at the 0.38% national average earns $190, a government money fund or T-bill at about 4.25% earns $2,125, a GENIUS stablecoin earns $0 from the issuer by law, and an exchange reward of 3.75% earns $1,875 (legality judged case by case from 2027-01-18). The bank keeps about $1,935 of spread over bills on that balance. That rent is what the new rails attack.",
       "Borrowing is different. DeFi lends only against collateral you already own (bitcoin at up to 73% loan to value on Aave), and all crypto-backed lending was $56.2B in Q2 2026, about 0.4% of US bank loans. Stablecoins cannot lend at all. A mortgage, car loan or first business loan needs someone who underwrites your future income and absorbs default, so it comes from a bank or a bank-funded lender through at least H1, even if the money arrives as a token."
      ],
@@ -80,7 +80,7 @@
      "q": "Who earns the float on T-bill-backed stablecoins, and what happens to stablecoin economics if bill yields fall toward zero?",
      "a": [
       "The issuer and its distributors earn it. The holder earns nothing by law (GENIUS Sec. 4(a)(11)). Circle's Q2 2026 results show the split: $667.7M of reserve income on $76.5B of average USDC (a 3.5% yield), of which $410.4M (61.5%) went to distribution partners, mainly Coinbase. Net income was $48M. Across the whole $305B market the float is worth about $11.7B a year at a 4.25% bill rate (model).",
-      "If bill yields fall toward zero the business breaks. At Circle's size and payout terms, the yield where it stops covering costs is about 1.5% (model). Expect what money funds did under zero rates: fee waivers, consolidation into banks and payment networks, and lobbying to widen eligible reserves. A zero-rate world favors low-cost offshore issuers like Tether (reported $1.5B Q2 profit) over compliant ones. Rates are not heading to zero yet: AI capital demand has the 10-year real yield at 2.76%.",
+      "If bill yields fall toward zero the business breaks. At Circle's size and payout terms, the yield where it stops covering costs is about 1.5% (model). Expect what money funds did under zero rates: fee waivers, consolidation into banks and payment networks, and lobbying to widen eligible reserves. A zero-rate world favors low-cost offshore issuers like Tether (reported $1.5B Q2 profit) over compliant ones. Rates are not heading to zero yet: AI capital demand has the 10-year real yield at 2.76%. Widening is administrative only for government-issued assets (GENIUS Sec. 4(a)(1)(A)(vii), kept by the OCC on 2026-10-21), duration cannot close the gap in a zero-rate world (2-year 0.45%, 5-year 1.34% averages), gold needs Congress, and markets price bills under 1.5% at well under 5% through 2027.",
       "The court adds one practical point. If a future UHI were paid as a stablecoin and left idle, the float on it would go to issuers and distributors, about $42.50 a year for each $1,000 of idle balance at a 4.25% bill rate (model)."
      ],
      "v": {
@@ -99,7 +99,7 @@
      "a": [
       "Mostly the deposits do not leave the banking system. They change owner and price. TBAC's $6.6T is all US transactional deposits at end 2024 ($5.7T demand plus $0.9T other), and the same slide rates the impact highest only for interest-bearing stablecoins, which GENIUS forbids. It is a ceiling, not a forecast. When an issuer buys a bill, the seller's bank gets the deposit back. The White House CEA (April 2026) finds the yield ban adds only $2.1B of lending at baseline and $531B even under stacked worst cases.",
       "What changes is cost. Cheap retail deposits (0.38% savings) become wholesale money near 4%. If $1T moved, banks would pay about $36B a year more, roughly 0.26 points on the $14.1T loan book (model, upper bound). Banks are already shifting toward funding nonbank lenders.",
-      "And yes, part of money creation tilts toward bills. A stablecoin dollar is a narrow-bank dollar backed by Treasury debt, so the deficit, not a private loan, creates that slice of money, as in the 1863 national bank note design. TBAC projected about $2T of stablecoins by 2028. At an 80% bill share that is about 22% of today's $7.12T of bills (model)."
+      "And yes, part of money creation tilts toward bills. A stablecoin dollar is a narrow-bank dollar backed by Treasury debt, so the deficit, not a private loan, creates that slice of money, as in the 1863 national bank note design. TBAC projected about $2T of stablecoins by 2028, which now looks unlikely on the current trend: it needs about +$1.7T in about 26 months from a flat $303.8B base. At an 80% bill share that is about 22% of today's $7.12T of bills (model)."
      ],
      "v": {
       "g": "Money creation tilts from bank loans to government bills, which gives Treasury more of the money stock and more rate sensitivity.",
@@ -133,7 +133,7 @@
      "q": "Does a robot-and-solar economy reduce the need for an oil anchor at all (share of oil in world trade, domestic solar replacing imports), and what replaces petrodollar recycling?",
      "a": [
       "It shrinks the oil anchor without removing the dollar's other supports. Crude is roughly 5% of world goods trade and all fuels about 12% (2023, rough), the US is a net energy exporter, and electric vehicles plus home solar keep cutting oil imports. Oil invoicing matters less each decade, but the dollar never rested on oil alone.",
-      "Recycling is being replaced by three flows: foreign savers buying dollar stablecoins (which by law buy T-bills), Gulf sovereign funds buying US AI infrastructure as equity (the MGX and BlackRock $40B Aligned Data Centers deal, MGX's near $50B raise), and US private borrowing against power plants and data centers (Round 1's watt-dollar). Only the first finances the Treasury directly. Ocean freight stays the stubborn dollar-oil leg longest: LNG took 73 of 137 alternative-fuel ship orders in H1 2026.",
+      "Recycling is being replaced by three flows: foreign savers buying dollar stablecoins when the crypto cycle is up (which by law buy T-bills, a cyclical flow that was flat in the year to October 2026), Gulf sovereign funds buying US AI infrastructure as equity (the MGX and BlackRock $40B Aligned Data Centers deal, MGX's near $50B raise), and US private borrowing against power plants and data centers (Round 1's watt-dollar). Only the first finances the Treasury directly. Ocean freight stays the stubborn dollar-oil leg longest: LNG took 73 of 137 alternative-fuel ship orders in H1 2026.",
       "Chokepoints still choose currencies. In 2026 Iran sought Hormuz tolls in yuan or stablecoins, and at least two vessels paid in yuan. The UAE warned it could sell oil in yuan if it could not get dollars, while asking for a swap line. The real test of the dollar is how readily it is supplied in a crisis."
      ],
      "v": {
@@ -196,7 +196,7 @@
      "q": "If each country must subsidize its own citizens' UHI, how will the value be set? Show the math, including nominal vs real. Does a new digital value change this, or do the same rules apply?",
      "a": [
       "The same rules apply. Nominal is the number on the check, real is what it buys: real = nominal / (1 + inflation). The sustainable real UHI per person is roughly (extra taxes + fund income + non-inflationary money creation + goods foreigners give for your money) divided by population. Anything paid above that comes back as inflation. The non-inflationary room to print is about (real growth + target inflation) x money stock to GDP: about 4% of GDP a year in the US and 1.1% in an Argentina-like economy, and only if banks are not creating that money themselves (model).",
-      "Toy model, a UHI worth 10% of GDP, printed, with 30% of the extra demand met by extra output: after two to three years it keeps about 96% of its value in local goods and 99% in imports in a US-like economy, but about 78% in local goods and 64% in imports in an Argentina-like economy where the currency falls 56%. If robots meet 80% of the extra demand, the US, Japan and the Philippines stay under about 3% CPI, but the Argentina-like case still runs about 28%. Worked example: a 1,000 monthly check against a basket of 700 local and 300 imported goods buys what 967 bought a year earlier in the US case, and what 733 bought in the Argentina case.",
+      "Toy model, a UHI worth 10% of GDP, printed, with 30% of the extra demand met by extra output: after two to three years it keeps about 96% of its value in local goods and 99% in imports in a US-like economy, but about 78% in local goods and 64% in imports in an Argentina-like economy where the currency falls 56%. If robots meet 80% of the extra demand, which needs housing supply to open (H2 at the earliest), the US, Japan and the Philippines stay under about 3% CPI, but the Argentina-like case still runs about 28%. Worked example: a 1,000 monthly check against a basket of 700 local and 300 imported goods buys what 967 bought a year earlier in the US case, and what 733 bought in the Argentina case.",
       "History matches. Iran's fixed transfer lost about 58% of its real value in five years (CPI 121 to 285), and Mongolia's lost about 19% in two. Paying from a sovereign fund protects the currency, not the local price level. The court adds one correction: the model ignores interest, and US bank reserves pay 3.90%, so in the US money finance is short-term debt finance and Round 1's debt arithmetic (Dc-08) still applies. A digital token changes distribution, programmability (expiry, merchant lists) and pledgeability, not the budget constraint."
      ],
      "v": {
@@ -295,7 +295,7 @@
       "Yes, but it has changed shape. The first job still exists: unemployment for ages 20 to 24 was 8.0% in September 2026, down from 9.2% a year earlier. It is bending in AI-exposed white-collar entry roles: recent graduates have 5.6% unemployment against 4.2% for all workers, and the entry share of postings in high-exposure jobs fell from nearly 60% in 2020 to 44.7%. Credit history is a speed bump, not a wall (secured cards, authorized-user status, credit-builder loans).",
       "The housing rung is the one that broke. Median first-time buyer age is a record 40 and their share a record 21%. For a 20 to 24-year-old saving 10% of pay, a 10% down payment on a median existing home took about 6.2 years in 1990 and about 10.0 years now (model, 1990 price from memory). The monthly payment on a median home went from about 40 to about 68 hours of work since early 2020. 49% of adults under 30 live with a parent.",
       "The launch rung got much cheaper and much more skewed. A digital brand can launch for about $525 to $2,850 and a private-label physical brand for about $1,900 to $7,400 (model), and solo founders are a record 63% of Stripe Atlas companies. But median solo revenue fell 23% in 2025 while the top decile rose 19%, and attention and shelf space, sold by platforms, are the costs that do not fall. Family money is the de facto seed round: 47% of 18 to 29-year-olds got outside help.",
-      "So the meme is right that ownership decides outcomes (the top 1% hold a record 32.5% of net worth, the bottom half 0.6% of equities) and wrong that the door is shut. It becomes permanent only if three things persist into H1: asset returns beating wages, blocked housing supply, and token-sized ownership grants."
+      "So the meme is right that ownership decides outcomes (the top 1% hold a record 32.5% of net worth, the bottom half 0.6% of equities) and wrong that the door is shut. It becomes permanent only if three things persist into H1: asset returns beating wages, blocked housing supply, and token-sized ownership grants. Under current design the bottom half's equity share rises only about 0.02 to 0.12 points by 2045 (model). Automatic deposits, not auto-enrollment, are what SEED OK showed works. In metros where land is above about 50% of value, factory and robot savings reach buyers only with upzoning."
      ],
      "v": {
       "g": "The binding fix is supply and ownership, not credit: zoning and land release (the modern Homestead) and child accounts seeded at a scale that matters.",
@@ -345,7 +345,7 @@
      "c": 80,
      "q": "Value of a Trump Account at age 18 under stated assumptions. Credit-building and small-business funding routes available to an 18-year-old today.",
      "a": [
-      "Model, 18 years, 0.1% fee: the $1,000 seed alone is worth about $2,366 in today's dollars at 5% real ($1,673 at 3%, $3,324 at 7%). Add $50 a month and it reaches about $19,461. Add $100 a month and it reaches about $36,556. At the $5,000 yearly cap it reaches about $144,825. A hypothetical $25B of government AI equity spread over 70 million accounts adds only about $357 per child (about $845 at 18). The seed is a symbol, and family contributions decide the outcome.",
+      "Model, 18 years, 0.1% fee: the $1,000 seed alone is worth about $2,366 in today's dollars at 5% real ($1,673 at 3%, $3,324 at 7%). Add $50 a month and it reaches about $19,461. Add $100 a month and it reaches about $36,556. At the $5,000 yearly cap it reaches about $144,825. A hypothetical $25B of government AI equity spread over 70 million accounts adds only about $357 per child (about $845 at 18). The seed is a symbol, and family contributions decide the outcome. Under current design the bottom half's equity share rises only about 0.02 to 0.12 points by 2045 (model). Automatic deposits, not auto-enrollment, are what SEED OK showed works. In metros where land is above about 50% of value, factory and robot savings reach buyers only with upzoning.",
       "Two catches. Today's 18-year-old gets no seed, because the $1,000 covers births 2025 to 2028, so the first seeded cohort turns 18 in 2043. And at 18 the account becomes a traditional IRA: withdrawals are taxed and penalized before 59 and a half, except qualified education and a $10,000 first-home exception. There is no exception for starting a business.",
       "Credit routes today: under 21 needs independent income or a cosigner (CARD Act), so the realistic path is authorized-user status, a secured card or credit-builder loan, then a starter card. The CFPB halved its credit-invisible estimate to 13.5 million (5.8% of adults). Funding: savings and family first, then SBA microloans up to $50,000, revenue-based advances once sales exist, and small crowdfunding."
      ],
@@ -408,7 +408,7 @@
      "q": "Cost structure of consumer brands (cosmetics, packaged food, apparel): COGS vs marketing vs distribution vs platform fees. Which costs robots cut and which they do not.",
      "a": [
       "Making the product is a minority of the price in cosmetics and a majority only in packaged food. e.l.f. FY2026: cost of sales 29.3% of net sales, marketing $399.8M (24%), operating margin 4.5%. Estee Lauder: gross margin 75.5%, marketing and product development 24.8% of net sales. General Mills: cost of sales 66.4%, SG&A 18.4%. In apparel the garment worker gets under 1% to about 3% of the retail price and the retailer almost 60% (Clean Clothes Campaign).",
-      "On top sits the channel: Ulta's gross margin is 39.1%, Walmart's about 24.9%, and Amazon takes 50 to 60% of a typical seller's revenue with ads. Robots cut factory, warehouse and store labor. Cheap energy cuts fuel, plastic feedstock and process heat. Neither cuts retailer margin, platform take rates or ad prices, and cheap AI creative tends to raise ad auction prices (Meta CPMs reported up about 20%, a weak source)."
+      "On top sits the channel: Ulta's gross margin is 39.1%, Walmart's about 24.9%, and Amazon takes 50 to 60% of a typical seller's revenue with ads. Robots cut factory, warehouse and store labor. Cheap energy cuts fuel, plastic feedstock and process heat. Neither cuts retailer margin, platform take rates or ad prices, and platforms take a rising share of each sale (Amazon ads 23.5% to 41.9% of seller services, 2019 to H1 2026, Etsy take rate 16.5% to 24.2%). Since 2024 unit ad prices also outrun producer prices (Meta price per ad +12% to +14% a year in 2026), though over 2019 to 2025 they lagged them by 19%."
      ],
      "v": {
       "g": "Platform fees and slotting rules move consumer prices more than automation does.",
@@ -442,7 +442,7 @@
      "q": "What sells for human founders when production is cheap: brand, trust, community, 'human-made' premium evidence.",
      "a": [
       "Attention, distribution and trust. Big brands show it by how they spend and what they buy: e.l.f. and Estee Lauder each spend about a quarter of net sales on marketing, e.l.f.'s four largest retailers took 52% of its sales, and the founder-led brand rhode added $293.5M of sales in its first year inside e.l.f. Buying a founder's community is the modern exit and, for an 18-year-old, the most concrete labor-to-capital route still open.",
-      "The human-made premium is real as a preference and unproven as a price. 68% of US adults say they would pick human-made at the same price (vendor survey), and at CGTrader AI-generated 3D models are about one in six uploads but only 2.6% of sales. No peer-reviewed study of a cash premium was found. Retailers clone what works: store brands hit a record 24% unit share in H1 2026."
+      "The human-made premium is real as a preference and unproven as a price. 68% of US adults say they would pick human-made at the same price (vendor survey), and at CGTrader AI-generated 3D models are about one in six uploads but only 2.6% of sales. Peer-reviewed experiments show a label effect on ratings and purchase intent, and preregistered auctions show lower bids with AI involvement, but no transaction-based cash premium is measured, and platforms (Etsy) capture part of it. Retailers clone what works: store brands hit a record 24% unit share in H1 2026."
      ],
      "v": {
       "g": "AI-content labeling decides whether human-made can be verified, or the premium leaks to fakers.",
@@ -503,7 +503,7 @@
      "c": 65,
      "q": "Rival countermoves with teeth: China rare-earth and solar/battery export controls, Treasury selling, yuan oil, gold settlement, mBridge, e-CNY cross-border, BRICS, EU digital euro, Gulf.",
      "a": [
-      "On a judgment score (threat = cost to US x likelihood x (6 minus cost to rival) / 25), the top three are all energy hardware: the system play (3.20), rare-earth and magnet controls (3.20) and solar technology controls (3.00). Then other critical minerals (1.92), battery cells (1.44) and the EU digital euro plus MiCA (1.28). Financial moves score low: yuan oil and gold (0.96), CIPS (0.80), a gradual Treasury run-down (0.80), mBridge (0.60), a BRICS currency (0.12) and a Treasury fire-sale (0.08), which would hurt China most.",
+      "On a judgment score (threat = cost to US x likelihood x (6 minus cost to rival) / 25), the top three are all energy hardware: solar technology controls (3.00, now with primary text), rare-earth and magnet controls (2.56) and the system play (2.40). Then other critical minerals (1.92), battery cells (1.44) and the EU digital euro plus MiCA (1.28). AI technology controls, a new row, score 0.64. Financial moves score low: yuan oil and gold (0.96), CIPS (0.80), a gradual Treasury run-down (0.80), mBridge (0.60), a BRICS currency (0.12) and a Treasury fire-sale (0.08), which would hurt China most.",
       "Correction to Round 1: Saudi Arabia left mBridge on 13 May 2025 at the end of a proof of concept (SAMA via the FT), not in 2026 under US pressure. The most telling 2026 financial event was the UAE warning that it could sell oil in yuan if it could not get dollars, while asking for a swap line. The dollar's weak point is crisis supply, not price. Gold settlement rails are being built (Hong Kong gold clearing trials from 7 July 2026, settled in offshore yuan), but no foreign central bank is confirmed as a depositor."
      ],
      "v": {
@@ -564,7 +564,7 @@
     "CPI",
     "Real UHI, local goods (10.00 paid)",
     "Real UHI, imports (10.00 paid)",
-    "CPI if robots meet 80% of demand"
+    "CPI if robots meet 80% of demand (H2 to H3 conditional, needs housing supply to open)"
    ],
    "rows": [
     [
@@ -1007,28 +1007,28 @@
    ],
    "rows": [
     [
-     "Energy-hardware system play (deny US tools, supply Global South, finance in yuan)",
-     "5",
-     "2",
-     "4",
-     "3.20",
-     "All parts below are live. Module price CNY 1.802/W (2021) to 0.683/W (2025)"
-    ],
-    [
-     "Rare-earth and magnet controls",
-     "4",
-     "2",
-     "5",
-     "3.20",
-     "April 2025 licences live, October 2025 package suspended to 10 Nov 2026"
-    ],
-    [
      "Solar polysilicon, wafer and cell technology controls",
      "3",
      "1",
      "5",
      "3.00",
      "Proposal and export registration from 16 Oct 2026"
+    ],
+    [
+     "Rare-earth and magnet controls",
+     "4",
+     "2",
+     "4",
+     "2.56",
+     "April 2025 licences live, October 2025 package suspended to 10 Nov 2026"
+    ],
+    [
+     "Energy-hardware system play (deny US tools, supply Global South, finance in yuan)",
+     "5",
+     "2",
+     "3",
+     "2.40",
+     "All parts listed in this table are live. Module price CNY 1.802/W (2021) to 0.683/W (2025)"
     ],
     [
      "Other critical minerals (Ga, Ge, Sb, graphite)",
@@ -1077,6 +1077,14 @@
      "5",
      "0.80",
      "$694B (Feb) to $590.7B (Aug 2026)"
+    ],
+    [
+     "AI technology controls (MOFCOM No. 48, 23 items)",
+     "1",
+     "2",
+     "4",
+     "0.64",
+     "Proposed 16 Oct 2026, open-source releases and API access outside scope"
     ],
     [
      "mBridge and e-CNY cross-border",
@@ -1193,7 +1201,7 @@
      "R3-12",
      "Does electrified freight just swap oil dependence for battery dependence?",
      "Decides whether goods inflation becomes regional or simply changes chokepoint (Q8, Q9).",
-     "Electric share of new class 8 trucks above 5%, US cell capacity above 20 GW by 2028, EO 14421 rules on 24 Dec 2026."
+     "EO 14421 rules on 24 Dec 2026, IEA N-1 bars for anode and LFP cathode outside China above 100%, a US LFP cathode plant at commercial scale, and electric class 8 sales above 2%. In China, Case C is confirmed and under way in H0 (38.1% new-energy heavy trucks, January to September 2026)."
     ]
    ],
    "num": [],
