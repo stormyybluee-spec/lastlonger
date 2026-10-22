@@ -406,6 +406,99 @@ footer .wrap { font: 12px/1.6 var(--f-data); }
   .forecast { grid-template-columns: minmax(0, 1fr); gap: 2px; }
   header.mast.hero { background-image: repeating-radial-gradient(circle at 90% 8%, transparent 0 34px, var(--ring) 34px 35px); }
 }
+
+/* ===== Long-form pages: Landscape and Rulebook ===== */
+.readbar { position: absolute; left: 0; right: 0; bottom: -1px; height: 2px; background: transparent; }
+.readbar i { display: block; height: 100%; width: 0; background: var(--thread); }
+header.mast.lands { background-image: repeating-radial-gradient(circle at 12% 30%, transparent 0 52px, var(--ring) 52px 53px); }
+header.mast.rules { background-image: repeating-linear-gradient(180deg, transparent 0 31px, var(--ring) 31px 32px); }
+header.mast.lands h1, header.mast.rules h1 { text-align: center; justify-self: center; max-width: 14ch; }
+header.mast.lands .eyebrow, header.mast.rules .eyebrow { justify-self: center; }
+.bookwrap { display: grid; grid-template-columns: 230px minmax(0, 1fr); gap: 44px; padding-block: 40px 90px; }
+.bookindex { position: sticky; top: 76px; align-self: start; max-height: calc(100vh - 96px); overflow-y: auto; display: grid; gap: 1px; }
+.bookindex a { display: grid; grid-template-columns: 30px minmax(0, 1fr); gap: 6px; padding: 7px 10px; color: var(--muted); text-decoration: none; border-left: 2px solid var(--rule); font: 500 12.5px/1.35 var(--f-data); }
+.bookindex a b { color: var(--thread); font-weight: 500; }
+.bookindex a:hover { color: var(--ink); }
+.bookindex a.on { color: var(--ink); border-left-color: var(--thread); background: var(--sheet); }
+.book { display: grid; gap: 80px; min-width: 0; }
+.book > .intro { display: grid; gap: 14px; }
+.book > .intro p { font: 400 19px/1.6 var(--f-serif); max-width: 64ch; margin: 0; }
+.book .tips { display: grid; gap: 6px; padding: 16px 18px; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); }
+.book .tips li { font-size: 14.5px; }
+.chap { display: grid; gap: 18px; scroll-margin-top: 84px; min-width: 0; }
+.chap .chead { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 4px 22px; align-items: end; border-bottom: 1px solid var(--ink); padding-bottom: 14px; }
+.chap .num { font: 800 clamp(70px, 11vw, 132px)/.78 var(--f-display); font-stretch: 62%; color: transparent; -webkit-text-stroke: 1.3px var(--ink); grid-row: span 2; }
+.chap h2 { font-size: clamp(30px, 4.6vw, 52px); }
+.chap .kicker { margin: 0; font: 300 clamp(18px, 2.2vw, 23px)/1.35 var(--f-serif); }
+.chap p { margin: 0; max-width: 68ch; font-size: 17px; line-height: 1.72; }
+.chap h3 { font-size: 21px; margin-top: 10px; text-transform: uppercase; font-stretch: 72%; letter-spacing: .02em; }
+.chap ul, .chap ol { margin: 0; padding-left: 22px; max-width: 66ch; display: grid; gap: 6px; font-size: 16.5px; }
+.blk-steps { counter-reset: st; list-style: none; padding-left: 0 !important; }
+.blk-steps li { counter-increment: st; display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: 8px; }
+.blk-steps li::before { content: counter(st, decimal-leading-zero); font: 600 13px/1.9 var(--f-data); color: var(--thread); }
+.blk-callout { position: relative; overflow: hidden; padding: 18px 22px; border: 1px solid var(--rule); max-width: 72ch; background: radial-gradient(55% 60% at 100% 0%, var(--bloom), transparent 70%), var(--frost); }
+.blk-callout .lbl, .blk-insider .lbl, .blk-myth .lbl { display: block; font: 500 11px/1.4 var(--f-data); letter-spacing: .14em; text-transform: uppercase; margin-bottom: 6px; }
+.blk-callout p { font: 400 18px/1.55 var(--f-serif); }
+.blk-insider { padding: 14px 18px; border-left: 3px solid var(--thread); background: var(--sheet); max-width: 72ch; }
+.blk-insider .lbl { color: var(--thread); }
+.blk-myth { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); border: 1px solid var(--rule); max-width: 78ch; }
+.blk-myth > div { padding: 14px 16px; }
+.blk-myth > div + div { border-left: 1px solid var(--rule); background: var(--sheet); }
+.blk-myth .m .lbl { color: var(--bad); } .blk-myth .r .lbl { color: var(--accent); }
+.blk-myth p { font-size: 15.5px; line-height: 1.55; }
+.blk-quote { margin: 0; padding: 4px 0 4px 22px; border-left: 1px solid var(--ink); max-width: 64ch; }
+.blk-quote p { font: 300 italic clamp(20px, 2.6vw, 26px)/1.4 var(--f-serif); }
+.blk-quote cite { display: block; margin-top: 8px; font: 500 12px var(--f-data); font-style: normal; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.blk-diagram { display: grid; gap: 8px; max-width: 760px; }
+.blk-diagram .vis { background: var(--sheet); }
+.blk-diagram figcaption { font: 400 13.5px/1.5 var(--f-body); color: var(--muted); }
+.blk-check { max-width: 72ch; background: var(--sheet); border: 1px dashed var(--rule); padding: 12px 16px; }
+.blk-check summary { cursor: pointer; font-weight: 600; }
+.blk-check p { margin-top: 8px; font-size: 15.5px; }
+.chap .rules { display: grid; gap: 6px; padding: 14px 18px; border: 1px solid var(--ink); max-width: 72ch; }
+.chap .rules .lbl { font: 500 11px var(--f-data); letter-spacing: .14em; text-transform: uppercase; }
+.chap .rules li { font: 600 15.5px/1.45 var(--f-body); }
+.chap .links { display: flex; flex-wrap: wrap; gap: 8px; }
+.chap .links a { font: 13.5px/1.4 var(--f-body); padding: 8px 12px; border: 1px solid var(--rule); background: var(--sheet); color: var(--ink); text-decoration: none; border-radius: 2px; }
+.chap .links a b { color: var(--accent); }
+.rulelist { display: grid; gap: 0; counter-reset: rl; }
+.rulelist div { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 4px 16px; padding: 14px 0; border-top: 1px solid var(--rule); }
+.rulelist .n { font: 800 34px/1 var(--f-display); font-stretch: 62%; color: var(--thread); grid-row: span 2; }
+.rulelist .r { font: 600 17px/1.4 var(--f-body); }
+.rulelist .w { color: var(--muted); font-size: 15px; }
+.qalist { display: grid; gap: 8px; }
+.qalist details { border-top: 1px solid var(--rule); padding: 12px 0; }
+.qalist summary { cursor: pointer; font: 400 19px/1.4 var(--f-serif); }
+.qalist p { margin: 8px 0 0; max-width: 68ch; }
+.gloss { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; }
+.gloss div { padding: 12px 14px; background: var(--sheet); border: 1px solid var(--rule); }
+.gloss b { display: block; font: 700 14px var(--f-display); font-stretch: 80%; text-transform: uppercase; letter-spacing: .04em; }
+.gloss span { font-size: 14px; color: var(--muted); }
+@media (max-width: 900px) {
+  .bookwrap { grid-template-columns: minmax(0, 1fr); gap: 22px; }
+  .bookindex { position: sticky; top: 56px; z-index: 4; max-height: none; display: flex; overflow-x: auto; gap: 4px; background: var(--paper); padding-block: 6px; }
+  .bookindex a { flex: none; grid-template-columns: auto auto; border-left: 0; border-bottom: 2px solid var(--rule); }
+  .bookindex a.on { border-bottom-color: var(--thread); }
+  .bookindex a span { max-width: 22ch; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .blk-myth { grid-template-columns: minmax(0, 1fr); }
+  .blk-myth > div + div { border-left: 0; border-top: 1px solid var(--rule); }
+  .chap .chead { grid-template-columns: minmax(0, 1fr); }
+  .chap .num { grid-row: auto; }
+}
+
+/* ===== Membership ===== */
+.member { display: grid; }
+.memcard { position: relative; overflow: hidden; display: grid; gap: 12px; padding: 26px 28px; border: 1px solid var(--rule); max-width: 760px; background:
+  radial-gradient(50% 60% at 100% 0%, var(--bloom), transparent 70%),
+  radial-gradient(40% 50% at 0% 100%, var(--bloom), transparent 70%), var(--frost); }
+.memcard::after { content: ""; position: absolute; left: 45%; right: -15%; top: 38px; height: 2px; background: var(--thread); transform: rotate(-11deg); pointer-events: none; }
+.memcard > * { position: relative; z-index: 1; }
+.price { margin: 0; display: flex; align-items: baseline; gap: 10px; }
+.price b { font: 800 64px/1 var(--f-display); font-stretch: 62%; }
+.price span { font: 500 12px var(--f-data); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.memlist { margin: 0; padding-left: 20px; display: grid; gap: 8px; max-width: 64ch; }
+.waitform { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.waitform input { flex: 1 1 220px; min-width: 0; font: 15px var(--f-body); padding: 10px 12px; border: 1px solid var(--rule); border-radius: 2px; background: var(--sheet); color: var(--ink); }
 </style>
 
 <header class="sitebar">
@@ -413,32 +506,12 @@ footer .wrap { font: 12px/1.6 var(--f-data); }
     <a class="brand" href="#desk">Monetary Futures Desk</a>
     <nav class="tabs" aria-label="Pages">
       <a href="#desk" data-view="desk">Desk</a>
+      <a href="#landscape" data-view="landscape">Landscape</a>
+      <a href="#rulebook" data-view="rulebook">Rulebook</a>
       <a href="#plan" data-view="plan">Plan</a>
     </nav>
   </div>
-  <nav class="toc" aria-label="Desk sections" data-for="desk">
-    <div class="wrap">
-      <a href="#answer">The answer</a>
-      <a href="#future">Future map</a>
-      <a href="#debt">Fed and Treasury</a>
-      <a href="#board">The new board</a>
-      <a href="#scenarios">Scenarios</a>
-      <a href="#views">Three viewpoints</a>
-      <a href="#tiers">Tiers and UHI</a>
-      <a href="#r2-lead">Round 2</a>
-      <a href="#r2-set1">Set 1</a>
-      <a href="#r2-uhi">UHI</a>
-      <a href="#r2-entry">Age 18</a>
-      <a href="#r2-founders">Founders</a>
-      <a href="#r2-rivals">Rivals</a>
-      <a href="#r2-tables">Data tables</a>
-      <a href="#audit">Thesis audit</a>
-      <a href="#method">Method</a>
-      <a href="#watch">What to watch</a>
-      <a href="#cards">Thesis cards</a>
-      <a href="#evidence">Raw evidence</a>
-    </div>
-  </nav>
+  <div class="readbar" id="readBar" aria-hidden="true"><i></i></div>
 </header>
 
 <div class="pageview" id="view-desk">
@@ -757,6 +830,32 @@ footer .wrap { font: 12px/1.6 var(--f-data); }
 
 </div>
 
+<div class="pageview" id="view-landscape" hidden>
+  <header class="mast hero lands">
+    <svg class="decor" id="landDecor" aria-hidden="true"></svg>
+    <div class="wrap">
+      <div class="eyebrow">Landscape · the whole picture, in order</div>
+      <h1>Where money is heading</h1>
+      <p class="serifline">the desk, summed up and connected</p>
+      <p class="dek">The Desk is the evidence room. This page walks through everything it found in a sensible order, shows how the pieces connect, and ends with an epilogue on the most likely path from here.</p>
+    </div>
+  </header>
+  <main><div class="wrap bookwrap"><nav class="bookindex" id="landIndex" aria-label="Landscape chapters"></nav><div class="book" id="landBook"><p class="note">The Landscape is being written from the latest research rounds.</p></div></div></main>
+</div>
+
+<div class="pageview" id="view-rulebook" hidden>
+  <header class="mast hero rules">
+    <svg class="decor" id="ruleDecor" aria-hidden="true"></svg>
+    <div class="wrap">
+      <div class="eyebrow">Rulebook · Monetary 101 from the ground up</div>
+      <h1>The money rulebook</h1>
+      <p class="serifline">what every generation should be told</p>
+      <p class="dek">For anyone who never learned how money works. From barter and gold to Bretton Woods, 1971, how dollars are born, why empires fall, and how a new player starts on today's board.</p>
+    </div>
+  </header>
+  <main><div class="wrap bookwrap"><nav class="bookindex" id="ruleIndex" aria-label="Rulebook chapters"></nav><div class="book" id="ruleBook"><p class="note">The Rulebook is being written.</p></div></div></main>
+</div>
+
 <div class="pageview" id="view-plan" hidden>
   <header class="mast">
     <div class="wrap">
@@ -767,6 +866,29 @@ footer .wrap { font: 12px/1.6 var(--f-data); }
   </header>
   <main>
     <div class="wrap planwrap">
+      <section class="member" aria-labelledby="memTitle">
+        <div class="memcard">
+          <div class="eyebrow">Early insider membership</div>
+          <h2 id="memTitle">The desk, working for you</h2>
+          <p class="price"><b>$35</b><span>USD per month</span></p>
+          <ul class="memlist">
+            <li>Ask your own questions and get them researched with the same method as this desk: sources, evidence tiers, a debate, and odds.</li>
+            <li>A weekly market and policy breakdown in plain English, plus a short note before each Fed meeting and Treasury refunding.</li>
+            <li>Early access to new research rounds, the Landscape epilogue and Rulebook updates.</li>
+            <li>The deeper questions most people never think to ask, answered with the tells to watch.</li>
+          </ul>
+          <p class="note">Payments are not open yet. Join the waitlist and you will be contacted when founding memberships open. Research and education only, not personal financial advice.</p>
+          <form id="waitForm" class="waitform" hidden>
+            <label class="sr" for="waitContact">Email or best contact</label>
+            <input id="waitContact" type="text" maxlength="200" autocomplete="email" placeholder="Email or best contact (optional)">
+            <label class="sr" for="waitWhy">What do you want answered first?</label>
+            <input id="waitWhy" type="text" maxlength="500" placeholder="The first question you want answered">
+            <button class="more" type="submit" id="waitSend">Join the waitlist</button>
+            <span class="note" id="waitMsg" role="status"></span>
+          </form>
+          <p class="note" id="waitOff">Sign in with Contributor access to join the waitlist from this page.</p>
+        </div>
+      </section>
       <section class="gate sheet" id="planGate" aria-labelledby="gateTitle">
         <h2 id="gateTitle">This plan is locked</h2>
         <p class="note">Enter the password to read the plan and add proposals.</p>
@@ -1376,6 +1498,133 @@ const Learn = (function learn() {
 })();
 Learn.addButtons();
 
+
+/* RULEBOOK_DATA_START */
+const RULEBOOK = null;
+/* RULEBOOK_DATA_END */
+/* LANDSCAPE_DATA_START */
+const LANDSCAPE = null;
+/* LANDSCAPE_DATA_END */
+
+/* ---------- Rulebook and Landscape diagrams ---------- */
+(function moreVisuals() {
+  const box = (x, y, w, h, cls, label, sub) => `<rect class="${cls}" x="${x}" y="${y}" width="${w}" height="${h}" rx="4"/><text class="${cls === "vk-rule" || cls === "vk-bar" || cls === "vk-sheet" ? "vk-t" : "vk-on"}" x="${x + 10}" y="${y + (sub ? 20 : h / 2 + 5)}">${label}</text>` + (sub ? `<text class="${cls === "vk-rule" || cls === "vk-bar" || cls === "vk-sheet" ? "vk-s" : "vk-on"}" x="${x + 10}" y="${y + 38}" style="font-weight:400">${sub}</text>` : "");
+  const arrow = (x1, y1, x2, y2) => `<path class="vk-line" d="M${x1} ${y1} L${x2} ${y2}"/><path class="vk-line" d="M${x2} ${y2} l${x2 > x1 ? -7 : x2 < x1 ? 7 : -4} ${y2 > y1 ? -7 : y2 < y1 ? 7 : -4} M${x2} ${y2} l${x2 > x1 ? -7 : x2 < x1 ? 7 : 4} ${y2 > y1 ? -7 : y2 < y1 ? 7 : 4}"/>`;
+  Object.assign(VIS, {
+    functions: () => `<svg viewBox="0 0 560 250" role="img" aria-label="The three jobs of money">${box(195, 98, 170, 48, "vk-sheet", "MONEY", "trust that others accept it")}${box(20, 10, 210, 50, "vk-accent", "Medium of exchange", "you spend it")}${box(330, 10, 210, 50, "vk-gold", "Store of value", "you keep it for later")}${box(175, 186, 210, 50, "vk-spec", "Unit of account", "you measure prices with it")}<path class="vk-line" d="M180 60 L240 98 M380 60 L320 98 M280 146 L280 186"/></svg>`,
+    "barter-to-money": () => { const st = ["Barter", "Credit tallies", "Commodities", "Coins", "Paper notes", "Digital ledgers"], sub = ["needs a double match", "owed favors, recorded", "shells, salt, metal", "stamped by a ruler", "promises to pay", "entries in a database"]; return `<svg viewBox="0 0 560 170" role="img" aria-label="From barter to digital money">${st.map((t, i) => `<rect class="${i % 2 ? "vk-bar" : "vk-rule"}" x="${10 + i * 92}" y="40" width="86" height="70" rx="4"/><text class="vk-t" x="${16 + i * 92}" y="64" style="font-size:12px">${t}</text><text class="vk-s" x="${16 + i * 92}" y="84" style="font-size:10.5px">${sub[i].split(" ").slice(0, 2).join(" ")}</text><text class="vk-s" x="${16 + i * 92}" y="98" style="font-size:10.5px">${sub[i].split(" ").slice(2).join(" ")}</text>`).join("")}<path class="vk-dash" d="M10 140 L550 140" style="stroke: var(--thread)"/><text class="vk-s" x="10" y="160">The thing changes. The job stays: a trusted record of who can claim what.</text><text class="vk-s" x="10" y="26">Thousands of years</text><text class="vk-s" x="470" y="26">Today</text></svg>`; },
+    goldstd: () => `<svg viewBox="0 0 560 200" role="img" aria-label="The gold standard">${box(20, 40, 180, 60, "vk-sheet", "Paper dollar", "a claim on gold")}${box(360, 40, 180, 60, "vk-gold", "Gold in the vault", "$20.67 an ounce until 1933")}<path class="vk-line" d="M200 62 L360 62 M200 80 L360 80"/><text class="vk-s" x="232" y="56">redeem at the bank</text><text class="vk-s" x="232" y="98">deposit gold, get notes</text><text class="vk-t" x="20" y="150">The rule: money can only grow as fast as the gold pile.</text><text class="vk-s" x="20" y="172">Good for savers. Painful for debtors when the economy outgrows the gold.</text></svg>`,
+    "bw-system": () => `<svg viewBox="0 0 560 230" role="img" aria-label="Bretton Woods 1944">${box(200, 10, 160, 40, "vk-gold", "Gold, $35 an ounce")}${box(200, 92, 160, 44, "vk-accent", "US dollar")}${["Pound", "Franc", "Mark", "Yen", "Lira"].map((c, i) => box(14 + i * 108, 178, 96, 36, "vk-rule", c)).join("")}<path class="vk-line" d="M280 50 L280 92"/>${[0, 1, 2, 3, 4].map(i => `<path class="vk-line" d="M${62 + i * 108} 178 L280 136"/>`).join("")}<text class="vk-s" x="298" y="76">only foreign central banks could convert</text><text class="vk-s" x="372" y="118">pegs held within 1%</text></svg>`,
+    "recycle-loop": () => { const n = [["US buys more than it sells", 210, 14], ["Dollars flow abroad", 380, 92], ["Exporters and central banks hold dollars", 300, 176], ["They buy US Treasuries", 70, 176], ["US borrows cheaply, keeps spending", 10, 92]]; return `<svg viewBox="0 0 560 230" role="img" aria-label="The dollar recycling loop">${n.map(([t, x, y], i) => `<rect class="${i === 3 ? "vk-accent" : "vk-rule"}" x="${x}" y="${y}" width="${i === 2 ? 250 : 170}" height="38" rx="19"/><text class="${i === 3 ? "vk-on" : "vk-t"}" x="${x + 14}" y="${y + 24}" style="font-size:12px">${t}</text>`).join("")}<path class="vk-line" d="M380 33 C450 40 470 70 470 92 M470 130 C470 160 450 170 440 176 M300 195 L240 195 M70 176 C40 160 40 140 60 130 M95 92 C110 50 160 33 210 33"/><text class="vk-s" x="190" y="122">the loop that made the dollar the world's money</text></svg>`; },
+    "three-levels": () => { const c = [["Individual", "vk-spec", ["cheaper imported goods", "lower mortgage rates", "but fewer factory jobs"]], ["Business", "vk-gold", ["exporters abroad earn dollars", "they buy US assets", "US firms borrow cheaply"]], ["Government", "vk-accent", ["reserves held in Treasuries", "deficits financed abroad", "sanctions reach through banks"]]]; return `<svg viewBox="0 0 560 210" role="img" aria-label="Three levels of the dollar system">${c.map(([t, cls, items], i) => `<rect class="${cls}" x="${10 + i * 184}" y="10" width="172" height="36" rx="4"/><text class="vk-on" x="${22 + i * 184}" y="33">${t}</text>${items.map((it, j) => `<text class="vk-s" x="${16 + i * 184}" y="${74 + j * 26}">${j + 1}. ${it}</text>`).join("")}`).join("")}<text class="vk-s" x="10" y="200">The same loop, felt differently at each level.</text></svg>`; },
+    "nixon-1971": () => { const ev = [[1944, "$35 = 1 ounce"], [1960, "dollars abroad exceed US gold"], [1971, "Aug 15: gold window closed"], [1973, "currencies float"], [1974, "oil priced in dollars"], [1980, "Volcker: rates near 20%"]]; const x = y => 30 + (y - 1944) / 36 * 500; return `<svg viewBox="0 0 560 190" role="img" aria-label="From Bretton Woods to the 1971 shock"><path class="vk-line" d="M30 90 L530 90"/>${ev.map(([y, t], i) => `<circle class="${y === 1971 ? "vk-bad" : "vk-accent"}" cx="${x(y)}" cy="90" r="${y === 1971 ? 8 : 5}"/><text class="vk-t" x="${x(y)}" y="${i % 2 ? 128 : 62}" text-anchor="middle" style="font-size:12px">${y}</text><text class="vk-s" x="${x(y)}" y="${i % 2 ? 146 : 44}" text-anchor="middle" style="font-size:10.5px">${t}</text>`).join("")}<text class="vk-s" x="30" y="180">After 1971 the dollar is backed by trust in US taxes, markets and power, not metal.</text></svg>`; },
+    "loan-creates-deposit": () => `<svg viewBox="0 0 560 220" role="img" aria-label="A loan creates a deposit"><text class="vk-t" x="20" y="22">The bank's books</text><text class="vk-t" x="300" y="22">Your books</text>${["20", "300"].map(x => `<path class="vk-line" d="M${x} 34 L${+x + 240} 34 M${+x + 120} 34 L${+x + 120} 150"/><text class="vk-s" x="${+x + 6}" y="52">Assets</text><text class="vk-s" x="${+x + 126}" y="52">Liabilities</text>`).join("")}<text class="vk-t" x="26" y="92" style="fill: var(--accent)">+$500k loan</text><text class="vk-t" x="146" y="92" style="fill: var(--accent)">+$500k deposit</text><text class="vk-s" x="146" y="110">(it owes you)</text><text class="vk-t" x="306" y="92" style="fill: var(--accent)">+$500k deposit</text><text class="vk-t" x="426" y="92" style="fill: var(--accent)">+$500k loan</text><text class="vk-s" x="306" y="110">(new money)</text><text class="vk-s" x="20" y="182">Two entries, typed at once. No saver's money moved. New money exists until the loan is repaid,</text><text class="vk-s" x="20" y="200">then both entries cancel and that money disappears.</text></svg>`,
+    "musical-chairs": () => `<svg viewBox="0 0 560 240" role="img" aria-label="The musical chairs question about interest"><text class="vk-t" x="20" y="22">You lend YYY$10 at 5%. The borrower owes YYY$10.50. Only YYY$10 exists.</text>${box(20, 40, 250, 92, "vk-bad", "If you hoard the interest", "")}<text class="vk-on" x="30" y="86" style="font-weight:400">the extra 50 cents can never be found.</text><text class="vk-on" x="30" y="106" style="font-weight:400">Someone must default or borrow more.</text>${box(290, 40, 250, 92, "vk-accent", "If you spend it back", "")}<text class="vk-on" x="300" y="86" style="font-weight:400">you buy 50 cents of the borrower's</text><text class="vk-on" x="300" y="106" style="font-weight:400">work. The coins return. Debt is payable.</text><text class="vk-s" x="20" y="166">Money circulates, so interest can be paid without endless new loans.</text><text class="vk-s" x="20" y="188">Your intuition is right about something else: when debt grows faster than income,</text><text class="vk-s" x="20" y="208">the system needs ever more credit to avoid defaults. That is the real musical chairs.</text></svg>`,
+    seasons: () => { const eras = [[1873, 1896, "def", "long deflation"], [1914, 1920, "inf", "war"], [1929, 1933, "def", "Depression"], [1941, 1951, "inf", "war, yield cap"], [1966, 1981, "inf", "Great Inflation"], [1982, 2020, "dis", "long disinflation"], [2021, 2026, "inf", "inflation returns"]]; const x = y => 20 + (y - 1870) / 156 * 520; return `<svg viewBox="0 0 560 200" role="img" aria-label="Seasons of money, 1870 to 2026"><path class="vk-line" d="M20 100 L540 100"/>${eras.map(([a, b, k, t], i) => `<rect class="${k === "inf" ? "vk-bad" : k === "def" ? "vk-accent" : "vk-bar"}" x="${x(a)}" y="${k === "inf" ? 62 : 102}" width="${Math.max(4, x(b) - x(a))}" height="36" rx="2"/><text class="vk-s" x="${x(a)}" y="${k === "inf" ? 52 - (i % 2) * 14 : 156 + (i % 2) * 14}" style="font-size:10.5px">${t}</text>`).join("")}${[1870, 1900, 1950, 2000, 2026].map(y => `<text class="vk-s" x="${x(y)}" y="196" text-anchor="middle" style="font-size:10.5px">${y}</text>`).join("")}<text class="vk-s" x="20" y="16">Above the line: inflationary seasons (debtors win). Below: deflationary or disinflationary seasons (savers win).</text></svg>`; },
+    "empire-cycle": () => { const e = [["Portugal", 1450, 1530], ["Spain", 1530, 1640], ["Netherlands", 1640, 1720], ["France", 1720, 1815], ["Britain", 1815, 1920], ["United States", 1921, 2026]]; const x = y => 120 + (y - 1450) / 576 * 420; return `<svg viewBox="0 0 560 230" role="img" aria-label="Reserve currency eras">${e.map(([n, a, b], i) => `<text class="vk-t" x="10" y="${34 + i * 30}" style="font-size:12px">${n}</text><rect class="${i === 5 ? "vk-accent" : "vk-gold"}" x="${x(a)}" y="${20 + i * 30}" width="${x(b) - x(a)}" height="18" rx="2"/><text class="vk-s" x="${x(b) + 4}" y="${34 + i * 30}" style="font-size:10.5px">${b - a}${i === 5 ? "+" : ""} yrs</text>`).join("")}<text class="vk-s" x="10" y="218">Commonly cited estimates. Eras overlap and historians date them differently.</text></svg>`; },
+    yardstick: () => `<svg viewBox="0 0 560 190" role="img" aria-label="A shrinking yardstick"><text class="vk-t" x="20" y="22">Prices are measured with a ruler that shrinks a little every year</text><rect class="vk-accent" x="20" y="44" width="260" height="22" rx="2"/><text class="vk-on" x="28" y="60">$1.00 in 2000</text>${Array.from({ length: 11 }, (_, i) => `<path class="vk-line" d="M${20 + i * 26} 66 L${20 + i * 26} 74"/>`).join("")}<rect class="vk-bad" x="20" y="96" width="135" height="22" rx="2"/><text class="vk-on" x="28" y="112">$1.00 in 2025</text><text class="vk-s" x="170" y="112">buys about what $0.52 bought in 2000</text><text class="vk-s" x="20" y="150">US consumer prices rose 92.6% from Jan 2000 to Dec 2025, so it takes $1.93 to buy what $1 did.</text><text class="vk-s" x="20" y="172">Nominal = the number on the tag. Real = what it actually buys.</text></svg>`,
+    "board-start": () => `<svg viewBox="0 0 560 230" role="img" aria-label="How money enters a new board">${box(20, 80, 150, 64, "vk-sheet", "Empty board", "no one has money yet")}${[["Government spends more than it taxes", "vk-accent"], ["Banks make loans", "vk-gold"], ["Firms pay wages", "vk-spec"], ["Owners earn profits and rents", "vk-bad"]].map(([t, c], i) => `<rect class="${c}" x="250" y="${10 + i * 54}" width="290" height="40" rx="4"/><text class="vk-on" x="262" y="${35 + i * 54}">${i + 1}. ${t}</text><path class="vk-line" d="M170 112 L250 ${30 + i * 54}"/>`).join("")}<text class="vk-s" x="20" y="222">A new player enters through 3 (wages) and climbs to 4 (ownership). Credit (2) is the ladder in between.</text></svg>`,
+    "money-layers": () => { const L = [["Derivatives and private credit", 520, "vk-bar"], ["Treasuries (government bonds)", 430, "vk-rule"], ["Bank deposits (made by loans)", 340, "vk-spec"], ["Base money (reserves and cash)", 250, "vk-accent"], ["Gold (no one's debt)", 140, "vk-gold"]]; return `<svg viewBox="0 0 560 240" role="img" aria-label="The layers of money">${L.map(([t, w, c], i) => `<rect class="${c}" x="${280 - w / 2}" y="${14 + i * 42}" width="${w}" height="34" rx="3"/><text class="${c === "vk-bar" || c === "vk-rule" ? "vk-t" : "vk-on"}" x="280" y="${36 + i * 42}" text-anchor="middle">${t}</text>`).join("")}<text class="vk-s" x="10" y="234">Wide top = huge and fragile. Narrow bottom = small and solid. In a crisis, money runs downward.</text></svg>`; }
+  });
+})();
+
+/* ---------- Chapter renderer ---------- */
+function renderBook(data, bookId, indexId, opts) {
+  const book = document.getElementById(bookId), idx = document.getElementById(indexId);
+  if (!data || !book) return;
+  book.replaceChildren(); idx.replaceChildren();
+  const T = (tag, a, t) => el(tag, a, t);
+  const intro = T("div", { class: "intro" });
+  for (const p of data.intro || []) intro.appendChild(T("p", null, p));
+  if (data.howToRead && data.howToRead.length) { const ul = T("ul", { class: "tips" }); data.howToRead.forEach(t => ul.appendChild(T("li", null, t))); intro.appendChild(ul); }
+  book.appendChild(intro);
+  const chapTitles = {};
+  (data.chapters || []).forEach(c => chapTitles[c.id] = c.title);
+  for (const c of data.chapters || []) {
+    const sec = T("section", { class: "chap", id: c.id });
+    const head = T("div", { class: "chead" });
+    head.appendChild(T("div", { class: "num", "aria-hidden": "true" }, c.num || ""));
+    head.appendChild(T("h2", null, c.title));
+    if (c.kicker) head.appendChild(T("p", { class: "kicker" }, c.kicker));
+    sec.appendChild(head);
+    for (const b of c.blocks || []) {
+      if (b.type === "p") sec.appendChild(T("p", null, b.text));
+      else if (b.type === "h") sec.appendChild(T("h3", null, b.text));
+      else if (b.type === "list" || b.type === "steps") { const l = T(b.type === "steps" ? "ol" : "ul", b.type === "steps" ? { class: "blk-steps" } : null); (b.items || []).forEach(i => l.appendChild(T("li", null, i))); sec.appendChild(l); }
+      else if (b.type === "callout") { const d = T("div", { class: "blk-callout" }); d.appendChild(T("span", { class: "lbl" }, b.label || "Picture this")); d.appendChild(T("p", null, b.text)); sec.appendChild(d); }
+      else if (b.type === "insider") { const d = T("div", { class: "blk-insider" }); d.appendChild(T("span", { class: "lbl" }, b.label || "Insider eye-opener")); d.appendChild(T("p", null, b.text)); sec.appendChild(d); }
+      else if (b.type === "myth") { const d = T("div", { class: "blk-myth" }); const m = T("div", { class: "m" }); m.appendChild(T("span", { class: "lbl" }, "Myth")); m.appendChild(T("p", null, b.myth)); const r = T("div", { class: "r" }); r.appendChild(T("span", { class: "lbl" }, "Reality")); r.appendChild(T("p", null, b.reality)); d.appendChild(m); d.appendChild(r); sec.appendChild(d); }
+      else if (b.type === "quote") { const q = T("blockquote", { class: "blk-quote" }); q.appendChild(T("p", null, b.text)); if (b.by) q.appendChild(T("cite", null, b.by)); sec.appendChild(q); }
+      else if (b.type === "diagram" && VIS[b.key]) { const f = T("figure", { class: "blk-diagram" }); const v = T("div", { class: "vis" }); v.innerHTML = VIS[b.key](); f.appendChild(v); if (b.caption) f.appendChild(T("figcaption", null, b.caption)); sec.appendChild(f); }
+      else if (b.type === "table") { const w = T("div", { class: "tablebox" }), t = T("table"), th = T("thead"), hr = T("tr"); (b.cols || []).forEach(x => hr.appendChild(T("th", null, x))); th.appendChild(hr); t.appendChild(th); const tb = T("tbody"); (b.rows || []).forEach(r => { const tr = T("tr"); r.forEach(x => tr.appendChild(T("td", null, x))); tb.appendChild(tr); }); t.appendChild(tb); w.appendChild(t); sec.appendChild(w); }
+      else if (b.type === "check") { const d = T("details", { class: "blk-check" }); d.appendChild(T("summary", null, "Check yourself: " + b.q)); d.appendChild(T("p", null, b.a)); sec.appendChild(d); }
+    }
+    if (c.rules && c.rules.length) { const r = T("div", { class: "rules" }); r.appendChild(T("span", { class: "lbl" }, opts.rulesLabel || "Rules from this chapter")); const ul = T("ul"); c.rules.forEach(x => ul.appendChild(T("li", null, x))); r.appendChild(ul); sec.appendChild(r); }
+    if (c.connects && c.connects.length) { const l = T("div", { class: "links" }); for (const x of c.connects) { const a = T("a", { href: "#" + x.id }); a.appendChild(T("b", null, (chapTitles[x.id] || x.id) + ": ")); a.appendChild(document.createTextNode(x.how)); l.appendChild(a); } sec.appendChild(l); }
+    book.appendChild(sec);
+    const a = T("a", { href: "#" + c.id }); a.appendChild(T("b", null, c.num || "")); a.appendChild(T("span", null, c.title)); idx.appendChild(a);
+  }
+  const extra = (id, num, title, kicker, fill) => {
+    const sec = T("section", { class: "chap", id }); const head = T("div", { class: "chead" });
+    head.appendChild(T("div", { class: "num", "aria-hidden": "true" }, num)); head.appendChild(T("h2", null, title)); if (kicker) head.appendChild(T("p", { class: "kicker" }, kicker));
+    sec.appendChild(head); fill(sec); book.appendChild(sec);
+    const a = T("a", { href: "#" + id }); a.appendChild(T("b", null, num)); a.appendChild(T("span", null, title)); idx.appendChild(a);
+  };
+  if (data.rulebook && data.rulebook.length) extra(opts.pre + "-rules", "§", opts.rulesTitle || "The rules to pass down", "Short enough to remember. Each one was paid for by somebody's mistake.", sec => { const l = T("div", { class: "rulelist" }); for (const r of data.rulebook) { const d = T("div"); d.appendChild(T("span", { class: "n" }, String(r.n))); d.appendChild(T("span", { class: "r" }, r.rule)); d.appendChild(T("span", { class: "w" }, r.why)); l.appendChild(d); } sec.appendChild(l); });
+  if (data.mistakes && data.mistakes.length) extra(opts.pre + "-mistakes", "§", "Mistakes each generation made", null, sec => { const w = T("div", { class: "tablebox" }), t = T("table"); const hr = T("tr"); ["Generation", "Mistake", "Lesson"].forEach(x => hr.appendChild(T("th", null, x))); const th = T("thead"); th.appendChild(hr); t.appendChild(th); const tb = T("tbody"); data.mistakes.forEach(m => { const tr = T("tr"); [m.generation, m.mistake, m.lesson].forEach(x => tr.appendChild(T("td", null, x))); tb.appendChild(tr); }); t.appendChild(tb); w.appendChild(t); sec.appendChild(w); });
+  if (data.questions && data.questions.length) extra(opts.pre + "-questions", "?", opts.qTitle || "Questions a new reader asks", null, sec => { const l = T("div", { class: "qalist" }); data.questions.forEach(q => { const d = T("details"); d.appendChild(T("summary", null, q.q)); d.appendChild(T("p", null, q.a)); l.appendChild(d); }); sec.appendChild(l); });
+  if (data.glossary && data.glossary.length) extra(opts.pre + "-glossary", "Aa", "Glossary", null, sec => { const g = T("div", { class: "gloss" }); data.glossary.forEach(x => { const d = T("div"); d.appendChild(T("b", null, x.t)); d.appendChild(T("span", null, x.d)); g.appendChild(d); }); sec.appendChild(g); });
+  if ("IntersectionObserver" in window) {
+    const links = [...idx.querySelectorAll("a")];
+    const io = new IntersectionObserver(es => { for (const e of es) if (e.isIntersecting) links.forEach(a => a.classList.toggle("on", a.getAttribute("href") === "#" + e.target.id)); }, { rootMargin: "-30% 0px -60% 0px" });
+    book.querySelectorAll(".chap").forEach(s => io.observe(s));
+  }
+}
+renderBook(RULEBOOK, "ruleBook", "ruleIndex", { pre: "rb", rulesTitle: "The rulebook" });
+renderBook(LANDSCAPE, "landBook", "landIndex", { pre: "ls", rulesLabel: "Takeaways", rulesTitle: "What to remember", qTitle: "Questions still open" });
+
+/* ---------- Reading progress ---------- */
+(function readbar() {
+  const bar = document.querySelector("#readBar i"); if (!bar) return;
+  let ticking = false;
+  window.addEventListener("scroll", () => { if (ticking) return; ticking = true; requestAnimationFrame(() => { const h = document.documentElement; const max = h.scrollHeight - h.clientHeight; bar.style.width = (max > 0 ? Math.min(100, h.scrollTop / max * 100) : 0) + "%"; ticking = false; }); }, { passive: true });
+})();
+
+/* ---------- Membership waitlist ---------- */
+(async function waitlist() {
+  const form = document.getElementById("waitForm"), off = document.getElementById("waitOff"), msg = document.getElementById("waitMsg");
+  if (!form) return;
+  const db = await (window.claude?.use?.("db") ?? Promise.resolve(null)).catch(() => null);
+  const user = await (window.claude?.use?.("user") ?? Promise.resolve(null)).catch(() => null);
+  if (!db || !user) return;
+  const uid = await Promise.resolve(user.id ? user.id() : null).catch(() => null);
+  if (!uid) return;
+  const ref = db.doc("waitlist/" + uid);
+  form.hidden = false; off.hidden = true;
+  try { const snap = await ref.get(); if (snap.exists) msg.textContent = "You are on the waitlist. Submit again to update your note."; } catch (e) {}
+  form.addEventListener("submit", async e => {
+    e.preventDefault();
+    const btn = document.getElementById("waitSend"); btn.disabled = true; msg.textContent = "Saving…";
+    try {
+      await ref.set({ contact: document.getElementById("waitContact").value.trim().slice(0, 200), first: document.getElementById("waitWhy").value.trim().slice(0, 500), plan: "early-insider-35", at: new Date().toISOString() });
+      msg.textContent = "You are on the waitlist. Thank you.";
+    } catch (err) { msg.textContent = err && err.code === "invalid_argument" ? "Your access level cannot join from this page." : "Could not save. Try again in a moment."; }
+    finally { btn.disabled = false; }
+  });
+})();
+
+/* ---------- Decor for long-form headers ---------- */
+(function bookDecor() {
+  const NS = "http://www.w3.org/2000/svg";
+  for (const [id, seed] of [["landDecor", 35], ["ruleDecor", 44]]) {
+    const svg = document.getElementById(id); if (!svg) continue;
+    svg.setAttribute("viewBox", "0 0 1000 520"); svg.setAttribute("preserveAspectRatio", "xMidYMid slice");
+    let s = seed; const r = () => { s = (s * 9301 + 49297) % 233280; return s / 233280; };
+    for (let i = 0; i < 6; i++) { const l = document.createElementNS(NS, "line"); const y1 = r() * 520, y2 = r() * 520; l.setAttribute("x1", -40); l.setAttribute("y1", y1); l.setAttribute("x2", 1040); l.setAttribute("y2", y2); l.setAttribute("class", "thr"); svg.appendChild(l); }
+    for (let i = 0; i < 26; i++) { const x = r() * 1000, y = r() * 520; if (x > 250 && x < 750 && r() < 0.85) continue; const c = document.createElementNS(NS, "circle"); c.setAttribute("cx", x); c.setAttribute("cy", y); c.setAttribute("r", 5 + r() * 6); c.setAttribute("class", "hole"); svg.appendChild(c); }
+  }
+})();
+
 /* ---------- Plan: password gate, renderer, proposals ---------- */
 let planLoaded = false, planUnlocked = false;
 function loadPlan() {
@@ -1483,7 +1732,7 @@ function loadPlan() {
 
 /* ---------- Router ---------- */
 (function router() {
-  const views = { desk: document.getElementById("view-desk"), plan: document.getElementById("view-plan") };
+  const views = { desk: document.getElementById("view-desk"), landscape: document.getElementById("view-landscape"), rulebook: document.getElementById("view-rulebook"), plan: document.getElementById("view-plan") };
   const tabs = document.querySelectorAll(".tabs a"), tocs = document.querySelectorAll("nav.toc");
   function show(name, anchor) {
     for (const k in views) views[k].hidden = k !== name;
