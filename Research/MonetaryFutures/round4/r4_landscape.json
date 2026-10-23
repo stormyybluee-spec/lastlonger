@@ -1,0 +1,221 @@
+{
+  "chapter": {
+    "id": "ls-13",
+    "num": "13",
+    "title": "If a giant falls: where the money goes",
+    "kicker": "The owner asked who takes over if the US declines, whether Europe has to fall, and where its money would go. The short answers: nobody whole, no, and mostly West.",
+    "blocks": [
+      {
+        "type": "tldr",
+        "label": "In 60 seconds",
+        "items": [
+          "If the US weakens, no single country inherits its money role. The dollar's lost reserve share since 2000 went to gold and a crowd of smaller currencies, while the yuan holds only 2.11%.",
+          "China as it is cannot take over, because its capital controls stop money leaving. Even if it opened, reaching 10% of world reserves would take about 9 to 18 years.",
+          "Europe is sliding slowly against the US, not falling. Its income per head has held at about 70% to 75% of the US level for 25 years in purchasing power.",
+          "The sharp risk is France: it now pays more than Italy to borrow, and the desk puts a France- or Italy-led euro crisis at 20% by 2028.",
+          "Europe's money goes mostly to the US. Factories split between the US, Asia and Europe's own edges. Latin America gets a small slice."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "This chapter starts from a question the owner asked after reading a viral post on X. Money moves between baskets, and right now Europe sits below the United States. If everyone is quietly hoping for a US downfall, who takes over: China, perhaps, especially if it opened its capital controls? Or does Europe fall, and would some countries do better by breaking away, as Britain did? And if the US has no problems, must Europe fall? Many people in Southeast Asia believe the money of a falling region would flow to them. The owner argued it would flow back West, to North and Latin America, because the Middle East is unstable, Africa has many wars, and Central Asia and Russia are cut off. He asked for the answer through culture, manufacturing, goods and regulation. This chapter tells the story in that order."
+      },
+      {
+        "type": "h",
+        "text": "Part one: if the US weakens, who takes over?"
+      },
+      {
+        "type": "p",
+        "text": "Start with what has already happened, because the succession is not hypothetical. In 2000 the US dollar made up about 71% of the foreign currency that central banks hold as reserves. In mid-2026 it made up 56.70%. That is a real loss of about 14 points. But look at who gained. The euro went from about 18% to 20.60%, roughly where it began. The Chinese yuan holds 2.11%, and its share has actually fallen since 2022. The winners were a crowd: the Canadian and Australian dollars and other smaller currencies (about 11% together), and above all gold, which is not a currency at all."
+      },
+      {
+        "type": "diagram",
+        "key": "r4-heirs",
+        "caption": "Shares of allocated foreign exchange reserves in 2000 and mid-2026. The dollar fell from about 71% to 56.70%, but the yuan rose only to 2.11%. Smaller currencies took about 11%, and gold, counted separately, is now about 26% of all reserves at market prices."
+      },
+      {
+        "type": "p",
+        "text": "Central banks hold more than 36,000 tonnes of gold, worth about $4.64 trillion at today's price. That is about 26% of all reserves and about 1.8 times everything they hold in euros. The European Central Bank itself reported that by the end of 2025 gold had passed both the euro and US Treasury bonds as a share of official reserves. The reason is simple: after Russia's reserves were frozen in 2022, many states wanted a store of value that no foreign government could freeze."
+      },
+      {
+        "type": "callout",
+        "label": "Picture this",
+        "text": "Think of a relay race where the runner with the baton starts to slow. No other runner has trained for the full distance. So the baton is not passed to one new leader. Instead several runners each carry part of the load: gold carries savings that must be safe from sanctions, the euro carries European trade and lending, and the yuan carries trade inside China's own supply chains."
+      },
+      {
+        "type": "p",
+        "text": "Why can't China simply take over? The desk scores candidates on six pillars: how much they produce, whether they can protect themselves, whether they keep promises to foreign savers, how deep and open their markets are (the plumbing), their people and skills, and their place in the world. The US scores 27 of 30. The euro area and China as it is score 18 each. China's weakest pillar is plumbing: residents may move only $50,000 a year abroad, the exchange rate is guided every morning, and foreigners hold only about RMB 3.2 trillion of its bonds. A reserve currency must let money leave freely, and China's economic model depends on stopping it."
+      },
+      {
+        "type": "p",
+        "text": "The owner asked us to take seriously the case where China opens up. Earlier research on this desk worked through it, and this round extended it. The first effect of an opening would probably be money rushing out of China into dollars, as happened in 2015 to 2016 when China's reserves fell by about $1 trillion. After that, history sets the speed limit. The yen gained about 0.4 points of reserve share a year after Japan liberalised in 1980. The euro gained about 0.9 points a year in its first decade. At those speeds, a China that opened in 2030 would reach 10% of world reserves around 2039 to 2048. Reaching 20% would need something like a world war hitting the dollar, which is what it took for the dollar to overtake sterling in the 1920s."
+      },
+      {
+        "type": "myth",
+        "myth": "Everyone is praying for a US downfall, so someone is ready to take over.",
+        "reality": "Russia and Iran want it. Almost everyone else would be hurt. The three largest creditor nations, Germany, China and Japan, and the holders of $9.33 trillion of US Treasuries would lose first. What states actually do is hedge: buy gold, trim Treasuries in a crisis and build back-up payment systems, while dollar lending to the rest of the world keeps growing."
+      },
+      {
+        "type": "p",
+        "text": "Markets ran a live test in April 2025, when US policy itself was the shock. Money ran to the euro (up 13.8% in six months), the yen and gold, not to the yuan. And the 'US downfall' trade has since reversed: the euro and gold peaked in late January 2026, and the dollar and US shares have risen since."
+      },
+      {
+        "type": "h",
+        "text": "Part two: is Europe falling?"
+      },
+      {
+        "type": "p",
+        "text": "The viral claim is that Europe's income per head fell from about 80% of America's to about 50%. Measured in market dollars, the EU was 47% of the US in 2000, rose to 77% in 2008 when the euro was very strong, and is about 53% now. So the fall is real only from the 2008 peak, and mostly it is the exchange rate. Measured in purchasing power, which adjusts for what money actually buys, the EU was about 70% of the US in 2000 and 72% in 2026. Two official series (the IMF's and the World Bank's) agree on that picture. One lane had quoted a lower IMF figure, but it turned out to be the IMF's series for all of Europe, including Russia, Turkey and Ukraine, not the EU."
+      },
+      {
+        "type": "p",
+        "text": "That flat line hides two opposite stories. The east caught up fast: Poland went from 33% to 63% of the US level. The western core slipped: Italy from 87% to 70%, France from 79% to 72%, Germany from 88% to 83%. German industrial output is 15.5% below its 2017 level, chemicals 24% below and cars 28% below, largely because European industry pays about twice the US price for electricity and four times for gas. Europe hosts about 5% of the world's AI computing power against 78% in the US. And spending on pensions and old age (10.6% of GDP) already exceeds the entire public payroll."
+      },
+      {
+        "type": "diagram",
+        "key": "r4-fork",
+        "caption": "What 'fall' could mean, with desk odds by 2028, 2035 and 2050. Slow relative decline is the base case. A France- or Italy-led euro crisis is the real tail risk. Leaving the euro, a breakup or becoming 'dirt poor' all sit in low single digits or below."
+      },
+      {
+        "type": "p",
+        "text": "The sharp edge is France. On 23 October its 10-year bonds yielded 5.05%, 171.8 basis points (1.72 percentage points) more than Germany's, up from 135 points just eight days earlier and higher than Italy's. Its deficit is about 5.4% of GDP. The European Central Bank is raising rates (to 2.50% in September) because inflation hit 3.8%, and it has told Paris that its bond-buying backstop requires following EU budget rules. Marine Le Pen leads the 2027 presidential race at 46% on the deepest prediction market. Yet this is a French problem, not a European one: Italy's and Spain's borrowing costs stay calm, and German bond yields are rising, not falling as they did in the 2011 breakup scare."
+      },
+      {
+        "type": "p",
+        "text": "Would breaking away help? The evidence says no. Brexit cost Britain about 6% to 8% of GDP per head by 2025 according to a study built with Bank of England survey data, and Britain grew 13.5% from 2016 to 2026 against 18.1% for the EU. Switzerland and Norway are rich, but both are inside the single market by treaty. Leaving the euro would mean a bank run and capital controls before any gain, as Greece learned in 2015 when about €41 billion of deposits fled. The best position is Poland's or Sweden's: in the single market with their own currency. But even there, the currency was not the secret. Lithuania, inside the euro, caught up as fast as Poland, and Poland now runs the EU's largest deficit (7.2% of GDP)."
+      },
+      {
+        "type": "h",
+        "text": "Part three: the X thread against the data"
+      },
+      {
+        "type": "p",
+        "text": "The post that started this, by John Loeber, was careful. It called a 'very poor Europe' in 10 to 20 years an extreme case whose probability is small but growing. The quote that spread it, by Johannes Koenraadt, dropped the caution and stated it as a certainty. The desk collected 142 replies, sorted them and tested every checkable claim."
+      },
+      {
+        "type": "diagram",
+        "key": "r4-thread",
+        "caption": "The 142 collected replies by type, counted plainly and weighted by likes, and how 22 claims checked out: 6 confirmed, 11 partly true, 4 false, 1 unverifiable. About 13% of replies were hateful or ethnic content and were excluded as evidence."
+      },
+      {
+        "type": "p",
+        "text": "The pattern is striking. Claims about trends are mostly right: Chinese brands took a record 11.7% of EU car sales in August 2026, German and Italian electricity is costly, fertility is very low. Claims about end states are mostly wrong: Europe is not the world's largest consumer market (the US spends almost twice as much), Britain does not take half of Europe's venture capital (about a third), and sliding to 'middle income' would need France's income to fall by about two thirds. About 13% of replies contained hateful or ethnic content. They were counted only as part of the mood and never used as evidence."
+      },
+      {
+        "type": "p",
+        "text": "The thread also carried the owner's own premise: if the US is fine, Europe must fall. That fails too. In 2025 European shares rose 32.5% in dollars and US shares 16.4%. Both economies grew. The US bought $633 billion of EU goods last year, and Europe owns $16.2 trillion of US securities. A collapsing Europe would hurt American exporters and banks. What is zero-sum is narrower: shares. Reserve shares add up to 100%, and a euro invested in New York is not invested in Frankfurt. So a strong US can make Europe relatively poorer without making it absolutely poorer."
+      },
+      {
+        "type": "h",
+        "text": "Part four: where the money would go"
+      },
+      {
+        "type": "p",
+        "text": "The most useful finding of the round is that 'the money' is really four different things, and each follows its own rule. Financial money (pensions, insurers, funds, savers) goes to the deepest safe market. Factories go to cost, energy and customers. People go where the language, law and family ties already are. The wealthy go to low taxes and safety."
+      },
+      {
+        "type": "diagram",
+        "key": "r4-flows",
+        "caption": "The desk's model of where Europe's net outbound capital goes in 2028 to 2035 if the US holds and the EU declines: about 55% to North America, 15% to all of Asia, 12% to the UK, Switzerland and Norway, 6% to Latin America and smaller shares elsewhere. Factories, people and the wealthy follow different maps."
+      },
+      {
+        "type": "p",
+        "text": "For money, the answer is the United States, and it is already happening. Europe's holdings of US securities rose 3.8 times since 2008 to $16.2 trillion. History agrees: in the 1930s about $9 billion of gold fled Europe to the US, and after Brexit, British listings moved to New York, not Singapore. For factories, Southeast Asia's belief is partly right: Vietnam, Malaysia, Indonesia, Thailand and India score as well as the US for new plants because of labour, energy and supply chains. For people, moves are short: Germans who emigrated in 2025 went mainly to Switzerland, Austria and Spain. For the wealthy, the 2025 leaders were the UAE, the US, Italy, Switzerland and Portugal."
+      },
+      {
+        "type": "insider",
+        "text": "Southeast Asia's record $244 billion of foreign investment in 2025 looks like proof that the world's money is heading there. Read the fine print. More than 60% of it goes to Singapore, about 30% comes from East Asia, and the EU is only the third largest outside source. Investment in supply-chain factories there actually halved in 2025. The boom is real, but it is mostly Asian money, not money fleeing Europe."
+      },
+      {
+        "type": "h",
+        "text": "Part five: the verdict on the owner's thesis"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Money goes West: supported. About 55% of Europe's outbound capital goes to North America in the model, and the desk gives 90% that North America takes the largest share of Europe's portfolio money.",
+          "Latin America alongside North America: not supported. Latin America gets about 6%. It has real ties of language and family (Argentina has nearly a million registered Italians, Spain is Mexico's second largest investor), but Mexico scores 0.40 on the World Justice Project's rule-of-law index, below Russia, and Mexico, Brazil and Ecuador are among the ten most violent countries in ACLED's index.",
+          "The Middle East is messy: true in 2026, after the Iran war and attacks on Dubai. But the UAE was still the top destination for millionaires in 2025 and outscores almost all of Latin America on rule of law.",
+          "Africa faces civil wars: true for Nigeria, Sudan and the Sahel. But Morocco, Rwanda, Botswana and Mauritius outscore Brazil and Mexico on rule of law.",
+          "Central Asia and Russia are cut off: true for Russia under war and sanctions. 'Segregated' is the wrong word for Central Asia, whose real problems are small markets, distance from the sea and sanctions exposure. Kazakhstan scores level with Argentina."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Culture, tested through measurable things like language, legal system, family ties and rule of law, shapes where people go much more than where financial money goes. The owner's instinct about the West is right for money. His instinct about Latin America is right for people with family ties and wrong for capital."
+      },
+      {
+        "type": "h",
+        "text": "What to watch"
+      },
+      {
+        "type": "steps",
+        "items": [
+          "Moody's decision on France, due after the close on 23 October and not yet published at the time of writing.",
+          "The French budget vote on 27 October and the ECB meeting on 29 October, where a hold is priced at about 98%.",
+          "The French spread against 200 basis points for five days, and Italy's against 150. Crossing these lines moves the desk's odds.",
+          "The IMF's reserve survey in late December 2026: the dollar below 56%, the yuan above 2.5% or the euro above 22%.",
+          "The French presidential election in April and May 2027, and whether a new government clashes with EU budget rules."
+        ]
+      },
+      {
+        "type": "check",
+        "q": "Why does the desk say Europe's money goes mostly to the US even though Southeast Asia is growing faster?",
+        "a": "Because financial money goes to the deepest, safest, most liquid market, not the fastest-growing one. The US has the deepest stock and bond markets and the reserve currency. Fast growth attracts factories, which is why Southeast Asia gets a real share of relocated European plants, but not most of Europe's savings."
+      }
+    ],
+    "rules": [
+      "When a money giant weakens, its role passes to a crowd, not to one heir.",
+      "A reserve currency needs open pipes and kept promises. Size alone is not enough.",
+      "Relative decline is not collapse. Check purchasing power before believing income has halved.",
+      "Money goes to the deepest market, people to the same language, and both to the first open door.",
+      "Judge countries by measured institutions and security, not by continental reputations."
+    ],
+    "connects": [
+      {
+        "id": "ls-04",
+        "how": "The players and their real interests, which explain why most states hedge against the US rather than pray for its fall."
+      },
+      {
+        "id": "ls-06",
+        "how": "Gold's role as the neutral anchor, now larger than all euro reserves."
+      },
+      {
+        "id": "ls-10",
+        "how": "The rival currencies and shocks first mapped there, tested here as candidate heirs."
+      },
+      {
+        "id": "ls-12",
+        "how": "The most probable path, where France's spread was already a fork point for 2027."
+      }
+    ]
+  },
+  "questions": [
+    {
+      "q": "Will Moody's cut France, and does it matter?",
+      "a": "The decision was due after the close on 23 October 2026 and had not been published when this was written. A cut from Aa3 to A1 would align all three agencies at the A+ level. It matters less for the rating itself than for the budget vote on 27 October and the spread against 200 basis points, which the desk's conditional rules use."
+    },
+    {
+      "q": "How much do new residents cost or contribute to European states?",
+      "a": "This is a legitimate fiscal question that official studies in Denmark and the Netherlands have measured by origin, age and education. It was raised in the X thread but not tested this round. The desk will answer it only with official data, never with claims about groups of people."
+    },
+    {
+      "q": "Are Europeans actually moving to Latin America or Southeast Asia in rising numbers?",
+      "a": "The data found so far say mostly no: Germans move mainly to Switzerland, Austria and Spain, and new Italian emigrants to Spain and Germany. No 2025 OECD table of skilled EU emigrants by destination was found, so this rests on German and Italian registry data."
+    }
+  ],
+  "remember": [
+    {
+      "rule": "Ask which money you mean.",
+      "why": "Savings, factories, people and the wealthy follow different rules. 'The money goes to Asia' can be right for factories and wrong for pensions at the same time."
+    },
+    {
+      "rule": "A falling share is not a falling country.",
+      "why": "The dollar's reserve share fell 14 points while its use in trading and lending grew, and Europe's income share against the US held flat in purchasing power while both got richer."
+    },
+    {
+      "rule": "Watch the spread, not the slogans.",
+      "why": "France's borrowing gap over Germany, at about 172 basis points, measures the real European risk far better than viral claims of collapse."
+    }
+  ]
+}

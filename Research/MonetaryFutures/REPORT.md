@@ -1,4 +1,4 @@
-# Monetary Futures Desk: Report (Rounds 1 to 3)
+# Monetary Futures Desk: Report (Rounds 1 to 4)
 
 Facts as of 2026-10-22. Live page: https://claude.ai/artifact/2QJg4KuARQPAhm6FRbKmLq (private until shared from its Share menu).
 
@@ -28,6 +28,9 @@ The pipes held and the pressure moved: rent, tax and hardware now decide what a 
 
 **Decoded intent.** What the Trump, Musk, reset and CBDC, and seigniorage and gold narratives are really aiming at: four decode lanes in round3/decode/ (DCA to DCD) and the panel ruling in round3/DECODE_PANEL.md (that panel may still be in progress).
 
+## Round 4 in one paragraph
+If a giant falls, nobody inherits it whole and Europe's money keeps going West. The dollar's share of world reserves fell from about 71% to 56.70% since 2000, but the yuan has only 2.11%. The lost share went to gold (now about 26% of all reserves, worth about 1.8 times all euro reserves) and to many smaller currencies. China cannot inherit with capital controls, and if it opened, money would first run into dollars. The premise that everyone prays for a US downfall fails, because the biggest creditors lose first. Europe is sliding slowly, not falling: its income per head in purchasing power has held at about 70% to 75% of the US since 2000, and the sharp edge is France (OAT-Bund 171.8bp, Le Pen 46% in a $155.7M market). Breaking away does not help on the evidence (Brexit cost about 6% to 8% of GDP per head). If Europe declines, about 55% of its outbound money goes to North America and about 6% to Latin America, so the owner is right on "West" and wrong on Latin America. Southeast Asia wins factories, not money. Full rulings in round4/DEBATE_R4.md.
+
 ## Where everything lives
 | File | What |
 |---|---|
@@ -37,9 +40,10 @@ The pipes held and the pressure moved: rent, tax and hardware now decide what a 
 | round1/lanes/L1 to L7 | Seven research tracks with tiered, dated claims |
 | round1/debates/Da, Db, Dc, Dd | Debate court rulings and thesis cards |
 | round1/RELOOP.md | Gap-filling round |
-| claims.json | 788 claims ledger, rebuilt by tools/build_ledger.py |
+| claims.json | 988 claims ledger, rebuilt by tools/build_ledger.py |
 | site/index.html | Source of the live site (Desk, Landscape, Rulebook and Plan views) |
 | round2/ | Round 2 brief, five lanes, cross-examination, page data |
+| round4/ | Round 4 brief, five lanes, court (DEBATE_R4.md), page data, Landscape chapter and diagram data |
 | round3/ | Round 3 brief, five lanes, court (DEBATE_R3.md), scenario odds (scen.json), page data, decode lanes and panel |
 
 ## Open items carried forward

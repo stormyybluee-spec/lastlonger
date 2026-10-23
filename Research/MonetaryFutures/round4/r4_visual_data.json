@@ -1,0 +1,88 @@
+{
+  "asOf": "2026-10-23",
+  "r4-heirs": {
+    "title": "Who took the dollar's share: allocated FX reserves, 2000 vs Q2 2026",
+    "unit": "percent of allocated foreign exchange reserves",
+    "rows": [
+      {"label": "USD", "y2000": 71.1, "q2_2026": 56.70},
+      {"label": "EUR", "y2000": 18.3, "q2_2026": 20.60},
+      {"label": "JPY", "y2000": 6.1, "q2_2026": 4.96},
+      {"label": "GBP", "y2000": 2.8, "q2_2026": 4.57},
+      {"label": "CNY", "y2000": 0.0, "q2_2026": 2.11},
+      {"label": "Other (CAD, AUD, CHF and others)", "y2000": 1.7, "q2_2026": 11.05}
+    ],
+    "notes": [
+      "2000: IMF COFER annual series before the 2025 revision (USD 71.14, EUR 18.29, JPY 6.07, GBP 2.75, CHF 0.27, other 1.48). The yuan was not reported separately until 2016 and is shown as 0. Rounded to one decimal so the column sums to 100.",
+      "The revised IMF series (after the unallocated category was removed in 2025, back to 2000) gives USD 70.8% and other 2.5% for 2000 (coferdata.com). The other 2000 currency shares in the revised series were not available.",
+      "Q2 2026: USD 56.70, EUR 20.60, JPY 4.96, GBP 4.57, CNY 2.11, CAD 2.47, AUD 2.25, CHF 0.27, other 6.06. 'Other' row = CAD + AUD + CHF + other."
+    ],
+    "gold": {
+      "label": "Gold share of total reserves (FX plus gold) at market prices",
+      "value": 26.0,
+      "asOf": "2026-10-23",
+      "basis": "Model: more than 36,000 tonnes at about $4,006 an ounce, about $4.64T, against about $13.2T of FX reserves. Gold is about 1.8 times all euro reserves.",
+      "crossCheck": "ECB (June 2026): gold 27% of global official reserves at end 2025, euro 15%, US Treasuries 22%."
+    },
+    "sources": [
+      {"name": "IMF COFER via DBnomics, annual 2000", "url": "https://api.db.nomics.world/v22/series/IMF/COFER", "date": "fetched 2026-10-23"},
+      {"name": "coferdata.com, Q2 2026 (IMF COFER)", "url": "https://coferdata.com/", "date": "2026-09-30"},
+      {"name": "R4A-07 gold model (r4a_model.py), gold price proxy PAXG via CoinGecko", "url": "https://api.coingecko.com/api/v3/simple/price?ids=pax-gold&vs_currencies=usd", "date": "2026-10-23"},
+      {"name": "ECB international role of the euro report (via press)", "url": "https://finance.yahoo.com/markets/commodities/articles/gold-overtakes-us-treasuries-top-100334717.html", "date": "2026-06"}
+    ]
+  },
+  "r4-fork": {
+    "title": "What 'fall' could mean for Europe: desk odds by horizon",
+    "unit": "percent probability, cumulative by end of horizon unless 'at horizon end'",
+    "horizons": {"H0": "now to end 2028", "H1": "to 2035", "H2": "to 2050"},
+    "rows": [
+      {"label": "Slow relative decline (EU PPP income per head below 72% of US at horizon end)", "H0": 65, "H1": 70, "H2": 60},
+      {"label": "Mild absolute decline (EU real income per head below 2025 level at horizon end)", "H0": 6, "H1": 6, "H2": 8},
+      {"label": "Euro crisis led by France or Italy", "H0": 20, "H1": 32, "H2": 45},
+      {"label": "A member leaves the EU", "H0": 1, "H1": 5, "H2": 10},
+      {"label": "A member leaves the euro", "H0": 0.5, "H1": 3, "H2": 6},
+      {"label": "Euro breakup", "H0": 0.3, "H1": 2, "H2": 4, "display": "under 0.5 / 2 / 4"},
+      {"label": "A big member falls to middle income", "H0": 0.2, "H1": 0.3, "H2": 2, "display": "under 0.5 / under 0.5 / 2"},
+      {"label": "'Dirt poor' (EU real income per head halved)", "H0": 0.1, "H1": 0.2, "H2": 0.3, "display": "under 0.5 at every horizon"}
+    ],
+    "notes": [
+      "Values shown as 0.1 to 0.3 stand for 'under 0.5' and are for drawing only. Use the display string for labels.",
+      "Euro crisis definition: ECB TPI or OMT activation or an ESM programme for France or Italy, or a 10-year spread above 300bp for a month. About 70% of the risk is France-led."
+    ]
+  },
+  "r4-flows": {
+    "title": "Where Europe's net outbound capital goes, 2028 to 2035 (model, if the US holds and the EU declines)",
+    "unit": "percent of Europe's net outbound capital, all forms",
+    "rows": [
+      {"label": "North America", "share": 55, "range": "45 to 65"},
+      {"label": "UK, Switzerland, Norway", "share": 12},
+      {"label": "Asia (Japan 4, Southeast Asia with Singapore 5, India 3, China and others 3)", "share": 15},
+      {"label": "Latin America", "share": 6},
+      {"label": "Other (Australia, offshore centers)", "share": 6},
+      {"label": "Gulf and Middle East", "share": 3},
+      {"label": "Africa", "share": 2},
+      {"label": "Central Asia and Russia", "share": 1, "display": "under 1"}
+    ],
+    "factories": "Relocated European capacity: US about 35%, Asia about 25% (Southeast Asia and India), Europe's near periphery about 25% (eastern EU, Morocco, Turkey), Latin America about 15% (mostly Mexico, if USMCA holds).",
+    "people": "Most skilled movers stay in Europe or go to the same language: Germans in 2025 went to Switzerland (22,730), Austria (13,500), Spain (9,700) and the US (8,900). Latin America draws heritage and Spanish-speaking movers.",
+    "wealthy": "Henley 2025 net millionaire inflows: UAE +9,800, US +7,500, Italy +3,600, Switzerland +3,000, Saudi Arabia +2,400, Singapore +1,600, Portugal +1,400, Greece +1,200, UK -16,500. The 2026 Gulf war dented the UAE.",
+    "source": "R4D model (R4D-33) on TIC, Eurostat FDI, UNCTAD WIR 2026 and Henley inputs. Judgment, labelled as a model."
+  },
+  "r4-thread": {
+    "title": "The X thread: what the replies contained and how their claims checked out",
+    "sample": "142 collected replies (core sample) to John Loeber's post and Johannes Koenraadt's quote, 2,084 likes. Hateful replies were counted only and excluded as evidence.",
+    "replyMix": [
+      {"label": "Testable claim", "unweighted": 33.8, "likeWeighted": 33.1},
+      {"label": "Question", "unweighted": 4.9, "likeWeighted": 0.4},
+      {"label": "Policy opinion", "unweighted": 17.6, "likeWeighted": 46.2},
+      {"label": "Sentiment only", "unweighted": 30.3, "likeWeighted": 9.6},
+      {"label": "Hateful (excluded)", "unweighted": 13.4, "likeWeighted": 10.8}
+    ],
+    "claimsCheck": {"confirmed": 6, "partlyTrue": 11, "false": 4, "unverifiable": 1},
+    "notes": [
+      "Like-weighted 'policy opinion' is driven by one author reply with 528 likes. Excluding the two authors' own replies, the like-weighted mix is claim 46.1, question 0.5, policy 29.0, sentiment 13.4, hateful 11.0.",
+      "Supplementary recency sample (40 replies, almost all with 0 likes): claim 22.5, question 7.5, policy 15, sentiment 40, hateful 15.",
+      "Pushback against the decline thesis: 16.2% of core replies, 1.6% of likes."
+    ],
+    "source": "R4C classification (R4C-02, R4C-03), scripts r4c_classify.py"
+  }
+}

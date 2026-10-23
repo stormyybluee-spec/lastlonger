@@ -1,0 +1,128 @@
+{
+  "R4-1": {
+    "likely": 75,
+    "headline": "Likely: if the US weakens, its money role passes to a crowd (gold, the euro, smaller currencies), not to China. The yuan reaches 10% of reserves only about 9 to 18 years after an opening that has not happened.",
+    "up": [
+      "COFER shows the dollar falling while gold and 'other' currencies, not the yuan, take the share (next print late December 2026)",
+      "China keeps its $50,000 personal quota and guided fixing through 2027",
+      "Euro credit to non-residents keeps growing faster than dollar credit in the next BIS release"
+    ],
+    "down": [
+      "China lifts the personal quota and lets the yuan float, and the yuan share rises more than 1 point a year",
+      "The yuan passes 5% of SWIFT payments for three months in a row",
+      "A US promise failure (Fed capture or a tax or freeze on foreign Treasury holdings) sends reserves to one rival instead of many"
+    ],
+    "watch": "IMF COFER Q3 2026 in late December 2026: dollar below 56%, yuan above 2.5% or euro above 22%",
+    "byHorizon": {"H0": 80, "H1": 75, "H2": 65}
+  },
+  "R4-3": {
+    "likely": 70,
+    "headline": "Likely: the EU slides slowly against the US but does not fall. The real tail is a France- or Italy-led euro crisis (20% by 2028), not exit or impoverishment.",
+    "up": [
+      "France passes a 2027 budget and the OAT-Bund spread falls back below 150bp",
+      "The April 2027 IMF WEO keeps the EU's purchasing-power income near 72% of the US",
+      "Euro support stays above 80% in the next Eurobarometer"
+    ],
+    "down": [
+      "The OAT-Bund spread closes above 250bp for ten sessions without ECB action",
+      "A National Rally president elected in May 2027 opens a budget clash with Brussels",
+      "German chemicals output falls below 75 (2021 = 100) and euro-area GDP contracts with inflation above 3%"
+    ],
+    "watch": "The French budget vote on 2026-10-27 and the OAT-Bund spread against 200bp",
+    "byHorizon": {"H0": 75, "H1": 70, "H2": 60}
+  },
+  "R4-4": {
+    "likely": 70,
+    "headline": "Likely: breaking away does not improve a country's chances. Brexit cost the UK about 6% to 8% of GDP per head, and the winning model is in the single market with its own currency, not outside the EU.",
+    "up": [
+      "New Brexit studies (OBR, NIESR, Bank of England) keep the long-run cost at 4% or more",
+      "Switzerland ratifies the Bilaterals III package with the EU, showing outsiders move closer, not further",
+      "Poland and Sweden keep outgrowing the euro area without leaving the single market"
+    ],
+    "down": [
+      "UK growth beats the euro area by more than 1 point a year for three years",
+      "A country outside the euro and the single market converges faster than Poland",
+      "A peer-reviewed study finds the Brexit cost below 3%"
+    ],
+    "watch": "The Swiss National Council vote and likely referendum on Bilaterals III in 2027",
+    "byHorizon": {"H0": 75, "H1": 70, "H2": 65}
+  },
+  "R4-7": {
+    "likely": 70,
+    "headline": "Likely: Europe's money goes West, about 55% of net outbound capital to North America in 2028 to 2035, while factories split between the US, Asia and Europe's periphery and Latin America stays near 6%.",
+    "up": [
+      "TIC data keep showing rising euro-area holdings of US equities and Treasuries",
+      "UNCTAD's 2027 report shows European greenfield projects concentrated in the US",
+      "Henley's 2027 report keeps Latin America out of the top ten millionaire destinations"
+    ],
+    "down": [
+      "Euro-area holdings of US equities fall below $5T for six months without a price fall to explain it",
+      "Supply-chain manufacturing FDI into Southeast Asia rebounds above $31B with Europe as a top source",
+      "EU-Mercosur enters into force and Mexico's greenfield announcements return above $40B"
+    ],
+    "watch": "The monthly TIC release in mid-November 2026 (September data): euro-area holdings of US securities",
+    "byHorizon": {"H0": 75, "H1": 70, "H2": 60}
+  },
+  "R4-8": {
+    "likely": 65,
+    "headline": "More likely than not: the owner's regional cautions hold on average but are too broad. The UAE, Morocco, Rwanda, Botswana and Kazakhstan clear bars that Mexico and Brazil do not.",
+    "up": [
+      "ACLED's December 2026 index keeps Mexico and Brazil in the ten most violent countries",
+      "WJP 2026 or 2027 keeps the UAE above every Latin American country except Uruguay, Costa Rica and Chile",
+      "The UAE returns to the top of millionaire inflows once Gulf security normalises"
+    ],
+    "down": [
+      "The Gulf war widens and the UAE suffers a lasting outflow of foreign residents",
+      "Mexico and Brazil improve sharply on rule of law and violence",
+      "Morocco or Kenya enter ACLED's major conflict list"
+    ],
+    "watch": "ACLED Conflict Index in December 2026: whether the Gulf enters it and whether Mexico and Brazil stay in the top ten"
+  },
+  "R4-9": {
+    "likely": 70,
+    "headline": "Likely: markets price a French problem and a slow European discount, not a collapse or a US downfall. No market above $1M traded is more than 15 points from the desk.",
+    "up": [
+      "Italy's spread stays below 150bp while France's widens",
+      "The Bund keeps rising with French yields instead of falling as a haven",
+      "Exit markets stay thin and below 10%"
+    ],
+    "down": [
+      "A deep market (above $1M) on euro exit or a French default appears and prices above 15%",
+      "The Bund yield falls below 3% while the French spread passes 200bp, a redenomination pattern",
+      "The Le Pen price moves above 61 or below 31 with no change in desk odds"
+    ],
+    "watch": "The ECB meeting on 2026-10-29 (hold priced 97.85) and any reference to TPI",
+    "byHorizon": {"H0": 70}
+  },
+  "R4-10": {
+    "likely": 70,
+    "headline": "Likely: France is the euro area's weak link for now, with its spread near 172bp and above Italy, but the stress stays French unless Italy's spread passes 150bp.",
+    "up": [
+      "Moody's cuts France to A1 and the 2027 budget fails or passes only by Article 49.3",
+      "The OAT-Bund spread closes above 200bp for five sessions",
+      "The National Rally candidate stays above 45% in the 2027 market"
+    ],
+    "down": [
+      "A credible 2027 budget passes and the spread falls below 120bp",
+      "Italy's spread passes France's again, moving the weak link back to Italy",
+      "The ECB signals TPI eligibility for France"
+    ],
+    "watch": "Moody's France decision, due 2026-10-23 after the close and not yet published at the time of writing",
+    "byHorizon": {"H0": 70, "H1": 55}
+  },
+  "R4-11": {
+    "likely": 70,
+    "headline": "Likely: Poland's catch-up is real and continues, but its deficit (7.2% of GDP, the EU's largest) makes it a fiscal risk, not a safe haven.",
+    "up": [
+      "The 2027 deficit stays above 6% while the 10-year yield stays above 6%",
+      "Fitch or another agency cuts Poland's rating",
+      "Growth stays above 3% while public spending stays near 50% of GDP"
+    ],
+    "down": [
+      "A post-election budget cuts the deficit below 4% with defence protected",
+      "The 10-year yield falls back below 5.5%",
+      "Poland's growth falls to the EU average"
+    ],
+    "watch": "Poland's October 2027 parliamentary election and the 10-year yield against 6%"
+  }
+}
