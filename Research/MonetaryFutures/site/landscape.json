@@ -1,18 +1,19 @@
 {
  "title": "Landscape: the whole picture, in order",
- "subtitle": "Three research rounds and a decoding panel, reorganized into one story you can read from start to finish: the pressure, the response, the players, the rails, the anchors, energy, work, the next generation, the rivals, the hidden links, and the most likely road to 2050.",
- "asOf": "2026-10-22",
+ "subtitle": "Four research rounds and a decoding panel, reorganized into one story you can read from start to finish: the pressure, the response, the players, the rails, the anchors, energy, work, the next generation, the rivals, the hidden links, the most likely road to 2050, and where the money goes if a giant falls.",
+ "asOf": "2026-10-23",
  "intro": [
   "The Desk page is the evidence room. It holds every claim this project tested, with its source, its tier and its status. But it was written in the order the research happened, so the findings arrive the way a detective finds clues: out of sequence, with the big picture only visible at the end. This page is the detective's summing-up. It takes everything the Desk knows and lays it out as one story.",
-  "The story has a simple spine. The United States carries a debt that grows on its own. Washington is managing it, not shrinking it, by deciding who must buy it. New digital money is being built on top of the old system rather than replacing it. Gold is quietly gaining a job between nations. Energy is taking over the job gold used to do as the real limit on what money can buy. And underneath all of it, ownership, not income, is what decides who keeps up as robots and AI arrive.",
-  "Every number here comes from the project's own research files, dated 2026-10-22. Every claim keeps its status: Confirmed, Plausible, Speculative or Refuted, and for claims about hidden intent, a decoded grade from D1 (strong) to D4 (debunked). Where we do not know, we say so. This is general research to help you think, not financial advice."
+  "The story has a simple spine. The United States carries a debt that grows on its own. Washington is managing it, not shrinking it, by deciding who must buy it. New digital money is being built on top of the old system rather than replacing it. Gold is quietly gaining a job between nations. Energy is taking over the job gold used to do as the real limit on what money can buy. And underneath all of it, ownership, not income, is what decides who keeps up as robots and AI arrive. Round 4 asked what happens if a giant falls: nobody inherits the dollar's role whole, Europe slides rather than falls, and its money keeps going West.",
+  "Every number here comes from the project's own research files, dated 2026-10-22 and 2026-10-23. Every claim keeps its status: Confirmed, Plausible, Speculative or Refuted, and for claims about hidden intent, a decoded grade from D1 (strong) to D4 (debunked). Where we do not know, we say so. This is general research to help you think, not financial advice."
  ],
  "howToRead": [
   "Read in order the first time. Chapters 2 and 3 set up the pressure and the response, and everything later leans on them.",
   "Watch the status words. Confirmed means money moved or a law says so. Plausible means officials' words or market prices plus a working mechanism. Speculative means only commentary supports it. Refuted means hard evidence contradicts it.",
   "Decoded grades are about intent, not outcome. D1 means several independent decoders agree and actions fit. D2 means partial fit. D3 means folklore resting on one source or vibes. D4 means debunked by hard evidence.",
   "Chapter 11 is the shortcut for curious readers. It lists the links between areas that are easy to miss when each topic is read on its own.",
-  "The epilogue in Chapter 12 tells the most likely story from now to 2050, with the fork points that would change it."
+  "The epilogue in Chapter 12 tells the most likely story from now to 2050, with the fork points that would change it.",
+  "Chapter 13 is the newest topic: if the US or Europe weakens, who inherits the role and where the money goes."
  ],
  "chapters": [
   {
@@ -651,10 +652,15 @@
       ],
       [
        "Europe",
-       "Payment sovereignty",
-       "Digital euro intent D1 85, issued by end 2030 about 50. Wholesale bridge Pontes live since 2026-09-21. France under bond stress, Germany's surplus at €146.0B for January to August"
+       "Payment sovereignty, and room to pay for defense",
+       "Digital euro intent D1 85, issued by end 2030 about 50. Wholesale bridge Pontes live since 2026-09-21. France under bond stress (OAT-Bund 171.8bp on 23 October, above Italy, with Le Pen leading the 2027 market at 46%), Germany's surplus at €146.0B for January to August"
       ]
      ]
+    },
+    {
+     "type": "insider",
+     "label": "Round 4 update",
+     "text": "Round 4 graded the big stories about who wants to take the dollar's place. China wants reserve status and less dollar exposure (D1, 85), not to replace the dollar (D3, 15). 'BRICS plan to replace the dollar' is D4 as a currency plan and D2 as back-up payment rails. 'Everyone is praying for a US downfall' is D3: only Russia and Iran want it, while Germany, China and Japan, the three largest creditor nations, would lose first. On Europe, 'the US wants a weak Europe' holds only in a narrow form, weaker as a regulator and a bloc but stronger as a buyer of defense (D2, 60), and 'Brussels will seize savings' is D4 for insured deposits. Chapter 13 has the full story."
     },
     {
      "type": "check",
@@ -679,6 +685,10 @@
     {
      "id": "ls-10",
      "how": "China's real lever is hardware, not currency."
+    },
+    {
+     "id": "ls-13",
+     "how": "What each player would gain or lose if the US or Europe weakened."
     }
    ]
   },
@@ -879,6 +889,11 @@
      "text": "Fire insurance does not need to be worth as much as your house. It needs to pay out in the one disaster you fear. Gold does not insure the world's debt, most of which is owed and settled in the borrower's own currency. It insures a state's ability to pay abroad when its dollar or euro reserves can be frozen. Against that job it is large: official gold is about $5 trillion against $13.2 trillion of allocated foreign exchange reserves, and at end 2025 prices it was 27% of official reserves, more than Treasuries at 22%."
     },
     {
+     "type": "insider",
+     "label": "Round 4 update",
+     "text": "Measured at market prices, gold is now about 26% of all official reserves (foreign currency plus gold), worth about 1.8 times all euro reserves. The ECB's own count for end 2025 put gold at 27% of global official reserves, against 22% for US Treasuries and 15% for the euro. Gold has quietly overtaken the euro as the world's second reserve asset. Because the dollar's lost share went to gold and to many smaller currencies rather than to one rival, the project now shows its neutral-layer scenario in two parts: gold and Bitcoin (13 to 2028, 17 to 2035, 18 to 2050) and a multipolar mix of currencies (2, 6 and 10). The totals are unchanged."
+    },
+    {
      "type": "h",
      "text": "Gold supply: not running out, not exploding"
     },
@@ -985,6 +1000,10 @@
     {
      "id": "ls-11",
      "how": "Sanctions and gold buying form one of the clearest cross-area links."
+    },
+    {
+     "id": "ls-13",
+     "how": "Gold, not the yuan, took most of the dollar's lost share of reserves."
     }
    ]
   },
@@ -1496,17 +1515,33 @@
       [
        "US Treasury Bitcoin purchase by end 2027",
        "20% (thin, desk under 10)"
+      ],
+      [
+       "Le Pen wins the 2027 French presidency (Polymarket, $155.7M traded, 23 October)",
+       "46%"
+      ],
+      [
+       "Any member leaves the EU or the euro (every market under $10k traded)",
+       "1% to 8%, too thin to use"
       ]
      ]
     },
     {
      "type": "p",
-     "text": "Markets mostly agree with the desk and corrected one date: the next Fed hike is priced for 9 December, not 28 October. They shifted the shape of the main risk. The likeliest disorderly path before 2028 is an oil-shock inflation and term-premium episode with the euro periphery as the weak link, met by a Fed that hikes, not a Fed forced to cap yields."
+     "text": "Markets mostly agree with the desk and corrected one date: the next Fed hike is priced for 9 December, not 28 October. They shifted the shape of the main risk. The likeliest disorderly path before 2028 is an oil-shock inflation and term-premium episode with France as the weak link (Round 4 renamed it: France, with Poland as the non-euro fiscal risk), met by a Fed that hikes, not a Fed forced to cap yields."
     },
     {
      "type": "diagram",
      "key": "empire-cycle",
      "caption": "Reserve currency eras. The 2026 evidence in this chapter shows pressure at the edges of the dollar's era (gold buying, hardware controls, conditional crisis access), not a handover."
+    },
+    {
+     "type": "h",
+     "text": "Round 4 update: could a rival inherit?"
+    },
+    {
+     "type": "p",
+     "text": "Round 4 tested succession directly. The dollar's share of allocated reserves fell from about 71% in 2000 to 56.70%, but the yuan holds only 2.11%. The lost share went to gold and a crowd of smaller currencies. China as it is cannot inherit, because a reserve currency must let money leave freely. If it opened its capital account, the court puts about 60% on money first running into dollars, then 9 to 18 years to reach even 10% of reserves. In the US-made shock of early 2025, the market's emergency heirs were the euro, the yen and gold, not the yuan. The desk's odds of any single currency overtaking the dollar are under 1% to 2028, 1% to 2035 and 5% to 2050. Chapter 13 tells the full story."
     },
     {
      "type": "check",
@@ -1531,6 +1566,10 @@
     {
      "id": "ls-12",
      "how": "Hormuz, France and China are the near-term forks in the epilogue."
+    },
+    {
+     "id": "ls-13",
+     "how": "The full succession test and where Europe's money would go."
     }
    ]
   },
@@ -1551,12 +1590,12 @@
     },
     {
      "type": "h",
-     "text": "Fourteen links"
+     "text": "Eighteen links"
     },
     {
      "type": "steps",
      "items": [
-      "Hormuz oil drives the French bond spread: the France to Germany spread was flat in August and blew out from 87 to 157.5 basis points only after Brent passed $100, alongside the Fed and Bank of Japan hikes, which is why the project now sees the likeliest near-term disorderly path as oil-shock inflation with the euro periphery as the weak link.",
+      "Hormuz oil drives the French bond spread: the France to Germany spread was flat in August and blew out from 87 to 157.5 basis points only after Brent passed $100, alongside the Fed and Bank of Japan hikes, which is why the project now sees the likeliest near-term disorderly path as oil-shock inflation with France as the weak link. By 23 October the spread had reached 171.8 basis points, above Italy's.",
       "Japan's yen defense feeds into US mortgage rates: instead of borrowing through the unused FIMA line, foreign official holders sold $254 billion of Treasuries in 2026, and the 10-year yield went from 4.68% on 30 July to 5.13% in October.",
       "AI investment weakens the collateral under money: firms expensing AI capex cut corporate tax to 7.1% of receipts while wages carry 86.2%, so Treasuries rest more on a labor share that is already at a record low 52.8%, which moved one point from S1 to S4 for 2035 to 2050.",
       "Data centers drive household budgets: PJM capacity cleared at its cap with a 6,623 MW shortfall, wholesale power there rose 41%, and US energy prices rose 20.4% while real hourly earnings fell 0.7%, so the AI boom is already taxing every fixed income, including any future UHI.",
@@ -1569,7 +1608,11 @@
       "Land prices cap both UHI and the robot dividend: shelter takes 40% to 48% of UHI spending and land is 68.4% of home value in San Jose, so robot-built savings and printed checks both end up as land rent unless zoning lets more homes share the land.",
       "Platform tolls absorb automation's savings: a strong robot and energy shock saves about 36 cents on a $10 cosmetic while Amazon's ads rose to 41.9% of seller services revenue, so cheaper production reaches shoppers slowly and founders' margins shrink.",
       "Interest on the debt flows upward: net interest of $1.05 trillion goes mostly to the top decile, who hold 79% of household-held government securities, while the bottom half owes 51.6% of consumer credit, so a rising interest bill widens the wealth gap on its own.",
-      "Fed losses turn printing into borrowing: since the Fed pays 3.90% on reserves and carries a $233.2 billion deferred asset, a money-financed UHI or a gold revaluation gain becomes interest-bearing reserves, so neither escapes the debt arithmetic."
+      "Fed losses turn printing into borrowing: since the Fed pays 3.90% on reserves and carries a $233.2 billion deferred asset, a money-financed UHI or a gold revaluation gain becomes interest-bearing reserves, so neither escapes the debt arithmetic.",
+      "Europe's savings deepen America's market: European investors hold $16.2 trillion of US securities, 45.9% of everything foreigners hold, and the European Commission counts about €300 billion of EU savings leaving each year, mostly for the US. The same flow that keeps the dollar's market deep keeps Europe short of risk capital at home, which is why 40 of 147 European unicorns moved their headquarters abroad.",
+      "French politics can strengthen the dollar: a France-led euro crisis would send money into Bunds, Swiss francs, Treasuries and gold, as in 2011 to 2012. That is why the court's rule after such a crisis raises dollar extension for 2028 to 2035 (to 46/24/3/27) instead of lowering it.",
+      "German power prices move car market shares: industrial electricity in the EU costs more than twice US and Chinese levels, German chemicals output is 24% below 2017 and cars 28% below, and Chinese brands reached a record 11.7% of EU car registrations in August 2026.",
+      "Frozen reserves raise gold's share: about €202 billion of Russia's euro assets sit immobilized at Euroclear while gold held at home was never frozen. Gold is now worth about 1.8 times all euro reserves, which is why the neutral layer is now shown as gold plus a multipolar mix."
      ]
     },
     {
@@ -1586,18 +1629,23 @@
      "rows": [
       [
        "Treasury bills",
-       "2, 6, 7, 8, 13, 14",
+       "2, 6, 7, 8, 13, 14, 16",
        "Bill share against the 25% tripwire, stablecoins against 10% of bills, the refunding on 4 November"
       ],
       [
        "Delivered power",
-       "1, 4, 5, 3",
+       "1, 4, 5, 3, 17",
        "PJM prices, China's solar catalogue after 15 November, Hormuz traffic"
       ],
       [
        "Land and ownership",
        "11, 12, 13, 9",
        "Land shares, zoning laws, the bottom half's 0.58% equity share"
+      ],
+      [
+       "Deep markets (where savings land)",
+       "15, 16, 18",
+       "TIC euro-area holdings (mid November), the OAT-Bund spread against 200bp, COFER Q3 (late December)"
       ]
      ]
     },
@@ -1628,6 +1676,10 @@
     {
      "id": "ls-12",
      "how": "The epilogue follows these links forward in time."
+    },
+    {
+     "id": "ls-13",
+     "how": "Links 15 to 18 come from Round 4."
     }
    ]
   },
@@ -1639,7 +1691,7 @@
    "blocks": [
     {
      "type": "p",
-     "text": "Odds tell you which endings are likely. They do not tell you a story. This epilogue does, by following the most likely mix of scenarios from late 2026 to 2050. It is a judgment built on the project's rulings, so by the project's own rules it is Speculative. Every number in it comes from the research. The shape is the one the Round 1 judge drew and Round 3 kept: dollar plumbing grows, a repression episode is run partly through that plumbing, and gold's neutral role expands quietly underneath."
+     "text": "Odds tell you which endings are likely. They do not tell you a story. This epilogue does, by following the most likely mix of scenarios from late 2026 to 2050. It is a judgment built on the project's rulings, so by the project's own rules it is Speculative. Every number in it comes from the research. The shape is the one the Round 1 judge drew, Round 3 kept and Round 4 confirmed: dollar plumbing grows, a repression episode is run partly through that plumbing, and gold's neutral role expands quietly underneath."
     },
     {
      "type": "diagram",
@@ -1656,7 +1708,7 @@
     },
     {
      "type": "p",
-     "text": "On 18 January 2027 the GENIUS rules switch on, and every compliant dollar token becomes a buyer of Treasury bills by law. The rails are built, but they do not carry much yet: supply is flat near $304 billion and markets give $500 billion before 2027 only 3%. The Fed and money funds keep doing the heavy lifting. Oil keeps inflation sticky while Hormuz stays a coin flip (normal before 2028: about 48%). The weak link is the euro periphery, with France's spread watched against 175 and 200 basis points and a Le Pen presidency priced near 46% for 2027. At the end of this act the likeliest description is still dollar extension (62). The main alternative is an oil-shock inflation and term-premium episode met by a Fed that hikes (22). The chance of a bond-market episode forcing the Fed to act at all in this period: about 30."
+     "text": "On 18 January 2027 the GENIUS rules switch on, and every compliant dollar token becomes a buyer of Treasury bills by law. The rails are built, but they do not carry much yet: supply is flat near $304 billion and markets give $500 billion before 2027 only 3%. The Fed and money funds keep doing the heavy lifting. Oil keeps inflation sticky while Hormuz stays a coin flip (normal before 2028: about 48%). The weak link is France, with Poland as the non-euro fiscal risk: France's spread reached 171.8 basis points on 23 October and is watched against 200 and 250 and a Le Pen presidency priced near 46% for 2027. At the end of this act the likeliest description is still dollar extension (62). The main alternative is an oil-shock inflation and term-premium episode met by a Fed that hikes (22). The chance of a bond-market episode forcing the Fed to act at all in this period: about 30."
     },
     {
      "type": "h",
@@ -1675,12 +1727,20 @@
      "text": "Meanwhile the edges move. The US CBDC ban reaches its sunset on 31 December 2030, but a Fed retail CBDC by 2035 is only about 7, because private tokens already do the job. The digital euro probably arrives around 2029 to 2030 (about 50 by end 2030). States keep buying gold at home because dollar access now comes with conditions. China's hardware leverage shapes the price of solar, batteries and EVs more than the currency you are paid in. A cash UHI or AI dividend by 2035 stays unlikely (about 10). AI equity routed into child accounts or a public fund is more likely (about 25). End of act: dollar extension 44, disorderly reset 30, neutral reserve layer 23, energy standard 3."
     },
     {
+     "type": "p",
+     "text": "Round 4 update. Europe slides in this act rather than falls. Its income per head in purchasing power has held near 70% to 75% of the US since 2000, and the desk gives 70% to it still sitting below 72% of the US in 2035. The sharp edge is a France- or Italy-led euro crisis, 32% by 2035, while a member leaving the euro stays near 3%. If Europe declines, about 55% of its outbound money goes to North America, Asia wins factories more than money, and the dollar's reserve share has about a 25% chance of printing below 50% by 2035, with no single heir in sight."
+    },
+    {
      "type": "h",
      "text": "Act three, 2035 to 2050: who owns the output"
     },
     {
      "type": "p",
      "text": "By now the question is no longer the rails. It is the tax base. If the labor share keeps falling from 52.8% while wages still carry most federal receipts, the collateral under the world's money weakens slowly, which is why dollar extension and disorderly reset end tied at 31. Gold's stock grows about 1.6% a year and is about 39% larger by 2050, still scarce, still neutral, with a neutral reserve layer at 28. Energy may become an index for some bonds or transfers. An energy or compute standard reaches 10 only because machine economies could be large by then, and any energy unit still needs a scarcity rule that pulls it back toward gold or Bitcoin."
+    },
+    {
+     "type": "p",
+     "text": "By 2050 the dollar has about an even chance of printing below half of world reserves at some point, but about a 90% chance of still being the largest. The likeliest successor is a crowd rather than a country: gold, the euro and many smaller currencies. That is why the neutral layer is now shown as gold and Bitcoin (18) plus a multipolar mix of currencies (10)."
     },
     {
      "type": "p",
@@ -1704,14 +1764,19 @@
        "A full lapse moves 2 points from S1 to S4 for 2028"
       ],
       [
+       "Any session",
+       "OAT-Bund above 200bp for five sessions without the ECB's TPI",
+       "Moves 2 points from S1 to S4 for 2028 (4 points above 250bp for ten sessions)"
+      ],
+      [
        "18 Jan 2027",
        "GENIUS rules effective",
        "Stablecoins above 10% of bills would make S1 sturdier"
       ],
       [
-       "2027",
-       "French election and spreads",
-       "France above 200bp makes the euro the S4 trigger"
+       "May 2027",
+       "French presidential election (Le Pen 46%)",
+       "A National Rally win plus a budget clash with Brussels moves 2 points from S1 to S4 for 2028"
       ],
       [
        "Early 2028",
@@ -1744,7 +1809,8 @@
      "items": [
       "Toward disorderly reset: net interest above 25% of receipts (19.46% now), the bill share above 25% (22.36% now), foreign official custody below $2.5 trillion, or US recession odds above 30.",
       "Toward dollar extension: stablecoins growing outside crypto cycles, an independent Fed, Hormuz reopening, productivity above 3% without rising real rates.",
-      "Toward a neutral layer: central bank gold buying above 200 tonnes a quarter and more conditional crisis lines."
+      "Toward a neutral layer: central bank gold buying above 200 tonnes a quarter and more conditional crisis lines.",
+      "Toward a multipolar mix: the dollar below 54% of reserves in any 2027 release, permanent EU joint bonds above €1 trillion a year, or a fully opened Chinese capital account."
      ]
     },
     {
@@ -1799,6 +1865,10 @@
     {
      "id": "ls-11",
      "how": "The links that drive each act."
+    },
+    {
+     "id": "ls-13",
+     "how": "Where the money goes if the US or Europe weakens."
     }
    ]
   },
