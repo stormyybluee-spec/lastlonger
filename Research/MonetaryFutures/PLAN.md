@@ -215,7 +215,7 @@ Also read the Plan page proposal queue before starting Round 3.
 ### 5.6 Round 4 queue
 - Open questions from the Landscape epilogue (site/landscape.json, "questions").
 - Resolution scoring: FOMC 10-28 and 12-09, Treasury refunding 11-04, Cook hearing 11-05, China truce 11-10, NY Fed Q3 FX report (mid-November), WGC Q3 gold, GENIUS go-live 2027-01-18.
-- Re-check memory-tagged figures in the decode lanes (1947 inflation peak, UK 2022 gilt purchases, 1934 gold profit split, gold cover end date).
+- Done in Round 5 (R5E): memory-tagged figures in the decode lanes verified (1947 inflation peak 19.7%, UK 2022 gilt purchases GBP 19.3B, 1934 gold profit about $2.8B with $2B to the ESF, gold cover ended 18 March 1968).
 - Proposals in the Plan page queue.
 
 ### 5.4 Options backlog (owner and friends add here, or through the Plan page box)

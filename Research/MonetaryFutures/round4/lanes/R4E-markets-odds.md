@@ -57,7 +57,7 @@ Markets price a France problem, not a European collapse. The deepest contract on
 ## Anomalies
 
 1. **France pays more than Italy.** OAT-BTP about +41bp. The default move for a core country is to trade inside Italy. This happened in 2026 for the first time in the euro era by this size (T3). It tells you the market treats France's politics, not its debt level alone, as the risk.
-2. **The Bund is not acting as a haven.** In 2011 and 2012 Bund yields fell as spreads widened (redenomination fear). Now the Bund is at 3.39% to 3.49%, up from about 2.6% at the start of 2025 [memory for the 2025 level], and Spain is at 64bp. A breakup bet would show the opposite pattern.
+2. **The Bund is not acting as a haven.** In 2011 and 2012 Bund yields fell as spreads widened (redenomination fear). Now the Bund is at 3.39% to 3.49%, up from about 2.4% at the start of 2025 (2.36% at the end of 2024), and Spain is at 64bp. A breakup bet would show the opposite pattern.
 3. **The gilt yields more than the Treasury.** About +35bp. A "UK fall" thesis would read this as distress, but the GBP is near flat for the year, which points to an inflation and term premium, not to capital flight.
 4. **Thin exit markets.** A $155M market on who runs France sits next to a $9.7k market on whether France leaves the EU. Traders do not think the second question is live.
 5. **Kalshi's AfD market.** "AfD wins the next Bundestag election" trades at 81 to 83 but on only $13k. If a deep market confirmed it, it would be the biggest political signal in Europe. As it stands it is unreadable.

@@ -2596,7 +2596,7 @@
      ],
      "rows": [
       [
-       "1961: Dutch economist Albert Winsemius leads a UN mission and becomes Singapore's long-time economic adviser",
+       "1960 to 1961: Dutch economist Albert Winsemius leads a UN mission, reports in 1961 and becomes Singapore's long-time economic adviser",
        "Singapore's government, with UN help",
        "A home-grown plan with outside advice"
       ],
@@ -3717,7 +3717,7 @@
     },
     {
      "type": "insider",
-     "text": "The leaderboard leader plays by different rules. The United States is one of only two countries, with Eritrea, that taxes its citizens wherever they live. An American who moves to Dubai still files a US tax return, and leaving for good means giving up citizenship and possibly paying an exit tax. Since 2010 a law called FATCA has made banks around the world report Americans' accounts. Only the company that owns the world's main currency and its payment pipes can keep its staff on the payroll after they leave."
+     "text": "The leaderboard leader plays by different rules. The United States is the only major country that taxes its citizens' full income wherever they live. Eritrea, the other usual example, charges its citizens abroad a flat 2%. An American who moves to Dubai still files a US tax return, and leaving for good means giving up citizenship and possibly paying an exit tax. Since 2010 a law called FATCA has made banks around the world report Americans' accounts. Only the company that owns the world's main currency and its payment pipes can keep its staff on the payroll after they leave."
     },
     {
      "type": "h",
@@ -4008,7 +4008,7 @@
        "China",
        "Foreign reserves",
        "Reserve investor",
-       "over $1T (estimate)"
+       "$1.57T total assets (end 2024, published)"
       ],
       [
        "SAFE Investment Company",
@@ -4036,7 +4036,7 @@
        "Saudi Arabia",
        "Oil and state assets",
        "Developer and strategic arm: new cities, sports, games",
-       "about $1T (estimate)"
+       "about $905B (2025, published)"
       ],
       [
        "GIC",
@@ -4057,7 +4057,7 @@
        "Hong Kong",
        "Reserves",
        "Stabilizer behind the Hong Kong dollar peg",
-       "hundreds of billions"
+       "about $530B (HK$4.15T, end 2025, published)"
       ],
       [
        "Investment Corporation of Dubai",
@@ -4078,7 +4078,7 @@
        "Singapore",
        "State companies",
        "Owner of national champions",
-       "hundreds of billions"
+       "S$518B, about $400B (March 2026, published)"
       ]
      ]
     },
@@ -5102,7 +5102,7 @@
   },
   {
    "t": "Citizenship-based taxation",
-   "d": "Taxing citizens wherever they live. The US and Eritrea are the only countries that do it."
+   "d": "Taxing citizens wherever they live. The US is the main example. Eritrea charges its citizens abroad a flat 2% diaspora tax."
   },
   {
    "t": "Collateral",
@@ -5214,7 +5214,7 @@
   },
   {
    "t": "Jubilee",
-   "d": "The fiftieth-year release in Leviticus, when debts were forgiven and land returned to its original families."
+   "d": "The fiftieth-year release in Leviticus 25, when land returned to its original families and bonded servants went free. The release of debts every seventh year comes from Deuteronomy 15."
   },
   {
    "t": "Leverage",
