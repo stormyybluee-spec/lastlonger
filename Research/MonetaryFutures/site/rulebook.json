@@ -240,7 +240,7 @@
     },
     {
      "type": "insider",
-     "text": "Debasement and modern inflation share a pattern. The first people to spend the new coins, the emperor and his soldiers, got full value. By the time the extra coins spread through the economy, prices had risen, and the last people to receive them lost. Chapter 15 calls this the Cantillon effect."
+     "text": "Debasement and modern inflation share a pattern. The first people to spend the new coins, the emperor and his soldiers, got full value. By the time the extra coins spread through the economy, prices had risen, and the last people to receive them lost. Chapter 17 calls this the Cantillon effect."
     },
     {
      "type": "h",
@@ -642,7 +642,7 @@
      "items": [
       "Hollowed industry. A strong dollar makes US exports expensive and imports cheap. Economists David Autor, David Dorn, Gordon Hanson and coauthors estimated that the surge of Chinese imports in the 2000s cost around a million US manufacturing jobs, and perhaps two million jobs in all. Whole towns felt it.",
       "Persistent deficits. The US has run trade deficits almost every year since the mid-1970s. Foreign claims on the US keep growing.",
-      "Borrowing becomes easy, maybe too easy. With the world eager to buy its debt, Washington faces little market pressure to balance its budget, until the price of borrowing finally rises, as Chapter 15 shows it now has.",
+      "Borrowing becomes easy, maybe too easy. With the world eager to buy its debt, Washington faces little market pressure to balance its budget, until the price of borrowing finally rises, as Chapter 17 shows it now has.",
       "Dependence on foreign buyers. If foreign governments slow their buying or sell, US rates rise. In 2026 Japan's Treasury holdings fell about $171 billion from February to August as it defended the yen, and long-term US yields rose."
      ]
     },
@@ -1690,13 +1690,168 @@
     },
     {
      "id": "rb-10",
-     "how": "Measuring seasons requires a yardstick, and Chapter 12 shows why that yardstick moves."
+     "how": "Measuring seasons requires a yardstick, and Chapter 14 shows why that yardstick moves."
+    }
+   ]
+  },
+  {
+   "id": "rb-defl",
+   "num": "10",
+   "title": "The deflation debate: would anyone spend a money that grows?",
+   "kicker": "If a dollar buys more tomorrow, why spend it today? The oldest argument against hard money, why it never ends, and what both sides miss.",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Chapter 9 showed that money has seasons. This chapter takes one question from the cold season and follows it all the way down, because it sits under almost every fight about gold, Bitcoin and central banks. The question is simple: if I know my $1 will buy more tomorrow, why would I spend it today?"
+    },
+    {
+     "type": "h",
+     "text": "The case against a growing money"
+    },
+    {
+     "type": "steps",
+     "items": [
+      "Prices are expected to fall, so people wait to buy cars, homes and machines.",
+      "Shops and factories sell less, so they cut prices further and cut jobs.",
+      "Workers who lose income spend even less. Borrowers find their debts heavier, because the money they owe is worth more while their income shrinks.",
+      "Defaults rise, banks pull back, and the loop feeds itself. Economists call this a deflationary spiral. Irving Fisher described its debt side in 1933 and called it debt deflation."
+     ]
+    },
+    {
+     "type": "p",
+     "text": "This is why almost every major central bank aims for a little inflation, usually 2%, rather than zero or falling prices. The cases they point to are the Great Depression and Japan's lost decades, both in chapter 9."
+    },
+    {
+     "type": "h",
+     "text": "The case for a growing money"
+    },
+    {
+     "type": "list",
+     "items": [
+      "You still need things today. Food, rent, medicine and school fees do not wait. People keep buying phones and televisions even though they know next year's model will be cheaper and better.",
+      "Waiting has a cost. A sofa you buy next year is a year without a sofa. Economists call this time preference: people value having things sooner.",
+      "History has good deflations. From the 1870s to the 1890s US prices fell for years while output, railways and industry grew fast, because new technology made things cheaper to produce.",
+      "The data are weaker than the fear. A 2015 Bank for International Settlements study covering about 140 years and up to 38 economies found only a weak link between falling consumer prices and slower growth, mostly driven by the Great Depression. The damage came mainly from falling property prices combined with private debt.",
+      "Discipline. When money cannot be printed, governments and companies must fund projects from real savings, so fewer bad projects get started."
+     ]
+    },
+    {
+     "type": "h",
+     "text": "Why the fight never ends: two sides, two different deflations"
+    },
+    {
+     "type": "diagram",
+     "key": "two-deflations",
+     "caption": "The same falling prices with opposite causes. Good deflation starts with cheaper production. Bad deflation starts with collapsing demand and heavy debt."
+    },
+    {
+     "type": "p",
+     "text": "The argument goes in circles because each side pictures a different deflation. The hard-money side pictures good deflation: things get cheaper because we got better at making them, incomes hold steady, and every paycheck buys more. The central-bank side pictures bad deflation: prices fall because nobody is buying, while debts stay fixed. Both have happened. Which one you get depends mostly on one thing: how much debt is in the system when prices start to fall."
+    },
+    {
+     "type": "insider",
+     "text": "Today's world carries record debt. The US government alone owes $40.44T. In a deflation every one of those dollars gets heavier to repay. That is the real reason no heavily indebted government will choose a deflationary money. The debate sounds like it is about shoppers delaying purchases. Underneath, it is about who carries the debt."
+    },
+    {
+     "type": "h",
+     "text": "Spend the worse money, keep the better one"
+    },
+    {
+     "type": "p",
+     "text": "An older rule explains what people actually do when they can choose between two monies. It is Gresham's law: bad money drives out good. People spend the money that is losing value and hoard the one that is gaining. In Tudor England people spent the clipped and debased coins and kept the full-weight ones at home."
+    },
+    {
+     "type": "callout",
+     "label": "Picture this",
+     "text": "On 22 May 2010 a programmer named Laszlo Hanyecz paid 10,000 bitcoin for two pizzas, the first well-known purchase of real goods with Bitcoin. At about $86,000 a coin in early October 2026, those coins would be worth roughly $860 million. After stories like that, almost nobody spends Bitcoin on pizza. They spend dollars and keep the Bitcoin. That is Gresham's law in a single slice."
+    },
+    {
+     "type": "p",
+     "text": "So a money expected to grow tends to become a store of value, while a money that slowly melts becomes the one people spend. That is why the medium of exchange argument against deflationary money is partly right and partly beside the point. People do not stop spending. They spend the other money. Today that other money is the dollar, or a dollar stablecoin, sitting next to gold or Bitcoin in the same wallet."
+    },
+    {
+     "type": "table",
+     "cols": [
+      "Question",
+      "Mild-inflation camp",
+      "Hard-money camp"
+     ],
+     "rows": [
+      [
+       "Will people stop spending?",
+       "Enough of them to start a spiral",
+       "No, needs and time preference keep them buying"
+      ],
+      [
+       "What about debt?",
+       "Inflation shrinks debts in real terms",
+       "Debt should be smaller to begin with"
+      ],
+      [
+       "Who gains?",
+       "Borrowers, including governments",
+       "Savers and lenders"
+      ],
+      [
+       "Who loses?",
+       "Savers and people on fixed incomes",
+       "Borrowers and the heavily leveraged"
+      ],
+      [
+       "Wages",
+       "Mild inflation lets real wages adjust without cutting paychecks",
+       "Falling prices raise real wages without raises"
+      ],
+      [
+       "Best evidence",
+       "1929 to 1933, Japan after 1990",
+       "1870s to 1890s, technology prices today"
+      ]
+     ]
+    },
+    {
+     "type": "myth",
+     "myth": "Falling prices always mean a weak economy.",
+     "reality": "Prices of televisions, computers and phones have fallen for decades while the industries making them boomed. What hurts is falling prices plus heavy debt plus collapsing demand, not falling prices alone."
+    },
+    {
+     "type": "insider",
+     "text": "This matters for the future this desk studies. Robots, AI and cheap solar push the cost of making things down, a good-deflation force. A debt-heavy system cannot let that show up as falling prices, so it creates enough new money to keep prices rising gently. The productivity gain does not vanish. It flows to whoever receives the new money first and to owners of scarce things such as land, energy and platforms. That is the link to the Cantillon effect and the platform toll booths in chapter 17."
+    },
+    {
+     "type": "check",
+     "q": "If prices are expected to fall 2% a year, why might a family still buy a fridge today?",
+     "a": "Because it needs a fridge now. Waiting a year to save 2% means a year without a fridge. Real needs and time preference keep spending going. A spiral starts when incomes fall and debts bite, not from cheaper prices alone."
+    },
+    {
+     "type": "check",
+     "q": "Why do most people spend dollars and keep gold or Bitcoin?",
+     "a": "Gresham's law. When two monies circulate side by side, people spend the one expected to lose value and hoard the one expected to gain."
+    }
+   ],
+   "rules": [
+    "A deflation is good or bad depending on its cause and on how much debt sits in the system.",
+    "People do not stop spending when one money grows. They spend the other money and keep the growing one.",
+    "The fight over inflation is a fight over who carries the debt."
+   ],
+   "connects": [
+    {
+     "id": "rb-08",
+     "how": "The seasons of money, where the history of deflation lives."
+    },
+    {
+     "id": "rb-12",
+     "how": "Stablecoins and Bitcoin sit side by side as the spender and the store."
+    },
+    {
+     "id": "rb-13",
+     "how": "Who receives new money first, and who is last."
     }
    ]
   },
   {
    "id": "rb-09",
-   "num": "10",
+   "num": "11",
    "title": "Why empires and their currencies fall",
    "kicker": "No money has ruled forever. The ones that fell usually fell the same way: war, debt and a slow watering down of the promise.",
    "blocks": [
@@ -1894,7 +2049,7 @@
   },
   {
    "id": "rb-leader",
-   "num": "11",
+   "num": "12",
    "title": "The country leaderboard: deep markets and the game nations play",
    "kicker": "Why surplus nations park their savings in America, why climbing the leaderboard is so hard, and what it really took for each number one to get there and to fall.",
    "blocks": [
@@ -2092,8 +2247,258 @@
    ]
   },
   {
+   "id": "rb-em",
+   "num": "13",
+   "title": "The view from a smaller currency: Malaysia, savings and where money lands first",
+   "kicker": "Why a calm local price tag can hide a shrinking passport, how compulsory savings fund the home government, why talent and capital crowd into a few hubs, and whether Singapore was luck, strategy or someone else's plan.",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Most of this Rulebook looks at money from the top, from Washington and the dollar. This chapter looks at it from the ground in a smaller economy. Malaysia is the worked example because its story touches every idea in this book, but the same logic applies to Thailand, Indonesia, the Philippines, Turkey, South Africa and most of the roughly 180 currencies on earth."
+    },
+    {
+     "type": "h",
+     "text": "The comfortable picture"
+    },
+    {
+     "type": "p",
+     "text": "A Malaysian worker sees a reassuring picture. Consumer inflation was 1.8% in September 2026 by the statistics department's count. The Employees Provident Fund (EPF), where most private-sector workers' retirement money must go by law, paid a 6.15% dividend for 2025 on investment assets of about RM1.41 trillion. Savings grow faster than prices. Why worry?"
+    },
+    {
+     "type": "p",
+     "text": "The picture is true, but it is measured with only one ruler: the ringgit, inside Malaysia. There is a second ruler most people never check."
+    },
+    {
+     "type": "h",
+     "text": "Two rulers: the home price tag and the passport price tag"
+    },
+    {
+     "type": "diagram",
+     "key": "two-yardsticks",
+     "caption": "What one ringgit buys abroad, then and now. Rates are approximate. The 1997 figures are before the Asian crisis."
+    },
+    {
+     "type": "p",
+     "text": "Before the 1997 Asian crisis a US dollar cost about 2.50 ringgit. In October 2026 it costs about 4.08. So a ringgit buys roughly 39% fewer dollars than it did 29 years ago. Against the Singapore dollar the slide is steeper, from about 1.75 ringgit per Singapore dollar in early 1997 to about 3.2 in 2026. Inside Malaysia the loss is hidden, because local prices move gently. Outside, it shows up the moment you pay an overseas tuition bill, a foreign hospital, a holiday, an imported phone or anything priced in dollars."
+    },
+    {
+     "type": "list",
+     "items": [
+      "Imported goods: fuel, food ingredients, machines, medicines and electronics are often priced in dollars. A weaker ringgit raises their cost in ringgit.",
+      "Education and health abroad: a family saving for a child's degree in the US or Britain is really saving in dollars or pounds, whatever its account says.",
+      "Travel and work options: the same salary buys fewer days abroad, and moving to a richer country costs more.",
+      "Assets priced globally: shares of global companies, gold and Bitcoin all cost more ringgit when the ringgit falls."
+     ]
+    },
+    {
+     "type": "callout",
+     "label": "Be fair to both sides",
+     "text": "Currencies swing both ways. The ringgit weakened to about 4.80 per dollar in early 2024, its weakest since the 1998 crisis, then strengthened to about 4.08 by October 2026. Short moves reverse. For a lifetime of savings the long trend is what counts, and since 1997 the passport ruler has shrunk."
+    },
+    {
+     "type": "h",
+     "text": "Why the home price tag looks so calm"
+    },
+    {
+     "type": "list",
+     "items": [
+      "Subsidies and price controls. The government absorbs part of the cost of fuel, electricity and some foods. In September 2026, for example, protection on household electricity bills was widened from 600 to 800 kWh a month, which helped pull the utilities index down. The cost does not disappear. It moves onto the government's budget, and later onto taxes, debt or a subsidy cut.",
+      "The basket. Official inflation tracks an average household's local shopping. It does not include overseas school fees or the cost of moving abroad.",
+      "Local wages and rents set many prices, and they move slowly."
+     ]
+    },
+    {
+     "type": "h",
+     "text": "How Washington reaches a Malaysian wallet"
+    },
+    {
+     "type": "steps",
+     "items": [
+      "The Fed raises rates or the Treasury sells more bonds, so dollar yields rise.",
+      "Global money leaves smaller markets to earn more in dollars, more safely. Foreign holders sell local bonds and shares.",
+      "The local currency falls. Imports get dearer, so inflation is imported even though nothing changed at home.",
+      "The local central bank must choose: raise its own rates to defend the currency, which hurts local borrowers and businesses, or let the currency fall and accept dearer imports.",
+      "Either way, households pay for a decision made in Washington. When the Fed eases or the dollar weakens, the flow reverses, which is part of why the ringgit strengthened in 2025 and 2026."
+     ]
+    },
+    {
+     "type": "h",
+     "text": "The rule no small economy can escape"
+    },
+    {
+     "type": "diagram",
+     "key": "trinity",
+     "caption": "The impossible trinity. A country can hold only two corners at once. Each side of the triangle is a choice with a cost."
+    },
+    {
+     "type": "p",
+     "text": "Economists call it the impossible trinity. A country cannot at the same time fix its exchange rate, let money flow freely in and out, and set its own interest rates. It must give one up. The US keeps free flows and its own rates, and lets the dollar float. Malaysia in September 1998 chose differently: it imposed capital controls and pegged the ringgit at 3.80 to the dollar, keeping control of its rates. The peg lasted until July 2005. Singapore chose a third path: it keeps money flowing freely and steers its exchange rate, and accepts that its interest rates largely follow world rates."
+    },
+    {
+     "type": "h",
+     "text": "Captive savings: the EPF and the home government"
+    },
+    {
+     "type": "p",
+     "text": "The EPF is one of the largest pension funds in Asia, and also the biggest single holder of Malaysian government bonds, with about 28% of them according to the fund's statement for December 2023. Its policy is to place about 70% to 80% of new money inside Malaysia. About 39% of its assets were overseas in late 2025, and in 2024 the overseas part, about 37% of assets, earned about half of all investment income."
+    },
+    {
+     "type": "insider",
+     "text": "This is the same captive-demand playbook chapter 7 showed in Washington, where stablecoins are required by law to hold Treasury bills. A government with a large pool of compulsory savings has a reliable buyer for its debt at home. That keeps its borrowing cheap and its markets steady. The cost is that workers' retirement money is concentrated in the same economy that pays their wages, in the same currency."
+    },
+    {
+     "type": "p",
+     "text": "To be fair, the EPF has done well in ringgit, and the leak is slower than many fear. The ringgit's fall against the dollar since 1997 works out to roughly 1.7% a year, so a 6% ringgit dividend is still very roughly 4% a year in dollar terms. The leak is real but quiet. It matters most for people whose future spending will happen abroad."
+    },
+    {
+     "type": "h",
+     "text": "When the local economy hits bottom"
+    },
+    {
+     "type": "p",
+     "text": "The real test comes in a crisis. In 1997 and 1998 the ringgit fell from about 2.50 to about 4.88 per dollar at its worst in January 1998, roughly halving what Malaysian savings were worth in world terms within months. Stocks crashed, companies with dollar debts were crushed, and the government reached for capital controls. Malaysia recovered, but the lesson stayed: in a crisis, people with only local assets and a local passport have the fewest exits. People with income or savings in a strong currency, or skills that are paid in one, have options."
+    },
+    {
+     "type": "p",
+     "text": "Malaysia remains deeply tied to the outside world. Its trade is larger than its whole economy, it is a key link in the world's chip supply chain, and its exporters earn dollars. That openness brought decades of growth. It also means a US recession, a tariff war or a Fed shock reaches Malaysian jobs within months. The same holds for most economies outside the few big hubs."
+    },
+    {
+     "type": "h",
+     "text": "Why money and talent crowd into a few places"
+    },
+    {
+     "type": "diagram",
+     "key": "money-reach",
+     "caption": "New dollars ripple outward. The closer to the center, the earlier they arrive and the more they buy when they do."
+    },
+    {
+     "type": "p",
+     "text": "Chapter 17 describes the Cantillon effect: whoever receives new money first spends it before prices rise. At world scale, new dollars are created in New York and Washington and land first in US banks, US markets and a handful of hubs such as London, Singapore, Hong Kong, Dubai and Zurich. Commodity exporters and factory economies receive them later, through trade. Households in smaller economies receive them last, often after their currency has already moved."
+    },
+    {
+     "type": "list",
+     "items": [
+      "Capital goes where returns, rule of law and exits are best.",
+      "Talent follows capital, because that is where the jobs, the strong-currency salaries and the investors are.",
+      "Capital follows talent, because investors want to be near founders, engineers and deal makers.",
+      "The loop feeds itself. Each hub's lead makes the next arrival more likely. That is why successful businesses and entrepreneurs end up in the same few cities out of more than 190 countries."
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Malaysia feels this loop directly. About 1.8 million Malaysians live abroad, and roughly 60% of them are in Singapore, according to a 2024 New Straits Times report citing World Bank work. The World Bank's chief economist Indermit Gill pointed to the currency gap as one reason educated Malaysians move there."
+    },
+    {
+     "type": "h",
+     "text": "Singapore: anomaly, strategy, or someone else's plan?"
+    },
+    {
+     "type": "p",
+     "text": "Singapore is an island with no farmland, little water and no natural resources, separated from Malaysia in August 1965. Within two generations it became one of the richest places on earth. Some people decode this as a plan by American money managers to plant a financial outpost in Asia. Here is the record, run through this project's decoding method."
+    },
+    {
+     "type": "table",
+     "cols": [
+      "What happened",
+      "Who drove it",
+      "What it suggests"
+     ],
+     "rows": [
+      [
+       "1961: Dutch economist Albert Winsemius leads a UN mission and becomes Singapore's long-time economic adviser",
+       "Singapore's government, with UN help",
+       "A home-grown plan with outside advice"
+      ],
+      [
+       "1968: Singapore abolishes the tax on interest paid to foreign depositors. Bank of America opens the first Asian Currency Unit, starting the Asian Dollar Market",
+       "Singapore's government and a US bank, together",
+       "Singapore made itself the dollar's hub in the Asian time zone, and US banks were glad to use it"
+      ],
+      [
+       "1971: the Monetary Authority of Singapore is set up. From 1981 monetary policy steers the exchange rate instead of interest rates",
+       "Singapore",
+       "A deliberate choice inside the impossible trinity"
+      ],
+      [
+       "1974 and 1981: Temasek and GIC are founded to invest national savings around the world",
+       "Singapore",
+       "National savings sent abroad by design, unlike most countries"
+      ],
+      [
+       "1990: an agreement gives US forces access to Singapore facilities. Changi Naval Base later hosts US aircraft carriers",
+       "Singapore and the US",
+       "A security umbrella traded for strategic usefulness"
+      ],
+      [
+       "Location on the Strait of Malacca, one of the busiest sea lanes on earth",
+       "Geography",
+       "An advantage no plan could create"
+      ]
+     ]
+    },
+    {
+     "type": "callout",
+     "label": "The decode verdict",
+     "text": "Planted by American money managers: D3, folklore, about 10% likely as stated. No evidence shows Washington designed Singapore. Strategically welcomed by them: D1, decoded-strong, about 80% likely. Singapore's leaders deliberately made their island useful to the dollar system and to US security in Asia, and the US, its banks and its navy had every reason to support that. It was Singapore's plan, built to fit the American system. Small size let the plan be run tightly, and geography made it pay."
+    },
+    {
+     "type": "p",
+     "text": "That is why Singapore is hard to copy. It needed a strategic location, leaders able to make long-term choices, rule of law trusted by foreign money, English as a working language, and the willingness to plug into the world's dominant system rather than fight it. Most countries have one or two of these. Very few have all of them at once."
+    },
+    {
+     "type": "h",
+     "text": "Tying it together"
+    },
+    {
+     "type": "steps",
+     "items": [
+      "A decision in Washington moves dollar yields.",
+      "Global money flows toward or away from smaller markets, and their currencies move.",
+      "Home inflation stays calm, partly because subsidies absorb the shock, while the passport price tag changes.",
+      "Compulsory savings such as the EPF recycle most local money into the home government and home market, in the home currency.",
+      "Money reaches the hubs first. Talent follows money, and money follows talent.",
+      "In a crisis, people with only local assets and local options have the fewest exits.",
+      "A few places, like Singapore, escaped by choosing to become hubs themselves. That took geography, discipline and decades."
+     ]
+    },
+    {
+     "type": "myth",
+     "myth": "My country's inflation is only 2%, so my savings are safe.",
+     "reality": "Safe on the home ruler. Measure them also on the passport ruler: what they buy in dollars, in a foreign degree or in the cost of moving. Both rulers matter, and the second one moves with decisions made abroad."
+    },
+    {
+     "type": "insider",
+     "text": "This is general education, not advice. The lesson people usually draw is to know which ruler their future spending will use. If your life will be lived at home, the home ruler matters most. If your children may study or work abroad, part of your savings is really owed in another currency. Skills that are paid in global terms are the most portable asset a person can own."
+    },
+    {
+     "type": "check",
+     "q": "The Fed raises rates and the ringgit falls 10% against the dollar. Malaysian inflation stays at 2%. Has anything changed for a family saving for a child's degree in the United States?",
+     "a": "Yes. The degree is priced in dollars, so it now costs about 11% more ringgit. The home price tag stayed calm, but the passport price tag rose."
+    }
+   ],
+   "rules": [
+    "Measure your savings with two rulers: what they buy at home and what they buy abroad.",
+    "Money reaches the hubs first. Talent follows money, and money follows talent.",
+    "No country can fix its currency, open its doors to money and set its own rates all at once."
+   ],
+   "connects": [
+    {
+     "id": "rb-leader",
+     "how": "Deep markets pull the world's savings toward the center."
+    },
+    {
+     "id": "rb-bonds",
+     "how": "Captive demand for government bonds, in Washington and in Kuala Lumpur."
+    },
+    {
+     "id": "rb-13",
+     "how": "The Cantillon effect at world scale."
+    }
+   ]
+  },
+  {
    "id": "rb-10",
-   "num": "12",
+   "num": "14",
    "title": "The yardstick problem",
    "kicker": "We measure prices with money, but money itself keeps changing size. It is like measuring a room with a rubber ruler.",
    "blocks": [
@@ -2302,7 +2707,7 @@
   },
   {
    "id": "rb-11",
-   "num": "13",
+   "num": "15",
    "title": "The new board game",
    "kicker": "In Monopoly the bank hands every player $1,500. In real life nobody does. So how does a new player get onto the board?",
    "blocks": [
@@ -2494,7 +2899,7 @@
   },
   {
    "id": "rb-12",
-   "num": "14",
+   "num": "16",
    "title": "Today's board: old anchors, new rails",
    "kicker": "The money in your app may look new, but under it sit the oldest anchors in the system: government bonds, bank credit and gold.",
    "blocks": [
@@ -2709,7 +3114,7 @@
   },
   {
    "id": "rb-13",
-   "num": "15",
+   "num": "17",
    "title": "Eye-openers: what most people never notice",
    "kicker": "Sixteen quiet facts about money that, once seen, cannot be unseen.",
    "blocks": [
@@ -2835,7 +3240,7 @@
   },
   {
    "id": "rb-buckets",
-   "num": "16",
+   "num": "18",
    "title": "When markets fall: buckets, collateral and rotation",
    "kicker": "A 20% crash does not hand 20% to someone else. But money really does slosh between buckets, and the timing of when you enter a bucket is most of the game.",
    "blocks": [
@@ -2953,7 +3358,7 @@
      "type": "list",
      "items": [
       "Interest rates and liquidity: when central banks make money cheap, it flows outward toward riskier buckets. When money gets dear, it flows back toward cash and bills.",
-      "Credit: lending creates new money that lands in some bucket first, usually property and financial assets (the Cantillon effect from chapter 15).",
+      "Credit: lending creates new money that lands in some bucket first, usually property and financial assets (the Cantillon effect from chapter 17).",
       "Supply and demand: new shares, new bonds and new coins dilute a bucket. Buybacks and scarcity concentrate it.",
       "Fear and narrative: stories move flows faster than numbers do.",
       "Rules: laws that force holders into a bucket (like stablecoin reserves that must hold Treasury bills) fill that bucket by design.",
@@ -2989,7 +3394,7 @@
   },
   {
    "id": "rb-14",
-   "num": "17",
+   "num": "19",
    "title": "The Rulebook",
    "kicker": "What each generation learned the hard way, written down so the next one does not have to.",
    "blocks": [
@@ -3260,6 +3665,21 @@
    "n": 33,
    "rule": "Respect the bond market. It votes every second.",
    "why": "Governments that lose its trust pay for it in higher interest bills."
+  },
+  {
+   "n": 34,
+   "rule": "Spend the melting money, keep the growing one, and know which is which.",
+   "why": "Gresham's law decides which money people spend and which they save."
+  },
+  {
+   "n": 35,
+   "rule": "Know which ruler your future spending will use.",
+   "why": "Savings that look safe in the home currency can shrink in the currency your future bills are priced in."
+  },
+  {
+   "n": 36,
+   "rule": "Follow where new money lands first.",
+   "why": "Hubs receive it early and at full value. Talent and capital follow."
   }
  ],
  "mistakes": [
@@ -3321,6 +3741,10 @@
  ],
  "glossary": [
   {
+   "t": "Asian Dollar Market",
+   "d": "The offshore market for US dollar deposits and loans that Singapore opened in 1968."
+  },
+  {
    "t": "Asset",
    "d": "Something you own that has value, such as cash, a house, a bond or a share in a company."
   },
@@ -3355,6 +3779,10 @@
   {
    "t": "Capital account",
    "d": "The record of money moving in and out of a country for investment. An open one lets money leave freely."
+  },
+  {
+   "t": "Capital controls",
+   "d": "Rules that limit how much money can move in or out of a country."
   },
   {
    "t": "CBDC",
@@ -3409,6 +3837,10 @@
    "d": "The US central bank. It sets short-term interest rates, supervises banks and acts as lender of last resort."
   },
   {
+   "t": "Financial hub",
+   "d": "A city where money, banks, investors and talent concentrate, such as New York, London or Singapore."
+  },
+  {
    "t": "Financial repression",
    "d": "Keeping interest rates below inflation so that debts, especially government debts, shrink in real terms."
   },
@@ -3431,6 +3863,14 @@
   {
    "t": "IMF",
    "d": "The International Monetary Fund, created in 1944 to lend to countries with payment problems and oversee exchange rates."
+  },
+  {
+   "t": "Imported inflation",
+   "d": "Rising prices caused by a weaker home currency or dearer foreign goods, not by anything happening at home."
+  },
+  {
+   "t": "Impossible trinity",
+   "d": "The rule that a country cannot fix its exchange rate, allow free movement of money and set its own interest rates all at once."
   },
   {
    "t": "Inflation",
@@ -3485,6 +3925,10 @@
    "d": "A game where each player gains by cheating, but if all cheat, all end up worse off."
   },
   {
+   "t": "Provident fund",
+   "d": "A compulsory national savings scheme for retirement, such as Malaysia's EPF or Singapore's CPF."
+  },
+  {
    "t": "Quantitative easing (QE)",
    "d": "When a central bank creates reserves to buy bonds in the open market, to push down long-term interest rates."
   },
@@ -3515,6 +3959,10 @@
   {
    "t": "Term premium",
    "d": "The extra yield investors demand for locking money up for many years when the future is uncertain."
+  },
+  {
+   "t": "Time preference",
+   "d": "The fact that people value having things sooner rather than later. It is why waiting must be paid for with interest."
   },
   {
    "t": "Time price",
@@ -3564,7 +4012,7 @@
  "questions": [
   {
    "q": "If the market drops 20%, did someone else make that money?",
-   "a": "Mostly no. Market cap is the last price times all shares, so a fall rewrites the value of every share even though only a few traded. Sellers received cash from buyers. Only short sellers and option buyers profit from the fall, and only by what their direct counterparties lose. See chapter 16."
+   "a": "Mostly no. Market cap is the last price times all shares, so a fall rewrites the value of every share even though only a few traded. Sellers received cash from buyers. Only short sellers and option buyers profit from the fall, and only by what their direct counterparties lose. See chapter 18."
   },
   {
    "q": "If the government can create money, why does it borrow and tax at all?",
@@ -3637,6 +4085,14 @@
   {
    "q": "Why does China or Japan lend so much to the US instead of spending it at home?",
    "a": "To keep their currencies cheap for exporters, to hold insurance against a dollar shortage, and because US markets are deeper and safer than their own. Their households pay part of the cost. See the leaderboard chapter."
+  },
+  {
+   "q": "If a money gains value over time, why would anyone spend it?",
+   "a": "People still need things now, and waiting has a cost. In practice they spend the money that is losing value and keep the one that is gaining, which is Gresham's law. See the deflation debate chapter."
+  },
+  {
+   "q": "My local inflation is low. Why do I feel poorer when I travel or pay overseas fees?",
+   "a": "Because your home currency may have weakened against the currencies those bills are priced in. Low home inflation measures only the home ruler. See the chapter on the view from a smaller currency."
   }
  ]
 }
