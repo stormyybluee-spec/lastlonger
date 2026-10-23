@@ -7,7 +7,7 @@ import json, re, sys, pathlib, datetime
 
 root = pathlib.Path(sys.argv[1])
 files = sorted(root.glob("round*/lanes/*.md")) + sorted(root.glob("round*/calibration.md")) + sorted(root.glob("round*/RELOOP.md")) + sorted(root.glob("round*/DEBATE_R*.md")) + sorted(root.glob("round*/decode/*.md")) + sorted(root.glob("round*/DECODE_PANEL.md"))
-ID = re.compile(r"^(L\d-\d+|C\d+|R-\d+|R2[A-EX]-\d+|R3[A-EX]-\d+|R4[A-EX]-\d+|DC[A-DX]-\d+|WIF-\d+)$")
+ID = re.compile(r"^(L\d-\d+|C\d+|R-\d+|R2[A-EX]-\d+|R3[A-EX]-\d+|R4[A-EX]-\d+|R5[A-EX]-\d+|DC[A-DX]-\d+|WIF-\d+)$")
 
 def cells(line):
     return [c.strip() for c in line.strip().strip("|").split("|")]
