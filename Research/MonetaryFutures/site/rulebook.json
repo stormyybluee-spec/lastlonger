@@ -3,9 +3,10 @@
  "subtitle": "Money and value from the ground up, written to be passed down, so each generation keeps what the last one learned and does not repeat what it forgot.",
  "intro": [
   "Most people use money every day and never learn how it works. Nobody teaches it at home, school teaches a little arithmetic, and the news speaks a language of rates, yields and deficits that seems designed to keep outsiders out. This guide is meant to open that locked room, slowly and clearly, one idea at a time.",
-  "It starts at the very bottom, with what money actually is, and climbs step by step: gold coins and the gold standard, the wars that broke it, the 1944 system that crowned the dollar, the 1971 night that cut the dollar loose from gold, the oil money that followed, and the way banks create most of our money today with a few keystrokes. Then it turns to the questions that matter for your life: why debt never seems to go away, why prices move in long seasons, why empires and their currencies fall, why the ruler we measure prices with keeps stretching, and how a new player with no inheritance can get onto the board. Later chapters add the bond market underneath it all, the deflation debate, the game nations play for the top of the leaderboard, the view from a smaller currency, and finally the titled world: why the abundance we see is priced on future credit and who keeps the balance.",
+  "It starts at the very bottom, with what money actually is, and climbs step by step: gold coins and the gold standard, the wars that broke it, the 1944 system that crowned the dollar, the 1971 night that cut the dollar loose from gold, the oil money that followed, and the way banks create most of our money today with a few keystrokes. Then it turns to the questions that matter for your life: why debt never seems to go away, why prices move in long seasons, why empires and their currencies fall, why the ruler we measure prices with keeps stretching, and how a new player with no inheritance can get onto the board. Later chapters add the bond market underneath it all, the deflation debate, the game nations play for the top of the leaderboard, the view from a smaller currency, countries read as companies, and finally the titled world: why the abundance we see is priced on future credit and who keeps the balance.",
   "It is written like a rulebook passed from one generation to the next. Each chapter ends with rules. The book ends with a full rulebook and a list of the mistakes each generation made, from Rome to the 2020s, so that their intelligence and their errors are both preserved.",
   "The guide honors the ideas of the person who commissioned it, an owner who wrote a newsletter series about money called Ledger Age, and quotes their questions in their own words. Where their intuition is right, the guide says so and builds on it. Where it needs correcting, the guide corrects it gently and shows the evidence.",
+  "Why this order? This book grew out of years of one person's questions, asked, half answered and asked again. Most books, courses and even degrees in economics and finance teach the pieces separately, each with its own jargon and messy charts, and rarely tell the history and the geopolitics that explain why the pieces exist. Readers end up relooping for years just to learn what the words mean. Here the pieces come in the order they connect, from what money is, to the bonds underneath it, to the countries competing over it, to who owns the world and who keeps the balance, so that a reader can absorb in weeks what usually takes years.",
   "History and economics here are kept to what is well established. Where scholars disagree, the guide says so. Current numbers, as of October 22, 2026, come from this project's own research files. This is general education about how money works, not financial advice for any person's situation."
  ],
  "howToRead": [
@@ -1079,65 +1080,111 @@
    "id": "rb-bonds",
    "num": "07",
    "title": "Bonds: the backbone of today's money",
-   "kicker": "If you do not understand the government bond, you do not understand modern money, because modern money is built on top of it.",
+   "kicker": "If money is a building, government bonds are its foundation. This chapter rebuilds the idea from zero in six small steps, with a picture for each and a slider you can play with.",
    "blocks": [
     {
-     "type": "p",
-     "text": "Chapter 6 showed that banks create money when they lend. This chapter is about the thing almost all of that money ultimately leans on: the government bond. Most people skip bonds because they sound boring. That is exactly why so few people understand where interest rates, mortgages, stablecoins and even currency power come from."
-    },
-    {
-     "type": "h",
-     "text": "What a bond is, in one breath"
-    },
-    {
-     "type": "p",
-     "text": "A bond is an IOU with a schedule. The government borrows $1,000 today and promises to pay you a fixed amount every year (the coupon) and your $1,000 back on a set date (maturity). US Treasury bills last a year or less and pay no coupon: you buy them below face value and get the full amount back. Notes last 2 to 10 years and bonds 20 to 30 years. The US has about $32.57T of this debt held by the public, and about 22% of the tradable part is short-term bills."
-    },
-    {
-     "type": "h",
-     "text": "Why bonds sit underneath everything"
-    },
-    {
-     "type": "list",
+     "type": "tldr",
+     "label": "In 60 seconds",
      "items": [
-      "The Fed's money rests on them. The Fed creates bank reserves and cash, and the main asset it holds against them is Treasuries (about $4.57T).",
-      "They are the financial system's pawnshop ticket. In repo markets, banks and funds hand over Treasuries overnight to borrow cash. Trillions move this way every day.",
-      "Banks and money funds park cash in them, because rules treat them as the safest liquid asset.",
-      "Stablecoins must hold them. Under the GENIUS Act, every compliant dollar token has to be backed by bills of 93 days or less.",
-      "Foreign central banks keep their savings in them. That is how the world holds dollars without holding cash.",
-      "They set the base price of money. Mortgages, car loans and company loans are priced as the Treasury yield plus a margin for risk."
+      "A bond is a loan you give, usually to a government. It pays you a fixed rent on your money and gives the money back on a set date.",
+      "Because the rent is fixed, the bond's price must move when new bonds pay more or less. Rates up, price down. Rates down, price up.",
+      "The rent the market demands today is called the yield. Think of it as the price of patience.",
+      "Almost every other interest rate in your life, from your mortgage to your savings account, is built on top of the government's yield.",
+      "So when bond yields move, your loan, your rent, your job market and even your currency move with them."
      ]
+    },
+    {
+     "type": "cards",
+     "label": "The only five words you need",
+     "items": [
+      {
+       "t": "Bond",
+       "d": "An IOU. You lend money, the borrower promises rent plus your money back."
+      },
+      {
+       "t": "Coupon",
+       "d": "The fixed rent the bond pays each year. Set on day one, it never changes."
+      },
+      {
+       "t": "Maturity",
+       "d": "The day you get your original money back."
+      },
+      {
+       "t": "Price",
+       "d": "What someone would pay for your IOU today if you sold it early."
+      },
+      {
+       "t": "Yield",
+       "d": "The rent you really earn at today's price. The market's price of patience."
+      }
+     ]
+    },
+    {
+     "type": "h",
+     "text": "Step 1. A bond is a rental contract for your money"
+    },
+    {
+     "type": "p",
+     "text": "Forget finance for a moment. You have $1,000. The US government says: lend it to me for 10 years, I will pay you $50 every year as rent, and give your $1,000 back at the end. You agree, and you receive a contract that says exactly that. That contract is a bond."
+    },
+    {
+     "type": "diagram",
+     "key": "bond-ticket",
+     "caption": "The whole bond on one ticket. You pay once, collect rent every year, and get your money back at the end. Bar heights are not to scale."
+    },
+    {
+     "type": "p",
+     "text": "Bills, notes and bonds are the same ticket in different lengths. Treasury bills last a year or less and pay no yearly rent: you buy them a little below face value and collect the full amount at the end, so the discount is your rent. Notes last 2 to 10 years. Bonds last 20 to 30 years. The public holds about $32.57T of these tickets, and about 22% of the tradable ones are short-term bills."
+    },
+    {
+     "type": "check",
+     "q": "You buy a 10-year bond for $1,000 that pays $50 a year. If you hold it to the end and the government pays as promised, how much do you collect in total?",
+     "a": "$50 x 10 = $500 of rent, plus your $1,000 back, so $1,500. If you hold to the end, the price swings in between never touch you."
+    },
+    {
+     "type": "h",
+     "text": "Step 2. Why the price moves: the locked-rent apartment"
     },
     {
      "type": "callout",
      "label": "Picture this",
-     "text": "Think of money as a tower of glasses at a wedding, the kind where champagne is poured into the top glass and overflows downward. Government bonds are the bottom row. Every glass above, from bank deposits to stablecoins to your mortgage, rests on that row. If the bottom row wobbles, the whole tower shakes."
-    },
-    {
-     "type": "h",
-     "text": "The seesaw: why price and yield move in opposite directions"
+     "text": "You own an apartment rented out at a locked $500 a month for ten years. A year later, every similar apartment in town rents for $600. You decide to sell. The buyer inherits your tenant, still paying $500. Would anyone pay full price for that? No. You must cut the price until the deal makes sense. Now flip it: if town rents fall to $400, your locked $500 tenant makes your apartment the best deal around, and buyers pay extra. A bond is that apartment. The coupon is the locked rent."
     },
     {
      "type": "diagram",
      "key": "seesaw",
-     "caption": "A bond's coupon is fixed. When new bonds pay more, old bonds must get cheaper to compete, so price falls as yield rises."
+     "caption": "The coupon is locked, so the price is the only thing that can move. When new bonds pay more, old bonds get cheaper."
     },
     {
      "type": "steps",
      "items": [
-      "You buy a $1,000 bond that pays $50 a year. Your yield is 5%.",
-      "Next month the government sells new bonds paying $60 a year on $1,000, a 6% yield.",
-      "Nobody will pay $1,000 for your $50 bond when a $60 one is on offer. To sell it, you must cut the price until $50 a year is also about 6% of what the buyer pays: about $833.",
-      "Your bond lost about $167 of market value, even though the government never missed a payment. That is price risk, and it is why 'safe' bonds can still lose money."
+      "You hold a 10-year bond bought for $1,000 that pays $50 a year. Your yield is 5%.",
+      "New bonds start paying $60 a year on $1,000, a 6% yield. Town rents went up.",
+      "A buyer will not pay $1,000 for your $50 when $60 is on offer. You cut the price until your bond also gives the buyer 6%, counting the $50 rent and the $1,000 at the end. That price is about $926.",
+      "You lost about $74, or 7%, of market value, even though the government never missed a payment. Hold to the end and you still collect every $50 and your $1,000. Sell early and you take the loss. That is price risk."
      ]
     },
     {
+     "type": "widget",
+     "key": "bond-lab",
+     "caption": "Try it. Three bonds, all bought for $1,000 and all paying $50 a year. Drag the rate new bonds pay and watch their prices. The black line is the $1,000 you paid."
+    },
+    {
+     "type": "insider",
+     "text": "Longer bonds swing more, because more years of locked rent are affected. A one point rise in rates, from 5% to 6%, knocks about 7% off a 10-year bond and about 14% off a 30-year bond. That is how Silicon Valley Bank, holding long bonds bought when rates were low, lost enough value to fail in March 2023."
+    },
+    {
      "type": "h",
-     "text": "What moves the yield: the price of patience"
+     "text": "Step 3. What sets the rent: a tug of war"
     },
     {
      "type": "p",
-     "text": "A bond yield is the price of patience. It is what the market demands for handing over money today and waiting for it to come back. Seven forces set that price."
+     "text": "The yield is the price of patience: what the market demands for handing over money today and waiting for it to come back. It is set every second by a tug of war between forces pulling it up and forces pulling it down."
+    },
+    {
+     "type": "diagram",
+     "key": "yield-tug",
+     "caption": "The yield is the knot in the rope. In October 2026 the up team was winning, and the 10-year yield sat at 5.13%."
     },
     {
      "type": "table",
@@ -1187,7 +1234,7 @@
     {
      "type": "diagram",
      "key": "yield-parts",
-     "caption": "The US 10-year yield of 5.13% on 2026-10-21 split into its two big parts, using market prices."
+     "caption": "Split the 10-year yield in two. The gold part pays you back for expected inflation. The blue part is the real reward for waiting."
     },
     {
      "type": "p",
@@ -1195,7 +1242,41 @@
     },
     {
      "type": "h",
-     "text": "The yield curve: a weather vane"
+     "text": "Step 4. Why bonds sit under everything"
+    },
+    {
+     "type": "diagram",
+     "key": "bond-tower",
+     "caption": "Picture a champagne tower at a wedding. Government bonds are the bottom row of glasses. Every glass above rests on them."
+    },
+    {
+     "type": "list",
+     "items": [
+      "The Fed's money rests on them. The Fed creates bank reserves and cash, and the main asset it holds against them is Treasuries (about $4.57T).",
+      "They are the financial system's pawnshop ticket. In repo markets, banks and funds hand over Treasuries overnight to borrow cash. Trillions move this way every day.",
+      "Banks and money funds park cash in them, because rules treat them as the safest liquid asset.",
+      "Stablecoins must hold them. Under the GENIUS Act, every compliant dollar token has to be backed by bills of 93 days or less.",
+      "Foreign central banks keep their savings in them. That is how the world holds dollars without holding cash.",
+      "They set the base price of money. Mortgages, car loans and company loans are priced as the Treasury yield plus a margin for risk."
+     ]
+    },
+    {
+     "type": "h",
+     "text": "Step 5. How a bond move reaches your life"
+    },
+    {
+     "type": "diagram",
+     "key": "bond-ripple",
+     "caption": "One move in the 10-year yield, four ripples."
+    },
+    {
+     "type": "p",
+     "text": "Take a $400,000 mortgage over 30 years. At 6.40% the monthly payment is about $2,502. At 7.40%, roughly where US mortgages sat in October 2026, it is about $2,770. One point on the bond market costs that family about $267 a month, about $3,210 a year, for thirty years."
+    },
+    {
+     "type": "diagram",
+     "key": "yield-curve",
+     "caption": "The yield curve: yields lined up from short to long. Normal curves slope up. An inverted curve, drawn here as an example, often warns of a slowdown."
     },
     {
      "type": "p",
@@ -1216,6 +1297,24 @@
      "text": "The bond market is the only voter that votes every second. When it dislikes a government's plans, yields rise and the government's own interest bill rises with them. US net interest reached $1,051.8B in FY2026, more than defense. That bill is the bond market's running verdict, and it is why Treasury secretaries watch auctions more closely than polls."
     },
     {
+     "type": "h",
+     "text": "Step 6. Say it back"
+    },
+    {
+     "type": "p",
+     "text": "Close the page for a moment and explain these out loud. If you can, you understand bonds better than most people who use the word."
+    },
+    {
+     "type": "check",
+     "q": "Rates on new bonds fall from 5% to 3%. What happens to the price of the bond you already own, and why?",
+     "a": "It rises. Your bond pays $50 when new ones pay only $30, so buyers pay extra for your locked, higher rent. Rates down, price up."
+    },
+    {
+     "type": "check",
+     "q": "Why does a 30-year bond lose more than a 2-year bond when rates rise?",
+     "a": "Because it has 30 years of locked rent below the new market rate, not 2. The longer the lock, the bigger the price change. Try it on the slider."
+    },
+    {
      "type": "check",
      "q": "If the Treasury suddenly has to sell far more long bonds while its biggest foreign buyer is selling, what happens to long yields and to mortgage rates?",
      "a": "Supply rises and demand falls, so bond prices drop and yields rise. Mortgages are priced off long Treasury yields, so mortgage rates rise too."
@@ -1224,7 +1323,8 @@
    "rules": [
     "Government bonds are the bottom row of the money tower. Learn them and the rest of the tower makes sense.",
     "Price and yield move in opposite directions. Safe from default is not safe from loss.",
-    "A yield is the price of patience, set by the Fed path, inflation, uncertainty, supply, demand, growth and trust."
+    "A yield is the price of patience, set by the Fed path, inflation, uncertainty, supply, demand, growth and trust.",
+    "The longer the bond, the bigger the swing."
    ],
    "connects": [
     {
@@ -3393,8 +3493,188 @@
    ]
   },
   {
-   "id": "rb-titled",
+   "id": "rb-nation",
    "num": "19",
+   "title": "Nation Inc.: taxes, interest and the hubs",
+   "kicker": "Is tax a scam? Why did the Torah and the Quran forbid interest? Is a tax-free hub like the UAE cheating? Read the world's countries as companies competing on one leaderboard and the answers fall into place.",
+   "blocks": [
+    {
+     "type": "tldr",
+     "label": "In 60 seconds",
+     "items": [
+      "Each country works like a company: a finance department, a currency desk, billing, legal, security, sales and HR.",
+      "Tax is the subscription fee for the board itself: the money, the courts that protect your title and the security around them. It is not a scam, but who pays it and how well it is spent are fair fights.",
+      "Old religious bans on interest were early tools to stop debt from turning into permanent ownership. Islamic finance today still runs inside a dollar system built on interest.",
+      "Tax-free hubs like the UAE compete for people and capital that other countries paid to raise. It is legal and deliberate, and it is the leaderboard at work."
+     ]
+    },
+    {
+     "type": "h",
+     "text": "Read every country as a company"
+    },
+    {
+     "type": "p",
+     "text": "The fastest way through the jargon is to stop picturing countries as flags and start picturing them as companies. There are about 195 of them. Each has departments, staff, customers, a balance sheet, a credit rating and rivals. The leaderboard from chapter 12 is the ranking of these companies."
+    },
+    {
+     "type": "diagram",
+     "key": "nation-org",
+     "caption": "A country drawn as a company. The names change from place to place. The jobs do not."
+    },
+    {
+     "type": "table",
+     "cols": [
+      "A company is judged on",
+      "A country is judged on",
+      "Today's example"
+     ],
+     "rows": [
+      [
+       "Credit rating",
+       "Its credit rating and bond yields",
+       "US 10-year yield 5.13% (October 2026)"
+      ],
+      [
+       "Market share",
+       "Its currency's share of world reserves",
+       "US dollar 56.70%, Chinese yuan 2.11% (IMF data)"
+      ],
+      [
+       "Revenue",
+       "Its tax base and output",
+       "Taxes on work carry about 86% of US federal receipts"
+      ],
+      [
+       "Debt and cash",
+       "Public debt and reserves",
+       "US debt $40.44T, interest $1,051.8B a year"
+      ],
+      [
+       "Brand and trust",
+       "Rule of law and kept promises",
+       "The pillars of a deep market in chapter 12"
+      ],
+      [
+       "Talent",
+       "Who moves in and who moves out",
+       "About 60% of the Malaysian diaspora lives in Singapore"
+      ]
+     ]
+    },
+    {
+     "type": "h",
+     "text": "Is tax a scam?"
+    },
+    {
+     "type": "p",
+     "text": "A popular argument says tax is theft, or a scam that takes from workers and hands to elites. Go back to the board game from chapter 15. The game has been running for thousands of years, and it only works because someone keeps the board, issues the money, records who owns which square and stops players from simply seizing each other's property. That someone is the state, and the subscription fee is tax. Without it there is no common money, no court to defend your title deed, no land registry, no police and no army. You would be left trading by barter, and anyone stronger could take your land."
+    },
+    {
+     "type": "p",
+     "text": "Tax also gives the money its value. Adam Smith noticed in 1776 that a ruler who demands taxes in a certain paper money gives that paper value. The German economist Georg Friedrich Knapp built a whole theory on the idea in 1905. Every American must pay federal tax in dollars, so every American needs dollars. That steady demand is one reason the dollar is accepted everywhere, long before anyone thinks about gold or oil."
+    },
+    {
+     "type": "p",
+     "text": "The critics are not wrong about everything. Who pays matters. In the US, taxes on income and payroll carry about 86% of federal receipts, while gains on assets are taxed only when sold and can escape tax when passed on at death. Inflation is a tax nobody votes on. Spending can be wasteful or captured by insiders. So the honest verdict is: tax is not a scam. It is a fee. The real fights are over how big the fee is, who pays it, and whether the company spends it well."
+    },
+    {
+     "type": "myth",
+     "myth": "Tax is a scam. Without the state I would keep everything I earn.",
+     "reality": "Without the state there is no money to earn in, no court to enforce your pay and no title to your home. The fair question is not whether to pay the fee, but whether it is set and spent fairly."
+    },
+    {
+     "type": "h",
+     "text": "Why the holy books forbade interest"
+    },
+    {
+     "type": "p",
+     "text": "The Torah forbids lending at interest to a fellow member of the community (Exodus 22:25, Leviticus 25:36 to 37), while Deuteronomy 23:19 to 20 allows it with a foreigner. The Quran forbids riba and warns those who take it (Al-Baqarah 2:275 to 279). Medieval Christianity banned usury for centuries as well. Three traditions, far apart, reached the same rule. Why?"
+    },
+    {
+     "type": "p",
+     "text": "Because in an ancient farming world, interest on debt could grow faster than any harvest. A bad year forced a family to borrow, the interest compounded, and soon the family handed over its land, then its labor, sometimes its children. Debt turned into permanent ownership by the lender. The same book of Leviticus prescribed a Jubilee every fiftieth year, when land returned to its original families. Mesopotamian kings regularly declared clean slates that cancelled farmers' debts. These were resets built into the rules, so the board could never become permanently titled to a few. It is the same pressure chapter 20 describes today."
+    },
+    {
+     "type": "callout",
+     "label": "Picture this",
+     "text": "Imagine Monopoly with one extra rule: every fifty laps, every street returns to the family that first held it, and all loans are torn up. Nobody can win forever, and nobody is a tenant forever. That was the Jubilee."
+    },
+    {
+     "type": "p",
+     "text": "Islamic finance today, estimated at about $5 trillion to $6.5 trillion of assets in 2025 depending on who counts, replaces interest with sharing and trading. Instead of lending at interest, a bank can share the profits and losses of a venture, buy a house and sell it to you at a fixed markup paid in installments, or lease it to you. Islamic bonds, called sukuk, pay returns tied to real assets."
+    },
+    {
+     "type": "insider",
+     "text": "Two catches. First, many products end up paying something very close to interest in a different wrapper. In November 2007 the leading scholar Muhammad Taqi Usmani said that about 85% of sukuk did not comply with Islamic law because of buyback promises that guaranteed the money back, and the standards body AAOIFI tightened its rules in 2008. Second, the Gulf currencies are pegged to the dollar, so their interest rates follow the Federal Reserve. Interest-free finance still lives inside a dollar system that runs on interest."
+    },
+    {
+     "type": "h",
+     "text": "The UAE: no income tax. Cheat, or strategy?"
+    },
+    {
+     "type": "p",
+     "text": "The UAE charges no personal income tax. It added a 5% VAT in 2018, a 9% corporate tax from June 2023 on profits above AED 375,000, and a 15% minimum tax on large multinationals from 2025. Much of the state's income comes from oil and gas, state companies and fees, and its sovereign funds are among the largest in the world. Its dirham is pegged to the dollar."
+    },
+    {
+     "type": "p",
+     "text": "The result is a magnet. Henley and Partners estimated that about 9,800 millionaires would move to the UAE in 2025, more than to any other country. In company terms, the UAE hires experienced staff whose schooling, health care and early careers were paid for by other countries' taxpayers, at the moment those people earn the most. The home country trained them. The hub collects their best years and their capital."
+    },
+    {
+     "type": "callout",
+     "label": "The decode verdict",
+     "text": "Cheating: no. It is legal and openly announced. A deliberate strategy to attract wealth built elsewhere: D1, decoded-strong, about 85%. Lucrative: yes, as long as oil income funds the state, the dollar peg holds and the region stays safe. Singapore, Switzerland, Monaco, Ireland for companies, and others play versions of the same game. The OECD's 15% global minimum tax, agreed by more than 130 countries in 2021, was the big countries' attempt to limit it."
+    },
+    {
+     "type": "insider",
+     "text": "The leaderboard leader plays by different rules. The United States is one of only two countries, with Eritrea, that taxes its citizens wherever they live. An American who moves to Dubai still files a US tax return, and leaving for good means giving up citizenship and possibly paying an exit tax. Since 2010 a law called FATCA has made banks around the world report Americans' accounts. Only the company that owns the world's main currency and its payment pipes can keep its staff on the payroll after they leave."
+    },
+    {
+     "type": "h",
+     "text": "Why this usually takes years to see"
+    },
+    {
+     "type": "p",
+     "text": "Taxes, interest, pegs, hubs, ratings and reserves are usually taught in different courses, each with its own jargon and messy charts, and rarely with the history and geopolitics that explain why they exist. That is why understanding money usually takes years of relooping. Read the countries as companies on one leaderboard, and the pieces snap into one picture: who issues the money, who pays the fee, who trains the talent, who collects it, and who sets the rules."
+    },
+    {
+     "type": "check",
+     "q": "Why does a country that charges no income tax still need a state, a currency and courts?",
+     "a": "Because the board still needs a keeper. The UAE funds its state mainly from oil, state companies and fees instead of income tax, but it still issues the dirham, runs courts and registries and provides security. The fee is collected another way."
+    },
+    {
+     "type": "check",
+     "q": "Why did ancient rules ban interest or cancel debts?",
+     "a": "Because compounding interest in a farming world turned bad harvests into lost land and lost freedom. Bans and jubilees stopped debt from turning into permanent ownership by lenders."
+    }
+   ],
+   "rules": [
+    "Tax is the subscription fee for the board. Argue about its size, who pays and how it is spent, not whether it should exist.",
+    "Read a country like a company: its departments, its staff, its customers and its rivals for talent.",
+    "Interest bans and debt jubilees were ancient tools to stop debt from turning into permanent ownership.",
+    "Hubs grow by hiring talent and capital that other countries paid to raise."
+   ],
+   "connects": [
+    {
+     "id": "rb-leader",
+     "how": "The leaderboard these companies compete on."
+    },
+    {
+     "id": "rb-em",
+     "how": "Talent and capital moving from smaller currencies to hubs."
+    },
+    {
+     "id": "rb-titled",
+     "how": "Why debt resets existed, and what replaces them today."
+    },
+    {
+     "id": "rb-11",
+     "how": "The board game the state keeps running."
+    }
+   ]
+  },
+  {
+   "id": "rb-titled",
+   "num": "20",
    "title": "The titled world: why abundance runs on credit, and who keeps the balance",
    "kicker": "Divide the world's wealth by everyone and it looks like plenty. Here is why most of that plenty is a price set on future credit, why the base layer was titled long ago, and what role each big country plays in keeping a crowded system from tipping over.",
    "blocks": [
@@ -3417,6 +3697,27 @@
     },
     {
      "type": "h",
+     "text": "Now divide the base layer instead"
+    },
+    {
+     "type": "p",
+     "text": "The $57,000 is a nominal number. It is a price, measured in dollars at today's interest rates, not a quantity of things. To see the real pie, divide the base layer instead."
+    },
+    {
+     "type": "diagram",
+     "key": "base-divide",
+     "caption": "Each person's equal share of the world, first in paper, then in real things. Cropland from FAO (2023), energy from the Energy Institute (2025)."
+    },
+    {
+     "type": "p",
+     "text": "Each person's share of the world's cropland is about 0.2 hectares, roughly a quarter of a football pitch, to grow all of their food. Their share of all the energy humanity used in 2025, about 600 exajoules, is about 20,000 kWh a year, the same as 23 old 100-watt bulbs burning day and night, to run every farm, factory, truck, home and data center on their behalf. Savills' value for all the world's farmland works out to about $5,800 a person. Measured in things, the world is far less abundant than $57,000 suggests. Measured in claims, it looks rich, because claims can multiply faster than farmland or power plants."
+    },
+    {
+     "type": "insider",
+     "text": "This is why the price of the base layer tends to climb in a credit-driven world. Each new round of credit creates more claims chasing the same farmland, the same city plots and the same energy. The claims multiply and the base layer does not, so its price rises. Owners of the base layer get richer without making anything new."
+    },
+    {
+     "type": "h",
      "text": "Why the pie is smaller than it looks"
     },
     {
@@ -3436,6 +3737,32 @@
     {
      "type": "p",
      "text": "So the abundance we see is partly real, in machines, knowledge, networks and food, and partly a bet on future production, financed by credit and priced at today's interest rates. That is the owner's insight in plain terms: much of the world's apparent abundance is priced on future credit. When rates rise, as they did in 2026, the bet is repriced and the paper abundance shrinks, even though not one building or factory disappears."
+    },
+    {
+     "type": "h",
+     "text": "Money is debt, and debt is money"
+    },
+    {
+     "type": "p",
+     "text": "There is a deeper reason the paper pie and the real pie differ. Almost all modern money is somebody's debt. Chapter 6 showed that a bank loan creates a deposit. Your bank balance is the bank's debt to you. A dollar bill is a liability of the Federal Reserve, which holds mostly government bonds against it, and those bonds are the government's debt, to be paid from future taxes. Money is debt, and debt is money. If every loan in the world were repaid tomorrow, most of the money would vanish with them."
+    },
+    {
+     "type": "diagram",
+     "key": "money-debt-mirror",
+     "caption": "Every dollar someone owns is matched by a debt someone else owes. Only real things, gold and Bitcoin sit outside the mirror."
+    },
+    {
+     "type": "list",
+     "items": [
+      "To grow the money supply, the system must grow debt. That is why total wealth and total debt keep rising together.",
+      "Paying debt down shrinks money. When too many people do it at once, as in 1929 to 1933, money disappears and prices fall.",
+      "Add up the whole world and every financial asset cancels out against someone's debt. What remains, the world's true net worth, is the value of its real things: land, buildings, machines and the rest of the base layer.",
+      "The exceptions are things that are nobody's IOU: gold, Bitcoin, land and goods. That is exactly why people run to them when they start to doubt the debts."
+     ]
+    },
+    {
+     "type": "insider",
+     "text": "So the $57,000 is not $57,000 of stuff. Much of it is deposits, bonds and pension claims, each matched by a debt somewhere else, owed by a company, a bank or a government that must pay it from future income. Net out the IOUs and what is left is the base layer plus the machines and buildings on top, priced at whatever today's interest rates allow."
     },
     {
      "type": "h",
@@ -3582,7 +3909,8 @@
       "The ruler we measure with keeps shrinking (chapter 14).",
       "Newcomers start on a board with no free money, and new rails are laid on old anchors (chapters 15 and 16).",
       "Paper values are claims on the future and can fall fast (chapters 17 and 18).",
-      "Underneath it all, the abundance on paper rests on credit and on a base layer titled long ago. The system's real job is balancing owners and newcomers without calling the horsemen."
+      "Every country runs like a company on that leaderboard, with taxes as its subscription fee and hubs competing for its talent (chapter 19).",
+      "Underneath it all, money is debt, the abundance on paper rests on credit, and the base layer was titled long ago. The system's real job is balancing owners and newcomers without calling the horsemen."
      ]
     },
     {
@@ -3628,7 +3956,7 @@
   },
   {
    "id": "rb-14",
-   "num": "20",
+   "num": "21",
    "title": "The Rulebook",
    "kicker": "What each generation learned the hard way, written down so the next one does not have to.",
    "blocks": [
@@ -3685,12 +4013,12 @@
       [
        "Power and plumbing",
        "Your judgment: see who sets the rules and who earns the tolls",
-       "3, 4, 5, 11, 12, 16, 17"
+       "3, 4, 5, 11, 12, 16, 17, 19"
       ],
       [
        "Getting on the board",
        "Your future: turn income into ownership",
-       "15, 19"
+       "15, 20"
       ]
      ]
     },
@@ -3924,6 +4252,21 @@
    "n": 38,
    "rule": "Look for the next base layer before it is titled.",
    "why": "Newcomers get ownership early only at new frontiers: new industries, energy, compute and whatever comes next."
+  },
+  {
+   "n": 39,
+   "rule": "The longer the bond, the bigger the swing.",
+   "why": "Long bonds lock in rent for more years, so their prices move most when rates change."
+  },
+  {
+   "n": 40,
+   "rule": "Money is debt. Know who owes the other side of every dollar you hold.",
+   "why": "Deposits, notes and bonds are all someone's liability. Only real things and gold or Bitcoin sit outside the mirror."
+  },
+  {
+   "n": 41,
+   "rule": "Tax is the subscription fee for the board. Argue about the size and who pays, not whether.",
+   "why": "Without the state there is no common money, no title and no court."
   }
  ],
  "mistakes": [
@@ -4009,6 +4352,10 @@
    "d": "Paper cash plus the reserves that banks hold at the central bank."
   },
   {
+   "t": "Bond",
+   "d": "An IOU sold by a government or company: it pays a fixed rent (the coupon) and returns the money on a set date."
+  },
+  {
    "t": "Breakeven inflation",
    "d": "The inflation rate the bond market is pricing in, read from the gap between ordinary and inflation-protected bond yields."
   },
@@ -4035,6 +4382,14 @@
   {
    "t": "Central bank",
    "d": "A public bank that issues a country's base money and manages its interest rates."
+  },
+  {
+   "t": "Chartalism",
+   "d": "The idea that money gets its value from the state, mainly because taxes must be paid in it."
+  },
+  {
+   "t": "Citizenship-based taxation",
+   "d": "Taxing citizens wherever they live. The US and Eritrea are the only countries that do it."
   },
   {
    "t": "Collateral",
@@ -4079,6 +4434,10 @@
   {
    "t": "Exorbitant privilege",
    "d": "The advantage the US gets because the world wants dollars and Treasuries, letting it borrow cheaply in its own currency."
+  },
+  {
+   "t": "Face value",
+   "d": "The amount a bond repays at maturity, usually $1,000 per bond. Also called par."
   },
   {
    "t": "Federal Reserve (the Fed)",
@@ -4129,12 +4488,20 @@
    "d": "A general rise in prices, so each unit of money buys less. Debts get lighter in real terms."
   },
   {
+   "t": "Jubilee",
+   "d": "The fiftieth-year release in Leviticus, when debts were forgiven and land returned to its original families."
+  },
+  {
    "t": "Leverage",
    "d": "Using borrowed money to buy assets. It magnifies gains and losses."
   },
   {
    "t": "Liability",
    "d": "Something you owe, such as a loan. One person's liability is always another's asset."
+  },
+  {
+   "t": "Maturity",
+   "d": "The date a bond repays its face value."
   },
   {
    "t": "Medium of exchange",
@@ -4205,6 +4572,10 @@
    "d": "A change in the price of assets already owned, with no new things produced. Falling interest rates revalue assets upward."
   },
   {
+   "t": "Riba",
+   "d": "The Arabic term for interest or unjust gain on loans, forbidden in Islam."
+  },
+  {
    "t": "Seigniorage",
    "d": "The profit from issuing money, the gap between what money costs to make and what it buys."
   },
@@ -4215,6 +4586,14 @@
   {
    "t": "Store of value",
    "d": "A way to carry buying power from today into the future. Money's saving job."
+  },
+  {
+   "t": "Sukuk",
+   "d": "Islamic bonds that pay returns linked to real assets instead of interest."
+  },
+  {
+   "t": "Tax competition",
+   "d": "Countries cutting taxes to attract people, companies and capital from other countries."
   },
   {
    "t": "Term premium",
@@ -4361,6 +4740,14 @@
   {
    "q": "If the world is so rich, why do so many people feel locked out?",
    "a": "Because most of that wealth is the price of assets that were owned long ago, revalued upward by falling interest rates, while newcomers must buy in at today's prices with credit. See the chapter on the titled world."
+  },
+  {
+   "q": "Is tax a scam?",
+   "a": "No. Tax is the fee for the board itself: the money, the courts that protect your title and the security around them. But who pays the fee and how well it is spent are fair questions. See the Nation Inc. chapter."
+  },
+  {
+   "q": "Why do bond prices fall when rates rise? I still find it confusing.",
+   "a": "Picture an apartment with a locked rent. If rents in town rise, a buyer will not pay full price for your low locked rent. A bond's coupon is that locked rent. Try the slider in the bonds chapter."
   }
  ]
 }
