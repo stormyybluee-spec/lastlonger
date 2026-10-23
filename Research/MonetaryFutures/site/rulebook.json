@@ -1080,7 +1080,7 @@
    "id": "rb-bonds",
    "num": "07",
    "title": "Bonds: the backbone of today's money",
-   "kicker": "If money is a building, government bonds are its foundation. This chapter rebuilds the idea from zero in six small steps, with a picture for each and a slider you can play with.",
+   "kicker": "If money is a building, government bonds are its foundation. This chapter rebuilds the idea from zero in seven small steps, with a picture for each and a slider you can play with.",
    "blocks": [
     {
      "type": "tldr",
@@ -1090,7 +1090,8 @@
       "Because the rent is fixed, the bond's price must move when new bonds pay more or less. Rates up, price down. Rates down, price up.",
       "The rent the market demands today is called the yield. Think of it as the price of patience.",
       "Almost every other interest rate in your life, from your mortgage to your savings account, is built on top of the government's yield.",
-      "So when bond yields move, your loan, your rent, your job market and even your currency move with them."
+      "So when bond yields move, your loan, your rent, your job market and even your currency move with them.",
+      "One last catch: every yield you see is a nominal number. Subtract tax and inflation to see what you really earn."
      ]
     },
     {
@@ -1298,7 +1299,37 @@
     },
     {
      "type": "h",
-     "text": "Step 6. Say it back"
+     "text": "Step 6. The catch: a yield is a nominal number"
+    },
+    {
+     "type": "p",
+     "text": "Every yield you see quoted, 5.13% on the 10-year or 4.81% on the 2-year, is nominal. It counts dollars, not what dollars buy. Chapter 14 called this the shrinking ruler. Your real return is what is left after inflation and, for most savers, after tax."
+    },
+    {
+     "type": "steps",
+     "items": [
+      "Start with the nominal yield: 5.13% on a 10-year Treasury in October 2026, or $51.30 a year on $1,000.",
+      "Take out tax. In a 24% federal bracket about $39 is left. Treasury interest is free of state income tax, but not of federal tax.",
+      "Take out inflation. If prices rise 2.4% a year, about what the bond market expects, $24 of that $39 only keeps up with prices. Your real gain is about 1.5% a year.",
+      "If inflation turns out higher than expected, the real return drops below zero, even though every payment arrives on time."
+     ]
+    },
+    {
+     "type": "widget",
+     "key": "real-lab",
+     "caption": "Try it. Set the bond yield, your tax rate and inflation. The bottom bar is what you really earn in buying power. Push inflation up and watch it turn red."
+    },
+    {
+     "type": "p",
+     "text": "This is not theory. In the 1940s the Fed held long-term yields near 2.5% while inflation ran in double digits after the war, quietly shrinking the war debt in real terms. In the 1970s inflation often ran above bond yields. And anyone who bought a 10-year Treasury at its record low closing yield of 0.52% in August 2020 earned about half a percent a year, while US consumer inflation peaked at 9.1% in June 2022."
+    },
+    {
+     "type": "insider",
+     "text": "This is the quietest way governments shrink debt. Keep the nominal yield below inflation for long enough and the real value of the debt melts, paid for by bondholders and savers who only look at the nominal number. Chapter 9 called it financial repression. The cure is the split in step 3: always separate a yield into the part that only keeps up with inflation and the part that is truly yours."
+    },
+    {
+     "type": "h",
+     "text": "Step 7. Say it back"
     },
     {
      "type": "p",
@@ -1318,13 +1349,19 @@
      "type": "check",
      "q": "If the Treasury suddenly has to sell far more long bonds while its biggest foreign buyer is selling, what happens to long yields and to mortgage rates?",
      "a": "Supply rises and demand falls, so bond prices drop and yields rise. Mortgages are priced off long Treasury yields, so mortgage rates rise too."
+    },
+    {
+     "type": "check",
+     "q": "A bond yields 5% and inflation is 4%. You pay 24% tax on the interest. What is your real return?",
+     "a": "5% minus 24% tax leaves 3.8%. Subtract 4% inflation and you are at about minus 0.2% a year. Your balance grows, but your buying power shrinks."
     }
    ],
    "rules": [
     "Government bonds are the bottom row of the money tower. Learn them and the rest of the tower makes sense.",
     "Price and yield move in opposite directions. Safe from default is not safe from loss.",
     "A yield is the price of patience, set by the Fed path, inflation, uncertainty, supply, demand, growth and trust.",
-    "The longer the bond, the bigger the swing."
+    "The longer the bond, the bigger the swing.",
+    "A yield is nominal. Subtract tax and inflation before you call it a gain."
    ],
    "connects": [
     {
@@ -2320,16 +2357,70 @@
      "text": "No single leader had all six forever. Each rose when its mix fit the technology and trade of its age, and each faded when debt, war and complacency ate the mix away. The open question for this century is whether the United States can keep its plumbing and promise strong enough to outlast the strain on the other pillars, and whether any rival is willing to give up enough control to offer a deeper market."
     },
     {
+     "type": "h",
+     "text": "Geography deals the cards, and the deck keeps changing"
+    },
+    {
+     "type": "p",
+     "text": "Place is one of the six pillars, but what makes a place valuable changes with technology. Every era has its own rare and needed thing, and the countries sitting on it get a turn near the top. Then the technology moves, and yesterday's treasure can lose its value almost overnight."
+    },
+    {
+     "type": "diagram",
+     "key": "rare-shift",
+     "caption": "What the world found rare and needed, era by era. The places that held it rose. Some lost it when technology changed."
+    },
+    {
+     "type": "p",
+     "text": "Chile's nitrate mines made it rich in the late 1800s, because nitrate was needed for fertilizer and explosives. In 1913 German chemists began making nitrogen in factories, and the boom ended. Botswana grew faster than almost any country from 1965 to 1995 on diamonds, and is now strained because laboratory-grown stones have pushed natural diamond prices down. Today the rare and needed things are battery metals, rare earths, chips, cheap power and compute."
+    },
+    {
+     "type": "h",
+     "text": "Rich ground, poor people: the resource curse"
+    },
+    {
+     "type": "p",
+     "text": "Having the cards is not the same as winning the hand. South Africa mines about 70% of the world's platinum, 46% of its chromium and 40% of its manganese, according to the US Geological Survey, and holds most of the world's platinum-group reserves. Yet its official unemployment rate was 33.6% in the second quarter of 2026, and 47.4% for people aged 15 to 34. The Democratic Republic of the Congo mines about 72% of the world's cobalt, the metal in most rechargeable batteries, yet remains one of the poorest countries on earth and has suffered decades of war."
+    },
+    {
+     "type": "diagram",
+     "key": "value-chain",
+     "caption": "Who captures the value of a mineral. The miner keeps the smallest share. China refines about 79% of the world's cobalt."
+    },
+    {
+     "type": "p",
+     "text": "Economists call this the resource curse. Its parts fit together. Easy money from the ground lets rulers govern without taxing or serving citizens. Armed groups fight to control the mines. A flood of export dollars lifts the currency and makes every other industry uncompetitive, which is called Dutch disease after the Netherlands' gas boom of the 1960s. And the money is made at the next steps, refining, manufacturing and finance, which happen elsewhere."
+    },
+    {
+     "type": "myth",
+     "myth": "Resource-rich countries stay poor because of their culture or because people are out of touch with modern money habits.",
+     "reality": "Habits such as saving in banks, paying tax and trusting contracts do matter, but research points mainly to institutions, and habits follow institutions. People save and invest where titles are safe and money holds its value. Colonial economies were built to dig and ship raw materials out. In South Africa, apartheid barred most people from owning land, skilled jobs and good schools until 1994, and since then power cuts, failing rail and ports, and corruption exposed by the state capture inquiry have held growth back. Change the institutions and the habits change with them."
+    },
+    {
+     "type": "p",
+     "text": "The exceptions prove the rule. Norway built strong institutions before it found oil, then saved the oil money abroad in a fund that now owns about 1.5% of every listed company in the world. Botswana negotiated a partnership with the diamond company De Beers and spent the money on schools, health and roads. Geography deals the cards. Institutions decide whether a country can play them."
+    },
+    {
+     "type": "insider",
+     "text": "Watch who refines, not just who digs. Indonesia banned exports of raw nickel ore in 2020 to force refining at home, and China's grip on refining battery metals and rare earths gives it more leverage than any mine does. On the country leaderboard, the processing step and the financial step are where rare things turn into power."
+    },
+    {
      "type": "check",
      "q": "Why might a country with huge savings choose to lend them to the US instead of spending them at home?",
      "a": "To keep its own currency cheap for exporters, to hold insurance against a dollar shortage, because its home markets are too small or controlled to hold the savings, and because its elites trust US courts with their wealth. Its households pay part of the cost through dearer imports and lower consumption."
+    },
+    {
+     "type": "check",
+     "q": "South Africa mines about 70% of the world's platinum. Why has that not made most South Africans rich?",
+     "a": "Because the value is captured mostly at later steps and by owners, while the institutions that turn resource money into broad jobs, skills and ownership were weakened by history and poor governance. Rare ground pays only when institutions let it."
     }
    ],
    "rules": [
     "Money flows to the deepest, safest, most open market, not the richest country.",
     "A cheap currency helps exporters and taxes households. Ask who inside a country pays for its surplus.",
     "Currency leadership lags economic leadership by decades, so do not expect sudden switches.",
-    "Empires rarely fall from one default. They fall when war and debt outgrow the productive base."
+    "Empires rarely fall from one default. They fall when war and debt outgrow the productive base.",
+    "Geography deals the cards. Institutions decide whether a country can play them.",
+    "Watch who refines and who finances, not just who digs."
    ],
    "connects": [
     {
@@ -3884,6 +3975,142 @@
     },
     {
      "type": "h",
+     "text": "Sovereign wealth funds: the countries' investment arms"
+    },
+    {
+     "type": "p",
+     "text": "Chapter 19 drew every country as a company with an investment arm. That arm is the sovereign wealth fund: a state-owned fund that turns a country's surplus, usually from oil, gas or trade, into ownership of assets around the world. Global SWF counted sovereign funds holding more than $15 trillion at the end of 2025. There are well over a hundred of them, but about a dozen giants hold most of the money, so twelve is a good number to remember."
+    },
+    {
+     "type": "diagram",
+     "key": "swf-jobs",
+     "caption": "The five jobs a sovereign fund can do. Most big funds do two or three at once."
+    },
+    {
+     "type": "table",
+     "cols": [
+      "Fund",
+      "Country",
+      "Money from",
+      "Main job",
+      "Size"
+     ],
+     "rows": [
+      [
+       "Government Pension Fund Global",
+       "Norway",
+       "Oil and gas",
+       "Saver. Owns about 1.5% of all listed companies",
+       "$2.39T (June 2026, published)"
+      ],
+      [
+       "China Investment Corporation",
+       "China",
+       "Foreign reserves",
+       "Reserve investor",
+       "over $1T (estimate)"
+      ],
+      [
+       "SAFE Investment Company",
+       "China",
+       "Foreign reserves",
+       "Reserve investor, publishes nothing",
+       "about $1T or more (estimate)"
+      ],
+      [
+       "Abu Dhabi Investment Authority",
+       "UAE",
+       "Oil",
+       "Saver with a global portfolio",
+       "about $1.18T (estimate)"
+      ],
+      [
+       "Kuwait Investment Authority",
+       "Kuwait",
+       "Oil",
+       "Saver. Roots in 1953, the oldest of its kind",
+       "about $1T (estimate)"
+      ],
+      [
+       "Public Investment Fund",
+       "Saudi Arabia",
+       "Oil and state assets",
+       "Developer and strategic arm: new cities, sports, games",
+       "about $1T (estimate)"
+      ],
+      [
+       "GIC",
+       "Singapore",
+       "Government reserves",
+       "Reserve investor",
+       "hundreds of billions (estimate)"
+      ],
+      [
+       "Qatar Investment Authority",
+       "Qatar",
+       "Gas",
+       "Saver and strategic arm, trophy assets abroad",
+       "hundreds of billions (estimate)"
+      ],
+      [
+       "Exchange Fund",
+       "Hong Kong",
+       "Reserves",
+       "Stabilizer behind the Hong Kong dollar peg",
+       "hundreds of billions"
+      ],
+      [
+       "Investment Corporation of Dubai",
+       "UAE",
+       "State companies",
+       "Holding company for the airline, banks and property",
+       "about $429B"
+      ],
+      [
+       "Mubadala",
+       "UAE",
+       "Oil and state assets",
+       "Developer: chips, energy, health",
+       "about $358B"
+      ],
+      [
+       "Temasek",
+       "Singapore",
+       "State companies",
+       "Owner of national champions",
+       "hundreds of billions"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Sizes are approximate. Norway publishes its value every quarter, but several giants, including ADIA, GIC and China's SAFE, publish no official figure, so trackers estimate them and do not always agree. The UAE alone runs four funds above $250 billion: ADIA, Investment Corporation of Dubai, Mubadala and ADQ."
+    },
+    {
+     "type": "list",
+     "items": [
+      "Stabilizer: a shock absorber that saves in boom years and spends when oil or export prices crash.",
+      "Saver: turns a resource that will run out into a permanent stake in the world's companies, for generations not yet born.",
+      "Reserve investor: earns more on a country's surplus dollars than Treasury bills would.",
+      "Developer: builds new industries at home so the country is not stuck selling one raw material. Malaysia's Khazanah Nasional plays this role.",
+      "Strategic arm: buys stakes, ports, chip plants, football clubs and game studios abroad, which bring influence and access as well as returns."
+     ]
+    },
+    {
+     "type": "insider",
+     "text": "Read these funds through this chapter's lens. They convert a base layer that will run out, oil and gas, into titles on the rest of the world: shares, buildings, ports and companies. Norway turned its oil into about 1.5% of every listed company on earth. A small country cannot hold the deep-market crown, but it can buy a slice of the board itself. It is also how much of the petrodollar from chapter 5 comes back to the US and Europe, not only into Treasuries but into their companies."
+    },
+    {
+     "type": "p",
+     "text": "The fund idea also touches the universal income debate. Alaska's Permanent Fund, built from oil revenue and worth about $89 billion, pays every eligible resident a yearly dividend: $1,200 in 2026, made up of $1,000 plus a $200 energy relief payment. It is the closest thing in the United States to a citizen's share of a titled base layer. The United States has historically had no national fund of this kind. A February 2025 executive order asked for a plan for one, and whether it becomes real is a tell worth watching."
+    },
+    {
+     "type": "check",
+     "q": "Why would an oil country rather own a slice of the world's companies than spend all its oil money at home?",
+     "a": "Because oil runs out and its price swings. Spreading the money across the world's companies turns a temporary resource into permanent, diversified income, and avoids flooding the home economy with cash it cannot absorb, which would cause Dutch disease."
+    },
+    {
+     "type": "h",
      "text": "Decoding the balance: a plan, or incentives?"
     },
     {
@@ -3933,7 +4160,8 @@
     "Wealth on paper is a price, not a pile.",
     "Every financial asset is someone's debt or someone's future income.",
     "The base layer was titled long ago. Newcomers enter through wages, credit and new frontiers.",
-    "Look for the next base layer before it is titled."
+    "Look for the next base layer before it is titled.",
+    "When a base layer runs out, the winners are those who turned it into titles first."
    ],
    "connects": [
     {
@@ -4267,6 +4495,16 @@
    "n": 41,
    "rule": "Tax is the subscription fee for the board. Argue about the size and who pays, not whether.",
    "why": "Without the state there is no common money, no title and no court."
+  },
+  {
+   "n": 42,
+   "rule": "A yield is nominal. Subtract tax and inflation before you call it a gain.",
+   "why": "Bonds can pay every coupon on time and still lose buying power."
+  },
+  {
+   "n": 43,
+   "rule": "Geography deals the cards. Institutions decide whether a country can play them.",
+   "why": "Resource-rich countries with weak institutions often stay poor while refiners and financiers capture the value."
   }
  ],
  "mistakes": [
@@ -4428,6 +4666,10 @@
    "d": "A general fall in prices, so each unit of money buys more. Debts get heavier in real terms."
   },
   {
+   "t": "Dutch disease",
+   "d": "When a resource export boom lifts the currency and makes other industries uncompetitive. Named after the Netherlands' gas boom of the 1960s."
+  },
+  {
    "t": "Economic rent",
    "d": "Income earned from owning something scarce, such as land or a license, rather than from producing more."
   },
@@ -4528,6 +4770,10 @@
    "d": "Measured in current money, without adjusting for inflation."
   },
   {
+   "t": "Nominal yield",
+   "d": "The interest rate as quoted, in dollars, before tax and inflation."
+  },
+  {
    "t": "Peg",
    "d": "A fixed exchange rate between one currency and another, defended by a central bank."
   },
@@ -4560,12 +4806,20 @@
    "d": "Adjusted for inflation, so values can be compared across time."
   },
   {
+   "t": "Real yield",
+   "d": "The return left after inflation. In bond markets it is read from inflation-protected bonds (TIPS)."
+  },
+  {
    "t": "Repo",
    "d": "A short loan backed by bonds as collateral. The financial system's overnight pawnshop."
   },
   {
    "t": "Reserve currency",
    "d": "A currency that foreign governments hold in large amounts as savings and for crisis use. Today mainly the dollar."
+  },
+  {
+   "t": "Resource curse",
+   "d": "The pattern where countries rich in oil or minerals grow slower and govern worse than countries without them."
   },
   {
    "t": "Revaluation",
@@ -4578,6 +4832,10 @@
   {
    "t": "Seigniorage",
    "d": "The profit from issuing money, the gap between what money costs to make and what it buys."
+  },
+  {
+   "t": "Sovereign wealth fund",
+   "d": "A state-owned fund that invests a country's surplus, often from oil, gas or trade, in assets at home and abroad."
   },
   {
    "t": "Stablecoin",
@@ -4748,6 +5006,14 @@
   {
    "q": "Why do bond prices fall when rates rise? I still find it confusing.",
    "a": "Picture an apartment with a locked rent. If rents in town rise, a buyer will not pay full price for your low locked rent. A bond's coupon is that locked rent. Try the slider in the bonds chapter."
+  },
+  {
+   "q": "If my bond pays 5%, am I really 5% richer each year?",
+   "a": "No. 5% is the nominal yield. Take off tax and inflation and the real gain may be closer to 1% or 2%, or even below zero. Try the second slider in the bonds chapter."
+  },
+  {
+   "q": "Why are countries full of minerals often poor?",
+   "a": "Because the value is mostly captured at the refining, manufacturing and financial steps, and because easy resource money weakens institutions. See the geography section of the leaderboard chapter."
   }
  ]
 }
