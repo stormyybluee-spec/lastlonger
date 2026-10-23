@@ -4419,6 +4419,165 @@
      ]
     },
     {
+     "type": "h",
+     "text": "The owner's question: what if the dollar ruler disappears?"
+    },
+    {
+     "type": "callout",
+     "label": "The owner's question",
+     "text": "Today everything, a share, a company bond, a token, has an easy measuring stick, because the dollar is there. Remove that layer, and we would probably learn to price things in Bitcoin. But right now crypto keeps getting absorbed into Set 1, because most of the world still settles in currencies. If tokens get good enough that nobody needs to convert Solana into stablecoins to buy things, and so many tokens can exist, where does their value come from? It still seems to come from base-layer credit and bond money. And if anyone lucky enough, a lottery winner or someone with a big enough yield, can launch their own token, it looks like a utopia. The opportunity seems enormous, and this is where it stops making sense."
+    },
+    {
+     "type": "p",
+     "text": "This is chapter 1's question in its newest form: what makes something money, and who decides how everything is measured? It untangles in five pieces, followed by the questions worth carrying with you."
+    },
+    {
+     "type": "h",
+     "text": "1. The ruler is the hardest job of money"
+    },
+    {
+     "type": "p",
+     "text": "Money has three jobs: spend, store and measure. Crypto has made real progress on the first two. The third, being the ruler everything is priced in, is the hardest, and no token has won it. When you pay with a token through a crypto debit card, the shop's price was set in dollars and your token was sold for dollars at the till. The conversion is invisible, not absent. The European Central Bank finds crypto and stablecoins below 1% of in-store payments in the euro area, in both 2024 and 2026."
+    },
+    {
+     "type": "diagram",
+     "key": "debt-lock",
+     "caption": "Why the dollar keeps the ruler: every link in an ordinary life is a dollar contract."
+    },
+    {
+     "type": "p",
+     "text": "The ruler belongs to whatever debts and taxes are written in. Your salary, your rent, your landlord's mortgage, the bank's loans, the government's bonds and your taxes are all dollar contracts. A token can become the ruler only when those debts start being written in it. Chapter 19 showed that taxes give a money its value. El Salvador tested the opposite. It made Bitcoin legal tender in 2021, but its debts, wages and taxes stayed in dollars, use stayed low, and in January 2025, as part of a $1.4 billion IMF deal, it made accepting Bitcoin optional and dropped the state's promise to convert it to dollars."
+    },
+    {
+     "type": "h",
+     "text": "2. Many monies, one ruler: why markets always rebuild a hub"
+    },
+    {
+     "type": "diagram",
+     "key": "price-web",
+     "caption": "Six monies with no common ruler need 15 exchange rates. With one ruler in the middle, each needs only one price."
+    },
+    {
+     "type": "p",
+     "text": "If every token traded directly against every other, each pair would need its own price. With 10 monies that is 45 exchange rates. With 1,000 it is 499,500. With the more than 20 million tokens created by 2025 it would be about 200 trillion. Nobody can think in that many prices, so markets always choose one hub that everything else is priced through. That is how barter turned into money in chapter 1, and it is happening again inside crypto, where most trading runs through a dollar stablecoin, Ether or Bitcoin acting as the hub."
+    },
+    {
+     "type": "widget",
+     "key": "ruler-lab",
+     "caption": "Try it. Slide from 2 monies to 20 million and watch how many exchange rates you would need without a common ruler."
+    },
+    {
+     "type": "callout",
+     "label": "This happened before",
+     "text": "From 1837 to 1863 America had no national paper currency. Hundreds of banks printed their own notes, and each note traded at its own discount depending on the bank's reputation and how far away it was. Shopkeepers kept bank note reporters, booklets listing what each note was worth and which ones were forgeries. It was a world of many tokens. It ended when Congress taxed state bank notes at 10% in 1865, and their circulation fell from $143 million to $4 million within two years. The ruler went back to one national dollar."
+    },
+    {
+     "type": "p",
+     "text": "The economist Friedrich Hayek argued in 1976, in The Denationalisation of Money, that private monies should compete and the public would choose the most stable one. Crypto is the first large-scale test of his idea. So far the public keeps choosing the most stable token on offer, and that token is a dollar."
+    },
+    {
+     "type": "h",
+     "text": "3. Where a token's value really comes from"
+    },
+    {
+     "type": "p",
+     "text": "Your instinct is half right. Today almost every token's price is a dollar price, and most of the money that buys tokens was born as dollar credit, so crypto prices tend to rise when dollar credit is easy and fall when it tightens. But the deeper source of any money's value is the base layer from chapter 20: the real goods, work and assets people will hand over for it. A token is worth what someone will give up to hold it. If everyone held tokens and nobody produced anything, every token would buy nothing."
+    },
+    {
+     "type": "insider",
+     "text": "Bitcoin is scarce, but crypto is not. One coin can be capped at 21 million while anyone can launch a new one in minutes, and more than 20 million have been launched. Each new token is a new claim competing for the same real goods, the same attention and the same buyers' dollars. That is chapter 20's picture again: the claims multiply, and the base layer does not."
+    },
+    {
+     "type": "h",
+     "text": "4. The lottery winner who launches a token"
+    },
+    {
+     "type": "diagram",
+     "key": "token-flow",
+     "caption": "The life of a typical launch. Bars show the price. The dashed arrow is where the dollars go."
+    },
+    {
+     "type": "p",
+     "text": "Launching a token is printing money, and the profit has an old name: seigniorage, from chapter 17. A token costs almost nothing to create. When its founders sell part of it for dollars, they turn newly printed units into real buying power, exactly as a government does when it issues money. That buying power comes from the buyers. Unless the token's network produces something people pay for, the founders' gain is the later buyers' loss. That is why the utopia feels so big: the power to issue money has been opened to everyone, but the pool of real goods all those monies can buy has not grown with it."
+    },
+    {
+     "type": "table",
+     "cols": [
+      "What a project does",
+      "Creates value or captures it?",
+      "Why"
+     ],
+     "rows": [
+      [
+       "Runs a network people pay to use",
+       "Creates",
+       "Users pay fees for a real service, such as settlement or storage"
+      ],
+      [
+       "Moves a real asset onto a faster ledger",
+       "Creates",
+       "Cheaper, quicker settlement saves real costs"
+      ],
+      [
+       "Launches a token and sells it to later buyers",
+       "Captures",
+       "Seigniorage moves dollars from late buyers to early ones"
+      ],
+      [
+       "Pays a high yield from new deposits",
+       "Captures, then collapses",
+       "Returns come from newer money, as at Terra in 2022"
+      ]
+     ]
+    },
+    {
+     "type": "h",
+     "text": "5. So where is the real opportunity?"
+    },
+    {
+     "type": "list",
+     "items": [
+      "New rails: cheaper, faster payments across borders, especially for people in weak-currency countries, mostly using dollar stablecoins.",
+      "Settlement: tokenized Treasuries and funds that settle in seconds, cutting into the float and fees banks earn today.",
+      "Money for machines: AI agents paying each other per request, which this project found already happens mostly in dollar tokens.",
+      "Early title to new networks: owning part of a network people truly pay to use, before it is titled. Chapter 20's rule applies: look for the next base layer before it is titled.",
+      "The ruler itself: if trust in all government debt ever broke, the next ruler would be whatever is hardest and most widely accepted. Gold did that job for thousands of years, Bitcoin is a candidate, and this project's founding question asks whether energy could be one. The desk puts an energy or compute standard at about 1% to 2028, 3% from 2028 to 2035 and 10% from 2035 to 2050."
+     ]
+    },
+    {
+     "type": "p",
+     "text": "The opportunity is real but narrower than it looks. Most of the lasting value is in building rails and owning networks that produce something. Much of the rest is seigniorage passing from late buyers to early ones."
+    },
+    {
+     "type": "h",
+     "text": "Questions worth carrying with you"
+    },
+    {
+     "type": "check",
+     "q": "If your salary were paid in Solana, what would you pay your rent in, and what is your landlord's mortgage written in?",
+     "a": "Dollars, and dollars. Every link in the chain is a dollar contract, so the token is converted somewhere even when you never see it. The ruler changes only when the debts change."
+    },
+    {
+     "type": "check",
+     "q": "If Bitcoin became the ruler, what would happen to everyone with a mortgage?",
+     "a": "If Bitcoin kept rising against goods, prices in Bitcoin would fall and debts written in Bitcoin would get heavier every year. Chapter 10's deflation debate applies: borrowers lose, savers win, and with no central bank there is no lender of last resort in a crisis."
+    },
+    {
+     "type": "check",
+     "q": "Who would set interest rates in a world of a thousand tokens?",
+     "a": "No one centrally. Each token's lenders and borrowers would set their own, and the most trusted token's rate would become the benchmark, the way the Treasury yield is today. The hub returns."
+    },
+    {
+     "type": "check",
+     "q": "When AI agents pay each other, which ruler will they use?",
+     "a": "So far the dollar, through stablecoins. Machines need stable prices even more than people do, because they price millions of tiny transactions. A machine economy is more likely to strengthen the dollar ruler than replace it, unless energy or compute itself becomes the unit."
+    },
+    {
+     "type": "check",
+     "q": "If anyone can launch a token, what stops the world from drowning in money?",
+     "a": "Nothing stops the launching. What stops the drowning is that buyers ignore most tokens, which is why more than half are already dead. Free issuance makes money cheap to create and trust expensive to earn."
+    },
+    {
      "type": "insider",
      "text": "General education, not advice. Crypto adds risks that bank money does not have: lost keys with no reset button, hacks, scams that target newcomers, exchanges that fail with customers' money inside, and rules that can change by executive order. Anyone who holds it should know which of the three families they own, and the answer to all six questions."
     },
@@ -4442,7 +4601,10 @@
     "Crypto is three families, not one. Know which one you are looking at.",
     "Ask whose debt it is. Bitcoin is nobody's IOU. A stablecoin is someone's IOU.",
     "If you cannot say where a yield comes from, the yield is the product being sold.",
-    "Set 2 rails keep ending up tied to Set 1 anchors."
+    "Set 2 rails keep ending up tied to Set 1 anchors.",
+    "The ruler belongs to whatever debts and taxes are written in.",
+    "Bitcoin is scarce. Crypto is not.",
+    "Launching a token is printing money. Ask who pays for it."
    ],
    "connects": [
     {
@@ -4796,6 +4958,16 @@
    "n": 45,
    "rule": "If you cannot say where a yield comes from, the yield is the product being sold.",
    "why": "Terra's 20% and many schemes since were paid from reserves or newer money, not earnings."
+  },
+  {
+   "n": 46,
+   "rule": "The ruler belongs to whatever debts and taxes are written in.",
+   "why": "Until wages, rents, mortgages and taxes are written in a token, every token gets converted to dollars somewhere."
+  },
+  {
+   "n": 47,
+   "rule": "Launching a token is printing money. Ask who pays for it.",
+   "why": "Unless a network earns real fees, the founders' seigniorage is paid by later buyers."
   }
  ],
  "mistakes": [
@@ -4871,6 +5043,10 @@
   {
    "t": "Bank deposit",
    "d": "Money in a bank account. Legally it is the bank's debt to you."
+  },
+  {
+   "t": "Bank note reporter",
+   "d": "A booklet from the free banking era listing what each bank's notes were worth and which were forgeries."
   },
   {
    "t": "Bank reserves",
@@ -4999,6 +5175,10 @@
   {
    "t": "Four Horsemen of leveling",
    "d": "Walter Scheidel's name for the four forces that historically shrank inequality: mass-mobilization war, revolution, state collapse and pandemics."
+  },
+  {
+   "t": "Free banking",
+   "d": "The period from 1837 to 1863 when US banks issued their own paper notes, each trading at its own discount."
   },
   {
    "t": "GENIUS Act",
@@ -5337,6 +5517,10 @@
   {
    "q": "Is crypto money?",
    "a": "It depends on the family. Stablecoins work as money but are really dollars. Bitcoin is a candidate store of value but is rarely spent or used to price things. Most other tokens are not money at all. See the crypto chapter and its six questions."
+  },
+  {
+   "q": "If tokens get good enough, will we still need the dollar to measure prices?",
+   "a": "Only if debts, wages and taxes start being written in a token. Until then every token is converted to dollars somewhere along the chain, and markets keep rebuilding one hub to price everything through. See the owner's question in the crypto chapter."
   }
  ]
 }
