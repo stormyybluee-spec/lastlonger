@@ -37,7 +37,7 @@ The pipes held and the pressure moved: rent, tax and hardware now decide what a 
 | round1/lanes/L1 to L7 | Seven research tracks with tiered, dated claims |
 | round1/debates/Da, Db, Dc, Dd | Debate court rulings and thesis cards |
 | round1/RELOOP.md | Gap-filling round |
-| claims.json | 725 claims ledger, rebuilt by tools/build_ledger.py |
+| claims.json | 788 claims ledger, rebuilt by tools/build_ledger.py |
 | site/index.html | Source of the live site (Desk, Landscape, Rulebook and Plan views) |
 | round2/ | Round 2 brief, five lanes, cross-examination, page data |
 | round3/ | Round 3 brief, five lanes, court (DEBATE_R3.md), scenario odds (scen.json), page data, decode lanes and panel |

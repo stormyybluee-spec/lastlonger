@@ -240,7 +240,7 @@
     },
     {
      "type": "insider",
-     "text": "Debasement and modern inflation share a pattern. The first people to spend the new coins, the emperor and his soldiers, got full value. By the time the extra coins spread through the economy, prices had risen, and the last people to receive them lost. Chapter 13 calls this the Cantillon effect."
+     "text": "Debasement and modern inflation share a pattern. The first people to spend the new coins, the emperor and his soldiers, got full value. By the time the extra coins spread through the economy, prices had risen, and the last people to receive them lost. Chapter 15 calls this the Cantillon effect."
     },
     {
      "type": "h",
@@ -329,7 +329,7 @@
     {
      "type": "myth",
      "myth": "Gold-backed money is always fair to everyone.",
-     "reality": "Gold money is fair to lenders and savers in a growing economy, because it gains buying power. It is harsh on borrowers, because their debts get heavier as prices fall. Whether a money is fair depends on whether you owe it or own it, and on which way prices are moving. Chapter 8 calls these the seasons of money."
+     "reality": "Gold money is fair to lenders and savers in a growing economy, because it gains buying power. It is harsh on borrowers, because their debts get heavier as prices fall. Whether a money is fair depends on whether you owe it or own it, and on which way prices are moving. Chapter 9 calls these the seasons of money."
     },
     {
      "type": "insider",
@@ -642,7 +642,7 @@
      "items": [
       "Hollowed industry. A strong dollar makes US exports expensive and imports cheap. Economists David Autor, David Dorn, Gordon Hanson and coauthors estimated that the surge of Chinese imports in the 2000s cost around a million US manufacturing jobs, and perhaps two million jobs in all. Whole towns felt it.",
       "Persistent deficits. The US has run trade deficits almost every year since the mid-1970s. Foreign claims on the US keep growing.",
-      "Borrowing becomes easy, maybe too easy. With the world eager to buy its debt, Washington faces little market pressure to balance its budget, until the price of borrowing finally rises, as Chapter 13 shows it now has.",
+      "Borrowing becomes easy, maybe too easy. With the world eager to buy its debt, Washington faces little market pressure to balance its budget, until the price of borrowing finally rises, as Chapter 15 shows it now has.",
       "Dependence on foreign buyers. If foreign governments slow their buying or sell, US rates rise. In 2026 Japan's Treasury holdings fell about $171 billion from February to August as it defended the yen, and long-term US yields rose."
      ]
     },
@@ -812,7 +812,7 @@
     },
     {
      "type": "p",
-     "text": "The cure was brutal. The US went through two recessions in quick succession. Unemployment reached 10.8% at the end of 1982. Farmers drove tractors to Washington to protest. But inflation fell to around 3% by 1983, and the Fed earned back its credibility. A 40-year era of falling interest rates began, which Chapter 8 calls the long bond summer."
+     "text": "The cure was brutal. The US went through two recessions in quick succession. Unemployment reached 10.8% at the end of 1982. Farmers drove tractors to Washington to protest. But inflation fell to around 3% by 1983, and the Fed earned back its credibility. A 40-year era of falling interest rates began, which Chapter 9 calls the long bond summer."
     },
     {
      "type": "table",
@@ -1076,8 +1076,174 @@
    ]
   },
   {
-   "id": "rb-07",
+   "id": "rb-bonds",
    "num": "07",
+   "title": "Bonds: the backbone of today's money",
+   "kicker": "If you do not understand the government bond, you do not understand modern money, because modern money is built on top of it.",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Chapter 6 showed that banks create money when they lend. This chapter is about the thing almost all of that money ultimately leans on: the government bond. Most people skip bonds because they sound boring. That is exactly why so few people understand where interest rates, mortgages, stablecoins and even currency power come from."
+    },
+    {
+     "type": "h",
+     "text": "What a bond is, in one breath"
+    },
+    {
+     "type": "p",
+     "text": "A bond is an IOU with a schedule. The government borrows $1,000 today and promises to pay you a fixed amount every year (the coupon) and your $1,000 back on a set date (maturity). US Treasury bills last a year or less and pay no coupon: you buy them below face value and get the full amount back. Notes last 2 to 10 years and bonds 20 to 30 years. The US has about $32.57T of this debt held by the public, and about 22% of the tradable part is short-term bills."
+    },
+    {
+     "type": "h",
+     "text": "Why bonds sit underneath everything"
+    },
+    {
+     "type": "list",
+     "items": [
+      "The Fed's money rests on them. The Fed creates bank reserves and cash, and the main asset it holds against them is Treasuries (about $4.57T).",
+      "They are the financial system's pawnshop ticket. In repo markets, banks and funds hand over Treasuries overnight to borrow cash. Trillions move this way every day.",
+      "Banks and money funds park cash in them, because rules treat them as the safest liquid asset.",
+      "Stablecoins must hold them. Under the GENIUS Act, every compliant dollar token has to be backed by bills of 93 days or less.",
+      "Foreign central banks keep their savings in them. That is how the world holds dollars without holding cash.",
+      "They set the base price of money. Mortgages, car loans and company loans are priced as the Treasury yield plus a margin for risk."
+     ]
+    },
+    {
+     "type": "callout",
+     "label": "Picture this",
+     "text": "Think of money as a tower of glasses at a wedding, the kind where champagne is poured into the top glass and overflows downward. Government bonds are the bottom row. Every glass above, from bank deposits to stablecoins to your mortgage, rests on that row. If the bottom row wobbles, the whole tower shakes."
+    },
+    {
+     "type": "h",
+     "text": "The seesaw: why price and yield move in opposite directions"
+    },
+    {
+     "type": "diagram",
+     "key": "seesaw",
+     "caption": "A bond's coupon is fixed. When new bonds pay more, old bonds must get cheaper to compete, so price falls as yield rises."
+    },
+    {
+     "type": "steps",
+     "items": [
+      "You buy a $1,000 bond that pays $50 a year. Your yield is 5%.",
+      "Next month the government sells new bonds paying $60 a year on $1,000, a 6% yield.",
+      "Nobody will pay $1,000 for your $50 bond when a $60 one is on offer. To sell it, you must cut the price until $50 a year is also about 6% of what the buyer pays: about $833.",
+      "Your bond lost about $167 of market value, even though the government never missed a payment. That is price risk, and it is why 'safe' bonds can still lose money."
+     ]
+    },
+    {
+     "type": "h",
+     "text": "What moves the yield: the price of patience"
+    },
+    {
+     "type": "p",
+     "text": "A bond yield is the price of patience. It is what the market demands for handing over money today and waiting for it to come back. Seven forces set that price."
+    },
+    {
+     "type": "table",
+     "cols": [
+      "Force",
+      "What it means",
+      "Which way it pushes"
+     ],
+     "rows": [
+      [
+       "1. The Fed's rate path",
+       "Short yields track where the Fed sets overnight rates now and where markets expect it to go",
+       "Expected hikes push yields up, expected cuts pull them down"
+      ],
+      [
+       "2. Expected inflation",
+       "Lenders want compensation for prices rising while they wait",
+       "More expected inflation means higher yields"
+      ],
+      [
+       "3. Term premium",
+       "Extra pay for locking money up for years when the future is uncertain",
+       "More uncertainty about deficits, inflation or policy pushes long yields up"
+      ],
+      [
+       "4. Supply",
+       "How much the Treasury must borrow and in what lengths",
+       "Bigger deficits and more long bonds push yields up"
+      ],
+      [
+       "5. Demand",
+       "Who must or wants to buy: foreign central banks, banks, money funds, pensions, stablecoins",
+       "Captive or eager buyers pull yields down, a big seller pushes them up"
+      ],
+      [
+       "6. Growth",
+       "A strong economy competes for money, a weak one frees it up",
+       "Booms raise yields, recessions lower them"
+      ],
+      [
+       "7. Trust",
+       "Confidence in repayment and in the value of the currency repaid",
+       "Any doubt raises yields, a crisis elsewhere can lower them as money flees to safety"
+      ]
+     ]
+    },
+    {
+     "type": "diagram",
+     "key": "yield-parts",
+     "caption": "The US 10-year yield of 5.13% on 2026-10-21 split into its two big parts, using market prices."
+    },
+    {
+     "type": "p",
+     "text": "You can see several forces at once in 2026. The Fed hiked in September (force 1). Oil above $100 kept inflation worries alive (force 2). A $1.99T deficit meant heavy issuance (force 4). Japan sold $171B of Treasuries to defend the yen (force 5). Meanwhile French stress pushed some European money into Treasuries for safety (force 7 in reverse). The result: a 10-year yield of 5.13% and a 30-year mortgage at 7.40%."
+    },
+    {
+     "type": "h",
+     "text": "The yield curve: a weather vane"
+    },
+    {
+     "type": "p",
+     "text": "Line up yields from short to long and you get the yield curve. Normally it slopes up, because waiting longer deserves more pay. In October 2026 it does: about 4.81% at 2 years, 5.13% at 10 years and 5.42% at 30 years. When short yields rise above long ones (an inverted curve), markets are betting the Fed will have to cut, usually because a slowdown is coming. Inversions have preceded most US recessions, though the timing is loose."
+    },
+    {
+     "type": "myth",
+     "myth": "Government bonds are safe, so you cannot lose money on them.",
+     "reality": "They are safe from default, not from price changes. In 2022 bonds had one of their worst years on record. In March 2023 Silicon Valley Bank failed largely because the long Treasuries and mortgage bonds it held had fallen in price as rates rose. Safe means the promise will be kept, not that the price will hold."
+    },
+    {
+     "type": "quote",
+     "text": "I used to think if there was reincarnation, I wanted to come back as the president or the pope or as a .400 baseball hitter. But now I would want to come back as the bond market. You can intimidate everybody.",
+     "by": "James Carville, adviser to President Clinton, 1993"
+    },
+    {
+     "type": "insider",
+     "text": "The bond market is the only voter that votes every second. When it dislikes a government's plans, yields rise and the government's own interest bill rises with them. US net interest reached $1,051.8B in FY2026, more than defense. That bill is the bond market's running verdict, and it is why Treasury secretaries watch auctions more closely than polls."
+    },
+    {
+     "type": "check",
+     "q": "If the Treasury suddenly has to sell far more long bonds while its biggest foreign buyer is selling, what happens to long yields and to mortgage rates?",
+     "a": "Supply rises and demand falls, so bond prices drop and yields rise. Mortgages are priced off long Treasury yields, so mortgage rates rise too."
+    }
+   ],
+   "rules": [
+    "Government bonds are the bottom row of the money tower. Learn them and the rest of the tower makes sense.",
+    "Price and yield move in opposite directions. Safe from default is not safe from loss.",
+    "A yield is the price of patience, set by the Fed path, inflation, uncertainty, supply, demand, growth and trust."
+   ],
+   "connects": [
+    {
+     "id": "rb-06",
+     "how": "Banks create deposits, and bonds are the assets that most of that money ultimately leans on."
+    },
+    {
+     "id": "rb-04",
+     "how": "Foreign surpluses come back to the US as Treasury purchases."
+    },
+    {
+     "id": "rb-12",
+     "how": "Stablecoins and tokens are new glasses on the same bottom row of bonds."
+    }
+   ]
+  },
+  {
+   "id": "rb-07",
+   "num": "08",
    "title": "The musical chairs question",
    "kicker": "If all money is borrowed and interest is owed on top, can everyone ever pay? The honest answer is yes in a quiet world, and not always in a real one.",
    "blocks": [
@@ -1274,7 +1440,7 @@
   },
   {
    "id": "rb-08",
-   "num": "08",
+   "num": "09",
    "title": "The seasons of money",
    "kicker": "Money has weather. In some decades it melts, in others it hardens, and the same choice can make you rich in one season and poor in the next.",
    "blocks": [
@@ -1429,7 +1595,7 @@
     },
     {
      "type": "p",
-     "text": "The United States from 1929 to 1933 is the classic trap. About 9,000 banks failed. The money supply fell by about a third, as Milton Friedman and Anna Schwartz documented. Prices fell by about a quarter. Unemployment reached about 25%. Fisher's debt deflation, from Chapter 7, ran at full speed."
+     "text": "The United States from 1929 to 1933 is the classic trap. About 9,000 banks failed. The money supply fell by about a third, as Milton Friedman and Anna Schwartz documented. Prices fell by about a quarter. Unemployment reached about 25%. Fisher's debt deflation, from Chapter 8, ran at full speed."
     },
     {
      "type": "p",
@@ -1524,13 +1690,13 @@
     },
     {
      "id": "rb-10",
-     "how": "Measuring seasons requires a yardstick, and Chapter 10 shows why that yardstick moves."
+     "how": "Measuring seasons requires a yardstick, and Chapter 12 shows why that yardstick moves."
     }
    ]
   },
   {
    "id": "rb-09",
-   "num": "09",
+   "num": "10",
    "title": "Why empires and their currencies fall",
    "kicker": "No money has ruled forever. The ones that fell usually fell the same way: war, debt and a slow watering down of the promise.",
    "blocks": [
@@ -1727,14 +1893,213 @@
    ]
   },
   {
+   "id": "rb-leader",
+   "num": "11",
+   "title": "The country leaderboard: deep markets and the game nations play",
+   "kicker": "Why surplus nations park their savings in America, why climbing the leaderboard is so hard, and what it really took for each number one to get there and to fall.",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Imagine every country on a leaderboard ranked by how much the world trusts its money. Near the top is a strange fact: some of the hardest working, highest saving nations on earth send a large share of their savings to the United States, a country that saves little and borrows a lot. To understand why, you need three ideas: deep markets, governance incentives and game theory."
+    },
+    {
+     "type": "h",
+     "text": "What makes a market deep"
+    },
+    {
+     "type": "p",
+     "text": "A deep market is one where you can put in or take out enormous sums, quickly, at a fair price, and trust that the rules will not change on you. Few markets qualify. The US Treasury market is the deepest. Its qualities read like a checklist."
+    },
+    {
+     "type": "diagram",
+     "key": "pillars",
+     "caption": "The qualities that make savers worldwide choose one market over their own."
+    },
+    {
+     "type": "list",
+     "items": [
+      "Size: tens of trillions of dollars of bonds, so even a central bank can buy or sell billions without moving the price much.",
+      "Liquidity: buyers and sellers are always there, every hour, through dealers, futures and repo.",
+      "Rule of law: independent courts, contracts that hold, and property that is not taken on a whim.",
+      "Open doors: money can leave whenever the owner wants. No exit queue, no permission slip.",
+      "A trusted central bank and a currency others already use for trade, debt and oil.",
+      "Hedging tools: futures, swaps and options let holders protect themselves.",
+      "Security: the military and alliances that protect trade routes and the system itself."
+     ]
+    },
+    {
+     "type": "insider",
+     "text": "Notice the trade-off hidden in that list. The US gives up some control (it lets money in and out freely and lets courts bind the government) and in return earns the world's trust. Countries that want to keep tight control of their money cannot offer the same deal. That single trade-off explains much of the leaderboard."
+    },
+    {
+     "type": "h",
+     "text": "Why surplus countries send their savings to America"
+    },
+    {
+     "type": "p",
+     "text": "When an exporter in Japan, China, Korea, Taiwan or the Gulf sells to the world, it earns dollars. If all those dollars were converted into local currency, the local currency would rise, exports would get dearer and factories would lose orders. So, often through the central bank, the dollars are kept as dollars and parked in the safest dollar asset available: Treasuries."
+    },
+    {
+     "type": "steps",
+     "items": [
+      "Stay competitive: holding the dollars instead of selling them keeps the home currency cheap and exports flowing.",
+      "Buy insurance: after the 1997 Asian crisis, countries that ran short of dollars were forced into painful IMF programs. Many vowed never again and built large dollar reserves.",
+      "No deep home alternative: many local bond markets are too small, too controlled or too easy to freeze to hold trillions.",
+      "Protect the wealthy: elites in less secure systems prefer assets where courts protect property, so private money follows the official money abroad.",
+      "Oil and commodities: these are priced in dollars, so exporters earn dollars and often recycle them through sovereign wealth funds."
+     ]
+    },
+    {
+     "type": "h",
+     "text": "How that trickles down into the home economy"
+    },
+    {
+     "type": "p",
+     "text": "Parking savings abroad is a governance choice, and ordinary citizens pay part of the bill. A deliberately cheap currency makes imports, fuel and foreign goods dearer for households. Savings that could have financed homes, wages or local businesses instead finance American borrowing. Exporters and the state gain, households consume less than they produce. On the other side, Americans enjoy cheap imports and cheap credit while factory towns hollow out, as chapter 4 showed. Each side's elite chose the arrangement, and each side's workers live with its costs."
+    },
+    {
+     "type": "callout",
+     "label": "Picture this",
+     "text": "Two neighbors. One works long hours, sells most of what it makes to the other, and lends the payment back so the other can keep buying. The lender's family lives modestly. The borrower's family lives well but its workshop goes quiet. Neither can easily stop: if the lender stops lending, its buyer disappears. If the borrower stops buying, the lender's factory stalls. That is the quiet bargain behind the dollar."
+    },
+    {
+     "type": "p",
+     "text": "Economist Larry Summers called this mutual dependence a 'balance of financial terror' in 2004. Each side holds the other hostage, which is why sudden moves are rare and why the game is played with signals, slow shifts and patience."
+    },
+    {
+     "type": "h",
+     "text": "The game theory of the leaderboard"
+    },
+    {
+     "type": "diagram",
+     "key": "dilemma",
+     "caption": "A currency war as a prisoner's dilemma. Each country is tempted to cheat, and if both do, both lose."
+    },
+    {
+     "type": "list",
+     "items": [
+      "A coordination game: everyone uses the dollar because everyone else does. Switching only pays if many switch together, and the first to switch pays the most. That is why the leader keeps its place long after its advantages fade.",
+      "A prisoner's dilemma: each country gains by weakening its currency or adding tariffs, but if all do it, trade shrinks and all lose. The 1930s round of competitive devaluations and tariffs is the classic case.",
+      "A repeated game: nations meet again and again, so reputation matters. A country that keeps its promises can borrow cheaply for centuries. One that breaks them pays for decades.",
+      "A war of exhaustion: rivals drain each other through arms races, sanctions and tariff wars. History suggests leaders more often fall from overstretch and debt than from being overtaken in a single contest. Historian Paul Kennedy called this imperial overstretch.",
+      "The elite trap: a country rises on cheap labor and heavy investment, but climbing higher requires giving up control: floating the currency, opening the capital account, independent courts. The elites who profit from control often block those steps. Economists Daron Acemoglu and James Robinson describe this as extractive institutions resisting inclusive ones. It is one reason so many countries stall in the middle of the leaderboard."
+     ]
+    },
+    {
+     "type": "myth",
+     "myth": "The country with the biggest economy automatically gets the top currency.",
+     "reality": "Currency leadership lags economic leadership by decades. The US economy passed Britain's in the 1870s, yet sterling remained a leading reserve currency into the 1940s and beyond. Trust, habit and deep markets take generations to move."
+    },
+    {
+     "type": "h",
+     "text": "How the number ones rose, and how they fell"
+    },
+    {
+     "type": "table",
+     "cols": [
+      "Leader",
+      "Its edge",
+      "How it slipped",
+      "Debt record"
+     ],
+     "rows": [
+      [
+       "Rome",
+       "Roads, legions, control of the Mediterranean trade lake",
+       "Endless wars, coin debasement, inflation, splits",
+       "Silver content of the denarius collapsed over the third century"
+      ],
+      [
+       "Portugal",
+       "Atlantic coast, navigation skill, the sea route to Asian spices",
+       "Small population stretched across oceans",
+       "Absorbed into the Spanish crown in 1580"
+      ],
+      [
+       "Spain",
+       "American silver and a vast Habsburg empire",
+       "Wars on many fronts, silver-fuelled inflation",
+       "Philip II defaulted on royal debts in 1557, 1560, 1575 and 1596"
+      ],
+      [
+       "Netherlands",
+       "Trade hub, merchant culture, the Bank of Amsterdam (1609), the first great joint-stock company (VOC, 1602)",
+       "Wars with England and France, rising rivals",
+       "Defeat in the Fourth Anglo-Dutch War (1780 to 1784), French conquest in 1795"
+      ],
+      [
+       "Britain",
+       "Island safety, coal and industry, the Royal Navy, credible public debt after 1688 and the Bank of England (1694)",
+       "Two world wars, empire costs, rising America",
+       "Stopped paying its WWI debts to the US after 1934, devalued sterling in 1949 and 1967, IMF loan in 1976"
+      ],
+      [
+       "United States",
+       "Two oceans, a resource-rich continent, immigration, rule of law, deep capital markets, inventive culture",
+       "Today's test: debt, polarization, rivals in hardware",
+       "Changed gold clauses in 1933 and ended gold convertibility in 1971, but has always paid its bonds in dollars"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Notice the pattern. Defaults and devaluations rarely end an empire in one blow. They are symptoms of a deeper strain: spending on war and status that the productive economy can no longer carry. France shows how fast it can turn political: a partial default in 1770 and a debt crisis in the 1780s led to the calling of the Estates General in 1789 and the Revolution."
+    },
+    {
+     "type": "h",
+     "text": "What it really takes to be number one"
+    },
+    {
+     "type": "list",
+     "items": [
+      "Produce: a real economy that makes things the world wants.",
+      "Protect: security for trade routes and allies.",
+      "Promise: institutions that make debt credible, so the state can borrow cheaply in a crisis. Britain after 1688 and Hamilton's America after 1790 both won wars partly because lenders trusted them.",
+      "Plumbing: deep, open financial markets that others can use.",
+      "People: a culture of work, saving, invention and trust in contracts.",
+      "Place: geography that protects and connects, from Britain's channel to America's two oceans."
+     ]
+    },
+    {
+     "type": "p",
+     "text": "No single leader had all six forever. Each rose when its mix fit the technology and trade of its age, and each faded when debt, war and complacency ate the mix away. The open question for this century is whether the United States can keep its plumbing and promise strong enough to outlast the strain on the other pillars, and whether any rival is willing to give up enough control to offer a deeper market."
+    },
+    {
+     "type": "check",
+     "q": "Why might a country with huge savings choose to lend them to the US instead of spending them at home?",
+     "a": "To keep its own currency cheap for exporters, to hold insurance against a dollar shortage, because its home markets are too small or controlled to hold the savings, and because its elites trust US courts with their wealth. Its households pay part of the cost through dearer imports and lower consumption."
+    }
+   ],
+   "rules": [
+    "Money flows to the deepest, safest, most open market, not the richest country.",
+    "A cheap currency helps exporters and taxes households. Ask who inside a country pays for its surplus.",
+    "Currency leadership lags economic leadership by decades, so do not expect sudden switches.",
+    "Empires rarely fall from one default. They fall when war and debt outgrow the productive base."
+   ],
+   "connects": [
+    {
+     "id": "rb-09",
+     "how": "Why empires fall, seen here through the incentives of nations and their elites."
+    },
+    {
+     "id": "rb-bonds",
+     "how": "Treasuries are the deep market where surplus nations park their savings."
+    },
+    {
+     "id": "rb-04",
+     "how": "The recycling loop that this leaderboard game keeps running."
+    }
+   ]
+  },
+  {
    "id": "rb-10",
-   "num": "10",
+   "num": "12",
    "title": "The yardstick problem",
    "kicker": "We measure prices with money, but money itself keeps changing size. It is like measuring a room with a rubber ruler.",
    "blocks": [
     {
      "type": "p",
-     "text": "Chapter 8 talked about prices rising and falling. But compared to what? Every price is measured in money, and money's value is itself moving. This chapter gives you the tools to see through the moving ruler: nominal versus real, time prices, and the difference between consumer prices and asset prices."
+     "text": "Chapter 9 talked about prices rising and falling. But compared to what? Every price is measured in money, and money's value is itself moving. This chapter gives you the tools to see through the moving ruler: nominal versus real, time prices, and the difference between consumer prices and asset prices."
     },
     {
      "type": "callout",
@@ -1937,7 +2302,7 @@
   },
   {
    "id": "rb-11",
-   "num": "11",
+   "num": "13",
    "title": "The new board game",
    "kicker": "In Monopoly the bank hands every player $1,500. In real life nobody does. So how does a new player get onto the board?",
    "blocks": [
@@ -2129,7 +2494,7 @@
   },
   {
    "id": "rb-12",
-   "num": "12",
+   "num": "14",
    "title": "Today's board: old anchors, new rails",
    "kicker": "The money in your app may look new, but under it sit the oldest anchors in the system: government bonds, bank credit and gold.",
    "blocks": [
@@ -2344,7 +2709,7 @@
   },
   {
    "id": "rb-13",
-   "num": "13",
+   "num": "15",
    "title": "Eye-openers: what most people never notice",
    "kicker": "Sixteen quiet facts about money that, once seen, cannot be unseen.",
    "blocks": [
@@ -2470,7 +2835,7 @@
   },
   {
    "id": "rb-buckets",
-   "num": "14",
+   "num": "16",
    "title": "When markets fall: buckets, collateral and rotation",
    "kicker": "A 20% crash does not hand 20% to someone else. But money really does slosh between buckets, and the timing of when you enter a bucket is most of the game.",
    "blocks": [
@@ -2588,7 +2953,7 @@
      "type": "list",
      "items": [
       "Interest rates and liquidity: when central banks make money cheap, it flows outward toward riskier buckets. When money gets dear, it flows back toward cash and bills.",
-      "Credit: lending creates new money that lands in some bucket first, usually property and financial assets (the Cantillon effect from chapter 13).",
+      "Credit: lending creates new money that lands in some bucket first, usually property and financial assets (the Cantillon effect from chapter 15).",
       "Supply and demand: new shares, new bonds and new coins dilute a bucket. Buybacks and scarcity concentrate it.",
       "Fear and narrative: stories move flows faster than numbers do.",
       "Rules: laws that force holders into a bucket (like stablecoin reserves that must hold Treasury bills) fill that bucket by design.",
@@ -2624,7 +2989,7 @@
   },
   {
    "id": "rb-14",
-   "num": "15",
+   "num": "17",
    "title": "The Rulebook",
    "kicker": "What each generation learned the hard way, written down so the next one does not have to.",
    "blocks": [
@@ -2880,6 +3245,21 @@
    "n": 30,
    "rule": "Before you buy into a bucket, ask what is moving money into it and what would move it out.",
    "why": "Rotation, not circulation, decides prices in the medium run."
+  },
+  {
+   "n": 31,
+   "rule": "Learn the bond before you trust any story about money.",
+   "why": "Rates, mortgages, stablecoins and currency power all rest on government bonds."
+  },
+  {
+   "n": 32,
+   "rule": "Ask who pays for a country's surplus, not just who earns it.",
+   "why": "Cheap currencies and exported savings move costs onto households."
+  },
+  {
+   "n": 33,
+   "rule": "Respect the bond market. It votes every second.",
+   "why": "Governments that lose its trust pay for it in higher interest bills."
   }
  ],
  "mistakes": [
@@ -2945,6 +3325,122 @@
    "d": "Something you own that has value, such as cash, a house, a bond or a share in a company."
   },
   {
+   "t": "Bank deposit",
+   "d": "Money in a bank account. Legally it is the bank's debt to you."
+  },
+  {
+   "t": "Bank reserves",
+   "d": "Money that commercial banks keep in accounts at the central bank, used to settle payments between banks."
+  },
+  {
+   "t": "Barter",
+   "d": "Trading goods directly for other goods, with no money in between."
+  },
+  {
+   "t": "Base money",
+   "d": "Paper cash plus the reserves that banks hold at the central bank."
+  },
+  {
+   "t": "Breakeven inflation",
+   "d": "The inflation rate the bond market is pricing in, read from the gap between ordinary and inflation-protected bond yields."
+  },
+  {
+   "t": "Bretton Woods",
+   "d": "The 1944 system that pegged other currencies to the dollar and the dollar to gold at $35 an ounce."
+  },
+  {
+   "t": "Cantillon effect",
+   "d": "The idea that those who receive new money first gain, while those who receive it last face higher prices first."
+  },
+  {
+   "t": "Capital account",
+   "d": "The record of money moving in and out of a country for investment. An open one lets money leave freely."
+  },
+  {
+   "t": "CBDC",
+   "d": "Central bank digital currency: digital money issued directly by a central bank to the public. A retail US version is banned by law."
+  },
+  {
+   "t": "Central bank",
+   "d": "A public bank that issues a country's base money and manages its interest rates."
+  },
+  {
+   "t": "Collateral",
+   "d": "Something valuable you pledge to a lender, which the lender can take if you do not repay."
+  },
+  {
+   "t": "Coupon",
+   "d": "The fixed interest a bond pays each year, set when it is issued."
+  },
+  {
+   "t": "CPI",
+   "d": "The Consumer Price Index, which tracks the prices of a basket of goods and services households buy."
+  },
+  {
+   "t": "Credit",
+   "d": "Trust that lets someone receive something now and pay later. Also the debt that results."
+  },
+  {
+   "t": "Current account deficit",
+   "d": "When a country pays more to the world for imports and income than it receives, it must borrow or sell assets to cover the gap."
+  },
+  {
+   "t": "Debasement",
+   "d": "Lowering the precious metal in coins while keeping their face value. The ancient form of printing money."
+  },
+  {
+   "t": "Debt deflation",
+   "d": "A spiral where paying down debt pushes prices down, which makes remaining debts heavier."
+  },
+  {
+   "t": "Deep market",
+   "d": "A market where huge sums can move quickly at fair prices under rules that will not change on you."
+  },
+  {
+   "t": "Deflation",
+   "d": "A general fall in prices, so each unit of money buys more. Debts get heavier in real terms."
+  },
+  {
+   "t": "Exorbitant privilege",
+   "d": "The advantage the US gets because the world wants dollars and Treasuries, letting it borrow cheaply in its own currency."
+  },
+  {
+   "t": "Federal Reserve (the Fed)",
+   "d": "The US central bank. It sets short-term interest rates, supervises banks and acts as lender of last resort."
+  },
+  {
+   "t": "Financial repression",
+   "d": "Keeping interest rates below inflation so that debts, especially government debts, shrink in real terms."
+  },
+  {
+   "t": "Floating exchange rate",
+   "d": "A currency whose price against others is set by markets every day."
+  },
+  {
+   "t": "GENIUS Act",
+   "d": "The US law setting rules for payment stablecoins, including reserves of cash, deposits and short Treasury bills, and no interest to holders."
+  },
+  {
+   "t": "Gold standard",
+   "d": "A system where a currency is defined as a fixed weight of gold and paper notes can be swapped for gold."
+  },
+  {
+   "t": "Gresham's law",
+   "d": "When two moneys have the same face value, people spend the worse one and hoard the better one."
+  },
+  {
+   "t": "IMF",
+   "d": "The International Monetary Fund, created in 1944 to lend to countries with payment problems and oversee exchange rates."
+  },
+  {
+   "t": "Inflation",
+   "d": "A general rise in prices, so each unit of money buys less. Debts get lighter in real terms."
+  },
+  {
+   "t": "Leverage",
+   "d": "Using borrowed money to buy assets. It magnifies gains and losses."
+  },
+  {
    "t": "Liability",
    "d": "Something you owe, such as a loan. One person's liability is always another's asset."
   },
@@ -2953,198 +3449,122 @@
    "d": "Whatever people hand over to settle a trade. Money's spending job."
   },
   {
-   "t": "Store of value",
-   "d": "A way to carry buying power from today into the future. Money's saving job."
-  },
-  {
-   "t": "Unit of account",
-   "d": "The measuring unit for prices, wages and debts, such as the dollar. Money's measuring job."
-  },
-  {
-   "t": "Barter",
-   "d": "Trading goods directly for other goods, with no money in between."
-  },
-  {
-   "t": "Credit",
-   "d": "Trust that lets someone receive something now and pay later. Also the debt that results."
-  },
-  {
-   "t": "Debasement",
-   "d": "Lowering the precious metal in coins while keeping their face value. The ancient form of printing money."
-  },
-  {
-   "t": "Gresham's law",
-   "d": "When two moneys have the same face value, people spend the worse one and hoard the better one."
-  },
-  {
-   "t": "Gold standard",
-   "d": "A system where a currency is defined as a fixed weight of gold and paper notes can be swapped for gold."
-  },
-  {
-   "t": "Deflation",
-   "d": "A general fall in prices, so each unit of money buys more. Debts get heavier in real terms."
-  },
-  {
-   "t": "Inflation",
-   "d": "A general rise in prices, so each unit of money buys less. Debts get lighter in real terms."
-  },
-  {
-   "t": "Bretton Woods",
-   "d": "The 1944 system that pegged other currencies to the dollar and the dollar to gold at $35 an ounce."
-  },
-  {
-   "t": "IMF",
-   "d": "The International Monetary Fund, created in 1944 to lend to countries with payment problems and oversee exchange rates."
-  },
-  {
-   "t": "Peg",
-   "d": "A fixed exchange rate between one currency and another, defended by a central bank."
-  },
-  {
-   "t": "Floating exchange rate",
-   "d": "A currency whose price against others is set by markets every day."
-  },
-  {
-   "t": "Reserve currency",
-   "d": "A currency that foreign governments hold in large amounts as savings and for crisis use. Today mainly the dollar."
-  },
-  {
-   "t": "Triffin dilemma",
-   "d": "The conflict between supplying the world with enough of a reserve currency and keeping that currency's backing believable."
-  },
-  {
-   "t": "Current account deficit",
-   "d": "When a country pays more to the world for imports and income than it receives, it must borrow or sell assets to cover the gap."
-  },
-  {
-   "t": "Treasury securities",
-   "d": "Debts of the US government. Bills last up to a year, notes 2 to 10 years, bonds 20 or 30 years."
-  },
-  {
-   "t": "Treasury bill (T-bill)",
-   "d": "Short-term US government debt, sold at a discount and repaid at full value within a year."
-  },
-  {
-   "t": "Yield",
-   "d": "The return on a bond or investment, expressed as a yearly percentage of its price."
-  },
-  {
-   "t": "Petrodollar",
-   "d": "The 1970s arrangement in which oil was priced in dollars and Gulf oil money was recycled into US Treasuries and banks."
-  },
-  {
-   "t": "Federal Reserve (the Fed)",
-   "d": "The US central bank. It sets short-term interest rates, supervises banks and acts as lender of last resort."
-  },
-  {
-   "t": "Central bank",
-   "d": "A public bank that issues a country's base money and manages its interest rates."
-  },
-  {
-   "t": "Base money",
-   "d": "Paper cash plus the reserves that banks hold at the central bank."
-  },
-  {
-   "t": "Bank reserves",
-   "d": "Money that commercial banks keep in accounts at the central bank, used to settle payments between banks."
-  },
-  {
-   "t": "Bank deposit",
-   "d": "Money in a bank account. Legally it is the bank's debt to you."
-  },
-  {
-   "t": "Money multiplier",
-   "d": "An old textbook idea that banks lend a fixed multiple of their reserves. Central banks now say it does not describe how lending works."
-  },
-  {
-   "t": "Primary dealer",
-   "d": "One of about two dozen large banks that must bid at US Treasury auctions."
-  },
-  {
-   "t": "Treasury General Account",
-   "d": "The US government's main checking account, held at the Federal Reserve."
-  },
-  {
-   "t": "Quantitative easing (QE)",
-   "d": "When a central bank creates reserves to buy bonds in the open market, to push down long-term interest rates."
-  },
-  {
-   "t": "Velocity",
-   "d": "How many times a unit of money is spent in a given period."
-  },
-  {
-   "t": "Primary deficit",
-   "d": "The government's deficit before counting interest payments."
-  },
-  {
-   "t": "Financial repression",
-   "d": "Keeping interest rates below inflation so that debts, especially government debts, shrink in real terms."
-  },
-  {
-   "t": "Nominal",
-   "d": "Measured in current money, without adjusting for inflation."
-  },
-  {
-   "t": "Real",
-   "d": "Adjusted for inflation, so values can be compared across time."
-  },
-  {
-   "t": "Time price",
-   "d": "The number of hours of work needed to buy something."
-  },
-  {
-   "t": "CPI",
-   "d": "The Consumer Price Index, which tracks the prices of a basket of goods and services households buy."
-  },
-  {
-   "t": "Collateral",
-   "d": "Something valuable you pledge to a lender, which the lender can take if you do not repay."
-  },
-  {
-   "t": "Leverage",
-   "d": "Using borrowed money to buy assets. It magnifies gains and losses."
-  },
-  {
-   "t": "Cantillon effect",
-   "d": "The idea that those who receive new money first gain, while those who receive it last face higher prices first."
-  },
-  {
-   "t": "Seigniorage",
-   "d": "The profit from issuing money, the gap between what money costs to make and what it buys."
+   "t": "Middle-income trap",
+   "d": "When a country grows fast to a middle level and then stalls, often because the next step needs reforms its elites resist."
   },
   {
    "t": "Minsky moment",
    "d": "The point when a long calm period of rising debt suddenly turns into forced selling and crisis."
   },
   {
-   "t": "Debt deflation",
-   "d": "A spiral where paying down debt pushes prices down, which makes remaining debts heavier."
+   "t": "Money multiplier",
+   "d": "An old textbook idea that banks lend a fixed multiple of their reserves. Central banks now say it does not describe how lending works."
+  },
+  {
+   "t": "Nominal",
+   "d": "Measured in current money, without adjusting for inflation."
+  },
+  {
+   "t": "Peg",
+   "d": "A fixed exchange rate between one currency and another, defended by a central bank."
+  },
+  {
+   "t": "Petrodollar",
+   "d": "The 1970s arrangement in which oil was priced in dollars and Gulf oil money was recycled into US Treasuries and banks."
+  },
+  {
+   "t": "Primary dealer",
+   "d": "One of about two dozen large banks that must bid at US Treasury auctions."
+  },
+  {
+   "t": "Primary deficit",
+   "d": "The government's deficit before counting interest payments."
+  },
+  {
+   "t": "Prisoner's dilemma",
+   "d": "A game where each player gains by cheating, but if all cheat, all end up worse off."
+  },
+  {
+   "t": "Quantitative easing (QE)",
+   "d": "When a central bank creates reserves to buy bonds in the open market, to push down long-term interest rates."
+  },
+  {
+   "t": "Real",
+   "d": "Adjusted for inflation, so values can be compared across time."
+  },
+  {
+   "t": "Repo",
+   "d": "A short loan backed by bonds as collateral. The financial system's overnight pawnshop."
+  },
+  {
+   "t": "Reserve currency",
+   "d": "A currency that foreign governments hold in large amounts as savings and for crisis use. Today mainly the dollar."
+  },
+  {
+   "t": "Seigniorage",
+   "d": "The profit from issuing money, the gap between what money costs to make and what it buys."
   },
   {
    "t": "Stablecoin",
    "d": "A crypto token designed to stay worth one unit of a currency, usually one dollar, backed by reserves."
   },
   {
-   "t": "GENIUS Act",
-   "d": "The US law setting rules for payment stablecoins, including reserves of cash, deposits and short Treasury bills, and no interest to holders."
+   "t": "Store of value",
+   "d": "A way to carry buying power from today into the future. Money's saving job."
   },
   {
-   "t": "CBDC",
-   "d": "Central bank digital currency: digital money issued directly by a central bank to the public. A retail US version is banned by law."
+   "t": "Term premium",
+   "d": "The extra yield investors demand for locking money up for many years when the future is uncertain."
+  },
+  {
+   "t": "Time price",
+   "d": "The number of hours of work needed to buy something."
+  },
+  {
+   "t": "Toll booth",
+   "d": "In this guide, any player who earns by owning a crossing point others must pass, such as a platform, a payment rail or land."
+  },
+  {
+   "t": "Treasury bill (T-bill)",
+   "d": "Short-term US government debt, sold at a discount and repaid at full value within a year."
+  },
+  {
+   "t": "Treasury General Account",
+   "d": "The US government's main checking account, held at the Federal Reserve."
+  },
+  {
+   "t": "Treasury securities",
+   "d": "Debts of the US government. Bills last up to a year, notes 2 to 10 years, bonds 20 or 30 years."
+  },
+  {
+   "t": "Triffin dilemma",
+   "d": "The conflict between supplying the world with enough of a reserve currency and keeping that currency's backing believable."
+  },
+  {
+   "t": "Unit of account",
+   "d": "The measuring unit for prices, wages and debts, such as the dollar. Money's measuring job."
+  },
+  {
+   "t": "Velocity",
+   "d": "How many times a unit of money is spent in a given period."
   },
   {
    "t": "Watt-dollar",
    "d": "This project's name for dollar loans backed by energy assets such as power plants, data centers and chips."
   },
   {
-   "t": "Toll booth",
-   "d": "In this guide, any player who earns by owning a crossing point others must pass, such as a platform, a payment rail or land."
+   "t": "Yield",
+   "d": "The return on a bond or investment, expressed as a yearly percentage of its price."
+  },
+  {
+   "t": "Yield curve",
+   "d": "Bond yields lined up from short to long maturities. Upward sloping is normal, inverted often warns of a slowdown."
   }
  ],
  "questions": [
   {
    "q": "If the market drops 20%, did someone else make that money?",
-   "a": "Mostly no. Market cap is the last price times all shares, so a fall rewrites the value of every share even though only a few traded. Sellers received cash from buyers. Only short sellers and option buyers profit from the fall, and only by what their direct counterparties lose. See chapter 14."
+   "a": "Mostly no. Market cap is the last price times all shares, so a fall rewrites the value of every share even though only a few traded. Sellers received cash from buyers. Only short sellers and option buyers profit from the fall, and only by what their direct counterparties lose. See chapter 16."
   },
   {
    "q": "If the government can create money, why does it borrow and tax at all?",
@@ -3209,6 +3629,14 @@
   {
    "q": "What is the single most useful habit from this guide?",
    "a": "Own something productive from your first paycheck, and borrow only what you can carry through a bad season. Those two rules protect you in almost every season of money."
+  },
+  {
+   "q": "Why do bond prices fall when interest rates rise?",
+   "a": "A bond's payments are fixed. When new bonds pay more, an old bond only sells if its price drops until its fixed payments give the same yield. See the bonds chapter."
+  },
+  {
+   "q": "Why does China or Japan lend so much to the US instead of spending it at home?",
+   "a": "To keep their currencies cheap for exporters, to hold insurance against a dollar shortage, and because US markets are deeper and safer than their own. Their households pay part of the cost. See the leaderboard chapter."
   }
  ]
 }
