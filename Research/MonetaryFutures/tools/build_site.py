@@ -25,8 +25,9 @@ blocks = [
     ("ROUND2_DATA", "R2", load("round2/r2_data.json")),
     ("ROUND3_DATA", "R3", load("round3/r3_data.json")),
     ("DECODE_DATA", "DC", (lambda d, w: (d and w and d.update(groups=[g for g in d["groups"] if g["id"] != w["id"]] + [w])) or d)(load("round3/dc_data.json"), load("round3/wif_group.json"))),
-    ("LEARN_DATA", "LEARN", merged(["site/learn101.json", "site/r3_learn.json", "site/dc_learn.json"])),
-    ("ODDS_DATA", "ODDS", merged(["site/r2_odds.json", "site/r3_odds.json", "site/dc_odds.json", "site/wif_odds.json"])),
+    ("ROUND4_DATA", "R4", load("round4/r4_data.json")),
+    ("LEARN_DATA", "LEARN", merged(["site/learn101.json", "site/r3_learn.json", "site/dc_learn.json", "site/r4_learn.json"])),
+    ("ODDS_DATA", "ODDS", merged(["site/r2_odds.json", "site/r3_odds.json", "site/dc_odds.json", "site/wif_odds.json", "site/r4_odds.json"])),
     ("RULEBOOK_DATA", "RULEBOOK", load("site/rulebook.json")),
     ("LANDSCAPE_DATA", "LANDSCAPE", load("site/landscape.json")),
 ]
