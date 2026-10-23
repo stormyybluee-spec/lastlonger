@@ -3,7 +3,7 @@
  "subtitle": "Money and value from the ground up, written to be passed down, so each generation keeps what the last one learned and does not repeat what it forgot.",
  "intro": [
   "Most people use money every day and never learn how it works. Nobody teaches it at home, school teaches a little arithmetic, and the news speaks a language of rates, yields and deficits that seems designed to keep outsiders out. This guide is meant to open that locked room, slowly and clearly, one idea at a time.",
-  "It starts at the very bottom, with what money actually is, and climbs step by step: gold coins and the gold standard, the wars that broke it, the 1944 system that crowned the dollar, the 1971 night that cut the dollar loose from gold, the oil money that followed, and the way banks create most of our money today with a few keystrokes. Then it turns to the questions that matter for your life: why debt never seems to go away, why prices move in long seasons, why empires and their currencies fall, why the ruler we measure prices with keeps stretching, and how a new player with no inheritance can get onto the board.",
+  "It starts at the very bottom, with what money actually is, and climbs step by step: gold coins and the gold standard, the wars that broke it, the 1944 system that crowned the dollar, the 1971 night that cut the dollar loose from gold, the oil money that followed, and the way banks create most of our money today with a few keystrokes. Then it turns to the questions that matter for your life: why debt never seems to go away, why prices move in long seasons, why empires and their currencies fall, why the ruler we measure prices with keeps stretching, and how a new player with no inheritance can get onto the board. Later chapters add the bond market underneath it all, the deflation debate, the game nations play for the top of the leaderboard, the view from a smaller currency, and finally the titled world: why the abundance we see is priced on future credit and who keeps the balance.",
   "It is written like a rulebook passed from one generation to the next. Each chapter ends with rules. The book ends with a full rulebook and a list of the mistakes each generation made, from Rome to the 2020s, so that their intelligence and their errors are both preserved.",
   "The guide honors the ideas of the person who commissioned it, an owner who wrote a newsletter series about money called Ledger Age, and quotes their questions in their own words. Where their intuition is right, the guide says so and builds on it. Where it needs correcting, the guide corrects it gently and shows the evidence.",
   "History and economics here are kept to what is well established. Where scholars disagree, the guide says so. Current numbers, as of October 22, 2026, come from this project's own research files. This is general education about how money works, not financial advice for any person's situation."
@@ -3393,8 +3393,242 @@
    ]
   },
   {
-   "id": "rb-14",
+   "id": "rb-titled",
    "num": "19",
+   "title": "The titled world: why abundance runs on credit, and who keeps the balance",
+   "kicker": "Divide the world's wealth by everyone and it looks like plenty. Here is why most of that plenty is a price set on future credit, why the base layer was titled long ago, and what role each big country plays in keeping a crowded system from tipping over.",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "This is the last chapter before the Rulebook, and it pulls the whole book together around one thought experiment. Take everything the world owns, divide it by everyone alive, and ask: if there is so much, why do so many people feel they are locked out?"
+    },
+    {
+     "type": "h",
+     "text": "The thought experiment: divide it all"
+    },
+    {
+     "type": "p",
+     "text": "UBS estimates the world's personal wealth at about $470 trillion at the end of 2024. Divided by about 8.2 billion people, that is roughly $57,000 for every man, woman and child, or about $230,000 for a family of four. On paper the world is rich. Yet the same report finds that about 42% of adults own less than $10,000, while about 1.5% own more than $1 million."
+    },
+    {
+     "type": "diagram",
+     "key": "divide-wealth",
+     "caption": "The equal share on paper against what adults actually hold. Brackets from the UBS Global Wealth Report 2025, end of 2024."
+    },
+    {
+     "type": "h",
+     "text": "Why the pie is smaller than it looks"
+    },
+    {
+     "type": "list",
+     "items": [
+      "Most wealth is a price, not a pile. About two thirds of the world's net worth is real estate, and Savills values all the world's property at about $393 trillion at the start of 2025. Those values come from the last sales, as chapter 18 showed with market caps. If everyone tried to sell at once to share out the money, the price would collapse.",
+      "Prices are future income divided by the interest rate. When rates fell from the early 1980s to 2021, the same buildings and companies became worth far more without producing more. McKinsey found that global net worth rose from about $156 trillion in 2000 to about $514 trillion in 2020, while for every $1 of new investment, liabilities grew almost $4, about $2 of it debt. Most of the new wealth was revaluation, not new things.",
+      "Every financial asset is someone else's debt or someone's future income. Global debt reached about $365 trillion in mid-2026, about 310% of world output, according to the Institute of International Finance. A bond, a deposit or a loan is a claim on a borrower's future earnings. Count the claim as wealth and you must also count the debt.",
+      "What can really be shared each year is output, not prices. The world produces roughly $115 to $120 trillion of goods and services a year, about $14,000 per person, and most of that already pays for wages, rents, interest and taxes."
+     ]
+    },
+    {
+     "type": "diagram",
+     "key": "inverted-pyramid",
+     "caption": "A wide stack of claims balanced on a narrow base of real things. The higher the layer, the more it depends on future credit."
+    },
+    {
+     "type": "p",
+     "text": "So the abundance we see is partly real, in machines, knowledge, networks and food, and partly a bet on future production, financed by credit and priced at today's interest rates. That is the owner's insight in plain terms: much of the world's apparent abundance is priced on future credit. When rates rise, as they did in 2026, the bet is repriced and the paper abundance shrinks, even though not one building or factory disappears."
+    },
+    {
+     "type": "h",
+     "text": "A world already titled"
+    },
+    {
+     "type": "p",
+     "text": "Underneath the claims sits the base layer: land, water, minerals, energy, ports, sea lanes, the best city plots, radio spectrum. Almost all of it was claimed long ago, recorded in a title registry or held by a state. Chapter 15 asked how a new player gets onto a board where no one gives out starting money. The harder truth is that the squares are already owned. Newcomers do not arrive on an empty board. They arrive as tenants."
+    },
+    {
+     "type": "p",
+     "text": "When the base layer was up for grabs, it was often fought over with armies. European powers divided Africa among themselves after the Berlin Conference of 1884 to 1885. Japan pushed into Southeast Asia in 1941 after the United States cut off its oil. Iraq invaded oil-rich Kuwait in 1990. Today the contest is mostly fought with money instead: tariffs, sanctions, export controls on chips and rare earths, and who gets to price oil, finance mines and hold the world's savings. The wars over title turned into wars over price and access, though the older kind has not disappeared."
+    },
+    {
+     "type": "h",
+     "text": "The generational seat at the table"
+    },
+    {
+     "type": "p",
+     "text": "Within countries, the same pattern runs between generations. In the United States, households headed by baby boomers, born from 1946 to 1964, hold about 52% of household net worth in mid-2026, while millennials and Gen Z together hold about 11%, according to analyses of the Federal Reserve's distributional accounts. Households headed by someone under 40 held about 6.6% in early 2026, down from about 12% in 1989. Older people always own more than younger ones, but the gap has widened, because the assets the older generation bought were revalued upward by falling rates, and the young must buy the same assets at the higher price, usually with credit."
+    },
+    {
+     "type": "callout",
+     "label": "Picture this",
+     "text": "A Monopoly game where the first players bought every street while it was cheap. Late players start with only cash and pay rent on every lap. The bank keeps lending the late players money so the game can go on, because a game in which nobody can pay rent ends for the owners too."
+    },
+    {
+     "type": "insider",
+     "text": "That last line is the key to the whole system. Owners need newcomers. Rents, mortgages, share prices and pension promises only hold if new buyers and tenants keep paying. So the system cannot lock newcomers out completely. It lets them in through wages, credit and a little inflation, on terms that keep the owners' titles valuable. This is the quiet balance the money managers of the world are actually running."
+    },
+    {
+     "type": "h",
+     "text": "Four levers that keep the balance"
+    },
+    {
+     "type": "steps",
+     "items": [
+      "Credit: lend newcomers the price of a seat. It keeps asset prices up and lets the young buy in, at the cost of decades of payments to lenders.",
+      "Inflation: quietly shifts value from savers and lenders to borrowers, who are often younger. It shrinks old debts and lifts wages in money terms. Chapter 10 showed why indebted systems choose it.",
+      "Taxes and transfers: pensions, health care, child accounts and income support move part of the owners' income to people without assets. Chapter 15 and the Desk looked at what a universal income can and cannot carry.",
+      "New frontiers: new industries create new things to own before they are titled. Railways, oil, the internet and now AI, compute, energy and space are where newcomers can get title early."
+     ]
+    },
+    {
+     "type": "p",
+     "text": "When all four levers fail at once, history offers darker resets. The historian Walter Scheidel argued in The Great Leveler (2017) that across recorded history only four forces have reliably shrunk inequality on a large scale: mass-mobilization war, transformative revolution, state collapse and deadly pandemics. The levers above exist, in large part, to keep those four away."
+    },
+    {
+     "type": "h",
+     "text": "Who plays which role"
+    },
+    {
+     "type": "diagram",
+     "key": "country-roles",
+     "caption": "A simplified map of the roles. Real countries mix several roles, and roles change over time."
+    },
+    {
+     "type": "table",
+     "cols": [
+      "Who",
+      "Role in the system",
+      "What it gets",
+      "What it risks"
+     ],
+     "rows": [
+      [
+       "United States",
+       "Issues the reserve currency, borrows and buys from the world, guarantees security",
+       "Cheap borrowing, consumption, power",
+       "Debt, hollowed industry, division at home"
+      ],
+      [
+       "China",
+       "The world's workshop and a giant saver, now the main rival in hardware",
+       "Jobs, technology, influence",
+       "Dependence on foreign buyers, low household spending"
+      ],
+      [
+       "Japan, Germany, Korea, Taiwan",
+       "High-tech exporters that lend their surpluses back",
+       "Jobs and steady surpluses",
+       "Weak home demand, exposure to US policy"
+      ],
+      [
+       "Gulf states and other energy exporters",
+       "Supply the base-layer fuel and recycle surpluses through state funds",
+       "Wealth and security ties",
+       "Oil price swings, dependence on protection"
+      ],
+      [
+       "Resource exporters such as Australia, Brazil, Canada, Indonesia and Africa's miners",
+       "Supply minerals and food",
+       "Income in boom years",
+       "Price swings and fights over title"
+      ],
+      [
+       "Hubs: UK, Switzerland, Singapore, Hong Kong, UAE",
+       "Custodians, bankers, courts and meeting places",
+       "Fees and talent",
+       "Dependence on trust and openness"
+      ],
+      [
+       "India and other large, young economies",
+       "Labor and tomorrow's buyers",
+       "Growth",
+       "Entering on terms set by others"
+      ],
+      [
+       "IMF, World Bank, BIS, WTO",
+       "Referees and lenders of last resort",
+       "Stability",
+       "Questions about whose rules they enforce"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Each role balances the others. Exporters need the US to keep buying. The US needs them to keep lending. Energy and resource exporters need both. Hubs need everyone to keep trusting the pipes. Countries also change roles: Britain went from workshop to banker, and China from workshop to rival. Every role change is a moment of stress for the whole system, which is why this desk watches the China truce, the Gulf and Japan so closely."
+    },
+    {
+     "type": "h",
+     "text": "Decoding the balance: a plan, or incentives?"
+    },
+    {
+     "type": "callout",
+     "label": "The decode verdict",
+     "text": "A secret global plan by money managers to keep newcomers out forever: D3, folklore, about 10% as stated. Policy that consistently protects asset prices, because owners vote, lend, fund campaigns and hold the pension savings: D1, decoded-strong, about 80%. After 2008 and again in 2020 central banks moved quickly to support asset prices. Nobody needs to coordinate. Each actor's incentive points the same way: keep the titles valuable, keep the newcomers paying, and keep the four horsemen away."
+    },
+    {
+     "type": "insider",
+     "text": "This is why the future this desk studies matters so much. Robots, AI and cheap energy could enlarge the base layer itself. If newcomers can own a share of that new capacity before it is titled, the gap can close. If the same owners title it first, the gap widens. Who gets title to the new base layer of energy, compute, data and orbit is the ownership question of this generation."
+    },
+    {
+     "type": "h",
+     "text": "The whole book in one chain"
+    },
+    {
+     "type": "steps",
+     "items": [
+      "Money is a trusted promise (chapter 1). Its anchor moved from metal to the dollar to government bonds (chapters 2 to 7).",
+      "Banks create most money as loans, so the system needs ever more credit (chapters 6 and 8).",
+      "The seasons decide who wins, borrowers or savers, and debt decides which season governments choose (chapters 9 and 10).",
+      "Nations compete for the deep-market crown, and smaller currencies live by its rules (chapters 11 to 13).",
+      "The ruler we measure with keeps shrinking (chapter 14).",
+      "Newcomers start on a board with no free money, and new rails are laid on old anchors (chapters 15 and 16).",
+      "Paper values are claims on the future and can fall fast (chapters 17 and 18).",
+      "Underneath it all, the abundance on paper rests on credit and on a base layer titled long ago. The system's real job is balancing owners and newcomers without calling the horsemen."
+     ]
+    },
+    {
+     "type": "myth",
+     "myth": "If the world's wealth were shared out, everyone would be comfortable.",
+     "reality": "Only on paper. Most of that wealth is the price of homes and companies at today's interest rates. Sell it all to divide it and the price collapses. What could really be shared is each year's output, about $14,000 per person, and most of it already pays for wages, rents, interest and taxes."
+    },
+    {
+     "type": "check",
+     "q": "Global personal wealth is about $470 trillion. Why can't it simply be handed out as $57,000 to each person?",
+     "a": "Because most of it is the price of existing assets, valued at the last trade and at today's interest rates, and much of it is matched by debts. Selling it all to share it out would crash the price. What is really available each year is output, about $14,000 per person."
+    },
+    {
+     "type": "check",
+     "q": "Why does a system that favors owners still lend money to newcomers?",
+     "a": "Because owners need newcomers to keep paying rent, interest and share prices. If newcomers could pay nothing, the owners' titles would lose their value. Credit keeps the game going."
+    }
+   ],
+   "rules": [
+    "Wealth on paper is a price, not a pile.",
+    "Every financial asset is someone's debt or someone's future income.",
+    "The base layer was titled long ago. Newcomers enter through wages, credit and new frontiers.",
+    "Look for the next base layer before it is titled."
+   ],
+   "connects": [
+    {
+     "id": "rb-11",
+     "how": "The new board game, now seen as a board whose squares are already owned."
+    },
+    {
+     "id": "rb-buckets",
+     "how": "Why paper values vanish when everyone sells at once."
+    },
+    {
+     "id": "rb-em",
+     "how": "Where new money lands first, between countries."
+    },
+    {
+     "id": "rb-defl",
+     "how": "Why indebted systems choose inflation over deflation."
+    }
+   ]
+  },
+  {
+   "id": "rb-14",
+   "num": "20",
    "title": "The Rulebook",
    "kicker": "What each generation learned the hard way, written down so the next one does not have to.",
    "blocks": [
@@ -3436,27 +3670,27 @@
       [
        "What money is",
        "Your understanding: see the promise behind the paper",
-       "1, 2, 6"
+       "1, 2, 6, 7"
       ],
       [
        "Seasons and rulers",
        "Your savings: know what melts and what hardens",
-       "8, 10"
+       "9, 10, 13, 14"
       ],
       [
        "Debt",
        "Your freedom: never become a forced seller",
-       "7"
+       "8, 18"
       ],
       [
        "Power and plumbing",
        "Your judgment: see who sets the rules and who earns the tolls",
-       "3, 4, 5, 9, 12, 13"
+       "3, 4, 5, 11, 12, 16, 17"
       ],
       [
        "Getting on the board",
        "Your future: turn income into ownership",
-       "11"
+       "15, 19"
       ]
      ]
     },
@@ -3680,6 +3914,16 @@
    "n": 36,
    "rule": "Follow where new money lands first.",
    "why": "Hubs receive it early and at full value. Talent and capital follow."
+  },
+  {
+   "n": 37,
+   "rule": "Wealth on paper is a price, not a pile.",
+   "why": "Most wealth is the last trade's price on existing assets at today's interest rates. It cannot all be sold at that price."
+  },
+  {
+   "n": 38,
+   "rule": "Look for the next base layer before it is titled.",
+   "why": "Newcomers get ownership early only at new frontiers: new industries, energy, compute and whatever comes next."
   }
  ],
  "mistakes": [
@@ -3829,6 +4073,10 @@
    "d": "A general fall in prices, so each unit of money buys more. Debts get heavier in real terms."
   },
   {
+   "t": "Economic rent",
+   "d": "Income earned from owning something scarce, such as land or a license, rather than from producing more."
+  },
+  {
    "t": "Exorbitant privilege",
    "d": "The advantage the US gets because the world wants dollars and Treasuries, letting it borrow cheaply in its own currency."
   },
@@ -3847,6 +4095,10 @@
   {
    "t": "Floating exchange rate",
    "d": "A currency whose price against others is set by markets every day."
+  },
+  {
+   "t": "Four Horsemen of leveling",
+   "d": "Walter Scheidel's name for the four forces that historically shrank inequality: mass-mobilization war, revolution, state collapse and pandemics."
   },
   {
    "t": "GENIUS Act",
@@ -3901,6 +4153,10 @@
    "d": "An old textbook idea that banks lend a fixed multiple of their reserves. Central banks now say it does not describe how lending works."
   },
   {
+   "t": "Net worth",
+   "d": "Everything owned minus everything owed."
+  },
+  {
    "t": "Nominal",
    "d": "Measured in current money, without adjusting for inflation."
   },
@@ -3945,6 +4201,10 @@
    "d": "A currency that foreign governments hold in large amounts as savings and for crisis use. Today mainly the dollar."
   },
   {
+   "t": "Revaluation",
+   "d": "A change in the price of assets already owned, with no new things produced. Falling interest rates revalue assets upward."
+  },
+  {
    "t": "Seigniorage",
    "d": "The profit from issuing money, the gap between what money costs to make and what it buys."
   },
@@ -3967,6 +4227,10 @@
   {
    "t": "Time price",
    "d": "The number of hours of work needed to buy something."
+  },
+  {
+   "t": "Title",
+   "d": "The legal record of who owns something, such as land, a building or mineral rights."
   },
   {
    "t": "Toll booth",
@@ -4093,6 +4357,10 @@
   {
    "q": "My local inflation is low. Why do I feel poorer when I travel or pay overseas fees?",
    "a": "Because your home currency may have weakened against the currencies those bills are priced in. Low home inflation measures only the home ruler. See the chapter on the view from a smaller currency."
+  },
+  {
+   "q": "If the world is so rich, why do so many people feel locked out?",
+   "a": "Because most of that wealth is the price of assets that were owned long ago, revalued upward by falling interest rates, while newcomers must buy in at today's prices with credit. See the chapter on the titled world."
   }
  ]
 }
