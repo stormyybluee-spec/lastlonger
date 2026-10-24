@@ -4484,7 +4484,7 @@
       },
       {
        "id": "rb-04",
-       "text": "Trade surpluses come back to the US as purchases of Treasuries, which is why foreigners hold about a third of them."
+       "text": "Trade surpluses come back to the US as purchases of Treasuries and other US assets. That is why foreign central banks and investors are among the largest holders of US government debt."
       },
       {
        "id": "rb-06",
@@ -4574,6 +4574,14 @@
      ]
     },
     {
+     "type": "p",
+     "text": "This chapter comes in three parts of about ten minutes each. Each part ends with a stop box and three quick questions. Stop at any box and come back another day."
+    },
+    {
+     "type": "h",
+     "text": "Part 1 of 3. The bond itself: price, yield and the lever"
+    },
+    {
      "type": "h",
      "text": "Step 1. A bond is a rental contract for your money"
     },
@@ -4622,10 +4630,6 @@
      "type": "widget",
      "key": "bond-lab",
      "caption": "Try it. Three bonds, all bought for $1,000 and all paying $50 a year. Drag the rate new bonds pay and watch their prices. The black line is the $1,000 you paid."
-    },
-    {
-     "type": "insider",
-     "text": "Longer bonds swing more, because more years of locked rent are affected. A one point rise in rates, from 5% to 6%, knocks about 7% off a 10-year bond and about 14% off a 30-year bond. That is how Silicon Valley Bank, holding long bonds bought when rates were low, lost enough value to fail in March 2023."
     },
     {
      "type": "h",
@@ -4737,7 +4741,31 @@
     },
     {
      "type": "p",
-     "text": "You can see several forces at once in 2026. The Fed hiked in September (force 1). Oil above $100 kept inflation worries alive (force 2). A $1.99T deficit meant heavy issuance (force 4). Japan's recorded holdings of Treasuries fell $171B from February to August while it spent a similar sum defending the yen (force 5). Meanwhile French stress pushed some European money into Treasuries for safety (force 7 in reverse). The result: a 10-year yield of 5.13% on 21 October 2026, after a peak of 5.31% on 5 October."
+     "text": "You can see several forces at once in 2026. The Fed hiked in September (force 1). Oil prices kept inflation worries alive, and the bond market expected about 2.4% a year of inflation over ten years (force 2). A $1.99T deficit meant heavy issuance (force 4). Japan's recorded holdings of Treasuries fell $171B from February to August while it spent a similar sum defending the yen (force 5). Meanwhile French stress pushed some European money into Treasuries for safety (force 7 in reverse). The result: a 10-year yield of 5.13% on 21 October 2026, after a peak of 5.31% on 5 October."
+    },
+    {
+     "type": "callout",
+     "label": "Stop here",
+     "text": "Part 1 of 3 done. You can now read a bond's price, its yield and its lever. Take a break if you like. Before Part 2, try these three questions without scrolling up."
+    },
+    {
+     "type": "check",
+     "q": "A 10-year bond paying $50 a year was bought for $1,000. New bonds now pay $60. Does its price go up or down, and by roughly how much?",
+     "a": "Down, to about $926, about 7% less. The rent is locked, so the price must fall until a buyer earns 6%."
+    },
+    {
+     "type": "check",
+     "q": "Why does a 30-year bond swing about twice as hard as a 10-year bond when yields move one point?",
+     "a": "Its lever, the duration, is near 15 against near 8 for the 10-year. More years of locked rent are repriced."
+    },
+    {
+     "type": "check",
+     "q": "Name three of the seven forces in the tug of war on the 10-year yield.",
+     "a": "Any three of: the Fed's rate path, expected inflation, the term premium, supply, demand, growth and trust."
+    },
+    {
+     "type": "h",
+     "text": "Part 2 of 3. Why the system rests on bonds: size, owners, auctions and repo"
     },
     {
      "type": "h",
@@ -4752,7 +4780,7 @@
      "type": "list",
      "items": [
       "The Fed's money rests on them. The Fed creates bank reserves and cash, and the main asset it holds against them is Treasuries: $4.57T of its $6.47T of securities, about 71% (21 October 2026).",
-      "They are the financial system's pawnshop ticket. In repo markets, banks and funds hand over Treasuries overnight to borrow cash. Trillions move this way every day.",
+      "They are the financial system's pawnshop ticket. In repo markets, banks and funds hand over Treasuries to borrow cash, often overnight. About $12.6T of US repo was outstanding on an average day in the third quarter of 2025 (Office of Financial Research).",
       "Banks and money funds park cash in them, because rules treat them as the safest liquid asset.",
       "Stablecoins must hold them. Under the GENIUS Act, compliant dollar tokens must be backed by cash-like reserves: deposits, central bank money, government money funds, repo, or Treasuries with 93 days or less left. Short bills are the dominant choice.",
       "Foreign central banks keep their savings in them. That is how the world holds dollars without holding cash.",
@@ -4787,8 +4815,8 @@
       ],
       [
        "The pawnshop ticket",
-       "US repo lent against bonds each day, mostly Treasuries",
-       "$12.6T a day (Q3 2025)"
+       "US repo outstanding on an average day, 69% backed by Treasuries",
+       "about $12.6T (Q3 2025)"
       ],
       [
        "Bank survival kit",
@@ -4822,7 +4850,7 @@
     },
     {
      "type": "bars",
-     "title": "The world's bonds and shares, end of 2025",
+     "title": "The world's bonds and shares, end of 2025 (US Treasuries: 30 September 2026)",
      "prefix": "$",
      "suffix": "T",
      "unitLabel": "Value",
@@ -4845,11 +4873,12 @@
        "value": 31.8
       }
      ],
-     "source": "SIFMA Capital Markets Fact Book 2026, US Treasury Monthly Statement of the Public Debt (30 Sep 2026)"
+     "source": "SIFMA Capital Markets Fact Book 2026, US Treasury Monthly Statement of the Public Debt (30 Sep 2026)",
+     "caption": "Bonds and shares are market values at the end of 2025 (SIFMA). The Treasury bar is the face value of marketable Treasuries on 30 September 2026. The top two bars are close, so a big sell-off in either market can flip their order."
     },
     {
      "type": "p",
-     "text": "At the end of 2025 the world's bonds were worth slightly more than all its listed shares, $160.7T against $157.8T. Most people picture the stock market as the giant. The gap is small and flips with prices, but the point holds: the market for promises is as large as the market for ownership. About 38% of the world's bonds are American, and the Treasury market alone trades about $1.2T a day."
+     "text": "At the end of 2025 the world's bonds were worth slightly more than all its listed shares, $160.7T against $157.8T. Many people picture the stock market as the giant. The gap is small and flips with prices, but the point holds: the market for promises is as large as the market for ownership. About 38% of the world's bonds are American, and the Treasury market alone trades about $1.2T a day."
     },
     {
      "type": "timeline",
@@ -4930,20 +4959,20 @@
        ]
       }
      ],
-     "caption": "Foreigners rose from 8% to a peak of 54.5% in 2007 and fell back to 32.5%, while their dollar holdings kept rising. Banks fell from 31% to 7%. Money funds grew from almost nothing to about the Fed's share.",
+     "caption": "Foreigners rose from 8% to a peak of 54.5% in 2007 and fell back to 32.5%, while their dollar holdings kept rising. Banks fell from 31% to 7%. Money funds grew from almost nothing to about the Fed's share. Pensions and insurers held 21% in 1990 and 6% in 2025. The rest in 2025: mutual funds and ETFs 8.4%, states and cities 5.6%, and households and hedge funds about 9.5% (a residual, so treat it as rough).",
      "source": "Federal Reserve Financial Accounts (Z.1) table L.210, year-end, via DBnomics. Shares use market values, so the Fed's level differs from its weekly balance sheet."
     },
     {
      "type": "insider",
      "label": "Insider eye-opener",
-     "text": "Your cash in a money market fund is mostly lent to the government. Money funds held 0.6% of all Treasuries in 1980 and 12.4% in 2025, almost exactly the Fed's 12.7%. The quiet giant of the bond market is ordinary savers' cash, pooled."
+     "text": "Your cash in a money market fund is mostly lent to the government. Money funds held 0.6% of all Treasuries in 1980 and 12.4% in 2025, close to the Fed's 12.7% on this measure. The quiet giant of the bond market is ordinary savers' cash, pooled."
     },
     {
      "type": "curiosity",
      "items": [
       {
        "q": "Which is bigger, the world's stock market or its bond market?",
-       "a": "Bonds, just: $160.7T against $157.8T of listed shares at the end of 2025 (SIFMA). Most people guess stocks by a mile. A market value is a price tag, so the order can flip in a big sell-off.",
+       "a": "Bonds, just: $160.7T against $157.8T of listed shares at the end of 2025 (SIFMA). Many people guess stocks by a mile. A market value is a price tag, so the order can flip in a big sell-off.",
        "from": "rb-buckets"
       },
       {
@@ -4971,11 +5000,15 @@
      "type": "steps",
      "items": [
       "Announcement. The Treasury offered $39.0B of a 10-year note with a 4.625% coupon, maturing 15 August 2036, for auction on 7 October 2026.",
-      "Bidding. Bids came in for $109.0B, 2.77 times the amount offered. The 25 primary dealers must bid for their share every time, so a sale never fails for lack of buyers.",
-      "One price for all. Every winner pays the same yield, the highest one accepted: 5.300%, a price of $94.86 per $100. It was the highest yield at a 10-year auction since at least 2008.",
+      "Bidding. Bids came in for $109.0B, 2.77 times the amount offered. The 25 primary dealers are required to bid for their share every time, so every auction is fully covered by design.",
+      "One price for all. Every winner pays the same yield, the highest one accepted: 5.300%, a price of $94.86 per $100. It was the highest yield at a 10-year auction since November 2000.",
       "Who won. Indirect bidders (foreign and domestic investors bidding through dealers) took 79.6%. Direct bidders took 17.0%. The dealers kept only 2.5%, the smallest share in the data.",
-      "Settlement on 15 October. Buyers' banks pay, and the money goes up into the Treasury's account at the Fed. If the buyer was a fund or a person, their deposit is gone until the Treasury spends it (chapter 2 of this level)."
+      "Settlement on 15 October. Buyers' banks pay, and the money goes up into the Treasury's account at the Fed. If the buyer was a fund or a person, their deposit is gone until the Treasury spends it (Level 2, \"Who really creates money\", Step 3)."
      ]
+    },
+    {
+     "type": "p",
+     "text": "What the Treasury sells changes what happens to your money. Bills, about 22% of tradable debt, are bought heavily by money market funds. From June 2022 to October 2026 those funds pulled $1.97T out of the cash they had parked at the Fed, much of it to buy bills, and that cash came back into bank deposits when the Treasury spent it. Notes and bonds bought by investors from their own bank deposits drain those deposits until the Treasury spends. Level 2, \"Who really creates money\", Steps 3 and 4, walks through both cases."
     },
     {
      "type": "timeline",
@@ -5106,7 +5139,7 @@
        "Hedge fund",
        "$100 Treasury (pledged)",
        "$98 repo loan, plus $2 of its own money",
-       "It holds a $100 bond with only $2 of its own money"
+       "It holds a $100 bond with only $2 of its own money. In practice this is usually one leg of a hedged trade (the cash-futures basis trade), not a bare bet"
       ],
       [
        "Dealer (a bank's arm)",
@@ -5130,22 +5163,46 @@
     },
     {
      "type": "p",
-     "text": "The US repo market averaged about $12.6T of loans outstanding each day in the third quarter of 2025 (Office of Financial Research). That is why a Treasury is worth more than its coupons: it can be turned into cash overnight at a small haircut. It is also where the system breaks. When haircuts jump or dealers run out of room, funds must sell bonds, prices fall, haircuts rise again. That loop drove March 2020."
+     "text": "The US repo market had about $12.6T of loans outstanding on an average day in the third quarter of 2025 (Office of Financial Research). That is why a Treasury is worth more than its coupons: it can be turned into cash overnight at a small haircut. It is also where the system breaks. When haircuts jump or dealers run out of room, funds must sell bonds, prices fall, haircuts rise again. That loop drove March 2020."
     },
     {
      "type": "curiosity",
      "items": [
       {
        "q": "Why is a Treasury worth more than the interest it pays?",
-       "a": "Because it is a pawnshop ticket. About $12.6T a day is lent against bonds in US repo, mostly Treasuries. Being able to turn a bond into cash overnight is worth something, so investors accept a slightly lower yield for it.",
+       "a": "Because it is a pawnshop ticket. About $12.6T was outstanding in US repo on an average day in late 2025, mostly against Treasuries. Being able to turn a bond into cash overnight is worth something, so investors accept a slightly lower yield for it.",
        "from": "rb-01"
       },
       {
        "q": "Why would the Fed buy more Treasuries in five weeks than it owned in total in 2007?",
-       "a": "In March and April 2020 even Treasuries froze as everyone sold to raise cash. The Fed bought $1.27T in five weeks, against total Treasury holdings of $0.76T at the end of 2007 (Fed H.4.1).",
+       "a": "In March and April 2020 even Treasuries froze as everyone sold to raise cash. The Fed bought $1.27T in five weeks, against total Treasury holdings of $0.75T at the end of 2007 (Fed H.4.1).",
        "from": "rb-buckets"
       }
      ]
+    },
+    {
+     "type": "callout",
+     "label": "Stop here",
+     "text": "Part 2 of 3 done. You now know how big the bond world is, who owns America's IOUs, how a bond is born and how it is pawned. Before Part 3, try these three."
+    },
+    {
+     "type": "check",
+     "q": "Which was bigger at the end of 2025, the world's bond market or its stock market?",
+     "a": "Bonds, just: $160.7T against $157.8T of listed shares (SIFMA). A big sell-off could flip the order."
+    },
+    {
+     "type": "check",
+     "q": "Who took most of the October 2026 10-year auction, and how much did the dealers keep?",
+     "a": "Indirect bidders, investors bidding through dealers, took 79.6%. The dealers kept 2.5%, the smallest share in the data."
+    },
+    {
+     "type": "check",
+     "q": "In the repo example, what does the money fund own afterwards, and was any new money created?",
+     "a": "A $98 overnight loan backed by a Treasury. No new money: public money only moved."
+    },
+    {
+     "type": "h",
+     "text": "Part 3 of 3. When bonds bite: your mortgage, the crashes, Malaysia and inflation"
     },
     {
      "type": "h",
@@ -5158,7 +5215,7 @@
     },
     {
      "type": "p",
-     "text": "Take a $400,000 mortgage over 30 years. At 6.40% the monthly payment is about $2,502. At 7.40%, roughly where US mortgages sat in October 2026, it is about $2,770. One point on the bond market costs that family about $267 a month, about $3,210 a year, for thirty years."
+     "text": "Take a $400,000 mortgage over 30 years. At 6.40% the monthly payment is about $2,502. At 7.40%, one point higher, it is about $2,770. One point on the bond market costs that family about $267 a month, about $3,210 a year, for thirty years."
     },
     {
      "type": "diagram",
@@ -5181,7 +5238,7 @@
     },
     {
      "type": "insider",
-     "text": "The bond market is the only voter that votes every second. When it dislikes a government's plans, yields rise and the government's own interest bill rises with them. US net interest reached $1,051.8B in FY2026, more than defense. That bill is the bond market's running verdict, and it is why Treasury secretaries watch auctions more closely than polls."
+     "text": "The bond market is a voter that votes every second. When it dislikes a government's plans, yields rise and the government's own interest bill rises with them. US net interest reached $1,051.8B in FY2026, more than defense. That bill is the bond market's running verdict, and it is why Treasury secretaries watch auctions more closely than polls."
     },
     {
      "type": "h",
@@ -5196,7 +5253,8 @@
      "cols": [
       "Episode",
       "10-year yield, low to high",
-      "Price change on a 10-year bond (model)",
+      "Price change if the whole jump hit a new 10-year bond at once (model)",
+      "What a holder gained or lost, coupons included (model)",
       "What broke"
      ],
      "rows": [
@@ -5204,49 +5262,63 @@
        "1979 to 1981, Volcker",
        "8.76% to 15.84%",
        "-35%",
+       "about -14% (price -32%)",
        "Inflation above 13%. The Fed let rates rise until it broke"
       ],
       [
        "1994, the bond massacre",
        "5.19% to 8.05%",
        "-19%",
+       "about -13% (price -18%)",
        "A surprise Fed hiking cycle. Orange County went bankrupt"
       ],
       [
        "2008, the crisis",
        "4.27% to 2.08%",
        "+20% (a gain)",
+       "about +21% (a gain)",
        "Everything else fell and Treasuries rose. The safe asset worked"
       ],
       [
        "March 2020, dash for cash",
        "0.54% to 1.18% in seven trading days",
        "-6%",
+       "about -6%",
        "Even Treasuries could not be sold easily. The Fed bought $1.27T"
       ],
       [
        "2021 to 2023",
        "1.35% to 4.98%",
        "-28%",
+       "about -21% (price -24%)",
        "Stocks and bonds fell together. UK pension funds needed the Bank of England in September 2022"
       ],
       [
        "2023, SVB",
        "",
        "",
+       "",
        "US banks carried $620B of unrealized bond losses (end 2022). One became a run"
       ],
       [
+       "April 2025, tariff shock",
+       "rose sharply within days",
+       "",
+       "",
+       "Long yields rose while the dollar fell, a rare case of the safe asset and its currency falling together. Hedge funds unwinding the basis trade were widely blamed, though that is contested"
+      ],
+      [
        "2026",
-       "3.97% to 5.31%, the highest since 2007",
+       "3.97% to 5.31%, the highest close since 2002",
        "-10%",
+       "about -8% (price -10%)",
        "A Fed hike, oil, heavy issuance. The 30-year hit 5.67% on 7 October"
       ]
      ]
     },
     {
      "type": "p",
-     "text": "Price changes are a model: a 10-year bond bought at par at the low yield and priced at the high one, coupons ignored. Yields are daily closes from the Fed's H.15 release. Notice the one gain: in 2008 Treasuries did their job as everything else fell. Notice too that 2022 was different. Stocks and bonds fell together, which broke the old idea that one always rescues the other."
+     "text": "Two models, both using the Fed's H.15 daily closes. The first column reprices a 10-year bond as if the whole jump in yields hit it at once. The second follows a real holder who bought a new 10-year at par at the low, still owned it at the high with fewer years left, and collected the coupons along the way (coupons not reinvested, computed for this chapter). Notice the one gain: in 2008 Treasuries did their job as everything else fell. Notice too that 2022 was different. Stocks and bonds fell together, which broke the old idea that one always rescues the other."
     },
     {
      "type": "p",
@@ -5262,31 +5334,31 @@
      "rows": [
       [
        "2021: deposits flood in",
-       "$100 of 10-year bonds bought at 1.5%",
+       "$100 of 10-year bonds bought at 1.5%, plus $8 of cash and loans",
        "$100 of deposits, and $8 of owners' money"
       ],
       [
        "2022: yields rise to 4.5%",
-       "The bonds are now worth about $78",
+       "The bonds are now worth about $78, plus the $8",
        "Still $100 of deposits. Marked to market, owners' money is -$14"
       ],
       [
        "2023: depositors leave",
        "Bonds must be sold to pay them",
-       "The hidden loss becomes real. Owners' money is gone"
+       "Many deposits were above the $250,000 insurance limit, so they left fast. The hidden loss becomes real. Owners' money is gone"
       ]
      ]
     },
     {
      "type": "p",
-     "text": "Accounting rules let the loss stay hidden while the bank promised to hold the bonds to the end. A run forced a sale, and the paper loss became real in a day. The bonds were never in default. SVB's held-to-maturity losses were about $15.1B, close to all of its owners' money."
+     "text": "Accounting rules let the loss stay hidden while the bank promised to hold the bonds to the end. A run forced a sale, and the paper loss became real in a day. The bonds were never in default. SVB's held-to-maturity losses were about $15.1B, close to all of its owners' money. Two days after SVB closed, the Fed opened the Bank Term Funding Program, which lent to banks against Treasuries at their face value, not their market value. A bond's price can fall, but in that panic its value as collateral was held at par by policy. That is strong evidence for this chapter's title."
     },
     {
      "type": "curiosity",
      "items": [
       {
        "q": "How much could a risk-free 10-year Treasury lose?",
-       "a": "About 35% of its price as yields went from 8.76% in 1979 to 15.84% in September 1981, and about 28% from 2021 to 2023 (model, Fed H.15 data). Risk-free means free of default, not free of price swings.",
+       "a": "On price alone, about 32% for someone who bought a new 10-year at 8.76% in July 1979 and still held it in September 1981, when yields hit 15.84%. Counting the coupons collected, the loss was about 14%. From 2021 to 2023 a holder lost about 24% on price and about 21% with coupons (models, Fed H.15 data). Risk-free means free of default, not free of price swings.",
        "from": "rb-13"
       },
       {
@@ -5319,7 +5391,7 @@
        "March 2026"
       ],
       [
-       "Share held by foreigners",
+       "Share held by foreigners (MGS plus GII)",
        "about 21.6%",
        "March 2026"
       ],
@@ -5342,11 +5414,11 @@
     },
     {
      "type": "p",
-     "text": "Here is a Level 2 surprise. At the end of August 2026 Malaysia could borrow for ten years at 3.985%, about 0.8 points cheaper than the United States. Lower inflation, a large captive saver in the EPF and a central bank with reserves all help, while the US is selling bonds in record amounts. Almost half of Malaysia's government debt is Islamic sukuk, a structure the US does not have."
+     "text": "Here is a Level 2 surprise. At the end of August 2026 Malaysia could borrow for ten years at 3.985%, about 0.8 points cheaper than the United States. Lower inflation, a large captive saver in the EPF and a central bank with reserves all help, while the US is selling bonds in record amounts. Part of Malaysia's government debt is Islamic sukuk (GII), a structure the US does not have."
     },
     {
      "type": "p",
-     "text": "The weak spot is the foreign fifth. When US yields jump, foreign money leaves ringgit bonds, the ringgit weakens and Bank Negara may sell dollars to steady it. Malaysia's bond market lives by the US 10-year, as Level 1 chapter 12 described for its savers."
+     "text": "The weak spot is the foreign fifth. When US yields jump, foreign money leaves ringgit bonds, the ringgit weakens and Bank Negara may sell dollars to steady it. Malaysia's bond market lives by the US 10-year, as Level 1's \"The view from a smaller currency\" described for its savers."
     },
     {
      "type": "curiosity",
@@ -5373,12 +5445,17 @@
       [
        "Treasuries are safe",
        "Safe from default in dollars. In 2008 they rose 20% while other assets fell",
-       "Not safe from price: -35% from 1979 to 1981, -28% from 2021 to 2023. Not safe from inflation"
+       "Not safe from price: a holder lost about 14% from 1979 to 1981 and about 21% from 2021 to 2023, coupons included (model). Not safe from inflation"
       ],
       [
        "China and Japan are dumping, the bond market is breaking",
        "Japan's holdings fell $171B in six months and China's $109B in a year. The foreign share fell from 54.5% to 32.5% since 2007",
        "Total foreign holdings were $9.33T in August 2026, near the record. The UK added $108B in a year. The October 10-year auction was covered 2.77 times"
+      ],
+      [
+       "Bonds are a bubble",
+       "Right for bonds bought near the August 2020 low of 0.52%, which paid far less than the inflation that followed",
+       "Wrong as a rule: on 21 October 2026 the 10-year inflation-linked Treasury yielded 2.76% above inflation, a real reward for waiting, not a bubble price"
       ]
      ]
     },
@@ -5388,7 +5465,7 @@
     },
     {
      "type": "p",
-     "text": "Every yield you see quoted, 5.13% on the 10-year or 4.81% on the 2-year (21 October 2026), is nominal. It counts dollars, not what dollars buy. Level 1 chapter 13 called this the shrinking ruler. Your real return is what is left after inflation and, for most savers, after tax."
+     "text": "Every yield you see quoted, 5.13% on the 10-year or 4.81% on the 2-year (21 October 2026), is nominal. It counts dollars, not what dollars buy. Level 1's \"The yardstick problem\" called this the rubber ruler. Your real return is what is left after inflation and, for most savers, after tax. The market publishes its own split: on 21 October 2026 the 10-year inflation-linked Treasury yielded 2.76%, so about 2.4 points of the 5.13% was pay for expected inflation."
     },
     {
      "type": "steps",
@@ -5410,7 +5487,7 @@
     },
     {
      "type": "insider",
-     "text": "This is the quietest way governments shrink debt. Keep the nominal yield below inflation for long enough and the real value of the debt melts, paid for by bondholders and savers who only look at the nominal number. Level 1 chapter 8 called it financial repression. The cure is the split in step 3: always separate a yield into the part that only keeps up with inflation and the part that is truly yours."
+     "text": "This is the quietest way governments shrink debt. Keep the nominal yield below inflation for long enough and the real value of the debt melts, paid for by bondholders and savers who only look at the nominal number. Level 1's \"The seasons of money\" called it financial repression. The cure is the split in step 3: always separate a yield into the part that only keeps up with inflation and the part that is truly yours."
     },
     {
      "type": "h",
@@ -5418,7 +5495,7 @@
     },
     {
      "type": "p",
-     "text": "Close the page for a moment and explain these out loud. If you can, you understand bonds better than many people who use the word."
+     "text": "Last stop. Answer these out loud before you leave the chapter."
     },
     {
      "type": "check",
@@ -5492,7 +5569,7 @@
      "items": [
       {
        "t": "Reserves",
-       "d": "Banks' own accounts at the Fed. Upstairs money. About $2.96 trillion in October 2026. Only banks and a few institutions can hold them."
+       "d": "Banks' own accounts at the Fed. Upstairs money. About $2.97 trillion on 21 October 2026. Only banks and a few institutions can hold them."
       },
       {
        "t": "Deposits",
@@ -5500,7 +5577,7 @@
       },
       {
        "t": "Treasury General Account",
-       "d": "The government's checking account at the Fed. About $952 billion in late October 2026. Money in it is out of public hands."
+       "d": "The government's checking account at the Fed. About $945 billion on 21 October 2026. Money in it is out of public hands."
       },
       {
        "t": "Primary dealer",
@@ -5509,12 +5586,16 @@
       {
        "t": "Open market",
        "d": "The market where bonds already issued change hands. The only place the Fed may buy Treasuries."
+      },
+      {
+       "t": "Risk-weighted assets",
+       "d": "A bank's assets, each scaled by how risky the rules say it is. Capital rules ask for owners' money of at least a set share of this total."
       }
      ]
     },
     {
      "type": "p",
-     "text": "Level 1 chapter 6 showed that a bank loan creates a deposit. In normal years that is the most common way money is born, but not the only one. This chapter finishes the picture. It adds the Fed, the Treasury and the dealers in between, and shows exactly which moves create money you can spend and which only shuffle money that banks use among themselves."
+     "text": "Level 1's \"How money is born today\" showed that a bank loan creates a deposit. In normal years that is the most common way money is born, but not the only one. This chapter finishes the picture. It adds the Fed, the Treasury and the dealers in between, and shows exactly which moves create money you can spend and which only shuffle money that banks use among themselves."
     },
     {
      "type": "bridge",
@@ -5533,8 +5614,8 @@
        "text": "Taxes are the state's subscription fee. Here you see them leave the public's books."
       },
       {
-       "id": "rb-03",
-       "text": "Wars suspend money rules, as the 1942 to 1951 yield cap did."
+       "id": "rb-08",
+       "text": "In wartime and after it, the Fed held interest rates down while inflation shrank the war debt (the 1941 to 1951 season of capped rates)."
       },
       {
        "id": "rb-bonds",
@@ -5575,7 +5656,7 @@
       {
        "t": "The brakes",
        "s": "Capital, mandate, law, inflation",
-       "link": "rb-03"
+       "link": "rb-06"
       },
       {
        "t": "Money outside banks",
@@ -5590,102 +5671,44 @@
      ]
     },
     {
+     "type": "p",
+     "text": "This chapter comes in three parts of about ten minutes each. Each part ends with a stop box and three quick questions. Stop at any box and come back another day."
+    },
+    {
      "type": "h",
-     "text": "The whole map on one page"
+     "text": "Part 1 of 3. Two floors and three printers"
+    },
+    {
+     "type": "h",
+     "text": "The whole idea in three rows"
     },
     {
      "type": "p",
-     "text": "Level 2 starts with the full table, then explains each row. Every channel that adds to or drains the public's bank deposits is here, with its size in four kinds of year. Read across a row to see a channel change jobs. Read down a column to see which one ran the show."
+     "text": "Here is the whole idea before any numbers. Steps 1 to 3 explain each row, and after Step 3 the full table puts sizes on every channel in four kinds of year."
     },
     {
      "type": "table",
      "cols": [
-      "Channel",
-      "Adds (+) or drains (-) the public's deposits",
-      "Normal year 2019",
-      "Emergency 2020 to 2021",
-      "Shrinking 2022 to 2023",
-      "Latest year"
+      "Who",
+      "Creates money you can spend when",
+      "Destroys it when"
      ],
      "rows": [
       [
-       "Bank loans, net of repayments",
-       "+ when lending beats repayment",
-       "+$0.45T",
-       "+$0.68T",
-       "+$1.56T",
-       "+$1.00T"
+       "Banks",
+       "they lend, or buy anything from someone who is not a bank",
+       "loans are repaid, or they sell to someone who is not a bank"
       ],
       [
-       "Banks buying (selling) securities from nonbanks",
-       "+ buy, - sell",
-       "+$0.33T",
-       "+$1.86T",
-       "-$0.61T",
-       "+$0.14T"
+       "The Fed",
+       "it buys bonds. Reserves rise every time, your deposits only if the seller is not a bank",
+       "it shrinks its bonds (QT)"
       ],
       [
-       "Fed buying (QE) or shrinking (QT)",
-       "Reserves always. Deposits only when the seller is a nonbank",
-       "-$0.13T",
-       "+$4.52T",
-       "-$1.04T",
-       "+$0.16T"
-      ],
-      [
-       "Federal deficit, spending minus taxes",
-       "+ when spent, then netted by who buys the bonds",
-       "$0.98T",
-       "$5.90T",
-       "$3.07T",
-       "$1.99T"
-      ],
-      [
-       "Treasury account at the Fed",
-       "- when it rises, + when it falls",
-       "fell $0.02T",
-       "fell $0.07T",
-       "rose $0.43T",
-       "rose $0.23T"
-      ],
-      [
-       "Money funds' cash parked at the Fed (reverse repo)",
-       "drains reserves when it rises",
-       "flat",
-       "rose $1.64T",
-       "fell $0.82T",
-       "flat"
-      ],
-      [
-       "Result: bank deposits",
-       "",
-       "+$0.79T (+6.4%)",
-       "+$4.71T (+35.7%)",
-       "-$0.50T (-2.8%)",
-       "+$1.23T (+6.7%)"
-      ],
-      [
-       "Result: M2",
-       "",
-       "+$0.96T",
-       "+$6.15T",
-       "-$0.72T",
-       "+$1.17T"
+       "The Treasury",
+       "it spends",
+       "it collects taxes or sells bonds to savers, until it spends the money again"
       ]
-     ]
-    },
-    {
-     "type": "p",
-     "text": "Windows run December to December, except the latest year (September 2025 to September 2026). Sources: Fed H.8 (banks), H.4.1 (the Fed), H.6 (M2), Treasury Monthly Statement (deficits). The rows do not add exactly to the result, because some channels have no clean series: banks buying back their own shares, fees and interest, and foreign official purchases. In 2019 bank lending and bank bond buying explain the whole rise. In 2020 to 2021 the Fed's channel was 6.6 times bank lending. In 2022 to 2023 deposits fell even though banks lent $1.56T, because QT, bank bond sales and a rising Treasury account drained more."
-    },
-    {
-     "type": "curiosity",
-     "items": [
-      {
-       "q": "In 2020 and 2021 bank deposits rose $4.71T while bank loans rose only $0.68T. Who printed the rest?",
-       "a": "The emergency printer. The Fed bought $4.52T of bonds and banks bought $1.86T of securities while the Treasury ran $5.90T of deficits (Fed H.8 and H.4.1, Treasury statements).",
-       "from": "rb-06"
-      }
      ]
     },
     {
@@ -5717,17 +5740,17 @@
       [
        "Upstairs (the Fed's books)",
        "Bank reserves",
-       "$2.96T"
+       "$2.97T (21 Oct 2026)"
       ],
       [
        "Upstairs",
        "Treasury General Account",
-       "$952B"
+       "$945B"
       ],
       [
        "Upstairs",
        "Cash parked by money funds at the Fed (overnight reverse repo)",
-       "$0.3B (it peaked at about $2.4T in late 2022)"
+       "$0.2B (it peaked at about $2.4T in late 2022)"
       ],
       [
        "Upstairs",
@@ -5828,7 +5851,7 @@
     },
     {
      "type": "insider",
-     "text": "The primary dealer in the middle is only the pipe. Nearly all primary dealers belong to big banking groups, and many act for customers. To know whether a Fed purchase added money you can spend, follow the cash to whoever holds it at the end. In 2020 to 2022 much of the selling came from nonbanks, which is why quantitative easing then added deposits as well as reserves."
+     "text": "The primary dealer in the middle is only the pipe. Many of the 25 primary dealers belong to big banking groups, and many act for customers. To know whether a Fed purchase added money you can spend, follow the cash to whoever holds it at the end. In 2020 to 2022 much of the selling came from nonbanks, which is why quantitative easing then added deposits as well as reserves."
     },
     {
      "type": "check",
@@ -5841,7 +5864,7 @@
     },
     {
      "type": "p",
-     "text": "The Treasury keeps its account at the Fed, upstairs. When a fund buys a new Treasury bond at auction, the fund's deposit falls, its bank's reserves fall, and the Treasury's account rises. Money has gone upstairs. When the Treasury pays a Social Security check, the reverse happens: the account falls, and the retiree's deposit and the bank's reserves rise. Taxes work like an auction: deposits go up the stairs. You can watch it happen. In the week to 21 October 2026 the Treasury's account rose $69 billion, and bank reserves fell $60 billion."
+     "text": "The Treasury keeps its account at the Fed, upstairs. When a fund buys a new Treasury bond at auction, the fund's deposit falls, its bank's reserves fall, and the Treasury's account rises. Money has gone upstairs. When the Treasury pays a Social Security check, the reverse happens: the account falls, and the retiree's deposit and the bank's reserves rise. Taxes work like an auction: deposits go up the stairs. You can watch it happen. In the week to 21 October 2026, on weekly averages, the Treasury's account rose $69 billion and bank reserves fell $60 billion."
     },
     {
      "type": "diagram",
@@ -5884,13 +5907,125 @@
     },
     {
      "type": "h",
-     "text": "Step 4. Drains, new pipes and the Fed's own bills"
+     "text": "The whole map with sizes"
+    },
+    {
+     "type": "table",
+     "cols": [
+      "Channel",
+      "Adds (+) or drains (-) the public's deposits",
+      "Normal year 2019",
+      "Emergency 2020 to 2021",
+      "Shrinking 2022 to 2023",
+      "Latest year"
+     ],
+     "rows": [
+      [
+       "Bank loans, net of repayments",
+       "+ when lending beats repayment",
+       "+$0.45T",
+       "+$0.68T",
+       "+$1.56T",
+       "+$1.00T"
+      ],
+      [
+       "Banks buying (selling) securities from nonbanks",
+       "+ buy, - sell",
+       "+$0.33T",
+       "+$1.86T",
+       "-$0.61T",
+       "+$0.14T"
+      ],
+      [
+       "Fed buying (QE) or shrinking (QT)",
+       "Reserves always. Deposits only when the seller is a nonbank. Treasuries plus mortgage bonds",
+       "-$0.13T",
+       "+$4.52T",
+       "-$1.04T",
+       "+$0.16T (Sep 2025 to Sep 2026)"
+      ],
+      [
+       "Treasury account at the Fed",
+       "- when it rises, + when it falls",
+       "fell $0.02T",
+       "fell $0.07T",
+       "rose $0.43T",
+       "rose $0.23T"
+      ],
+      [
+       "Money funds' cash parked at the Fed (reverse repo)",
+       "drains reserves when it rises",
+       "flat",
+       "rose $1.64T",
+       "fell $0.82T",
+       "flat"
+      ],
+      [
+       "Result: bank deposits",
+       "",
+       "+$0.79T (+6.4%)",
+       "+$4.71T (+35.7%)",
+       "-$0.50T (-2.8%)",
+       "+$1.23T (+6.7%)"
+      ],
+      [
+       "Result: M2",
+       "",
+       "+$0.96T",
+       "+$6.15T",
+       "-$0.72T",
+       "+$1.25T (Aug 2025 to Aug 2026)"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Windows run December to December, except the latest year (September 2025 to September 2026 for banks, the Fed and deposits, August to August for M2). Sources: Fed H.8 (banks), H.4.1 (the Fed), H.6 (M2), Treasury Monthly Statement (deficits). Memo, not a deposit flow: the federal deficit was $0.98T (2019), $5.90T (2020 to 2021), $3.07T (2022 to 2023) and $1.99T (fiscal 2026). Whether it added money depends on who bought the bonds (Step 3). The rows do not add exactly to the result, because some channels have no clean series: banks buying back their own shares, fees and interest, and foreign official purchases. In 2019 bank lending and bank bond buying explain the whole rise. In 2020 to 2021 the Fed's channel was 6.6 times bank lending. In 2022 to 2023 deposits fell even though banks lent $1.56T, because QT, bank bond sales and a rising Treasury account drained more."
+    },
+    {
+     "type": "curiosity",
+     "items": [
+      {
+       "q": "In 2020 and 2021 bank deposits rose $4.71T while bank loans rose only $0.68T. Who printed the rest?",
+       "a": "The emergency printer. The Fed bought $4.52T of bonds and banks bought $1.86T of securities while the Treasury ran $5.90T of deficits (Fed H.8 and H.4.1, Treasury statements).",
+       "from": "rb-06"
+      }
+     ]
+    },
+    {
+     "type": "callout",
+     "label": "Stop here",
+     "text": "Part 1 of 3 done. You can now say which floor a dollar sits on and which of the three printers made it. Before Part 2, try these three."
+    },
+    {
+     "type": "check",
+     "q": "The Fed buys $100 of bonds from a pension fund. What rises upstairs, and what rises downstairs?",
+     "a": "Upstairs, bank reserves rise $100. Downstairs, the fund's deposit rises $100. From a bank seller, only the reserves would rise."
+    },
+    {
+     "type": "check",
+     "q": "A household repays a $100 bank loan. What happens to the money supply?",
+     "a": "It falls $100. The loan and the deposit both disappear."
+    },
+    {
+     "type": "check",
+     "q": "In 2020 to 2021 bank deposits rose $4.71T. How much came from new bank loans, and what did most of the rest?",
+     "a": "Only $0.68T. Most of the rest came from the emergency printer: Treasury spending, with the Fed buying $4.52T of bonds and banks buying $1.86T of securities."
+    },
+    {
+     "type": "h",
+     "text": "Part 2 of 3. Sponges, shredders, brakes and other printers"
+    },
+    {
+     "type": "h",
+     "text": "Step 4. Drains, sponges and new pipes"
     },
     {
      "type": "list",
      "items": [
-      "The overnight reverse repo facility: money funds can lend cash to the Fed overnight. While it sits there, it is out of the banks. It peaked at about $2.4 trillion in late September 2022. By October 2026 the domestic part was $0.3 billion, so this drain is empty.",
+      "The overnight reverse repo facility: money funds can lend cash to the Fed overnight. While it sits there, it is out of the banks. It peaked at about $2.4 trillion in late September 2022. On 21 October 2026 it held $0.2 billion, so this drain is empty.",
       "The Treasury General Account: every rise drains reserves and often deposits, every fall adds them back.",
+      "The standing repo facility (since July 2021): a door that works the other way. Banks and dealers can swap Treasuries for new reserves at a set rate whenever they need them, which limits how far short-term rates can spike in a squeeze.",
       "Stablecoins: buying a dollar token moves your deposit to the issuer, who buys Treasury bills. Bank deposits do not grow, and if the bill comes from a bank or the Treasury, they shrink. The token is a new private dollar outside M2.",
       "Interest on reserves: the Fed pays banks interest by creating new reserves, about $115 billion a year at current rates (desk estimate). Deposits grow only if banks pass it on.",
       "Fed profits and losses: when the Fed earns more than it pays, it sends the profit to the Treasury. From late 2022 it paid more than it earned and built up a $245.9 billion IOU to itself by January 2026. That IOU is now shrinking ($232.7 billion), so it again earns slightly more than it pays, and payments to the Treasury restart once the IOU is cleared. The 'taxes go to the Fed's owners' story has it backwards."
@@ -5975,7 +6110,7 @@
       "Buying a new Treasury at auction with a deposit. The same as taxes, until the Treasury spends.",
       "Fed QT. When a bond the Fed holds matures and the Treasury repays it with money raised from a nonbank, a deposit and reserves both disappear.",
       "A bank selling a bond to a nonbank, or buying back its own shares or bonds. The buyer pays with a deposit, which the bank cancels.",
-      "Money moving into the Fed's reverse repo pool. It leaves the banks while it sits there. This was the largest single drain in 2021 and 2022."
+      "Money moving into the Fed's reverse repo pool. It leaves the banks while it sits there. In 2020 to 2021 the pool rose $1.64T, more than twice the $0.68T of new bank loans in those two years."
      ]
     },
     {
@@ -6059,7 +6194,7 @@
       {
        "q": "The Fed has been banned from buying bonds straight from the Treasury since 1935. How did it end up with more than half of the new debt of 2020 and 2021?",
        "a": "It bought in the open market from dealers and investors, days or months after the auctions. In wartime, 1942 to 1951, it got the same result by capping yields.",
-       "from": "rb-03"
+       "from": "rb-08"
       }
      ]
     },
@@ -6082,7 +6217,7 @@
       ],
       [
        "Repo, cash lent against bonds",
-       "$12.6T a day (Q3 2025)",
+       "about $12.6T outstanding on an average day (Q3 2025)",
        "No"
       ],
       [
@@ -6099,7 +6234,7 @@
     },
     {
      "type": "p",
-     "text": "Who prints the $14 trillion of dollars borrowed outside America? Mostly banks abroad, in London, Singapore or Kuala Lumpur, writing dollar loans and deposits on their own books exactly as a US bank does. They settle through accounts at US banks, and in a crisis they need dollars from the Fed's swap lines. So the Fed is the last-resort supplier, but private foreign banks are the everyday printers of offshore dollars."
+     "text": "Who prints the $14 trillion of dollars borrowed outside America? Bond investors hold over half of it (55% at the end of September 2025, BIS). The rest is loans written by banks abroad, in London, Singapore or Kuala Lumpur, which create dollar loans and deposits on their own books exactly as a US bank does. They settle through accounts at US banks, and in a crisis they need dollars from the Fed's swap lines. So the Fed is the last-resort supplier, while private foreign banks and bond markets are the everyday sources of offshore dollars."
     },
     {
      "type": "curiosity",
@@ -6148,7 +6283,7 @@
        "Extra door",
        "",
        "Large loans to banks (mostly repaid now)",
-       "Yield curve control 2016 to 2024, and 49% of all government bonds held (end 2025)",
+       "Yield curve control 2016 to 2024, and about 47% of government bonds, excluding bills (June 2026)",
        "The currency door: buying dollars creates ringgit, selling dollars destroys it"
       ]
      ]
@@ -6167,10 +6302,34 @@
       },
       {
        "q": "The Bank of Japan owns about half of its government's bonds. Who is the printer in Japan?",
-       "a": "The central bank, on a scale no other big economy matches. Its share fell just below 50% at the end of 2025 for the first time since 2022 (Ministry of Finance flow of funds).",
+       "a": "The central bank, on a scale no other big economy matches. It held about 47% of government bonds, excluding bills, in June 2026, after its share first fell below 50% at the end of 2025, for the first time since 2022 (Ministry of Finance).",
        "from": "rb-leader"
       }
      ]
+    },
+    {
+     "type": "callout",
+     "label": "Stop here",
+     "text": "Part 2 of 3 done. You now know the sponges that soak money up, the shredders that destroy it, the brakes on each printer and how other countries do it. Before Part 3, try these three."
+    },
+    {
+     "type": "check",
+     "q": "From June 2022 the Fed's bonds fell $2.01T, yet bank reserves fell only $0.39T. Where did the difference come from?",
+     "a": "The reverse repo sponge. Money funds took $1.97T out of it to buy bills, and the cash came back to banks as the Treasury spent it."
+    },
+    {
+     "type": "check",
+     "q": "US banks have had no reserve requirement since March 2020. Name two things that still stop them lending without limit.",
+     "a": "Any two of: capital rules, liquidity rules, the 3.90% the Fed pays on reserves, and borrowers who must want and repay loans."
+    },
+    {
+     "type": "check",
+     "q": "When Bank Negara buys dollars to steady the ringgit, what does it pay with?",
+     "a": "New ringgit reserves, which it usually soaks back up afterwards."
+    },
+    {
+     "type": "h",
+     "text": "Part 3 of 3. Who printed, year by year, and what the critics say"
     },
     {
      "type": "h",
@@ -6187,7 +6346,7 @@
       [
        "MMT and post-Keynesian",
        "Treat the Fed and the Treasury as one. The state spends first, taxes and bond sales drain afterwards. The limit is inflation, not money",
-       "Deficit spending is the only source of net financial assets for the private sector as a whole (Stephanie Kelton, The Deficit Myth, 2020)"
+       "Deficit spending is the only source of net financial assets for the non-government sector as a whole, which means the domestic private sector plus foreigners (Stephanie Kelton, The Deficit Myth, 2020). A country's private sector can also gain them from a trade surplus."
       ],
       [
        "Austrian and hard money",
@@ -6208,7 +6367,7 @@
     },
     {
      "type": "p",
-     "text": "None of the three critical schools points to a missing channel in this chapter. Each points to a missing consequence. The Austrian asks who got the money first. The monetarist asks what it did to prices. The MMT economist asks why we pretend the Treasury needs to borrow its own currency. A complete Level 2 reader can hold all three questions at once."
+     "text": "We found no school whose strongest objection points to a channel missing from this chapter. Each points to a missing consequence. The Austrian asks who got the money first. The monetarist asks what it did to prices. The MMT economist asks why we pretend the Treasury needs to borrow its own currency. A complete Level 2 reader can hold all three questions at once."
     },
     {
      "type": "curiosity",
@@ -6235,53 +6394,13 @@
      "caption": "Every channel that creates or destroys the public's deposits, with rough sizes for the latest year and for 2020 to 2021."
     },
     {
-     "type": "table",
-     "cols": [
-      "Channel",
-      "Latest year (to Sept or Oct 2026)",
-      "2020 to 2021"
-     ],
-     "rows": [
-      [
-       "Bank loans",
-       "+$1.0T",
-       "small, apart from a short burst in early 2020"
-      ],
-      [
-       "Bank purchases of securities",
-       "+$0.14T",
-       "+$1.9T (all securities)"
-      ],
-      [
-       "Fed purchases",
-       "+$0.19T net",
-       "+$4.6T (Treasuries and mortgage bonds)"
-      ],
-      [
-       "Deficit spending",
-       "$1.99T deficit",
-       "$5.9T of new Treasury debt, 72% bought by the Fed and banks"
-      ],
-      [
-       "Cash withdrawn into wallets",
-       "-$0.07T",
-       "-$0.45T"
-      ],
-      [
-       "Result: bank deposits",
-       "+$1.2T (+6.7%)",
-       "+$4.71T (+36%)"
-      ]
-     ]
-    },
-    {
      "type": "p",
      "text": "In an ordinary year, bank lending is the biggest engine. In the pandemic it was the government and the central bank: the Treasury spent borrowed money straight into household accounts, and the Fed and banks ended up holding about 68% to 72% of the new bonds, so nothing drained the deposits back. M2 rose about 40% in two years, from $15.5 trillion in February 2020 to $21.7 trillion in February 2022."
     },
     {
      "type": "myth",
      "myth": "All money is created by banks making loans.",
-     "reality": "Loans are the main channel most years, but banks also create money when they buy securities, the Fed creates reserves whenever it buys and deposits when the seller is a nonbank, and Treasury spending adds deposits unless the public funded it from its own accounts. In 2020 to 2021 the Treasury and Fed channel created most new deposits."
+     "reality": "Loans are the main channel in normal years (87% to 96% of the two printers from 1971 to 2007), but banks also create money when they buy securities, the Fed creates reserves whenever it buys and deposits when the seller is a nonbank, and Treasury spending adds deposits unless the public funded it from its own accounts. In 2020 to 2021 the Treasury and Fed channel created most new deposits."
     },
     {
      "type": "myth",
@@ -6353,7 +6472,7 @@
     },
     {
      "type": "insider",
-     "text": "The two kinds of money behave differently over time. Bank-loan money is temporary: when the loan is repaid, the money disappears. Deficit money tends to stay, because the government rarely pays its debt down overall. It rolls the bonds over, so the money it spent remains in circulation. That is why the old worry that governments finance themselves by creating money is basically right, even though some of the old explanations of how it happens are outdated."
+     "text": "The two kinds of money behave differently over time. Bank-loan money is temporary: when the loan is repaid, the money disappears. Deficit money can stay, because the government rarely pays its debt down overall and rolls the bonds over. So the old worry that governments finance themselves by creating money is right when banks or the Fed end up holding the bonds, as in 2020 to 2021 (about 68% to 72% of the new debt). It is wrong when savers buy the bonds with money they already had."
     },
     {
      "type": "check",
@@ -6458,7 +6577,7 @@
     {
      "type": "list",
      "items": [
-      "1971 to 2007: the banks did almost all of it. In every decade the Fed's share of the two printers was only 4% to 13%. Its bond buying in those years mostly supplied the paper cash people wanted to hold.",
+      "1971 to 2007: the banks did almost all of it. In every decade the Fed's share of the two printers was only 4% to 13%. Its bond buying in those years was about the size of the paper cash people came to hold: the Fed's bonds rose about $0.72T from 1971 to 2007, and currency in circulation was about $0.83T at the end of 2007.",
       "2008 to 2014: the first emergency. Bank loans actually fell by $481 billion in 2009, while the Fed bought bonds worth $3.44T over the period. Upstairs took about 75% of the work.",
       "2015 to 2019: the banks took over again, adding $2.43T of loans while the Fed shrank its holdings by about $449B.",
       "2020 to 2021: the biggest switch-on ever. The Fed bought $4.52T of bonds against $681B of new bank loans, about 87% upstairs. M2 jumped $6.15T in two years, the fastest rise in the record.",
@@ -6520,17 +6639,18 @@
    "num": "03",
    "level": 2,
    "title": "The world's balance sheet: what it owns, what it owes, and how countries are built",
-   "kicker": "The world owns about $520 trillion to $600 trillion and owes about $350 trillion to $365 trillion. This chapter makes those numbers fit in your head, shows why you cannot subtract one from the other, and takes apart how each big country is built.",
+   "kicker": "You may have heard that the world owes $300 trillion, or $500 trillion, or more. Each can be true, depending on what you count, and the world owes all of it to itself. This chapter shows what the world really owns, why its debts cancel but still matter, how the numbers grew, and how each big country is built.",
    "blocks": [
     {
      "type": "tldr",
      "items": [
-      "The world owns more than it owes: about $518T of household wealth (UBS) to $600T of national net worth (McKinsey), against about $348T to $365T of debt (IIF).",
-      "You cannot subtract one from the other. Every debt is somebody's asset, so at world level the debts cancel. What is left is real things, mostly land and buildings.",
-      "Most new wealth is a higher price, not a bigger pile. In 2025 only about a fifth of the rise in household wealth came from new investment.",
-      "Debt grew from about 1 year of world output in 1971 to about 2.5 years (3 counting banks' own debts). It jumps in crises: 2008 and 2020.",
+      "Which debt? On the usual meaning, loans and bonds, the world owes about $348T (end 2025) to over $365T (mid 2026, IIF, via press). Its net wealth is about $518T (UBS, households) to $600T (McKinsey, all sectors, via press). Count everything owed on paper, deposits and other claims included, and the debt side is about $1,200T (computed from McKinsey).",
+      "You cannot subtract one from the other. Every debt is somebody's asset, so at world level the debts cancel. What is left is real things, about two thirds of them real estate (McKinsey's 2021 study, Level 1).",
+      "The debts cancel for the world, not for each family. Who owes whom, in which currency, and how soon decides the danger.",
+      "In 2025 about four fifths of the rise in household wealth was higher prices and inflation, and about a fifth was new investment (McKinsey, via press).",
+      "Debt grew from about 1 year of world output in 1971 (a model estimate) to about 2.5 years (3 counting the financial sector's own debts). It jumps in crises, 2008 and 2020. After 2020 the debt ratio fell while dollar debt kept rising, except in 2022, when a strong dollar shrank it.",
       "The dollar is the ruler. Japan's debt fell by a third in dollars from 2020 to 2025 while it rose in yen. Nobody repaid anything.",
-      "Countries are built differently. The US is rich and owes the world. Japan's state owes its own people. Italy's state is in debt, its families are not. China borrowed to grow and saved at home."
+      "Countries are built differently. The US is the richest country and the largest net debtor to the world. Japan's state owes mostly its own central bank and savers (foreigners about 13%). Italian families owe little (36% of output) while their state owes 137%. China borrowed to grow and saved at home."
      ]
     },
     {
@@ -6565,9 +6685,9 @@
      "caption": "The chapter in one picture. Each box is a section, and the outlined boxes link to the chapter it builds on.",
      "rays": [
       {
-       "t": "Four measures, one table",
-       "s": "Wealth, net worth, assets, debt differ",
-       "link": "rb-13"
+       "t": "Many counters, one ladder",
+       "s": "Net wealth, loans and bonds, every claim",
+       "link": "rb-10"
       },
       {
        "t": "The great cancellation",
@@ -6576,7 +6696,7 @@
       },
       {
        "t": "Price, not pile",
-       "s": "Most new wealth is higher prices",
+       "s": "In 2025 about four fifths of the gain was price",
        "link": "rb-titled"
       },
       {
@@ -6607,6 +6727,14 @@
      ]
     },
     {
+     "type": "p",
+     "text": "This chapter comes in three parts of about ten minutes each. Each part ends with a stop box and three quick questions. Stop at any box and come back another day."
+    },
+    {
+     "type": "h",
+     "text": "Part 1 of 3. What the world owns and owes"
+    },
+    {
      "type": "h",
      "text": "The question that started this chapter"
     },
@@ -6617,71 +6745,11 @@
     },
     {
      "type": "p",
-     "text": "It is exactly the right question, and it hides a trap that catches almost everyone, so we start there. The two numbers are real numbers, but they have swapped places. On every main measure the world owns more than it owes."
-    },
-    {
-     "type": "bars",
-     "title": "One world, seven numbers: what the world owns and owes ($ trillions)",
-     "prefix": "$",
-     "suffix": "T",
-     "decimals": 0,
-     "unitLabel": "Value",
-     "rows": [
-      {
-       "label": "National net worth (McKinsey, 2025)",
-       "value": 600,
-       "note": "All sectors. Secondary source, report not opened"
-      },
-      {
-       "label": "Household net wealth (UBS, end 2025)",
-       "value": 517.7,
-       "note": "People only, 56 markets"
-      },
-      {
-       "label": "Financial assets of financial firms (FSB, end 2024)",
-       "value": 503.7,
-       "note": "A gross count of claims, not wealth"
-      },
-      {
-       "label": "Debt, all four sectors (IIF, mid 2026)",
-       "value": 365,
-       "hl": true,
-       "note": "Press reports of the September 2026 release"
-      },
-      {
-       "label": "Debt, all four sectors (IIF, end 2025)",
-       "value": 348.3,
-       "hl": true,
-       "note": "Includes banks' own debts"
-      },
-      {
-       "label": "Debt without the financial sector (BIS, end 2025)",
-       "value": 262.7,
-       "hl": true,
-       "note": "About 44 economies"
-      },
-      {
-       "label": "Debt without the financial sector (IMF, 2024)",
-       "value": 251,
-       "hl": true,
-       "note": "Public 99.2, private 151.8"
-      }
-     ],
-     "caption": "Blue bars measure what is owned, orange bars what is owed. Every measure of wealth is bigger than every measure of debt.",
-     "source": "UBS Global Wealth Report 2026, McKinsey Global Institute global balance sheet 2026 (via press), FSB Global Monitoring Report 2025, IIF Global Debt Monitor (Feb and Sep 2026), BIS total credit statistics, IMF Global Debt Database (blog, Sep 2025)."
-    },
-    {
-     "type": "p",
-     "text": "Where do the owner's numbers come from? $500 trillion is the asset side of the ledger. The financial firms of the world held $503.7 trillion of financial assets at the end of 2024 (Financial Stability Board), and people held $517.7 trillion of net wealth at the end of 2025 (UBS). $300 trillion is how world debt was reported from 2021 to 2024, when the IIF put it at $305 trillion to $320 trillion and many popular videos quoted it. Both numbers were true. They were just describing different things, from different years."
-    },
-    {
-     "type": "myth",
-     "myth": "The world owes more than it owns: about $500 trillion of debt against about $300 trillion of wealth.",
-     "reality": "The world owns about $518 trillion to $600 trillion and owes about $348 trillion to $365 trillion. And the two cannot be subtracted, because almost every debt is also someone's asset."
+     "text": "It is a sharp question, and the honest answer starts with a question back: which debt? Both numbers can be true, depending on what you count. Count loans and bonds, the usual meaning of debt, and the world owes about $348 trillion to $365 trillion, while its net wealth is about $518 trillion to $600 trillion. On that count the order in the question flips. Count everything owed on paper by every part of the world, bank deposits and other claims included, and the total is about $1,200 trillion, far above $500 trillion. So \"300T+\" is right as a floor for wealth, and \"500T+\" is too high for loans and bonds and too low for everything owed. One thing holds on every count: none of these debts can be subtracted from wealth, because the world owes all of them to itself. The words below come first, then the numbers."
     },
     {
      "type": "cards",
-     "label": "Six words to pin down first",
+     "label": "Seven words to pin down first",
      "items": [
       {
        "t": "Net wealth",
@@ -6701,13 +6769,98 @@
       },
       {
        "t": "Nonfinancial debt",
-       "d": "Debt of governments, firms and households only. Bank debt is left out, because it is mostly the others' deposits."
+       "d": "Debt of governments, firms and households only. The financial sector's own borrowing is left out, so the same lending is not counted twice: a bank borrows in order to lend to the other three."
       },
       {
        "t": "Yardstick",
        "d": "World totals are in dollars. When the dollar moves 10%, non-US numbers move about 10% with nothing real changing."
+      },
+      {
+       "t": "Net foreign position",
+       "d": "What a country owns abroad minus what it owes abroad, shares and firms included. It is not the same as foreign debt."
       }
      ]
+    },
+    {
+     "type": "bars",
+     "title": "One world, many counters: what the world owns and owes ($ trillions)",
+     "prefix": "$",
+     "suffix": "T",
+     "decimals": 0,
+     "unitLabel": "Value",
+     "rows": [
+      {
+       "label": "Everything on every balance sheet, gross (McKinsey, 2025)",
+       "value": 1800,
+       "note": "Real assets plus every claim. Via press"
+      },
+      {
+       "label": "All IOUs on paper, every sector (computed, 2025)",
+       "value": 1200,
+       "hl": true,
+       "note": "$1,800T of assets minus $600T of net worth. Deposits, bonds, loans and other claims. Not all of it is debt"
+      },
+      {
+       "label": "National net worth (McKinsey, 2025)",
+       "value": 600,
+       "note": "All sectors. Via press, report not opened"
+      },
+      {
+       "label": "Household net wealth (UBS, end 2025)",
+       "value": 517.7,
+       "note": "People only, 56 markets with over 92% of world wealth"
+      },
+      {
+       "label": "Financial assets of financial firms (FSB, end 2024)",
+       "value": 503.7,
+       "note": "A gross count of claims held by banks, funds and central banks, not wealth"
+      },
+      {
+       "label": "Debt, loans and bonds, four sectors (IIF, mid 2026)",
+       "value": 365,
+       "hl": true,
+       "note": "Press reports of the September 2026 release"
+      },
+      {
+       "label": "Debt, loans and bonds, four sectors (IIF, end 2025)",
+       "value": 348.3,
+       "hl": true,
+       "note": "Includes the financial sector's own debts"
+      },
+      {
+       "label": "Debt without the financial sector (BIS, end 2025)",
+       "value": 262.7,
+       "hl": true,
+       "note": "About 44 economies"
+      },
+      {
+       "label": "Debt without the financial sector (IMF, 2024)",
+       "value": 251,
+       "hl": true,
+       "note": "Global Debt Database"
+      }
+     ],
+     "caption": "Blue bars count what is owned, orange bars what is owed. On the usual debt measures, loans and bonds ($251T to $365T), net wealth is bigger than debt. On the widest count of everything owed on paper (about $1,200T), the order flips. Neither comparison tells you how rich the world is, because every one of these claims is owed by the world to itself.",
+     "source": "UBS Global Wealth Report 2026, McKinsey Global Institute global balance sheet 2026 (via press), Fortune on McKinsey (27 Jul 2026), FSB Global Monitoring Report 2025, IIF Global Debt Monitor (Feb and Sep 2026), BIS total credit statistics, IMF Global Debt Database (blog, Sep 2025)."
+    },
+    {
+     "type": "p",
+     "text": "Where could \"500T+\" come from? We do not know which source the question had in mind, so here are five candidates. As for \"300T+\", it is right as a floor for world wealth on every count. It is also roughly how world debt was reported from 2021 to 2024, about $300 trillion to $320 trillion (IIF), the figure many popular videos quoted."
+    },
+    {
+     "type": "list",
+     "items": [
+      "An estimate this guide's owner once made: the world's gold times ten, about $500 trillion. Level 1's \"How money is born today\" explains why a fixed times-ten multiplier does not hold.",
+      "The financial firms of the world, central banks, banks and other funds, held $503.7 trillion of financial assets at the end of 2024 (Financial Stability Board). That is a count of claims. It includes much of the world's debt seen from the lender's side, plus shares and claims on each other.",
+      "People's net wealth: $517.7 trillion at the end of 2025 (UBS). The number may simply belong on the other side of the ledger.",
+      "Everything owed on paper by every sector: about $1,200 trillion (computed from McKinsey). On that count \"500T+\" is true, more than twice over.",
+      "Derivatives: over-the-counter contracts with a notional value of $846 trillion at the end of June 2025 (BIS). Notional is the size of the thing bet on, not money owed. Their gross market value, closer to what is actually at stake, was $21.8 trillion. Never add notional derivatives to debt."
+     ]
+    },
+    {
+     "type": "callout",
+     "label": "Popular claim",
+     "text": "\"The world owes $500 trillion and is only worth $300 trillion.\" What it gets right: the world's paper claims are enormous, and on the widest count of everything owed (about $1,200 trillion) they are far bigger than $500 trillion. What it gets wrong: on the usual meaning of debt, loans and bonds, the world owes about $348 trillion to $365 trillion, while its net wealth is $518 trillion to $600 trillion. And on any count the two cannot be subtracted, because the world owes all of it to itself."
     },
     {
      "type": "table",
@@ -6720,12 +6873,12 @@
      "rows": [
       [
        "Household net wealth (UBS)",
-       "$517.7T, end 2025",
-       "People's houses, savings, shares and private pensions, minus their debts",
+       "$517.7T, end 2025 (McKinsey's household count: $570T)",
+       "People's houses, savings, shares and private pensions, minus their debts. 56 markets with over 92% of world wealth",
        "Wealth of governments and firms not owned by people, state pension promises"
       ],
       [
-       "National net worth (McKinsey)",
+       "National net worth (McKinsey, via press)",
        "$600T, 2025 (5.1 times world GDP)",
        "Real assets of every sector plus net claims",
        "Human and natural capital"
@@ -6733,30 +6886,40 @@
       [
        "Financial assets of financial firms (FSB)",
        "$503.7T, end 2024",
-       "Assets of central banks, banks and nonbanks in 29 jurisdictions",
+       "Assets of central banks, banks and nonbanks in 29 jurisdictions with over 90% of world GDP",
        "Real assets. It counts claims, which cancel against debts"
       ],
       [
-       "Debt, four sectors (IIF)",
-       "$348.3T at end 2025, over $365T by mid 2026",
+       "Debt, loans and bonds, four sectors (IIF)",
+       "$348.3T at end 2025, over $365T by mid 2026 (via press)",
        "Households $64.6T, firms $100.6T, governments $106.7T, financial sector $76.4T",
-       "Shares, derivatives, unfunded pensions"
+       "Shares, derivatives (notional $846T at mid 2025, BIS, which is not debt), unfunded pension promises"
       ],
       [
        "Nonfinancial debt (IMF, BIS)",
        "$251T (2024) to $262.7T (end 2025)",
        "Governments, firms and households",
-       "The financial sector's own debts"
+       "The financial sector's own debts, left out so lending is not counted twice"
+      ],
+      [
+       "Everything owed on paper, every sector (computed from McKinsey, via press)",
+       "about $1,200T, 2025",
+       "Nearly $1,800T of assets minus $600T of net worth: deposits, bonds, loans and other claims owed by one part of the world to another",
+       "Real assets. It is a gross count, so almost all of it cancels at world level"
       ]
      ]
     },
     {
      "type": "insider",
-     "text": "Every one of these numbers comes from a different counter with a different purpose. UBS counts people's wealth for a wealth manager's report. The IIF is a bank industry body and counts banks' own debts, so its debt figure is the biggest. The FSB counts financial firms' assets to watch for risk. When two headlines disagree, first ask which counter they used."
+     "text": "Every one of these numbers comes from a different counter with a different purpose. UBS counts people's wealth for a wealth manager's report. The IIF is a bank industry body and counts the financial sector's own debts, so its figure is the biggest of the usual debt counts. The FSB counts financial firms' assets to watch for risk. McKinsey counts every balance sheet, which is how it reaches nearly $1,800 trillion. When two headlines disagree, first ask which counter they used."
+    },
+    {
+     "type": "p",
+     "text": "Two kinds of pension sit in different places. Private pension funds are inside household wealth: the savings belong to people. Unfunded state promises, such as public pensions and health care paid from future taxes, are in none of these debt counts. They are real claims on future taxpayers, and hard-money writers often add them to debt. This chapter does not, and has no checked figure for them yet."
     },
     {
      "type": "h",
-     "text": "The great cancellation: why the world cannot be in debt"
+     "text": "The great cancellation: why the world cannot owe anyone outside itself"
     },
     {
      "type": "p",
@@ -6765,6 +6928,10 @@
     {
      "type": "callout",
      "text": "Imagine a family of four who lend each other money all year: the teenager owes the parents for a phone, a parent owes the grandmother for a car, the grandmother owes the teenager for help with the shop. At the end of the year the IOUs on the fridge add up to $50,000. Is the family $50,000 poorer? No. The IOUs are owed from one member to another. The family is worth its house, its car and its shop. The IOUs only matter if one member cannot pay another."
+    },
+    {
+     "type": "p",
+     "text": "The debts cancel for the world, not for each family. Creditors and debtors are different families, so interest flows from one group to another. In the United States, the top 10% of households took 67.5% of the rise in household net worth since the end of 2019, and the bottom half took 3.1% (Federal Reserve distributional accounts, mid 2026)."
     },
     {
      "type": "p",
@@ -6824,18 +6991,18 @@
       ],
       [
        "US households",
-       "Receive $1T of deposits, and put $0.5T into a pension fund that buys bonds",
-       "Rise $1T"
+       "Receive $1T of new deposits, then move $0.5T into a pension fund that buys bonds",
+       "Rise $1T: $0.5T in deposits and $0.5T in pension claims backed by bonds"
       ],
       [
        "Japanese investors",
-       "Buy $0.5T of bonds with dollars earned selling goods to the US",
-       "No change, they swapped dollars for bonds"
+       "Buy $0.5T of bonds with dollar deposits they already held from selling goods to the US",
+       "No change, they swapped a dollar deposit for a bond"
       ],
       [
        "The US as a nation",
-       "Now owes $0.5T more to the rest of the world",
-       "Its foreign position falls $0.5T"
+       "Owes Japan the same amount as before, in a new form: a bond instead of a deposit",
+       "No change in this deal. Its foreign position fell earlier, when the US paid for the goods"
       ],
       [
        "The world",
@@ -6846,26 +7013,50 @@
     },
     {
      "type": "p",
-     "text": "Inside the US, the government's new debt is the private sector's new asset, so \"we owe it to ourselves\" is right for that half. The foreign half is a real claim of Japan on future US income. That is why only countries, not the world, can owe outside: the US owes the rest of the world a net $26.5 trillion (end 2024), while Japan is owed a net $3.5 trillion."
+     "text": "Inside the US, the government's new debt is the private sector's new asset, so \"we owe it to ourselves\" is right for that half. The foreign half is a claim of Japan on future US income, and it was created when the US bought more from the world than it sold. That is why only countries, not the world, can owe outside. The US's net foreign position was about minus $26.5 trillion at the end of 2024 (IMF) and minus $27.5 trillion at the end of 2025 (BEA), while Japan's was about plus $3.5 trillion (end 2024). A net foreign position is not the same as foreign debt: part of the US figure is foreigners owning US shares and companies, and stock prices move it a lot (BEA)."
     },
     {
      "type": "p",
-     "text": "So what survives the cancellation? Three things. Real assets: land, houses, offices, factories, machines, roads and software, about $620 trillion in 2025 by McKinsey's count. Assets that are nobody's IOU, like gold bullion and bitcoin, which are small next to property. And the earning power of companies above what their books show. World wealth, measured in dollars, is mostly the price of real things."
+     "text": "So what survives the cancellation? Three things. Real assets: land, houses, offices, factories, machines, roads and software, worth roughly the world's $600 trillion of net worth (McKinsey, via press), about two thirds of it real estate (Level 1, \"The titled world\"). Assets that are nobody's IOU, like gold bullion and bitcoin, which are small next to property. And, in household wealth only, the market's view of companies' future earnings above what their books show, because shares are counted at market price. In national net worth that extra cancels, because a share is also a claim on the company. World wealth, measured in dollars, is mostly the price of real things."
     },
     {
      "type": "curiosity",
      "items": [
       {
        "q": "If every debt is somebody's asset, who is the world in debt to?",
-       "a": "Itself. The $348T of debt the IIF counts is matched by $348T of claims held by people, pension funds, banks and central banks. Only countries can owe outside: the US owes the rest of the world a net $26.5T, Japan is owed a net $3.5T.",
+       "a": "Itself. The $348T of debt the IIF counts is matched by $348T of claims held by people, pension funds, banks and central banks. Only countries can owe outside: the US's net foreign position was about minus $26.5T at the end of 2024, Japan's about plus $3.5T.",
        "from": "rb-07"
       },
       {
        "q": "Why is the richest country also the biggest debtor?",
-       "a": "Because lenders lend against assets and income, and because the world wants dollar assets. The US holds about 35% of world household wealth and owes about 29% of world nonfinancial debt, and its net foreign debt of $26.5T is mostly in its own currency.",
+       "a": "Because lenders lend against assets and income, and because the world wants dollar assets. The US holds about 35% of world household wealth and owes about 29% of world nonfinancial debt. Its net foreign position, about minus $26.5T at the end of 2024, is part debt and part foreign ownership of US shares and firms, and the US can owe it in its own currency.",
        "from": "rb-leader"
       }
      ]
+    },
+    {
+     "type": "callout",
+     "label": "Stop here",
+     "text": "Part 1 of 3 done. You can now say what the world owns, what it owes on each counter, and why the two cannot be subtracted. Before Part 2, try these three."
+    },
+    {
+     "type": "check",
+     "q": "Someone says world debt is $500 trillion. What is your first question, and what are the two main answers?",
+     "a": "Which debt? Loans and bonds come to about $348T to $365T. Everything owed on paper, deposits and other claims included, comes to about $1,200T."
+    },
+    {
+     "type": "check",
+     "q": "A young family buys an existing flat with a $300,000 mortgage. Is the world richer or poorer?",
+     "a": "Neither. Debt rose $300,000 and so did someone's claim. Wealth only moved."
+    },
+    {
+     "type": "check",
+     "q": "If the world's debts cancel, why can they still be dangerous?",
+     "a": "They cancel for the world, not for each family. Creditors and debtors are different people, and if one borrower cannot pay another, the chain of IOUs breaks."
+    },
+    {
+     "type": "h",
+     "text": "Part 2 of 3. How it grew, and how to hold it in your head"
     },
     {
      "type": "h",
@@ -6877,7 +7068,65 @@
     },
     {
      "type": "p",
-     "text": "How much of new wealth is new things? McKinsey's 2026 report, as summarized in the press, found that only about 20% of the rise in household wealth in 2025 came from net new investment, and about 58% came from higher valuations above inflation. The rest was inflation itself. The report was not opened for this chapter, so treat the split as approximate. The direction matches Level 1 chapter 19: the same buildings became worth more."
+     "text": "How much of new wealth is new things? McKinsey's 2026 report, as summarized in the press, found that only about 20% of the rise in household wealth in 2025 came from net new investment, and about 58% came from higher valuations above inflation. The rest was inflation itself. The report was not opened for this chapter, so treat the split as approximate. The direction matches Level 1's \"The titled world\": the same buildings became worth more."
+    },
+    {
+     "type": "p",
+     "text": "Here is every way world debt and world wealth can grow or shrink, with a size for 2025 and for a stress year."
+    },
+    {
+     "type": "table",
+     "cols": [
+      "What moves",
+      "Debt",
+      "Wealth",
+      "2025",
+      "Stress year"
+     ],
+     "rows": [
+      [
+       "New borrowing",
+       "Up",
+       "No change on the day, up if it builds something",
+       "+$28.8T in dollars, flattered by a weaker dollar (IIF, $319.5T to $348.3T)",
+       "2020: a record +$35T (IIF)"
+      ],
+      [
+       "New real investment",
+       "None or up",
+       "Up",
+       "about $8T, a fifth of the $40T household gain (McKinsey, via press)",
+       "not sized"
+      ],
+      [
+       "Higher prices of existing assets",
+       "None",
+       "Up, or down when prices fall",
+       "about $23T, 58% of the household gain (McKinsey, via press)",
+       "2022: household wealth fell 2.4%, to $454.4T (UBS and Credit Suisse, via press)"
+      ],
+      [
+       "Inflation",
+       "Up in dollars, down as a share of output",
+       "Up in dollars",
+       "The IIF ratio fell for a fifth year, to about 308%",
+       "2020 to 2024: the BIS ratio fell from 285% to 235%"
+      ],
+      [
+       "The dollar ruler",
+       "Up when the dollar falls",
+       "Up when the dollar falls",
+       "The euro rose almost 9% against the dollar (UBS)",
+       "2022: IIF debt fell about $4T as the dollar rose"
+      ],
+      [
+       "Repayment and default",
+       "Down",
+       "Moves from lender to borrower, no change for the world",
+       "not sized",
+       "not sized"
+      ]
+     ]
     },
     {
      "type": "curiosity",
@@ -6889,7 +7138,7 @@
       },
       {
        "q": "Real estate is about two thirds of world net worth. What happens to world wealth if house prices fall 20%?",
-       "a": "Measured wealth falls by roughly 13% of net worth (two thirds times 20%). No house is lost and no debt is repaid. Debt stays at face value, so everyone's debt looks bigger next to what they own.",
+       "a": "Measured wealth falls by roughly 13% of net worth (two thirds times 20%, a model using McKinsey's 2021 finding that real estate is about two thirds of net worth). No house is lost and no debt is repaid. Debt stays at face value, so everyone's debt looks bigger next to what they own.",
        "from": "rb-titled"
       }
      ]
@@ -6933,7 +7182,11 @@
     },
     {
      "type": "p",
-     "text": "Japan's debt rose 3% in yen and fell 32% in dollars, because the yen fell from about 103 to about 157 per dollar. Its debt also fell as a share of its economy, because inflation returned and lifted nominal output. Nobody repaid anything. The same ruler worked the other way in 2025: the euro rose almost 9% against the dollar, which is part of why European wealth grew 17.5% in dollars that year (UBS)."
+     "text": "Japan's debt rose 3% in yen and fell 32% in dollars, because the yen fell from about 103 to about 157 per dollar. Its debt also fell as a share of its economy, because inflation returned and lifted nominal output. Nobody repaid anything. The same ruler worked the other way in 2025: the euro rose almost 9% against the dollar, which is part of why wealth in Europe, the Middle East and Africa grew about 17.5% in dollars that year (UBS)."
+    },
+    {
+     "type": "p",
+     "text": "In 2022 the ruler worked the other way for the whole world. The dollar rose, and world debt measured in dollars fell about $4 trillion, to just under $300 trillion, the IIF's first annual fall since 2015. World household wealth fell too, about 2.4% to $454.4 trillion on the UBS and Credit Suisse count (via press), as higher interest rates cut asset prices. Nobody repaid anything."
     },
     {
      "type": "curiosity",
@@ -6941,6 +7194,11 @@
       {
        "q": "Japan's debt fell by a third in dollars from 2020 to 2025. Did Japan repay?",
        "a": "No. In yen it rose 3% (2,273 to 2,340 trillion yen, BIS). The yen fell against the dollar, so the ruler shrank the number.",
+       "from": "rb-10"
+      },
+      {
+       "q": "World wealth rose 10.8% in dollars in 2025. Measured in ounces of gold, did it rise or fall?",
+       "a": "It fell, by about a third. Gold rose about 66% in 2025 (press), so 1.108 divided by 1.66 is about 0.67 (a model). Neither ruler is the right one alone. Check big claims with more than one ruler.",
        "from": "rb-10"
       }
      ]
@@ -7025,7 +7283,7 @@
       "2020": "Covid: a record jump in debt",
       "2025": "debt here excludes the financial sector"
      },
-     "caption": "Debt is nonfinancial debt (governments, firms, households). 1971 and 1980 are model estimates from the IMF's finding that it sat near 100% of world output until about 1980, then BIS data from 2001. Net worth is McKinsey's national net worth (2000, 2020, 2025). Output grew about 36 times since 1971, debt about 80 times.",
+     "caption": "Debt is nonfinancial debt (governments, firms, households) in dollars. The 1971 and 1980 points are a model: world output times the IMF's finding that this debt sat near 100% of world output until about 1980, from an early sample made up mostly of rich countries. BIS data from 2001, on the BIS's own country coverage. Net worth is McKinsey's national net worth (2000, 2020, and 2025 via press). Output grew about 36 times since 1971, debt about 80 times (the 1971 debt point is a model).",
      "source": "World Bank (GDP, current dollars), BIS total credit statistics (aggregate of reporting countries), IMF Global Debt Database (model years), McKinsey Global Institute."
     },
     {
@@ -7034,64 +7292,75 @@
       "Year",
       "What was happening",
       "World debt",
-      "Debt as % of world output",
+      "Debt as % of output (BIS on its own coverage, or IIF)",
       "World wealth"
      ],
      "rows": [
       [
        "1971",
        "The dollar leaves gold",
-       "about $3T (estimate)",
-       "about 100%",
-       "about $6T to $10T (model)"
+       "about $3T (model)",
+       "about 100% (model)",
+       "no reliable series"
       ],
       [
        "1980",
        "Interest rates near 20%",
-       "about $11.5T (estimate)",
-       "about 100%",
-       "about $20T to $34T (model, a floor)"
+       "about $11.5T (model)",
+       "about 100% (model)",
+       "no reliable series"
       ],
       [
        "2000",
        "Rates falling, credit booming",
        "$60T (2001, BIS)",
-       "191%",
+       "191% (BIS)",
        "$156T (McKinsey)"
       ],
       [
        "2008",
        "The global financial crisis",
        "$119T (BIS)",
-       "202%, rising to 229% by 2010",
+       "202%, rising to 229% by 2010 (BIS)",
        "a fall of about $21T in 2007 to 2008 (press)"
       ],
       [
        "2020",
        "Covid",
        "$222T (BIS). A record $35T added in one year (IIF, four sectors)",
-       "285%",
+       "285% (BIS)",
        "$514T (McKinsey)"
+      ],
+      [
+       "2022",
+       "Inflation and a strong dollar",
+       "just under $300T (IIF, four sectors), after a fall of about $4T, the first since 2015",
+       "fell (IIF)",
+       "household wealth fell 2.4%, to $454.4T (UBS and Credit Suisse, via press)"
       ],
       [
        "2025",
        "Weak dollar, fiscal push, AI borrowing",
        "$263T (BIS) or $348T with the financial sector (IIF)",
        "246% (BIS) or about 308% (IIF)",
-       "$518T (UBS, people) to $600T (McKinsey, all)"
+       "$518T (UBS, people) to $600T (McKinsey, all, via press)"
       ],
       [
        "Mid 2026",
        "Health, energy, AI and defense spending",
-       "over $365T (IIF, press)",
-       "about 305% to 310%",
+       "over $365T (IIF, via press)",
+       "about 305% in Q1 2026 (IIF)",
        "no estimate yet"
       ]
      ]
     },
     {
      "type": "p",
-     "text": "Three things stand out. Debt grew faster than output in almost every period since 1971, from about one year of world output to about two and a half. It grew in jumps, in 2008 to 2010 and above all in 2020, when a record $35 trillion was added in one year. And from 2021 to 2025 the ratio fell five years in a row while the dollar amount set a new record every year. Inflation, not repayment, did that."
+     "text": "Three things stand out. Debt grew faster than output in almost every period since 1971, from about one year of world output (a model) to about two and a half. It grew in jumps, in 2008 to 2010 and above all in 2020, when a record $35 trillion was added in one year (IIF). And after 2020 the world ratio fell for years while the dollar amount kept climbing, apart from 2022, when it fell about $4 trillion as a strong dollar shrank everything counted outside the US. Inflation and the ruler did that, not repayment. The fall did not last in dollars: debt rose about $46 trillion from the end of 2024 to mid 2026 ($319.5 trillion to over $365 trillion, IIF), and the BIS ratio rose again in 2025."
+    },
+    {
+     "type": "p",
+     "text": "This was not the first time. After the Second World War the US and the UK shrank their government debt as a share of output without repaying it, by growing and by keeping interest rates below inflation (Level 1's \"The seasons of money\", citing Reinhart and Sbrancia, 2011). The years after 2020 were a short replay."
     },
     {
      "type": "insider",
@@ -7101,8 +7370,8 @@
      "type": "curiosity",
      "items": [
       {
-       "q": "Debt to GDP fell for five years while debt hit a record every year. How can both be true?",
-       "a": "Inflation raised nominal output faster than debt. On the BIS measure world nonfinancial debt went from $222T (285% of output) in 2020 to $237T (235%) in 2024. Nobody paid it down.",
+       "q": "The world debt ratio fell for years after 2020 while dollar debt kept climbing. How can both be true, and what happened in 2022?",
+       "a": "Inflation raised nominal output faster than debt. On the BIS measure world nonfinancial debt went from $222T (285% of output) in 2020 to $237T (235%) in 2024. Nobody paid it down. In 2022 dollar debt even fell, by about $4T on the IIF count, because a strong dollar shrank everything measured in dollars outside the US.",
        "from": "rb-08"
       },
       {
@@ -7114,11 +7383,155 @@
     },
     {
      "type": "h",
+     "text": "Make the numbers brain-sized"
+    },
+    {
+     "type": "p",
+     "text": "A trillion is too big to picture, so shrink it. One trillion seconds is about 31,700 years. Counting the IIF's $348 trillion at a dollar a second would take about 11 million years. Here are three better ways to hold the world in your head."
+    },
+    {
+     "type": "bars",
+     "title": "If the world were 100 adults: share of all wealth held by each group",
+     "suffix": "%",
+     "decimals": 1,
+     "unitLabel": "Share of wealth",
+     "rows": [
+      {
+       "label": "42 adults with under $10k",
+       "value": 0.6
+      },
+      {
+       "label": "41 adults with $10k to $100k",
+       "value": 12.2
+      },
+      {
+       "label": "15 adults with $100k to $1m",
+       "value": 38.8
+      },
+      {
+       "label": "1.5 adults with over $1m",
+       "value": 48.4,
+       "hl": true
+      }
+     ],
+     "source": "UBS Global Wealth Report 2026 wealth pyramid, end 2025.",
+     "caption": "UBS sample of about 3.85 billion adults in 56 markets, grouped by wealth per adult, end 2025."
+    },
+    {
+     "type": "p",
+     "text": "Of every 100 adults in UBS's sample, 42 own under $10,000 and together hold 0.6% of all wealth. The one or two millionaires hold almost half. Averages hide this: counting every adult on Earth (World Bank), wealth per adult is about $93,000, yet 42 of every 100 adults own less than $10,000."
+    },
+    {
+     "type": "table",
+     "cols": [
+      "If the world were one household earning $100,000 a year",
+      "Amount"
+     ],
+     "rows": [
+      [
+       "Income each year (world output)",
+       "$100,000"
+      ],
+      [
+       "What the family members own, net (household wealth)",
+       "$437,400"
+      ],
+      [
+       "What the whole household is worth, with the family business and the town hall (national net worth)",
+       "$507,000"
+      ],
+      [
+       "IOUs written inside the household (all four sectors)",
+       "$294,300"
+      ],
+      [
+       "of which the town hall (government) owes",
+       "$90,200"
+      ],
+      [
+       "of which the family business (companies) owes",
+       "$85,000"
+      ],
+      [
+       "of which the family bank (financial sector) owes",
+       "$64,600"
+      ],
+      [
+       "of which family members (households) owe",
+       "$54,600"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "In household terms, the $294,300 of IOUs are owed from one member of the household to another. The household as a whole owes nobody outside. Its true worth is the house, the land, the tools and the business, about five years of income. The danger is not the size of the IOU pile. The danger is that one member cannot pay another and the chain of IOUs breaks."
+    },
+    {
+     "type": "table",
+     "cols": [
+      "Split across 8.2 billion people",
+      "Each"
+     ],
+     "rows": [
+      [
+       "Household wealth per person",
+       "$63,000"
+      ],
+      [
+       "Household wealth per adult (all 5.6 billion adults)",
+       "$93,000"
+      ],
+      [
+       "Debt per person, all four sectors",
+       "$42,000"
+      ],
+      [
+       "Output per person per year",
+       "$14,400"
+      ]
+     ]
+    },
+    {
+     "type": "curiosity",
+     "items": [
+      {
+       "q": "Split world wealth and debt across 8.2 billion people. What does each own and owe, and why is that misleading?",
+       "a": "About $63,000 of household wealth and $42,000 of debt each. But 42 of every 100 adults own under $10,000, and the debt is owed between governments, firms, banks and households, not by each person.",
+       "from": "rb-13"
+      }
+     ]
+    },
+    {
+     "type": "callout",
+     "label": "Stop here",
+     "text": "Part 2 of 3 done. You can now explain how world debt and wealth grew, why the dollar resizes them, and how to picture them. Before Part 3, try these three."
+    },
+    {
+     "type": "check",
+     "q": "Japan's debt fell 32% in dollars from 2020 to 2025. Did Japan repay?",
+     "a": "No. In yen it rose 3%. The yen fell against the dollar, so the ruler shrank the number."
+    },
+    {
+     "type": "check",
+     "q": "World household wealth rose in 2025. Was most of the rise new houses and machines?",
+     "a": "No. About a fifth was new investment. Most of the rest was higher prices and inflation (McKinsey, via press)."
+    },
+    {
+     "type": "check",
+     "q": "If the world were 100 adults, how many would own under $10,000, and what share of all wealth would they hold together?",
+     "a": "42 adults, holding 0.6% of all wealth."
+    },
+    {
+     "type": "h",
+     "text": "Part 3 of 3. How countries are built, and what would change the picture"
+    },
+    {
+     "type": "h",
      "text": "Who contributes the numbers: G7, G10 and the giant left out"
     },
     {
      "type": "p",
-     "text": "The owner asked about the G7 or the G10. The G7 is the US, Japan, Germany, the UK, France, Italy and Canada. The G10 is, confusingly, eleven countries: the G7 plus Belgium, the Netherlands, Sweden and Switzerland. Neither includes China, which now holds about 16% to 18.5% of the world's household wealth and about 22% of its nonfinancial debt. So China and India are added here."
+     "text": "The owner asked about the G7 or the G10. The G7 is the US, Japan, Germany, the UK, France, Italy and Canada. The G10 is, confusingly, eleven countries: the G7 plus Belgium, the Netherlands, Sweden and Switzerland. Neither includes China, which now holds about 16% of the world's household wealth (18.5% counting Hong Kong and Taiwan) and about 22% of its nonfinancial debt. So China and India are added here."
     },
     {
      "type": "pairbars",
@@ -7214,7 +7627,7 @@
        ]
       }
      ],
-     "caption": "Debt here is nonfinancial debt. Country wealth is derived from UBS wealth per adult times adults, and China's and India's use end-2022 wealth figures, so treat them as rough.",
+     "caption": "Debt here is nonfinancial debt. Each country's debt is BIS (Q4 2025) and the world total it is divided by is the IIF's $271.9T, so the shares are approximate. Country wealth is derived from UBS wealth per adult times adults, and China's and India's use end-2022 wealth figures, so treat them as rough.",
      "source": "UBS Global Wealth Report 2026 and Databook 2023, BIS total credit statistics (Q4 2025), World Bank (2025)."
     },
     {
@@ -7230,9 +7643,9 @@
       [
        "G7 (US, Japan, Germany, UK, France, Italy, Canada)",
        "56%",
-       "52%",
+       "51%",
        "44%",
-       "10%"
+       "9.6%"
       ],
       [
        "G10 (really 11: the G7 plus Belgium, Netherlands, Sweden, Switzerland)",
@@ -7252,7 +7665,7 @@
     },
     {
      "type": "p",
-     "text": "Read the chart in pairs. The rich are also the big borrowers: the G7 holds about 56% of world household wealth and owes about 52% of world nonfinancial debt, with under 10% of the world's people. Lenders lend against assets and income, so debt follows wealth. The US has a bigger share of world wealth (35%) than of world debt (29%) or output (26%). China's share of debt (22%) is above its share of wealth and output: it grew on borrowing more than on rising asset prices. India has 18% of the world's people and about 3% of everything else, and its low debt mostly reflects a small formal financial system."
+     "text": "Read the chart in pairs. The rich are also the big borrowers: the G7 holds about 56% of world household wealth and owes about 51% of world nonfinancial debt, with under 10% of the world's people. Lenders lend against assets and income, so debt follows wealth. The US has a bigger share of world wealth (35%) than of world debt (29%) or output (26%). China's share of debt (22%) is above its shares of wealth and output on these mixed-year figures. McKinsey says China's balance sheet grew through debt more than through rising asset values (via press), though its property boom was also a price story. India has 18% of the world's people and about 3% of everything else, and its low debt partly reflects a small formal financial system."
     },
     {
      "type": "h",
@@ -7274,15 +7687,15 @@
        "116%",
        "68%",
        "72%",
-       "Fed 14%, foreigners 29%",
-       "-$26.5T (-91% of GDP)"
+       "Fed 14%, foreigners 29% (of debt held by the public)",
+       "-$26.5T (-91% of GDP), end 2024"
       ],
       [
        "Japan",
        "193%",
        "61%",
        "113%",
-       "Bank of Japan 43%, foreigners 13%",
+       "Bank of Japan 43%, foreigners 13% (end 2025)",
        "+$3.5T (+83%)"
       ],
       [
@@ -7326,6 +7739,30 @@
        "+$1.3T (+59%)"
       ],
       [
+       "Belgium",
+       "108%",
+       "57%",
+       "118%",
+       "National Bank of Belgium 15%, outside Belgium 63%",
+       "+$0.38T (+57%)"
+      ],
+      [
+       "Netherlands",
+       "45%",
+       "94%",
+       "169%",
+       "De Nederlandsche Bank 21%, outside the Netherlands 49%",
+       "+$0.72T (+60%)"
+      ],
+      [
+       "Sweden",
+       "35%",
+       "82%",
+       "147%",
+       "Riksbank 4%, foreigners 23%",
+       "+$0.39T (+65%)"
+      ],
+      [
        "Switzerland",
        "25%",
        "123%",
@@ -7338,7 +7775,7 @@
        "99%",
        "58%",
        "143%",
-       "mostly Chinese banks",
+       "not confirmed",
        "+$3.3T (+18%)"
       ],
       [
@@ -7346,20 +7783,29 @@
        "65%",
        "70%",
        "89%",
-       "foreigners about 20%",
+       "foreigners about 20% of MGS (July 2026)",
        "about zero"
       ]
      ]
     },
     {
+     "type": "p",
+     "text": "Notes: debt ratios are BIS, Q4 2025. Shares of government debt are 2025 (Eurostat for the euro members and Sweden, where \"outside\" includes other euro area investors and the ECB). Net foreign positions are end 2024 (IMF). What households own differs too: financial assets are 79% of gross household wealth in the US but 44% in Germany, where homes weigh more (UBS)."
+    },
+    {
      "type": "callout",
      "label": "The US and Japan",
-     "text": "The US is the richest country and the largest net debtor to the rest of the world, about minus $26.5T. It can borrow abroad in its own currency because the world wants dollars. Japan's government owes about twice its output, yet Japan as a nation is owed $3.5T by the world. The Bank of Japan holds about 43% of the government's debt and foreigners only about 13%, so Japan's debt is mostly owed from one Japanese pocket to another, in yen. The risk shows up as a weak yen, not as foreign creditors walking away."
+     "text": "The US is the richest country and the largest net debtor to the rest of the world, about minus $26.5T at the end of 2024. It can borrow abroad in its own currency because the world wants dollars. The bigger currency risk in world debt sits outside the US: about $14T of dollar credit owed by borrowers abroad at the end of September 2025 (BIS), which gets heavier for them when the dollar rises. Japan's government owes about twice its output, yet Japan as a nation is owed $3.5T by the world. The Bank of Japan held about 43% of the government's bills and bonds at the end of 2025 (41% by June 2026) and foreigners about 13%, so Japan's debt is mostly owed from one Japanese pocket to another, in yen. Its government debt is 193% of output on the BIS basis, about 207% gross on the IMF's, and about 136% net of the government's own financial assets (IMF). Each figure is right on its own basis. The risk shows up as a weak yen, not as foreign creditors walking away."
     },
     {
      "type": "callout",
      "label": "Germany and Italy",
-     "text": "One currency, opposite structures. Germany's state owes 63% of output, Italy's 137%. Yet the typical Italian adult is richer than the typical German one: median wealth $131,001 against $53,485 (UBS). Italian families owe little and mostly own their homes, while Germany has one of the lowest home-ownership rates in Europe. Italy's state is the debtor, its families are not. Because neither country prints its own currency, Italy pays a risk premium a country with its own central bank would not."
+     "text": "One currency, opposite structures. Germany's state owes 63% of output, Italy's 137%. Yet the typical Italian adult is richer than the typical German one: median wealth $131,001 against $53,485 (UBS, modelled). Italian families owe little, 36% of output against 48% in Germany. The usual explanation is home ownership, which is more common in Italy, though this chapter has not checked the figures. Italy's state is the debtor, its families much less so. Neither country prints its own currency, so investors can charge either one a risk premium when they worry. Countries with their own central bank pay such premia too, as Britain found in 2022."
+    },
+    {
+     "type": "callout",
+     "label": "France",
+     "text": "Same euro, a different worry. The French state owes about 116% of output, less than Italy's 137% (BIS), and French companies carry the heaviest debt in this table, 155% of output. Investors outside France, including other euro area investors and the ECB, hold about 54% of French government debt (Eurostat), and France owes the world a net $0.7T (end 2024). Yet in early October 2026 investors charged France more than Italy to borrow for ten years: about 1.4 points over Germany for France, against about 1.2 for Italy (press). They were reacting to France's deficit and politics more than to the size of its debt. A debt ratio is where the analysis starts, not where it ends."
     },
     {
      "type": "callout",
@@ -7369,7 +7815,7 @@
     {
      "type": "callout",
      "label": "Switzerland",
-     "text": "A tiny state and heavy private balance sheets. The Swiss government owes only 25% of output, Swiss households 123%, the highest in the table, mostly mortgages that owners keep rather than repay. Yet Swiss adults are the richest on Earth on average ($910,382) and the country owns far more abroad than it owes. High gross debt, very high net wealth: proof that gross debt alone says little."
+     "text": "A tiny state and heavy private balance sheets. The Swiss government owes only 25% of output, Swiss households 123%, the highest in the table, much of it mortgages that owners often keep rather than repay. Yet Swiss adults are the richest on Earth on average ($910,382) and the country owns far more abroad than it owes. High gross debt, very high net wealth: proof that gross debt alone says little."
     },
     {
      "type": "callout",
@@ -7379,19 +7825,19 @@
     {
      "type": "callout",
      "label": "Malaysia",
-     "text": "A smaller currency with a foreign window. Malaysia's nonfinancial debt is about 224% of output: government 65%, households 70% (high for an emerging market, mostly mortgages and car loans), companies 89%. It owes the world about as much as it owns abroad. Foreigners hold about a fifth of government bonds, enough that a jump in US yields can pull money out and push the ringgit down, as Level 1 chapter 12 described."
+     "text": "A smaller currency with a foreign window. Malaysia's nonfinancial debt is about 224% of output: government 65%, households 70% (high for an emerging market, including mortgages and car loans), companies 89%. It owes the world about as much as it owns abroad. Foreigners hold about a fifth of Malaysian Government Securities (20.1% in July 2026), enough that a jump in US yields can pull money out and push the ringgit down, as Level 1's \"The view from a smaller currency\" described."
     },
     {
      "type": "curiosity",
      "items": [
       {
        "q": "Japan's government owes about twice its GDP. Why is it not treated like Greece was?",
-       "a": "Its debt is in yen, the Bank of Japan holds about 43% of it, foreigners only about 13%, and Japan as a whole is owed $3.5T by the world. Greece borrowed in a currency it could not print, much of it from foreigners.",
+       "a": "Its debt is in yen, the Bank of Japan held about 43% of it at the end of 2025, foreigners only about 13%, and Japan as a whole is owed $3.5T by the world. Greece borrowed in a currency it could not print, much of it from foreigners.",
        "from": "rb-em"
       },
       {
-       "q": "Germany and Italy share the euro. Why do Italian families look richer than German ones?",
-       "a": "The median Italian adult has $131,001, the German $53,485 (UBS). Italian households owe little and mostly own their homes. Italy's state is the debtor (137% of output), Germany's is not (63%).",
+       "q": "Germany, Italy and France share the euro. Why did France, with less government debt than Italy, pay more to borrow in October 2026?",
+       "a": "Investors price the risk that worries them now, not only the size of the debt. France's deficit and politics worried them more than Italy's higher debt: about 1.4 points over Germany for France against about 1.2 for Italy (press, early October 2026). None of the three can print euros.",
        "from": "rb-09"
       },
       {
@@ -7401,128 +7847,76 @@
       },
       {
        "q": "China is not in the G7 or the G10. Why does that change the picture?",
-       "a": "China holds about 16% to 18.5% of world household wealth and 22% of world nonfinancial debt, and it added more than $4.8T of the roughly $10T rise in world debt in the first half of 2026 (IIF, press). Leave it out and you miss the biggest change in the world balance sheet since 2008.",
-       "from": "rb-11"
+       "a": "China holds about 16% of world household wealth (18.5% counting Hong Kong and Taiwan) and 22% of world nonfinancial debt, and it added more than $4.8T of the roughly $10T rise in world debt in the first half of 2026 (IIF, via press). Leave it out and you miss nearly half of the rise in world debt in 2026 so far.",
+       "from": "rb-leader"
       }
      ]
     },
     {
      "type": "h",
-     "text": "Make the numbers brain-sized"
+     "text": "What would change the picture"
     },
     {
      "type": "p",
-     "text": "A trillion is too big to picture, so shrink it. One trillion seconds is about 31,700 years. Counting the IIF's $348 trillion at a dollar a second would take about 11 million years. Here are three better ways to hold the world in your head."
-    },
-    {
-     "type": "bars",
-     "title": "If the world were 100 adults: share of all wealth held by each group",
-     "suffix": "%",
-     "decimals": 1,
-     "unitLabel": "Share of wealth",
-     "rows": [
-      {
-       "label": "42 adults with under $10k",
-       "value": 0.6
-      },
-      {
-       "label": "41 adults with $10k to $100k",
-       "value": 12.2
-      },
-      {
-       "label": "15 adults with $100k to $1m",
-       "value": 38.8
-      },
-      {
-       "label": "1.5 adults with over $1m",
-       "value": 48.4,
-       "hl": true
-      }
-     ],
-     "source": "UBS Global Wealth Report 2026 wealth pyramid, end 2025."
-    },
-    {
-     "type": "p",
-     "text": "Of every 100 adults on Earth, 42 own under $10,000 and together hold 0.6% of all wealth. The one or two millionaires hold almost half. Averages hide this: wealth per adult is about $93,000, yet most adults own a small fraction of that."
+     "text": "These are the signs to watch. Each one would change a number or a story in this chapter, and each has a date or a source."
     },
     {
      "type": "table",
      "cols": [
-      "If the world were one household earning $100,000 a year",
-      "Amount"
+      "Watch",
+      "What it would change",
+      "When",
+      "Source"
      ],
      "rows": [
       [
-       "Income each year (world output)",
-       "$100,000"
+       "House prices fall 20%",
+       "Measured world net worth falls by roughly 13% (a model: real estate is about two thirds of it). Debt stays at face value, so it looks bigger",
+       "Any year",
+       "McKinsey, Level 1 \"The titled world\""
       ],
       [
-       "What the family members own, net (household wealth)",
-       "$437,400"
+       "The dollar moves 10% either way",
+       "Every world total moves about 6% to 7% in dollars with nothing real changing (a model)",
+       "Check on 30 June 2027",
+       "Fed broad dollar index"
       ],
       [
-       "What the whole household is worth, with the family business and the town hall (national net worth)",
-       "$507,000"
+       "World debt above $375T, or the debt ratio rising for the first time since 2020",
+       "Ends the \"ratio falling\" story",
+       "IIF release with Q3 2026 data, mid November 2026 to February 2027",
+       "IIF"
       ],
       [
-       "IOUs written inside the household (all four sectors)",
-       "$294,300"
+       "BIS world debt ratio above 250%",
+       "Confirms the 2025 rise was not a one-year quirk",
+       "BIS release with Q2 2026 data, early December 2026",
+       "BIS"
       ],
       [
-       "of which the town hall (government) owes",
-       "$90,200"
+       "France's 10-year spread over Germany well above its early October 2026 level of about 1.4 points",
+       "A sovereign scare inside a currency union, where no member can print its way out",
+       "Weekly",
+       "Market data, press"
       ],
       [
-       "of which the family business (companies) owes",
-       "$85,000"
+       "Private credit growing much faster than output for several years",
+       "The warning sign post-Keynesian economists watch, measured by the BIS credit-to-GDP gap (country values not yet checked)",
+       "Quarterly",
+       "BIS"
       ],
       [
-       "of which the family bank (financial sector) owes",
-       "$64,600"
+       "Inflation staying high, or falling back",
+       "High inflation keeps shrinking debt ratios at savers' expense. A fall back would stop the ratio falling",
+       "Monthly",
+       "National statistics"
       ],
       [
-       "of which family members (households) owe",
-       "$54,600"
+       "World household wealth below $500T for end 2026",
+       "Prices, not piles, went into reverse",
+       "UBS report, about 30 June 2027",
+       "UBS"
       ]
-     ]
-    },
-    {
-     "type": "p",
-     "text": "In household terms, the $294,300 of IOUs are owed from one member of the household to another. The household as a whole owes nobody outside. Its true worth is the house, the land, the tools and the business, about five years of income. The danger is not that the household owes more than it owns. It does not. The danger is that one member cannot pay another and the chain of IOUs breaks."
-    },
-    {
-     "type": "table",
-     "cols": [
-      "Split across 8.2 billion people",
-      "Each"
-     ],
-     "rows": [
-      [
-       "Household wealth per person",
-       "$63,000"
-      ],
-      [
-       "Household wealth per adult",
-       "$93,000"
-      ],
-      [
-       "Debt per person, all four sectors",
-       "$42,000"
-      ],
-      [
-       "Output per person per year",
-       "$14,400"
-      ]
-     ]
-    },
-    {
-     "type": "curiosity",
-     "items": [
-      {
-       "q": "Split world wealth and debt across 8.2 billion people. What does each own and owe, and why is that misleading?",
-       "a": "About $63,000 of household wealth and $42,000 of debt each. But 42 of every 100 adults own under $10,000, and the debt is owed between governments, firms, banks and households, not by each person.",
-       "from": "rb-13"
-      }
      ]
     },
     {
@@ -7542,7 +7936,7 @@
       ],
       [
        "Global debt is $300 trillion",
-       "Right for 2022 to 2024. Now $348T (end 2025) and over $365T (mid 2026)"
+       "Right for 2021 to 2024 (about $300T to $320T, IIF). Now $348T (end 2025) and over $365T (mid 2026, via press)"
       ],
       [
        "Debt is three times the world economy",
@@ -7550,15 +7944,15 @@
       ],
       [
        "The global debt bomb is about to go off",
-       "Overstated as one bomb. The world ratio fell five years running. The risks are specific: refinancing in emerging markets, dollar debt, a few governments"
+       "Overstated as one bomb, wrong to dismiss. The IIF ratio fell five years running to 2025, but dollar debt rose about $46T from end 2024 to mid 2026 and the BIS ratio rose in 2025. The risks are specific: refinancing in emerging markets, dollar debt owed abroad, a few governments"
       ],
       [
        "Debt is bigger than wealth",
-       "Wrong. Wealth is 1.5 to 1.7 times debt, and the two should not be subtracted"
+       "Depends on the counter. On loans and bonds, wealth is 1.4 to 1.7 times debt (517.7 / 365 to 600 / 348.3). On everything owed on paper, about $1,200T, the reverse. Neither comparison should be a subtraction"
       ],
       [
        "We owe it to ourselves",
-       "True for the world and for debt held at home. False for debt in a foreign currency and for net debtor nations"
+       "True for the world in total and for debt held at home. Not true between families, and false for debt in a foreign currency and for net debtor nations"
       ]
      ]
     },
@@ -7583,12 +7977,12 @@
       [
        "Austrian and hard money",
        "Unanchored money let debt outgrow output since 1971. Cheap credit inflates asset prices, so part of measured wealth is a bubble",
-       "Treat the five-year fall in the ratio as quiet default through inflation"
+       "Treat the fall in the debt ratio after 2020 as quiet default through inflation"
       ],
       [
-       "Mainstream and historians (Reinhart and Rogoff)",
-       "Debt moves wealth around rather than destroying it",
-       "Crises cluster where debt is owed abroad and in a foreign currency"
+       "Historians (Reinhart and Rogoff, This Time Is Different, 2009)",
+       "Crises cluster after rapid debt build-ups, above all debt owed abroad in a foreign currency",
+       "Watch fast debt growth and foreign-currency debt, not the world total"
       ]
      ]
     },
@@ -7598,8 +7992,8 @@
     },
     {
      "type": "check",
-     "q": "A friend says the world is $500 trillion in debt and only worth $300 trillion. What two things would you tell them?",
-     "a": "First, the numbers are swapped: the world owns about $518T to $600T and owes about $348T to $365T. Second, they cannot be subtracted, because every debt is someone's asset. At world level the debts cancel and what is left is real things."
+     "q": "A friend says the world is $500 trillion in debt and only worth $300 trillion. What would you ask first, and what two things would you tell them?",
+     "a": "Ask: which debt? Then, first: on the usual meaning, loans and bonds, the world owes about $348T to $365T and is worth $518T to $600T net, so the order flips. Only the widest count, everything owed on paper including deposits, passes $500T, at about $1,200T. Second: whichever count they mean, it cannot be subtracted from wealth, because the world owes it to itself. What matters is who owes whom, in which currency, and how soon."
     },
     {
      "type": "check",
@@ -7613,6 +8007,7 @@
     }
    ],
    "rules": [
+    "Before you compare world wealth and world debt, ask which debt: loans and bonds, or every claim on paper.",
     "Never subtract world debt from world wealth. Debts cancel at world level, so ask what real things are left.",
     "Ask who owes whom, in which currency, and how soon. That decides danger, not the size of the total.",
     "Before you believe a world total, check the counter, the year and the dollar."
