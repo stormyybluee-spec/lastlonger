@@ -1394,7 +1394,8 @@
       "The Treasury moves money between the floors. Selling bonds and collecting taxes pulls deposits up into its Fed account. Spending pushes them back down.",
       "So money is not created only by bank loans. In 2020 and 2021 the Treasury and the Fed together created most of the $5.45 trillion rise in bank deposits.",
       "The Fed is not allowed to buy new bonds straight from the Treasury. It must buy in the open market, through 25 primary dealers.",
-      "In short: banks are the everyday printer. The government and the Fed together are the emergency printer, and when both switch it on, as in 2020, it is bigger than anything the banks do."
+      "In short: banks are the everyday printer. The government and the Fed together are the emergency printer, and when both switch it on, as in 2020, it is bigger than anything the banks do.",
+      "From 1971 to 2026, bank loans grew about $13.79T and the Fed's bonds about $6.43T: two thirds downstairs, one third upstairs, with the upstairs third arriving in two bursts, 2008 to 2014 and 2020 to 2021."
      ]
     },
     {
@@ -1789,66 +1790,119 @@
     },
     {
      "type": "h",
-     "text": "What the Hidden Secrets of Money series gets right and what has changed"
+     "text": "Fifty-five years of money creation: downstairs banks versus the upstairs printer, 1971 to 2026"
     },
     {
      "type": "p",
-     "text": "Mike Maloney's ten-part series (GoldSilver, 2013 to 2018) taught millions of people that money is created by banks and the Fed, not by a mint. Its fourth episode alone has about 11 million views. It deserves credit for making the plumbing visible. Some of its mechanics were already simplified in 2013, and the rules have changed since."
+     "text": "Since the dollar left gold in 1971, how much new money came from banks lending, and how much from the Fed buying bonds upstairs? The chart below puts the two printers side by side for every year, using the Federal Reserve's own data. The gold bars are the yearly change in commercial bank loans. The blue bars are the yearly change in the bonds the Fed holds (Treasuries plus mortgage bonds). The dots are the actual change in the money supply (M2)."
+    },
+    {
+     "type": "diagram",
+     "key": "mc-history",
+     "caption": "Yearly change in commercial bank loans (gold) and in the Fed's bond holdings (blue), with the change in M2 (dots), 1971 to 2026. Bars below the line mean that printer was shrinking. 2026 runs to September for loans, 21 October for the Fed and August for M2."
     },
     {
      "type": "table",
      "cols": [
-      "The series said",
-      "Verdict",
-      "What changed or what is missing"
+      "Era",
+      "New bank loans (downstairs)",
+      "Fed bond buying (upstairs)",
+      "Upstairs share of the two",
+      "Change in M2"
      ],
      "rows": [
       [
-       "Most money is created as debt, and repaying debt destroys it",
-       "Right",
-       "Confirmed by the Bank of England in 2014"
+       "1971 to 1979",
+       "$548B",
+       "$43B",
+       "7%",
+       "$847B"
       ],
       [
-       "A credit card charge creates new money",
-       "Right",
-       "Same mechanism as any bank loan"
+       "1980 to 1989",
+       "$1.11T",
+       "$50B",
+       "4%",
+       "$1.68T"
       ],
       [
-       "The Fed creates money out of nothing when it buys bonds, and this finances deficits indirectly",
-       "Right",
-       "In 2020 to 2021 the Fed bought 59% of new Treasury debt"
+       "1990 to 1999",
+       "$1.39T",
+       "$173B",
+       "11%",
+       "$1.49T"
       ],
       [
-       "Governments debase money to pay for war and public works",
-       "Right as history",
-       "The 1913 to 1971 gold story is accurate in outline"
+       "2000 to 2007",
+       "$3.11T",
+       "$453B",
+       "13%",
+       "$2.84T"
       ],
       [
-       "Banks keep 10% of your deposit and lend out the rest, so $100 becomes $1,000",
-       "Outdated",
-       "Reserve requirements are zero since 26 March 2020. Banks lend first and reserves follow"
+       "2008 to 2014",
+       "$1.14T",
+       "$3.44T",
+       "75%",
+       "$4.24T"
       ],
       [
-       "The Fed buys bonds from the Treasury through the banks and hands over the money",
-       "Oversimplified",
-       "The Fed buys only in the open market and pays the sellers. Purchases from banks add only reserves"
+       "2015 to 2019",
+       "$2.43T",
+       "minus $449B",
+       "none (the Fed was shrinking)",
+       "$3.63T"
       ],
       [
-       "Taxes pay interest to the Fed's private owners",
-       "Wrong",
-       "Fed profits go to the Treasury. Member bank stock cannot be sold or traded"
+       "2020 to 2021",
+       "$681B",
+       "$4.52T",
+       "87%",
+       "$6.15T"
       ],
       [
-       "Hyperinflation and the end of the dollar within a few years",
-       "Did not happen",
-       "Inflation hit 9.1% in 2022, then fell. The dollar still leads"
+       "2022 to 2025",
+       "$2.60T",
+       "minus $2.00T",
+       "none (the Fed was shrinking)",
+       "$853B"
+      ],
+      [
+       "2026 to date",
+       "$784B",
+       "$201B",
+       "20%",
+       "$988B"
+      ],
+      [
+       "1971 to 2026",
+       "$13.79T",
+       "$6.43T",
+       "32%",
+       "$22.72T"
       ]
      ]
     },
     {
+     "type": "list",
+     "items": [
+      "1971 to 2007: the banks did almost all of it. In every decade the Fed's share of the two printers was only 4% to 13%. Its bond buying in those years mostly supplied the paper cash people wanted to hold.",
+      "2008 to 2014: the first emergency. Bank loans actually fell by $481 billion in 2009, while the Fed bought bonds worth $3.44T over the period. Upstairs took about 75% of the work.",
+      "2015 to 2019: the banks took over again, adding $2.43T of loans while the Fed shrank its holdings by about $449B.",
+      "2020 to 2021: the biggest switch-on ever. The Fed bought $4.52T of bonds against $681B of new bank loans, about 87% upstairs. M2 jumped $6.15T in two years, the fastest rise in the record.",
+      "2022 to 2025: the printer ran backwards. The Fed shrank its bonds by about $2.00T while banks lent $2.60T. M2 rose only $853B over four years, and fell in 2022 and 2023, the first full-year falls in the official M2 record, which starts in 1959.",
+      "2026 so far: both printers are adding again, banks about $784B and the Fed about $201B.",
+      "The whole period: banks added about $13.79T of loans and the Fed about $6.43T of bonds. Roughly two thirds downstairs and one third upstairs, but the upstairs third came in two short bursts. M2 grew from about $0.63 trillion at the end of 1970 to about $23.3 trillion in August 2026, roughly 37 times."
+     ]
+    },
+    {
+     "type": "insider",
+     "text": "How to read the bars fairly. They are the two main engines, not a complete accounting, so they do not add up exactly to the change in M2. Banks also create deposits by buying Treasuries themselves (about $1.9 trillion over the period), the Treasury's cash balance at the Fed swings up and down, and people move money in and out of cash. The blue bar is also the upper limit of upstairs money reaching the public, because Fed buying adds spendable deposits only when the seller is not a bank. Bank loans here are commercial banks only."
+    },
+    {
      "type": "check",
-     "q": "Which part of the series' Episode 4 story would you keep, and which would you redraw?",
-     "a": "Keep: banks create deposits by lending, repayment destroys them, and Fed bond buying finances deficits indirectly. Redraw: no fixed 10% multiplier, the Fed buys only in the open market, the seller decides whether deposits appear, and Fed profits flow to the Treasury, not to private owners."
+     "q": "Looking at the chart, in which two periods did the upstairs printer do most of the work, and what happened to the money supply right after the second one?",
+     "a": "2008 to 2014 and 2020 to 2021. After 2021 the Fed shrank its bonds by about $2 trillion, and M2 fell in 2022 and 2023 for the first time in the official record."
     }
    ],
    "rules": [
