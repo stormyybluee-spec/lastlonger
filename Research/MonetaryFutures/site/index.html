@@ -542,10 +542,18 @@ header.mast.lands .eyebrow, header.mast.rules .eyebrow { justify-self: center; }
 .subnav a { flex: none; display: inline-flex; align-items: baseline; gap: 8px; font: 600 13px/1 var(--f-display); font-stretch: 80%; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); text-decoration: none; padding: 8px 12px; border-radius: 2px; }
 .subnav a span { font: 400 11.5px var(--f-data); letter-spacing: .02em; text-transform: none; color: var(--muted); }
 .subnav a[aria-current="page"] { color: var(--ink); box-shadow: inset 0 -2px 0 var(--thread); }
+.tabdrop { position: relative; display: inline-flex; }
+.tabs a .caret { display: inline-block; width: 0; height: 0; margin-left: 6px; vertical-align: 2px; border-left: 4px solid transparent; border-right: 4px solid transparent; border-top: 5px solid currentColor; transition: transform .2s ease; }
+.tabs a[aria-expanded="true"] .caret { transform: rotate(180deg); }
+.dropmenu { position: absolute; top: calc(100% + 6px); right: 0; z-index: 20; min-width: 250px; display: grid; gap: 2px; padding: 6px; background: var(--sheet); border: 1px solid var(--ink); box-shadow: 0 10px 30px rgba(0, 0, 0, .16); }
+.dropmenu[hidden] { display: none; }
+.tabs .dropmenu a { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: baseline; gap: 2px 12px; padding: 10px 12px; border-radius: 2px; text-transform: none; letter-spacing: 0; font: 400 13px/1.35 var(--f-body); color: var(--ink); background: transparent; }
+.tabs .dropmenu a b { font: 700 13px/1 var(--f-data); letter-spacing: .08em; text-transform: uppercase; }
+.tabs .dropmenu a span { color: var(--muted); }
+.tabs .dropmenu a:hover, .tabs .dropmenu a:focus-visible { background: var(--paper); }
+.tabs .dropmenu a[aria-current="true"] { box-shadow: inset 3px 0 0 var(--thread); background: var(--paper); }
 .lvswitch { display: grid; gap: 4px; margin-bottom: 10px; }
 .bookindex .lvswitch a { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: baseline; gap: 8px; padding: 8px 10px; border: 1px solid var(--rule); background: var(--sheet); color: var(--muted); }
-#view-rulebook .bookindex { top: 112px; max-height: calc(100vh - 128px); }
-#ruleBook .chap { scroll-margin-top: 118px; }
 .bookindex .lvswitch a b { font: 700 12px/1.2 var(--f-display); font-stretch: 85%; letter-spacing: .06em; text-transform: uppercase; color: var(--ink); }
 #ruleIndex .lvswitch a span { filter: none; opacity: 1; font-size: 11px; line-height: 1.3; }
 .lvswitch a i { font: normal 500 11px var(--f-data); color: var(--thread); }
@@ -580,7 +588,7 @@ figcaption.ctitle { font: 700 15px/1.3 var(--f-display); font-stretch: 85%; text
 .blk-curio details p { font-size: 15.5px; margin-top: 6px; padding-left: 36px; }
 .blk-curio details p.from { font: 500 12px/1.5 var(--f-data); color: var(--muted); }
 .blk-curio details p.from a { color: var(--accent); }
-@media (max-width: 900px) { .lvswitch { display: none; } .chap .chead.lv .num { grid-row: auto; } #view-rulebook .bookindex { top: 117px; } #ruleBook .chap { scroll-margin-top: 170px; } }
+@media (max-width: 900px) { .lvswitch { display: none; } .chap .chead.lv .num { grid-row: auto; } }
 #ruleIndex a span { filter: blur(4.5px); opacity: .7; transition: filter .35s ease, opacity .35s ease; }
 #ruleIndex a.on span, #ruleIndex a:focus-visible span { filter: none; opacity: 1; }
 @media (prefers-reduced-motion: reduce) { #ruleIndex a span { transition: none; } }
@@ -600,7 +608,7 @@ figcaption.ctitle { font: 700 15px/1.3 var(--f-display); font-stretch: 85%; text
     <a class="brand" href="#desk">Monetary Futures Desk</a>
     <nav class="tabs" aria-label="Pages">
       <a href="#desk" data-view="desk" data-also="landscape">Intelligence</a>
-      <a href="#rulebook" data-view="rulebook">Rulebook</a>
+      <span class="tabdrop"><a href="#rulebook" data-view="rulebook" id="rbTab" aria-haspopup="true" aria-expanded="false" aria-controls="rbMenu">Rulebook <i class="caret" aria-hidden="true"></i></a><span class="dropmenu" id="rbMenu" role="menu" hidden></span></span>
       <a href="#plan" data-view="plan">Plan</a>
     </nav>
   </div>
@@ -610,7 +618,6 @@ figcaption.ctitle { font: 700 15px/1.3 var(--f-display); font-stretch: 85%; text
       <a href="#landscape" data-view="landscape">Landscape <span>the whole picture</span></a>
     </div>
   </nav>
-  <nav class="subnav" id="rbnav" aria-label="Rulebook levels" hidden><div class="wrap"></div></nav>
   <div class="readbar" id="readBar" aria-hidden="true"><i></i></div>
 </header>
 
@@ -1785,10 +1792,13 @@ function renderBook(data, bookId, indexId, opts) {
   let read = {}; try { read = JSON.parse(localStorage.getItem(opts.pre + "-read") || "{}") || {}; } catch (e) { read = {}; }
   const saveRead = () => { try { localStorage.setItem(opts.pre + "-read", JSON.stringify(read)); } catch (e) {} };
   let lvSwitch = null;
-  if (levels) { intro.dataset.level = "1"; lvSwitch = T("div", { class: "lvswitch", role: "group", "aria-label": "Levels" }); idx.appendChild(lvSwitch); }
+  if (levels) intro.dataset.level = "1";
   const updSwitch = () => { if (!lvSwitch) return; lvSwitch.querySelectorAll("a").forEach(b => { const n = +b.dataset.level, L = levels.find(x => x.n === n), cs = (data.chapters || []).filter(c => (c.level || 1) === n); b.querySelector("i").textContent = L.soon && !cs.length ? "soon" : cs.filter(c => read[c.id]).length + "/" + cs.length; }); };
   const readButton = (sec, a, id) => { const btn = T("button", { class: "readbtn", type: "button" }); const upd = () => { const on = !!read[id]; btn.textContent = on ? "Read. Tap to undo" : "Mark this chapter as read"; btn.setAttribute("aria-pressed", on ? "true" : "false"); a.classList.toggle("done", on); updSwitch(); }; btn.addEventListener("click", () => { if (read[id]) delete read[id]; else read[id] = 1; saveRead(); upd(); }); sec.appendChild(btn); upd(); };
   const levelHead = L => {
+    const hasCh = (data.chapters || []).some(c => (c.level || 1) === L.n);
+    if (L.n === 1) { intro.id = L.id; return; }
+    if (!hasCh) return;
     const sec = T("section", { class: "chap levelhead", id: L.id }); sec.dataset.level = String(L.n);
     const head = T("div", { class: "chead lv" });
     head.appendChild(T("div", { class: "num", "aria-hidden": "true" }, "L" + L.n));
@@ -1809,9 +1819,10 @@ function renderBook(data, bookId, indexId, opts) {
     const c = item.c;
     const sec = T("section", { class: "chap", id: c.id });
     if (levels) sec.dataset.level = String(c.level || 1);
-    const head = T("div", { class: levels ? "chead lv" : "chead" });
+    const tagged = levels && (c.level || 1) > 1;
+    const head = T("div", { class: tagged ? "chead lv" : "chead" });
     head.appendChild(T("div", { class: "num", "aria-hidden": "true" }, c.num || ""));
-    if (levels) head.appendChild(T("div", { class: "lvtag" }, "Level " + (c.level || 1) + " \u00b7 Chapter " + Number(c.num)));
+    if (tagged) head.appendChild(T("div", { class: "lvtag" }, "Level " + (c.level || 1) + " \u00b7 Chapter " + Number(c.num)));
     head.appendChild(T("h2", null, c.title));
     if (c.kicker) head.appendChild(T("p", { class: "kicker" }, c.kicker));
     sec.appendChild(head);
@@ -1838,7 +1849,7 @@ function renderBook(data, bookId, indexId, opts) {
     if (c.connects && c.connects.length) { const l = T("div", { class: "links" }); for (const x of c.connects) { const a = T("a", { href: "#" + x.id }); a.appendChild(T("b", null, (chapTitles[x.id] || x.id) + ": ")); a.appendChild(document.createTextNode(x.how)); l.appendChild(a); } sec.appendChild(l); }
     book.appendChild(sec);
     const a = T("a", { href: "#" + c.id }); a.appendChild(T("b", null, c.num || "")); a.appendChild(T("span", null, c.title)); idx.appendChild(a);
-    if (levels) { a.dataset.level = sec.dataset.level; readButton(sec, a, c.id); }
+    if (levels) a.dataset.level = sec.dataset.level;
   }
   const extra = (id, num, title, kicker, fill) => {
     const sec = T("section", { class: "chap", id }); const head = T("div", { class: "chead" }); if (levels) sec.dataset.level = "all";
@@ -1943,11 +1954,22 @@ function radiantSvg(b) {
   });
   return s + "</svg>";
 }
-(function rbnav() {
-  const nav = document.querySelector("#rbnav .wrap"); if (!nav || !RULEBOOK.levels) return;
-  for (const L of RULEBOOK.levels) { const a = el("a", { href: "#" + L.id }); a.dataset.level = String(L.n); a.appendChild(document.createTextNode("Level " + L.n + " ")); a.appendChild(el("span", null, L.name.toLowerCase())); nav.appendChild(a); }
+(function rbMenu() {
+  const tab = document.getElementById("rbTab"), menu = document.getElementById("rbMenu");
+  if (!tab || !menu || !RULEBOOK.levels) return;
+  for (const L of RULEBOOK.levels) {
+    const n = (RULEBOOK.chapters || []).filter(c => (c.level || 1) === L.n).length; if (!n) continue;
+    const a = el("a", { href: L.n === 1 ? "#rulebook" : "#" + L.id, role: "menuitem" }); a.dataset.level = String(L.n);
+    a.appendChild(el("b", null, "Level " + L.n)); a.appendChild(el("span", null, L.name + " \u00b7 " + n + " chapter" + (n > 1 ? "s" : "")));
+    menu.appendChild(a);
+  }
+  const close = () => { menu.hidden = true; tab.setAttribute("aria-expanded", "false"); };
+  tab.addEventListener("click", e => { e.preventDefault(); const open = menu.hidden; menu.hidden = !open; tab.setAttribute("aria-expanded", open ? "true" : "false"); if (open) { const f = menu.querySelector('[aria-current="true"]') || menu.querySelector("a"); if (f) f.focus(); } });
+  menu.addEventListener("click", e => { const a = e.target.closest("a"); if (!a) return; close(); const rb = document.getElementById("ruleBook"); if (rb && rb.setLevel) rb.setLevel(a.dataset.level); if (location.hash === a.getAttribute("href")) { e.preventDefault(); const t = document.getElementById(a.getAttribute("href").slice(1)); if (t && a.dataset.level !== "1") t.scrollIntoView(); else window.scrollTo(0, 0); } });
+  document.addEventListener("click", e => { if (!e.target.closest(".tabdrop")) close(); });
+  document.addEventListener("keydown", e => { if (e.key === "Escape" && !menu.hidden) { close(); tab.focus(); } });
 })();
-renderBook(RULEBOOK, "ruleBook", "ruleIndex", { pre: "rb", rulesTitle: "The rulebook", onLevel: n => document.querySelectorAll("#rbnav a").forEach(a => a.dataset.level === n ? a.setAttribute("aria-current", "page") : a.removeAttribute("aria-current")) });
+renderBook(RULEBOOK, "ruleBook", "ruleIndex", { pre: "rb", rulesTitle: "The rulebook", onLevel: n => document.querySelectorAll("#rbMenu a").forEach(a => a.dataset.level === n ? a.setAttribute("aria-current", "true") : a.removeAttribute("aria-current")) });
 renderBook(LANDSCAPE, "landBook", "landIndex", { pre: "ls", rulesLabel: "Takeaways", rulesTitle: "What to remember", qTitle: "Questions still open" });
 
 /* ---------- Reading progress ---------- */
@@ -2100,7 +2122,7 @@ function loadPlan() {
 /* ---------- Router ---------- */
 (function router() {
   const views = { desk: document.getElementById("view-desk"), landscape: document.getElementById("view-landscape"), rulebook: document.getElementById("view-rulebook"), plan: document.getElementById("view-plan") };
-  const tabs = document.querySelectorAll(".tabs a"), tocs = document.querySelectorAll("nav.toc");
+  const tabs = document.querySelectorAll(".tabs > a, .tabs .tabdrop > a"), tocs = document.querySelectorAll("nav.toc");
   function show(name, anchor) {
     for (const k in views) views[k].hidden = k !== name;
     tabs.forEach(t => (t.getAttribute("data-view") === name || t.getAttribute("data-also") === name) ? t.setAttribute("aria-current", "page") : t.removeAttribute("aria-current"));
