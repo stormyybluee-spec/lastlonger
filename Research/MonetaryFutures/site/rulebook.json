@@ -1393,7 +1393,8 @@
       "The Fed creates upstairs money, called reserves, every time it buys a bond. Whether new downstairs money appears too depends on who sold the bond: a bank (no) or a pension fund or other nonbank (yes).",
       "The Treasury moves money between the floors. Selling bonds and collecting taxes pulls deposits up into its Fed account. Spending pushes them back down.",
       "So money is not created only by bank loans. In 2020 and 2021 the Treasury and the Fed together created most of the $5.45 trillion rise in bank deposits.",
-      "The Fed is not allowed to buy new bonds straight from the Treasury. It must buy in the open market, through 25 primary dealers."
+      "The Fed is not allowed to buy new bonds straight from the Treasury. It must buy in the open market, through 25 primary dealers.",
+      "In short: banks are the everyday printer. The government and the Fed together are the emergency printer, and when both switch it on, as in 2020, it is bigger than anything the banks do."
      ]
     },
     {
@@ -1716,6 +1717,78 @@
     },
     {
      "type": "h",
+     "text": "So who is printing? The everyday printer and the emergency printer"
+    },
+    {
+     "type": "p",
+     "text": "Put all of this together and the answer is simple. In a normal year, banks are the main printer: new spendable money appears mostly because people and firms borrow. In the year to September 2026, bank loans grew by about $1.0 trillion and deposits by about $1.2 trillion. But the government and the Fed together can do the same job, and in some years they do it far more than the banks. That combination is printing money in everything but name."
+    },
+    {
+     "type": "diagram",
+     "key": "mc-two-printers",
+     "caption": "Two ways new spendable money is made. The banks run every day. The government and the Fed switch on in emergencies, and then they are bigger."
+    },
+    {
+     "type": "steps",
+     "items": [
+      "The government spends more than it collects in taxes. When it pays a salary, a pension or a stimulus check, a new deposit lands in someone's bank account. Spending is what actually puts the money in public hands.",
+      "To cover the gap, the Treasury sells bonds.",
+      "Whether new money is left over depends on who ends up holding those bonds. If households and funds buy them with savings they already had, money only moves around and nothing new is left. If banks buy them, or the Fed buys them in the market from dealers and pension funds, the public keeps the new deposits and the bonds sit with the banks or the Fed. New money remains."
+     ]
+    },
+    {
+     "type": "table",
+     "cols": [
+      "Who ends up holding the new bonds",
+      "Is new spendable money left over?"
+     ],
+     "rows": [
+      [
+       "Households and funds, paying with savings they already had",
+       "No. Money moves to the government and comes back"
+      ],
+      [
+       "Banks",
+       "Yes. The public has the deposit, the bank has the bond"
+      ],
+      [
+       "The Fed, buying from dealers and pension funds in the market",
+       "Yes. The Fed has paid for it with new reserves it created"
+      ]
+     ]
+    },
+    {
+     "type": "callout",
+     "label": "Picture this",
+     "text": "Think of two printers in an office. The banks' printer runs all day, printing a little each time someone signs a loan, and it shreds the pages again as loans are paid back. The government and the Fed share a second printer kept in a locked room. It needs two keys: Congress must approve the spending, and the Fed must choose to buy the bonds. When both keys turn, as in 2020, it prints faster than anything the banks can do."
+    },
+    {
+     "type": "p",
+     "text": "The clearest case is 2020 to 2021. Bank deposits jumped $5.45 trillion, about 35%. Most of it came from government spending on stimulus checks, business support loans and unemployment benefits, while the Fed bought about 59% of the new marketable Treasury debt. Bank lending played only a small part that time."
+    },
+    {
+     "type": "h",
+     "text": "Then why do people say the government cannot just print?"
+    },
+    {
+     "type": "list",
+     "items": [
+      "The Fed decides, not the Treasury. The law lets the Fed buy only in the open market, for its own reasons such as interest rates or market stability, and it can stop or reverse. Since 2022 it has been shrinking its bond holdings, which pulls money back out.",
+      "The bond market votes. If investors think a government is leaning on the printer, they demand higher interest rates. That is part of why the US 10-year yield is near 5% and the interest bill passed $1 trillion a year.",
+      "There is friction. Congress must approve the spending, the debt ceiling has to be dealt with, and every auction has to find buyers."
+     ]
+    },
+    {
+     "type": "insider",
+     "text": "The two kinds of money behave differently over time. Bank-loan money is temporary: when the loan is repaid, the money disappears. Deficit money tends to stay, because the government rarely pays its debt down overall. It rolls the bonds over, so the money it spent remains in circulation. That is why the old worry that governments finance themselves by creating money is basically right, even though some of the old explanations of how it happens are outdated."
+    },
+    {
+     "type": "check",
+     "q": "In 2020 bank deposits rose by trillions while bank lending barely grew. Which printer was running, and what two things had to happen?",
+     "a": "The emergency printer. The government had to spend far more than it taxed, and the Fed and banks had to end up holding much of the new debt. Together that left trillions of new deposits in public hands."
+    },
+    {
+     "type": "h",
      "text": "What the Hidden Secrets of Money series gets right and what has changed"
     },
     {
@@ -1783,7 +1856,8 @@
     "The Fed creates reserves whenever it buys. It creates spendable deposits only when the seller is not a bank.",
     "Auctions and taxes pull money up into the Treasury's account. Spending pushes it back down.",
     "A deficit adds to your money only if banks, the Fed or parked cash fund it.",
-    "Banks create money by lending and by buying. Repayments and sales destroy it."
+    "Banks create money by lending and by buying. Repayments and sales destroy it.",
+    "Banks are the everyday printer. The government plus the Fed is the emergency printer."
    ],
    "connects": [
     {
@@ -5408,6 +5482,11 @@
    "n": 49,
    "rule": "When the Fed buys bonds, look at who sold them.",
    "why": "From a bank, only reserves rise. From a pension fund or other nonbank, a new public deposit appears too."
+  },
+  {
+   "n": 50,
+   "rule": "Banks are the everyday printer. The government plus the Fed is the emergency printer.",
+   "why": "Bank-loan money disappears when loans are repaid. Deficit money held by the Fed and banks tends to stay, because the debt is rolled over."
   }
  ],
  "mistakes": [
