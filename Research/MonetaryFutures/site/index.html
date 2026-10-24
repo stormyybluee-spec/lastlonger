@@ -572,6 +572,23 @@ header.mast.lands .eyebrow, header.mast.rules .eyebrow { justify-self: center; }
 .blk-numbers { max-width: 72ch; }
 figcaption.ctitle { font: 700 15px/1.3 var(--f-display); font-stretch: 85%; text-transform: uppercase; letter-spacing: .03em; margin: 0 4px 4px; color: var(--ink); }
 .blk-numbers summary { cursor: pointer; font: 500 12px var(--f-data); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.blk-deeper { max-width: 72ch; border: 1px solid var(--rule); background: var(--sheet); }
+.blk-deeper > summary { cursor: pointer; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; padding: 12px 16px; list-style: none; }
+.blk-deeper > summary::-webkit-details-marker { display: none; }
+.blk-deeper > summary .lbl { font: 500 11px/1.4 var(--f-data); letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
+.blk-deeper > summary .lbl::before { content: "+ "; }
+.blk-deeper[open] > summary .lbl::before { content: "\2212 "; }
+.blk-deeper > summary .t { font: 600 16px/1.4 var(--f-body); }
+.blk-deeper .inner { display: grid; gap: 16px; padding: 4px 16px 18px; }
+.blk-gauge { display: grid; gap: 12px; max-width: 72ch; padding: 16px 20px; border: 2px solid var(--ink); background: var(--sheet); }
+.blk-gauge .lbl { font: 500 11px/1.4 var(--f-data); letter-spacing: .14em; text-transform: uppercase; color: var(--thread); }
+.blk-gauge fieldset { border: 0; border-top: 1px solid var(--rule); margin: 0; padding: 10px 0 0; display: grid; gap: 6px; }
+.blk-gauge legend { font: 600 15.5px/1.4 var(--f-body); padding: 0; margin-bottom: 4px; }
+.blk-gauge label { display: flex; gap: 8px; align-items: baseline; font-size: 15px; line-height: 1.45; cursor: pointer; }
+.blk-gauge .gnote { font-size: 14px; color: var(--muted); margin: 0; }
+.blk-gauge .gout { border-top: 2px solid var(--ink); padding-top: 10px; }
+.blk-gauge .gout b { font: 700 16px var(--f-display); text-transform: uppercase; letter-spacing: .03em; }
+.blk-gauge .gwait { color: var(--muted); font-size: 14px; }
 .blk-bridge { display: grid; gap: 8px; max-width: 72ch; padding: 14px 18px; border: 1px solid var(--rule); border-left: 4px solid var(--thread); background: var(--sheet); }
 .blk-bridge .lbl { font: 500 11px/1.4 var(--f-data); letter-spacing: .14em; text-transform: uppercase; color: var(--thread); }
 .blk-bridge ul { list-style: none; padding: 0; display: grid; gap: 10px; }
@@ -1826,7 +1843,7 @@ function renderBook(data, bookId, indexId, opts) {
     head.appendChild(T("h2", null, c.title));
     if (c.kicker) head.appendChild(T("p", { class: "kicker" }, c.kicker));
     sec.appendChild(head);
-    for (const b of c.blocks || []) {
+    const renderBlocks = (blocks, sec) => { for (const b of blocks || []) {
       if (b.type === "p") sec.appendChild(T("p", null, b.text));
       else if (b.type === "h") sec.appendChild(T("h3", null, b.text));
       else if (b.type === "list" || b.type === "steps") { const l = T(b.type === "steps" ? "ol" : "ul", b.type === "steps" ? { class: "blk-steps" } : null); (b.items || []).forEach(i => l.appendChild(T("li", null, i))); sec.appendChild(l); }
@@ -1844,7 +1861,10 @@ function renderBook(data, bookId, indexId, opts) {
       else if (b.type === "bars" || b.type === "pairbars" || b.type === "timeline") { const f = T("figure", { class: "blk-diagram" }); if (b.title) f.appendChild(T("figcaption", { class: "ctitle" }, b.title)); if (b.series && b.series.length > 1) { const lg = T("div", { class: "chart-legend" }); b.series.forEach((n, i) => { const x = T("span"); const sw = T("i"); sw.style.background = "var(--c" + (i + 1) + ")"; x.appendChild(sw); x.appendChild(document.createTextNode(typeof n === "string" ? n : n.name)); lg.appendChild(x); }); f.appendChild(lg); } const v = T("div", { class: "vis" }); v.innerHTML = chartSvg(b); f.appendChild(v); if (b.caption) f.appendChild(T("figcaption", null, b.caption)); const d = T("details", { class: "blk-numbers" }); d.appendChild(T("summary", null, "Show the numbers")); const tw = T("div", { class: "tablebox" }), t = T("table"), hr = T("tr"), th = T("thead"), tb = T("tbody"); const cols = b.type === "timeline" ? ["Year"].concat(b.series.map(x => x.name)) : ["Item"].concat(b.type === "bars" ? [b.unitLabel || "Value"] : b.series); cols.forEach(x => hr.appendChild(T("th", null, x))); th.appendChild(hr); t.appendChild(th); const rows = b.type === "timeline" ? b.years.map((y, i) => [String(y)].concat(b.series.map(x => x.values[i] == null ? "" : fmtNum(x.values[i], b)))) : b.rows.map(r => [r.label].concat(b.type === "bars" ? [fmtNum(r.value, b)] : r.values.map(x => x == null ? "" : fmtNum(x, b)))); rows.forEach(r => { const tr = T("tr"); r.forEach(x => tr.appendChild(T("td", null, x))); tb.appendChild(tr); }); t.appendChild(tb); tw.appendChild(t); d.appendChild(tw); if (b.source) d.appendChild(T("p", { class: "note" }, "Source: " + b.source)); f.appendChild(d); sec.appendChild(f); }
       else if (b.type === "radiant") { const f = T("figure", { class: "blk-diagram" }); const v = T("div", { class: "vis" }); v.innerHTML = radiantSvg(b); f.appendChild(v); if (b.caption) f.appendChild(T("figcaption", null, b.caption)); sec.appendChild(f); }
       else if (b.type === "check") { const d = T("details", { class: "blk-check" }); d.appendChild(T("summary", null, "Check yourself: " + b.q)); d.appendChild(T("p", null, b.a)); sec.appendChild(d); }
-    }
+      else if (b.type === "deeper") { const d = T("details", { class: "blk-deeper" }); const sm = T("summary"); sm.appendChild(T("span", { class: "lbl" }, b.tag || "Go deeper")); sm.appendChild(T("span", { class: "t" }, b.label || "")); d.appendChild(sm); const inner = T("div", { class: "inner" }); renderBlocks(b.blocks, inner); d.appendChild(inner); sec.appendChild(d); }
+      else if (b.type === "gauge") { const g = T("form", { class: "blk-gauge" }); g.addEventListener("submit", e => e.preventDefault()); g.appendChild(T("span", { class: "lbl" }, b.label || "Your personal gauge")); if (b.intro) g.appendChild(T("p", null, b.intro)); const out = T("div", { class: "gout", "aria-live": "polite" }); const name = "g" + Math.random().toString(36).slice(2, 8); (b.dials || []).forEach((dl, i) => { const fs = T("fieldset"); fs.appendChild(T("legend", null, (i + 1) + ". " + dl.q)); const note = T("p", { class: "gnote" }); dl.options.forEach((o, j) => { const lab = T("label"); const r = T("input", { type: "radio", name: name + i, value: String(j) }); r.addEventListener("change", () => { note.textContent = o.note || ""; upd(); }); lab.appendChild(r); lab.appendChild(document.createTextNode(" " + o.t)); fs.appendChild(lab); }); fs.appendChild(note); g.appendChild(fs); }); const upd = () => { let sum = 0, n = 0; (b.dials || []).forEach((dl, i) => { const c = g.querySelector('input[name="' + name + i + '"]:checked'); if (c) { n++; sum += dl.options[+c.value].score || 0; } }); out.replaceChildren(); if (n < (b.dials || []).length) { out.appendChild(T("p", { class: "gwait" }, "Answered " + n + " of " + b.dials.length + ". Your reading appears when all are answered.")); return; } const band = (b.bands || []).find(x => sum <= x.max) || b.bands[b.bands.length - 1]; out.appendChild(T("b", null, band.label + " (" + sum + " points)")); out.appendChild(T("p", null, band.text)); }; g.appendChild(out); upd(); if (b.footnote) g.appendChild(T("p", { class: "note" }, b.footnote)); sec.appendChild(g); }
+    } };
+    renderBlocks(c.blocks, sec);
     if (c.rules && c.rules.length) { const r = T("div", { class: "rules" }); r.appendChild(T("span", { class: "lbl" }, opts.rulesLabel || "Rules from this chapter")); const ul = T("ul"); c.rules.forEach(x => ul.appendChild(T("li", null, x))); r.appendChild(ul); sec.appendChild(r); }
     if (c.connects && c.connects.length) { const l = T("div", { class: "links" }); for (const x of c.connects) { const a = T("a", { href: "#" + x.id }); a.appendChild(T("b", null, (chapTitles[x.id] || x.id) + ": ")); a.appendChild(document.createTextNode(x.how)); l.appendChild(a); } sec.appendChild(l); }
     book.appendChild(sec);
