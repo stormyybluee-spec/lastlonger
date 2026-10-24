@@ -72,7 +72,7 @@ It moves, but by tenths of a point, not points. In the Fed's Distributional Fina
 2. **Etsy's GMS fell while its take rate rose.** Default: a shrinking marketplace cuts fees to keep sellers. Etsy did the opposite, consistent with sellers being locked in by buyer traffic.
 3. **The bottom half's net worth share rose (0.4% in 2010 to 2.3%) while its equity share stayed flat and its real estate share fell.** Their gains came from lower debt and price gains on fewer homes, not from new ownership.
 4. **Minneapolis's land share fell while coastal metros rose.** Consistent with broad upzoning spreading land value across more units, but the Fed reads the rent result as mostly demand. Treat as suggestive.
-5. **PPI for all finished consumer goods was flat from 2025 to 2026 year to date while the core index rose about 3.5%.** The energy component in this series fell or flattened even as CPI energy rose 20.4% (R2 C7). I report the series as published and flag it as unexplained.
+5. **Corrected in Round 5: the 'flat' series was finished consumer foods, not all finished consumer goods.** The series used (WPUFD4111) is Finished Consumer Foods, which was flat (minus 0.9% year on year in September 2026). Producer energy rose 35.4% and finished goods 8.4%, while the core index rose about 3.5% to 4%.
 
 ## 5. Mechanism chains
 
@@ -113,7 +113,7 @@ It moves, but by tenths of a point, not points. In the Fed's Distributional Fina
 5. Share of children living in bottom-50%-wealth households (model input 55%) is an assumption. An SCF tabulation would pin it down.
 6. Whether DFA (built on the SCF) captures balances in minors' 530A accounts inside the parents' household is an assumption of the model.
 7. Retail media totals beyond Amazon (Walmart Connect, Instacart) and TikTok Shop fees were not refreshed in this lane.
-8. The flat PPI for all finished consumer goods in 2026 against a 20.4% CPI energy rise needs a check of the energy weight in that index.
+8. Closed in Round 5: the flat series was finished consumer foods (WPUFD4111). Producer energy rose 35.4%, in line with CPI energy goods (35.3%).
 
 ## 8. Data tables
 
@@ -175,7 +175,7 @@ Source: https://www.fhfa.gov/document/land-prices_2024_20_june.xlsx (version 4.0
 
 ### 8.4 Attention tolls vs producer prices (index 2019 = 100 unless a percent)
 
-| Year | Meta price per ad | Google search CPC | Amazon ads as % of 3P seller services | PPI finished consumer goods less food and energy | PPI finished consumer goods |
+| Year | Meta price per ad | Google search CPC | Amazon ads as % of 3P seller services | PPI finished consumer goods less food and energy | PPI finished consumer foods (WPUFD4111, mislabelled as consumer goods in Round 3) |
 |---|---|---|---|---|---|
 | 2019 | 100.0 | 100.0 | 23.5% | 100.0 | 100.0 |
 | 2020 | 90.0 | 94.0 | 24.6% | 101.1 | 101.3 |
@@ -186,7 +186,7 @@ Source: https://www.fhfa.gov/document/land-prices_2024_20_june.xlsx (version 4.0
 | 2025 | 102.3 | 123.8 | 39.9% | 126.7 | 134.5 |
 | 2026 YTD | about 115 (Q1 to Q3) | n/a | 41.9% (H1) | 131.1 (Jan to Sep) | 134.5 |
 
-Etsy revenue take rate: 16.5% (2019) to 24.2% (2025). Sources: Meta 10-K FY2021 and FY2025, Meta 10-Q Q1 2026 and 8-K Q3 2026, Alphabet 10-K FY2020 to FY2025, Amazon 10-K FY2021, FY2022, FY2025 and 10-Q Q2 2026, Etsy 10-K FY2019 and FY2025, BLS PPI series WPSFD41312 and WPUFD4111 (annual averages of monthly values). Meta and Google figures are company-wide averages that mix regions and formats.
+Etsy revenue take rate: 16.5% (2019) to 24.2% (2025). Sources: Meta 10-K FY2021 and FY2025, Meta 10-Q Q1 2026 and 8-K Q3 2026, Alphabet 10-K FY2020 to FY2025, Amazon 10-K FY2021, FY2022, FY2025 and 10-Q Q2 2026, Etsy 10-K FY2019 and FY2025, BLS PPI series WPSFD41312 and WPUFD4111 (finished consumer foods, corrected label in Round 5) (annual averages of monthly values). Meta and Google figures are company-wide averages that mix regions and formats.
 
 ### 8.5 Model: Trump Accounts and the bottom-50% equity share in 2045 (real 2026 dollars)
 

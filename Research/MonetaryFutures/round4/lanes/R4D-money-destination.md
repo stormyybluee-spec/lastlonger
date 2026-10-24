@@ -157,7 +157,7 @@ Denmark 0.90 (1), Germany 0.83 (6), Canada 0.79 (13), UK 0.78 (14), Singapore 0.
 - North America receives the largest share of Europe's net outbound portfolio capital: **90**.
 - North America receives 50% or more of all Europe's net outbound capital (portfolio plus FDI): **70**.
 - All of Asia (including Japan and China) receives more than North America: **5**.
-- Latin America receives more than Southeast Asia (including Singapore) in European FDI: **35**. More European emigrants (excluding heritage-passport registrations) go to Latin America than to Southeast Asia: **75**.
+- Latin America receives more than Southeast Asia (including Singapore) in European FDI: **35**. More European emigrants (excluding heritage-passport registrations) go to Latin America than to Southeast Asia: **45** (lowered from 75 in Round 5: German citizens sent at least 5,175 to Southeast Asia and at most about 5,000 to Latin America in 2025).
 - The Gulf is a top three destination for European millionaires by 2030 despite the 2026 war: **55**.
 - **Owner's thesis "back to the West":** right on direction for money and talent (70), wrong to rank Latin America with North America (Latin America under 10% of flows, 80).
 - **SEA belief "the money of the fallen flows to SEA and Asia":** refuted for financial capital (85), plausible for factories (55 that Asia gets at least a quarter of relocated European capacity), and for Singapore as a wealth hub.

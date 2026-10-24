@@ -348,8 +348,8 @@ Reversal rule for C1: if TPI is activated and the spread closes back below 150bp
 
 | Date | Event | What would move the odds |
 |---|---|---|
-| First business day after 2026-10-23 | Moody's France decision (Aa3 negative) | A cut to A1 aligns all three agencies at A+ level. No cut lowers H0 crisis odds slightly |
-| 2026-10-27 | French National Assembly budget vote, possible Article 49.3 and censure | A passed censure and no budget by year end raises the H0 crisis odds from 20 to 24 |
+| First business day after 2026-10-23 | Moody's France decision (Aa3 negative). Outcome: held Aa3 negative on 2026-10-23 (Round 5) | A cut to A1 aligns all three agencies at A+ level. Round 5 did not apply the 1-point cut because the hold is conditional |
+| 2026-10-27 to 2026-11-03 (corrected in Round 5) | French budget: first-part debate resumes 10-27, solemn vote 11-03, possible Article 49.3 and censure. S&P review 11-27 | A passed censure and no budget by year end raises the H0 crisis odds from 20 to 24 |
 | 2026-10-29 | ECB meeting (hold priced 97.85) | A hike with no word on spreads raises H0 crisis odds. A TPI reference lowers them |
 | About 2026-10-30 | Euro-area Q3 GDP flash, WGC Q3 gold demand | A negative GDP print with 3.8% inflation raises mild absolute decline H0 from 6 to 10 |
 | Daily | OAT-Bund spread 200bp for five sessions, 250bp for ten, BTP-Bund 150bp | Scenario conditionals C1 apply |
@@ -365,14 +365,14 @@ Reversal rule for C1: if TPI is activated and the spread closes back below 150bp
 
 ## 7. Open questions
 
-1. Moody's France outcome (due after the close on 2026-10-23) was not published when the court checked.
+1. Moody's France outcome (due after the close on 2026-10-23) was not published when the court checked. Closed in Round 5: held at Aa3 negative on 2026-10-23.
 2. The Bund measure: the source table (3.33%) and the Bundesbank series (3.39%) differ by about 6bp on 10-23. A single official close series for the OAT-Bund spread would end the ambiguity.
 3. The revised IMF COFER series (after the 2025 removal of 'unallocated') gives USD 70.8% for 2000. Its other 2000 currency shares were not found, so the diagram uses the pre-revision split.
 4. Net fiscal contribution of migration by origin and education, using official Danish and Dutch studies. Raised by the thread, not tested, to be answered only with official data.
 5. Emigration by destination for skilled Europeans in 2025 (no OECD table found, German and Italian registries used as proxies).
 6. About 190 of Loeber's 333 replies were not collected. The reply mix is for a high-engagement sample.
-7. SWIFT payment shares for August and September 2026 and PBoC swap-line totals were not obtained.
-8. Whether the 2026 Gulf war caused a lasting outflow of European residents from the UAE.
+7. SWIFT payment shares for August and September 2026 and PBoC swap-line totals were not obtained. Partly closed in Round 5: yuan 3.26% of SWIFT payments in August, PBoC 32 agreements of about RMB 4.5T with RMB 132.8B drawn. September SWIFT still missing.
+8. Whether the 2026 Gulf war caused a lasting outflow of European residents from the UAE. Closed in Round 5: no lasting aggregate outflow found (Dubai population back above pre-war by mid 2026), nationality split unavailable.
 9. No prediction market prices euro exit, reserve shares beyond the next quarter, yuan reserve status or China's capital controls. Desk odds on those stand alone.
 
 ## 8. Data tables for the page
@@ -499,8 +499,8 @@ Reversal rule for C1: if TPI is activated and the spread closes back below 150bp
 
 | Date | Event | What would move the odds |
 |---|---|---|
-| First business day after 2026-10-23 | Moody's France decision (Aa3 negative) | A cut to A1 aligns all three agencies at A+ level. No cut lowers H0 crisis odds slightly |
-| 2026-10-27 | French National Assembly budget vote, possible Article 49.3 and censure | A passed censure and no budget by year end raises the H0 crisis odds from 20 to 24 |
+| First business day after 2026-10-23 | Moody's France decision (Aa3 negative). Outcome: held Aa3 negative on 2026-10-23 (Round 5) | A cut to A1 aligns all three agencies at A+ level. Round 5 did not apply the 1-point cut because the hold is conditional |
+| 2026-10-27 to 2026-11-03 (corrected in Round 5) | French budget: first-part debate resumes 10-27, solemn vote 11-03, possible Article 49.3 and censure. S&P review 11-27 | A passed censure and no budget by year end raises the H0 crisis odds from 20 to 24 |
 | 2026-10-29 | ECB meeting (hold priced 97.85) | A hike with no word on spreads raises H0 crisis odds. A TPI reference lowers them |
 | About 2026-10-30 | Euro-area Q3 GDP flash, WGC Q3 gold demand | A negative GDP print with 3.8% inflation raises mild absolute decline H0 from 6 to 10 |
 | Daily | OAT-Bund spread 200bp for five sessions, 250bp for ten, BTP-Bund 150bp | Scenario conditionals C1 apply |

@@ -1,4 +1,4 @@
-# Monetary Futures Desk: Report (Rounds 1 to 4)
+# Monetary Futures Desk: Report (Rounds 1 to 5)
 
 Facts as of 2026-10-22. Live page: https://claude.ai/artifact/2QJg4KuARQPAhm6FRbKmLq (private until shared from its Share menu).
 
@@ -31,6 +31,9 @@ The pipes held and the pressure moved: rent, tax and hardware now decide what a 
 ## Round 4 in one paragraph
 If a giant falls, nobody inherits it whole and Europe's money keeps going West. The dollar's share of world reserves fell from about 71% to 56.70% since 2000, but the yuan has only 2.11%. The lost share went to gold (now about 26% of all reserves, worth about 1.8 times all euro reserves) and to many smaller currencies. China cannot inherit with capital controls, and if it opened, money would first run into dollars. The premise that everyone prays for a US downfall fails, because the biggest creditors lose first. Europe is sliding slowly, not falling: its income per head in purchasing power has held at about 70% to 75% of the US since 2000, and the sharp edge is France (OAT-Bund 171.8bp, Le Pen 46% in a $155.7M market). Breaking away does not help on the evidence (Brexit cost about 6% to 8% of GDP per head). If Europe declines, about 55% of its outbound money goes to North America and about 6% to Latin America, so the owner is right on "West" and wrong on Latin America. Southeast Asia wins factories, not money. Full rulings in round4/DEBATE_R4.md.
 
+## Round 5 in one paragraph
+Round 5 answered the fifteen open questions, audited the project's memory and wrote down 72 dated predictions before the events. The 2026 rise in real rates is mostly a higher expected Fed path, with Japan the clearest outside push. A yield cap is unlikely (15 by 2035). Japan pays for yen defense by selling Treasuries, the Gulf has no dollar line yet, and the central banks buying gold are the ones without a Fed backstop. One earlier finding was wrong and is now corrected: producer prices were not flat (the series was consumer foods). Moody's held France at Aa3 negative. Borrowing to invest at 6.19% for 13.6% adds little to the typical result and a lot to the bad one. Full rulings in round5/DEBATE_R5.md, predictions in round5/prereg.json.
+
 ## Where everything lives
 | File | What |
 |---|---|
@@ -40,9 +43,10 @@ If a giant falls, nobody inherits it whole and Europe's money keeps going West. 
 | round1/lanes/L1 to L7 | Seven research tracks with tiered, dated claims |
 | round1/debates/Da, Db, Dc, Dd | Debate court rulings and thesis cards |
 | round1/RELOOP.md | Gap-filling round |
-| claims.json | 988 claims ledger, rebuilt by tools/build_ledger.py |
+| claims.json | 1,181 claims ledger, rebuilt by tools/build_ledger.py |
 | site/index.html | Source of the live site (Desk, Landscape, Rulebook and Plan views) |
 | round2/ | Round 2 brief, five lanes, cross-examination, page data |
+| round5/ | Round 5 brief, five lanes, court (DEBATE_R5.md), page data, pre-registration ledger (prereg.json) and edit files |
 | round4/ | Round 4 brief, five lanes, court (DEBATE_R4.md), page data, Landscape chapter and diagram data |
 | round3/ | Round 3 brief, five lanes, court (DEBATE_R3.md), scenario odds (scen.json), page data, decode lanes and panel |
 

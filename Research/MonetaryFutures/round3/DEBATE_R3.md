@@ -84,7 +84,7 @@ So the scenario odds barely move. H0 stays 62/15/1/22. In 2028 to 2035 the dolla
 ### X13. Flat PPI for finished consumer goods in 2026 (R3D) vs energy CPI +20.4% (R2E)
 
 - **Tension.** R3D reports the all-goods PPI flat from 2025 to 2026 while the core index rose about 3.5%, against a 20.4% CPI energy rise.
-- **Ruling.** Unresolved. Both are T0 series as published. The likely cause is the energy weight and coverage of the PPI series. Carried as a gap, and R3-7 uses the core index, which is unaffected.
+- **Ruling.** Unresolved in Round 3. Resolved in Round 5: the 'flat' series (WPUFD4111) is finished consumer foods, not all finished consumer goods. Producer energy rose 35.4%, more than CPI energy (20.4%). R3-7 uses the core index, which is unaffected.
 
 ### X14. Corporate receipts: CBO 11-month figures (-25%, via TaxProf) vs Treasury MTS full year (-15.6%)
 

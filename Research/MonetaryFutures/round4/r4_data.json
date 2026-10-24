@@ -430,7 +430,7 @@
       "cols": ["Date", "Event", "What would move the odds"],
       "rows": [
         ["First business day after 2026-10-23", "Moody's France decision (Aa3 negative)", "A cut to A1 aligns all three agencies at A+ level. No cut lowers H0 crisis odds slightly"],
-        ["2026-10-27", "French National Assembly budget vote, possible Article 49.3 and censure", "A passed censure and no budget by year end raises the H0 crisis odds from 20 to 24"],
+        ["2026-10-27 to 2026-11-03", "French budget: first-part debate resumes 10-27, solemn vote on the first part 11-03, possible Article 49.3 and censure. S&P review 11-27 (corrected in Round 5)", "A passed censure and no budget by year end raises the H0 crisis odds from 20 to 24"],
         ["2026-10-29", "ECB meeting (hold priced 97.85)", "A hike with no word on spreads raises H0 crisis odds. A TPI reference lowers them"],
         ["About 2026-10-30", "Euro-area Q3 GDP flash, WGC Q3 gold demand", "A negative GDP print with 3.8% inflation raises mild absolute decline H0 from 6 to 10"],
         ["Daily", "OAT-Bund spread 200bp for five sessions, 250bp for ten, BTP-Bund 150bp", "Scenario conditionals C1 apply"],

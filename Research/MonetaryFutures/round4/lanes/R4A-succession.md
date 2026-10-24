@@ -302,7 +302,7 @@ Mutual dependence: every actor that could push the dollar over (holders of large
 2. The 1990 to 1991 dollar reserve share (about 46% to 50%) is memory. The "lowest since 1994" statement for Q3 2025 supports a lower pre-1994 level but the exact series should be pulled from IMF historical data.
 3. Official 2026 PBoC RMB internationalization report, swap-line totals and drawn amounts not found.
 4. China's total bond market size and foreign share in 2026 not re-verified (WIF used about 2% by an older estimate).
-5. WGC September 2026 central bank data not yet published (the 23t PBoC September purchase is a single aggregator claim, not used).
+5. WGC September 2026 central bank data not yet published (Round 5: the PBoC bought 21t in September per Kitco, its 23rd straight month. The 23t figure was WGC's July net for all central banks).
 6. The Summers "balance of financial terror" venue (2004) is unverified. The phrase is widely attributed to him.
 7. No prediction market prices reserve roles. If one appears with more than $1M traded, apply the 4.1c rule.
 8. Euro peak reserve share (about 27% to 28% around 2009 to 2010) is approximate (one 2011 COFER summary shows 27.2% in Q1 2010).

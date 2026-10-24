@@ -317,8 +317,8 @@
      "type": "list",
      "items": [
       "Spending must not rise with the growth. In the project's model, +2.26 points of AI growth with spending held takes the debt to 87% of GDP. If spending scales up with it, 107%.",
-      "Real interest rates must not rise with growth. If they rise one for one, the debt reaches about 129%, the same as with no AI at all. In 2026 the real 10-year yield rose 82 basis points, so this condition is already under strain.",
-      "The gains must land in taxable income. In FY2026 corporate receipts fell 15.6%, from $452.1B to $381.4B, as firms deducted AI investment faster. This condition is failing now."
+      "Real interest rates must not rise with growth. If they rise one for one, the debt reaches about 129%, the same as with no AI at all. In 2026 the real 10-year yield rose 82 basis points, so this condition is already under strain. Round 5 update: measured from end 2025 to 23 October the rise is 73bp to 2.66%, mostly a tighter expected Fed path with Japan adding about 18bp, not AI demand directly.",
+      "The gains must land in taxable income. In FY2026 corporate receipts fell 15.6%, from $452.1B to $381.4B, as firms deducted AI investment faster. This condition is failing now. Round 5 update: the drag tracks capex growth and should shrink once capex goes flat, and September 2026 receipts were already up 38% on a year."
      ]
     },
     {
@@ -397,7 +397,7 @@
      "type": "list",
      "items": [
       "Stablecoins did not carry the load. Total supply went from $304.9 billion (2025-10-21) to $303.8 billion (2026-10-22), flat for a year after a May peak of $315.5 billion. Over the same year bank deposits rose $1,225 billion, money funds about $505 billion to $7.92 trillion, and the Fed's own bill holdings $370 billion to $565.5 billion. In 2026 the real captive buyers were the Fed and money funds, not tokens.",
-      "The crisis line went unused. The Fed's FIMA repo facility was at zero every week from 18 February to 14 October 2026, apart from a $3.0 billion blip on 4 February. Japan said on 3 August it \"plans to utilize\" FIMA, then did not. Swap lines peaked at $481 million.",
+      "The crisis line went unused. The Fed's FIMA repo facility was at zero every week from 18 February to 14 October 2026, apart from a $3.0 billion blip on 4 February. Japan said on 3 August it \"plans to utilize\" FIMA, then did not. Swap lines peaked at $481 million. Round 5 update: FIMA was still zero on 21 October, 35 straight weeks. Japan's reserve data show both 2026 interventions were paid for by selling dollar securities.",
       "Foreign governments sold instead. Foreign official Treasuries in Fed custody fell $254 billion (9.1%) from the February peak to $2,549.1 billion, while those holders kept $331.9 billion of their own cash at the Fed. Japan spent ¥27.1 trillion on interventions in 2026."
      ]
     },
@@ -600,7 +600,7 @@
     },
     {
      "type": "p",
-     "text": "Warsh hiked against the President, citing 65 months of elevated inflation and hyperscaler competition for capital. He has floated the idea of a new Fed-Treasury accord. The decoders give a crisis-era accord and Fed yield support after the 2028 leadership turnover only D2 (40 by 2032). Markets price the Powell governor seat vacated by early 2028 at 64% to 72%. That date is a fork point for the whole story."
+     "text": "Warsh hiked against the President, citing 65 months of elevated inflation and hyperscaler competition for capital. He has floated the idea of a new Fed-Treasury accord. The decoders give a crisis-era accord and Fed yield support after the 2028 leadership turnover only D2 (30 by 2032 after Round 5, down from 40). Round 5 update: the accord Warsh describes would shrink the Fed's bond footprint, not cap yields. An explicit yield cap is now judged 15 by 2035. Markets price the Powell governor seat vacated by early 2028 at 64% to 72%. That date is a fork point for the whole story."
     },
     {
      "type": "h",
@@ -877,7 +877,7 @@
     },
     {
      "type": "p",
-     "text": "Central banks bought 863 tonnes of gold in 2025 and 289 tonnes in Q2 2026, buying into a price about 27% below its January high. Poland and China led. France brought 129 tonnes home. 89% of central banks surveyed expect official gold to rise. Ruling Db-04: gold as the neutral reserve layer, Confirmed, 75. The say and do gaps are real too: Russia sold 22 tonnes, Turkey sold, and the first half of 2026 (345 tonnes) was the weakest since 2022."
+     "text": "Central banks bought 863 tonnes of gold in 2025 and 289 tonnes in Q2 2026, buying into a price about 27% below its January high. Poland and China led. France brought 129 tonnes home. 89% of central banks surveyed expect official gold to rise. Round 5 update: the 2026 buyers are central banks without a standing Fed swap line, and 9% of central banks raised domestic storage in the past year, up from 5%. Ruling Db-04: gold as the neutral reserve layer, Confirmed, 75. The say and do gaps are real too: Russia sold 22 tonnes, Turkey sold, and the first half of 2026 (345 tonnes) was the weakest since 2022."
     },
     {
      "type": "p",
@@ -1232,7 +1232,7 @@
     },
     {
      "type": "p",
-     "text": "Round 3 found the decisive reason. A UHI dollar is spent about 40% to 48% on housing, and housing supply grows about 1% a year. So even unlimited robot goods can meet at most 57% to 76% of the extra demand. Recalibrated, a printed Musk-scale UHI runs about 5.8% to 9.8% inflation now, 1.4% to 5.8% in 2028 to 2035 and 0.3% to 2.7% after 2035 (model, and a lower bound because it has no interest channel). Round 2's 0.9% case needs housing supply to open first. A UHI of 10% of GDP is much easier: about 1.5% to 3.9% now."
+     "text": "Round 3 found the decisive reason. A UHI dollar is spent about 40% to 48% on housing, and housing supply grows about 1% a year. So even unlimited robot goods can meet at most 57% to 76% of the extra demand. Round 5 update: housing supply is shrinking in 2026 (completions down 12.5%), and new homes meet only 15% to 25% of a demand shock within ten years, so the shelter limit is, if anything, tighter. Recalibrated, a printed Musk-scale UHI runs about 5.8% to 9.8% inflation now, 1.4% to 5.8% in 2028 to 2035 and 0.3% to 2.7% after 2035 (model, and a lower bound because it has no interest channel). Round 2's 0.9% case needs housing supply to open first. A UHI of 10% of GDP is much easier: about 1.5% to 3.9% now."
     },
     {
      "type": "insider",
@@ -1343,7 +1343,7 @@
     },
     {
      "type": "p",
-     "text": "The tolls are rising. Amazon's advertising went from 23.5% to 41.9% of its seller services revenue (2019 to H1 2026), Etsy's take rate from 16.5% to 24.2%, and Meta's price per ad rose 12% to 14% a year in 2026 (R3-7, Confirmed, 70). A human-made premium is real as a label effect in experiments but not yet measured as a cash price (Plausible, 55). Buying a founder's community is the modern exit: the brand rhode added $293.5 million of sales in its first year inside e.l.f."
+     "text": "The tolls are rising. Amazon's advertising went from 23.5% to 41.9% of its seller services revenue (2019 to H1 2026), Etsy's take rate from 16.5% to 24.2%, and Meta's price per ad rose 12% to 14% a year in 2026 (R3-7, Confirmed, 70). A human-made premium is real as a label effect in experiments but not yet measured as a cash price (Plausible, 60 after Round 5). Round 5 update: the first marketplace data show an AI discount instead, AI models were 17% of CGTrader uploads but 2.6% of sales. Buying a founder's community is the modern exit: the brand rhode added $293.5 million of sales in its first year inside e.l.f."
     },
     {
      "type": "h",
@@ -1473,8 +1473,8 @@
      "type": "list",
      "items": [
       "Hormuz. A war closed the strait in practice. Brent reached $115.22 and US diesel $6.276 a gallon, up 73% in a year. War-risk insurance jumped to 3.5% to 7.5% of hull value per transit from 0.10% to 0.25%. Markets give normal traffic before 2028 about 48%. The freight spike adds roughly 1 point to CPI, peaking about a year later.",
-      "The yen. USD/JPY neared 164 in July. Japan spent ¥27.1 trillion defending it in 2026 and the Bank of Japan hiked on 18 September. Today it is 157.10, below the 160 to 164 intervention zone.",
-      "France. The France to Germany spread went from 87 to 157.5 basis points between 10 September and 21 October. Tripwires are 175 (ECB adjustments) and 200 (its TPI backstop). Markets put a Le Pen presidency in 2027 at about 46. Moody's decision on France's Aa3 negative rating was due after the close on 23 October: thin markets said 87.5% for a downgrade by 31 October, the court about 70."
+      "The yen. USD/JPY neared 164 in July. Japan spent ¥27.1 trillion defending it in 2026 and the Bank of Japan hiked on 18 September. Round 5 update: Japanese yields rose about 85bp this year and account for about 17bp to 18bp of the rise in US real yields. Today it is 157.10, below the 160 to 164 intervention zone.",
+      "France. The France to Germany spread went from 87 to 157.5 basis points between 10 September and 21 October. Tripwires are 175 (ECB adjustments) and 200 (its TPI backstop). Markets put a Le Pen presidency in 2027 at about 46. Moody's decision on France's Aa3 negative rating was due after the close on 23 October: thin markets said 87.5% for a downgrade by 31 October, the court about 70. Round 5 update: Moody's held Aa3 negative on 23 October, conditional on a 2027 budget, so the desk's 70 is a pending score that likely beats the market."
      ]
     },
     {
@@ -1704,7 +1704,7 @@
     },
     {
      "type": "p",
-     "text": "The next few weeks are crowded with tests: Moody's on France (23 October), the Fed (28 October), Q3 GDP (29 October), the midterms (3 November), the Treasury refunding (4 November), the Cook hearing (5 November), China's legal deadline on rare earths (10 November) and the Fed again (9 December, a hike priced at 75% to 79%). Most likely, China extends (72%), the Fed hikes into an oil shock, and the Treasury keeps leaning on bills."
+     "text": "The next few weeks are crowded with tests: Moody's on France (23 October), the Fed (28 October), Q3 GDP (29 October), the midterms (3 November), the Treasury refunding (4 November), the Cook hearing (5 November), China's legal deadline on rare earths (10 November) and the Fed again (9 December, a hike priced at 75% to 79%). Most likely, China extends (72%), the Fed hikes into an oil shock, and the Treasury keeps leaning on bills. Round 5 update: Moody's held France on 23 October, and the desk has written 72 dated predictions for these events, to be scored later."
     },
     {
      "type": "p",
@@ -1720,7 +1720,7 @@
     },
     {
      "type": "p",
-     "text": "The most likely result is managed financial repression, the 1940s and 1970s hybrid the decoders identified: inflation modestly above the average coupon, rules that make banks, funds and token issuers hold bills, and perhaps Fed support at the long end. Not Weimar, not default (judged below 5%). The judges' odds by 2035: a bond episode forcing Fed balance sheet action 45, an explicit yield cap or Fed-Treasury accord 25, inflation above 5% for two straight years 25, a gold revaluation 12 to 15, a coercive restructuring 4, capital controls on US residents 7."
+     "text": "The most likely result is managed financial repression, the 1940s and 1970s hybrid the decoders identified: inflation modestly above the average coupon, rules that make banks, funds and token issuers hold bills, and perhaps Fed support at the long end. Not Weimar, not default (judged below 5%). The judges' odds by 2035: a bond episode forcing Fed balance sheet action 45, an explicit yield cap or Fed-Treasury accord on yields 15 (cut from 25 in Round 5), inflation above 5% for two straight years 25, a gold revaluation 12 to 15, a coercive restructuring 4, capital controls on US residents 7."
     },
     {
      "type": "p",
@@ -2024,8 +2024,8 @@
     {
      "type": "steps",
      "items": [
-      "Moody's decision on France, due after the close on 23 October and not yet published at the time of writing.",
-      "The French budget vote on 27 October and the ECB meeting on 29 October, where a hold is priced at about 98%.",
+      "Moody's decision on France: held at Aa3 with a negative outlook on 23 October, conditional on a deficit-reducing 2027 budget. S&P reviews France next on 27 November.",
+      "The French budget: debate resumes on 27 October and the solemn vote on the first part is on 3 November. The ECB meets on 29 October, where a hold is priced at about 98%.",
       "The French spread against 200 basis points for five days, and Italy's against 150. Crossing these lines moves the desk's odds.",
       "The IMF's reserve survey in late December 2026: the dollar below 56%, the yuan above 2.5% or the euro above 22%.",
       "The French presidential election in April and May 2027, and whether a new government clashes with EU budget rules."
@@ -2154,63 +2154,63 @@
  "questions": [
   {
    "q": "Who actually holds dollar stablecoins, country by country?",
-   "a": "Nobody publishes it. The Fed's September 2026 note says chain data lack geography, and Tether reports 650 million users with no country split. The project's model puts about two thirds of growth-phase supply abroad (range 55% to 81%). The first hard test is the 2028-07-18 ban on non-permitted coins for US persons."
+   "a": "Answered in Round 5: nobody publishes a country table, but on the desk's model about two thirds of the $304.5B of dollar stablecoins is held outside the US (range 59% to 78%). An IMF country panel (October 2026) puts about three quarters with emerging economies. Asia-Pacific holds about $94B, Europe's eastern edge about $46B, Africa and the Middle East about $35B, Latin America about $33B."
   },
   {
    "q": "Is the 2026 rise in real interest rates driven by AI capital demand or by oil, Japan and term premium?",
-   "a": "The real 10-year yield rose 82 basis points in 2026 to 2.76%, now above the 2.5% real growth line. No decomposition exists yet. It matters most of all, because if AI pushes real rates up one for one with growth, the AI dividend does nothing for the debt (129% of GDP either way)."
+   "a": "Answered in Round 5: mostly a hawkish Fed path in an oil-hit, AI-fed economy, plus Japan. The real 10-year rose 73bp from end 2025 to 2.66% on 23 October (2.76% on 21 October). Desk split: Fed path about 35bp, Japan about 18bp, term premium and fiscal supply about 10bp, direct AI crowding-out about 10bp. The AI dividend still does nothing for the debt while real rates rise with growth."
   },
   {
    "q": "Will the 2028 Fed leadership turnover bring a Fed-Treasury accord on yields?",
-   "a": "Warsh has floated the idea of a new accord, and markets price the Powell governor seat vacated by early 2028 at 64% to 72%. The decoders grade yield support after the turnover D2, about 40 by 2032. An explicit cap or accord by 2035 is judged about 25."
+   "a": "Answered in Round 5: probably not an accord that caps yields. Warsh's accord would jointly state the Fed's balance sheet and Treasury issuance so the Fed can shrink (25 by end 2028). An explicit yield cap is 3 by 2028 and 15 by 2035, down from 25. Fed yield support after the turnover is D2, 30 by 2032. A Trump-appointed Board majority arrives by early 2028 via Powell's seat."
   },
   {
    "q": "Does the corporate tax collapse reverse when AI capex growth slows?",
-   "a": "Corporate receipts fell 15.6% in FY2026 to $381.4B as firms expensed investment, and corporate tax is now 7.1% of receipts. The skeptic's case is that this is a timing effect that reverses. The test is the corporate share climbing back above 10% while capex keeps growing."
+   "a": "Answered in Round 5: yes, mostly. The drag tracks the growth of AI capex, not its level: about $43B in 2026, peaking near $55B in 2027, then about $5B to $12B by 2030 once capex goes flat (model). One-off refunds are fading and September 2026 receipts were up 38% on a year. Tests: FY2027 receipts above $381.4B (65), corporate share above 9% in FY2028 (40)."
   },
   {
    "q": "Next time Japan defends the yen, will it borrow through FIMA or sell Treasuries again?",
-   "a": "In 2026 it said it planned to use FIMA and did not. Foreign official custody fell $254B to $2,549.1B. The tripwires are a FIMA draw above $1B during an intervention and custody below $2.5T. USD/JPY is 157.10, below the 160 to 164 intervention zone."
+   "a": "Answered in Round 5: it will most likely sell dollar securities again (80). Japan funded both 2026 interventions by selling securities, and FIMA stayed at zero for 35 weeks. FIMA above $1B during the next intervention: 20. Official custody rose $18.5B in the week to 21 October to a weekly average of $2,572.8B, so selling paused. USD/JPY is about 156.8."
   },
   {
    "q": "Do Gulf states get dollar lines from the Treasury, and on what conditions?",
-   "a": "The UAE asked in April, Bessent pointed to the Exchange Stabilization Fund (about $219B), and no line was announced by 22 October. The ESF monthly statements were not read, so a quiet line cannot be ruled out. Conditional access is the small push behind S2 gaining a point."
+   "a": "Answered in Round 5: not yet. The August 2026 ESF statement lists only Mexico ($9B) and Argentina ($20B, nothing outstanding). Of the ESF's $218.8B, $173.2B are SDRs matched by SDR liabilities, so its net position is $44.3B and its dollar securities $24.9B. Past lines carried hard conditions. Desk odds of a Gulf line: 7 by end 2026, 20 by end 2028."
   },
   {
    "q": "Does conditional dollar access show up in central bank gold buying?",
-   "a": "The link is inference so far, which is why the court moved only one point toward a neutral reserve layer. The WGC's Q3 2026 data, due in late October or early November, is the next check. Above 200 tonnes a quarter would confirm."
+   "a": "Answered in Round 5: partly. The 2026 net buyers are central banks without a standing Fed swap line (China, Poland, Uzbekistan, Kazakhstan and others), while the five standing-line central banks bought nothing and Russia and Turkey sold. 9% of central banks raised domestic storage in the 2026 WGC survey (5% a year earlier). Conditional access is one strong motive among several."
   },
   {
    "q": "How fast can US housing supply actually respond in the 2020s?",
-   "a": "This is the single input that most limits any UHI and any robot dividend, and the project lacks a 2020s supply elasticity. Broad upzoning worked in Auckland and Austin. Narrow reforms produced little. FHFA land shares after 2022 are also missing."
+   "a": "Answered in Round 5: slowly, and in 2026 backwards. Completions are down 12.5% so far this year with mortgages at 7.32%. Desk elasticity about 1.0 (0.5 to 1.75): new homes meet 5% to 10% of a demand shock in 3 years, 15% to 25% in 10 years, 25% to 40% in 20 years. Mainstream shortage estimates are 3.7M to 4.7M homes."
   },
   {
    "q": "Will China pair its solar know-how ban with yuan finance for the Global South?",
-   "a": "So far the yuan leg is thin: 94% of Chinese energy loans in 2010 to 2021 were in dollars and the Global South solar boom is bought for cash. The yuan grows by refinancing old debt instead, as in Kenya, where its share of external debt rose from 5% to 11.7%."
+   "a": "Answered in Round 5: not explicitly. The solar items in No. 48 carry no Global South clause, unlike the AI items. The yuan grows through refinancing, panda bonds (above RMB 160B in H1 2026) and 32 PBoC swap agreements (about RMB 4.5T, RMB 132.8B drawn). Desk: a solar clause 20, a named yuan solar credit line by end 2027 30."
   },
   {
    "q": "Is there a real cash premium for human-made goods?",
-   "a": "Experiments show a label effect on ratings and purchase intent, and a preregistered auction study finds bids fall as AI involvement rises, but its effect size was not seen. No transaction-based estimate exists, and platforms such as Etsy capture part of any premium."
+   "a": "Answered in Round 5: yes, but narrow. The first transaction data show an AI discount: at CGTrader AI models were one in six uploads but 2.6% of sales and about 1.1% of revenue. Label effects are real in experiments, and Etsy's take rate rose to 24.2%. No peer-reviewed cash estimate of the premium exists yet. Plausible, 60."
   },
   {
    "q": "Why was producer price inflation for finished consumer goods flat in 2026 while energy CPI rose 20.4%?",
-   "a": "Unresolved. Both are official series as published. The likely cause is the energy weight and coverage of the producer series. It matters because it decides how much of the 2026 shock is still in the pipeline for 2027."
+   "a": "Answered in Round 5: it was not flat. The series used (WPUFD4111) is finished consumer foods, which was flat (minus 0.9%). Producer energy rose 35.4%, more than CPI energy (20.4%), because half of CPI energy is regulated power and gas (+4.4% and +5.0%). The live gap is core goods: producer +4.0% against consumer +0.7%, a margin squeeze that may pass through in 2027."
   },
   {
    "q": "If a UHI or AI dividend law passes, will payments be pledgeable or programmable?",
-   "a": "No bill found makes payments assignable, tokenized or programmable, and none is money-financed. A cash UHI written into the Social Security Act would inherit its anti-assignment rule. The Sanders bill's payment mechanics and any CBO score are still to be read."
+   "a": "Answered in Round 5: most likely neither. A cash dividend would probably be non-assignable (75) but only partly shielded from private garnishment (55), because the bank-account rule (31 CFR 212) covers only a few agencies. Spending restrictions 10, explicitly pledgeable 5. Programmable benefits already exist on SNAP cards, and stablecoin issuers must be able to freeze coins."
   },
   {
    "q": "Will Moody's cut France, and does it matter?",
-   "a": "The decision was due after the close on 23 October 2026 and had not been published when this was written. A cut from Aa3 to A1 would align all three agencies at the A+ level. It matters less for the rating itself than for the budget vote on 27 October and the spread against 200 basis points, which the desk's conditional rules use."
+   "a": "Answered in Round 5: no. On 23 October Moody's kept France at Aa3 negative, conditional on a deficit-reducing 2027 budget. A one-notch cut would have changed little: past French downgrades moved the spread a median 4bp tighter. The cliff is the BBB band (conditional C11). Desk 70 against a thin market's 87.5 to 90.5 is a pending score. Next: S&P on 27 November."
   },
   {
    "q": "How much do new residents cost or contribute to European states?",
-   "a": "This is a legitimate fiscal question that official studies in Denmark and the Netherlands have measured by origin, age and education. It was raised in the X thread but not tested this round. The desk will answer it only with official data, never with claims about groups of people."
+   "a": "Answered in Round 5: official studies (UK Migration Advisory Committee 2025, Danish Finance Ministry, Australian Treasury, OBR) find the result depends mainly on route of entry, age at arrival and earnings. Work routes are positive, family routes lower and humanitarian routes most negative on fiscal accounts, and method choices such as the treatment of shared costs can change the sign of totals."
   },
   {
    "q": "Are Europeans actually moving to Latin America or Southeast Asia in rising numbers?",
-   "a": "The data found so far say mostly no: Germans move mainly to Switzerland, Austria and Spain, and new Italian emigrants to Spain and Germany. No 2025 OECD table of skilled EU emigrants by destination was found, so this rests on German and Italian registry data."
+   "a": "Answered in Round 5: no, not as a rising share. In six EU countries with full Eurostat detail, Latin America took 4.5% of emigrants in 2019 and 4.1% in 2024, Southeast Asia 1.6% in both years, and much of the Latin American flow is returns and descent-citizens. Intra-EU moves are over half. The UAE rose fastest before the 2026 war."
   }
  ]
 }

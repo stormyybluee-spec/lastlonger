@@ -1,0 +1,226 @@
+{
+ "R5-1": {
+  "likely": 60,
+  "headline": "Likely: about two thirds of dollar stablecoins are held outside the US (range 59% to 78%), mostly in emerging economies in Asia, Europe's eastern edge, Africa and Latin America.",
+  "up": [
+   "An issuer or regulator publishes holder geography with a non-US share above 60%",
+   "Tron USDT keeps growing faster than Ethereum USDC",
+   "A currency crisis is followed by a jump in local stablecoin trading, as the IMF finds"
+  ],
+  "down": [
+   "Issuer data show a US share above 50%",
+   "US institutional holdings grow fast after GENIUS rules take effect in January 2027",
+   "A follow-up IMF study with better attribution lowers the emerging-economy share below 60%"
+  ],
+  "watch": "Tether's Q3 attestation (about 31 October 2026) and any IMF follow-up with a regional table",
+  "byHorizon": {
+   "H0": 60
+  }
+ },
+ "R5-2": {
+  "likely": 55,
+  "headline": "Likely: the 2026 rise in real rates is mostly a hawkish Fed in an oil-hit, AI-fed economy (about 35bp of 73bp), plus Japan (about 18bp), with term premium and direct AI crowding-out smaller.",
+  "up": [
+   "Real 10-year yields fall with oil when the Fed signals a pause",
+   "The ACM risk-neutral yield keeps carrying the move while its term premium stays flat",
+   "Japanese yields and US real yields keep moving together on Tokyo days"
+  ],
+  "down": [
+   "Kim-Wright's term premium rises above 1.1% while expected rates fall",
+   "Coupon auction sizes rise at the November or February refunding and real yields jump",
+   "Hyperscaler bond issuance surges and corporate spreads widen with real yields"
+  ],
+  "watch": "FOMC 2026-10-28, the refunding 2026-11-04 and the Kim-Wright file update",
+  "byHorizon": {
+   "H0": 55
+  }
+ },
+ "R5-3": {
+  "likely": 85,
+  "headline": "Likely: no explicit Fed yield cap by 2035 (desk 15 for a cap). A Warsh-style balance-sheet accord with Treasury is the live design (25 by end 2028).",
+  "up": [
+   "Warsh's balance-sheet task force reports a smaller, shorter Fed portfolio",
+   "Treasury keeps managing duration with bills and buybacks",
+   "FOMC and refunding texts keep avoiding any yield level"
+  ],
+  "down": [
+   "A disorderly 30-year auction or a bond-volatility spike forces Fed long-end purchases",
+   "A Trump-appointed Board majority after 2028-01-31 pushes for yield support",
+   "Any official text names a Treasury yield level (conditional C7)"
+  ],
+  "watch": "FOMC statements and the 2026-11-04 refunding for any yield language, then Powell's seat on 2028-01-31",
+  "byHorizon": {
+   "H0": 97,
+   "H1": 85
+  }
+ },
+ "R5-4": {
+  "likely": 65,
+  "headline": "Likely: corporate tax receipts recover as AI capex growth slows. FY2027 receipts above FY2026's $381.4B, desk 65.",
+  "up": [
+   "Hyperscaler 2027 capex guidance flat or lower in Q3 results",
+   "Corporate receipts up on a year in October and December 2026",
+   "Refunds fall back toward $35B a year"
+  ],
+  "down": [
+   "2027 capex guidance up more than 25%",
+   "Another round of retroactive expensing or new deductions in law",
+   "Corporate receipts keep falling in a capex plateau"
+  ],
+  "watch": "Alphabet, Microsoft and Amazon Q3 results (2026-10-28 to 10-30) and the October MTS (about 2026-11-12)",
+  "byHorizon": {
+   "H0": 65,
+   "H1": 60
+  }
+ },
+ "R5-5": {
+  "likely": 80,
+  "headline": "Likely: Japan's next yen defense is funded mainly by selling dollar securities, not by borrowing through the Fed's FIMA line (FIMA above $1B during it, 20).",
+  "up": [
+   "USD/JPY returns to 160 and Japan's securities fall in the next reserve report",
+   "FIMA stays at zero through year end",
+   "The Fed leaves the FIMA cap at $60B"
+  ],
+  "down": [
+   "The Fed raises the FIMA cap and cuts its rate",
+   "Treasury market stress makes selling dearer than borrowing",
+   "Japan draws FIMA above $10B during an intervention (conditional C9)"
+  ],
+  "watch": "Weekly H.4.1 FIMA line and Japan's monthly reserve report (2026-11-07)",
+  "byHorizon": {
+   "H0": 80
+  }
+ },
+ "R5-6": {
+  "likely": 80,
+  "headline": "Likely: no public US dollar line with a Gulf state by end 2028 (desk 20 for a line). The Treasury's fund has only about $25B of dollar securities.",
+  "up": [
+   "ESF monthly statements keep listing only Mexico and Argentina",
+   "Gulf states keep borrowing in markets",
+   "The FOMC renews only its five standing lines in April 2027"
+  ],
+  "down": [
+   "An ESF note names a Gulf agreement",
+   "The Fed adds a Gulf swap partner under Warsh",
+   "A new oil or war shock makes Gulf central banks sell Treasuries fast"
+  ],
+  "watch": "ESF September statement (mid November 2026) and the FOMC swap-line renewal in April 2027",
+  "byHorizon": {
+   "H0": 80
+  }
+ },
+ "R5-7": {
+  "likely": 60,
+  "headline": "Likely: conditional dollar access is one strong motive for central bank gold buying. Buyers are central banks without Fed lines, and storage is moving home.",
+  "up": [
+   "WGC Q3 central bank demand above 250 tonnes",
+   "2027 WGC survey shows domestic storage above 12% (conditional C10)",
+   "Another non-line central bank announces a repatriation"
+  ],
+  "down": [
+   "A standing-line central bank reports purchases",
+   "Storage moves back abroad while buying continues",
+   "Buying collapses with prices, showing price-driven demand"
+  ],
+  "watch": "WGC Gold Demand Trends Q3 (about 2026-10-29 to 10-30)",
+  "byHorizon": {
+   "H0": 60,
+   "H1": 60
+  }
+ },
+ "R5-8": {
+  "likely": 70,
+  "headline": "Likely: US housing supply responds slowly. New homes meet only 5% to 10% of a demand shock within 3 years and 15% to 25% within 10 years.",
+  "up": [
+   "October completions below 1.30M annual rate (desk 80)",
+   "Mortgage rates stay above 7%",
+   "Builders' new-home supply stays above 8 months"
+  ],
+  "down": [
+   "Permits rise above 1.5M annual rate",
+   "Broad state upzoning (Montana, California) shows a permit surge",
+   "Completions rise above 1.8M with flat real prices"
+  ],
+  "watch": "Census new residential construction for October (2026-11-18)",
+  "byHorizon": {
+   "H0": 75,
+   "H1": 70
+  }
+ },
+ "R5-9": {
+  "likely": 70,
+  "headline": "Likely: China keeps its solar know-how controls and yuan finance separate. A Global South solar clause, 20. A named yuan solar credit line by end 2027, 30.",
+  "up": [
+   "Final No. 48 text with no Global South clause",
+   "More panda bonds and yuan refinancing than new energy loans",
+   "PBoC swap drawings keep rising"
+  ],
+  "down": [
+   "A named yuan credit line for green manufacturing exports",
+   "No. 48 adds facilitation for partner countries",
+   "Chinese factories abroad financed in yuan with licensed know-how"
+  ],
+  "watch": "No. 48 comments close 2026-11-15, then the final text",
+  "byHorizon": {
+   "H0": 75,
+   "H1": 65
+  }
+ },
+ "R5-10": {
+  "likely": 60,
+  "headline": "Likely: a human-made premium exists as a label effect and shows up in sales data as an AI discount, but its cash size is not yet measured.",
+  "up": [
+   "Etsy Q3 take rate at or above 24%",
+   "A marketplace publishes prices by provenance",
+   "Peer-reviewed auction studies report a premium for identical goods"
+  ],
+  "down": [
+   "AI items close the price gap as quality improves",
+   "An independent survey finds no preference at the same price",
+   "Buyers pay the same for labelled AI goods in field tests"
+  ],
+  "watch": "Etsy Q3 results (early November 2026) and the Mandel and Imas auction paper",
+  "byHorizon": {
+   "H0": 60,
+   "H1": 55
+  }
+ },
+ "R5-12": {
+  "likely": 70,
+  "headline": "Likely: a federal AI dividend would be non-assignable (75) but only partly shielded from private garnishment (55), and rarely spend-restricted (10).",
+  "up": [
+   "The first dividend bill copies 42 USC 407",
+   "Treasury adds a new paying agency to 31 CFR 212",
+   "Stablecoin wallets compete to receive benefit deposits"
+  ],
+  "down": [
+   "A bill pays benefits as programmable tokens with spending rules",
+   "More SNAP restriction waivers spread to cash benefits",
+   "A bill makes payments explicitly pledgeable as collateral"
+  ],
+  "watch": "Any AI dividend bill text with an assignment, garnishment or wallet clause (desk 15 by mid 2027)",
+  "byHorizon": {
+   "H0": 70,
+   "H1": 65
+  }
+ },
+ "R5-17": {
+  "likely": 75,
+  "headline": "Likely: borrowing at 6.19% to earn 13.6% adds little to the typical outcome and much to the downside. Margin calls hit 35% to 52% of 50% loans over 10 to 20 years.",
+  "up": [
+   "Equity volatility above 25%",
+   "An S&P 500 drawdown above 23%",
+   "Portfolio-line rates above 8%"
+  ],
+  "down": [
+   "A long calm stretch with volatility near 15%",
+   "Returns near 13.6% a year with low volatility",
+   "Borrowing costs fall below 5%"
+  ],
+  "watch": "Realized equity volatility and portfolio-line rates. This is general education, not advice",
+  "byHorizon": {
+   "H0": 75,
+   "H1": 75
+  }
+ }
+}
