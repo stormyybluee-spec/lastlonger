@@ -3,7 +3,7 @@
  "subtitle": "Money and value from the ground up, written to be passed down, so each generation keeps what the last one learned and does not repeat what it forgot.",
  "intro": [
   "Most people use money every day and never learn how it works. Nobody teaches it at home, school teaches a little arithmetic, and the news speaks a language of rates, yields and deficits that seems designed to keep outsiders out. This guide is meant to open that locked room, slowly and clearly, one idea at a time.",
-  "It starts at the very bottom, with what money actually is, and climbs step by step: gold coins and the gold standard, the wars that broke it, the 1944 system that crowned the dollar, the 1971 night that cut the dollar loose from gold, the oil money that followed, and the way banks create most of our money today with a few keystrokes. Then it turns to the questions that matter for your life: why debt never seems to go away, why prices move in long seasons, why empires and their currencies fall, why the ruler we measure prices with keeps stretching, and how a new player with no inheritance can get onto the board. Later chapters add the bond market underneath it all, the deflation debate, the game nations play for the top of the leaderboard, the view from a smaller currency, countries read as companies, the titled world: why the abundance we see is priced on future credit and who keeps the balance, and finally crypto, dissected into its three families.",
+  "It starts at the very bottom, with what money actually is, and climbs step by step: gold coins and the gold standard, the wars that broke it, the 1944 system that crowned the dollar, the 1971 night that cut the dollar loose from gold, the oil money that followed, and the way banks create most of our money today with a few keystrokes. Then it turns to the questions that matter for your life: why debt never seems to go away, why prices move in long seasons, why empires and their currencies fall, why the ruler we measure prices with keeps stretching, and how a new player with no inheritance can get onto the board. Later chapters add the bond market underneath it all, who really creates money, the deflation debate, the game nations play for the top of the leaderboard, the view from a smaller currency, countries read as companies, the titled world: why the abundance we see is priced on future credit and who keeps the balance, and finally crypto, dissected into its three families.",
   "It is written like a rulebook passed from one generation to the next. Each chapter ends with rules. The book ends with a full rulebook and a list of the mistakes each generation made, from Rome to the 2020s, so that their intelligence and their errors are both preserved.",
   "The guide honors the ideas of the person who commissioned it, an owner who wrote a newsletter series about money called Ledger Age, and quotes their questions in their own words. Where their intuition is right, the guide says so and builds on it. Where it needs correcting, the guide corrects it gently and shows the evidence.",
   "Why this order? This book grew out of years of one person's questions, asked, half answered and asked again. Most books, courses and even degrees in economics and finance teach the pieces separately, each with its own jargon and messy charts, and rarely tell the history and the geopolitics that explain why the pieces exist. Readers end up relooping for years just to learn what the words mean. Here the pieces come in the order they connect, from what money is, to the bonds underneath it, to the countries competing over it, to who owns the world and who keeps the balance, so that a reader can absorb in weeks what usually takes years.",
@@ -241,7 +241,7 @@
     },
     {
      "type": "insider",
-     "text": "Debasement and modern inflation share a pattern. The first people to spend the new coins, the emperor and his soldiers, got full value. By the time the extra coins spread through the economy, prices had risen, and the last people to receive them lost. Chapter 17 calls this the Cantillon effect."
+     "text": "Debasement and modern inflation share a pattern. The first people to spend the new coins, the emperor and his soldiers, got full value. By the time the extra coins spread through the economy, prices had risen, and the last people to receive them lost. Chapter 18 calls this the Cantillon effect."
     },
     {
      "type": "h",
@@ -330,7 +330,7 @@
     {
      "type": "myth",
      "myth": "Gold-backed money is always fair to everyone.",
-     "reality": "Gold money is fair to lenders and savers in a growing economy, because it gains buying power. It is harsh on borrowers, because their debts get heavier as prices fall. Whether a money is fair depends on whether you owe it or own it, and on which way prices are moving. Chapter 9 calls these the seasons of money."
+     "reality": "Gold money is fair to lenders and savers in a growing economy, because it gains buying power. It is harsh on borrowers, because their debts get heavier as prices fall. Whether a money is fair depends on whether you owe it or own it, and on which way prices are moving. Chapter 10 calls these the seasons of money."
     },
     {
      "type": "insider",
@@ -643,7 +643,7 @@
      "items": [
       "Hollowed industry. A strong dollar makes US exports expensive and imports cheap. Economists David Autor, David Dorn, Gordon Hanson and coauthors estimated that the surge of Chinese imports in the 2000s cost around a million US manufacturing jobs, and perhaps two million jobs in all. Whole towns felt it.",
       "Persistent deficits. The US has run trade deficits almost every year since the mid-1970s. Foreign claims on the US keep growing.",
-      "Borrowing becomes easy, maybe too easy. With the world eager to buy its debt, Washington faces little market pressure to balance its budget, until the price of borrowing finally rises, as Chapter 17 shows it now has.",
+      "Borrowing becomes easy, maybe too easy. With the world eager to buy its debt, Washington faces little market pressure to balance its budget, until the price of borrowing finally rises, as Chapter 18 shows it now has.",
       "Dependence on foreign buyers. If foreign governments slow their buying or sell, US rates rise. In 2026 Japan's Treasury holdings fell about $171 billion from February to August as it defended the yen, and long-term US yields rose."
      ]
     },
@@ -813,7 +813,7 @@
     },
     {
      "type": "p",
-     "text": "The cure was brutal. The US went through two recessions in quick succession. Unemployment reached 10.8% at the end of 1982. Farmers drove tractors to Washington to protest. But inflation fell to around 3% by 1983, and the Fed earned back its credibility. A 40-year era of falling interest rates began, which Chapter 9 calls the long bond summer."
+     "text": "The cure was brutal. The US went through two recessions in quick succession. Unemployment reached 10.8% at the end of 1982. Farmers drove tractors to Washington to protest. But inflation fell to around 3% by 1983, and the Fed earned back its credibility. A 40-year era of falling interest rates began, which Chapter 10 calls the long bond summer."
     },
     {
      "type": "table",
@@ -920,7 +920,7 @@
        "Base money: paper cash and bank reserves",
        "The Federal Reserve",
        "Cash: anyone. Reserves: only banks and a few institutions with Fed accounts",
-       "Bank reserves about $3.0 trillion (October 2026)"
+       "Bank reserves about $2.96 trillion (week to 21 October 2026)"
       ],
       [
        "Bank deposits",
@@ -1000,7 +1000,7 @@
     {
      "type": "myth",
      "myth": "Banks can lend about ten times their reserves, so every dollar of base money becomes ten dollars of loans.",
-     "reality": "This is the old money multiplier from textbooks, and the owner's notes used it, for example multiplying gold or Bitcoin by ten. The Bank of England's 2014 paper, which the owner also cites, says the reverse: banks lend first, and the central bank supplies reserves as needed at its chosen interest rate. In the United States, reserve requirements have been zero since March 2020. There is no fixed multiplier. The binding limits are capital, demand, profit and the interest rate. The owner's instinct that money is debt is correct. The fixed ten times rule is not."
+     "reality": "This is the old money multiplier from textbooks, and the owner's notes used it, for example multiplying gold or Bitcoin by ten. The Bank of England's 2014 paper, which the owner also cites, says the reverse: banks lend first, and the central bank supplies reserves as needed at its chosen interest rate. In the United States, reserve requirements have been zero since March 2020. There is no fixed multiplier. The binding limits are capital, demand, profit and the interest rate. The owner's instinct that money is debt is correct. The fixed ten times rule is not. And when the Fed buys bonds, new public deposits appear only if the seller is a nonbank, such as a pension fund. Chapter 8 shows the two floors."
     },
     {
      "type": "h",
@@ -1008,7 +1008,7 @@
     },
     {
      "type": "p",
-     "text": "The US Treasury is the government's money manager. It keeps its main checking account, the Treasury General Account, at the Federal Reserve. In mid-October 2026 it held about $886 billion. When the government spends, say on a Social Security payment, money moves from that account to the recipient's bank. The recipient's deposit rises and the bank's reserves at the Fed rise. Government spending adds money to the private economy."
+     "text": "The US Treasury is the government's money manager. It keeps its main checking account, the Treasury General Account, at the Federal Reserve. In the week to 21 October 2026 it held about $952 billion. When the government spends, say on a Social Security payment, money moves from that account to the recipient's bank. The recipient's deposit rises and the bank's reserves at the Fed rise. Government spending adds money to the private economy."
     },
     {
      "type": "p",
@@ -1016,7 +1016,7 @@
     },
     {
      "type": "p",
-     "text": "Because the government spends more than it taxes, it borrows the difference. It does this through primary auctions. Treasury announces how many bills, notes and bonds it will sell. A group of about two dozen large banks, called primary dealers, must bid. Pension funds, money market funds, foreign central banks and individuals bid too, directly or through the dealers. Buyers pay with deposits and reserves, which move into the Treasury's account."
+     "text": "Because the government spends more than it taxes, it borrows the difference. It does this through primary auctions. Treasury announces how many bills, notes and bonds it will sell. A group of 25 large banks and dealers, called primary dealers, must bid. Pension funds, money market funds, foreign central banks and individuals bid too, directly or through the dealers. Buyers pay with deposits and reserves, which move into the Treasury's account."
     },
     {
      "type": "insider",
@@ -1303,7 +1303,7 @@
     },
     {
      "type": "p",
-     "text": "Every yield you see quoted, 5.13% on the 10-year or 4.81% on the 2-year, is nominal. It counts dollars, not what dollars buy. Chapter 14 called this the shrinking ruler. Your real return is what is left after inflation and, for most savers, after tax."
+     "text": "Every yield you see quoted, 5.13% on the 10-year or 4.81% on the 2-year, is nominal. It counts dollars, not what dollars buy. Chapter 15 called this the shrinking ruler. Your real return is what is left after inflation and, for most savers, after tax."
     },
     {
      "type": "steps",
@@ -1325,7 +1325,7 @@
     },
     {
      "type": "insider",
-     "text": "This is the quietest way governments shrink debt. Keep the nominal yield below inflation for long enough and the real value of the debt melts, paid for by bondholders and savers who only look at the nominal number. Chapter 9 called it financial repression. The cure is the split in step 3: always separate a yield into the part that only keeps up with inflation and the part that is truly yours."
+     "text": "This is the quietest way governments shrink debt. Keep the nominal yield below inflation for long enough and the real value of the debt melts, paid for by bondholders and savers who only look at the nominal number. Chapter 10 called it financial repression. The cure is the split in step 3: always separate a yield into the part that only keeps up with inflation and the part that is truly yours."
     },
     {
      "type": "h",
@@ -1379,8 +1379,438 @@
    ]
   },
   {
-   "id": "rb-07",
+   "id": "rb-moneymake",
    "num": "08",
+   "title": "Who really creates money: banks, the Fed and the Treasury",
+   "kicker": "Bank loans are only one door. The Fed, the Treasury and even your tax payment move money between two floors, and only one of them is money you can spend.",
+   "blocks": [
+    {
+     "type": "tldr",
+     "label": "In 60 seconds",
+     "items": [
+      "Money lives on two floors. Upstairs, banks and the Treasury hold accounts at the Federal Reserve. Downstairs, you and every business hold bank deposits. You can only spend the downstairs kind.",
+      "Banks create most new downstairs money when they lend, and they also create it when they buy a bond or anything else from someone who is not a bank.",
+      "The Fed creates upstairs money, called reserves, every time it buys a bond. Whether new downstairs money appears too depends on who sold the bond: a bank (no) or a pension fund or other nonbank (yes).",
+      "The Treasury moves money between the floors. Selling bonds and collecting taxes pulls deposits up into its Fed account. Spending pushes them back down.",
+      "So money is not created only by bank loans. In 2020 and 2021 the Treasury and the Fed together created most of the $5.45 trillion rise in bank deposits.",
+      "The Fed is not allowed to buy new bonds straight from the Treasury. It must buy in the open market, through 25 primary dealers."
+     ]
+    },
+    {
+     "type": "cards",
+     "label": "Five key words",
+     "items": [
+      {
+       "t": "Reserves",
+       "d": "Banks' own accounts at the Fed. Upstairs money. About $2.96 trillion in October 2026. Only banks and a few institutions can hold them."
+      },
+      {
+       "t": "Deposits",
+       "d": "The money in your bank account. Downstairs money, a promise from your bank. About $19.6 trillion at US commercial banks."
+      },
+      {
+       "t": "Treasury General Account",
+       "d": "The government's checking account at the Fed. About $952 billion in late October 2026. Money in it is out of public hands."
+      },
+      {
+       "t": "Primary dealer",
+       "d": "One of 25 big dealers that must bid at every Treasury auction and that trade directly with the Fed."
+      },
+      {
+       "t": "Open market",
+       "d": "The market where bonds already issued change hands. The only place the Fed may buy Treasuries."
+      }
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Chapter 6 showed that a bank loan creates a deposit. That is the most common way money is born, but not the only one. This chapter finishes the picture. It adds the Fed, the Treasury and the dealers in between, and shows exactly which moves create money you can spend and which only shuffle money that banks use among themselves."
+    },
+    {
+     "type": "h",
+     "text": "Two floors of money"
+    },
+    {
+     "type": "p",
+     "text": "Picture the dollar system as a building with two floors. Upstairs are the Fed's books. Banks hold reserves there, the Treasury holds its account there, and money funds can park cash there overnight. Downstairs are the public's books: deposits at banks, plus paper cash. When you pay rent or buy groceries, you move downstairs money. Banks settle with each other upstairs."
+    },
+    {
+     "type": "callout",
+     "label": "Picture this",
+     "text": "Think of a big market hall. Upstairs is the wholesale floor, where only licensed traders deal, and they settle in special tokens issued by the hall's owner, the Fed. Downstairs is the shop floor, where everyone shops with receipts issued by the traders, which are bank deposits. Some deals happen only upstairs, between traders and the owner. Some happen only downstairs. And some go through the staircase and change the amount of receipts on the shop floor. This chapter is a guide to the staircase."
+    },
+    {
+     "type": "diagram",
+     "key": "mc-two-tier",
+     "caption": "Upstairs: reserves, the Treasury's account and cash parked at the Fed. Downstairs: deposits and cash held by the public. Arrows show which moves cross the staircase."
+    },
+    {
+     "type": "table",
+     "cols": [
+      "Floor",
+      "What is there",
+      "Size, October 2026"
+     ],
+     "rows": [
+      [
+       "Upstairs (the Fed's books)",
+       "Bank reserves",
+       "$2.96T"
+      ],
+      [
+       "Upstairs",
+       "Treasury General Account",
+       "$952B"
+      ],
+      [
+       "Upstairs",
+       "Cash parked by money funds at the Fed (overnight reverse repo)",
+       "$0.3B (it was $1.8T in March 2022)"
+      ],
+      [
+       "Upstairs",
+       "What the Fed holds against all this: Treasuries and mortgage bonds",
+       "$4.57T and $1.90T"
+      ],
+      [
+       "Both",
+       "Paper cash (a Fed liability that the public holds)",
+       "$2.49T"
+      ],
+      [
+       "Downstairs",
+       "Bank deposits",
+       "$19.6T (September 2026)"
+      ],
+      [
+       "Downstairs",
+       "M2, the broad measure of the public's money",
+       "$23.3T (August 2026)"
+      ]
+     ]
+    },
+    {
+     "type": "check",
+     "q": "Can a family spend bank reserves at a shop?",
+     "a": "No. Reserves are accounts at the Fed that only banks and a few institutions hold. A family spends deposits or cash. Reserves only matter to the family when a move also changes deposits."
+    },
+    {
+     "type": "h",
+     "text": "Step 1. Banks create deposits, and not only by lending"
+    },
+    {
+     "type": "p",
+     "text": "When a bank lends you $100, it adds a $100 loan to its assets and a $100 deposit to its debts at the same moment. New downstairs money appears. When you repay, both disappear. That is Chapter 6. The second way is less known. When a bank buys a $100 bond from a pension fund, it pays by crediting the fund's account with a new $100 deposit. No loan was made, but money was created all the same. When a bank sells a bond to a nonbank, money is destroyed."
+    },
+    {
+     "type": "quote",
+     "text": "Whenever a bank makes a loan, it simultaneously creates a matching deposit in the borrower's bank account, thereby creating new money.",
+     "by": "Bank of England, Money creation in the modern economy, 2014"
+    },
+    {
+     "type": "steps",
+     "items": [
+      "A bank lends $100 to a household: the household's deposit rises $100. New money.",
+      "The household repays: the deposit and the loan both shrink $100. Money destroyed.",
+      "A bank buys a $100 bond from a pension fund: the fund's deposit rises $100. New money without a loan.",
+      "Upstairs, nothing changed in total. Reserves only move between banks when the money is spent at another bank."
+     ]
+    },
+    {
+     "type": "check",
+     "q": "Your bank buys a building from a developer for $1 million and pays into the developer's account at the same bank. Did the money supply change?",
+     "a": "Yes, it rose by $1 million. The bank gained an asset (the building) and a new deposit liability (the developer's balance). Any purchase by a bank from a nonbank creates a deposit."
+    },
+    {
+     "type": "h",
+     "text": "Step 2. The Fed creates reserves when it buys, and the seller decides the rest"
+    },
+    {
+     "type": "p",
+     "text": "The Fed holds $4.57 trillion of Treasuries. It got them by buying in the open market from the 25 primary dealers, paying with reserves it creates on the spot, and by rolling over bonds as they mature. That is real money creation, but upstairs. Whether it reaches downstairs depends on who sold the bond in the end."
+    },
+    {
+     "type": "table",
+     "cols": [
+      "Who sells the bond to the Fed",
+      "Upstairs (reserves)",
+      "Downstairs (deposits)"
+     ],
+     "rows": [
+      [
+       "A bank",
+       "Up $100",
+       "No change. The bank swapped a bond for reserves."
+      ],
+      [
+       "A pension fund, insurer, money fund or foreign investor",
+       "Up $100",
+       "Up $100. The seller's bank gets reserves and credits the seller's deposit."
+      ],
+      [
+       "A dealer selling from its own stock",
+       "Up $100",
+       "Up $100 at first. If the dealer uses the cash to repay a loan from a bank, the deposit disappears again."
+      ]
+     ]
+    },
+    {
+     "type": "diagram",
+     "key": "mc-qe-paths",
+     "caption": "Two paths for the same $100 purchase. From a bank, only reserves rise. From a pension fund, reserves and deposits both rise."
+    },
+    {
+     "type": "quote",
+     "text": "When the Federal Reserve purchases securities from a nonbank seller, it creates new bank deposits.",
+     "by": "Castro, Cavallo and Zarutskie, Federal Reserve FEDS Notes, 2022"
+    },
+    {
+     "type": "insider",
+     "text": "The primary dealer in the middle is only the pipe. Most primary dealers are the securities arms of big banks, and many act for customers. To know whether a Fed purchase added money you can spend, follow the cash to whoever holds it at the end. In 2020 to 2022 much of the selling came from nonbanks, which is why quantitative easing then added deposits as well as reserves."
+    },
+    {
+     "type": "check",
+     "q": "The Fed buys $1 billion of Treasuries, and the sellers turn out to be three banks. How much new money can the public spend?",
+     "a": "None directly. Bank reserves rose $1 billion, which is upstairs money. Public deposits change only if the sellers are nonbanks, or later when banks spend or lend."
+    },
+    {
+     "type": "h",
+     "text": "Step 3. The Treasury moves money between the floors"
+    },
+    {
+     "type": "p",
+     "text": "The Treasury keeps its account at the Fed, upstairs. When a fund buys a new Treasury bond at auction, the fund's deposit falls, its bank's reserves fall, and the Treasury's account rises. Money has gone upstairs. When the Treasury pays a Social Security check, the reverse happens: the account falls, and the retiree's deposit and the bank's reserves rise. Taxes work like an auction: deposits go up the stairs. You can watch it happen. In the week to 21 October 2026 the Treasury's account rose $69 billion, and bank reserves fell $60 billion."
+    },
+    {
+     "type": "diagram",
+     "key": "mc-deficit-loop",
+     "caption": "Auctions and taxes lift money into the Treasury's account at the Fed. Spending sends it back down. A deficit means more goes down than comes up."
+    },
+    {
+     "type": "p",
+     "text": "So does a budget deficit create money? It depends on who buys the new bonds. In fiscal 2026 the deficit was $1.99 trillion."
+    },
+    {
+     "type": "table",
+     "cols": [
+      "Who buys the new debt",
+      "Effect on the public's deposits"
+     ],
+     "rows": [
+      [
+       "Households and funds, paying from their deposits",
+       "None overall. The deposits taken at auction come back when the Treasury spends. The buyers now hold a bond instead."
+      ],
+      [
+       "Banks",
+       "Deposits rise. Banks pay with reserves, the spending lands in someone's account."
+      ],
+      [
+       "The Fed, indirectly, buying later from nonbanks",
+       "Deposits and reserves both rise. This is the legal route to printing money for a deficit."
+      ],
+      [
+       "Money funds using cash parked at the Fed",
+       "Deposits rise. Cash that was upstairs comes down when the Treasury spends."
+      ]
+     ]
+    },
+    {
+     "type": "check",
+     "q": "The Treasury runs a $100 deficit and a pension fund buys the whole $100 bond with its bank deposit. What happens to deposits?",
+     "a": "Nothing overall. The fund's deposit fell $100 at the auction, and the Treasury's spending added $100 to someone else's deposit. The private sector holds $100 more in bonds, not more money."
+    },
+    {
+     "type": "h",
+     "text": "Step 4. Drains, new pipes and the Fed's own bills"
+    },
+    {
+     "type": "list",
+     "items": [
+      "The overnight reverse repo facility: money funds can lend cash to the Fed overnight. While it sits there, it is out of the banks. It held about $1.8 trillion in March 2022. By October 2026 the domestic part was $0.3 billion, so this drain is empty.",
+      "The Treasury General Account: every rise drains reserves and often deposits, every fall adds them back.",
+      "Stablecoins: buying a dollar token moves your deposit to the issuer, who buys Treasury bills. Bank deposits do not grow, and if the bill comes from a bank or the Treasury, they shrink. The token is a new private dollar outside M2.",
+      "Interest on reserves: the Fed pays banks interest by creating new reserves, about $115 billion a year at current rates (desk estimate). Deposits grow only if banks pass it on.",
+      "Fed profits and losses: when the Fed earns more than it pays, it sends the profit to the Treasury. Since 2022 it has paid more than it earns and owes itself $232.7 billion before payments restart. The 'taxes go to the Fed's owners' story has it backwards."
+     ]
+    },
+    {
+     "type": "check",
+     "q": "A money fund pulls $50 billion out of the Fed's reverse repo facility to buy new Treasury bills, and the Treasury spends the cash. What happens downstairs?",
+     "a": "Deposits rise about $50 billion. The cash was upstairs at the Fed, it passed through the Treasury's account, and the spending landed in public accounts."
+    },
+    {
+     "type": "h",
+     "text": "Why the Fed cannot just buy from the Treasury"
+    },
+    {
+     "type": "p",
+     "text": "Section 14 of the Federal Reserve Act says US government bonds may be bought \"only in the open market\". Congress added that rule in 1935 so that the Treasury would have to face market buyers and could not finance itself at its own central bank. A wartime exception from 1942 allowed up to $5 billion of direct purchases. It was renewed several times, last in 1979, and lapsed in 1981. The Fed can still roll over bonds it already owns by taking new ones at auction, which gives the Treasury no new cash."
+    },
+    {
+     "type": "insider",
+     "text": "A ban on direct buying is not a ban on financing. From 1942 to 1951 the Fed promised to keep bill rates at 0.375% and long bond yields under 2.5%, buying whatever the market sold at those prices. That financed the war debt cheaply without a single direct purchase. The Treasury-Fed Accord of 4 March 1951 ended the deal."
+    },
+    {
+     "type": "h",
+     "text": "Putting sizes on it"
+    },
+    {
+     "type": "diagram",
+     "key": "mc-channels",
+     "caption": "Every channel that creates or destroys the public's deposits, with rough sizes for the latest year and for 2020 to 2021."
+    },
+    {
+     "type": "table",
+     "cols": [
+      "Channel",
+      "Latest year (to Sept or Oct 2026)",
+      "2020 to 2021"
+     ],
+     "rows": [
+      [
+       "Bank loans",
+       "+$1.0T",
+       "small, apart from a short burst in early 2020"
+      ],
+      [
+       "Bank purchases of securities",
+       "+$0.14T",
+       "+$2.1T (Treasuries and agency bonds)"
+      ],
+      [
+       "Fed purchases",
+       "+$0.19T net",
+       "+$4.6T (Treasuries and mortgage bonds)"
+      ],
+      [
+       "Deficit spending",
+       "$1.99T deficit",
+       "$5.9T of new Treasury debt, 72% bought by the Fed and banks"
+      ],
+      [
+       "Cash withdrawn into wallets",
+       "-$0.07T",
+       "-$0.45T"
+      ],
+      [
+       "Result: bank deposits",
+       "+$1.2T (+6.7%)",
+       "+$5.45T (+35%)"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "In an ordinary year, bank lending is the biggest engine. In the pandemic it was the government and the central bank: the Treasury spent borrowed money straight into household accounts, and the Fed and banks bought most of the new bonds, so nothing drained the deposits back. M2 rose 41% in two years, from $15.5 trillion in February 2020 to $21.8 trillion in February 2022."
+    },
+    {
+     "type": "myth",
+     "myth": "All money is created by banks making loans.",
+     "reality": "Loans are the main channel most years, but banks also create money when they buy securities, the Fed creates reserves whenever it buys and deposits when the seller is a nonbank, and Treasury spending adds deposits unless the public funded it from its own accounts. In 2020 to 2021 the Treasury and Fed channel created most new deposits."
+    },
+    {
+     "type": "myth",
+     "myth": "The Fed prints money and hands it to the government.",
+     "reality": "The Fed may not lend to the Treasury or buy at auction. It buys bonds from dealers in the open market and pays the sellers. That holds down yields and can turn bonds held by the public into deposits, which finances deficits indirectly. Its profits go back to the Treasury, and since 2022 it has been running losses."
+    },
+    {
+     "type": "h",
+     "text": "What the Hidden Secrets of Money series gets right and what has changed"
+    },
+    {
+     "type": "p",
+     "text": "Mike Maloney's ten-part series (GoldSilver, 2013 to 2018) taught millions of people that money is created by banks and the Fed, not by a mint. Its fourth episode alone has about 11 million views. It deserves credit for making the plumbing visible. Some of its mechanics were already simplified in 2013, and the rules have changed since."
+    },
+    {
+     "type": "table",
+     "cols": [
+      "The series said",
+      "Verdict",
+      "What changed or what is missing"
+     ],
+     "rows": [
+      [
+       "Most money is created as debt, and repaying debt destroys it",
+       "Right",
+       "Confirmed by the Bank of England in 2014"
+      ],
+      [
+       "A credit card charge creates new money",
+       "Right",
+       "Same mechanism as any bank loan"
+      ],
+      [
+       "The Fed creates money out of nothing when it buys bonds, and this finances deficits indirectly",
+       "Right",
+       "In 2020 to 2021 the Fed bought 59% of new Treasury debt"
+      ],
+      [
+       "Governments debase money to pay for war and public works",
+       "Right as history",
+       "The 1913 to 1971 gold story is accurate in outline"
+      ],
+      [
+       "Banks keep 10% of your deposit and lend out the rest, so $100 becomes $1,000",
+       "Outdated",
+       "Reserve requirements are zero since 26 March 2020. Banks lend first and reserves follow"
+      ],
+      [
+       "The Fed buys bonds from the Treasury through the banks and hands over the money",
+       "Oversimplified",
+       "The Fed buys only in the open market and pays the sellers. Purchases from banks add only reserves"
+      ],
+      [
+       "Taxes pay interest to the Fed's private owners",
+       "Wrong",
+       "Fed profits go to the Treasury. Member bank stock cannot be sold or traded"
+      ],
+      [
+       "Hyperinflation and the end of the dollar within a few years",
+       "Did not happen",
+       "Inflation hit 9.1% in 2022, then fell. The dollar still leads"
+      ]
+     ]
+    },
+    {
+     "type": "check",
+     "q": "Which part of the series' Episode 4 story would you keep, and which would you redraw?",
+     "a": "Keep: banks create deposits by lending, repayment destroys them, and Fed bond buying finances deficits indirectly. Redraw: no fixed 10% multiplier, the Fed buys only in the open market, the seller decides whether deposits appear, and Fed profits flow to the Treasury, not to private owners."
+    }
+   ],
+   "rules": [
+    "Ask which floor moved. Reserves are money for banks. Deposits are money for you.",
+    "The Fed creates reserves whenever it buys. It creates spendable deposits only when the seller is not a bank.",
+    "Auctions and taxes pull money up into the Treasury's account. Spending pushes it back down.",
+    "A deficit adds to your money only if banks, the Fed or parked cash fund it.",
+    "Banks create money by lending and by buying. Repayments and sales destroy it."
+   ],
+   "connects": [
+    {
+     "id": "rb-06",
+     "how": "Chapter 6 showed a loan creating a deposit. This chapter adds the other doors: bank purchases, the Fed, the Treasury and the drains."
+    },
+    {
+     "id": "rb-bonds",
+     "how": "Treasuries are the asset behind almost every move here, from Fed purchases to auctions to stablecoin reserves."
+    },
+    {
+     "id": "rb-titled",
+     "how": "Deficits funded by banks and the Fed add claims faster than goods, which is part of why abundance is priced on credit."
+    },
+    {
+     "id": "rb-crypto",
+     "how": "Stablecoins sit outside the two floors as a third kind of dollar, backed by the bills this chapter follows."
+    },
+    {
+     "id": "rb-13",
+     "how": "Eye-opener: the Fed is barred from buying bonds from the Treasury, yet it financed most of the 2020 and 2021 deficits through the open market."
+    }
+   ]
+  },
+  {
+   "id": "rb-07",
+   "num": "09",
    "title": "The musical chairs question",
    "kicker": "If all money is borrowed and interest is owed on top, can everyone ever pay? The honest answer is yes in a quiet world, and not always in a real one.",
    "blocks": [
@@ -1577,7 +2007,7 @@
   },
   {
    "id": "rb-08",
-   "num": "09",
+   "num": "10",
    "title": "The seasons of money",
    "kicker": "Money has weather. In some decades it melts, in others it hardens, and the same choice can make you rich in one season and poor in the next.",
    "blocks": [
@@ -1732,7 +2162,7 @@
     },
     {
      "type": "p",
-     "text": "The United States from 1929 to 1933 is the classic trap. About 9,000 banks failed. The money supply fell by about a third, as Milton Friedman and Anna Schwartz documented. Prices fell by about a quarter. Unemployment reached about 25%. Fisher's debt deflation, from Chapter 8, ran at full speed."
+     "text": "The United States from 1929 to 1933 is the classic trap. About 9,000 banks failed. The money supply fell by about a third, as Milton Friedman and Anna Schwartz documented. Prices fell by about a quarter. Unemployment reached about 25%. Fisher's debt deflation, from Chapter 9, ran at full speed."
     },
     {
      "type": "p",
@@ -1827,19 +2257,19 @@
     },
     {
      "id": "rb-10",
-     "how": "Measuring seasons requires a yardstick, and Chapter 14 shows why that yardstick moves."
+     "how": "Measuring seasons requires a yardstick, and Chapter 15 shows why that yardstick moves."
     }
    ]
   },
   {
    "id": "rb-defl",
-   "num": "10",
+   "num": "11",
    "title": "The deflation debate: would anyone spend a money that grows?",
    "kicker": "If a dollar buys more tomorrow, why spend it today? The oldest argument against hard money, why it never ends, and what both sides miss.",
    "blocks": [
     {
      "type": "p",
-     "text": "Chapter 9 showed that money has seasons. This chapter takes one question from the cold season and follows it all the way down, because it sits under almost every fight about gold, Bitcoin and central banks. The question is simple: if I know my $1 will buy more tomorrow, why would I spend it today?"
+     "text": "Chapter 10 showed that money has seasons. This chapter takes one question from the cold season and follows it all the way down, because it sits under almost every fight about gold, Bitcoin and central banks. The question is simple: if I know my $1 will buy more tomorrow, why would I spend it today?"
     },
     {
      "type": "h",
@@ -1856,7 +2286,7 @@
     },
     {
      "type": "p",
-     "text": "This is why almost every major central bank aims for a little inflation, usually 2%, rather than zero or falling prices. The cases they point to are the Great Depression and Japan's lost decades, both in chapter 9."
+     "text": "This is why almost every major central bank aims for a little inflation, usually 2%, rather than zero or falling prices. The cases they point to are the Great Depression and Japan's lost decades, both in chapter 10."
     },
     {
      "type": "h",
@@ -1953,7 +2383,7 @@
     },
     {
      "type": "insider",
-     "text": "This matters for the future this desk studies. Robots, AI and cheap solar push the cost of making things down, a good-deflation force. A debt-heavy system cannot let that show up as falling prices, so it creates enough new money to keep prices rising gently. The productivity gain does not vanish. It flows to whoever receives the new money first and to owners of scarce things such as land, energy and platforms. That is the link to the Cantillon effect and the platform toll booths in chapter 17."
+     "text": "This matters for the future this desk studies. Robots, AI and cheap solar push the cost of making things down, a good-deflation force. A debt-heavy system cannot let that show up as falling prices, so it creates enough new money to keep prices rising gently. The productivity gain does not vanish. It flows to whoever receives the new money first and to owners of scarce things such as land, energy and platforms. That is the link to the Cantillon effect and the platform toll booths in chapter 18."
     },
     {
      "type": "check",
@@ -1988,7 +2418,7 @@
   },
   {
    "id": "rb-09",
-   "num": "11",
+   "num": "12",
    "title": "Why empires and their currencies fall",
    "kicker": "No money has ruled forever. The ones that fell usually fell the same way: war, debt and a slow watering down of the promise.",
    "blocks": [
@@ -2186,7 +2616,7 @@
   },
   {
    "id": "rb-leader",
-   "num": "12",
+   "num": "13",
    "title": "The country leaderboard: deep markets and the game nations play",
    "kicker": "Why surplus nations park their savings in America, why climbing the leaderboard is so hard, and what it really took for each number one to get there and to fall.",
    "blocks": [
@@ -2439,7 +2869,7 @@
   },
   {
    "id": "rb-em",
-   "num": "13",
+   "num": "14",
    "title": "The view from a smaller currency: Malaysia, savings and where money lands first",
    "kicker": "Why a calm local price tag can hide a shrinking passport, how compulsory savings fund the home government, why talent and capital crowd into a few hubs, and whether Singapore was luck, strategy or someone else's plan.",
    "blocks": [
@@ -2564,7 +2994,7 @@
     },
     {
      "type": "p",
-     "text": "Chapter 17 describes the Cantillon effect: whoever receives new money first spends it before prices rise. At world scale, new dollars are created in New York and Washington and land first in US banks, US markets and a handful of hubs such as London, Singapore, Hong Kong, Dubai and Zurich. Commodity exporters and factory economies receive them later, through trade. Households in smaller economies receive them last, often after their currency has already moved."
+     "text": "Chapter 18 describes the Cantillon effect: whoever receives new money first spends it before prices rise. At world scale, new dollars are created in New York and Washington and land first in US banks, US markets and a handful of hubs such as London, Singapore, Hong Kong, Dubai and Zurich. Commodity exporters and factory economies receive them later, through trade. Households in smaller economies receive them last, often after their currency has already moved."
     },
     {
      "type": "list",
@@ -2689,13 +3119,13 @@
   },
   {
    "id": "rb-10",
-   "num": "14",
+   "num": "15",
    "title": "The yardstick problem",
    "kicker": "We measure prices with money, but money itself keeps changing size. It is like measuring a room with a rubber ruler.",
    "blocks": [
     {
      "type": "p",
-     "text": "Chapter 9 talked about prices rising and falling. But compared to what? Every price is measured in money, and money's value is itself moving. This chapter gives you the tools to see through the moving ruler: nominal versus real, time prices, and the difference between consumer prices and asset prices."
+     "text": "Chapter 10 talked about prices rising and falling. But compared to what? Every price is measured in money, and money's value is itself moving. This chapter gives you the tools to see through the moving ruler: nominal versus real, time prices, and the difference between consumer prices and asset prices."
     },
     {
      "type": "callout",
@@ -2898,7 +3328,7 @@
   },
   {
    "id": "rb-11",
-   "num": "15",
+   "num": "16",
    "title": "The new board game",
    "kicker": "In Monopoly the bank hands every player $1,500. In real life nobody does. So how does a new player get onto the board?",
    "blocks": [
@@ -3090,7 +3520,7 @@
   },
   {
    "id": "rb-12",
-   "num": "16",
+   "num": "17",
    "title": "Today's board: old anchors, new rails",
    "kicker": "The money in your app may look new, but under it sit the oldest anchors in the system: government bonds, bank credit and gold.",
    "blocks": [
@@ -3305,7 +3735,7 @@
   },
   {
    "id": "rb-13",
-   "num": "17",
+   "num": "18",
    "title": "Eye-openers: what most people never notice",
    "kicker": "Sixteen quiet facts about money that, once seen, cannot be unseen.",
    "blocks": [
@@ -3431,7 +3861,7 @@
   },
   {
    "id": "rb-buckets",
-   "num": "18",
+   "num": "19",
    "title": "When markets fall: buckets, collateral and rotation",
    "kicker": "A 20% crash does not hand 20% to someone else. But money really does slosh between buckets, and the timing of when you enter a bucket is most of the game.",
    "blocks": [
@@ -3549,7 +3979,7 @@
      "type": "list",
      "items": [
       "Interest rates and liquidity: when central banks make money cheap, it flows outward toward riskier buckets. When money gets dear, it flows back toward cash and bills.",
-      "Credit: lending creates new money that lands in some bucket first, usually property and financial assets (the Cantillon effect from chapter 17).",
+      "Credit: lending creates new money that lands in some bucket first, usually property and financial assets (the Cantillon effect from chapter 18).",
       "Supply and demand: new shares, new bonds and new coins dilute a bucket. Buybacks and scarcity concentrate it.",
       "Fear and narrative: stories move flows faster than numbers do.",
       "Rules: laws that force holders into a bucket (like stablecoin reserves that must hold Treasury bills) fill that bucket by design.",
@@ -3585,7 +4015,7 @@
   },
   {
    "id": "rb-nation",
-   "num": "19",
+   "num": "20",
    "title": "Nation Inc.: taxes, interest and the hubs",
    "kicker": "Is tax a scam? Why did the Torah and the Quran forbid interest? Is a tax-free hub like the UAE cheating? Read the world's countries as companies competing on one leaderboard and the answers fall into place.",
    "blocks": [
@@ -3605,7 +4035,7 @@
     },
     {
      "type": "p",
-     "text": "The fastest way through the jargon is to stop picturing countries as flags and start picturing them as companies. There are about 195 of them. Each has departments, staff, customers, a balance sheet, a credit rating and rivals. The leaderboard from chapter 12 is the ranking of these companies."
+     "text": "The fastest way through the jargon is to stop picturing countries as flags and start picturing them as companies. There are about 195 of them. Each has departments, staff, customers, a balance sheet, a credit rating and rivals. The leaderboard from chapter 13 is the ranking of these companies."
     },
     {
      "type": "diagram",
@@ -3643,7 +4073,7 @@
       [
        "Brand and trust",
        "Rule of law and kept promises",
-       "The pillars of a deep market in chapter 12"
+       "The pillars of a deep market in chapter 13"
       ],
       [
        "Talent",
@@ -3658,7 +4088,7 @@
     },
     {
      "type": "p",
-     "text": "A popular argument says tax is theft, or a scam that takes from workers and hands to elites. Go back to the board game from chapter 15. The game has been running for thousands of years, and it only works because someone keeps the board, issues the money, records who owns which square and stops players from simply seizing each other's property. That someone is the state, and the subscription fee is tax. Without it there is no common money, no court to defend your title deed, no land registry, no police and no army. You would be left trading by barter, and anyone stronger could take your land."
+     "text": "A popular argument says tax is theft, or a scam that takes from workers and hands to elites. Go back to the board game from chapter 16. The game has been running for thousands of years, and it only works because someone keeps the board, issues the money, records who owns which square and stops players from simply seizing each other's property. That someone is the state, and the subscription fee is tax. Without it there is no common money, no court to defend your title deed, no land registry, no police and no army. You would be left trading by barter, and anyone stronger could take your land."
     },
     {
      "type": "p",
@@ -3683,7 +4113,7 @@
     },
     {
      "type": "p",
-     "text": "Because in an ancient farming world, interest on debt could grow faster than any harvest. A bad year forced a family to borrow, the interest compounded, and soon the family handed over its land, then its labor, sometimes its children. Debt turned into permanent ownership by the lender. The same book of Leviticus prescribed a Jubilee every fiftieth year, when land returned to its original families. Mesopotamian kings regularly declared clean slates that cancelled farmers' debts. These were resets built into the rules, so the board could never become permanently titled to a few. It is the same pressure chapter 20 describes today."
+     "text": "Because in an ancient farming world, interest on debt could grow faster than any harvest. A bad year forced a family to borrow, the interest compounded, and soon the family handed over its land, then its labor, sometimes its children. Debt turned into permanent ownership by the lender. The same book of Leviticus prescribed a Jubilee every fiftieth year, when land returned to its original families. Mesopotamian kings regularly declared clean slates that cancelled farmers' debts. These were resets built into the rules, so the board could never become permanently titled to a few. It is the same pressure chapter 21 describes today."
     },
     {
      "type": "callout",
@@ -3765,7 +4195,7 @@
   },
   {
    "id": "rb-titled",
-   "num": "20",
+   "num": "21",
    "title": "The titled world: why abundance runs on credit, and who keeps the balance",
    "kicker": "Divide the world's wealth by everyone and it looks like plenty. Here is why most of that plenty is a price set on future credit, why the base layer was titled long ago, and what role each big country plays in keeping a crowded system from tipping over.",
    "blocks": [
@@ -3814,7 +4244,7 @@
     {
      "type": "list",
      "items": [
-      "Most wealth is a price, not a pile. About two thirds of the world's net worth is real estate, and Savills values all the world's property at about $393 trillion at the start of 2025. Those values come from the last sales, as chapter 18 showed with market caps. If everyone tried to sell at once to share out the money, the price would collapse.",
+      "Most wealth is a price, not a pile. About two thirds of the world's net worth is real estate, and Savills values all the world's property at about $393 trillion at the start of 2025. Those values come from the last sales, as chapter 19 showed with market caps. If everyone tried to sell at once to share out the money, the price would collapse.",
       "Prices are future income divided by the interest rate. When rates fell from the early 1980s to 2021, the same buildings and companies became worth far more without producing more. McKinsey found that global net worth rose from about $156 trillion in 2000 to about $514 trillion in 2020, while for every $1 of new investment, liabilities grew almost $4, about $2 of it debt. Most of the new wealth was revaluation, not new things.",
       "Every financial asset is someone else's debt or someone's future income. Global debt reached about $365 trillion in mid-2026, about 310% of world output, according to the Institute of International Finance. A bond, a deposit or a loan is a claim on a borrower's future earnings. Count the claim as wealth and you must also count the debt.",
       "What can really be shared each year is output, not prices. The world produces roughly $115 to $120 trillion of goods and services a year, about $14,000 per person, and most of that already pays for wages, rents, interest and taxes."
@@ -3861,7 +4291,7 @@
     },
     {
      "type": "p",
-     "text": "Underneath the claims sits the base layer: land, water, minerals, energy, ports, sea lanes, the best city plots, radio spectrum. Almost all of it was claimed long ago, recorded in a title registry or held by a state. Chapter 15 asked how a new player gets onto a board where no one gives out starting money. The harder truth is that the squares are already owned. Newcomers do not arrive on an empty board. They arrive as tenants."
+     "text": "Underneath the claims sits the base layer: land, water, minerals, energy, ports, sea lanes, the best city plots, radio spectrum. Almost all of it was claimed long ago, recorded in a title registry or held by a state. Chapter 16 asked how a new player gets onto a board where no one gives out starting money. The harder truth is that the squares are already owned. Newcomers do not arrive on an empty board. They arrive as tenants."
     },
     {
      "type": "p",
@@ -3892,8 +4322,8 @@
      "type": "steps",
      "items": [
       "Credit: lend newcomers the price of a seat. It keeps asset prices up and lets the young buy in, at the cost of decades of payments to lenders.",
-      "Inflation: quietly shifts value from savers and lenders to borrowers, who are often younger. It shrinks old debts and lifts wages in money terms. Chapter 10 showed why indebted systems choose it.",
-      "Taxes and transfers: pensions, health care, child accounts and income support move part of the owners' income to people without assets. Chapter 15 and the Desk looked at what a universal income can and cannot carry.",
+      "Inflation: quietly shifts value from savers and lenders to borrowers, who are often younger. It shrinks old debts and lifts wages in money terms. Chapter 11 showed why indebted systems choose it.",
+      "Taxes and transfers: pensions, health care, child accounts and income support move part of the owners' income to people without assets. Chapter 16 and the Desk looked at what a universal income can and cannot carry.",
       "New frontiers: new industries create new things to own before they are titled. Railways, oil, the internet and now AI, compute, energy and space are where newcomers can get title early."
      ]
     },
@@ -3979,7 +4409,7 @@
     },
     {
      "type": "p",
-     "text": "Chapter 19 drew every country as a company with an investment arm. That arm is the sovereign wealth fund: a state-owned fund that turns a country's surplus, usually from oil, gas or trade, into ownership of assets around the world. Global SWF counted sovereign funds holding more than $15 trillion at the end of 2025. There are well over a hundred of them, but about a dozen giants hold most of the money, so twelve is a good number to remember."
+     "text": "Chapter 20 drew every country as a company with an investment arm. That arm is the sovereign wealth fund: a state-owned fund that turns a country's surplus, usually from oil, gas or trade, into ownership of assets around the world. Global SWF counted sovereign funds holding more than $15 trillion at the end of 2025. There are well over a hundred of them, but about a dozen giants hold most of the money, so twelve is a good number to remember."
     },
     {
      "type": "diagram",
@@ -4131,12 +4561,12 @@
      "items": [
       "Money is a trusted promise (chapter 1). Its anchor moved from metal to the dollar to government bonds (chapters 2 to 7).",
       "Banks create most money as loans, so the system needs ever more credit (chapters 6 and 8).",
-      "The seasons decide who wins, borrowers or savers, and debt decides which season governments choose (chapters 9 and 10).",
-      "Nations compete for the deep-market crown, and smaller currencies live by its rules (chapters 11 to 13).",
-      "The ruler we measure with keeps shrinking (chapter 14).",
-      "Newcomers start on a board with no free money, and new rails are laid on old anchors (chapters 15 and 16).",
-      "Paper values are claims on the future and can fall fast (chapters 17 and 18).",
-      "Every country runs like a company on that leaderboard, with taxes as its subscription fee and hubs competing for its talent (chapter 19).",
+      "The seasons decide who wins, borrowers or savers, and debt decides which season governments choose (chapters 10 and 10).",
+      "Nations compete for the deep-market crown, and smaller currencies live by its rules (chapters 12 to 13).",
+      "The ruler we measure with keeps shrinking (chapter 15).",
+      "Newcomers start on a board with no free money, and new rails are laid on old anchors (chapters 16 and 16).",
+      "Paper values are claims on the future and can fall fast (chapters 18 and 18).",
+      "Every country runs like a company on that leaderboard, with taxes as its subscription fee and hubs competing for its talent (chapter 20).",
       "Underneath it all, money is debt, the abundance on paper rests on credit, and the base layer was titled long ago. The system's real job is balancing owners and newcomers without calling the horsemen."
      ]
     },
@@ -4184,7 +4614,7 @@
   },
   {
    "id": "rb-crypto",
-   "num": "21",
+   "num": "22",
    "title": "Crypto: Set 2 money, dissected",
    "kicker": "Bitcoin, stablecoins and twenty million other tokens, sorted into three families, tested against the jobs of money, and taken apart with six questions you can use on any coin you ever hear about.",
    "blocks": [
@@ -4240,7 +4670,7 @@
     },
     {
      "type": "p",
-     "text": "That is why crypto belongs in this book. It is the first serious attempt since gold to create money that is nobody's debt and nobody's ledger. Chapter 20 showed that almost all modern money is someone's IOU. Bitcoin is the deliberate exception. Whether or not it succeeds, it forces every government to answer an old question in a new form: who should keep the record?"
+     "text": "That is why crypto belongs in this book. It is the first serious attempt since gold to create money that is nobody's debt and nobody's ledger. Chapter 21 showed that almost all modern money is someone's IOU. Bitcoin is the deliberate exception. Whether or not it succeeds, it forces every government to answer an old question in a new form: who should keep the record?"
     },
     {
      "type": "h",
@@ -4273,7 +4703,7 @@
      "items": [
       "Fixed supply: the code caps it at 21 million coins. About 20.08 million had been mined by August 2026, and an estimated 10% to 20% of those are lost forever with forgotten keys.",
       "Slowing issuance: new coins are created as a reward for running the network, and the reward halves about every four years. The last halving, in April 2024, cut it to 3.125 coins per block.",
-      "Nobody's debt: there is no issuer to redeem it and no one who owes you anything. On chapter 20's mirror it sits beside gold.",
+      "Nobody's debt: there is no issuer to redeem it and no one who owes you anything. On chapter 21's mirror it sits beside gold.",
       "Size: about $80,900 a coin and about $1.63 trillion in total on 15 October 2026, roughly 60% of all crypto by value.",
       "Wild swings: it fell about 77% from its November 2021 peak to November 2022, and has had several falls of that size.",
       "Governments are circling: a March 2025 executive order created a US Strategic Bitcoin Reserve from coins already seized in court cases. The Treasury Secretary said in August 2025 the US would not buy more."
@@ -4281,7 +4711,7 @@
     },
     {
      "type": "p",
-     "text": "Test it against the three jobs of money. As a store of value it is a real candidate, scarce and owed by no one, but its swings are far too large for most people's savings. As a medium of exchange it is rarely used, because, as chapter 10 showed with the 10,000-bitcoin pizza, people spend the money that melts and keep the one they expect to grow. As a unit of account it barely exists: almost nothing is priced in Bitcoin. Its realistic job is a neutral store of value next to gold."
+     "text": "Test it against the three jobs of money. As a store of value it is a real candidate, scarce and owed by no one, but its swings are far too large for most people's savings. As a medium of exchange it is rarely used, because, as chapter 11 showed with the 10,000-bitcoin pizza, people spend the money that melts and keep the one they expect to grow. As a unit of account it barely exists: almost nothing is priced in Bitcoin. Its realistic job is a neutral store of value next to gold."
     },
     {
      "type": "h",
@@ -4293,7 +4723,7 @@
     },
     {
      "type": "insider",
-     "text": "Stablecoins are Set 1 wearing Set 2 clothes. They carry the dollar to anyone with a phone, including savers in weak-currency countries like those in chapter 13, and every new stablecoin dollar is a new buyer of US Treasury bills. Stablecoins already hold about 4.27% of all T-bills. That is why Washington legalized private stablecoins while a January 2025 executive order blocked work on a Federal Reserve digital dollar for the public. A stablecoin is a dollar IOU, so on chapter 20's mirror it sits on the debt side."
+     "text": "Stablecoins are Set 1 wearing Set 2 clothes. They carry the dollar to anyone with a phone, including savers in weak-currency countries like those in chapter 14, and every new stablecoin dollar is a new buyer of US Treasury bills. Stablecoins already hold about 4.27% of all T-bills. That is why Washington legalized private stablecoins while a January 2025 executive order blocked work on a Federal Reserve digital dollar for the public. A stablecoin is a dollar IOU, so on chapter 21's mirror it sits on the debt side."
     },
     {
      "type": "p",
@@ -4446,7 +4876,7 @@
     },
     {
      "type": "p",
-     "text": "The ruler belongs to whatever debts and taxes are written in. Your salary, your rent, your landlord's mortgage, the bank's loans, the government's bonds and your taxes are all dollar contracts. A token can become the ruler only when those debts start being written in it. Chapter 19 showed that taxes give a money its value. El Salvador tested the opposite. It made Bitcoin legal tender in 2021, but its debts, wages and taxes stayed in dollars, use stayed low, and in January 2025, as part of a $1.4 billion IMF deal, it made accepting Bitcoin optional and dropped the state's promise to convert it to dollars."
+     "text": "The ruler belongs to whatever debts and taxes are written in. Your salary, your rent, your landlord's mortgage, the bank's loans, the government's bonds and your taxes are all dollar contracts. A token can become the ruler only when those debts start being written in it. Chapter 20 showed that taxes give a money its value. El Salvador tested the opposite. It made Bitcoin legal tender in 2021, but its debts, wages and taxes stayed in dollars, use stayed low, and in January 2025, as part of a $1.4 billion IMF deal, it made accepting Bitcoin optional and dropped the state's promise to convert it to dollars."
     },
     {
      "type": "h",
@@ -4481,11 +4911,11 @@
     },
     {
      "type": "p",
-     "text": "Your instinct is half right. Today almost every token's price is a dollar price, and most of the money that buys tokens was born as dollar credit, so crypto prices tend to rise when dollar credit is easy and fall when it tightens. But the deeper source of any money's value is the base layer from chapter 20: the real goods, work and assets people will hand over for it. A token is worth what someone will give up to hold it. If everyone held tokens and nobody produced anything, every token would buy nothing."
+     "text": "Your instinct is half right. Today almost every token's price is a dollar price, and most of the money that buys tokens was born as dollar credit, so crypto prices tend to rise when dollar credit is easy and fall when it tightens. But the deeper source of any money's value is the base layer from chapter 21: the real goods, work and assets people will hand over for it. A token is worth what someone will give up to hold it. If everyone held tokens and nobody produced anything, every token would buy nothing."
     },
     {
      "type": "insider",
-     "text": "Bitcoin is scarce, but crypto is not. One coin can be capped at 21 million while anyone can launch a new one in minutes, and more than 20 million have been launched. Each new token is a new claim competing for the same real goods, the same attention and the same buyers' dollars. That is chapter 20's picture again: the claims multiply, and the base layer does not."
+     "text": "Bitcoin is scarce, but crypto is not. One coin can be capped at 21 million while anyone can launch a new one in minutes, and more than 20 million have been launched. Each new token is a new claim competing for the same real goods, the same attention and the same buyers' dollars. That is chapter 21's picture again: the claims multiply, and the base layer does not."
     },
     {
      "type": "h",
@@ -4498,7 +4928,7 @@
     },
     {
      "type": "p",
-     "text": "Launching a token is printing money, and the profit has an old name: seigniorage, from chapter 17. A token costs almost nothing to create. When its founders sell part of it for dollars, they turn newly printed units into real buying power, exactly as a government does when it issues money. That buying power comes from the buyers. Unless the token's network produces something people pay for, the founders' gain is the later buyers' loss. That is why the utopia feels so big: the power to issue money has been opened to everyone, but the pool of real goods all those monies can buy has not grown with it."
+     "text": "Launching a token is printing money, and the profit has an old name: seigniorage, from chapter 18. A token costs almost nothing to create. When its founders sell part of it for dollars, they turn newly printed units into real buying power, exactly as a government does when it issues money. That buying power comes from the buyers. Unless the token's network produces something people pay for, the founders' gain is the later buyers' loss. That is why the utopia feels so big: the power to issue money has been opened to everyone, but the pool of real goods all those monies can buy has not grown with it."
     },
     {
      "type": "table",
@@ -4540,7 +4970,7 @@
       "New rails: cheaper, faster payments across borders, especially for people in weak-currency countries, mostly using dollar stablecoins.",
       "Settlement: tokenized Treasuries and funds that settle in seconds, cutting into the float and fees banks earn today.",
       "Money for machines: AI agents paying each other per request, which this project found already happens mostly in dollar tokens.",
-      "Early title to new networks: owning part of a network people truly pay to use, before it is titled. Chapter 20's rule applies: look for the next base layer before it is titled.",
+      "Early title to new networks: owning part of a network people truly pay to use, before it is titled. Chapter 21's rule applies: look for the next base layer before it is titled.",
       "The ruler itself: if trust in all government debt ever broke, the next ruler would be whatever is hardest and most widely accepted. Gold did that job for thousands of years, Bitcoin is a candidate, and this project's founding question asks whether energy could be one. The desk puts an energy or compute standard at about 1% to 2028, 3% from 2028 to 2035 and 10% from 2035 to 2050."
      ]
     },
@@ -4560,7 +4990,7 @@
     {
      "type": "check",
      "q": "If Bitcoin became the ruler, what would happen to everyone with a mortgage?",
-     "a": "If Bitcoin kept rising against goods, prices in Bitcoin would fall and debts written in Bitcoin would get heavier every year. Chapter 10's deflation debate applies: borrowers lose, savers win, and with no central bank there is no lender of last resort in a crisis."
+     "a": "If Bitcoin kept rising against goods, prices in Bitcoin would fall and debts written in Bitcoin would get heavier every year. Chapter 11's deflation debate applies: borrowers lose, savers win, and with no central bank there is no lender of last resort in a crisis."
     },
     {
      "type": "check",
@@ -4594,7 +5024,7 @@
     {
      "type": "check",
      "q": "Why do people spend dollars and stablecoins but hold Bitcoin?",
-     "a": "Gresham's law from chapter 10: people spend the money they expect to lose value and keep the one they expect to gain."
+     "a": "Gresham's law from chapter 11: people spend the money they expect to lose value and keep the one they expect to gain."
     }
    ],
    "rules": [
@@ -4627,7 +5057,7 @@
   },
   {
    "id": "rb-14",
-   "num": "22",
+   "num": "23",
    "title": "The Rulebook",
    "kicker": "What each generation learned the hard way, written down so the next one does not have to.",
    "blocks": [
@@ -4669,27 +5099,27 @@
       [
        "What money is",
        "Your understanding: see the promise behind the paper",
-       "1, 2, 6, 7, 21"
+       "1, 2, 6, 7, 8, 22"
       ],
       [
        "Seasons and rulers",
        "Your savings: know what melts and what hardens",
-       "9, 10, 13, 14"
+       "10, 11, 14, 15"
       ],
       [
        "Debt",
        "Your freedom: never become a forced seller",
-       "8, 18"
+       "9, 19"
       ],
       [
        "Power and plumbing",
        "Your judgment: see who sets the rules and who earns the tolls",
-       "3, 4, 5, 11, 12, 16, 17, 19"
+       "3, 4, 5, 12, 13, 17, 18, 20"
       ],
       [
        "Getting on the board",
        "Your future: turn income into ownership",
-       "15, 20"
+       "16, 21"
       ]
      ]
     },
@@ -4968,6 +5398,16 @@
    "n": 47,
    "rule": "Launching a token is printing money. Ask who pays for it.",
    "why": "Unless a network earns real fees, the founders' seigniorage is paid by later buyers."
+  },
+  {
+   "n": 48,
+   "rule": "Money is not only made by bank loans. Ask which floor it lands on.",
+   "why": "Fed purchases and Treasury moves change reserves upstairs. Only some of them reach the deposits people can spend."
+  },
+  {
+   "n": 49,
+   "rule": "When the Fed buys bonds, look at who sold them.",
+   "why": "From a bank, only reserves rise. From a pension fund or other nonbank, a new public deposit appears too."
   }
  ],
  "mistakes": [
@@ -5261,6 +5701,10 @@
    "d": "The interest rate as quoted, in dollars, before tax and inflation."
   },
   {
+   "t": "Open market operations",
+   "d": "The Fed buying or selling securities in the market, with dealers, rather than directly from the Treasury."
+  },
+  {
    "t": "Peg",
    "d": "A fixed exchange rate between one currency and another, defended by a central bank."
   },
@@ -5270,7 +5714,7 @@
   },
   {
    "t": "Primary dealer",
-   "d": "One of about two dozen large banks that must bid at US Treasury auctions."
+   "d": "One of 25 banks and dealers that must bid at US Treasury auctions and trade with the New York Fed in its open market operations."
   },
   {
    "t": "Primary deficit",
@@ -5315,6 +5759,10 @@
   {
    "t": "Revaluation",
    "d": "A change in the price of assets already owned, with no new things produced. Falling interest rates revalue assets upward."
+  },
+  {
+   "t": "Reverse repo facility",
+   "d": "A Fed facility where money funds and others park cash overnight, taking it out of the banking system while it sits there."
   },
   {
    "t": "Riba",
@@ -5412,7 +5860,7 @@
  "questions": [
   {
    "q": "If the market drops 20%, did someone else make that money?",
-   "a": "Mostly no. Market cap is the last price times all shares, so a fall rewrites the value of every share even though only a few traded. Sellers received cash from buyers. Only short sellers and option buyers profit from the fall, and only by what their direct counterparties lose. See chapter 18."
+   "a": "Mostly no. Market cap is the last price times all shares, so a fall rewrites the value of every share even though only a few traded. Sellers received cash from buyers. Only short sellers and option buyers profit from the fall, and only by what their direct counterparties lose. See chapter 19."
   },
   {
    "q": "If the government can create money, why does it borrow and tax at all?",
@@ -5521,6 +5969,10 @@
   {
    "q": "If tokens get good enough, will we still need the dollar to measure prices?",
    "a": "Only if debts, wages and taxes start being written in a token. Until then every token is converted to dollars somewhere along the chain, and markets keep rebuilding one hub to price everything through. See the owner's question in the crypto chapter."
+  },
+  {
+   "q": "Is money only created when banks make loans?",
+   "a": "No. Banks also create deposits when they buy securities, the Fed creates them when it buys from nonbanks, and Treasury spending adds them while taxes and auctions take them away. See the chapter on who really creates money."
   }
  ]
 }

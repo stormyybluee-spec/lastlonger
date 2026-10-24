@@ -1,0 +1,430 @@
+{
+ "id": "rb-moneymake",
+ "num": "",
+ "title": "Who really creates money: banks, the Fed and the Treasury",
+ "kicker": "Bank loans are only one door. The Fed, the Treasury and even your tax payment move money between two floors, and only one of them is money you can spend.",
+ "blocks": [
+  {
+   "type": "tldr",
+   "label": "In 60 seconds",
+   "items": [
+    "Money lives on two floors. Upstairs, banks and the Treasury hold accounts at the Federal Reserve. Downstairs, you and every business hold bank deposits. You can only spend the downstairs kind.",
+    "Banks create most new downstairs money when they lend, and they also create it when they buy a bond or anything else from someone who is not a bank.",
+    "The Fed creates upstairs money, called reserves, every time it buys a bond. Whether new downstairs money appears too depends on who sold the bond: a bank (no) or a pension fund or other nonbank (yes).",
+    "The Treasury moves money between the floors. Selling bonds and collecting taxes pulls deposits up into its Fed account. Spending pushes them back down.",
+    "So money is not created only by bank loans. In 2020 and 2021 the Treasury and the Fed together created most of the $5.45 trillion rise in bank deposits.",
+    "The Fed is not allowed to buy new bonds straight from the Treasury. It must buy in the open market, through 25 primary dealers."
+   ]
+  },
+  {
+   "type": "cards",
+   "label": "Five key words",
+   "items": [
+    {
+     "t": "Reserves",
+     "d": "Banks' own accounts at the Fed. Upstairs money. About $2.96 trillion in October 2026. Only banks and a few institutions can hold them."
+    },
+    {
+     "t": "Deposits",
+     "d": "The money in your bank account. Downstairs money, a promise from your bank. About $19.6 trillion at US commercial banks."
+    },
+    {
+     "t": "Treasury General Account",
+     "d": "The government's checking account at the Fed. About $952 billion in late October 2026. Money in it is out of public hands."
+    },
+    {
+     "t": "Primary dealer",
+     "d": "One of 25 big dealers that must bid at every Treasury auction and that trade directly with the Fed."
+    },
+    {
+     "t": "Open market",
+     "d": "The market where bonds already issued change hands. The only place the Fed may buy Treasuries."
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "text": "Chapter 6 showed that a bank loan creates a deposit. That is the most common way money is born, but not the only one. This chapter finishes the picture. It adds the Fed, the Treasury and the dealers in between, and shows exactly which moves create money you can spend and which only shuffle money that banks use among themselves."
+  },
+  {
+   "type": "h",
+   "text": "Two floors of money"
+  },
+  {
+   "type": "p",
+   "text": "Picture the dollar system as a building with two floors. Upstairs are the Fed's books. Banks hold reserves there, the Treasury holds its account there, and money funds can park cash there overnight. Downstairs are the public's books: deposits at banks, plus paper cash. When you pay rent or buy groceries, you move downstairs money. Banks settle with each other upstairs."
+  },
+  {
+   "type": "callout",
+   "label": "Picture this",
+   "text": "Think of a big market hall. Upstairs is the wholesale floor, where only licensed traders deal, and they settle in special tokens issued by the hall's owner, the Fed. Downstairs is the shop floor, where everyone shops with receipts issued by the traders, which are bank deposits. Some deals happen only upstairs, between traders and the owner. Some happen only downstairs. And some go through the staircase and change the amount of receipts on the shop floor. This chapter is a guide to the staircase."
+  },
+  {
+   "type": "diagram",
+   "key": "mc-two-tier",
+   "caption": "Upstairs: reserves, the Treasury's account and cash parked at the Fed. Downstairs: deposits and cash held by the public. Arrows show which moves cross the staircase."
+  },
+  {
+   "type": "table",
+   "cols": [
+    "Floor",
+    "What is there",
+    "Size, October 2026"
+   ],
+   "rows": [
+    [
+     "Upstairs (the Fed's books)",
+     "Bank reserves",
+     "$2.96T"
+    ],
+    [
+     "Upstairs",
+     "Treasury General Account",
+     "$952B"
+    ],
+    [
+     "Upstairs",
+     "Cash parked by money funds at the Fed (overnight reverse repo)",
+     "$0.3B (it was $1.8T in March 2022)"
+    ],
+    [
+     "Upstairs",
+     "What the Fed holds against all this: Treasuries and mortgage bonds",
+     "$4.57T and $1.90T"
+    ],
+    [
+     "Both",
+     "Paper cash (a Fed liability that the public holds)",
+     "$2.49T"
+    ],
+    [
+     "Downstairs",
+     "Bank deposits",
+     "$19.6T (September 2026)"
+    ],
+    [
+     "Downstairs",
+     "M2, the broad measure of the public's money",
+     "$23.3T (August 2026)"
+    ]
+   ]
+  },
+  {
+   "type": "check",
+   "q": "Can a family spend bank reserves at a shop?",
+   "a": "No. Reserves are accounts at the Fed that only banks and a few institutions hold. A family spends deposits or cash. Reserves only matter to the family when a move also changes deposits."
+  },
+  {
+   "type": "h",
+   "text": "Step 1. Banks create deposits, and not only by lending"
+  },
+  {
+   "type": "p",
+   "text": "When a bank lends you $100, it adds a $100 loan to its assets and a $100 deposit to its debts at the same moment. New downstairs money appears. When you repay, both disappear. That is Chapter 6. The second way is less known. When a bank buys a $100 bond from a pension fund, it pays by crediting the fund's account with a new $100 deposit. No loan was made, but money was created all the same. When a bank sells a bond to a nonbank, money is destroyed."
+  },
+  {
+   "type": "quote",
+   "text": "Whenever a bank makes a loan, it simultaneously creates a matching deposit in the borrower's bank account, thereby creating new money.",
+   "by": "Bank of England, Money creation in the modern economy, 2014"
+  },
+  {
+   "type": "steps",
+   "items": [
+    "A bank lends $100 to a household: the household's deposit rises $100. New money.",
+    "The household repays: the deposit and the loan both shrink $100. Money destroyed.",
+    "A bank buys a $100 bond from a pension fund: the fund's deposit rises $100. New money without a loan.",
+    "Upstairs, nothing changed in total. Reserves only move between banks when the money is spent at another bank."
+   ]
+  },
+  {
+   "type": "check",
+   "q": "Your bank buys a building from a developer for $1 million and pays into the developer's account at the same bank. Did the money supply change?",
+   "a": "Yes, it rose by $1 million. The bank gained an asset (the building) and a new deposit liability (the developer's balance). Any purchase by a bank from a nonbank creates a deposit."
+  },
+  {
+   "type": "h",
+   "text": "Step 2. The Fed creates reserves when it buys, and the seller decides the rest"
+  },
+  {
+   "type": "p",
+   "text": "The Fed holds $4.57 trillion of Treasuries. It got them by buying in the open market from the 25 primary dealers, paying with reserves it creates on the spot, and by rolling over bonds as they mature. That is real money creation, but upstairs. Whether it reaches downstairs depends on who sold the bond in the end."
+  },
+  {
+   "type": "table",
+   "cols": [
+    "Who sells the bond to the Fed",
+    "Upstairs (reserves)",
+    "Downstairs (deposits)"
+   ],
+   "rows": [
+    [
+     "A bank",
+     "Up $100",
+     "No change. The bank swapped a bond for reserves."
+    ],
+    [
+     "A pension fund, insurer, money fund or foreign investor",
+     "Up $100",
+     "Up $100. The seller's bank gets reserves and credits the seller's deposit."
+    ],
+    [
+     "A dealer selling from its own stock",
+     "Up $100",
+     "Up $100 at first. If the dealer uses the cash to repay a loan from a bank, the deposit disappears again."
+    ]
+   ]
+  },
+  {
+   "type": "diagram",
+   "key": "mc-qe-paths",
+   "caption": "Two paths for the same $100 purchase. From a bank, only reserves rise. From a pension fund, reserves and deposits both rise."
+  },
+  {
+   "type": "quote",
+   "text": "When the Federal Reserve purchases securities from a nonbank seller, it creates new bank deposits.",
+   "by": "Castro, Cavallo and Zarutskie, Federal Reserve FEDS Notes, 2022"
+  },
+  {
+   "type": "insider",
+   "text": "The primary dealer in the middle is only the pipe. Most primary dealers are the securities arms of big banks, and many act for customers. To know whether a Fed purchase added money you can spend, follow the cash to whoever holds it at the end. In 2020 to 2022 much of the selling came from nonbanks, which is why quantitative easing then added deposits as well as reserves."
+  },
+  {
+   "type": "check",
+   "q": "The Fed buys $1 billion of Treasuries, and the sellers turn out to be three banks. How much new money can the public spend?",
+   "a": "None directly. Bank reserves rose $1 billion, which is upstairs money. Public deposits change only if the sellers are nonbanks, or later when banks spend or lend."
+  },
+  {
+   "type": "h",
+   "text": "Step 3. The Treasury moves money between the floors"
+  },
+  {
+   "type": "p",
+   "text": "The Treasury keeps its account at the Fed, upstairs. When a fund buys a new Treasury bond at auction, the fund's deposit falls, its bank's reserves fall, and the Treasury's account rises. Money has gone upstairs. When the Treasury pays a Social Security check, the reverse happens: the account falls, and the retiree's deposit and the bank's reserves rise. Taxes work like an auction: deposits go up the stairs. You can watch it happen. In the week to 21 October 2026 the Treasury's account rose $69 billion, and bank reserves fell $60 billion."
+  },
+  {
+   "type": "diagram",
+   "key": "mc-deficit-loop",
+   "caption": "Auctions and taxes lift money into the Treasury's account at the Fed. Spending sends it back down. A deficit means more goes down than comes up."
+  },
+  {
+   "type": "p",
+   "text": "So does a budget deficit create money? It depends on who buys the new bonds. In fiscal 2026 the deficit was $1.99 trillion."
+  },
+  {
+   "type": "table",
+   "cols": [
+    "Who buys the new debt",
+    "Effect on the public's deposits"
+   ],
+   "rows": [
+    [
+     "Households and funds, paying from their deposits",
+     "None overall. The deposits taken at auction come back when the Treasury spends. The buyers now hold a bond instead."
+    ],
+    [
+     "Banks",
+     "Deposits rise. Banks pay with reserves, the spending lands in someone's account."
+    ],
+    [
+     "The Fed, indirectly, buying later from nonbanks",
+     "Deposits and reserves both rise. This is the legal route to printing money for a deficit."
+    ],
+    [
+     "Money funds using cash parked at the Fed",
+     "Deposits rise. Cash that was upstairs comes down when the Treasury spends."
+    ]
+   ]
+  },
+  {
+   "type": "check",
+   "q": "The Treasury runs a $100 deficit and a pension fund buys the whole $100 bond with its bank deposit. What happens to deposits?",
+   "a": "Nothing overall. The fund's deposit fell $100 at the auction, and the Treasury's spending added $100 to someone else's deposit. The private sector holds $100 more in bonds, not more money."
+  },
+  {
+   "type": "h",
+   "text": "Step 4. Drains, new pipes and the Fed's own bills"
+  },
+  {
+   "type": "list",
+   "items": [
+    "The overnight reverse repo facility: money funds can lend cash to the Fed overnight. While it sits there, it is out of the banks. It held about $1.8 trillion in March 2022. By October 2026 the domestic part was $0.3 billion, so this drain is empty.",
+    "The Treasury General Account: every rise drains reserves and often deposits, every fall adds them back.",
+    "Stablecoins: buying a dollar token moves your deposit to the issuer, who buys Treasury bills. Bank deposits do not grow, and if the bill comes from a bank or the Treasury, they shrink. The token is a new private dollar outside M2.",
+    "Interest on reserves: the Fed pays banks interest by creating new reserves, about $115 billion a year at current rates (desk estimate). Deposits grow only if banks pass it on.",
+    "Fed profits and losses: when the Fed earns more than it pays, it sends the profit to the Treasury. Since 2022 it has paid more than it earns and owes itself $232.7 billion before payments restart. The 'taxes go to the Fed's owners' story has it backwards."
+   ]
+  },
+  {
+   "type": "check",
+   "q": "A money fund pulls $50 billion out of the Fed's reverse repo facility to buy new Treasury bills, and the Treasury spends the cash. What happens downstairs?",
+   "a": "Deposits rise about $50 billion. The cash was upstairs at the Fed, it passed through the Treasury's account, and the spending landed in public accounts."
+  },
+  {
+   "type": "h",
+   "text": "Why the Fed cannot just buy from the Treasury"
+  },
+  {
+   "type": "p",
+   "text": "Section 14 of the Federal Reserve Act says US government bonds may be bought \"only in the open market\". Congress added that rule in 1935 so that the Treasury would have to face market buyers and could not finance itself at its own central bank. A wartime exception from 1942 allowed up to $5 billion of direct purchases. It was renewed several times, last in 1979, and lapsed in 1981. The Fed can still roll over bonds it already owns by taking new ones at auction, which gives the Treasury no new cash."
+  },
+  {
+   "type": "insider",
+   "text": "A ban on direct buying is not a ban on financing. From 1942 to 1951 the Fed promised to keep bill rates at 0.375% and long bond yields under 2.5%, buying whatever the market sold at those prices. That financed the war debt cheaply without a single direct purchase. The Treasury-Fed Accord of 4 March 1951 ended the deal."
+  },
+  {
+   "type": "h",
+   "text": "Putting sizes on it"
+  },
+  {
+   "type": "diagram",
+   "key": "mc-channels",
+   "caption": "Every channel that creates or destroys the public's deposits, with rough sizes for the latest year and for 2020 to 2021."
+  },
+  {
+   "type": "table",
+   "cols": [
+    "Channel",
+    "Latest year (to Sept or Oct 2026)",
+    "2020 to 2021"
+   ],
+   "rows": [
+    [
+     "Bank loans",
+     "+$1.0T",
+     "small, apart from a short burst in early 2020"
+    ],
+    [
+     "Bank purchases of securities",
+     "+$0.14T",
+     "+$2.1T (Treasuries and agency bonds)"
+    ],
+    [
+     "Fed purchases",
+     "+$0.19T net",
+     "+$4.6T (Treasuries and mortgage bonds)"
+    ],
+    [
+     "Deficit spending",
+     "$1.99T deficit",
+     "$5.9T of new Treasury debt, 72% bought by the Fed and banks"
+    ],
+    [
+     "Cash withdrawn into wallets",
+     "-$0.07T",
+     "-$0.45T"
+    ],
+    [
+     "Result: bank deposits",
+     "+$1.2T (+6.7%)",
+     "+$5.45T (+35%)"
+    ]
+   ]
+  },
+  {
+   "type": "p",
+   "text": "In an ordinary year, bank lending is the biggest engine. In the pandemic it was the government and the central bank: the Treasury spent borrowed money straight into household accounts, and the Fed and banks bought most of the new bonds, so nothing drained the deposits back. M2 rose 41% in two years, from $15.5 trillion in February 2020 to $21.8 trillion in February 2022."
+  },
+  {
+   "type": "myth",
+   "myth": "All money is created by banks making loans.",
+   "reality": "Loans are the main channel most years, but banks also create money when they buy securities, the Fed creates reserves whenever it buys and deposits when the seller is a nonbank, and Treasury spending adds deposits unless the public funded it from its own accounts. In 2020 to 2021 the Treasury and Fed channel created most new deposits."
+  },
+  {
+   "type": "myth",
+   "myth": "The Fed prints money and hands it to the government.",
+   "reality": "The Fed may not lend to the Treasury or buy at auction. It buys bonds from dealers in the open market and pays the sellers. That holds down yields and can turn bonds held by the public into deposits, which finances deficits indirectly. Its profits go back to the Treasury, and since 2022 it has been running losses."
+  },
+  {
+   "type": "h",
+   "text": "What the Hidden Secrets of Money series gets right and what has changed"
+  },
+  {
+   "type": "p",
+   "text": "Mike Maloney's ten-part series (GoldSilver, 2013 to 2018) taught millions of people that money is created by banks and the Fed, not by a mint. Its fourth episode alone has about 11 million views. It deserves credit for making the plumbing visible. Some of its mechanics were already simplified in 2013, and the rules have changed since."
+  },
+  {
+   "type": "table",
+   "cols": [
+    "The series said",
+    "Verdict",
+    "What changed or what is missing"
+   ],
+   "rows": [
+    [
+     "Most money is created as debt, and repaying debt destroys it",
+     "Right",
+     "Confirmed by the Bank of England in 2014"
+    ],
+    [
+     "A credit card charge creates new money",
+     "Right",
+     "Same mechanism as any bank loan"
+    ],
+    [
+     "The Fed creates money out of nothing when it buys bonds, and this finances deficits indirectly",
+     "Right",
+     "In 2020 to 2021 the Fed bought 59% of new Treasury debt"
+    ],
+    [
+     "Governments debase money to pay for war and public works",
+     "Right as history",
+     "The 1913 to 1971 gold story is accurate in outline"
+    ],
+    [
+     "Banks keep 10% of your deposit and lend out the rest, so $100 becomes $1,000",
+     "Outdated",
+     "Reserve requirements are zero since 26 March 2020. Banks lend first and reserves follow"
+    ],
+    [
+     "The Fed buys bonds from the Treasury through the banks and hands over the money",
+     "Oversimplified",
+     "The Fed buys only in the open market and pays the sellers. Purchases from banks add only reserves"
+    ],
+    [
+     "Taxes pay interest to the Fed's private owners",
+     "Wrong",
+     "Fed profits go to the Treasury. Member bank stock cannot be sold or traded"
+    ],
+    [
+     "Hyperinflation and the end of the dollar within a few years",
+     "Did not happen",
+     "Inflation hit 9.1% in 2022, then fell. The dollar still leads"
+    ]
+   ]
+  },
+  {
+   "type": "check",
+   "q": "Which part of the series' Episode 4 story would you keep, and which would you redraw?",
+   "a": "Keep: banks create deposits by lending, repayment destroys them, and Fed bond buying finances deficits indirectly. Redraw: no fixed 10% multiplier, the Fed buys only in the open market, the seller decides whether deposits appear, and Fed profits flow to the Treasury, not to private owners."
+  }
+ ],
+ "rules": [
+  "Ask which floor moved. Reserves are money for banks. Deposits are money for you.",
+  "The Fed creates reserves whenever it buys. It creates spendable deposits only when the seller is not a bank.",
+  "Auctions and taxes pull money up into the Treasury's account. Spending pushes it back down.",
+  "A deficit adds to your money only if banks, the Fed or parked cash fund it.",
+  "Banks create money by lending and by buying. Repayments and sales destroy it."
+ ],
+ "connects": [
+  {
+   "id": "rb-06",
+   "how": "Chapter 6 showed a loan creating a deposit. This chapter adds the other doors: bank purchases, the Fed, the Treasury and the drains."
+  },
+  {
+   "id": "rb-bonds",
+   "how": "Treasuries are the asset behind almost every move here, from Fed purchases to auctions to stablecoin reserves."
+  },
+  {
+   "id": "rb-titled",
+   "how": "Deficits funded by banks and the Fed add claims faster than goods, which is part of why abundance is priced on credit."
+  },
+  {
+   "id": "rb-crypto",
+   "how": "Stablecoins sit outside the two floors as a third kind of dollar, backed by the bills this chapter follows."
+  },
+  {
+   "id": "rb-13",
+   "how": "Eye-opener: the Fed is barred from buying bonds from the Treasury, yet it financed most of the 2020 and 2021 deficits through the open market."
+  }
+ ]
+}
