@@ -3,18 +3,18 @@
 Tier: Standard (Round 7). Date: 2026-10-24. Lane R7A combines the framer's lanes A, B and C with light Data, Ledger and Sweep jobs. Questions: Q1, Q1a, Q1b, Q1c. Hidden hypotheses: H1 to H6 (FRAME_R7 section 2). General education, not financial advice. Scripts: scratchpad/scripts (lens_audit.py, blockwords.py, gauge_math.py). Tables: round7/lanes/R7A-tables.json.
 
 ## Pass checklist
-- [ ] A. Government-lens audit with method, by blocks and words, verdict on H3
-- [ ] B. Learning science grades with primary sources, use in chapter, one anchor analogy stress-tested (H1, H2)
-- [ ] C. Secondary market: mechanics, who trades, spread, yield to maturity, daily volume US and Malaysia, retail routes and costs in Malaysia and the US (Q1a)
-- [ ] D. Normal person's lens: touch points with Malaysia and US numbers, hidden risks, overcorrection guard, 2022 losses sourced (Q1b, H4)
-- [ ] E. Personal gauge, tested on three made-up households (H6)
-- [ ] F. Headline filter, applied to three real 2025 to 2026 headlines, including one alarm that was right (Q1c, H5)
-- [ ] G. Ledger, light: four buyer cases, both floors
-- [ ] H. Sweep: popular explainers, reach, verdicts
-- [ ] I. 10 curiosity questions tagged to L1 chapters, 8 radiant rays
-- [ ] J. Proposed outline for the rewritten chapter (about 12 parts)
-- [ ] K. Claims table (R7A-01 onward) and dated tripwires
-- [ ] Style audit: no em-dashes, en-dashes or semicolons, "to" for ranges
+- [x] A. Government-lens audit with method, by blocks and words, verdict on H3
+- [x] B. Learning science grades with primary sources, use in chapter, one anchor analogy stress-tested (H1, H2)
+- [x] C. Secondary market: mechanics, who trades, spread, yield to maturity, daily volume US and Malaysia, retail routes and costs in Malaysia and the US (Q1a)
+- [x] D. Normal person's lens: touch points with Malaysia and US numbers, hidden risks, overcorrection guard, 2022 losses sourced (Q1b, H4)
+- [x] E. Personal gauge, tested on three made-up households (H6)
+- [x] F. Headline filter, applied to three real 2025 to 2026 headlines, including one alarm that was right (Q1c, H5)
+- [x] G. Ledger, light: four buyer cases, both floors
+- [x] H. Sweep: popular explainers, reach, verdicts
+- [x] I. 10 curiosity questions tagged to L1 chapters, 8 radiant rays
+- [x] J. Proposed outline for the rewritten chapter (about 12 parts)
+- [x] K. Claims table (R7A-01 onward) and dated tripwires
+- [x] Style audit: no em-dashes, en-dashes or semicolons, "to" for ranges
 
 ---
 
@@ -44,7 +44,7 @@ Tier: Standard (Round 7). Date: 2026-10-24. Lane R7A combines the framer's lanes
 By part (share of words):
 | Part | Words | S | C | M | H |
 |---|---|---|---|---|---|
-| Opening (TL;DR, bridge, map, five words) | 440 | 4% | 28% | 52% | 16% |
+| Opening ("In 60 seconds" summary, bridge, map, five words) | 440 | 4% | 28% | 52% | 16% |
 | Part 1, the bond itself | 1,224 | 10% | 10% | 81% | 0% |
 | Part 2, size, owners, auctions, repo | 1,851 | 20% | 77% | 0% | 3% |
 | Part 3, when bonds bite | 2,126 | 17% | 31% | 35% | 17% |
@@ -56,7 +56,7 @@ Which of the framer's ten household touch points appear at all:
 | 2 Bank deposits and deposit insurance | Partial. Only through SVB and the US $250,000 limit, told from the bank's side |
 | 3 Home loans | US only ($400,000 mortgage, one paragraph). Malaysian floating loans absent |
 | 4 Car loans and other borrowing | One word in a list |
-| 5 Jobs and company borrowing | One phrase in the TL;DR |
+| 5 Jobs and company borrowing | One phrase in the "In 60 seconds" summary |
 | 6 The currency | Partial. "The ringgit weakens", told from Bank Negara's side |
 | 7 Prices and inflation (real return) | Yes. Step 6 and the real-return widget, the strongest household section |
 | 8 Taxes and public services | Partial. US net interest above defence, told as a verdict on government |
@@ -363,3 +363,166 @@ Hypothesis table
 | Bonds always rise when shares fall | 60/40 lore | not measured | Mainstream | 2008 versus 2022 |
 | Sukuk are just bonds with another name | Malaysian forum lore | not measured | Popular | Shariah structure: ownership of an asset or its usufruct versus a loan |
 
+
+---
+
+## I. Curiosity questions (10) and radiant map (8 rays)
+
+Each question is asked before its answer (prediction before reveal) and tagged with the Level 1 chapter it builds on.
+
+| # | Question | Answer (verified numbers) | Builds on |
+|---|---|---|---|
+| 1 | You pay RM100 for a 10-year ticket that pays RM4 a year. Next month new tickets pay RM5. What can you sell yours for, and when does that loss stop mattering? | About RM92.28 (model). If new tickets pay RM3 it is about RM108.53. If you hold to the end you still get every RM4 and your RM100, so the loss only matters if you sell | rb-01 |
+| 2 | Who owns most of Malaysia's government bonds, foreigners or Malaysians? | Malaysians: residents held 78.5% at end 2025 and foreigners 21.5% (RM279.2B). Pension funds and banks are the two biggest holders (BNM Bond Market Report 2025) | rb-em |
+| 3 | How much of your EPF is lent out through bonds? | 44.7% of RM1.41T was fixed income at end 2025, mostly MGS, about RM630B (computed). Fixed income earned 4.3% and gave 33% of EPF's income (EPF, 28 Feb 2026) | rb-nation |
+| 4 | Why did "safe" US bond funds lose 13% in 2022? | Inflation pushed yields up fast and old bonds were repriced. The Bloomberg US Aggregate returned -13.01%, its worst year since 1976. The previous worst was -2.92% in 1994 | rb-08 |
+| 5 | Does the 10-year bond set your Malaysian home loan rate? | No. Since 1 August 2022 new retail floating loans follow the Standardised Base Rate, which moves only with the OPR (2.75%). In the US the 30-year fixed mortgage tracks the 10-year Treasury: 7.40% on 15 Oct 2026 | rb-06 |
+| 6 | When US yields jump, does the ringgit always fall? | No. In 2022 the US 10-year rose from 1.52% to 3.88% and the ringgit fell about 12%. In 2026 the 10-year rose 1.12 points to 5.31% and the ringgit stayed near 4.08 (Fed H.15 and H.10) | rb-04 |
+| 7 | How much bond trading happens in one day, in the US and in Malaysia? | US Treasuries about $1.21T a day (Jan to Jul 2026, SIFMA). Malaysian government bonds RM6.2B a day in 2025 (BNM), about US$1.5B, so roughly 800 times smaller | rb-leader |
+| 8 | In 2008 shares crashed. What did bonds do? | The US Aggregate bond index rose 5.24% while the S&P 500 fell 37.0%. Bonds cushion recessions. They failed to in 2022 because the shock was inflation | rb-buckets |
+| 9 | Can an 18-year-old in Malaysia buy a bond directly? | Yes, but routes are thin: seasoned corporate bonds and sukuk, or Bursa ETBS, from about RM1,000 through eligible distributors or brokers. The 2020 Sukuk Prihatin started at RM500 but was a one-off. Most people own bonds through EPF and unit trusts | rb-13 |
+| 10 | How much of Malaysia's tax money goes on interest? | Debt service was RM57.3B in 2026, 15.8% of revenue, and is projected at RM61.01B in 2027, about 16% (MOF Fiscal Outlook 2027). In the US, net interest of $1,051.8B in FY2026 was more than defence | rb-07 |
+
+Radiant map. Centre: "A bond is a ticket you can resell: RM100 in, RM4 a year, RM100 back."
+| Ray | Short line | Opens part (J) | Link |
+|---|---|---|---|
+| 1 The ticket | Who owes, how much, how often, until when. Sukuk too | 1 | rb-01 |
+| 2 The seesaw | Price down when yields up, longer swings more | 2 | rb-10 |
+| 3 The resale stall | Dealers, bid and ask, who trades, daily size | 3 | rb-leader |
+| 4 How you can buy | EPF, unit trusts, seasoned bonds, ETBS, TreasuryDirect, ETFs | 4 | rb-em |
+| 5 Your 12 touch points | Pension, deposits, loans, ringgit, prices, taxes | 5 | rb-nation |
+| 6 Hidden risks and cushions | Six risks, and 2008 versus 2022 | 6 | rb-buckets |
+| 7 Your monthly gauge | Six dials and five self-questions | 7 | rb-08 |
+| 8 The SCALES filter | Weigh a headline before you feel it | 8 | rb-13 |
+
+Dotted cross-links: "foreign funds sell" (ray 3) to "ringgit weaker" (ray 5) to "import prices up" (ray 5). "OPR" (ray 7) to "floating home loan" (ray 5). "Inflation" (ray 6) to "real yield dial" (ray 7).
+
+---
+
+## J. Proposed outline for the rewritten chapter (12 parts)
+
+Main path about 4,000 words at grade 8 to 9, household lens at least 40%. Deep material from the current chapter moves into collapsible "Go deeper" boxes, not deleted. The three made-up households appear throughout.
+
+| Part | One idea | Technique | Picture | Go deeper box (existing material moved here) |
+|---|---|---|---|---|
+| 0 Hook | A headline says "bond market crash". Should Aisyah, the Rahmans or Linda worry? | Prediction before reveal, story | Three faces and one headline | None |
+| 1 The ticket | A bond is a RM100 ticket paying RM4 a year, bought back at the end. Sukuk is the asset-backed version | Concrete example, anchor analogy, five words cards | The ticket with four labels | Bills, notes and bonds. US $32.57T held by the public |
+| 2 The seesaw | New tickets pay RM5, yours sells for RM92.28. Hold to the end and the loss disappears | Worked then faded example, refutation ("price falls means the government is failing") | Seesaw plus the bond-lab widget | Duration table, convexity |
+| 3 The resale stall | After the first sale, bonds change hands through dealers who quote a buy and a sell price | Dual coding, chunking | Booth on the left, resale stall in the middle | Clean and dirty price, settlement, March 2020 and April 2025 spreads |
+| 4 Who trades, and how you can | Banks, pensions, foreigners, funds. Your routes in Malaysia and the US with minimums | Concrete numbers, comparison table | Holder pie for Malaysia (BNM), routes ladder from EPF to ETBS | US holder timeline 1970 to 2025, foreign holder split, auction walk-through |
+| 5 What sets the price | Seven forces in a tug of war, told as "why new tickets pay more or less" | Elaborative interrogation ("why would supply push yields up?") | Tug of war | 2026 forces paragraph, yield parts diagram |
+| 6 Your 12 touch points | The same yield rise hurts some and helps others. Young savers mostly gain over time | Story (three households), concrete MY and US numbers | A body map of touch points, coloured help or hurt | Backbone table (Fed, repo, banks, money funds, stablecoins) |
+| 7 Hidden risks and cushions | Six risks, and why 2022 was the exception to 2008 | Refutation text ("government bonds cannot lose money"), contrasting cases | Two bars: 2008 (+5.24% vs -37.0%) and 2022 (-13.01%) | Stress-episode table 1979 to 2026, SVB balance sheet |
+| 8 Real return | Every yield is nominal. Subtract tax and inflation | Worked example, widget | Real-return bar | Financial repression, 1940s |
+| 9 Your monthly gauge | Six dials, five self-questions, three households tested | Retrieval (run it now), spacing ("come back next month") | Dial board | Curve slope and inversion history |
+| 10 The SCALES filter | Weigh any headline. Real alarms leave tracks | Mnemonic (one only), worked headlines, interleaving | A scale with six weights | UK gilts 2022 full story, April 2025 timeline |
+| 11 The government's side, compressed | Why states borrow, how an auction works, why the bond market can "vote" | Segmenting, one table | The ticket booth, the government's interest bill | Repo with balance sheets, the four ledger cases, the Fed and Bank Negara as buyers, Malaysia's MGS and GII details |
+| 12 Say it back | 10 mixed questions, three revisit prompts, glossary with Malay terms (bon, sukuk, KWSP, kadar faedah, OPR) checked by a native speaker | Retrieval, interleaving, spacing | None | Debates and tripwires (Level 4) |
+
+Rules for the rewrite: one new term per paragraph, sentences of 15 words or fewer on the main path, money before percentages, a "how to learn this" box near the top (quiz, do not reread, learning styles are a myth), and a readability count per part by script.
+
+---
+
+## K. Claims table and tripwires
+
+Format: id | claim | tier | status | source (URL) | source date | as-of date | falsifier. "Computed" means arithmetic by this lane on the cited inputs (scratchpad scripts). Reused Round 6 numbers keep their R6B ids and are not repeated here unless used in a new way.
+
+| id | Claim | Tier | Status | Source | Source date | As of | Falsifier |
+|---|---|---|---|---|---|---|---|
+| R7A-01 | In the current rb-bonds chapter (94 blocks, 5,641 words excluding navigation) the household lens is 8.8% of words and government plus system 56.3%. Extreme re-tag bounds: household 5.1% to 15.0%, government plus system 36.5% to 70.4% | Model on T0 text | Confirmed (method stated, single coder) | site/rulebook.json, scratchpad/scripts/lens_audit.py | 2026-10-24 | 2026-10-24 | A second coder's tags put household above 15% |
+| R7A-02 | Only 3 of 10 framer household touch points are fully covered in rb-bonds, and the secondary market as a route for a person is absent | Model on T0 text | Confirmed | same as R7A-01 | 2026-10-24 | 2026-10-24 | A block covering a missing touch point is found |
+| R7A-03 | In Roediger and Karpicke (2006) Experiment 2, one-week recall was 61% (study once, test three times), 56% (study three, test once) and 40% (study four times). At 5 minutes, repeated study led (83% vs 71%) | T4 (peer-reviewed) | Confirmed (paper text read) | https://psychology.ecu.edu/wp-content/pv-uploads/sites/216/2019/03/Roediger-Karpicke-2006.pdf | 2006 | 2006 | Erratum or failed replication of the delayed-test reversal |
+| R7A-04 | Dunlosky et al. (2013) rated practice testing and distributed practice high utility, elaborative interrogation, self-explanation and interleaving moderate, and highlighting, rereading, summarization and the keyword mnemonic low | T4 | Confirmed from the literature (not re-fetched this round) | Dunlosky et al. 2013, Psychological Science in the Public Interest 14(1) | 2013 | 2013 | The review's table says otherwise |
+| R7A-05 | No credible evidence supports matching teaching to "learning styles" | T4 | Confirmed from the literature (not re-fetched) | Pashler et al. 2008, Psychological Science in the Public Interest 9(3) | 2008 | 2008 | A well-controlled crossover study showing a style-by-method interaction |
+| R7A-06 | Malaysia's secondary government bond market traded RM6.2B a day on average in 2025, from RM3.8B in 2024. MGS RM3.4B, GII RM2.8B. MGS plus GII were 87% of turnover | T0 (BNM data in a Bond Market Sub-Committee report) | Confirmed | https://www.bnm.gov.my/documents/20124/54166/Malaysia_Bond_Market_Report_2025.pdf | 2026 | 2025 | BNM statistics show other averages |
+| R7A-07 | At end 2025 residents held 78.5% of Malaysian government securities and non-residents 21.5% (RM279.2B). MGS plus GII foreign share 21.6% (RM278.0B), from 24.4% in early 2020 | T0 | Confirmed | same as R7A-06 | 2026 | 2025-12-31 | BNM monthly data differ by more than 1 point |
+| R7A-08 | Among resident holders: pension funds 41.6%, banks 42.9%, insurers 7.9%, asset managers 3.4%, Bank Negara 1.3%, others including individuals 2.9%. As shares of the whole market (computed, if these are resident shares): pensions about 32.7%, banks about 33.7% | T0 plus computation | Plausible (denominator to confirm) | same as R7A-06 | 2026 | 2025-12-31 | BNM table shows the shares are of the total market |
+| R7A-09 | Foreign holders of Malaysian government bonds at end 2025: central banks and governments about 33.5%, global asset managers 31.4%, pensions and insurers 17.6%, banks, hedge funds and macro funds 17.5%. Foreign share of MGS 33.7%, of GII 8.4% | T0 | Confirmed | same as R7A-06 | 2026 | 2025-12-31 | BNM data differ |
+| R7A-10 | Malaysia had 20 principal dealers in 2025, including 7 Islamic principal dealers | T1 (appointment) via report | Confirmed | same as R7A-06 | 2026 | 2025 | BNM's current list differs |
+| R7A-11 | EPF: 2025 dividend 6.15% (conventional and shariah), payout RM79.6B, investment assets RM1.41T. Allocation: equities 46.1%, fixed income 44.7%, real estate and infrastructure 6.0%, money market 3.2%. Fixed income returned 4.3% and gave RM26.3B, 33% of income | T0 (EPF via national news agency) | Confirmed | https://www.bernama.com/en/general/news.php?id=2528719 | 2026-02-28 | 2025-12-31 | EPF annual report differs |
+| R7A-12 | Since 1 Aug 2022 new Malaysian retail floating loans (housing, vehicle, personal) use a Standardised Base Rate tied only to the OPR. It does not apply to fixed-rate hire purchase | T1 | Confirmed (law firm summary of BNM policy document) | https://www.skrine.com/insights/alerts/august-2021/bank-negara-issues-policy-document-on-reference-ra | 2021-08 | 2026-10-24 | A BNM revision of the framework |
+| R7A-13 | OPR held at 2.75% on 3 Sep 2026, unchanged since a cut in July 2025. Malaysian headline inflation 1.8% in July 2026 | T2 | Confirmed | https://ringgitplus.com/en/blog/personal-finance-news/bnm-holds-opr-at-2-75-as-growth-forecast-rises-to-around-5.html | 2026-09-03 | 2026-09-03 | A November 2026 MPC change |
+| R7A-14 | The share of Malaysian housing loans that float was not found in any source this round | none | Open | BNM Financial Stability Review (not located) | | 2026-10-24 | BNM publishes the split |
+| R7A-15 | US 30-year fixed mortgage rate 7.40% in the week of 15 Oct 2026 (Freddie Mac PMMS) | T3 | Plausible (search summary, page not opened) | https://www.freddiemac.com/pmms | 2026-10-15 | 2026-10-15 | The PMMS page shows another rate |
+| R7A-16 | US Treasury yields on 22 Oct 2026: 10-year 4.96%, 2-year 4.65%, 30-year 5.29%, 10-year inflation-indexed 2.64%. 10-year a year earlier (23 Oct 2025) 4.01% | T3 | Confirmed | https://api.db.nomics.world/v22/series/FED/H15/RIFLGFCY10_N.B (and 02, 30, 10_XII) | 2026-10-23 | 2026-10-22 | H.15 revision |
+| R7A-17 | USD/MYR (Fed H.10 noon rate): 4.171 to 4.746 in 2022 (ringgit down about 12%), 3.886 to 4.146 in 2026, 4.079 on 16 Oct 2026 | T3 | Confirmed | https://api.db.nomics.world/v22/series/FED/H10/RXI_N.B.MA | 2026-10-23 | 2026-10-16 | H.10 revision |
+| R7A-18 | In 2026 the US 10-year rose 1.12 points (4.19% on 2 Jan to 5.31% on 5 Oct) while the ringgit stayed between 3.89 and 4.15 per dollar, so "US yields up, ringgit down" did not hold this year | T3 computed | Confirmed (association only) | R7A-16, R7A-17 | 2026-10-23 | 2026-10-16 | The ringgit falls more than 5% within weeks of a US yield jump in 2026 to 2027 |
+| R7A-19 | The Bloomberg US Aggregate bond index returned -13.01% in 2022, its worst calendar year since the index began. The prior worst was -2.92% (1994) | T3 (index data in index provider and fund reports) | Confirmed | https://assets.bbhub.io/professional/sites/10/Bloomberg-Municipal-Index-Monthly-January-2023.pdf and https://hub.ipe.com/asset-manager/principal-asset-management/multi-sector-fixed-income-2023/10065688.supplierarticle | 2023-01 | 2022-12-31 | Bloomberg index factsheet shows otherwise |
+| R7A-20 | In 2008 the US Aggregate index returned +5.24% and the S&P 500 -37.0% | T3 (fund filings) | Confirmed | https://www.sec.gov/Archives/edgar/data/0000794105/000093247109000862/bondindexfinal.htm | 2009 | 2008-12-31 | Index provider data differ |
+| R7A-21 | TreasuryDirect: $100 minimum in $100 steps. Securities cannot be sold inside TreasuryDirect. They must be transferred to a broker or bank, after a 45-day hold from issue. 4-week bills cannot be transferred | T1 (Treasury user guide) | Confirmed | https://treasurydirect.gov/indiv/help/treasurydirect-help/user-guide/261-270/ | 2026 | 2026-10-24 | TreasuryDirect rule change |
+| R7A-22 | iShares AGG and Vanguard BND each charge 0.03% a year | T4 (comparison sites) | Plausible | https://www.aol.com/finance/agg-vs-bnd-comparing-two-042835778.html | 2026 | 2026 | Issuer pages show another fee |
+| R7A-23 | Malaysian retail routes: seasoned corporate bonds and sukuk from about RM1,000 under the SC guidelines (April 2018) through eligible distributors. Resale price "could be higher or lower" | T1 via T4 (BIX, The Edge) | Plausible | https://bixmalaysia.com/learning-center/articles-tutorials/how-to-buy-bond-and-sukuk-for-retail-investors-in-malaysia | 2026-09-07 | 2026-09-07 | SC guideline text gives another minimum |
+| R7A-24 | ETBS launched on Bursa in 2013 (first listing DanaInfra, January 2013). In 2021 trading was "scant", three DanaInfra bonds were listed, and about 400 investors had traded seasoned bonds over two years with RM10M turnover | T4 | Plausible (2021 data, may be outdated) | https://theedgemalaysia.com/article/cover-story-retail-bonds-time-reset | 2021 | 2021-06 | Bursa or SC 2025 statistics show active trading |
+| R7A-25 | Standard primary lots are RM10M for government bonds. Private banks sell odd lots from about RM250,000 to clients earning at least RM300,000 a year | T4 | Plausible (2021) | same as R7A-24 | 2021 | 2021-06 | Bank product terms in 2026 differ |
+| R7A-26 | Sukuk Prihatin (2020): two years, 2% a year paid quarterly, minimum RM500 in RM100 steps, citizens 18 and over, target RM500M plus RM166M more. A one-off issue | T1 (Government terms) | Confirmed | https://www.smbc.co.jp/asia/malaysia/Sukuk-Prihatin-Terms.pdf and https://www.utusan.com.my/?p=19052 | 2020 | 2020 | Terms document says otherwise |
+| R7A-27 | No standing retail Malaysian government bond or sukuk was found in 2025 to 2026 | none | Open (absence of evidence) | searches this round | | 2026-10-24 | A current retail government sukuk is found |
+| R7A-28 | Malaysian residents with no domestic ringgit borrowing may invest any amount abroad. Those with domestic ringgit borrowing may convert up to RM1M a year for foreign assets | T1 via bank summaries | Plausible (current BNM notice not opened) | https://www.rhbgroup.com/others/faq/payments-and-transfer/fep/index.html | undated | 2026-10-24 | Current BNM FEP notice differs |
+| R7A-29 | PIDM covers eligible deposits up to RM250,000 per depositor per member bank, with separate cover for Islamic and conventional accounts | T1 | Confirmed | https://www.pidm.gov.my/general/faqs/deposit-insurance-system | undated | 2026-10-24 | PIDM changes the limit |
+| R7A-30 | Maybank's 12-month FD board rate was 2.45% (page effective 19 Mar 2025). Promotional eFD rates of about 3.6% to 3.9% need RM5,000 | T3 | Plausible (rate page may be stale) | https://www.maybank2u.com.my/maybank2u/malaysia/en/personal/rates/fixed_deposit_account_rates.page | 2025-03-19 | 2026-10-24 | A newer board rate |
+| R7A-31 | Malaysian debt service charges RM53.7B (2025), RM57.3B (2026 estimate, 15.8% of revenue). Federal debt RM1.38T, 98.8% domestic, 63.1% of GDP at end June 2026 | T0 via press (MOF Fiscal Outlook 2027) | Confirmed | https://www.thevibes.com/articles/news/128170/debt-servicing-bill-hits-rm57.3b-as-malaysias-federal-debt-climbs-to-rm1.38-trillion-mof | 2026-10-10 | 2026-06-30 | MOF document differs |
+| R7A-32 | 2027 debt service projected at RM61.01B, about 16% of projected revenue of RM380.82B | T0 via press | Plausible (article not opened, search summary) | press reports of MOF Fiscal Outlook 2027, for example https://bernama.com/en/region/news.php?id=2619627 | 2026-10 | 2027 projection | MOF document differs |
+| R7A-33 | Corporate bonds were 42.4% of Malaysia's RM2.3T bond market at end 2025 | T0 | Confirmed | same as R7A-06 | 2026 | 2025-12-31 | BNM data differ |
+| R7A-34 | Foreign net sales of Malaysian bonds were RM5.6B in July 2026 (MGS outflow RM7.4B), equal to about 0.43% of MGS plus GII (computed). About RM15.9B of foreign inflows followed in August | T4 (Kenanga via press) | Plausible (August coverage differs from R6B-32's RM11.1B into government bonds) | https://www.businesstoday.com.my/2026/08/10/why-foreign-investors-disposed-rm5-6-billion-in-malaysian-govt-bonds-in-july/ and https://www.businesstoday.com.my/2026/10/08/foreign-investors-turn-net-sellers-pulling-rm1-8-billion-from-bond-market/ | 2026-08 to 2026-10 | 2026-08-31 | BNM flow data differ |
+| R7A-35 | The US 10-year rose from 4.01% (4 Apr 2025) to 4.48% (11 Apr 2025) and the 30-year from 4.41% to 4.86%. A 90-day pause on most new tariffs came on 9 Apr 2025 | T3 plus T1 | Confirmed | H.15 (R7A-16 URL) and https://news.bloomberglaw.com/international-trade/trump-pauses-higher-duties-on-most-nations-hikes-china-tariffs | 2025-04 | 2025-04-11 | H.15 revision |
+| R7A-36 | Chinese selling as the cause of the April 2025 Treasury sell-off was never shown. A large fund's fixed income head attributed it mainly to hedge fund deleveraging | T4 | Plausible (contested) | https://investordaily.com.au/superannuation/57061-bond-market-turmoil-not-stocks-drove-trump-s-tariff-pause-says-fund-exec | 2025-04 | 2025-04 | TIC monthly transactions show large Chinese sales in April 2025 |
+| R7A-37 | The 30-year Treasury closed at 5.31% on 17 Aug 2026, near its 2007 high close of 5.35% (12 Jun 2007). Its yearly average exceeded 5.31% in 26 of the 31 years from 1977 to 2007 | T3 computed | Confirmed (H.15 has a gap 2002 to 2006) | https://api.db.nomics.world/v22/series/FED/H15/RIFLGFCY30_N.B | 2026-10-23 | 2026-08-17 | H.15 revision |
+| R7A-38 | UK, Sep 2022: the 30-year gilt yield rose 67 basis points on 27 September and its intraday range on 28 September was 127 basis points, higher than the annual range in all but 4 of the previous 27 years. LDI funds faced negative net asset values | T2 | Confirmed (search summary of the BoE letter) | https://www.bankofengland.co.uk/-/media/boe/files/letter/2022/october/letter-from-jon-cunliffe-ldi-5-october-2022 | 2022-10-05 | 2022-09-28 | Letter text differs |
+| R7A-39 | In March 2020 indicative bid and ask spreads on the on-the-run 10-year Treasury peaked near 6 basis points and fell to about 2 by early April. Off-the-run spreads were much wider | T2 | Plausible (chart read via search summary) | https://federalreserve.gov/publications/2020-may-financial-stability-report-accessible-version.htm | 2020-05 | 2020-04 | FSR chart shows otherwise |
+| R7A-40 | After the April 2025 tariff shock, bid and ask spreads on less liquid corporate bonds roughly doubled to about 0.2 percentage points | T4 | Plausible | https://treasuryandrisk.com/2025/04/16/corporate-bond-trading-costs-surged-amid-market-tumult | 2025-04-16 | 2025-04 | TRACE-based studies show no such move |
+| R7A-41 | Model: a RM400,000 floating loan over 35 years at 4.00% costs about RM1,771 a month. +0.25 point adds about RM60, +1 point about RM248. A RM100, 4%, 10-year bond reprices to RM92.28 at 5% and RM108.53 at 3%. Buying a 4% bond with 8 years left at RM95 gives a yield to maturity of about 4.77% | Model | Confirmed (arithmetic) | scratchpad/scripts/gauge_math.py | 2026-10-24 | 2026-10-24 | Arithmetic error |
+| R7A-42 | Malaysian government bonds trade about US$1.5B a day against about $1.21T for US Treasuries, roughly 800 times less (computed, 2025 against Jan to Jul 2026) | Computed on T0 and T4 | Plausible | R7A-06, R6B-44 | 2026 | 2025 to 2026 | Same-period data change the ratio by more than half |
+| R7A-43 | The most-watched bond-related explainers found: Dalio "How The Economic Machine Works" 131.8M views. Lock Stock Finance 2.97M. Explains 101 2.69M. Andrei Jikh 2.60M. Malay-language bond explainers found had at most 45K views | T5 (reach) | Confirmed for reach | vidIQ YouTube search, video ids PHe0bXAIuk0, y0EcjtOB_uU, npX2aZymRvg, w8yTmTdF1Kw, b7KqDqeVUE0 | 2026-10-24 | 2026-10-24 | Other videos with higher reach found |
+| R7A-44 | Unit trust NAV in Malaysia was RM546.08B at end 2024. Fixed income funds were 10.40% of NAV (RM55.95B) in Q3 2021, the latest category split found | T0 (SC) | Plausible (split is old) | https://www.nst.com.my/amp/business/corporate/2025/03/1190842/sc-report-unit-trust-funds-still-hold-largest-slice-malaysias and https://www.sc.com.my/resources/quarterly-report/3rd-quarter-2021/issues-and-investments | 2025-03 and 2021 | 2024-12-31 | SC 2025 report |
+| R7A-45 | The 10-year MGS yield was about 3.95% (3.947%) in October 2026 | T3 via T4 | Plausible (search summary) | https://www.businesstoday.com.my/2026/10/10/foreign-investors-pullout-from-bond-market-with-rm3-billion-net-outflow/ | 2026-10-10 | 2026-10 | BIX or BNM closing yields differ |
+
+### Tripwires (dated)
+| Date or window | Tripwire | What it would change |
+|---|---|---|
+| BNM MPC meeting, November 2026 | OPR moves from 2.75% | The Rahman household numbers (E3) and FD rates. Re-run gauge_math.py |
+| Before publication of the rewrite | Cold-reader agent scores fewer than 8 of 10 on the draft (FRAME 3.10) | The outline in J. Fix the parts the misses came from |
+| 31 Dec 2026 | Foreign share of MGS plus GII below 20% or above 23% (BNM) | The "about a fifth" line and the currency touch point |
+| 31 Jan 2027 | Bloomberg US Aggregate 2026 calendar return published | Section D2 adds a recent year to the 2008 versus 2022 contrast |
+| February to March 2027 | EPF 2026 dividend and asset mix | R7A-11. If fixed income falls below 40% of assets, the "nearly half" framing changes |
+| 31 Mar 2027 | US 10-year closes above 5.5% or below 4.5% | Gauge dial 1 reading and the headline examples |
+| 30 Jun 2027 | USD/MYR above 4.40 or below 3.80 while the US 10-year stays above 5% | R7A-18 (2026 decoupling) either confirmed or reversed |
+| 30 Jun 2027 | Freddie Mac 30-year above 8% or below 6.5% | The US mortgage example |
+| 31 Dec 2027 | A new retail government sukuk or savings bond is announced in Malaysia | R7A-27 and the route table in C7 |
+| First half 2027 | BNM Bond Market Report 2026 published | Holder shares (R7A-08) and daily trading (R7A-06) |
+
+---
+
+## Answers in brief
+- Q1: The chapter should be rebuilt around one anchor analogy (the RM4 ticket), a household lens of at least 40% (from 8.8% today), the six strong learning techniques, a monthly gauge and the SCALES headline filter, with the government plumbing compressed into one part and "go deeper" boxes (outline in J).
+- Q1a: Bonds are resold over the counter through dealers who quote a buy and a sell price. Malaysia trades about RM6.2B of government paper a day, the US about $1.21T. Ordinary Malaysians own bonds mainly through EPF and unit trusts, and can buy seasoned bonds or Bursa ETBS from about RM1,000. Americans can buy from $100 at TreasuryDirect or through bond ETFs at 0.03% a year.
+- Q1b: Ordinary people carry price, inflation, currency, liquidity, reinvestment and (small) credit risk, mostly indirectly. Bonds also cushion recessions (2008). The gauge gives different answers to a fresh graduate, a floating-loan family and a US retiree.
+- Q1c: Of three real 2025 to 2026 headlines, none was false. The common fault was missing scale, base date or an unproven cause. Real alarms (UK 2022, SVB 2023) leave tracks the filter can see.
+
+## Key findings
+1. The owner's "mostly government lens" holds in substance: household lens 8.8% of words, government and system the largest lens at 56.3%.
+2. Malaysian floating home loans follow the OPR, not the 10-year bond, by rule since August 2022. A US-style "bond yields set your mortgage" story is wrong for Malaysia.
+3. In 2026 the ringgit did not fall when US yields jumped, unlike 2022. The chapter must not teach that link as automatic.
+4. EPF has 44.7% of RM1.41T in fixed income, and pension funds plus banks hold about two thirds of Malaysian government securities. Every Malaysian worker is a bondholder.
+5. Retail direct access in Malaysia is thin (scant ETBS trading, a one-off 2020 retail sukuk), while the institutional market is liquid and growing (RM6.2B a day).
+
+## Say/do gaps
+- Malaysia says it wants deeper retail bond participation (SC frameworks since 2018), yet no standing retail government bond was found and ETBS trading remains scant.
+- Popular explainers say "foreigners are dumping", yet US foreign holdings stayed near records and Malaysia's foreign share drifted only from 24.4% to 21.6% over five years.
+
+## Anomalies (story versus data)
+- "US yields up, ringgit down": true in 2022, false in 2026 (R7A-18).
+- "Highest since 2007": the 30-year at 5.31% was below its average in 26 of 31 pre-2008 years (R7A-37).
+- "Rereading helps": rereaders felt more confident and remembered less after a week (R7A-03).
+
+## Mechanism chains (with dated tests)
+- US 10-year up, then US 30-year mortgage up within weeks. Test: PMMS against H.15 by 30 Jun 2027.
+- OPR up 0.25, then Malaysian floating payments up about RM60 per RM400,000. Test: next OPR change.
+- Foreign sales of MGS, then ringgit weaker or BNM reserves lower or yields higher. Test: the next month with foreign outflows above RM5B, compare H.10 and BNM reserves.
+
+## Open questions
+- Share of Malaysian housing loans on floating rates (BNM FSR). Exact ETBS and seasoned bond fees and 2025 volumes (SC, Bursa). Which loans count as "domestic ringgit borrowing" under the FEP. Malaysian corporate bond default cases for the credit-risk row. Readability scores and the cold-reader test, which need the draft.
+
+## Proposed changes (Rulebook, pending the owner's approval under PLAN 5.7)
+- Replace rb-bonds with the 12-part outline in J. Keep every verified number from Round 6 inside "go deeper" boxes.
+- Swap the locked-rent apartment for the RM4 ticket, with the "where it breaks" box.
+- Add the gauge (E) and the SCALES filter (F) as interactive widgets if the site allows.
+- Fix the "In 60 seconds" summary line "Almost every other interest rate in your life ... is built on top of the government's yield": true for US mortgages, not for Malaysian floating loans, which follow the OPR.
