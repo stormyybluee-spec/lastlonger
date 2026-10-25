@@ -1,0 +1,3491 @@
+[
+ {
+  "chapter": "rb-bonds",
+  "block": "5",
+  "action": "replace",
+  "new": {
+   "type": "h",
+   "text": "Part 1 of 3. The ticket, the seesaw and the resale stall"
+  },
+  "why": "Part title matches content"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "7",
+  "action": "replace",
+  "new": {
+   "type": "p",
+   "text": "Imagine tomorrow's headline: \"Bond market crash\". Meet four people. They are made up, but their situations are common."
+  },
+  "why": "Fourth household added"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "18",
+  "action": "replace",
+  "new": {
+   "type": "steps",
+   "items": [
+    "Worked example. Your ticket pays RM4 and has 10 years left. New tickets yield 5%. A buyer pays about RM92.28. They get RM4 a year plus a RM7.72 gain at the end, a yield of about 5%.",
+    "Your turn, half done. New tickets yield 3% instead. Is your RM4 ticket worth more or less than RM100? (More, about RM108.53, because it pays more than new tickets.)",
+    "Your turn. A ticket with only 2 years left, when new tickets yield 5%. Does it fall more or less than the 10-year ticket? (Much less, about 1.9%, because only two years of too-small payments are left.)"
+   ]
+  },
+  "why": "Vocabulary rule, numbers unchanged (verified)"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "19",
+  "action": "replace",
+  "new": {
+   "type": "diagram",
+   "key": "seesaw",
+   "caption": "Yields and prices sit on a seesaw. When yields rise, old tickets are worth less, and the other way round."
+  },
+  "why": "Vocabulary rule"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "23",
+  "action": "delete",
+  "why": "Duplicates the worked example [18] and the final check [95]"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "28",
+  "action": "move_into",
+  "target": "31",
+  "position": "start",
+  "why": "Daily trading volumes are detail, not the one idea"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "31.0",
+  "action": "replace",
+  "new": {
+   "type": "table",
+   "cols": [
+    "Who",
+    "US Treasuries (end 2025, Fed)",
+    "Malaysian government securities, share of the whole market (end 2025, Bank Negara)"
+   ],
+   "rows": [
+    [
+     "Dealers",
+     "25 primary dealers who must bid at auctions",
+     "20 principal dealers, 7 of them Islamic"
+    ],
+    [
+     "Banks",
+     "6.9%",
+     "about 34%"
+    ],
+    [
+     "Pension funds",
+     "pensions and insurers about 6%",
+     "about 33% (EPF is the largest)"
+    ],
+    [
+     "Insurers and takaful",
+     "inside the 6% above",
+     "about 6%"
+    ],
+    [
+     "Funds",
+     "money funds 12.4%, mutual funds and ETFs 8.4%",
+     "asset managers about 3%"
+    ],
+    [
+     "Foreigners",
+     "32.5%",
+     "21.5%"
+    ],
+    [
+     "The central bank",
+     "the Fed 12.7% (market-value basis)",
+     "Bank Negara about 1%"
+    ]
+   ]
+  },
+  "why": "Verifier row 128: name the measure so L2.4's Ministry of Finance shares do not look like a contradiction"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "33",
+  "action": "replace",
+  "new": {
+   "type": "check",
+   "q": "Your RM4 ticket has 10 years left and new tickets yield 3%. Is it worth more or less than RM100?",
+   "a": "More, about RM108.53, because it pays more than the new tickets."
+  },
+  "why": "Vocabulary rule"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "35",
+  "action": "replace",
+  "new": {
+   "type": "check",
+   "q": "Why do dealers quote two prices?",
+   "a": "They buy a little lower than they sell. The dealer's gap is their fee for standing ready to trade."
+  },
+  "why": "One name for the gap, word audit 'always'"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "38",
+  "action": "replace",
+  "new": {
+   "type": "p",
+   "text": "If you have EPF savings, you already own bonds. In Malaysia, EPF is the biggest route."
+  },
+  "why": "Word audit: 'Most people' had no number"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "39",
+  "action": "replace",
+  "new": {
+   "type": "table",
+   "cols": [
+    "Route in Malaysia",
+    "How much to start",
+    "Can you resell?"
+   ],
+   "rows": [
+    [
+     "EPF (KWSP)",
+     "Automatic from your salary. 44.7% of EPF's RM1.41 trillion was in bonds and similar at the end of 2025, mostly government paper",
+     "No. You own a share of the fund"
+    ],
+    [
+     "Bond and sukuk unit trusts",
+     "Depends on the fund",
+     "Yes, sell units back to the fund at the daily price"
+    ],
+    [
+     "Bonds and sukuk on Bursa Malaysia, or seasoned bonds through banks",
+     "From about RM1,000",
+     "Yes, but trading is often thin, so a quick sale may cost you"
+    ]
+   ]
+  },
+  "why": "Rows for a one-off 2020 sukuk and RM10 million lots move to a go-deeper box"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "42",
+  "action": "replace",
+  "new": {
+   "type": "h",
+   "text": "6. Where bonds touch you"
+  },
+  "why": "Main table now has eight places, four more in a box"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "47",
+  "action": "replace",
+  "new": {
+   "type": "curiosity",
+   "items": [
+    {
+     "q": "When US yields jump, does the ringgit always fall?",
+     "a": "No. In 2022 the US 10-year rose from 1.52% to 3.88%, and the ringgit fell about 12% at its weakest, in November, and about 5% over the year. In 2026 the 10-year rose 1.12 points and the ringgit stayed between 3.89 and 4.15 (Fed data).",
+     "from": "rb-04"
+    }
+   ]
+  },
+  "why": "Verifier row 28: peak-to-trough labelled. Home-loan question deleted as a duplicate of [45] and [64]"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "49",
+  "action": "move_into",
+  "target": "51",
+  "position": "start",
+  "why": "Section 7 becomes a go-deeper box: the seven forces are mechanism detail"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "50",
+  "action": "move_into",
+  "target": "51",
+  "position": "start",
+  "why": "as above (placed before [49])"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "48",
+  "action": "delete",
+  "why": "Heading of a section that moved into a box"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "51",
+  "action": "replace",
+  "new": {
+   "type": "deeper",
+   "label": "What makes yields move: seven forces, and 2026 as an example",
+   "blocks": "KEEP_CHILDREN"
+  },
+  "why": "Label only"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "52",
+  "action": "replace",
+  "new": {
+   "type": "h",
+   "text": "7. Hidden risks, and what protects you"
+  },
+  "why": "Renumbered"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "57",
+  "action": "replace",
+  "new": {
+   "type": "h",
+   "text": "What is left after inflation"
+  },
+  "why": "Malaysia first"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "59",
+  "action": "move_into",
+  "target": "58.box",
+  "position": "end",
+  "why": "US tax walk is go-deeper material"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "60",
+  "action": "move_into",
+  "target": "58.box",
+  "position": "end",
+  "why": "Real-return widget is go-deeper material"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "58",
+  "action": "insert_after",
+  "new": {
+   "type": "deeper",
+   "box_id": "58.box",
+   "label": "The US real-return walk, with tax",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "On 21 October 2026 the US 10-year yielded 5.13% and the 10-year inflation-linked Treasury 2.76%, so about 2.4 points of the 5.13% was pay for expected inflation."
+    }
+   ]
+  },
+  "why": "Holds [59] and [60]"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "61.5",
+  "action": "replace",
+  "new": {
+   "type": "p",
+   "text": "Accounting rules let the loss stay hidden while the bank promised to hold the bonds to the end. A run forced a sale, and the paper loss became real in a day. The bonds were never in default. SVB's held-to-maturity losses were about $15.1B, close to all of its owners' money. Two days after SVB closed, the Fed opened the Bank Term Funding Program, which lent to banks against Treasuries at their face value, not their market value. A bond's price can fall, but in that panic its value as collateral was held at par by policy."
+  },
+  "why": "RT accountant: leftover reference to the old title"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "70",
+  "action": "insert_after",
+  "new": {
+   "type": "deeper",
+   "label": "Three more dials for keen readers",
+   "blocks": [
+    {
+     "type": "table",
+     "cols": [
+      "Dial",
+      "Where to look, free",
+      "October 2026",
+      "Look closer if (a teaching rule of thumb)"
+     ],
+     "rows": [
+      [
+       "5. Foreign share of Malaysian government bonds",
+       "Bank Negara monthly statistics",
+       "21.5% (end 2025)",
+       "It fell more than 1 point in a quarter while the ringgit fell"
+      ],
+      [
+       "6. Auction demand",
+       "US auction results. Bank Negara auction results via BIX",
+       "US 10-year on 7 October 2026: bids 2.77 times the amount sold",
+       "Demand is at its weakest in a year"
+      ],
+      [
+       "7. Malaysia's interest bill",
+       "Ministry of Finance Fiscal Outlook",
+       "Debt service 15.8% of revenue (2026 projection). The 2023 fiscal law sets a 15% limit",
+       "It rises further above the limit"
+      ]
+     ]
+    }
+   ]
+  },
+  "why": "Framer 3.7 and RT debt manager: interest-cost dial"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "75",
+  "action": "replace",
+  "new": {
+   "type": "p",
+   "text": "Many bond headlines are written to grab attention. Before you feel one, weigh it. One short list is enough, and it spells SCALES."
+  },
+  "why": "Consumer voice: soften blanket cynicism"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "81",
+  "action": "replace",
+  "new": {
+   "type": "p",
+   "text": "The boxes below are optional. They cover why governments borrow, how auctions and repo work, duration in detail, the yield curve and Malaysia's bond market."
+  },
+  "why": "Pointer only"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "81",
+  "action": "insert_after",
+  "new": {
+   "type": "deeper",
+   "box_id": "81.box",
+   "label": "The government's side, in one page",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Why do governments sell tickets? Much of each year's new borrowing repays old tickets that are ending. The rest covers the gap when spending is more than taxes. For a government that issues its own money, borrowing is also a rule it sets for itself: in the US the Fed may not buy new Treasuries straight from the government (Level 1, \"How money is born today\"), and safe bonds help a central bank steer interest rates. Banks, pension funds and central banks also need a safe ticket to hold. Each new ticket is sold at an auction where dealers must bid. The resale price then works like a vote that never stops: if buyers doubt a government's plans, yields rise and its interest bill grows."
+    },
+    {
+     "type": "p",
+     "text": "That bill is already large. Malaysia's debt service is projected at RM57.3 billion in 2026, 15.8% of revenue, above the 15% limit Malaysia set itself in its 2023 fiscal law (Act 850). In the US, net interest passed $1 trillion in fiscal 2026, more than defense."
+    }
+   ]
+  },
+  "why": "RT debt manager (refinancing, 15% limit), RT MMT critic (self-imposed rule)"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "82",
+  "action": "delete",
+  "why": "Its revised text now sits inside the new box after [81]"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "83",
+  "action": "move_into",
+  "target": "81.box",
+  "position": "end",
+  "why": "Curiosity on interest cost moves into the box"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "83",
+  "action": "replace",
+  "new": {
+   "type": "curiosity",
+   "items": [
+    {
+     "q": "How much of Malaysia's tax money goes on interest?",
+     "a": "Debt service is projected at about RM57.3 billion in 2026, about 15.8% of revenue, and near 16% in 2027 (Ministry of Finance). In the US, net interest of about $1.05 trillion in fiscal 2026 was more than defense.",
+     "from": "rb-07"
+    }
+   ]
+  },
+  "why": "Verifier row 68: projected"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "84.4",
+  "action": "replace",
+  "new": {
+   "type": "p",
+   "text": "The title passes, with one correction. Bonds are the backbone of the system's plumbing: collateral, reserves, liquidity and stablecoin backing. They are not what most bank deposits lean on. At US banks, loans are $14.1T of $25.9T of assets, Treasuries and agency bonds $4.8T. In normal years most new deposits are born from loans. In 2020 to 2021 most came from the Fed buying bonds and the government spending (Level 2, \"Who really creates money\"). Either way, the system settles, pledges and saves in Treasuries."
+  },
+  "why": "RT accountant, blocking point 7: Case 2 regression"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "89.4",
+  "action": "delete",
+  "why": "Moved to the main path as the new myth [22]"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "90.0",
+  "action": "replace",
+  "new": {
+   "type": "table",
+   "cols": [
+    "Malaysia's government bonds",
+    "Value",
+    "Date"
+   ],
+   "rows": [
+    [
+     "All government bonds (conventional MGS plus Islamic GII)",
+     "RM1.31T",
+     "March 2026"
+    ],
+    [
+     "Share of government securities held by foreigners",
+     "21.5%",
+     "end 2025 (Bank Negara)"
+    ],
+    [
+     "10-year MGS yield",
+     "3.985%, against about 4.8% for the US 10-year",
+     "end August 2026"
+    ],
+    [
+     "Bank Negara's reserves",
+     "US$132.6B",
+     "end June 2026"
+    ],
+    [
+     "Main domestic holder",
+     "EPF, with 44.7% of its investment assets in fixed income, mostly government paper",
+     "end 2025"
+    ]
+   ]
+  },
+  "why": "One foreign-share figure and date across both chapters. Reserves and EPF share aligned with the main path"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "90.1",
+  "action": "replace",
+  "new": {
+   "type": "p",
+   "text": "Here is a Level 2 surprise. At the end of August 2026 Malaysia could borrow for ten years at 3.985%, about 0.8 points cheaper than the United States. Lower inflation, a lower policy rate and a large captive saver in the EPF all help. It does not mean Malaysia is safer for a foreign investor, who also carries the risk that the ringgit falls. Nearly half of Malaysia's government debt (47.9%) is Islamic paper, mostly GII, a structure the US does not have."
+  },
+  "why": "RT overcorrection 8"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "90.2",
+  "action": "replace",
+  "new": {
+   "type": "p",
+   "text": "The weak spot is the foreign fifth. When US yields jump, foreign money can leave ringgit bonds, the ringgit can weaken and Bank Negara may sell dollars to steady it. It is not automatic: in 2026 the ringgit held near 4.08 while US yields rose."
+  },
+  "why": "Word audit"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "92.0",
+  "action": "replace",
+  "new": {
+   "type": "list",
+   "items": [
+    "A concert ticket is worthless after the show. A bond ticket ends with a RM100 buy-back.",
+    "Resale ticket prices swing on hype. Bond prices swing mostly on yields and on trust in the borrower.",
+    "A ticket buyer is a customer. A bond buyer is a lender: the borrower owes them.",
+    "Most Malaysian government sukuk (GII) rest on a deferred sale of a commodity, so holders earn profit, not interest.",
+    "Bond prices are less visible than app prices. Most trading is between dealers.",
+    "A central bank can buy tickets with newly created money. No concert has a buyer like that.",
+    "For a single bond held to the end, the resale price matters only if you sell. A fund never ends, so its price always matters when you sell units."
+   ]
+  },
+  "why": "GII structure, literal-reader condition"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "92",
+  "action": "insert_after",
+  "new": {
+   "type": "deeper",
+   "label": "Who pays whom when a bond is bought: four cases",
+   "blocks": [
+    {
+     "type": "table",
+     "cols": [
+      "Case",
+      "What changes",
+      "Public money (deposits and cash)"
+     ],
+     "rows": [
+      [
+       "A person buys a new bond at auction",
+       "Their deposit falls. Their bank's reserves move up into the government's account at the central bank",
+       "Falls until the government spends it, then comes back"
+      ],
+      [
+       "A person buys from another person on the resale market",
+       "One deposit falls, another rises. The dealer earns the gap. The government is not involved",
+       "Only moves. Nothing created or destroyed"
+      ],
+      [
+       "A fund such as EPF buys a bond from a bank",
+       "The fund's deposit falls and the bank's bond holding falls",
+       "Falls. A bank selling a security to a nonbank destroys a deposit, the mirror of a bank buying one"
+      ],
+      [
+       "A foreign fund sells Malaysian bonds and takes its money home",
+       "A local buyer pays ringgit. The fund swaps the ringgit for dollars at a bank, or Bank Negara sells dollars from reserves",
+       "Resident deposits fall if a nonbank bought. The ringgit weakens, reserves fall, or yields rise until a local buyer steps in"
+      ]
+     ]
+    }
+   ]
+  },
+  "why": "Spec 3.3.10 ledger table, from lane R7A section G"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "92",
+  "action": "insert_after",
+  "new": {
+   "type": "deeper",
+   "label": "Dates that would change this chapter",
+   "blocks": [
+    {
+     "type": "table",
+     "cols": [
+      "When",
+      "What to watch",
+      "What it would change"
+     ],
+     "rows": [
+      [
+       "November 2026",
+       "Bank Negara moves the OPR from 2.75%",
+       "The Rahman numbers and FD rates"
+      ],
+      [
+       "31 December 2026",
+       "Foreign share of Malaysian government bonds below 20% or above 23%",
+       "The 'about a fifth' line and the ringgit touch point"
+      ],
+      [
+       "February to March 2027",
+       "EPF's 2026 dividend and asset mix",
+       "The EPF lines. Fixed income below 40% of assets would change them"
+      ],
+      [
+       "31 March 2027",
+       "US 10-year closes above 5.5% or below 4.5%",
+       "Dial 1 and the headline examples"
+      ],
+      [
+       "30 June 2027",
+       "Ringgit above 4.40 or below 3.80 per dollar while the US 10-year stays above 5%",
+       "Whether 2026's calm ringgit was a one-off"
+      ],
+      [
+       "31 December 2027",
+       "A new retail government sukuk or savings bond in Malaysia",
+       "The routes table"
+      ]
+     ]
+    }
+   ]
+  },
+  "why": "Spec 3.11 Part 10: tripwires (lane R7A list)"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "92",
+  "action": "insert_after",
+  "new": {
+   "type": "deeper",
+   "box_id": "92.practice",
+   "label": "More practice, a Day 3 card and Malay words",
+   "blocks": [
+    {
+     "type": "check",
+     "q": "A fund's factsheet says duration 4. Yields rise 1 point. Roughly what happens to its price?",
+     "a": "It falls about 4%."
+    },
+    {
+     "type": "check",
+     "q": "Hamid keeps his savings in fixed deposits. Which dial matters most to him?",
+     "a": "The OPR, because FD rates follow it, and inflation against what his FDs pay."
+    },
+    {
+     "type": "check",
+     "q": "A headline says foreigners sold RM5 billion of Malaysian bonds. Which two SCALES questions come first?",
+     "a": "Size (compared with about RM1.3 trillion of government bonds) and Exposure (did the ringgit or my loan actually move?)."
+    },
+    {
+     "type": "check",
+     "q": "Why is 'a price dip only costs you if you sell' not true for a bond fund?",
+     "a": "A fund never ends, so there is no date when you are sure to get your money back. Its price on the day you sell is what you get."
+    },
+    {
+     "type": "callout",
+     "label": "Day 3 card",
+     "text": "Come back in three days and answer without looking: what is a yield, which way does a bond's price move when yields rise, and which of the four people is a crash headline about?"
+    }
+   ]
+  },
+  "why": "Learning scientist: spacing card and a 10-item quiz (6 main path plus 4 here)"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "95",
+  "action": "replace",
+  "new": {
+   "type": "check",
+   "q": "New tickets yield 5%. Your RM4 ticket has 10 years left. Roughly what is it worth, and why?",
+   "a": "About RM92.28, because a buyer can get RM5 a year on a new ticket, so yours must be cheaper to compete."
+  },
+  "why": "Vocabulary rule"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "97",
+  "action": "replace",
+  "new": {
+   "type": "check",
+   "q": "What does the dealer's gap tell you in a crisis?",
+   "a": "It widens when everyone wants out. A widening gap is one of the tracks a real alarm leaves."
+  },
+  "why": "One name for the gap"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "chapter",
+  "action": "set_field",
+  "field": "rules",
+  "new": [
+   "A bond is a ticket: RM100 in, a fixed payment each year, RM100 back at the end.",
+   "Yields up, prices down. The longer the ticket, the bigger the swing. Duration tells you how much.",
+   "For a single bond held to the end, a price dip costs you only if you sell. A bond fund never ends, so its dips are real when you sell units. Emergency cash lowers the risk of a forced sale.",
+   "Bonds touch you through EPF, loans, the ringgit, prices and taxes, even if you never buy one.",
+   "Run the four dials and six questions once a month, and weigh every scary headline on the SCALES.",
+   "Free of default is not free of risk. Take off inflation, and tax where it applies, before you call a yield a gain."
+  ],
+  "why": "RT literal reader (Rules line repeated without conditions), consumer voice (imperatives)"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "chapter",
+  "action": "set_field",
+  "field": "connects",
+  "new": [
+   {
+    "id": "rb-06",
+    "how": "In normal years banks create most deposits by lending. In 2020 to 2021 deficits and central bank buying created most of them. Bonds are the safe assets banks, the Fed and money funds hold to settle, pledge and survive a run."
+   },
+   {
+    "id": "rb-04",
+    "how": "Foreign surpluses come back to the US as Treasury purchases."
+   },
+   {
+    "id": "rb-12",
+    "how": "Stablecoins and tokens are new glasses on the same bottom row of bonds."
+   }
+  ],
+  "why": "Case 2 regression in the connects line"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "68",
+  "action": "replace",
+  "new": {
+   "type": "h",
+   "text": "8. Your monthly bond weather check"
+  },
+  "why": "Renumbered"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "74",
+  "action": "replace",
+  "new": {
+   "type": "h",
+   "text": "9. Weigh the headline on the SCALES"
+  },
+  "why": "Renumbered"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "80",
+  "action": "replace",
+  "new": {
+   "type": "h",
+   "text": "10. Go deeper: the government's side and the machinery"
+  },
+  "why": "Renumbered"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "93",
+  "action": "replace",
+  "new": {
+   "type": "h",
+   "text": "11. Say it back"
+  },
+  "why": "Renumbered"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "0",
+  "action": "replace",
+  "new": {
+   "type": "tldr",
+   "items": [
+    "A bond is a ticket: you pay RM100, get RM4 a year, and get your RM100 back at the end.",
+    "You can keep it or resell it through a dealer. That resale market is the secondary market.",
+    "Yields up, prices down. A single bond held to the end still pays back its RM100. A bond fund never ends, so its dips are real when you sell.",
+    "Bonds touch you through EPF, loans, the ringgit, prices and taxes, even if you never buy one.",
+    "Rising yields hurt people holding long bonds today and help people who will save for years, if yields stay above inflation.",
+    "Once a month, check four dials and six questions, and weigh scary headlines on the SCALES."
+   ]
+  },
+  "why": "RT literal reader (conditions), vocabulary rule, word budget"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "3",
+  "action": "replace",
+  "new": {
+   "type": "callout",
+   "label": "How to learn this chapter",
+   "text": "Read each part once, then close the page and answer the stop-box questions from memory. In a classic study, students who tested themselves three times remembered 61% a week later, against 40% for students who reread four times (Roediger and Karpicke, 2006). Guess before you open each curiosity question, then check the answer. Come back in three days for the Day 3 card. 'Learning styles' have no good evidence behind them, and highlighting and rereading help little (Pashler and others, 2008. Dunlosky and others, 2013)."
+  },
+  "why": "Learning scientist: exact study condition, pretest caveat, weak methods named (only those graded in the lane). The 'everyone learns better from words plus a picture' line is deleted as too strong"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "8",
+  "action": "replace",
+  "new": {
+   "type": "list",
+   "items": [
+    "Aisyah, 23, Kuala Lumpur. First job. RM15,000 in EPF (Malaysia's compulsory retirement fund) and RM5,000 in a fixed deposit, her only cash. A fixed-rate car loan. Plans to study abroad in three years.",
+    "The Rahmans, Penang. A RM400,000 floating home loan over 35 years, taken in 2023. RM250,000 in EPF, three months of spending in cash, and RM20,000 in a bond and sukuk fund for school fees in five years.",
+    "Encik Hamid, 60, Ipoh. Retired. RM150,000 in EPF and RM150,000 in fixed deposits that he lives on. No loans.",
+    "Linda, 68, United States. Retired. $240,000 in a broad bond fund she draws on, $300,000 in shares and $60,000 in short US government bills."
+   ]
+  },
+  "why": "EPF retiree added (framer 3.7, RT EPF member). The facts the gauge needs (cash, timing, loan date) are stated up front"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "13",
+  "action": "replace",
+  "new": {
+   "type": "p",
+   "text": "That ticket is a bond. You lent the government RM100, so it owes you, and RM4 a year is your reward for waiting. Two limits of the picture: a concert ticket is worthless after the show, but a bond ends with your RM100 back. And a bond fund holds many tickets and never ends."
+  },
+  "why": "Learning scientist: analogy limits on the main path"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "14",
+  "action": "replace",
+  "new": {
+   "type": "cards",
+   "label": "Five words to start with",
+   "items": [
+    {
+     "t": "Bond",
+     "d": "A ticket that pays a fixed amount each year and your money back on a set date."
+    },
+    {
+     "t": "Face value",
+     "d": "The amount paid back at the end. RM100 in our ticket."
+    },
+    {
+     "t": "Coupon",
+     "d": "The fixed yearly payment. RM4 in our ticket, or 4%."
+    },
+    {
+     "t": "Maturity",
+     "d": "The end date, when the ticket is bought back."
+    },
+    {
+     "t": "Yield",
+     "d": "What a ticket earns per year if you buy at today's price and hold to the end. New tickets are sold at the going yield."
+    }
+   ]
+  },
+  "why": "Vocabulary rule: one word, yield, defined once"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "17",
+  "action": "replace",
+  "new": {
+   "type": "p",
+   "text": "A month later, new tickets pay RM5 a year: the going yield has risen from 4% to 5%. Nobody will pay RM100 for your RM4 ticket now. Its price drops until a buyer also gets a yield of about 5%."
+  },
+  "why": "Vocabulary rule"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "21",
+  "action": "replace",
+  "new": {
+   "type": "p",
+   "text": "Two rules fall out of the seesaw. Yields up, prices down. And the longer the ticket, the bigger the swing. A point means one percentage point, say from 4% to 5%. For a one-point rise, a 2-year ticket falls about 2% and a 30-year ticket about 15% (a model). A bond's duration tells you its swing: a fund with a duration of 6 falls about 6% per one-point rise. Fund factsheets print it."
+  },
+  "why": "Learning scientist: define point and duration on the main path before the gauge uses them"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "22",
+  "action": "replace",
+  "new": {
+   "type": "myth",
+   "myth": "Government bonds are safe, so you cannot lose money on them.",
+   "reality": "They are safe from default, not from price. In 2022 the main US bond index lost 13.01%, its worst year since the index began in 1976. Hold a single bond to the end and you get every ringgit back. Sell a fund's units after a dip and the loss is real."
+  },
+  "why": "Learning scientist: the most common misconception moves to the main path (was 89.4). Verifier row 31 wording. Literal reader on funds"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "25",
+  "action": "replace",
+  "new": {
+   "type": "p",
+   "text": "There are two markets. The first sale is the government's auction, a ticket booth. In Malaysia, Bank Negara runs it and 20 principal dealers must bid. Every later sale is at a resale stall, the secondary market: one investor sells to another through a dealer. The government gets nothing from resales, but the price shows what its next auction will cost."
+  },
+  "why": "RT primary dealer: the Malaysian booth"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "27",
+  "action": "replace",
+  "new": {
+   "type": "steps",
+   "items": [
+    "To sell, you contact a dealer: a bank's trading desk or a broker.",
+    "The dealer shows a buy price and a sell price, say RM99.50 and RM99.60. The difference is the dealer's gap, its fee for standing ready. Ordinary buyers usually pay a wider gap than big investors, so ask for both prices.",
+    "The price shown is the clean price. The buyer also pays you the interest earned since the last payment."
+   ]
+  },
+  "why": "One name for the gap (cold readers missed check [97]). RT bond dealer: retail gaps are wider. Spec 3.4.2 clean price. Word audit 'always'"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "30",
+  "action": "replace",
+  "new": {
+   "type": "curiosity",
+   "items": [
+    {
+     "q": "Who owns most of Malaysia's government bonds, foreigners or Malaysians?",
+     "a": "Malaysians. Residents held 78.5% at the end of 2025 and foreigners 21.5%. Pension funds such as EPF and the banks each hold about a third of the whole market (Bank Negara Bond Market Report 2025, worked out from its resident shares).",
+     "from": "rb-em"
+    },
+    {
+     "q": "How much bigger is the US bond resale market than Malaysia's?",
+     "a": "US Treasuries trade about $1.21 trillion a day. Malaysian government bonds trade about RM6.2 billion, roughly US$1.5 billion. That makes the US market several hundred times busier.",
+     "from": "rb-leader"
+    }
+   ]
+  },
+  "why": "Moves into the box [31] with the volumes"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "30",
+  "action": "move_into",
+  "target": "31",
+  "position": "end",
+  "why": "Word budget: holder and volume detail goes into the box"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "40",
+  "action": "replace",
+  "new": {
+   "type": "deeper",
+   "label": "Other routes: one-off sukuk, big lots, the US, and US bonds from Malaysia",
+   "blocks": [
+    {
+     "type": "table",
+     "cols": [
+      "Route in Malaysia",
+      "How much to start",
+      "Can you resell?"
+     ],
+     "rows": [
+      [
+       "Retail government sukuk",
+       "Sukuk Prihatin in 2020 started at RM500",
+       "No. It was a one-off and matured in 2022"
+      ],
+      [
+       "Government bonds bought directly",
+       "Standard lots were RM10 million (2021 report)",
+       "Out of reach for most people"
+      ],
+      [
+       "US Treasuries through a broker that offers foreign bonds",
+       "Broker fees, plus the cost of changing ringgit to dollars",
+       "Yes. You also carry the risk that the ringgit moves"
+      ]
+     ]
+    },
+    {
+     "type": "table",
+     "cols": [
+      "Route in the US",
+      "How much to start",
+      "Can you resell?"
+     ],
+     "rows": [
+      [
+       "TreasuryDirect, buying from the government",
+       "$100, no fees",
+       "Not inside TreasuryDirect. Move it to a broker first"
+      ],
+      [
+       "A broker",
+       "Varies by broker",
+       "Yes, any day at the dealer's buy price"
+      ],
+      [
+       "Bond ETFs and funds",
+       "One share. Big index ETFs charge about 0.03% a year",
+       "Yes, any trading day. A fund never matures"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Bank Negara's foreign exchange rules, as summarised by banks: a resident with no ringgit borrowing at home may invest any amount abroad, and one with such borrowing may convert up to RM1 million a year for foreign assets. Check the current Bank Negara notice before relying on this."
+    }
+   ]
+  },
+  "why": "US routes and rare Malaysian routes move off the main path. Spec 3.4.6 (Malaysians buying US bonds) added from lane R7A-28, labelled plausible"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "39",
+  "action": "insert_after",
+  "new": {
+   "type": "p",
+   "text": "Before buying anything sold as a bond or sukuk with a 'guaranteed' return, check the seller is licensed and not on the Securities Commission's Investor Alert List or Bank Negara's Financial Consumer Alert List."
+  },
+  "why": "Consumer-protection voice: scam check"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "41",
+  "action": "replace",
+  "new": {
+   "type": "curiosity",
+   "items": [
+    {
+     "q": "How do bond prices reach your EPF dividend?",
+     "a": "Slowly. EPF declares its dividend once a year: 6.15% for 2025. Its bonds returned 4.3% and gave about a third of its income, and its reported income includes paper gains and losses (EPF, as reported by Bernama, February 2026). Higher yields lift future income as old bonds mature and new money is invested.",
+     "from": "rb-nation"
+    }
+   ]
+  },
+  "why": "RT EPF member, blocking point 5: dividend added. The realised-income rule is not in the cited sources (court fetch), so it is not stated"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "45",
+  "action": "replace",
+  "new": {
+   "type": "table",
+   "cols": [
+    "Where",
+    "How it works",
+    "If yields rise"
+   ],
+   "rows": [
+    [
+     "Your EPF",
+     "Holds a giant drawer of government bonds for you",
+     "Prices dip on paper. New money earns more. Savers with decades ahead gain, if yields stay above inflation"
+    ],
+    [
+     "Fixed deposits",
+     "Rates follow the OPR (Overnight Policy Rate), set by Bank Negara, now 2.75%",
+     "Help only if the OPR rises too"
+    ],
+    [
+     "Home loan in Malaysia",
+     "Floating loans taken since August 2022 move only with the OPR. Older ones follow each bank's base rate",
+     "Mostly through the OPR: about RM60 a month per 0.25 point step on RM400,000"
+    ],
+    [
+     "Home loan in the US",
+     "30-year fixed rates follow the 10-year yield",
+     "Hurt new buyers. Existing fixed loans are protected"
+    ],
+    [
+     "The ringgit",
+     "Foreigners hold about a fifth of Malaysian government bonds",
+     "Can weaken, raising import prices. Not automatic: in 2026 it held near 4.08"
+    ],
+    [
+     "Taxes and services",
+     "Interest on government debt competes with schools and hospitals",
+     "Hurt slowly. Malaysia's debt service is about 16% of revenue"
+    ]
+   ]
+  },
+  "why": "SBR scope (verifier row 22, RT finance writer). OPR defined at first use. Six rows here, six more in a box"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "46",
+  "action": "replace",
+  "new": {
+   "type": "insider",
+   "label": "The one idea to keep",
+   "text": "The same rise in yields hurts people holding long bonds or borrowing now, and helps people who will save for years, as long as yields stay above inflation."
+  },
+  "why": "RT literal reader, blocking point 3"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "47",
+  "action": "insert_after",
+  "new": {
+   "type": "deeper",
+   "box_id": "47.box",
+   "label": "Six more places bonds touch you",
+   "blocks": [
+    {
+     "type": "table",
+     "cols": [
+      "Where",
+      "How it works",
+      "If yields rise"
+     ],
+     "rows": [
+      [
+       "Your job",
+       "Companies borrow at the government yield plus a margin",
+       "Hurt slowly if high yields last: fewer projects, fewer jobs"
+      ],
+      [
+       "Prices",
+       "A fixed RM4 buys less when prices rise",
+       "Rising inflation hurts holders of fixed payments"
+      ],
+      [
+       "Bank deposits",
+       "Banks hold bonds as safe, sellable assets",
+       "Little change for you. PIDM insures RM250,000 per depositor per bank"
+      ],
+      [
+       "Car loans and PTPTN",
+       "Hire purchase is mostly fixed when you sign. PTPTN charges a fixed fee",
+       "Little change for loans already signed"
+      ],
+      [
+       "Insurance and takaful",
+       "Insurers hold bonds to pay future claims",
+       "Mixed: new policies price better, old bonds dip"
+      ],
+      [
+       "Tabung Haji and Islamic funds",
+       "They hold sukuk such as GII",
+       "The same seesaw as conventional bonds"
+      ]
+     ]
+    }
+   ]
+  },
+  "why": "RT finance writer: PTPTN and Tabung Haji added from lane D1. Job and prices moved here for the word budget"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "47",
+  "action": "move_into",
+  "target": "47.box",
+  "position": "end",
+  "why": "The ringgit question moves into the box"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "53",
+  "action": "replace",
+  "new": {
+   "type": "table",
+   "cols": [
+    "Risk",
+    "How it reaches you",
+    "A real number",
+    "What reduces it"
+   ],
+   "rows": [
+    [
+     "Price risk",
+     "Your bond fund falls when yields rise",
+     "The main US bond index lost 13.01% in 2022",
+     "Holding a single bond to the end. Shorter bonds"
+    ],
+    [
+     "Inflation risk",
+     "Your fixed RM4 buys less",
+     "US bonds bought at 0.52% in 2020 paid far less than 2022's 9.1% inflation",
+     "Inflation-linked bonds. Short bonds that reset quickly"
+    ],
+    [
+     "Forced-seller risk",
+     "You must sell at the worst moment",
+     "UK pension funds, September 2022: the Bank of England bought £19.3 billion of bonds to stop a spiral",
+     "Not borrowing to hold bonds. Emergency cash"
+    ]
+   ]
+  },
+  "why": "Consumer voice: risk reducers, not imperatives ('Never borrow', 'Save in the currency'). Three rows here, five more in a box"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "56",
+  "action": "replace",
+  "new": {
+   "type": "deeper",
+   "label": "Five more risks",
+   "blocks": [
+    {
+     "type": "table",
+     "cols": [
+      "Risk",
+      "How it reaches you",
+      "A real number",
+      "What reduces it"
+     ],
+     "rows": [
+      [
+       "Currency risk",
+       "A foreign bond pays in another currency",
+       "The ringgit moved between 3.89 and 4.15 per dollar in 2026",
+       "Matching the currency you save in to the currency you will spend in"
+      ],
+      [
+       "Default risk",
+       "The borrower cannot pay",
+       "Low for a government borrowing in its own currency. 98.8% of Malaysia's federal debt is borrowed in ringgit at home",
+       "Government over small companies. Spreading out"
+      ],
+      [
+       "Liquidity risk",
+       "You cannot sell fast at a fair price",
+       "Bonds on Bursa often trade thinly",
+       "Funds that redeem daily. An emergency cash buffer"
+      ],
+      [
+       "Reinvestment risk",
+       "When yields fall, money from a maturing bond earns less",
+       "The US 10-year was 4.98% in October 2023 and 4.01% in October 2025",
+       "Longer bonds lock a yield in. This is the mirror of price risk"
+      ],
+      [
+       "Concentration",
+       "One fund holds much of a nation's savings, and much of the nation's debt",
+       "EPF and the banks hold about two thirds of Malaysian government securities (end 2025)",
+       "A government that borrows in its own money, a central bank and deposit insurance. A system risk more than a personal one"
+      ]
+     ]
+    }
+   ]
+  },
+  "why": "Spec 3.6 risks added from lane D2 (reinvestment, concentration). Replaces the duplicate curiosity [56]. 98.8% wording fixed"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "55",
+  "action": "replace",
+  "new": {
+   "type": "p",
+   "text": "Why the difference? 2008 was a recession: people fled to safety, yields fell and bond prices rose. 2022 was an inflation shock: yields rose fast and bonds fell with shares. Higher yields today also mean more income tomorrow: in October 2026 a US inflation-linked bond paid about 2.6 points above inflation, against about minus 1 point at the end of 2021."
+  },
+  "why": "Both cold readers missed the why of 2008 against 2022 (check [66])"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "58",
+  "action": "replace",
+  "new": {
+   "type": "p",
+   "text": "Every yield you see is before inflation, Level 1's rubber ruler. Malaysian individuals generally pay no income tax on interest and profit from government bonds and approved sukuk, so the real return is roughly the yield minus inflation: about 3.95% minus 1.8%, or about 2.1 points (October 2026). In the US, take tax off first."
+  },
+  "why": "RT finance writer, blocking point 6. The US walk moves to a box"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "63",
+  "action": "replace",
+  "new": {
+   "type": "callout",
+   "label": "Stop here",
+   "text": "Part 2 of 3 done. Try these three before Part 3."
+  },
+  "why": "Word budget"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "64",
+  "action": "replace",
+  "new": {
+   "type": "check",
+   "q": "Does a jump in the US 10-year directly change a Malaysian floating home loan taken since August 2022?",
+   "a": "No. It moves only with the OPR. The 10-year matters only if it pushes Bank Negara to move the OPR."
+  },
+  "why": "SBR scope"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "65",
+  "action": "replace",
+  "new": {
+   "type": "check",
+   "q": "Name one way rising yields help a young saver, and the condition.",
+   "a": "New money into EPF earns more for decades, if yields stay above inflation."
+  },
+  "why": "RT literal reader"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "66",
+  "action": "replace",
+  "new": {
+   "type": "check",
+   "q": "Why did bonds protect people in 2008 but not in 2022?",
+   "a": "2008 was a recession shock, so yields fell and bond prices rose. 2022 was an inflation shock, so yields rose and bonds fell with shares."
+  },
+  "why": "Same wording as [55]"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "70",
+  "action": "replace",
+  "new": {
+   "type": "table",
+   "cols": [
+    "Dial",
+    "Where, free",
+    "October 2026",
+    "Look closer if (rule of thumb)"
+   ],
+   "rows": [
+    [
+     "1. 10-year government bond yield",
+     "BIX Malaysia, US Treasury",
+     "Malaysia about 3.95%. US 4.96% (22 October), up 0.95 point in a year",
+     "It moved over 1 point in 12 months"
+    ],
+    [
+     "2. Inflation and the real yield",
+     "DOSM, US Treasury",
+     "Malaysia: 1.8% inflation, so about 2.1 points above it. US real yield about 2.6%",
+     "The real yield is below zero"
+    ],
+    [
+     "3. OPR and the Fed's rate",
+     "Bank Negara, the Fed",
+     "OPR 2.75% since July 2025. The Fed raised its rate in September 2026",
+     "The OPR changed"
+    ],
+    [
+     "4. Ringgit per US dollar",
+     "Bank Negara",
+     "About 4.08. 2026 range 3.89 to 4.15",
+     "It moved over 5% in 3 months"
+    ]
+   ]
+  },
+  "why": "Four household dials on the main path. Date added to 4.96% (verifier note). Three dials move to a box"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "71",
+  "action": "replace",
+  "new": {
+   "type": "gauge",
+   "label": "Your personal gauge",
+   "intro": "Answer for yourself. Nothing is stored or sent anywhere.",
+   "dials": [
+    {
+     "q": "Do you have a floating-rate loan?",
+     "options": [
+      {
+       "t": "No, or only fixed-rate loans",
+       "score": 0
+      },
+      {
+       "t": "Yes, and two small rate rises would be easy to pay",
+       "score": 1,
+       "note": "Two 0.25 point OPR steps add about RM120 a month on RM400,000 over 35 years."
+      },
+      {
+       "t": "Yes, and two small rate rises would hurt",
+       "score": 3,
+       "note": "Watch dial 3, the OPR."
+      }
+     ]
+    },
+    {
+     "q": "Do you hold bond funds, or bonds you may sell before they end? EPF does not count.",
+     "options": [
+      {
+       "t": "No",
+       "score": 0
+      },
+      {
+       "t": "Yes, not needed for 10 years or more",
+       "score": 1,
+       "note": "Dips have time to recover."
+      },
+      {
+       "t": "Yes, needed in 3 to 10 years",
+       "score": 2
+      },
+      {
+       "t": "Yes, needed within 2 years, or I draw on it now",
+       "score": 3,
+       "note": "Money you need soon should not ride on a long bond's price."
+      }
+     ]
+    },
+    {
+     "q": "How big is that bond money, compared with all your savings, EPF included?",
+     "options": [
+      {
+       "t": "None, or under a tenth",
+       "score": 0
+      },
+      {
+       "t": "A tenth to a third",
+       "score": 2
+      },
+      {
+       "t": "More than a third",
+       "score": 4
+      }
+     ]
+    },
+    {
+     "q": "What is its duration? The fund factsheet prints it.",
+     "options": [
+      {
+       "t": "None, or under 3",
+       "score": 0
+      },
+      {
+       "t": "3 or more, or I do not know",
+       "score": 2,
+       "note": "Duration 6 means about 6% down per one-point rise."
+      }
+     ]
+    },
+    {
+     "q": "Will you spend money in another currency within 3 years?",
+     "options": [
+      {
+       "t": "No",
+       "score": 0
+      },
+      {
+       "t": "Yes: study, travel or family abroad",
+       "score": 1,
+       "note": "Watch dial 4, the ringgit."
+      }
+     ]
+    },
+    {
+     "q": "Could you be forced to sell at a bad moment?",
+     "options": [
+      {
+       "t": "No: I keep 3 to 6 months of spending in cash or fixed deposits",
+       "score": 0
+      },
+      {
+       "t": "I have some cash, but not much",
+       "score": 1
+      },
+      {
+       "t": "I have no emergency cash",
+       "score": 2,
+       "note": "This is what turns a dip into a real loss."
+      }
+     ]
+    }
+   ],
+   "bands": [
+    {
+     "max": 3,
+     "label": "Low exposure right now",
+     "text": "A bond-market move is less likely to change your payments or savings this month. Watch inflation against what your savings earn, and the ringgit if you will spend abroad."
+    },
+    {
+     "max": 7,
+     "label": "Some exposure",
+     "text": "Watch the dials that match your answers: the OPR for a floating loan, the 10-year for bond funds, the ringgit for spending abroad."
+    },
+    {
+     "max": 99,
+     "label": "High exposure",
+     "text": "Bond headlines are about you. Read your loan and fund documents slowly, and get a second opinion before big decisions."
+    }
+   ],
+   "footnote": "A teaching model, not advice. The points and bands are a rule of thumb, tested on the four people in this chapter."
+  },
+  "why": "Consumer-protection voice, blocking point 2: Linda scored Low. New questions on bond-fund share, timing and duration"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "72",
+  "action": "replace",
+  "new": {
+   "type": "table",
+   "cols": [
+    "Question",
+    "Aisyah",
+    "The Rahmans",
+    "Hamid",
+    "Linda"
+   ],
+   "rows": [
+    [
+     "1. Floating loan",
+     "0",
+     "1 (easy)",
+     "0",
+     "0"
+    ],
+    [
+     "2. Bond funds, and when",
+     "0",
+     "2 (in 5 years)",
+     "0",
+     "3 (draws now)"
+    ],
+    [
+     "3. Share of savings",
+     "0",
+     "0 (about 7%)",
+     "0",
+     "4 (40%)"
+    ],
+    [
+     "4. Duration",
+     "0",
+     "2",
+     "0",
+     "2 (about 6)"
+    ],
+    [
+     "5. Another currency",
+     "1",
+     "0",
+     "0",
+     "0"
+    ],
+    [
+     "6. Cash buffer",
+     "1",
+     "0",
+     "0",
+     "0"
+    ],
+    [
+     "Points and band",
+     "2, Low",
+     "5, Some",
+     "0, Low",
+     "9, High"
+    ],
+    [
+     "Is a crash headline about them?",
+     "Mostly no",
+     "Partly",
+     "No, but his FD income follows the OPR",
+     "Yes"
+    ]
+   ]
+  },
+  "why": "Points shown so readers can check the gauge (consumer voice)"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "77",
+  "action": "replace",
+  "new": {
+   "type": "callout",
+   "label": "Real alarms leave tracks",
+   "text": "The filter is not there to make you cynical. Take a headline seriously when you also see forced sellers, a central bank emergency operation, the dealer's gap widening, weak auctions, or the currency and the bonds falling together. The UK in 2022 and Silicon Valley Bank in 2023 showed several at once."
+  },
+  "why": "One name for the gap"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "78",
+  "action": "replace",
+  "new": {
+   "type": "table",
+   "cols": [
+    "Real headline",
+    "On the SCALES",
+    "Verdict"
+   ],
+   "rows": [
+    [
+     "Foreign investors disposed RM5.6 billion of Malaysian government bonds in July (Business Today, August 2026)",
+     "Size: 0.43% of the market. Long view: about RM11 billion came back into government bonds in August. Exposure: the ringgit was 4.09 at the start of July and 4.08 at the end",
+     "Accurate, missing scale. No alarm tracks"
+    ],
+    [
+     "Bank of England intervenes to end bond market panic (September 2022)",
+     "Tracks: forced sellers, an emergency operation, and the 30-year yield up 0.67 point within a few hours on 27 September",
+     "A real alarm. The filter flags it rather than dismissing it"
+    ]
+   ]
+  },
+  "why": "Verifier rows 62 and 67. Two headlines move to a box"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "78",
+  "action": "insert_after",
+  "new": {
+   "type": "deeper",
+   "label": "Two more headlines, from the US",
+   "blocks": [
+    {
+     "type": "table",
+     "cols": [
+      "Real headline",
+      "On the SCALES",
+      "Verdict"
+     ],
+     "rows": [
+      [
+       "30-year Treasury yield rises to highest since 2007 (August 2026)",
+       "Long view: the 30-year was above that level in most years from 1977 to 2007. Exposure: real for US borrowers, as mortgage rates rose",
+       "Accurate, and it got worse: 5.67% on 7 October. But 'since 2007' made a return to old levels sound unheard of"
+      ],
+      [
+       "China is dumping Treasuries (April 2025)",
+       "Change: the US 10-year rose 0.47 point in a week and a tariff pause followed within days. Source: Treasury's monthly data did not show large Chinese selling at the time",
+       "Half right. The alarm was real, the named cause was not proven"
+      ]
+     ]
+    }
+   ]
+  },
+  "why": "Word audit: 'never shown' bounded"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "96",
+  "action": "delete",
+  "why": "Duplicates the two rules in [21] and the stop-box material"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "98",
+  "action": "replace",
+  "new": {
+   "type": "check",
+   "q": "Which of the four people is a bond crash headline really about, and why?",
+   "a": "Linda. A big share of her savings is in a long bond fund she draws on now, so she scores High. The Rahmans feel it partly. Aisyah and Hamid are barely touched."
+  },
+  "why": "Gauge now agrees with the chapter"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "99",
+  "action": "replace",
+  "new": {
+   "type": "check",
+   "q": "A Malaysian government bond yields 4% and inflation is 2.5%. You are a Malaysian individual. Roughly what is your real return?",
+   "a": "About 1.5 points a year. Malaysian individuals generally pay no income tax on government bond interest, so take off only inflation. In the US you would take tax off first."
+  },
+  "why": "RT finance writer: the Malaysian tax rule. The US version stays in the box"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "1",
+  "action": "replace",
+  "new": {
+   "type": "bridge",
+   "label": "Built on Level 1: recall these before you start",
+   "items": [
+    {
+     "id": "rb-01",
+     "text": "Money is a promise that a whole society keeps track of. A bond is a promise with a date and a price."
+    },
+    {
+     "id": "rb-06",
+     "text": "Money comes in layers: cash and bank reserves, then bank deposits, then government bonds."
+    },
+    {
+     "id": "rb-10",
+     "text": "The ruler is rubber. Every yield you see is before inflation."
+    },
+    {
+     "id": "rb-em",
+     "text": "A Malaysian saver measures with two rulers: what money buys at home and what it buys abroad."
+    }
+   ]
+  },
+  "why": "Bridge check against Level 1 text (rb-06 is a three-layer US table, rb-em's rulers are home and passport price tags). rb-13 item dropped: the myth box now carries it"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "76",
+  "action": "replace",
+  "new": {
+   "type": "table",
+   "cols": [
+    "Letter",
+    "Ask",
+    "Example"
+   ],
+   "rows": [
+    [
+     "S",
+     "Size: compared with what?",
+     "RM5.6 billion of foreign selling is 0.43% of RM1.309 trillion"
+    ],
+    [
+     "C",
+     "Change or level: how much, over how long?",
+     "'Yields soar' can mean 0.05 point in a day or 1 point in a year"
+    ],
+    [
+     "A",
+     "Adjusted: before or after inflation?",
+     "Debt hits a record almost every year just from inflation"
+    ],
+    [
+     "L",
+     "Long view: since when?",
+     "'Highest since 2007' can still be lower than most years from 1977 to 2007"
+    ],
+    [
+     "E",
+     "Exposure: what does it do to me?",
+     "A US yield jump moves a US mortgage directly, a Malaysian floating loan mostly through the OPR"
+    ],
+    [
+     "S",
+     "Source and stake: who says it, and what do they gain?",
+     "Clicks, a product, a political side, or an honest warning"
+    ]
+   ]
+  },
+  "why": "Cold reader A could not parse the L example"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "100",
+  "action": "move_into",
+  "target": "92.practice",
+  "position": "end",
+  "why": "The glossary moves into a box (it stays one tap away)"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "2",
+  "action": "replace",
+  "new": {
+   "type": "radiant",
+   "center": "A bond is a ticket you can resell",
+   "caption": "The chapter in one picture. Outlined boxes link to the Level 1 chapter each part builds on.",
+   "rays": [
+    {
+     "t": "The ticket",
+     "s": "RM100 in, RM4 a year",
+     "link": "rb-01"
+    },
+    {
+     "t": "The seesaw",
+     "s": "Yields up, prices down",
+     "link": "rb-10"
+    },
+    {
+     "t": "The resale stall",
+     "s": "The dealer's gap",
+     "link": "rb-leader"
+    },
+    {
+     "t": "How you own bonds",
+     "s": "EPF first",
+     "link": "rb-em"
+    },
+    {
+     "t": "Where bonds touch you",
+     "s": "Loans, ringgit, taxes",
+     "link": "rb-nation"
+    },
+    {
+     "t": "Risks and cushions",
+     "s": "2008 against 2022",
+     "link": "rb-buckets"
+    },
+    {
+     "t": "Your monthly gauge",
+     "s": "Four dials, six questions",
+     "link": "rb-08"
+    },
+    {
+     "t": "The SCALES filter",
+     "s": "Weigh a headline",
+     "link": "rb-13"
+    }
+   ]
+  },
+  "why": "Rays follow the new main path"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "12",
+  "action": "replace",
+  "new": {
+   "type": "diagram",
+   "key": "rm-ticket",
+   "caption": "One ticket carries the whole chapter: RM100 in, RM4 a year, RM100 back."
+  },
+  "why": "Word budget"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "20",
+  "action": "replace",
+  "new": {
+   "type": "widget",
+   "key": "bond-lab",
+   "caption": "Try it. Drag the yield on new bonds and watch three $1,000 bonds reprice."
+  },
+  "why": "Vocabulary rule, word budget"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "26",
+  "action": "replace",
+  "new": {
+   "type": "diagram",
+   "key": "resale-stall",
+   "caption": "The booth sells new tickets. Old tickets change hands at the resale stall, and the dealer earns the gap."
+  },
+  "why": "One name for the gap"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "44",
+  "action": "replace",
+  "new": {
+   "type": "diagram",
+   "key": "touch-map",
+   "caption": "Places bonds reach you. The colour says whether a rise in yields tends to help, hurt, do both or change little. The table below says the same in words."
+  },
+  "why": "Learning scientist: colours explained in words for colour-blind readers"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "94",
+  "action": "delete",
+  "why": "Word budget: the heading already says what follows"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "11",
+  "action": "replace",
+  "new": {
+   "type": "p",
+   "text": "Forget finance for a moment. The government sells you a ticket for RM100. It pays you RM4 every year. In ten years the government buys it back for RM100."
+  },
+  "why": "Word budget"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "32",
+  "action": "replace",
+  "new": {
+   "type": "callout",
+   "label": "Stop here",
+   "text": "Part 1 of 3 done. Close the page and try these three before Part 2."
+  },
+  "why": "Word budget"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "43",
+  "action": "replace",
+  "new": {
+   "type": "p",
+   "text": "Rising yields in the news usually means the 10-year government bond yield. Here is what a rise does to a normal person."
+  },
+  "why": "Define the 10-year"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "54",
+  "action": "replace",
+  "new": {
+   "type": "pairbars",
+   "title": "Bonds against shares in two bad years (total return, %)",
+   "suffix": "%",
+   "decimals": 1,
+   "series": [
+    "US bonds (main index)",
+    "US shares (S&P 500)"
+   ],
+   "rows": [
+    {
+     "label": "2008, a recession shock",
+     "values": [
+      5.24,
+      -37.0
+     ]
+    },
+    {
+     "label": "2022, an inflation shock",
+     "values": [
+      -13.01,
+      -18.1
+     ]
+    }
+   ],
+   "caption": "In a recession, bonds cushioned the fall. In an inflation shock, both fell.",
+   "source": "Bloomberg US Aggregate Bond Index and S&P 500 total returns, as reported in fund filings and index reports."
+  },
+  "why": "Word audit: 'usually' removed by stating the two cases"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "4",
+  "action": "replace",
+  "new": {
+   "type": "p",
+   "text": "Three short parts, each ending in a stop box. Stop at any box and come back another day."
+  },
+  "why": "Reading-time claim removed"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "15",
+  "action": "replace",
+  "new": {
+   "type": "insider",
+   "label": "Malaysia note",
+   "text": "About half of Malaysia's government debt is Islamic paper, mostly GII. Most GII is built on a deferred sale of a commodity to the government, so holders earn profit, not interest. The ticket picture still works."
+  },
+  "why": "RT bond dealer, blocking point 4: GII is murabahah since 2013, not an asset share"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "69",
+  "action": "replace",
+  "new": {
+   "type": "p",
+   "text": "Ten minutes, once a month. It asks questions and never says buy or sell. Four public dials, then six questions about you."
+  },
+  "why": "New gauge"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "73",
+  "action": "replace",
+  "new": {
+   "type": "p",
+   "text": "Back to your guess. The headline is about Linda. The Rahmans feel it partly. Aisyah and Hamid are barely touched by bond prices. But if Hamid had put his RM150,000 into a bond fund he draws on, keeping a little cash, he would score 10, High. Run the gauge again next month."
+  },
+  "why": "RT accountant: [72] and [73] now agree. Lump-sum case for a Malaysian retiree"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "9",
+  "action": "replace",
+  "new": {
+   "type": "p",
+   "text": "Guess now: which of them should care? By the end you can answer for each of them, and for yourself."
+  },
+  "why": "Word budget"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "6",
+  "action": "replace",
+  "new": {
+   "type": "h",
+   "text": "1. Should these four people worry?"
+  },
+  "why": "Fourth household"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "29",
+  "action": "replace",
+  "new": {
+   "type": "p",
+   "text": "The dealer's gap is what you pay to be able to sell quickly. It widens when everyone wants out. In March 2020 even US government bonds were hard to sell, and the Fed bought $1.27 trillion in five weeks."
+  },
+  "why": "Cold reader A could not parse 'the price of being able to leave'. One name for the gap"
+ },
+ {
+  "chapter": "rb-bonds",
+  "block": "28",
+  "action": "replace",
+  "new": {
+   "type": "table",
+   "cols": [
+    "Market",
+    "Trading on an average day",
+    "When"
+   ],
+   "rows": [
+    [
+     "US Treasuries",
+     "about $1.21 trillion (primary dealer trading)",
+     "January to July 2026 (SIFMA)"
+    ],
+    [
+     "Malaysian government bonds",
+     "about RM6.2 billion, up from RM3.8 billion in 2024",
+     "2025 (Bank Negara)"
+    ]
+   ]
+  },
+  "why": "Verifier row 6 label. Moves into the box [31]"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "2",
+  "action": "replace",
+  "new": {
+   "type": "radiant",
+   "center": "Who can make money, and who writes the rules",
+   "caption": "The chapter in one picture. Each box is one short part. Outlined boxes link to the chapter it builds on.",
+   "rays": [
+    {
+     "t": "The clubs",
+     "s": "G7 inside G10 and G20",
+     "link": "rb-worldbs"
+    },
+    {
+     "t": "What clubs cannot do",
+     "s": "No treaty, no money, no force",
+     "link": "rb-leader"
+    },
+    {
+     "t": "The scorecard",
+     "s": "Fast in crises, slow in calm",
+     "link": "rb-08"
+    },
+    {
+     "t": "Three locks",
+     "s": "Law, debt, market permission",
+     "link": "rb-moneymake"
+    },
+    {
+     "t": "The ladder",
+     "s": "From reserve issuer to no printer",
+     "link": "rb-09"
+    },
+    {
+     "t": "Malaysia",
+     "s": "Rung 3, two kinds of brake",
+     "link": "rb-em"
+    },
+    {
+     "t": "The games",
+     "s": "Six boxes, five real questions",
+     "link": "rb-leader"
+    },
+    {
+     "t": "Your routine",
+     "s": "Read any headline as a game",
+     "link": "rb-13"
+    }
+   ]
+  },
+  "why": "Rays follow the new parts"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "11.1",
+  "action": "replace",
+  "new": {
+   "type": "p",
+   "text": "Singapore and Switzerland are not G20 members, yet both run open, trusted money centres. China is a G20 member with capital controls, so its yuan is only 2.11% of world reserves despite about 17% of world output. Openness matters more than membership, along with size, trust in the law and deep markets."
+  },
+  "why": "Word audit and RT international economist"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "30",
+  "action": "replace",
+  "new": {
+   "type": "deeper",
+   "label": "Lock 2 evidence and the full printing matrix: 28 countries",
+   "blocks": [
+    {
+     "type": "table",
+     "cols": [
+      "Lock 2 evidence",
+      "Foreign-currency government bonds sold abroad, % of output (BIS, mid 2026)",
+      "Share of government bonds held by foreigners"
+     ],
+     "rows": [
+      [
+       "United States",
+       "0.0%",
+       "32.5% of Treasuries (end 2025, Fed)"
+      ],
+      [
+       "Japan",
+       "0.1%",
+       "about 13% (end 2025)"
+      ],
+      [
+       "Malaysia",
+       "0.8%",
+       "21.5% of government securities (end 2025, Bank Negara)"
+      ],
+      [
+       "Indonesia",
+       "6.3%",
+       "12.8% (June 2026, ADB)"
+      ],
+      [
+       "Thailand",
+       "none reported",
+       "9.3% (March 2026, ADB)"
+      ],
+      [
+       "Turkey",
+       "7.4%",
+       "not checked"
+      ],
+      [
+       "Argentina",
+       "9.8%",
+       "not checked"
+      ],
+      [
+       "Sri Lanka",
+       "7.0%",
+       "not checked"
+      ],
+      [
+       "Saudi Arabia",
+       "11.7%",
+       "not checked"
+      ],
+      [
+       "Ecuador",
+       "16.1%",
+       "not checked"
+      ],
+      [
+       "Panama",
+       "41.7%",
+       "not checked"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Read the BIS column with care. It counts only bonds sold abroad in foreign money, so it misses IMF and bank loans and dollar bonds sold at home, which is why it understates Argentina and Sri Lanka. By a World Bank series, about 42% of Turkey's central government debt was in foreign currency in 2024 (as reported by an aggregator, to confirm). Canada's 9.6% is borrowing abroad by choice, mostly hedged."
+    },
+    {
+     "type": "table",
+     "cols": [
+      "Country",
+      "Own currency",
+      "Exchange rate (IMF, 2023)",
+      "Foreign-currency bonds abroad, % of output (BIS, mid 2026)",
+      "Openness (0 to 1)",
+      "Rung"
+     ],
+     "rows": [
+      [
+       "United States",
+       "Yes",
+       "Free floating",
+       "0.0%",
+       "1.0",
+       "1"
+      ],
+      [
+       "Euro area as a whole",
+       "Yes",
+       "Free floating",
+       "n.a.",
+       "n.a.",
+       "1"
+      ],
+      [
+       "Japan",
+       "Yes",
+       "Free floating",
+       "0.1%",
+       "1.0",
+       "1"
+      ],
+      [
+       "United Kingdom",
+       "Yes",
+       "Free floating",
+       "0.0%",
+       "1.0",
+       "1"
+      ],
+      [
+       "Canada",
+       "Yes",
+       "Free floating",
+       "9.6%",
+       "1.0",
+       "2"
+      ],
+      [
+       "Australia",
+       "Yes",
+       "Free floating",
+       "0.1%",
+       "1.0",
+       "2"
+      ],
+      [
+       "Switzerland",
+       "Yes",
+       "not checked",
+       "n.a.",
+       "1.0",
+       "2"
+      ],
+      [
+       "Korea",
+       "Yes",
+       "Floating",
+       "0.7%",
+       "1.0",
+       "2"
+      ],
+      [
+       "China",
+       "Yes",
+       "Other managed",
+       "0.2%",
+       "0.16",
+       "3"
+      ],
+      [
+       "India",
+       "Yes",
+       "Floating",
+       "n.a.",
+       "0.16",
+       "3"
+      ],
+      [
+       "Brazil",
+       "Yes",
+       "Floating",
+       "3.0%",
+       "0.16",
+       "3"
+      ],
+      [
+       "Mexico",
+       "Yes",
+       "Free floating",
+       "8.4%",
+       "0.7",
+       "3"
+      ],
+      [
+       "Indonesia",
+       "Yes",
+       "Floating",
+       "6.3%",
+       "0.42",
+       "3"
+      ],
+      [
+       "South Africa",
+       "Yes",
+       "Floating",
+       "6.2%",
+       "0.16",
+       "3"
+      ],
+      [
+       "Russia",
+       "Yes",
+       "Free floating",
+       "2.2%",
+       "0.16",
+       "3"
+      ],
+      [
+       "Malaysia",
+       "Yes",
+       "Floating",
+       "0.8%",
+       "0.42",
+       "3"
+      ],
+      [
+       "Turkey",
+       "Yes",
+       "Crawl-like",
+       "7.4%",
+       "0.16",
+       "4"
+      ],
+      [
+       "Argentina",
+       "Yes",
+       "Crawling peg (changed since)",
+       "9.8%",
+       "0.16",
+       "4"
+      ],
+      [
+       "Sri Lanka",
+       "Yes",
+       "Crawl-like",
+       "7.0%",
+       "0.0",
+       "4"
+      ],
+      [
+       "Zimbabwe",
+       "Yes, since 2024",
+       "Other managed",
+       "n.a.",
+       "0.42",
+       "4"
+      ],
+      [
+       "Saudi Arabia",
+       "Yes, pegged",
+       "Conventional peg",
+       "11.7%",
+       "0.7",
+       "5a"
+      ],
+      [
+       "Hong Kong",
+       "Yes, currency board",
+       "Currency board",
+       "6.0%",
+       "1.0",
+       "5a"
+      ],
+      [
+       "Germany",
+       "No (euro)",
+       "Euro",
+       "0.3%",
+       "1.0",
+       "5b"
+      ],
+      [
+       "France",
+       "No (euro)",
+       "Euro",
+       "1.2%",
+       "1.0",
+       "5b"
+      ],
+      [
+       "Italy",
+       "No (euro)",
+       "Euro",
+       "0.5%",
+       "1.0",
+       "5b"
+      ],
+      [
+       "Greece",
+       "No (euro)",
+       "Euro",
+       "0.0%",
+       "1.0",
+       "5b"
+      ],
+      [
+       "Ecuador",
+       "No (US dollar since 2000)",
+       "No own legal tender",
+       "16.1%",
+       "0.7",
+       "5b"
+      ],
+      [
+       "Panama",
+       "No (US dollar since 1904)",
+       "No own legal tender",
+       "41.7%",
+       "1.0",
+       "5b"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Sources: IMF de facto exchange rate classification for 2023 (some regimes have changed since), BIS debt securities statistics (general government, international market, foreign currency, mid 2026, over 2024 output), Chinn-Ito capital openness index (2023), Fed and Bank Negara holder data, the ADB for Indonesia and Thailand. Central bank holdings of government debt: Fed 14% (October 2026), Bank of Japan about 43% (end 2025), Bank Indonesia 29.4% (June 2026), Bank Negara 3.8% (June 2026). In 2023 about two thirds of IMF members did not let their currency float in the IMF's sense."
+    }
+   ]
+  },
+  "why": "RT international economist, blocking point 11: lock 2 data under the ladder (lane R7B matrix BIS column, verifier rows 117 to 119). 'Not checked' column replaced"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "30",
+  "action": "insert_after",
+  "new": {
+   "type": "deeper",
+   "label": "What people say, and what the schools say",
+   "blocks": [
+    {
+     "type": "table",
+     "cols": [
+      "What people say",
+      "Verdict"
+     ],
+     "rows": [
+      [
+       "Printing more money just raises prices (a short with about 75 million views)",
+       "Half true. Printing beyond what people want to hold raises prices. How much depends on the rung"
+      ],
+      [
+       "Any country can print its way out",
+       "False for rungs 4 and 5. Even the economists who stress printing power limit it to countries that pass locks 1 and 2"
+      ],
+      [
+       "The US can print forever",
+       "Partly true. It can pay in dollars unless Congress blocks payment through the debt limit. It cannot choose what those dollars buy or what yield markets demand. Its interest bill passed $1 trillion in 2026"
+      ],
+      [
+       "The G20 is a useless talking shop",
+       "Half true: true in calm years, false for 2008 to 2009"
+      ]
+     ]
+    },
+    {
+     "type": "table",
+     "cols": [
+      "School",
+      "Who can print, in its strongest form",
+      "Its blind spot"
+     ],
+     "rows": [
+      [
+       "MMT",
+       "A state with a floating currency that borrows only in it cannot be forced to default. The limit is inflation. Best example: Japan",
+       "Lock 3 for small open economies, whose currency falls when they print"
+      ],
+      [
+       "Hard money",
+       "Every paper printer debases in the end. The only real limit is lost trust. Best example: the long fall of paper money against gold",
+       "Timing. The dollar has held rung 1 for 55 years since 1971"
+      ],
+      [
+       "Mainstream",
+       "Room to print depends on the currency of the debt, who holds it, and interest rates against growth. Foreign holders of local bonds can still trigger a currency run",
+       "It underweights politics and security"
+      ]
+     ]
+    }
+   ]
+  },
+  "why": "Moved off the main path to make room for payoff boxes. Debt-limit caveat added"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "31",
+  "action": "delete",
+  "why": "Content now inside the new box after [30]"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "32",
+  "action": "delete",
+  "why": "Content now inside the new box after [30]"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "40",
+  "action": "replace",
+  "new": {
+   "type": "table",
+   "cols": [
+    "Who holds Malaysia's federal government debt, Ministry of Finance measure (end June 2026)",
+    "Share"
+   ],
+   "rows": [
+    [
+     "EPF",
+     "30.5%"
+    ],
+    [
+     "Banks",
+     "28.5%"
+    ],
+    [
+     "Insurers",
+     "5.2%"
+    ],
+    [
+     "Bank Negara",
+     "3.8%"
+    ],
+    [
+     "KWAP (civil service pensions)",
+     "2.2%"
+    ],
+    [
+     "Development finance institutions",
+     "2.1%"
+    ],
+    [
+     "Other domestic investors",
+     "6.2%"
+    ],
+    [
+     "Mostly foreigners (the rest, implied)",
+     "about 21.5%"
+    ]
+   ]
+  },
+  "why": "Verifier row 128: name the measure"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "40",
+  "action": "insert_after",
+  "new": {
+   "type": "p",
+   "text": "Bank Negara's own market count puts its share near 1% of government securities. The Ministry counts all federal debt, so its shares differ."
+  },
+  "why": "Verifier row 128"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "41",
+  "action": "insert_after",
+  "new": {
+   "type": "table",
+   "cols": [
+    "Malaysia's own brakes",
+    "The rule",
+    "Where Malaysia is"
+   ],
+   "rows": [
+    [
+     "Debt target (2023 fiscal law, Act 850)",
+     "Bring federal debt down to 60% of output over the medium term",
+     "63.1% (end June 2026)"
+    ],
+    [
+     "Debt-service limit (Act 850)",
+     "Debt service no more than 15% of revenue",
+     "15.8% (2026 projection)"
+    ],
+    [
+     "Statutory ceiling",
+     "MGS, GII and Islamic Treasury bills no more than 65% of output",
+     "Expected to stay under 65% in 2026 (Ministry of Finance, as reported)"
+    ],
+    [
+     "Central bank law",
+     "The Central Bank of Malaysia Act 2009 governs any lending by Bank Negara to the government",
+     "Bank Negara holds 3.8% of federal debt"
+    ]
+   ]
+  },
+  "why": "RT policy analyst, blocking point 12. Limits from The Edge (court fetch) and Malay Mail via the red team. The Act's lending clause is not quoted (needs data)"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "41",
+  "action": "insert_after",
+  "new": {
+   "type": "p",
+   "text": "So Malaysia has two kinds of brake. The laws are the legal brakes, and today it is above two of its own lines. The ringgit is the market brake."
+  },
+  "why": "Same"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "44",
+  "action": "replace",
+  "new": {
+   "type": "table",
+   "cols": [
+    "",
+    "Malaysia",
+    "Indonesia",
+    "Thailand",
+    "Singapore"
+   ],
+   "rows": [
+    [
+     "Club seat",
+     "none",
+     "G20",
+     "none",
+     "none"
+    ],
+    [
+     "Openness (0 to 1)",
+     "0.42",
+     "0.42",
+     "0.42",
+     "1.00"
+    ],
+    [
+     "Foreigners hold of government bonds (ADB, same source)",
+     "21.4% (Mar 2026)",
+     "12.8% (Jun 2026)",
+     "9.3% (Mar 2026)",
+     "not checked"
+    ],
+    [
+     "Central bank holds of government bonds",
+     "3.8%",
+     "29.4%",
+     "8.0%",
+     "not checked"
+    ],
+    [
+     "Reserves, 2024",
+     "$116 billion",
+     "$156 billion",
+     "$237 billion",
+     "$384 billion"
+    ]
+   ]
+  },
+  "why": "Verifier row 118: Thailand filled. ADB same-source column kept so peers compare like with like"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "49",
+  "action": "replace",
+  "new": {
+   "type": "table",
+   "cols": [
+    "Game",
+    "The shape",
+    "Where it settles"
+   ],
+   "rows": [
+    [
+     "Stag hunt (coordination)",
+     "Everyone gains most if all act. Acting alone is costly",
+     "All act or none. Each acts only if it expects the others to"
+    ],
+    [
+     "Prisoner's dilemma",
+     "Each gains by cheating whatever the other does",
+     "Both cheat and both end up worse off"
+    ],
+    [
+     "Free rider",
+     "A shared good is paid for by some and enjoyed by all",
+     "Each player's best move is to let others pay"
+    ],
+    [
+     "Focal point",
+     "Many choices would work, so players pick the one everyone expects",
+     "The habit wins, even if others are as good"
+    ],
+    [
+     "Chicken",
+     "Two players drive at each other",
+     "Each tries to look more committed so the other swerves"
+    ],
+    [
+     "Run",
+     "Lenders who expect others to stay, stay. Those who expect others to flee, flee first",
+     "The same borrower can be safe or bust depending on belief. Big reserves or a backstop make staying the best move"
+    ]
+   ]
+  },
+  "why": "RT game theorist: stag hunt named, run defined with what changes it"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "54",
+  "action": "replace",
+  "new": {
+   "type": "deeper",
+   "label": "Tripwires: dates that would change the picture",
+   "blocks": [
+    {
+     "type": "table",
+     "cols": [
+      "Game",
+      "Players",
+      "Real case",
+      "Tripwire to watch"
+     ],
+     "rows": [
+      [
+       "Stag hunt",
+       "G20 governments and central banks",
+       "London, 2 April 2009: $1.1 trillion package",
+       "Does the Miami summit (14 to 15 December 2026) end with a declaration all present sign?"
+      ],
+      [
+       "Free rider",
+       "Official lenders, private bondholders, the borrower",
+       "2020 debt pause: one private lender joined",
+       "Does Ethiopia's bond exchange settle by 31 March 2027?"
+      ],
+      [
+       "Prisoner's dilemma and chicken",
+       "Big trading economies",
+       "Early 1930s tariff war, the 2010 currency war, 2025 tariffs",
+       "Do the US and China extend their truce, due around 10 November 2026?"
+      ],
+      [
+       "Focal point",
+       "Central banks, exporters, borrowers",
+       "Dollar 56.7% of reserves, yuan 2.1%",
+       "IMF reserve data for Q3 2026, due about end December 2026"
+      ],
+      [
+       "Run on a currency",
+       "Speculators, Asian central banks, the IMF",
+       "Malaysia's reserves: $21.5 billion (1997) to $132.6 billion (2026)",
+       "Malaysia's reserves below 0.8 times short-term foreign debt in any 2027 release"
+      ],
+      [
+       "Run on debt",
+       "Holders of a state's debt",
+       "Japan borrows cheaply, Sri Lanka defaulted, Greece needed bailouts",
+       "Malaysia's foreign share above 25% or below 18% in a 2027 release"
+      ]
+     ]
+    }
+   ]
+  },
+  "why": "Level 4 material moves into a box. 1930s row corrected"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "59",
+  "action": "replace",
+  "new": {
+   "type": "check",
+   "q": "Malaysia borrows 98.8% of its federal debt in ringgit at home, yet a sell-off by foreigners can still weaken the ringgit. Why, and which rung is it on?",
+   "a": "Domestic debt means borrowed in ringgit in the local market, not held by Malaysians. Foreigners hold about a fifth of its government bonds and can leave the currency, so it only partly opens lock 3. Rung 3, near the top."
+  },
+  "why": "Both cold readers missed this check"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "60",
+  "action": "insert_after",
+  "new": {
+   "type": "check",
+   "q": "From the Bonds chapter: a foreign fund sells Malaysian government bonds. Which part of your life can it reach, and is it automatic?",
+   "a": "The ringgit, and through it import prices. Not automatic: in 2026 the ringgit held near 4.08 while US yields rose."
+  },
+  "why": "Spacing: L2.4 sends the reader back to L2.1 (framer 3.2)"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "60",
+  "action": "insert_after",
+  "new": {
+   "type": "callout",
+   "label": "Day 3 card",
+   "text": "Come back in three days and answer without looking: name the three locks, the game behind the 2020 debt pause, and Malaysia's two kinds of brake."
+  },
+  "why": "Spacing card"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "chapter",
+  "action": "set_field",
+  "field": "rules",
+  "new": [
+   "A club is not a government. A promise binds only when each member passes its own law.",
+   "Clubs delivered in crises and drifted in calm years. Read every summit against the regime it meets in, and ask which promises are being counted.",
+   "Before you say a country can print its way out, check the three locks: its own currency, debt in that currency, and markets that let it print.",
+   "Malaysia's brakes are the ringgit and its own fiscal laws. Watch who holds its bonds, not only how much it owes.",
+   "Read any headline as a game: players, moves, payoffs, who moves first, and what the game leaves out."
+  ],
+  "why": "Rules follow the rulings"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "0",
+  "action": "replace",
+  "new": {
+   "type": "tldr",
+   "items": [
+    "The G7, G10 and G20 are clubs, not governments: no treaty, no money of their own, no power to force anyone.",
+    "The G20 moved fast in the 2008 to 2009 crisis and slowly in calm years. That is a base rate, with exceptions.",
+    "Printing power is a ladder with three locks: its own currency, debt owed in that currency, and markets that let it print without a crash.",
+    "Euro members, Ecuador and Panama cannot print on their own. Turkey, Argentina and Sri Lanka owed much of their debt in dollars and paid with inflation or default.",
+    "Malaysia is in no club but lives by club rules. Rung 3, near the top: 98.8% of its federal debt is borrowed in ringgit at home, yet foreigners hold about a fifth of its government bonds. Its brakes are the ringgit and its own fiscal laws.",
+    "Five questions open the game board, and a four-step routine turns any headline into a game."
+   ]
+  },
+  "why": "98.8% definition (RT dealer, verifier row 80), 'at all' (word audit), self-insurance no longer called a game, legal brakes"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "1",
+  "action": "replace",
+  "new": {
+   "type": "bridge",
+   "label": "Built on Levels 1 and 2: recall these before you start",
+   "items": [
+    {
+     "id": "rb-worldbs",
+     "text": "The G10 is really eleven countries. Greece borrowed in a currency it could not print, much of it from foreigners."
+    },
+    {
+     "id": "rb-moneymake",
+     "text": "Banks are the everyday printer, the government plus the central bank the emergency printer. Buying dollars creates ringgit."
+    },
+    {
+     "id": "rb-em",
+     "text": "In September 1998 Malaysia imposed capital controls and pegged the ringgit at 3.80 to the dollar, until July 2005."
+    },
+    {
+     "id": "rb-leader",
+     "text": "Everyone uses the dollar because everyone else does. After 1997, countries short of dollars built reserves."
+    },
+    {
+     "id": "rb-09",
+     "text": "The US owes dollars it can create. Spain owed silver it could not."
+    }
+   ]
+  },
+  "why": "Bridge check: rb-leader quoted on the dollar and on reserves, not on the devaluation claim this chapter corrects"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "15",
+  "action": "replace",
+  "new": {
+   "type": "p",
+   "text": "Score: 3 delivered, 4 partly, 2 not delivered, 1 stalled. So the suspicion is half right, and it depends on which promises you count, which is why our rule is stated above. The fast wins (2009, the 2020 debt pause, the 2021 SDRs) all came in crises. In calm years the G20 has moved slowly, and in 2025 and 2026 it split in the open. The impression fits October 2026. It would not have fitted April 2009."
+  },
+  "why": "Base rate stated with its exceptions (RT overcorrection 6)"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "16",
+  "action": "replace",
+  "new": {
+   "type": "insider",
+   "label": "The game behind the scorecard",
+   "text": "In a crisis the G20 plays a stag hunt: acting together pays most, but each member acts only if it expects the others to, and a shared shock makes everyone expect it. Even in 2009 some did less than others. In calm years it plays free-rider games. A club with no treaty can coordinate the willing, not force the unwilling."
+  },
+  "why": "RT game theorist: coordination is not a dominant strategy"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "24",
+  "action": "replace",
+  "new": {
+   "type": "steps",
+   "items": [
+    "Lock 1, the law. Does it issue its own currency? Italy, Ecuador and Panama do not. They use the euro or the US dollar, made by someone else.",
+    "Lock 2, the debt. Does the state owe its debt in money it can create? Sri Lanka could print rupees, but owed dollars, and stopped paying on 12 April 2022.",
+    "Lock 3, the market. Can it print a lot in a crisis without a currency crash or runaway prices? That depends on whether the world wants its money, how open its markets are, and its inflation record. Turkey and Argentina had their own money but owed a large part of their debt in dollars, and saw inflation reach 72% (2022) and 220% (2024). They failed lock 3 and partly lock 2."
+   ]
+  },
+  "why": "RT international economist and verifier row 102: Turkey and Argentina also fail lock 2 in part"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "29",
+  "action": "replace",
+  "new": {
+   "type": "p",
+   "text": "The rungs are our grading, not an official list. Two edges: Indonesia's central bank holds about 29% of its government's debt (June 2026), after buying from 2020 to 2022 and again in 2026, yet inflation was 1.9% in 2025. A rung 3 printer can print for a while if markets trust its brakes. Germany sits on rung 5b with the cheapest borrowing in the euro area, because markets trust its budget. And the euro area as a whole can print through the ECB, on conditions."
+  },
+  "why": "Verifier rows 103 and 105"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "39",
+  "action": "replace",
+  "new": {
+   "type": "p",
+   "text": "Malaysia sits in no money club. Indonesia is the only Southeast Asian G20 member. Malaysia's seats are ASEAN (a founder in 1967), APEC, the IMF, the Chiang Mai reserve pool with China, Japan and Korea, and a BRICS partner seat, announced in October 2024 and in effect from 1 January 2025. Yet it applies rules written elsewhere, such as the 15% global minimum tax from 1 January 2025, a deal the US helped write and later won a carve-out from."
+  },
+  "why": "RT policy analyst: BRICS partner date"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "45",
+  "action": "insert_after",
+  "new": {
+   "type": "deeper",
+   "box_id": "45.peers",
+   "label": "Malaysia in dates, and against its neighbours",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Since December 2016 Bank Negara's foreign exchange measures have pushed ringgit hedging onshore. The IMF classes them as capital flow management measures, and the authorities disagreed with its advice to phase them out (2022 Article IV, as reported by The Edge)."
+    }
+   ]
+  },
+  "why": "Holds the dates and peer tables. RT policy analyst: the 2016 measures (lane R7B D2)"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "44",
+  "action": "move_into",
+  "target": "45.peers",
+  "position": "end",
+  "why": "Peer table (Thailand filled) moves into a box for the word budget. [45] keeps the verdict"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "45",
+  "action": "replace",
+  "new": {
+   "type": "p",
+   "text": "Against Indonesia, Thailand and Singapore, Malaysia is typical in most ways: its own currency, a float with smoothing, debt at home, low inflation, a partly managed capital account. It is an outlier in five: the 1998 controls and peg, the highest foreign share of the three ASEAN peers checked (21.4% against 12.8% and 9.3%), a compulsory pension fund as its biggest lender, nearly half its debt in Islamic form, and a central bank that holds very little government debt."
+  },
+  "why": "Claim now backed by the filled Thailand cell (verifier R7V-11)"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "46",
+  "action": "replace",
+  "new": {
+   "type": "insider",
+   "label": "Where Malaysia sits",
+   "text": "Rung 3, near the top. It opens lock 1 (its own currency) and lock 2 strongly (98.8% of federal debt borrowed in ringgit at home). It only partly opens lock 3: about a fifth of its government bonds sit with foreigners, the ringgit is not a reserve currency, and reserves are about 0.9 times its short-term foreign debt, below a common rule of thumb of 1. If Bank Negara printed for the budget, it would break Malaysia's own fiscal lines, foreigners and savers could leave, and a falling ringgit would raise import prices."
+  },
+  "why": "Legal and market brakes together (RT overcorrection 5)"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "53",
+  "action": "replace",
+  "new": {
+   "type": "curiosity",
+   "label": "Five starting questions",
+   "items": [
+    {
+     "q": "Why did the G20 move within months in 2008 to 2009, but take years on poor countries' debts?",
+     "a": "Two games. 2009 was a stag hunt (box 1): the shared fear of collapse made each member expect the others to act, and out came a $1.1 trillion package. Debt relief is a free-rider game (box 2): relief from one lender frees cash to pay the others. The 2020 pause covered $12.9 billion, but only one private lender joined, and Ethiopia's deal took more than five years to reach agreement in principle.",
+     "from": "rb-leader"
+    },
+    {
+     "q": "If every country wants a tariff edge or a cheaper currency, what happens when they all try at once?",
+     "a": "Tariffs are the clean prisoner's dilemma (box 3): all lose when all raise them, as in the tariff war of the early 1930s. Currencies are murkier: in the 1930s devaluing helped the countries that did it, and historians find that devaluing together would have sped recovery (Eichengreen and Sachs, 1985). Exits have been deals like the 1985 Plaza Accord, or truces like the October 2025 US and China pause, which can lapse. Two giants trading threats are playing chicken.",
+     "from": "rb-leader"
+    },
+    {
+     "q": "Why does the world keep saving in US dollars even while complaining about the US?",
+     "a": "A focal point (box 4). Money is useful because others use it. The dollar was 56.7% of world reserves in mid 2026, nearly three times the euro. The yuan was 2.1%, largely because China keeps capital controls.",
+     "from": "rb-04"
+    },
+    {
+     "q": "Why did Malaysia and its neighbours pile up dollars after 1998 instead of spending them?",
+     "a": "To change the payoffs of a run on their currency (box 5). In 1997 to 1998 the ringgit fell from about 2.50 to about 4.88, and Thailand, Indonesia and Korea had to accept IMF conditions. Malaysia's reserves rose from $21.5 billion in 1997 to $132.6 billion in June 2026. Big reserves make attacking a losing bet, and mean the country need not accept the IMF's terms.",
+     "from": "rb-em"
+    },
+    {
+     "q": "Why can Japan owe about twice its economy and borrow cheaply, while Sri Lanka defaulted?",
+     "a": "A run on the debt (box 6): who holds it, and in which money, largely decides it. Japan owes yen mostly to itself: its central bank holds about 43% and foreigners about 13% (end 2025). Sri Lanka owed dollars to foreigners and stopped paying on 12 April 2022. Malaysia borrows in ringgit, but foreigners hold about a fifth of its bonds, so its risk is a weaker ringgit, not default.",
+     "from": "rb-worldbs"
+    }
+   ]
+  },
+  "why": "RT historian (1930s), RT game theorist (stag hunt, self-insurance recast as a run with the IMF as outside option), word audit ('largely'), Japan figure aligned with L2.3"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "53",
+  "action": "insert_after",
+  "new": {
+   "type": "table",
+   "cols": [
+    "Box 1. Stag hunt: London 2009",
+    "Others stimulate",
+    "Others hold back"
+   ],
+   "rows": [
+    [
+     "You stimulate",
+     "Best: your spending leaks abroad, but theirs comes back as exports",
+     "Worst: your spending leaks abroad and you carry the debt"
+    ],
+    [
+     "You hold back",
+     "Middle: safe, but you add little to the recovery",
+     "Middle: safe, but the slump deepens"
+    ]
+   ]
+  },
+  "why": "RT game theorist, blocking point 9: payoff box 1"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "53",
+  "action": "insert_after",
+  "new": {
+   "type": "p",
+   "text": "Settles: all act or none. In April 2009 shared fear made each expect the others to act. Misses: leaders were also rescuing their own banks, and some did less than others."
+  },
+  "why": "Where it settles and what the game misses, box 1"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "53",
+  "action": "insert_after",
+  "new": {
+   "type": "table",
+   "cols": [
+    "Box 2. Free rider: debt relief",
+    "Other lenders give relief",
+    "Other lenders hold out"
+   ],
+   "rows": [
+    [
+     "You give relief",
+     "Good: the borrower recovers and pays more later",
+     "Worst: your relief pays the others in full"
+    ],
+    [
+     "You hold out",
+     "Best: you are paid in full from cash others freed",
+     "Bad: the borrower stalls or defaults"
+    ]
+   ]
+  },
+  "why": "RT game theorist, blocking point 9: payoff box 2"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "53",
+  "action": "insert_after",
+  "new": {
+   "type": "p",
+   "text": "Settles: holding out pays each lender whatever the others do, so relief needs a rule binding all. The 2020 pause had none for private lenders. Misses: China's lenders had their own rules on losses."
+  },
+  "why": "Where it settles and what the game misses, box 2"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "53",
+  "action": "insert_after",
+  "new": {
+   "type": "table",
+   "cols": [
+    "Box 3. Prisoner's dilemma: tariffs",
+    "Other keeps tariffs low",
+    "Other raises tariffs"
+   ],
+   "rows": [
+    [
+     "You keep tariffs low",
+     "Good: trade grows for both",
+     "Worst: you lose sales and gain nothing"
+    ],
+    [
+     "You raise tariffs",
+     "Best: you gain at the other's cost",
+     "Bad: trade shrinks for both"
+    ]
+   ]
+  },
+  "why": "RT game theorist, blocking point 9: payoff box 3"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "53",
+  "action": "insert_after",
+  "new": {
+   "type": "p",
+   "text": "Settles: both raise and both lose, unless a deal or fear of next year's reply holds them back. Misses: tariffs also serve home aims such as revenue, jobs and security."
+  },
+  "why": "Where it settles and what the game misses, box 3"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "53",
+  "action": "insert_after",
+  "new": {
+   "type": "table",
+   "cols": [
+    "Box 4. Focal point: the dollar",
+    "Others keep the dollar",
+    "Others switch"
+   ],
+   "rows": [
+    [
+     "You keep the dollar",
+     "Good: deep markets, cheap to trade",
+     "Bad: you are left in the old money"
+    ],
+    [
+     "You switch",
+     "Bad: thin markets, costly hedging",
+     "Good, after a costly move"
+    ]
+   ]
+  },
+  "why": "RT game theorist, blocking point 9: payoff box 4"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "53",
+  "action": "insert_after",
+  "new": {
+   "type": "p",
+   "text": "Settles: all keep or all switch, and the habit is the dollar. Misses: sanctions risk. Freezing Russia's reserves in 2022 raised the cost of holding dollars for some."
+  },
+  "why": "Where it settles and what the game misses, box 4"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "53",
+  "action": "insert_after",
+  "new": {
+   "type": "table",
+   "cols": [
+    "Box 5. Run on a currency: 1997 to 1998",
+    "Other funds attack",
+    "Other funds stay"
+   ],
+   "rows": [
+    [
+     "You attack",
+     "Small reserves: best, the currency breaks. Big reserves: bad, the defence holds and the bet costs you",
+     "Worst: you bet alone and lose"
+    ],
+    [
+     "You stay",
+     "Middle: you miss the gain, or the loss",
+     "Middle: nothing happens"
+    ]
+   ]
+  },
+  "why": "RT game theorist, blocking point 9: payoff box 5"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "53",
+  "action": "insert_after",
+  "new": {
+   "type": "p",
+   "text": "Settles: with small reserves, all attack or none. Big reserves make staying each fund's best move, and the IMF becomes an outside option, not a must. Misses: in 1998 Malaysia used controls, not only reserves."
+  },
+  "why": "Where it settles and what the game misses, box 5"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "53",
+  "action": "insert_after",
+  "new": {
+   "type": "table",
+   "cols": [
+    "Box 6. Run on a government's debt",
+    "Other holders stay",
+    "Other holders sell"
+   ],
+   "rows": [
+    [
+     "You stay",
+     "Good: paid in full",
+     "Worst: left holding as the price or the currency falls"
+    ],
+    [
+     "You sell",
+     "Bad: you give up the yield",
+     "Bad, but better than staying: you got out first"
+    ]
+   ]
+  },
+  "why": "RT game theorist, blocking point 9: payoff box 6"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "53",
+  "action": "insert_after",
+  "new": {
+   "type": "p",
+   "text": "Settles: all stay or all sell. A pension fund at home mostly cannot leave the currency, a foreign fund can, so a state that owes its own money at home risks a weaker currency, not default. Misses: who pays the loss."
+  },
+  "why": "Where it settles and what the game misses, box 6"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "53",
+  "action": "insert_after",
+  "new": {
+   "type": "h",
+   "text": "8. Read any headline as a game"
+  },
+  "why": "Owner's 'mental framework for everyone' and RT game theorist"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "53",
+  "action": "insert_after",
+  "new": {
+   "type": "steps",
+   "items": [
+    "Players: who can act? Include the quiet ones.",
+    "Moves: what can each do? Two moves each if you can.",
+    "Payoffs: what does each get from each pair of moves? Best, good, bad or worst.",
+    "Order and information: who moves first, and who sees what?",
+    "Then ask what the game leaves out: elections, ideology, accidents and plain error."
+   ]
+  },
+  "why": "The routine"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "53",
+  "action": "insert_after",
+  "new": {
+   "type": "table",
+   "cols": [
+    "Step",
+    "Worked example: \"Why Foreign Investors Disposed RM5.6 Billion In Malaysian Govt Bonds In July\" (Business Today, 10 August 2026)"
+   ],
+   "rows": [
+    [
+     "Players",
+     "Foreign funds, local holders such as EPF and the banks, Bank Negara"
+    ],
+    [
+     "Moves",
+     "Funds sell or stay. Locals buy or wait. Bank Negara can sell dollars"
+    ],
+    [
+     "Payoffs",
+     "Selling early dodges a ringgit fall but gives up the yield. Locals mostly cannot leave the ringgit"
+    ],
+    [
+     "Order",
+     "Funds watch US yields. Flow data come out a month later"
+    ],
+    [
+     "Game",
+     "A run on the debt (box 6) that did not start: 0.43% of the market, about RM11 billion back into government bonds in August, the ringgit 4.09 to 4.08 in July"
+    ],
+    [
+     "Left out",
+     "The research house blamed outside events: US and Iran tension, oil and US yields"
+    ]
+   ]
+  },
+  "why": "Worked example from lane R7A section F1 and verifier R7V-04"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "53",
+  "action": "insert_after",
+  "new": {
+   "type": "check",
+   "q": "Your turn. The US and China truce is due around 10 November 2026. Fill in the four steps and name the game.",
+   "a": "Players: the US and China. Moves: extend or escalate. Payoffs: both gain from calm trade, each gains more if the other backs down, both lose most from a clash. Order: each watches the other before the date. Game: chicken."
+  },
+  "why": "Faded example (learning scientist)"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "9",
+  "action": "replace",
+  "new": {
+   "type": "p",
+   "text": "Malaysia's share of world exports is about two and a half times its share of world output. It lives by trade, so it lives by rules made in rooms it is not in. For each club's share of world wealth and debt, see the previous chapter."
+  },
+  "why": "Word budget"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "14",
+  "action": "replace",
+  "new": {
+   "type": "table",
+   "cols": [
+    "Promise",
+    "What happened",
+    "Grade"
+   ],
+   "rows": [
+    [
+     "2009 crisis package ($1.1 trillion, plus $5 trillion of national spending plans)",
+     "Made, including a new SDR allocation in August 2009. Most of the $5 trillion was plans already announced",
+     "Delivered"
+    ],
+    [
+     "A Financial Stability Board",
+     "Created in April 2009, still running",
+     "Delivered"
+    ],
+    [
+     "2021 SDR allocation for all IMF members",
+     "Made in 2021, with G20 backing",
+     "Delivered"
+    ],
+    [
+     "Basel III bank rules",
+     "Phased in from 2013. The US re-proposed the final part in March 2026, no final rule yet",
+     "Partly"
+    ],
+    [
+     "2020 debt pause for poor countries",
+     "$12.9 billion paused for 48 of 73 eligible countries. One private lender joined",
+     "Partly"
+    ],
+    [
+     "The Common Framework for debt deals",
+     "Each case took about 2 to more than 5 years (Chad, Zambia, Ghana, Ethiopia)",
+     "Partly, slow"
+    ],
+    [
+     "A 15% global minimum tax",
+     "In force in the EU, UK, Japan, Korea and Malaysia. The US never passed it and won a carve-out in January 2026",
+     "Partly, then diluted"
+    ],
+    [
+     "No new protectionism (2009)",
+     "Members kept adding barriers. The 2025 US tariffs broke the spirit outright",
+     "Not delivered"
+    ],
+    [
+     "Phase out fossil fuel subsidies (2009)",
+     "Global subsidies were still very large in 2022",
+     "Not delivered"
+    ],
+    [
+     "The 2025 and 2026 summits",
+     "The US boycotted Johannesburg in 2025, then as host shut South Africa out of Miami",
+     "Stalled"
+    ]
+   ]
+  },
+  "why": "RT sherpa: the $5 trillion was mostly national plans, delivery not proven by 2010 growth, a delivered item added (2021 SDRs, lane A3)"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "28",
+  "action": "replace",
+  "new": {
+   "type": "table",
+   "cols": [
+    "Rung",
+    "What it means",
+    "Examples"
+   ],
+   "rows": [
+    [
+     "1. Reserve issuer",
+     "All three locks open with room. In a crisis the world buys its money",
+     "US by far, then the euro area as a whole, Japan, the UK"
+    ],
+    [
+     "2. Sovereign printer",
+     "All three open, but the world holds little of its money",
+     "Canada, Australia, Switzerland, Korea"
+    ],
+    [
+     "3. Constrained printer",
+     "Locks 1 and 2 open, lock 3 partly. Printing shows fast in the currency, in foreign selling or behind capital controls",
+     "China (controls), India, Brazil, Mexico, Indonesia, South Africa, Russia, Malaysia"
+    ],
+    [
+     "4. Fragile printer",
+     "Own money, but recently paid for printing with a crash, high inflation or default",
+     "Turkey, Argentina, Sri Lanka, Zimbabwe"
+    ],
+    [
+     "5a. Tied by choice",
+     "Could print, but tied its money to the dollar",
+     "Saudi Arabia (peg), Hong Kong (currency board)"
+    ],
+    [
+     "5b. No printer of its own",
+     "Must earn, tax or borrow the money it owes",
+     "Euro members one by one, Ecuador, Panama"
+    ]
+   ]
+  },
+  "why": "RT international economist: China's controls block foreign selling"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "48",
+  "action": "replace",
+  "new": {
+   "type": "p",
+   "text": "Game theory asks: what is each player's best move, given what the others might do? Each game below is a box with two players, two moves each, and what you get in each cell, from best to worst."
+  },
+  "why": "Primer introduces the payoff box"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "42",
+  "action": "move_into",
+  "target": "45.peers",
+  "position": "start",
+  "why": "1997 to 2005 dates move into the box. [43] keeps the story"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "10",
+  "action": "replace",
+  "new": {
+   "type": "p",
+   "text": "None of these clubs has a treaty (a binding agreement between states), a binding vote, its own money or a large staff. They cannot pass a law, print a dollar or force a private lender. They work through bodies their members control: the IMF, the Financial Stability Board, the Basel committee that writes bank rules, and the OECD tax talks. Each member must still pass its own laws."
+  },
+  "why": "Cold reader A: define treaty"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "13",
+  "action": "replace",
+  "new": {
+   "type": "p",
+   "text": "The owner suspects the G20 is playing around. Here is its record on ten big promises: the headline pledges with a checkable target, every crisis programme, and the latest summits. The grades are our judgment of the evidence."
+  },
+  "why": "RT G20 sherpa, blocking point 13: state the selection rule"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "20",
+  "action": "replace",
+  "new": {
+   "type": "check",
+   "q": "Why did the G20 move fast in 2009 but slowly on poor countries' debts?",
+   "a": "In 2009 shared fear made each member expect the others to act. Debt relief by one lender frees cash to pay the others, so each prefers to let others give it."
+  },
+  "why": "Stag hunt, not a dominant strategy"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "25",
+  "action": "replace",
+  "new": {
+   "type": "p",
+   "text": "Each lock is needed and none is enough alone. Passing locks 1 and 2 lets a country pay in its own money, if its law allows and its parliament does not block payment, as the US debt-limit fights of 2011 and 2023 threatened. It cannot choose what that money will buy."
+  },
+  "why": "Word audit 'can always pay', RT literal reader (debt limit)"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "41",
+  "action": "replace",
+  "new": {
+   "type": "p",
+   "text": "Federal debt was RM1.38 trillion at the end of June 2026, 63.1% of output. 98.8% of it is domestic debt: borrowed in ringgit in Malaysia's own market (Ministry of Finance). That does not mean held by Malaysians: foreigners hold about a fifth of the government bonds. Nearly half the debt (47.9%) is Islamic paper. Bank Negara, the central bank, holds only 3.8%, against about 29% at Indonesia's. Malaysia has not used its printer to fund the budget."
+  },
+  "why": "RT dealer, verifier row 80, blocking point 8. Cold reader B: introduce Bank Negara"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "4",
+  "action": "replace",
+  "new": {
+   "type": "h",
+   "text": "Part 1 of 4. The clubs, and whether they deliver"
+  },
+  "why": "Four parts for segmenting (learning scientist)"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "17",
+  "action": "replace",
+  "new": {
+   "type": "callout",
+   "label": "Stop here",
+   "text": "Part 1 of 4 done. Try these three before Part 2."
+  },
+  "why": "Four parts"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "21",
+  "action": "replace",
+  "new": {
+   "type": "h",
+   "text": "Part 2 of 4. Who can really print money"
+  },
+  "why": "Four parts"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "33",
+  "action": "replace",
+  "new": {
+   "type": "callout",
+   "label": "Stop here",
+   "text": "Part 2 of 4 done. Try these three before Part 3."
+  },
+  "why": "Four parts"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "37",
+  "action": "replace",
+  "new": {
+   "type": "h",
+   "text": "Part 3 of 4. Malaysia, outside every club"
+  },
+  "why": "Four parts"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "46",
+  "action": "insert_after",
+  "new": {
+   "type": "callout",
+   "label": "Stop here",
+   "text": "Part 3 of 4 done. Try this one before Part 4."
+  },
+  "why": "New stop box"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "46",
+  "action": "insert_after",
+  "new": {
+   "type": "check",
+   "q": "Name Malaysia's two kinds of brake on printing for the budget.",
+   "a": "The legal brakes in its fiscal laws (a 60% debt target and a 15% debt-service limit, both above the line today) and the market brake, the ringgit."
+  },
+  "why": "Retrieval on the new brakes table"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "46",
+  "action": "insert_after",
+  "new": {
+   "type": "h",
+   "text": "Part 4 of 4. The game the world plays"
+  },
+  "why": "Four parts"
+ },
+ {
+  "chapter": "rb-clubs",
+  "block": "3",
+  "action": "replace",
+  "new": {
+   "type": "p",
+   "text": "Four parts, each ending in a stop box. Stop at any box and come back another day."
+  },
+  "why": "Four parts"
+ }
+]
