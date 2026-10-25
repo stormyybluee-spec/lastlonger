@@ -282,3 +282,78 @@ Score: 9 / 10. Pass.
 8. Clubs routine: pick one count (four steps plus "what it leaves out") and use it in [0], [71], [72], [73] and the Rules.
 9. Clubs [9] and [23]: replace "the previous chapter" and "Level 2 chapter 2" with chapter names.
 10. Numbers: use one foreign share for Malaysia (21.5% or 21.4%) on the main path, and add one line linking RM1.309 trillion (government bonds, Bonds [71]) to RM1.38 trillion (federal debt, Clubs [41]).
+
+---
+
+## Retest after fixes (rb-clubs)
+
+Date: 25 October 2026. Source: DRAFT_R7c.md, chapter "The money clubs" (id rb-clubs), main path only. Deeper boxes and all "A:" answer lines were skipped. Block numbers below are the ones in DRAFT_R7c.md.
+
+### What the fixes solved
+
+- "The owner suspects" is gone. [13] now says "Many people suspect".
+- SDR is defined in [14]. The IMF is defined in [7].
+- [15] now says the pause was fast but the debt deals after it took years. The fast or slow clash is gone.
+- [16] tells the reader that part 4 explains stag hunt and free rider, so the early use no longer feels like a gap.
+- "Rung 1 is the top" is said in [0] and [27].
+- Peg and currency board are defined in [28]. Capital account [45] and short-term foreign debt [47] are glossed.
+- [40] explains Bank Negara at 1% against 3.8%, and RM1.309 trillion against RM1.38 trillion.
+- One foreign share (about 21.5%, "about a fifth") is used throughout.
+- Chicken now has its own box (Box 7, [70]) with the US and China as the real case, and [71] introduces the truce due around 10 November 2026. Check [76] can now be answered from the main path.
+- The routine is four steps [73], then "name the game" and "what it leaves out" [74]. [0] and [76] both say four steps.
+- [9] and [23] now name chapters instead of "the previous chapter" and "Level 2 chapter 2".
+
+### Reader 1 (Malaysian school leaver, English as a second language): what is still hard
+
+1. G7, G10 and G20 are still never expanded ("Group of Seven"). The reader guesses "G" means group.
+2. [1] Bridge lines are still cryptic without Level 1: "Banks are the everyday printer", "Spain owed silver it could not".
+3. [7] "The end of fixed exchange rates" and "a standing credit line" are still jargon.
+4. [14] The scorecard still carries "Basel III", "re-proposed the final part", "Common Framework", "carve-out", "protectionism", "broke the spirit outright", "boycotted Johannesburg" and "shut South Africa out of Miami". The reader does not know Johannesburg and Miami are summit cities.
+5. [14] Grades "Partly, slow" and "Partly, then diluted" look like extra grades until the score line in [15] counts them as "partly".
+6. [25] "the US debt-limit fights of 2011 and 2023" is not explained.
+7. [29] Germany on the bottom rung with the cheapest borrowing still surprises this reader.
+8. [27] calls Malaysia "the middle of the ladder, at the strong end of its rung". [47] says "Rung 3, near the top." The reader again asks: near the top of the ladder, or of rung 3?
+9. [38] APEC, the Chiang Mai reserve pool and BRICS are unexpanded.
+10. [40] and [42] MGS, GII and Treasury bills are used with no gloss. [41] "Islamic paper" is not explained.
+11. [42] and [43] "fiscal law" and "fiscal lines". "Fiscal" is a word this reader does not know. The table title "Malaysia's own brakes" saves the meaning.
+12. [44] "managed float", "floating", "smoothing" and "offshore ringgit trading" are still four hard terms in four lines.
+13. [45] "the highest foreign share of the three ASEAN peers checked". Singapore is named in the same paragraph but has no number, so the reader cannot tell which three.
+14. [52] says the table "lists seven common games". [53] has six rows, with run covering boxes 5 and 6. The reader counts six and wonders what is missing.
+15. [53] Stag hunt is labelled "(coordination)". Focal point is also about everyone doing what others do, but carries no such label. This pulled the reader off the right answer to question 9.
+16. [66] Box 5 still puts two outcomes in one cell.
+17. [69] "cannot leave the currency" is an idiom this reader reads slowly.
+18. [75] "0.43% of the market" does not say of what. "Disposed" in the headline is unusual English.
+
+### Reader 2 (American, no finance background): what is still hard
+
+1. Malaysian names with no gloss on first use: ringgit is clear from context, but KWAP is glossed while EPF and Bank Negara are explained only later ([41] "Bank Negara, the central bank").
+2. MGS, GII, Treasury bills, Islamic paper and Act 850, as for Reader 1.
+3. Rung 3 "near the top" [47] against "the middle of the ladder" [27].
+4. "Seven common games" [52] against six rows in [53].
+5. [44] managed float and smoothing.
+6. [14] Basel III and the Common Framework.
+
+### Questions and answers
+
+| # | Question | Reader 1 answer from memory | Mark | Reader 2 answer from memory | Mark |
+|---|---|---|---|---|---|
+| 1 | Which club is Malaysia in? | None of them. | Right. | None. | Right. |
+| 2 | Why can a G20 promise be broken without penalty? | It is a club, not a government. No treaty, no money, no force. Each country must pass its own law. | Right. | No treaty or binding vote. It only binds when each member passes its own law. | Right. |
+| 3 | Why fast in 2009, slow on poor countries' debts? | 2009 was a stag hunt. Everyone was afraid, so each expected the others to act. Debt relief is free rider: if others give relief, you get paid in full, so each lender waits. | Right. [16] and Box 2 [60], [61] now carry it on the main path. | Stag hunt in the crisis. Debt relief is a free-rider game, because holding out gets you paid from cash the others freed. | Right. |
+| 4 | How many of the ten promises were delivered, partly, not, stalled? | 3 delivered, 4 partly, 2 not, 1 stalled. | Right. The score line opening [15] did the work. | 3, 4, 2, 1. | Right. |
+| 5 | What are the three locks? | The law (own currency), the debt (owed in own money), the market (print without a crash or high prices). | Right. | Own currency, debt in that currency, markets that let it print without a crash. | Right. |
+| 6 | Which lock does Italy fail that Japan passes? | Lock 1. Italy uses the euro. | Right. | Lock 1, the law. Italy does not issue the euro. | Right. |
+| 7 | Malaysia's two kinds of brake? | The laws (60% debt target, 15% debt service) and the ringgit. | Right. | Legal brakes from its fiscal laws, and the ringgit as the market brake. | Right. |
+| 8 | 98.8% in ringgit at home, yet a foreign sell-off can weaken the ringgit. Why, and which rung? | "At home" means borrowed in ringgit here, not owned by Malaysians. Foreigners hold about a fifth. They can sell and take money out, so the ringgit falls. Rung 3. | Right. | Foreigners hold about a fifth of the bonds and can leave the currency. Local holders like EPF mostly cannot. Rung 3. | Right. |
+| 9 | Which game explains why the world still saves in dollars? | Everyone uses the dollar because everyone uses it. That is the coordination game, stag hunt. | Wrong. It is a focal point (Box 4, [64], [65]). The reader remembered "coordination" from the stag hunt label in [53] and matched it to the dollar. | Focal point. The habit wins. | Right. |
+| 10 | The US and China truce: name the game. | Chicken. Each tries to look committed so the other swerves. | Right. Box 7 [70], [71] fixed this. | Chicken, Box 7. | Right. |
+
+Reader 1 score: 9 / 10. Pass (was 6 / 10).
+
+Reader 2 score: 10 / 10. Pass (was 9 / 10).
+
+### Top three remaining confusions
+
+1. Game labels in [53]. Stag hunt is tagged "(coordination)" but focal point is not, so a reader who remembers "the dollar is a coordination habit" names stag hunt. [52] also says "seven common games" over a six-row table. Fix: drop the "(coordination)" tag or add one line saying stag hunt and focal point are both coordination games, and say "six games, drawn as seven boxes".
+2. Malaysia's place on the ladder. [27] says "the middle of the ladder, at the strong end of its rung" and [47] says "Rung 3, near the top." Fix: use the [27] wording in [47].
+3. Main-path jargon still undefined: G7 never expanded, fiscal, MGS, GII, Treasury bills, Islamic paper, Basel III, carve-out, APEC, BRICS, Chiang Mai, managed float, smoothing, offshore, and the US debt-limit fights. Fix: a few words each on first use, or move the hardest ones into deeper boxes.

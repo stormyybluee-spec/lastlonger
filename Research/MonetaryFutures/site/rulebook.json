@@ -9231,19 +9231,19 @@
      ],
      "rows": [
       [
-       "G7",
+       "G7 (Group of Seven)",
        "1975 (Canada joined 1976)",
        "US, Japan, Germany, UK, France, Italy, Canada. The EU attends",
        "The oil shock and the end of fixed exchange rates"
       ],
       [
-       "G10",
+       "G10 (Group of Ten)",
        "1962",
        "The G7 plus Belgium, the Netherlands, Sweden and Switzerland: eleven countries",
        "A standing credit line to the IMF (the International Monetary Fund, which lends to countries in trouble)"
       ],
       [
-       "G20",
+       "G20 (Group of Twenty)",
        "1999, leaders' summits from 2008",
        "19 countries plus the EU and, since 2023, the African Union",
        "The 1997 to 1998 Asian crisis, then the 2008 crash"
@@ -10092,7 +10092,7 @@
     {
      "type": "insider",
      "label": "Where Malaysia sits",
-     "text": "Rung 3, near the top. It opens lock 1 (its own currency) and lock 2 strongly (98.8% of federal debt borrowed in ringgit at home). It only partly opens lock 3: about a fifth of its government bonds sit with foreigners, the ringgit is not a reserve currency, and reserves are about 0.9 times its short-term foreign debt (foreign debt due within a year), below a common rule of thumb of 1. If Bank Negara printed for the budget, it would break Malaysia's own fiscal lines, foreigners and savers could leave, and a falling ringgit would raise import prices."
+     "text": "Rung 3, the middle of the ladder, at the strong end of its rung. It opens lock 1 (its own currency) and lock 2 strongly (98.8% of federal debt borrowed in ringgit at home). It only partly opens lock 3: about a fifth of its government bonds sit with foreigners, the ringgit is not a reserve currency, and reserves are about 0.9 times its short-term foreign debt (foreign debt due within a year), below a common rule of thumb of 1. If Bank Negara printed for the budget, it would break Malaysia's own fiscal lines, foreigners and savers could leave, and a falling ringgit would raise import prices."
     },
     {
      "type": "callout",
@@ -10114,7 +10114,7 @@
     },
     {
      "type": "p",
-     "text": "Game theory asks: what is each player's best move, given what the others might do? The table lists seven common games. Each one is then drawn as a box with two players, two moves each, and what each gets in every cell, from best to worst."
+     "text": "Game theory asks: what is each player's best move, given what the others might do? The table lists six common games. Each one is then drawn as a box, seven boxes in all because the run game gets two, with two players, two moves each, and what each gets in every cell, from best to worst. Stag hunt and focal point are both coordination games: in the first, everyone must act at once, in the second, everyone just follows the habit."
     },
     {
      "type": "table",
@@ -10127,7 +10127,7 @@
      "rows": [
       [
        "1",
-       "Stag hunt (coordination)",
+       "Stag hunt",
        "Everyone gains most if all act. Acting alone is costly",
        "All act or none. Each acts only if it expects the others to"
       ],
@@ -10523,7 +10523,7 @@
     {
      "type": "check",
      "q": "Malaysia borrows 98.8% of its federal debt in ringgit at home, yet a sell-off by foreigners can still weaken the ringgit. Why, and which rung is it on?",
-     "a": "Domestic debt means borrowed in ringgit in the local market, not held by Malaysians. Foreigners hold about a fifth of its government bonds and can leave the currency, so it only partly opens lock 3. Rung 3, near the top."
+     "a": "Domestic debt means borrowed in ringgit in the local market, not held by Malaysians. Foreigners hold about a fifth of its government bonds and can leave the currency, so it only partly opens lock 3. Rung 3, the middle of the ladder, at the strong end of its rung."
     },
     {
      "type": "check",
