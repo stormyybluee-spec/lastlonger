@@ -4545,7 +4545,7 @@
     {
      "type": "callout",
      "label": "How to learn this chapter",
-     "text": "Read each part once, then close the page and answer the stop-box questions from memory. In a classic study, students who tested themselves three times remembered 61% a week later, against 40% for students who reread four times (Roediger and Karpicke, 2006). Guess before you open each curiosity question, then check the answer. Come back in three days for the Day 3 card. 'Learning styles' have no good evidence behind them, and highlighting and rereading help little (Pashler and others, 2008. Dunlosky and others, 2013)."
+     "text": "Read each part once, then close the page and answer the stop-box questions from memory. In a classic study, students who tested themselves three times remembered 61% a week later, against 40% for students who reread four times (Roediger and Karpicke, 2006). Guess before you open each curiosity question, then check the answer. Come back in three days and try the stop-box questions again. 'Learning styles' have no good evidence behind them, and highlighting and rereading help little (Pashler and others, 2008. Dunlosky and others, 2013)."
     },
     {
      "type": "p",
@@ -4567,7 +4567,7 @@
      "type": "list",
      "items": [
       "Aisyah, 23, Kuala Lumpur. First job. RM15,000 in EPF (Malaysia's compulsory retirement fund) and RM5,000 in a fixed deposit, her only cash. A fixed-rate car loan. Plans to study abroad in three years.",
-      "The Rahmans, Penang. A RM400,000 floating home loan over 35 years, taken in 2023. RM250,000 in EPF, three months of spending in cash, and RM20,000 in a bond and sukuk fund for school fees in five years.",
+      "The Rahmans, Penang. A RM400,000 floating home loan (its rate moves with Bank Negara's rate) over 35 years, taken in 2023. RM250,000 in EPF, three months of spending in cash, and RM20,000 in a bond and sukuk fund for school fees in five years.",
       "Encik Hamid, 60, Ipoh. Retired. RM150,000 in EPF and RM150,000 in fixed deposits that he lives on. No loans.",
       "Linda, 68, United States. Retired. $240,000 in a broad bond fund she draws on, $300,000 in shares and $60,000 in short US government bills."
      ]
@@ -4615,14 +4615,14 @@
       },
       {
        "t": "Yield",
-       "d": "What a ticket earns per year if you buy at today's price and hold to the end. New tickets are sold at the going yield."
+       "d": "What a ticket earns per year if you buy at today's price and hold to the end. It is not the coupon: buy the RM4 ticket for RM92.28 and your yield is about 5%, not 4%."
       }
      ]
     },
     {
      "type": "insider",
      "label": "Malaysia note",
-     "text": "About half of Malaysia's government debt is Islamic paper, mostly GII. Most GII is built on a deferred sale of a commodity to the government, so holders earn profit, not interest. The ticket picture still works."
+     "text": "About half of Malaysia's government debt is Islamic paper, mostly GII (Government Investment Issues, the government's sukuk, or Islamic bonds). Most GII is built on a deferred sale of a commodity to the government, so holders earn profit, not interest. The ticket picture still works."
     },
     {
      "type": "h",
@@ -4657,7 +4657,7 @@
     {
      "type": "myth",
      "myth": "Government bonds are safe, so you cannot lose money on them.",
-     "reality": "They are safe from default, not from price. In 2022 the main US bond index lost 13.01%, its worst year since the index began in 1976. Hold a single bond to the end and you get every ringgit back. Sell a fund's units after a dip and the loss is real."
+     "reality": "They are safe from default (the borrower failing to pay), not from price. In 2022 the main US bond index lost 13.01%, its worst year since the index began in 1976. Hold a single bond to the end and you get every ringgit back. Sell a fund's units after a dip and the loss is real."
     },
     {
      "type": "h",
@@ -4665,7 +4665,7 @@
     },
     {
      "type": "p",
-     "text": "There are two markets. The first sale is the government's auction, a ticket booth. In Malaysia, Bank Negara runs it and 20 principal dealers must bid. Every later sale is at a resale stall, the secondary market: one investor sells to another through a dealer. The government gets nothing from resales, but the price shows what its next auction will cost."
+     "text": "There are two markets. The first sale is the government's auction, a ticket booth. In Malaysia, Bank Negara, the central bank, runs it and 20 principal dealers must bid. Every later sale is at a resale stall, the secondary market: one investor sells to another through a dealer. The government gets nothing from resales, but the resale yield tells it what yield it must offer at its next auction."
     },
     {
      "type": "diagram",
@@ -4676,13 +4676,13 @@
      "type": "steps",
      "items": [
       "To sell, you contact a dealer: a bank's trading desk or a broker.",
-      "The dealer shows a buy price and a sell price, say RM99.50 and RM99.60. The difference is the dealer's gap, its fee for standing ready. Ordinary buyers usually pay a wider gap than big investors, so ask for both prices.",
+      "The dealer shows two prices: it buys from you at RM99.50 and sells to buyers at RM99.60. The difference is the dealer's gap, its fee for standing ready. Ordinary buyers usually pay a wider gap than big investors, so ask for both prices.",
       "The price shown is the clean price. The buyer also pays you the interest earned since the last payment."
      ]
     },
     {
      "type": "p",
-     "text": "The dealer's gap is what you pay to be able to sell quickly. It widens when everyone wants out. In March 2020 even US government bonds were hard to sell, and the Fed bought $1.27 trillion in five weeks."
+     "text": "The dealer's gap is what you pay to be able to sell quickly. It widens when everyone wants out. In March 2020 even US government bonds were hard to sell, and the Fed, the US central bank, bought $1.27 trillion in five weeks."
     },
     {
      "type": "deeper",
@@ -4949,7 +4949,7 @@
       [
        "The ringgit",
        "Foreigners hold about a fifth of Malaysian government bonds",
-       "Can weaken, raising import prices. Not automatic: in 2026 it held near 4.08"
+       "Can weaken, raising import prices. Not automatic: in 2026 it held near 4.08 ringgit per US dollar"
       ],
       [
        "Taxes and services",
@@ -9124,10 +9124,10 @@
      "type": "tldr",
      "items": [
       "The G7, G10 and G20 are clubs, not governments: no treaty, no money of their own, no power to force anyone.",
-      "The G20 moved fast in the 2008 to 2009 crisis and slowly in calm years. That is a base rate, with exceptions.",
+      "The G20 moved fast in the 2008 to 2009 crisis and slowly in calm years. That is the usual pattern, with exceptions.",
       "Printing power is a ladder with three locks: its own currency, debt owed in that currency, and markets that let it print without a crash.",
       "Euro members, Ecuador and Panama cannot print on their own. Turkey, Argentina and Sri Lanka owed much of their debt in dollars and paid with inflation or default.",
-      "Malaysia is in no club but lives by club rules. Rung 3, near the top: 98.8% of its federal debt is borrowed in ringgit at home, yet foreigners hold about a fifth of its government bonds. Its brakes are the ringgit and its own fiscal laws.",
+      "Malaysia is in no club but lives by club rules. It sits on rung 3 of the printing ladder, where rung 1 is the top: 98.8% of its federal debt is borrowed in ringgit at home, yet foreigners hold about a fifth of its government bonds. Its brakes are the ringgit and its own fiscal laws.",
       "Five questions open the game board, and a four-step routine turns any headline into a game."
      ]
     },
@@ -9240,7 +9240,7 @@
        "G10",
        "1962",
        "The G7 plus Belgium, the Netherlands, Sweden and Switzerland: eleven countries",
-       "A standing credit line to the IMF"
+       "A standing credit line to the IMF (the International Monetary Fund, which lends to countries in trouble)"
       ],
       [
        "G20",
@@ -9293,7 +9293,7 @@
     },
     {
      "type": "p",
-     "text": "Malaysia's share of world exports is about two and a half times its share of world output. It lives by trade, so it lives by rules made in rooms it is not in. For each club's share of world wealth and debt, see the previous chapter."
+     "text": "Malaysia's share of world exports is about two and a half times its share of world output. It lives by trade, so it lives by rules made in rooms it is not in. For each club's share of world wealth and debt, see the Level 2 chapter \"The world's balance sheet\"."
     },
     {
      "type": "p",
@@ -9340,7 +9340,7 @@
     },
     {
      "type": "p",
-     "text": "The owner suspects the G20 is playing around. Here is its record on ten big promises: the headline pledges with a checkable target, every crisis programme, and the latest summits. The grades are our judgment of the evidence."
+     "text": "Many people suspect the G20 is just playing around. Here is its record on ten big promises, chosen by one rule: every headline pledge with a target you can check, every crisis programme, and the latest summits. The grades are our judgment of the evidence."
     },
     {
      "type": "table",
@@ -9352,7 +9352,7 @@
      "rows": [
       [
        "2009 crisis package ($1.1 trillion, plus $5 trillion of national spending plans)",
-       "Made, including a new SDR allocation in August 2009. Most of the $5 trillion was plans already announced",
+       "Made, including a new SDR allocation in August 2009 (SDRs are reserve money the IMF creates and hands to its members). Most of the $5 trillion was plans already announced",
        "Delivered"
       ],
       [
@@ -9404,12 +9404,12 @@
     },
     {
      "type": "p",
-     "text": "Score: 3 delivered, 4 partly, 2 not delivered, 1 stalled. So the suspicion is half right, and it depends on which promises you count, which is why our rule is stated above. The fast wins (2009, the 2020 debt pause, the 2021 SDRs) all came in crises. In calm years the G20 has moved slowly, and in 2025 and 2026 it split in the open. The impression fits October 2026. It would not have fitted April 2009."
+     "text": "Score: 3 delivered, 4 partly, 2 not delivered, 1 stalled. So the suspicion is half right, and the answer depends on which promises you count, which is why the rule for choosing them is stated above. The quick actions all came in crises: the 2009 package, the 2020 debt pause and the 2021 SDRs. The pause itself was fast, but the debt deals that should have followed took years. In calm years the G20 has moved slowly, and in 2025 and 2026 it split in the open. So the suspicion fits October 2026. It would not have fitted April 2009."
     },
     {
      "type": "insider",
      "label": "The game behind the scorecard",
-     "text": "In a crisis the G20 plays a stag hunt: acting together pays most, but each member acts only if it expects the others to, and a shared shock makes everyone expect it. Even in 2009 some did less than others. In calm years it plays free-rider games. A club with no treaty can coordinate the willing, not force the unwilling."
+     "text": "In a crisis the G20 plays a stag hunt (part 4 explains this game and the next): acting together pays most, but each member acts only if it expects the others to, and a shared shock makes everyone expect it. Even in 2009 some did less than others. In calm years it plays free-rider games. A club with no treaty can coordinate the willing, not force the unwilling."
     },
     {
      "type": "callout",
@@ -9441,7 +9441,7 @@
     },
     {
      "type": "p",
-     "text": "Here printing means a state and its central bank creating the money that the state's debts are owed in. Banks are the other printer, which Level 2 chapter 2 covers. To print freely, a country must open three locks."
+     "text": "Here printing means a state and its central bank creating the money that the state's debts are owed in. Banks are the other printer, which the Level 2 chapter \"Who really creates money\" covers. To print freely, a country must open three locks."
     },
     {
      "type": "steps",
@@ -9462,7 +9462,7 @@
     {
      "type": "diagram",
      "key": "print-ladder",
-     "caption": "Six rungs of printing power. Malaysia sits on rung 3, highlighted, near the top of it."
+     "caption": "Six rungs of printing power, with rung 1 at the top (rung 5 has two halves, 5a and 5b). Malaysia sits on rung 3, highlighted: the middle of the ladder, at the strong end of its rung."
     },
     {
      "type": "table",
@@ -9494,7 +9494,7 @@
       ],
       [
        "5a. Tied by choice",
-       "Could print, but tied its money to the dollar",
+       "Could print, but tied its money to the dollar. A peg fixes the exchange rate. A currency board backs every note with dollars",
        "Saudi Arabia (peg), Hong Kong (currency board)"
       ],
       [
@@ -9955,7 +9955,7 @@
     },
     {
      "type": "p",
-     "text": "Bank Negara's own market count puts its share near 1% of government securities. The Ministry counts all federal debt, so its shares differ."
+     "text": "Bank Negara counts only government securities traded in the market, and on that count it holds near 1%. The Ministry counts all federal debt, which gives 3.8%. Both are right for what they count. The same difference explains why government bonds alone (MGS and GII) were RM1.309 trillion in March 2026 while federal debt, which also counts Treasury bills and loans, was RM1.38 trillion in June."
     },
     {
      "type": "p",
@@ -10001,7 +10001,7 @@
     },
     {
      "type": "p",
-     "text": "Against Indonesia, Thailand and Singapore, Malaysia is typical in most ways: its own currency, a float with smoothing, debt at home, low inflation, a partly managed capital account. It is an outlier in five: the 1998 controls and peg, the highest foreign share of the three ASEAN peers checked (21.4% against 12.8% and 9.3%), a compulsory pension fund as its biggest lender, nearly half its debt in Islamic form, and a central bank that holds very little government debt."
+     "text": "Against Indonesia, Thailand and Singapore, Malaysia is typical in most ways: its own currency, a float with smoothing, debt at home, low inflation, a partly managed capital account (some limits on moving money in and out). It is an outlier in five: the 1998 controls and peg, the highest foreign share of the three ASEAN peers checked (about 21.5% against 12.8% for Indonesia and 9.3% for Thailand), a compulsory pension fund as its biggest lender, nearly half its debt in Islamic form, and a central bank that holds very little government debt."
     },
     {
      "type": "deeper",
@@ -10092,7 +10092,7 @@
     {
      "type": "insider",
      "label": "Where Malaysia sits",
-     "text": "Rung 3, near the top. It opens lock 1 (its own currency) and lock 2 strongly (98.8% of federal debt borrowed in ringgit at home). It only partly opens lock 3: about a fifth of its government bonds sit with foreigners, the ringgit is not a reserve currency, and reserves are about 0.9 times its short-term foreign debt, below a common rule of thumb of 1. If Bank Negara printed for the budget, it would break Malaysia's own fiscal lines, foreigners and savers could leave, and a falling ringgit would raise import prices."
+     "text": "Rung 3, near the top. It opens lock 1 (its own currency) and lock 2 strongly (98.8% of federal debt borrowed in ringgit at home). It only partly opens lock 3: about a fifth of its government bonds sit with foreigners, the ringgit is not a reserve currency, and reserves are about 0.9 times its short-term foreign debt (foreign debt due within a year), below a common rule of thumb of 1. If Bank Negara printed for the budget, it would break Malaysia's own fiscal lines, foreigners and savers could leave, and a falling ringgit would raise import prices."
     },
     {
      "type": "callout",
@@ -10114,45 +10114,52 @@
     },
     {
      "type": "p",
-     "text": "Game theory asks: what is each player's best move, given what the others might do? Each game below is a box with two players, two moves each, and what you get in each cell, from best to worst."
+     "text": "Game theory asks: what is each player's best move, given what the others might do? The table lists seven common games. Each one is then drawn as a box with two players, two moves each, and what each gets in every cell, from best to worst."
     },
     {
      "type": "table",
      "cols": [
+      "Box",
       "Game",
       "The shape",
       "Where it settles"
      ],
      "rows": [
       [
+       "1",
        "Stag hunt (coordination)",
        "Everyone gains most if all act. Acting alone is costly",
        "All act or none. Each acts only if it expects the others to"
       ],
       [
-       "Prisoner's dilemma",
-       "Each gains by cheating whatever the other does",
-       "Both cheat and both end up worse off"
-      ],
-      [
+       "2",
        "Free rider",
        "A shared good is paid for by some and enjoyed by all",
        "Each player's best move is to let others pay"
       ],
       [
+       "3",
+       "Prisoner's dilemma",
+       "Each gains by cheating whatever the other does",
+       "Both cheat and both end up worse off"
+      ],
+      [
+       "4",
        "Focal point",
        "Many choices would work, so players pick the one everyone expects",
        "The habit wins, even if others are as good"
       ],
       [
-       "Chicken",
-       "Two players drive at each other",
-       "Each tries to look more committed so the other swerves"
-      ],
-      [
+       "5 and 6",
        "Run",
        "Lenders who expect others to stay, stay. Those who expect others to flee, flee first",
        "The same borrower can be safe or bust depending on belief. Big reserves or a backstop make staying the best move"
+      ],
+      [
+       "7",
+       "Chicken",
+       "Two players drive at each other",
+       "Each tries to look more committed so the other swerves"
       ]
      ]
     },
@@ -10180,7 +10187,7 @@
       },
       {
        "q": "If every country wants a tariff edge or a cheaper currency, what happens when they all try at once?",
-       "a": "Tariffs are the clean prisoner's dilemma (box 3): all lose when all raise them, as in the tariff war of the early 1930s. Currencies are murkier: in the 1930s devaluing helped the countries that did it, and historians find that devaluing together would have sped recovery (Eichengreen and Sachs, 1985). Exits have been deals like the 1985 Plaza Accord, or truces like the October 2025 US and China pause, which can lapse. Two giants trading threats are playing chicken.",
+       "a": "Tariffs are the clean prisoner's dilemma (box 3): all lose when all raise them, as in the tariff war of the early 1930s. Currencies are murkier: in the 1930s devaluing helped the countries that did it, and historians find that devaluing together would have sped recovery (Eichengreen and Sachs, 1985). Exits have been deals like the 1985 Plaza Accord, or truces like the October 2025 US and China pause, which can lapse. Two giants trading threats are playing chicken (box 7).",
        "from": "rb-leader"
       },
       {
@@ -10345,6 +10352,30 @@
      "text": "Settles: all stay or all sell. A pension fund at home mostly cannot leave the currency, a foreign fund can, so a state that owes its own money at home risks a weaker currency, not default. Misses: who pays the loss."
     },
     {
+     "type": "table",
+     "cols": [
+      "Box 7. Chicken: the US and China, 2025 to 2026",
+      "Other backs down",
+      "Other escalates"
+     ],
+     "rows": [
+      [
+       "You back down",
+       "Middle: calm trade, nobody wins face",
+       "Bad: you lose face and the other gains"
+      ],
+      [
+       "You escalate",
+       "Best: you win the standoff",
+       "Worst: a full trade war hurts both most"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Settles: each tries to look committed so the other swerves first. Real case: in 2025 the US and China raised tariffs on each other step by step, then agreed a pause after their October 2025 leaders' meeting. That truce is due around 10 November 2026. Misses: both sides also act for audiences at home."
+    },
+    {
      "type": "h",
      "text": "8. Read any headline as a game"
     },
@@ -10354,9 +10385,12 @@
       "Players: who can act? Include the quiet ones.",
       "Moves: what can each do? Two moves each if you can.",
       "Payoffs: what does each get from each pair of moves? Best, good, bad or worst.",
-      "Order and information: who moves first, and who sees what?",
-      "Then ask what the game leaves out: elections, ideology, accidents and plain error."
+      "Order and information: who moves first, and who sees what?"
      ]
+    },
+    {
+     "type": "p",
+     "text": "Then name the game, and ask what it leaves out: elections, ideology, accidents and plain error."
     },
     {
      "type": "table",
