@@ -1,0 +1,1002 @@
+<title>Sion Scent Brain</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..600&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<style>
+/* Layout: a perfumer's lab notebook. One working column, the live composer first, reference modules below as numbered chapters of the brain. */
+:root{
+  --bg:#EEF1EC; --surface:#F8FAF6; --sunk:#E3E8E1; --ink:#16201B; --muted:#56635C; --line:#CDD5CC;
+  --accent:#1D7368; --accent-ink:#FFFFFF;
+  --creative:#A8366A; --accurate:#1D7368; --luxury:#9A6A16;
+  --ok:#2C7A4B; --warn:#B0561A; --bad:#A1262B; --theme:#5B5FB0;
+  --f-citrus:#D7B21E; --f-green:#6E9B3A; --f-aqua:#3C93B8; --f-floral:#D07A9E; --f-gourmand:#B9743A;
+  --f-spice:#C9542F; --f-wood:#8A6A45; --f-amber:#C98F2E; --f-smoke:#5E5A57; --f-skin:#B88A7A; --f-mineral:#7F8D99;
+  --display:"Bodoni Moda", "Didot", "Bodoni 72", Georgia, serif;
+  --body:"Hanken Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --mono:"JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0D1311; --surface:#141C19; --sunk:#0A0F0D; --ink:#E2E9E4; --muted:#93A29A; --line:#26322D;
+  --accent:#4DB3A4; --accent-ink:#06110E;
+  --creative:#E07AA6; --accurate:#4DB3A4; --luxury:#D9A64C;
+  --ok:#5FC08A; --warn:#E59456; --bad:#E5666B; --theme:#9DA1F0;
+  --f-citrus:#E6C84A; --f-green:#8DBA5A; --f-aqua:#62B1D3; --f-floral:#E59BBB; --f-gourmand:#D69560;
+  --f-spice:#E27556; --f-wood:#B08D66; --f-amber:#E0AB4E; --f-smoke:#8F8A86; --f-skin:#D4A898; --f-mineral:#A1AFBB;
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0D1311; --surface:#141C19; --sunk:#0A0F0D; --ink:#E2E9E4; --muted:#93A29A; --line:#26322D;
+  --accent:#4DB3A4; --accent-ink:#06110E;
+  --creative:#E07AA6; --accurate:#4DB3A4; --luxury:#D9A64C;
+  --ok:#5FC08A; --warn:#E59456; --bad:#E5666B; --theme:#9DA1F0;
+  --f-citrus:#E6C84A; --f-green:#8DBA5A; --f-aqua:#62B1D3; --f-floral:#E59BBB; --f-gourmand:#D69560;
+  --f-spice:#E27556; --f-wood:#B08D66; --f-amber:#E0AB4E; --f-smoke:#8F8A86; --f-skin:#D4A898; --f-mineral:#A1AFBB;
+  color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15.5px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1140px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 80px}
+h1,h2,h3{font-family:var(--display);font-weight:500;text-wrap:balance;margin:0;letter-spacing:-.01em}
+h1{font-size:clamp(2.3rem,6vw,4.1rem);line-height:1.02}
+h2{font-size:clamp(1.65rem,3.4vw,2.3rem);line-height:1.1}
+h3{font-size:1.3rem;line-height:1.2}
+p{margin:0}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.eyebrow{font-family:var(--mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.lede{font-size:1.08rem;color:var(--muted);max-width:66ch}
+.prose{max-width:68ch;display:grid;gap:12px}
+.prose p{color:var(--ink)}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* masthead */
+.mast{display:grid;gap:18px;padding-block:8px 26px;border-bottom:1px solid var(--line)}
+.mast-top{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline}
+.brand{font-family:var(--mono);font-size:.78rem;letter-spacing:.2em;text-transform:uppercase}
+.brand b{color:var(--accent);font-weight:600}
+.mast h1 em{font-style:italic;color:var(--accent)}
+.toc{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;scrollbar-width:thin}
+.toc a{flex:none;font-family:var(--mono);font-size:.74rem;text-decoration:none;color:var(--ink);border:1px solid var(--line);padding:6px 10px;border-radius:999px;background:var(--surface)}
+.toc a:hover{border-color:var(--accent);color:var(--accent)}
+.stats{display:flex;flex-wrap:wrap;gap:10px 28px}
+.stat{display:grid}
+.stat .n{font-family:var(--display);font-size:1.9rem;line-height:1}
+.stat .l{font-size:.8rem;color:var(--muted)}
+
+section{padding-block:44px 8px;display:grid;gap:20px}
+.sec-head{display:grid;gap:8px}
+.chapter{font-family:var(--mono);font-size:.74rem;color:var(--accent);letter-spacing:.12em}
+
+/* composer */
+.composer{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:clamp(16px,3vw,28px);display:grid;gap:22px}
+.step{display:grid;gap:10px}
+.step-label{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.step-label .k{font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.step-label .t{font-weight:600}
+.step-label .h{color:var(--muted);font-size:.88rem}
+textarea{width:100%;min-height:92px;resize:vertical;font:inherit;font-size:1.15rem;line-height:1.4;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+textarea:focus{outline:2px solid var(--accent);outline-offset:1px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font:inherit;font-size:.86rem;border:1px solid var(--line);background:var(--bg);color:var(--ink);padding:5px 11px;border-radius:999px;cursor:pointer}
+.chip:hover{border-color:var(--accent)}
+.seg{display:flex;flex-wrap:wrap;gap:6px}
+.seg button{font:inherit;font-size:.9rem;border:1px solid var(--line);background:var(--bg);color:var(--ink);padding:8px 13px;border-radius:8px;cursor:pointer;text-align:left}
+.seg button small{display:block;color:var(--muted);font-size:.74rem}
+.seg button[aria-pressed="true"]{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 12%,var(--bg));box-shadow:inset 0 0 0 1px var(--accent)}
+.row2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+details.lens{border:1px dashed var(--line);border-radius:10px;padding:10px 14px}
+details.lens summary{cursor:pointer;font-weight:600}
+details.lens summary span{font-weight:400;color:var(--muted);font-size:.86rem}
+.lens-grid{display:grid;gap:12px;margin-top:12px}
+.lens-row{display:grid;gap:6px}
+.lens-row .lab{font-size:.8rem;color:var(--muted)}
+.actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.btn{font:inherit;font-weight:600;border:0;border-radius:10px;padding:12px 18px;cursor:pointer;background:var(--accent);color:var(--accent-ink)}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.btn:disabled{opacity:.5;cursor:default}
+.status{font-size:.86rem;color:var(--muted)}
+
+/* results */
+#out{display:grid;gap:22px}
+.gate{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:start;border-radius:12px;padding:14px 16px;border:1px solid var(--line);background:var(--surface)}
+.gate .pill{font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;padding:4px 9px;border-radius:6px;color:var(--bg);white-space:nowrap}
+.v-clear{background:var(--ok)} .v-theme{background:var(--theme)} .v-persona{background:var(--luxury)} .v-transmute{background:var(--warn)} .v-decline{background:var(--bad)}
+.gate ul{margin:4px 0 0;padding-left:18px;color:var(--muted);font-size:.9rem}
+.src{font-family:var(--mono);font-size:.7rem;color:var(--muted)}
+.decomp{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.dcol{display:grid;gap:6px;align-content:start}
+.dcol h4{margin:0;font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:500}
+.tag{display:inline-block;font-size:.84rem;background:var(--sunk);padding:3px 8px;border-radius:6px;margin:0 4px 4px 0}
+.tag.un{border:1px dashed var(--line);background:transparent;color:var(--muted)}
+.viz{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:18px;align-items:start}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px;min-width:0}
+.panel-h{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;margin-bottom:8px}
+.legend{display:flex;gap:12px;flex-wrap:wrap;font-size:.78rem;color:var(--muted)}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+.axes{display:grid;gap:8px;margin-top:10px}
+.axis{display:grid;grid-template-columns:5.2em 1fr 5.2em;gap:8px;align-items:center;font-size:.78rem;color:var(--muted)}
+.axis .bar{position:relative;height:6px;background:var(--sunk);border-radius:3px}
+.axis .bar b{position:absolute;top:-4px;width:14px;height:14px;border-radius:50%;background:var(--ink);transform:translateX(-50%)}
+.axis span:last-child{text-align:right}
+.scroll-x{overflow-x:auto}
+svg text{font-family:var(--mono)}
+
+.scents{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;display:grid;gap:12px;align-content:start;min-width:0;border-top:4px solid var(--hc)}
+.card .head{display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+.card .hlabel{font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--hc)}
+.card h3{font-size:1.55rem}
+.card .story{color:var(--muted);font-size:.92rem}
+.metrics{display:grid;grid-template-columns:repeat(2,1fr);gap:6px 12px}
+.metric{display:grid;gap:3px}
+.metric .ml{display:flex;justify-content:space-between;font-size:.74rem;color:var(--muted)}
+.metric .mb{height:5px;background:var(--sunk);border-radius:3px;overflow:hidden}
+.metric .mb i{display:block;height:100%;background:var(--hc)}
+table.f{width:100%;border-collapse:collapse;font-size:.82rem}
+table.f th{font-family:var(--mono);font-weight:500;font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);text-align:left;padding:4px 4px;border-bottom:1px solid var(--line)}
+table.f td{padding:4px 4px;border-bottom:1px solid color-mix(in srgb,var(--line) 60%,transparent);vertical-align:middle}
+table.f td.num,table.f th.num{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+.tier{font-family:var(--mono);font-size:.64rem;padding:1px 5px;border-radius:4px;background:var(--sunk);color:var(--muted)}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;vertical-align:0}
+.pbar{display:block;height:3px;background:var(--hc);border-radius:2px;margin-top:3px;opacity:.75}
+.disp{font-size:.78rem;color:var(--muted);background:var(--sunk);border-radius:8px;padding:8px 10px}
+.flagline{font-size:.76rem;color:var(--warn)}
+.decline-box{display:grid;gap:10px;background:var(--surface);border:1px solid var(--bad);border-radius:12px;padding:16px}
+
+/* reference blocks */
+.layers{display:grid;gap:0;counter-reset:l;border-top:1px solid var(--line)}
+.layer{display:grid;grid-template-columns:5.5rem minmax(0,1fr) minmax(0,1.2fr);gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}
+.layer .lid{font-family:var(--mono);font-size:.8rem;color:var(--accent)}
+.layer .lname{font-weight:600}
+.layer .ldesc{color:var(--muted);font-size:.92rem}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.box{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px;display:grid;gap:8px;align-content:start}
+.box h3{font-size:1.2rem}
+.box p,.box li{font-size:.92rem;color:var(--muted)}
+.box ul{margin:0;padding-left:18px;display:grid;gap:4px}
+.headbox{border-top:4px solid var(--hc)}
+table.ref{width:100%;border-collapse:collapse;font-size:.88rem;min-width:640px}
+table.ref th{text-align:left;font-family:var(--mono);font-weight:500;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding:8px 8px;border-bottom:1px solid var(--line);vertical-align:bottom}
+table.ref td{padding:9px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+table.ref td.num{font-family:var(--mono);font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+table.ref tr.load{cursor:pointer}
+table.ref tr.load:hover td{background:var(--sunk)}
+.tablewrap{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.famchips{display:flex;flex-wrap:wrap;gap:6px}
+.famchips button{font:inherit;font-size:.8rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:4px 10px;border-radius:999px;cursor:pointer}
+.famchips button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.subdots i{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--line);margin-right:2px}
+.subdots i.on{background:var(--accent)}
+.ladder{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--surface)}
+.rung{padding:14px;display:grid;gap:6px;align-content:start;border-right:1px solid var(--line)}
+.rung:last-child{border-right:0}
+.rung .rk{font-family:var(--mono);font-size:.7rem;color:var(--accent)}
+.rung b{font-size:1rem}
+.rung p{font-size:.86rem;color:var(--muted)}
+.rung .ex{font-family:var(--mono);font-size:.74rem;color:var(--ink)}
+pre.code{margin:0;font-family:var(--mono);font-size:.78rem;line-height:1.5;background:var(--sunk);border:1px solid var(--line);border-radius:12px;padding:14px;overflow-x:auto;color:var(--ink)}
+ol.flow{margin:0;padding-left:22px;display:grid;gap:8px;max-width:72ch}
+ol.flow li::marker{font-family:var(--mono);color:var(--accent)}
+.stage{display:grid;grid-template-columns:7rem minmax(0,1fr);gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+.stage .sk{font-family:var(--display);font-size:1.6rem;line-height:1}
+.stage .sk small{display:block;font-family:var(--mono);font-size:.68rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-top:6px}
+.stage h3{font-size:1.15rem;margin-bottom:6px}
+.stage ul{margin:6px 0 0;padding-left:18px;color:var(--muted);font-size:.92rem;display:grid;gap:3px}
+.callout{border-left:3px solid var(--accent);padding:4px 0 4px 14px;color:var(--ink);max-width:70ch}
+.u{font-family:var(--mono);font-size:.68rem;color:var(--warn);margin-left:4px}
+footer{margin-top:50px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:.84rem;display:grid;gap:6px}
+
+@media (max-width:900px){
+  .scents{grid-template-columns:1fr}
+  .viz{grid-template-columns:1fr}
+  .layer{grid-template-columns:4rem minmax(0,1fr)}
+  .layer .ldesc{grid-column:2}
+  .ladder{grid-template-columns:1fr 1fr}
+  .rung:nth-child(2){border-right:0}
+  .rung:nth-child(-n+2){border-bottom:1px solid var(--line)}
+}
+@media (max-width:520px){
+  .ladder{grid-template-columns:1fr}
+  .rung{border-right:0;border-bottom:1px solid var(--line)}
+  .stage{grid-template-columns:1fr;gap:6px}
+  .gate{grid-template-columns:1fr}
+}
+.fade{animation:fade .5s ease both}
+@keyframes fade{from{opacity:.25;transform:translateY(4px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.fade{animation:none}}
+</style>
+
+<div class="wrap">
+<header class="mast">
+  <div class="mast-top">
+    <div class="brand"><b>Sion</b> · Scent Brain · build 0.1</div>
+    <div class="eyebrow">Master node for detergent wash and, later, the fragrance house</div>
+  </div>
+  <h1>Type anything.<br>Get <em>three</em> scents back.</h1>
+  <p class="lede">EveryHuman starts with a personality test. Sion starts with the brief. A person types a word, a memory, a war, a bean or a pop star, and the brain translates it into three formulas: one creative, one accurate, one luxury. Each one passes the same safety and beauty checks. This page is the brain's first working build. It holds the plan and the rules, and it can already compose.</p>
+  <div class="stats">
+    <div class="stat"><span class="n mono">64</span><span class="l">cartridges in the machine palette</span></div>
+    <div class="stat"><span class="n mono">24</span><span class="l">olfactive dimensions in the latent map</span></div>
+    <div class="stat"><span class="n mono">1.5×10¹¹</span><span class="l">ways to pick 10 of 64, before dosing</span></div>
+    <div class="stat"><span class="n mono">3</span><span class="l">heads: Creative, Accurate, Luxury</span></div>
+  </div>
+  <nav class="toc" aria-label="Sections">
+    <a href="#composer">01 Composer</a><a href="#architecture">02 Architecture</a><a href="#heads">03 Three heads</a><a href="#ladder">04 Translation rules</a><a href="#cases">05 Hard briefs</a><a href="#palette">06 Palette</a><a href="#learning">07 Learning loop</a><a href="#landscape">08 Landscape</a><a href="#roadmap">09 Roadmap</a>
+  </nav>
+</header>
+
+<section id="composer">
+  <div class="sec-head"><span class="chapter">01 · COMPOSER</span><h2>Brief the brain</h2>
+  <p class="lede">The offline engine answers instantly from the rules on this page. "Deepen with Claude" sends the same brief, palette and rules to Claude for a richer reading. Its formula then goes back through the same local validator, so the AI proposes and the rules decide.</p></div>
+  <div class="composer">
+    <div class="step">
+      <div class="step-label"><span class="k">Step 1</span><span class="t">Describe what you want to smell</span><span class="h">A word, a scene, a person's vibe, a feeling. Anything.</span></div>
+      <textarea id="brief" aria-label="Describe your scent">Firecrackers</textarea>
+      <div class="chips" id="examples"></div>
+    </div>
+    <div class="row2">
+      <div class="step">
+        <div class="step-label"><span class="k">Step 2</span><span class="t">Stay in a frame</span><span class="h">Shapes all three scents</span></div>
+        <div class="seg" id="frame" role="group" aria-label="Frame"></div>
+      </div>
+      <div class="step">
+        <div class="step-label"><span class="k">Format</span><span class="t">What it goes into</span><span class="h">Sets dose and the dispense program</span></div>
+        <div class="seg" id="format" role="group" aria-label="Format"></div>
+      </div>
+    </div>
+    <details class="lens" id="lensbox">
+      <summary>Wearer Lens <span>optional · 3 taps · only steers Scent 3 and the dose</span></summary>
+      <div class="lens-grid" id="lens"></div>
+    </details>
+    <div class="actions">
+      <button class="btn" id="go">Compose three scents</button>
+      <button class="btn ghost" id="deep" hidden>Deepen with Claude</button>
+      <button class="btn ghost" id="stop" hidden>Stop</button>
+      <span class="status" id="status" aria-live="polite"></span>
+    </div>
+  </div>
+  <div id="out"></div>
+</section>
+
+<section id="architecture">
+  <div class="sec-head"><span class="chapter">02 · ARCHITECTURE</span><h2>How a brief becomes a formula</h2>
+  <p class="lede">Eight layers, run in order. Layers 2 to 4 are where a language model adds the most. Layers 1, 6 and 7 are deterministic code, because safety, regulation and dosing must never depend on a model's mood.</p></div>
+  <div class="layers" id="layers"></div>
+</section>
+
+<section id="heads">
+  <div class="sec-head"><span class="chapter">03 · THREE HEADS</span><h2>Scent 1, 2 and 3</h2>
+  <p class="lede">Your umbrella, kept and sharpened. Every brief always returns all three, in this order, so a person learns the brand's grammar after one use.</p></div>
+  <div class="grid3">
+    <div class="box headbox" style="--hc:var(--creative)"><span class="eyebrow" style="color:var(--creative)">Scent 1 · Creative</span><h3>The brain's own reading</h3>
+      <p>Finds the dominant feeling, then adds a deliberate contrast. Firecrackers get a milky, nostalgic side. Chocolate gets hot metal. This is where new, unexplored scents come from.</p>
+      <ul><li>Starts from 10 picks, prefers bridge accords</li><li>Twist strength set by the frame (0.6 default, 1.3 in Unexplored)</li><li>Extra input later: a Twist dial and a "surprise me" seed</li></ul></div>
+    <div class="box headbox" style="--hc:var(--accurate)"><span class="eyebrow" style="color:var(--accurate)">Scent 2 · Accurate</span><h3>As close as wearable allows</h3>
+      <p>Follows the brief literally, through the translation ladder. Strange briefs stay strange, but the beauty floor stops them smelling like the real thing when the real thing is foul.</p>
+      <ul><li>Starts from 8 picks, direct hints weighted highest</li><li>Fidelity score is the main metric</li><li>Never uses the Wearer Lens, so it stays a pure reading</li></ul></div>
+    <div class="box headbox" style="--hc:var(--luxury)"><span class="eyebrow" style="color:var(--luxury)">Scent 3 · Luxury</span><h3>Couture direction</h3>
+      <p>The same idea in finer materials: orris, sandalwood, rose absolute, oud accord, ambergris-type. Longer dry-down, smoother edges, more base.</p>
+      <ul><li>Starts from 12 picks, cost bias toward naturals</li><li>Wearer Lens applies here: climate, moment, projection</li><li>Highest concentration option per format</li></ul></div>
+  </div>
+  <div class="box">
+    <span class="eyebrow">Decision · the personality test</span>
+    <h3>No onboarding quiz. A 3-tap Wearer Lens instead.</h3>
+    <p>The brief is the product, so it comes first and stands alone. A personality test is a proxy. It guesses what you might like from who you might be. The Wearer Lens only asks things that physically change how a perfume performs: the climate you live in, when you wear it, and how far it should travel. It is optional, comes after the brief, and only steers Scent 3 and the dose. A fun "vibe quiz" can still exist as marketing content and data collection, but it never overrides what someone typed.</p>
+  </div>
+</section>
+
+<section id="ladder">
+  <div class="sec-head"><span class="chapter">04 · TRANSLATION RULES</span><h2>The ladder, the floor and the gate</h2>
+  <p class="lede">Most briefs name things that have no smell, or a bad one. The brain climbs a four-rung ladder until it reaches something a perfumer can build.</p></div>
+  <div class="ladder">
+    <div class="rung"><span class="rk">RUNG 1 · LITERAL</span><b>It has a good smell</b><p>Build it directly from materials or a bridge accord.</p><span class="ex">Soybeans → soy milk &amp; green bean accord</span></div>
+    <div class="rung"><span class="rk">RUNG 2 · EVOCATIVE</span><b>It smells bad</b><p>Keep its signature at trace level and wrap it in something beautiful.</p><span class="ex">Feces chocolate → indolic trace, patchouli, cocoa</span></div>
+    <div class="rung"><span class="rk">RUNG 3 · ASSOCIATIVE</span><b>It has no smell</b><p>Smell the things around it: places, materials, weather.</p><span class="ex">DEFCON 3 → hot metal, aldehydes, pepper</span></div>
+    <div class="rung"><span class="rk">RUNG 4 · ABSTRACT</span><b>It is pure idea</b><p>Map by synesthesia: temperature, brightness, texture, tempo.</p><span class="ex">DMT → ozone, ritual smoke, electric violet leaf</span></div>
+  </div>
+  <div class="grid3">
+    <div class="box"><span class="eyebrow">Rule · Beauty floor</span><h3>Odd is allowed. Foul is not.</h3><p>Malodor materials (indolic, fecal, sulfurous, smoky tar) have hard caps in the palette. If the harsh share of a formula passes 45%, the validator moves 15% of the formula into musk and ambergris-type comfort. Creative may go to 55%.</p></div>
+    <div class="box"><span class="eyebrow">Rule · Ethics gate</span><h3>Some briefs are declined</h3><p>Sexual violence, abuse of children, atrocities against real groups, self-harm and hate are never turned into a product. The brain says so plainly and offers the feeling the person may have been reaching for, such as danger, menace or night.</p></div>
+    <div class="box"><span class="eyebrow">Rule · Persona</span><h3>Read the aesthetic, never the person</h3><p>"Smells like Kanye West" is read as a public aesthetic. The brain never claims to know how a real person smells, and the person's name never goes on a bottle or in marketing without a licence (right of publicity).</p></div>
+    <div class="box"><span class="eyebrow">Rule · Themes</span><h3>War and drugs as art</h3><p>War, nuclear and drug briefs are accepted as artistic themes. Copy stays solemn and never glorifies. Drug briefs get the experience, never the substance: no claims of effects and no cannabis-derived ingredients.</p></div>
+    <div class="box"><span class="eyebrow">Rule · Proposer and disposer</span><h3>The model never has the last word</h3><p>Claude or any future model proposes. Local code checks every material ID against the palette, applies caps, enforces the beauty floor, fixes the sum to 100 and converts to grams or millilitres. Nothing a model writes can push a material past its cap.</p></div>
+    <div class="box"><span class="eyebrow">Rule · Regulation</span><h3>IFRA comes before taste</h3><p>The caps on this page are working placeholders. Before launch, every cartridge needs an IFRA certificate from its supplier for the 51st Amendment (fully in force since Oct 2025, check for a 52nd), per product category: detergent, softener and fine fragrance each have different limits. Allergen labelling (EU) follows from the final formula.</p></div>
+  </div>
+</section>
+
+<section id="cases">
+  <div class="sec-head"><span class="chapter">05 · HARD BRIEFS</span><h2>What real people will type</h2>
+  <p class="lede">Your examples, plus the edge cases, run live through the gate on this page. Tap a row to load it into the composer.</p></div>
+  <div class="tablewrap"><table class="ref" id="cases-t"><thead><tr><th>Brief</th><th>Gate</th><th>How the brain reads it</th></tr></thead><tbody></tbody></table></div>
+</section>
+
+<section id="palette">
+  <div class="sec-head"><span class="chapter">06 · PALETTE</span><h2>How many liquids is enough</h2>
+  <p class="lede">Freedom of brief does not need an endless shelf. It needs the right shelf. A brief like "soybeans" or "gunpowder" is solved by a bridge accord: a small pre-made blend of 5 to 30 raw materials that a perfumer builds once and the machine treats as one liquid.</p></div>
+  <div class="tablewrap"><table class="ref"><thead><tr><th>Stage</th><th>Liquids</th><th>What they are</th><th>Why that number</th></tr></thead><tbody>
+    <tr><td><b>1 · Sion Wash</b><br><span class="eyebrow">now</span></td><td class="num">24</td><td>Laundry-grade accords, each pre-tested in your detergent base for stability and colour</td><td>Detergent customisation is a 3 to 6 accord mix at 0.5 to 1.1% load. 24 covers every family twice. Only high-substantivity materials survive rinse and dry (boiling point at or above 250 °C and ClogP at or above 3).</td></tr>
+    <tr><td><b>2 · The machine</b><br><span class="eyebrow">next</span></td><td class="num">64</td><td>42 single materials + 22 bridge accords (the palette below)</td><td>EveryHuman runs on 46 accords, iRomaScents on 45, Maison 21G on about 30. 64 beats all of them and still fits an 8 × 8 cartridge bay. Picking 10 of 64 gives 151 billion sets before you even vary the dose.</td></tr>
+    <tr><td><b>3 · The house</b><br><span class="eyebrow">later</span></td><td class="num">600+</td><td>A full perfumer's organ plus a growing accord library</td><td>Professional organs hold 1,000 to 3,000 materials and perfumers work from a sub-palette of about 800. A single formula uses 20 to 80. Here the brain drafts and a human perfumer finishes.</td></tr>
+  </tbody></table></div>
+  <div class="famchips" id="famchips"></div>
+  <div class="tablewrap"><table class="ref" id="pal-t"><thead><tr><th>ID</th><th>Material</th><th>Tier</th><th>Family</th><th>Type</th><th class="num">Cap %</th><th>Laundry</th><th class="num">Cost</th></tr></thead><tbody></tbody></table></div>
+  <p class="status">Cap % is a working ceiling as a share of the fragrance concentrate, not an IFRA figure. Laundry dots show how well a material survives the wash (1 to 3).</p>
+</section>
+
+<section id="learning">
+  <div class="sec-head"><span class="chapter">07 · LEARNING LOOP</span><h2>How the brain gets smarter</h2>
+  <p class="lede">Today the brain is rules plus a language model. Every order turns it into something no competitor has: a dataset of free-text briefs paired with formulas and with what people actually thought when they smelled them.</p></div>
+  <div class="row2">
+    <div class="box"><span class="eyebrow">The flywheel</span>
+      <ol class="flow">
+        <li>Person types a brief and picks a frame and format</li>
+        <li>Brain returns three formulas and stores the full trace</li>
+        <li>Person chooses one (the choice itself is a label)</li>
+        <li>Machine or lab dispenses. Sample ships.</li>
+        <li>Person rates it on fidelity, beauty and wear after 7 days</li>
+        <li>Perfumer reviews the outliers, best and worst</li>
+        <li>Rated pairs train the next version of the brain</li>
+      </ol></div>
+    <div class="box"><span class="eyebrow">Model versions</span>
+      <ul>
+        <li><b>v0 · now</b> Rules, lexicon and palette on this page, plus Claude for reading the brief.</li>
+        <li><b>v1 · 1k ratings</b> Retrieval: similar past briefs and their best-rated formulas are fed to the model as examples.</li>
+        <li><b>v2 · 10k ratings</b> A learned preference model scores candidate formulas before anyone smells them.</li>
+        <li><b>v3 · house</b> A molecular layer built on an odor map (OpenPOM, trained on about 5,000 molecules) to design new accords and check that a formula lands where the brief points.</li>
+      </ul></div>
+  </div>
+  <div class="box"><span class="eyebrow">The record kept for every creation · Scent Genome v0.1</span>
+<pre class="code">{
+  "genome_id": "SG-2026-000001",
+  "brief": { "text": "firecrackers", "lang": "en", "frame": "creative", "format": "detergent" },
+  "gate": { "verdict": "clear", "flags": [], "rung": 3 },
+  "decomposition": { "literal": ["spent flint"], "sensory": ["warm","bright"], "emotional": ["celebration"], "cultural": ["Lunar New Year"] },
+  "latent": { "smoky": 0.92, "mineral": 0.61, "citrus": 0.55, "...": "24 dims" },
+  "lens": { "climate": "humid", "moment": "night", "projection": "presence" },
+  "scents": [ { "head": "creative", "name": "...", "formula": [ { "id": "GUNP", "pct": 1.5 } ], "metrics": { "fidelity": 81, "novelty": 64 } } ],
+  "chosen": "creative",
+  "batch": { "machine": "M-01", "lot": "L-0001", "dispensed_at": "2026-11-03T10:00:00Z" },
+  "rating": { "fidelity": 8, "beauty": 9, "wear": 7, "repurchase": true, "free_text": "..." },
+  "perfumer_review": { "by": "staff id", "verdict": "keep", "edits": [] }
+}</pre></div>
+  <div class="grid3">
+    <div class="box"><span class="eyebrow">Research intake</span><h3>What the brain reads</h3><ul><li>Pyrfume: 40+ odorant datasets, one format, licence per dataset</li><li>GoodScents + Leffingwell: about 5,000 molecules, 138 descriptors (the "5,000 scent database")</li><li>DREAM mixture challenges: 650 to 700+ rated mixtures</li><li>Classic texts: Arctander, Calkin &amp; Jellinek</li><li>Patents for laundry substantivity rules</li><li>IFRA Standards library and supplier certificates</li></ul></div>
+    <div class="box"><span class="eyebrow">Do not scrape</span><h3>Licence first</h3><p>Fragrantica, Parfumo (about 231,000 perfumes) and Basenotes are consumer databases with terms that forbid scraping. Use them for human research and taste, or license the data. Leffingwell carries a restricted licence. Your own rated genomes are the only data you fully own.</p></div>
+    <div class="box"><span class="eyebrow">Evaluation</span><h3>How we know it works</h3><ul><li>Blind triangle tests: can people tell Scent 2 matches its brief?</li><li>Beauty: 9-point hedonic scale, target mean 6.5+</li><li>Wear: longevity on skin and on dry fabric at 24 h</li><li>Perfumer veto rate below 10% before v2 ships</li></ul></div>
+  </div>
+</section>
+
+<section id="landscape">
+  <div class="sec-head"><span class="chapter">08 · LANDSCAPE</span><h2>Who else is doing this</h2>
+  <p class="lede">Researched 3 Nov 2026 from public reporting. Figures marked <span class="u">U</span> are uncertain or disputed across sources.</p></div>
+  <div class="tablewrap"><table class="ref"><thead><tr><th>Player</th><th>Input</th><th>Engine and palette</th><th>What Sion takes from it</th></tr></thead><tbody>
+    <tr><td><b>EveryHuman</b><br><span class="status">ScenTronix, Breda</span></td><td>About 23-item personality questionnaire</td><td>3 algorithms → 3 scents. 46 accords of 5 to 8 materials each. In-store dispenser, patented. About £45 for three 5 ml. EDT strength. 75k+ users<span class="u">U</span></td><td>Three outputs per session works. The quiz-first input and fixed EDT strength are the gap Sion fills.</td></tr>
+    <tr><td><b>Osmo</b><br><span class="status">Wiltschko, ex-Google</span></td><td>Text or image (Inspire beta), GC-MS sample</td><td>Principal Odor Map, a graph neural net on about 5,000 molecules. B2B house "Generation" with captive molecules. $70M Series B in 2026<span class="u">U</span></td><td>The molecular layer for v3. Proof that text-to-scent is a real research direction.</td></tr>
+    <tr><td><b>IBM Philyra × Symrise</b></td><td>Brief from a brand</td><td>Trained on about 1.7M formulas<span class="u">U</span>. A perfumer refined the output (O Boticário, 2019)</td><td>Human perfumer in the loop is how big houses ship AI work.</td></tr>
+    <tr><td><b>Givaudan Carto · Myrissi</b></td><td>Perfumer on a touchscreen · colours and images</td><td>Odour Value Map plus instant-sampling robot. Myrissi: 25,000+ consumer insights linking scent to colour</td><td>Synesthetic mapping (rung 4) has commercial backing.</td></tr>
+    <tr><td><b>dsm-firmenich</b></td><td>Brand brief · emotion target</td><td>Scentmate co-creation (status unclear<span class="u">U</span>). EmotiON: 40,000+ tested fragrances, 1M+ insights</td><td>Emotion as an explicit layer in decomposition.</td></tr>
+    <tr><td><b>Moodify</b></td><td>A specific malodor</td><td>Perception-modification malodor control, AI picks neutraliser mixes</td><td>Laundry malodor (damp towels, gym kit) as a Sion Wash feature.</td></tr>
+    <tr><td><b>AromaGen</b><br><span class="status">MIT, 2026</span></td><td>Text or image</td><td>Multimodal LLM outputs ratios over 12 base odorants. Median 8/10 similarity after refinement, 26 people</td><td>LLM-to-ratio works even on tiny palettes. 64 is plenty.</td></tr>
+    <tr><td><b>Maison 21G · Le Labo · Sillages</b></td><td>Pick notes · pick a perfume · workshop</td><td>21G blends 2 of about 30 notes by machine. Le Labo compounds fixed formulas to order</td><td>Retail theatre: the name, date and place on the label.</td></tr>
+  </tbody></table></div>
+</section>
+
+<section id="roadmap">
+  <div class="sec-head"><span class="chapter">09 · ROADMAP</span><h2>From wash to fragrance house</h2></div>
+  <div>
+    <div class="stage"><div class="sk">Stage 1<small>Sion Wash</small></div><div><h3>Custom-scented detergent</h3><p>The brain runs in detergent and softener formats only. Formulas are blended by hand from 24 laundry accords. Every order creates a Scent Genome record.</p><ul><li>Pick a fragrance supplier who will build and IFRA-certify 24 laundry accords</li><li>Stability test each accord in your base: 4 weeks at 40 °C, colour and pH</li><li>Launch the brief box on the site with the three-scent result</li><li>Collect the first 1,000 ratings</li></ul></div></div>
+    <div class="stage"><div class="sk">Stage 2<small>The machine</small></div><div><h3>64-cartridge dispenser</h3><p>The brain sends a dispense program: cartridge ID and grams or millilitres, at 0.01 ml resolution. Fine fragrance formats open up. Retrieval from rated genomes switches on (v1).</p><ul><li>Gravimetric dosing (weigh, do not just pump) for accuracy below 1%</li><li>Cartridge freshness tracking: citrus and aldehydes oxidise</li><li>Batch log per bottle for recalls and repeat orders</li></ul></div></div>
+    <div class="stage"><div class="sk">Stage 3<small>The house</small></div><div><h3>Sion fragrance house</h3><p>A full organ, in-house perfumers, captive accords designed with a molecular model (v3). The brain becomes the house's creative director: it drafts, the perfumer signs.</p><ul><li>Signature collection built from the most-loved briefs</li><li>Licensed collaborations replace unlicensed persona briefs</li><li>Open the brief box to other brands as a B2B service</li></ul></div></div>
+  </div>
+</section>
+
+<footer>
+  <span>Sion Scent Brain · build 0.1 · 3 Nov 2026</span>
+  <span>Palette caps and dose levels are planning placeholders. Every formula must be checked against current IFRA Standards and supplier certificates, then stability and skin tested, before anything is sold.</span>
+</footer>
+</div>
+
+<script>
+(function(){
+"use strict";
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+
+/* ---------- Olfactive latent space: 24 dimensions ---------- */
+const DIMS=["citrus","green","aquatic","aromatic","spicyFresh","spicyWarm","floralWhite","floralRose","powdery","fruity","sweet","cocoa","woodyDry","woodyCreamy","smoky","leather","animalic","musky","amber","earthy","mineral","aldehydic","lactonic","nutty"];
+const I={};DIMS.forEach((d,i)=>I[d]=i);
+const DS={citrus:"Citrus",green:"Green",aquatic:"Aquatic",aromatic:"Aromatic",spicyFresh:"Fresh spice",spicyWarm:"Warm spice",floralWhite:"White floral",floralRose:"Rose",powdery:"Powder",fruity:"Fruit",sweet:"Sweet",cocoa:"Cocoa",woodyDry:"Dry wood",woodyCreamy:"Cream wood",smoky:"Smoke",leather:"Leather",animalic:"Animalic",musky:"Musk",amber:"Amber",earthy:"Earth",mineral:"Mineral",aldehydic:"Aldehyde",lactonic:"Milky",nutty:"Nutty"};
+const EMO={citrus:"optimism",green:"aliveness",aquatic:"freedom",aromatic:"focus",spicyFresh:"alertness",spicyWarm:"heat",floralWhite:"seduction",floralRose:"romance",powdery:"nostalgia",fruity:"play",sweet:"comfort",cocoa:"indulgence",woodyDry:"resolve",woodyCreamy:"calm",smoky:"danger",leather:"power",animalic:"intimacy",musky:"closeness",amber:"warmth",earthy:"grounding",mineral:"tension",aldehydic:"clarity",lactonic:"tenderness",nutty:"homeliness"};
+const CONTRAST={citrus:["leather","smoky"],green:["cocoa","animalic"],aquatic:["spicyWarm","amber"],aromatic:["sweet","leather"],spicyFresh:["lactonic","aquatic"],spicyWarm:["aquatic","mineral"],floralWhite:["mineral","smoky"],floralRose:["leather","earthy"],powdery:["mineral","citrus"],fruity:["smoky","earthy"],sweet:["mineral","smoky"],cocoa:["green","mineral"],woodyDry:["fruity","lactonic"],woodyCreamy:["spicyFresh","mineral"],smoky:["lactonic","floralWhite"],leather:["floralWhite","fruity"],animalic:["aldehydic","powdery"],musky:["spicyWarm","green"],amber:["aquatic","green"],earthy:["fruity","aldehydic"],mineral:["floralWhite","sweet"],aldehydic:["animalic","earthy"],lactonic:["smoky","spicyFresh"],nutty:["mineral","floralWhite"]};
+function vec(s){const v=new Array(24).fill(0);if(!s)return v;s.split(",").forEach(p=>{const[k,n]=p.split(":");const i=I[k.trim()];if(i!==undefined)v[i]+=parseFloat(n);});return v;}
+const nrm=v=>{const n=Math.hypot(...v)||1;return v.map(x=>x/n)};
+const dot=(a,b)=>a.reduce((s,x,i)=>s+x*b[i],0);
+const cosv=(a,b)=>dot(nrm(a),nrm(b));
+function hash(s){let h=2166136261;for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619);}return h>>>0;}
+function rng(seed){return function(){seed|=0;seed=seed+0x6D2B79F5|0;let t=Math.imul(seed^seed>>>15,1|seed);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;};}
+
+/* ---------- Machine palette: 64 cartridges ---------- */
+/* id, name, tier, family, vector, cap % of concentrate, laundry substantivity 1-3, cost 1-5, M single material / A bridge accord */
+const PDATA=[
+["BERG","Bergamot","T","citrus","citrus:3,aromatic:1,floralWhite:0.5",15,1,3,"M"],
+["LEMN","Lemon","T","citrus","citrus:3,green:0.5,aldehydic:0.5",10,1,2,"M"],
+["GRPF","Grapefruit","T","citrus","citrus:3,fruity:1,green:0.5",12,1,3,"M"],
+["MAND","Mandarin","T","citrus","citrus:2.5,fruity:1,sweet:0.5",15,1,2,"M"],
+["YUZU","Yuzu accord","T","citrus","citrus:3,aquatic:0.5,green:1,spicyFresh:0.5",15,1,3,"A"],
+["PEPB","Black pepper","T","spice","spicyFresh:3,woodyDry:1,smoky:0.5",6,1,3,"M"],
+["PINK","Pink pepper","T","spice","spicyFresh:2,fruity:1,floralRose:1",6,1,3,"M"],
+["CARD","Cardamom","T","spice","spicyFresh:2.5,aromatic:1.5,citrus:0.5",5,1,3,"M"],
+["GING","Ginger","T","spice","spicyFresh:3,citrus:1,woodyDry:0.5",6,1,2,"M"],
+["MINT","Peppermint","T","green","aromatic:2,aquatic:1,green:1,spicyFresh:1",4,1,1,"M"],
+["GALB","Galbanum","T","green","green:3,earthy:0.5,woodyDry:0.5",3,1,3,"M"],
+["VIOL","Violet leaf","T","green","green:2.5,aquatic:1,mineral:1",3,1,4,"M"],
+["ALDH","Aldehydes C10-C12","T","mineral","aldehydic:3,mineral:1,citrus:0.5",3,2,2,"M"],
+["CALO","Marine ketone","T","aqua","aquatic:3,fruity:0.5,mineral:0.5",2,2,2,"M"],
+["OZON","Ozonic air accord","T","aqua","aquatic:2,mineral:2,aldehydic:1",12,2,2,"A"],
+["LAVN","Lavender","H","green","aromatic:3,floralRose:0.5,woodyDry:0.5",15,2,2,"M"],
+["ROSE","Rose absolute","H","floral","floralRose:3,fruity:1,green:0.5",10,2,5,"M"],
+["GERA","Geranium","H","floral","floralRose:2,green:1,aromatic:1",8,2,2,"M"],
+["JASM","Jasmine absolute","H","floral","floralWhite:3,animalic:0.5,fruity:0.5",8,2,5,"M"],
+["TUBR","Tuberose","H","floral","floralWhite:3,lactonic:1,sweet:0.5",5,2,5,"M"],
+["ORFL","Orange blossom","H","floral","floralWhite:2.5,citrus:1,sweet:0.5",10,2,4,"M"],
+["IRIS","Orris butter","H","floral","powdery:3,woodyCreamy:1,earthy:0.5",4,3,5,"M"],
+["VIOI","Ionones (violet)","H","floral","powdery:2.5,woodyDry:1,fruity:0.5",10,3,2,"M"],
+["HEDI","Hedione","H","floral","floralWhite:1.5,citrus:1,aquatic:0.5",30,2,1,"M"],
+["MUGT","Muguet accord","H","floral","floralWhite:2,green:1,aldehydic:1",20,3,2,"A"],
+["CINN","Cinnamon bark","H","spice","spicyWarm:3,sweet:1",1,1,3,"M"],
+["CLOV","Clove bud","H","spice","spicyWarm:3,smoky:0.5,floralRose:0.5",1.5,2,2,"M"],
+["SAFF","Saffron accord","H","spice","spicyWarm:1.5,leather:2,mineral:1",6,3,4,"A"],
+["FIG","Fig leaf accord","H","green","green:2,lactonic:1.5,woodyCreamy:1",15,2,3,"A"],
+["TEA","Smoked tea accord","H","green","smoky:2,aromatic:1,green:1,woodyDry:1",12,2,3,"A"],
+["TOMA","Tomato leaf accord","H","green","green:3,earthy:1,aromatic:0.5",6,1,3,"A"],
+["PLUM","Dark plum accord","H","gourmand","fruity:3,sweet:1,amber:0.5",12,2,2,"A"],
+["PEAC","Peach lactone","H","gourmand","fruity:2,lactonic:2,sweet:0.5",6,3,2,"M"],
+["SOYB","Soy milk & green bean accord","H","gourmand","nutty:3,lactonic:2,green:1.5,earthy:0.5",20,2,3,"A"],
+["RICE","Steamed rice accord","H","gourmand","lactonic:2,nutty:2,powdery:1.5,sweet:0.5",20,2,3,"A"],
+["SAND","Sandalwood","B","wood","woodyCreamy:3,lactonic:1,musky:0.5",20,3,4,"M"],
+["CEDR","Cedarwood","B","wood","woodyDry:3,powdery:0.5,smoky:0.5",20,3,1,"M"],
+["VETI","Vetiver","B","wood","earthy:2,woodyDry:2,smoky:1,green:0.5",12,3,4,"M"],
+["PATC","Patchouli","B","wood","earthy:3,woodyDry:1,cocoa:1",15,3,2,"M"],
+["OUDA","Oud accord","B","wood","woodyDry:2,animalic:1.5,leather:1.5,smoky:1",12,3,5,"A"],
+["ISOE","Iso E Super-type","B","wood","woodyDry:2,woodyCreamy:1,powdery:0.5,mineral:0.5",30,3,1,"M"],
+["CASH","Cashmeran","B","wood","woodyCreamy:1.5,musky:1.5,earthy:0.5,powdery:0.5",10,3,2,"M"],
+["AMBX","Ambroxide (ambergris-type)","B","amber","amber:2,mineral:1.5,musky:1.5,woodyDry:0.5",15,3,3,"M"],
+["LABD","Labdanum","B","amber","amber:3,leather:1,smoky:0.5,sweet:0.5",10,3,3,"M"],
+["BENZ","Benzoin","B","amber","amber:2,sweet:2,powdery:0.5",12,3,2,"M"],
+["INCN","Frankincense","B","amber","smoky:1.5,amber:1,citrus:1,mineral:0.5",10,2,4,"M"],
+["MYRR","Myrrh","B","amber","amber:1.5,smoky:1,earthy:1,aromatic:0.5",5,2,4,"M"],
+["VANL","Vanilla","B","gourmand","sweet:3,amber:1",12,3,3,"M"],
+["TONK","Tonka bean","B","gourmand","sweet:2,nutty:1.5,powdery:1,aromatic:0.5",12,3,3,"M"],
+["COCO","Cocoa absolute","B","gourmand","cocoa:3,sweet:1,earthy:0.5",5,2,4,"M"],
+["COFF","Coffee accord","B","gourmand","cocoa:2.5,smoky:1,nutty:1",8,2,3,"A"],
+["HONY","Honey accord","B","gourmand","sweet:2.5,animalic:1,floralWhite:0.5",6,2,3,"A"],
+["LEAT","Leather accord","B","smoke","leather:3,smoky:1,animalic:0.5",15,3,3,"A"],
+["BIRC","Birch tar","B","smoke","smoky:3,leather:1.5",1,3,3,"M"],
+["GUNP","Flint & gunpowder accord","B","smoke","smoky:2.5,mineral:2,spicyWarm:0.5",3,2,3,"A"],
+["ASH","Cold ash accord","B","smoke","smoky:2,mineral:1.5,powdery:1,earthy:0.5",8,2,3,"A"],
+["OAKM","Tree moss (low atranol)","B","wood","earthy:3,green:1,woodyDry:0.5",1,3,3,"M"],
+["PETR","Petrichor accord","B","mineral","earthy:2,mineral:1.5,aquatic:1,green:1",8,2,3,"A"],
+["SALT","Sea salt accord","B","mineral","mineral:2.5,aquatic:1.5,musky:0.5",10,2,2,"A"],
+["METL","Hot metal accord","B","mineral","mineral:3,aldehydic:1,smoky:0.5",4,2,2,"A"],
+["MUSW","White musks","B","skin","musky:3,powdery:1,aldehydic:0.5",20,3,2,"M"],
+["SKIN","Skin musk & ambrette","B","skin","musky:2.5,animalic:1,woodyCreamy:0.5,fruity:0.5",20,3,3,"A"],
+["CAST","Castoreum-type accord","B","skin","animalic:2.5,leather:1.5,amber:0.5",2,3,3,"A"],
+["CIVT","Indolic animalic accord","B","skin","animalic:3,floralWhite:0.5,earthy:0.5",0.5,3,3,"A"]
+];
+const FAM={citrus:"Citrus",green:"Green & aromatic",aqua:"Aquatic",floral:"Floral",gourmand:"Fruit & gourmand",spice:"Spice",wood:"Wood & moss",amber:"Amber & resin",smoke:"Smoke & leather",skin:"Musk & animalic",mineral:"Mineral"};
+const TIER={T:"Top",H:"Heart",B:"Base"};
+const PAL=PDATA.map(([id,name,tier,fam,v,cap,sub,cost,kind])=>({id,name,tier,fam,v:vec(v),vn:nrm(vec(v)),cap,sub,cost,kind}));
+const BYID=Object.fromEntries(PAL.map(m=>[m.id,m]));
+const HARSH=["animalic","smoky","mineral","earthy"];
+
+/* ---------- Lexicon: concept → latent vector + direct hints ----------
+   cat: n normal, t transmute (beauty floor), p persona, d drug theme, w war theme */
+const LEX=[
+["dmt|ayahuasca|psychedelic|psychedelics|trip|tripping|lsd|acid trip|shaman|shamanic|hallucinat\\w*|spirit molecule|machine elves","smoky:2,earthy:2,mineral:2,aquatic:1,floralWhite:1,aldehydic:1","INCN,VIOL,METL,OZON,ALDH,VETI","ritual smoke, vine earth, ozone of a mind opening","d","psychedelic culture"],
+["world war|ww3|wwiii|war|warfare|battle|battlefield|soldier|soldiers|army|military|trench|trenches|combat","smoky:3,mineral:3,earthy:2,leather:2,woodyDry:1","GUNP,ASH,METL,LEAT,PETR,CEDR","gunpowder, cold ash, wet trench earth, oiled leather","w","20th-century war imagery"],
+["nuclear|atomic|fallout|radiation|radioactive|bomb|bombs|missile|missiles|apocalypse|apocalyptic","mineral:3,aquatic:1,smoky:2,aldehydic:2","OZON,METL,ASH,ALDH","ozone, scorched metal, fallout dust","w","Cold War and apocalypse"],
+["firecracker|firecrackers|firework|fireworks|sparkler|sparklers|lunar new year|chinese new year|new year|diwali|bonfire night","smoky:3,mineral:2,citrus:2,spicyWarm:1,sweet:1","GUNP,ASH,MAND,CINN,PINK","spent flint, sulphur at trace, mandarin peel, festival sweets","n","Lunar New Year, Diwali"],
+["defcon|alert|alarm|siren|sirens|tension|emergency|countdown|bunker|war room|lockdown","mineral:3,aldehydic:2,spicyFresh:2,woodyDry:1,green:1","METL,ALDH,PEPB,OZON,VIOL,ISOE","hot electronics, cold air, adrenaline","w","Cold War alert levels"],
+["erotic|erotica|sex|sexy|sexual|sensual|lust|desire|carnal|seduction|seductive|kiss|lover|lovers|naked|nude|intimate","animalic:3,musky:3,amber:2,floralWhite:2,woodyCreamy:1,leather:1","SKIN,CAST,JASM,AMBX,SAND,LABD","warm skin, sheets, breath","n","adult sensuality"],
+["primal|wild|beast|animal|feral|jungle|tribal|hunt|hunter|instinct","animalic:2,earthy:2,leather:2,green:1,smoky:1","CAST,VETI,LEAT,GALB,SKIN","fur, crushed leaves, raw earth","n",""],
+["kanye|kanye west|yeezy|\\bye\\b","leather:3,mineral:2,smoky:2,amber:1,aldehydic:1,woodyDry:1","LEAT,METL,INCN,ISOE,ALDH","public aesthetic: raw concrete, black leather, gospel incense","p","hip-hop, stadium minimalism"],
+["drake|travis scott|jay z|jay-z|rapper|rappers|hip hop|hiphop|trap music","leather:2,smoky:1,amber:2,sweet:1,musky:1","LEAT,AMBX,TONK,PINK","studio smoke, leather seats, late night","p","hip-hop"],
+["rihanna|beyonce|beyoncé|taylor swift|lady gaga|ariana grande|dua lipa|zendaya|billie eilish|harry styles|bad bunny|the weeknd|pharrell|blackpink|bts|kim kardashian|michael jackson|marilyn monroe|elvis|david bowie|elon musk|donald trump|trump|lebron|messi|ronaldo|celebrity|celebrities|famous|red carpet|fame|spotlight","aldehydic:2,powdery:2,amber:2,floralRose:1,musky:1","ALDH,IRIS,AMBX,ROSE","spotlight heat, powder, a crowd","p","celebrity culture"],
+["soy|soybean|soybeans|soya|edamame|tofu|soy milk|soymilk|bean|beans|legume|legumes|tempeh|natto","nutty:3,lactonic:3,green:2,powdery:1,earthy:1","SOYB,RICE,FIG,TONK,MUSW","steamed bean, soy milk skin, green pod","n","East and Southeast Asian kitchens"],
+["rice|grain|grains|congee|mochi|sake|porridge|oats","lactonic:2,nutty:2,powdery:2,sweet:1","RICE,SOYB,IRIS,MUSW","steam, starch, warm bowl","n",""],
+["chocolate|cocoa|cacao|brownie|brownies|truffle","cocoa:3,sweet:2,amber:1,earthy:1","COCO,PATC,VANL,TONK","dark cocoa, bitter edge","n",""],
+["coffee|espresso|latte|cafe|café|kopi","cocoa:3,smoky:1,sweet:1,nutty:1","COFF,CARD,TONK,COCO","roasted beans, crema","n","café culture"],
+["spicy|chilli|chili|chillies|pepper|hot sauce|sambal|jalapeno|szechuan|sichuan|mala|curry","spicyFresh:3,spicyWarm:2,citrus:1,fruity:1,green:1","PEPB,PINK,GING,TOMA,CINN","heat without burn, green chilli skin","n","street food"],
+["fire|flame|flames|campfire|burn|burning|ember|embers|lava|volcano","smoky:3,woodyDry:2,amber:1,spicyWarm:1","BIRC,ASH,CEDR,LABD","crackling wood, resin heat","n",""],
+["smoke|smoky|smoking|cigarette|cigar|tobacco|pipe","smoky:3,leather:1,sweet:1,amber:1","BIRC,TEA,TONK,LABD,HONY","cured leaf, blue smoke","n",""],
+["rain|storm|thunder|petrichor|monsoon|wet|drizzle|puddle","earthy:2,mineral:2,aquatic:2,green:2","PETR,OZON,VIOL,VETI","wet stone, first rain on dust","n",""],
+["ocean|sea|beach|wave|waves|surf|salt|salty|coast|island|marine|tide","aquatic:3,mineral:2,citrus:1,musky:1","CALO,SALT,AMBX,BERG","salt skin, cold spray","n",""],
+["ice|icy|snow|frozen|winter|glacier|cold|arctic|frost","aquatic:2,mineral:2,aldehydic:2,spicyFresh:1,musky:1","MINT,ALDH,OZON,MUSW,CARD","frost air, clean cold","n",""],
+["summer|sun|sunny|sunshine|tropical|holiday|vacation|bali|beach club","citrus:2,fruity:2,floralWhite:2,lactonic:1","MAND,ORFL,TUBR,PEAC","sun cream, ripe fruit, hot skin","n",""],
+["forest|wood|woods|tree|trees|pine|cedar|cabin|hike|hiking","woodyDry:3,green:2,earthy:1,aromatic:1","CEDR,VETI,GALB,INCN","resin, bark, crushed needles","n",""],
+["moss|mossy|fern|chypre|garden|soil|earth|mud|dirt|roots","earthy:3,green:2,woodyDry:1","OAKM,PATC,VETI,PETR","damp soil, roots","n",""],
+["rose|roses|petal|petals","floralRose:3,fruity:1,green:1","ROSE,GERA,PINK","rose petals, green stem","n",""],
+["flower|flowers|floral|bouquet|blossom|bloom|florist","floralWhite:2,floralRose:2,green:1","JASM,ROSE,HEDI,MUGT","cut stems, petals","n",""],
+["jasmine|tuberose|gardenia|frangipani|ylang|lily|neroli|orchid|champaca","floralWhite:3,lactonic:1,sweet:1","JASM,TUBR,ORFL","heady white petals","n",""],
+["iris|violet|powder|powdery|makeup|lipstick|cosmetic|vanity","powdery:3,floralRose:1,woodyCreamy:1","IRIS,VIOI,MUSW","face powder, lipstick","n",""],
+["clean|laundry|soap|soapy|linen|cotton|shower|bath|fresh","aldehydic:3,musky:3,floralWhite:1,citrus:1","ALDH,MUSW,HEDI,MUGT,BERG","sun-dried cotton, soap","n",""],
+["baby|innocent|soft|cuddle|blanket|cozy|cosy|home|hug|sleep|pillow","musky:3,powdery:2,lactonic:1,sweet:1,woodyCreamy:1","MUSW,CASH,IRIS,TONK","warm blanket, skin","n",""],
+["money|rich|wealth|wealthy|gold|golden|luxury|diamond|diamonds|royal|king|queen|palace|billionaire","amber:2,woodyCreamy:2,leather:1,powdery:1,aldehydic:1","OUDA,SAFF,IRIS,AMBX,SAND","polished wood, saffron, vault air","n",""],
+["oud|arab|arabian|desert|sand|dune|dunes|souk|bazaar|dubai","woodyDry:2,amber:2,leather:2,animalic:1,spicyWarm:1","OUDA,SAFF,LABD,ROSE,INCN","oud smoke, hot sand, saffron","n","Gulf perfumery"],
+["church|temple|incense|prayer|monk|cathedral|spiritual|god|holy|gospel|meditation|zen|mosque","smoky:2,amber:2,woodyDry:1,citrus:1,mineral:1","INCN,MYRR,CEDR,BENZ","incense, cold stone, candle wax","n","ritual and worship"],
+["metal|metallic|steel|iron|chrome|robot|robots|machine|engine|car|cars|garage|motor|motorbike","mineral:3,leather:1,smoky:1,aldehydic:1","METL,LEAT,ALDH,ISOE","warm metal, oil, rubber","n",""],
+["blood|bleed|bleeding|wound","mineral:3,animalic:1,floralRose:1","METL,ROSE,SAFF","iron, rose, salt","n",""],
+["city|urban|street|subway|metro|concrete|asphalt|neon|tokyo|new york|singapore|seoul|london","mineral:2,smoky:1,aldehydic:1,woodyDry:1,citrus:1","METL,ISOE,ALDH,GRPF,PEPB","hot asphalt, neon, rain on concrete","n","city life"],
+["night|midnight|moon|evening|nocturnal|dark night","amber:2,floralWhite:1,musky:2,smoky:1","AMBX,JASM,LABD,MUSW","night-blooming flowers, warm air","n",""],
+["space|galaxy|stars|cosmic|astronaut|universe|alien|aliens|planet|nebula","mineral:3,aldehydic:2,aquatic:1,smoky:1","METL,ALDH,OZON,ISOE,ASH","cold vacuum, hot metal, ozone","n",""],
+["dream|dreams|cloud|clouds|heaven|angel|angels|ethereal|air|sky","musky:2,powdery:2,aldehydic:1,lactonic:1,floralWhite:1","MUSW,HEDI,IRIS,ALDH","clean air, soft musk","n",""],
+["candy|sugar|sweet|caramel|dessert|cake|cookie|cookies|bakery|pastry|donut|ice cream","sweet:3,lactonic:1,nutty:1,amber:1","VANL,TONK,BENZ,HONY","warm sugar, butter","n",""],
+["vanilla","sweet:3,amber:1","VANL,BENZ","vanilla pod","n",""],
+["fruit|fruity|berry|berries|strawberry|apple|pear|peach|mango|lychee|durian|cherry|plum","fruity:3,sweet:1,citrus:1","PEAC,PLUM,MAND,PINK","ripe fruit","n",""],
+["lemon|lime|orange|citrus|yuzu|grapefruit|calamansi|bergamot","citrus:3,green:1","LEMN,YUZU,GRPF,BERG","zest, peel oil","n",""],
+["tea|matcha|green tea|oolong|chai","green:2,aromatic:1,smoky:1,woodyDry:1","TEA,HEDI,BERG,FIG","steeped leaf","n","tea ceremony"],
+["herb|herbs|herbal|basil|rosemary|sage|thyme|lavender|mint","aromatic:3,green:2","LAVN,MINT,GERA","crushed herbs","n",""],
+["milk|cream|butter|yogurt|creamy|cheese","lactonic:3,sweet:1,musky:1","PEAC,SAND,RICE,TONK","warm milk, cream","n",""],
+["nut|nuts|nutty|almond|hazelnut|pistachio|peanut|sesame","nutty:3,sweet:1,lactonic:1","TONK,SOYB,COFF","toasted nuts","n",""],
+["leather|jacket|biker|saddle|horse|boots","leather:3,smoky:1,animalic:1","LEAT,SAFF,BIRC,CAST","worn leather","n",""],
+["book|books|library|paper|old|vintage|antique|attic|grandma|grandmother|grandpa","powdery:2,woodyDry:2,amber:1,earthy:1","IRIS,CEDR,BENZ,TONK,VIOI","old paper, wood polish","n","memory"],
+["hospital|medicine|clinic|sterile|lab|laboratory","aldehydic:2,mineral:2,musky:1,aromatic:1","ALDH,MUSW,MYRR,MINT","sterile air, cotton","n",""],
+["hell|devil|demon|demons|sin|sinful|evil|satan","smoky:3,spicyWarm:2,leather:2,amber:1,animalic:1","BIRC,CLOV,LEAT,LABD,GUNP","brimstone kept at trace, scorched leather","n","myth"],
+["death|grave|funeral|ghost|ghosts|haunted|cemetery|tomb","earthy:2,floralWhite:1,smoky:1,powdery:1,mineral:1","PETR,TUBR,MYRR,IRIS","cold stone, lilies, candle","n","mourning rituals"],
+["love|romance|romantic|heart|valentine|crush|wedding","floralRose:2,fruity:1,musky:2,sweet:1","ROSE,PINK,MUSW,VANL","roses, warm skin","n",""],
+["anger|angry|rage|fury|revenge","spicyFresh:2,spicyWarm:2,smoky:2,mineral:1","PEPB,CINN,GUNP","pepper heat, struck match","n",""],
+["calm|peace|peaceful|relax|relaxing|spa|yoga|quiet","aromatic:2,woodyCreamy:2,musky:1,green:1","LAVN,SAND,HEDI,MUSW","warm wood, lavender","n",""],
+["energy|electric|electricity|power|lightning|adrenaline|rave|club","spicyFresh:2,citrus:2,mineral:2,aldehydic:1","GING,GRPF,OZON,METL","static, citrus spark","n","club culture"],
+["dark|darkness|black|shadow|shadows|noir|gothic|goth","smoky:1,earthy:1,amber:1,leather:1","LABD,PATC","depth, low light","n",""],
+["bright|light|white|sunlit|airy|sheer","citrus:1,aldehydic:1,floralWhite:1,musky:1","HEDI,BERG","","n",""],
+/* transmute: real malodors held at trace and wrapped (beauty floor) */
+["feces|faeces|fecal|faecal|poop|poo|shit|dung|manure|fart|sewage|toilet|excrement","animalic:2,earthy:2,cocoa:1","CIVT,PATC,COCO","fecal note becomes an indolic trace on earth and cocoa","t",""],
+["vomit|puke|sick","fruity:1,lactonic:1,spicyFresh:1,animalic:0.5","PEAC,RICE,GING","sourness becomes milky fruit and ginger","t",""],
+["urine|piss|pee","amber:2,animalic:1,mineral:1","AMBX,CAST","ammoniac note becomes ambergris and warm animalic","t",""],
+["sweat|sweaty|armpit|gym|feet|socks|body odor|body odour","musky:2,animalic:2,spicyFresh:1","SKIN,CARD,CAST","sweat becomes skin musk, ambrette, cardamom","t",""],
+["rotten|rot|rotting|garbage|trash|corpse|carcass|morgue|decay|decaying","earthy:2,floralWhite:2,animalic:1,fruity:1","TUBR,JASM,PETR,PLUM","decay becomes overripe tuberose, dark fruit, wet earth","t",""]
+];
+const LEXC=LEX.map(([alts,v,h,label,cat,cult])=>({re:new RegExp("\\b(?:"+alts.replace(/\\b/g,"").split("|").sort((a,b)=>b.length-a.length).join("|")+")\\b","gi"),v:vec(v),hints:h.split(","),label,cat,cult}));
+const DECLINE=/\b(rap(?:e|es|ed|ist|ists|ing)|molest\w*|paedo\w*|pedo\w*|child (?:porn|abuse|sex)\w*|incest\w*|genocide|holocaust|ethnic cleansing|school shoot\w*|mass shoot\w*|suicide|self[- ]harm|lynch\w*|terroris[mt]s?|nazis?|nazism)\b/i;
+const STOP=new Set("the and with like smell smells smelling scent scents perfume fragrance make want that this for from into what something someone kind sort very really just feel feels feeling some about give create please would could more less of a an my your our their".split(" "));
+
+function analyze(text){
+  const raw=String(text||"").trim().slice(0,400), low=raw.toLowerCase();
+  const an={raw,low,target:new Array(24).fill(0),hints:{},labels:[],cult:[],flags:new Set(),unmapped:[],notes:[]};
+  const dm=low.match(DECLINE);
+  if(dm){an.verdict="decline";an.declineTerm=dm[0];return an;}
+  const spans=[];
+  for(const e of LEXC){
+    e.re.lastIndex=0;let m,hit=0;
+    while((m=e.re.exec(low))){hit++;spans.push([m.index,m.index+m[0].length]);if(m[0].length===0)e.re.lastIndex++;}
+    if(!hit)continue;
+    e.v.forEach((x,i)=>an.target[i]+=x);
+    e.hints.forEach((h,k)=>{an.hints[h]=(an.hints[h]||0)+(1-k*0.08);});
+    if(e.label)an.labels.push(e.label);
+    if(e.cult)an.cult.push(e.cult);
+    if(e.cat==="t"){an.flags.add("transmute");if(!an.must)an.must=e.hints[0];}
+    if(e.cat==="p")an.flags.add("persona");
+    if(e.cat==="d")an.flags.add("drug");
+    if(e.cat==="w")an.flags.add("war");
+  }
+  const wre=/[a-zÀ-ɏ]{3,}/g;let w;
+  while((w=wre.exec(low))){
+    const a=w.index,b=a+w[0].length;
+    if(STOP.has(w[0]))continue;
+    if(spans.some(([s,e])=>a>=s&&b<=e))continue;
+    an.unmapped.push(w[0]);
+    const r=rng(hash(w[0]));const d1=Math.floor(r()*24),d2=Math.floor(r()*24);
+    an.target[d1]+=0.9;an.target[d2]+=0.6;
+  }
+  if(an.target.every(x=>x===0))an.target=vec("musky:1,woodyCreamy:1,citrus:1");
+  const mx=Math.max(...an.target);an.target=an.target.map(x=>x/mx*3);
+  an.verdict=an.flags.has("transmute")?"transmute":an.flags.has("persona")?"persona":(an.flags.has("war")||an.flags.has("drug"))?"theme":"clear";
+  if(an.flags.has("transmute"))an.notes.push("Beauty floor engaged: the literal malodor is held at trace level and wrapped in wearable materials.");
+  if(an.flags.has("persona"))an.notes.push("Persona brief: interpreted as a public aesthetic. No claim about how the person smells. Their name stays off the bottle and marketing unless licensed.");
+  if(an.flags.has("war"))an.notes.push("War or threat theme accepted as art. Product copy stays solemn and does not glorify violence.");
+  if(an.flags.has("drug"))an.notes.push("Drug theme: the brain translates the experience only. No effect claims, no psychoactive or cannabis-derived ingredients.");
+  if(an.unmapped.length)an.notes.push("Not in the offline lexicon: "+an.unmapped.slice(0,6).join(", ")+". These were mapped by a seeded guess. Deepen with Claude reads them properly.");
+  return an;
+}
+function axesOf(t){
+  const g=d=>t[I[d]];
+  const warm=(g("spicyWarm")+g("amber")+g("sweet")+g("animalic")+g("leather")+g("cocoa"))-(g("aquatic")+g("citrus")+g("mineral")+g("aldehydic")+g("green")+g("spicyFresh"));
+  const bright=(g("citrus")+g("aldehydic")+g("floralWhite")+g("aquatic")+g("fruity")+g("green"))-(g("smoky")+g("earthy")+g("leather")+g("cocoa")+g("amber")+g("animalic"));
+  const dense=(g("amber")+g("woodyCreamy")+g("animalic")+g("sweet")+g("leather")+g("musky"))-(g("citrus")+g("aquatic")+g("aldehydic")+g("green")+g("aromatic"));
+  const sc=x=>Math.max(0,Math.min(1,0.5+x/12));
+  return{warm:sc(warm),bright:sc(bright),dense:sc(dense)};
+}
+function decompose(an){
+  const order=DIMS.map((d,i)=>[d,an.target[i]]).sort((a,b)=>b[1]-a[1]);
+  const ax=axesOf(an.target);
+  const sens=[ax.warm>0.55?"warm":ax.warm<0.45?"cold":"temperate",ax.bright>0.55?"bright":ax.bright<0.45?"dark":"half-lit",ax.dense>0.55?"dense":ax.dense<0.45?"sheer":"medium weight"];
+  order.slice(0,3).forEach(([d])=>sens.push(DS[d].toLowerCase()));
+  return{literal:an.labels.length?an.labels:["no direct smell, read by association"],sensory:sens,emotional:order.slice(0,4).map(([d])=>EMO[d]),cultural:an.cult.length?[...new Set(an.cult)]:["none detected"],unmapped:an.unmapped};
+}
+
+/* ---------- Formats, frames, lens ---------- */
+const FORMATS={
+  detergent:{label:"Laundry detergent",sub:"0.5 to 1.1% load",unit:"g",batch:"1 kg of detergent",base:1000,conc:[0.5,0.8,1.1],laundry:true},
+  softener:{label:"Fabric softener",sub:"0.8 to 1.6% load",unit:"g",batch:"1 kg of softener",base:1000,conc:[0.8,1.2,1.6],laundry:true},
+  edp:{label:"Eau de parfum",sub:"12 to 22%",unit:"ml",batch:"50 ml bottle",base:50,conc:[12,18,22],laundry:false},
+  extrait:{label:"Extrait",sub:"20 to 30%",unit:"ml",batch:"30 ml bottle",base:30,conc:[20,25,30],laundry:false}
+};
+const FRAMES={designer:{label:"Designer",sub:"crowd-pleasing, polished"},luxury:{label:"High-end luxury",sub:"naturals, depth"},creative:{label:"Creative",sub:"stronger twist"},unexplored:{label:"Unexplored",sub:"new territory"}};
+const LENS={climate:{label:"Where you live",opts:{humid:"Hot and humid",temperate:"Temperate",cold:"Cold"}},moment:{label:"When you wear it",opts:{day:"Day",night:"Night",close:"Skin-close"}},projection:{label:"How far it travels",opts:{whisper:"Whisper",presence:"Presence",trail:"Trail"}}};
+const state={frame:"creative",format:"detergent",lens:{climate:null,moment:null,projection:null}};
+const HEADS=[["creative","Scent 1 · Creative","var(--creative)"],["accurate","Scent 2 · Accurate","var(--accurate)"],["luxury","Scent 3 · Luxury","var(--luxury)"]];
+
+/* ---------- Formulator ---------- */
+function argmax(v){let b=0;v.forEach((x,i)=>{if(x>v[b])b=i;});return b;}
+function composeHead(an,head,cfg){
+  let t=an.target.slice();
+  const R=rng(hash(an.low+"|"+head+"|"+cfg.frame));
+  const notes=[];
+  if(cfg.frame==="designer"){HARSH.forEach(d=>t[I[d]]*=0.7);t[I.musky]+=0.6;t[I.citrus]+=0.4;}
+  let twist=head==="creative"?0.6:0;
+  if(cfg.frame==="creative"&&head==="creative")twist=0.9;
+  if(cfg.frame==="unexplored")twist=head==="creative"?1.3:head==="accurate"?0.25:0.4;
+  let twistNote="";
+  if(twist>0){
+    const dom=DIMS[argmax(t)],opts=CONTRAST[dom],pick=opts[Math.floor(R()*opts.length)],other=opts.find(o=>o!==pick);
+    const mx=Math.max(...t);t[I[pick]]+=mx*twist*0.7;t[I[other]]+=mx*twist*0.25;
+    twistNote=DS[dom]+" meets "+DS[pick].toLowerCase();
+  }
+  if(head==="luxury"){
+    t[I.woodyCreamy]+=0.8;t[I.amber]+=0.7;t[I.powdery]+=0.5;t[I.musky]+=0.4;
+    const L=cfg.lens;
+    if(L.climate==="humid"){t[I.citrus]+=1;t[I.aquatic]+=0.5;t[I.musky]+=0.5;t[I.sweet]*=0.7;t[I.animalic]*=0.7;notes.push("Lens: lifted for humid heat");}
+    if(L.climate==="cold"){t[I.amber]+=1;t[I.woodyCreamy]+=0.5;t[I.sweet]+=0.5;notes.push("Lens: warmed for cold weather");}
+    if(L.moment==="night"){t[I.amber]+=0.7;t[I.animalic]+=0.4;t[I.floralWhite]+=0.4;notes.push("Lens: night depth");}
+    if(L.moment==="day"){t[I.citrus]+=0.6;t[I.aldehydic]+=0.4;notes.push("Lens: daylight lift");}
+    if(L.moment==="close"){t[I.musky]+=1;t[I.woodyCreamy]+=0.5;notes.push("Lens: skin-close musk");}
+  }
+  const fmt=FORMATS[cfg.format];
+  const quota={accurate:[2,3,3],creative:[3,3,4],luxury:[3,4,5]}[head].slice();
+  if(cfg.frame==="unexplored")quota[1]++;
+  const share=fmt.laundry?{T:12,H:30,B:58}:{T:18,H:34,B:48};
+  const hintW={accurate:0.35,creative:0.15,luxury:0.2}[head];
+  const costBias=(head==="luxury"?0.06:0)+(cfg.frame==="luxury"?0.04:0)+(cfg.frame==="designer"?-0.02:0);
+  const preferA=cfg.frame==="unexplored"||head==="creative";
+  const used=new Set(),rows=[];
+  let r=t.slice();
+  ["T","H","B"].forEach((tier,ti)=>{
+    r=r.map((x,i)=>0.5*x+0.5*t[i]);
+    const picks=[];
+    const take=m=>{used.add(m[0].id);picks.push(m);const rn=Math.hypot(...r);r=r.map((x,i)=>Math.max(0,x-m[0].vn[i]*rn*0.45));};
+    const bestOf=()=>{
+      let best=null,bs=-9;
+      for(const m of PAL){
+        if(m.tier!==tier||used.has(m.id))continue;
+        let s=dot(nrm(r),m.vn);
+        if(an.hints[m.id])s+=hintW*Math.min(1,an.hints[m.id]);
+        s+=costBias*(m.cost-3);
+        if(fmt.laundry)s+=0.08*(m.sub-2);
+        if(preferA&&m.kind==="A")s+=0.05;
+        if(head==="creative")s+=(R()-0.5)*0.12;
+        if(s>bs){bs=s;best=m;}
+      }
+      return best?[best,bs]:null;
+    };
+    if(head==="accurate"&&an.must&&BYID[an.must]&&BYID[an.must].tier===tier)take([BYID[an.must],0.6]);
+    while(picks.length<quota[ti]){const b=bestOf();if(!b)break;take(b);}
+    /* capacity rule: keep adding materials until this tier can carry its share under the caps */
+    let extra=0;
+    while(picks.reduce((s,[m])=>s+m.cap,0)<share[tier]*1.1&&extra<4){const b=bestOf();if(!b)break;take(b);extra++;}
+    const ws=picks.map(([m,s])=>Math.pow(Math.max(0.15,s),1.5));
+    const alloc=fillTier(share[tier],picks.map(p=>p[0]),ws);
+    picks.forEach(([m],i)=>{if(alloc[i]>0)rows.push({id:m.id,pct:alloc[i]});});
+  });
+  return finalize(rows,an,head,cfg,{twistNote,notes});
+}
+/* water-fill a tier's share across its materials, never past a cap */
+function fillTier(total,ms,ws){
+  const out=ms.map(()=>0);let rem=total,open=ms.map((_,i)=>i);
+  for(let it=0;it<12&&rem>1e-6&&open.length;it++){
+    const W=open.reduce((s,i)=>s+ws[i],0)||1;let usedAmt=0;const next=[];
+    open.forEach(i=>{const add=rem*ws[i]/W,room=ms[i].cap-out[i];if(add>=room){out[i]+=room;usedAmt+=room;}else{out[i]+=add;usedAmt+=add;next.push(i);}});
+    rem-=usedAmt;open=next;
+  }
+  return out;
+}
+function applyCaps(rows){
+  for(let it=0;it<12;it++){
+    let ex=0;const free=[];
+    rows.forEach(r=>{const c=BYID[r.id].cap;if(r.pct>c+1e-9){ex+=r.pct-c;r.pct=c;r.capped=true;}else if(r.pct<c-0.01)free.push(r);});
+    if(ex<1e-6)return 0;
+    const fs=free.reduce((s,r)=>s+r.pct,0);
+    if(!free.length||fs<=0)return ex;
+    free.forEach(r=>r.pct+=ex*r.pct/fs);
+  }
+  return 0;
+}
+function fvec(rows){const v=new Array(24).fill(0);rows.forEach(r=>{const m=BYID[r.id];m.vn.forEach((x,i)=>v[i]+=x*r.pct/100);});return v;}
+function harshRatio(v){const s=v.reduce((a,b)=>a+b,0)||1;return HARSH.reduce((a,d)=>a+v[I[d]],0)/s;}
+const CLASSIC=vec("citrus:2,musky:2,woodyDry:2,floralWhite:1,amber:1,aromatic:1");
+function addTo(rows,id,amt){const f=rows.find(r=>r.id===id);if(f)f.pct+=amt;else rows.push({id,pct:amt});}
+function finalize(rows,an,head,cfg,meta){
+  const notes=meta.notes||[];
+  rows=rows.filter(r=>BYID[r.id]&&r.pct>0).map(r=>({id:r.id,pct:+r.pct}));
+  let sum=rows.reduce((s,r)=>s+r.pct,0)||1;rows.forEach(r=>r.pct=r.pct*100/sum);
+  let left=applyCaps(rows);
+  if(left>0.01){addTo(rows,"MUSW",left*0.5);addTo(rows,"ISOE",left*0.5);applyCaps(rows);notes.push("Filler musk and wood added to reach 100% under caps");}
+  const limit=head==="creative"?0.55:0.45;
+  if(harshRatio(fvec(rows))>limit){
+    rows.forEach(r=>r.pct*=0.85);addTo(rows,"MUSW",9);addTo(rows,"AMBX",6);applyCaps(rows);
+    notes.push("Beauty floor: 15% moved into musk and ambergris-type");
+  }
+  const animal=rows.filter(r=>["CIVT","CAST"].includes(r.id)).reduce((s,r)=>s+r.pct,0);
+  if(an.flags&&an.flags.has("transmute")&&animal>2.5){const k=2.5/animal;rows.forEach(r=>{if(["CIVT","CAST"].includes(r.id)){const d=r.pct*(1-k);r.pct-=d;addTo(rows,"SAND",d);}});}
+  rows.forEach(r=>r.pct=r.pct<1?Math.round(r.pct*10)/10:Math.round(r.pct*2)/2);
+  rows=rows.filter(r=>r.pct>0);
+  sum=rows.reduce((s,r)=>s+r.pct,0);
+  const big=rows.reduce((a,b)=>b.pct>a.pct?b:a,rows[0]);big.pct=Math.round((big.pct+100-sum)*10)/10;
+  const to={T:0,H:1,B:2};rows.sort((a,b)=>to[BYID[a.id].tier]-to[BYID[b.id].tier]||b.pct-a.pct);
+  const fv=fvec(rows),fmt=FORMATS[cfg.format];
+  const fidelity=Math.round(Math.max(0,cosv(an.target,fv))*100);
+  const novelty=Math.round(Math.max(0,Math.min(1,(1-cosv(fv,CLASSIC))*1.15))*100);
+  const wear=Math.round(Math.max(0,Math.min(100,100-Math.max(0,harshRatio(fv)-0.2)*150)));
+  const subst=Math.round(rows.reduce((s,r)=>s+(BYID[r.id].sub-1)/2*r.pct,0));
+  const cost=rows.reduce((s,r)=>s+BYID[r.id].cost*r.pct,0)/100;
+  const pi=cfg.lens.projection==="whisper"?0:cfg.lens.projection==="trail"?2:1;
+  let conc=fmt.conc[pi];
+  if(head==="luxury"&&!fmt.laundry&&pi<2)conc=fmt.conc[pi+1];
+  const oil=fmt.base*conc/100;
+  rows.forEach(r=>r.amt=oil*r.pct/100);
+  return{head,rows,fv,metrics:{fidelity,novelty,wear,subst,cost},conc,oil,twistNote:meta.twistNote||"",notes,name:meta.name||"",story:meta.story||"",why:meta.why||""};
+}
+
+/* ---------- Naming and story (offline) ---------- */
+const ADJ=["Velvet","Static","Feral","Lucid","Molten","Hollow","Neon","Silent","Liquid","Burnt","Electric","Paper","Glass","Wild","Quiet","Iron"];
+const NOUN=["Theory","Liturgy","Signal","Orbit","Relic","Bloom","Ritual","Frequency","Echo","Mirage","Archive","Engine","Hymn","Fault Line"];
+const LUX=["Absolu","Nuit","Ambre","Extrait","Élixir","Cuir"];
+function titleOf(an){
+  if(an.flags.has("persona"))return"Persona";
+  let s=an.raw.replace(/^\s*(it\s+)?smells?\s+like\s+/i,"").replace(/[^\p{L}\p{N}\s'-]/gu,"").trim().split(/\s+/).slice(0,3).join(" ");
+  if(!s)s="Untitled";
+  return s.toLowerCase().replace(/(^|\s)\p{L}/gu,c=>c.toUpperCase()).slice(0,26);
+}
+function nameAndStory(sc,an){
+  const R=rng(hash(an.low+sc.head));const T=titleOf(an);
+  if(sc.head==="accurate")sc.name=T+", Study I";
+  else if(sc.head==="creative")sc.name=ADJ[Math.floor(R()*ADJ.length)]+" "+NOUN[Math.floor(R()*NOUN.length)];
+  else sc.name=LUX[Math.floor(R()*LUX.length)]+" "+T;
+  const by=t=>sc.rows.filter(r=>BYID[r.id].tier===t).map(r=>BYID[r.id].name.toLowerCase());
+  const tp=by("T"),hp=by("H"),bp=by("B");
+  const lead={creative:"The brain's own reading"+(sc.twistNote?": "+sc.twistNote.toLowerCase()+".":"."),accurate:"As close to the brief as a wearable scent can go.",luxury:"The couture version, with a longer and richer dry-down."}[sc.head];
+  sc.story=lead+" Opens on "+tp.slice(0,2).join(" and ")+". The heart turns to "+hp.slice(0,2).join(" with ")+". Dries down on "+bp.slice(0,3).join(", ")+".";
+}
+function composeAll(an,cfg){return HEADS.map(([h])=>{const sc=composeHead(an,h,cfg);nameAndStory(sc,an);return sc;});}
+
+/* ---------- Rendering ---------- */
+const GATE_LABEL={clear:"Clear",theme:"Theme",persona:"Persona",transmute:"Transmute",decline:"Declined"};
+function renderDecline(an){
+  $("#out").innerHTML=`<div class="decline-box fade"><span class="gate"><span class="pill v-decline">Declined</span><span><b>This brief names harm done to real people, so the brain will not turn it into a product.</b><ul><li>Flagged term: "${esc(an.declineTerm)}"</li><li>If you were reaching for a feeling, try one of these instead.</li></ul></span></span><div class="chips">${["Danger","Menace at night","Fear","A dark alley in the rain","Cold steel"].map(s=>`<button class="chip" data-load="${esc(s)}">${esc(s)}</button>`).join("")}</div></div>`;
+  drawTraceEmpty();
+}
+function metricBar(label,val){return`<div class="metric"><div class="ml"><span>${label}</span><span class="mono">${val}</span></div><div class="mb"><i style="width:${Math.max(2,Math.min(100,val))}%"></i></div></div>`;}
+function renderResult(res){
+  const an=res.an,dc=res.decomp,fmt=FORMATS[res.cfg.format];
+  const ax=axesOf(an.target);
+  const notes=(res.gateNotes||an.notes).map(n=>`<li>${esc(n)}</li>`).join("")||"<li>No flags. Straight to formulation.</li>";
+  const col=(h,arr,un)=>`<div class="dcol"><h4>${h}</h4><div>${arr.map(x=>`<span class="tag">${esc(x)}</span>`).join("")}${(un||[]).map(x=>`<span class="tag un" title="Not in the offline lexicon">${esc(x)}</span>`).join("")}</div></div>`;
+  const cards=res.scents.map((sc,idx)=>{
+    const [,label,color]=HEADS.find(h=>h[0]===sc.head);
+    const rows=sc.rows.map(r=>{const m=BYID[r.id];return`<tr><td><span class="tier">${m.tier}</span></td><td><span class="dot" style="background:var(--f-${m.fam})"></span>${esc(m.name)}<span class="pbar" style="width:${Math.min(100,r.pct*2.2)}%"></span></td><td class="num">${r.pct.toFixed(r.pct<1?1:1)}</td><td class="num">${r.amt<1?r.amt.toFixed(3):r.amt.toFixed(2)}</td></tr>`;}).join("");
+    const cost="$".repeat(Math.max(1,Math.round(sc.metrics.cost)));
+    return`<article class="card fade" style="--hc:${color};animation-delay:${idx*80}ms"><div class="head"><span class="hlabel">${label}</span><span class="src">${esc(res.source)}</span></div>
+      <h3>${esc(sc.name)}</h3><p class="story">${esc(sc.story)}</p>${sc.why?`<p class="story"><b>Why:</b> ${esc(sc.why)}</p>`:""}
+      <div class="metrics">${metricBar("Fidelity to brief",sc.metrics.fidelity)}${metricBar("Novelty",sc.metrics.novelty)}${metricBar("Wearability",sc.metrics.wear)}${metricBar("Wash survival",sc.metrics.subst)}</div>
+      <table class="f"><thead><tr><th></th><th>Material</th><th class="num">% conc</th><th class="num">${fmt.unit}</th></tr></thead><tbody>${rows}</tbody></table>
+      <div class="disp mono">Dispense: ${esc(fmt.batch)} at ${sc.conc}% → ${sc.oil.toFixed(2)} ${fmt.unit} of fragrance oil · cost tier ${cost} · ${sc.rows.length} cartridges</div>
+      ${sc.notes.length?`<div class="flagline">${sc.notes.map(esc).join(" · ")}</div>`:""}
+    </article>`;}).join("");
+  $("#out").innerHTML=`
+   <div class="gate fade"><span class="pill v-${res.verdict}">${GATE_LABEL[res.verdict]}</span><div><b>Gate verdict for "${esc(an.raw)}"</b> <span class="src">· ${esc(res.cfg.frame)} frame · ${esc(fmt.label)}</span><ul>${notes}</ul></div></div>
+   <div class="panel fade"><div class="panel-h"><span class="eyebrow">Layer 2 · Decomposition</span></div><div class="decomp">${col("Literal",dc.literal)}${col("Sensory",dc.sensory)}${col("Emotional",dc.emotional)}${col("Cultural",dc.cultural,dc.unmapped)}</div></div>
+   <div class="viz">
+     <div class="panel"><div class="panel-h"><span class="eyebrow">Layer 3 · Olfactogram</span><span class="legend"><span><i style="background:var(--ink);opacity:.25"></i>Brief</span><span><i style="background:var(--creative)"></i>1</span><span><i style="background:var(--accurate)"></i>2</span><span><i style="background:var(--luxury)"></i>3</span></span></div>
+       <div id="radar"></div>
+       <div class="axes">${[["Cold","Warm",ax.warm],["Dark","Bright",ax.bright],["Sheer","Dense",ax.dense]].map(([a,b,v])=>`<div class="axis"><span>${a}</span><span class="bar"><b style="left:${(v*100).toFixed(0)}%"></b></span><span>${b}</span></div>`).join("")}</div></div>
+     <div class="panel"><div class="panel-h"><span class="eyebrow">Brain trace · all eight layers</span><span class="legend"><span>Lit cells are the cartridges used</span></span></div><div class="scroll-x" id="trace"></div></div>
+   </div>
+   <div class="scents">${cards}</div>`;
+  drawRadar(an.target,res.scents);
+  drawTrace(res);
+}
+function drawRadar(t,scents){
+  const W=460,H=400,cx=230,cy=200,R=135,n=24;
+  const pt=(i,v)=>{const a=-Math.PI/2+i*2*Math.PI/n;return[cx+Math.cos(a)*R*v,cy+Math.sin(a)*R*v];};
+  const poly=v=>{const mx=Math.max(...v)||1;return v.map((x,i)=>pt(i,Math.max(0.02,x/mx)).map(z=>z.toFixed(1)).join(",")).join(" ");};
+  let s=`<svg viewBox="0 0 ${W} ${H}" width="100%" role="img" aria-label="Olfactogram of the brief and three scents">`;
+  [0.25,0.5,0.75,1].forEach(k=>{s+=`<polygon points="${DIMS.map((d,i)=>pt(i,k).join(",")).join(" ")}" fill="none" stroke="var(--line)" stroke-width="1"/>`;});
+  DIMS.forEach((d,i)=>{const[x,y]=pt(i,1);s+=`<line x1="${cx}" y1="${cy}" x2="${x}" y2="${y}" stroke="var(--line)" stroke-width=".6"/>`;
+    const[lx,ly]=pt(i,1.13);const c=Math.cos(-Math.PI/2+i*2*Math.PI/n);const anc=Math.abs(c)<0.2?"middle":c>0?"start":"end";
+    s+=`<text x="${lx.toFixed(1)}" y="${(ly+3).toFixed(1)}" font-size="9.5" fill="var(--muted)" text-anchor="${anc}">${DS[d]}</text>`;});
+  s+=`<polygon points="${poly(t)}" fill="var(--ink)" fill-opacity=".12" stroke="var(--ink)" stroke-opacity=".5" stroke-dasharray="3 3"/>`;
+  scents.forEach(sc=>{const c=HEADS.find(h=>h[0]===sc.head)[2];s+=`<polygon points="${poly(sc.fv)}" fill="none" stroke="${c}" stroke-width="1.8" stroke-linejoin="round"/>`;});
+  s+="</svg>";$("#radar").innerHTML=s;
+}
+function drawTraceEmpty(){}
+function drawTrace(res){
+  const W=1000,H=380,an=res.an;
+  const hc=Object.fromEntries(HEADS.map(h=>[h[0],h[2]]));
+  const vc={clear:"var(--ok)",theme:"var(--theme)",persona:"var(--luxury)",transmute:"var(--warn)",decline:"var(--bad)"}[res.verdict];
+  const mx=Math.max(...an.target)||1;
+  let e="",n="";
+  const line=(x1,y1,x2,y2,c,o,w)=>`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${c}" stroke-opacity="${o}" stroke-width="${w||1}"/>`;
+  const lab=(x,y,t,a,sz,c)=>`<text x="${x}" y="${y}" font-size="${sz||10}" fill="${c||"var(--muted)"}" text-anchor="${a||"middle"}">${esc(t)}</text>`;
+  // columns
+  const dy=[110,160,210,260],dn=["Literal","Sensory","Emotional","Cultural"];
+  const ly=i=>28+i*13.9;
+  const hy={creative:110,accurate:190,luxury:270};
+  const gx=600,gy=134,cs=14;
+  const vy=[120,170,220,270],vn=["Palette caps","Beauty floor","Balance 100%","Format dose"];
+  e+=line(90,190,128,190,"var(--muted)",.6,1.2);
+  dy.forEach(y=>e+=line(152,190,236,y,"var(--muted)",.45));
+  DIMS.forEach((d,i)=>{const a=an.target[i]/mx;if(a<0.12)return;dy.forEach(y=>e+=line(264,y,374,ly(i),"var(--muted)",a*0.18));
+    HEADS.forEach(([h])=>e+=line(386,ly(i),514,hy[h],hc[h],a*0.55,a*1.6));});
+  HEADS.forEach(([h])=>e+=line(546,hy[h],gx-4,gy+56,hc[h],.5,1.4));
+  vy.forEach(y=>e+=line(gx+8*cs+4,gy+56,786,y,"var(--muted)",.45));
+  vy.forEach(y=>HEADS.forEach(([h])=>e+=line(814,y,906,hy[h],"var(--muted)",.25)));
+  n+=`<rect x="10" y="172" width="80" height="36" rx="8" fill="var(--sunk)" stroke="var(--line)"/>`+lab(50,194,"Brief","middle",11,"var(--ink)");
+  n+=`<circle cx="140" cy="190" r="13" fill="${vc}"/>`+lab(140,222,"Gate");
+  dy.forEach((y,i)=>{n+=`<circle cx="250" cy="${y}" r="9" fill="var(--surface)" stroke="var(--ink)" stroke-width="1.2"/>`+lab(250,y-14,dn[i],"middle",9);});
+  DIMS.forEach((d,i)=>{const a=an.target[i]/mx;n+=`<circle cx="380" cy="${ly(i)}" r="${(1.8+a*5).toFixed(1)}" fill="var(--accent)" fill-opacity="${(0.18+a*0.82).toFixed(2)}"/>`;if(a>0.55)n+=lab(392,ly(i)+3,DS[d],"start",8.5,"var(--ink)");});
+  n+=lab(380,16,"24-dim latent","middle",9);
+  HEADS.forEach(([h,l])=>{n+=`<circle cx="530" cy="${hy[h]}" r="15" fill="${hc[h]}"/>`+lab(530,hy[h]+29,l.split(" · ")[1],"middle",9);});
+  const use={};res.scents.forEach(sc=>sc.rows.forEach(r=>{if(!use[r.id]||use[r.id].pct<r.pct)use[r.id]={h:sc.head,pct:r.pct};}));
+  PAL.forEach((m,i)=>{const x=gx+(i%8)*cs,y=gy+Math.floor(i/8)*cs,u=use[m.id];
+    n+=`<rect x="${x+1}" y="${y+1}" width="${cs-2}" height="${cs-2}" rx="2" fill="${u?hc[u.h]:"var(--f-"+m.fam+")"}" fill-opacity="${u?1:.16}"><title>${esc(m.id+" · "+m.name+(u?" · used":""))}</title></rect>`;});
+  n+=lab(gx+4*cs,gy-8,"64-cartridge palette","middle",9);
+  vy.forEach((y,i)=>{n+=`<rect x="786" y="${y-9}" width="28" height="18" rx="4" fill="var(--surface)" stroke="var(--ink)" stroke-width="1"/>`+lab(800,y+3.5,"✓","middle",10,"var(--ok)")+lab(800,y-13,vn[i],"middle",8.5);});
+  HEADS.forEach(([h])=>{const sc=res.scents.find(s=>s.head===h);n+=`<rect x="906" y="${hy[h]-14}" width="84" height="28" rx="6" fill="${hc[h]}" fill-opacity=".14" stroke="${hc[h]}"/>`+lab(948,hy[h]+4,(sc?sc.rows.length:0)+" mats","middle",10,"var(--ink)");});
+  const cols=[[50,"L0"],[140,"L1"],[250,"L2"],[380,"L3"],[530,"L4"],[656,"L5"],[800,"L6"],[948,"L7"]];
+  cols.forEach(([x,t])=>n+=lab(x,H-8,t,"middle",9,"var(--accent)"));
+  $("#trace").innerHTML=`<svg viewBox="0 0 ${W} ${H}" style="min-width:720px;width:100%" role="img" aria-label="Brain trace from brief to three formulas"><g class="fade">${e}</g>${n}</svg>`;
+}
+
+/* ---------- Controls ---------- */
+const EXAMPLES=["DMT","World War 3","Firecrackers","DEFCON 3","Primal erotica","Smells like Kanye West","Soybeans","Dark feces chocolate","Spicy chilli","Rain on hot asphalt in Singapore","My grandmother's library"];
+$("#examples").innerHTML=EXAMPLES.map(x=>`<button class="chip" data-load="${esc(x)}">${esc(x)}</button>`).join("");
+function seg(el,obj,key,lensKey){
+  el.innerHTML=Object.entries(obj).map(([k,v])=>`<button data-k="${k}" aria-pressed="false">${esc(typeof v==="string"?v:v.label)}${v.sub?`<small>${esc(v.sub)}</small>`:""}</button>`).join("");
+  const sync=()=>el.querySelectorAll("button").forEach(b=>b.setAttribute("aria-pressed",String((lensKey?state.lens[lensKey]:state[key])===b.dataset.k)));
+  el.addEventListener("click",ev=>{const b=ev.target.closest("button");if(!b)return;
+    if(lensKey){state.lens[lensKey]=state.lens[lensKey]===b.dataset.k?null:b.dataset.k;}else state[key]=b.dataset.k;sync();if(lastRun)run();});
+  sync();
+}
+seg($("#frame"),FRAMES,"frame");
+seg($("#format"),FORMATS,"format");
+$("#lens").innerHTML=Object.entries(LENS).map(([k,v])=>`<div class="lens-row"><span class="lab">${esc(v.label)}</span><div class="seg" id="lens-${k}"></div></div>`).join("");
+Object.entries(LENS).forEach(([k,v])=>seg($("#lens-"+k),v.opts,null,k));
+let lastRun=false,lastRes=null;
+function run(){
+  const an=analyze($("#brief").value);lastRun=true;
+  if(an.verdict==="decline"){lastRes=null;renderDecline(an);$("#deep").disabled=true;return;}
+  const cfg={frame:state.frame,format:state.format,lens:{...state.lens}};
+  const res={an,cfg,verdict:an.verdict,decomp:decompose(an),scents:composeAll(an,cfg),source:"offline engine"};
+  lastRes=res;$("#deep").disabled=false;renderResult(res);
+  $("#status").textContent="";
+}
+document.addEventListener("click",ev=>{const b=ev.target.closest("[data-load]");if(!b)return;$("#brief").value=b.dataset.load;run();$("#composer").scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"});});
+$("#go").addEventListener("click",run);
+$("#brief").addEventListener("keydown",ev=>{if(ev.key==="Enter"&&(ev.metaKey||ev.ctrlKey)){ev.preventDefault();run();}});
+
+/* ---------- Claude layer: proposer ---------- */
+function buildPrompt(res){
+  const L=res.cfg.lens;
+  const pal=PAL.map(m=>`${m.id}|${m.name}|${TIER[m.tier]}|${FAM[m.fam]}|cap ${m.cap}%|wash ${m.sub}/3|cost ${m.cost}/5|${m.kind==="A"?"accord":"material"}`).join("\n");
+  return `You are the Sion Scent Brain, a master perfumer system for a brand that starts with custom-scented laundry detergent and grows into a fragrance house. A customer typed a free-text brief. Turn it into exactly three formulas.
+
+BRIEF: """${res.an.raw}"""
+FRAME (shapes all three): ${FRAMES[res.cfg.frame].label} (${FRAMES[res.cfg.frame].sub})
+FORMAT: ${FORMATS[res.cfg.format].label}${FORMATS[res.cfg.format].laundry?" (laundry: favour materials with wash 3/3, keep top notes under 15%)":""}
+WEARER LENS (apply to the luxury scent only): climate=${L.climate||"unset"}, moment=${L.moment||"unset"}, projection=${L.projection||"unset"}
+OFFLINE GATE PRE-READ: ${res.verdict}
+
+RULES
+1. Ethics gate. If the brief asks to celebrate sexual violence, abuse of children, atrocities against real groups, self-harm or hate, set gate.verdict to "decline", explain in one sentence, offer 3 alternative feelings in gate.alternatives, and return an empty scents array.
+2. Persona. If the brief names a real person, read only their public aesthetic. Never claim to know how they smell. Never put their name in a scent name. verdict "persona".
+3. War and drug themes are allowed as art (verdict "theme"). Translate the experience, never claim effects.
+4. Translation ladder. Literal smell that is pleasant: build it. Literal smell that is foul: keep its signature at trace level (indolic or animalic accords under 1%) and wrap it, verdict "transmute". No smell: use the places, materials and weather around it. Pure idea: map by temperature, brightness, texture, tempo.
+5. Beauty floor. Odd is welcome, foul is not. Every scent must be wearable on skin or fabric.
+6. Three heads, in this order:
+   creative = the brain's own reading with a deliberate contrast twist, 10 to 16 materials, prefers accords
+   accurate = closest wearable reading of the brief, 8 to 13 materials
+   luxury = couture version with finer materials and a longer dry-down, 12 to 18 materials
+7. Use ONLY palette IDs below. pct is percent of the fragrance concentrate. Each formula sums to 100. Respect each cap. Typical structure: top 12 to 20, heart 28 to 36, base 45 to 58.
+8. Names: evocative, 1 to 3 words, no real person's name, no trademarked perfume names.
+9. Plain language, no em dashes, no semicolons.
+
+PALETTE (ID|name|tier|family|cap|wash survival|cost|type)
+${pal}
+
+Reply with ONLY this JSON shape:
+{"gate":{"verdict":"clear|theme|persona|transmute|decline","notes":["one short sentence"],"alternatives":[]},
+ "decomposition":{"literal":["..."],"sensory":["..."],"emotional":["..."],"cultural":["..."]},
+ "scents":[{"head":"creative","name":"...","story":"two sentences on how it opens and dries down","why":"one sentence linking it to the brief","formula":[{"id":"BERG","pct":8}]},{"head":"accurate",...},{"head":"luxury",...}]}`;
+}
+let sampleFn=null,ctl=null;
+const sampleP=(window.claude&&typeof window.claude.use==="function")?window.claude.use("sample").catch(()=>null):Promise.resolve(null);
+sampleP.then(s=>{sampleFn=s;if(s){$("#deep").hidden=false;}});
+const ERR={not_granted:"Claude was not allowed for this page. The offline engine still works.",rate_limited:"Too many requests right now. Try again in a minute.",refused:"Claude declined this brief. Try rewording it.",invalid_json:"Claude's answer could not be read as a formula. Try again.",session_expired:"Sign in again to use Claude.",sampling_disabled:"Claude is not available on this account."};
+$("#stop").addEventListener("click",()=>ctl&&ctl.abort());
+$("#deep").addEventListener("click",async()=>{
+  if(!sampleFn)return;
+  if(!lastRes)run();
+  if(!lastRes)return;
+  const base=lastRes;
+  ctl=new AbortController();
+  $("#deep").disabled=true;$("#go").disabled=true;$("#stop").hidden=false;
+  $("#status").textContent="Thinking. A full three-formula reading takes up to a minute.";
+  try{
+    const data=await sampleFn.json(buildPrompt(base),{signal:ctl.signal,modelTier:"default",onText:({text})=>{$("#status").textContent="Writing formulas · "+text.length+" characters";}});
+    const g=data&&data.gate||{};
+    if(g.verdict==="decline"){
+      $("#out").innerHTML=`<div class="decline-box fade"><span class="gate"><span class="pill v-decline">Declined</span><span><b>${esc((g.notes||["Claude declined this brief."])[0])}</b></span></span><div class="chips">${(g.alternatives||[]).map(s=>`<button class="chip" data-load="${esc(s)}">${esc(s)}</button>`).join("")}</div></div>`;
+      $("#status").textContent="";return;
+    }
+    const scents=HEADS.map(([h])=>{
+      const s=(data.scents||[]).find(x=>x&&x.head===h);
+      if(!s||!Array.isArray(s.formula))return base.scents.find(x=>x.head===h);
+      const rows=s.formula.map(f=>({id:String(f.id||"").toUpperCase().trim(),pct:Number(f.pct)||0})).filter(r=>BYID[r.id]&&r.pct>0);
+      const merged={};rows.forEach(r=>merged[r.id]=(merged[r.id]||0)+r.pct);
+      const list=Object.entries(merged).map(([id,pct])=>({id,pct}));
+      if(list.length<3)return base.scents.find(x=>x.head===h);
+      const sc=finalize(list,base.an,h,base.cfg,{name:String(s.name||"").slice(0,40),story:String(s.story||"").slice(0,400),why:String(s.why||"").slice(0,240),notes:[]});
+      if(!sc.name)nameAndStory(sc,base.an);
+      return sc;
+    });
+    const d=data.decomposition||{};
+    const arr=x=>Array.isArray(x)&&x.length?x.slice(0,6).map(String):null;
+    const v=["clear","theme","persona","transmute"].includes(g.verdict)?g.verdict:base.verdict;
+    const res={...base,verdict:v,gateNotes:(Array.isArray(g.notes)&&g.notes.length?g.notes.map(String):base.an.notes).concat(["Claude proposed these formulas. The local validator applied caps, the beauty floor and dosing."]),
+      decomp:{literal:arr(d.literal)||base.decomp.literal,sensory:arr(d.sensory)||base.decomp.sensory,emotional:arr(d.emotional)||base.decomp.emotional,cultural:arr(d.cultural)||base.decomp.cultural,unmapped:[]},
+      scents,source:"Claude + validator"};
+    renderResult(res);$("#status").textContent="Deepened with Claude.";
+  }catch(e){
+    if(e&&e.code==="cancelled")$("#status").textContent="Stopped.";
+    else{$("#status").textContent=ERR[e&&e.code]||"Claude could not finish. The offline result is still shown.";if(e&&(e.code==="not_granted"||e.code==="sampling_disabled"))$("#deep").hidden=true;}
+  }finally{$("#deep").disabled=false;$("#go").disabled=false;$("#stop").hidden=true;}
+});
+
+/* ---------- Reference sections ---------- */
+const LAYERS=[
+["L0","Brief intake","Free text in any language, up to 400 characters. Also frame, format and the optional Wearer Lens.","Rule code"],
+["L1","Ethics and safety gate","Five verdicts: clear, theme, persona, transmute, decline. Runs before anything creative happens, and again on the model's answer.","Rule code, then model check"],
+["L2","Concept decomposition","Splits the brief into literal smells, sensory qualities (temperature, light, weight), emotions and cultural references.","Language model"],
+["L3","Olfactive latent map","Projects everything onto 24 olfactive dimensions. This is the shared language between words, materials and later molecules.","Lexicon now, learned embedding in v2"],
+["L4","Three heads","Creative adds a contrast twist. Accurate follows the brief. Luxury enriches and applies the Wearer Lens.","Model plus head rules"],
+["L5","Formulator","Picks cartridges tier by tier (top, heart, base) by matching what is still missing from the target, then splits each tier's share. If a tier cannot carry its share under the caps, it adds up to 4 more. Most formulas land at 10 to 18 cartridges.","Matching pursuit over the palette"],
+["L6","Validator","Unknown IDs dropped. Caps enforced. Beauty floor. Animalic ceiling on transmuted briefs. Sum fixed to exactly 100.","Deterministic code, final authority"],
+["L7","Output and dispense","Names, story, metrics, and a dispense program in grams or millilitres for the chosen format and batch.","Code, machine-readable"]
+];
+$("#layers").innerHTML=LAYERS.map(([id,n,d,how])=>`<div class="layer"><span class="lid">${id}</span><div><div class="lname">${n}</div><div class="eyebrow" style="margin-top:4px">${how}</div></div><div class="ldesc">${d}</div></div>`).join("");
+
+const CASES=[
+["DMT","Read as an experience: ritual smoke, vine earth, ozone, an electric violet leaf. No drug claims, nothing psychoactive."],
+["World War 3","Gunpowder, cold ash, wet trench earth, oiled leather, ozone. Copy stays solemn, never celebratory."],
+["Firecrackers","Spent flint with sulphur kept at trace, mandarin peel, cinnamon. Festival, not explosion."],
+["DEFCON 3","No smell of its own, so rung 3: hot metal, aldehydes, black pepper, violet leaf. Alarm as an electric, clean feeling."],
+["Primal erotica","Skin musk, ambrette, castoreum-type, jasmine, labdanum. Sensual in the bottle, never explicit in the copy."],
+["Smells like Kanye West","The public aesthetic, never the man: concrete, black leather, gospel incense. His name stays off the label."],
+["Dark feces chocolate","Beauty floor: the fecal note becomes an indolic trace under 1% on patchouli earth and cocoa. A gourmand with a shadow."],
+["Rapists","Declined. It names harm done to people. The brain offers danger, menace or night as abstract themes instead."],
+["Spicy chilli","Fresh spice, not burn: black and pink pepper, ginger, tomato leaf green, then warm amber."],
+["Soybeans","Rung 1: soy milk and green bean accord, steamed rice, fig leaf, tonka. Nutty, milky and quietly odd."],
+["Sweaty gym socks","Transmuted: skin musk, ambrette and cardamom. The memory of effort, not the smell of it."],
+["Tuesday","Rung 4, pure idea. Offline maps it by a seeded guess. Claude reads it as a mood: grey light, coffee, clean cotton."]
+];
+$("#cases-t tbody").innerHTML=CASES.map(([b,how])=>{const an=analyze(b);const v=an.verdict;return`<tr class="load" data-load="${esc(b)}" tabindex="0"><td><b>${esc(b)}</b></td><td><span class="gate" style="display:inline;padding:0;border:0;background:none"><span class="pill v-${v}">${GATE_LABEL[v]}</span></span></td><td>${esc(how)}</td></tr>`;}).join("");
+$("#cases-t").addEventListener("keydown",ev=>{if(ev.key==="Enter"){const r=ev.target.closest("[data-load]");if(r)r.click();}});
+
+let famSel="all";
+function renderPal(){
+  $("#famchips").innerHTML=[["all","All 64"],...Object.entries(FAM)].map(([k,v])=>`<button data-f="${k}" aria-pressed="${famSel===k}">${k!=="all"?`<span class="dot" style="background:var(--f-${k})"></span>`:""}${esc(v)}</button>`).join("");
+  $("#pal-t tbody").innerHTML=PAL.filter(m=>famSel==="all"||m.fam===famSel).map(m=>`<tr><td class="mono">${m.id}</td><td>${esc(m.name)}</td><td>${TIER[m.tier]}</td><td><span class="dot" style="background:var(--f-${m.fam})"></span>${FAM[m.fam]}</td><td>${m.kind==="A"?"Bridge accord":"Material"}</td><td class="num">${m.cap}</td><td class="subdots">${[1,2,3].map(k=>`<i class="${k<=m.sub?"on":""}"></i>`).join("")}</td><td class="num">${"$".repeat(m.cost)}</td></tr>`).join("");
+}
+$("#famchips").addEventListener("click",ev=>{const b=ev.target.closest("button");if(!b)return;famSel=b.dataset.f;renderPal();});
+renderPal();
+run();
+})();
+</script>
