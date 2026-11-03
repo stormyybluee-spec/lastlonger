@@ -54,7 +54,8 @@ a{color:var(--accent)}
 .brand{font-family:var(--mono);font-size:.78rem;letter-spacing:.2em;text-transform:uppercase}
 .brand b{color:var(--accent);font-weight:600}
 .mast h1 em{font-style:italic;color:var(--accent)}
-.toc{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;scrollbar-width:thin}
+.mast>*{min-width:0}
+.toc{min-width:0;max-width:100%;display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;scrollbar-width:thin}
 .toc a{flex:none;font-family:var(--mono);font-size:.74rem;text-decoration:none;color:var(--ink);border:1px solid var(--line);padding:6px 10px;border-radius:999px;background:var(--surface)}
 .toc a:hover{border-color:var(--accent);color:var(--accent)}
 .stats{display:flex;flex-wrap:wrap;gap:10px 28px}
@@ -62,7 +63,8 @@ a{color:var(--accent)}
 .stat .n{font-family:var(--display);font-size:1.9rem;line-height:1}
 .stat .l{font-size:.8rem;color:var(--muted)}
 
-section{padding-block:44px 8px;display:grid;gap:20px}
+section{padding-block:44px 8px;display:grid;gap:20px;grid-template-columns:minmax(0,1fr)}
+section>*,.composer>*,.box>*,.step>*{min-width:0}
 .sec-head{display:grid;gap:8px}
 .chapter{font-family:var(--mono);font-size:.74rem;color:var(--accent);letter-spacing:.12em}
 
@@ -200,6 +202,14 @@ footer{margin-top:50px;padding-top:18px;border-top:1px solid var(--line);color:v
   .stage{grid-template-columns:1fr;gap:6px}
   .gate{grid-template-columns:1fr}
 }
+.chain{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:8px;counter-reset:ch}
+.chain li{counter-increment:ch;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 12px;display:grid;gap:3px;position:relative}
+.chain li::before{content:counter(ch,decimal-leading-zero);font-family:var(--mono);font-size:.68rem;color:var(--accent)}
+.chain li span{font-size:.8rem;color:var(--muted)}
+.chain li i{font-style:normal;font-family:var(--mono);font-size:.62rem;color:var(--theme);border:1px solid var(--theme);border-radius:4px;padding:0 4px;justify-self:start}
+ol.steps{margin:6px 0 0;padding-left:22px;display:grid;gap:4px;font-size:.9rem}
+ol.steps li.st-wait{color:var(--muted)} ol.steps li.st-run b::after{content:" · running";font-weight:400;color:var(--warn)} ol.steps li.st-done b::after{content:" · done";font-weight:400;color:var(--ok)} ol.steps li.st-fail b::after{content:" · failed";font-weight:400;color:var(--bad)}
+ul.spec{margin:6px 0 0;padding-left:18px;display:grid;gap:3px;font-size:.9rem}
 /* virtual nose */
 .nose-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:22px}
 .nose-ctx{display:grid;gap:12px;align-content:start}
@@ -219,6 +229,7 @@ textarea.nf.small{min-height:150px}
 .sev-fail{background:var(--bad)} .sev-warn{background:var(--warn)} .sev-info{background:var(--theme)} .sev-pass{background:var(--ok)}
 .heatt{min-width:760px;font-size:.8rem}
 .heatt td.heat{background:color-mix(in srgb,var(--accent) calc(var(--h) * 70%),transparent)}
+.st-agree{color:var(--ok)}.st-measured{color:var(--accent)}.st-conflict{color:var(--bad)}.st-est{color:var(--muted)}
 .offtag{font-family:var(--mono);font-size:.62rem;color:var(--bad);border:1px solid var(--bad);border-radius:4px;padding:0 4px;white-space:nowrap}
 #n-out{display:grid;gap:16px}
 #n-a1,#n-a2,#n-a3{display:grid;gap:16px}
@@ -231,7 +242,7 @@ textarea.nf.small{min-height:150px}
 <div class="wrap">
 <header class="mast">
   <div class="mast-top">
-    <div class="brand"><b>Sion</b> · Scent Brain · build 0.2</div>
+    <div class="brand"><b>Sion</b> · Scent Brain · build 0.3</div>
     <div class="eyebrow">Master node for detergent wash and, later, the fragrance house</div>
   </div>
   <h1>Type anything.<br>Get <em>three</em> scents back.</h1>
@@ -244,7 +255,7 @@ textarea.nf.small{min-height:150px}
     <div class="stat"><span class="n mono">93</span><span class="l">materials with physics in the Virtual Nose</span></div>
   </div>
   <nav class="toc" aria-label="Sections">
-    <a href="#composer">01 Composer</a><a href="#nose">02 Virtual Nose</a><a href="#verify">03 Gemini data check</a><a href="#architecture">04 Architecture</a><a href="#heads">05 Three heads</a><a href="#ladder">06 Translation rules</a><a href="#cases">07 Hard briefs</a><a href="#palette">08 Palette</a><a href="#learning">09 Learning loop</a><a href="#landscape">10 Landscape</a><a href="#roadmap">11 Roadmap</a>
+    <a href="#composer">01 Composer</a><a href="#nose">02 Virtual Nose</a><a href="#verify">03 Gemini data check</a><a href="#engine">04 Engine</a><a href="#architecture">05 Composer layers</a><a href="#heads">06 Three heads</a><a href="#ladder">07 Translation rules</a><a href="#cases">08 Hard briefs</a><a href="#palette">09 Palette</a><a href="#learning">10 Learning loop</a><a href="#landscape">11 Landscape</a><a href="#roadmap">12 Roadmap</a>
   </nav>
 </header>
 
@@ -305,8 +316,9 @@ textarea.nf.small{min-height:150px}
       </div>
     </div>
     <div class="actions">
-      <button class="btn" id="n-go">Run the audit</button>
-      <button class="btn ghost" id="n-panel" hidden>Senior panel review with Claude</button>
+      <button class="btn" id="n-go">Quick: run the audit</button>
+      <button class="btn ghost" id="n-panel" hidden>Standard: senior panel review</button>
+      <button class="btn ghost" id="n-full" hidden>Full review: 5 blind agents</button>
       <button class="btn ghost" id="n-stop" hidden>Stop</button>
       <span class="status" id="n-status" aria-live="polite"></span>
     </div>
@@ -336,7 +348,7 @@ textarea.nf.small{min-height:150px}
 
 <section id="verify">
   <div class="sec-head"><span class="chapter">03 · DATA CHECK WITH GEMINI</span><h2>Verify the brain's numbers</h2>
-  <p class="lede">The Virtual Nose is only as good as its material data. About a third has been checked against sources. The rest are expert estimates. Gemini can look up the rest. Copy a prompt, paste it into Gemini, then paste Gemini's answer back here.</p></div>
+  <p class="lede">The Virtual Nose is only as good as its material data. It now combines three sources. Gemini's first three batches are now built in and cross-checked. Run them again any time to refresh or to cover new materials. Copy a prompt, paste it into Gemini, then paste Gemini's answer back here.</p></div>
   <div class="composer">
     <div class="step">
       <div class="step-label"><span class="k">Step 1</span><span class="t">Copy a prompt</span><span class="h">Do one batch at a time so Gemini answers in full</span></div>
@@ -355,18 +367,95 @@ textarea.nf.small{min-height:150px}
       <p class="status">Applied data is saved in this browser only and re-runs the audit at once. To make it permanent for everyone, paste the same answer into your chat with Claude.</p>
     </div>
   </div>
+  <div class="box"><span class="eyebrow">Three-source check · Claude estimate, research agent, Gemini (3 Nov 2026)</span><h3>What the verifier did with Gemini's answers</h3><p class="status">A measured value from PubChem wins. Where two sources agree within a tolerance (logP 0.8, boiling point 25 °C, impact 1.6 steps on the 1 to 10 scale), physical values are averaged and impact keeps the brain's finer value. Where they disagree, the brain keeps its current value and lists the clash below for a supplier data sheet or certificate to settle. Gemini's IFRA Category 10A limits are now checked on every audit, marked unverified.</p><div id="recon"></div></div>
   <details class="lens"><summary>See all material data <span>the values the audit uses, marked source-checked, est. or your data</span></summary><div style="margin-top:12px">
   <div class="tablewrap"><table class="ref" id="n-db"><thead><tr><th>Material</th><th>CAS</th><th class="num">logP</th><th class="num">bp °C</th><th class="num">Impact</th><th>Smells of</th><th>Flags</th></tr></thead><tbody></tbody></table></div></div></details>
 </section>
 
+<section id="engine">
+  <div class="sec-head"><span class="chapter">04 · THE ENGINE</span><h2>From one line to a perfumer-grade formula</h2>
+  <p class="lede">The goal is to skip you. When you type a raw brief, the brain should reach what a senior perfumer team would hand you without you having to push, paste a review or ask twice. This section is the brain's operating manual. Every brief runs through it, at one of three depths.</p></div>
+
+  <div class="box"><span class="eyebrow">Case 1 · why the engine exists · Chrysanthemum brief v2, 3 Nov 2026</span>
+    <h3>A complete-looking brief with ten paper failures</h3>
+    <p>Another chat wrote nine chrysanthemum tea formulas that read as finished. Only after you asked for a senior review did ten problems surface: geosmin 15 times over a safe level, camphor and marine notes the brief itself banned, candy notes, colour formers that would block shipping, leaky capsules, a tea core too small to survive a dryer, and Creative and Accurate versions that smelled the same after drying. None were hidden. Each one was sitting in the numbers. The lesson: a formula is not done when it looks complete. It is done when it has been framed, measured, attacked and scored.</p>
+  </div>
+
+  <div class="sec-head" style="margin-top:8px"><h3>The chain</h3><p class="status">Every stage ticks its pass test before the next one starts. Stages marked "blind" do not see earlier opinions, so they cannot be anchored by them.</p></div>
+  <ol class="chain">
+    <li><b>Raw brief</b><span>A word, a feeling, a paste, an OEM draft</span></li>
+    <li><b>Triage</b><span>Quick, Standard or Full</span></li>
+    <li><b>Cold framer</b> <i>blind</i><span>Types the brief, lists hidden hypotheses, writes the answer spec</span></li>
+    <li><b>Librarian</b><span>What the brain already knows: past genomes, rules, materials</span></li>
+    <li><b>Lanes</b><span>Concept, materials data, formula math, benchmark sweep</span></li>
+    <li><b>Verifier</b><span>Re-checks every number against its source</span></li>
+    <li><b>Red team ×3</b> <i>blind</i><span>Each voice attacks alone</span></li>
+    <li><b>Court</b><span>Answers every point, completeness auditor holds the spec</span></li>
+    <li><b>Reloop</b><span>Fix failed pass tests, at most twice</span></li>
+    <li><b>Publish</b><span>Formula, dispense program, predictions</span></li>
+    <li><b>Scorekeeper</b><span>Panel results vs predictions, exam, correction ledger</span></li>
+  </ol>
+
+  <div class="sec-head" style="margin-top:8px"><h3>The 7 moves, rebuilt for scent</h3></div>
+  <div class="tablewrap"><table class="ref" style="min-width:720px"><thead><tr><th>Move</th><th>What to do</th><th>Pass test</th></tr></thead><tbody>
+    <tr><td><b>1 · Frame</b></td><td>Type the brief (literal, evocative, associative, abstract) and the job (fine fragrance, laundry, home). Turn every "?", "only", "really", "like X" into a hypothesis. Write the answer spec before choosing a single material. List what the answer could flip on: bottle vs dry fabric, free vs capsule oil, heat pump vs vented dryer, humid vs temperate, weight vs loudness.</td><td>Answer spec and blind-spot list written</td></tr>
+    <tr><td><b>2 · Default and benchmarks</b></td><td>Name the default accord a house perfumer would reach for, and the market benchmarks a panel will compare against. Sweep popular references (notes lists, reviews) as hypotheses only. Scope each source: what does it cover, what does it leave out?</td><td>Default named, 3+ sources from different camps, each scoped</td></tr>
+    <tr><td><b>3 · Materials as actors</b></td><td>Give every material a role: signature, bridge, booster, fixative, filler. Walk each through its budget: how loud it is, where it lands, what it costs.</td><td>Every material has a role and a touchpoint where it matters</td></tr>
+    <tr><td><b>4 · Conditions and precedents</b></td><td>Test across conditions the way an economist tests across regimes: bottle, wash, line dry, dryer, 7 and 21 days, rubbing, 40 °C storage. Find precedents: classic accords and successful products with the same idea.</td><td>At least one stress condition checked (dryer or 40 °C)</td></tr>
+    <tr><td><b>5 · Complete map</b></td><td>List every channel that builds the target smell and every one that destroys it: deposition, evaporation, capsule release, masking by base malodour, reactions with the base, oxidation, leakage.</td><td>No reviewer can name a channel that is missing</td></tr>
+    <tr><td><b>6 · Data first</b></td><td>Run the Virtual Nose before writing words like "long-lasting", "tea-forward" or "safe". Name the result that would prove the formula wrong, with a date, and pre-register a prediction for the panel.</td><td>Every claim has a number, every formula a dated prediction</td></tr>
+    <tr><td><b>7 · Attack, then state confidence</b></td><td>Tag every claim with its evidence tier. Word audit: "long-lasting", "natural", "hypoallergenic", "safe" each need a test or a rewrite. Overcorrection guard: when fixing a fault, keep what worked. Blind red team, then the court.</td><td>No unsupported claim word, every red-team point answered</td></tr>
+  </tbody></table></div>
+
+  <div class="row2">
+    <div class="box"><span class="eyebrow">Evidence ladder</span><h3>Higher beats lower</h3>
+      <div class="tablewrap"><table class="ref" style="min-width:0"><tbody>
+      <tr><td class="mono">T0</td><td>Measured on your product: GC-MS headspace, panel scores, 40 °C stability</td></tr>
+      <tr><td class="mono">T1</td><td>Binding rules: IFRA certificate, EU CLP, Singapore NEA and EPMA</td></tr>
+      <tr><td class="mono">T2</td><td>Supplier technical data sheets and safety data sheets</td></tr>
+      <tr><td class="mono">T3</td><td>Measured values in public databases (PubChem, TGSC)</td></tr>
+      <tr><td class="mono">T4</td><td>AI search results, literature estimates, the agent's snippets</td></tr>
+      <tr><td class="mono">T5</td><td>Model memory, popular notes lists, reviews</td></tr>
+      </tbody></table></div></div>
+    <div class="box"><span class="eyebrow">Three depths, on this page</span><h3>Tiers</h3>
+      <div class="tablewrap"><table class="ref" style="min-width:0"><tbody>
+      <tr><td><b>Quick</b></td><td>Composer offline engine, or the paper audit. Seconds. For ideas and first checks.</td></tr>
+      <tr><td><b>Standard</b></td><td>Senior panel review: one Claude call playing three perfumers, then re-audited. About a minute.</td></tr>
+      <tr><td><b>Full</b></td><td>Full review: cold framer, three blind red-team agents, a court with a completeness auditor, re-audit and predictions. Several minutes. For anything going to an OEM.</td></tr>
+      </tbody></table></div>
+      <p class="status">Go up a tier when the audit shows a fail, when two sources disagree on data, or when the formula is about to cost money.</p></div>
+  </div>
+
+  <div class="box"><span class="eyebrow">Who sees what</span><h3>Independence rules</h3>
+    <div class="tablewrap"><table class="ref" style="min-width:640px"><thead><tr><th>Agent</th><th>Sees</th><th>Must not see</th><th>Why</th></tr></thead><tbody>
+    <tr><td>Cold framer</td><td>The raw brief, product context, the rules</td><td>The formula and any earlier answer</td><td>A framer who sees the draft writes a spec the draft already meets</td></tr>
+    <tr><td>Red team (3)</td><td>Formula, audit, the framer's spec</td><td>Each other and the court</td><td>Blind attacks find different holes</td></tr>
+    <tr><td>Court</td><td>Everything</td><td>Nothing</td><td>Must answer every point in writing</td></tr>
+    <tr><td>Exam</td><td>The test formula only</td><td>The answer key</td><td>A test with a visible key measures nothing</td></tr>
+    </tbody></table></div></div>
+
+  <div class="box" id="exam"><span class="eyebrow">Scorekeeper · test bank and skip-me score</span>
+    <h3>Does the brain catch Case 1 on its own?</h3>
+    <p>The exam runs Case 1's formulas through the automatic checks with no help and grades them against the ten findings the senior panel listed. The skip-me score counts findings you had to trigger yourself. The goal is zero.</p>
+    <p class="status">Honest caveat: Case 1 is a training case. The senior rules were written from it, so 10 of 10 proves the rules work, not that the brain handles a new brief. Held-out tests (a rose softener, a white-musk extrait, a durian joke brief, a fragrance-free-claim detergent) come next, with answer keys kept out of the page.</p>
+    <div class="actions"><button class="btn" id="exam-go">Run the exam</button><span class="status" id="exam-status"></span></div>
+    <div id="exam-out"></div>
+    <div class="tablewrap" style="margin-top:12px"><table class="ref" style="min-width:640px"><thead><tr><th>Date</th><th>Correction</th><th>Triggered by</th><th>Cause</th></tr></thead><tbody>
+      <tr><td class="mono">2026-11-03</td><td>Chrysanthemum v2: ten paper failures (geosmin, camphor, marine, candy, colour, capsules, tea core, duplicates, musk share, salicylate)</td><td>You asked for a senior review</td><td>No audit before writing, no red team, potent traces judged by weight</td></tr>
+      <tr><td class="mono">2026-11-03</td><td>Hexyl salicylate EU CLP Repr. 2 flag</td><td>Engine (data agent), unprompted</td><td>Regulation newer than the formula</td></tr>
+      <tr><td class="mono">2026-11-03</td><td>Gemini values that clash with two other sources held back for checking</td><td>Engine (verifier), unprompted</td><td>Single-source data</td></tr>
+    </tbody></table></div>
+  </div>
+</section>
+
 <section id="architecture">
-  <div class="sec-head"><span class="chapter">04 · ARCHITECTURE</span><h2>How a brief becomes a formula</h2>
+  <div class="sec-head"><span class="chapter">05 · COMPOSER LAYERS</span><h2>How a brief becomes a formula</h2>
   <p class="lede">Eight layers, run in order. Layers 2 to 4 are where a language model adds the most. Layers 1, 6 and 7 are deterministic code, because safety, regulation and dosing must never depend on a model's mood.</p></div>
   <div class="layers" id="layers"></div>
 </section>
 
 <section id="heads">
-  <div class="sec-head"><span class="chapter">05 · THREE HEADS</span><h2>Scent 1, 2 and 3</h2>
+  <div class="sec-head"><span class="chapter">06 · THREE HEADS</span><h2>Scent 1, 2 and 3</h2>
   <p class="lede">Your umbrella, kept and sharpened. Every brief always returns all three, in this order, so a person learns the brand's grammar after one use.</p></div>
   <div class="grid3">
     <div class="box headbox" style="--hc:var(--creative)"><span class="eyebrow" style="color:var(--creative)">Scent 1 · Creative</span><h3>The brain's own reading</h3>
@@ -387,7 +476,7 @@ textarea.nf.small{min-height:150px}
 </section>
 
 <section id="ladder">
-  <div class="sec-head"><span class="chapter">06 · TRANSLATION RULES</span><h2>The ladder, the floor and the gate</h2>
+  <div class="sec-head"><span class="chapter">07 · TRANSLATION RULES</span><h2>The ladder, the floor and the gate</h2>
   <p class="lede">Most briefs name things that have no smell, or a bad one. The brain climbs a four-rung ladder until it reaches something a perfumer can build.</p></div>
   <div class="ladder">
     <div class="rung"><span class="rk">RUNG 1 · LITERAL</span><b>It has a good smell</b><p>Build it directly from materials or a bridge accord.</p><span class="ex">Soybeans → soy milk &amp; green bean accord</span></div>
@@ -406,13 +495,13 @@ textarea.nf.small{min-height:150px}
 </section>
 
 <section id="cases">
-  <div class="sec-head"><span class="chapter">07 · HARD BRIEFS</span><h2>What real people will type</h2>
+  <div class="sec-head"><span class="chapter">08 · HARD BRIEFS</span><h2>What real people will type</h2>
   <p class="lede">Your examples, plus the edge cases, run live through the gate on this page. Tap a row to load it into the composer.</p></div>
   <div class="tablewrap"><table class="ref" id="cases-t"><thead><tr><th>Brief</th><th>Gate</th><th>How the brain reads it</th></tr></thead><tbody></tbody></table></div>
 </section>
 
 <section id="palette">
-  <div class="sec-head"><span class="chapter">08 · PALETTE</span><h2>How many liquids is enough</h2>
+  <div class="sec-head"><span class="chapter">09 · PALETTE</span><h2>How many liquids is enough</h2>
   <p class="lede">Freedom of brief does not need an endless shelf. It needs the right shelf. A brief like "soybeans" or "gunpowder" is solved by a bridge accord: a small pre-made blend of 5 to 30 raw materials that a perfumer builds once and the machine treats as one liquid.</p></div>
   <div class="tablewrap"><table class="ref"><thead><tr><th>Stage</th><th>Liquids</th><th>What they are</th><th>Why that number</th></tr></thead><tbody>
     <tr><td><b>1 · Sion Wash</b><br><span class="eyebrow">now</span></td><td class="num">24</td><td>Laundry-grade accords, each pre-tested in your detergent base for stability and colour</td><td>Detergent customisation is a 3 to 6 accord mix at 0.5 to 1.1% load. 24 covers every family twice. Only high-substantivity materials survive rinse and dry (boiling point at or above 250 °C and ClogP at or above 3).</td></tr>
@@ -425,7 +514,7 @@ textarea.nf.small{min-height:150px}
 </section>
 
 <section id="learning">
-  <div class="sec-head"><span class="chapter">09 · LEARNING LOOP</span><h2>How the brain gets smarter</h2>
+  <div class="sec-head"><span class="chapter">10 · LEARNING LOOP</span><h2>How the brain gets smarter</h2>
   <p class="lede">Today the brain is rules plus a language model. Every order turns it into something no competitor has: a dataset of free-text briefs paired with formulas and with what people actually thought when they smelled them.</p></div>
   <div class="row2">
     <div class="box"><span class="eyebrow">The flywheel</span>
@@ -468,7 +557,7 @@ textarea.nf.small{min-height:150px}
 </section>
 
 <section id="landscape">
-  <div class="sec-head"><span class="chapter">10 · LANDSCAPE</span><h2>Who else is doing this</h2>
+  <div class="sec-head"><span class="chapter">11 · LANDSCAPE</span><h2>Who else is doing this</h2>
   <p class="lede">Researched 3 Nov 2026 from public reporting. Figures marked <span class="u">U</span> are uncertain or disputed across sources.</p></div>
   <div class="tablewrap"><table class="ref"><thead><tr><th>Player</th><th>Input</th><th>Engine and palette</th><th>What Sion takes from it</th></tr></thead><tbody>
     <tr><td><b>EveryHuman</b><br><span class="status">ScenTronix, Breda</span></td><td>About 23-item personality questionnaire</td><td>3 algorithms → 3 scents. 46 accords of 5 to 8 materials each. In-store dispenser, patented. About £45 for three 5 ml. EDT strength. 75k+ users<span class="u">U</span></td><td>Three outputs per session works. The quiz-first input and fixed EDT strength are the gap Sion fills.</td></tr>
@@ -483,7 +572,7 @@ textarea.nf.small{min-height:150px}
 </section>
 
 <section id="roadmap">
-  <div class="sec-head"><span class="chapter">11 · ROADMAP</span><h2>From wash to fragrance house</h2></div>
+  <div class="sec-head"><span class="chapter">12 · ROADMAP</span><h2>From wash to fragrance house</h2></div>
   <div>
     <div class="stage"><div class="sk">Stage 1<small>Sion Wash</small></div><div><h3>Custom-scented detergent</h3><p>The brain runs in detergent and softener formats only. Formulas are blended by hand from 24 laundry accords. Every order creates a Scent Genome record.</p><ul><li>Pick a fragrance supplier who will build and IFRA-certify 24 laundry accords</li><li>Stability test each accord in your base: 4 weeks at 40 °C, colour and pH</li><li>Launch the brief box on the site with the three-scent result</li><li>Collect the first 1,000 ratings</li></ul></div></div>
     <div class="stage"><div class="sk">Stage 2<small>The machine</small></div><div><h3>64-cartridge dispenser</h3><p>The brain sends a dispense program: cartridge ID and grams or millilitres, at 0.01 ml resolution. Fine fragrance formats open up. Retrieval from rated genomes switches on (v1).</p><ul><li>Gravimetric dosing (weigh, do not just pump) for accuracy below 1%</li><li>Cartridge freshness tracking: citrus and aldehydes oxidise</li><li>Batch log per bottle for recalls and repeat orders</li></ul></div></div>
@@ -492,7 +581,7 @@ textarea.nf.small{min-height:150px}
 </section>
 
 <footer>
-  <span>Sion Scent Brain · build 0.2 · 3 Nov 2026 · Virtual Nose added</span>
+  <span>Sion Scent Brain · build 0.3 · 3 Nov 2026 · Virtual Nose added</span>
   <span>Palette caps and dose levels are planning placeholders. Every formula must be checked against current IFRA Standards and supplier certificates, then stability and skin tested, before anything is sold.</span>
 </footer>
 </div>
@@ -1178,6 +1267,27 @@ const MDB_RAW=[
 ["Dipropylene glycol (DPG)","25265-71-8",0.0,230,0,"","","w","",100,"dpg|dipropylene glycol"]
 ];
 const MDB=MDB_RAW.map(([name,cas,logP,bp,imp,dims,tags,chem,reg,max,alias])=>({name,cas,logP,bp,imp,v:vec(dims),tags:tags?tags.split(","):[],chem:chem?chem.split(","):[],reg:reg?reg.split(","):[],max,alias:(alias||"").split("|").filter(Boolean)}));
+/* ---------- three-source reconciliation (verifier lane) ----------
+   Sources: Claude estimate (T5), research agent web snippets (T4), Gemini lookup 2026-11-03 (T4, measured values T3).
+   GEM[cas] = [logP, logP measured 0/1, bp, impact 1-10, IFRA N/R/S/P, Cat 10A limit %, EU allergen 0/1] */
+const GEM={"24851-98-7":[2.94,0,315.0,4.0,"N",null,0],"6259-76-3":[4.02,0,290.0,3.0,"R",20.3,1],"65405-77-8":[4.1,0,394.0,4.0,"R",null,1],"14901-07-6":[3.71,0,268.0,7.0,"R",null,1],"127-51-5":[4.08,0,232.0,5.0,"R",null,1],"118-58-1":[4.0,0,302.0,2.0,"R",7.3,1],"55066-48-3":[3.8,0,260.0,4.0,"N",null,0],"78-70-6":[2.84,0,195.0,5.0,"R",null,1],"87-44-5":[6.3,0,262.0,4.0,"S",null,0],"515-69-5":[5.1,0,314.0,2.0,"R",0.0062,0],"3796-70-1":[4.3,0,247.0,4.0,"N",null,0],"91-64-5":[1.39,1,300.0,4.0,"R",null,1],"60-12-8":[1.36,1,218.0,3.0,"N",null,0],"76-49-3":[3.7,0,223.0,4.0,"N",null,0],"17092-92-1":[2.2,0,295.0,6.0,"N",null,0],"507-70-0":[3.0,0,212.0,4.0,"N",null,0],"36431-72-8":[3.5,0,220.0,7.0,"N",null,0],"23696-85-7":[3.3,0,265.0,7.0,"R",null,1],"470-82-6":[2.74,1,176.0,5.0,"N",null,0],"116-26-7":[2.4,0,205.0,8.0,"N",null,0],"102-20-5":[3.8,0,325.0,3.0,"N",null,0],"105-95-3":[5.2,0,320.0,2.0,"N",null,0],"103-60-6":[3.1,0,255.0,4.0,"N",null,0],"120-51-4":[3.97,1,323.0,1.0,"R",null,1],"104-67-6":[3.6,0,297.0,5.0,"N",null,0],"4940-11-8":[1.7,1,266.0,6.0,"N",null,0],"120-57-0":[1.2,1,263.0,4.0,"R",null,1],"705-86-2":[2.8,0,286.0,5.0,"N",null,0],"2305-05-7":[4.2,0,312.0,4.0,"N",null,0],"65416-14-0":[1.5,0,250.0,6.0,"N",null,0],"18479-58-8":[3.3,0,198.0,5.0,"N",null,0],"78-69-3":[3.5,0,195.0,4.0,"N",null,0],"88-41-5":[4.8,0,235.0,4.0,"N",null,0],"115-95-7":[3.99,0,220.0,4.0,"R",null,1],"63500-71-0":[1.4,0,246.0,3.0,"N",null,0],"1205-17-0":[2.22,0,296.0,4.0,"R",0.15,1],"28940-11-6":[1.48,0,269.0,6.0,"N",null,0],"106-72-9":[2.3,0,185.0,8.0,"N",null,0],"110-41-8":[4.8,0,245.0,8.0,"N",null,1],"54464-57-2":[5.65,1,290.0,4.0,"R",2.4,1],"3681-71-8":[2.42,0,155.0,6.0,"N",null,0],"6790-58-5":[3.9,0,273.0,5.0,"N",null,0],"19700-21-1":[3.26,0,245.0,10.0,"N",null,0],"1222-05-5":[5.9,1,330.0,3.0,"R",null,0],"33704-61-9":[4.2,0,290.0,6.0,"R",0.13,1],"65113-99-7":[4.1,0,297.0,5.0,"N",null,0],"111879-80-2":[5.2,0,310.0,4.0,"N",null,0],"79-69-6":[4.2,0,250.0,7.0,"R",null,1],"106-24-1":[2.6,1,229.0,5.0,"R",4.7,1],"54440-17-4":[3.5,0,285.0,8.0,"N",null,0],"67801-20-1":[4.3,0,303.0,7.0,"N",null,0],"198404-98-7":[5.1,0,315.0,8.0,"N",null,0],"22457-23-4":[3.4,0,242.0,5.0,"N",null,0],"140-11-4":[1.96,1,215.0,3.0,"R",null,1],"106-22-9":[3.4,1,225.0,5.0,"R",12.0,1],"8014-09-3":[null,0,null,5.0,"R",null,1],"8016-96-4":[null,0,null,5.0,"R",null,0],"8016-23-7":[null,0,null,4.0,"R",null,0],"8000-66-6":[null,0,null,5.0,"R",null,1],"68648-33-9":[null,0,null,6.0,"R",null,1],"8015-92-7":[null,0,null,5.0,"R",null,1],"8008-26-2":[null,0,null,6.0,"S",null,1],"8007-08-7":[null,0,null,5.0,"R",null,0],"8006-81-3":[null,0,null,6.0,"R",null,1],"121-33-5":[1.21,1,285.0,5.0,"R",null,1],"121-32-4":[1.58,1,285.0,7.0,"N",null,1],"141773-73-1":[5.5,0,310.0,3.0,"N",null,0],"236391-76-7":[4.2,0,290.0,3.0,"N",null,0],"28645-51-4":[5.2,0,330.0,4.0,"N",null,0],"106-02-5":[4.8,0,325.0,3.0,"N",null,0],"67634-00-8":[3.2,0,195.0,6.0,"N",null,0],"112-31-2":[4.09,1,208.0,7.0,"R",0.64,0],"112-45-8":[4.6,0,223.0,7.0,"R",0.64,0],"16409-43-1":[3.14,0,156.0,7.0,"N",null,0],"57378-68-4":[3.8,0,260.0,8.0,"R",null,1],"5413-60-5":[3.9,0,235.0,4.0,"N",null,0],"6413-10-1":[1.5,0,190.0,4.0,"N",null,0],"5989-27-5":[4.57,1,176.0,5.0,"R",2.5,1],"5392-40-5":[3.45,1,229.0,8.0,"R",0.5,1],"101-86-0":[4.7,0,305.0,5.0,"R",6.0,1],"2050-08-0":[4.5,0,277.0,3.0,"R",13.5,1],"70788-30-6":[5.5,0,280.0,8.0,"N",null,0],"120-72-9":[2.14,1,254.0,9.0,"N",null,0],"97-53-0":[2.27,1,255.0,6.0,"R",2.5,1],"17283-81-7":[3.5,0,265.0,6.0,"N",null,0],"38818-55-1":[3.8,0,270.0,8.0,"N",null,0],"488-10-8":[3.1,0,248.0,7.0,"N",null,0],"60047-17-8":[1.3,0,188.0,4.0,"N",null,0],"102-13-6":[3.2,0,255.0,4.0,"N",null,0],"62563-80-8":[5.2,0,310.0,4.0,"N",null,0],"81782-77-6":[3.6,0,232.0,6.0,"N",null,0],"22629-49-8":[4.8,0,290.0,8.0,"N",null,0],"13828-37-0":[2.1,0,215.0,3.0,"N",null,0],"55418-52-5":[2.5,0,310.0,6.0,"N",null,0],"68527-76-4":[2.2,0,320.0,3.0,"N",null,0],"76-22-2":[2.38,1,204.0,6.0,"R",null,0],"118-71-8":[0.29,1,285.0,5.0,"N",null,0],"3658-77-3":[0.35,1,200.0,7.0,"N",null,0],"80-54-6":[4.2,1,279.0,5.0,"P",null,1],"31906-04-4":[1.8,0,335.0,4.0,"P",null,1],"81-14-1":[4.3,1,350.0,4.0,"R",0.42,0],"81-15-2":[4.9,1,345.0,4.0,"P",null,0]};
+const CONFLICTS=[];
+MDB.forEach(m=>{
+  const g=GEM[m.cas];m.src={est:true,agent:false,gem:!!g};m.status="est";m.conf=[];
+  if(!g)return;
+  const [lp,meas,bp,imp,ifra,lim,alg]=g;let agreed=0;
+  if(lp!==null){if(meas){m.logP=lp;m.measured=true;agreed++;}else if(Math.abs(lp-m.logP)<=0.8){m.logP=+((lp+m.logP)/2).toFixed(2);agreed++;}else m.conf.push(["logP",m.logP,lp]);}
+  if(bp!==null){if(Math.abs(bp-m.bp)<=25){m.bp=Math.round((bp+m.bp)/2);agreed++;}else m.conf.push(["boiling point °C",m.bp,bp]);}
+  const AGENT_STRONG=new Set(["14901-07-6","67801-20-1","198404-98-7","54440-17-4","79-69-6"]);
+  if(imp!==null&&m.imp>0&&AGENT_STRONG.has(m.cas)&&imp>4+1.5*Math.log10(m.imp)+1.6){m.imp=+Math.pow(10,(imp-4)/1.5).toPrecision(2);m.majority=true;agreed++;}
+  else if(imp!==null&&m.imp>0){/* Gemini scale is ordinal: compare on the 1-10 scale, keep the finer brain value when they agree */const mine=4+1.5*Math.log10(m.imp);if(Math.abs(mine-imp)<=1.6)agreed++;else m.conf.push(["odour impact (1 to 10)",+mine.toFixed(1),imp]);}
+  if(ifra!=="N"&&!m.reg.some(r=>r==="R"||r==="S"||r==="P"))m.reg.push(ifra==="P"?"P":ifra==="S"?"S":"R");
+  if(ifra==="N"&&m.reg.includes("R"))m.conf.push(["IFRA status","restricted","none"]);
+  if(lim!==null){if(lim>=0.01)m.lim10A=lim;else m.conf.push(["IFRA 10A limit %","not set",lim+" (looks implausible)"]);}
+  if(alg&&!m.reg.some(r=>r==="A"||r==="A2"))m.reg.push("A?");
+  m.status=m.conf.length?"conflict":m.measured?"measured":agreed?"agree":"est";
+  if(m.conf.length)CONFLICTS.push(m);
+});
 const CHECKED=new Set("24851-98-7 6259-76-3 65405-77-8 14901-07-6 127-51-5 118-58-1 78-70-6 91-64-5 60-12-8 36431-72-8 23696-85-7 470-82-6 105-95-3 120-51-4 4940-11-8 120-57-0 18479-58-8 1205-17-0 28940-11-6 106-72-9 110-41-8 54464-57-2 6790-58-5 19700-21-1 1222-05-5 111879-80-2 106-24-1 140-11-4 106-22-9".split(" "));
 const BYCAS={};MDB.forEach(m=>BYCAS[m.cas]=m);
 const OFF={m:"marine",ml:"melon",mu:"musty",ca:"camphor",md:"medicinal",cy:"candy",so:"soapy",me:"metallic",ea:"earthy"};
@@ -1360,7 +1470,7 @@ function makeChecks(items,tp,tps,ctx,sumF,sumC){
   const res=items.filter(it=>it.m.reg.includes("R")||it.m.reg.includes("S"));
   if(res.length)add("info","Regulatory","IFRA restricted or specified (verify): "+names(res.map(it=>({name:it.name})),8),"Limits in Category 10A laundry are usually generous at a 1% oil load, but the supplier's IFRA certificate must confirm each one.");
   const load=(ctx.prod==="edp"?18:(ctx.free+ctx.cap)/10);
-  const alg=items.filter(it=>it.m.reg.some(r=>r==="A"||r==="A2")).map(it=>({name:it.name,p:(it.pf*(ctx.prod==="edp"?18:ctx.free/10)+it.pc*(ctx.prod==="edp"?0:ctx.cap/10))/100})).filter(x=>x.p>=0.01).sort((a,b)=>b.p-a.p);
+  const alg=items.filter(it=>it.m.reg.some(r=>r==="A"||r==="A2"||r==="A?")).map(it=>({name:it.name,p:(it.pf*(ctx.prod==="edp"?18:ctx.free/10)+it.pc*(ctx.prod==="edp"?0:ctx.cap/10))/100})).filter(x=>x.p>=0.01).sort((a,b)=>b.p-a.p);
   if(alg.length)add("info","Regulatory",alg.length+" allergens above 0.01% of the finished product","EU-style labelling would list: "+alg.slice(0,8).map(x=>x.name+" "+x.p.toFixed(3)+"%").join(", ")+". Singapore does not require this today, but export markets may.");
   const clp=items.filter(it=>it.m.reg.includes("X"));
   clp.forEach(it=>{const tot=it.pf;add(tot>=3?"warn":"info","Regulatory",it.name+" is "+tot.toFixed(1)+"% of the free oil","EU CLP now classes it as toxic to reproduction, category 2 (22nd ATP, check the date it applies). At 3% or more the fragrance oil itself must carry that hazard on its safety data sheet. The finished detergent is far below the limit, but EU export and some retailers screen oils. Consider moving part of it to cis-3-hexenyl salicylate or amyl salicylate.");});
@@ -1381,6 +1491,10 @@ function makeChecks(items,tp,tps,ctx,sumF,sumC){
     const mwM=items.filter(it=>Math.hypot(...it.m.v)>0&&MW.has(dom(it))).reduce((s,it)=>s+it.pf,0);
     add(mwM>42?"fail":mwM>35?"warn":"pass","Senior rules","Musk and wood by weight: "+mwM.toFixed(1)+"% of free oil (rule: 35% or less)","Counted inside accords too. Above this the dry-down drifts to generic clean musk.");
   }
+  /* IFRA Category 10A limits reported by Gemini (unverified) */
+  if(ctx.prod!=="edp"){const loadPct=(W[0]+W[1])/10;const lims=items.filter(it=>it.m.lim10A).map(it=>({name:it.name,p:tot(it)/100*loadPct,lim:it.m.lim10A}));
+    if(lims.length){const over=lims.filter(x=>x.p>x.lim),near=lims.filter(x=>x.p<=x.lim&&x.p>x.lim*0.5);
+      add(over.length?"fail":near.length?"warn":"pass","Regulatory",over.length?"Over a reported IFRA 10A limit: "+over.map(x=>x.name+" "+x.p.toFixed(3)+"% vs "+x.lim+"%").join(", "):lims.length+" reported IFRA Category 10A limits, all met"+(near.length?" ("+near.length+" above half the limit)":""),"Finished-product levels against limits Gemini reported. Highest use: "+lims.sort((a,b)=>b.p/b.lim-a.p/a.lim).slice(0,3).map(x=>x.name+" "+x.p.toFixed(3)+"% of "+x.lim+"%").join(", ")+". Confirm every limit on the supplier's IFRA certificate.");}}
   /* 13 unknown */
   const unk=items.filter(it=>it.m.unknown);
   if(unk.length)add("warn","Data","Not in the material database: "+names(unk.map(it=>({name:it.name})),6),"Scored with neutral guesses. Add them through the Gemini check below.");
@@ -1790,7 +1904,7 @@ $("#g-batch").addEventListener("click",ev=>{const b=ev.target.closest("[data-b]"
 gRender();
 $("#n-gem-copy").addEventListener("click",()=>{const ta=$("#n-gem"),st=$("#g-copy-status");const sel=()=>{ta.focus();ta.select();st.textContent="Selected. Press Ctrl+C or Cmd+C to copy.";};if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(ta.value).then(()=>{st.textContent="Batch "+(gBatch+1)+" copied. Paste it into Gemini.";},sel);else sel();});
 function renderDB(){
-  $("#n-db tbody").innerHTML=MDB.filter(m=>m.imp>0).map(withOvr).map(m=>`<tr><td>${esc(m.name)}${m.ovr?' <span class="src">your data</span>':CHECKED.has(m.cas)?' <span class="src">source-checked</span>':' <span class="src">est.</span>'}</td><td class="mono">${m.cas}</td><td class="num">${m.logP}</td><td class="num">${m.bp}</td><td class="num">${+(+m.imp).toPrecision(2)}</td><td>${DIMS.filter((d,i)=>m.v[i]>=1.5).map(d=>DS[d]).join(", ")}</td><td>${[...m.tags.map(g=>OFF[g]),...m.chem.map(c=>({a:"aldehyde",e:"ester",l:"lactone",c:"colour",o:"oxidises",w:"water soluble"}[c])),...m.reg.map(r=>({A:"allergen",A2:"allergen (2023 list)",R:"IFRA restricted",S:"IFRA spec",P:"prohibited",B:"Sion banned",X:"EU CLP Repr. 2"}[r]))].join(", ")}</td></tr>`).join("");
+  $("#n-db tbody").innerHTML=MDB.filter(m=>m.imp>0).map(withOvr).map(m=>`<tr><td>${esc(m.name)}${m.ovr?' <span class="src">your data</span>':' <span class="src st-'+m.status+'">'+({est:"est. only",agree:(CHECKED.has(m.cas)?"3 sources agree":"2 sources agree"),measured:"measured",conflict:"sources disagree"})[m.status]+'</span>'}${m.lim10A?' <span class="src">10A '+m.lim10A+'%</span>':''}</td><td class="mono">${m.cas}</td><td class="num">${m.logP}</td><td class="num">${m.bp}</td><td class="num">${+(+m.imp).toPrecision(2)}</td><td>${DIMS.filter((d,i)=>m.v[i]>=1.5).map(d=>DS[d]).join(", ")}</td><td>${[...m.tags.map(g=>OFF[g]),...m.chem.map(c=>({a:"aldehyde",e:"ester",l:"lactone",c:"colour",o:"oxidises",w:"water soluble"}[c])),...m.reg.map(r=>({A:"allergen",A2:"allergen (2023 list)",R:"IFRA restricted",S:"IFRA spec",P:"prohibited",B:"Sion banned",X:"EU CLP Repr. 2","A?":"allergen? (Gemini, verify)"}[r]))].join(", ")}</td></tr>`).join("");
 }
 renderDB();
 $("#n-imp-go").addEventListener("click",()=>{
@@ -1810,6 +1924,125 @@ $("#n-imp-go").addEventListener("click",()=>{
 });
 $("#n-imp-clear").addEventListener("click",()=>{OVR={};try{localStorage.removeItem("sion-mdb-ovr");}catch(e){}renderDB();$("#n-imp-status").textContent="Back to built-in estimates.";if(lastAudit)nRun();});
 nRun();
+
+/* ================= ENGINE: exam, reconciliation summary, full review ================= */
+const EXAM_CTX={prod:"amino",free:8.5,cap:2.5,encap:"yes",dryer:"vented",target:"chilled sweet chrysanthemum tea with honey and hay",avoid:new Set(["m","ml","mu","ca","md","cy"])};
+const hasCk=(A,re,sev)=>A.checks.some(c=>re.test(c.title)&&(sev?sev.includes(c.sev):true));
+function runExam(){
+  const t12=NPRESETS["1.2 Golden Cup + CAP-1 (your brief)"],t32=NPRESETS["3.2 Monsoon Tea + CAP-3 (your brief)"],trio=NPRESETS["Set 1: 1.1, 1.2, 1.3 + CAP-1 (distinctness)"];
+  const A12=runAudit(t12,EXAM_CTX,0),A32=runAudit(t32,EXAM_CTX,0),A11=runAudit(trio,EXAM_CTX,0),A13=runAudit(trio,EXAM_CTX,2);
+  const dup=cosv(A11.tp.dryer.prof,A12.tp.dryer.prof);
+  const key=[
+    ["Geosmin over 1 ppm, some in the capsule (Set 3)",hasCk(A32,/^Geosmin/,["fail"])],
+    ["Dryer-proof tea core under 10% (1.2)",hasCk(A12,/Dryer-proof/,["fail","warn"])],
+    ["Camphor and medicinal notes over the limit (1.2)",hasCk(A12,/Camphor index/,["fail"])],
+    ["Marine and melon materials over the limit (3.2)",hasCk(A32,/marine or melon/,["fail"])],
+    ["Colour formers will fail 40 °C stability (1.2)",hasCk(A12,/Colour formers/,["fail"])],
+    ["Candy notes in the rock sugar accord (1.2)",hasCk(A12,/Candy index/,["fail"])],
+    ["Capsule oil will leak (CAP-1)",hasCk(A12,/capsule oil is at logP/,["fail"])],
+    ["Creative and Accurate are duplicates after the dryer (1.1 vs 1.2)",dup>0.9],
+    ["Musk and wood over 35% by weight (1.3)",hasCk(A13,/Musk and wood by weight/,["fail","warn"])],
+    ["Hexyl salicylate EU CLP flag",hasCk(A12,/Hexyl salicylate is/,["warn"])]
+  ];
+  const n=key.filter(k=>k[1]).length;
+  $("#exam-out").innerHTML=`<div class="tablewrap" style="margin-top:12px"><table class="ref" style="min-width:520px"><thead><tr><th>Finding in the answer key</th><th>Caught unaided?</th></tr></thead><tbody>${key.map(([k,ok])=>`<tr><td>${esc(k)}</td><td>${ok?'<span class="sev sev-pass">caught</span>':'<span class="sev sev-fail">missed</span>'}</td></tr>`).join("")}</tbody></table></div>
+  <p style="margin-top:10px"><b>Score: ${n} of ${key.length}.</b> Skip-me score for Case 1 if run today: ${key.length-n} findings you would still have to trigger yourself.</p>`;
+  $("#exam-status").textContent="Exam run on "+new Date().toISOString().slice(0,10)+".";
+}
+$("#exam-go").addEventListener("click",runExam);
+
+function renderRecon(){
+  const by=s=>MDB.filter(m=>m.imp>0&&m.status===s).length;
+  $("#recon").innerHTML=`<div class="stats" style="margin:4px 0 10px"><div class="stat"><span class="n mono">${by("measured")}</span><span class="l">measured values adopted</span></div><div class="stat"><span class="n mono">${by("agree")}</span><span class="l">sources agree, averaged</span></div><div class="stat"><span class="n mono">${CONFLICTS.length}</span><span class="l">disagree, held for checking</span></div><div class="stat"><span class="n mono">${MDB.filter(m=>m.lim10A).length}</span><span class="l">IFRA 10A limits now checked</span></div></div>
+  <div class="tablewrap"><table class="ref" style="min-width:600px"><thead><tr><th>Material</th><th>Field</th><th class="num">Brain uses</th><th class="num">Gemini said</th><th>Next step</th></tr></thead><tbody>${CONFLICTS.flatMap(m=>m.conf.map(c=>`<tr><td>${esc(m.name)}</td><td>${esc(c[0])}</td><td class="num">${esc(String(c[1]))}</td><td class="num">${esc(String(c[2]))}</td><td>${/IFRA/.test(c[0])?"Supplier IFRA certificate":"Supplier data sheet or PubChem"}</td></tr>`)).join("")}</tbody></table></div>`;
+}
+renderRecon();
+
+/* ---------- Full review: blind multi-agent pipeline ---------- */
+const RT_VOICES=[
+  ["RT1","Functional laundry perfumer and OEM process chemist","deposition, dryer survival, capsule design, base compatibility, dosing, cost"],
+  ["RT2","Fine-fragrance perfumer for tea and florals, and an evaluator who knows the reference","whether it smells like the target, accord structure, missing key odorants, overdoses, distinctness between versions"],
+  ["RT3","Regulatory and stability chemist, a Singapore consumer panel moderator and a brand marketer","IFRA and EU CLP, allergens, colour, oxidation, hydrolysis, claim words, how a real panel will describe it"]
+];
+function ctxLine(c){return `Product: ${NPROD[c.prod].label}. Free oil ${c.free} g/kg, capsule oil ${c.cap} g/kg (${c.encap==="yes"?"encapsulated":"added free"}). Dryer: ${NDRY[c.dryer].label}. Smell target: ${c.target}. The brief forbids: ${[...c.avoid].map(g=>OFF[g]).join(", ")||"nothing"}.`;}
+const RULES_TXT=`Percentages of total oil unless stated. Strong marine or melon 0.01% or less. Geosmin 1 ppm or less, none in capsules. Camphor index (cineole + camphor + borneol + 0.3 x bornyl acetate) 0.1% or less. Candy index (maltols, maltol esters, furaneol) 0.05% or less. Dryer-proof target core 10% or more of free oil. Musk and wood 35% or less of free oil. logP under 2.5 at 5% or less of free oil. Capsule oil 80% or more at logP 3.5+, nothing under 3. With amino silicone, aldehydes 0.3% or less. Colour formers 0.1% or less. Antioxidant when citrus terpenes pass 1.5%. Ceilings: damascenone 0.1, Javanol 0.1, Ambroxan 1.5, Ebanol 0.5.`;
+function stepUI(steps){return`<ol class="steps">${steps.map(s=>`<li class="st-${s[1]}"><b>${esc(s[0])}</b> <span class="src">${esc(s[2]||"")}</span></li>`).join("")}</ol>`;}
+let fCtl=null;
+async function fullReview(){
+  if(!sampleFn)return;
+  if(!lastAudit)nRun();if(!lastAudit)return;
+  const A=lastAudit,text=$("#nf").value,c=A.ctx,s=auditSummary(A);
+  fCtl=new AbortController();const sig=fCtl.signal;
+  const steps=[["Cold framer writes the answer spec","run","blind to the formula"],["Red team 1 · "+RT_VOICES[0][1],"wait","blind"],["Red team 2 · "+RT_VOICES[1][1],"wait","blind"],["Red team 3 · "+RT_VOICES[2][1],"wait","blind"],["Court rules on every point and revises","wait",""],["Re-audit and completeness check","wait",""]];
+  const box=$("#n-a2");const draw=()=>{box.innerHTML=`<div class="panel fade"><div class="panel-h"><span class="eyebrow">Full review · blind multi-agent pipeline</span></div>${stepUI(steps)}</div>`;};
+  draw();["#n-full","#n-panel","#n-go"].forEach(id=>$(id).disabled=true);$("#n-stop").hidden=false;
+  $("#n-status").textContent="Full review running. Expect several minutes.";
+  $("#n-stop").onclick=()=>{fCtl.abort();nCtl&&nCtl.abort();};
+  try{
+    const spec=await sampleFn.json(`You are the cold framer for a perfumery brain. You have NOT seen any formula. Frame the brief so that a later draft can be judged against it.
+${ctxLine(c)}
+Reply with ONLY JSON: {"brief_type":"literal|evocative|associative|abstract","hidden_hypotheses":["..."],"answer_spec":["8 to 12 things a world-class formula for this brief and product must contain or achieve, each testable"],"blind_spots":["conditions the answer could flip on"],"key_odorants":[{"material":"name","cas":"if known","role":"signature|bridge|booster|fixative","why":"..."}],"benchmarks":["existing products or classic accords a panel will compare against"]}. Plain language, no em dashes, no semicolons.`,{signal:sig,modelTier:"complex"});
+    steps[0][1]="done";steps[1][1]=steps[2][1]=steps[3][1]="run";draw();
+    const rtPrompt=v=>`You are red-team agent ${v[0]}: ${v[1]}. You work alone and have not seen the other reviewers. Your focus: ${v[2]}. You cannot smell. Do the paper review a senior team does before compounding.
+${ctxLine(c)}
+ANSWER SPEC from the cold framer: ${JSON.stringify(spec).slice(0,4000)}
+FORMULA AS WRITTEN:
+${text.slice(0,8000)}
+FLATTENED MATERIALS (estimated data):
+${s.mats}
+AUTOMATED AUDIT:
+${s.tps}
+${s.chk||"no open issues"}
+Find the 4 to 6 most important things this formula misses or gets wrong from your focus. Be quantitative and judge potent traces by odour strength, not weight.
+Reply with ONLY JSON: {"points":[{"id":"${v[0]}-1","severity":"high|medium|low","title":"...","evidence":"numbers","fix":"specific material and % change"}]}. No em dashes, no semicolons.`;
+    const rts=await Promise.all(RT_VOICES.map((v,i)=>sampleFn.json(rtPrompt(v),{signal:sig,modelTier:"default"}).then(r=>{steps[1+i][1]="done";draw();return r;},e=>{steps[1+i][1]="fail";draw();if(e&&e.code==="cancelled")throw e;return{points:[]};})));
+    const points=rts.flatMap(r=>Array.isArray(r&&r.points)?r.points:[]).slice(0,18);
+    steps[4][1]="run";draw();
+    const court=await sampleFn.json(`You are the court of a perfumery brain: a judge and a completeness auditor. You see everything. Answer EVERY red-team point in writing, check the formula against the answer spec, and produce the revised formula.
+${ctxLine(c)}
+ANSWER SPEC: ${JSON.stringify(spec).slice(0,4000)}
+RED-TEAM POINTS: ${JSON.stringify(points).slice(0,9000)}
+FORMULA AS WRITTEN:
+${text.slice(0,8000)}
+FLATTENED MATERIALS:
+${s.mats}
+RULES THE REVISION MUST MEET: ${RULES_TXT}
+Overcorrection guard: keep what already works. Use real materials with CAS numbers.
+Reply with ONLY JSON: {"rulings":[{"id":"RT1-1","ruling":"accepted|partly|rejected","reason":"one sentence"}],"spec_check":[{"item":"answer spec item","covered":true,"how":"..."}],"summary":"two sentences","free":[{"name":"...","cas":"...","pct":10}],"capsule":[{"name":"...","cas":"...","pct":10}],"predictions":[{"what":"testable prediction for the Round 1 panel","value":"number or range","by":"when it can be checked"}]}. Free and capsule each sum to 100. No em dashes, no semicolons.`,{signal:sig,modelTier:"complex"});
+    steps[4][1]="done";steps[5][1]="run";draw();
+    const fl=arr=>(Array.isArray(arr)?arr:[]).map(r=>`${String(r.name||"").replace(/[|\n]/g," ")} | ${String(r.cas||"").replace(/[^\d-]/g,"")} | ${Number(r.pct)||0}`).filter(l=>!/\|\s*0$/.test(l));
+    const free=fl(court.free),cap=fl(court.capsule);
+    const revised=(free.length?"= Full review revision (free oil)\n"+free.join("\n")+"\n":"")+(cap.length?"\n= Full review revision (capsule)\n"+cap.join("\n")+"\n":"");
+    const after=revised?runAudit(revised,c):null;
+    steps[5][1]="done";draw();
+    const ruling=id=>(Array.isArray(court.rulings)?court.rulings:[]).find(r=>r&&r.id===id);
+    const ptRows=points.map(p=>{const r=ruling(p.id)||{};return`<tr><td class="mono">${esc(p.id||"")}</td><td><b>${esc(p.title||"")}</b><br><span class="src">${esc(p.severity||"")}</span> ${esc(p.evidence||"")}<br>Fix: ${esc(p.fix||"")}</td><td>${esc(r.ruling||"not answered")}<br><span class="src">${esc(r.reason||"")}</span></td></tr>`;}).join("");
+    const specRows=(Array.isArray(court.spec_check)?court.spec_check:[]).map(x=>`<tr><td>${esc(x.item||"")}</td><td>${x.covered?'<span class="sev sev-pass">covered</span>':'<span class="sev sev-fail">gap</span>'}</td><td>${esc(x.how||"")}</td></tr>`).join("");
+    const predRows=(Array.isArray(court.predictions)?court.predictions:[]).map(x=>`<tr><td>${esc(x.what||"")}</td><td class="num">${esc(String(x.value||""))}</td><td>${esc(x.by||"")}</td></tr>`).join("");
+    const unanswered=points.filter(p=>!ruling(p.id)).length;
+    box.innerHTML=`<div class="panel fade"><div class="panel-h"><span class="eyebrow">Full review · blind multi-agent pipeline</span></div>${stepUI(steps)}
+      <p style="margin-top:10px">${esc(court.summary||"")}</p>
+      ${unanswered?`<p class="flagline">${unanswered} red-team points were not answered by the court. Treat the revision as incomplete.</p>`:""}
+      <div class="panel-h" style="margin-top:12px"><span class="eyebrow">Cold framer · answer spec (written before seeing the formula)</span></div>
+      <ul class="spec">${(Array.isArray(spec.answer_spec)?spec.answer_spec:[]).map(x=>`<li>${esc(x)}</li>`).join("")}</ul>
+      ${Array.isArray(spec.key_odorants)&&spec.key_odorants.length?`<p class="status">Key odorants the framer expected: ${spec.key_odorants.map(k=>esc(k.material||"")+" ("+esc(k.role||"")+")").join(", ")}</p>`:""}
+      <div class="tablewrap" style="margin-top:12px"><table class="ref" style="min-width:640px"><thead><tr><th>Point</th><th>Red team said</th><th>Court ruling</th></tr></thead><tbody>${ptRows}</tbody></table></div>
+      ${specRows?`<div class="tablewrap" style="margin-top:12px"><table class="ref" style="min-width:560px"><thead><tr><th>Answer spec item</th><th>Revision</th><th>How</th></tr></thead><tbody>${specRows}</tbody></table></div>`:""}
+      ${predRows?`<div class="panel-h" style="margin-top:12px"><span class="eyebrow">Pre-registered predictions · score these when panel results come back</span></div><div class="tablewrap"><table class="ref" style="min-width:520px"><thead><tr><th>Prediction</th><th class="num">Value</th><th>Check when</th></tr></thead><tbody>${predRows}</tbody></table></div>`:""}
+      <div class="panel-h" style="margin-top:14px"><span class="eyebrow">Revised formula</span><button class="btn ghost" id="f-copy" style="padding:6px 12px">Copy</button></div>
+      <textarea class="nf small" id="f-rev" readonly>${esc(revised)}</textarea>
+      <div class="actions"><button class="btn ghost" id="f-use">Load the revision into the audit</button></div></div><div id="f-a3"></div>`;
+    if(after)renderAudit(after,"Audit of the full-review revision",$("#f-a3"));
+    $("#f-copy").onclick=()=>copyText($("#f-rev"));
+    $("#f-use").onclick=()=>{$("#nf").value=revised;nRun();$("#nose").scrollIntoView({behavior:"smooth"});};
+    $("#n-status").textContent="Full review done.";
+  }catch(e){
+    if(e&&e.code==="cancelled")$("#n-status").textContent="Stopped.";
+    else{$("#n-status").textContent=ERR[e&&e.code]||"The full review could not finish. The paper audit is still shown.";if(e&&(e.code==="not_granted"||e.code==="sampling_disabled")){$("#n-panel").hidden=true;$("#n-full").hidden=true;}}
+  }finally{["#n-full","#n-panel","#n-go"].forEach(id=>$(id).disabled=false);$("#n-stop").hidden=true;$("#n-stop").onclick=()=>nCtl&&nCtl.abort();}
+}
+sampleP.then(sm=>{if(sm)$("#n-full").hidden=false;});
+$("#n-full").addEventListener("click",fullReview);
 
 /* ---------- Reference sections ---------- */
 const LAYERS=[
