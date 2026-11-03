@@ -1,6 +1,6 @@
 # Sion Scent Brain: Master Plan
 
-Version 0.3. Last updated 2026-11-03. Live page: https://claude.ai/artifact/4P366aMVQNjg4MCwUXo9fL (private until the owner shares it). Source: `ScentBrain/index.html` on branch `claude/magical-carson-wz65e9`.
+Version 0.4. Last updated 2026-11-03. Live page: https://claude.ai/artifact/4P366aMVQNjg4MCwUXo9fL (private until the owner shares it). Source: `ScentBrain/index.html` on branch `claude/magical-carson-wz65e9`.
 
 This file is the backend. It is written so a future AI or human can pick the project up cold. Keep Case 1 (section 2) intact: it defines what "good" looks like.
 
@@ -45,7 +45,9 @@ Lesson: a formula is not done when it looks complete. It is done when it has bee
 1. Composer: offline engine (24-dimension latent map, 64-cartridge palette, three heads) plus "Deepen with Claude".
 2. Virtual Nose: CAS-level audit. Accords, dilutions and natural oils expanded (COMP table, typical GC). Touchpoint model: deposition from logP, survival from boiling point, perceived = sqrt(grams x impact). Checks: brief limits by loudness, 12 senior rules, IFRA 10A limits, EU CLP, allergens, distinctness.
 3. Gemini data check: batched prompt, paste-back import (browser only), three-source reconciliation.
-4. Engine: this plan in page form, plus the exam.
+4. Engine: this plan in page form, chain history (builds 0.1 to 0.4), handoff steps for other chats, the exam and the prediction ledger.
+5. Label-claim audit (Move 7 word audit): fragrance-free, unscented, hypoallergenic, absolute safety, natural or clean, germ and pest claims, duration claims.
+6. Measured reference (Move 6): paste a GC-MS list (name, CAS, % area). The target becomes that measured profile, and key odorants missing or too weak are flagged.
 
 ## 4. Evidence ladder
 
@@ -83,9 +85,11 @@ Independence: the framer never sees the formula. Red-team agents never see each 
 ## 7. Scorekeeper
 
 - Test bank: Case 1 (training case, public key) scores 10 of 10 on 2026-11-03. Because the rules came from Case 1, this proves the rules, not generalisation.
-- Held-out tests to write next (keys kept outside the page): a rose fabric softener, a white-musk extrait, a joke brief ("durian"), a fragrance-free-claim detergent with a masking accord.
+- Held-out tests T2 to T5 (rose softener, white-musk extrait, durian detergent with capsules, "fragrance-free" masking detergent): 20 of 20 caught on 2026-11-03. Caveat: written by the same session that built the checks.
+- Blind tests written by an independent agent with no access to the rules: see section 10.
+- Keys live in the page code but are never sent to any Claude agent.
 - Skip-me score: findings the owner had to trigger. Goal zero.
-- Prediction ledger: the Full review emits dated predictions. Next step: store them in the artifact database with the panel results, and Brier-score them.
+- Prediction ledger (built, artifact database collection `predictions`): fields formula, what, value, prob (0 to 100 or null), check_by, source, created, actual, outcome (hit or miss). Full review predictions save with one click. Hit rate and Brier score shown.
 
 ## 8. Correction ledger
 
@@ -95,14 +99,18 @@ Independence: the framer never sees the formula. Red-team agents never see each 
 | 2026-11-03 | Hexyl salicylate EU CLP Repr. 2 | Engine (data agent) | Regulation newer than the formula |
 | 2026-11-03 | 18 Gemini values held as clashes | Engine (verifier) | Single-source data |
 
-## 9. Next
+## 9. Open items
 
-1. Write held-out tests and run them blind.
-2. GC-MS headspace of the reference drink (T0 target), then score formulas against it.
-3. Prediction ledger with the `db` capability.
-4. Resolve the 18 clashes with supplier TDS and IFRA certificates.
-5. Apply the Full review to all nine Case 1 formulas and write brief v3 (owner approval first).
-6. Sentinel (owner approval): watch IFRA 52nd Amendment (expected January 2027) and EU CLP dates.
+Built in this chat: held-out exam, label-claim audit, measured-reference scoring, prediction ledger, clash-check prompt.
+
+Needs real-world input (no code can replace it):
+1. GC-MS headspace of the reference (ask the OEM), pasted into the measured-reference box.
+2. Supplier TDS and IFRA certificates to settle the clashes (or run the clash-check prompt in Gemini and paste the answer back).
+3. Panel results, recorded in the prediction ledger.
+
+Handled in other chats: formula work such as Chrysanthemum brief v3 uses this page through the handoff steps.
+
+Needs the owner's approval: a scheduled sentinel that watches the IFRA 52nd Amendment (expected January 2027) and EU CLP dates.
 
 ## 10. Round log
 
@@ -110,3 +118,4 @@ Independence: the framer never sees the formula. Red-team agents never see each 
 - 2026-11-03 build 0.2: Virtual Nose, agent-checked data, hexyl salicylate flag.
 - 2026-11-03 build 0.2.1 to 0.2.2: 12 senior rules from the panel review, visible Gemini check.
 - 2026-11-03 build 0.3: Gemini data reconciled, IFRA 10A check, Engine section, Full review (5 blind agents), exam, this PLAN.md.
+- 2026-11-03 build 0.4: chain history, handoff box, held-out tests T2 to T5, label-claim audit, measured GC-MS reference, prediction ledger, clash-check prompt, blind tests from an independent agent.
