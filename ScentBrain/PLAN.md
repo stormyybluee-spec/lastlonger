@@ -1,6 +1,6 @@
 # Sion Scent Brain: Master Plan
 
-Version 0.4. Last updated 2026-11-03. Live page: https://claude.ai/artifact/4P366aMVQNjg4MCwUXo9fL (private until the owner shares it). Source: `ScentBrain/index.html` on branch `claude/magical-carson-wz65e9`.
+Version 0.5. Last updated 2026-11-03. Live page: https://claude.ai/artifact/4P366aMVQNjg4MCwUXo9fL (private until the owner shares it). Source: `ScentBrain/index.html` on branch `claude/magical-carson-wz65e9`.
 
 This file is the backend. It is written so a future AI or human can pick the project up cold. Keep Case 1 (section 2) intact: it defines what "good" looks like.
 
@@ -47,6 +47,8 @@ Lesson: a formula is not done when it looks complete. It is done when it has bee
 3. Gemini data check: batched prompt, paste-back import (browser only), three-source reconciliation.
 4. Engine: this plan in page form, chain history (builds 0.1 to 0.4), handoff steps for other chats, the exam and the prediction ledger.
 5. Label-claim audit (Move 7 word audit): fragrance-free, unscented, hypoallergenic, absolute safety, natural or clean, germ and pest claims, duration claims.
+7. Self-study (section 05): the 30 most commercially dominant perfumes (evidence-graded by a research agent), a map of their smell profiles, ten patterns, a genre timeline, a sourced sensory-science brief and 12 Sion creation rules.
+8. Familiarity-novelty compass: every audit and every Composer scent gets its closest icon, a zone (near copy 90+, close follower 84 to 90, sweet spot 60 to 84, bold 45 to 60, genre breaker under 45) and a hero check (one material should carry 12% or more of the smell). Zones come from the icons' own launch data: median similarity to the closest earlier hit 0.71, middle half 0.57 to 0.80. Profiles are estimates from public notes.
 6. Measured reference (Move 6): paste a GC-MS list (name, CAS, % area). The target becomes that measured profile, and key odorants missing or too weak are flagged.
 
 ## 4. Evidence ladder
@@ -108,6 +110,7 @@ Built in this chat: held-out exam, blind exam round 1, label-claim audit, measur
 Next brain work (this chat): a new blind exam round each time the brain changes. Grow the material database beyond 118 materials (every "Not in the material database" note in an audit is a lead).
 
 Needs real-world input (no code can replace it):
+0. Calibrate the compass zones with panel scores: does the sweet spot really predict liking for Sion formulas?
 1. GC-MS headspace of the reference (ask the OEM), pasted into the measured-reference box.
 2. Supplier TDS and IFRA certificates to settle the clashes (or run the clash-check prompt in Gemini and paste the answer back).
 3. Panel results, recorded in the prediction ledger.
@@ -123,4 +126,5 @@ Needs the owner's approval: a scheduled sentinel that watches the IFRA 52nd Amen
 - 2026-11-03 build 0.2.1 to 0.2.2: 12 senior rules from the panel review, visible Gemini check.
 - 2026-11-03 build 0.3: Gemini data reconciled, IFRA 10A check, Engine section, Full review (5 blind agents), exam, this PLAN.md.
 - 2026-11-03 build 0.4: chain history, handoff box, held-out tests T2 to T5, label-claim audit, measured GC-MS reference, prediction ledger, clash-check prompt.
+- 2026-11-03 build 0.5: self-study of 30 icons and sensory science (two research agents), familiarity-novelty compass in the Virtual Nose and Composer, icon map, 12 creation rules, anti-copy rule.
 - 2026-11-03 build 0.4.1: blind exam round 1 (9 of 17 before, 17 of 17 after), 12 materials, CAS-mismatch fix, Schiff base, phototoxic citrus, solvent dilution and four claim rules.

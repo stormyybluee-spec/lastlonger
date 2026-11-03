@@ -213,6 +213,12 @@ ul.spec{margin:6px 0 0;padding-left:18px;display:grid;gap:3px;font-size:.9rem}
 .ledger-form{display:grid;grid-template-columns:1.2fr 2fr .8fr .7fr 1fr auto;gap:8px;align-items:center}
 @media (max-width:900px){.ledger-form{grid-template-columns:1fr 1fr}}
 .pl-act{min-width:120px}
+.zone{font-family:var(--mono);font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;padding:3px 8px;border-radius:5px;color:var(--bg)}
+.z-copy{background:var(--bad)} .z-follower{background:var(--warn)} .z-sweet{background:var(--ok)} .z-bold{background:var(--theme)} .z-breaker{background:var(--creative)}
+.cmp{display:grid;gap:6px;margin-top:8px}
+.cmp-r{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,2fr) 2.4em;gap:10px;align-items:center;font-size:.86rem}
+.cmp-b{height:6px;background:var(--sunk);border-radius:3px;overflow:hidden}.cmp-b i{display:block;height:100%;background:var(--accent)}
+#study-legend span i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:-1px}
 /* virtual nose */
 .nose-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:22px}
 .nose-ctx{display:grid;gap:12px;align-content:start}
@@ -245,7 +251,7 @@ textarea.nf.small{min-height:150px}
 <div class="wrap">
 <header class="mast">
   <div class="mast-top">
-    <div class="brand"><b>Sion</b> · Scent Brain · build 0.4.1</div>
+    <div class="brand"><b>Sion</b> · Scent Brain · build 0.5</div>
     <div class="eyebrow">Master node for detergent wash and, later, the fragrance house</div>
   </div>
   <h1>Type anything.<br>Get <em>three</em> scents back.</h1>
@@ -255,10 +261,11 @@ textarea.nf.small{min-height:150px}
     <div class="stat"><span class="n mono">24</span><span class="l">olfactive dimensions in the latent map</span></div>
     <div class="stat"><span class="n mono">1.5×10¹¹</span><span class="l">ways to pick 10 of 64, before dosing</span></div>
     <div class="stat"><span class="n mono">3</span><span class="l">heads: Creative, Accurate, Luxury</span></div>
-    <div class="stat"><span class="n mono">93</span><span class="l">materials with physics in the Virtual Nose</span></div>
+    <div class="stat"><span class="n mono">113</span><span class="l">materials with physics in the Virtual Nose</span></div>
+    <div class="stat"><span class="n mono">30</span><span class="l">best-selling icons studied</span></div>
   </div>
   <nav class="toc" aria-label="Sections">
-    <a href="#composer">01 Composer</a><a href="#nose">02 Virtual Nose</a><a href="#verify">03 Gemini data check</a><a href="#engine">04 Engine</a><a href="#architecture">05 Composer layers</a><a href="#heads">06 Three heads</a><a href="#ladder">07 Translation rules</a><a href="#cases">08 Hard briefs</a><a href="#palette">09 Palette</a><a href="#learning">10 Learning loop</a><a href="#landscape">11 Landscape</a><a href="#roadmap">12 Roadmap</a>
+    <a href="#composer">01 Composer</a><a href="#nose">02 Virtual Nose</a><a href="#verify">03 Gemini data check</a><a href="#engine">04 Engine</a><a href="#study">05 Self-study</a><a href="#architecture">06 Composer layers</a><a href="#heads">07 Three heads</a><a href="#ladder">08 Translation rules</a><a href="#cases">09 Hard briefs</a><a href="#palette">10 Palette</a><a href="#learning">11 Learning loop</a><a href="#landscape">12 Landscape</a><a href="#roadmap">13 Roadmap</a>
   </nav>
 </header>
 
@@ -487,14 +494,71 @@ textarea.nf.small{min-height:150px}
   </div>
 </section>
 
+<section id="study">
+  <div class="sec-head"><span class="chapter">05 · SELF-STUDY</span><h2>What the world's best sellers teach</h2>
+  <p class="lede">The brain studied the commercial icons of perfumery and the science of why people like a smell. The aim is to learn the grammar, not copy the sentences: find the familiar frame people already love, then break new ground on top of it, the way technology does.</p></div>
+
+  <div class="box"><span class="eyebrow">The headline finding · measured on the icons themselves</span>
+    <h3>Hits are about 70% familiar and 30% new</h3>
+    <p>Each icon was turned into a smell profile on the brain's 24 dimensions, then compared with the closest icon launched before it. The median hit sat at a similarity of 71. Half of all hits fell between 57 and 80. Only genre-openers such as Cool Water (34), Shalimar (36) and Angel (48) launched far from everything before them, and they are the rare exceptions. Close followers above 84 (Acqua di Giò, Invictus, Good Girl) sold too, helped by reach. White Diamonds sits at 92 to No. 5 and still sold over $1.5bn on a star's name, a reminder that scent is not the only driver. This is the familiar-surprise principle, measured.</p>
+    <p class="status">Method: profiles authored from public note pyramids, and early icons had few predecessors to be compared with, so they are estimates of character, not formulas. Treat the numbers as directions, then calibrate with panel data in the prediction ledger.</p>
+  </div>
+
+  <div class="panel"><div class="panel-h"><span class="eyebrow">The icon map · nearby dots smell alike · diamonds are your latest formulas</span><span class="legend" id="study-legend"></span></div>
+    <div class="scroll-x" id="study-map"></div>
+    <p class="status">A two-dimensional map of the 24-dimension profiles (principal components). Run a Virtual Nose audit or the Composer and your formulas appear as diamonds.</p></div>
+
+  <div class="sec-head" style="margin-top:8px"><h3>The icons</h3><p class="status" id="icon-note"></p></div>
+  <div class="famchips" id="icon-filter"></div>
+  <div class="tablewrap"><table class="ref" id="icon-t" style="min-width:1100px"><thead><tr><th class="num">Year</th><th>Perfume</th><th>Perfumer</th><th>Family</th><th>The hero (signature idea)</th><th>What was new</th><th>Why it sold</th><th class="num">Similarity to closest earlier hit</th><th>Evidence</th></tr></thead><tbody></tbody></table></div>
+
+  <div class="sec-head" style="margin-top:8px"><h3>Patterns across the icons</h3></div>
+  <div class="grid3" id="patterns"></div>
+
+  <div class="sec-head" style="margin-top:8px"><h3>How genres turn over</h3></div>
+  <div class="tablewrap"><table class="ref" id="timeline-t" style="min-width:640px"><thead><tr><th>Decade</th><th>The new genre</th><th>Opened by</th><th>The molecule or idea behind it</th></tr></thead><tbody></tbody></table></div>
+
+  <div class="sec-head" style="margin-top:8px"><h3>Why people love a smell: the science</h3><p class="status">Sourced brief from a research agent, 3 Nov 2026, 35 searches, snippets only. U marks figures that are uncertain or single-source.</p></div>
+  <div class="grid3">
+    <div class="box"><span class="eyebrow">1 · The molecule matters more than the culture</span><h3>41% molecule, 54% person, 6% culture</h3><p>Across 9 to 10 cultures, from hunter-gatherers to city dwellers, the molecule explained 41% of liking, the individual 54%, and culture only 6%. Vanillin ranked most pleasant everywhere, then a fruity ester (ethyl butyrate), then linalool. Cheesy, sweaty isovaleric acid ranked last. <a href="https://news.ki.se/people-around-the-world-like-the-same-kinds-of-smell">Arshamian et al. 2022</a></p></div>
+    <div class="box"><span class="eyebrow">2 · Pleasantness is written in chemistry</span><h3>Bigger, more complex, no sulfur</h3><p>Pleasantness is the main axis of smell perception, and it lines up with molecular properties well enough to predict odours people have never smelled (<a href="https://pubmed.ncbi.nlm.nih.gov/17855616/">Khan 2007</a>). Larger, more complex molecules tend to be liked, sulfur ones disliked (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4977894">Keller and Vosshall 2016</a>).</p></div>
+    <div class="box"><span class="eyebrow">3 · Most advanced yet acceptable</span><h3>New, but still typical</h3><p>People like new designs as long as novelty does not break typicality (<a href="https://research.vu.nl/en/publications/most-advanced-yet-acceptable-typicality-and-novelty-as-joint-pred/">Hekkert 2003</a>, testing Loewy's MAYA). Hit Makers calls it "familiar surprise". The icon data below agrees: hits launched at a median similarity of 71 to the closest earlier hit.</p></div>
+    <div class="box"><span class="eyebrow">4 · Repetition builds liking, up to a point</span><h3>Aim for pleasant, then let wearing do the rest</h3><p>Repeated exposure made every odour more familiar, but raised liking most for neutral to mildly pleasant ones, barely for strongly pleasant or unpleasant ones (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4490210">Delplanque 2015</a>). One sniff on a blotter is the wrong test for a new idea.</p></div>
+    <div class="box"><span class="eyebrow">5 · Everyone is blind to something</span><h3>Layer musks and ambers</h3><p>Some people cannot smell certain musks (OR5A2, OR4D6 variants) or androstenone (2% to about 50% depending on the test). Retail figures for Iso E Super (20 to 25%) and Ambroxan (about 20%) are U. Almost nobody is blind to every musk, which is why skin bases layer three or more.</p></div>
+    <div class="box"><span class="eyebrow">6 · Names and colours change the smell</span><h3>Story is part of the formula</h3><p>The same molecule was far more unpleasant labelled "body odour" than "cheddar" (<a href="https://www.oxcns.org/papers/381_DeAraujo+Rolls+++05.pdf">de Araujo 2005</a>). White wine dyed red was described as red by tasters (Morrot 2001). Name, colour and liquid shade steer what people think they smell.</p></div>
+    <div class="box"><span class="eyebrow">7 · Freshness is also a feeling</span><h3>The trigeminal nerve</h3><p>Cooling (TRPM8) and tingle read as freshness, but the same pathways turn into irritation at higher doses (TRPA1), and mixtures add up. A mild cool or pepper cue lifts a fresh idea. Too much reads as medicine or burn.</p></div>
+    <div class="box"><span class="eyebrow">8 · Region changes the volume, not the liking</span><h3>Intensity norms differ</h3><p>China leans fresh and light (over 50% prefer fresh, 3% "strong", U). The Gulf favours oud and musk at high strength. India buys on longevity. Humid Southeast Asia amplifies sweet and heavy notes. Japan's "kōgai" (scent pollution) backlash logged 928 softener complaints from 2014 to 2020.</p></div>
+    <div class="box"><span class="eyebrow">9 · Laundry taught the world "clean"</span><h3>Sion's hidden advantage and risk</h3><p>White musks such as Galaxolide make "clean" the most widely learned smell in Asia and the US. That makes it the strongest familiar anchor a laundry brand can use, and also the most saturated. Scent boosters show demand for lasting laundry scent. The Japan backlash shows the ceiling.</p></div>
+  </div>
+
+
+  <div class="sec-head" style="margin-top:8px"><h3>The Sion creation rules</h3><p class="status">What the brain now does with this, on every brief. Each rule rests on the evidence above.</p></div>
+  <div class="tablewrap"><table class="ref" style="min-width:720px"><thead><tr><th>#</th><th>Rule</th><th>Evidence</th><th>Where the brain applies it</th></tr></thead><tbody>
+    <tr><td class="mono">1</td><td>Land in the sweet spot: 60 to 84 similar to the closest icon</td><td>Icon launch data, median 71. MAYA (Hekkert 2003)</td><td>Compass zone on every audit and Composer card</td></tr>
+    <tr><td class="mono">2</td><td>Give every scent one hero that carries at least 12% of the smell</td><td>Aldehydes in No. 5, ethyl maltol in Angel, Ambroxan in Sauvage, Hedione in Eau Sauvage</td><td>Hero check in the compass</td></tr>
+    <tr><td class="mono">3</td><td>Put the novelty in a familiar frame: a known accord with one strange twist</td><td>Hekkert 2003, "familiar surprise", genre history</td><td>Creative head twist on a known structure</td></tr>
+    <tr><td class="mono">4</td><td>Anchor in a universally liked family: vanilla, fruity esters, linalool florals, clean musk</td><td>Molecule explains 41% of liking across cultures (Arshamian 2022)</td><td>Composer comfort base, panel and Full review prompts</td></tr>
+    <tr><td class="mono">5</td><td>Never make sulfur, sweat or cheesy acids the new idea</td><td>Keller and Vosshall 2016, Arshamian 2022</td><td>Beauty floor and transmute gate</td></tr>
+    <tr><td class="mono">6</td><td>Make a new genre with a new or rarely used molecule at a bold dose</td><td>Hedione, Calone, ethyl maltol, Iso E Super, Ambroxan each opened a genre</td><td>Hero check, palette bridge accords</td></tr>
+    <tr><td class="mono">7</td><td>Layer three or more musks and two ambery woods in any skin or laundry base</td><td>Specific anosmias (OR5A2, OR7D4)</td><td>Musk diversity check</td></tr>
+    <tr><td class="mono">8</td><td>Test over several wears, not one sniff</td><td>Mere exposure raises liking for mildly pleasant odours (Delplanque 2015)</td><td>Prediction ledger: score at 1, 7 and 21 days</td></tr>
+    <tr><td class="mono">9</td><td>Tune the volume by region: light in humid Asia and China, rich in the Gulf, long-lasting for India</td><td>Regional surveys and the Japan kōgai backlash</td><td>Wearer Lens climate and the format dose</td></tr>
+    <tr><td class="mono">10</td><td>Write the name, colour and story to steer the pleasant reading</td><td>de Araujo 2005, Morrot 2001</td><td>Composer names and stories, claim audit</td></tr>
+    <tr><td class="mono">11</td><td>Use a mild cooling or pepper cue for freshness, below irritation</td><td>TRPM8 and TRPA1 studies</td><td>Brief limits: camphor and medicinal caps</td></tr>
+    <tr><td class="mono">12</td><td>Use laundry "clean" as a hidden base, never as the whole idea</td><td>White musks are the most learned smell in Asia and the US, and saturated</td><td>Musk and wood cap, dryer-proof target core</td></tr>
+  </tbody></table></div>
+
+  <div class="box"><span class="eyebrow">Studying is not copying</span><h3>The anti-copy rule</h3><p>The compass flags any formula above 90 similar to an icon as a near copy. The brain never reproduces a commercial formula, uses a commercial perfume's name to sell, or builds "smells like" products. Icons are studied the way architects study buildings: for structure, proportion and what made people stay.</p></div>
+</section>
+
 <section id="architecture">
-  <div class="sec-head"><span class="chapter">05 · COMPOSER LAYERS</span><h2>How a brief becomes a formula</h2>
+  <div class="sec-head"><span class="chapter">06 · COMPOSER LAYERS</span><h2>How a brief becomes a formula</h2>
   <p class="lede">Eight layers, run in order. Layers 2 to 4 are where a language model adds the most. Layers 1, 6 and 7 are deterministic code, because safety, regulation and dosing must never depend on a model's mood.</p></div>
   <div class="layers" id="layers"></div>
 </section>
 
 <section id="heads">
-  <div class="sec-head"><span class="chapter">06 · THREE HEADS</span><h2>Scent 1, 2 and 3</h2>
+  <div class="sec-head"><span class="chapter">07 · THREE HEADS</span><h2>Scent 1, 2 and 3</h2>
   <p class="lede">Your umbrella, kept and sharpened. Every brief always returns all three, in this order, so a person learns the brand's grammar after one use.</p></div>
   <div class="grid3">
     <div class="box headbox" style="--hc:var(--creative)"><span class="eyebrow" style="color:var(--creative)">Scent 1 · Creative</span><h3>The brain's own reading</h3>
@@ -515,7 +579,7 @@ textarea.nf.small{min-height:150px}
 </section>
 
 <section id="ladder">
-  <div class="sec-head"><span class="chapter">07 · TRANSLATION RULES</span><h2>The ladder, the floor and the gate</h2>
+  <div class="sec-head"><span class="chapter">08 · TRANSLATION RULES</span><h2>The ladder, the floor and the gate</h2>
   <p class="lede">Most briefs name things that have no smell, or a bad one. The brain climbs a four-rung ladder until it reaches something a perfumer can build.</p></div>
   <div class="ladder">
     <div class="rung"><span class="rk">RUNG 1 · LITERAL</span><b>It has a good smell</b><p>Build it directly from materials or a bridge accord.</p><span class="ex">Soybeans → soy milk &amp; green bean accord</span></div>
@@ -534,13 +598,13 @@ textarea.nf.small{min-height:150px}
 </section>
 
 <section id="cases">
-  <div class="sec-head"><span class="chapter">08 · HARD BRIEFS</span><h2>What real people will type</h2>
+  <div class="sec-head"><span class="chapter">09 · HARD BRIEFS</span><h2>What real people will type</h2>
   <p class="lede">Your examples, plus the edge cases, run live through the gate on this page. Tap a row to load it into the composer.</p></div>
   <div class="tablewrap"><table class="ref" id="cases-t"><thead><tr><th>Brief</th><th>Gate</th><th>How the brain reads it</th></tr></thead><tbody></tbody></table></div>
 </section>
 
 <section id="palette">
-  <div class="sec-head"><span class="chapter">09 · PALETTE</span><h2>How many liquids is enough</h2>
+  <div class="sec-head"><span class="chapter">10 · PALETTE</span><h2>How many liquids is enough</h2>
   <p class="lede">Freedom of brief does not need an endless shelf. It needs the right shelf. A brief like "soybeans" or "gunpowder" is solved by a bridge accord: a small pre-made blend of 5 to 30 raw materials that a perfumer builds once and the machine treats as one liquid.</p></div>
   <div class="tablewrap"><table class="ref"><thead><tr><th>Stage</th><th>Liquids</th><th>What they are</th><th>Why that number</th></tr></thead><tbody>
     <tr><td><b>1 · Sion Wash</b><br><span class="eyebrow">now</span></td><td class="num">24</td><td>Laundry-grade accords, each pre-tested in your detergent base for stability and colour</td><td>Detergent customisation is a 3 to 6 accord mix at 0.5 to 1.1% load. 24 covers every family twice. Only high-substantivity materials survive rinse and dry (boiling point at or above 250 °C and ClogP at or above 3).</td></tr>
@@ -553,7 +617,7 @@ textarea.nf.small{min-height:150px}
 </section>
 
 <section id="learning">
-  <div class="sec-head"><span class="chapter">10 · LEARNING LOOP</span><h2>How the brain gets smarter</h2>
+  <div class="sec-head"><span class="chapter">11 · LEARNING LOOP</span><h2>How the brain gets smarter</h2>
   <p class="lede">Today the brain is rules plus a language model. Every order turns it into something no competitor has: a dataset of free-text briefs paired with formulas and with what people actually thought when they smelled them.</p></div>
   <div class="row2">
     <div class="box"><span class="eyebrow">The flywheel</span>
@@ -596,7 +660,7 @@ textarea.nf.small{min-height:150px}
 </section>
 
 <section id="landscape">
-  <div class="sec-head"><span class="chapter">11 · LANDSCAPE</span><h2>Who else is doing this</h2>
+  <div class="sec-head"><span class="chapter">12 · LANDSCAPE</span><h2>Who else is doing this</h2>
   <p class="lede">Researched 3 Nov 2026 from public reporting. Figures marked <span class="u">U</span> are uncertain or disputed across sources.</p></div>
   <div class="tablewrap"><table class="ref"><thead><tr><th>Player</th><th>Input</th><th>Engine and palette</th><th>What Sion takes from it</th></tr></thead><tbody>
     <tr><td><b>EveryHuman</b><br><span class="status">ScenTronix, Breda</span></td><td>About 23-item personality questionnaire</td><td>3 algorithms → 3 scents. 46 accords of 5 to 8 materials each. In-store dispenser, patented. About £45 for three 5 ml. EDT strength. 75k+ users<span class="u">U</span></td><td>Three outputs per session works. The quiz-first input and fixed EDT strength are the gap Sion fills.</td></tr>
@@ -611,7 +675,7 @@ textarea.nf.small{min-height:150px}
 </section>
 
 <section id="roadmap">
-  <div class="sec-head"><span class="chapter">12 · ROADMAP</span><h2>From wash to fragrance house</h2></div>
+  <div class="sec-head"><span class="chapter">13 · ROADMAP</span><h2>From wash to fragrance house</h2></div>
   <div>
     <div class="stage"><div class="sk">Stage 1<small>Sion Wash</small></div><div><h3>Custom-scented detergent</h3><p>The brain runs in detergent and softener formats only. Formulas are blended by hand from 24 laundry accords. Every order creates a Scent Genome record.</p><ul><li>Pick a fragrance supplier who will build and IFRA-certify 24 laundry accords</li><li>Stability test each accord in your base: 4 weeks at 40 °C, colour and pH</li><li>Launch the brief box on the site with the three-scent result</li><li>Collect the first 1,000 ratings</li></ul></div></div>
     <div class="stage"><div class="sk">Stage 2<small>The machine</small></div><div><h3>64-cartridge dispenser</h3><p>The brain sends a dispense program: cartridge ID and grams or millilitres, at 0.01 ml resolution. Fine fragrance formats open up. Retrieval from rated genomes switches on (v1).</p><ul><li>Gravimetric dosing (weigh, do not just pump) for accuracy below 1%</li><li>Cartridge freshness tracking: citrus and aldehydes oxidise</li><li>Batch log per bottle for recalls and repeat orders</li></ul></div></div>
@@ -620,7 +684,7 @@ textarea.nf.small{min-height:150px}
 </section>
 
 <footer>
-  <span>Sion Scent Brain · build 0.4.1 · 3 Nov 2026 · Virtual Nose added</span>
+  <span>Sion Scent Brain · build 0.5 · 3 Nov 2026 · Virtual Nose added</span>
   <span>Palette caps and dose levels are planning placeholders. Every formula must be checked against current IFRA Standards and supplier certificates, then stability and skin tested, before anything is sold.</span>
 </footer>
 </div>
@@ -1018,6 +1082,7 @@ function renderResult(res){
       <h3>${esc(sc.name)}</h3><p class="story">${esc(sc.story)}</p>${sc.why?`<p class="story"><b>Why:</b> ${esc(sc.why)}</p>`:""}
       <div class="metrics">${metricBar("Fidelity to brief",sc.metrics.fidelity)}${metricBar("Novelty",sc.metrics.novelty)}${metricBar("Wearability",sc.metrics.wear)}${metricBar("Wash survival",sc.metrics.subst)}</div>
       <table class="f"><thead><tr><th></th><th>Material</th><th class="num">% conc</th><th class="num">${fmt.unit}</th></tr></thead><tbody>${rows}</tbody></table>
+      ${(()=>{const C=compass(sc.fv);return`<div class="disp">Compass: <b>${esc(C.zone[2])}</b> · closest icon ${esc(C.sims[0].ic.name)} at ${Math.round(C.F*100)}</div>`;})()}
       <div class="disp mono">Dispense: ${esc(fmt.batch)} at ${sc.conc}% → ${sc.oil.toFixed(2)} ${fmt.unit} of fragrance oil · cost tier ${cost} · ${sc.rows.length} cartridges</div>
       ${sc.notes.length?`<div class="flagline">${sc.notes.map(esc).join(" · ")}</div>`:""}
     </article>`;}).join("");
@@ -1033,6 +1098,7 @@ function renderResult(res){
    <div class="scents">${cards}</div>`;
   drawRadar(an.target,res.scents);
   drawTrace(res);
+  setMapPoints("composer",res.scents.map(sc=>({v:sc.fv,label:"Scent "+({creative:1,accurate:2,luxury:3}[sc.head]),c:HEADS.find(h=>h[0]===sc.head)[2]})));
 }
 function drawRadar(t,scents){
   const W=460,H=400,cx=230,cy=200,R=135,n=24;
@@ -1190,6 +1256,73 @@ $("#deep").addEventListener("click",async()=>{
     else{$("#status").textContent=ERR[e&&e.code]||"Claude could not finish. The offline result is still shown.";if(e&&(e.code==="not_granted"||e.code==="sampling_disabled"))$("#deep").hidden=true;}
   }finally{$("#deep").disabled=false;$("#go").disabled=false;$("#stop").hidden=true;}
 });
+
+/* ================= FAMILIARITY-NOVELTY COMPASS =================
+   30 commercial icons as smell profiles on the brain's 24 dimensions (authored from public note pyramids, estimates).
+   Zones are calibrated on the icons themselves: each hit's similarity to the closest icon launched BEFORE it
+   (30 verified icons: p25 0.57, median 0.71, p75 0.80, p90 0.86). Profiles describe character, not formulas. */
+const ICONS=[{"id":"no5","name":"Chanel No. 5","house":"Chanel","year":1921,"fam":"Floral aldehyde","g":"floral","v":"aldehydic:3,floralWhite:2.5,floralRose:2,powdery:2,woodyCreamy:1.5,musky:1.5,amber:1,citrus:1","perf":"Ernest Beaux","sig":"Aliphatic aldehydes (C10, C11, C12) at an overdose on jasmine, rose, ylang and sandalwood (reported)","idea":"An abstract flower: the first icon built openly on synthetics","why":"Myth and a century of advertising. Chanel says one bottle sells every 30 seconds","ev":"strong","src":"https://marieclaire.com/beauty/best-chanel-perfumes"},{"id":"shalimar","name":"Shalimar","house":"Guerlain","year":1925,"fam":"Oriental (amber)","g":"amber","v":"citrus:2.5,sweet:3,amber:2.5,powdery:2,animalic:1.5,leather:1,smoky:1,floralRose:1","perf":"Jacques Guerlain","sig":"Vanillin and ethyl vanillin overdosed against bergamot, with civet and opoponax (reported)","idea":"The first great oriental: vanilla as a fine-perfume signature","why":"100 years in continuous production","ev":"medium","src":"https://en.wikipedia.org/wiki/Shalimar_(perfume)"},{"id":"opium","name":"Opium","house":"Yves Saint Laurent","year":1977,"fam":"Spicy oriental","g":"amber","v":"spicyWarm:3,amber:3,sweet:1.5,floralWhite:1,woodyDry:1.5,smoky:1,fruity:1,powdery:1","perf":"Jean Amic, Jean-Louis Sieuzac","sig":"Clove and carnation spice over myrrh, labdanum and patchouli (from public notes)","idea":"A provocative, heavy spicy oriental","why":"Scandal, sold out in Europe within weeks","ev":"medium","src":"https://museeyslparis.com/en/biography/opium"},{"id":"coolwater","name":"Cool Water","house":"Davidoff","year":1988,"fam":"Aromatic aquatic","g":"fresh","v":"aromatic:2.5,aquatic:2.5,citrus:1.5,green:1,woodyDry:1.5,amber:1.5,musky:1.5,sweet:0.5","perf":"Pierre Bourdon","sig":"Dihydromyrcenol with Ambrox, lavender, mint and a watery accord (reported)","idea":"Fresh aquatic for men","why":"Cheap, everywhere, record sales in Germany, the UK and the US","ev":"medium","src":"https://www.premiumbeautynews.com/en/coty-honors-pierre-bourdon-the,25645"},{"id":"fahrenheit","name":"Fahrenheit","house":"Dior","year":1988,"fam":"Woody leather","g":"woody","v":"green:2.5,leather:3,smoky:1.5,mineral:1.5,woodyDry:2,amber:1.5,spicyWarm:1,floralWhite:1,floralRose:1","perf":"Jean-Louis Sieuzac, Michel Almairac","sig":"Violet leaf against leather and a petrol-like effect (reported)","idea":"A polarising violet-gasoline signature","why":"An odd signature with long Dior reach","ev":"weak","src":"https://vivir.com/article/dior-fahrenheit-edt-review"},{"id":"eternity","name":"Eternity","house":"Calvin Klein","year":1988,"fam":"Fresh floral","g":"floral","v":"floralWhite:2.5,floralRose:2,citrus:1.5,green:1,aromatic:1,woodyCreamy:1.5,musky:2,aldehydic:0.5,powdery:1","perf":"Sophia Grojsman","sig":"Clean white florals over a soft musky base (from public notes)","idea":"A bright, clean bridal floral","why":"Wedding imagery and 1980s department-store reach","ev":"weak","src":"https://en.wikipedia.org/wiki/Sophia_Grojsman"},{"id":"tresor","name":"Trésor","house":"Lancôme","year":1990,"fam":"Powdery fruity rose","g":"floral","v":"floralRose:2.5,fruity:2,powdery:3,sweet:1.5,amber:1,musky:1.5,woodyCreamy:1","perf":"Sophia Grojsman","sig":"Rose, peach and apricot on a dense powdery base of Iso E Super, Hedione, musk and methyl ionone (Grojsman's hug accord, reported) (reported)","idea":"Powdery fruit-rose with very few, very large doses","why":"Comforting and long-lasting","ev":"medium","src":"https://www.perfumeprojects.com/museum/bottles/Tresor.shtml"},{"id":"angel","name":"Angel","house":"Mugler","year":1992,"fam":"Gourmand","g":"gourmand","v":"sweet:3,cocoa:1,earthy:2.5,fruity:1.5,amber:1.5,musky:1,lactonic:1","perf":"Olivier Cresp, Yves de Chiris","sig":"Ethyl maltol candyfloss overdosed against a large dose of patchouli (reported)","idea":"The first gourmand: food notes in fine perfume","why":"Shocking and polarising, refill loyalty","ev":"medium","src":"https://en.wikipedia.org/wiki/Angel_(perfume)"},{"id":"ckone","name":"CK One","house":"Calvin Klein","year":1994,"fam":"Citrus aromatic","g":"citrus","v":"citrus:3,green:2,aromatic:1,floralWhite:1.5,musky:2,aquatic:1,woodyDry:1","perf":"Alberto Morillas, Harry Fremont","sig":"Hedione, green tea and citrus over white musks (from public notes)","idea":"A shared unisex scent","why":"Company figure of 20 bottles a minute in the mid-1990s","ev":"medium","src":"https://en.wikipedia.org/wiki/CK_One"},{"id":"lemale","name":"Le Male","house":"Jean Paul Gaultier","year":1995,"fam":"Aromatic fougère gourmand","g":"aromatic","v":"aromatic:3,sweet:2.5,spicyFresh:1,powdery:1,amber:1.5,woodyDry:1,musky:1","perf":"Francis Kurkdjian","sig":"Lavender and mint (barbershop) against vanilla (candy) (from public notes)","idea":"A sweet fougère for men","why":"Puig: number 3 men's line worldwide in 2024","ev":"strong","src":"https://cosmeticsbusiness.com/puig-s-2024-full-year-profits-surge-14-percent"},{"id":"adg","name":"Acqua di Giò","house":"Giorgio Armani","year":1996,"fam":"Aquatic","g":"fresh","v":"aquatic:3,citrus:2.5,aromatic:2,floralWhite:1,woodyDry:1.5,musky:1.5,mineral:1","perf":"Alberto Morillas","sig":"Calone and Hedione with citrus, rosemary and white musk (reported) (reported)","idea":"Mediterranean sea-air freshness","why":"Top 10 for decades","ev":"medium","src":"https://basenotes.com/threads/commercial-hits.184608/"},{"id":"jadore","name":"J'adore","house":"Dior","year":1999,"fam":"Floral","g":"floral","v":"floralWhite:3,floralRose:2,fruity:1.5,musky:1.5,woodyCreamy:1,citrus:1","perf":"Calice Becker","sig":"Jasmine sambac, ylang, rose and fruit in a luminous bouquet (from public notes)","idea":"A modern golden floral bouquet","why":"Number 1 in France 2013, long-running campaigns","ev":"medium","src":"https://www.warc.com/content/article/Dior_Jadore/99621"},{"id":"lightblue","name":"Light Blue","house":"Dolce & Gabbana","year":2001,"fam":"Citrus floral","g":"citrus","v":"citrus:3,fruity:2,green:1,floralWhite:1,woodyDry:2,musky:2,amber:1","perf":"Olivier Cresp","sig":"Sicilian lemon, green apple, cedar and musk (from public notes)","idea":"Mediterranean summer in a simple citrus floral","why":"Over 20 years as a summer best seller","ev":"medium","src":"https://en.wikipedia.org/wiki/Light_Blue_(fragrance)"},{"id":"cocomad","name":"Coco Mademoiselle","house":"Chanel","year":2001,"fam":"Modern chypre","g":"chypre","v":"citrus:2.5,floralRose:2,earthy:2.5,musky:2,amber:1.5,woodyDry:1,sweet:1","perf":"Jacques Polge","sig":"A clean patchouli fraction with orange and rose (from public notes)","idea":"A modern, clean chypre for a younger customer","why":"US number 1 women's (2013), reported to outsell No. 5","ev":"medium","src":"https://nstperfume.com/2014/02/19/top-selling-womens-fragrances-2013/"},{"id":"euphoria","name":"Euphoria","house":"Calvin Klein","year":2005,"fam":"Fruity amber floral","g":"amber","v":"fruity:2.5,floralWhite:1.5,sweet:1.5,amber:2,woodyCreamy:1.5,lactonic:1,musky:1","perf":"Dominique Ropion, Carlos Benaïm, Loc Dong","sig":"Pomegranate and persimmon with black orchid over amber (from public notes)","idea":"Fruity amber floral","why":"Long US top-10 run (not confirmed)","ev":"weak","src":"https://en.wikipedia.org/wiki/Alberto_Morillas"},{"id":"flowerbomb","name":"Flowerbomb","house":"Viktor&Rolf","year":2005,"fam":"Floral gourmand","g":"gourmand","v":"floralWhite:2,floralRose:2,sweet:2.5,earthy:1.5,musky:1.5,fruity:1,amber:1,powdery:1","perf":"Olivier Polge, Carlos Benaïm, Domitille Bertier, Dominique Ropion","sig":"Sweet florals over patchouli (from public notes)","idea":"Floral and gourmand fused into one","why":"Candied patchouli floral, strong marketing","ev":"weak","src":"https://www.perfumeprojects.com/museum/bottles/FlowerBomb.shtml"},{"id":"daisy","name":"Daisy","house":"Marc Jacobs","year":2007,"fam":"Fruity floral musk","g":"floral","v":"fruity:2,floralWhite:2,green:1.5,musky:2.5,woodyCreamy:1,citrus:1,powdery:1","perf":"Alberto Morillas","sig":"Violet leaf and strawberry over white musks (from public notes)","idea":"A playful, fresh fruity floral","why":"The brand's biggest fragrance success, aimed at young buyers","ev":"medium","src":"https://en.wikipedia.org/wiki/Daisy_(perfume)"},{"id":"onemillion","name":"1 Million","house":"Paco Rabanne","year":2008,"fam":"Spicy leather amber","g":"amber","v":"spicyWarm:2.5,citrus:2,leather:2.5,amber:2.5,sweet:2,floralRose:1,woodyDry:1,aromatic:1","perf":"Christophe Raynaud, Olivier Pescheux, Michel Girard","sig":"Cinnamon and blood mandarin with leather and amber (from public notes)","idea":"Loud sweet spice for men","why":"Puig: number 4 men's line worldwide in 2024","ev":"strong","src":"https://cosmeticsbusiness.com/puig-s-2024-full-year-profits-surge-14-percent"},{"id":"bleu","name":"Bleu de Chanel","house":"Chanel","year":2010,"fam":"Woody aromatic","g":"woody","v":"citrus:2.5,spicyFresh:2,aromatic:1.5,woodyDry:2.5,woodyCreamy:1.5,smoky:1,amber:1.5,musky:1","perf":"Jacques Polge","sig":"Citrus and pink pepper over Iso E Super, incense and sandalwood (from public notes)","idea":"A refined, versatile woody aromatic","why":"Safe signature for office and gifting","ev":"medium","src":"https://www.fashionbeans.com/article/bleu-de-chanel-review"},{"id":"santal33","name":"Santal 33","house":"Le Labo","year":2011,"fam":"Woody leather","g":"woody","v":"woodyCreamy:3,woodyDry:2.5,leather:2,aromatic:1,spicyFresh:1,powdery:1.5,smoky:1,amber:1.5,musky:1","perf":"Frank Voelkl","sig":"Sandalwood accord with cedar, cardamom, violet and leather (from public notes)","idea":"A niche signature that became a cult","why":"Hotel and social media ubiquity after 2014","ev":"weak","src":"https://en.wikipedia.org/wiki/Santal_33"},{"id":"missdior","name":"Miss Dior","house":"Dior","year":1947,"fam":"Green chypre (today's Miss Dior is a different rose floral)","g":"chypre","v":"green:2.5,aromatic:1.5,floralRose:2,floralWhite:1.5,earthy:2.5,woodyDry:1,animalic:0.5,leather:0.5","perf":"Jean Carles, Paul Vacher","sig":"Galbanum green over rose and jasmine on oakmoss and patchouli (from public notes)","idea":"A New Look-era green chypre","why":"Heritage name relaunched as a modern floral","ev":"medium","src":"https://www.whowhatwear.com/best-dior-perfumes"},{"id":"lavie","name":"La Vie est Belle","house":"Lancôme","year":2012,"fam":"Gourmand iris","g":"gourmand","v":"sweet:3,powdery:2.5,fruity:1.5,earthy:1.5,floralWhite:1,amber:1.5,musky:1,lactonic:1","perf":"Olivier Polge, Dominique Ropion, Anne Flipo","sig":"Iris and praline (ethyl maltol type) with patchouli (reported)","idea":"A gourmand built around iris","why":"Number 1 in France 2014","ev":"medium","src":"https://www.pairfum.com/top-10-female-fragrances-in-2014-france/"},{"id":"invictus","name":"Invictus","house":"Paco Rabanne","year":2013,"fam":"Aquatic woody","g":"fresh","v":"citrus:2.5,aquatic:2.5,aromatic:1,woodyDry:2,amber:2,musky:1,sweet:1,mineral:1","perf":"Véronique Nyberg, Anne Flipo, Olivier Polge, Dominique Ropion","sig":"Marine accord and grapefruit over ambergris-type woods (from public notes)","idea":"Sporty sweet-fresh","why":"UK top seller from 2014","ev":"medium","src":"https://cosmeticsbusiness.com/the-fragrance-shop-reports-successful-christmas-trading--104607"},{"id":"blackopium","name":"Black Opium","house":"Yves Saint Laurent","year":2014,"fam":"Coffee gourmand floral","g":"gourmand","v":"cocoa:2.5,sweet:3,floralWhite:2,fruity:1,spicyFresh:1,woodyCreamy:1,amber:1,musky:1","perf":"Nathalie Lorson, Marie Salamagne, Olivier Cresp, Honorine Blanc","sig":"Coffee accord with vanilla and white flowers (from public notes)","idea":"Coffee as a fine-fragrance signature","why":"Number 1 in France at launch","ev":"medium","src":"https://www.thezoereport.com/p/ysl-black-opium-sells-887-bottles-per-day-heres-why-everyones-so-hooked-39125645"},{"id":"sauvage","name":"Sauvage","house":"Dior","year":2015,"fam":"Fresh spicy ambery","g":"fresh","v":"citrus:3,spicyFresh:2.5,aromatic:1.5,amber:3,mineral:1.5,woodyDry:1.5,musky:1","perf":"François Demachy","sig":"Ambroxan at an overdose with Sichuan pepper and Calabrian bergamot (reported)","idea":"Fresh, ambery, very high projection","why":"Lasts, gets noticed, Dior reach. LVMH calls it the world's best-selling fragrance (2024)","ev":"strong","src":"https://www.cosmeticsdesign-europe.com/Article/2025/01/29/lvmh-beauty-reports-strong-momentum-in-fragrances-in-2024"},{"id":"br540","name":"Baccarat Rouge 540","house":"Maison Francis Kurkdjian","year":2015,"fam":"Ambery floral woody","g":"amber","v":"amber:3,sweet:2.5,mineral:2,spicyWarm:1.5,woodyDry:2,floralWhite:1.5,powdery:0.5,musky:1","perf":"Francis Kurkdjian","sig":"Ambroxan, Hedione, ethyl maltol type caramel and a saffron note over cedar (reported) (reported)","idea":"A crystalline airy amber with caramel","why":"Social media and the most copied scent of its era","ev":"medium","src":"https://basenotes.com/threads/br-540-help.555763/"},{"id":"goodgirl","name":"Good Girl","house":"Carolina Herrera","year":2016,"fam":"Floral gourmand","g":"gourmand","v":"sweet:2.5,cocoa:2,floralWhite:2.5,amber:1.5,nutty:1,spicyWarm:0.5,musky:1","perf":"Louise Turner","sig":"Tuberose and jasmine with tonka, cocoa and coffee (from public notes)","idea":"Floral gourmand in a dual light-dark idea","why":"Puig: number 1 women's fragrance line worldwide in 2024","ev":"strong","src":"https://uploads.puig.com/uploads/FY_2024_Results_Press_Release_English_01ac42ce99.pdf"},{"id":"libre","name":"Libre","house":"Yves Saint Laurent","year":2019,"fam":"Floral fougère","g":"aromatic","v":"aromatic:2.5,floralWhite:2.5,sweet:2,citrus:1.5,musky:1.5,amber:1.5,woodyCreamy:1","perf":"Anne Flipo, Carlos Benaim","sig":"Lavender with orange blossom and vanilla (from public notes)","idea":"A masculine lavender inside a women's floral","why":"L'Oréal credits it with beating the market in 2019","ev":"medium","src":"https://www.loreal-finance.com/en/annual-report-2019/loreal-luxe-3-4-0/big-year-fragrances-3-4-2/"},{"id":"cloud","name":"Cloud","house":"Ariana Grande","year":2018,"fam":"Gourmand musk","g":"gourmand","v":"sweet:3,lactonic:2,musky:2.5,fruity:1,citrus:1,floralWhite:1,amber:1.5,woodyCreamy:1,nutty:1","perf":"Clément Gavarry (reported)","sig":"Whipped cream, praline and coconut over musks (from public notes)","idea":"An affordable, airy gourmand musk","why":"Fragrance of the Year 2019, top masstige brand","ev":"medium","src":"https://www.medestheticsmag.com/home/news/22969728/ariana-grande-grows-cloud-franchise-with-new-cloud-aurora-fragrance"},{"id":"whitediamonds","name":"White Diamonds","house":"Elizabeth Taylor","year":1991,"fam":"Floral aldehyde","g":"floral","v":"aldehydic:2.5,floralWhite:2.5,floralRose:2,amber:1.5,earthy:1,woodyCreamy:1.5,citrus:1,powdery:1","perf":"Carlos Benaïm","sig":"Aldehydes over tuberose, narcissus and rose on amber and oakmoss (from public notes)","idea":"A celebrity fragrance at mass scale","why":"Over $1.5bn lifetime (company claim), top celebrity scent","ev":"medium","src":"https://en.wikipedia.org/wiki/White_Diamonds"}];
+ICONS.forEach(i=>{i.vv=vec(i.v);});
+const FAMG={floral:"var(--f-floral)",gourmand:"var(--f-gourmand)",amber:"var(--f-amber)",fresh:"var(--f-aqua)",aromatic:"var(--f-green)",woody:"var(--f-wood)",chypre:"var(--f-skin)",citrus:"var(--f-citrus)"};
+const ZONES=[
+  [0.90,"copy","Near copy","Reads as a version of NAME. No reason for a new brand to exist here, and it invites dupe comparisons."],
+  [0.84,"follower","Close follower","Like Invictus next to Cool Water or Good Girl next to Black Opium: sells, but follows."],
+  [0.60,"sweet","Sweet spot","Where most hits launched (median 0.71 to the closest earlier hit): liked at first sniff, new enough to be noticed."],
+  [0.45,"bold","Bold","Angel, Opium, Fahrenheit, Trésor and Coco Mademoiselle launched here. Needs a strong hero and a familiar comfort base."],
+  [0,"breaker","Genre breaker","Shalimar, Miss Dior and Cool Water opened genres from here. Rare hits and many misses. Test with a large panel before committing."]
+];
+function compass(prof){
+  const sims=ICONS.map(ic=>({ic,s:Math.max(0,cosv(prof,ic.vv))})).sort((a,b)=>b.s-a.s);
+  const F=sims[0].s,z=ZONES.find(z=>F>=z[0]);
+  return{sims,F,zone:z,text:z[3].replace("NAME",sims[0].ic.name)};
+}
+function lifeProfile(A){const p=new Array(24).fill(0);A.tps.forEach(([t])=>{const v=nrm(A.tp[t].prof);v.forEach((x,i)=>p[i]+=x);});return p;}
+function heroOf(A){
+  let best=null;
+  A.items.forEach(it=>{A.tps.forEach(([t])=>{const sh=it.P[t]/A.tp[t].S;if(!best||sh>best.sh)best={it,sh,t:A.tps.find(x=>x[0]===t)[1]};});});
+  return best;
+}
+function compassChecks(A){
+  const C=compass(lifeProfile(A)),h=heroOf(A),out=[];
+  A.compass=C;A.hero=h;
+  if(C.zone[1]==="copy")out.push({sev:"warn",area:"Compass",title:"Near copy of "+C.sims[0].ic.name+" (similarity "+Math.round(C.F*100)+")",detail:C.text});
+  else out.push({sev:C.zone[1]==="breaker"?"info":"pass",area:"Compass",title:C.zone[2]+": closest icon is "+C.sims[0].ic.name+" at "+Math.round(C.F*100),detail:C.text});
+  if(h)out.push({sev:h.sh>=0.12?"pass":h.sh>=0.08?"info":"warn",area:"Compass",title:"Hero: "+h.it.name+" carries "+Math.round(h.sh*100)+"% of the smell ("+h.t.toLowerCase()+")",detail:h.sh>=0.12?"Like most icons, one material leads. Make sure it is the idea you want people to remember.":"No single material leads. Most icons are built around one overdosed signature (aldehydes in No. 5, ethyl maltol in Angel, Ambroxan in Sauvage). Without one, the scent risks smelling generic."});
+  return out;
+}
+function compassHTML(C,h,label){
+  return`<div class="panel fade"><div class="panel-h"><span class="eyebrow">${esc(label)} · familiarity-novelty compass</span><span class="zone z-${C.zone[1]}">${esc(C.zone[2])}</span></div>
+  <p class="status">${esc(C.text)}</p>
+  <div class="cmp">${C.sims.slice(0,4).map(x=>`<div class="cmp-r"><span>${esc(x.ic.name)} <span class="src">${x.ic.year} · ${esc(x.ic.fam)}</span></span><span class="cmp-b"><i style="width:${Math.round(x.s*100)}%"></i></span><span class="mono">${Math.round(x.s*100)}</span></div>`).join("")}</div>
+  ${h?`<p class="status" style="margin-top:8px">Hero: <b>${esc(h.it.name)}</b> carries ${Math.round(h.sh*100)}% of the smell at its peak (${esc(h.t.toLowerCase())}).</p>`:""}
+  <p class="status">Similarity of the whole-life smell profile, 0 to 100. Half of the 30 icons launched between 57 and 80 from their closest predecessor. See section 05 for the study behind it.</p></div>`;
+}
+/* PCA map of the icons */
+let MAPPTS=[];
+function pca2(rows){
+  const n=rows.length,d=rows[0].length,mean=new Array(d).fill(0);rows.forEach(r=>r.forEach((x,i)=>mean[i]+=x/n));
+  const X=rows.map(r=>r.map((x,i)=>x-mean[i]));
+  const C=Array.from({length:d},()=>new Array(d).fill(0));X.forEach(r=>{for(let i=0;i<d;i++)for(let j=0;j<d;j++)C[i][j]+=r[i]*r[j]/n;});
+  const comps=[];
+  for(let k=0;k<2;k++){let v=new Array(d).fill(0).map((_,i)=>Math.sin(i+1+k));for(let it=0;it<200;it++){let w=C.map(row=>row.reduce((s,x,j)=>s+x*v[j],0));comps.forEach(c=>{const p=w.reduce((s,x,i)=>s+x*c[i],0);w=w.map((x,i)=>x-p*c[i]);});const nn=Math.hypot(...w)||1;v=w.map(x=>x/nn);}comps.push(v);}
+  return{mean,comps,proj:v=>{const u=nrm(v).map((x,i)=>x-mean[i]);return comps.map(c=>u.reduce((s,x,i)=>s+x*c[i],0));}};
+}
+let PCA=null;
+function drawStudyMap(){
+  const el=document.getElementById("study-map");if(!el)return;
+  if(!PCA)PCA=pca2(ICONS.map(i=>nrm(i.vv)));
+  const pts=ICONS.map(i=>({p:PCA.proj(i.vv),i}));const extra=MAPPTS.map(e=>({p:PCA.proj(e.v),e}));
+  const all=[...pts,...extra].map(x=>x.p);const xs=all.map(p=>p[0]),ys=all.map(p=>p[1]);
+  const W=900,H=520,M=60,x0=Math.min(...xs),x1=Math.max(...xs),y0=Math.min(...ys),y1=Math.max(...ys);
+  const X=v=>M+(v-x0)/((x1-x0)||1)*(W-2*M),Y=v=>H-M-(v-y0)/((y1-y0)||1)*(H-2*M);
+  let s=`<svg viewBox="0 0 ${W} ${H}" style="min-width:640px;width:100%" role="img" aria-label="Map of 30 commercial icons by smell profile">`;
+  s+=`<rect x="1" y="1" width="${W-2}" height="${H-2}" rx="12" fill="none" stroke="var(--line)"/>`;
+  pts.forEach(({p,i})=>{const c=FAMG[i.g]||"var(--muted)";s+=`<circle cx="${X(p[0]).toFixed(1)}" cy="${Y(p[1]).toFixed(1)}" r="7" fill="${c}" fill-opacity=".85"><title>${esc(i.name+" ("+i.year+") · "+i.fam)}</title></circle><text x="${(X(p[0])+10).toFixed(1)}" y="${(Y(p[1])+4).toFixed(1)}" font-size="11" fill="var(--ink)">${esc(i.name)} <tspan fill="var(--muted)" font-size="9.5">${i.year}</tspan></text>`;});
+  extra.forEach(({p,e})=>{const x=X(p[0]),y=Y(p[1]);s+=`<path d="M${x} ${y-10} L${x+10} ${y} L${x} ${y+10} L${x-10} ${y} Z" fill="${e.c}" stroke="var(--bg)" stroke-width="2"/><text x="${x+14}" y="${y-8}" font-size="12" font-weight="600" fill="${e.c}">${esc(e.label)}</text>`;});
+  s+="</svg>";el.innerHTML=s;
+  const lg=document.getElementById("study-legend");if(lg)lg.innerHTML=Object.entries({floral:"Floral",gourmand:"Gourmand",amber:"Amber and spice",fresh:"Fresh and aquatic",aromatic:"Aromatic fougère",woody:"Woody",chypre:"Chypre",citrus:"Citrus and musk"}).map(([k,v])=>`<span><i style="background:${FAMG[k]}"></i>${v}</span>`).join("")+`<span><i style="background:var(--ink);transform:rotate(45deg)"></i>Your formulas</span>`;
+}
+function setMapPoints(kind,points){MAPPTS=MAPPTS.filter(p=>p.kind!==kind).concat(points.map(p=>Object.assign({kind},p)));drawStudyMap();}
 
 /* ================= VIRTUAL NOSE =================
    Material record: name, CAS, logP, boiling point °C, odour impact per % (Hedione about 0.6),
@@ -1461,7 +1594,9 @@ function runAudit(text,ctx,which){
   });
   const maxS=Math.max(...tps.map(([t])=>tp[t].S));
   tps.forEach(([t])=>tp[t].rel=tp[t].S/maxS*100);
-  return{items,tp,tps,ctx,sumF,sumC,freeTitle:freeF?freeF.title:"",capTitle:capF?capF.title:"",checks:makeChecks(items,tp,tps,ctx,sumF,sumC)};
+  const A={items,tp,tps,ctx,sumF,sumC,freeTitle:freeF?freeF.title:"",capTitle:capF?capF.title:"",checks:makeChecks(items,tp,tps,ctx,sumF,sumC)};
+  A.checks.push(...compassChecks(A));const so={fail:0,warn:1,info:2,pass:3};A.checks.sort((a,b)=>so[a.sev]-so[b.sev]);
+  return A;
 }
 function names(list,n){return list.slice(0,n||4).map(x=>x.name+(x.v!==undefined?" "+x.v:"")).join(", ");}
 const pc=x=>(x*100).toFixed(x<0.1?1:0)+"%";
@@ -1642,7 +1777,7 @@ function nRun(){
   const which=+sel.value||0;
   const A=runAudit($("#nf").value,nctx(),which);
   if(!A){$("#n-out").innerHTML=`<div class="panel"><p>No formula found. Start a formula with a line beginning "=", then one material per line with its %.</p></div>`;lastAudit=null;return;}
-  lastAudit=A;$("#n-out").innerHTML=`<div id="n-a1"></div><div id="n-dist"></div><div id="n-a2"></div>`;renderAudit(A,"Paper audit",$("#n-a1"));$("#n-status").textContent="";
+  lastAudit=A;$("#n-out").innerHTML=`<div id="n-a1"></div><div id="n-dist"></div><div id="n-a2"></div>`;renderAudit(A,"Paper audit",$("#n-a1"));$("#n-a1").insertAdjacentHTML("beforeend",compassHTML(A.compass,A.hero,"Paper audit"));setMapPoints("audit",[{v:lifeProfile(A),label:(A.freeTitle||"Audit").slice(0,30),c:"var(--ink)"}]);$("#n-status").textContent="";
   if(frees.length>1){
     const ctx=nctx(),stage=ctx.prod==="edp"?"h4":"dryer";
     const all=frees.map((f,i)=>({t:f.title,A:runAudit($("#nf").value,ctx,i)}));
@@ -2243,6 +2378,23 @@ $("#pl-out").addEventListener("change",async ev=>{const i=ev.target.closest(".pl
 
 sampleP.then(sm=>{if(sm)$("#n-full").hidden=false;});
 $("#n-full").addEventListener("click",fullReview);
+
+/* ---------- Self-study: icon table, patterns, timeline ---------- */
+const ICON_NOTE="The 30 most commercially dominant perfumes, chosen on public evidence (company rankings, years at the top, brand-stated sales) by a research agent on 3 Nov 2026. No perfume has audited lifetime sales. The hero column says whether a signature material is reported by a perfumer, the house or trade press, or read from public notes. Close contenders: Sol de Janeiro Cheirosa 62, Revlon Charlie, Youth-Dew, Giorgio Beverly Hills.";
+const PATTERNS=[["One bold molecule on a familiar frame", "The commonest pattern among the giants: a classic structure carrying one material at a dose nobody had used.", "No. 5 (aldehydes), Angel (ethyl maltol on patchouli), Cool Water (dihydromyrcenol), Sauvage (Ambroxan)"], ["A few big synthetics make the accord", "Some icons are mostly four or five materials at large doses, which makes them memorable and long-lasting.", "Tr\u00e9sor (reported about 80% from four materials), Baccarat Rouge 540, Cool Water"], ["The drift toward sweet", "Gourmand sweetness keeps moving into fine fragrance, and vanillin is the most liked smell across cultures.", "Shalimar, Angel, La Vie est Belle, Black Opium, Good Girl, Cloud"], ["Patchouli, cleaned and sweetened", "Fractionated patchouli turned an old hippie note into the modern chypre and floral gourmand.", "Angel, Coco Mademoiselle, Flowerbomb, La Vie est Belle"], ["Transparent freshness sells at volume", "Clean, airy freshness built on Hedione, aquatic notes and musks reaches the widest audience.", "CK One, Acqua di Gi\u00f2, Light Blue, Cool Water"], ["Clean meets sweet", "Many hits pair a fresh or barbershop idea with a sweet base, so one bottle carries two feelings.", "Le Male (lavender and vanilla), Libre (lavender and orange blossom), Invictus (marine and sweet woods)"], ["Followers sell too, with a twist", "A close follower can win when it moves the idea one step and has the reach.", "Invictus after Cool Water, Good Girl after Black Opium, Cloud near Baccarat Rouge 540. White Diamonds sits at 92 to No. 5 and still sold over $1.5bn"], ["The bottle and the story are part of the scent", "Names, faces and bottles shape what people think they smell.", "Le Male torso, Good Girl stiletto, Flowerbomb grenade, 1 Million ingot, Opium's name, Libre with Dua Lipa"], ["A small group of perfumers made most hits", "The same hands recur, which suggests learnable craft rules rather than luck.", "Morillas (CK One, Acqua di Gi\u00f2, Daisy), Cresp (Angel, Light Blue, Black Opium), Ropion, Flipo and Bena\u00efm, Grojsman (Eternity, Tr\u00e9sor)"], ["Scale comes from franchises and distribution", "Rankings now count franchises (EDT, EDP, Parfum, Elixir) sold through a few giant groups.", "Sauvage, Good Girl line (Puig), L'Or\u00e9al's YSL and Lanc\u00f4me, LVMH's Dior"]];
+const TIMELINE=[["1920s", "Aldehydic abstract floral", "Chanel No. 5 (1921)", "Aliphatic aldehydes at an overdose"], ["1920s", "Amber oriental", "Shalimar (1925)", "Ethyl vanillin with bergamot"], ["1940s", "Green chypre", "Miss Dior (1947)", "Galbanum over oakmoss"], ["1950s", "American mass oriental", "Youth-Dew (1953)", "Perfume sold as a bath oil"], ["1960s", "Transparent fresh citrus", "Eau Sauvage (1966)", "Hedione at about 2 to 3%"], ["1970s", "Maximalist spicy oriental", "Opium (1977)", "Clove, myrrh and a provocative name"], ["1980s", "Aquatic foug\u00e8re and clean floral", "Cool Water and Eternity (1988)", "Dihydromyrcenol, Ambrox, clean musks"], ["1990s", "Big synthetic accords, gourmand, unisex, marine", "Tr\u00e9sor, Angel, CK One, Acqua di Gi\u00f2", "Grojsman's hug accord, ethyl maltol, Hedione, Calone"], ["2000s", "Neo-chypre and candied floral", "Coco Mademoiselle, Flowerbomb", "Patchouli fractions, sweet florals"], ["2010s", "Blue woods, iris praline, Ambroxan, airy amber", "Bleu de Chanel, La Vie est Belle, Sauvage, Baccarat Rouge 540", "Iso E Super, ethyl maltol, Ambroxan, Hedione"], ["2020s", "Body mists and affordable Middle Eastern gourmands", "Cheirosa 62, Lattafa Khamrah", "Low-cost sweet sillage, social media"]];
+const GNAME={floral:"Floral",gourmand:"Gourmand",amber:"Amber and spice",fresh:"Fresh and aquatic",aromatic:"Aromatic fougère",woody:"Woody",chypre:"Chypre",citrus:"Citrus and musk"};
+ICONS.forEach(a=>{const older=ICONS.filter(b=>b.year<a.year);let best=null;older.forEach(b=>{const c=cosv(a.vv,b.vv);if(!best||c>best.c)best={b,c};});a.launch=best;});
+let iconSel="all";
+function renderIcons(){
+  $("#icon-filter").innerHTML=[["all","All "+ICONS.length],...Object.entries(GNAME)].map(([k,v])=>`<button data-f="${k}" aria-pressed="${iconSel===k}">${k!=="all"?`<span class="dot" style="background:${FAMG[k]}"></span>`:""}${esc(v)}</button>`).join("");
+  $("#icon-t tbody").innerHTML=ICONS.filter(i=>iconSel==="all"||i.g===iconSel).slice().sort((a,b)=>a.year-b.year).map(i=>`<tr><td class="num">${i.year}</td><td><b>${esc(i.name)}</b><br><span class="src">${esc(i.house)}</span></td><td>${esc(i.perf)}</td><td><span class="dot" style="background:${FAMG[i.g]}"></span>${esc(i.fam)}</td><td>${esc(i.sig)}</td><td>${esc(i.idea)}</td><td>${esc(i.why)}</td><td class="num">${i.launch?`<b>${Math.round(i.launch.c*100)}</b><br><span class="src">${esc(i.launch.b.name)}</span>`:'<span class="src">first</span>'}</td><td>${esc(i.ev||"")}${i.src?` <a href="${esc(i.src)}">source</a>`:""}</td></tr>`).join("");
+}
+$("#icon-filter").addEventListener("click",ev=>{const b=ev.target.closest("button");if(!b)return;iconSel=b.dataset.f;renderIcons();});
+$("#patterns").innerHTML=PATTERNS.map(([t,d,ex])=>`<div class="box"><h3>${esc(t)}</h3><p>${esc(d)}</p><p class="status">${esc(ex)}</p></div>`).join("");
+$("#timeline-t tbody").innerHTML=TIMELINE.map(r=>`<tr>${r.map((c,i)=>i===0?`<td class="mono">${esc(c)}</td>`:`<td>${esc(c)}</td>`).join("")}</tr>`).join("");
+$("#icon-note").textContent=ICON_NOTE;
+renderIcons();drawStudyMap();
 
 /* ---------- Reference sections ---------- */
 const LAYERS=[
