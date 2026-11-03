@@ -245,7 +245,7 @@ textarea.nf.small{min-height:150px}
 <div class="wrap">
 <header class="mast">
   <div class="mast-top">
-    <div class="brand"><b>Sion</b> · Scent Brain · build 0.4</div>
+    <div class="brand"><b>Sion</b> · Scent Brain · build 0.4.1</div>
     <div class="eyebrow">Master node for detergent wash and, later, the fragrance house</div>
   </div>
   <h1>Type anything.<br>Get <em>three</em> scents back.</h1>
@@ -459,7 +459,7 @@ textarea.nf.small{min-height:150px}
 
   <div class="box" id="exam"><span class="eyebrow">Scorekeeper · test bank and skip-me score</span>
     <h3>Does the brain catch faults on its own?</h3>
-    <p>The exam runs test formulas through the automatic checks with no help and grades them against answer keys. Case 1 is the training case the senior rules came from. Tests 2 to 5 are held out: a rose softener, a white-musk extrait, a durian joke brief and a "fragrance-free" detergent, with faults planted without writing any new rule. The skip-me score counts findings you had to trigger yourself. The goal is zero.</p>
+    <p>The exam runs test formulas through the automatic checks with no help and grades them against answer keys. Case 1 is the training case the senior rules came from. Tests 2 to 5 are held out: a rose softener, a white-musk extrait, a durian joke brief and a "fragrance-free" detergent, with faults planted without writing any new rule. Tests 6 to 8 were written blind by an independent agent that never saw the rules. The brain caught 9 of their 17 faults on the first run. The misses were fixed as general rules and the tests now guard against regressions. The skip-me score counts findings you had to trigger yourself. The goal is zero.</p>
     <p class="status">The held-out keys live in this page's code but are never sent to any Claude agent, so the Standard and Full reviews cannot see them. A missed finding is a real gap: fix the engine generally, never just for the test. Add a new held-out test every time a real brief catches the brain out.</p>
     <div class="actions"><button class="btn" id="exam-go">Run the exam</button><span class="status" id="exam-status"></span></div>
     <div id="exam-out"></div>
@@ -467,6 +467,7 @@ textarea.nf.small{min-height:150px}
       <tr><td class="mono">2026-11-03</td><td>Chrysanthemum v2: ten paper failures (geosmin, camphor, marine, candy, colour, capsules, tea core, duplicates, musk share, salicylate)</td><td>You asked for a senior review</td><td>No audit before writing, no red team, potent traces judged by weight</td></tr>
       <tr><td class="mono">2026-11-03</td><td>Hexyl salicylate EU CLP Repr. 2 flag</td><td>Engine (data agent), unprompted</td><td>Regulation newer than the formula</td></tr>
       <tr><td class="mono">2026-11-03</td><td>Gemini values that clash with two other sources held back for checking</td><td>Engine (verifier), unprompted</td><td>Single-source data</td></tr>
+      <tr><td class="mono">2026-11-03</td><td>First blind exam: 9 of 17 faults caught. Missed prohibited naturals, phototoxic citrus, Schiff bases with amines, solvent dilution, vegan, allergen-free and phthalate-free claims. A CAS-mismatch bug matched expressed bergamot to the FCF grade by name. All fixed as general rules, 17 of 17 after</td><td>Engine (independent blind agent)</td><td>Thin database coverage, claim audit too narrow, name matching trusted over CAS</td></tr>
     </tbody></table></div>
   </div>
 
@@ -619,7 +620,7 @@ textarea.nf.small{min-height:150px}
 </section>
 
 <footer>
-  <span>Sion Scent Brain · build 0.4 · 3 Nov 2026 · Virtual Nose added</span>
+  <span>Sion Scent Brain · build 0.4.1 · 3 Nov 2026 · Virtual Nose added</span>
   <span>Palette caps and dose levels are planning placeholders. Every formula must be checked against current IFRA Standards and supplier certificates, then stability and skin tested, before anything is sold.</span>
 </footer>
 </div>
@@ -1296,13 +1297,25 @@ const MDB_RAW=[
 ["Camphor","76-22-2",2.4,204,6,"aromatic:2,woodyDry:0.5","ca,md","","A2",0.5],
 ["Maltol","118-71-8",0.1,285,6,"sweet:3,cocoa:0.5","cy","c,w","",1],
 ["Furaneol","3658-77-3",0.8,216,50,"sweet:3,fruity:1","cy","c,w","",0.2],
+["Peru balsam, crude","8007-00-9",3.5,300,3,"amber:2,sweet:2,spicyWarm:0.5","","","P,A",0,"peru balsam crude"],
+["Fig leaf absolute","68916-52-0",4.0,280,6,"green:2,lactonic:1.5,woodyCreamy:1","","","P",0,"fig leaf absolute"],
+["Bergamot oil, expressed (not FCF)","8007-75-8",3.8,190,2,"citrus:3,aromatic:1","","o,ph","A,R",15,"bergamot expressed"],
+["Methyl salicylate","119-36-8",2.55,222,8,"aromatic:2,spicyFresh:1,sweet:0.5","md","e","X1,A2",1,"wintergreen"],
+["Beeswax absolute","8012-89-3",5.0,320,2,"sweet:2,animalic:1,amber:1","","an","",2,"beeswax"],
+["Honey absolute","91052-92-6",3.0,300,4,"sweet:2.5,animalic:1,floralWhite:0.5","","an","",2],
+["Ambergris tincture","8038-65-3",5.0,300,2,"amber:2,animalic:1,mineral:1","","an","",2,"ambergris"],
+["cis-3-Hexenol","928-96-1",1.6,157,8,"green:3","","w","",2,"leaf alcohol"],
+["Triplal","68039-49-6",2.4,196,10,"green:3,citrus:0.5","","a,o","R",2,"ligustral|triplal"],
+["Methyl anthranilate","134-20-3",1.9,256,6,"floralWhite:1.5,fruity:1.5","","n,c","",3],
+["gamma-Nonalactone","104-61-0",2.1,243,15,"lactonic:3,sweet:1","cy","l","",3,"aldehyde c-18|nonalactone"],
+["Triethyl citrate (TEC)","77-93-0",0.3,294,0,"","","w,sv","",100,"triethyl citrate|tec"],
 ["Lilial","80-54-6",4.2,280,1.5,"floralWhite:2,aquatic:0.5","","a","P,B",0,"butylphenyl methylpropional"],
 ["Lyral (HICC)","31906-04-4",2.1,300,1,"floralWhite:2","","a","P,B",0,"lyral|hicc"],
 ["Musk ketone","81-14-1",4.3,330,1,"musky:3","","","B",0],
 ["Musk xylene","81-15-2",4.9,330,1,"musky:3","","","P,B",0],
-["Diethyl phthalate (DEP)","84-66-2",2.4,295,0,"","","","B",0,"dep|diethyl phthalate"],
-["Isopropyl myristate (IPM)","110-27-0",7.0,315,0,"","","","",100,"ipm|isopropyl myristate"],
-["Dipropylene glycol (DPG)","25265-71-8",0.0,230,0,"","","w","",100,"dpg|dipropylene glycol"]
+["Diethyl phthalate (DEP)","84-66-2",2.4,295,0,"","","sv,pt","B",0,"dep|diethyl phthalate"],
+["Isopropyl myristate (IPM)","110-27-0",7.0,315,0,"","","sv","",100,"ipm|isopropyl myristate"],
+["Dipropylene glycol (DPG)","25265-71-8",0.0,230,0,"","","w,sv","",100,"dpg|dipropylene glycol"]
 ];
 const MDB=MDB_RAW.map(([name,cas,logP,bp,imp,dims,tags,chem,reg,max,alias])=>({name,cas,logP,bp,imp,v:vec(dims),tags:tags?tags.split(","):[],chem:chem?chem.split(","):[],reg:reg?reg.split(","):[],max,alias:(alias||"").split("|").filter(Boolean)}));
 /* ---------- three-source reconciliation (verifier lane) ----------
@@ -1334,6 +1347,7 @@ const withOvr=m=>OVR[m.cas]?Object.assign({},m,OVR[m.cas],{ovr:true}):m;
 const sig=x=>1/(1+Math.exp(-x));
 function findMat(name,cas){
   if(cas&&BYCAS[cas])return withOvr(BYCAS[cas]);
+  if(cas)return null; /* a CAS we do not know is a different material, never guess by name */
   const n=" "+name.toLowerCase()+" ";let best=null,bl=0;
   for(const m of MDB)for(const a of [m.name.toLowerCase(),...m.alias])if(a.length>=3&&n.includes(a)&&a.length>bl){best=m;bl=a.length;}
   return best?withOvr(best):null;
@@ -1521,6 +1535,7 @@ function makeChecks(items,tp,tps,ctx,sumF,sumC){
   const load=(ctx.prod==="edp"?18:(ctx.free+ctx.cap)/10);
   const alg=items.filter(it=>it.m.reg.some(r=>r==="A"||r==="A2"||r==="A?")).map(it=>({name:it.name,p:(it.pf*(ctx.prod==="edp"?18:ctx.free/10)+it.pc*(ctx.prod==="edp"?0:ctx.cap/10))/100})).filter(x=>x.p>=0.01).sort((a,b)=>b.p-a.p);
   if(alg.length)add("info","Regulatory",alg.length+" allergens above 0.01% of the finished product","EU-style labelling would list: "+alg.slice(0,8).map(x=>x.name+" "+x.p.toFixed(3)+"%").join(", ")+". Singapore does not require this today, but export markets may.");
+  items.filter(it=>it.m.reg.includes("X1")).forEach(it=>{const t=tot(it);add(t>=0.3?"fail":"warn","Regulatory",it.name+" is "+t.toFixed(2)+"% of the oil and EU CLP classes it Repr. 1B","At 0.3% or more the fragrance oil itself must carry the reproductive-toxicity hazard on its safety data sheet, and many brands exclude 1B substances outright. Replace it.");});
   const clp=items.filter(it=>it.m.reg.includes("X"));
   clp.forEach(it=>{const tot=it.pf;add(tot>=3?"warn":"info","Regulatory",it.name+" is "+tot.toFixed(1)+"% of the free oil","EU CLP now classes it as toxic to reproduction, category 2 (22nd ATP, check the date it applies). At 3% or more the fragrance oil itself must carry that hazard on its safety data sheet. The finished detergent is far below the limit, but EU export and some retailers screen oils. Consider moving part of it to cis-3-hexenyl salicylate or amyl salicylate.");});
   /* senior rules: forbidden characters capped by mass on total oil (rule 2) */
@@ -1544,6 +1559,16 @@ function makeChecks(items,tp,tps,ctx,sumF,sumC){
   if(ctx.prod!=="edp"){const loadPct=(W[0]+W[1])/10;const lims=items.filter(it=>it.m.lim10A).map(it=>({name:it.name,p:tot(it)/100*loadPct,lim:it.m.lim10A}));
     if(lims.length){const over=lims.filter(x=>x.p>x.lim),near=lims.filter(x=>x.p<=x.lim&&x.p>x.lim*0.5);
       add(over.length?"fail":near.length?"warn":"pass","Regulatory",over.length?"Over a reported IFRA 10A limit: "+over.map(x=>x.name+" "+x.p.toFixed(3)+"% vs "+x.lim+"%").join(", "):lims.length+" reported IFRA Category 10A limits, all met"+(near.length?" ("+near.length+" above half the limit)":""),"Finished-product levels against limits Gemini reported. Highest use: "+lims.sort((a,b)=>b.p/b.lim-a.p/a.lim).slice(0,3).map(x=>x.name+" "+x.p.toFixed(3)+"% of "+x.lim+"%").join(", ")+". Confirm every limit on the supplier's IFRA certificate.");}}
+  /* amines plus aldehydes: Schiff bases in any product */
+  const amn=items.filter(it=>it.m.chem.includes("n")&&tot(it)>0),aldh=items.filter(it=>it.m.chem.includes("a")&&tot(it)>0);
+  if(amn.length&&aldh.length){const a1=amn.reduce((s,it)=>s+tot(it),0),a2=aldh.reduce((s,it)=>s+tot(it),0);add(a1>0.5&&a2>0.5?"fail":"warn","Base chemistry","Schiff base risk: "+names(amn.map(it=>({name:it.name})),3)+" with "+aldh.length+" aldehydes","Amines such as methyl anthranilate react with aldehydes ("+names(aldh.map(it=>({name:it.name})),4)+") and turn the liquid yellow to orange within weeks. Pre-react them as a deliberate Schiff base, or drop one side.");}
+  /* phototoxic citrus */
+  const pht=items.filter(it=>it.m.chem.includes("ph")&&tot(it)>0);
+  if(pht.length){const conc=ctx.prod==="edp"?EDP_CONC:(W[0]+W[1])/10;const fp=pht.reduce((s,it)=>s+tot(it),0)*conc/100;
+    add(ctx.prod==="edp"&&fp>0.4?"fail":ctx.prod==="edp"?"warn":"info","Regulatory","Phototoxic citrus: "+names(pht.map(it=>({name:it.name})),3)+" at "+fp.toFixed(2)+"% of the finished product",ctx.prod==="edp"?"Expressed citrus oils carry furocoumarins that burn skin in sunlight. On skin, IFRA limits expressed bergamot to about 0.4% of the product. Use FCF (furocoumarin-free) grades.":"Rinse-off laundry carries little phototoxic risk, but FCF grades remove the question.");}
+  /* solvents dilute the oil */
+  const solv=items.filter(it=>it.m.chem.includes("sv"));const sT=solv.reduce((s,it)=>s+it.pf,0);
+  if(sT>10)add("warn","Dosing","The oil is "+sT.toFixed(0)+"% solvent","Solvents ("+names(solv.map(it=>({name:it.name})),3)+") add no smell, so the real fragrance dose is "+(100-sT).toFixed(0)+"% of what the label load suggests."+(ctx.prod==="softener"?" High glycol levels can also thin or destabilise an esterquat softener.":""));
   /* measured reference: key odorants missing */
   if(ctx._ref){const t0=tps[0][0],S0=tp[t0].S;
     const miss=ctx._ref.items.filter(r=>r.share>=0.04&&!r.m.unknown).map(r=>{const it=items.find(i=>i.m.cas===r.m.cas);return{name:r.name,ref:r.share,f:it?it.P[t0]/S0:0};}).filter(x=>x.f<x.ref*0.25).sort((a,b)=>b.ref-a.ref);
@@ -1556,6 +1581,10 @@ function makeChecks(items,tp,tps,ctx,sumF,sumC){
     if(/hypo-?allergenic|allergy[- ]?(safe|free)/.test(cl)){const na=items.filter(it=>it.m.reg.some(r=>r==="A"||r==="A2"||r==="A?")).length;add("fail","Label claims","\"Hypoallergenic\"",na+" listed or possible allergens are in this oil. The claim needs a repeat insult patch test on the finished product and is banned on many markets without one. Use \"dermatologically tested\" only after the test.");}
     const abs=cl.match(/chemical[- ]?free|non[- ]?toxic|100% safe|safe for (babies|baby|kids|children|pets)|baby[- ]?safe|pet[- ]?safe/);
     if(abs)add("fail","Label claims","Absolute safety claim: \""+abs[0]+"\"","Everything is a chemical and no product is safe for everyone. These claims cannot be proven and invite regulator action.");
+    if(/allergen[- ]?free/.test(cl)){const al=items.filter(it=>it.m.reg.some(r=>r==="A"||r==="A2"||r==="A?"));add(al.length?"fail":"pass","Label claims","\"Allergen-free\" with "+al.length+" listed or possible allergens",al.length?names(al.map(it=>({name:it.name})),5)+" are on allergen lists. The claim is false.":"No listed allergens found in the database, but confirm with the supplier's allergen declaration.");}
+    if(/\bvegan\b/.test(cl)){const an=items.filter(it=>it.m.chem.includes("an"));if(an.length)add("fail","Label claims","\"Vegan\" with animal-derived materials",names(an.map(it=>({name:it.name})),4)+" come from animals. The claim is false.");else add("info","Label claims","\"Vegan\"","No animal-derived materials found. Get the supplier's vegan statement for every raw material.");}
+    if(/phthalate[- ]?free/.test(cl)){const ph=items.filter(it=>it.m.chem.includes("pt"));if(ph.length)add("fail","Label claims","\"Phthalate-free\" with "+names(ph.map(it=>({name:it.name})),2),"The claim is false while a phthalate is the solvent.");}
+    if(/whites?|crystal[- ]?clear|clear juice|colou?r[- ]?(safe|care)/.test(cl)){const cf=items.filter(it=>it.m.chem.includes("c")).reduce((s,it)=>s+tot(it),0);const sch=amn.length&&aldh.length;if(cf>0.1||sch)add("fail","Label claims","Colour claim with colour-forming materials","The claim (whites, clear juice or colour care) clashes with "+(cf>0.1?cf.toFixed(2)+"% colour formers":"")+(sch?(cf>0.1?" and ":"")+"a Schiff base risk":"")+". Fix the formula or drop the claim.");}
     if(/\bnatural\b|\bclean\b|plant[- ]?based/.test(cl)){const syn=items.filter(it=>!/oil/i.test(it.name)).reduce((s,it)=>s+tot(it),0);add("warn","Label claims","\"Natural\" or \"clean\" with about "+syn.toFixed(0)+"% synthetic materials in the oil","Define the claim, for example with the ISO 16128 natural origin index calculated per ingredient, or drop it.");}
     if(/kills? (dust )?mites?|repel|insect/.test(cl))add("fail","Label claims","Pest claim","Killing mites or repelling insects is a pesticide claim that needs registration. \"Helps wash away dust mites\" only with a lab test.");
     else if(/kill|disinfect|anti-?bacterial|99\.9|germ/.test(cl))add("warn","Label claims","Germ-killing claim","Needs a named lab method on the finished product (for example AATCC 100 or EN 1276) with the species named.");
@@ -1978,7 +2007,7 @@ $("#g-batch").addEventListener("click",ev=>{const b=ev.target.closest("[data-b]"
 gRender();
 $("#n-gem-copy").addEventListener("click",()=>{const ta=$("#n-gem"),st=$("#g-copy-status");const sel=()=>{ta.focus();ta.select();st.textContent="Selected. Press Ctrl+C or Cmd+C to copy.";};if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(ta.value).then(()=>{st.textContent=(gBatch===GB?"Clash check":"Batch "+(gBatch+1))+" copied. Paste it into Gemini.";},sel);else sel();});
 function renderDB(){
-  $("#n-db tbody").innerHTML=MDB.filter(m=>m.imp>0).map(withOvr).map(m=>`<tr><td>${esc(m.name)}${m.ovr?' <span class="src">your data</span>':' <span class="src st-'+m.status+'">'+({est:"est. only",agree:(CHECKED.has(m.cas)?"3 sources agree":"2 sources agree"),measured:"measured",conflict:"sources disagree"})[m.status]+'</span>'}${m.lim10A?' <span class="src">10A '+m.lim10A+'%</span>':''}</td><td class="mono">${m.cas}</td><td class="num">${m.logP}</td><td class="num">${m.bp}</td><td class="num">${+(+m.imp).toPrecision(2)}</td><td>${DIMS.filter((d,i)=>m.v[i]>=1.5).map(d=>DS[d]).join(", ")}</td><td>${[...m.tags.map(g=>OFF[g]),...m.chem.map(c=>({a:"aldehyde",e:"ester",l:"lactone",c:"colour",o:"oxidises",w:"water soluble"}[c])),...m.reg.map(r=>({A:"allergen",A2:"allergen (2023 list)",R:"IFRA restricted",S:"IFRA spec",P:"prohibited",B:"Sion banned",X:"EU CLP Repr. 2","A?":"allergen? (Gemini, verify)"}[r]))].join(", ")}</td></tr>`).join("");
+  $("#n-db tbody").innerHTML=MDB.filter(m=>m.imp>0).map(withOvr).map(m=>`<tr><td>${esc(m.name)}${m.ovr?' <span class="src">your data</span>':' <span class="src st-'+m.status+'">'+({est:"est. only",agree:(CHECKED.has(m.cas)?"3 sources agree":"2 sources agree"),measured:"measured",conflict:"sources disagree"})[m.status]+'</span>'}${m.lim10A?' <span class="src">10A '+m.lim10A+'%</span>':''}</td><td class="mono">${m.cas}</td><td class="num">${m.logP}</td><td class="num">${m.bp}</td><td class="num">${+(+m.imp).toPrecision(2)}</td><td>${DIMS.filter((d,i)=>m.v[i]>=1.5).map(d=>DS[d]).join(", ")}</td><td>${[...m.tags.map(g=>OFF[g]),...m.chem.map(c=>({a:"aldehyde",e:"ester",l:"lactone",c:"colour",o:"oxidises",w:"water soluble"}[c])),...m.reg.map(r=>({A:"allergen",A2:"allergen (2023 list)",R:"IFRA restricted",S:"IFRA spec",P:"prohibited",B:"Sion banned",X:"EU CLP Repr. 2",X1:"EU CLP Repr. 1B","A?":"allergen? (Gemini, verify)"}[r]))].join(", ")}</td></tr>`).join("");
 }
 renderDB();
 $("#n-imp-go").addEventListener("click",()=>{
@@ -2000,6 +2029,7 @@ $("#n-imp-clear").addEventListener("click",()=>{OVR={};try{localStorage.removeIt
 nRun();
 
 /* ================= ENGINE: exam, reconciliation summary, full review ================= */
+const EDP_CONC=18;
 const EXAM_CTX={prod:"amino",free:8.5,cap:2.5,encap:"yes",dryer:"vented",target:"chilled sweet chrysanthemum tea with honey and hay",avoid:new Set(["m","ml","mu","ca","md","cy"])};
 const hasCk=(A,re,sev)=>A.checks.some(c=>re.test(c.title)&&(sev?sev.includes(c.sev):true));
 /* Test bank. Case 1 is the public training case. Tests 2 to 5 are held out: their faults were planted
@@ -2061,7 +2091,10 @@ Dihydromyrcenol | 18479-58-8 | 30
 Linalool | 78-70-6 | 20
 Citral | 5392-40-5 | 4
 Aldehyde C-11 undecylenic | 112-45-8 | 3
-Hedione | 24851-98-7 | 3`,key:[["\"Fragrance-free\" is false",A=>hasCk(A,/Fragrance-free/,["fail"])],["\"Hypoallergenic\" unsupported",A=>hasCk(A,/Hypoallergenic/,["fail"])],["\"Safe for babies\" is an absolute claim",A=>hasCk(A,/Absolute safety claim/,["fail"])],["Germ claim needs a lab method",A=>hasCk(A,/Germ-killing claim/,["warn"])],["Aldehydes with amino silicone",A=>hasCk(A,/^Aldehydes/,["fail","warn"])],["Terpenes need an antioxidant",A=>hasCk(A,/Terpenes from citrus/,["warn"])]]}
+Hedione | 24851-98-7 | 3`,key:[["\"Fragrance-free\" is false",A=>hasCk(A,/Fragrance-free/,["fail"])],["\"Hypoallergenic\" unsupported",A=>hasCk(A,/Hypoallergenic/,["fail"])],["\"Safe for babies\" is an absolute claim",A=>hasCk(A,/Absolute safety claim/,["fail"])],["Germ claim needs a lab method",A=>hasCk(A,/Germ-killing claim/,["warn"])],["Aldehydes with amino silicone",A=>hasCk(A,/^Aldehydes/,["fail","warn"])],["Terpenes need an antioxidant",A=>hasCk(A,/Terpenes from citrus/,["warn"])]]},
+ {id:"T6",blind:true,title:"Sea breeze detergent (blind A)",ctx:T("amino",8,0,"sea breeze and fresh linen, never sweet",["cy", "ml", "mu"],"Allergen-free fragrance, Keeps whites bright, Long-lasting freshness"),text:"= Sea breeze linen\nDihydromyrcenol | 18479-58-8 | 15\nd-Limonene | 5989-27-5 | 10\nLinalool | 78-70-6 | 8\nHexyl cinnamal | 101-86-0 | 8\nGalaxolide (HHCB) | 1222-05-5 | 12\nIso E Super | 54464-57-2 | 10\nEthylene brassylate | 105-95-3 | 6\nVerdox | 88-41-5 | 8\nHedione | 24851-98-7 | 6\nCalone | 28940-11-6 | 0.5\nHelional | 1205-17-0 | 1\nLyral | 31906-04-4 | 3\nMelonal | 106-72-9 | 1.5\nAldehyde C-10 (decanal) | 112-31-2 | 1.5\nAldehyde C-12 MNA | 110-41-8 | 1\nEthyl vanillin | 121-32-4 | 1.2\nEthyl maltol | 4940-11-8 | 0.8\nAmbrox | 6790-58-5 | 0.5\nDipropylene glycol | 25265-71-8 | 6",key:[["Lyral is prohibited",A=>hasCk(A,/Banned or prohibited/,["fail"])],["Candy accord breaks \"never sweet\"",A=>hasCk(A,/Candy index/,["fail"])],["Melonal overdosed into a melon note",A=>hasCk(A,/marine or melon/,["fail"])],["Aldehydes with amino silicone",A=>hasCk(A,/^Aldehydes/,["fail"])],["Ethyl vanillin browns the liquid",A=>hasCk(A,/Colour formers/,["fail"])],["\"Allergen-free\" claim is false",A=>hasCk(A,/Allergen-free/,["fail"])]]},
+ {id:"T7",blind:true,title:"Vanilla cashmere softener (blind B)",ctx:T("softener",10,0,"warm vanilla cashmere blanket, cosy",["m", "me", "md", "ca"],"Vegan, Gentle on whites, Long-lasting cosy scent"),text:"= Vanilla cashmere\nVanillin | 121-33-5 | 8\nEthyl vanillin | 121-32-4 | 2\nCoumarin | 91-64-5 | 6\nPeru balsam crude | 8007-00-9 | 4\nBeeswax absolute | 8012-89-3 | 1\nGalaxolide (HHCB) | 1222-05-5 | 15\nHabanolide | 111879-80-2 | 8\nIso E Super | 54464-57-2 | 8\nCashmeran | 33704-61-9 | 5\nBenzyl salicylate | 118-58-1 | 8\nHedione | 24851-98-7 | 5\nHeliotropin | 120-57-0 | 3\nMethyl salicylate | 119-36-8 | 2\nCalone | 28940-11-6 | 1\nLinalool | 78-70-6 | 4\nDipropylene glycol | 25265-71-8 | 20",key:[["Crude Peru balsam is prohibited",A=>hasCk(A,/Banned or prohibited/,["fail"])],["Vanillins colour the softener",A=>hasCk(A,/Colour formers/,["fail"])],["Calone gives a marine edge",A=>hasCk(A,/marine or melon/,["fail"])],["Methyl salicylate smells medicinal",A=>hasCk(A,/medicinal note/,["fail","warn"])],["\"Vegan\" with beeswax",A=>hasCk(A,/Vegan/,["fail"])],["20% DPG dilutes the dose",A=>hasCk(A,/solvent/,["warn"])]]},
+ {id:"T8",blind:true,title:"Fig and coconut EDP (blind C)",ctx:T("edp",8.5,0,"green fig and milky coconut, summer",["ca", "ea", "mu", "md"],"Phthalate-free, Vegan, Natural fig leaf extract, Crystal clear juice"),text:"= Fig coconut EDP\nBergamot oil expressed (not FCF) | 8007-75-8 | 8\nFig leaf absolute | 68916-52-0 | 2\nStemone | 22457-23-4 | 0.8\ncis-3-Hexenol | 928-96-1 | 0.5\nTriplal | 68039-49-6 | 0.5\nHelional | 1205-17-0 | 4\nMethyl anthranilate | 134-20-3 | 2\ngamma-Nonalactone | 104-61-0 | 3\ndelta-Decalactone | 705-86-2 | 2\nCoumarin | 91-64-5 | 3\nPatchouli oil | 8014-09-3 | 10\nIso E Super | 54464-57-2 | 12\nHedione | 24851-98-7 | 12\nGalaxolide (HHCB) | 1222-05-5 | 10\nEthylene brassylate | 105-95-3 | 8\nBenzyl salicylate | 118-58-1 | 5\nLinalool | 78-70-6 | 4\nDiethyl phthalate | 84-66-2 | 13.2",key:[["Fig leaf absolute is prohibited",A=>hasCk(A,/Banned or prohibited: .*Fig leaf/,["fail"])],["Expressed bergamot is phototoxic on skin",A=>hasCk(A,/Phototoxic/,["fail"])],["Patchouli buries the brief in earth",A=>hasCk(A,/earthy note|musty note/,["fail","warn"])],["Methyl anthranilate Schiff base colours the juice",A=>hasCk(A,/Schiff/,["fail"])],["\"Phthalate-free\" with DEP",A=>hasCk(A,/Phthalate-free/,["fail"])]]}
 ];
 function runExam(){
   const t12=NPRESETS["1.2 Golden Cup + CAP-1 (your brief)"],t32=NPRESETS["3.2 Monsoon Tea + CAP-3 (your brief)"],trio=NPRESETS["Set 1: 1.1, 1.2, 1.3 + CAP-1 (distinctness)"];
@@ -2069,11 +2102,12 @@ function runExam(){
   const dup=cosv(A11.tp.dryer.prof,A12.tp.dryer.prof);
   const case1=[["Geosmin over 1 ppm (Set 3)",hasCk(A32,/^Geosmin/,["fail"])],["Dryer-proof tea core under 10%",hasCk(A12,/Dryer-proof/,["fail","warn"])],["Camphor index over the limit",hasCk(A12,/Camphor index/,["fail"])],["Marine and melon over the limit",hasCk(A32,/marine or melon/,["fail"])],["Colour formers",hasCk(A12,/Colour formers/,["fail"])],["Candy index",hasCk(A12,/Candy index/,["fail"])],["Capsule oil leaks",hasCk(A12,/capsule oil is at logP/,["fail"])],["1.1 and 1.2 are duplicates after the dryer",dup>0.9],["Musk and wood over 35% (1.3)",hasCk(A13,/Musk and wood by weight/,["fail","warn"])],["Hexyl salicylate EU CLP flag",hasCk(A12,/Hexyl salicylate is/,["warn"])]];
   const groups=[{id:"Case 1",title:"Chrysanthemum v2 (training case)",held:false,res:case1}];
-  TESTS.forEach(t=>{const A=runAudit(t.text,t.ctx,0);groups.push({id:t.id,title:t.title,held:true,res:t.key.map(([k,f])=>[k,!!(A&&f(A))])});});
+  TESTS.forEach(t=>{const A=runAudit(t.text,t.ctx,0);groups.push({id:t.id,title:t.title,held:!t.blind,blind:!!t.blind,res:t.key.map(([k,f])=>[k,!!(A&&f(A))])});});
   const sc=g=>g.res.filter(r=>r[1]).length;
   const held=groups.filter(g=>g.held),hN=held.reduce((s,g)=>s+sc(g),0),hT=held.reduce((s,g)=>s+g.res.length,0);
-  $("#exam-out").innerHTML=`<div class="stats" style="margin:12px 0 4px"><div class="stat"><span class="n mono">${sc(groups[0])}/${groups[0].res.length}</span><span class="l">training case</span></div><div class="stat"><span class="n mono">${hN}/${hT}</span><span class="l">held-out tests, caught unaided</span></div><div class="stat"><span class="n mono">${hT-hN}</span><span class="l">skip-me gaps on held-out tests</span></div></div>
-  ${groups.map(g=>`<div class="tablewrap" style="margin-top:10px"><table class="ref" style="min-width:520px"><thead><tr><th>${esc(g.id)} · ${esc(g.title)} ${g.held?'<span class="src">held out</span>':'<span class="src">training</span>'}</th><th>${sc(g)} of ${g.res.length}</th></tr></thead><tbody>${g.res.map(([k,ok])=>`<tr><td>${esc(k)}</td><td>${ok?'<span class="sev sev-pass">caught</span>':'<span class="sev sev-fail">missed</span>'}</td></tr>`).join("")}</tbody></table></div>`).join("")}`;
+  const bl=groups.filter(g=>g.blind),bN=bl.reduce((s,g)=>s+sc(g),0),bT=bl.reduce((s,g)=>s+g.res.length,0);
+  $("#exam-out").innerHTML=`<div class="stats" style="margin:12px 0 4px"><div class="stat"><span class="n mono">${sc(groups[0])}/${groups[0].res.length}</span><span class="l">training case</span></div><div class="stat"><span class="n mono">${hN}/${hT}</span><span class="l">held-out tests, caught unaided</span></div><div class="stat"><span class="n mono">${bN}/${bT}</span><span class="l">blind tests now (9 of 17 on first blind run)</span></div><div class="stat"><span class="n mono">${(hT-hN)+(bT-bN)}</span><span class="l">open skip-me gaps</span></div></div>
+  ${groups.map(g=>`<div class="tablewrap" style="margin-top:10px"><table class="ref" style="min-width:520px"><thead><tr><th>${esc(g.id)} · ${esc(g.title)} ${g.blind?'<span class="src">blind, written by an independent agent, used for fixes after the first run</span>':g.held?'<span class="src">held out</span>':'<span class="src">training</span>'}</th><th>${sc(g)} of ${g.res.length}</th></tr></thead><tbody>${g.res.map(([k,ok])=>`<tr><td>${esc(k)}</td><td>${ok?'<span class="sev sev-pass">caught</span>':'<span class="sev sev-fail">missed</span>'}</td></tr>`).join("")}</tbody></table></div>`).join("")}`;
   $("#exam-status").textContent="Exam run on "+new Date().toISOString().slice(0,10)+".";
 }
 $("#exam-go").addEventListener("click",runExam);

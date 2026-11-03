@@ -86,7 +86,8 @@ Independence: the framer never sees the formula. Red-team agents never see each 
 
 - Test bank: Case 1 (training case, public key) scores 10 of 10 on 2026-11-03. Because the rules came from Case 1, this proves the rules, not generalisation.
 - Held-out tests T2 to T5 (rose softener, white-musk extrait, durian detergent with capsules, "fragrance-free" masking detergent): 20 of 20 caught on 2026-11-03. Caveat: written by the same session that built the checks.
-- Blind tests written by an independent agent with no access to the rules: see section 10.
+- Blind tests T6 to T8, written by an independent agent with no access to the rules or files (sea breeze detergent, vanilla cashmere softener, fig and coconut EDP): 9 of 17 caught on the first run (53%). Misses fixed as general rules (12 materials added, CAS-mismatch bug fixed, Schiff base, phototoxic citrus, solvent dilution, vegan, allergen-free, phthalate-free and colour claims). 17 of 17 after. They are now regression tests, not held-out tests.
+- Rule for the next exam round: a fresh blind agent writes new tests each round. Only the first run counts as the score.
 - Keys live in the page code but are never sent to any Claude agent.
 - Skip-me score: findings the owner had to trigger. Goal zero.
 - Prediction ledger (built, artifact database collection `predictions`): fields formula, what, value, prob (0 to 100 or null), check_by, source, created, actual, outcome (hit or miss). Full review predictions save with one click. Hit rate and Brier score shown.
@@ -98,10 +99,13 @@ Independence: the framer never sees the formula. Red-team agents never see each 
 | 2026-11-03 | Chrysanthemum v2 ten paper failures | Owner asked for a review | No audit, no red team, traces judged by weight |
 | 2026-11-03 | Hexyl salicylate EU CLP Repr. 2 | Engine (data agent) | Regulation newer than the formula |
 | 2026-11-03 | 18 Gemini values held as clashes | Engine (verifier) | Single-source data |
+| 2026-11-03 | First blind exam 9 of 17, fixed to 17 of 17 | Engine (independent blind agent) | Thin database, narrow claim audit, name matching trusted over CAS |
 
 ## 9. Open items
 
-Built in this chat: held-out exam, label-claim audit, measured-reference scoring, prediction ledger, clash-check prompt.
+Built in this chat: held-out exam, blind exam round 1, label-claim audit, measured-reference scoring, prediction ledger, clash-check prompt.
+
+Next brain work (this chat): a new blind exam round each time the brain changes. Grow the material database beyond 118 materials (every "Not in the material database" note in an audit is a lead).
 
 Needs real-world input (no code can replace it):
 1. GC-MS headspace of the reference (ask the OEM), pasted into the measured-reference box.
@@ -118,4 +122,5 @@ Needs the owner's approval: a scheduled sentinel that watches the IFRA 52nd Amen
 - 2026-11-03 build 0.2: Virtual Nose, agent-checked data, hexyl salicylate flag.
 - 2026-11-03 build 0.2.1 to 0.2.2: 12 senior rules from the panel review, visible Gemini check.
 - 2026-11-03 build 0.3: Gemini data reconciled, IFRA 10A check, Engine section, Full review (5 blind agents), exam, this PLAN.md.
-- 2026-11-03 build 0.4: chain history, handoff box, held-out tests T2 to T5, label-claim audit, measured GC-MS reference, prediction ledger, clash-check prompt, blind tests from an independent agent.
+- 2026-11-03 build 0.4: chain history, handoff box, held-out tests T2 to T5, label-claim audit, measured GC-MS reference, prediction ledger, clash-check prompt.
+- 2026-11-03 build 0.4.1: blind exam round 1 (9 of 17 before, 17 of 17 after), 12 materials, CAS-mismatch fix, Schiff base, phototoxic citrus, solvent dilution and four claim rules.
