@@ -200,6 +200,29 @@ footer{margin-top:50px;padding-top:18px;border-top:1px solid var(--line);color:v
   .stage{grid-template-columns:1fr;gap:6px}
   .gate{grid-template-columns:1fr}
 }
+/* virtual nose */
+.nose-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:22px}
+.nose-ctx{display:grid;gap:12px;align-content:start}
+textarea.nf{font-family:var(--mono);font-size:.78rem;line-height:1.45;min-height:340px;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:12px;width:100%;resize:vertical}
+textarea.nf.small{min-height:150px}
+.nums{display:flex;flex-wrap:wrap;gap:12px}
+.nums label{font-size:.86rem;display:flex;gap:6px;align-items:center}
+.nums input,.txt{font:inherit;font-size:.9rem;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:7px 9px}
+.nums input{width:5.5em;font-family:var(--mono)}
+.txt{width:100%}
+.checks{display:grid;gap:0;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.chk{display:grid;grid-template-columns:4.6rem minmax(0,1fr);gap:12px;padding:11px 14px;border-bottom:1px solid var(--line);align-items:start}
+.chk:last-child{border-bottom:0}
+.chk-t{font-weight:600;font-size:.92rem}
+.chk-d{color:var(--muted);font-size:.86rem;margin-top:2px}
+.sev{display:inline-block;font-family:var(--mono);font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;padding:3px 7px;border-radius:5px;color:var(--bg);text-align:center}
+.sev-fail{background:var(--bad)} .sev-warn{background:var(--warn)} .sev-info{background:var(--theme)} .sev-pass{background:var(--ok)}
+.heatt{min-width:760px;font-size:.8rem}
+.heatt td.heat{background:color-mix(in srgb,var(--accent) calc(var(--h) * 70%),transparent)}
+.offtag{font-family:var(--mono);font-size:.62rem;color:var(--bad);border:1px solid var(--bad);border-radius:4px;padding:0 4px;white-space:nowrap}
+#n-out{display:grid;gap:16px}
+#n-a1,#n-a2,#n-a3{display:grid;gap:16px}
+@media (max-width:900px){.nose-grid{grid-template-columns:1fr}}
 .fade{animation:fade .5s ease both}
 @keyframes fade{from{opacity:.25;transform:translateY(4px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.fade{animation:none}}
@@ -208,7 +231,7 @@ footer{margin-top:50px;padding-top:18px;border-top:1px solid var(--line);color:v
 <div class="wrap">
 <header class="mast">
   <div class="mast-top">
-    <div class="brand"><b>Sion</b> · Scent Brain · build 0.1</div>
+    <div class="brand"><b>Sion</b> · Scent Brain · build 0.2</div>
     <div class="eyebrow">Master node for detergent wash and, later, the fragrance house</div>
   </div>
   <h1>Type anything.<br>Get <em>three</em> scents back.</h1>
@@ -218,9 +241,10 @@ footer{margin-top:50px;padding-top:18px;border-top:1px solid var(--line);color:v
     <div class="stat"><span class="n mono">24</span><span class="l">olfactive dimensions in the latent map</span></div>
     <div class="stat"><span class="n mono">1.5×10¹¹</span><span class="l">ways to pick 10 of 64, before dosing</span></div>
     <div class="stat"><span class="n mono">3</span><span class="l">heads: Creative, Accurate, Luxury</span></div>
+    <div class="stat"><span class="n mono">93</span><span class="l">materials with physics in the Virtual Nose</span></div>
   </div>
   <nav class="toc" aria-label="Sections">
-    <a href="#composer">01 Composer</a><a href="#architecture">02 Architecture</a><a href="#heads">03 Three heads</a><a href="#ladder">04 Translation rules</a><a href="#cases">05 Hard briefs</a><a href="#palette">06 Palette</a><a href="#learning">07 Learning loop</a><a href="#landscape">08 Landscape</a><a href="#roadmap">09 Roadmap</a>
+    <a href="#composer">01 Composer</a><a href="#nose">02 Virtual Nose</a><a href="#architecture">03 Architecture</a><a href="#heads">04 Three heads</a><a href="#ladder">05 Translation rules</a><a href="#cases">06 Hard briefs</a><a href="#palette">07 Palette</a><a href="#learning">08 Learning loop</a><a href="#landscape">09 Landscape</a><a href="#roadmap">10 Roadmap</a>
   </nav>
 </header>
 
@@ -257,14 +281,62 @@ footer{margin-top:50px;padding-top:18px;border-top:1px solid var(--line);color:v
   <div id="out"></div>
 </section>
 
+<section id="nose">
+  <div class="sec-head"><span class="chapter">02 · VIRTUAL NOSE</span><h2>Smell it on paper first</h2>
+  <p class="lede">No AI can smell. What it can do is the paper review a senior perfumer does before opening a bottle. It works out which materials a nose will actually notice, what survives the wash and the dryer, what reacts with the base, what leaks from a capsule, and where a formula breaks its own brief. Paste any formula with CAS numbers and the audit runs instantly. "Senior panel review" then asks Claude to critique it as three senior perfumers and propose a fix, and that fix is audited the same way.</p></div>
+  <div class="composer">
+    <div class="nose-grid">
+      <div class="step">
+        <div class="step-label"><span class="k">Input</span><span class="t">Formula, accords and capsule oil</span><span class="h">One material per line: name, CAS, %</span></div>
+        <textarea id="nf" class="nf" spellcheck="false" aria-label="Formula to audit"></textarea>
+        <div class="chips" id="n-presets"></div>
+        <p class="status">Start an accord with <span class="mono">@CODE name</span>. Start a formula with <span class="mono">= name</span>, and add the word "capsule" for a capsule oil. A line that names an accord code, such as <span class="mono">CH-1 accord | 28</span>, is expanded automatically. Write dilutions like <span class="mono">Geosmin, 1% in IPM</span>.</p>
+      </div>
+      <div class="step nose-ctx">
+        <div class="step-label"><span class="k">Context</span><span class="t">Where it has to perform</span></div>
+        <div class="lens-row"><span class="lab">Product</span><div class="seg" id="n-prod"></div></div>
+        <div class="lens-row"><span class="lab">Oil per kg of product</span>
+          <div class="nums"><label>Free oil <input id="n-free" type="number" min="0" step="0.1" value="8.5"> g</label><label>Capsule oil <input id="n-cap" type="number" min="0" step="0.1" value="2.5"> g</label></div></div>
+        <div class="lens-row"><span class="lab">Capsule oil is</span><div class="seg" id="n-encap"></div></div>
+        <div class="lens-row"><span class="lab">Dryer</span><div class="seg" id="n-dryer"></div></div>
+        <div class="lens-row"><span class="lab">Smell target</span><input id="n-target" class="txt" type="text" value="chilled sweet chrysanthemum tea with honey and hay"></div>
+        <div class="lens-row"><span class="lab">The brief forbids</span><div class="seg" id="n-avoid"></div></div>
+      </div>
+    </div>
+    <div class="actions">
+      <button class="btn" id="n-go">Run the audit</button>
+      <button class="btn ghost" id="n-panel" hidden>Senior panel review with Claude</button>
+      <button class="btn ghost" id="n-stop" hidden>Stop</button>
+      <span class="status" id="n-status" aria-live="polite"></span>
+    </div>
+  </div>
+  <div id="n-out"></div>
+  <div class="grid3">
+    <div class="box"><span class="eyebrow">What the paper review catches</span><h3>Before anyone smells</h3><ul><li>Potent traces that break the brief (a melon or musty note at 0.05% can be louder than 10% of a musk)</li><li>Notes that rinse away or leave through the dryer vent</li><li>Aldehydes that react with amino silicone and yellow the liquid</li><li>Capsule oils that leak because the materials dissolve in water</li><li>Overdoses, banned materials, allergens to declare</li></ul></div>
+    <div class="box"><span class="eyebrow">What it cannot catch</span><h3>Only a nose can</h3><ul><li>Whether the accord is beautiful, and whether it reads as chrysanthemum tea rather than "a nice floral"</li><li>How one supplier's natural oil differs from another's</li><li>How a specific detergent base flattens or bends a note</li><li>Musk anosmia: some people barely smell certain musks</li></ul></div>
+    <div class="box"><span class="eyebrow">Fastest route to world class</span><h3>Measure the target, not just describe it</h3><p>Ask the OEM for a headspace GC-MS of your reference drink and of the lab tea. That lists the molecules that actually make the smell. Paste those into the brain as a target accord, and every formula can be scored against the real thing instead of a description.</p></div>
+  </div>
+  <details class="lens" id="n-data">
+    <summary>Material data and the Gemini check <span>the numbers behind the audit, and how to verify them</span></summary>
+    <div class="lens-grid">
+      <p class="status">Each material carries an estimated logP (how oily it is, which decides whether it stays on fabric), boiling point (whether it survives the dryer), odour impact per % (how loud it is), descriptors, chemistry and regulatory flags. Values marked est. come from perfumery literature and experience, not from a lab. Copy the prompt below into Google Gemini, then paste its CSV answer back here to replace the estimates.</p>
+      <textarea id="n-gem" class="nf" readonly aria-label="Prompt for Gemini"></textarea>
+      <div class="actions"><button class="btn ghost" id="n-gem-copy">Copy the Gemini prompt</button></div>
+      <textarea id="n-imp" class="nf small" placeholder="Paste Gemini's CSV here: name,cas,logP,boiling_point_C,odour_impact_1_to_10,ifra_status,eu_allergen" aria-label="Paste material data CSV"></textarea>
+      <div class="actions"><button class="btn ghost" id="n-imp-go">Apply data</button><button class="btn ghost" id="n-imp-clear">Reset to built-in data</button><span class="status" id="n-imp-status"></span></div>
+      <div class="tablewrap"><table class="ref" id="n-db"><thead><tr><th>Material</th><th>CAS</th><th class="num">logP</th><th class="num">bp °C</th><th class="num">Impact</th><th>Smells of</th><th>Flags</th></tr></thead><tbody></tbody></table></div>
+    </div>
+  </details>
+</section>
+
 <section id="architecture">
-  <div class="sec-head"><span class="chapter">02 · ARCHITECTURE</span><h2>How a brief becomes a formula</h2>
+  <div class="sec-head"><span class="chapter">03 · ARCHITECTURE</span><h2>How a brief becomes a formula</h2>
   <p class="lede">Eight layers, run in order. Layers 2 to 4 are where a language model adds the most. Layers 1, 6 and 7 are deterministic code, because safety, regulation and dosing must never depend on a model's mood.</p></div>
   <div class="layers" id="layers"></div>
 </section>
 
 <section id="heads">
-  <div class="sec-head"><span class="chapter">03 · THREE HEADS</span><h2>Scent 1, 2 and 3</h2>
+  <div class="sec-head"><span class="chapter">04 · THREE HEADS</span><h2>Scent 1, 2 and 3</h2>
   <p class="lede">Your umbrella, kept and sharpened. Every brief always returns all three, in this order, so a person learns the brand's grammar after one use.</p></div>
   <div class="grid3">
     <div class="box headbox" style="--hc:var(--creative)"><span class="eyebrow" style="color:var(--creative)">Scent 1 · Creative</span><h3>The brain's own reading</h3>
@@ -285,7 +357,7 @@ footer{margin-top:50px;padding-top:18px;border-top:1px solid var(--line);color:v
 </section>
 
 <section id="ladder">
-  <div class="sec-head"><span class="chapter">04 · TRANSLATION RULES</span><h2>The ladder, the floor and the gate</h2>
+  <div class="sec-head"><span class="chapter">05 · TRANSLATION RULES</span><h2>The ladder, the floor and the gate</h2>
   <p class="lede">Most briefs name things that have no smell, or a bad one. The brain climbs a four-rung ladder until it reaches something a perfumer can build.</p></div>
   <div class="ladder">
     <div class="rung"><span class="rk">RUNG 1 · LITERAL</span><b>It has a good smell</b><p>Build it directly from materials or a bridge accord.</p><span class="ex">Soybeans → soy milk &amp; green bean accord</span></div>
@@ -304,13 +376,13 @@ footer{margin-top:50px;padding-top:18px;border-top:1px solid var(--line);color:v
 </section>
 
 <section id="cases">
-  <div class="sec-head"><span class="chapter">05 · HARD BRIEFS</span><h2>What real people will type</h2>
+  <div class="sec-head"><span class="chapter">06 · HARD BRIEFS</span><h2>What real people will type</h2>
   <p class="lede">Your examples, plus the edge cases, run live through the gate on this page. Tap a row to load it into the composer.</p></div>
   <div class="tablewrap"><table class="ref" id="cases-t"><thead><tr><th>Brief</th><th>Gate</th><th>How the brain reads it</th></tr></thead><tbody></tbody></table></div>
 </section>
 
 <section id="palette">
-  <div class="sec-head"><span class="chapter">06 · PALETTE</span><h2>How many liquids is enough</h2>
+  <div class="sec-head"><span class="chapter">07 · PALETTE</span><h2>How many liquids is enough</h2>
   <p class="lede">Freedom of brief does not need an endless shelf. It needs the right shelf. A brief like "soybeans" or "gunpowder" is solved by a bridge accord: a small pre-made blend of 5 to 30 raw materials that a perfumer builds once and the machine treats as one liquid.</p></div>
   <div class="tablewrap"><table class="ref"><thead><tr><th>Stage</th><th>Liquids</th><th>What they are</th><th>Why that number</th></tr></thead><tbody>
     <tr><td><b>1 · Sion Wash</b><br><span class="eyebrow">now</span></td><td class="num">24</td><td>Laundry-grade accords, each pre-tested in your detergent base for stability and colour</td><td>Detergent customisation is a 3 to 6 accord mix at 0.5 to 1.1% load. 24 covers every family twice. Only high-substantivity materials survive rinse and dry (boiling point at or above 250 °C and ClogP at or above 3).</td></tr>
@@ -323,7 +395,7 @@ footer{margin-top:50px;padding-top:18px;border-top:1px solid var(--line);color:v
 </section>
 
 <section id="learning">
-  <div class="sec-head"><span class="chapter">07 · LEARNING LOOP</span><h2>How the brain gets smarter</h2>
+  <div class="sec-head"><span class="chapter">08 · LEARNING LOOP</span><h2>How the brain gets smarter</h2>
   <p class="lede">Today the brain is rules plus a language model. Every order turns it into something no competitor has: a dataset of free-text briefs paired with formulas and with what people actually thought when they smelled them.</p></div>
   <div class="row2">
     <div class="box"><span class="eyebrow">The flywheel</span>
@@ -366,7 +438,7 @@ footer{margin-top:50px;padding-top:18px;border-top:1px solid var(--line);color:v
 </section>
 
 <section id="landscape">
-  <div class="sec-head"><span class="chapter">08 · LANDSCAPE</span><h2>Who else is doing this</h2>
+  <div class="sec-head"><span class="chapter">09 · LANDSCAPE</span><h2>Who else is doing this</h2>
   <p class="lede">Researched 3 Nov 2026 from public reporting. Figures marked <span class="u">U</span> are uncertain or disputed across sources.</p></div>
   <div class="tablewrap"><table class="ref"><thead><tr><th>Player</th><th>Input</th><th>Engine and palette</th><th>What Sion takes from it</th></tr></thead><tbody>
     <tr><td><b>EveryHuman</b><br><span class="status">ScenTronix, Breda</span></td><td>About 23-item personality questionnaire</td><td>3 algorithms → 3 scents. 46 accords of 5 to 8 materials each. In-store dispenser, patented. About £45 for three 5 ml. EDT strength. 75k+ users<span class="u">U</span></td><td>Three outputs per session works. The quiz-first input and fixed EDT strength are the gap Sion fills.</td></tr>
@@ -381,7 +453,7 @@ footer{margin-top:50px;padding-top:18px;border-top:1px solid var(--line);color:v
 </section>
 
 <section id="roadmap">
-  <div class="sec-head"><span class="chapter">09 · ROADMAP</span><h2>From wash to fragrance house</h2></div>
+  <div class="sec-head"><span class="chapter">10 · ROADMAP</span><h2>From wash to fragrance house</h2></div>
   <div>
     <div class="stage"><div class="sk">Stage 1<small>Sion Wash</small></div><div><h3>Custom-scented detergent</h3><p>The brain runs in detergent and softener formats only. Formulas are blended by hand from 24 laundry accords. Every order creates a Scent Genome record.</p><ul><li>Pick a fragrance supplier who will build and IFRA-certify 24 laundry accords</li><li>Stability test each accord in your base: 4 weeks at 40 °C, colour and pH</li><li>Launch the brief box on the site with the three-scent result</li><li>Collect the first 1,000 ratings</li></ul></div></div>
     <div class="stage"><div class="sk">Stage 2<small>The machine</small></div><div><h3>64-cartridge dispenser</h3><p>The brain sends a dispense program: cartridge ID and grams or millilitres, at 0.01 ml resolution. Fine fragrance formats open up. Retrieval from rated genomes switches on (v1).</p><ul><li>Gravimetric dosing (weigh, do not just pump) for accuracy below 1%</li><li>Cartridge freshness tracking: citrus and aldehydes oxidise</li><li>Batch log per bottle for recalls and repeat orders</li></ul></div></div>
@@ -390,7 +462,7 @@ footer{margin-top:50px;padding-top:18px;border-top:1px solid var(--line);color:v
 </section>
 
 <footer>
-  <span>Sion Scent Brain · build 0.1 · 3 Nov 2026</span>
+  <span>Sion Scent Brain · build 0.2 · 3 Nov 2026 · Virtual Nose added</span>
   <span>Palette caps and dose levels are planning placeholders. Every formula must be checked against current IFRA Standards and supplier certificates, then stability and skin tested, before anything is sold.</span>
 </footer>
 </div>
@@ -502,6 +574,7 @@ const LEX=[
 ["drake|travis scott|jay z|jay-z|rapper|rappers|hip hop|hiphop|trap music","leather:2,smoky:1,amber:2,sweet:1,musky:1","LEAT,AMBX,TONK,PINK","studio smoke, leather seats, late night","p","hip-hop"],
 ["rihanna|beyonce|beyoncé|taylor swift|lady gaga|ariana grande|dua lipa|zendaya|billie eilish|harry styles|bad bunny|the weeknd|pharrell|blackpink|bts|kim kardashian|michael jackson|marilyn monroe|elvis|david bowie|elon musk|donald trump|trump|lebron|messi|ronaldo|celebrity|celebrities|famous|red carpet|fame|spotlight","aldehydic:2,powdery:2,amber:2,floralRose:1,musky:1","ALDH,IRIS,AMBX,ROSE","spotlight heat, powder, a crowd","p","celebrity culture"],
 ["soy|soybean|soybeans|soya|edamame|tofu|soy milk|soymilk|bean|beans|legume|legumes|tempeh|natto","nutty:3,lactonic:3,green:2,powdery:1,earthy:1","SOYB,RICE,FIG,TONK,MUSW","steamed bean, soy milk skin, green pod","n","East and Southeast Asian kitchens"],
+["chrysanthemum|hangbaiju|hang bai ju|chamomile|herbal tea|tisane|flower tea|hay|dried flowers|dried petals","floralWhite:1.5,green:1.5,aromatic:1.5,sweet:1,powdery:1.5,fruity:0.5,floralRose:0.5","TEA,LAVN,TONK,HONY,VIOI","steeped petals, warm hay, a soft herbal edge","n","Chinese herbal tea"],
 ["rice|grain|grains|congee|mochi|sake|porridge|oats","lactonic:2,nutty:2,powdery:2,sweet:1","RICE,SOYB,IRIS,MUSW","steam, starch, warm bowl","n",""],
 ["chocolate|cocoa|cacao|brownie|brownies|truffle","cocoa:3,sweet:2,amber:1,earthy:1","COCO,PATC,VANL,TONK","dark cocoa, bitter edge","n",""],
 ["coffee|espresso|latte|cafe|café|kopi","cocoa:3,smoky:1,sweet:1,nutty:1","COFF,CARD,TONK,COCO","roasted beans, crema","n","café culture"],
@@ -510,7 +583,7 @@ const LEX=[
 ["smoke|smoky|smoking|cigarette|cigar|tobacco|pipe","smoky:3,leather:1,sweet:1,amber:1","BIRC,TEA,TONK,LABD,HONY","cured leaf, blue smoke","n",""],
 ["rain|storm|thunder|petrichor|monsoon|wet|drizzle|puddle","earthy:2,mineral:2,aquatic:2,green:2","PETR,OZON,VIOL,VETI","wet stone, first rain on dust","n",""],
 ["ocean|sea|beach|wave|waves|surf|salt|salty|coast|island|marine|tide","aquatic:3,mineral:2,citrus:1,musky:1","CALO,SALT,AMBX,BERG","salt skin, cold spray","n",""],
-["ice|icy|snow|frozen|winter|glacier|cold|arctic|frost","aquatic:2,mineral:2,aldehydic:2,spicyFresh:1,musky:1","MINT,ALDH,OZON,MUSW,CARD","frost air, clean cold","n",""],
+["chilled|iced|ice|icy|snow|frozen|winter|glacier|cold|arctic|frost","aquatic:2,mineral:2,aldehydic:2,spicyFresh:1,musky:1","MINT,ALDH,OZON,MUSW,CARD","frost air, clean cold","n",""],
 ["summer|sun|sunny|sunshine|tropical|holiday|vacation|bali|beach club","citrus:2,fruity:2,floralWhite:2,lactonic:1","MAND,ORFL,TUBR,PEAC","sun cream, ripe fruit, hot skin","n",""],
 ["forest|wood|woods|tree|trees|pine|cedar|cabin|hike|hiking","woodyDry:3,green:2,earthy:1,aromatic:1","CEDR,VETI,GALB,INCN","resin, bark, crushed needles","n",""],
 ["moss|mossy|fern|chypre|garden|soil|earth|mud|dirt|roots","earthy:3,green:2,woodyDry:1","OAKM,PATC,VETI,PETR","damp soil, roots","n",""],
@@ -959,6 +1032,610 @@ $("#deep").addEventListener("click",async()=>{
     else{$("#status").textContent=ERR[e&&e.code]||"Claude could not finish. The offline result is still shown.";if(e&&(e.code==="not_granted"||e.code==="sampling_disabled"))$("#deep").hidden=true;}
   }finally{$("#deep").disabled=false;$("#go").disabled=false;$("#stop").hidden=true;}
 });
+
+/* ================= VIRTUAL NOSE =================
+   Material record: name, CAS, logP, boiling point °C, odour impact per % (Hedione about 0.6),
+   descriptor vector, off-note tags, chemistry flags, regulatory flags, typical max % in a functional oil, aliases.
+   Tags: m marine, ml melon, mu musty, ca camphor, md medicinal, cy candy, so soapy, me metallic, ea earthy
+   Chem: a aldehyde, e ester, l lactone, c colour risk, o oxidises, w water soluble
+   Reg: A EU allergen (core list), A2 EU expanded allergen list (verify), R IFRA restricted (verify), S IFRA specification, P prohibited, B Sion banned, X EU CLP Repr. 2
+   All physical values are estimates (est.) until verified. */
+const MDB_RAW=[
+["Hedione","24851-98-7",2.98,300,0.6,"floralWhite:2,citrus:1,green:0.5","","e","",40,"methyl dihydrojasmonate"],
+["Hexyl salicylate","6259-76-3",5.0,290,0.4,"floralWhite:1,green:1,aromatic:0.5,musky:0.5","","e","R,X",20],
+["cis-3-Hexenyl salicylate","65405-77-8",4.8,271,1.2,"green:2,floralWhite:1,aquatic:0.5","","e","",15,"hexenyl salicylate"],
+["beta-Ionone","14901-07-6",3.8,265,6,"powdery:2,woodyDry:1,fruity:1,floralRose:0.5","","","",15,"b-ionone|β-ionone"],
+["alpha-Isomethyl ionone","127-51-5",4.3,240,2,"powdery:2,floralRose:1,woodyDry:1","","","A,R",20,"isomethyl ionone|methyl ionone"],
+["Benzyl salicylate","118-58-1",4.3,320,0.05,"floralWhite:0.5,musky:0.5,powdery:0.5","","e","A,R",30],
+["Phenoxanol","55066-48-3",3.0,268,1,"floralRose:2,green:0.5","","","",20,"methyl phenylpentanol"],
+["Linalool","78-70-6",2.97,198,1.5,"floralWhite:1,citrus:1,aromatic:1","","o","A,S",30],
+["beta-Caryophyllene","87-44-5",6.3,262,0.8,"woodyDry:1.5,spicyFresh:1,earthy:0.5","","o","A2",10,"caryophyllene"],
+["alpha-Bisabolol","515-69-5",5.6,314,0.15,"floralWhite:0.5,woodyCreamy:0.5,aromatic:0.5","","","",10,"bisabolol"],
+["Geranyl acetone","3796-70-1",4.1,254,1.5,"floralRose:1,green:1,fruity:0.5,woodyDry:0.5","","","",10],
+["Coumarin","91-64-5",1.4,301,3,"sweet:2,nutty:1,powdery:1,aromatic:1","","w","A,R",10],
+["Phenethyl alcohol","60-12-8",1.36,219,0.8,"floralRose:2,sweet:0.5","","w","",40,"phenylethyl alcohol|pea"],
+["Bornyl acetate","76-49-3",4.0,226,2,"aromatic:2,green:1,woodyDry:0.5","ca","e","",5],
+["Dihydroactinidiolide","17092-92-1",2.3,292,8,"sweet:1,woodyDry:1,musky:1,nutty:0.5","","l","",1],
+["Borneol","507-70-0",2.7,213,5,"aromatic:2,earthy:1,woodyDry:0.5","ca,md","","",1],
+["Theaspirane","36431-72-8",4.1,220,15,"green:1,fruity:1,woodyDry:1,aromatic:1","","","",1],
+["beta-Damascenone","23696-85-7",4.04,275,300,"fruity:2,floralRose:1.5,sweet:1","","","R,A2",0.5,"damascenone"],
+["1,8-Cineole","470-82-6",2.74,176,6,"aromatic:2,aquatic:0.5,spicyFresh:1","ca,md","","A2",2,"eucalyptol|cineole"],
+["Safranal","116-26-7",2.5,218,40,"spicyWarm:1,leather:1,powdery:0.5,sweet:0.5","md","a,o","",0.5],
+["Phenethyl phenylacetate","102-20-5",4.0,325,1.5,"sweet:2,floralRose:1,animalic:0.5","","e","",10,"phenylethyl phenylacetate"],
+["Ethylene brassylate","105-95-3",4.5,332,0.5,"musky:3,sweet:0.5,powdery:0.5","","e","",30,"musk t|astrotone"],
+["Phenoxyethyl isobutyrate","103-60-6",3.1,265,0.8,"floralRose:1,fruity:1,sweet:1","","e","",20],
+["Benzyl benzoate","120-51-4",3.97,323,0.02,"sweet:0.3,amber:0.3","","e","A,R",30],
+["gamma-Undecalactone","104-67-6",3.1,286,10,"fruity:3,lactonic:2,sweet:1","cy","l","",5,"undecalactone|aldehyde c-14|peach aldehyde"],
+["Ethyl maltol","4940-11-8",0.6,290,15,"sweet:3,cocoa:0.5","cy","c,w","",2],
+["Heliotropin","120-57-0",1.05,263,2.5,"powdery:2,sweet:1.5,nutty:0.5,floralWhite:0.5","cy","c,a,w","R",10,"piperonal"],
+["delta-Decalactone","705-86-2",2.6,281,4,"lactonic:3,sweet:1,nutty:0.5","","l","",5,"decalactone"],
+["gamma-Dodecalactone","2305-05-7",4.1,300,5,"fruity:2,lactonic:2,sweet:1","","l","",5,"dodecalactone"],
+["Maltol isobutyrate","65416-14-0",1.9,260,4,"sweet:2,fruity:1","cy","e,c","",3],
+["Dihydromyrcenol","18479-58-8",3.1,195,1.5,"citrus:2,aquatic:1,aldehydic:1","so","","",30,"dhm"],
+["Tetrahydrolinalool","78-69-3",3.6,199,0.8,"floralWhite:1,citrus:1,aquatic:0.5","","","",30],
+["Verdox","88-41-5",4.1,221,1.2,"fruity:1,woodyDry:1,green:1","","e","",20,"tert-butylcyclohexyl acetate"],
+["Linalyl acetate","115-95-7",3.9,220,1,"citrus:1,aromatic:1.5,floralWhite:0.5","","e,o","A2",30],
+["Florol","63500-71-0",1.9,230,1,"floralWhite:2,green:1,aquatic:0.5","","w","",20],
+["Helional","1205-17-0",1.4,282,4,"aquatic:2,green:1,floralWhite:1,aldehydic:0.5","m","a","R",5],
+["Calone","28940-11-6",1.95,280,60,"aquatic:3,fruity:1,mineral:0.5","m,ml","w","",1,"watermelon ketone"],
+["Melonal","106-72-9",3.0,185,80,"fruity:2,aquatic:2,green:1","ml,m","a,o","",0.5],
+["Aldehyde C-12 MNA","110-41-8",4.9,232,40,"aldehydic:3,mineral:1,citrus:0.5,woodyDry:0.5","so,me","a,o","",1,"methyl nonyl acetaldehyde|mna"],
+["Iso E Super","54464-57-2",5.2,290,0.5,"woodyDry:2,woodyCreamy:1,amber:0.5","","","A2,R",40,"iso e"],
+["cis-3-Hexenyl acetate","3681-71-8",2.4,169,8,"green:3,fruity:1","","e","",2,"hexenyl acetate"],
+["Ambroxan","6790-58-5",5.0,275,15,"amber:2,mineral:1.5,musky:1.5,woodyDry:0.5","","","",10,"ambrox|ambrofix|ambroxide"],
+["Geosmin","19700-21-1",3.6,270,3000,"earthy:3,mineral:1","mu,ea","","",0.005],
+["Galaxolide 50","1222-05-5",5.9,330,0.8,"musky:3,powdery:1,floralWhite:0.5","","","A2",30,"galaxolide|hhcb"],
+["Cashmeran","33704-61-9",4.2,256,3,"woodyCreamy:1.5,musky:1.5,earthy:0.5,powdery:0.5","","","",10],
+["Sandalore","65113-99-7",4.4,293,1.2,"woodyCreamy:3,lactonic:0.5","","","",15],
+["Habanolide","111879-80-2",5.45,330,1.2,"musky:3,woodyCreamy:0.5,aldehydic:0.5","","l","",20],
+["alpha-Irone","79-69-6",4.2,255,8,"powdery:3,woodyCreamy:1,earthy:0.5","","","",2,"irone"],
+["Geraniol","106-24-1",3.6,230,2,"floralRose:2.5,citrus:0.5","","o","A,R",10],
+["Safraleine","54440-17-4",4.6,280,20,"leather:2,spicyWarm:1,powdery:0.5","md","","",1],
+["Ebanol","67801-20-1",4.6,291,6,"woodyCreamy:3,musky:0.5","","","A2",5],
+["Javanol","198404-98-7",5.0,295,20,"woodyCreamy:3,fruity:0.5","","","",1],
+["Stemone","22457-23-4",3.5,230,15,"green:3,fruity:0.5","","","",1],
+["Benzyl acetate","140-11-4",1.96,212,2,"floralWhite:2,fruity:1","","e,w","",20],
+["Citronellol","106-22-9",3.9,225,1.2,"floralRose:2,citrus:0.5","","o","A,R",15],
+["Patchouli oil","8014-09-3",5.0,285,3,"earthy:3,woodyDry:1,cocoa:0.5","mu,ea","","",10,"patchouli"],
+["Vetiver oil","8016-96-4",4.5,290,3,"earthy:2,woodyDry:2,smoky:1","ea","","",10,"vetiver"],
+["Guaiacwood oil","8016-23-7",4.5,290,1,"woodyDry:2,smoky:1,sweet:0.5","","","",10,"guaiac"],
+["Cardamom oil","8000-66-6",3.0,200,4,"spicyFresh:2.5,aromatic:1.5","ca","e,o","A2",3,"cardamom"],
+["Bergamot oil FCF","68648-33-9",3.8,190,2,"citrus:3,aromatic:1","","o","A,S",15,"bergamot"],
+["Roman chamomile oil","8015-92-7",3.0,200,6,"aromatic:2,fruity:1.5,green:1","","e,o","",2,"chamomile"],
+["Lime oil, distilled","8008-26-2",4.0,180,2,"citrus:3,green:0.5","","o","A",10,"lime oil"],
+["Ginger oil","8007-08-7",5.5,260,2.5,"spicyFresh:3,citrus:1,woodyDry:0.5","","o","",3,"ginger"],
+["Ylang ylang oil","8006-81-3",4.0,250,4,"floralWhite:3,sweet:1,spicyWarm:0.5","","e","A,R",3,"ylang"],
+["Vanillin","121-33-5",1.2,285,6,"sweet:3,amber:0.5","cy","c,a,w","A2",5],
+["Ethyl vanillin","121-32-4",1.6,285,15,"sweet:3","cy","c,a,w","",3],
+["Helvetolide","141773-73-1",4.8,300,2,"musky:3,fruity:0.5","","e","",20],
+["Romandolide","236391-76-7",4.0,305,1.5,"musky:3,fruity:0.5,amber:0.5","","e","",20],
+["Ambrettolide","28645-51-4",6.0,300,2,"musky:3,fruity:0.5,animalic:0.5","","l","",10],
+["Exaltolide","106-02-5",6.0,280,1.5,"musky:3,animalic:0.5","","l","",10,"pentadecanolide"],
+["Allyl amyl glycolate","67634-00-8",2.6,220,10,"fruity:2,green:1.5","","e","R",1,"aag"],
+["Aldehyde C-10","112-31-2",4.0,208,15,"aldehydic:3,citrus:1","so","a,o","",1,"decanal"],
+["Aldehyde C-11 undecylenic","112-45-8",4.5,235,15,"aldehydic:3,aquatic:0.5,mineral:0.5","so","a,o","",1,"undecylenic aldehyde|undecenal"],
+["Rose oxide","16409-43-1",3.6,200,20,"floralRose:2,green:1,fruity:0.5","","","",0.5],
+["delta-Damascone","57378-68-4",3.9,260,80,"fruity:2,floralRose:1,green:0.5","","","R",0.5,"damascone"],
+["Verdyl acetate","5413-60-5",3.6,245,1.5,"green:1.5,woodyDry:1,fruity:0.5","","e","",15,"tricyclodecenyl acetate|jasmacyclene"],
+["Fructone","6413-10-1",1.4,200,4,"fruity:3","cy","e,w","",5],
+["Limonene","5989-27-5",4.6,176,1,"citrus:3","","o","A",20,"d-limonene"],
+["Citral","5392-40-5",3.4,229,6,"citrus:3,green:0.5","","a,o","A,R",3],
+["Hexyl cinnamal","101-86-0",4.8,305,0.5,"floralWhite:1.5,musky:0.5","","a","A,R",20,"hexyl cinnamic aldehyde"],
+["Amyl salicylate","2050-08-0",4.5,280,1,"floralWhite:1.5,green:0.5,aromatic:0.5","","e","A2",15],
+["Norlimbanol","70788-30-6",5.0,290,6,"woodyDry:3,amber:1","","","",5,"timberol"],
+["Indole","120-72-9",2.1,254,60,"animalic:3,floralWhite:1","","c","",0.5],
+["Eugenol","97-53-0",2.3,254,6,"spicyWarm:3","md","c,w","A,R",3],
+["Lilial","80-54-6",4.2,280,1.5,"floralWhite:2,aquatic:0.5","","a","P,B",0,"butylphenyl methylpropional"],
+["Lyral (HICC)","31906-04-4",2.1,300,1,"floralWhite:2","","a","P,B",0,"lyral|hicc"],
+["Musk ketone","81-14-1",4.3,330,1,"musky:3","","","B",0],
+["Musk xylene","81-15-2",4.9,330,1,"musky:3","","","P,B",0],
+["Diethyl phthalate (DEP)","84-66-2",2.4,295,0,"","","","B",0,"dep|diethyl phthalate"],
+["Isopropyl myristate (IPM)","110-27-0",7.0,315,0,"","","","",100,"ipm|isopropyl myristate"],
+["Dipropylene glycol (DPG)","25265-71-8",0.0,230,0,"","","w","",100,"dpg|dipropylene glycol"]
+];
+const MDB=MDB_RAW.map(([name,cas,logP,bp,imp,dims,tags,chem,reg,max,alias])=>({name,cas,logP,bp,imp,v:vec(dims),tags:tags?tags.split(","):[],chem:chem?chem.split(","):[],reg:reg?reg.split(","):[],max,alias:(alias||"").split("|").filter(Boolean)}));
+const CHECKED=new Set("24851-98-7 6259-76-3 65405-77-8 14901-07-6 127-51-5 118-58-1 78-70-6 91-64-5 60-12-8 36431-72-8 23696-85-7 470-82-6 105-95-3 120-51-4 4940-11-8 120-57-0 18479-58-8 1205-17-0 28940-11-6 106-72-9 110-41-8 54464-57-2 6790-58-5 19700-21-1 1222-05-5 111879-80-2 106-24-1 140-11-4 106-22-9".split(" "));
+const BYCAS={};MDB.forEach(m=>BYCAS[m.cas]=m);
+const OFF={m:"marine",ml:"melon",mu:"musty",ca:"camphor",md:"medicinal",cy:"candy",so:"soapy",me:"metallic",ea:"earthy"};
+let OVR={};try{OVR=JSON.parse(localStorage.getItem("sion-mdb-ovr")||"{}")||{};}catch(e){OVR={};}
+const withOvr=m=>OVR[m.cas]?Object.assign({},m,OVR[m.cas],{ovr:true}):m;
+const sig=x=>1/(1+Math.exp(-x));
+function findMat(name,cas){
+  if(cas&&BYCAS[cas])return withOvr(BYCAS[cas]);
+  const n=" "+name.toLowerCase()+" ";let best=null,bl=0;
+  for(const m of MDB)for(const a of [m.name.toLowerCase(),...m.alias])if(a.length>=3&&n.includes(a)&&a.length>bl){best=m;bl=a.length;}
+  return best?withOvr(best):null;
+}
+const SOLV=MDB.find(m=>m.cas==="110-27-0");
+
+function parseFormulas(text){
+  const accords={},forms=[];let cur=null;const CASRE=/\b(\d{2,7}-\d{2}-\d)\b/;
+  for(const raw of String(text).split(/\r?\n/)){
+    const line=raw.trim();
+    if(!line||/^(#|\/\/)/.test(line)||/^(total|tier|material)\b/i.test(line))continue;
+    if(line[0]==="@"){const title=line.slice(1).trim();const code=(title.split(/\s+/)[0]||"").toUpperCase();cur={kind:"accord",code,title,rows:[]};accords[code]=cur;continue;}
+    if(line[0]==="="){cur={kind:/capsule|\bcap\b/i.test(line)?"capsule":"free",title:line.slice(1).trim(),rows:[]};forms.push(cur);continue;}
+    const casM=line.match(CASRE);const rest=line.replace(CASRE," ");
+    const pm=rest.match(/(\d+(?:\.\d+)?)\s*%?\s*[|,\t;]*\s*$/);if(!pm)continue;
+    const name=rest.slice(0,pm.index).replace(/[|\t]+/g," ").replace(/^\s*(top|heart|base)\b/i," ").replace(/\s{2,}/g," ").replace(/[,;\s]+$/,"").trim();
+    if(!cur){cur={kind:"free",title:"Formula",rows:[]};forms.push(cur);}
+    cur.rows.push({name,cas:casM?casM[1]:"",pct:parseFloat(pm[1])});
+  }
+  return{accords,forms};
+}
+function expandForm(form,accords,depth,out){
+  out=out||{};
+  const codes=Object.keys(accords);
+  for(const r of form.rows){
+    const code=depth<3&&codes.find(c=>accords[c]!==form&&new RegExp("(^|[^A-Z0-9-])"+c.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")+"(?![A-Z0-9])","i").test(r.name));
+    if(code){
+      const sub=expandForm(accords[code],accords,depth+1,{});const tot=Object.values(sub).reduce((s,x)=>s+x.pct,0)||100;
+      for(const[k,x]of Object.entries(sub))addRow(out,k,x.m,x.name,x.pct*r.pct/tot,[code,...x.via]);
+      continue;
+    }
+    const m=findMat(r.name,r.cas);
+    const dl=r.name.match(/(\d+(?:\.\d+)?)\s*%\s*(?:in|sol)/i);const f=dl?Math.min(1,parseFloat(dl[1])/100):1;
+    addRow(out,m?m.cas:(r.cas||r.name.toLowerCase()),m,m?m.name:(r.name||"Unnamed"),r.pct*f,[]);
+    if(f<1)addRow(out,SOLV.cas,SOLV,SOLV.name,r.pct*(1-f),[]);
+  }
+  return out;
+}
+function addRow(out,k,m,name,pct,via){
+  if(!out[k])out[k]={m,name,pct:0,via:[]};
+  out[k].pct+=pct;via.forEach(v=>{if(!out[k].via.includes(v))out[k].via.push(v);});
+}
+const UNKNOWN={name:"",cas:"",logP:3.5,bp:250,imp:1,v:new Array(24).fill(0),tags:[],chem:[],reg:[],max:100,unknown:true};
+
+const NPROD={amino:{label:"Detergent + amino silicone",sub:"your Sion base"},detergent:{label:"Liquid detergent"},softener:{label:"Fabric softener"},edp:{label:"Eau de parfum",sub:"skin"}};
+const NENCAP={yes:{label:"Encapsulated",sub:"Round 2"},no:{label:"Added free",sub:"Round 1"}};
+const NDRY={heatpump:{label:"Heat pump",sub:"about 50 to 54 °C"},vented:{label:"Vented",sub:"up to 90 °C"}};
+const nstate={prod:"amino",encap:"yes",dryer:"vented",avoid:new Set(["m","ml","mu","ca","md","cy"])};
+const TPL=[["bottle","Bottle"],["wet","Wet laundry"],["line","Dry, line"],["dryer","Dry, dryer"],["h24","24 h"],["d7","7 days"],["d21","21 days"],["rub","7 d rubbed"]];
+const TPE=[["s0","On skin"],["h1","1 h"],["h4","4 h"],["h8","8 h"],["h24","24 h"]];
+
+/* physics: deposition from logP, survival from boiling point, perceived = sqrt(mass x impact) (Stevens' law, exponent 0.5) */
+function factorFree(m,t,ctx){
+  if(ctx.prod==="edp"){const tau=Math.max(0.05,Math.exp((m.bp-215)/24));const hrs={s0:0.05,h1:1,h4:4,h8:8,h24:24}[t];return Math.exp(-hrs/tau);}
+  const dep=ctx.prod==="softener"?sig((m.logP-2.6)*1.8):sig((m.logP-3.2)*1.8);
+  const vol=sig((250-m.bp)/22),rl=sig((m.bp-235)/14),rd=sig((m.bp-(ctx.dryer==="vented"?268:250))/14);
+  const tau=Math.min(400,Math.max(0.2,Math.exp((m.bp-235)/18)));
+  switch(t){case"bottle":return 0.15+vol;case"wet":return dep*(0.4+vol);case"line":return dep*rl;case"dryer":return dep*rd;
+    case"h24":return dep*rl*Math.exp(-1/tau);case"d7":case"rub":return dep*rl*Math.exp(-7/tau);case"d21":return dep*rl*Math.exp(-21/tau);}
+  return 0;
+}
+function factorCapIntact(t,ctx){
+  const dep=0.3;
+  return{bottle:0.02,wet:dep*0.05,line:dep*0.12,dryer:dep*(ctx.dryer==="vented"?0.2:0.12),h24:dep*0.1,d7:dep*0.08,d21:dep*0.06,rub:dep*1.0}[t]||0;
+}
+function runAudit(text,ctx){
+  const parsed=parseFormulas(text);
+  let forms=parsed.forms;
+  if(!forms.length){const acc=Object.values(parsed.accords);if(acc.length)forms=[{kind:"free",title:acc[0].title,rows:[{name:acc[0].code,cas:"",pct:100}]}];}
+  const freeF=forms.find(f=>f.kind==="free"),capF=forms.find(f=>f.kind==="capsule");
+  if(!freeF&&!capF)return null;
+  const F=freeF?expandForm(freeF,parsed.accords,0):{},C=capF?expandForm(capF,parsed.accords,0):{};
+  const sumF=Object.values(F).reduce((s,x)=>s+x.pct,0)||0,sumC=Object.values(C).reduce((s,x)=>s+x.pct,0)||0;
+  const keys=[...new Set([...Object.keys(F),...Object.keys(C)])];
+  const freeG=ctx.prod==="edp"?100:ctx.free,capG=ctx.prod==="edp"?0:ctx.cap;
+  const items=keys.map(k=>{const a=F[k],b=C[k];const m=(a&&a.m)||(b&&b.m)||Object.assign({},UNKNOWN,{name:(a||b).name});
+    return{key:k,m,name:m.unknown?(a||b).name:m.name,via:[...new Set([...(a?a.via:[]),...(b?b.via:[])])],
+      pf:a&&sumF?a.pct*100/sumF:0,pc:b&&sumC?b.pct*100/sumC:0};});
+  const tps=ctx.prod==="edp"?TPE:TPL;
+  const target=analyze(ctx.target).target;
+  items.forEach(it=>{
+    const m=it.m,gF=freeG*it.pf/100,gC=capG*it.pc/100;
+    const leak=sig((2.8-m.logP)*2.2);
+    const capFree=ctx.encap==="yes"?gC*leak:gC,capIn=ctx.encap==="yes"?gC*(1-leak):0;
+    it.gF=gF;it.gC=gC;it.leak=leak;it.I={};it.P={};
+    tps.forEach(([t])=>{const I=((gF+capFree)*factorFree(m,t,ctx)+capIn*factorCapIntact(t,ctx))*m.imp;it.I[t]=I;it.P[t]=Math.sqrt(Math.max(0,I));});
+  });
+  const tp={};
+  tps.forEach(([t])=>{
+    const S=items.reduce((s,it)=>s+it.P[t],0)||1e-9;
+    const prof=new Array(24).fill(0);items.forEach(it=>{const vn=nrm(it.m.v);if(Math.hypot(...it.m.v)>0)vn.forEach((x,i)=>prof[i]+=x*it.P[t]);});
+    const off={};Object.keys(OFF).forEach(g=>off[g]=items.filter(it=>it.m.tags.includes(g)).reduce((s,it)=>s+it.P[t],0)/S);
+    const ps=prof.reduce((a,b)=>a+b,0)||1;
+    const mw=(prof[I.musky]+prof[I.woodyDry]+prof[I.woodyCreamy]+prof[I.amber])/ps;
+    tp[t]={S,sim:Math.max(0,cosv(prof,target)),off,mw,prof};
+  });
+  const maxS=Math.max(...tps.map(([t])=>tp[t].S));
+  tps.forEach(([t])=>tp[t].rel=tp[t].S/maxS*100);
+  return{items,tp,tps,ctx,sumF,sumC,freeTitle:freeF?freeF.title:"",capTitle:capF?capF.title:"",checks:makeChecks(items,tp,tps,ctx,sumF,sumC)};
+}
+function names(list,n){return list.slice(0,n||4).map(x=>x.name+(x.v!==undefined?" "+x.v:"")).join(", ");}
+const pc=x=>(x*100).toFixed(x<0.1?1:0)+"%";
+function makeChecks(items,tp,tps,ctx,sumF,sumC){
+  const ck=[],add=(sev,area,title,detail)=>ck.push({sev,area,title,detail});
+  const laundry=ctx.prod!=="edp";
+  if(sumF&&Math.abs(sumF-100)>0.6)add("warn","Structure","Free oil adds up to "+sumF.toFixed(1)+"%","The audit rescales it to 100. Fix the paper formula so the OEM is not left guessing.");
+  if(sumC&&Math.abs(sumC-100)>0.6)add("warn","Structure","Capsule oil adds up to "+sumC.toFixed(1)+"%","Rescaled to 100 for the audit.");
+  /* 1 brief limits */
+  [...ctx.avoid].forEach(g=>{
+    let worst=null;tps.forEach(([t,l])=>{const v=tp[t].off[g];if(!worst||v>worst.v)worst={t,l,v};});
+    if(!worst)return;
+    const who=items.filter(it=>it.m.tags.includes(g)).sort((a,b)=>b.P[worst.t]-a.P[worst.t]).map(it=>({name:it.name,v:"("+(it.pf+it.pc*0).toFixed(it.pf<0.1?3:2)+"% of oil)"}));
+    const sev=worst.v>=0.10?"fail":worst.v>=0.04?"warn":"pass";
+    if(sev==="pass"&&!who.length)return;
+    add(sev,"Brief limits",(sev==="pass"?"No ":"")+OFF[g]+" note"+(sev==="pass"?" problem":" at "+pc(worst.v)+" of what the nose notices ("+worst.l.toLowerCase()+")"),
+      who.length?"From "+names(who,3)+". Traces are judged by loudness, not weight."+(sev!=="pass"?" Cut or replace them to respect the brief.":""):"");
+  });
+  if(laundry){
+    /* 2 target survives */
+    const b=tp.bottle.sim,d=tp.dryer.sim,l21=tp.d21.sim;
+    const sev=d<0.55||b-d>0.25?"fail":d<0.7||b-d>0.15?"warn":"pass";
+    add(sev,"Target","Smells like the target: "+Math.round(b*100)+" in the bottle, "+Math.round(d*100)+" after the dryer, "+Math.round(l21*100)+" at 21 days","Similarity to \""+ctx.target+"\" on a 0 to 100 scale. A big drop means the idea lives in notes that wash or dry away.");
+    /* 3 musk-wood dominance */
+    const mw=Math.max(tp.dryer.mw,tp.d21.mw);
+    add(mw>0.62?"fail":mw>0.5?"warn":"pass","Target","Musk and wood make up "+pc(mw)+" of the dry-down",mw>0.5?"It risks reading as generic clean musk. Move weight into substantive target notes (ionones, salicylates, lactones) or capsules.":"The dry-down still carries the idea, not only musk.");
+    /* 4 wash waste */
+    const waste=items.filter(it=>it.m.logP<2.5).reduce((s,it)=>s+it.pf,0);
+    const wl=items.filter(it=>it.m.logP<2.5&&it.pf>0).sort((a,b)=>b.pf-a.pf).map(it=>({name:it.name,v:it.pf.toFixed(1)+"%"}));
+    add(waste>40?"fail":waste>25?"warn":"pass","Wash survival",pc(waste/100)+" of the free oil mostly rinses away (logP under 2.5)",wl.length?"Largest: "+names(wl,4)+". These still help the bottle and wet smell.":"Nearly everything is oily enough to stay on fabric.");
+    /* 5 dryer loss */
+    const light=items.filter(it=>it.m.bp<230).reduce((s,it)=>s+it.pf,0);
+    add(light>40?"warn":"info","Wash survival",pc(light/100)+" of the free oil boils below 230 °C","Expect it to leave through the "+(ctx.dryer==="vented"?"vented dryer at up to 90 °C":"dryer")+". Fine for bottle and wash bloom, wasted for dry fabric.");
+  }
+  /* 6 aldehydes and amines */
+  const ald=items.filter(it=>it.m.chem.includes("a"));const aldT=ald.reduce((s,it)=>s+it.pf+it.pc*(ctx.cap/(ctx.free||1)),0);
+  if(ald.length){const amine=ctx.prod==="amino";add(amine&&aldT>3?"fail":amine&&aldT>1?"warn":"info","Base chemistry","Aldehydes: "+aldT.toFixed(2)+"% of the oil"+(amine?" in a base with amino silicone":""),
+    names(ald.map(it=>({name:it.name,v:(it.pf||it.pc).toFixed(2)+"%"})),5)+". "+(amine?"Aldehydes react with the amine groups of amino silicone (Schiff bases). That can yellow the liquid and weaken the note. Ask the OEM to run these in the final base at 40 °C first.":"Watch for oxidation in storage."));}
+  /* 7 colour */
+  const col=items.filter(it=>it.m.chem.includes("c")&&(it.pf+it.pc)>0);
+  if(col.length)add("warn","Base chemistry","Colour risk: "+names(col.map(it=>({name:it.name})),5),"These can turn yellow, pink or brown with light, iron or high pH. Keep them low, or test in the clear bottle at 40 °C.");
+  /* 8 oxidation */
+  const ox=items.filter(it=>it.m.chem.includes("o")).reduce((s,it)=>s+it.pf,0);
+  if(ox>12)add("info","Base chemistry",pc(ox/100)+" of the oil oxidises easily (terpenes, citrus, aldehydes)","Ask for an antioxidant in the oil, such as tocopherol or BHT, and nitrogen-flushed storage.");
+  /* 9 capsule */
+  if(laundry&&ctx.encap==="yes"&&items.some(it=>it.pc>0)){
+    const leaky=items.filter(it=>it.pc>0&&it.m.logP<3).sort((a,b)=>b.pc-a.pc);const lk=leaky.reduce((s,it)=>s+it.pc,0);
+    const ws=items.filter(it=>it.pc>0&&it.m.chem.includes("w")).reduce((s,it)=>s+it.pc,0);
+    add(ws>1||lk>30?"fail":lk>15?"warn":"pass","Capsules",pc(lk/100)+" of the capsule oil has logP under 3"+(ws>0?" and "+ws.toFixed(1)+"% dissolves in water":""),leaky.length?"Likely to leak out of the capsule wall into the liquid: "+names(leaky.map(it=>({name:it.name,v:it.pc.toFixed(1)+"%"})),5)+". Capsule oils work best above logP 3.":"The capsule oil is oily enough to stay inside the shell.");
+  }
+  /* 10 overdose */
+  const od=items.filter(it=>it.m.max&&!it.m.unknown&&(it.pf>it.m.max||it.pc>it.m.max)&&it.m.max>0);
+  if(od.length)add("warn","Dosing","Above the usual working range: "+names(od.map(it=>({name:it.name,v:Math.max(it.pf,it.pc).toFixed(2)+"% (usual up to "+it.m.max+"%)"})),4),"Not wrong by itself, but check it is deliberate.");
+  /* 11 loud traces */
+  const t0=tps[0][0];const S0=tp[t0].S;const totM=items.reduce((s,it)=>s+it.pf+it.pc,0)||1;
+  const loud=items.filter(it=>{const ps=it.P[t0]/S0,ms=(it.pf+it.pc)/totM;return ps>0.03&&ps>5*ms;}).sort((a,b)=>b.P[t0]-a.P[t0]);
+  if(loud.length)add("info","Dosing","Loud traces: "+names(loud.map(it=>({name:it.name})),5),"A tiny weight with a big effect. Weigh these on a 0.001 g balance, ideally as a 10% dilution.");
+  /* 12 regulatory */
+  const ban=items.filter(it=>it.m.reg.includes("B")||it.m.reg.includes("P"));
+  if(ban.length)add("fail","Regulatory","Banned or prohibited: "+names(ban.map(it=>({name:it.name})),5),"Remove before anything is sampled.");
+  const res=items.filter(it=>it.m.reg.includes("R")||it.m.reg.includes("S"));
+  if(res.length)add("info","Regulatory","IFRA restricted or specified (verify): "+names(res.map(it=>({name:it.name})),8),"Limits in Category 10A laundry are usually generous at a 1% oil load, but the supplier's IFRA certificate must confirm each one.");
+  const load=(ctx.prod==="edp"?18:(ctx.free+ctx.cap)/10);
+  const alg=items.filter(it=>it.m.reg.some(r=>r==="A"||r==="A2")).map(it=>({name:it.name,p:(it.pf*(ctx.prod==="edp"?18:ctx.free/10)+it.pc*(ctx.prod==="edp"?0:ctx.cap/10))/100})).filter(x=>x.p>=0.01).sort((a,b)=>b.p-a.p);
+  if(alg.length)add("info","Regulatory",alg.length+" allergens above 0.01% of the finished product","EU-style labelling would list: "+alg.slice(0,8).map(x=>x.name+" "+x.p.toFixed(3)+"%").join(", ")+". Singapore does not require this today, but export markets may.");
+  const clp=items.filter(it=>it.m.reg.includes("X"));
+  clp.forEach(it=>{const tot=it.pf;add(tot>=3?"warn":"info","Regulatory",it.name+" is "+tot.toFixed(1)+"% of the free oil","EU CLP now classes it as toxic to reproduction, category 2 (22nd ATP, check the date it applies). At 3% or more the fragrance oil itself must carry that hazard on its safety data sheet. The finished detergent is far below the limit, but EU export and some retailers screen oils. Consider moving part of it to cis-3-hexenyl salicylate or amyl salicylate.");});
+  /* 13 unknown */
+  const unk=items.filter(it=>it.m.unknown);
+  if(unk.length)add("warn","Data","Not in the material database: "+names(unk.map(it=>({name:it.name})),6),"Scored with neutral guesses. Add them through the Gemini check below.");
+  /* 14 musk diversity */
+  if(laundry){const musks=items.filter(it=>it.m.v[I.musky]>=2.5&&it.pf>1);add(musks.length>=2?"pass":"info","Target",musks.length+" musk types above 1%",musks.length>=2?"Layered musks protect against musk anosmia, where some people barely smell one musk.":"Use two or three different musks so people who cannot smell one still smell the others.");}
+  const order={fail:0,warn:1,info:2,pass:3};ck.sort((a,b)=>order[a.sev]-order[b.sev]);
+  return ck;
+}
+
+/* ---------- Virtual Nose rendering ---------- */
+function drawTouch(A){
+  const tps=A.tps,W=720,H=230,L=46,R=16,T=18,B=40,cw=(W-L-R)/tps.length;
+  let s=`<svg viewBox="0 0 ${W} ${H}" width="100%" style="min-width:560px" role="img" aria-label="Strength and similarity to target at each touchpoint">`;
+  [0,25,50,75,100].forEach(v=>{const y=T+(H-T-B)*(1-v/100);s+=`<line x1="${L}" x2="${W-R}" y1="${y}" y2="${y}" stroke="var(--line)" stroke-width="1"/><text x="${L-8}" y="${y+3.5}" font-size="10" fill="var(--muted)" text-anchor="end">${v}</text>`;});
+  const pts=[];
+  tps.forEach(([t,l],i)=>{const x=L+i*cw,d=A.tp[t];const bh=(H-T-B)*d.rel/100;
+    s+=`<rect x="${(x+cw*0.22).toFixed(1)}" y="${(H-B-bh).toFixed(1)}" width="${(cw*0.56).toFixed(1)}" height="${Math.max(1,bh).toFixed(1)}" rx="3" fill="var(--accent)" fill-opacity=".22"/>`;
+    pts.push([x+cw/2,T+(H-T-B)*(1-d.sim)]);
+    s+=`<text x="${(x+cw/2).toFixed(1)}" y="${H-B+16}" font-size="10" fill="var(--muted)" text-anchor="middle">${esc(l)}</text>`;});
+  s+=`<polyline points="${pts.map(p=>p.map(z=>z.toFixed(1)).join(",")).join(" ")}" fill="none" stroke="var(--ink)" stroke-width="2"/>`;
+  pts.forEach((p,i)=>{s+=`<circle cx="${p[0].toFixed(1)}" cy="${p[1].toFixed(1)}" r="4" fill="var(--surface)" stroke="var(--ink)" stroke-width="2"/><text x="${p[0].toFixed(1)}" y="${(p[1]-9).toFixed(1)}" font-size="10" fill="var(--ink)" text-anchor="middle">${Math.round(A.tp[tps[i][0]].sim*100)}</text>`;});
+  s+="</svg>";return s;
+}
+function heatTable(A){
+  const tps=A.tps;
+  const top=A.items.slice().sort((a,b)=>Math.max(...tps.map(([t])=>b.P[t]/A.tp[t].S))-Math.max(...tps.map(([t])=>a.P[t]/A.tp[t].S))).slice(0,16);
+  const head=`<tr><th>Material</th><th class="num">% oil</th>${tps.map(([,l])=>`<th class="num">${esc(l)}</th>`).join("")}</tr>`;
+  const rows=top.map(it=>{const off=it.m.tags.filter(g=>A.ctx.avoid.has(g));
+    return`<tr><td>${esc(it.name)}${it.via.length?` <span class="src">via ${esc(it.via.join(", "))}</span>`:""}${off.length?` <span class="offtag">${off.map(g=>OFF[g]).join(", ")}</span>`:""}${it.m.unknown?` <span class="offtag">no data</span>`:""}</td><td class="num">${(it.pf||0).toFixed(it.pf<0.1?3:2)}${it.pc?`<br><span class="src">cap ${it.pc.toFixed(1)}</span>`:""}</td>${tps.map(([t])=>{const v=it.P[t]/A.tp[t].S;return`<td class="num heat" style="--h:${Math.min(1,v*4).toFixed(2)}">${(v*100).toFixed(v<0.1?1:0)}</td>`;}).join("")}</tr>`;}).join("");
+  return`<table class="ref heatt">${head}${rows}</table>`;
+}
+const SEVL={fail:"Fail",warn:"Check",info:"Note",pass:"Pass"};
+function renderAudit(A,label,el){
+  const counts={fail:0,warn:0,info:0,pass:0};A.checks.forEach(c=>counts[c.sev]++);
+  el.innerHTML=`<div class="panel fade"><div class="panel-h"><span class="eyebrow">${esc(label)}</span><span class="legend"><span class="sev sev-fail">${counts.fail} fail</span><span class="sev sev-warn">${counts.warn} check</span><span class="sev sev-pass">${counts.pass} pass</span></span></div>
+    <p class="status">${esc(A.freeTitle||"No free oil")}${A.capTitle?" · capsule: "+esc(A.capTitle):""} · ${A.items.length} materials after expanding accords</p>
+    <div class="panel-h" style="margin-top:10px"><span class="eyebrow">Touchpoints · bars = strength (strongest = 100) · line = smells like the target (0 to 100)</span></div>
+    <div class="scroll-x">${drawTouch(A)}</div></div>
+   <div class="checks fade">${A.checks.map(c=>`<div class="chk"><span class="sev sev-${c.sev}">${SEVL[c.sev]}</span><div><div class="chk-t"><span class="src">${esc(c.area)}</span> ${esc(c.title)}</div>${c.detail?`<div class="chk-d">${esc(c.detail)}</div>`:""}</div></div>`).join("")}</div>
+   <div class="panel fade"><div class="panel-h"><span class="eyebrow">What the nose notices · share of perceived smell at each touchpoint, %</span></div><div class="scroll-x">${heatTable(A)}</div>
+   <p class="status">Perceived share = square root of (grams × odour impact), the usual way smell strength grows with dose. Deposition follows logP, survival follows boiling point, capsule leakage follows logP. All estimates, so use it to rank risks, not to replace a smell test.</p></div>`;
+}
+function nctx(){return{prod:nstate.prod,free:Math.max(0,parseFloat($("#n-free").value)||0),cap:Math.max(0,parseFloat($("#n-cap").value)||0),encap:nstate.encap,dryer:nstate.dryer,target:$("#n-target").value||"tea",avoid:new Set(nstate.avoid)};}
+let lastAudit=null;
+function nRun(){
+  const A=runAudit($("#nf").value,nctx());
+  if(!A){$("#n-out").innerHTML=`<div class="panel"><p>No formula found. Start a formula with a line beginning "=", then one material per line with its %.</p></div>`;lastAudit=null;return;}
+  lastAudit=A;$("#n-out").innerHTML=`<div id="n-a1"></div><div id="n-a2"></div>`;renderAudit(A,"Paper audit",$("#n-a1"));$("#n-status").textContent="";
+}
+
+/* ---------- presets: your Chrysanthemum R&D Brief v2 ---------- */
+const ACC_CH=`@CH-1 Hangbaiju Dry Tea
+Hedione | 24851-98-7 | 20
+Hexyl salicylate | 6259-76-3 | 12
+cis-3-Hexenyl salicylate | 65405-77-8 | 10
+beta-Ionone | 14901-07-6 | 8
+alpha-Isomethyl ionone | 127-51-5 | 8
+Benzyl salicylate | 118-58-1 | 8
+Phenoxanol | 55066-48-3 | 8
+Linalool | 78-70-6 | 6
+beta-Caryophyllene | 87-44-5 | 5
+alpha-Bisabolol | 515-69-5 | 3
+Geranyl acetone | 3796-70-1 | 3
+Coumarin | 91-64-5 | 3
+Phenethyl alcohol | 60-12-8 | 2.2
+Bornyl acetate | 76-49-3 | 2
+Dihydroactinidiolide | 17092-92-1 | 0.5
+Borneol | 507-70-0 | 0.5
+Theaspirane | 36431-72-8 | 0.3
+beta-Damascenone | 23696-85-7 | 0.2
+1,8-Cineole | 470-82-6 | 0.2
+Safranal | 116-26-7 | 0.1
+
+@CH-2 Rock Sugar
+Phenethyl phenylacetate | 102-20-5 | 18
+Ethylene brassylate | 105-95-3 | 15
+Benzyl salicylate | 118-58-1 | 12
+Phenoxyethyl isobutyrate | 103-60-6 | 12
+Benzyl benzoate | 120-51-4 | 12
+Hedione | 24851-98-7 | 10
+gamma-Undecalactone | 104-67-6 | 4
+Ethyl maltol | 4940-11-8 | 3
+Heliotropin | 120-57-0 | 3
+Coumarin | 91-64-5 | 3
+delta-Decalactone | 705-86-2 | 3
+gamma-Dodecalactone | 2305-05-7 | 3
+Maltol isobutyrate | 65416-14-0 | 2
+
+@CH-3 Iced Tea Lift
+Dihydromyrcenol | 18479-58-8 | 22
+Tetrahydrolinalool | 78-69-3 | 22
+Hedione | 24851-98-7 | 20
+Verdox | 88-41-5 | 14
+Linalyl acetate | 115-95-7 | 8.5
+Florol | 63500-71-0 | 8
+Helional | 1205-17-0 | 3
+Calone | 28940-11-6 | 1
+Melonal | 106-72-9 | 0.5
+1,8-Cineole | 470-82-6 | 0.5
+Aldehyde C-12 MNA | 110-41-8 | 0.5
+`;
+const ACC_RAIN=`
+@CH-4 Monsoon Rain
+Hedione | 24851-98-7 | 25
+Iso E Super | 54464-57-2 | 20
+Dihydromyrcenol | 18479-58-8 | 15
+Tetrahydrolinalool | 78-69-3 | 14
+Hexyl salicylate | 6259-76-3 | 10
+Benzyl salicylate | 118-58-1 | 6.5
+Patchouli oil | 8014-09-3 | 3
+Vetiver oil | 8016-96-4 | 3
+cis-3-Hexenyl acetate | 3681-71-8 | 1
+Calone | 28940-11-6 | 1
+Ambroxan | 6790-58-5 | 1
+Geosmin, 1% in IPM | 19700-21-1 | 0.5
+`;
+const NPRESETS={
+"1.2 Golden Cup + CAP-1 (your brief)":ACC_CH+`
+= 1.2 Golden Cup (free oil)
+CH-3 Iced Tea Lift accord | 7
+Linalyl acetate | 115-95-7 | 2
+Verdox | 88-41-5 | 1
+CH-1 Hangbaiju Dry Tea accord | 32
+CH-2 Rock Sugar accord | 11
+Hedione | 24851-98-7 | 2
+Benzyl salicylate | 118-58-1 | 10
+Galaxolide 50 | 1222-05-5 | 9
+Ethylene brassylate | 105-95-3 | 9
+Iso E Super | 54464-57-2 | 8
+Hexyl salicylate | 6259-76-3 | 4
+Sandalore | 65113-99-7 | 3
+Cashmeran | 33704-61-9 | 1
+Ambroxan | 6790-58-5 | 1
+
+= CAP-1 Cold Sweet Tea (capsule)
+Hedione | 24851-98-7 | 15
+Linalyl acetate | 115-95-7 | 12
+Tetrahydrolinalool | 78-69-3 | 12
+beta-Ionone | 14901-07-6 | 10
+alpha-Isomethyl ionone | 127-51-5 | 8
+Phenethyl phenylacetate | 102-20-5 | 8
+Geranyl acetone | 3796-70-1 | 6
+Hexyl salicylate | 6259-76-3 | 6
+cis-3-Hexenyl salicylate | 65405-77-8 | 6
+gamma-Undecalactone | 104-67-6 | 5
+Verdox | 88-41-5 | 5
+Linalool | 78-70-6 | 3
+alpha-Bisabolol | 515-69-5 | 3
+Theaspirane | 36431-72-8 | 0.5
+beta-Damascenone | 23696-85-7 | 0.5
+`,
+"3.2 Monsoon Tea + CAP-3 (your brief)":ACC_CH+ACC_RAIN+`
+= 3.2 Monsoon Tea (free oil)
+CH-3 Iced Tea Lift accord | 8
+Dihydromyrcenol | 18479-58-8 | 2
+Bergamot oil, FCF | 68648-33-9 | 1
+CH-1 Hangbaiju Dry Tea accord | 28
+CH-4 Monsoon Rain accord | 10
+Hedione | 24851-98-7 | 2
+Iso E Super | 54464-57-2 | 10
+Galaxolide 50 | 1222-05-5 | 8
+Hexyl salicylate | 6259-76-3 | 8
+Benzyl salicylate | 118-58-1 | 8
+Ethylene brassylate | 105-95-3 | 7
+Cashmeran | 33704-61-9 | 3
+Ambroxan | 6790-58-5 | 3
+Sandalore | 65113-99-7 | 2
+
+= CAP-3 Rain Tea (capsule)
+Hedione | 24851-98-7 | 18
+Dihydromyrcenol | 18479-58-8 | 12
+Tetrahydrolinalool | 78-69-3 | 12
+Linalyl acetate | 115-95-7 | 8
+Verdox | 88-41-5 | 8
+beta-Ionone | 14901-07-6 | 8
+cis-3-Hexenyl salicylate | 65405-77-8 | 8
+Hexyl salicylate | 6259-76-3 | 8
+alpha-Isomethyl ionone | 127-51-5 | 6
+Iso E Super | 54464-57-2 | 6
+Vetiver oil | 8016-96-4 | 2
+Patchouli oil | 8014-09-3 | 2
+Ambroxan | 6790-58-5 | 0.5
+Theaspirane | 36431-72-8 | 0.5
+Geosmin, 1% in IPM | 19700-21-1 | 0.5
+beta-Damascenone | 23696-85-7 | 0.5
+`,
+"CH-3 Iced Tea Lift alone":ACC_CH.split("@CH-3")[0].replace(/[\s\S]*/,"")+"@CH-3"+ACC_CH.split("@CH-3")[1]+"\n= CH-3 on its own\nCH-3 accord | 100\n"
+};
+$("#n-presets").innerHTML=Object.keys(NPRESETS).map(k=>`<button class="chip" data-np="${esc(k)}">${esc(k)}</button>`).join("");
+$("#n-presets").addEventListener("click",ev=>{const b=ev.target.closest("[data-np]");if(!b)return;$("#nf").value=NPRESETS[b.dataset.np];nRun();});
+$("#nf").value=NPRESETS["1.2 Golden Cup + CAP-1 (your brief)"];
+function nseg(el,obj,get,set){
+  el.innerHTML=Object.entries(obj).map(([k,v])=>`<button data-k="${k}" aria-pressed="false">${esc(v.label)}${v.sub?`<small>${esc(v.sub)}</small>`:""}</button>`).join("");
+  const sync=()=>el.querySelectorAll("button").forEach(b=>b.setAttribute("aria-pressed",String(get(b.dataset.k))));
+  el.addEventListener("click",ev=>{const b=ev.target.closest("button");if(!b)return;set(b.dataset.k);sync();if(lastAudit)nRun();});sync();
+}
+nseg($("#n-prod"),NPROD,k=>nstate.prod===k,k=>nstate.prod=k);
+nseg($("#n-encap"),NENCAP,k=>nstate.encap===k,k=>nstate.encap=k);
+nseg($("#n-dryer"),NDRY,k=>nstate.dryer===k,k=>nstate.dryer=k);
+nseg($("#n-avoid"),Object.fromEntries(Object.entries(OFF).map(([k,v])=>[k,{label:v}])),k=>nstate.avoid.has(k),k=>{nstate.avoid.has(k)?nstate.avoid.delete(k):nstate.avoid.add(k);});
+$("#n-go").addEventListener("click",nRun);
+["n-free","n-cap","n-target"].forEach(id=>$("#"+id).addEventListener("change",()=>{if(lastAudit)nRun();}));
+
+/* ---------- Senior panel (Claude proposes, the audit disposes) ---------- */
+function auditSummary(A){
+  const tps=A.tps.map(([t,l])=>`${l}: strength ${Math.round(A.tp[t].rel)}, target similarity ${Math.round(A.tp[t].sim*100)}, musk+wood ${Math.round(A.tp[t].mw*100)}%`).join("\n");
+  const chk=A.checks.filter(c=>c.sev!=="pass").map(c=>`[${c.sev}] ${c.area}: ${c.title}. ${c.detail}`).join("\n");
+  const mats=A.items.slice().sort((a,b)=>(b.pf+b.pc)-(a.pf+a.pc)).map(it=>`${it.name} | ${it.m.cas||"?"} | free ${it.pf.toFixed(3)}% | capsule ${it.pc.toFixed(3)}% | logP ${it.m.logP} | bp ${it.m.bp} | impact ${it.m.imp}${it.via.length?" | via "+it.via.join(","):""}`).join("\n");
+  return{tps,chk,mats};
+}
+function panelPrompt(A,text){
+  const s=auditSummary(A),c=A.ctx;
+  return `You are a review panel of three senior perfumers at a top fragrance house:
+A. Functional fabric-care perfumer, 20 years in liquid detergent and softener.
+B. Fine-fragrance perfumer, specialist in tea and floral accords.
+C. Evaluator and stability chemist.
+You cannot smell. Do the paper review a senior team does before compounding, and fix the formula.
+
+PRODUCT: ${NPROD[c.prod].label}. Free oil ${c.free} g/kg, capsule oil ${c.cap} g/kg (${c.encap==="yes"?"encapsulated":"added free, no capsules"}). Dryer: ${NDRY[c.dryer].label}.
+SMELL TARGET: ${c.target}
+THE BRIEF FORBIDS: ${[...c.avoid].map(g=>OFF[g]).join(", ")||"nothing listed"}
+
+FORMULA AS WRITTEN (accord syntax: @ accord, = formula):
+${text.slice(0,9000)}
+
+FLATTENED MATERIALS AFTER EXPANDING ACCORDS (estimated data):
+${s.mats}
+
+AUTOMATED AUDIT, TOUCHPOINTS:
+${s.tps}
+
+AUTOMATED AUDIT, OPEN ISSUES:
+${s.chk||"none"}
+
+TASK
+1. Each panelist gives the 2 to 4 most important issues from their expertise. Be quantitative. Judge potent traces by odour strength, not mass.
+2. Agree a revised formula that keeps the smell target, fixes the fail and check items, and stays buildable by an OEM. Return it FLATTENED (no accords): free oil summing to 100, capsule oil summing to 100 (empty array if none). Use real fragrance materials with CAS numbers. Keep capsule oil materials above logP 3. Avoid aldehydes above 1% of oil if the base has amino silicone.
+3. Plain language, no em dashes, no semicolons.
+
+Reply with ONLY this JSON:
+{"panel":[{"who":"A","issues":[{"severity":"high|medium|low","title":"...","fix":"..."}]},{"who":"B","issues":[...]},{"who":"C","issues":[...]}],
+ "summary":"two sentences on what changed and why",
+ "free":[{"name":"Hedione","cas":"24851-98-7","pct":12.5}],
+ "capsule":[{"name":"...","cas":"...","pct":10}]}`;
+}
+let nCtl=null;
+sampleP.then(s=>{if(s)$("#n-panel").hidden=false;});
+$("#n-stop").addEventListener("click",()=>nCtl&&nCtl.abort());
+$("#n-panel").addEventListener("click",async()=>{
+  if(!sampleFn)return;
+  if(!lastAudit)nRun();if(!lastAudit)return;
+  const before=lastAudit,text=$("#nf").value;
+  nCtl=new AbortController();$("#n-panel").disabled=true;$("#n-go").disabled=true;$("#n-stop").hidden=false;
+  $("#n-status").textContent="The panel is reviewing. This takes about a minute.";
+  try{
+    const data=await sampleFn.json(panelPrompt(before,text),{signal:nCtl.signal,modelTier:"complex",onText:({text})=>{$("#n-status").textContent="Panel writing · "+text.length+" characters";}});
+    const fl=(arr)=>(Array.isArray(arr)?arr:[]).map(r=>`${String(r.name||"").replace(/[|\n]/g," ")} | ${String(r.cas||"").replace(/[^\d-]/g,"")} | ${Number(r.pct)||0}`).filter(l=>!/\|\s*0$/.test(l));
+    const free=fl(data.free),cap=fl(data.capsule);
+    if(!free.length&&!cap.length)throw{code:"invalid_json"};
+    const revised=(free.length?"= Panel revision (free oil)\n"+free.join("\n")+"\n":"")+(cap.length?"\n= Panel revision (capsule)\n"+cap.join("\n")+"\n":"");
+    const after=runAudit(revised,before.ctx);
+    const panelHtml=(Array.isArray(data.panel)?data.panel:[]).map(p=>`<div class="box"><span class="eyebrow">Panelist ${esc(p.who||"")} · ${esc({A:"functional perfumer",B:"fine-fragrance perfumer",C:"evaluator and chemist"}[p.who]||"")}</span><ul>${(Array.isArray(p.issues)?p.issues:[]).slice(0,5).map(i=>`<li><b>${esc(i.title||"")}</b> <span class="src">${esc(i.severity||"")}</span><br>${esc(i.fix||"")}</li>`).join("")}</ul></div>`).join("");
+    const met=(A)=>{const d=A.tps.find(t=>t[0]==="dryer")?"dryer":A.tps[1][0];const offMax=Math.max(0,...A.tps.map(([t])=>Math.max(0,...[...A.ctx.avoid].map(g=>A.tp[t].off[g]||0))));
+      return{fail:A.checks.filter(c=>c.sev==="fail").length,warn:A.checks.filter(c=>c.sev==="warn").length,b:Math.round(A.tp[A.tps[0][0]].sim*100),d:Math.round(A.tp[d].sim*100),e:Math.round(A.tp[A.tps[A.tps.length-2][0]].sim*100),mw:Math.round(A.tp[d].mw*100),off:Math.round(offMax*100)};};
+    const mb=met(before),ma=after?met(after):null;
+    const row=(l,a,b,better)=>`<tr><td>${l}</td><td class="num">${a}</td><td class="num">${b===null?"·":b}</td><td>${b===null?"":better(a,b)?'<span class="sev sev-pass">better</span>':a===b?"same":'<span class="sev sev-warn">worse</span>'}</td></tr>`;
+    const lo=(a,b)=>b<a,hi=(a,b)=>b>a;
+    $("#n-a2").innerHTML=`<div class="panel fade"><div class="panel-h"><span class="eyebrow">Senior panel review · Claude proposed, the audit checked</span></div>
+      <p>${esc(data.summary||"")}</p><div class="grid3" style="margin-top:12px">${panelHtml}</div>
+      <div class="tablewrap" style="margin-top:12px"><table class="ref" style="min-width:420px"><thead><tr><th>Measure</th><th class="num">Before</th><th class="num">After</th><th></th></tr></thead><tbody>
+      ${row("Fails",mb.fail,ma&&ma.fail,lo)}${row("Checks",mb.warn,ma&&ma.warn,lo)}${row("Target similarity in bottle",mb.b,ma&&ma.b,hi)}${row("Target similarity after dryer",mb.d,ma&&ma.d,hi)}${row("Target similarity at 21 days",mb.e,ma&&ma.e,hi)}${row("Musk + wood share after dryer, %",mb.mw,ma&&ma.mw,lo)}${row("Worst forbidden-note share, %",mb.off,ma&&ma.off,lo)}
+      </tbody></table></div>
+      <div class="panel-h" style="margin-top:14px"><span class="eyebrow">Revised formula, ready to paste back or send</span><button class="btn ghost" id="n-copyrev" style="padding:6px 12px">Copy</button></div>
+      <textarea class="nf small" id="n-rev" readonly>${esc(revised)}</textarea>
+      <div class="actions"><button class="btn ghost" id="n-userev">Load the revision into the audit</button></div></div><div id="n-a3"></div>`;
+    if(after)renderAudit(after,"Audit of the panel revision",$("#n-a3"));
+    $("#n-copyrev").onclick=()=>copyText($("#n-rev"));
+    $("#n-userev").onclick=()=>{$("#nf").value=revised;nRun();$("#nose").scrollIntoView({behavior:"smooth"});};
+    $("#n-status").textContent="Panel review done.";
+  }catch(e){
+    if(e&&e.code==="cancelled")$("#n-status").textContent="Stopped.";
+    else{$("#n-status").textContent=ERR[e&&e.code]||"The panel could not finish. The paper audit is still shown.";if(e&&(e.code==="not_granted"||e.code==="sampling_disabled"))$("#n-panel").hidden=true;}
+  }finally{$("#n-panel").disabled=false;$("#n-go").disabled=false;$("#n-stop").hidden=true;}
+});
+function copyText(ta){const v=ta.value;navigator.clipboard&&navigator.clipboard.writeText?navigator.clipboard.writeText(v).then(()=>{$("#n-status").textContent="Copied.";},()=>{ta.focus();ta.select();}):(ta.focus(),ta.select());}
+
+/* ---------- Gemini data check ---------- */
+function geminiPrompt(){
+  const list=MDB.filter(m=>m.imp>0).map(m=>`${m.name} ; ${m.cas}`).join("\n");
+  return `You are a fragrance raw-materials data specialist. For each material below, look up reliable data from PubChem, The Good Scents Company, ScenTree, supplier technical data sheets (Givaudan, IFF, dsm-firmenich, Symrise) and the IFRA Standards library. Cite where each value came from.
+
+Return ONLY a CSV with this exact header and one row per material:
+name,cas,logP,boiling_point_C,odour_impact_1_to_10,ifra_status,eu_allergen,source
+
+Column rules:
+- logP: octanol/water partition coefficient, measured if available, else a calculated value (say which in source).
+- boiling_point_C: at 760 mmHg. If only a reduced-pressure value exists, convert it and say so.
+- odour_impact_1_to_10: odour strength in use, 1 = almost odourless (like benzyl benzoate), 4 = medium (like Hedione), 7 = strong (like beta-damascenone), 10 = extreme (like geosmin). Use odour detection thresholds where published.
+- ifra_status: prohibited, restricted, specification or none, under the IFRA 51st Amendment. For restricted, add the Category 10A limit if published.
+- eu_allergen: yes if on the EU list of fragrance allergens requiring labelling (including the 2023 expansion), else no.
+- Use ? for anything you cannot verify. Do not guess silently.
+
+Materials (name ; CAS):
+${list}`;
+}
+$("#n-gem").value=geminiPrompt();
+$("#n-gem-copy").addEventListener("click",()=>{const ta=$("#n-gem");if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(ta.value).then(()=>{$("#n-imp-status").textContent="Prompt copied.";},()=>{ta.focus();ta.select();});else{ta.focus();ta.select();}});
+function renderDB(){
+  $("#n-db tbody").innerHTML=MDB.filter(m=>m.imp>0).map(withOvr).map(m=>`<tr><td>${esc(m.name)}${m.ovr?' <span class="src">your data</span>':CHECKED.has(m.cas)?' <span class="src">source-checked</span>':' <span class="src">est.</span>'}</td><td class="mono">${m.cas}</td><td class="num">${m.logP}</td><td class="num">${m.bp}</td><td class="num">${m.imp}</td><td>${DIMS.filter((d,i)=>m.v[i]>=1.5).map(d=>DS[d]).join(", ")}</td><td>${[...m.tags.map(g=>OFF[g]),...m.chem.map(c=>({a:"aldehyde",e:"ester",l:"lactone",c:"colour",o:"oxidises",w:"water soluble"}[c])),...m.reg.map(r=>({A:"allergen",A2:"allergen (2023 list)",R:"IFRA restricted",S:"IFRA spec",P:"prohibited",B:"Sion banned",X:"EU CLP Repr. 2"}[r]))].join(", ")}</td></tr>`).join("");
+}
+renderDB();
+$("#n-imp-go").addEventListener("click",()=>{
+  const lines=$("#n-imp").value.split(/\r?\n/).map(l=>l.trim()).filter(Boolean);let n=0;
+  for(const l of lines){const c=l.split(",").map(x=>x.trim().replace(/^"|"$/g,""));const cas=(c.find(x=>/^\d{2,7}-\d{2}-\d$/.test(x))||"");if(!cas||!BYCAS[cas])continue;
+    const ci=c.indexOf(cas);const num=x=>{const v=parseFloat(x);return isFinite(v)?v:null;};
+    const o={};const lp=num(c[ci+1]),bp=num(c[ci+2]),im=num(c[ci+3]);
+    if(lp!==null)o.logP=lp;if(bp!==null&&bp>50&&bp<600)o.bp=bp;if(im!==null&&im>=1&&im<=10)o.imp=+Math.pow(10,(im-4)/1.5).toFixed(3);
+    const ifra=(c[ci+4]||"").toLowerCase(),alg=(c[ci+5]||"").toLowerCase();const reg=BYCAS[cas].reg.filter(r=>!["R","S","P","A","A2"].includes(r));
+    if(/prohib/.test(ifra))reg.push("P");else if(/restrict/.test(ifra))reg.push("R");else if(/spec/.test(ifra))reg.push("S");else if(ifra!=="none"&&ifra!=="?")reg.push(...BYCAS[cas].reg.filter(r=>["R","S","P"].includes(r)));
+    if(alg==="yes")reg.push("A");else if(alg==="?")reg.push(...BYCAS[cas].reg.filter(r=>r==="A"||r==="A2"));
+    o.reg=[...new Set(reg)];
+    OVR[cas]=o;n++;}
+  try{localStorage.setItem("sion-mdb-ovr",JSON.stringify(OVR));}catch(e){}
+  $("#n-imp-status").textContent=n?n+" materials updated in this browser. Send the CSV to Claude to make it permanent for everyone.":"No rows matched a CAS number in the database.";
+  renderDB();if(lastAudit)nRun();
+});
+$("#n-imp-clear").addEventListener("click",()=>{OVR={};try{localStorage.removeItem("sion-mdb-ovr");}catch(e){}renderDB();$("#n-imp-status").textContent="Back to built-in estimates.";if(lastAudit)nRun();});
+nRun();
 
 /* ---------- Reference sections ---------- */
 const LAYERS=[
