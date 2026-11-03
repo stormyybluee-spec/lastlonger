@@ -299,6 +299,7 @@ textarea.nf.small{min-height:150px}
           <div class="nums"><label>Free oil <input id="n-free" type="number" min="0" step="0.1" value="8.5"> g</label><label>Capsule oil <input id="n-cap" type="number" min="0" step="0.1" value="2.5"> g</label></div></div>
         <div class="lens-row"><span class="lab">Capsule oil is</span><div class="seg" id="n-encap"></div></div>
         <div class="lens-row"><span class="lab">Dryer</span><div class="seg" id="n-dryer"></div></div>
+        <div class="lens-row" hidden><span class="lab">Audit which formula</span><select id="n-which" class="txt"></select></div>
         <div class="lens-row"><span class="lab">Smell target</span><input id="n-target" class="txt" type="text" value="chilled sweet chrysanthemum tea with honey and hay"></div>
         <div class="lens-row"><span class="lab">The brief forbids</span><div class="seg" id="n-avoid"></div></div>
       </div>
@@ -316,6 +317,21 @@ textarea.nf.small{min-height:150px}
     <div class="box"><span class="eyebrow">What it cannot catch</span><h3>Only a nose can</h3><ul><li>Whether the accord is beautiful, and whether it reads as chrysanthemum tea rather than "a nice floral"</li><li>How one supplier's natural oil differs from another's</li><li>How a specific detergent base flattens or bends a note</li><li>Musk anosmia: some people barely smell certain musks</li></ul></div>
     <div class="box"><span class="eyebrow">Fastest route to world class</span><h3>Measure the target, not just describe it</h3><p>Ask the OEM for a headspace GC-MS of your reference drink and of the lab tea. That lists the molecules that actually make the smell. Paste those into the brain as a target accord, and every formula can be scored against the real thing instead of a description.</p></div>
   </div>
+  <div class="box"><span class="eyebrow">12 senior perfumer rules, now automatic</span><h3>Written by the review panel, checked on every audit</h3>
+    <div class="tablewrap" style="margin-top:6px"><table class="ref" style="min-width:560px"><thead><tr><th>Rule</th><th>Limit</th><th>Why</th></tr></thead><tbody>
+    <tr><td>Expand before checking</td><td>Accords, dilutions and natural oils broken into molecules, free and capsule oil weighted together</td><td>A formula can pass or fail a cap depending on how you count</td></tr>
+    <tr><td>Forbidden characters by mass</td><td>Marine or melon 0.01% · geosmin 1 ppm, none in capsules · camphor index 0.1% · candy index 0.05%</td><td>Potent traces break a brief far below 0.1%</td></tr>
+    <tr><td>Dryer-proof target core</td><td>10% or more of free oil smells of the target with bp 250 °C+ and logP 3.5+</td><td>This is all that is left after a hot dryer</td></tr>
+    <tr><td>Musk and wood</td><td>35% or less of free oil by weight</td><td>Above this it dries down to generic clean musk</td></tr>
+    <tr><td>Water loss</td><td>logP under 2.5 at 5% or less of free oil, never in capsules</td><td>It rinses away and only scents the bottle</td></tr>
+    <tr><td>Capsule oil</td><td>80% or more at logP 3.5+, nothing under 3, no odourless payload</td><td>Surfactant pulls low-logP materials through the shell</td></tr>
+    <tr><td>Amine compatibility</td><td>Aldehydes 0.3% or less with amino silicone</td><td>Schiff bases yellow the liquid and the fabric</td></tr>
+    <tr><td>Colour formers</td><td>Maltols, vanillins, heliotropin, eugenol, safranal 0.1% or less</td><td>A pale gold base shows every shift</td></tr>
+    <tr><td>Oxidation</td><td>Antioxidant when citrus and spice terpenes pass 1.5%</td><td>Oxidised terpenes smell stale and sensitise skin</td></tr>
+    <tr><td>Hydrolysis</td><td>Flag acetates, maltol esters, δ-lactones in watery bases with lipase</td><td>They break down in storage</td></tr>
+    <tr><td>Potent ceilings</td><td>Damascenone 0.1% · Javanol 0.1% · Ambroxan 1.5% · Ebanol 0.5%</td><td>They dominate the dry-down by odour strength</td></tr>
+    <tr><td>Distinctness</td><td>Versions in a set 90 or less similar at the dryer stage</td><td>Otherwise you pay to test the same scent twice</td></tr>
+    </tbody></table></div></div>
   <details class="lens" id="n-data">
     <summary>Material data and the Gemini check <span>the numbers behind the audit, and how to verify them</span></summary>
     <div class="lens-grid">
@@ -1058,9 +1074,9 @@ const MDB_RAW=[
 ["Dihydroactinidiolide","17092-92-1",2.3,292,8,"sweet:1,woodyDry:1,musky:1,nutty:0.5","","l","",1],
 ["Borneol","507-70-0",2.7,213,5,"aromatic:2,earthy:1,woodyDry:0.5","ca,md","","",1],
 ["Theaspirane","36431-72-8",4.1,220,15,"green:1,fruity:1,woodyDry:1,aromatic:1","","","",1],
-["beta-Damascenone","23696-85-7",4.04,275,300,"fruity:2,floralRose:1.5,sweet:1","","","R,A2",0.5,"damascenone"],
+["beta-Damascenone","23696-85-7",4.04,275,300,"fruity:2,floralRose:1.5,sweet:1","","","R,A2",0.1,"damascenone"],
 ["1,8-Cineole","470-82-6",2.74,176,6,"aromatic:2,aquatic:0.5,spicyFresh:1","ca,md","","A2",2,"eucalyptol|cineole"],
-["Safranal","116-26-7",2.5,218,40,"spicyWarm:1,leather:1,powdery:0.5,sweet:0.5","md","a,o","",0.5],
+["Safranal","116-26-7",2.5,218,40,"spicyWarm:1,leather:1,powdery:0.5,sweet:0.5","md","a,o,c","",0.1],
 ["Phenethyl phenylacetate","102-20-5",4.0,325,1.5,"sweet:2,floralRose:1,animalic:0.5","","e","",10,"phenylethyl phenylacetate"],
 ["Ethylene brassylate","105-95-3",4.5,332,0.5,"musky:3,sweet:0.5,powdery:0.5","","e","",30,"musk t|astrotone"],
 ["Phenoxyethyl isobutyrate","103-60-6",3.1,265,0.8,"floralRose:1,fruity:1,sweet:1","","e","",20],
@@ -1068,9 +1084,9 @@ const MDB_RAW=[
 ["gamma-Undecalactone","104-67-6",3.1,286,10,"fruity:3,lactonic:2,sweet:1","cy","l","",5,"undecalactone|aldehyde c-14|peach aldehyde"],
 ["Ethyl maltol","4940-11-8",0.6,290,15,"sweet:3,cocoa:0.5","cy","c,w","",2],
 ["Heliotropin","120-57-0",1.05,263,2.5,"powdery:2,sweet:1.5,nutty:0.5,floralWhite:0.5","cy","c,a,w","R",10,"piperonal"],
-["delta-Decalactone","705-86-2",2.6,281,4,"lactonic:3,sweet:1,nutty:0.5","","l","",5,"decalactone"],
+["delta-Decalactone","705-86-2",2.6,281,4,"lactonic:3,sweet:1,nutty:0.5","","l,h","",5,"decalactone"],
 ["gamma-Dodecalactone","2305-05-7",4.1,300,5,"fruity:2,lactonic:2,sweet:1","","l","",5,"dodecalactone"],
-["Maltol isobutyrate","65416-14-0",1.9,260,4,"sweet:2,fruity:1","cy","e,c","",3],
+["Maltol isobutyrate","65416-14-0",1.9,260,4,"sweet:2,fruity:1","cy","e,c,h","",3],
 ["Dihydromyrcenol","18479-58-8",3.1,195,1.5,"citrus:2,aquatic:1,aldehydic:1","so","","",30,"dhm"],
 ["Tetrahydrolinalool","78-69-3",3.6,199,0.8,"floralWhite:1,citrus:1,aquatic:0.5","","","",30],
 ["Verdox","88-41-5",4.1,221,1.2,"fruity:1,woodyDry:1,green:1","","e","",20,"tert-butylcyclohexyl acetate"],
@@ -1081,9 +1097,9 @@ const MDB_RAW=[
 ["Melonal","106-72-9",3.0,185,80,"fruity:2,aquatic:2,green:1","ml,m","a,o","",0.5],
 ["Aldehyde C-12 MNA","110-41-8",4.9,232,40,"aldehydic:3,mineral:1,citrus:0.5,woodyDry:0.5","so,me","a,o","",1,"methyl nonyl acetaldehyde|mna"],
 ["Iso E Super","54464-57-2",5.2,290,0.5,"woodyDry:2,woodyCreamy:1,amber:0.5","","","A2,R",40,"iso e"],
-["cis-3-Hexenyl acetate","3681-71-8",2.4,169,8,"green:3,fruity:1","","e","",2,"hexenyl acetate"],
-["Ambroxan","6790-58-5",5.0,275,15,"amber:2,mineral:1.5,musky:1.5,woodyDry:0.5","","","",10,"ambrox|ambrofix|ambroxide"],
-["Geosmin","19700-21-1",3.6,270,3000,"earthy:3,mineral:1","mu,ea","","",0.005],
+["cis-3-Hexenyl acetate","3681-71-8",2.4,169,8,"green:3,fruity:1","","e,h","",2,"hexenyl acetate"],
+["Ambroxan","6790-58-5",5.0,275,15,"amber:2,mineral:1.5,musky:1.5,woodyDry:0.5","","","",1.5,"ambrox|ambrofix|ambroxide"],
+["Geosmin","19700-21-1",3.6,270,3000,"earthy:3,mineral:1","mu,ea","","",0.0001],
 ["Galaxolide 50","1222-05-5",5.9,330,0.8,"musky:3,powdery:1,floralWhite:0.5","","","A2",30,"galaxolide|hhcb"],
 ["Cashmeran","33704-61-9",4.2,256,3,"woodyCreamy:1.5,musky:1.5,earthy:0.5,powdery:0.5","","","",10],
 ["Sandalore","65113-99-7",4.4,293,1.2,"woodyCreamy:3,lactonic:0.5","","","",15],
@@ -1091,10 +1107,10 @@ const MDB_RAW=[
 ["alpha-Irone","79-69-6",4.2,255,8,"powdery:3,woodyCreamy:1,earthy:0.5","","","",2,"irone"],
 ["Geraniol","106-24-1",3.6,230,2,"floralRose:2.5,citrus:0.5","","o","A,R",10],
 ["Safraleine","54440-17-4",4.6,280,20,"leather:2,spicyWarm:1,powdery:0.5","md","","",1],
-["Ebanol","67801-20-1",4.6,291,6,"woodyCreamy:3,musky:0.5","","","A2",5],
-["Javanol","198404-98-7",5.0,295,20,"woodyCreamy:3,fruity:0.5","","","",1],
+["Ebanol","67801-20-1",4.6,291,6,"woodyCreamy:3,musky:0.5","","","A2",0.5],
+["Javanol","198404-98-7",5.0,295,20,"woodyCreamy:3,fruity:0.5","","","",0.1],
 ["Stemone","22457-23-4",3.5,230,15,"green:3,fruity:0.5","","","",1],
-["Benzyl acetate","140-11-4",1.96,212,2,"floralWhite:2,fruity:1","","e,w","",20],
+["Benzyl acetate","140-11-4",1.96,212,2,"floralWhite:2,fruity:1","","e,w,h","",20],
 ["Citronellol","106-22-9",3.9,225,1.2,"floralRose:2,citrus:0.5","","o","A,R",15],
 ["Patchouli oil","8014-09-3",5.0,285,3,"earthy:3,woodyDry:1,cocoa:0.5","mu,ea","","",10,"patchouli"],
 ["Vetiver oil","8016-96-4",4.5,290,3,"earthy:2,woodyDry:2,smoky:1","ea","","",10,"vetiver"],
@@ -1125,6 +1141,20 @@ const MDB_RAW=[
 ["Norlimbanol","70788-30-6",5.0,290,6,"woodyDry:3,amber:1","","","",5,"timberol"],
 ["Indole","120-72-9",2.1,254,60,"animalic:3,floralWhite:1","","c","",0.5],
 ["Eugenol","97-53-0",2.3,254,6,"spicyWarm:3","md","c,w","A,R",3],
+["Dihydro-beta-ionone","17283-81-7",4.2,260,4,"woodyDry:1.5,powdery:1.5,fruity:0.5,floralRose:0.5","","","",10,"dihydro beta ionone|dihydroionone"],
+["Megastigmatrienone (Tabanon)","38818-55-1",3.6,285,30,"smoky:1,sweet:1,woodyDry:1,aromatic:1","","","",0.5,"megastigmatrienone|tabanon"],
+["cis-Jasmone","488-10-8",3.5,248,15,"floralWhite:2,green:1,fruity:0.5","","","",1,"jasmone"],
+["Linalool oxide (furanoid)","60047-17-8",1.9,193,4,"aromatic:1.5,woodyDry:1,floralWhite:0.5,green:0.5","","","",3,"linalool oxide"],
+["Isobutyl phenylacetate","102-13-6",3.4,247,3,"sweet:2,floralRose:1,animalic:0.5","","e","",5],
+["Vetiveryl acetate","62563-80-8",5.5,285,2,"woodyDry:2,earthy:1.5,smoky:0.5","","e","",10],
+["Undecavertol","81782-77-6",3.4,230,4,"green:2.5,aquatic:1","","","",3],
+["Tridecenenitrile (Ozonil)","22629-49-8",5.0,280,8,"aquatic:1.5,citrus:1,aldehydic:1.5,mineral:1","m","","",2,"tridecenenitrile|ozonil"],
+["Mayol","13828-37-0",2.6,230,1,"floralWhite:2,aquatic:0.5","","","",15],
+["Heliotropyl acetone","55418-52-5",1.9,300,2,"powdery:1.5,sweet:1,floralWhite:0.5","","","",2],
+["Ethyl vanillin PG acetal","68527-76-4",1.9,340,3,"sweet:3","cy","","",2,"vanillin pg acetal|ethyl vanillin propylene glycol acetal"],
+["Camphor","76-22-2",2.4,204,6,"aromatic:2,woodyDry:0.5","ca,md","","A2",0.5],
+["Maltol","118-71-8",0.1,285,6,"sweet:3,cocoa:0.5","cy","c,w","",1],
+["Furaneol","3658-77-3",0.8,216,50,"sweet:3,fruity:1","cy","c,w","",0.2],
 ["Lilial","80-54-6",4.2,280,1.5,"floralWhite:2,aquatic:0.5","","a","P,B",0,"butylphenyl methylpropional"],
 ["Lyral (HICC)","31906-04-4",2.1,300,1,"floralWhite:2","","a","P,B",0,"lyral|hicc"],
 ["Musk ketone","81-14-1",4.3,330,1,"musky:3","","","B",0],
@@ -1147,6 +1177,8 @@ function findMat(name,cas){
   return best?withOvr(best):null;
 }
 const SOLV=MDB.find(m=>m.cas==="110-27-0");
+/* typical GC composition of natural oils, used to expand them before checking (verify by GC per lot) */
+const COMP={"8000-66-6":{"470-82-6":0.35},"68648-33-9":{"5989-27-5":0.35,"115-95-7":0.3,"78-70-6":0.1},"8008-26-2":{"5989-27-5":0.45},"8007-08-7":{"5989-27-5":0.05}};
 
 function parseFormulas(text){
   const accords={},forms=[];let cur=null;const CASRE=/\b(\d{2,7}-\d{2}-\d)\b/;
@@ -1175,7 +1207,9 @@ function expandForm(form,accords,depth,out){
     }
     const m=findMat(r.name,r.cas);
     const dl=r.name.match(/(\d+(?:\.\d+)?)\s*%\s*(?:in|sol)/i);const f=dl?Math.min(1,parseFloat(dl[1])/100):1;
-    addRow(out,m?m.cas:(r.cas||r.name.toLowerCase()),m,m?m.name:(r.name||"Unnamed"),r.pct*f,[]);
+    const comp=m&&COMP[m.cas];
+    if(comp){let used=0;for(const[c,fr]of Object.entries(comp)){const cm=withOvr(BYCAS[c]);addRow(out,c,cm,cm.name,r.pct*f*fr,[m.name]);used+=fr;}addRow(out,m.cas,m,m.name,r.pct*f*(1-used),[]);}
+    else addRow(out,m?m.cas:(r.cas||r.name.toLowerCase()),m,m?m.name:(r.name||"Unnamed"),r.pct*f,[]);
     if(f<1)addRow(out,SOLV.cas,SOLV,SOLV.name,r.pct*(1-f),[]);
   }
   return out;
@@ -1207,11 +1241,11 @@ function factorCapIntact(t,ctx){
   const dep=0.3;
   return{bottle:0.02,wet:dep*0.05,line:dep*0.12,dryer:dep*(ctx.dryer==="vented"?0.2:0.12),h24:dep*0.1,d7:dep*0.08,d21:dep*0.06,rub:dep*1.0}[t]||0;
 }
-function runAudit(text,ctx){
+function runAudit(text,ctx,which){
   const parsed=parseFormulas(text);
   let forms=parsed.forms;
   if(!forms.length){const acc=Object.values(parsed.accords);if(acc.length)forms=[{kind:"free",title:acc[0].title,rows:[{name:acc[0].code,cas:"",pct:100}]}];}
-  const freeF=forms.find(f=>f.kind==="free"),capF=forms.find(f=>f.kind==="capsule");
+  const frees=forms.filter(f=>f.kind==="free");const freeF=frees[Math.min(which||0,Math.max(0,frees.length-1))],capF=forms.find(f=>f.kind==="capsule");
   if(!freeF&&!capF)return null;
   const F=freeF?expandForm(freeF,parsed.accords,0):{},C=capF?expandForm(capF,parsed.accords,0):{};
   const sumF=Object.values(F).reduce((s,x)=>s+x.pct,0)||0,sumC=Object.values(C).reduce((s,x)=>s+x.pct,0)||0;
@@ -1246,6 +1280,8 @@ function names(list,n){return list.slice(0,n||4).map(x=>x.name+(x.v!==undefined?
 const pc=x=>(x*100).toFixed(x<0.1?1:0)+"%";
 function makeChecks(items,tp,tps,ctx,sumF,sumC){
   const ck=[],add=(sev,area,title,detail)=>ck.push({sev,area,title,detail});
+  const W=ctx.prod==="edp"?[1,0]:[ctx.free,ctx.cap];const tot=it=>(it.pf*W[0]+it.pc*W[1])/((W[0]+W[1])||1);
+  const byCas=c=>items.filter(it=>it.m.cas===c).reduce((s,it)=>s+tot(it),0);
   const laundry=ctx.prod!=="edp";
   if(sumF&&Math.abs(sumF-100)>0.6)add("warn","Structure","Free oil adds up to "+sumF.toFixed(1)+"%","The audit rescales it to 100. Fix the paper formula so the OEM is not left guessing.");
   if(sumC&&Math.abs(sumC-100)>0.6)add("warn","Structure","Capsule oil adds up to "+sumC.toFixed(1)+"%","Rescaled to 100 for the audit.");
@@ -1270,30 +1306,36 @@ function makeChecks(items,tp,tps,ctx,sumF,sumC){
     /* 4 wash waste */
     const waste=items.filter(it=>it.m.logP<2.5).reduce((s,it)=>s+it.pf,0);
     const wl=items.filter(it=>it.m.logP<2.5&&it.pf>0).sort((a,b)=>b.pf-a.pf).map(it=>({name:it.name,v:it.pf.toFixed(1)+"%"}));
-    add(waste>40?"fail":waste>25?"warn":"pass","Wash survival",pc(waste/100)+" of the free oil mostly rinses away (logP under 2.5)",wl.length?"Largest: "+names(wl,4)+". These still help the bottle and wet smell.":"Nearly everything is oily enough to stay on fabric.");
+    add(waste>20?"fail":waste>5?"warn":"pass","Wash survival",pc(waste/100)+" of the free oil mostly rinses away (logP under 2.5, rule: 5% or less)",wl.length?"Largest: "+names(wl,4)+". These still help the bottle and wet smell.":"Nearly everything is oily enough to stay on fabric.");
     /* 5 dryer loss */
     const light=items.filter(it=>it.m.bp<230).reduce((s,it)=>s+it.pf,0);
     add(light>40?"warn":"info","Wash survival",pc(light/100)+" of the free oil boils below 230 °C","Expect it to leave through the "+(ctx.dryer==="vented"?"vented dryer at up to 90 °C":"dryer")+". Fine for bottle and wash bloom, wasted for dry fabric.");
   }
   /* 6 aldehydes and amines */
-  const ald=items.filter(it=>it.m.chem.includes("a"));const aldT=ald.reduce((s,it)=>s+it.pf+it.pc*(ctx.cap/(ctx.free||1)),0);
-  if(ald.length){const amine=ctx.prod==="amino";add(amine&&aldT>3?"fail":amine&&aldT>1?"warn":"info","Base chemistry","Aldehydes: "+aldT.toFixed(2)+"% of the oil"+(amine?" in a base with amino silicone":""),
-    names(ald.map(it=>({name:it.name,v:(it.pf||it.pc).toFixed(2)+"%"})),5)+". "+(amine?"Aldehydes react with the amine groups of amino silicone (Schiff bases). That can yellow the liquid and weaken the note. Ask the OEM to run these in the final base at 40 °C first.":"Watch for oxidation in storage."));}
+  const ald=items.filter(it=>it.m.chem.includes("a"));const aldT=ald.reduce((s,it)=>s+tot(it),0);
+  if(ald.length){const amine=ctx.prod==="amino";add(amine&&aldT>1?"fail":amine&&aldT>0.3?"warn":amine?"pass":"info","Base chemistry","Aldehydes: "+aldT.toFixed(2)+"% of total oil"+(amine?" in a base with amino silicone (rule: 0.3% or less)":""),
+    names(ald.map(it=>({name:it.name,v:tot(it).toFixed(2)+"%"})),5)+". "+(amine?"Aldehydes react with the amine groups of amino silicone (Schiff bases). That can yellow the liquid and weaken the note. Ask the OEM to run these in the final base at 40 °C first.":"Watch for oxidation in storage."));}
   /* 7 colour */
   const col=items.filter(it=>it.m.chem.includes("c")&&(it.pf+it.pc)>0);
-  if(col.length)add("warn","Base chemistry","Colour risk: "+names(col.map(it=>({name:it.name})),5),"These can turn yellow, pink or brown with light, iron or high pH. Keep them low, or test in the clear bottle at 40 °C.");
+  if(col.length){const cT=col.reduce((s,it)=>s+tot(it),0);add(cT>0.5?"fail":cT>0.1?"warn":"pass","Base chemistry","Colour formers: "+cT.toFixed(2)+"% of total oil (rule: 0.1% or less in a pale base)",names(col.map(it=>({name:it.name,v:tot(it).toFixed(2)+"%"})),5)+". Maltols bind iron and turn red-orange, vanillins and heliotropin yellow. Keep a chelant in the base and test in the final bottle at 40 °C.");}
   /* 8 oxidation */
-  const ox=items.filter(it=>it.m.chem.includes("o")).reduce((s,it)=>s+it.pf,0);
-  if(ox>12)add("info","Base chemistry",pc(ox/100)+" of the oil oxidises easily (terpenes, citrus, aldehydes)","Ask for an antioxidant in the oil, such as tocopherol or BHT, and nitrogen-flushed storage.");
+  const terp=byCas("5989-27-5")+items.filter(it=>COMP[it.m.cas]).reduce((s,it)=>s+tot(it)*0.3,0);
+  if(terp>1.5)add("warn","Base chemistry","Terpenes from citrus and spice oils: about "+terp.toFixed(1)+"% of total oil (rule: antioxidant above 1.5%)","Ask for 0.05 to 0.1% BHT or tocopherol in the oil, terpene-reduced citrus and nitrogen-flushed storage. Oxidised terpenes smell stale and become skin sensitisers.");
+  const hyd=items.filter(it=>it.m.chem.includes("h")&&tot(it)>0.02);
+  if(hyd.length&&ctx.prod!=="edp")add("info","Base chemistry","Breaks down in water over time: "+names(hyd.map(it=>({name:it.name,v:tot(it).toFixed(2)+"%"})),5),"Esters and lactones like these can hydrolyse in a watery base, faster with lipase enzyme. Run the 40 °C stability test with and without enzymes.");
   /* 9 capsule */
   if(laundry&&ctx.encap==="yes"&&items.some(it=>it.pc>0)){
-    const leaky=items.filter(it=>it.pc>0&&it.m.logP<3).sort((a,b)=>b.pc-a.pc);const lk=leaky.reduce((s,it)=>s+it.pc,0);
+    const good=items.filter(it=>it.pc>0&&it.m.logP>=3.5).reduce((s,it)=>s+it.pc,0);
+    const bad=items.filter(it=>it.pc>0&&it.m.logP<3).reduce((s,it)=>s+it.pc,0);
+    const leaky=items.filter(it=>it.pc>0&&it.m.logP<3.5).sort((a,b)=>b.pc-a.pc);
     const ws=items.filter(it=>it.pc>0&&it.m.chem.includes("w")).reduce((s,it)=>s+it.pc,0);
-    add(ws>1||lk>30?"fail":lk>15?"warn":"pass","Capsules",pc(lk/100)+" of the capsule oil has logP under 3"+(ws>0?" and "+ws.toFixed(1)+"% dissolves in water":""),leaky.length?"Likely to leak out of the capsule wall into the liquid: "+names(leaky.map(it=>({name:it.name,v:it.pc.toFixed(1)+"%"})),5)+". Capsule oils work best above logP 3.":"The capsule oil is oily enough to stay inside the shell.");
+    add(ws>1||bad>10||good<60?"fail":good<80||bad>0?"warn":"pass","Capsules",pc(good/100)+" of the capsule oil is at logP 3.5 or above (rule: 80% or more, nothing under 3)",leaky.length?"At risk of leaking through the shell into a high-surfactant liquid: "+names(leaky.map(it=>({name:it.name,v:it.pc.toFixed(1)+"%"})),6)+".":"The capsule oil is oily enough to stay inside the shell.");
+    const dud=items.filter(it=>it.pc>0&&it.m.imp<0.2&&it.m.imp>=0);const dudT=dud.reduce((s,it)=>s+it.pc,0);
+    if(dudT>3)add("warn","Capsules",dudT.toFixed(1)+"% of the capsule oil is nearly odourless","Wasted payload: "+names(dud.map(it=>({name:it.name,v:it.pc.toFixed(1)+"%"})),4)+". Spend capsule space on loud, long-lasting target notes.");
   }
   /* 10 overdose */
-  const od=items.filter(it=>it.m.max&&!it.m.unknown&&(it.pf>it.m.max||it.pc>it.m.max)&&it.m.max>0);
-  if(od.length)add("warn","Dosing","Above the usual working range: "+names(od.map(it=>({name:it.name,v:Math.max(it.pf,it.pc).toFixed(2)+"% (usual up to "+it.m.max+"%)"})),4),"Not wrong by itself, but check it is deliberate.");
+  const od=items.filter(it=>it.m.max>0&&!it.m.unknown&&tot(it)>it.m.max);
+  if(od.length)add("warn","Dosing","Above the usual working range: "+names(od.map(it=>({name:it.name,v:tot(it).toFixed(it.m.max<0.01?5:2)+"% of total oil (ceiling "+it.m.max+"%)"})),4),"Above the panel's potent-material ceiling or the usual working range. Keep it only if a named perfumer signs it off.");
   /* 11 loud traces */
   const t0=tps[0][0];const S0=tp[t0].S;const totM=items.reduce((s,it)=>s+it.pf+it.pc,0)||1;
   const loud=items.filter(it=>{const ps=it.P[t0]/S0,ms=(it.pf+it.pc)/totM;return ps>0.03&&ps>5*ms;}).sort((a,b)=>b.P[t0]-a.P[t0]);
@@ -1308,6 +1350,23 @@ function makeChecks(items,tp,tps,ctx,sumF,sumC){
   if(alg.length)add("info","Regulatory",alg.length+" allergens above 0.01% of the finished product","EU-style labelling would list: "+alg.slice(0,8).map(x=>x.name+" "+x.p.toFixed(3)+"%").join(", ")+". Singapore does not require this today, but export markets may.");
   const clp=items.filter(it=>it.m.reg.includes("X"));
   clp.forEach(it=>{const tot=it.pf;add(tot>=3?"warn":"info","Regulatory",it.name+" is "+tot.toFixed(1)+"% of the free oil","EU CLP now classes it as toxic to reproduction, category 2 (22nd ATP, check the date it applies). At 3% or more the fragrance oil itself must carry that hazard on its safety data sheet. The finished detergent is far below the limit, but EU export and some retailers screen oils. Consider moving part of it to cis-3-hexenyl salicylate or amyl salicylate.");});
+  /* senior rules: forbidden characters capped by mass on total oil (rule 2) */
+  const av=ctx.avoid;
+  if(av.has("m")||av.has("ml")){const mm=items.filter(it=>(it.m.tags.includes("m")||it.m.tags.includes("ml"))&&it.m.imp>=20);const t=mm.reduce((s,it)=>s+tot(it),0);if(mm.length)add(t>0.01?"fail":"pass","Senior rules","Strong marine or melon materials: "+t.toFixed(3)+"% of total oil (rule: 0.01% or less)",names(mm.map(it=>({name:it.name,v:tot(it).toFixed(3)+"%"})),4)+". These read marine or watermelon far below 0.1%.");}
+  if(av.has("mu")){const g=byCas("19700-21-1");const gc=items.filter(it=>it.m.cas==="19700-21-1"&&it.pc>0).length;if(g>0)add(g>0.0001||gc?"fail":"pass","Senior rules","Geosmin: "+(g*1e4).toFixed(2)+" ppm of total oil"+(gc?", including some in the capsule":"")+" (rule: 1 ppm or less, none in capsules)","Geosmin is detected at parts per trillion in water. After indoor drying and rewetting, earthy is scored as mildew.");
+    const pat=items.filter(it=>it.m.tags.includes("mu")&&it.m.cas!=="19700-21-1"&&tot(it)>0.2);if(pat.length)add("warn","Senior rules","Damp-earth materials: "+names(pat.map(it=>({name:it.name,v:tot(it).toFixed(2)+"%"})),3),"Patchouli-type earthiness can read as cellar or mildew on damp laundry. Consider vetiveryl acetate instead.");}
+  if(av.has("ca")){const ci=byCas("470-82-6")+byCas("76-22-2")+byCas("507-70-0")+0.3*byCas("76-49-3");if(ci>0)add(ci>0.1?"fail":"pass","Senior rules","Camphor index: "+ci.toFixed(2)+"% of total oil (rule: 0.1% or less)","Cineole + camphor + borneol + 0.3 × bornyl acetate, with cineole inside cardamom oil counted. In Singapore this reads as medicated oil. For herbal coolness use furanoid linalool oxides at 0.3 to 0.5%.");}
+  if(av.has("cy")){const cyi=byCas("4940-11-8")+byCas("118-71-8")+byCas("65416-14-0")+byCas("3658-77-3");if(cyi>0)add(cyi>0.05?"fail":"pass","Senior rules","Candy index: "+cyi.toFixed(2)+"% of total oil (rule: 0.05% or less)","Ethyl maltol, maltol, maltol esters and furaneol read as candyfloss. For cooked rock sugar try isobutyl phenylacetate and ethyl vanillin PG acetal.");}
+  /* dryer survival core (rule 3) */
+  if(laundry){
+    const tgt=analyze(ctx.target).target;const MW=new Set(["musky","woodyDry","woodyCreamy","amber"]);
+    const dom=it=>DIMS[argmax(it.m.v)];
+    const GENERIC=new Set(["6259-76-3","118-58-1","2050-08-0","120-51-4"]);const core=items.filter(it=>it.m.bp>=250&&it.m.logP>=3.5&&it.m.imp>=0.3&&!GENERIC.has(it.m.cas)&&!MW.has(dom(it))&&Math.hypot(...it.m.v)>0&&cosv(it.m.v,tgt)>=0.25);
+    const coreT=core.reduce((s,it)=>s+it.pf,0);
+    add(coreT<5?"fail":coreT<10?"warn":"pass","Senior rules","Dryer-proof target core: "+coreT.toFixed(1)+"% of free oil (rule: 10% or more)",(core.length?"Counted: "+names(core.sort((a,b)=>b.pf-a.pf).map(it=>({name:it.name,v:it.pf.toFixed(1)+"%"})),5)+". ":"")+"Target-smelling materials with boiling point 250 °C or more and logP 3.5 or more. Generic salicylates and near-odourless fixatives do not count. This is what is left to say tea after a hot dryer.");
+    const mwM=items.filter(it=>Math.hypot(...it.m.v)>0&&MW.has(dom(it))).reduce((s,it)=>s+it.pf,0);
+    add(mwM>42?"fail":mwM>35?"warn":"pass","Senior rules","Musk and wood by weight: "+mwM.toFixed(1)+"% of free oil (rule: 35% or less)","Counted inside accords too. Above this the dry-down drifts to generic clean musk.");
+  }
   /* 13 unknown */
   const unk=items.filter(it=>it.m.unknown);
   if(unk.length)add("warn","Data","Not in the material database: "+names(unk.map(it=>({name:it.name})),6),"Scored with neutral guesses. Add them through the Gemini check below.");
@@ -1353,9 +1412,22 @@ function renderAudit(A,label,el){
 function nctx(){return{prod:nstate.prod,free:Math.max(0,parseFloat($("#n-free").value)||0),cap:Math.max(0,parseFloat($("#n-cap").value)||0),encap:nstate.encap,dryer:nstate.dryer,target:$("#n-target").value||"tea",avoid:new Set(nstate.avoid)};}
 let lastAudit=null;
 function nRun(){
-  const A=runAudit($("#nf").value,nctx());
+  const parsed=parseFormulas($("#nf").value);const frees=parsed.forms.filter(f=>f.kind==="free");
+  const sel=$("#n-which");const prev=sel.value;
+  sel.innerHTML=frees.map((f,i)=>`<option value="${i}">${esc(f.title)}</option>`).join("");
+  sel.parentElement.hidden=frees.length<2;if(prev&&+prev<frees.length)sel.value=prev;
+  const which=+sel.value||0;
+  const A=runAudit($("#nf").value,nctx(),which);
   if(!A){$("#n-out").innerHTML=`<div class="panel"><p>No formula found. Start a formula with a line beginning "=", then one material per line with its %.</p></div>`;lastAudit=null;return;}
-  lastAudit=A;$("#n-out").innerHTML=`<div id="n-a1"></div><div id="n-a2"></div>`;renderAudit(A,"Paper audit",$("#n-a1"));$("#n-status").textContent="";
+  lastAudit=A;$("#n-out").innerHTML=`<div id="n-a1"></div><div id="n-dist"></div><div id="n-a2"></div>`;renderAudit(A,"Paper audit",$("#n-a1"));$("#n-status").textContent="";
+  if(frees.length>1){
+    const ctx=nctx(),stage=ctx.prod==="edp"?"h4":"dryer";
+    const all=frees.map((f,i)=>({t:f.title,A:runAudit($("#nf").value,ctx,i)}));
+    let rows="",worst=0;
+    for(let i=0;i<all.length;i++)for(let j=i+1;j<all.length;j++){const c=cosv(all[i].A.tp[stage].prof,all[j].A.tp[stage].prof);worst=Math.max(worst,c);
+      rows+=`<tr><td>${esc(all[i].t)}</td><td>${esc(all[j].t)}</td><td class="num">${Math.round(c*100)}</td><td>${c>0.9?'<span class="sev sev-fail">near duplicate</span>':c>0.85?'<span class="sev sev-warn">close</span>':'<span class="sev sev-pass">distinct</span>'}</td></tr>`;}
+    $("#n-dist").innerHTML=`<div class="panel fade"><div class="panel-h"><span class="eyebrow">Distinctness at the ${ctx.prod==="edp"?"4 hour":"dryer"} stage · rule: similarity 90 or less</span></div><p class="status">Similarity of what the nose notices after the dryer, where your selection happens. Two versions above 90 are effectively the same test sample.</p><div class="tablewrap" style="margin-top:8px"><table class="ref" style="min-width:460px"><thead><tr><th>Formula</th><th>Versus</th><th class="num">Similarity</th><th></th></tr></thead><tbody>${rows}</tbody></table></div></div>`;
+  }
 }
 
 /* ---------- presets: your Chrysanthemum R&D Brief v2 ---------- */
@@ -1423,6 +1495,24 @@ cis-3-Hexenyl acetate | 3681-71-8 | 1
 Calone | 28940-11-6 | 1
 Ambroxan | 6790-58-5 | 1
 Geosmin, 1% in IPM | 19700-21-1 | 0.5
+`;
+const NPRESETS_CAP1=`
+= CAP-1 Cold Sweet Tea (capsule)
+Hedione | 24851-98-7 | 15
+Linalyl acetate | 115-95-7 | 12
+Tetrahydrolinalool | 78-69-3 | 12
+beta-Ionone | 14901-07-6 | 10
+alpha-Isomethyl ionone | 127-51-5 | 8
+Phenethyl phenylacetate | 102-20-5 | 8
+Geranyl acetone | 3796-70-1 | 6
+Hexyl salicylate | 6259-76-3 | 6
+cis-3-Hexenyl salicylate | 65405-77-8 | 6
+gamma-Undecalactone | 104-67-6 | 5
+Verdox | 88-41-5 | 5
+Linalool | 78-70-6 | 3
+alpha-Bisabolol | 515-69-5 | 3
+Theaspirane | 36431-72-8 | 0.5
+beta-Damascenone | 23696-85-7 | 0.5
 `;
 const NPRESETS={
 "1.2 Golden Cup + CAP-1 (your brief)":ACC_CH+`
@@ -1494,6 +1584,64 @@ Theaspirane | 36431-72-8 | 0.5
 Geosmin, 1% in IPM | 19700-21-1 | 0.5
 beta-Damascenone | 23696-85-7 | 0.5
 `,
+"Set 1: 1.1, 1.2, 1.3 + CAP-1 (distinctness)":ACC_CH+`
+= 1.1 Ice and Ember (free oil)
+CH-3 Iced Tea Lift accord | 8
+Dihydromyrcenol | 18479-58-8 | 1
+Cardamom oil | 8000-66-6 | 1
+CH-1 Hangbaiju Dry Tea accord | 28
+CH-2 Rock Sugar accord | 8
+Hedione | 24851-98-7 | 4
+Geranyl acetone | 3796-70-1 | 1
+Iso E Super | 54464-57-2 | 10
+Galaxolide 50 | 1222-05-5 | 8
+Ethylene brassylate | 105-95-3 | 7
+Benzyl salicylate | 118-58-1 | 7
+Hexyl salicylate | 6259-76-3 | 6
+Guaiacwood oil | 8016-23-7 | 3
+Cashmeran | 33704-61-9 | 3
+Sandalore | 65113-99-7 | 2
+Habanolide | 111879-80-2 | 2
+Ambroxan | 6790-58-5 | 1
+
+= 1.2 Golden Cup (free oil)
+CH-3 Iced Tea Lift accord | 7
+Linalyl acetate | 115-95-7 | 2
+Verdox | 88-41-5 | 1
+CH-1 Hangbaiju Dry Tea accord | 32
+CH-2 Rock Sugar accord | 11
+Hedione | 24851-98-7 | 2
+Benzyl salicylate | 118-58-1 | 10
+Galaxolide 50 | 1222-05-5 | 9
+Ethylene brassylate | 105-95-3 | 9
+Iso E Super | 54464-57-2 | 8
+Hexyl salicylate | 6259-76-3 | 4
+Sandalore | 65113-99-7 | 3
+Cashmeran | 33704-61-9 | 1
+Ambroxan | 6790-58-5 | 1
+
+= 1.3 Rock Sugar Absolu (free oil)
+CH-3 Iced Tea Lift accord | 4
+Bergamot oil, FCF | 68648-33-9 | 3
+Linalyl acetate | 115-95-7 | 2
+Cardamom oil | 8000-66-6 | 1
+CH-1 Hangbaiju Dry Tea accord | 26
+CH-2 Rock Sugar accord | 12
+Hedione | 24851-98-7 | 3
+alpha-Irone | 79-69-6 | 0.5
+Geraniol | 106-24-1 | 0.3
+Safraleine | 54440-17-4 | 0.2
+Iso E Super | 54464-57-2 | 9
+Habanolide | 111879-80-2 | 8
+Ethylene brassylate | 105-95-3 | 7
+Benzyl salicylate | 118-58-1 | 7
+Sandalore | 65113-99-7 | 6
+Galaxolide 50 | 1222-05-5 | 4
+Cashmeran | 33704-61-9 | 3
+Ambroxan | 6790-58-5 | 2
+Ebanol | 67801-20-1 | 1.7
+Javanol | 198404-98-7 | 0.3
+`+NPRESETS_CAP1,
 "CH-3 Iced Tea Lift alone":ACC_CH.split("@CH-3")[0].replace(/[\s\S]*/,"")+"@CH-3"+ACC_CH.split("@CH-3")[1]+"\n= CH-3 on its own\nCH-3 accord | 100\n"
 };
 $("#n-presets").innerHTML=Object.keys(NPRESETS).map(k=>`<button class="chip" data-np="${esc(k)}">${esc(k)}</button>`).join("");
@@ -1508,7 +1656,7 @@ nseg($("#n-prod"),NPROD,k=>nstate.prod===k,k=>nstate.prod=k);
 nseg($("#n-encap"),NENCAP,k=>nstate.encap===k,k=>nstate.encap=k);
 nseg($("#n-dryer"),NDRY,k=>nstate.dryer===k,k=>nstate.dryer=k);
 nseg($("#n-avoid"),Object.fromEntries(Object.entries(OFF).map(([k,v])=>[k,{label:v}])),k=>nstate.avoid.has(k),k=>{nstate.avoid.has(k)?nstate.avoid.delete(k):nstate.avoid.add(k);});
-$("#n-go").addEventListener("click",nRun);
+$("#n-go").addEventListener("click",nRun);$("#n-which").addEventListener("change",nRun);
 ["n-free","n-cap","n-target"].forEach(id=>$("#"+id).addEventListener("change",()=>{if(lastAudit)nRun();}));
 
 /* ---------- Senior panel (Claude proposes, the audit disposes) ---------- */
@@ -1541,6 +1689,14 @@ ${s.tps}
 
 AUTOMATED AUDIT, OPEN ISSUES:
 ${s.chk||"none"}
+
+SENIOR RULES THE REVISION MUST MEET (percentages of total oil unless stated):
+- Strong marine or melon materials 0.01% or less. Geosmin 1 ppm or less and none in capsules.
+- Camphor index (cineole + camphor + borneol + 0.3 x bornyl acetate) 0.1% or less. Candy index (maltols, maltol esters, furaneol) 0.05% or less.
+- Dryer-proof target core (target-smelling, bp 250 C or more, logP 3.5 or more) 10% or more of free oil. Musk and wood 35% or less of free oil by weight.
+- logP under 2.5 at 5% or less of free oil. Capsule oil 80% or more at logP 3.5 or above, nothing under 3, no near-odourless payload.
+- With amino silicone: aldehydes 0.3% or less. Colour formers 0.1% or less. Antioxidant if citrus terpenes pass 1.5%.
+- Ceilings: damascenone 0.1%, Javanol 0.1%, Ambroxan 1.5%, Ebanol 0.5%.
 
 TASK
 1. Each panelist gives the 2 to 4 most important issues from their expertise. Be quantitative. Judge potent traces by odour strength, not mass.
