@@ -244,7 +244,7 @@ textarea.nf.small{min-height:150px}
     <div class="stat"><span class="n mono">93</span><span class="l">materials with physics in the Virtual Nose</span></div>
   </div>
   <nav class="toc" aria-label="Sections">
-    <a href="#composer">01 Composer</a><a href="#nose">02 Virtual Nose</a><a href="#architecture">03 Architecture</a><a href="#heads">04 Three heads</a><a href="#ladder">05 Translation rules</a><a href="#cases">06 Hard briefs</a><a href="#palette">07 Palette</a><a href="#learning">08 Learning loop</a><a href="#landscape">09 Landscape</a><a href="#roadmap">10 Roadmap</a>
+    <a href="#composer">01 Composer</a><a href="#nose">02 Virtual Nose</a><a href="#verify">03 Gemini data check</a><a href="#architecture">04 Architecture</a><a href="#heads">05 Three heads</a><a href="#ladder">06 Translation rules</a><a href="#cases">07 Hard briefs</a><a href="#palette">08 Palette</a><a href="#learning">09 Learning loop</a><a href="#landscape">10 Landscape</a><a href="#roadmap">11 Roadmap</a>
   </nav>
 </header>
 
@@ -283,7 +283,7 @@ textarea.nf.small{min-height:150px}
 
 <section id="nose">
   <div class="sec-head"><span class="chapter">02 · VIRTUAL NOSE</span><h2>Smell it on paper first</h2>
-  <p class="lede">No AI can smell. What it can do is the paper review a senior perfumer does before opening a bottle. It works out which materials a nose will actually notice, what survives the wash and the dryer, what reacts with the base, what leaks from a capsule, and where a formula breaks its own brief. Paste any formula with CAS numbers and the audit runs instantly. "Senior panel review" then asks Claude to critique it as three senior perfumers and propose a fix, and that fix is audited the same way.</p></div>
+  <p class="lede">No AI can smell. What it can do is the paper review a senior perfumer does before opening a bottle. It works out which materials a nose will actually notice, what survives the wash and the dryer, what reacts with the base, what leaks from a capsule, and where a formula breaks its own brief. Paste any formula with CAS numbers and the audit runs instantly. "Senior panel review" then asks Claude to critique it as three senior perfumers and propose a fix, and that fix is audited the same way. Before you rely on the numbers, run the <a href="#verify">data check with Gemini</a>.</p></div>
   <div class="composer">
     <div class="nose-grid">
       <div class="step">
@@ -332,27 +332,41 @@ textarea.nf.small{min-height:150px}
     <tr><td>Potent ceilings</td><td>Damascenone 0.1% · Javanol 0.1% · Ambroxan 1.5% · Ebanol 0.5%</td><td>They dominate the dry-down by odour strength</td></tr>
     <tr><td>Distinctness</td><td>Versions in a set 90 or less similar at the dryer stage</td><td>Otherwise you pay to test the same scent twice</td></tr>
     </tbody></table></div></div>
-  <details class="lens" id="n-data">
-    <summary>Material data and the Gemini check <span>the numbers behind the audit, and how to verify them</span></summary>
-    <div class="lens-grid">
-      <p class="status">Each material carries an estimated logP (how oily it is, which decides whether it stays on fabric), boiling point (whether it survives the dryer), odour impact per % (how loud it is), descriptors, chemistry and regulatory flags. Values marked est. come from perfumery literature and experience, not from a lab. Copy the prompt below into Google Gemini, then paste its CSV answer back here to replace the estimates.</p>
+</section>
+
+<section id="verify">
+  <div class="sec-head"><span class="chapter">03 · DATA CHECK WITH GEMINI</span><h2>Verify the brain's numbers</h2>
+  <p class="lede">The Virtual Nose is only as good as its material data. About a third has been checked against sources. The rest are expert estimates. Gemini can look up the rest. Copy a prompt, paste it into Gemini, then paste Gemini's answer back here.</p></div>
+  <div class="composer">
+    <div class="step">
+      <div class="step-label"><span class="k">Step 1</span><span class="t">Copy a prompt</span><span class="h">Do one batch at a time so Gemini answers in full</span></div>
+      <div class="seg" id="g-batch" role="group" aria-label="Batch"></div>
       <textarea id="n-gem" class="nf" readonly aria-label="Prompt for Gemini"></textarea>
-      <div class="actions"><button class="btn ghost" id="n-gem-copy">Copy the Gemini prompt</button></div>
-      <textarea id="n-imp" class="nf small" placeholder="Paste Gemini's CSV here: name,cas,logP,boiling_point_C,odour_impact_1_to_10,ifra_status,eu_allergen" aria-label="Paste material data CSV"></textarea>
-      <div class="actions"><button class="btn ghost" id="n-imp-go">Apply data</button><button class="btn ghost" id="n-imp-clear">Reset to built-in data</button><span class="status" id="n-imp-status"></span></div>
-      <div class="tablewrap"><table class="ref" id="n-db"><thead><tr><th>Material</th><th>CAS</th><th class="num">logP</th><th class="num">bp °C</th><th class="num">Impact</th><th>Smells of</th><th>Flags</th></tr></thead><tbody></tbody></table></div>
+      <div class="actions"><button class="btn" id="n-gem-copy">Copy this prompt</button><span class="status" id="g-copy-status" aria-live="polite">If the button does nothing, click in the box, select all, and copy.</span></div>
     </div>
-  </details>
+    <div class="step">
+      <div class="step-label"><span class="k">Step 2</span><span class="t">Paste it into Gemini</span><span class="h">gemini.google.com, ideally a model with web search on</span></div>
+      <p class="status">Gemini replies with a table of comma-separated lines, one per material. Copy the whole reply. Extra text or code fences around it are fine, because the page only reads lines that contain a CAS number.</p>
+    </div>
+    <div class="step">
+      <div class="step-label"><span class="k">Step 3</span><span class="t">Paste Gemini's answer here</span></div>
+      <textarea id="n-imp" class="nf small" placeholder="name,cas,logP,boiling_point_C,odour_impact_1_to_10,ifra_status,eu_allergen,source&#10;Hedione,24851-98-7,2.98,300,4,none,no,pubchem" aria-label="Paste Gemini's answer"></textarea>
+      <div class="actions"><button class="btn" id="n-imp-go">Apply Gemini's data</button><button class="btn ghost" id="n-imp-clear">Reset to built-in data</button><span class="status" id="n-imp-status" aria-live="polite"></span></div>
+      <p class="status">Applied data is saved in this browser only and re-runs the audit at once. To make it permanent for everyone, paste the same answer into your chat with Claude.</p>
+    </div>
+  </div>
+  <details class="lens"><summary>See all material data <span>the values the audit uses, marked source-checked, est. or your data</span></summary><div style="margin-top:12px">
+  <div class="tablewrap"><table class="ref" id="n-db"><thead><tr><th>Material</th><th>CAS</th><th class="num">logP</th><th class="num">bp °C</th><th class="num">Impact</th><th>Smells of</th><th>Flags</th></tr></thead><tbody></tbody></table></div></div></details>
 </section>
 
 <section id="architecture">
-  <div class="sec-head"><span class="chapter">03 · ARCHITECTURE</span><h2>How a brief becomes a formula</h2>
+  <div class="sec-head"><span class="chapter">04 · ARCHITECTURE</span><h2>How a brief becomes a formula</h2>
   <p class="lede">Eight layers, run in order. Layers 2 to 4 are where a language model adds the most. Layers 1, 6 and 7 are deterministic code, because safety, regulation and dosing must never depend on a model's mood.</p></div>
   <div class="layers" id="layers"></div>
 </section>
 
 <section id="heads">
-  <div class="sec-head"><span class="chapter">04 · THREE HEADS</span><h2>Scent 1, 2 and 3</h2>
+  <div class="sec-head"><span class="chapter">05 · THREE HEADS</span><h2>Scent 1, 2 and 3</h2>
   <p class="lede">Your umbrella, kept and sharpened. Every brief always returns all three, in this order, so a person learns the brand's grammar after one use.</p></div>
   <div class="grid3">
     <div class="box headbox" style="--hc:var(--creative)"><span class="eyebrow" style="color:var(--creative)">Scent 1 · Creative</span><h3>The brain's own reading</h3>
@@ -373,7 +387,7 @@ textarea.nf.small{min-height:150px}
 </section>
 
 <section id="ladder">
-  <div class="sec-head"><span class="chapter">05 · TRANSLATION RULES</span><h2>The ladder, the floor and the gate</h2>
+  <div class="sec-head"><span class="chapter">06 · TRANSLATION RULES</span><h2>The ladder, the floor and the gate</h2>
   <p class="lede">Most briefs name things that have no smell, or a bad one. The brain climbs a four-rung ladder until it reaches something a perfumer can build.</p></div>
   <div class="ladder">
     <div class="rung"><span class="rk">RUNG 1 · LITERAL</span><b>It has a good smell</b><p>Build it directly from materials or a bridge accord.</p><span class="ex">Soybeans → soy milk &amp; green bean accord</span></div>
@@ -392,13 +406,13 @@ textarea.nf.small{min-height:150px}
 </section>
 
 <section id="cases">
-  <div class="sec-head"><span class="chapter">06 · HARD BRIEFS</span><h2>What real people will type</h2>
+  <div class="sec-head"><span class="chapter">07 · HARD BRIEFS</span><h2>What real people will type</h2>
   <p class="lede">Your examples, plus the edge cases, run live through the gate on this page. Tap a row to load it into the composer.</p></div>
   <div class="tablewrap"><table class="ref" id="cases-t"><thead><tr><th>Brief</th><th>Gate</th><th>How the brain reads it</th></tr></thead><tbody></tbody></table></div>
 </section>
 
 <section id="palette">
-  <div class="sec-head"><span class="chapter">07 · PALETTE</span><h2>How many liquids is enough</h2>
+  <div class="sec-head"><span class="chapter">08 · PALETTE</span><h2>How many liquids is enough</h2>
   <p class="lede">Freedom of brief does not need an endless shelf. It needs the right shelf. A brief like "soybeans" or "gunpowder" is solved by a bridge accord: a small pre-made blend of 5 to 30 raw materials that a perfumer builds once and the machine treats as one liquid.</p></div>
   <div class="tablewrap"><table class="ref"><thead><tr><th>Stage</th><th>Liquids</th><th>What they are</th><th>Why that number</th></tr></thead><tbody>
     <tr><td><b>1 · Sion Wash</b><br><span class="eyebrow">now</span></td><td class="num">24</td><td>Laundry-grade accords, each pre-tested in your detergent base for stability and colour</td><td>Detergent customisation is a 3 to 6 accord mix at 0.5 to 1.1% load. 24 covers every family twice. Only high-substantivity materials survive rinse and dry (boiling point at or above 250 °C and ClogP at or above 3).</td></tr>
@@ -411,7 +425,7 @@ textarea.nf.small{min-height:150px}
 </section>
 
 <section id="learning">
-  <div class="sec-head"><span class="chapter">08 · LEARNING LOOP</span><h2>How the brain gets smarter</h2>
+  <div class="sec-head"><span class="chapter">09 · LEARNING LOOP</span><h2>How the brain gets smarter</h2>
   <p class="lede">Today the brain is rules plus a language model. Every order turns it into something no competitor has: a dataset of free-text briefs paired with formulas and with what people actually thought when they smelled them.</p></div>
   <div class="row2">
     <div class="box"><span class="eyebrow">The flywheel</span>
@@ -454,7 +468,7 @@ textarea.nf.small{min-height:150px}
 </section>
 
 <section id="landscape">
-  <div class="sec-head"><span class="chapter">09 · LANDSCAPE</span><h2>Who else is doing this</h2>
+  <div class="sec-head"><span class="chapter">10 · LANDSCAPE</span><h2>Who else is doing this</h2>
   <p class="lede">Researched 3 Nov 2026 from public reporting. Figures marked <span class="u">U</span> are uncertain or disputed across sources.</p></div>
   <div class="tablewrap"><table class="ref"><thead><tr><th>Player</th><th>Input</th><th>Engine and palette</th><th>What Sion takes from it</th></tr></thead><tbody>
     <tr><td><b>EveryHuman</b><br><span class="status">ScenTronix, Breda</span></td><td>About 23-item personality questionnaire</td><td>3 algorithms → 3 scents. 46 accords of 5 to 8 materials each. In-store dispenser, patented. About £45 for three 5 ml. EDT strength. 75k+ users<span class="u">U</span></td><td>Three outputs per session works. The quiz-first input and fixed EDT strength are the gap Sion fills.</td></tr>
@@ -469,7 +483,7 @@ textarea.nf.small{min-height:150px}
 </section>
 
 <section id="roadmap">
-  <div class="sec-head"><span class="chapter">10 · ROADMAP</span><h2>From wash to fragrance house</h2></div>
+  <div class="sec-head"><span class="chapter">11 · ROADMAP</span><h2>From wash to fragrance house</h2></div>
   <div>
     <div class="stage"><div class="sk">Stage 1<small>Sion Wash</small></div><div><h3>Custom-scented detergent</h3><p>The brain runs in detergent and softener formats only. Formulas are blended by hand from 24 laundry accords. Every order creates a Scent Genome record.</p><ul><li>Pick a fragrance supplier who will build and IFRA-certify 24 laundry accords</li><li>Stability test each accord in your base: 4 weeks at 40 °C, colour and pH</li><li>Launch the brief box on the site with the three-scent result</li><li>Collect the first 1,000 ratings</li></ul></div></div>
     <div class="stage"><div class="sk">Stage 2<small>The machine</small></div><div><h3>64-cartridge dispenser</h3><p>The brain sends a dispense program: cartridge ID and grams or millilitres, at 0.01 ml resolution. Fine fragrance formats open up. Retrieval from rated genomes switches on (v1).</p><ul><li>Gravimetric dosing (weigh, do not just pump) for accuracy below 1%</li><li>Cartridge freshness tracking: citrus and aldehydes oxidise</li><li>Batch log per bottle for recalls and repeat orders</li></ul></div></div>
@@ -1751,8 +1765,10 @@ $("#n-panel").addEventListener("click",async()=>{
 function copyText(ta){const v=ta.value;navigator.clipboard&&navigator.clipboard.writeText?navigator.clipboard.writeText(v).then(()=>{$("#n-status").textContent="Copied.";},()=>{ta.focus();ta.select();}):(ta.focus(),ta.select());}
 
 /* ---------- Gemini data check ---------- */
+const GLIST=MDB.filter(m=>m.imp>0);const GB=3,GSIZE=Math.ceil(GLIST.length/GB);let gBatch=0;
 function geminiPrompt(){
-  const list=MDB.filter(m=>m.imp>0).map(m=>`${m.name} ; ${m.cas}`).join("\n");
+  const part=GLIST.slice(gBatch*GSIZE,(gBatch+1)*GSIZE);
+  const list=part.map(m=>`${m.name} ; ${m.cas}`).join("\n");
   return `You are a fragrance raw-materials data specialist. For each material below, look up reliable data from PubChem, The Good Scents Company, ScenTree, supplier technical data sheets (Givaudan, IFF, dsm-firmenich, Symrise) and the IFRA Standards library. Cite where each value came from.
 
 Return ONLY a CSV with this exact header and one row per material:
@@ -1769,10 +1785,12 @@ Column rules:
 Materials (name ; CAS):
 ${list}`;
 }
-$("#n-gem").value=geminiPrompt();
-$("#n-gem-copy").addEventListener("click",()=>{const ta=$("#n-gem");if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(ta.value).then(()=>{$("#n-imp-status").textContent="Prompt copied.";},()=>{ta.focus();ta.select();});else{ta.focus();ta.select();}});
+function gRender(){$("#g-batch").innerHTML=Array.from({length:GB},(_,i)=>{const a=i*GSIZE+1,b=Math.min(GLIST.length,(i+1)*GSIZE);return`<button data-b="${i}" aria-pressed="${i===gBatch}">Batch ${i+1}<small>materials ${a} to ${b}</small></button>`;}).join("");$("#n-gem").value=geminiPrompt();}
+$("#g-batch").addEventListener("click",ev=>{const b=ev.target.closest("[data-b]");if(!b)return;gBatch=+b.dataset.b;gRender();$("#g-copy-status").textContent="Batch "+(gBatch+1)+" ready to copy.";});
+gRender();
+$("#n-gem-copy").addEventListener("click",()=>{const ta=$("#n-gem"),st=$("#g-copy-status");const sel=()=>{ta.focus();ta.select();st.textContent="Selected. Press Ctrl+C or Cmd+C to copy.";};if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(ta.value).then(()=>{st.textContent="Batch "+(gBatch+1)+" copied. Paste it into Gemini.";},sel);else sel();});
 function renderDB(){
-  $("#n-db tbody").innerHTML=MDB.filter(m=>m.imp>0).map(withOvr).map(m=>`<tr><td>${esc(m.name)}${m.ovr?' <span class="src">your data</span>':CHECKED.has(m.cas)?' <span class="src">source-checked</span>':' <span class="src">est.</span>'}</td><td class="mono">${m.cas}</td><td class="num">${m.logP}</td><td class="num">${m.bp}</td><td class="num">${m.imp}</td><td>${DIMS.filter((d,i)=>m.v[i]>=1.5).map(d=>DS[d]).join(", ")}</td><td>${[...m.tags.map(g=>OFF[g]),...m.chem.map(c=>({a:"aldehyde",e:"ester",l:"lactone",c:"colour",o:"oxidises",w:"water soluble"}[c])),...m.reg.map(r=>({A:"allergen",A2:"allergen (2023 list)",R:"IFRA restricted",S:"IFRA spec",P:"prohibited",B:"Sion banned",X:"EU CLP Repr. 2"}[r]))].join(", ")}</td></tr>`).join("");
+  $("#n-db tbody").innerHTML=MDB.filter(m=>m.imp>0).map(withOvr).map(m=>`<tr><td>${esc(m.name)}${m.ovr?' <span class="src">your data</span>':CHECKED.has(m.cas)?' <span class="src">source-checked</span>':' <span class="src">est.</span>'}</td><td class="mono">${m.cas}</td><td class="num">${m.logP}</td><td class="num">${m.bp}</td><td class="num">${+(+m.imp).toPrecision(2)}</td><td>${DIMS.filter((d,i)=>m.v[i]>=1.5).map(d=>DS[d]).join(", ")}</td><td>${[...m.tags.map(g=>OFF[g]),...m.chem.map(c=>({a:"aldehyde",e:"ester",l:"lactone",c:"colour",o:"oxidises",w:"water soluble"}[c])),...m.reg.map(r=>({A:"allergen",A2:"allergen (2023 list)",R:"IFRA restricted",S:"IFRA spec",P:"prohibited",B:"Sion banned",X:"EU CLP Repr. 2"}[r]))].join(", ")}</td></tr>`).join("");
 }
 renderDB();
 $("#n-imp-go").addEventListener("click",()=>{
