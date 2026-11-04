@@ -218,7 +218,7 @@ ul.spec{margin:6px 0 0;padding-left:18px;display:grid;gap:3px;font-size:.9rem}
 .cmp{display:grid;gap:6px;margin-top:8px}
 .cmp-r{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,2fr) 2.4em;gap:10px;align-items:center;font-size:.86rem}
 .cmp-b{height:6px;background:var(--sunk);border-radius:3px;overflow:hidden}.cmp-b i{display:block;height:100%;background:var(--accent)}
-#study-legend span i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:-1px}
+#study-legend span i,#gb-legend span i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:-1px}
 /* virtual nose */
 .nose-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:22px}
 .nose-ctx{display:grid;gap:12px;align-content:start}
@@ -251,7 +251,7 @@ textarea.nf.small{min-height:150px}
 <div class="wrap">
 <header class="mast">
   <div class="mast-top">
-    <div class="brand"><b>Sion</b> · Scent Brain · build 0.6</div>
+    <div class="brand"><b>Sion</b> · Scent Brain · build 0.7</div>
     <div class="eyebrow">Master node for detergent wash and, later, the fragrance house</div>
   </div>
   <h1>Type anything.<br>Get <em>three</em> scents back.</h1>
@@ -265,7 +265,7 @@ textarea.nf.small{min-height:150px}
     <div class="stat"><span class="n mono">30 + 20</span><span class="l">best sellers and critics' groundbreakers studied</span></div>
   </div>
   <nav class="toc" aria-label="Sections">
-    <a href="#composer">01 Composer</a><a href="#nose">02 Virtual Nose</a><a href="#verify">03 Gemini data check</a><a href="#engine">04 Engine</a><a href="#study">05 Self-study</a><a href="#architecture">06 Composer layers</a><a href="#heads">07 Three heads</a><a href="#ladder">08 Translation rules</a><a href="#cases">09 Hard briefs</a><a href="#palette">10 Palette</a><a href="#learning">11 Learning loop</a><a href="#landscape">12 Landscape</a><a href="#roadmap">13 Roadmap</a>
+    <a href="#composer">01 Composer</a><a href="#nose">02 Virtual Nose</a><a href="#verify">03 Gemini data check</a><a href="#engine">04 Engine</a><a href="#study">05 Best sellers</a><a href="#ground">06 Groundbreakers</a><a href="#science">07 Sensory science</a><a href="#architecture">08 Composer layers</a><a href="#heads">09 Three heads</a><a href="#ladder">10 Translation rules</a><a href="#cases">11 Hard briefs</a><a href="#palette">12 Palette</a><a href="#learning">13 Learning loop</a><a href="#landscape">14 Landscape</a><a href="#roadmap">15 Roadmap</a>
   </nav>
 </header>
 
@@ -500,8 +500,8 @@ textarea.nf.small{min-height:150px}
 </section>
 
 <section id="study">
-  <div class="sec-head"><span class="chapter">05 · SELF-STUDY</span><h2>What the best sellers and the groundbreakers teach</h2>
-  <p class="lede">The brain studied the commercial icons of perfumery and the science of why people like a smell. The aim is to learn the grammar, not copy the sentences: find the familiar frame people already love, then break new ground on top of it, the way technology does.</p></div>
+  <div class="sec-head"><span class="chapter">05 · SELF-STUDY 1 · BEST SELLERS</span><h2>What the world's best sellers teach</h2>
+  <p class="lede">The commercial icons of perfumery: the 30 most commercially dominant perfumes, chosen on public sales evidence. The aim is to learn the grammar, not copy the sentences: find the familiar frame people already love, then break new ground on top of it. The critics' view is in section 06 and the science in section 07.</p></div>
 
   <div class="box"><span class="eyebrow">The headline finding · measured on the icons themselves</span>
     <h3>Hits are about 70% familiar and 30% new</h3>
@@ -509,7 +509,7 @@ textarea.nf.small{min-height:150px}
     <p class="status">Method: profiles authored from public note pyramids, and early icons had few predecessors to be compared with, so they are estimates of character, not formulas. Treat the numbers as directions, then calibrate with panel data in the prediction ledger.</p>
   </div>
 
-  <div class="panel"><div class="panel-h"><span class="eyebrow">The icon map · nearby dots smell alike · diamonds are your latest formulas</span><span class="legend" id="study-legend"></span></div>
+  <div class="panel"><div class="panel-h"><span class="eyebrow">The best-seller map · nearby dots smell alike · diamonds are your latest formulas</span><span class="legend" id="study-legend"></span></div>
     <div class="scroll-x" id="study-map"></div>
     <p class="status">A two-dimensional map of the 24-dimension profiles (principal components). Run a Virtual Nose audit or the Composer and your formulas appear as diamonds.</p></div>
 
@@ -517,7 +517,19 @@ textarea.nf.small{min-height:150px}
   <div class="famchips" id="icon-filter"></div>
   <div class="tablewrap"><table class="ref" id="icon-t" style="min-width:1100px"><thead><tr><th class="num">Year</th><th>Perfume</th><th>Perfumer</th><th>Family</th><th>The hero (signature idea)</th><th>What was new</th><th>Why it sold</th><th class="num">Similarity to closest earlier hit</th><th>Evidence</th></tr></thead><tbody></tbody></table></div>
 
-  <div class="sec-head" style="margin-top:18px"><h3>The groundbreakers: what critics say broke new ground</h3><p class="status">20 perfumes chosen only from industry critics, historians and curators: Turin and Sanchez, Chandler Burr's "The Art of Scent" (Museum of Arts and Design), Michael Edwards, the Osmothèque, the Fragrance Foundation hall of fame, Perfumer and Flavorist, Bois de Jasmin and Persolaise. Research agent, 4 Nov 2026, from search summaries. Near misses: Diorissimo, Calandre, Fracas, L'Interdit, Kouros, Bulgari Black, Dior Homme, Baccarat Rouge 540.</p></div>
+  <div class="sec-head" style="margin-top:8px"><h3>Patterns across the icons</h3></div>
+  <div class="grid3" id="patterns"></div>
+
+  <div class="sec-head" style="margin-top:8px"><h3>How genres turn over</h3></div>
+  <div class="tablewrap"><table class="ref" id="timeline-t" style="min-width:640px"><thead><tr><th>Decade</th><th>The new genre</th><th>Opened by</th><th>The molecule or idea behind it</th></tr></thead><tbody></tbody></table></div>
+
+</section>
+
+<section id="ground">
+  <div class="sec-head"><span class="chapter">06 · SELF-STUDY 2 · GROUNDBREAKERS</span><h2>What the critics' groundbreakers teach</h2>
+  <p class="lede">A separate study from the best sellers, using industry critics, historians and curators only: the 20 perfumes they name as turning points, the rule each one broke, and the grammar of how new ground gets broken.</p></div>
+  <p class="status">20 perfumes chosen only from industry critics, historians and curators: Turin and Sanchez, Chandler Burr's "The Art of Scent" (Museum of Arts and Design), Michael Edwards, the Osmothèque, the Fragrance Foundation hall of fame, Perfumer and Flavorist, Bois de Jasmin and Persolaise. Research agent, 4 Nov 2026, from search summaries. Near misses: Diorissimo, Calandre, Fracas, L'Interdit, Kouros, Bulgari Black, Dior Homme, Baccarat Rouge 540.</p></div>
+  <div class="panel"><div class="panel-h"><span class="eyebrow">The groundbreaker map · same axes as the best-seller map · diamonds are your latest formulas</span><span class="legend" id="gb-legend"></span></div><div class="scroll-x" id="gb-map"></div></div>
   <div class="box"><span class="eyebrow">Measured on the same scale as the best sellers</span><h3 id="gb-head">Groundbreakers sit further into new territory</h3><p id="gb-stats"></p></div>
   <div class="tablewrap"><table class="ref" id="gb-t" style="min-width:1150px"><thead><tr><th class="num">Year</th><th>Perfume</th><th>Perfumer</th><th>The rule it broke</th><th>The mechanism</th><th>Legacy</th><th>Outcome</th><th>Critics and curators</th><th class="num">Similarity to closest earlier</th><th>Moves</th></tr></thead><tbody></tbody></table></div>
   <div class="sec-head" style="margin-top:8px"><h3>The innovation grammar</h3><p class="status">Eleven ways new ground was broken. The first nine change the formula itself and can be chosen for Scent 1 in the Composer.</p></div>
@@ -540,13 +552,12 @@ textarea.nf.small{min-height:150px}
     <li>Break a gender or channel rule only when the scent itself carries the idea</li>
     <li>Archive every formula and its story: only works whose formulas survived are honoured</li>
   </ul></div>
-  <div class="sec-head" style="margin-top:8px"><h3>Patterns across the icons</h3></div>
-  <div class="grid3" id="patterns"></div>
+</section>
 
-  <div class="sec-head" style="margin-top:8px"><h3>How genres turn over</h3></div>
-  <div class="tablewrap"><table class="ref" id="timeline-t" style="min-width:640px"><thead><tr><th>Decade</th><th>The new genre</th><th>Opened by</th><th>The molecule or idea behind it</th></tr></thead><tbody></tbody></table></div>
-
-  <div class="sec-head" style="margin-top:8px"><h3>Why people love a smell: the science</h3><p class="status">Sourced brief from a research agent, 3 Nov 2026, 35 searches, snippets only. U marks figures that are uncertain or single-source.</p></div>
+<section id="science">
+  <div class="sec-head"><span class="chapter">07 · SELF-STUDY 3 · SENSORY SCIENCE</span><h2>Why people love a smell, and the Sion rules</h2>
+  <p class="lede">The science behind liking and novelty, and the 12 creation rules the brain applies on every brief, drawn from all three studies.</p></div>
+  <div class="sec-head"><h3>The research</h3><p class="status">Sourced brief from a research agent, 3 Nov 2026, 35 searches, snippets only. U marks figures that are uncertain or single-source.</p></div>
   <div class="grid3">
     <div class="box"><span class="eyebrow">1 · The molecule matters more than the culture</span><h3>41% molecule, 54% person, 6% culture</h3><p>Across 9 to 10 cultures, from hunter-gatherers to city dwellers, the molecule explained 41% of liking, the individual 54%, and culture only 6%. Vanillin ranked most pleasant everywhere, then a fruity ester (ethyl butyrate), then linalool. Cheesy, sweaty isovaleric acid ranked last. <a href="https://news.ki.se/people-around-the-world-like-the-same-kinds-of-smell">Arshamian et al. 2022</a></p></div>
     <div class="box"><span class="eyebrow">2 · Pleasantness is written in chemistry</span><h3>Bigger, more complex, no sulfur</h3><p>Pleasantness is the main axis of smell perception, and it lines up with molecular properties well enough to predict odours people have never smelled (<a href="https://pubmed.ncbi.nlm.nih.gov/17855616/">Khan 2007</a>). Larger, more complex molecules tend to be liked, sulfur ones disliked (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4977894">Keller and Vosshall 2016</a>).</p></div>
@@ -579,14 +590,16 @@ textarea.nf.small{min-height:150px}
   <div class="box"><span class="eyebrow">Studying is not copying</span><h3>The anti-copy rule</h3><p>The compass flags any formula above 90 similar to an icon as a near copy. The brain never reproduces a commercial formula, uses a commercial perfume's name to sell, or builds "smells like" products. Icons are studied the way architects study buildings: for structure, proportion and what made people stay.</p></div>
 </section>
 
+
+
 <section id="architecture">
-  <div class="sec-head"><span class="chapter">06 · COMPOSER LAYERS</span><h2>How a brief becomes a formula</h2>
+  <div class="sec-head"><span class="chapter">08 · COMPOSER LAYERS</span><h2>How a brief becomes a formula</h2>
   <p class="lede">Eight layers, run in order. Layers 2 to 4 are where a language model adds the most. Layers 1, 6 and 7 are deterministic code, because safety, regulation and dosing must never depend on a model's mood.</p></div>
   <div class="layers" id="layers"></div>
 </section>
 
 <section id="heads">
-  <div class="sec-head"><span class="chapter">07 · THREE HEADS</span><h2>Scent 1, 2 and 3</h2>
+  <div class="sec-head"><span class="chapter">09 · THREE HEADS</span><h2>Scent 1, 2 and 3</h2>
   <p class="lede">Your umbrella, kept and sharpened. Every brief always returns all three, in this order, so a person learns the brand's grammar after one use.</p></div>
   <div class="grid3">
     <div class="box headbox" style="--hc:var(--creative)"><span class="eyebrow" style="color:var(--creative)">Scent 1 · Creative</span><h3>The brain's own reading</h3>
@@ -607,7 +620,7 @@ textarea.nf.small{min-height:150px}
 </section>
 
 <section id="ladder">
-  <div class="sec-head"><span class="chapter">08 · TRANSLATION RULES</span><h2>The ladder, the floor and the gate</h2>
+  <div class="sec-head"><span class="chapter">10 · TRANSLATION RULES</span><h2>The ladder, the floor and the gate</h2>
   <p class="lede">Most briefs name things that have no smell, or a bad one. The brain climbs a four-rung ladder until it reaches something a perfumer can build.</p></div>
   <div class="ladder">
     <div class="rung"><span class="rk">RUNG 1 · LITERAL</span><b>It has a good smell</b><p>Build it directly from materials or a bridge accord.</p><span class="ex">Soybeans → soy milk &amp; green bean accord</span></div>
@@ -626,13 +639,13 @@ textarea.nf.small{min-height:150px}
 </section>
 
 <section id="cases">
-  <div class="sec-head"><span class="chapter">09 · HARD BRIEFS</span><h2>What real people will type</h2>
+  <div class="sec-head"><span class="chapter">11 · HARD BRIEFS</span><h2>What real people will type</h2>
   <p class="lede">Your examples, plus the edge cases, run live through the gate on this page. Tap a row to load it into the composer.</p></div>
   <div class="tablewrap"><table class="ref" id="cases-t"><thead><tr><th>Brief</th><th>Gate</th><th>How the brain reads it</th></tr></thead><tbody></tbody></table></div>
 </section>
 
 <section id="palette">
-  <div class="sec-head"><span class="chapter">10 · PALETTE</span><h2>How many liquids is enough</h2>
+  <div class="sec-head"><span class="chapter">12 · PALETTE</span><h2>How many liquids is enough</h2>
   <p class="lede">Freedom of brief does not need an endless shelf. It needs the right shelf. A brief like "soybeans" or "gunpowder" is solved by a bridge accord: a small pre-made blend of 5 to 30 raw materials that a perfumer builds once and the machine treats as one liquid.</p></div>
   <div class="tablewrap"><table class="ref"><thead><tr><th>Stage</th><th>Liquids</th><th>What they are</th><th>Why that number</th></tr></thead><tbody>
     <tr><td><b>1 · Sion Wash</b><br><span class="eyebrow">now</span></td><td class="num">24</td><td>Laundry-grade accords, each pre-tested in your detergent base for stability and colour</td><td>Detergent customisation is a 3 to 6 accord mix at 0.5 to 1.1% load. 24 covers every family twice. Only high-substantivity materials survive rinse and dry (boiling point at or above 250 °C and ClogP at or above 3).</td></tr>
@@ -645,7 +658,7 @@ textarea.nf.small{min-height:150px}
 </section>
 
 <section id="learning">
-  <div class="sec-head"><span class="chapter">11 · LEARNING LOOP</span><h2>How the brain gets smarter</h2>
+  <div class="sec-head"><span class="chapter">13 · LEARNING LOOP</span><h2>How the brain gets smarter</h2>
   <p class="lede">Today the brain is rules plus a language model. Every order turns it into something no competitor has: a dataset of free-text briefs paired with formulas and with what people actually thought when they smelled them.</p></div>
   <div class="row2">
     <div class="box"><span class="eyebrow">The flywheel</span>
@@ -688,7 +701,7 @@ textarea.nf.small{min-height:150px}
 </section>
 
 <section id="landscape">
-  <div class="sec-head"><span class="chapter">12 · LANDSCAPE</span><h2>Who else is doing this</h2>
+  <div class="sec-head"><span class="chapter">14 · LANDSCAPE</span><h2>Who else is doing this</h2>
   <p class="lede">Researched 3 Nov 2026 from public reporting. Figures marked <span class="u">U</span> are uncertain or disputed across sources.</p></div>
   <div class="tablewrap"><table class="ref"><thead><tr><th>Player</th><th>Input</th><th>Engine and palette</th><th>What Sion takes from it</th></tr></thead><tbody>
     <tr><td><b>EveryHuman</b><br><span class="status">ScenTronix, Breda</span></td><td>About 23-item personality questionnaire</td><td>3 algorithms → 3 scents. 46 accords of 5 to 8 materials each. In-store dispenser, patented. About £45 for three 5 ml. EDT strength. 75k+ users<span class="u">U</span></td><td>Three outputs per session works. The quiz-first input and fixed EDT strength are the gap Sion fills.</td></tr>
@@ -703,7 +716,7 @@ textarea.nf.small{min-height:150px}
 </section>
 
 <section id="roadmap">
-  <div class="sec-head"><span class="chapter">13 · ROADMAP</span><h2>From wash to fragrance house</h2></div>
+  <div class="sec-head"><span class="chapter">15 · ROADMAP</span><h2>From wash to fragrance house</h2></div>
   <div>
     <div class="stage"><div class="sk">Stage 1<small>Sion Wash</small></div><div><h3>Custom-scented detergent</h3><p>The brain runs in detergent and softener formats only. Formulas are blended by hand from 24 laundry accords. Every order creates a Scent Genome record.</p><ul><li>Pick a fragrance supplier who will build and IFRA-certify 24 laundry accords</li><li>Stability test each accord in your base: 4 weeks at 40 °C, colour and pH</li><li>Launch the brief box on the site with the three-scent result</li><li>Collect the first 1,000 ratings</li></ul></div></div>
     <div class="stage"><div class="sk">Stage 2<small>The machine</small></div><div><h3>64-cartridge dispenser</h3><p>The brain sends a dispense program: cartridge ID and grams or millilitres, at 0.01 ml resolution. Fine fragrance formats open up. Retrieval from rated genomes switches on (v1).</p><ul><li>Gravimetric dosing (weigh, do not just pump) for accuracy below 1%</li><li>Cartridge freshness tracking: citrus and aldehydes oxidise</li><li>Batch log per bottle for recalls and repeat orders</li></ul></div></div>
@@ -712,7 +725,7 @@ textarea.nf.small{min-height:150px}
 </section>
 
 <footer>
-  <span>Sion Scent Brain · build 0.6 · 3 Nov 2026 · Virtual Nose added</span>
+  <span>Sion Scent Brain · build 0.7 · 3 Nov 2026 · Virtual Nose added</span>
   <span>Palette caps and dose levels are planning placeholders. Every formula must be checked against current IFRA Standards and supplier certificates, then stability and skin tested, before anything is sold.</span>
 </footer>
 </div>
@@ -982,11 +995,12 @@ function composeHead(an,head,cfg){
     if(L.moment==="close"){t[I.musky]+=1;t[I.woodyCreamy]+=0.5;notes.push("Lens: skin-close musk");}
   }
   const fmt=FORMATS[cfg.format];
+  CAPCTX={fmt,t,fmtKey:cfg.format};
   const quota={accurate:[2,3,3],creative:[3,3,4],luxury:[3,4,5]}[head].slice();
   if(cfg.frame==="unexplored")quota[1]++;
   if(mv==="minimal")quota.splice(0,3,1,2,2);
   if(mv==="abstraction")quota.forEach((q,i)=>quota[i]=q+1);
-  const share=fmt.laundry?{T:12,H:30,B:58}:{T:18,H:34,B:48};
+  const share=fmt.laundry?{T:12,H:40,B:48}:{T:18,H:34,B:48};
   const hintW={accurate:0.35,creative:0.15,luxury:0.2}[head];
   const costBias=(head==="luxury"?0.06:0)+(cfg.frame==="luxury"?0.04:0)+(cfg.frame==="designer"?-0.02:0);
   const preferA=cfg.frame==="unexplored"||head==="creative";
@@ -999,11 +1013,11 @@ function composeHead(an,head,cfg){
     const bestOf=()=>{
       let best=null,bs=-9;
       for(const m of PAL){
-        if(m.tier!==tier||used.has(m.id))continue;
+        if(m.tier!==tier||used.has(m.id)||effCap(m)<0.5)continue;
         let s=dot(nrm(r),m.vn);
         if(an.hints[m.id])s+=hintW*Math.min(1,an.hints[m.id]);
         s+=costBias*(m.cost-3);
-        if(fmt.laundry)s+=0.08*(m.sub-2);
+        if(fmt.laundry){const P=typeof CPROP!=="undefined"&&CPROP[m.id];if(P){const surv=sig((P.logP-3.2)*1.8)*sig((P.bp-250)/14);s+=0.3*(surv-0.5);}else s+=0.08*(m.sub-2);}
         if(preferA&&m.kind==="A")s+=0.05;
         if(head==="creative")s+=(R()-0.5)*0.12;
         if(s>bs){bs=s;best=m;}
@@ -1014,7 +1028,7 @@ function composeHead(an,head,cfg){
     while(picks.length<quota[ti]){const b=bestOf();if(!b)break;take(b);}
     /* capacity rule: keep adding materials until this tier can carry its share under the caps */
     let extra=0;
-    while(mv!=="minimal"&&picks.reduce((s,[m])=>s+m.cap,0)<share[tier]*1.1&&extra<4){const b=bestOf();if(!b)break;take(b);extra++;}
+    while(mv!=="minimal"&&picks.reduce((s,[m])=>s+effCap(m),0)<share[tier]*1.1&&extra<4){const b=bestOf();if(!b)break;take(b);extra++;}
     const ws=picks.map(([m,s])=>Math.pow(Math.max(0.15,s),1.5));
     const alloc=fillTier(share[tier],picks.map(p=>p[0]),ws);
     picks.forEach(([m],i)=>{if(alloc[i]>0)rows.push({id:m.id,pct:alloc[i]});});
@@ -1023,12 +1037,22 @@ function composeHead(an,head,cfg){
   if(mv)notes.push("Innovation move: "+GRAM[mv][1].toLowerCase()+" (as in "+GRAM[mv][3].split(", ").slice(0,2).join(", ")+")");
   return finalize(rows,an,head,cfg,{twistNote,notes});
 }
+/* Effective cartridge caps: for laundry, derived from each cartridge's CAS recipe and the senior rules
+   (colour formers 0.1%, aldehydes 0.3% with amino silicone, strong marine 0.01% unless the brief is aquatic). */
+let CAPCTX=null;
+function effCap(m){
+  let c=m.cap;if(!CAPCTX||typeof CPROP==="undefined"||!CPROP[m.id])return c;
+  const P=CPROP[m.id],{fmt,t,fmtKey}=CAPCTX;
+  if(fmt.laundry){if(["MUSW","ISOE","CASH","CEDR","SAND","AMBX","SKIN"].includes(m.id))c=Math.min(c,10);if(P.col>0)c=Math.min(c,0.1*100/P.col);if(fmtKey==="detergent"&&P.ald>0)c=Math.min(c,0.3*100/P.ald);}
+  if(t&&t[I.aquatic]<1.5&&P.mar>0)c=Math.min(c,0.01*100/P.mar);
+  return c;
+}
 /* water-fill a tier's share across its materials, never past a cap */
 function fillTier(total,ms,ws){
   const out=ms.map(()=>0);let rem=total,open=ms.map((_,i)=>i);
   for(let it=0;it<12&&rem>1e-6&&open.length;it++){
     const W=open.reduce((s,i)=>s+ws[i],0)||1;let usedAmt=0;const next=[];
-    open.forEach(i=>{const add=rem*ws[i]/W,room=ms[i].cap-out[i];if(add>=room){out[i]+=room;usedAmt+=room;}else{out[i]+=add;usedAmt+=add;next.push(i);}});
+    open.forEach(i=>{const add=rem*ws[i]/W,room=effCap(ms[i])-out[i];if(add>=room){out[i]+=room;usedAmt+=room;}else{out[i]+=add;usedAmt+=add;next.push(i);}});
     rem-=usedAmt;open=next;
   }
   return out;
@@ -1036,7 +1060,7 @@ function fillTier(total,ms,ws){
 function applyCaps(rows){
   for(let it=0;it<12;it++){
     let ex=0;const free=[];
-    rows.forEach(r=>{const c=BYID[r.id].cap;if(r.pct>c+1e-9){ex+=r.pct-c;r.pct=c;r.capped=true;}else if(r.pct<c-0.01)free.push(r);});
+    rows.forEach(r=>{const c=effCap(BYID[r.id]);if(r.pct>c+1e-9){ex+=r.pct-c;r.pct=c;r.capped=true;}else if(r.pct<c-0.01)free.push(r);});
     if(ex<1e-6)return 0;
     const fs=free.reduce((s,r)=>s+r.pct,0);
     if(!free.length||fs<=0)return ex;
@@ -1116,6 +1140,7 @@ function renderDecline(an){
 }
 function metricBar(label,val){return`<div class="metric"><div class="ml"><span>${label}</span><span class="mono">${val}</span></div><div class="mb"><i style="width:${Math.max(2,Math.min(100,val))}%"></i></div></div>`;}
 function renderResult(res){
+  curRes=res;
   const an=res.an,dc=res.decomp,fmt=FORMATS[res.cfg.format];
   const ax=axesOf(an.target);
   const notes=(res.gateNotes||an.notes).map(n=>`<li>${esc(n)}</li>`).join("")||"<li>No flags. Straight to formulation.</li>";
@@ -1129,6 +1154,8 @@ function renderResult(res){
       <div class="metrics">${metricBar("Fidelity to brief",sc.metrics.fidelity)}${metricBar("Novelty",sc.metrics.novelty)}${metricBar("Wearability",sc.metrics.wear)}${metricBar("Wash survival",sc.metrics.subst)}</div>
       <table class="f"><thead><tr><th></th><th>Material</th><th class="num">% conc</th><th class="num">${fmt.unit}</th></tr></thead><tbody>${rows}</tbody></table>
       ${(()=>{const C=compass(sc.fv);return`<div class="disp">Compass: <b>${esc(C.zone[2])}</b> · closest icon ${esc(C.sims[0].ic.name)} at ${Math.round(C.F*100)}</div>`;})()}
+      ${(()=>{const sa=typeof selfAudit==="function"?selfAudit(res,sc):null;return sa?`<div class="disp">Virtual Nose: <b>${sa.f} fail${sa.f===1?"":"s"}</b> · ${sa.w} to check${sa.top.length?`<br><span class="src">${esc(sa.top.join(" · "))}</span>`:""}</div>`:"";})()}
+      <div class="actions"><button class="btn ghost aud" data-head="${sc.head}" style="padding:7px 12px;font-size:.84rem">Audit in Virtual Nose</button></div>
       <div class="disp mono">Dispense: ${esc(fmt.batch)} at ${sc.conc}% → ${sc.oil.toFixed(2)} ${fmt.unit} of fragrance oil · cost tier ${cost} · ${sc.rows.length} cartridges</div>
       ${sc.notes.length?`<div class="flagline">${sc.notes.map(esc).join(" · ")}</div>`:""}
     </article>`;}).join("");
@@ -1287,6 +1314,7 @@ $("#deep").addEventListener("click",async()=>{
       const merged={};rows.forEach(r=>merged[r.id]=(merged[r.id]||0)+r.pct);
       const list=Object.entries(merged).map(([id,pct])=>({id,pct}));
       if(list.length<3)return base.scents.find(x=>x.head===h);
+      CAPCTX={fmt:FORMATS[base.cfg.format],t:base.an.target,fmtKey:base.cfg.format};
       const sc=finalize(list,base.an,h,base.cfg,{name:String(s.name||"").slice(0,40),story:String(s.story||"").slice(0,400),why:String(s.why||"").slice(0,240),notes:[]});
       if(!sc.name)nameAndStory(sc,base.an);
       return sc;
@@ -1350,7 +1378,7 @@ function compassHTML(C,h,label){
   <div class="cmp">${C.sims.slice(0,4).map(x=>`<div class="cmp-r"><span>${esc(x.ic.name)} <span class="src">${x.ic.year} · ${esc(x.ic.fam)}</span></span><span class="cmp-b"><i style="width:${Math.round(x.s*100)}%"></i></span><span class="mono">${Math.round(x.s*100)}</span></div>`).join("")}</div>
   <p class="status" style="margin-top:8px">Closest groundbreaker: <b>${esc(C.gsims[0].ic.name)}</b> (${C.gsims[0].ic.year}, ${Math.round(C.gsims[0].s*100)}). Its move: ${esc(C.gsims[0].ic.moves.map(m=>GRAM[m][1].toLowerCase()).join(", "))}.</p>
   ${h?`<p class="status" style="margin-top:8px">Hero: <b>${esc(h.it.name)}</b> carries ${Math.round(h.sh*100)}% of the smell at its peak (${esc(h.t.toLowerCase())}).</p>`:""}
-  <p class="status">Similarity of the whole-life smell profile, 0 to 100. Half of the 30 icons launched between 57 and 80 from their closest predecessor. See section 05 for the study behind it.</p></div>`;
+  <p class="status">Similarity of the whole-life smell profile, 0 to 100. Half of the 30 icons launched between 57 and 80 from their closest predecessor. See sections 05 to 07 for the studies behind it.</p></div>`;
 }
 /* PCA map of the icons */
 let MAPPTS=[];
@@ -1363,22 +1391,22 @@ function pca2(rows){
   return{mean,comps,proj:v=>{const u=nrm(v).map((x,i)=>x-mean[i]);return comps.map(c=>u.reduce((s,x,i)=>s+x*c[i],0));}};
 }
 let PCA=null;
-function drawStudyMap(){
-  const el=document.getElementById("study-map");if(!el)return;
-  if(!PCA)PCA=pca2(ICONS.map(i=>nrm(i.vv)));
-  const pts=ICONS.map(i=>({p:PCA.proj(i.vv),i}));const extra=MAPPTS.map(e=>({p:PCA.proj(e.v),e}));
-  const gpts=GROUND.filter(g=>!ICONS.some(i=>i.name===g.name)).map(i=>({p:PCA.proj(i.vv),i}));
-  const all=[...pts,...extra,...gpts].map(x=>x.p);const xs=all.map(p=>p[0]),ys=all.map(p=>p[1]);
+function drawMap(id,lid,mode){
+  const el=document.getElementById(id);if(!el)return;
+  if(!PCA)PCA=pca2([...ICONS,...GROUND].map(i=>nrm(i.vv)));
+  const list=mode==="icons"?ICONS:GROUND;
+  const pts=list.map(i=>({p:PCA.proj(i.vv),i}));const extra=MAPPTS.map(e=>({p:PCA.proj(e.v),e}));
+  const all=[...[...ICONS,...GROUND].map(i=>PCA.proj(i.vv)),...extra.map(x=>x.p)];const xs=all.map(p=>p[0]),ys=all.map(p=>p[1]);
   const W=900,H=520,M=60,x0=Math.min(...xs),x1=Math.max(...xs),y0=Math.min(...ys),y1=Math.max(...ys);
   const X=v=>M+(v-x0)/((x1-x0)||1)*(W-2*M),Y=v=>H-M-(v-y0)/((y1-y0)||1)*(H-2*M);
-  let s=`<svg viewBox="0 0 ${W} ${H}" style="min-width:640px;width:100%" role="img" aria-label="Map of 30 commercial icons by smell profile">`;
+  let s=`<svg viewBox="0 0 ${W} ${H}" style="min-width:640px;width:100%" role="img" aria-label="${mode==="icons"?"Map of 30 best sellers":"Map of 20 critics' groundbreakers"} by smell profile">`;
   s+=`<rect x="1" y="1" width="${W-2}" height="${H-2}" rx="12" fill="none" stroke="var(--line)"/>`;
-  pts.forEach(({p,i})=>{const c=FAMG[i.g]||"var(--muted)";s+=`<circle cx="${X(p[0]).toFixed(1)}" cy="${Y(p[1]).toFixed(1)}" r="7" fill="${c}" fill-opacity=".85"><title>${esc(i.name+" ("+i.year+") · "+i.fam)}</title></circle><text x="${(X(p[0])+10).toFixed(1)}" y="${(Y(p[1])+4).toFixed(1)}" font-size="11" fill="var(--ink)">${esc(i.name)} <tspan fill="var(--muted)" font-size="9.5">${i.year}</tspan></text>`;});
-  gpts.forEach(({p,i})=>{const c=FAMG[i.g]||"var(--muted)";s+=`<circle cx="${X(p[0]).toFixed(1)}" cy="${Y(p[1]).toFixed(1)}" r="7" fill="var(--bg)" stroke="${c}" stroke-width="2.5"><title>${esc(i.name+" ("+i.year+"), groundbreaker")}</title></circle><text x="${(X(p[0])+10).toFixed(1)}" y="${(Y(p[1])+4).toFixed(1)}" font-size="11" font-style="italic" fill="var(--muted)">${esc(i.name)} <tspan font-size="9.5">${i.year}</tspan></text>`;});
+  pts.forEach(({p,i})=>{const c=FAMG[i.g]||"var(--muted)";const ring=mode!=="icons";s+=`<circle cx="${X(p[0]).toFixed(1)}" cy="${Y(p[1]).toFixed(1)}" r="7" fill="${ring?"var(--bg)":c}" ${ring?`stroke="${c}" stroke-width="2.5"`:'fill-opacity=".85"'}><title>${esc(i.name+" ("+i.year+") · "+(i.fam||i.rule||""))}</title></circle><text x="${(X(p[0])+10).toFixed(1)}" y="${(Y(p[1])+4).toFixed(1)}" font-size="11" fill="var(--ink)">${esc(i.name)} <tspan fill="var(--muted)" font-size="9.5">${i.year}</tspan></text>`;});
   extra.forEach(({p,e})=>{const x=X(p[0]),y=Y(p[1]);s+=`<path d="M${x} ${y-10} L${x+10} ${y} L${x} ${y+10} L${x-10} ${y} Z" fill="${e.c}" stroke="var(--bg)" stroke-width="2"/><text x="${x+14}" y="${y-8}" font-size="12" font-weight="600" fill="${e.c}">${esc(e.label)}</text>`;});
   s+="</svg>";el.innerHTML=s;
-  const lg=document.getElementById("study-legend");if(lg)lg.innerHTML=Object.entries({floral:"Floral",gourmand:"Gourmand",amber:"Amber and spice",fresh:"Fresh and aquatic",aromatic:"Aromatic fougère",woody:"Woody",chypre:"Chypre",citrus:"Citrus and musk"}).map(([k,v])=>`<span><i style="background:${FAMG[k]}"></i>${v}</span>`).join("")+`<span><i style="background:var(--bg);border:2px solid var(--muted)"></i>Critics' groundbreakers</span><span><i style="background:var(--ink);transform:rotate(45deg)"></i>Your formulas</span>`;
+  const lg=document.getElementById(lid);if(lg)lg.innerHTML=Object.entries({floral:"Floral",gourmand:"Gourmand",amber:"Amber and spice",fresh:"Fresh and aquatic",aromatic:"Aromatic fougère",woody:"Woody",chypre:"Chypre",citrus:"Citrus and musk"}).map(([k,v])=>`<span><i style="background:${mode==="icons"?FAMG[k]:"var(--bg)"};${mode==="icons"?"":"border:2px solid "+FAMG[k]}"></i>${v}</span>`).join("")+`<span><i style="background:var(--ink);transform:rotate(45deg)"></i>Your formulas</span>`;
 }
+function drawStudyMap(){drawMap("study-map","study-legend","icons");drawMap("gb-map","gb-legend","ground");}
 function setMapPoints(kind,points){MAPPTS=MAPPTS.filter(p=>p.kind!==kind).concat(points.map(p=>Object.assign({kind},p)));drawStudyMap();}
 
 /* ================= VIRTUAL NOSE =================
@@ -1542,6 +1570,17 @@ const MDB_RAW=[
 ["Phenylacetaldehyde dimethyl acetal","101-48-4",1.8,219,4,"green:2,floralRose:1","","ac","",3,"padma"],
 ["Jasmine grandiflorum absolute","84776-64-7",2.5,250,6,"floralWhite:3,animalic:0.5,fruity:0.5","","e,c","A,R",3,"jasmine grandiflorum"],
 ["Tonalide","21145-77-7",5.7,326,1,"musky:3,amber:0.5","","","R",5,"ahtn"],
+["Menthol","89-78-1",3.4,216,4,"aromatic:2,spicyFresh:2,aquatic:0.5","md","","",2],
+["Peppermint oil","8006-90-4",3.3,210,4,"aromatic:2.5,spicyFresh:1.5,green:0.5","md","o","A",3,"peppermint oil"],
+["Galbanum oil","8023-91-4",4.5,200,12,"green:3,earthy:0.5,woodyDry:0.5","","o","",2,"galbanum oil"],
+["Violet leaf absolute","8024-08-6",3.5,230,15,"green:2.5,aquatic:1,mineral:1","","","",2,"violet leaf absolute"],
+["Geranium oil","8000-46-2",3.8,230,4,"floralRose:2.5,green:1,aromatic:1","","o","A",8,"geranium oil"],
+["Cinnamon bark oil","8015-91-6",2.2,250,10,"spicyWarm:3,sweet:1","","a","A,R",0.5,"cinnamon bark oil"],
+["Clove bud oil","8000-34-8",2.4,254,6,"spicyWarm:3,floralRose:0.5","md","c","A,R",2,"clove bud oil"],
+["Frankincense oil","8016-36-2",4.5,180,3,"smoky:1.5,amber:1,citrus:1,mineral:0.5","","o","A",8,"olibanum|frankincense oil"],
+["Myrrh oil","8016-37-3",4.0,250,3,"amber:1.5,smoky:1,earthy:1,aromatic:0.5","","","",5,"myrrh oil"],
+["Cocoa absolute","8002-31-1",2.5,280,4,"cocoa:3,sweet:1,earthy:0.5","","","",5,"cocoa absolute"],
+["Birch tar oil, rectified","8001-88-5",4.0,280,10,"smoky:3,leather:1.5","","","R",1,"birch tar"],
 ["Peru balsam, crude","8007-00-9",3.5,300,3,"amber:2,sweet:2,spicyWarm:0.5","","","P,A",0,"peru balsam crude"],
 ["Fig leaf absolute","68916-52-9",4.0,280,6,"green:2,lactonic:1.5,woodyCreamy:1","","","P",0,"fig leaf absolute"],
 ["Bergamot oil, expressed (not FCF)","8007-75-8",3.8,190,2,"citrus:3,aromatic:1","","o,ph","A,R",15,"bergamot expressed"],
@@ -1603,7 +1642,7 @@ const SOLV=MDB.find(m=>m.cas==="110-27-0");
 const PRICE={"84776-64-7":4000,"8022-96-6":3500,"8024-05-3":5000,"8002-73-1":10000,"8007-01-0":8000,"94350-09-1":25000,"8024-35-9":2000,"8038-65-1":3000,"542-46-1":1500,"541-91-3":800,"211299-54-6":600,"198404-98-7":250,"67801-20-1":150,"8015-92-7":1500,"8016-96-4":350,"8014-09-3":90,"8016-26-0":400,"23696-85-7":3000,"57378-68-4":600,"36431-72-8":400,"17092-92-1":800,"38818-55-2":1500,"79-69-6":1500,"488-10-8":600,"116-26-7":2000,"54440-17-4":300,"19700-21-1":5000,"6790-58-5":180,"111879-80-2":60,"1222-05-5":10,"54464-57-2":20,"24851-98-7":15,"105-95-3":20,"118-58-1":8,"5989-27-5":6,"18479-58-8":8,"60-12-8":6};
 const priceOf=m=>PRICE[m.cas]||(/oil|absolute|resinoid|tincture/i.test(m.name)?120:m.imp===0?5:25);
 /* typical GC composition of natural oils, used to expand them before checking (verify by GC per lot) */
-const COMP={"84776-64-7":{"140-11-4":0.2,"78-70-6":0.05,"120-72-9":0.02,"120-51-4":0.15},"8000-28-0":{"78-70-6":0.35,"115-95-7":0.35},"8008-56-8":{"5989-27-5":0.65,"5392-40-5":0.02},"8008-57-9":{"5989-27-5":0.9},"8008-31-9":{"5989-27-5":0.7},"8016-20-4":{"5989-27-5":0.9},"8007-01-0":{"106-22-9":0.35,"106-24-1":0.15,"60-12-8":0.02,"93-15-2":0.02},"8022-96-6":{"140-11-4":0.2,"78-70-6":0.05,"120-72-9":0.02,"120-51-4":0.15},"8016-63-5":{"115-95-7":0.6,"78-70-6":0.15},"8046-22-8":{"91-64-5":0.45},"8006-81-3":{"78-70-6":0.12,"120-51-4":0.06},"8000-66-6":{"470-82-6":0.35},"68648-33-9":{"5989-27-5":0.35,"115-95-7":0.3,"78-70-6":0.1},"8008-26-2":{"5989-27-5":0.45},"8007-08-7":{"5989-27-5":0.05}};
+const COMP={"8006-90-4":{"89-78-1":0.4},"8000-46-2":{"106-22-9":0.3,"106-24-1":0.15},"8015-91-6":{"104-55-2":0.7},"8000-34-8":{"97-53-0":0.8},"84776-64-7":{"140-11-4":0.2,"78-70-6":0.05,"120-72-9":0.02,"120-51-4":0.15},"8000-28-0":{"78-70-6":0.35,"115-95-7":0.35},"8008-56-8":{"5989-27-5":0.65,"5392-40-5":0.02},"8008-57-9":{"5989-27-5":0.9},"8008-31-9":{"5989-27-5":0.7},"8016-20-4":{"5989-27-5":0.9},"8007-01-0":{"106-22-9":0.35,"106-24-1":0.15,"60-12-8":0.02,"93-15-2":0.02},"8022-96-6":{"140-11-4":0.2,"78-70-6":0.05,"120-72-9":0.02,"120-51-4":0.15},"8016-63-5":{"115-95-7":0.6,"78-70-6":0.15},"8046-22-8":{"91-64-5":0.45},"8006-81-3":{"78-70-6":0.12,"120-51-4":0.06},"8000-66-6":{"470-82-6":0.35},"68648-33-9":{"5989-27-5":0.35,"115-95-7":0.3,"78-70-6":0.1},"8008-26-2":{"5989-27-5":0.45},"8007-08-7":{"5989-27-5":0.05}};
 
 function parseFormulas(text){
   parseFormulas.bad=new Set();
@@ -1758,7 +1797,8 @@ function makeChecks(items,tp,tps,ctx,sumF,sumC){
     names(ald.map(it=>({name:it.name,v:tot(it).toFixed(2)+"%"})),5)+". "+(amine?"Aldehydes react with the amine groups of amino silicone (Schiff bases). That can yellow the liquid and weaken the note. Ask the OEM to run these in the final base at 40 °C first.":"Watch for oxidation in storage."));}
   /* 7 colour */
   const col=items.filter(it=>it.m.chem.includes("c")&&(it.pf+it.pc)>0);
-  if(col.length){const cT=col.reduce((s,it)=>s+tot(it),0);add(cT>0.5?"fail":cT>0.1?"warn":"pass","Base chemistry","Colour formers: "+cT.toFixed(2)+"% of total oil (rule: 0.1% or less in a pale base)",names(col.map(it=>({name:it.name,v:tot(it).toFixed(2)+"%"})),5)+". Maltols bind iron and turn red-orange, vanillins and heliotropin yellow. Keep a chelant in the base and test in the final bottle at 40 °C.");}
+  if(col.length&&ctx.prod==="edp"){const cT=col.reduce((s,it)=>s+tot(it),0);add(cT>5?"warn":"info","Base chemistry","Colour formers: "+cT.toFixed(1)+"% of the concentrate","Vanillins, maltols and similar materials darken a perfume over months, which is normal in ambers and gourmands. Use a tinted or opaque bottle, or show the colour as part of the story.");}
+  else if(col.length){const cT=col.reduce((s,it)=>s+tot(it),0);add(cT>0.5?"fail":cT>0.1?"warn":"pass","Base chemistry","Colour formers: "+cT.toFixed(2)+"% of total oil (rule: 0.1% or less in a pale base)",names(col.map(it=>({name:it.name,v:tot(it).toFixed(2)+"%"})),5)+". Maltols bind iron and turn red-orange, vanillins and heliotropin yellow. Keep a chelant in the base and test in the final bottle at 40 °C.");}
   /* 8 oxidation */
   const terp=byCas("5989-27-5")+items.filter(it=>COMP[it.m.cas]).reduce((s,it)=>s+tot(it)*0.3,0);
   if(terp>1.5)add("warn","Base chemistry","Terpenes from citrus and spice oils: about "+terp.toFixed(1)+"% of total oil (rule: antioxidant above 1.5%)","Ask for 0.05 to 0.1% BHT or tocopherol in the oil, terpene-reduced citrus and nitrogen-flushed storage. Oxidised terpenes smell stale and become skin sensitisers.");
@@ -1818,8 +1858,8 @@ function makeChecks(items,tp,tps,ctx,sumF,sumC){
   if(amn.length&&aldh.length){const a1=amn.reduce((s,it)=>s+tot(it),0),a2=aldh.reduce((s,it)=>s+tot(it),0);add(a1>0.5&&a2>0.5?"fail":"warn","Base chemistry","Schiff base risk: "+names(amn.map(it=>({name:it.name})),3)+" with "+aldh.length+" aldehydes","Amines such as methyl anthranilate react with aldehydes ("+names(aldh.map(it=>({name:it.name})),4)+") and turn the liquid yellow to orange within weeks. Pre-react them as a deliberate Schiff base, or drop one side.");}
   /* phototoxic citrus */
   const pht=items.filter(it=>it.m.chem.includes("ph")&&tot(it)>0);
-  if(pht.length){const conc=ctx.prod==="edp"?EDP_CONC:(W[0]+W[1])/10;const fp=pht.reduce((s,it)=>s+tot(it),0)*conc/100;
-    add(ctx.prod==="edp"&&fp>0.4?"fail":ctx.prod==="edp"?"warn":"info","Regulatory","Phototoxic citrus: "+names(pht.map(it=>({name:it.name})),3)+" at "+fp.toFixed(2)+"% of the finished product",ctx.prod==="edp"?"Expressed citrus oils carry furocoumarins that burn skin in sunlight. On skin, IFRA limits expressed bergamot to about 0.4% of the product. Use FCF (furocoumarin-free) grades.":"Rinse-off laundry carries little phototoxic risk, but FCF grades remove the question.");}
+  if(pht.length){const conc=ctx.prod==="edp"?EDP_CONC:(W[0]+W[1])/10;const PL={"8007-75-8":0.4,"8008-56-8":2,"8016-20-4":4};const ratio=pht.reduce((s,it)=>s+tot(it)*conc/100/(PL[it.m.cas]||0.4),0);const fp=pht.reduce((s,it)=>s+tot(it),0)*conc/100;
+    add(ctx.prod==="edp"&&ratio>1?"fail":ctx.prod==="edp"&&ratio>0.5?"warn":"info","Regulatory","Phototoxic citrus: "+names(pht.map(it=>({name:it.name})),3)+" at "+fp.toFixed(2)+"% of the finished product ("+Math.round(ratio*100)+"% of the combined limit)",ctx.prod==="edp"?"Expressed citrus oils carry furocoumarins that burn skin in sunlight. On skin, IFRA limits each expressed oil (bergamot about 0.4%, lemon about 2%, grapefruit about 4% of the product, verify) and the ratios add up. Use FCF (furocoumarin-free) grades.":"Rinse-off laundry carries little phototoxic risk, but FCF grades remove the question.");}
   /* solvents dilute the oil */
   const solv=items.filter(it=>it.m.chem.includes("sv"));const sT=solv.reduce((s,it)=>s+it.pf,0);
   if(sT>10)add("warn","Dosing","The oil is "+sT.toFixed(0)+"% solvent","Solvents ("+names(solv.map(it=>({name:it.name})),3)+") add no smell, so the real fragrance dose is "+(100-sT).toFixed(0)+"% of what the label load suggests."+(ctx.prod==="softener"?" High glycol levels can also thin or destabilise an esterquat softener.":""));
@@ -2547,6 +2587,28 @@ renderIcons();drawStudyMap();
   $("#grammar").innerHTML=GRAMMAR.map(g=>`<div class="box"><span class="eyebrow">${g[4]?"Composer move":"Brand-level move"}</span><h3>${esc(g[1])}</h3><p>${esc(g[2])}</p><p class="status">${esc(g[3])}</p></div>`).join("");
 })();
 
+
+
+/* ---------- Composer to Virtual Nose bridge ----------
+   Each palette cartridge as a representative CAS-level recipe (est., an accord a supplier would build differently).
+   Prohibited or CITES materials are replaced by reconstitutions (fig leaf, oud). */
+const CART={"BERG": [["68648-33-9", 100]], "LEMN": [["8008-56-8", 100]], "GRPF": [["8016-20-4", 100]], "MAND": [["8008-31-9", 100]], "YUZU": [["8008-56-8", 40], ["8016-20-4", 25], ["4674-50-4", 5], ["24851-98-7", 30]], "PEPB": [["87-44-5", 45], ["5989-27-5", 35], ["8000-66-6", 20]], "PINK": [["5989-27-5", 55], ["87-44-5", 35], ["106-22-9", 10]], "CARD": [["8000-66-6", 100]], "GING": [["8007-08-7", 100]], "MINT": [["8006-90-4", 100]], "GALB": [["8023-91-4", 100]], "VIOL": [["8024-08-6", 100]], "ALDH": [["112-31-2", 30], ["112-45-8", 40], ["110-41-8", 30]], "CALO": [["28940-11-6", 100]], "OZON": [["67634-15-5", 20], ["18479-58-8", 50], ["24851-98-7", 30]], "LAVN": [["8000-28-0", 100]], "ROSE": [["8007-01-0", 100]], "GERA": [["8000-46-2", 100]], "JASM": [["8022-96-6", 100]], "TUBR": [["8024-05-3", 100]], "ORFL": [["78-70-6", 30], ["115-95-7", 15], ["134-20-3", 5], ["24851-98-7", 30], ["140-11-4", 10], ["120-72-9", 0.5], ["5989-27-5", 9.5]], "IRIS": [["8002-73-1", 10], ["79-69-6", 10], ["127-51-5", 40], ["54464-57-2", 40]], "VIOI": [["127-51-5", 60], ["14901-07-6", 40]], "HEDI": [["24851-98-7", 100]], "MUGT": [["107-75-5", 30], ["63500-71-0", 30], ["13828-37-0", 20], ["24851-98-7", 20]], "CINN": [["8015-91-6", 100]], "CLOV": [["8000-34-8", 100]], "SAFF": [["54440-17-4", 15], ["116-26-7", 2], ["54464-57-2", 40], ["6790-58-5", 3], ["65442-31-1", 1], ["24851-98-7", 39]], "FIG": [["22457-23-4", 5], ["705-86-2", 5], ["65405-77-8", 30], ["24851-98-7", 30], ["54464-57-2", 30]], "TEA": [["36431-72-8", 3], ["38818-55-2", 1], ["24851-98-7", 40], ["14901-07-6", 10], ["17283-81-7", 15], ["60047-17-8", 5], ["54464-57-2", 26]], "TOMA": [["22457-23-4", 3], ["3681-71-8", 2], ["928-96-1", 5], ["65405-77-8", 40], ["24851-98-7", 50]], "PLUM": [["104-67-6", 8], ["2305-05-7", 5], ["4940-11-8", 1], ["102-20-5", 20], ["103-60-6", 30], ["24851-98-7", 36]], "PEAC": [["104-67-6", 30], ["705-86-2", 10], ["24851-98-7", 60]], "SOYB": [["705-86-2", 10], ["104-61-0", 5], ["91-64-5", 5], ["17092-92-1", 1], ["65405-77-8", 30], ["24851-98-7", 29], ["105-95-3", 20]], "RICE": [["705-86-2", 10], ["127-51-5", 20], ["91-64-5", 5], ["105-95-3", 30], ["24851-98-7", 35]], "SAND": [["65113-99-7", 50], ["67801-20-1", 10], ["198404-98-7", 1], ["54464-57-2", 39]], "CEDR": [["8000-27-9", 100]], "VETI": [["8016-96-4", 100]], "PATC": [["8014-09-3", 100]], "OUDA": [["65442-31-1", 2], ["8016-96-4", 15], ["8014-09-3", 15], ["54464-57-2", 40], ["6790-58-5", 5], ["8016-26-0", 10], ["87-44-5", 13]], "ISOE": [["54464-57-2", 100]], "CASH": [["33704-61-9", 100]], "AMBX": [["6790-58-5", 100]], "LABD": [["8016-26-0", 100]], "BENZ": [["9000-05-9", 100]], "INCN": [["8016-36-2", 100]], "MYRR": [["8016-37-3", 100]], "VANL": [["121-33-5", 100]], "TONK": [["8046-22-8", 100]], "COCO": [["8002-31-1", 100]], "COFF": [["38818-55-2", 2], ["8016-23-7", 20], ["121-33-5", 5], ["4940-11-8", 1], ["105-95-3", 30], ["54464-57-2", 42]], "HONY": [["102-20-5", 40], ["102-13-6", 20], ["8016-26-0", 5], ["105-95-3", 35]], "LEAT": [["65442-31-1", 3], ["8013-10-3", 2], ["54440-17-4", 10], ["8016-26-0", 15], ["54464-57-2", 40], ["6790-58-5", 5], ["105-95-3", 25]], "BIRC": [["8001-88-5", 100]], "GUNP": [["8013-10-3", 5], ["87-44-5", 20], ["6790-58-5", 10], ["54464-57-2", 40], ["112-45-8", 5], ["105-95-3", 20]], "ASH": [["8013-10-3", 3], ["6790-58-5", 10], ["54464-57-2", 50], ["127-51-5", 20], ["8016-96-4", 17]], "OAKM": [["90028-68-5", 100]], "PETR": [["8016-96-4", 30], ["19700-21-1", 0.01], ["6790-58-5", 10], ["18479-58-8", 30], ["54464-57-2", 29.99]], "SALT": [["6790-58-5", 20], ["67634-15-5", 5], ["28940-11-6", 1], ["54464-57-2", 40], ["1222-05-5", 34]], "METL": [["112-45-8", 20], ["18479-58-8", 40], ["6790-58-5", 10], ["54464-57-2", 30]], "MUSW": [["1222-05-5", 40], ["111879-80-2", 30], ["105-95-3", 30]], "SKIN": [["28645-51-4", 30], ["105-95-3", 30], ["1222-05-5", 20], ["6790-58-5", 5], ["54464-57-2", 15]], "CAST": [["65442-31-1", 5], ["8016-26-0", 30], ["542-46-1", 1], ["8016-96-4", 20], ["54464-57-2", 44]], "CIVT": [["120-72-9", 30], ["542-46-1", 10], ["8014-09-3", 30], ["105-95-3", 30]]};
+let curRes=null;
+const CPROP={};
+Object.entries(CART).forEach(([id,rec])=>{let ald=0,col=0,mar=0,lp=0,bp=0,tot=0;rec.forEach(([c,p])=>{const m=BYCAS[c];if(!m)return;tot+=p;lp+=m.logP*p;bp+=m.bp*p;if(m.chem.includes("a"))ald+=p;if(m.chem.includes("c"))col+=p;if((m.tags.includes("m")||m.tags.includes("ml"))&&m.imp>=15)mar+=p;});CPROP[id]={ald,col,mar,logP:tot?lp/tot:3.5,bp:tot?bp/tot:250};});
+function composerCtx(res,sc){const f=res.cfg.format;return{prod:f==="detergent"?"amino":f==="softener"?"softener":"edp",free:FORMATS[f].laundry?sc.conc*10:8.5,cap:0,encap:"no",dryer:"vented",target:res.an.raw,avoid:new Set(),claims:"",refText:""};}
+function selfAudit(res,sc){try{const A=runAudit(cartText(sc),composerCtx(res,sc),0);if(!A)return null;return{f:A.checks.filter(c=>c.sev==="fail").length,w:A.checks.filter(c=>c.sev==="warn").length,top:A.checks.filter(c=>c.sev==="fail").slice(0,3).map(c=>c.title)};}catch(e){return null;}}
+function cartText(sc){
+  const used=sc.rows.filter(r=>CART[r.id]);let t="";
+  used.forEach(r=>{t+="@P-"+r.id+" "+BYID[r.id].name+"\n"+CART[r.id].map(([c,p])=>(BYCAS[c]?BYCAS[c].name:c)+" | "+c+" | "+p).join("\n")+"\n\n";});
+  t+="= "+sc.name+" (Composer, "+HEADS.find(h=>h[0]===sc.head)[1]+") free oil\n"+sc.rows.map(r=>"P-"+r.id+" "+BYID[r.id].name+" | "+r.pct).join("\n")+"\n";
+  return t;
+}
+document.addEventListener("click",ev=>{const b=ev.target.closest(".aud");if(!b||!curRes)return;const sc=curRes.scents.find(x=>x.head===b.dataset.head);if(!sc)return;
+  const f=curRes.cfg.format;nstate.prod=f==="detergent"?"amino":f==="softener"?"softener":"edp";
+  document.querySelectorAll("#n-prod button").forEach(x=>x.setAttribute("aria-pressed",String(x.dataset.k===nstate.prod)));
+  $("#n-free").value=FORMATS[f].laundry?(sc.conc*10).toFixed(1):"8.5";$("#n-cap").value="0";$("#n-target").value=curRes.an.raw;$("#n-claims").value="";$("#n-ref").value="";
+  $("#nf").value=cartText(sc);nRun();$("#nose").scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"});});
 
 /* ---------- Reference sections ---------- */
 const LAYERS=[

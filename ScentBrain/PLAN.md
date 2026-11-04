@@ -1,6 +1,6 @@
 # Sion Scent Brain: Master Plan
 
-Version 0.6. Last updated 2026-11-04. Live page: https://claude.ai/artifact/4P366aMVQNjg4MCwUXo9fL (private until the owner shares it). Source: `ScentBrain/index.html` on branch `claude/magical-carson-wz65e9`.
+Version 0.7. Last updated 2026-11-04. Live page: https://claude.ai/artifact/4P366aMVQNjg4MCwUXo9fL (private until the owner shares it). Source: `ScentBrain/index.html` on branch `claude/magical-carson-wz65e9`.
 
 This file is the backend. It is written so a future AI or human can pick the project up cold. Keep Case 1 (section 2) intact: it defines what "good" looks like.
 
@@ -48,6 +48,9 @@ Lesson: a formula is not done when it looks complete. It is done when it has bee
 4. Engine: this plan in page form, chain history (builds 0.1 to 0.4), handoff steps for other chats, the exam and the prediction ledger.
 5. Label-claim audit (Move 7 word audit): fragrance-free, unscented, hypoallergenic, absolute safety, natural or clean, germ and pest claims, duration claims.
 7. Self-study (section 05): the 30 most commercially dominant perfumes (evidence-graded by a research agent), a map of their smell profiles, ten patterns, a genre timeline, a sourced sensory-science brief and 12 Sion creation rules.
+11. Self-study is now three separate sections: 05 Best sellers, 06 Groundbreakers (critics only), 07 Sensory science and the Sion rules, each study with its own map on shared axes.
+12. Composer to Virtual Nose bridge: every palette cartridge has a representative CAS recipe (prohibited or CITES materials replaced by reconstitutions). Each Composer card shows its own Virtual Nose result and has an "Audit in Virtual Nose" button. Laundry caps come from the same senior rules, cartridge survival from recipe logP and boiling point, musk and wood cartridges capped at 10% each in laundry. Perfume formats pass with 0 fails on test briefs. Laundry scents still fade after a hot dryer when the idea lives in top notes, which points to capsules.
+13. Rule fixes: colour formers are a note, not a fail, in fine fragrance. Phototoxic citrus uses per-oil limits (bergamot 0.4, lemon 2, grapefruit 4, verify) summed as ratios.
 9. Groundbreakers study (critics, historians and curators only): 20 perfumes from Fougère Royale (1882) to Portrait of a Lady (2010), the rule each broke, mechanism, legacy and outcome, and an 11-move innovation grammar. Measured on one pool, groundbreakers launched at median similarity 67 to the closest earlier perfume, best sellers at 77. The overlap band (about 68 to 77) is where a scent can be both a critic's pick and a seller.
 10. Innovation moves in the Composer: Scent 1 can apply one of nine formula-level moves (synthetic star, overdose, abstraction, food, industry, element, minimalism, gender inversion, built-in clash), and the compass names the closest groundbreaker and its move.
 8. Familiarity-novelty compass: every audit and every Composer scent gets its closest icon, a zone (near copy 90+, close follower 84 to 90, sweet spot 60 to 84, bold 45 to 60, genre breaker under 45) and a hero check (one material should carry 12% or more of the smell). Zones come from the icons' own launch data: median similarity to the closest earlier hit 0.71, middle half 0.57 to 0.80. Profiles are estimates from public notes.
@@ -129,6 +132,7 @@ Needs the owner's approval: a scheduled sentinel that watches the IFRA 52nd Amen
 - 2026-11-03 build 0.2.1 to 0.2.2: 12 senior rules from the panel review, visible Gemini check.
 - 2026-11-03 build 0.3: Gemini data reconciled, IFRA 10A check, Engine section, Full review (5 blind agents), exam, this PLAN.md.
 - 2026-11-03 build 0.4: chain history, handoff box, held-out tests T2 to T5, label-claim audit, measured GC-MS reference, prediction ledger, clash-check prompt.
+- 2026-11-04 build 0.7: self-study split into three sections, Composer to Virtual Nose bridge with 64 cartridge recipes and per-card self-audit, rule-aware laundry caps, product-aware colour rule, IFRA-style phototoxic sums, 11 new natural materials.
 - 2026-11-04 build 0.6: groundbreakers study and innovation grammar, innovation moves in the Composer, compass names closest groundbreaker, blind round 2 and fixes, material database 168 with natural-oil GC expansion, compass nudge for Scent 1, CAS validator.
 - 2026-11-03 build 0.5: self-study of 30 icons and sensory science (two research agents), familiarity-novelty compass in the Virtual Nose and Composer, icon map, 12 creation rules, anti-copy rule.
 - 2026-11-03 build 0.4.1: blind exam round 1 (9 of 17 before, 17 of 17 after), 12 materials, CAS-mismatch fix, Schiff base, phototoxic citrus, solvent dilution and four claim rules.
