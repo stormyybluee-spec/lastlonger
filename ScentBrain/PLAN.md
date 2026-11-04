@@ -1,6 +1,6 @@
 # Sion Scent Brain: Master Plan
 
-Version 0.5. Last updated 2026-11-03. Live page: https://claude.ai/artifact/4P366aMVQNjg4MCwUXo9fL (private until the owner shares it). Source: `ScentBrain/index.html` on branch `claude/magical-carson-wz65e9`.
+Version 0.6. Last updated 2026-11-04. Live page: https://claude.ai/artifact/4P366aMVQNjg4MCwUXo9fL (private until the owner shares it). Source: `ScentBrain/index.html` on branch `claude/magical-carson-wz65e9`.
 
 This file is the backend. It is written so a future AI or human can pick the project up cold. Keep Case 1 (section 2) intact: it defines what "good" looks like.
 
@@ -48,6 +48,8 @@ Lesson: a formula is not done when it looks complete. It is done when it has bee
 4. Engine: this plan in page form, chain history (builds 0.1 to 0.4), handoff steps for other chats, the exam and the prediction ledger.
 5. Label-claim audit (Move 7 word audit): fragrance-free, unscented, hypoallergenic, absolute safety, natural or clean, germ and pest claims, duration claims.
 7. Self-study (section 05): the 30 most commercially dominant perfumes (evidence-graded by a research agent), a map of their smell profiles, ten patterns, a genre timeline, a sourced sensory-science brief and 12 Sion creation rules.
+9. Groundbreakers study (critics, historians and curators only): 20 perfumes from Fougère Royale (1882) to Portrait of a Lady (2010), the rule each broke, mechanism, legacy and outcome, and an 11-move innovation grammar. Measured on one pool, groundbreakers launched at median similarity 67 to the closest earlier perfume, best sellers at 77. The overlap band (about 68 to 77) is where a scent can be both a critic's pick and a seller.
+10. Innovation moves in the Composer: Scent 1 can apply one of nine formula-level moves (synthetic star, overdose, abstraction, food, industry, element, minimalism, gender inversion, built-in clash), and the compass names the closest groundbreaker and its move.
 8. Familiarity-novelty compass: every audit and every Composer scent gets its closest icon, a zone (near copy 90+, close follower 84 to 90, sweet spot 60 to 84, bold 45 to 60, genre breaker under 45) and a hero check (one material should carry 12% or more of the smell). Zones come from the icons' own launch data: median similarity to the closest earlier hit 0.71, middle half 0.57 to 0.80. Profiles are estimates from public notes.
 6. Measured reference (Move 6): paste a GC-MS list (name, CAS, % area). The target becomes that measured profile, and key odorants missing or too weak are flagged.
 
@@ -89,6 +91,7 @@ Independence: the framer never sees the formula. Red-team agents never see each 
 - Test bank: Case 1 (training case, public key) scores 10 of 10 on 2026-11-03. Because the rules came from Case 1, this proves the rules, not generalisation.
 - Held-out tests T2 to T5 (rose softener, white-musk extrait, durian detergent with capsules, "fragrance-free" masking detergent): 20 of 20 caught on 2026-11-03. Caveat: written by the same session that built the checks.
 - Blind tests T6 to T8, written by an independent agent with no access to the rules or files (sea breeze detergent, vanilla cashmere softener, fig and coconut EDP): 9 of 17 caught on the first run (53%). Misses fixed as general rules (12 materials added, CAS-mismatch bug fixed, Schiff base, phototoxic citrus, solvent dilution, vegan, allergen-free, phthalate-free and colour claims). 17 of 17 after. They are now regression tests, not held-out tests.
+- Blind round 2 (2026-11-04, a second independent agent): 14 of 21 on the first run (67%, up from 53%). Fixed: cost realism, expensive-but-unnoticeable materials, CITES naturals, acetals at softener pH, limonene in esterquat, IFRA-compliant claim, wider allergen claims, CAS check digits (which also corrected 7 wrong CAS numbers in the brain's own database), 10 materials. 38 of 38 blind keys after.
 - Rule for the next exam round: a fresh blind agent writes new tests each round. Only the first run counts as the score.
 - Keys live in the page code but are never sent to any Claude agent.
 - Skip-me score: findings the owner had to trigger. Goal zero.
@@ -126,5 +129,6 @@ Needs the owner's approval: a scheduled sentinel that watches the IFRA 52nd Amen
 - 2026-11-03 build 0.2.1 to 0.2.2: 12 senior rules from the panel review, visible Gemini check.
 - 2026-11-03 build 0.3: Gemini data reconciled, IFRA 10A check, Engine section, Full review (5 blind agents), exam, this PLAN.md.
 - 2026-11-03 build 0.4: chain history, handoff box, held-out tests T2 to T5, label-claim audit, measured GC-MS reference, prediction ledger, clash-check prompt.
+- 2026-11-04 build 0.6: groundbreakers study and innovation grammar, innovation moves in the Composer, compass names closest groundbreaker, blind round 2 and fixes, material database 168 with natural-oil GC expansion, compass nudge for Scent 1, CAS validator.
 - 2026-11-03 build 0.5: self-study of 30 icons and sensory science (two research agents), familiarity-novelty compass in the Virtual Nose and Composer, icon map, 12 creation rules, anti-copy rule.
 - 2026-11-03 build 0.4.1: blind exam round 1 (9 of 17 before, 17 of 17 after), 12 materials, CAS-mismatch fix, Schiff base, phototoxic citrus, solvent dilution and four claim rules.
