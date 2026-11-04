@@ -930,6 +930,7 @@ function composeHead(an,head,cfg){
   let twist=head==="creative"?0.6:0;
   if(cfg.frame==="creative"&&head==="creative")twist=0.9;
   if(cfg.frame==="unexplored")twist=head==="creative"?1.3:head==="accurate"?0.25:0.4;
+  if(cfg.twistBoost)twist+=cfg.twistBoost;
   let twistNote="";
   if(twist>0){
     const dom=DIMS[argmax(t)],opts=CONTRAST[dom],pick=opts[Math.floor(R()*opts.length)],other=opts.find(o=>o!==pick);
@@ -1060,7 +1061,13 @@ function nameAndStory(sc,an){
   const lead={creative:"The brain's own reading"+(sc.twistNote?": "+sc.twistNote.toLowerCase()+".":"."),accurate:"As close to the brief as a wearable scent can go.",luxury:"The couture version, with a longer and richer dry-down."}[sc.head];
   sc.story=lead+" Opens on "+tp.slice(0,2).join(" and ")+". The heart turns to "+hp.slice(0,2).join(" with ")+". Dries down on "+bp.slice(0,3).join(", ")+".";
 }
-function composeAll(an,cfg){return HEADS.map(([h])=>{const sc=composeHead(an,h,cfg);nameAndStory(sc,an);return sc;});}
+function composeAll(an,cfg){return HEADS.map(([h])=>{
+  let sc=composeHead(an,h,cfg);
+  if(h==="creative"&&typeof compass==="function"){
+    /* compass nudge: Scent 1 must not follow an icon too closely */
+    for(let k=1;k<=2;k++){const C=compass(sc.fv);if(C.F<0.84)break;const was=C.sims[0].ic.name;sc=composeHead(an,h,Object.assign({},cfg,{twistBoost:0.45*k}));sc.notes.push("Compass nudge: moved further from "+was+" ("+Math.round(C.F*100)+")");}
+  }
+  nameAndStory(sc,an);return sc;});}
 
 /* ---------- Rendering ---------- */
 const GATE_LABEL={clear:"Clear",theme:"Theme",persona:"Persona",transmute:"Transmute",decline:"Declined"};
@@ -1430,6 +1437,51 @@ const MDB_RAW=[
 ["Camphor","76-22-2",2.4,204,6,"aromatic:2,woodyDry:0.5","ca,md","","A2",0.5],
 ["Maltol","118-71-8",0.1,285,6,"sweet:3,cocoa:0.5","cy","c,w","",1],
 ["Furaneol","3658-77-3",0.8,216,50,"sweet:3,fruity:1","cy","c,w","",0.2],
+["Ethyl butyrate","105-54-4",1.85,121,8,"fruity:3,sweet:1","cy","e,w","",2,"ethyl butanoate"],
+["Ethyl 2-methylbutyrate","7452-79-1",2.3,133,10,"fruity:3,green:0.5","","e","",2],
+["Aldehyde C-16 (strawberry)","77-83-8",2.3,272,6,"fruity:3,sweet:1","cy","e","",3,"ethyl methylphenylglycidate|aldehyde c-16"],
+["Benzaldehyde","100-52-7",1.48,179,8,"nutty:3,fruity:1","","a,o","A2",1,"bitter almond"],
+["Anisaldehyde","123-11-5",1.76,248,4,"floralWhite:1.5,powdery:1,sweet:1","","a","",3,"aubepine"],
+["Cinnamaldehyde","104-55-2",1.9,248,10,"spicyWarm:3,sweet:0.5","","a","A,R",0.5,"cinnamal|cinnamic aldehyde"],
+["Isoeugenol","97-54-1",2.6,266,8,"spicyWarm:2.5,floralRose:1","","c","A,R",0.1],
+["Hydroxycitronellal","107-75-5",1.5,241,1,"floralWhite:2.5,green:0.5","","a,w","A,R",5],
+["Amyl cinnamal","122-40-7",4.3,287,0.6,"floralWhite:1.5,fruity:0.5","","a","A,R",10,"amyl cinnamic aldehyde"],
+["Cyclamen aldehyde","103-95-7",3.6,270,3,"floralWhite:2,green:1,aquatic:0.5","","a","",3],
+["Bourgeonal","18127-01-0",3.7,264,10,"floralWhite:2,aldehydic:1,aquatic:0.5","","a","",1],
+["Floralozone","67634-15-5",3.8,250,15,"aquatic:3,floralWhite:1,aldehydic:1","m","a","",1],
+["Phenylacetaldehyde","122-78-1",1.8,195,20,"floralRose:1.5,sweet:1.5,green:1","","a,o","",0.5,"hyacinth aldehyde"],
+["Aldehyde C-8 (octanal)","124-13-0",3.0,171,15,"aldehydic:2.5,citrus:2","so","a,o","",0.5,"octanal"],
+["Aldehyde C-9 (nonanal)","124-19-6",3.4,195,15,"aldehydic:2.5,floralRose:1,citrus:1","so","a,o","",0.5,"nonanal"],
+["Ethyl linalool","10339-55-6",3.3,214,1.5,"floralWhite:1.5,citrus:1,aromatic:0.5","","o","",20],
+["Rosalva","13019-22-2",3.9,232,3,"floralRose:2,aldehydic:1,green:0.5","","","",5,"decenol"],
+["Benzyl alcohol","100-51-6",1.1,205,0.1,"floralWhite:0.3","","w","A",10],
+["Cinnamyl alcohol","104-54-1",1.95,257,1,"floralWhite:1,spicyWarm:1,sweet:0.5","","w","A,R",3],
+["Nootkatone","4674-50-4",4.3,285,6,"citrus:3,woodyDry:1","","","",3],
+["Muscone","541-91-3",6.0,328,4,"musky:3,animalic:1","","","",3],
+["Muscenone","82356-51-2",5.4,300,4,"musky:3,animalic:0.5,powdery:0.5","","","",5],
+["Velvione","37609-25-9",5.5,310,3,"musky:3,powdery:1","","","",5],
+["Civetone","542-46-1",6.5,342,20,"animalic:3,musky:2","","","",0.2],
+["Cetalox","3738-00-9",5.6,275,15,"amber:2,mineral:1.5,musky:1.5,woodyDry:0.5","","","",10,"ambrox dl|ambroxide racemic"],
+["Ambrocenide","211299-54-6",5.0,290,60,"amber:2,woodyDry:2,mineral:1","","","",1],
+["Karanal","117933-89-8",5.0,290,20,"amber:2,woodyDry:2,mineral:1","","","R",2],
+["Isobutyl quinoline","65442-31-1",3.7,252,30,"leather:3,smoky:1,earthy:0.5","","n","",0.5,"ibq"],
+["Methyl eugenol","93-15-2",3.0,254,4,"spicyWarm:2,floralRose:0.5","md","","R",0.01],
+["Clary sage oil","8016-63-4",3.8,210,2,"aromatic:2.5,amber:0.5,floralWhite:0.5","","e,o","A",5,"clary sage"],
+["Lavender oil","8000-28-0",3.5,205,2,"aromatic:3,floralRose:0.5","","e,o","A",15,"lavender oil"],
+["Lemon oil","8008-56-8",4.3,178,2,"citrus:3,aldehydic:0.5","","o,ph","A",10,"lemon oil"],
+["Sweet orange oil","8008-57-9",4.5,176,1.5,"citrus:3,fruity:0.5","","o","A",20,"orange oil"],
+["Mandarin oil","8008-31-9",4.4,177,2,"citrus:2.5,fruity:1,sweet:0.5","","o","A",15,"mandarin oil"],
+["Grapefruit oil","8016-20-4",4.5,176,2,"citrus:3,fruity:1","","o,ph","A",10,"grapefruit oil"],
+["Rose oil","8007-01-0",3.6,230,6,"floralRose:3,fruity:0.5,green:0.5","","o","A,R",3,"rose otto|rose oil"],
+["Jasmine absolute","8022-96-6",2.5,250,6,"floralWhite:3,animalic:0.5,fruity:0.5","","e,c","A,R",3,"jasmine absolute"],
+["Tuberose absolute","8024-05-3",2.8,260,6,"floralWhite:3,lactonic:1,sweet:0.5","","e,c","A",2,"tuberose absolute"],
+["Orris absolute","8002-73-2",4.5,280,8,"powdery:3,woodyCreamy:1,earthy:0.5","","","",2,"orris absolute|iris absolute"],
+["Tonka absolute","8046-22-6",2.0,290,4,"sweet:2,nutty:1.5,powdery:1","","w","A,R",3,"tonka absolute"],
+["Labdanum absolute","8016-26-0",4.0,300,3,"amber:3,leather:1,smoky:0.5","","","",5,"labdanum absolute"],
+["Benzoin resinoid","9000-05-9",2.5,300,1,"amber:2,sweet:2","","c","",10,"benzoin resinoid"],
+["Sandalwood oil, Australian","8024-35-9",5.0,300,1.5,"woodyCreamy:3,lactonic:0.5","","","",10,"sandalwood oil"],
+["Cedarwood oil, Virginia","8000-27-9",5.5,280,1,"woodyDry:3,powdery:0.5","","","",20,"cedarwood oil"],
+["Oakmoss absolute","90028-68-5",4.0,300,10,"earthy:3,green:1,woodyDry:0.5","mu,ea","","A,R",0.1,"oakmoss absolute"],
 ["Peru balsam, crude","8007-00-9",3.5,300,3,"amber:2,sweet:2,spicyWarm:0.5","","","P,A",0,"peru balsam crude"],
 ["Fig leaf absolute","68916-52-0",4.0,280,6,"green:2,lactonic:1.5,woodyCreamy:1","","","P",0,"fig leaf absolute"],
 ["Bergamot oil, expressed (not FCF)","8007-75-8",3.8,190,2,"citrus:3,aromatic:1","","o,ph","A,R",15,"bergamot expressed"],
@@ -1487,7 +1539,7 @@ function findMat(name,cas){
 }
 const SOLV=MDB.find(m=>m.cas==="110-27-0");
 /* typical GC composition of natural oils, used to expand them before checking (verify by GC per lot) */
-const COMP={"8000-66-6":{"470-82-6":0.35},"68648-33-9":{"5989-27-5":0.35,"115-95-7":0.3,"78-70-6":0.1},"8008-26-2":{"5989-27-5":0.45},"8007-08-7":{"5989-27-5":0.05}};
+const COMP={"8000-28-0":{"78-70-6":0.35,"115-95-7":0.35},"8008-56-8":{"5989-27-5":0.65,"5392-40-5":0.02},"8008-57-9":{"5989-27-5":0.9},"8008-31-9":{"5989-27-5":0.7},"8016-20-4":{"5989-27-5":0.9},"8007-01-0":{"106-22-9":0.35,"106-24-1":0.15,"60-12-8":0.02,"93-15-2":0.02},"8022-96-6":{"140-11-4":0.2,"78-70-6":0.05,"120-72-9":0.02,"120-51-4":0.15},"8016-63-4":{"115-95-7":0.6,"78-70-6":0.15},"8046-22-6":{"91-64-5":0.45},"8006-81-3":{"78-70-6":0.12,"120-51-4":0.06},"8000-66-6":{"470-82-6":0.35},"68648-33-9":{"5989-27-5":0.35,"115-95-7":0.3,"78-70-6":0.1},"8008-26-2":{"5989-27-5":0.45},"8007-08-7":{"5989-27-5":0.05}};
 
 function parseFormulas(text){
   const accords={},forms=[];let cur=null;const CASRE=/\b(\d{2,7}-\d{2}-\d)\b/;
@@ -2109,7 +2161,7 @@ $("#n-panel").addEventListener("click",async()=>{
 function copyText(ta){const v=ta.value;navigator.clipboard&&navigator.clipboard.writeText?navigator.clipboard.writeText(v).then(()=>{$("#n-status").textContent="Copied.";},()=>{ta.focus();ta.select();}):(ta.focus(),ta.select());}
 
 /* ---------- Gemini data check ---------- */
-const GLIST=MDB.filter(m=>m.imp>0);const GB=3,GSIZE=Math.ceil(GLIST.length/GB);let gBatch=0;
+const GLIST=MDB.filter(m=>m.imp>0);const GB=4,GSIZE=Math.ceil(GLIST.length/GB);let gBatch=0;
 function geminiPrompt(){
   if(gBatch===GB)return `You are a fragrance raw-materials data specialist. Two earlier sources disagree on the values below. For each one, find the primary source (PubChem experimental property, supplier technical data sheet from Givaudan, IFF, dsm-firmenich or Symrise, the IFRA Standards library) and say which value is right. Do not average. If no primary source exists, answer ?.
 
