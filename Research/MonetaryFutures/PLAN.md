@@ -305,6 +305,7 @@ Correction ledger so far:
 | 2026-10-24 | Owner's "wealth 300T+, debt 500T+": framed first as "swapped", then by the court as "both can be true depending on which debt" ($348T to $365T of loans and bonds, about $1,200T of all paper claims, $518T to $600T of net wealth) | Engine (cold framer, red team, court), unprompted | Framer and lane picked one definition. The red team caught the overcorrection |
 | 2026-10-24 | Rulebook money chapter: deposits rose $4.7T not $5.45T in 2020 to 2021, bank securities $1.9T not $2.1T, M2 40% not 41%, reverse repo peak $2.4T | Engine (R6B lane, verifier), unprompted | Numbers written before the v4 pipeline |
 | 2026-10-24 | Four Level 2 bridges claimed Level 1 taught things it did not (1942 to 1951 cap is in rb-08, not rb-03, and others) | Engine (red team, court), unprompted | Bridges written from memory of Level 1 |
+| 2026-11-05 | Round 8 draft said digital credit dollars "never leave Set 1". True for trades, but it hid the creation channel (bank loans against Bitcoin, bank buyers). Rebuilt as three meters: dollars, ownership and risk, market value | Engine (blind red team), unprompted, before publication | Case 2 shape repeated: a true trade-level headline hiding the creation channel |
 
 Owner test bank (held-out questions with known expert answers). The Scorekeeper runs one per round as a blind exam (section 6.3) and grades it pass, partial or fail. Add a case every time the owner catches the engine out. Keys for the held-out tests live in `engine/test_bank_keys.md`, which examinees never open. Cases 1 and 2 are public training cases, so their keys stay here.
 | Case | Question | An expert answer must contain | Result |
@@ -315,6 +316,7 @@ Owner test bank (held-out questions with known expert answers). The Scorekeeper 
 | Test 4 | Does a strong dollar export inflation, and to whom, by regime? | Held out | Not yet run |
 | Test 5 | What actually limits US deficits: the debt ceiling, the bond market, the Fed or inflation? | Held out | Not yet run |
 | Test 6 | When the Fed shrinks its balance sheet, whose money disappears? | Held out | Not yet run |
+| Test 7 | Does buying a Bitcoin-backed preferred move money out of the dollar system? | Held out | Not yet run |
 
 ---
 
@@ -481,6 +483,7 @@ Escalation triggers (Quick to Standard): an anomaly, a contradiction with the le
 | ibnptqcO-AM | Tom Staudt (ARK Invest President), Bonnie Blockchain | 2026-03-19 | Forecast 2-4 Fed cuts in 2026 (refuted by the September hike) |
 | SoROeULO3Ck | Lyn Alden, Bonnie Blockchain | 2025-08-13 | Deficits unstoppable for 5-10 years. Stablecoins as the final evolution of fiat |
 | BQP28KH4VGw | Reeve Collins (Tether co-founder), Bonnie Blockchain | 2026-01-30 | Stablecoins "can't solve" US debt, one extra buyer of a few hundred billion |
+| m1oXP7foM6E | Michael Saylor (Strategy executive chairman), talk and fireside | 2026 (before the 28 October 2026 STRC vote) | Owner-pasted transcript, kept out of the repo. Five layers: digital capital, credit, equity, money, yield. STRC at 12%, "six times over-collateralized", daily dividends, triple flywheel. Round 8 checked 28 talk claims: 11 hold, 11 spin, 3 wrong, 3 cannot be checked (DEBATE_R8.md) |
 | (pasted) | Jack Mallers, "Europe is screwed" | about 2026-10-05 | Section 2.4. Video not located by search, content from the owner's paste |
 
 Transcripts are fetched with the vidIQ connector tool (`mcp__MCP_Server__vidiq_video_transcript`, 5 credits each). Direct YouTube scraping is blocked from cloud IPs.
