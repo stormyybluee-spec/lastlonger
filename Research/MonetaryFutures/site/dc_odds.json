@@ -1,0 +1,77 @@
+{
+ "DQ1": {
+  "likely": 75,
+  "headline": "3 in 4: the panel thinks it fairly likely that Trump really wants foreigners to pay, a weaker but dominant dollar, cheap money from a Fed he controls and an owner society. Whether he gets most of it by 2029 is only about 1 in 3.",
+  "up": [
+   "A removal order against Governor Cook after the 2026-11-05 hearing, or Fed seats filled with loyalists",
+   "Tariffs widened under Section 301 after the US-China suspension expires on 2026-11-10",
+   "The Treasury FX report (December 2026 to January 2027) presses surplus countries on their currencies"
+  ],
+  "down": [
+   "Trump publicly backs a strong dollar and higher rates",
+   "A federal gold revaluation or open-market Bitcoin buying, which would show a hard-money plan the panel does not see",
+   "He accepts ethics limits on family crypto income in the January 2027 CLARITY text"
+  ],
+  "watch": "Cook removal hearing 2026-11-05, then the FOMC on 2026-10-28 and about 2026-12-09"
+ },
+ "DQ2": {
+  "likely": 70,
+  "headline": "7 in 10: the panel thinks Musk sincerely believes energy and mass will be the far-future unit of account, and that the line also works as a valuation story. Under 1 in 20 that he issues an energy or compute money by 2035.",
+  "up": [
+   "X Money stays a dollar-only product through 2027",
+   "Tesla's Bitcoin count stays at 11,509 in the Q4 2026 10-K (late January 2027)",
+   "The framing repeats around the December 2026 SpaceX lock-up expiry"
+  ],
+  "down": [
+   "A transferable compute or energy credit launches in X Money or the Tesla app (a build, not just a belief)",
+   "A full transcript shows Musk describing an issuer, conversion rate or redemption",
+   "He drops the line entirely once capital events pass (narrative only)"
+  ],
+  "watch": "Any transferable compute or energy credit in X Money, and Tesla's Q4 letter in late January 2027"
+ },
+ "DQ3": {
+  "likely": 70,
+  "headline": "7 in 10: the panel is fairly sure a disorderly reset means losses reassigned by decree after a market breaks, and that a US version would be inflation plus repression, not default.",
+  "up": [
+   "MOVE index above 120 (95.9 now) or a 10-year yield above 5.5% (5.13% now), followed by Fed purchases described as market functioning",
+   "Bill share of marketable debt above 25% (22.36% now)",
+   "10-year breakeven inflation above 2.75% (2.37% now) with falling real yields"
+  ],
+  "down": [
+   "An explicit Treasury restructuring or coercive term-out (now 4)",
+   "Formal capital controls on US residents (now 7)",
+   "Real yields fall below real growth without stress, ending the overhang quietly"
+  ],
+  "watch": "MOVE index, 30-year auction tails and the FOMC on about 2026-12-09"
+ },
+ "DQ4": {
+  "likely": 75,
+  "headline": "3 in 4: the panel is fairly sure the US digital dollar will be private stablecoins and deposit tokens backed by Treasury bills and freezable on order, while Europe adds a capped public digital euro and China keeps a public rail.",
+  "up": [
+   "GENIUS takes effect on 2027-01-18 with the bill reserve rule unchanged",
+   "A digital euro trilogue deal (target end 2026) keeps the holding cap and offline privacy",
+   "The Fed finalizes skinny payment accounts for non-banks (Q4 2026 target)"
+  ],
+  "down": [
+   "A bill around the 2030-12-31 sunset moves the US toward a Fed retail CBDC",
+   "Treasury lets stablecoins hold long bonds or equities",
+   "The final digital euro text gives the issuer power to set spending conditions"
+  ],
+  "watch": "GENIUS effective date 2027-01-18 and the FinCEN and OFAC rule for issuers"
+ },
+ "DQ6": {
+  "likely": 80,
+  "headline": "4 in 5: the panel is fairly sure the US is designing the digital dollar as a captive buyer of Treasury bills that keeps the freeze button. Scale is the open question (60 for compliant supply above $500B by 2029-01-20).",
+  "up": [
+   "Stablecoin share of T-bills above 10% (4.27% now)",
+   "The 2026-11-04 refunding statement cites stablecoin demand when sizing bills",
+   "A first OFAC action against a GENIUS-licensed issuer after 2027-01-18"
+  ],
+  "down": [
+   "Treasury lets stablecoin reserves hold long bonds or equities",
+   "A GENIUS amendment lets issuers pay yield to holders",
+   "Stablecoin supply stays flat near $300B through 2027"
+  ],
+  "watch": "GENIUS switch-on 2027-01-18, then the monthly stablecoin share of T-bills"
+ }
+}

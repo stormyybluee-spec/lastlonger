@@ -1,0 +1,183 @@
+{
+  "r4-lead": {
+    "title": "If a giant falls, where does the money go?",
+    "oneLine": "Round 4 found that nobody inherits the dollar's crown whole, Europe slides but does not fall, and Europe's money keeps going West, mostly to the US.",
+    "picture": "Think of a big department store whose owner is getting older. The neighbours do not wait for it to close so one of them can take over. Each one opens a small counter for the goods it does best, the gold shop gets busier, and most shoppers keep using the big store because it still has everything under one roof.",
+    "steps": [
+      "The dollar's share of world reserves fell from about 71% (2000) to 56.70% (2026), but the yuan holds only 2.11%. Gold and smaller currencies took most of the share.",
+      "China as it is cannot inherit, because its capital controls stop money leaving. Even if it opened, reaching 10% of reserves would take about 9 to 18 years.",
+      "Europe's income per head has held at about 70% to 75% of the US level for 25 years in purchasing power. The sharp risk is France, not a collapse.",
+      "The X thread was right about trends (cars, energy, AI, pensions) and wrong about end states (Europe becoming 'very poor').",
+      "Europe's money goes to the deepest safe market, the US. Factories split between the US, Asia and Europe's own edges. Latin America gets a small slice.",
+      "Markets agree with the desk, and the scenario odds stay the same."
+    ],
+    "terms": [
+      {"t": "Reserve currency", "d": "A currency that central banks hold as savings to pay for imports or defend their own currency in a crisis."},
+      {"t": "Capital controls", "d": "Rules that limit how much money people and firms can move out of (or into) a country."},
+      {"t": "Purchasing power parity (PPP)", "d": "A way to compare incomes across countries that adjusts for what money actually buys locally, instead of using the exchange rate."},
+      {"t": "Spread", "d": "The extra interest one government pays over another on similar bonds. France's spread over Germany measures how risky markets think France is."},
+      {"t": "Scenario odds", "d": "The desk's judgment of how likely each of four money regimes is at the end of a time window."}
+    ],
+    "why": "It tells you not to bet your savings on a dramatic handover. The likely changes are slow: a dollar that is still first but smaller, more gold in vaults, and higher borrowing costs in France, not a new world currency.",
+    "connects": [
+      {"id": "scenarios", "how": "The four scenarios stay at 62/15/1/22, 44/23/3/30 and 31/28/10/31, with the neutral layer now split for display."},
+      {"id": "r2-rivals", "how": "Round 2's look at rival currencies and blocs, which Round 4 extends to a full succession test."},
+      {"id": "r4-succession", "how": "The detailed answer on who could inherit the dollar's role."}
+    ],
+    "check": {
+      "q": "If the dollar's reserve share fell 14 points since 2000, why doesn't the desk say China is taking over?",
+      "a": "Because almost none of that share went to the yuan (2.11%). It went to gold (about 26% of all reserves at market prices) and to smaller currencies such as the Canadian and Australian dollars. China's capital controls keep foreign central banks from holding much yuan."
+    },
+    "visual": "empire-cycle"
+  },
+  "r4-succession": {
+    "title": "Who inherits the money center?",
+    "oneLine": "A reserve currency needs six strengths at once, and only the US has all six, so a weaker dollar hands its role to a crowd, not to one heir.",
+    "picture": "Picture a relay race where the runner with the baton slows down. No other runner has trained for the whole distance, so instead of one new leader, several runners each carry part of the load: one carries savings (gold), one carries European trade (the euro), one carries China's own trade (the yuan).",
+    "steps": [
+      "A money center needs six pillars: it produces a lot, can protect itself, keeps its promises to foreign savers, has deep and open markets, has people and skills, and is well placed.",
+      "The US scores 27 of 30. China as it is and the euro area score 18. No rival is within 6 points.",
+      "China cannot inherit while it stops money leaving. If it opened, money would first rush out into dollars, and its reserve share would grow only slowly afterwards.",
+      "The euro has depth but no single safe bond: EU joint debt is about €849B, about 3% of the US Treasury market.",
+      "Gold is now worth about 1.8 times all euro reserves, but it cannot pay for trade or fund firms.",
+      "Most states hedge against the US rather than pray for its fall, because the biggest creditors would lose the most from a crash."
+    ],
+    "terms": [
+      {"t": "Six pillars", "d": "The desk's checklist for a money center: produce, protect, promise, plumbing, people, place."},
+      {"t": "COFER", "d": "The IMF's quarterly survey of which currencies central banks hold in their reserves."},
+      {"t": "Capital account opening", "d": "Letting money move freely in and out of a country, which a reserve currency needs."},
+      {"t": "Neutral layer", "d": "Reserve assets that no government issues and nobody can freeze if held at home, such as gold and, in theory, Bitcoin."}
+    ],
+    "why": "If you save, borrow or trade across borders, the dollar will stay the main currency for years. The change you will notice is more gold in reserves and more payment options in other currencies, not a switch to yuan.",
+    "connects": [
+      {"id": "r2-rivals", "how": "The rival currencies and blocs first tested in Round 2."},
+      {"id": "r3-plumbing", "how": "How the dollar's crisis plumbing held in the 2026 shock."},
+      {"id": "r4-markets", "how": "Why no market prices a dollar handover."}
+    ],
+    "check": {
+      "q": "When the US itself was the shock in April 2025, where did money run?",
+      "a": "To the euro (up 13.8% in six months), the yen and gold, not to the yuan. That was a live test of who markets treat as the emergency heir."
+    },
+    "visual": "r4-heirs"
+  },
+  "r4-europe": {
+    "title": "Is Europe falling?",
+    "oneLine": "Europe is sliding slowly against the US, not collapsing, and its sharpest risk is France's budget, not a breakup of the EU.",
+    "picture": "Think of two runners on a long road. One (the US) is a bit faster, so the gap grows slowly, but both keep moving forward. Europe's problem is not that it is running backwards, it is that one of its shoes (France) has a loose lace.",
+    "steps": [
+      "In purchasing power, EU income per head was about 70% of the US in 2000 and 72% in 2026. The '80% to 50%' story comes from exchange rates.",
+      "The east caught up fast (Poland from 33% to 63% of the US level) while Italy, France and Germany slipped.",
+      "Germany's industry shrank: total output is 15.5% below 2017, chemicals 24% below, partly because energy costs two to four times US levels.",
+      "France now pays more than Italy to borrow, its spread over Germany reached about 172bp, and the ECB is raising rates instead of rescuing it.",
+      "Leaving does not help on the evidence: Brexit cost the UK about 6% to 8% of GDP per head. The best spot is Poland's or Sweden's, inside the single market with its own currency.",
+      "Desk odds by 2028: a France- or Italy-led euro crisis 20%, a country leaving the euro 0.5%, 'dirt poor' effectively zero."
+    ],
+    "terms": [
+      {"t": "Relative decline", "d": "Growing more slowly than a rival, so the gap widens, while still getting richer in absolute terms."},
+      {"t": "OAT-Bund spread", "d": "The extra yield France pays over Germany on 10-year bonds, the market's main gauge of French risk."},
+      {"t": "TPI", "d": "The ECB's Transmission Protection Instrument, a bond-buying backstop it can use only for countries that follow EU fiscal rules."},
+      {"t": "Single market", "d": "The EU's zone of free trade in goods, services, money and people, which Switzerland and Norway join by treaty."}
+    ],
+    "why": "For a European household the realistic risks are higher loan rates, higher energy bills and slower wage growth, not losing the euro. Knowing that helps you ignore panic and watch the right numbers.",
+    "connects": [
+      {"id": "debt", "how": "Why a country that borrows in a currency it cannot print (France) is priced differently from one that can (the US)."},
+      {"id": "r3-markets", "how": "Round 3's market check, which first flagged France's spread against the 175bp and 200bp lines."},
+      {"id": "r4-thread", "how": "How the viral 'Europe will be poor' claims compare with these numbers."}
+    ],
+    "check": {
+      "q": "The US has a bigger deficit (8.5% of GDP) and higher debt (126.8%) than France. Why does France pay a risk premium and the US not?",
+      "a": "Because the US borrows in the world's reserve currency and controls its own central bank. France borrows in euros it cannot print, so investors worry about whether it can always pay."
+    },
+    "visual": "r4-fork"
+  },
+  "r4-thread": {
+    "title": "The X thread against the data",
+    "oneLine": "The viral thread about Europe becoming 'very poor' gets most trends right and most end states wrong, and its zero-sum premise fails.",
+    "picture": "It is like a weather forecaster who correctly sees clouds building and then announces a hurricane. The clouds are real (energy costs, Chinese cars, ageing), but the measurements do not show a hurricane coming.",
+    "steps": [
+      "The original post called a 'very poor Europe' an extreme case with a small but growing chance. The quote that spread it stated it as a certainty.",
+      "Of 21 checkable claims in the replies, 6 were confirmed, 11 partly true and 4 false.",
+      "Right: Chinese cars at a record 11.7% of EU sales, costly power, about 5% of world AI compute, pensions bigger than the public payroll.",
+      "Wrong: income has not halved in purchasing power, the payroll has not ballooned, Europe is not the largest consumer market, and 'middle income' would need a two-thirds fall.",
+      "About 13% of collected replies were hateful or ethnic content. They were counted as sentiment only and never used as evidence.",
+      "The idea that 'if the US is fine, Europe must fall' fails: both grew in 2025, and they are each other's biggest customers and investors."
+    ],
+    "terms": [
+      {"t": "Evidence tier T5", "d": "Commentary and social media, the lowest rung of the desk's evidence ladder. Useful for questions, not for answers."},
+      {"t": "Zero-sum", "d": "A situation where one side's gain is exactly the other side's loss. Trade and investment between the US and Europe mostly are not."},
+      {"t": "Likes-weighted share", "d": "Counting each reply by how many likes it got, to see which views the crowd rewarded."},
+      {"t": "Decoded intent", "d": "The desk's grades (D1 to D4) for claims about what someone secretly wants, from openly stated to unsupported."}
+    ],
+    "why": "Viral posts can push people into rash moves with their savings or their careers. Checking each claim against official data separates the real risks (energy, taxes on savings income, France) from the scary ones that do not hold up.",
+    "connects": [
+      {"id": "r4-europe", "how": "The full data on Europe's slide that the thread's claims are tested against."},
+      {"id": "r4-flows", "how": "The crowd's biggest question, where to go, answered with flow data."},
+      {"id": "answer", "how": "The project's overall answer, which this round's evidence leaves unchanged."}
+    ],
+    "check": {
+      "q": "Why did the desk count hateful replies but not use them?",
+      "a": "Because claims about the race, ethnicity or intelligence of groups are not economic evidence. Counting them shows the mood of the thread (about 13% of replies) without letting them shape the conclusions."
+    },
+    "visual": "r4-thread"
+  },
+  "r4-flows": {
+    "title": "Where Europe's money would go",
+    "oneLine": "Money goes to the deepest safe market, factories to cost and customers, people to the same language, and the wealthy to tax and safety, so Europe's money goes mostly to the US.",
+    "picture": "Imagine water, sand, birds and boats leaving the same harbour. Water runs to the deepest basin (New York), sand settles where the current is cheapest (factories in Asia and nearby), birds fly to familiar trees (people to the same language), and the yachts head to the calmest, lowest-tax marinas (Switzerland, Italy, Dubai).",
+    "steps": [
+      "Europe already holds $16.2T of US securities, 46% of all foreign holdings, up 3.8 times since 2008.",
+      "The desk's model puts about 55% of Europe's net outbound capital in North America in 2028 to 2035, 15% in Asia and about 6% in Latin America.",
+      "For factories, Vietnam, Malaysia, Indonesia, Thailand and India score as well as the US, so Asia gets about a quarter of relocated capacity.",
+      "People move short distances: Germans to Switzerland, Austria and Spain. Latin America draws mainly people with family ties.",
+      "The wealthy went to the UAE, the US, Italy, Switzerland and Portugal in 2025. The 2026 Gulf war dented the UAE's appeal.",
+      "Verdict: the owner is right that money goes West and wrong to put Latin America next to North America. The Southeast Asian belief holds only for factories."
+    ],
+    "terms": [
+      {"t": "Net outbound capital", "d": "Money that leaves a region for investments abroad, minus money coming in."},
+      {"t": "FDI", "d": "Foreign direct investment: buying or building a lasting business stake abroad, such as a factory."},
+      {"t": "Rule of law index", "d": "The World Justice Project's 0 to 1 score of how well laws are applied and contracts enforced."},
+      {"t": "Reinvested earnings", "d": "Profits that firms already in a country keep there. Most of Mexico's record 2025 FDI was this, not new money."}
+    ],
+    "why": "If you work for a European firm, invest your pension or think about moving, the flows tell you where opportunities cluster: US markets for savings, Asia and Europe's edges for factory jobs, and nearby countries for people.",
+    "connects": [
+      {"id": "r3-hardware", "how": "Why factories follow energy, supply chains and China's hardware leverage."},
+      {"id": "r4-thread", "how": "The crowd's 'where should we go?' question that this answers."},
+      {"id": "r4-markets", "how": "What markets say about Europe as a destination for money."}
+    ],
+    "check": {
+      "q": "Southeast Asia took a record $244B of FDI in 2025. Why doesn't the desk count that as Europe's money going there?",
+      "a": "Because more than 60% of ASEAN's inflows go to Singapore, about 30% comes from East Asia and the EU is only the third largest outside source. Supply-chain manufacturing FDI there even halved in 2025. It is mostly Asian money, not European flight capital."
+    },
+    "visual": "r4-flows"
+  },
+  "r4-markets": {
+    "title": "What markets price",
+    "oneLine": "Markets price a French problem and a slow European discount, not a European collapse and not a US downfall, and they agree with the desk.",
+    "picture": "Think of a betting shop where millions are wagered on who wins the French election, but almost nobody bothers betting on France leaving the EU. Where the money is tells you which questions traders think are real.",
+    "steps": [
+      "The deepest market is France's 2027 election ($155.7M traded), with Marine Le Pen at 46%.",
+      "France's 10-year yield closed at 5.05%, about 172bp over Germany and above Italy, but Italy (about 115bp) and Spain (about 64bp) stay calm.",
+      "Markets on any country leaving the EU trade under $10,000 at 1% to 8%. None exists for leaving the euro.",
+      "The 'US downfall' trade peaked in January 2026: the euro and gold topped out, then the dollar and US shares rose.",
+      "The ECB is raising rates (2.50%) into 3.8% inflation, and markets price a hold on 29 October.",
+      "No market above $1M traded differs from the desk by more than 15 points, so the scenario odds stay put."
+    ],
+    "terms": [
+      {"t": "Prediction market", "d": "A market where people bet on events. A price of 46 cents means about a 46% chance."},
+      {"t": "Thin market", "d": "A market with little money traded, whose price is easy to move and less reliable."},
+      {"t": "Haven", "d": "An asset investors rush into in a crisis, such as German Bunds in 2011 or US Treasuries."},
+      {"t": "Valuation discount", "d": "When one market's shares cost less per unit of profit than another's. Europe trades at about 14 times profits, the US at about 19."}
+    ],
+    "why": "Market prices are other people's money on the line. When they disagree with viral posts, it is worth asking why before acting. Today they say: watch French borrowing costs, not the end of the euro or the dollar.",
+    "connects": [
+      {"id": "r3-markets", "how": "Round 3's market check, the method this round reuses."},
+      {"id": "scenarios", "how": "The scenario odds that markets leave unchanged."},
+      {"id": "r4-europe", "how": "The French spread and euro-crisis odds in detail."}
+    ],
+    "check": {
+      "q": "If France were heading for a euro exit, what would you expect German bond yields to do, and what are they doing?",
+      "a": "In a breakup scare, money flees into German Bunds and their yields fall, as in 2011 and 2012. Today the Bund yield is rising with France's, which says markets fear French fiscal risk, not a breakup."
+    },
+    "visual": "recycle-loop"
+  }
+}

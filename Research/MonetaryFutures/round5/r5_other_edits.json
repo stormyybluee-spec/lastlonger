@@ -1,0 +1,152 @@
+[
+ {
+  "file": "round3/lanes/R3D-ownership-markets.md",
+  "old": "5. **PPI for all finished consumer goods was flat from 2025 to 2026 year to date while the core index rose about 3.5%.** The energy component in this series fell or flattened even as CPI energy rose 20.4% (R2 C7). I report the series as published and flag it as unexplained.",
+  "new": "5. **Corrected in Round 5: the 'flat' series was finished consumer foods, not all finished consumer goods.** The series used (WPUFD4111) is Finished Consumer Foods, which was flat (minus 0.9% year on year in September 2026). Producer energy rose 35.4% and finished goods 8.4%, while the core index rose about 3.5% to 4%.",
+  "why": "Correction K1: WPUFD4111 is Finished Consumer Foods (FRED title checked by the court, R5X-01, R5A-18)."
+ },
+ {
+  "file": "round3/lanes/R3D-ownership-markets.md",
+  "old": "8. The flat PPI for all finished consumer goods in 2026 against a 20.4% CPI energy rise needs a check of the energy weight in that index.",
+  "new": "8. Closed in Round 5: the flat series was finished consumer foods (WPUFD4111). Producer energy rose 35.4%, in line with CPI energy goods (35.3%).",
+  "why": "Correction K1 closes this open question."
+ },
+ {
+  "file": "round3/lanes/R3D-ownership-markets.md",
+  "old": "| PPI finished consumer goods less food and energy | PPI finished consumer goods |",
+  "new": "| PPI finished consumer goods less food and energy | PPI finished consumer foods (WPUFD4111, mislabelled as consumer goods in Round 3) |",
+  "why": "Correction K1: table column label."
+ },
+ {
+  "file": "round3/lanes/R3D-ownership-markets.md",
+  "old": "BLS PPI series WPSFD41312 and WPUFD4111 (annual averages of monthly values)",
+  "new": "BLS PPI series WPSFD41312 and WPUFD4111 (finished consumer foods, corrected label in Round 5) (annual averages of monthly values)",
+  "why": "Correction K1: source line."
+ },
+ {
+  "file": "round3/DEBATE_R3.md",
+  "old": "- **Ruling.** Unresolved. Both are T0 series as published. The likely cause is the energy weight and coverage of the PPI series. Carried as a gap, and R3-7 uses the core index, which is unaffected.",
+  "new": "- **Ruling.** Unresolved in Round 3. Resolved in Round 5: the 'flat' series (WPUFD4111) is finished consumer foods, not all finished consumer goods. Producer energy rose 35.4%, more than CPI energy (20.4%). R3-7 uses the core index, which is unaffected.",
+  "why": "Correction K1 in the Round 3 court ruling X13."
+ },
+ {
+  "file": "round3/lanes/R3A-dollar-plumbing.md",
+  "old": "ESF about $219B. Argentina's $20B ESF swap (9 October 2025) was reported fully repaid on 9 January 2026.",
+  "new": "ESF about $219B in total assets, of which $173B are SDRs matched by SDR allocations and certificates. Net position $44.3B, dollar securities $24.9B (August 2026 statement, Round 5). Argentina's $20B ESF agreement (18 October 2025) had one $2.5B swap, fully repaid in December 2025 per the ESF statement.",
+  "why": "Corrections K2 and K2b (ESF August 2026 statement, court check R5X-02 and R5X-03)."
+ },
+ {
+  "file": "round3/lanes/R3A-dollar-plumbing.md",
+  "old": "Routes Gulf requests to the ESF ($219B), no line announced in six months",
+  "new": "Routes Gulf requests to the ESF ($219B total, $24.9B dollar securities, $44.3B net), no line announced in six months",
+  "why": "Correction K2: SDR caveat."
+ },
+ {
+  "file": "round3/lanes/R3A-dollar-plumbing.md",
+  "old": "Thailand and Indonesia made 42% of draws, active lines are RMB 3.84T across 42 central banks (secondary source).",
+  "new": "Thailand and Indonesia made 42% of draws. Corrected in Round 5: the PBoC counts 32 swap agreements of about RMB 4.5T, with RMB 132.8B drawn at end June 2026 (Caixin citing the PBoC).",
+  "why": "Correction K3 replaces the single-source RMB 3.84T across 42 figure."
+ },
+ {
+  "file": "round3/lanes/R3A-dollar-plumbing.md",
+  "old": "Active lines RMB 3.84T with 42 central banks | T4 (single secondary) | plausible |",
+  "new": "Active lines corrected in Round 5 to 32 agreements, about RMB 4.5T, RMB 132.8B drawn at end June 2026 (Caixin citing the PBoC) | T4 (single secondary) | plausible |",
+  "why": "Correction K3 in claim R3A-20."
+ },
+ {
+  "file": "round3/lanes/R3A-dollar-plumbing.md",
+  "old": "Argentina's $20B ESF swap was repaid on 9 Jan 2026 |",
+  "new": "Argentina's $2.5B ESF swap drawing was fully repaid in December 2025 (ESF statement, corrected in Round 5) |",
+  "why": "Correction K2b: ESF note 9 gives December 2025."
+ },
+ {
+  "file": "round3/lanes/R3A-dollar-plumbing.md",
+  "old": "Their cash at the Fed (foreign official reverse repo pool) was steady at $298B to $365B and stood at $331.9B, 5.5 times the FIMA cap. [R3A-14]",
+  "new": "Their cash at the Fed (foreign official reverse repo pool) was steady at $298B to $365B and stood at $331.9B, 5.5 times the FIMA cap. [R3A-14] Round 5 update: custody rose $18.5B in the week to 21 October to a weekly average of $2,572.8B, so official selling paused in October.",
+  "why": "Correction K8 (H.4.1 2026-10-22, court check R5X-04)."
+ },
+ {
+  "file": "round3/decode/DCC-reset-cbdc.md",
+  "old": "| D2 | 40 (by 2032) |",
+  "new": "| D2 | 30 by 2032 (Round 5, narrowed to Fed long-end support with yield language, was 40) |",
+  "why": "Correction K4b."
+ },
+ {
+  "file": "round3/decode/DCC-reset-cbdc.md",
+  "old": "| Explicit Fed yield cap or Fed-Treasury accord on yields | 25 |",
+  "new": "| Explicit Fed yield cap or Fed-Treasury accord on yields | 15 (Round 5, was 25) |",
+  "why": "Correction K4."
+ },
+ {
+  "file": "round3/dc_data.json",
+  "old": "An explicit Fed yield cap or accord is 25,",
+  "new": "An explicit Fed yield cap or accord on yields is 15 (cut from 25 in Round 5),",
+  "why": "Correction K4 in the published decode page data."
+ },
+ {
+  "file": "round3/DECODE_PANEL.md",
+  "old": "An explicit Fed yield cap or accord is 25,",
+  "new": "An explicit Fed yield cap or accord on yields is 15 (cut from 25 in Round 5),",
+  "why": "Correction K4 in the decode panel text."
+ },
+ {
+  "file": "round4/DEBATE_R4.md",
+  "old": "## 6. Tripwires (with dates)\n\n| Date | Event | What would move the odds |\n|---|---|---|\n| First business day after 2026-10-23 | Moody's France decision (Aa3 negative) | A cut to A1 aligns all three agencies at A+ level. No cut lowers H0 crisis odds slightly |\n| 2026-10-27 | French National Assembly budget vote, possible Article 49.3 and censure |",
+  "new": "## 6. Tripwires (with dates)\n\n| Date | Event | What would move the odds |\n|---|---|---|\n| First business day after 2026-10-23 | Moody's France decision (Aa3 negative). Outcome: held Aa3 negative on 2026-10-23 (Round 5) | A cut to A1 aligns all three agencies at A+ level. Round 5 did not apply the 1-point cut because the hold is conditional |\n| 2026-10-27 to 2026-11-03 (corrected in Round 5) | French budget: first-part debate resumes 10-27, solemn vote 11-03, possible Article 49.3 and censure. S&P review 11-27 |",
+  "why": "Correction K5 in the section 6 tripwire table."
+ },
+ {
+  "file": "round4/DEBATE_R4.md",
+  "old": "### Round 4 tripwires, 2026-10-23 (r4-t-trip)\n\n| Date | Event | What would move the odds |\n|---|---|---|\n| First business day after 2026-10-23 | Moody's France decision (Aa3 negative) | A cut to A1 aligns all three agencies at A+ level. No cut lowers H0 crisis odds slightly |\n| 2026-10-27 | French National Assembly budget vote, possible Article 49.3 and censure |",
+  "new": "### Round 4 tripwires, 2026-10-23 (r4-t-trip)\n\n| Date | Event | What would move the odds |\n|---|---|---|\n| First business day after 2026-10-23 | Moody's France decision (Aa3 negative). Outcome: held Aa3 negative on 2026-10-23 (Round 5) | A cut to A1 aligns all three agencies at A+ level. Round 5 did not apply the 1-point cut because the hold is conditional |\n| 2026-10-27 to 2026-11-03 (corrected in Round 5) | French budget: first-part debate resumes 10-27, solemn vote 11-03, possible Article 49.3 and censure. S&P review 11-27 |",
+  "why": "Correction K5 in the page tripwire table."
+ },
+ {
+  "file": "round4/DEBATE_R4.md",
+  "old": "1. Moody's France outcome (due after the close on 2026-10-23) was not published when the court checked.",
+  "new": "1. Moody's France outcome (due after the close on 2026-10-23) was not published when the court checked. Closed in Round 5: held at Aa3 negative on 2026-10-23.",
+  "why": "Closes Round 4 open question 1."
+ },
+ {
+  "file": "round4/DEBATE_R4.md",
+  "old": "7. SWIFT payment shares for August and September 2026 and PBoC swap-line totals were not obtained.",
+  "new": "7. SWIFT payment shares for August and September 2026 and PBoC swap-line totals were not obtained. Partly closed in Round 5: yuan 3.26% of SWIFT payments in August, PBoC 32 agreements of about RMB 4.5T with RMB 132.8B drawn. September SWIFT still missing.",
+  "why": "Closes most of Round 4 open question 7 (R5B, K3)."
+ },
+ {
+  "file": "round4/DEBATE_R4.md",
+  "old": "8. Whether the 2026 Gulf war caused a lasting outflow of European residents from the UAE.",
+  "new": "8. Whether the 2026 Gulf war caused a lasting outflow of European residents from the UAE. Closed in Round 5: no lasting aggregate outflow found (Dubai population back above pre-war by mid 2026), nationality split unavailable.",
+  "why": "Closes Round 4 open question 8 (R5C)."
+ },
+ {
+  "file": "round4/r4_data.json",
+  "old": "[\"2026-10-27\", \"French National Assembly budget vote, possible Article 49.3 and censure\", \"A passed censure and no budget by year end raises the H0 crisis odds from 20 to 24\"]",
+  "new": "[\"2026-10-27 to 2026-11-03\", \"French budget: first-part debate resumes 10-27, solemn vote on the first part 11-03, possible Article 49.3 and censure. S&P review 11-27 (corrected in Round 5)\", \"A passed censure and no budget by year end raises the H0 crisis odds from 20 to 24\"]",
+  "why": "Correction K5 in the Round 4 page tripwire table."
+ },
+ {
+  "file": "site/r4_odds.json",
+  "old": "\"watch\": \"The French budget vote on 2026-10-27 and the OAT-Bund spread against 200bp\"",
+  "new": "\"watch\": \"The French budget: solemn vote on the first part on 2026-11-03, S&P review on 2026-11-27, and the OAT-Bund spread against 200bp\"",
+  "why": "Correction K5 in the Round 4 odds card for France."
+ },
+ {
+  "file": "round4/r4_landscape.json",
+  "old": "The French budget vote on 27 October and the ECB meeting on 29 October, where a hold is priced at about 98%.",
+  "new": "The French budget: debate resumes on 27 October and the solemn vote on the first part is on 3 November. The ECB meets on 29 October, where a hold is priced at about 98%.",
+  "why": "Correction K5 in the Round 4 Landscape source file, matching site/landscape.json."
+ },
+ {
+  "file": "round4/lanes/R4D-money-destination.md",
+  "old": "More European emigrants (excluding heritage-passport registrations) go to Latin America than to Southeast Asia: **75**.",
+  "new": "More European emigrants (excluding heritage-passport registrations) go to Latin America than to Southeast Asia: **45** (lowered from 75 in Round 5: German citizens sent at least 5,175 to Southeast Asia and at most about 5,000 to Latin America in 2025).",
+  "why": "Correction K6 (R5C, court ruling)."
+ },
+ {
+  "file": "round4/lanes/R4A-succession.md",
+  "old": "(the 23t PBoC September purchase is a single aggregator claim, not used)",
+  "new": "(Round 5: the PBoC bought 21t in September per Kitco, its 23rd straight month. The 23t figure was WGC's July net for all central banks)",
+  "why": "Correction K7."
+ }
+]
