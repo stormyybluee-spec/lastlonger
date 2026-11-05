@@ -10577,9 +10577,9 @@
     {
      "type": "tldr",
      "items": [
-      "In October 2026 Michael Saylor of Strategy (once MicroStrategy) pitched a ladder of new money: Bitcoin as digital capital, STRC as digital credit paying 12%, the company's shares as digital equity, and one day a dollar token paying 8%.",
+      "In October 2026 Michael Saylor of Strategy (once MicroStrategy) pitched a ladder of new money in five layers: Bitcoin as digital capital, STRC as digital credit paying 12%, the company's shares as digital equity, one day a dollar token paying 8%, and digital yield, income paid as often as daily.",
       "STRC is a preferred share, not a loan or a deposit. It has no end date, no right to your $100 back and no vote, and the company sets its 12% each month. Bitcoin covers it about 4 to 6 times today, and new borrowing would lower that.",
-      "Of 28 claims checked, 11 hold, 11 are spin, 3 are wrong and 3 cannot be checked. The numbers about today hold. The labels are where it slips: \"strongest credit in the world\" for a junk-rated issuer, and a dollar token paying 8% that US law does not allow.",
+      "Of 28 claims checked, 11 hold, 11 are spin (true facts in a misleading frame), 3 are wrong and 3 cannot be checked. The numbers about today hold. The labels are where it slips: \"strongest credit in the world\" for a junk-rated issuer, and a dollar token paying 8% that US law does not allow.",
       "The flywheel runs both ways. In 2025 Strategy bought more Bitcoin than was mined. In the third quarter of 2026 it raised $5.41 billion, spent only $0.59 billion on Bitcoin and sold Bitcoin to help pay dividends.",
       "Money moving between baskets? Read three meters. Dollars: trades only move them, bank loans against Bitcoin create new ones. Ownership and risk: these cross, Bitcoin into listed companies, its risk onto savers. Market value: it changes with no dollar crossing.",
       "Before you believe any account paying 12%, ask who promises the $100, where the 12% comes from, and what happens if the asset halves. Nothing here is advice."
@@ -10622,7 +10622,7 @@
      "rays": [
       {
        "t": "The pitch",
-       "s": "Capital, credit, equity, money",
+       "s": "Capital, credit, equity, money, yield",
        "link": "rb-crypto"
       },
       {
@@ -10664,7 +10664,7 @@
     },
     {
      "type": "p",
-     "text": "This chapter comes in four parts of about ten minutes each. Each part ends with a stop box. The six words you need are in the box below. Nothing here is advice. The aim is to make you a sharper judge of a big pitch."
+     "text": "This chapter comes in four parts. Parts 1 to 3 take about ten minutes each. Part 4 is about twice as long. Each part ends with a stop box. The six words you need are in the box below. Nothing here is advice. The aim is to make you a sharper judge of a big pitch."
     },
     {
      "type": "cards",
@@ -10672,7 +10672,7 @@
      "items": [
       {
        "t": "Preferred stock",
-       "d": "A share paid before the ordinary shares but after every lender. Not a loan, so nothing has to be repaid."
+       "d": "A share paid before the ordinary shares (also called common stock, traded as MSTR) but after every lender. Not a loan, so nothing has to be repaid."
       },
       {
        "t": "Par",
@@ -10684,15 +10684,15 @@
       },
       {
        "t": "Convertible note and put",
-       "d": "A loan that can turn into shares. The put lets the lender ask for cash back on set dates, which it does when the share price is below the conversion price."
+       "d": "A loan the lender can swap for shares at a set price, the conversion price. The put lets the lender ask for cash back on set dates instead. Lenders do that when the share price is below the conversion price, because swapping would give them less."
       },
       {
        "t": "mNAV",
-       "d": "The company's value over the Bitcoin it holds: about 1.1 counting its debt and preferred, about 0.9 counting the ordinary shares alone (4 November 2026)."
+       "d": "The company's value divided by the value of the Bitcoin it holds. Above 1, the market values the company at more than its Bitcoin. Today it is about 1.1 counting its debt and preferred, about 0.9 counting the ordinary shares alone (4 November 2026)."
       },
       {
        "t": "Gross and net coverage",
-       "d": "Times the Bitcoin covers the claims. Net first subtracts the company's cash from the claims, so it reads higher."
+       "d": "How many times over the Bitcoin could pay the claims, meaning what the company owes to lenders and preferred holders. Net first subtracts the company's cash from the claims, so it reads higher."
       }
      ]
     },
@@ -10745,7 +10745,7 @@
     },
     {
      "type": "p",
-     "text": "His argument in one line: if gold rising 10% a year let you sell credit paying 5%, then Bitcoin rising 20% a year lets you sell credit paying 10%. Strategy sells that credit to the public, buys Bitcoin with the money, and keeps the difference for its shareholders. Part 2 tests this argument against history."
+     "text": "His argument in one line: if gold rising 10% a year let you sell credit paying 5%, then Bitcoin rising 20% a year lets you sell credit paying 10%. Strategy sells that credit to the public, buys Bitcoin with the money, and hopes Bitcoin rises faster than the 12% it pays. Any gap goes to its ordinary shareholders, and the gap can be negative. The 12% itself is owed in dollars. Part 2 tests this argument against history."
     },
     {
      "type": "h",
@@ -10772,11 +10772,11 @@
       ],
       [
        "Who sets the 12%?",
-       "The company, each month, at its \"sole and absolute discretion\". It can cut by up to 0.25 point a month, plus any fall in one-month SOFR (a short-term dollar rate, about 4%), but never below that rate"
+       "The company, each month, at its \"sole and absolute discretion\". It can cut by up to 0.25 point a month. If one-month SOFR (a short-term dollar rate, about 4%) also falls, it can cut by that fall too. It can never go below SOFR"
       ],
       [
        "Must it pay?",
-       "Only \"when, as and if declared\" by the board. Missed dividends pile up and must be paid before any on junior shares"
+       "Only \"when, as and if declared\" by the board. Missed dividends pile up and must be paid before any dividend on shares ranked below STRC, such as the ordinary shares"
       ],
       [
        "Where does it rank?",
@@ -10811,7 +10811,7 @@
     {
      "type": "myth",
      "myth": "STRC is like a bank account that pays 12%.",
-     "reality": "A bank account is a debt the bank must repay, and in Malaysia PIDM insures it up to RM250,000. STRC is a share with no repayment date and no insurance, and it closed at $74.57 on 26 June 2026. It is well backed today, but it is not a deposit."
+     "reality": "A bank account is a debt the bank must repay, and in Malaysia PIDM insures it up to RM250,000. STRC is a share with no repayment date and no insurance, and its price at the end of trading on 26 June 2026 was $74.57. It is well backed today, but it is not a deposit."
     },
     {
      "type": "deeper",
@@ -10955,12 +10955,12 @@
       [
        "For a New Yorker it is like a bank account paying 24%",
        "Spin",
-       "Only for a top-bracket New York City taxpayer, and only as a delay: each payment lowers your cost price, so the tax returns when you sell"
+       "Only for a top-bracket New York City taxpayer, and only as a delay: each payment is treated as part of your own money handed back, so the price you are counted as having paid goes down, and the tax comes back when you sell"
       ],
       [
        "Gold rising 10% a year let you sell credit at 5%, so Bitcoin rising 20% lets you sell it at 10%",
        "Spin",
-       "Gold-backed credit never paid out of gold's rise: the gold price was fixed by law ($20.67 an ounce in the US until 1933) and consols paid 3% from taxes. STRC's 12% is owed in dollars whatever Bitcoin does"
+       "Gold-backed credit never paid out of gold's rise: the gold price was fixed by law ($20.67 an ounce in the US until 1933) and British consols (government bonds with no end date) paid 3% from taxes. STRC's 12% is owed in dollars whatever Bitcoin does"
       ],
       [
        "Money needed in four months to four years belongs in digital credit",
@@ -10982,11 +10982,11 @@
     {
      "type": "insider",
      "label": "The pattern behind the verdicts",
-     "text": "The claims that hold are about today's numbers on the company's own method. The claims that fail come in three kinds: labels that borrow trust from safer products (credit, bank account, stablecoin, strongest), stories with the dates bent (the Bank of England, the return table), and sums that skip a step ($10 billion \"made\"). So ask first what a thing is in law, then what it pays."
+     "text": "The claims that hold are about today's numbers on the company's own method. The claims that fail come in three kinds: labels that borrow trust from safer products (credit, bank account, stablecoin, strongest), stories with the dates bent (the return table above), and sums that skip a step (the claim that selling $10 billion of credit \"made\" $10 billion). The full audit box has more of each. So ask first what a thing is in law, then what it pays."
     },
     {
      "type": "p",
-     "text": "And in fairness, the critics' sharpest claim, that it is a Ponzi scheme, also fails the test. Strategy owns a real, public asset worth several times STRC, and discloses every week where the dividend money comes from. The true point inside the criticism is narrower: the dividends depend on the company continuing to raise new money, because its software business earned only $14.3 million of operating cash in nine months."
+     "text": "And in fairness, the critics' sharpest claim, that it is a Ponzi scheme, also fails the test. A Ponzi scheme pays old investors only with new investors' money and hides that it has no real asset. Strategy owns a real, public asset worth several times STRC, and discloses every week where the dividend money comes from. The true point inside the criticism is narrower: the dividends depend on the company continuing to raise new money, because its software business earned only $14.3 million of cash from its normal business in nine months. So the 12% is paid in dollars from three places: the dollar reserve, money from selling new shares (ordinary or preferred) and, when those run short, selling Bitcoin. Bitcoin's rise pays nothing unless Bitcoin is sold."
     },
     {
      "type": "deeper",
@@ -11179,7 +11179,7 @@
     },
     {
      "type": "p",
-     "text": "Saylor calls it a triple flywheel. Sell credit, buy Bitcoin, the price rises a little, the shares trade above the Bitcoin they hold, so selling shares buys even more Bitcoin per share, the cushion under the credit grows, and the credit gets cheaper to sell. Each link pushes the next."
+     "text": "Saylor calls it a triple flywheel. Sell credit, buy Bitcoin, the price rises a little, the company's shares are worth more than the Bitcoin it holds, so selling shares buys even more Bitcoin per share, the cushion under the credit grows, and the credit gets cheaper to sell. Each link pushes the next."
     },
     {
      "type": "diagram",
@@ -11188,7 +11188,7 @@
     },
     {
      "type": "p",
-     "text": "The key link is the premium, mNAV: the company's value compared with its Bitcoin. Above 1, selling new shares buys more Bitcoin per share. Below 1, it does the opposite, and the company has said it may then sell Bitcoin instead (reported December 2025). The premium was about 2.5 to 3.5 at the late-2024 peak (press estimates). On 4 November 2026 it was about 1.1 on the company's measure, which adds debt and preferred less cash, and about 0.9 on the shares alone."
+     "text": "The key link is the premium, mNAV: the company's value compared with its Bitcoin. Above 1, selling new shares buys more Bitcoin per share. Below 1, it does the opposite, and the company has said it may then sell Bitcoin instead (reported December 2025). The premium was about 2.5 to 3.5 at the late-2024 peak (press estimates). On 4 November 2026 it was about 1.1 on the company's measure, which adds its debt and preferred to the share value and takes away its cash, and about 0.9 on the shares alone."
     },
     {
      "type": "table",
@@ -11211,7 +11211,7 @@
       [
        "Dollars on hand",
        "Company policy, as reported: keep at least 12 months of dividends",
-       "$4.92 billion, about 39 months"
+       "$4.92 billion of dollar assets (the $4.79 billion reserve plus $0.13 billion of other cash), about 39 months"
       ],
       [
        "STRC's price",
@@ -11228,7 +11228,7 @@
     {
      "type": "insider",
      "label": "The real stress point",
-     "text": "Not the 12% dividends. The convertible notes. Two years of dividends plus the notes holders can cash in come to about $8.9 billion, against $4.92 billion of dollars on hand, a gap of about $4 billion. Strategy can refinance, sell shares or sell Bitcoin. Closing the gap by selling Bitcoin would take about 99,000 coins if Bitcoin halved, 60% of a year's new supply. A put is a refinancing test, not a default, as long as lenders and share buyers are still willing."
+     "text": "Not the 12% dividends. The convertible notes. Two years of dividends (about $3 billion) plus the $5.91 billion of notes holders can cash in come to about $8.9 billion, against $4.92 billion of dollars on hand, a gap of about $4 billion. Strategy can refinance, sell shares or sell Bitcoin. Closing the gap by selling Bitcoin would take about 99,000 coins if Bitcoin halved, 60% of a year's new supply. When note holders ask for their cash, it tests whether Strategy can borrow again or sell new shares to pay them. It is not a default, as long as lenders and share buyers are still willing."
     },
     {
      "type": "table",
@@ -11236,7 +11236,7 @@
       "If Bitcoin falls",
       "Price",
       "Bitcoin over all debt and preferred (gross, cash not counted)",
-      "Months of dollar dividends (held fixed)",
+      "Months of dividends the dollars on hand can pay (does not change with the Bitcoin price)",
       "Bitcoin to sell a year for dividends once the reserve runs low, if no shares are sold",
       "Bitcoin to sell for the 2027 to 2028 note puts, if not refinanced"
      ],
@@ -11277,7 +11277,7 @@
     },
     {
      "type": "p",
-     "text": "This is a model, not a forecast, with debts and reserve held fixed. First, the reserve could pay about 27 months of dividends before it reaches the 12-month floor. That is the best case, not a promise: in the third quarter of 2026 Strategy sold Bitcoin for dividends with about $5 billion in the reserve. Second, see the ladder below for where each kind of cover runs out. Third, the note puts, not the dividends, are the big bill: at minus 70% they would take a full year of new Bitcoin. Fourth, cover is not price: STRC fell 25% in June 2026 while its Bitcoin was still worth more than twice every claim up to STRC."
+     "text": "This is a model, not a forecast, with debts and reserve held fixed. First, the reserve could pay about 27 months of dividends before it reaches the 12-month floor (39 months on hand minus the 12 months the company keeps). That is the best case, not a promise: in the third quarter of 2026 Strategy sold Bitcoin for dividends with about $5 billion in the reserve. Second, see the ladder below for where each kind of cover runs out. Third, the note puts, not the dividends, are the big bill: at minus 70% they would take a full year of new Bitcoin. Fourth, cover is not price: STRC fell 25% in June 2026 while its Bitcoin was still worth more than twice every claim up to STRC."
     },
     {
      "type": "table",
@@ -11308,6 +11308,10 @@
        "about $23,500"
       ]
      ]
+    },
+    {
+     "type": "p",
+     "text": "If you remember one number, take the last row: everything the company owes is covered 3.4 times today, and that falls to 1 time if Bitcoin drops to about $23,500."
     },
     {
      "type": "h",
@@ -11436,7 +11440,7 @@
     },
     {
      "type": "p",
-     "text": "Here is the big idea to test, in the owner's words: future money moving between baskets. The pitch says digital credit pulls money out of the old basket (money funds, government bills, bank deposits) and into the new one (Bitcoin). To see what really moves, read three meters, not one."
+     "text": "Here is the big idea to test. It comes from the person who runs this site, not from Saylor: future money moving between baskets. The pitch says digital credit pulls money out of the old basket (money funds, government bills, bank deposits) and into the new one (Bitcoin). To see what really moves, read three meters, not one."
     },
     {
      "type": "table",
@@ -11461,7 +11465,7 @@
       ],
       [
        "3. Market value",
-       "The last price revalues every unit, with no dollar crossing",
+       "The last trade sets the price of every unit. If one buyer pays $1,000 more for one coin, all the coins are counted as worth $1,000 more each, though only one buyer paid",
        "Buying can lift all 20 million mined coins by more than was spent, or fail to",
        "Near $1 while the backing holds"
       ]
@@ -11470,7 +11474,7 @@
     {
      "type": "diagram",
      "key": "basket-pipe",
-     "caption": "Follow one $10,000. The saver's dollars pass through the wrapper to whoever sold the Bitcoin and stay in the dollar basket. What crosses the line is Bitcoin, into a listed company, and Bitcoin's risk, onto the saver. A bank loan against Bitcoin, not drawn here, would add new dollars."
+     "caption": "Follow one $10,000. The saver's dollars pass through the wrapper (the legal package around an asset, here STRC and Strategy) to whoever sold the Bitcoin and stay in the dollar basket. What crosses the line is Bitcoin, into a listed company, and Bitcoin's risk, onto the saver. A bank loan against Bitcoin, not drawn here, would add new dollars."
     },
     {
      "type": "steps",
@@ -11485,7 +11489,7 @@
     {
      "type": "insider",
      "label": "What really crosses the line",
-     "text": "In steps 1 to 4 dollars change hands inside the dollar basket, adding a little only if a bank buys the bills in step 1. What moves is ownership and risk: a listed company holds the Bitcoin in boom years, outside buyers in bust years, and the saver's claim on bills becomes a share resting on Bitcoin. In step 5 the owner's picture is literally true: pledged Bitcoin brings new dollars into being. And market value moves with no dollar crossing. So money does move between baskets, as ownership, risk and value, and at the edges as new money."
+     "text": "In steps 1 to 4 dollars change hands inside the dollar basket, adding a little only if a bank buys the bills in step 1. What moves is ownership and risk: a listed company holds the Bitcoin in boom years, outside buyers in bust years, and the saver's claim on bills becomes a share resting on Bitcoin. In step 5 this site's picture is literally true: pledged Bitcoin brings new dollars into being. And market value moves with no dollar crossing. So money does move between baskets, as ownership, risk and value, and at the edges as new money."
     },
     {
      "type": "table",
@@ -11564,7 +11568,7 @@
     },
     {
      "type": "p",
-     "text": "Read it by regime. In the 2025 boom the channels toward Bitcoin ran hard. In the third quarter of 2026 the channels back to dollars took over. In the 2022 bear the pipe barely existed. The biggest flow, stablecoins, is not digital credit at all."
+     "text": "Read it by period: boom, turn and bust. In the 2025 boom the channels toward Bitcoin ran hard. In the third quarter of 2026 the channels back to dollars took over. In the 2022 bear the pipe barely existed. The biggest flow, stablecoins, is not digital credit at all."
     },
     {
      "type": "deeper",
@@ -11771,7 +11775,7 @@
     {
      "type": "callout",
      "label": "For a Malaysian saver",
-     "text": "PIDM covers bank deposits up to RM250,000, not shares. Malaysia does not tax foreign income that resident individuals bring home until the end of 2036, with conditions and exceptions (check the latest LHDN guideline). There is no US tax treaty with Malaysia: Strategy expects its payments to be return of capital, but a broker may still hold back 30%, and getting it back means filing a US tax return. US estate tax can apply above $60,000 of US shares. And the currency cuts both ways: when the ringgit rose about 22% against the dollar from February 2024 to February 2026, a dollar asset lost about 18% in ringgit."
+     "text": "PIDM covers bank deposits up to RM250,000, not shares. Malaysia does not tax foreign income that resident individuals bring home until the end of 2036, with conditions and exceptions (check the latest guideline from LHDN, Malaysia's tax office). There is no US tax treaty with Malaysia: Strategy expects its payments to be return of capital, but a broker may still hold back 30%, and getting it back means filing a US tax return. US estate tax (a tax on what a person leaves when they die) can apply above $60,000 of US shares. And the currency cuts both ways: when the ringgit rose about 22% against the dollar from February 2024 to February 2026 (from 4.77 to 3.91 ringgit per dollar), a dollar asset lost about 18% in ringgit. Fewer ringgit per dollar means a stronger ringgit."
     },
     {
      "type": "p",
