@@ -144,8 +144,8 @@ Basis: "recomputed" means by script from the cited inputs. "Re-fetched" means re
 
 ## Mismatch rate
 
-Main path: 72 rows. 57 yes, 8 no, 7 cannot check. Mismatch rate = 8 / 65 checkable = 12.3% (8 / 72 = 11.1% of all rows). Go-deeper sample: 10 rows, 0 no (two wording fixes).
-Combined: 8 / 75 checkable = 10.7%.
+Main path: 75 rows. 60 yes, 8 no, 7 cannot check. Mismatch rate = 8 / 68 checkable = 11.8% (8 / 75 = 10.7% of all rows). Go-deeper sample: 10 rows, 0 no (two wording fixes).
+Combined: 8 / 78 checkable = 10.3%.
 
 The rate is above 10%, so under the role card every headline claim in the round is re-checked. This pass already covers every main-path number. None of the 8 mismatches is a headline number in the tldr. Seven are small (a label, a date, a rounding word, a measure mixed up), and one changes a reader-facing fact: the Q3 2026 "bought about 4%" ([40]) should be "bought about 18%, net about 4%". All 8 have a fix written above. Pass: yes once the 8 fixes are applied.
 
