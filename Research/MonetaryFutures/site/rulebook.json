@@ -11429,10 +11429,31 @@
    "n": 3,
    "id": "rb-l3",
    "name": "Deeper still",
-   "tag": "coming",
+   "tag": "empty for now",
    "soon": true,
    "blurb": [
-    "Level 3 opens as new topics are added. They arrive over time, each one built on Levels 1 and 2."
+    "Level 3 is empty for now. Topics arrive over time, each built on Levels 1 and 2."
+   ]
+  },
+  {
+   "n": 4,
+   "id": "rb-l4",
+   "name": "Futures and debates",
+   "tag": "edge cases",
+   "blurb": [
+    "Level 4 is where the Rulebook argues with the future. Each chapter takes one bold idea about where money is heading, takes it apart piece by piece, tests every claim against the evidence, and ends with questions only time will answer.",
+    "It assumes Levels 1 and 2. Nothing here is advice: these chapters are built to make you a sharper judge of big claims, not to sell you anything."
+   ],
+   "before": [
+    "rb-crypto",
+    "rb-12",
+    "rb-bonds",
+    "rb-moneymake"
+   ],
+   "after": [
+    "Take apart a bold financial pitch into what is true, what is spin and what is unknown",
+    "Follow money as it moves between baskets, and say who gains at each step",
+    "Name the signs that a reflexive structure is turning from virtuous to vicious"
    ]
   }
  ]
