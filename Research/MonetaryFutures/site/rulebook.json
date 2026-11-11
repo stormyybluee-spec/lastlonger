@@ -7415,7 +7415,7 @@
     },
     {
      "type": "insider",
-     "text": "Where household and firm debt is bank loans, each loan created a deposit on the day it was made, and each repayment destroyed one (Step 1). So the bank loan part of those two columns shows which borrowers stand behind much of the money that exists today. The government column is different. It created money only where banks or the central bank bought the bonds (Step 2). Where pension funds or savers bought them, it moved money that already existed, though the buyers now own a bond the government owes. Three limits keep this from becoming a new simple story. The table is a stock built up over decades, while money is created and destroyed as a flow, year by year. The columns also count bonds bought by pension funds and other non-banks, and loans from abroad, which created no deposits at home. And one door is missing. When Bank Negara buys dollars to steady the ringgit, it creates ringgit at first with no local debt behind it.",
+     "text": "Where household and firm debt is bank loans, each loan created a deposit on the day it was made, and each repayment destroyed one (Step 1). So the bank loan part of those two columns gives a clue about which borrowers stand behind part of the money that exists today. The government column is different. It created money only where banks or the central bank bought the bonds (Step 2). Where pension funds or savers bought them, it moved money that already existed, though the buyers now own a bond the government owes. Three limits keep this from becoming a new simple story. The table is a stock built up over decades, like the water level in a bath. Money is created and destroyed as a flow, year by year, like the tap and the drain. The columns also count bonds bought by pension funds and other non-banks, and loans from abroad, which created no deposits at home. And one door is missing. When Bank Negara buys dollars to steady the ringgit, it creates ringgit at first with no local debt behind it.",
      "label": "The statement"
     },
     {
@@ -7502,7 +7502,7 @@
        ]
       }
      ],
-     "caption": "Three shapes. Households hold their largest share of the debt in Thailand (39% of the total), South Korea (37%) and Malaysia (31%). Yet firms still owe more than households in South Korea and Malaysia. Firms owe the largest share in Hong Kong (59%), China (48%) and Germany (44%). Government owes about half in Japan (54%) and Singapore (51%), and 44% in the United States. For government bonds, who bought them decides whether money was created.",
+     "caption": "Three shapes. Households hold their largest share of the debt in Thailand (39% of the total), South Korea (37%) and Malaysia (31%). Even so, firms owe more than households in South Korea and Malaysia. Firms owe the largest share in Hong Kong (59%), China (48%) and Germany (44%). Government owes about half in Japan (54%) and Singapore (51%), and 44% in the United States. For government bonds, who bought them decides whether money was created.",
      "source": "BIS total credit statistics, fourth quarter of 2024, via DBnomics. Government debt at face value except South Korea (market value). Rebuilt by this project from the BIS data, so it differs slightly from the image that circulated."
     },
     {
@@ -7516,7 +7516,7 @@
       [
        "A bank lends to a household or a firm",
        "Yes. A new deposit appears the moment the loan is made",
-       "Malaysia: 70 of its 85 points of household debt are bank loans (Bank Negara, June 2025). Bank Negara's 85 also counts development banks and some other lenders. Check which lenders a number counts"
+       "Malaysia: Bank Negara counts household debt at 85 points of output, and 70 of those points are bank loans (June 2025). The 85 also counts development banks and some other lenders. The chart's 70 is the BIS count, a different one. Check which lenders a number counts"
       ],
       [
        "The central bank buys government bonds",
@@ -7537,7 +7537,7 @@
     },
     {
      "type": "insider",
-     "text": "The post that carried the table asked: Vietnam's household debt is 18% of output, Malaysia's 70%, and both own about the same fridges and washing machines, so who is really wealthier? Three checks change the answer. First, Vietnam's number is the weakest in the picture. A 2018 study found no official household debt series, this project found none since, and it is not in the BIS data. A central bank based measure that counts family businesses was 47% in 2016, and Vietnam's credit to the economy was about 136% of output in 2024 (IMF). On the World Bank's bank credit measure Vietnam was 125% against Malaysia's 113% in 2022, the latest year with both. Vietnam borrows a lot. More of it is counted as business. Second, debt is one side of a balance sheet. Malaysian households hold financial assets of 177% of output, 2.1 times their debt, and three quarters of their debt was borrowed for homes and cars (Bank Negara, 2025). Third, income: output per person is 2.6 times higher in Malaysia (US$13,125 against US$5,066 in 2025, World Bank). So by the figures found, Malaysian households owe about 85% of output and hold documented financial assets of 177%. The post is right that the burden is real. The typical Malaysian borrower's repayments take about a third of income (median debt service ratio 33% on existing loans, Bank Negara, 2025). No comparable asset figure was found for Vietnam. On income Malaysia is clearly ahead, but on household wealth the data found cannot settle the post's question. Low debt in a table can mean thrift, a narrow way of counting, or little access to credit.",
+     "text": "The post that carried the table asked: Vietnam's household debt is 18% of output, Malaysia's 70%, and both own about the same fridges and washing machines, so who is really wealthier? The short answer is that Malaysia is clearly ahead on income, but this data cannot say who holds more household wealth. Low debt is not the same as being wealthy. Three checks lead there. First, Vietnam's number is the weakest in the picture. A 2018 study found no official household debt series, this project found none since, and it is not in the BIS data. A central bank based measure that counts family businesses was 47% in 2016, and Vietnam's credit to the economy was about 136% of output in 2024 (IMF). On the World Bank's bank credit measure Vietnam was 125% against Malaysia's 113% in 2022, the latest year with both. Vietnam borrows a lot overall, and more of it may be counted as business debt. So the low household figure does not show that families there owe little. Second, debt is one side of a balance sheet. Malaysian households hold financial assets of 177% of output, 2.1 times their debt, and three quarters of their debt was borrowed for homes and cars (Bank Negara, 2025). Third, income: output per person is 2.6 times higher in Malaysia (US$13,125 against US$5,066 in 2025, World Bank). So by the figures found, Malaysian households owe about 70% of output on the BIS count, or 85% on Bank Negara's wider count, and hold documented financial assets of 177%, which is the figure to compare with the 85%. The post is right that the burden is real. The typical Malaysian borrower's repayments take about a third of income (median debt service ratio 33% on existing loans, Bank Negara, 2025). No comparable asset figure was found for Vietnam. On income Malaysia is clearly ahead, but on household wealth the data found cannot settle the post's question. Low debt in a table can mean thrift, a narrow way of counting, or little access to credit.",
      "label": "Vietnam against Malaysia"
     },
     {
@@ -10961,7 +10961,7 @@
     {
      "type": "callout",
      "label": "How to read this chapter",
-     "text": "Four parts of about ten minutes each. Read the main path first and skip the boxes marked Go deeper. Every number has a date, because these numbers move."
+     "text": "Four parts, about 40 minutes in all. Read the main path first and skip the boxes marked Go deeper. Every number has a date, because these numbers move."
     },
     {
      "type": "h",
@@ -11187,7 +11187,7 @@
      "rows": [
       [
        "Created",
-       "New money appears: a bank lends or buys from someone who is not a bank, or the central bank buys",
+       "New money appears: a bank lends or buys from someone who is not a bank, or the central bank buys from someone who is not a bank",
        "US bank loans grew by about $1 trillion in the year to September 2026, to $14.10 trillion, and that net growth became new deposits"
       ],
       [
