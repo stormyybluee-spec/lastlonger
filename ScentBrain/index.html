@@ -218,7 +218,7 @@ ul.spec{margin:6px 0 0;padding-left:18px;display:grid;gap:3px;font-size:.9rem}
 .cmp{display:grid;gap:6px;margin-top:8px}
 .cmp-r{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,2fr) 2.4em;gap:10px;align-items:center;font-size:.86rem}
 .cmp-b{height:6px;background:var(--sunk);border-radius:3px;overflow:hidden}.cmp-b i{display:block;height:100%;background:var(--accent)}
-#study-legend span i,#gb-legend span i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:-1px}
+#study-legend span i,#gb-legend span i,#ea-legend span i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:-1px}
 .nz-avg{background:var(--sunk);color:var(--muted)} .nz-good{border-color:var(--accent);color:var(--accent)} .nz-awe{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)} .nz-no{border-color:var(--bad);color:var(--bad);text-decoration:line-through}
 /* virtual nose */
 .nose-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:22px}
@@ -252,7 +252,7 @@ textarea.nf.small{min-height:150px}
 <div class="wrap">
 <header class="mast">
   <div class="mast-top">
-    <div class="brand"><b>Sion</b> · Scent Brain · build 0.7.1</div>
+    <div class="brand"><b>Sion</b> · Scent Brain · build 0.8</div>
     <div class="eyebrow">Master node for detergent wash and, later, the fragrance house</div>
   </div>
   <h1>Type anything.<br>Get <em>three</em> scents back.</h1>
@@ -263,10 +263,10 @@ textarea.nf.small{min-height:150px}
     <div class="stat"><span class="n mono">1.5×10¹¹</span><span class="l">ways to pick 10 of 64, before dosing</span></div>
     <div class="stat"><span class="n mono">3</span><span class="l">heads: Creative, Accurate, Luxury</span></div>
     <div class="stat"><span class="n mono">113</span><span class="l">materials with physics in the Virtual Nose</span></div>
-    <div class="stat"><span class="n mono">30 + 20</span><span class="l">best sellers and critics' groundbreakers studied</span></div>
+    <div class="stat"><span class="n mono">30 + 20</span><span class="l">best sellers and critics' groundbreakers, plus 21 East Asian references</span></div>
   </div>
   <nav class="toc" aria-label="Sections">
-    <a href="#composer">01 Composer</a><a href="#nose">02 Virtual Nose</a><a href="#verify">03 Gemini data check</a><a href="#engine">04 Engine</a><a href="#study">05 Best sellers</a><a href="#ground">06 Groundbreakers</a><a href="#science">07 Sensory science</a><a href="#architecture">08 Composer layers</a><a href="#heads">09 Three heads</a><a href="#ladder">10 Translation rules</a><a href="#cases">11 Hard briefs</a><a href="#palette">12 Palette</a><a href="#learning">13 Learning loop</a><a href="#landscape">14 Landscape</a><a href="#roadmap">15 Roadmap</a>
+    <a href="#composer">01 Composer</a><a href="#nose">02 Virtual Nose</a><a href="#verify">03 Gemini data check</a><a href="#engine">04 Engine</a><a href="#study">05 Best sellers</a><a href="#ground">06 Groundbreakers</a><a href="#east">07 East Asia</a><a href="#science">08 Sensory science</a><a href="#yournose">09 Your nose</a><a href="#architecture">10 Composer layers</a><a href="#heads">11 Three heads</a><a href="#ladder">12 Translation rules</a><a href="#cases">13 Hard briefs</a><a href="#palette">14 Palette</a><a href="#learning">15 Learning loop</a><a href="#landscape">16 Landscape</a><a href="#roadmap">17 Roadmap</a>
   </nav>
 </header>
 
@@ -433,7 +433,9 @@ textarea.nf.small{min-height:150px}
     <tr><td class="mono">0.2</td><td>0.1 plus the Virtual Nose paper audit (touchpoints, brief limits by loudness, base chemistry, capsules) and a Standard senior panel (one Claude call playing three perfumers)</td><td>Thresholds were ad hoc. Data was mostly estimates. One call cannot be blind to itself</td><td>Audit and panel kept as the Quick and Standard tiers</td></tr>
     <tr><td class="mono">0.2.1</td><td>0.2 plus the 12 senior rules from the panel review, natural-oil expansion, distinctness across a set</td><td>Rules were learned from one case only</td><td>Kept, now tested on held-out cases</td></tr>
     <tr><td class="mono">0.3</td><td>The 11-stage chain above: framer, librarian, lanes, verifier, three blind red-team agents, court, reloop, publish, scorekeeper. Three-source data reconciliation, IFRA 10A limits, Case 1 exam</td><td>Exam only covered the case the rules came from. No label-claim checks, no measured target, predictions not saved</td><td>Current chain</td></tr>
-    <tr><td class="mono">0.4</td><td>Same chain, stronger stages: held-out exam (Scorekeeper), label-claim audit (Move 7), measured GC-MS target (Move 6), saved prediction ledger (Scorekeeper), clash-check prompt (Verifier)</td><td>See the open items in PLAN.md section 9</td><td>Current build</td></tr>
+    <tr><td class="mono">0.4</td><td>Same chain, stronger stages: held-out exam (Scorekeeper), label-claim audit (Move 7), measured GC-MS target (Move 6), saved prediction ledger (Scorekeeper), clash-check prompt (Verifier)</td><td>See the open items in PLAN.md section 9</td><td>Kept</td></tr>
+    <tr><td class="mono">0.5 to 0.7</td><td>Same chain, with a library the Lanes and Court can consult: best sellers, critics' groundbreakers, sensory science, a compass, innovation moves, and the Composer audited by the Virtual Nose</td><td>The compass only aimed at the best-seller zone</td><td>Kept</td></tr>
+    <tr><td class="mono">0.8</td><td>Triage now includes an ambition (crowd-pleaser, critics' edge, East Asian quiet, your nose). East Asia study, 16-cartridge East Asia shelf, East-West lean and a personal nose model</td><td>The personal model is rough until panel and wear data arrive</td><td>Current build</td></tr>
     </tbody></table></div></div>
 
   <div class="sec-head" style="margin-top:8px"><h3>The 7 moves, rebuilt for scent</h3></div>
@@ -508,7 +510,7 @@ textarea.nf.small{min-height:150px}
 
 <section id="study">
   <div class="sec-head"><span class="chapter">05 · SELF-STUDY 1 · BEST SELLERS</span><h2>What the world's best sellers teach</h2>
-  <p class="lede">The commercial icons of perfumery: the 30 most commercially dominant perfumes, chosen on public sales evidence. The aim is to learn the grammar, not copy the sentences: find the familiar frame people already love, then break new ground on top of it. The critics' view is in section 06 and the science in section 07.</p></div>
+  <p class="lede">The commercial icons of perfumery: the 30 most commercially dominant perfumes, chosen on public sales evidence. The aim is to learn the grammar, not copy the sentences: find the familiar frame people already love, then break new ground on top of it. The critics' view is in section 06, East Asia in section 07 and the science in section 08.</p></div>
 
   <div class="box"><span class="eyebrow">The headline finding · measured on the icons themselves</span>
     <h3>Hits are about 70% familiar and 30% new</h3>
@@ -561,8 +563,76 @@ textarea.nf.small{min-height:150px}
   </ul></div>
 </section>
 
+<section id="east">
+  <div class="sec-head"><span class="chapter">07 · SELF-STUDY 3 · EAST ASIA</span><h2>What East Asian houses do differently</h2>
+  <p class="lede">A separate study of indie, designer and luxury houses from China, Korea, Japan and Vietnam, with a note on Taiwan. A research agent ran 50 searches on 11 Nov 2026 and worked from search summaries, so unconfirmed details are marked. The aim is the same as before: learn the grammar, never copy the scents.</p></div>
+
+  <div class="box"><span class="eyebrow">Measured on the brain's own scale</span><h3 id="ea-head">East Asian references sit apart from the Western best sellers</h3><p id="ea-stats"></p><p class="status" id="ea-dims"></p>
+    <p class="status">Method: 21 reference scents, profiles written from public notes. Each row in the table below says how sure the notes are. Treat the numbers as directions.</p></div>
+
+  <div class="panel"><div class="panel-h"><span class="eyebrow">The East Asian map · same axes as the other two maps · diamonds are your latest formulas</span><span class="legend" id="ea-legend"></span></div><div class="scroll-x" id="ea-map"></div></div>
+
+  <div class="sec-head" style="margin-top:8px"><h3>The reference scents</h3></div>
+  <div class="tablewrap"><table class="ref" id="ea-t" style="min-width:980px"><thead><tr><th>Country</th><th>Scent</th><th>Perfumer</th><th>The idea</th><th>Design codes</th><th class="num">Closest Western best seller</th><th>Notes</th></tr></thead><tbody></tbody></table></div>
+
+  <div class="sec-head" style="margin-top:8px"><h3>The design codes</h3><p class="status">Eight codes that recur across these houses. The labels are the brain's own framing. In the research, "liubai" (blank space) appeared in one brand's copy, and "ma" and "yeobaek" did not appear in any perfumer interview, so do not present these words as the houses' own.</p></div>
+  <div class="grid3" id="ea-codes"></div>
+
+  <div class="sec-head" style="margin-top:8px"><h3>The houses</h3></div>
+  <div class="famchips" id="ea-filter"></div>
+  <div class="tablewrap"><table class="ref" id="ea-houses" style="min-width:1100px"><thead><tr><th>Country</th><th>House</th><th>Founded</th><th>Founder or perfumer</th><th>Position</th><th>Signature scents</th><th>Stated idea</th><th>Evidence of standing</th></tr></thead><tbody></tbody></table></div>
+
+  <div class="row2">
+    <div class="box"><span class="eyebrow">Awards · Art and Olfaction (verify 2025 and 2026 on the official site)</span><h3>The trophies go to the smallest labels</h3><ul>
+      <li>2022 Artisan winner: Oolong Tea, One Day, Michael Wong (China)</li>
+      <li>2024 Artisan winner: Molotov Cocktail, Sylhouette Parfums, Sy Truong (Vietnam)</li>
+      <li>2025 Independent winner: Northern, Soulvent, Ciny Ye (China)</li>
+      <li>2025 Artisan winner: Mint Rose, OrdioLab, Jerry Lin (Taiwan)</li>
+      <li>2025 finalist: Matcha Soft Serve, d'Annam (Vietnam)</li>
+      <li>2026 Independent winner: Ici, le pas s'arrête, TERRA•T, Kaiwei Hsieh (Taiwan)</li>
+      <li>2026 Artisan finalist: Hoàng Trà, Maison de Nguyễn (Vietnam)</li>
+      <li>1993 European FiFi: L'Eau d'Issey, Issey Miyake</li>
+    </ul><p class="status">No Fragrance Foundation win or finalist place was found for Tamburins, Nonfiction, Borntostandout, To Summer or Documents. Pitti Fragranze and Esxence showed exhibitor listings only.</p></div>
+    <div class="box"><span class="eyebrow">Money and market</span><h3>The big houses win investment, not prizes</h3><ul>
+      <li>L'Oréal funds hold stakes in To Summer (2024), Documents (2022) and Borntostandout (2025). Estée Lauder backed Melt Season (2023).</li>
+      <li>China: about RMB 25bn to 30bn a year and growing about 20% (estimates conflict). 63% name eau de toilette among preferred types. Over half choose fresh and subtle scents.</li>
+      <li>Japan: the rich country with the lowest perfume use. "Sumehara" (smell harassment) covers too much perfume as well as body odour.</li>
+      <li>Korea: fresh, skin-like scents preferred over heavy or sweet ones (brand statements, no survey found).</li>
+      <li>Heat shortens wear to about 2 to 4 hours. Humidity effects are disputed.</li>
+    </ul></div>
+  </div>
+
+  <div class="tablewrap"><table class="ref" style="min-width:640px"><thead><tr><th>Country</th><th>Signature materials in the research</th><th>On the brain's East Asia shelf</th></tr></thead><tbody>
+    <tr><td><b>China</b></td><td>Osmanthus, Pu'er and oolong tea, ink and pine soot, mugwort, star anise, yulan magnolia, walnut, agarwood, sandalwood, wintersweet</td><td>Osmanthus, roasted tea, green tea, ink stick, mugwort, temple incense, lotus, plum blossom</td></tr>
+    <tr><td><b>Korea</b></td><td>Rice, hanji paper, hanok timber, mugwort, bamboo, mulberry, white tea, fig, sandalwood, incense and metal</td><td>Steamed rice, washi paper, pine needle, mugwort, bamboo, hot metal</td></tr>
+    <tr><td><b>Japan</b></td><td>Hinoki, hiba, camphor wood, kyara and aloeswood, matcha, iris, soap and white tea, sake, paper</td><td>Hinoki, temple incense, green tea and matcha, shiso, cherry blossom, yuzu, washi paper</td></tr>
+    <tr><td><b>Vietnam</b></td><td>Rice and pandan, robusta coffee with condensed milk, tea, agarwood, jasmine, lotus</td><td>Pandan and coconut rice, coffee, lotus, pomelo and kumquat, temple incense</td></tr>
+  </tbody></table></div>
+
+  <div class="row2">
+    <div class="box"><span class="eyebrow">Honest contrasts</span><h3>Where the story is weaker than it sounds</h3><ul>
+      <li>Western hands write many "Eastern" scents. Aromag's Inkcense is by Frank Voelkl, who made Le Labo Santal 33. Comme des Garçons Kyoto is by a French perfumer.</li>
+      <li>Press praises the shops, bottles and campaigns of Tamburins and Documents far more than the compositions (the brain's reading, no critic named).</li>
+      <li>Nonfiction's Santal Cream sits near Le Labo Santal 33 by its notes. On the brain's scale it is the reference closest to a Western best seller.</li>
+      <li>Trade press cites gaps in ingredient access and perfumer training in China, and a domestic boom that cooled by 2023.</li>
+      <li>Critics find some Japanese indies linear, and Shiro's Savon is a clean functional scent, not an art statement.</li>
+      <li>What is real: local materials (Pu'er oil, kyara, hinoki, hiba), the incense lineage and low-dose formats such as balms and water-based sprays.</li>
+    </ul></div>
+    <div class="box"><span class="eyebrow">What Sion takes from East Asia</span><h3>Quiet is a position, not a weakness</h3><ul>
+      <li>Use fewer materials and leave space. The East Asian ambition in the Composer does this by default.</li>
+      <li>Make humble daily materials the subject: rice, tea, paper, wood, herbs. Sion's soybean and chrysanthemum ideas already belong here.</li>
+      <li>Dose for skin distance in humid Singapore. Lower strength is the regional norm, not a compromise.</li>
+      <li>Tie every scent to a real place or season the customer has lived.</li>
+      <li>Treat the bottle, the name and the shop as part of the scent.</li>
+      <li>Laundry is the most natural format for this aesthetic: clean, close and quiet.</li>
+      <li>For awards, enter small and crafted work. The prizes went to artisan labels, not the funded brands.</li>
+    </ul></div>
+  </div>
+  <p class="status">Not verified: Morra, Nốt Hương, SW19, Hince, Çanoma and several others returned nothing. Founding dates conflict for Documents, Melt Season, Tamburins and Borntostandout. Notes for Kunlun Boiled Snow, Dirty Rice, Chamo and Savon were not confirmed. No revenue figures were found for Tamburins, Nonfiction, Shiro or Documents.</p>
+</section>
+
 <section id="science">
-  <div class="sec-head"><span class="chapter">07 · SELF-STUDY 3 · SENSORY SCIENCE</span><h2>Why people love a smell, and the Sion rules</h2>
+  <div class="sec-head"><span class="chapter">08 · SELF-STUDY 4 · SENSORY SCIENCE</span><h2>Why people love a smell, and the Sion rules</h2>
   <p class="lede">The science behind liking and novelty, and the 12 creation rules the brain applies on every brief, drawn from all three studies.</p></div>
   <div class="sec-head"><h3>The research</h3><p class="status">Sourced brief from a research agent, 3 Nov 2026, 35 searches, snippets only. U marks figures that are uncertain or single-source.</p></div>
   <div class="grid3">
@@ -578,7 +648,7 @@ textarea.nf.small{min-height:150px}
   </div>
 
 
-  <div class="sec-head" style="margin-top:8px"><h3>The Sion creation rules</h3><p class="status">What the brain now does with this, on every brief. Each rule rests on the evidence above.</p></div>
+  <div class="sec-head" style="margin-top:8px"><h3>The Sion creation rules</h3><p class="status">What the brain now does with this, on every brief. Each rule rests on the evidence in the four studies.</p></div>
   <div class="tablewrap"><table class="ref" style="min-width:720px"><thead><tr><th>#</th><th>Rule</th><th>Evidence</th><th>Where the brain applies it</th></tr></thead><tbody>
     <tr><td class="mono">1</td><td>Land in the sweet spot: 60 to 84 similar to the closest icon</td><td>Icon launch data, median 71. MAYA (Hekkert 2003)</td><td>Compass zone on every audit and Composer card</td></tr>
     <tr><td class="mono">2</td><td>Give every scent one hero that carries at least 12% of the smell</td><td>Aldehydes in No. 5, ethyl maltol in Angel, Ambroxan in Sauvage, Hedione in Eau Sauvage</td><td>Hero check in the compass</td></tr>
@@ -592,6 +662,8 @@ textarea.nf.small{min-height:150px}
     <tr><td class="mono">10</td><td>Write the name, colour and story to steer the pleasant reading</td><td>de Araujo 2005, Morrot 2001</td><td>Composer names and stories, claim audit</td></tr>
     <tr><td class="mono">11</td><td>Use a mild cooling or pepper cue for freshness, below irritation</td><td>TRPM8 and TRPA1 studies</td><td>Brief limits: camphor and medicinal caps</td></tr>
     <tr><td class="mono">12</td><td>Use laundry "clean" as a hidden base, never as the whole idea</td><td>White musks are the most learned smell in Asia and the US, and saturated</td><td>Musk and wood cap, dryer-proof target core</td></tr>
+    <tr><td class="mono">13</td><td>Choose the ambition on purpose: crowd-pleaser, critics' edge, East Asian quiet or your own nose</td><td>Best sellers launch at 77 similar, groundbreakers at 67, East Asian references further still</td><td>Ambition setting on the Composer and the Virtual Nose</td></tr>
+    <tr><td class="mono">14</td><td>For the East Asian register: fewer materials, less sweet and amber, humble materials as the subject, skin distance</td><td>East Asia study: eight design codes, regional preference data</td><td>East Asian ambition, East Asia shelf, two East Asian innovation moves</td></tr>
   </tbody></table></div>
 
   <div class="box"><span class="eyebrow">Studying is not copying</span><h3>The anti-copy rule</h3><p>The compass flags any formula above 90 similar to an icon as a near copy. The brain never reproduces a commercial formula, uses a commercial perfume's name to sell, or builds "smells like" products. Icons are studied the way architects study buildings: for structure, proportion and what made people stay.</p></div>
@@ -600,21 +672,27 @@ textarea.nf.small{min-height:150px}
 
 
 <section id="yournose">
-  <div class="sec-head"><span class="chapter">YOUR NOSE</span><h2>Teach the brain your taste</h2>
+  <div class="sec-head"><span class="chapter">09 · YOUR NOSE</span><h2>Teach the brain your taste</h2>
   <p class="lede">You smelled the best sellers and found many of them average. That is useful data. Tap each perfume you have smelled to cycle through average, good, awe and dislike. The brain builds a model of your nose from the note profiles and scores every new formula against it.</p></div>
+  <div class="box"><span class="eyebrow">Why the best sellers smelled average to you</span><h3>Four reasons, all in the data</h3><ul>
+      <li><b>They are built to be familiar.</b> Best sellers launched at a median of 77 out of 100 similar to an earlier hit. Awe needs surprise, and surprise is what they remove.</li>
+      <li><b>You have smelled their copies for years.</b> Every hit's idea trickles down into shower gels, deodorants and detergents. By the time you meet the original, it smells like the copies.</li>
+      <li><b>A mall is the hardest place to judge.</b> Paper strips show mostly top notes, and the nose tires after a few sniffs. Liking usually builds over several wears on skin.</li>
+      <li><b>Taste is personal.</b> Across cultures the individual explains about 54% of liking, more than the molecule or the culture. Your nose is allowed to disagree with the sales charts.</li>
+    </ul><p class="status">So the brain no longer aims at the best-seller zone by default. Set the ambition in the Composer, and train the model below with what you smelled.</p></div>
   <div class="box"><div id="nose-list" style="display:grid;gap:14px"></div>
     <div class="actions" style="margin-top:12px"><button class="btn ghost" id="nose-clear">Clear my ratings</button><span class="status" id="nose-state">Ratings are kept in this browser. When you are signed in they are also saved to your private store, which only you can read.</span></div></div>
   <div class="box"><span class="eyebrow">What the brain has learned about your nose</span><div id="nose-sum"></div></div>
 </section>
 
 <section id="architecture">
-  <div class="sec-head"><span class="chapter">08 · COMPOSER LAYERS</span><h2>How a brief becomes a formula</h2>
+  <div class="sec-head"><span class="chapter">10 · COMPOSER LAYERS</span><h2>How a brief becomes a formula</h2>
   <p class="lede">Eight layers, run in order. Layers 2 to 4 are where a language model adds the most. Layers 1, 6 and 7 are deterministic code, because safety, regulation and dosing must never depend on a model's mood.</p></div>
   <div class="layers" id="layers"></div>
 </section>
 
 <section id="heads">
-  <div class="sec-head"><span class="chapter">09 · THREE HEADS</span><h2>Scent 1, 2 and 3</h2>
+  <div class="sec-head"><span class="chapter">11 · THREE HEADS</span><h2>Scent 1, 2 and 3</h2>
   <p class="lede">Your umbrella, kept and sharpened. Every brief always returns all three, in this order, so a person learns the brand's grammar after one use.</p></div>
   <div class="grid3">
     <div class="box headbox" style="--hc:var(--creative)"><span class="eyebrow" style="color:var(--creative)">Scent 1 · Creative</span><h3>The brain's own reading</h3>
@@ -635,7 +713,7 @@ textarea.nf.small{min-height:150px}
 </section>
 
 <section id="ladder">
-  <div class="sec-head"><span class="chapter">10 · TRANSLATION RULES</span><h2>The ladder, the floor and the gate</h2>
+  <div class="sec-head"><span class="chapter">12 · TRANSLATION RULES</span><h2>The ladder, the floor and the gate</h2>
   <p class="lede">Most briefs name things that have no smell, or a bad one. The brain climbs a four-rung ladder until it reaches something a perfumer can build.</p></div>
   <div class="ladder">
     <div class="rung"><span class="rk">RUNG 1 · LITERAL</span><b>It has a good smell</b><p>Build it directly from materials or a bridge accord.</p><span class="ex">Soybeans → soy milk &amp; green bean accord</span></div>
@@ -654,13 +732,13 @@ textarea.nf.small{min-height:150px}
 </section>
 
 <section id="cases">
-  <div class="sec-head"><span class="chapter">11 · HARD BRIEFS</span><h2>What real people will type</h2>
+  <div class="sec-head"><span class="chapter">13 · HARD BRIEFS</span><h2>What real people will type</h2>
   <p class="lede">Your examples, plus the edge cases, run live through the gate on this page. Tap a row to load it into the composer.</p></div>
   <div class="tablewrap"><table class="ref" id="cases-t"><thead><tr><th>Brief</th><th>Gate</th><th>How the brain reads it</th></tr></thead><tbody></tbody></table></div>
 </section>
 
 <section id="palette">
-  <div class="sec-head"><span class="chapter">12 · PALETTE</span><h2>How many liquids is enough</h2>
+  <div class="sec-head"><span class="chapter">14 · PALETTE</span><h2>How many liquids is enough</h2>
   <p class="lede">Freedom of brief does not need an endless shelf. It needs the right shelf. A brief like "soybeans" or "gunpowder" is solved by a bridge accord: a small pre-made blend of 5 to 30 raw materials that a perfumer builds once and the machine treats as one liquid.</p></div>
   <div class="tablewrap"><table class="ref"><thead><tr><th>Stage</th><th>Liquids</th><th>What they are</th><th>Why that number</th></tr></thead><tbody>
     <tr><td><b>1 · Sion Wash</b><br><span class="eyebrow">now</span></td><td class="num">24</td><td>Laundry-grade accords, each pre-tested in your detergent base for stability and colour</td><td>Detergent customisation is a 3 to 6 accord mix at 0.5 to 1.1% load. 24 covers every family twice. Only high-substantivity materials survive rinse and dry (boiling point at or above 250 °C and ClogP at or above 3).</td></tr>
@@ -673,7 +751,7 @@ textarea.nf.small{min-height:150px}
 </section>
 
 <section id="learning">
-  <div class="sec-head"><span class="chapter">13 · LEARNING LOOP</span><h2>How the brain gets smarter</h2>
+  <div class="sec-head"><span class="chapter">15 · LEARNING LOOP</span><h2>How the brain gets smarter</h2>
   <p class="lede">Today the brain is rules plus a language model. Every order turns it into something no competitor has: a dataset of free-text briefs paired with formulas and with what people actually thought when they smelled them.</p></div>
   <div class="row2">
     <div class="box"><span class="eyebrow">The flywheel</span>
@@ -694,6 +772,13 @@ textarea.nf.small{min-height:150px}
         <li><b>v3 · house</b> A molecular layer built on an odor map (OpenPOM, trained on about 5,000 molecules) to design new accords and check that a formula lands where the brief points.</li>
       </ul></div>
   </div>
+  <div class="box"><span class="eyebrow">From the reel you shared · the molecular nose</span><h3>A free smell model now, a sensor later</h3>
+    <div class="row2">
+      <div><p><b>What the reel shows.</b> Google's odour-map model learns from about 5,000 molecules that perfume experts labelled (fruity, minty, smoky). Tested on 400 molecules it had never seen, it matched the panel's average better than the median trained panelist on just over half of them (Science, 2023). An open-source version, OpenPOM, runs on a laptop.</p>
+      <p style="margin-top:8px"><b>What it gives Sion for free.</b> Type in any molecule's structure and get a predicted smell profile. That fills the material database for molecules nobody has rated yet, including new captives. It is model version v3 in the plan above and needs no hardware.</p></div>
+      <div><p><b>What it cannot do.</b> It describes single molecules. It does not predict how a 40-material mixture behaves in detergent, and it does not judge beauty. The Virtual Nose and a human panel still do that.</p>
+      <p style="margin-top:8px"><b>The gas sensor.</b> A cheap sensor learns to tell samples apart, such as coffee from a candle. Its real use for Sion is later, as quality control: checking that batch 2 smells like batch 1. Decision recorded on 11 Nov 2026: no sensor purchase for now.</p></div>
+    </div></div>
   <div class="box"><span class="eyebrow">The record kept for every creation · Scent Genome v0.1</span>
 <pre class="code">{
   "genome_id": "SG-2026-000001",
@@ -716,7 +801,7 @@ textarea.nf.small{min-height:150px}
 </section>
 
 <section id="landscape">
-  <div class="sec-head"><span class="chapter">14 · LANDSCAPE</span><h2>Who else is doing this</h2>
+  <div class="sec-head"><span class="chapter">16 · LANDSCAPE</span><h2>Who else is doing this</h2>
   <p class="lede">Researched 3 Nov 2026 from public reporting. Figures marked <span class="u">U</span> are uncertain or disputed across sources.</p></div>
   <div class="tablewrap"><table class="ref"><thead><tr><th>Player</th><th>Input</th><th>Engine and palette</th><th>What Sion takes from it</th></tr></thead><tbody>
     <tr><td><b>EveryHuman</b><br><span class="status">ScenTronix, Breda</span></td><td>About 23-item personality questionnaire</td><td>3 algorithms → 3 scents. 46 accords of 5 to 8 materials each. In-store dispenser, patented. About £45 for three 5 ml. EDT strength. 75k+ users<span class="u">U</span></td><td>Three outputs per session works. The quiz-first input and fixed EDT strength are the gap Sion fills.</td></tr>
@@ -731,7 +816,7 @@ textarea.nf.small{min-height:150px}
 </section>
 
 <section id="roadmap">
-  <div class="sec-head"><span class="chapter">15 · ROADMAP</span><h2>From wash to fragrance house</h2></div>
+  <div class="sec-head"><span class="chapter">17 · ROADMAP</span><h2>From wash to fragrance house</h2></div>
   <div>
     <div class="stage"><div class="sk">Stage 1<small>Sion Wash</small></div><div><h3>Custom-scented detergent</h3><p>The brain runs in detergent and softener formats only. Formulas are blended by hand from 24 laundry accords. Every order creates a Scent Genome record.</p><ul><li>Pick a fragrance supplier who will build and IFRA-certify 24 laundry accords</li><li>Stability test each accord in your base: 4 weeks at 40 °C, colour and pH</li><li>Launch the brief box on the site with the three-scent result</li><li>Collect the first 1,000 ratings</li></ul></div></div>
     <div class="stage"><div class="sk">Stage 2<small>The machine</small></div><div><h3>64-cartridge dispenser</h3><p>The brain sends a dispense program: cartridge ID and grams or millilitres, at 0.01 ml resolution. Fine fragrance formats open up. Retrieval from rated genomes switches on (v1).</p><ul><li>Gravimetric dosing (weigh, do not just pump) for accuracy below 1%</li><li>Cartridge freshness tracking: citrus and aldehydes oxidise</li><li>Batch log per bottle for recalls and repeat orders</li></ul></div></div>
@@ -740,7 +825,7 @@ textarea.nf.small{min-height:150px}
 </section>
 
 <footer>
-  <span>Sion Scent Brain · build 0.7.1 · 3 Nov 2026 · Virtual Nose added</span>
+  <span>Sion Scent Brain · build 0.8 · 3 Nov 2026 · Virtual Nose added</span>
   <span>Palette caps and dose levels are planning placeholders. Every formula must be checked against current IFRA Standards and supplier certificates, then stability and skin tested, before anything is sold.</span>
 </footer>
 </div>
@@ -1406,23 +1491,10 @@ GROUND.forEach(i=>{i.vv=vec(i.v);});
 const GRAMMAR=[["synthetic", "A new synthetic becomes the star", "A material just out of the lab is given the lead role.", "Foug\u00e8re Royale (coumarin), Eau Sauvage (Hedione), L'Eau d'Issey (Calone), Terre d'Herm\u00e8s (Iso E Super)", true], ["overdose", "A background material is overdosed", "Something normally used as support is dosed until it becomes the idea.", "No. 5 (aldehydes), Shalimar (ethyl vanillin), Angel (ethyl maltol), Portrait of a Lady (rose and patchouli)", true], ["abstraction", "Smell of no single thing", "The perfume copies no flower or object, it is a new sensation.", "Jicky, No. 5, Odeur 53", true], ["food", "Borrowed from food", "A taste memory is moved into fine fragrance.", "Mitsouko (peach), Shalimar (vanilla), Angel (candyfloss)", true], ["industry", "Borrowed from industry or the outdoors", "A material, machine or landscape smell framed as beauty.", "Bandit (tar leather), Drakkar Noir (functional freshness), Odeur 53 (metal), Terre d'Herm\u00e8s (flint)", true], ["element", "An element as the subject", "Water, earth or air becomes the theme instead of a flower.", "L'Eau d'Issey (water), Terre d'Herm\u00e8s (earth), Odeur 53 (air)", true], ["minimal", "Reduction and minimalism", "Fewer materials, each one doing more.", "Eau Sauvage, L'Eau d'Issey, Terre d'Herm\u00e8s, Molecule 01", true], ["inversion", "Gender inversion", "A family coded for one gender is given to the other, or to everyone.", "Bandit, F\u00e9minit\u00e9 du Bois, Eau Sauvage, CK One", true], ["clash", "Built-in clash", "Two ideas that should not meet are held in tension.", "Angel (sweet against earth), Mitsouko (fruit against moss), Bandit (pretty against harsh)", true], ["template", "A template others can copy", "A structure simple enough to become a family name.", "Foug\u00e8re Royale, Chypre, Angel", false], ["outsider", "An outsider channel", "A newcomer to perfume brings different rules.", "Aromatics Elixir (skincare), F\u00e9minit\u00e9 du Bois, Comme des Gar\u00e7ons, Tommy Girl", false]];
 const GRAM=Object.fromEntries(GRAMMAR.map(g=>[g[0],g]));
 /* ---------- East Asian references, ambition and personal nose ---------- */
-const EAST=[
-{"id":"ts-kunlun","name":"Kunlun Boiling Snow","house":"To Summer","cty":"China","year":2019,"v":"woodyDry:3,aromatic:2,green:1,aquatic:1,musky:1,amber:0.5","idea":"Snow melting on a fir fire","codes":["place","ma"]},
-{"id":"ts-osm","name":"Summer Palace Golden Osmanthus","house":"To Summer","cty":"China","year":2020,"v":"fruity:2,floralWhite:2.5,sweet:1,leather:0.5,musky:1,woodyCreamy:0.5","idea":"Autumn osmanthus in an imperial garden","codes":["season","portrait","place"]},
-{"id":"tam-chamo","name":"Chamo","house":"Tamburins","cty":"Korea","year":2022,"v":"aromatic:2,green:1.5,woodyCreamy:1.5,musky:2,fruity:0.5","idea":"Chamomile and blonde wood, quiet and dry","codes":["ma","object"]},
-{"id":"nf-santal","name":"Santal Cream","house":"Nonfiction","cty":"Korea","year":2019,"v":"woodyCreamy:3,lactonic:1.5,green:1,spicyFresh:1,musky:1","idea":"Creamy sandalwood for the skin","codes":["skin","ma"]},
-{"id":"bts-rice","name":"Dirty Rice","house":"Borntostandout","cty":"Korea","year":2022,"v":"lactonic:2,nutty:2,powdery:1.5,musky:2,woodyDry:1,sweet:1","idea":"Steamed rice as a skin scent","codes":["edible","portrait","skin"]},
-{"id":"shiro-savon","name":"Savon","house":"Shiro","cty":"Japan","year":2009,"v":"aldehydic:2,musky:2.5,citrus:2,floralWhite:1.5,fruity:1","idea":"Clean soap, close to the skin","codes":["skin","ma"]},
-{"id":"satori","name":"Satori","house":"Parfum Satori","cty":"Japan","year":2006,"v":"woodyCreamy:2.5,smoky:1.5,spicyWarm:1.5,amber:1.5,sweet:1,cocoa:0.5","idea":"Kyara incense wood listened to in silence","codes":["listen","ma"]},
-{"id":"cdg-kyoto","name":"Kyoto (Incense series)","house":"Comme des Garçons","cty":"Japan","year":2002,"v":"smoky:2.5,woodyDry:3,aromatic:1,amber:1,earthy:1,cocoa:0.5","idea":"A Kyoto temple: incense, cypress, cold wood","codes":["listen","place"]},
-{"id":"cdg-hinoki","name":"Hinoki (with Monocle)","house":"Comme des Garçons","cty":"Japan","year":2008,"v":"woodyDry:3,aromatic:2.5,green:1,smoky:1,earthy:1","idea":"A hinoki bath in a Kyoto ryokan","codes":["portrait","place"]},
-{"id":"zen64","name":"Zen (original)","house":"Shiseido","cty":"Japan","year":1964,"v":"green:2,floralWhite:2,woodyDry:1.5,earthy:1.5,floralRose:1","idea":"Japanese restraint for a world market","codes":["ma"]},
-{"id":"dannam-coffee","name":"Vietnamese Coffee","house":"d'Annam","cty":"Vietnam","year":2021,"v":"cocoa:3,lactonic:2,sweet:2,nutty:1,woodyCreamy:0.5","idea":"Iced coffee with condensed milk","codes":["edible","place"]},
-{"id":"dannam-rice","name":"White Rice","house":"d'Annam","cty":"Vietnam","year":2021,"v":"lactonic:2.5,nutty:2,powdery:1.5,musky:2,sweet:0.5","idea":"A bowl of steamed rice","codes":["edible","portrait"]}
-];
+const EAST=[{"id": "ar-ink", "name": "Inkcense", "house": "Aromag", "cty": "China", "year": 2022, "v": "smoky:2,woodyDry:2.5,mineral:1,musky:1.5,amber:0.5,aromatic:0.5", "idea": "Pine soot ink and incense, with blank space as the stated idea", "codes": ["ma", "portrait", "listen"], "conf": "notes confirmed", "perf": "Frank Voelkl"}, {"id": "ut-osm", "name": "Absolue d'Osmanthe", "house": "Uttori", "cty": "China", "year": 2019, "v": "fruity:2,floralWhite:2.5,sweet:1,leather:0.5,musky:1,woodyCreamy:0.5", "idea": "A portrait of osmanthus", "codes": ["portrait", "season"], "conf": "profile from the name only", "perf": ""}, {"id": "od-oolong", "name": "Oolong Tea", "house": "One Day", "cty": "China", "year": 2021, "v": "nutty:1.5,aromatic:2,woodyDry:1,sweet:0.5,floralWhite:0.5,smoky:0.5", "idea": "Oolong as the whole subject", "codes": ["portrait", "edible"], "conf": "profile from the name only", "perf": "Michael Wong"}, {"id": "tam-metal", "name": "Holy Metal", "house": "Tamburins", "cty": "Korea", "year": 2022, "v": "aromatic:2,mineral:2,smoky:1.5,woodyCreamy:1.5,musky:1.5,green:0.5", "idea": "Thuja, sage, incense and cold metal", "codes": ["object", "listen"], "conf": "notes confirmed", "perf": ""}, {"id": "tam-chamo", "name": "Chamo", "house": "Tamburins", "cty": "Korea", "year": 2022, "v": "aromatic:2,green:1.5,woodyCreamy:1.5,musky:2,fruity:0.5", "idea": "Chamomile and pale wood, dry and quiet", "codes": ["ma", "object", "skin"], "conf": "from memory", "perf": ""}, {"id": "nf-santal", "name": "Santal Cream", "house": "Nonfiction", "cty": "Korea", "year": 2019, "v": "woodyCreamy:3,lactonic:1.5,green:1,spicyFresh:1,earthy:0.5,musky:1", "idea": "Sandalwood, fig, cardamom and vetiver for the skin", "codes": ["skin", "ma"], "conf": "notes confirmed", "perf": ""}, {"id": "nf-night", "name": "Gentle Night", "house": "Nonfiction", "cty": "Korea", "year": 2019, "v": "leather:1,green:1.5,aromatic:1,lactonic:0.5,earthy:1,woodyDry:1.5,musky:2,powdery:0.5", "idea": "Suede, white tea, fig and cedar for a private evening", "codes": ["skin", "ma"], "conf": "notes confirmed", "perf": ""}, {"id": "el-hanok", "name": "Hanok", "house": "Elorea", "cty": "Korea", "year": 2021, "v": "smoky:2,woodyDry:3,powdery:1,amber:0.5,musky:0.5", "idea": "Smoked old timber, hanji paper and incense", "codes": ["place", "portrait"], "conf": "notes confirmed", "perf": ""}, {"id": "bts-rice", "name": "Dirty Rice", "house": "Borntostandout", "cty": "Korea", "year": 2022, "v": "lactonic:2,nutty:2,powdery:1.5,musky:2,woodyDry:1,sweet:1", "idea": "Steamed rice as a skin scent", "codes": ["edible", "portrait", "skin", "object"], "conf": "from memory", "perf": ""}, {"id": "ps-hyouge", "name": "Hyouge", "house": "Parfum Satori", "cty": "Japan", "year": 2008, "v": "green:2.5,aromatic:1.5,floralWhite:1,powdery:1.5,floralRose:0.5", "idea": "Whisked matcha: green leaves, clary sage, iris", "codes": ["portrait", "ma"], "conf": "notes confirmed", "perf": "Satori Osawa"}, {"id": "ps-iris", "name": "Iris Homme", "house": "Parfum Satori", "cty": "Japan", "year": 2010, "v": "citrus:1.5,spicyFresh:1,powdery:2.5,woodyCreamy:2", "idea": "Lemon, cardamom, iris and sandalwood, very dry", "codes": ["ma", "skin"], "conf": "notes confirmed", "perf": "Satori Osawa"}, {"id": "ps-satori", "name": "Satori", "house": "Parfum Satori", "cty": "Japan", "year": 2006, "v": "woodyCreamy:2.5,smoky:1.5,spicyWarm:1.5,amber:1.5,sweet:1,cocoa:0.5", "idea": "Kyara incense wood listened to in silence", "codes": ["listen", "ma"], "conf": "from memory", "perf": "Satori Osawa"}, {"id": "ds-kyara", "name": "Kyara", "house": "Di Ser", "cty": "Japan", "year": 2015, "v": "woodyDry:2.5,smoky:1.5,amber:1,animalic:0.5,citrus:0.5", "idea": "Real kyara aloeswood, all natural", "codes": ["listen", "portrait"], "conf": "from memory", "perf": "Yasuyuki Shinohara"}, {"id": "kt-hinoki", "name": "Hinoki", "house": "Kitowa", "cty": "Japan", "year": 2018, "v": "woodyDry:3,aromatic:1.5,citrus:1,green:0.5", "idea": "Hinoki oil from Mie as the subject", "codes": ["portrait", "place"], "conf": "notes confirmed", "perf": "Tatsushi Horita"}, {"id": "ms-kimono", "name": "Kimono Kaze", "house": "Miya Shinma", "cty": "Japan", "year": 2010, "v": "woodyDry:3,aromatic:2,green:1,earthy:1", "idea": "Pine, cedar, cypress and vetiver", "codes": ["listen", "place"], "conf": "notes confirmed", "perf": "Miya Shinma"}, {"id": "cdg-kyoto", "name": "Kyoto (Incense series)", "house": "Comme des Garçons", "cty": "Japan", "year": 2002, "v": "smoky:2.5,woodyDry:3,aromatic:1,amber:1,earthy:1,cocoa:0.5", "idea": "A Kyoto temple: incense and cold cedar", "codes": ["listen", "place"], "conf": "from memory", "perf": "Bertrand Duchaufour"}, {"id": "shiro-savon", "name": "Savon", "house": "Shiro", "cty": "Japan", "year": 2009, "v": "aldehydic:2,musky:2.5,citrus:2,floralWhite:1.5,fruity:1", "idea": "Clean soap after a bath", "codes": ["skin"], "conf": "from memory", "perf": ""}, {"id": "zen64", "name": "Zen (original)", "house": "Shiseido", "cty": "Japan", "year": 1964, "v": "green:2,floralWhite:2,woodyDry:1.5,earthy:1.5,floralRose:1", "idea": "Japanese restraint for a world market", "codes": ["ma"], "conf": "from memory", "perf": ""}, {"id": "da-rice", "name": "White Rice", "house": "d'Annam", "cty": "Vietnam", "year": 2023, "v": "lactonic:2,nutty:2.5,green:1,musky:2,sweet:1,powdery:1", "idea": "Rice, pandan, white musk and tonka", "codes": ["edible", "portrait", "skin", "place"], "conf": "notes confirmed", "perf": "Anh Ngo"}, {"id": "da-coffee", "name": "Vietnamese Coffee", "house": "d'Annam", "cty": "Vietnam", "year": 2023, "v": "cocoa:3,lactonic:2,sweet:2,nutty:1,amber:1", "idea": "Robusta, condensed milk and dark chocolate", "codes": ["edible", "place"], "conf": "notes confirmed", "perf": "Anh Ngo"}, {"id": "p7-oolong", "name": "Oolong Tea", "house": "P.Seven", "cty": "Taiwan", "year": 2015, "v": "nutty:1.5,aromatic:2,sweet:1,woodyDry:1,floralWhite:1", "idea": "Tea perfume by a tea master", "codes": ["portrait", "edible"], "conf": "profile from the name only", "perf": ""}];
 EAST.forEach(i=>{i.vv=vec(i.v);});
 const EGRAM=[
-["ma","Negative space","Few materials and room between them. The quiet is part of the design (ma in Japan, liubai in China, yeobaek in Korea)."],
+["ma","Negative space","Few materials and room between them. The quiet is part of the design."],
 ["portrait","Quiet material portrait","One humble material is painted on its own: tea, rice, ink, paper, hinoki, osmanthus."],
 ["season","A seasonal moment","A scent for one point in the year, such as osmanthus in autumn or plum blossom in late winter."],
 ["place","Place and memory","A named place or lived memory, not an abstract fantasy."],
@@ -1505,7 +1577,7 @@ function compassHTML(C,h,label){
   <p class="status" style="margin-top:8px">Ambition <b>${esc(AIMS[C.aim].label)}</b> (target ${Math.round(AIMS[C.aim].band[0]*100)} to ${Math.round(AIMS[C.aim].band[1]*100)}): ${esc(C.av[1])}. Closest East Asian reference: <b>${esc(C.esims[0].ic.name)}</b> by ${esc(C.esims[0].ic.house)} (${Math.round(C.esims[0].s*100)}).${C.nose!==null?` Predicted for your nose: <b>${C.nose}</b> of 100.`:""}</p>
   <p class="status" style="margin-top:8px">Closest groundbreaker: <b>${esc(C.gsims[0].ic.name)}</b> (${C.gsims[0].ic.year}, ${Math.round(C.gsims[0].s*100)}). Its move: ${esc(C.gsims[0].ic.moves.map(m=>GRAM[m][1].toLowerCase()).join(", "))}.</p>
   ${h?`<p class="status" style="margin-top:8px">Hero: <b>${esc(h.it.name)}</b> carries ${Math.round(h.sh*100)}% of the smell at its peak (${esc(h.t.toLowerCase())}).</p>`:""}
-  <p class="status">Similarity of the whole-life smell profile, 0 to 100. Half of the 30 icons launched between 57 and 80 from their closest predecessor. See sections 05 to 07 for the studies behind it.</p></div>`;
+  <p class="status">Similarity of the whole-life smell profile, 0 to 100. Half of the 30 icons launched between 57 and 80 from their closest predecessor. See sections 05 to 08 for the studies behind it.</p></div>`;
 }
 /* PCA map of the icons */
 let MAPPTS=[];
@@ -1521,19 +1593,22 @@ let PCA=null;
 function drawMap(id,lid,mode){
   const el=document.getElementById(id);if(!el)return;
   if(!PCA)PCA=pca2([...ICONS,...GROUND].map(i=>nrm(i.vv)));
-  const list=mode==="icons"?ICONS:GROUND;
+  const list=mode==="icons"?ICONS:mode==="east"?EAST:GROUND;
   const pts=list.map(i=>({p:PCA.proj(i.vv),i}));const extra=MAPPTS.map(e=>({p:PCA.proj(e.v),e}));
-  const all=[...[...ICONS,...GROUND].map(i=>PCA.proj(i.vv)),...extra.map(x=>x.p)];const xs=all.map(p=>p[0]),ys=all.map(p=>p[1]);
+  const all=[...[...ICONS,...GROUND,...EAST].map(i=>PCA.proj(i.vv)),...extra.map(x=>x.p)];const xs=all.map(p=>p[0]),ys=all.map(p=>p[1]);
   const W=900,H=520,M=60,x0=Math.min(...xs),x1=Math.max(...xs),y0=Math.min(...ys),y1=Math.max(...ys);
   const X=v=>M+(v-x0)/((x1-x0)||1)*(W-2*M),Y=v=>H-M-(v-y0)/((y1-y0)||1)*(H-2*M);
   let s=`<svg viewBox="0 0 ${W} ${H}" style="min-width:640px;width:100%" role="img" aria-label="${mode==="icons"?"Map of 30 best sellers":"Map of 20 critics' groundbreakers"} by smell profile">`;
   s+=`<rect x="1" y="1" width="${W-2}" height="${H-2}" rx="12" fill="none" stroke="var(--line)"/>`;
-  pts.forEach(({p,i})=>{const c=FAMG[i.g]||"var(--muted)";const ring=mode!=="icons";s+=`<circle cx="${X(p[0]).toFixed(1)}" cy="${Y(p[1]).toFixed(1)}" r="7" fill="${ring?"var(--bg)":c}" ${ring?`stroke="${c}" stroke-width="2.5"`:'fill-opacity=".85"'}><title>${esc(i.name+" ("+i.year+") · "+(i.fam||i.rule||""))}</title></circle><text x="${(X(p[0])+10).toFixed(1)}" y="${(Y(p[1])+4).toFixed(1)}" font-size="11" fill="var(--ink)">${esc(i.name)} <tspan fill="var(--muted)" font-size="9.5">${i.year}</tspan></text>`;});
+  if(mode==="east"){ICONS.forEach(i=>{const q=PCA.proj(i.vv);s+=`<circle cx="${X(q[0]).toFixed(1)}" cy="${Y(q[1]).toFixed(1)}" r="4" fill="var(--muted)" fill-opacity=".3"><title>${esc(i.name)} (Western best seller)</title></circle>`;});
+    pts.forEach(({p,i})=>{const c=CTYC[i.cty]||"var(--muted)";s+=`<rect x="${(X(p[0])-6).toFixed(1)}" y="${(Y(p[1])-6).toFixed(1)}" width="12" height="12" rx="2" fill="${c}"><title>${esc(i.name+" · "+i.house+" · "+i.cty)}</title></rect><text x="${(X(p[0])+10).toFixed(1)}" y="${(Y(p[1])+4).toFixed(1)}" font-size="11" fill="var(--ink)">${esc(i.name)} <tspan fill="var(--muted)" font-size="9.5">${esc(i.house)}</tspan></text>`;});}
+  else pts.forEach(({p,i})=>{const c=FAMG[i.g]||"var(--muted)";const ring=mode!=="icons";s+=`<circle cx="${X(p[0]).toFixed(1)}" cy="${Y(p[1]).toFixed(1)}" r="7" fill="${ring?"var(--bg)":c}" ${ring?`stroke="${c}" stroke-width="2.5"`:'fill-opacity=".85"'}><title>${esc(i.name+" ("+i.year+") · "+(i.fam||i.rule||""))}</title></circle><text x="${(X(p[0])+10).toFixed(1)}" y="${(Y(p[1])+4).toFixed(1)}" font-size="11" fill="var(--ink)">${esc(i.name)} <tspan fill="var(--muted)" font-size="9.5">${i.year}</tspan></text>`;});
   extra.forEach(({p,e})=>{const x=X(p[0]),y=Y(p[1]);s+=`<path d="M${x} ${y-10} L${x+10} ${y} L${x} ${y+10} L${x-10} ${y} Z" fill="${e.c}" stroke="var(--bg)" stroke-width="2"/><text x="${x+14}" y="${y-8}" font-size="12" font-weight="600" fill="${e.c}">${esc(e.label)}</text>`;});
   s+="</svg>";el.innerHTML=s;
-  const lg=document.getElementById(lid);if(lg)lg.innerHTML=Object.entries({floral:"Floral",gourmand:"Gourmand",amber:"Amber and spice",fresh:"Fresh and aquatic",aromatic:"Aromatic fougère",woody:"Woody",chypre:"Chypre",citrus:"Citrus and musk"}).map(([k,v])=>`<span><i style="background:${mode==="icons"?FAMG[k]:"var(--bg)"};${mode==="icons"?"":"border:2px solid "+FAMG[k]}"></i>${v}</span>`).join("")+`<span><i style="background:var(--ink);transform:rotate(45deg)"></i>Your formulas</span>`;
+  const lg=document.getElementById(lid);if(lg&&mode==="east"){lg.innerHTML=Object.entries(CTYC).map(([k,c])=>`<span><i style="background:${c};border-radius:2px"></i>${k}</span>`).join("")+`<span><i style="background:var(--muted);opacity:.4"></i>Western best sellers</span><span><i style="background:var(--ink);transform:rotate(45deg)"></i>Your formulas</span>`;return;}
+  if(lg)lg.innerHTML=Object.entries({floral:"Floral",gourmand:"Gourmand",amber:"Amber and spice",fresh:"Fresh and aquatic",aromatic:"Aromatic fougère",woody:"Woody",chypre:"Chypre",citrus:"Citrus and musk"}).map(([k,v])=>`<span><i style="background:${mode==="icons"?FAMG[k]:"var(--bg)"};${mode==="icons"?"":"border:2px solid "+FAMG[k]}"></i>${v}</span>`).join("")+`<span><i style="background:var(--ink);transform:rotate(45deg)"></i>Your formulas</span>`;
 }
-function drawStudyMap(){drawMap("study-map","study-legend","icons");drawMap("gb-map","gb-legend","ground");}
+function drawStudyMap(){drawMap("study-map","study-legend","icons");drawMap("gb-map","gb-legend","ground");drawMap("ea-map","ea-legend","east");}
 function setMapPoints(kind,points){MAPPTS=MAPPTS.filter(p=>p.kind!==kind).concat(points.map(p=>Object.assign({kind},p)));drawStudyMap();}
 
 /* ================= VIRTUAL NOSE =================
@@ -2761,6 +2836,26 @@ renderIcons();drawStudyMap();
   $("#gb-t tbody").innerHTML=GROUND.slice().sort((a,b)=>a.year-b.year).map(g=>`<tr><td class="num">${g.year}</td><td><b>${esc(g.name)}</b><br><span class="src">${esc(g.house)}</span></td><td>${esc(g.perf)}</td><td>${esc(g.rule)}</td><td>${esc(g.mech)}</td><td>${esc(g.legacy)}</td><td>${esc(g.outcome)}</td><td>${esc(g.critics)} <a href="${esc(g.src)}">source</a></td><td class="num">${g.launch2?`<b>${r(g.launch2.c)}</b><br><span class="src">${esc(g.launch2.b.name)}</span>`:'<span class="src">first</span>'}</td><td>${g.moves.map(m=>`<span class="tag">${esc(GRAM[m][1])}</span>`).join("")}</td></tr>`).join("");
   $("#grammar").innerHTML=GRAMMAR.map(g=>`<div class="box"><span class="eyebrow">${g[4]?"Composer move":"Brand-level move"}</span><h3>${esc(g[1])}</h3><p>${esc(g[2])}</p><p class="status">${esc(g[3])}</p></div>`).join("");
 })();
+/* ---------- Self-study: East Asia ---------- */
+(function(){
+  const HOUSES=[["China", "To Summer 观夏", "2018", "Shen Li, Elvis Liu, Khoon Choi", "Premium lifestyle", "Kunlun Boiled Snow, Osmanthus", "Eastern aesthetics as a lifestyle", "L'Oréal minority stake Feb 2024. 15 China stores plus Hong Kong. BeautyMatter Future50 2026", "https://jingdaily.com/intels/2024-02/09/l-oreal-invests-in-to-summer"], ["China", "Documents 闻献", "2021 (some say 2020)", "Meng Zhaoran", "Luxury", "Uses star anise, mugwort, yulan magnolia, walnut", "Zen plus cool", "Series A 2022 with L'Oréal's China fund. About 13 Shanghai stores, near RMB 1,000 per 30 ml", "https://insideretail.asia/2024/11/25/behind-documents-path-to-luxury-fragrance-leadership-in-china/"], ["China", "Melt Season", "2020 or 2021", "Lishi Ni", "Luxury", "Gitanjali, Medog", "Flow, season-themed collections", "Estée Lauder minority stake late 2023. DFS Hong Kong", "https://moodiedavittreport.com/luxury-chinese-fragrance-melt-season-debuts-with-dfs-in-hong-kong/"], ["China", "Uttori 五朵里", "2017", "Not found", "Indie", "Absolue d'Osmanthe, Phoenix Oolong, Moss Rock", "Chinese plants, tea and landscapes", "China Daily top domestic list 2021. Stocked in London", "https://scentverdict.com/brand/uttori"], ["China", "Aromag 岩兰", "Unclear", "Perfumer Frank Voelkl on Inkcense", "Indie", "Inkcense: pine soot, incense, woods, musk", "Liubai, blank space", "Brand and retailer claims only", "https://saintecellier.com/en-us/products/inkcense"], ["China", "Soulvent 所闻", "Unclear", "Dennis Zhu, Yvonne Guo. Perfumer Ciny Ye", "Indie", "Northern", "Not found", "Art and Olfaction Independent winner 2025", "https://artandolfaction.com/awards/"], ["China", "One Day", "Unclear", "Michael Wong", "Artisan", "Oolong Tea", "Tea-led", "Art and Olfaction Artisan winner 2022", "https://en.wikipedia.org/wiki/The_Art_and_Olfaction_Awards"], ["China", "Scentooze 三兔", "Unclear", "Not found", "Mass niche", "Not found", "Affordable persona scents", "Venture rounds 2020 and 2021", "https://www.yahoo.com/lifestyle/niche-perfume-brands-capturing-chinese-091700354.html"], ["Korea", "Tamburins", "2017 or 2018, perfume 2022", "IICOMBINED (Gentle Monster)", "Designer lifestyle", "Holy Metal: thuja, sage, incense, metal, sandalwood. Chamo", "Scent sold through art-installation shops", "Seongsu flagship 2023, Shanghai flagship 2024", "https://insideretail.asia/2022/10/03/gentle-monsters-tamburins-launches-perfume-with-exhibition/"], ["Korea", "Nonfiction", "2019", "Cha Haeyoung", "Premium indie", "Santal Cream: sandalwood, vetiver, fig, cardamom. Gentle Night: suede, white tea, fig, cedar", "Lifestyle fragrance for private ritual", "New York store, Sephora Hong Kong 2021", "https://www.tatlerasia.com/style/beauty/cha-haeyoung-nonfiction-ceo"], ["Korea", "Granhand", "2014", "Jung Nana", "Indie", "Lumberjack", "Scent as everyday culture, hanok shops", "Chanel chose its candles for 2015 Cruise guests. Six Seoul shops", "https://timeout.com/seoul/shopping/granhand"], ["Korea", "Borntostandout", "2022", "Jun Lim", "Indie luxury, provocative", "Dirty Rice, Fig Porn, Indecent Cherry", "Taboo-breaking scents in white porcelain bottles", "Series A Feb 2025 with L'Oréal's fund. Future50 2026", "https://www.cosmeticsdesign-europe.com/Article/2025/02/19/loreals-vc-fund-invests-in-trailblazing-korean-scent-brand"], ["Korea (New York)", "Elorea", "About 2021", "Su min Park, Wonny Lee", "Indie", "Hanok: smoked aged wood, cedar, hanji, incense", "Elements of Korea", "USD 2M seed round", "https://www.beautyindependent.com/korean-inspired-fragrance-brand-elorea-secures-2m-seed-round/"], ["Korea", "Pesade", "2022", "Not found", "Indie", "In Hindsight: raspberry, rose, white flowers, dark amber", "Not found", "Pitti Fragranze exhibitor", "https://fragranze.pittimmagine.com/en/exhibitors/P/pesade"], ["Korea", "Chwi", "Unclear", "Not found", "Heritage indie", "Rice, Bamboo, Mulberry, Mugwort", "Celadon pottery bottles", "Agency feature Nov 2026", "https://www.thestar.com.my/lifestyle/style/2026/11/03/how-south-korean-perfumers-are-turning-cultural-heritage-into-modern-fragrances"], ["Japan", "Shiseido heritage", "1872", "Serge Lutens era, Pierre Bourdon, Christopher Sheldrake", "Designer luxury", "Zen 1964, Nombre Noir, Féminité du Bois 1992", "Japanese restraint meets French craft", "Zen was Shiseido's first scent sold abroad", "https://boisdejasmin.com/2021/04/how-artist-serge-lutens-revolutionized-perfumery.html"], ["Japan", "Comme des Garçons Parfums", "1993", "Rei Kawakubo, Christian Astuguevieille", "Designer avant-garde", "Odeur 53, Incense series Kyoto", "The anti-perfume", "Book on 30 years of the line, wide design press", "https://wallpaper.com/fashion-beauty/comme-des-garcons-perfumes"], ["Japan", "Issey Miyake", "1992", "Jacques Cavallier", "Designer", "L'Eau d'Issey", "Water as the purest scent", "1993 European FiFi award", "https://mds.isseymiyake.com/mds/en/product"], ["Japan", "Shiro", "Hokkaido roots, unclear", "Not confirmed", "Mass premium", "Savon, White Lily, White Tea", "Clean, after-bath soap", "Guides call Savon one of Japan's most popular scents", "https://www.parfumo.com/Perfumes/shiro/White_Savon_"], ["Japan", "Parfum Satori", "2000", "Satori Osawa", "Indie", "Hyouge: green leaves, clary sage, iris. Iris Homme. Satori", "A dry style from tea ceremony and incense", "Critic reviews (Kafkaesque), Luckyscent", "https://kafkaesqueblog.com/2017/08/13/parfum-satori-hana-hiraku-satori-iris-homme-wasabon/"], ["Japan", "Di Ser", "1999, Sapporo", "Yasuyuki Shinohara", "All-natural indie luxury", "Kyara, Sasora", "Natural Japanese materials, incense wood classes", "Kafkaesque: a justified cult hit. About USD 1,000 per 33 ml", "https://kafkaesqueblog.com/tag/di-ser-kyara-review/"], ["Japan", "Kitowa (Nippon Kodo)", "2018", "Perfumer Tatsushi Horita", "Luxury lifestyle", "Hinoki, Hiba, Kusunoki", "Japanese forest woods", "Backed by an incense maker. Water-based sprays", "https://www.parfumo.com/Perfumes/kitowa"], ["Japan", "J-Scent", "About 2017", "Tetsu Amada", "Affordable indie", "Hanamizake, Sumo Wrestler, Paper Soap", "Japanese everyday scenes", "Pitti Fragranze exhibitor", "https://fragranze.pittimmagine.com/en/exhibitors/J/j-scent"], ["Japan (Paris)", "Miya Shinma", "About 2000", "Miya Shinma", "Indie", "Hinoki, Tsuki, Kimono Kaze", "Kyoto elegance, incense ceremony", "Press only", "https://openers.jp/en/beauty/beauty_news/920012"], ["Japan", "Kungyokudo, Baieido, Shoyeido", "1594, 1657, 1705", "Family firms", "Incense heritage", "Aloeswood and sandalwood incense", "Temple and Kyoto incense", "Centuries of continuous making", "https://en.wikipedia.org/wiki/Shoyeido"], ["Vietnam", "d'Annam", "2023", "Nick Hoang. Perfumer Anh Ngo", "Indie", "White Rice: rice, pandan, musk, tonka. Vietnamese Coffee", "Everyday Vietnamese and Asian memories", "Art and Olfaction finalist 2025. Luckyscent", "https://ministryofscent.com/blogs/news/nick-hoang-on-the-emergence-of-dannam"], ["Vietnam", "Sylhouette Parfums", "Unclear", "Sy Truong", "Artisan", "Molotov Cocktail", "Not found", "Art and Olfaction Artisan winner 2024", "https://en.wikipedia.org/wiki/The_Art_and_Olfaction_Awards"], ["Vietnam", "Maison de Nguyễn", "Unclear", "Not found", "Artisan", "Hoàng Trà (tea)", "Not found", "Art and Olfaction Artisan finalist 2026", "https://wildnpretty.com/the-art-and-olfaction-awards-2026-finalists/"], ["Vietnam", "Thien Moc Huong", "Unclear", "Not found", "Agarwood house", "Agarwood incense and oils", "Vietnamese agarwood heritage", "Press profile 2020", "https://vietcetera.com/en/a-brands-story-thien-moc-huongs-a-fragrant-journey-of-vietnamese-agarwood"], ["Taiwan", "P.Seven", "Unclear", "Pan, tea master and perfumer", "Indie", "Oolong Tea, Formosa Beau-Tea", "Tea perfume", "Isetan Salon de Parfum 2026", "https://digthetea.com/en/2022/12/p_seven/"], ["Taiwan", "OrdioLab, TERRA•T", "Unclear", "Jerry Lin. Kaiwei Hsieh", "Artisan", "Mint Rose. Ici, le pas s'arrête", "Not found", "Art and Olfaction winners 2025 and 2026", "https://cafleurebon.com/art-and-olfaction-awards-2025-winners/"]];
+  const r=x=>Math.round(x*100);
+  const sims=EAST.map(e=>e.west.c),hl=ICONS.filter(i=>i.launch2).map(i=>i.launch2.c);
+  const far=EAST.slice().sort((a,b)=>a.west.c-b.west.c),near=far.slice().reverse();
+  $("#ea-head").textContent="East Asian references sit a median of "+r(qs(sims,.5))+" from the closest Western best seller";
+  $("#ea-stats").textContent="Half of the 21 references fall between "+r(EBAND[0])+" and "+r(EBAND[1])+". For comparison, the best sellers launched at "+r(qs(hl,.5))+" from their closest predecessor. So these scents are further from the best sellers than the best sellers are from each other, which fits what you smelled at the mall. Furthest from any best seller: "+far.slice(0,3).map(e=>e.name+" by "+e.house+" ("+r(e.west.c)+")").join(", ")+". Closest: "+near.slice(0,2).map(e=>e.name+" by "+e.house+" ("+r(e.west.c)+", near "+e.west.ic.name+")").join(", ")+".";
+  const d=DIMS.map((k,i)=>[k,EWD[i]]).sort((a,b)=>b[1]-a[1]);
+  $("#ea-dims").textContent="Compared with the best sellers, the East Asian references carry more "+d.slice(0,5).map(x=>DS[x[0]].toLowerCase()).join(", ")+", and less "+d.slice(-5).reverse().map(x=>DS[x[0]].toLowerCase()).join(", ")+". This difference is the East-West lean the compass now reports, and the range "+r(EBAND[0])+" to "+r(EBAND[1])+" is the target for the East Asian ambition.";
+  $("#ea-t tbody").innerHTML=EAST.slice().sort((a,b)=>a.cty.localeCompare(b.cty)||a.house.localeCompare(b.house)).map(e=>`<tr><td><span class="dot" style="background:${CTYC[e.cty]}"></span>${esc(e.cty)}</td><td><b>${esc(e.name)}</b><br><span class="src">${esc(e.house)} · ${e.year}</span></td><td>${esc(e.perf||"")}</td><td>${esc(e.idea)}</td><td>${e.codes.map(c=>`<span class="tag">${esc(EG[c][1])}</span>`).join("")}</td><td class="num"><b>${r(e.west.c)}</b><br><span class="src">${esc(e.west.ic.name)}</span></td><td><span class="src">${esc(e.conf)}</span></td></tr>`).join("");
+  $("#ea-codes").innerHTML=EGRAM.map(g=>{const ex=EAST.filter(e=>e.codes.includes(g[0])).slice(0,4).map(e=>e.name+" ("+e.house+")");return`<div class="box"><h3>${esc(g[1])}</h3><p>${esc(g[2])}</p><p class="status">${esc(ex.join(", "))}</p></div>`;}).join("");
+  let sel="all";
+  function drawH(){const cs=["all","China","Korea","Japan","Vietnam","Taiwan"];
+    $("#ea-filter").innerHTML=cs.map(c=>`<button data-f="${c}" aria-pressed="${sel===c}">${c==="all"?"All "+HOUSES.length:`<span class="dot" style="background:${CTYC[c]}"></span>`+c}</button>`).join("");
+    $("#ea-houses tbody").innerHTML=HOUSES.filter(h=>sel==="all"||h[0].startsWith(sel)).map(h=>`<tr><td>${esc(h[0])}</td><td><b>${esc(h[1])}</b></td><td>${esc(h[2])}</td><td>${esc(h[3])}</td><td>${esc(h[4])}</td><td>${esc(h[5])}</td><td>${esc(h[6])}</td><td>${esc(h[7])} <a href="${esc(h[8])}">source</a></td></tr>`).join("");}
+  $("#ea-filter").addEventListener("click",ev=>{const b=ev.target.closest("button");if(!b)return;sel=b.dataset.f;drawH();});
+  drawH();
+})();
+
 
 
 

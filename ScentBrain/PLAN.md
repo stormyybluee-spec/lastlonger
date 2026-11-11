@@ -1,6 +1,6 @@
 # Sion Scent Brain: Master Plan
 
-Version 0.7. Last updated 2026-11-04. Live page: https://claude.ai/artifact/4P366aMVQNjg4MCwUXo9fL (private until the owner shares it). Source: `ScentBrain/index.html` on branch `claude/magical-carson-wz65e9`.
+Version 0.8. Last updated 2026-11-11. Live page: https://claude.ai/artifact/4P366aMVQNjg4MCwUXo9fL (private until the owner shares it). Source: `ScentBrain/index.html` on branch `claude/magical-carson-wz65e9`.
 
 This file is the backend. It is written so a future AI or human can pick the project up cold. Keep Case 1 (section 2) intact: it defines what "good" looks like.
 
@@ -48,6 +48,11 @@ Lesson: a formula is not done when it looks complete. It is done when it has bee
 4. Engine: this plan in page form, chain history (builds 0.1 to 0.4), handoff steps for other chats, the exam and the prediction ledger.
 5. Label-claim audit (Move 7 word audit): fragrance-free, unscented, hypoallergenic, absolute safety, natural or clean, germ and pest claims, duration claims.
 7. Self-study (section 05): the 30 most commercially dominant perfumes (evidence-graded by a research agent), a map of their smell profiles, ten patterns, a genre timeline, a sourced sensory-science brief and 12 Sion creation rules.
+14. East Asia study (section 07, research agent 2026-11-11, search summaries only): 31 houses from China, Korea, Japan, Vietnam and Taiwan, 21 reference scents with note-confidence labels, eight design codes (labels are the brain's framing, not the houses' words), awards (Art and Olfaction winners are tiny artisan labels, the funded houses win investment from L'Oréal and Estée Lauder), market data and honest contrasts. Measured: East Asian references sit a median of 63 from the closest Western best seller (middle half 60 to 68), against 77 for best sellers among themselves. They carry more dry wood, smoke, nutty, aromatic and green, and less amber, citrus, sweet and floral.
+15. Ambition setting (Composer and Virtual Nose): Crowd-pleaser 60 to 84, Critics' edge 56 to 77 (default), East Asian quiet 60 to 68 (measured), My nose. The compass reports whether a scent is inside the target, an East-West lean (0 Western best-seller centre, 100 East Asian centre, a single rough axis) and the closest East Asian reference.
+16. East Asia shelf: 16 extra cartridges (80 in total) with CAS recipes and 20 lexicon entries. Used only on East Asian briefs or the East Asian ambition. Two extra innovation moves: negative space and quiet material portrait.
+17. Your nose (section 09): the owner rates reference perfumes as average, good, awe or dislike. A taste vector is fitted from note profiles and every compass reading shows a predicted score. Stored in the browser and in the private per-user store. Origin: the owner smelled the best sellers in a mall on 2026-11-10 and found many of them average, which matches the 77 familiarity finding.
+18. Molecular nose note (Learning loop): the owner's reel describes Google's odour-map model (OpenPOM is the open version) plus a cheap gas sensor. The free model is planned as v3 to fill material profiles. Decision 2026-11-11: no sensor purchase for now. Its later use is batch quality control.
 11. Self-study is now three separate sections: 05 Best sellers, 06 Groundbreakers (critics only), 07 Sensory science and the Sion rules, each study with its own map on shared axes.
 12. Composer to Virtual Nose bridge: every palette cartridge has a representative CAS recipe (prohibited or CITES materials replaced by reconstitutions). Each Composer card shows its own Virtual Nose result and has an "Audit in Virtual Nose" button. Laundry caps come from the same senior rules, cartridge survival from recipe logP and boiling point, musk and wood cartridges capped at 10% each in laundry. Perfume formats pass with 0 fails on test briefs. Laundry scents still fade after a hot dryer when the idea lives in top notes, which points to capsules.
 13. Rule fixes: colour formers are a note, not a fail, in fine fragrance. Phototoxic citrus uses per-oil limits (bergamot 0.4, lemon 2, grapefruit 4, verify) summed as ratios.
@@ -134,6 +139,7 @@ Needs the owner's approval: a scheduled sentinel that watches the IFRA 52nd Amen
 - 2026-11-03 build 0.2.1 to 0.2.2: 12 senior rules from the panel review, visible Gemini check.
 - 2026-11-03 build 0.3: Gemini data reconciled, IFRA 10A check, Engine section, Full review (5 blind agents), exam, this PLAN.md.
 - 2026-11-03 build 0.4: chain history, handoff box, held-out tests T2 to T5, label-claim audit, measured GC-MS reference, prediction ledger, clash-check prompt.
+- 2026-11-11 build 0.8: East Asia study, 16-cartridge East Asia shelf, ambition setting with East-West lean, Your nose taste model, molecular nose note.
 - 2026-11-04 build 0.7.1: blind round 3 and its general fixes (claims, alkaline pH, acetals, capsule design, 6 materials, 185 materials total).
 - 2026-11-04 build 0.7: self-study split into three sections, Composer to Virtual Nose bridge with 64 cartridge recipes and per-card self-audit, rule-aware laundry caps, product-aware colour rule, IFRA-style phototoxic sums, 11 new natural materials.
 - 2026-11-04 build 0.6: groundbreakers study and innovation grammar, innovation moves in the Composer, compass names closest groundbreaker, blind round 2 and fixes, material database 168 with natural-oil GC expansion, compass nudge for Scent 1, CAS validator.
