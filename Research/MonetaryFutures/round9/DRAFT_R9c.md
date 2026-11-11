@@ -112,7 +112,7 @@ A: Almost nobody. It was never a pile of cash. Short sellers and buyers of put o
 [25 table]
 | Verb | What happens | Example from 2026 |
 |---|---|---|
-| Created | New money appears: a bank lends or buys from someone who is not a bank, or the central bank buys from someone who is not a bank | US bank loans grew by about $1 trillion in the year to September 2026, to $14.10 trillion, and that net growth became new deposits |
+| Created | New money appears: a bank lends, or a bank or the central bank buys from someone who is not a bank | US bank loans grew by about $1 trillion in the year to September 2026, to $14.10 trillion, and that net growth became new deposits |
 | Moved | Existing money changes hands: a trade, a wage, a tax, a buyback, a factory order | Amazon, Alphabet, Microsoft and Meta guided to about $730 billion of capital spending in 2026 (press tallies of company guidance) |
 | Re-priced | No money moves. The last trade re-marks everything like it | NVIDIA's $236 billion on 10 November. More than $2 trillion of tech market value wiped out on 5 November (NPR) |
 
