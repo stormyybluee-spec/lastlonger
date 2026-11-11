@@ -183,3 +183,47 @@ New: Asia as a whole takes 84% of Gulf oil exports
 Author to confirm the denominator.
 
 Expected effect: fixes 1 to 3 should lift (d) and (e) for Reader 1 to about 7 or 8. Reader 1 overall likely reaches 8 with all six. Reader 2 stays at 8 or better.
+
+## Second retest on DRAFT_R10d.md
+
+Examiner date: 2026-11-11. Source: DRAFT_R10d.md only. Main path only: the GO DEEPER BOX ([26] to [26.2]) and every "A:" line ([25]) skipped. Readers as before: Reader 1 Malaysian school leaver (ESL), Reader 2 American high-school graduate, both with the Rulebook basics.
+
+| Test item | Reader 1 | Reader 2 |
+|---|---|---|
+| (a) Gulf oil dollars now, claim parts | 7 | 8 |
+| (b) 1974 arrangement and what remains | 8 | 9 |
+| (c) Who funds the Treasury market | 7 | 8 |
+| (d) "Three kinds of country" test | 7 | 8 |
+| (e) Coordination level and why open | 7 | 8 |
+| (f) Grades, percentages, reveal dates | 8 | 8 |
+| Overall | 7 / 10, fail (borderline) | 8 / 10, pass |
+
+Better than R10c: the 46% now attaches to a clear claim, the Japan-versus-plain-lens test states what was predicted, the tie is explained, and [5] and [21] read cleanly. (b) stays the strongest item.
+
+### Remaining confusions
+- [0] bullet 5 and [17] row 4: the 1% is for "a secret three-way plan". Neither reader can tell whether that is level 2 or level 3, and level 2 gets no percent at all. [19] only partly settles it.
+- [24] row 2: the confirm column measures Gulf share of China's imports, the kill column measures China's share of Gulf exports. These are different denominators, so both readers cannot tell what result would count either way.
+- [14]: 46% (lens no better) and 1% (lens adds power) still look like two unrelated numbers that do not add up. Reader 1 asks why 1% is "open" when 46% is a finding.
+- [0] bullet 2: "(structural, about even at 45%)" reads as if 45% belongs to the 28%. [4] row 2 makes clear it is the origin of the 30%. Reader 1 only.
+- [8] and [9] row 5: the claim says "more than double the money supply", the table says 0.63 times. The money supply figure is only in the skipped box, so neither reader can see the sum.
+- [0] bullet 4: "Americans hold about two thirds" has no matching row in section 2.
+- [4] row 3: "as at Norway's oil fund" is unexplained for Reader 1.
+
+### Fixes
+
+1. Block [24], row 2, confirm column uses a different measure from the kill column.
+Old: Gulf states stay under half of China's crude imports
+New: China takes under half of Gulf crude in every month
+Author to confirm which denominator the customs data can support.
+
+2. Block [0], bullet 5, the 1% attaches to an unclear plan.
+Old: A secret three-way plan is remote, about 1%, so it stays an open question, not a finding.
+New: A secret plan between all three, with the conflict staged, is remote, about 1%, so it stays an open question, not a finding.
+Author to confirm that the 1% covers the staged-conflict deal, as [17] row 4 says.
+
+3. Block [14], the two percentages.
+Old: The chance that the lens adds real predictive power is about 1% on this evidence, but that stays an open question, not a finding, because so few countries had data.
+New: The chance that the lens adds real predictive power is about 1% on this evidence. The two numbers do not conflict. The first says the tie will probably hold, the second says a win for the lens is very unlikely. It stays an open question, not a finding, because so few countries had data.
+Author to confirm that this reading of the two numbers is intended.
+
+Expected effect: fixes 1 to 3 should lift (d) and (e) for Reader 1 to about 8 and overall to about 8. Reader 2 stays at 8 or better.
