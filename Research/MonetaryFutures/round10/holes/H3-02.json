@@ -1,0 +1,153 @@
+{
+ "id": "H3-02",
+ "question": "Is the yen carry trade unwinding in 2026, and why did Japan's Treasury holdings fall?",
+ "start": "Bank of Japan statement, 30 October 2026: policy rate held near 1.25% by 8 votes to 1, after a rise in September 2026",
+ "links": [
+  {
+   "n": 1,
+   "claim": "The BoJ policy rate is about 1.25% after a rise in September 2026, held on 30 October 2026 by 8 to 1. On 29 October the US 10-year yield was 4.98% and the Japanese 10-year 2.876%, a gap of about 2.1 points. The yen was 156.87 per dollar on 23 October, about 4% above its 2026 low near 164",
+   "grade": "I0",
+   "p": 0.9,
+   "actor": {
+    "name": "Bank of Japan",
+    "kind": "central bank"
+   },
+   "evidence": [
+    {
+     "what": "Universal Asset Owners newsroom citing the BoJ statement, MoF yields, Fed H.15 and Reuters",
+     "url": "https://www.universalassetowners.com/newsroom/bank-of-japan-holds-1-25-gpif-insurers-yen-carry/",
+     "tier": "T2",
+     "date": "2026-10-30"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "claim": "Japan's Ministry of Finance sold dollars for yen: 11,734.9 billion yen from 28 April to 27 May 2026 and 15,399.3 billion yen on 30 July, 31 July and 3 August 2026, together about 170 billion dollars (computed at about 158 yen)",
+   "grade": "I0",
+   "p": 0.97,
+   "actor": {
+    "name": "Ministry of Finance of Japan",
+    "kind": "agency"
+   },
+   "evidence": [
+    {
+     "what": "MoF foreign exchange intervention operations, July to September 2026",
+     "url": "https://www.mof.go.jp/english/policy/international_policy/reference/feio/quarter/2026_3Qe.html",
+     "tier": "T0",
+     "date": "2026-11-09"
+    },
+    {
+     "what": "Adnkronos citing MoF, April to May 2026",
+     "url": "https://english.adnkronos.com/2026/05/29/japan-spends-record-11-7-t-yen-in-april-may-forex-interventions/",
+     "tier": "T2",
+     "date": "2026-05-29"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "claim": "Japan's Treasury fall in 2026 is mostly official selling (or repo) to pay for the intervention, not a private carry-trade unwind. The Japan TIC line fell 171 billion from February to August 2026 and Fed custody for foreign official accounts fell 160 billion, about the intervention's size, with the biggest monthly drops in the intervention months",
+   "grade": "I1",
+   "p": 0.7,
+   "actor": {
+    "name": "Ministry of Finance of Japan",
+    "kind": "agency"
+   },
+   "move": "timing and scale",
+   "footprints_expected": [
+    "Japan TIC line falling in April to May and July to August 2026",
+    "Fed H.4.1 custody for foreign official accounts falling by a similar amount",
+    "Japan's official reserves falling by about the intervention",
+    "Private Japanese buyers not net sellers in MoF weekly data"
+   ],
+   "footprints_found": [
+    {
+     "what": "TIC Japan line: 1239.3 (Feb 2026), 1209.9 (Apr), 1143.1 (May), 1103.9 (Jul), 1068.3 (Aug)",
+     "url": "https://ticdata.treasury.gov/resource-center/data-chart-center/tic/Documents/slt_table3.txt",
+     "date": "2026-11-12"
+    },
+    {
+     "what": "Fed H.4.1 custody, marketable Treasuries: 2775.6 (Feb 2026) to 2615.2 (Aug) and 2543.7 on 4 November",
+     "url": "https://www.federalreserve.gov/releases/h41/current/",
+     "date": "2026-11-05"
+    }
+   ],
+   "footprints_missing": [
+    "Japan official reserves for 2026 not pulled",
+    "MoF weekly portfolio flows by private investors not pulled",
+    "Price effects not separated: yields rose to near 5%, which cuts market values"
+   ],
+   "rivals": [
+    "Price falls on held bonds explain part of the drop, since TIC lines are near market value",
+    "Japanese life insurers and banks sold US bonds as hedged returns fell, and official selling was smaller, funded through the Fed's FIMA repo facility"
+   ],
+   "reveal": "Japan's official reserves for October 2026 (early November) and MoF intervention data for October to December 2026 (about 2 February 2027). TIC September data, about 18 November 2026"
+  },
+  {
+   "n": 4,
+   "claim": "The yen carry trade has not unwound at scale in 2026. The rate gap is still about 2 points, the yen stayed weak enough to need record intervention, and the BoJ moves slowly",
+   "grade": "I2",
+   "p": 0.5,
+   "actor": {
+    "name": "Bank of Japan",
+    "kind": "central bank"
+   },
+   "move": "precedent",
+   "footprints_expected": [
+    "A sharp yen rally and a fall in leveraged short-yen positions (CFTC) if it unwound, as in August 2024",
+    "Japanese net buying of foreign bonds turning to large net selling in MoF weekly data"
+   ],
+   "footprints_found": [
+    {
+     "what": "Yen near 157 per dollar in late October 2026, about 4% above its 2026 low",
+     "url": "https://www.universalassetowners.com/newsroom/bank-of-japan-holds-1-25-gpif-insurers-yen-carry/",
+     "date": "2026-10-30"
+    }
+   ],
+   "footprints_missing": [
+    "CFTC yen positions not pulled",
+    "MoF weekly flows not pulled",
+    "No size estimate of the carry trade found"
+   ],
+   "rivals": [
+    "A quiet unwind already happened in 2024 to 2025 and what is left is small",
+    "The yen weakness is driven by Japan's fiscal and trade position, not by carry trades"
+   ],
+   "reveal": "BoJ meeting 17 to 18 December 2026 (a rise to 1.5% is expected by most economists polled). CFTC yen positions in the week after"
+  }
+ ],
+ "rival_hypotheses": [
+  {
+   "kind": "official",
+   "text": "Japan sold dollars to steady the yen. Private Japanese holdings move with hedged returns",
+   "inconsistent_evidence": 0
+  },
+  {
+   "kind": "coordination",
+   "text": "Japan buys Treasuries on US request to fund the deficit",
+   "inconsistent_evidence": 2
+  },
+  {
+   "kind": "incentives",
+   "text": "Private carry and hedged returns drive Japanese flows, each investor alone",
+   "inconsistent_evidence": 0
+  },
+  {
+   "kind": "accident",
+   "text": "Price effects and custody moves make Japan's holdings look like a sale",
+   "inconsistent_evidence": 0
+  }
+ ],
+ "coordination": {
+  "level": 0,
+  "channel": "",
+  "enforcement": "",
+  "secrecy_load": ""
+ },
+ "exit": "test",
+ "budget_used": {
+  "searches": 6,
+  "tokens": 0
+ }
+}

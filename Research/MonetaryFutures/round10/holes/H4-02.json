@@ -1,0 +1,189 @@
+{
+ "id": "H4-02",
+ "question": "C3 rewritten to what the evidence can carry: do the White House, the Saudi state and China's leadership share interests (level 0) with a focal cue (level 1) on keeping Gulf oil flowing, while diverging elsewhere?",
+ "start": "https://www.mfa.gov.cn/eng/gjhdq_665435/2675_665437/2818_663626/2819_663628/202303/t20230311_11039241.html",
+ "links": [
+  {
+   "n": 1,
+   "claim": "On 10 March 2023 in Beijing, Saudi Arabia and Iran agreed, in a statement with China, to resume diplomatic relations and reopen embassies within two months. Signed for Saudi Arabia by National Security Adviser Musaad Al-Aiban, for Iran by Ali Shamkhani, for China by Wang Yi. Iran's embassy in Riyadh reopened 6 June 2023",
+   "grade": "I0",
+   "p": 0.97,
+   "actor": {
+    "name": "Ministry of Foreign Affairs of the People's Republic of China",
+    "kind": "agency"
+   },
+   "evidence": [
+    {
+     "what": "Joint trilateral statement, official text",
+     "url": "https://www.mfa.gov.cn/eng/gjhdq_665435/2675_665437/2818_663626/2819_663628/202303/t20230311_11039241.html",
+     "tier": "T0",
+     "date": "2023-03-11"
+    },
+    {
+     "what": "Embassy reopening date",
+     "url": "https://iranprimer.usip.org/node/11521",
+     "tier": "T2",
+     "date": "2023-06"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "claim": "In May 2025 the White House announced a 600 bn dollar Saudi investment commitment and a near 142 bn dollar arms sale (13 May), a 1.2 trillion dollar Qatar 'economic commitment' (14 May) and 200 bn dollars of UAE deals plus an accelerated 1.4 trillion dollar 10-year UAE framework (15 May). These are pledges, not completed flows",
+   "grade": "I0",
+   "p": 0.97,
+   "actor": {
+    "name": "The White House (Executive Office of the President)",
+    "kind": "office"
+   },
+   "evidence": [
+    {
+     "what": "Saudi fact sheet",
+     "url": "https://www.whitehouse.gov/fact-sheets/2025/05/fact-sheet-president-donald-j-trump-secures-historic-600-billion-investment-commitment-in-saudi-arabia",
+     "tier": "T0",
+     "date": "2025-05-13"
+    },
+    {
+     "what": "Qatar fact sheet",
+     "url": "https://www.whitehouse.gov/fact-sheets/2025/05/fact-sheet-president-donald-j-trump-secures-historic-1-2-trillion-economic-commitment-in-qatar/",
+     "tier": "T0",
+     "date": "2025-05-14"
+    },
+    {
+     "what": "UAE fact sheet",
+     "url": "https://www.whitehouse.gov/fact-sheets/2025/05/fact-sheet-president-donald-j-trump-secures-200-billion-in-new-u-s-uae-deals-and-accelerates-previously-committed-1-4-trillion-uae-investment",
+     "tier": "T0",
+     "date": "2025-05-15"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "claim": "White House fact sheet of 17 May 2026 after the Trump and Xi summit: China to buy at least 17 bn dollars of US farm goods a year to 2028, 200 Boeing aircraft, a US-China Board of Trade and Board of Investment, and the two sides discussed Iran, Hormuz and North Korea. China's commerce ministry did not confirm the 17 bn figure",
+   "grade": "I0",
+   "p": 0.9,
+   "actor": {
+    "name": "The White House (Executive Office of the President)",
+    "kind": "office"
+   },
+   "evidence": [
+    {
+     "what": "What was agreed and what was not",
+     "url": "https://www.china-briefing.com/news/xi-trump-beijing-summit-what-was-agreed/",
+     "tier": "T3",
+     "date": "2026-05"
+    },
+    {
+     "what": "White House fact sheet as reported",
+     "url": "https://www.scmp.com/news/china/diplomacy/article/3353903/china-will-buy-least-us17-billion-us-farm-goods-annually-white-house-says",
+     "tier": "T3",
+     "date": "2026-05-17"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "claim": "China's foreign ministry said US and Israeli strikes were the 'root cause' of the Hormuz blockage, called the US blockade of Iranian ports 'irresponsible and dangerous' (April 2026) and in August 2026 urged the US and Iran to avoid a return to war",
+   "grade": "I0",
+   "p": 0.9,
+   "actor": {
+    "name": "Ministry of Foreign Affairs of the People's Republic of China",
+    "kind": "agency"
+   },
+   "evidence": [
+    {
+     "what": "Spokesman Guo Jiakun on the blockade",
+     "url": "https://capeargus.co.za/news/world/2026-04-14-dangerous-and-irresponsible-china-condemns-us-blockade-of-iranian-ports/",
+     "tier": "T3",
+     "date": "2026-04-14"
+    },
+    {
+     "what": "Root cause statement",
+     "url": "https://arabnews.com/node/2638507/world",
+     "tier": "T3",
+     "date": "2026-03"
+    },
+    {
+     "what": "August statement by spokesman Lin Jian",
+     "url": "https://tribune.com.pk/story/2618169/china-urges-us-iran-to-avoid-return-of-war-backs-lawful-rights-of-coastal-nations-in-hormuz",
+     "tier": "T3",
+     "date": "2026-08-04"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "claim": "Interests overlap on oil flow and trade (level 0), with Hormuz passage as a public focal cue (level 1), and diverge on Iran and on payment rails. No secret channel is needed to explain the record",
+   "grade": "I2",
+   "p": 0.55,
+   "actor": {
+    "name": "Kingdom of Saudi Arabia",
+    "kind": "state"
+   },
+   "move": "mirror",
+   "footprints_expected": [
+    "Public statements by each side naming Hormuz passage",
+    "Public bilateral deals that explain the cooperation seen",
+    "Visible points of conflict"
+   ],
+   "footprints_found": [
+    {
+     "what": "US and China discussed Iran and Hormuz at the May 2026 summit, in public",
+     "url": "https://www.china-briefing.com/news/xi-trump-beijing-summit-what-was-agreed/",
+     "date": "2026-05"
+    },
+    {
+     "what": "China called the US blockade irresponsible and dangerous",
+     "url": "https://capeargus.co.za/news/world/2026-04-14-dangerous-and-irresponsible-china-condemns-us-blockade-of-iranian-ports/",
+     "date": "2026-04-14"
+    },
+    {
+     "what": "SAMA left China's mBridge rail, unannounced, reported Sep 2026",
+     "url": "https://www.businesstoday.in/world/story/saudi-arabia-exits-china-backed-mbridge-platform-amid-governance-and-compliance-concerns-556677-2026-09-20",
+     "date": "2026-09-20"
+    }
+   ],
+   "footprints_missing": [
+    "Saudi statements on the war and on Hormuz not searched (budget)"
+   ],
+   "rivals": [
+    "Level 2 coordination with deniability, for which no channel was found (H4-01)",
+    "No common interest at all: the war shows the US accepted closing the strait to pressure Iran"
+   ],
+   "reveal": "Saudi crude exports by destination and China crude imports by origin through the closure months, from customs data. China customs October 2026 release about 20 November 2026"
+  }
+ ],
+ "rival_hypotheses": [
+  {
+   "kind": "official",
+   "text": "Official: each state pursues its stated aims",
+   "inconsistent_evidence": 0
+  },
+  {
+   "kind": "coordination",
+   "text": "Coordination: a secret trilateral plan",
+   "inconsistent_evidence": 4
+  },
+  {
+   "kind": "incentives",
+   "text": "Shared incentives on oil flow, divergence elsewhere",
+   "inconsistent_evidence": 0
+  },
+  {
+   "kind": "accident",
+   "text": "Accident: unplanned escalation",
+   "inconsistent_evidence": 1
+  }
+ ],
+ "coordination": {
+  "level": 1,
+  "channel": "No private channel. A public focal cue: free passage through Hormuz, named by China, the US and the joint summit",
+  "enforcement": "None needed at level 1",
+  "secrecy_load": "None"
+ },
+ "exit": "finding",
+ "budget_used": {
+  "searches": 0,
+  "tokens": 0
+ }
+}
