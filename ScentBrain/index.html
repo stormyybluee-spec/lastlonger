@@ -219,6 +219,7 @@ ul.spec{margin:6px 0 0;padding-left:18px;display:grid;gap:3px;font-size:.9rem}
 .cmp-r{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,2fr) 2.4em;gap:10px;align-items:center;font-size:.86rem}
 .cmp-b{height:6px;background:var(--sunk);border-radius:3px;overflow:hidden}.cmp-b i{display:block;height:100%;background:var(--accent)}
 #study-legend span i,#gb-legend span i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:-1px}
+.nz-avg{background:var(--sunk);color:var(--muted)} .nz-good{border-color:var(--accent);color:var(--accent)} .nz-awe{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)} .nz-no{border-color:var(--bad);color:var(--bad);text-decoration:line-through}
 /* virtual nose */
 .nose-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:22px}
 .nose-ctx{display:grid;gap:12px;align-content:start}
@@ -289,6 +290,10 @@ textarea.nf.small{min-height:150px}
       </div>
     </div>
     <div class="step">
+      <div class="step-label"><span class="k">Ambition</span><span class="t">How far from the best sellers?</span><span class="h">The numbers are similarity to the closest best seller. Lower is newer.</span></div>
+      <div class="seg aimseg" role="group" aria-label="Ambition"></div>
+    </div>
+    <div class="step">
       <div class="step-label"><span class="k">Scent 1</span><span class="t">Innovation move</span><span class="h">How critics' groundbreakers broke new ground. Applies to the Creative scent only.</span></div>
       <div class="seg" id="move" role="group" aria-label="Innovation move"></div>
     </div>
@@ -327,6 +332,7 @@ textarea.nf.small{min-height:150px}
         <div class="lens-row" hidden><span class="lab">Audit which formula</span><select id="n-which" class="txt"></select></div>
         <div class="lens-row"><span class="lab">Smell target</span><input id="n-target" class="txt" type="text" value="chilled sweet chrysanthemum tea with honey and hay"></div>
         <div class="lens-row"><span class="lab">The brief forbids</span><div class="seg" id="n-avoid"></div></div>
+        <div class="lens-row"><span class="lab">Ambition</span><div class="seg aimseg" role="group" aria-label="Ambition"></div></div>
         <div class="lens-row"><span class="lab">Label claims you plan to print (optional)</span><input id="n-claims" class="txt" type="text" placeholder="for example: long-lasting, antibacterial, gentle"></div>
         <div class="lens-row"><span class="lab">Measured reference, GC-MS (optional)</span><textarea id="n-ref" class="nf small" spellcheck="false" placeholder="Paste the lab's GC-MS list of the reference smell, one compound per line: name | CAS | % area. When filled, formulas are scored against these molecules instead of the words above." aria-label="Measured reference composition"></textarea></div>
       </div>
@@ -593,6 +599,14 @@ textarea.nf.small{min-height:150px}
 
 
 
+<section id="yournose">
+  <div class="sec-head"><span class="chapter">YOUR NOSE</span><h2>Teach the brain your taste</h2>
+  <p class="lede">You smelled the best sellers and found many of them average. That is useful data. Tap each perfume you have smelled to cycle through average, good, awe and dislike. The brain builds a model of your nose from the note profiles and scores every new formula against it.</p></div>
+  <div class="box"><div id="nose-list" style="display:grid;gap:14px"></div>
+    <div class="actions" style="margin-top:12px"><button class="btn ghost" id="nose-clear">Clear my ratings</button><span class="status" id="nose-state">Ratings are kept in this browser. When you are signed in they are also saved to your private store, which only you can read.</span></div></div>
+  <div class="box"><span class="eyebrow">What the brain has learned about your nose</span><div id="nose-sum"></div></div>
+</section>
+
 <section id="architecture">
   <div class="sec-head"><span class="chapter">08 · COMPOSER LAYERS</span><h2>How a brief becomes a formula</h2>
   <p class="lede">Eight layers, run in order. Layers 2 to 4 are where a language model adds the most. Layers 1, 6 and 7 are deterministic code, because safety, regulation and dosing must never depend on a model's mood.</p></div>
@@ -816,11 +830,28 @@ const PDATA=[
 ["MUSW","White musks","B","skin","musky:3,powdery:1,aldehydic:0.5",20,3,2,"M"],
 ["SKIN","Skin musk & ambrette","B","skin","musky:2.5,animalic:1,woodyCreamy:0.5,fruity:0.5",20,3,3,"A"],
 ["CAST","Castoreum-type accord","B","skin","animalic:2.5,leather:1.5,amber:0.5",2,3,3,"A"],
-["CIVT","Indolic animalic accord","B","skin","animalic:3,floralWhite:0.5,earthy:0.5",0.5,3,3,"A"]
+["CIVT","Indolic animalic accord","B","skin","animalic:3,floralWhite:0.5,earthy:0.5",0.5,3,3,"A"],
+["POME","Pomelo & kumquat peel","T","citrus","citrus:3,green:1,fruity:0.5",15,1,2,"A"],
+["SHIS","Shiso leaf accord","T","green","green:2,aromatic:2,spicyFresh:1.5",8,1,3,"A"],
+["PINE","Pine needle accord","T","green","aromatic:2,green:2,woodyDry:1.5,citrus:0.5",10,2,2,"A"],
+["BAMB","Bamboo & rain accord","T","green","green:2.5,aquatic:1.5,woodyDry:0.5",12,2,2,"A"],
+["OSMA","Osmanthus accord","H","floral","fruity:2,floralWhite:2,leather:1,sweet:0.5,powdery:0.5",15,3,4,"A"],
+["GTEA","Green tea & matcha accord","H","green","green:2.5,aromatic:1.5,lactonic:0.5,nutty:0.5",20,2,3,"A"],
+["OOLG","Roasted tea accord (hojicha, oolong)","H","green","nutty:1.5,aromatic:1.5,smoky:1,woodyDry:1,sweet:0.5",15,3,3,"A"],
+["UMEP","Plum blossom accord","H","floral","floralRose:1.5,fruity:1.5,powdery:1,nutty:0.5,spicyWarm:0.5",15,2,3,"A"],
+["SAKU","Cherry blossom accord","H","floral","floralRose:1.5,powdery:2,floralWhite:1,nutty:0.5,musky:0.5",15,2,2,"A"],
+["LOTS","Lotus & water lily accord","H","aqua","aquatic:2,floralWhite:2,green:1,powdery:0.5",15,2,2,"A"],
+["PAND","Pandan & coconut rice accord","H","gourmand","nutty:2,lactonic:2,green:1.5,sweet:1",12,2,3,"A"],
+["MUGW","Mugwort accord","H","green","aromatic:2.5,green:2,earthy:1",10,2,3,"A"],
+["HINO","Hinoki wood accord","B","wood","woodyDry:2.5,citrus:1,aromatic:1,spicyFresh:0.5",20,3,3,"A"],
+["INKA","Ink stick accord","B","smoke","smoky:1.5,mineral:1.5,woodyDry:1.5,earthy:1,leather:0.5",10,3,3,"A"],
+["TEMP","Temple incense accord","B","amber","woodyCreamy:2,smoky:1.5,amber:1.5,woodyDry:1",15,3,4,"A"],
+["PAPR","Washi paper accord","B","skin","powdery:2,woodyDry:1.5,musky:1.5,aldehydic:0.5,mineral:0.5",20,3,2,"A"]
 ];
 const FAM={citrus:"Citrus",green:"Green & aromatic",aqua:"Aquatic",floral:"Floral",gourmand:"Fruit & gourmand",spice:"Spice",wood:"Wood & moss",amber:"Amber & resin",smoke:"Smoke & leather",skin:"Musk & animalic",mineral:"Mineral"};
 const TIER={T:"Top",H:"Heart",B:"Base"};
-const PAL=PDATA.map(([id,name,tier,fam,v,cap,sub,cost,kind])=>({id,name,tier,fam,v:vec(v),vn:nrm(vec(v)),cap,sub,cost,kind}));
+const EASHELF=new Set(["POME","SHIS","PINE","BAMB","OSMA","GTEA","OOLG","UMEP","SAKU","LOTS","PAND","MUGW","HINO","INKA","TEMP","PAPR"]);
+const PAL=PDATA.map(([id,name,tier,fam,v,cap,sub,cost,kind])=>({id,name,tier,fam,v:vec(v),vn:nrm(vec(v)),cap,sub,cost,kind,ea:EASHELF.has(id)}));
 const BYID=Object.fromEntries(PAL.map(m=>[m.id,m]));
 const HARSH=["animalic","smoky","mineral","earthy"];
 
@@ -839,6 +870,26 @@ const LEX=[
 ["rihanna|beyonce|beyoncé|taylor swift|lady gaga|ariana grande|dua lipa|zendaya|billie eilish|harry styles|bad bunny|the weeknd|pharrell|blackpink|bts|kim kardashian|michael jackson|marilyn monroe|elvis|david bowie|elon musk|donald trump|trump|lebron|messi|ronaldo|celebrity|celebrities|famous|red carpet|fame|spotlight","aldehydic:2,powdery:2,amber:2,floralRose:1,musky:1","ALDH,IRIS,AMBX,ROSE","spotlight heat, powder, a crowd","p","celebrity culture"],
 ["soy|soybean|soybeans|soya|edamame|tofu|soy milk|soymilk|bean|beans|legume|legumes|tempeh|natto","nutty:3,lactonic:3,green:2,powdery:1,earthy:1","SOYB,RICE,FIG,TONK,MUSW","steamed bean, soy milk skin, green pod","n","East and Southeast Asian kitchens"],
 ["chrysanthemum|hangbaiju|hang bai ju|chamomile|herbal tea|tisane|flower tea|hay|dried flowers|dried petals","floralWhite:1.5,green:1.5,aromatic:1.5,sweet:1,powdery:1.5,fruity:0.5,floralRose:0.5","TEA,LAVN,TONK,HONY,VIOI","steeped petals, warm hay, a soft herbal edge","n","Chinese herbal tea"],
+["osmanthus|kinmokusei|gui hua|guihua","fruity:2,floralWhite:2,leather:1,sweet:1","OSMA,OOLG,PAPR","golden osmanthus: apricot skin and soft suede","n","East Asian autumn"],
+["hinoki|cypress|onsen|ryokan|sento|bathhouse","woodyDry:3,citrus:1,aromatic:1.5,aquatic:1","HINO,TEMP,PAPR","hinoki tub, steam, clean wood","n","Japanese bathing"],
+["ink|calligraphy|sumi|inkstone|brush painting|scholar","smoky:1.5,mineral:2,woodyDry:1.5,earthy:1,powdery:1","INKA,PAPR,TEMP","ground ink stick, wet stone, rice paper","n","East Asian calligraphy"],
+["matcha|sencha|longjing|gyokuro|tea ceremony|tea house","green:2.5,aromatic:1.5,nutty:0.5,lactonic:0.5","GTEA,PAPR,BAMB","whisked green tea, tatami","n","tea ceremony"],
+["hojicha|pu erh|puer|roasted tea|lapsang|genmaicha|barley tea","nutty:2,aromatic:1.5,smoky:1,woodyDry:1,sweet:0.5","OOLG,RICE,INKA","roasted leaf, warm grain","n","East Asian tea"],
+["shiso|perilla","green:2,aromatic:2,spicyFresh:1.5","SHIS,POME","torn shiso leaf","n","Japanese and Korean kitchens"],
+["plum blossom|ume|maehwa|meihua","floralRose:1.5,fruity:1.5,powdery:1,nutty:0.5","UMEP,PAPR","plum blossom in cold air","n","late winter in East Asia"],
+["sakura|cherry blossom|hanami","floralRose:1.5,powdery:2,floralWhite:1,musky:0.5","SAKU,PAPR","cherry petals, soft powder","n","hanami"],
+["lotus|water lily|lily pond","aquatic:2,floralWhite:2,green:1,powdery:0.5","LOTS,BAMB","lotus on still water","n","temple ponds"],
+["pagoda|shrine|kyoto|kodo|agarwood|kyara|jinko|tram huong|joss","woodyCreamy:2,smoky:2,amber:1.5,woodyDry:1","TEMP,HINO,INKA","incense wood listened to, not burned loud","n","incense ceremony"],
+["pandan|sticky rice|kaya|coconut rice|che ","nutty:2,lactonic:2,green:1.5,sweet:1","PAND,RICE","pandan leaf, warm coconut rice","n","Southeast Asian sweets"],
+["washi|hanji|shoji|origami|scroll|rice paper","powdery:2,woodyDry:1.5,musky:1.5,mineral:0.5","PAPR,INKA","handmade paper, light through a screen","n","paper craft"],
+["mugwort|ssuk|yomogi|jjimjilbang|herbal bath|moxa","aromatic:2.5,green:2,earthy:1","MUGW,HINO","steamed mugwort","n","Korean herbal bathing"],
+["hanok|bonsai|pine needle|sonamu|pine forest","aromatic:2,green:2,woodyDry:2","PINE,PAPR,HINO","pine needles, old timber","n","Korean pine"],
+["bamboo|bamboo forest|arashiyama","green:2.5,aquatic:1.5,woodyDry:0.5","BAMB,GTEA","green cane, wet leaves","n",""],
+["pomelo|kumquat|tet|yuja|calamondin","citrus:3,green:1,fruity:0.5","POME,YUZU","bitter-sweet peel","n","Lunar New Year fruit"],
+["pho|saigon|hanoi|vietnam|vietnamese|hoi an","aromatic:2,spicyFresh:2,cocoa:1.5,lactonic:1,green:1","COFF,GING,PAND,SHIS","street herbs, star anise steam, iced coffee","n","Vietnamese street life"],
+["seoul|korea|korean","aromatic:1.5,woodyDry:1.5,powdery:1.5,green:1","PINE,PAPR,MUGW","pine, paper, quiet rooms","n","Korean minimalism"],
+["shanghai|beijing|suzhou|china|chinese|jiangnan|hangzhou","fruity:1,floralWhite:1.5,mineral:1,green:1.5,smoky:0.5","OSMA,INKA,GTEA","garden osmanthus, ink, tea","n","Chinese garden culture"],
+["japan|japanese|wabi sabi|wabi-sabi","woodyDry:2,green:1.5,powdery:1,aromatic:1","HINO,GTEA,PAPR","hinoki, tea, paper","n","Japanese restraint"],
 ["rice|grain|grains|congee|mochi|sake|porridge|oats","lactonic:2,nutty:2,powdery:2,sweet:1","RICE,SOYB,IRIS,MUSW","steam, starch, warm bowl","n",""],
 ["chocolate|cocoa|cacao|brownie|brownies|truffle","cocoa:3,sweet:2,amber:1,earthy:1","COCO,PATC,VANL,TONK","dark cocoa, bitter edge","n",""],
 ["coffee|espresso|latte|cafe|café|kopi","cocoa:3,smoky:1,sweet:1,nutty:1","COFF,CARD,TONK,COCO","roasted beans, crema","n","café culture"],
@@ -973,6 +1024,10 @@ function composeHead(an,head,cfg){
   if(cfg.frame==="creative"&&head==="creative")twist=0.9;
   if(cfg.frame==="unexplored")twist=head==="creative"?1.3:head==="accurate"?0.25:0.4;
   if(cfg.twistBoost)twist+=cfg.twistBoost;
+  const aim=cfg.aim||"mass";
+  if(aim==="edge"||aim==="nose")twist+=head==="creative"?0.35:head==="accurate"?0.15:0.1;
+  if(aim==="quiet"){EWD.forEach((d,i)=>{t[i]=Math.max(0,t[i]+d*7);});["sweet","amber","animalic","cocoa"].forEach(d=>t[I[d]]*=0.75);}
+  if(aim==="nose"&&NOSE.taste){const tn=Math.hypot(...NOSE.taste)||1;NOSE.taste.forEach((d,i)=>{t[i]=Math.max(0,t[i]+d/tn*2.2);});}
   const mv=head==="creative"&&cfg.move&&cfg.move!=="auto"?cfg.move:null;
   if(mv==="food"){t[I.sweet]+=1.2;t[I.nutty]+=1;t[I.lactonic]+=1;t[I.cocoa]+=0.6;}
   if(mv==="industry"){t[I.mineral]+=1.6;t[I.smoky]+=1;t[I.leather]+=0.6;}
@@ -999,7 +1054,9 @@ function composeHead(an,head,cfg){
   CAPCTX={fmt,t,fmtKey:cfg.format};
   const quota={accurate:[2,3,3],creative:[3,3,4],luxury:[3,4,5]}[head].slice();
   if(cfg.frame==="unexplored")quota[1]++;
-  if(mv==="minimal")quota.splice(0,3,1,2,2);
+  if(mv==="minimal"||mv==="ma"||mv==="portrait")quota.splice(0,3,1,2,2);
+  else if(aim==="quiet"){quota[1]=Math.max(2,quota[1]-1);quota[2]=Math.max(2,quota[2]-1);}
+  if(mv==="ma"){["sweet","amber","animalic","smoky"].forEach(d=>t[I[d]]*=0.6);t[I.musky]+=0.8;}
   if(mv==="abstraction")quota.forEach((q,i)=>quota[i]=q+1);
   const share=fmt.laundry?{T:12,H:40,B:48}:{T:18,H:34,B:48};
   const hintW={accurate:0.35,creative:0.15,luxury:0.2}[head];
@@ -1015,11 +1072,13 @@ function composeHead(an,head,cfg){
       let best=null,bs=-9;
       for(const m of PAL){
         if(m.tier!==tier||used.has(m.id)||effCap(m)<0.5)continue;
+        if(m.ea&&aim!=="quiet"&&!an.hints[m.id])continue; /* East Asia shelf: only on East Asian briefs or the East Asian ambition */
         let s=dot(nrm(r),m.vn);
         if(an.hints[m.id])s+=hintW*Math.min(1,an.hints[m.id]);
         s+=costBias*(m.cost-3);
         if(fmt.laundry){const P=typeof CPROP!=="undefined"&&CPROP[m.id];if(P){const surv=sig((P.logP-3.2)*1.8)*sig((P.bp-250)/14);s+=0.3*(surv-0.5);}else s+=0.08*(m.sub-2);}
         if(preferA&&m.kind==="A")s+=0.05;
+        if(m.ea&&aim==="quiet")s+=0.1;
         if(head==="creative")s+=(R()-0.5)*0.12;
         if(s>bs){bs=s;best=m;}
       }
@@ -1029,11 +1088,12 @@ function composeHead(an,head,cfg){
     while(picks.length<quota[ti]){const b=bestOf();if(!b)break;take(b);}
     /* capacity rule: keep adding materials until this tier can carry its share under the caps */
     let extra=0;
-    while(mv!=="minimal"&&picks.reduce((s,[m])=>s+effCap(m),0)<share[tier]*1.1&&extra<4){const b=bestOf();if(!b)break;take(b);extra++;}
+    while(mv!=="minimal"&&mv!=="ma"&&mv!=="portrait"&&picks.reduce((s,[m])=>s+effCap(m),0)<share[tier]*1.1&&extra<4){const b=bestOf();if(!b)break;take(b);extra++;}
     const ws=picks.map(([m,s])=>Math.pow(Math.max(0.15,s),1.5));
     const alloc=fillTier(share[tier],picks.map(p=>p[0]),ws);
     picks.forEach(([m],i)=>{if(alloc[i]>0)rows.push({id:m.id,pct:alloc[i]});});
   });
+  if(mv==="portrait"){const hint=Object.entries(an.hints).sort((a,b)=>b[1]-a[1]).map(x=>x[0]).find(id=>rows.some(r=>r.id===id));const hero=rows.find(r=>r.id===hint)||rows.filter(r=>BYID[r.id].tier!=="T").sort((a,b)=>b.pct-a.pct)[0];if(hero)hero.pct*=4;}
   if(mv==="overdose"||mv==="synthetic"){const pool=rows.filter(r=>BYID[r.id].tier!=="T"&&(mv==="overdose"||BYID[r.id].kind==="M"));const hero=pool.sort((a,b)=>b.pct-a.pct)[0];if(hero){hero.pct*=3.5;}}
   if(mv)notes.push("Innovation move: "+GRAM[mv][1].toLowerCase()+" (as in "+GRAM[mv][3].split(", ").slice(0,2).join(", ")+")");
   return finalize(rows,an,head,cfg,{twistNote,notes});
@@ -1097,7 +1157,7 @@ function finalize(rows,an,head,cfg,meta){
   const wear=Math.round(Math.max(0,Math.min(100,100-Math.max(0,harshRatio(fv)-0.2)*150)));
   const subst=Math.round(rows.reduce((s,r)=>s+(BYID[r.id].sub-1)/2*r.pct,0));
   const cost=rows.reduce((s,r)=>s+BYID[r.id].cost*r.pct,0)/100;
-  const pi=cfg.lens.projection==="whisper"?0:cfg.lens.projection==="trail"?2:1;
+  const pi=cfg.lens.projection==="whisper"?0:cfg.lens.projection==="trail"?2:(cfg.aim==="quiet"||cfg.move==="ma")&&!cfg.lens.projection?0:1;
   let conc=fmt.conc[pi];
   if(head==="luxury"&&!fmt.laundry&&pi<2)conc=fmt.conc[pi+1];
   const oil=fmt.base*conc/100;
@@ -1111,7 +1171,7 @@ const NOUN=["Theory","Liturgy","Signal","Orbit","Relic","Bloom","Ritual","Freque
 const LUX=["Absolu","Nuit","Ambre","Extrait","Élixir","Cuir"];
 function titleOf(an){
   if(an.flags.has("persona"))return"Persona";
-  let s=an.raw.replace(/^\s*(it\s+)?smells?\s+like\s+/i,"").replace(/[^\p{L}\p{N}\s'-]/gu,"").trim().split(/\s+/).slice(0,3).join(" ");
+  let s=an.raw.replace(/^\s*(it\s+)?smells?\s+like\s+/i,"").replace(/[^\p{L}\p{N}\s'-]/gu,"").trim().split(/\s+/).filter((w,i)=>i===0||!/^(in|a|an|the|at|of|on|and|for|with|after|before)$/i.test(w)).slice(0,3).join(" ");
   if(!s)s="Untitled";
   return s.toLowerCase().replace(/(^|\s)\p{L}/gu,c=>c.toUpperCase()).slice(0,26);
 }
@@ -1129,7 +1189,7 @@ function composeAll(an,cfg){return HEADS.map(([h])=>{
   let sc=composeHead(an,h,cfg);
   if(h==="creative"&&typeof compass==="function"){
     /* compass nudge: Scent 1 must not follow an icon too closely */
-    for(let k=1;k<=2;k++){const C=compass(sc.fv);if(C.F<0.84)break;const was=C.sims[0].ic.name;sc=composeHead(an,h,Object.assign({},cfg,{twistBoost:0.45*k}));sc.notes.push("Compass nudge: moved further from "+was+" ("+Math.round(C.F*100)+")");}
+    for(let k=1;k<=2;k++){const C=compass(sc.fv);if(C.F<(cfg.aim==="mass"?0.84:AIMS[cfg.aim||"mass"].band[1]))break;const was=C.sims[0].ic.name;sc=composeHead(an,h,Object.assign({},cfg,{twistBoost:0.45*k}));sc.notes.push("Compass nudge: moved further from "+was+" ("+Math.round(C.F*100)+")");}
   }
   nameAndStory(sc,an);return sc;});}
 
@@ -1154,7 +1214,7 @@ function renderResult(res){
       <h3>${esc(sc.name)}</h3><p class="story">${esc(sc.story)}</p>${sc.why?`<p class="story"><b>Why:</b> ${esc(sc.why)}</p>`:""}
       <div class="metrics">${metricBar("Fidelity to brief",sc.metrics.fidelity)}${metricBar("Novelty",sc.metrics.novelty)}${metricBar("Wearability",sc.metrics.wear)}${metricBar("Wash survival",sc.metrics.subst)}</div>
       <table class="f"><thead><tr><th></th><th>Material</th><th class="num">% conc</th><th class="num">${fmt.unit}</th></tr></thead><tbody>${rows}</tbody></table>
-      ${(()=>{const C=compass(sc.fv);return`<div class="disp">Compass: <b>${esc(C.zone[2])}</b> · closest icon ${esc(C.sims[0].ic.name)} at ${Math.round(C.F*100)}</div>`;})()}
+      ${(()=>{const C=compass(sc.fv);return`<div class="disp">Compass: <b>${esc(C.zone[2])}</b> · closest icon ${esc(C.sims[0].ic.name)} at ${Math.round(C.F*100)} · ${esc(C.av[1])} · East lean ${C.lean}${C.nose!==null?" · your nose "+C.nose:""}</div>`;})()}
       ${(()=>{const sa=typeof selfAudit==="function"?selfAudit(res,sc):null;return sa?`<div class="disp">Virtual Nose: <b>${sa.f} fail${sa.f===1?"":"s"}</b> · ${sa.w} to check${sa.top.length?`<br><span class="src">${esc(sa.top.join(" · "))}</span>`:""}</div>`:"";})()}
       <div class="actions"><button class="btn ghost aud" data-head="${sc.head}" style="padding:7px 12px;font-size:.84rem">Audit in Virtual Nose</button></div>
       <div class="disp mono">Dispense: ${esc(fmt.batch)} at ${sc.conc}% → ${sc.oil.toFixed(2)} ${fmt.unit} of fragrance oil · cost tier ${cost} · ${sc.rows.length} cartridges</div>
@@ -1244,7 +1304,7 @@ let lastRun=false,lastRes=null;
 function run(){
   const an=analyze($("#brief").value);lastRun=true;
   if(an.verdict==="decline"){lastRes=null;renderDecline(an);$("#deep").disabled=true;return;}
-  const cfg={frame:state.frame,format:state.format,move:state.move,lens:{...state.lens}};
+  const cfg={frame:state.frame,format:state.format,move:state.move,aim:AIM.v,lens:{...state.lens}};
   const res={an,cfg,verdict:an.verdict,decomp:decompose(an),scents:composeAll(an,cfg),source:"offline engine"};
   lastRes=res;$("#deep").disabled=false;renderResult(res);
   $("#status").textContent="";
@@ -1263,6 +1323,7 @@ BRIEF: """${res.an.raw}"""
 FRAME (shapes all three): ${FRAMES[res.cfg.frame].label} (${FRAMES[res.cfg.frame].sub})
 FORMAT: ${FORMATS[res.cfg.format].label}${FORMATS[res.cfg.format].laundry?" (laundry: favour materials with wash 3/3, keep top notes under 15%)":""}
 INNOVATION MOVE for the creative scent: ${res.cfg.move&&res.cfg.move!=="auto"?GRAM[res.cfg.move][1]+" ("+GRAM[res.cfg.move][2]+" Examples: "+GRAM[res.cfg.move][3]+")":"your choice of contrast twist"}
+AMBITION: ${AIMS[res.cfg.aim||"edge"].label} (${AIMS[res.cfg.aim||"edge"].sub}). ${res.cfg.aim==="quiet"?"Follow East Asian restraint: few materials, space between them, low sweetness and amber, tea, wood, paper, rice, herbs, skin-distance projection.":res.cfg.aim==="mass"?"Stay close to what best sellers have taught people to like.":"Avoid smelling like a best seller. Be new but wearable."}
 WEARER LENS (apply to the luxury scent only): climate=${L.climate||"unset"}, moment=${L.moment||"unset"}, projection=${L.projection||"unset"}
 OFFLINE GATE PRE-READ: ${res.verdict}
 
@@ -1344,7 +1405,66 @@ const GROUND=[{"id":"fougere","name":"Fougère Royale","house":"Houbigant","year
 GROUND.forEach(i=>{i.vv=vec(i.v);});
 const GRAMMAR=[["synthetic", "A new synthetic becomes the star", "A material just out of the lab is given the lead role.", "Foug\u00e8re Royale (coumarin), Eau Sauvage (Hedione), L'Eau d'Issey (Calone), Terre d'Herm\u00e8s (Iso E Super)", true], ["overdose", "A background material is overdosed", "Something normally used as support is dosed until it becomes the idea.", "No. 5 (aldehydes), Shalimar (ethyl vanillin), Angel (ethyl maltol), Portrait of a Lady (rose and patchouli)", true], ["abstraction", "Smell of no single thing", "The perfume copies no flower or object, it is a new sensation.", "Jicky, No. 5, Odeur 53", true], ["food", "Borrowed from food", "A taste memory is moved into fine fragrance.", "Mitsouko (peach), Shalimar (vanilla), Angel (candyfloss)", true], ["industry", "Borrowed from industry or the outdoors", "A material, machine or landscape smell framed as beauty.", "Bandit (tar leather), Drakkar Noir (functional freshness), Odeur 53 (metal), Terre d'Herm\u00e8s (flint)", true], ["element", "An element as the subject", "Water, earth or air becomes the theme instead of a flower.", "L'Eau d'Issey (water), Terre d'Herm\u00e8s (earth), Odeur 53 (air)", true], ["minimal", "Reduction and minimalism", "Fewer materials, each one doing more.", "Eau Sauvage, L'Eau d'Issey, Terre d'Herm\u00e8s, Molecule 01", true], ["inversion", "Gender inversion", "A family coded for one gender is given to the other, or to everyone.", "Bandit, F\u00e9minit\u00e9 du Bois, Eau Sauvage, CK One", true], ["clash", "Built-in clash", "Two ideas that should not meet are held in tension.", "Angel (sweet against earth), Mitsouko (fruit against moss), Bandit (pretty against harsh)", true], ["template", "A template others can copy", "A structure simple enough to become a family name.", "Foug\u00e8re Royale, Chypre, Angel", false], ["outsider", "An outsider channel", "A newcomer to perfume brings different rules.", "Aromatics Elixir (skincare), F\u00e9minit\u00e9 du Bois, Comme des Gar\u00e7ons, Tommy Girl", false]];
 const GRAM=Object.fromEntries(GRAMMAR.map(g=>[g[0],g]));
-seg($("#move"),Object.assign({auto:{label:"Brain chooses",sub:"contrast twist"}},Object.fromEntries(GRAMMAR.filter(g=>g[4]).map(g=>[g[0],{label:g[1],sub:g[3].split(" (")[0].split(",")[0]}]))),"move");
+/* ---------- East Asian references, ambition and personal nose ---------- */
+const EAST=[
+{"id":"ts-kunlun","name":"Kunlun Boiling Snow","house":"To Summer","cty":"China","year":2019,"v":"woodyDry:3,aromatic:2,green:1,aquatic:1,musky:1,amber:0.5","idea":"Snow melting on a fir fire","codes":["place","ma"]},
+{"id":"ts-osm","name":"Summer Palace Golden Osmanthus","house":"To Summer","cty":"China","year":2020,"v":"fruity:2,floralWhite:2.5,sweet:1,leather:0.5,musky:1,woodyCreamy:0.5","idea":"Autumn osmanthus in an imperial garden","codes":["season","portrait","place"]},
+{"id":"tam-chamo","name":"Chamo","house":"Tamburins","cty":"Korea","year":2022,"v":"aromatic:2,green:1.5,woodyCreamy:1.5,musky:2,fruity:0.5","idea":"Chamomile and blonde wood, quiet and dry","codes":["ma","object"]},
+{"id":"nf-santal","name":"Santal Cream","house":"Nonfiction","cty":"Korea","year":2019,"v":"woodyCreamy:3,lactonic:1.5,green:1,spicyFresh:1,musky:1","idea":"Creamy sandalwood for the skin","codes":["skin","ma"]},
+{"id":"bts-rice","name":"Dirty Rice","house":"Borntostandout","cty":"Korea","year":2022,"v":"lactonic:2,nutty:2,powdery:1.5,musky:2,woodyDry:1,sweet:1","idea":"Steamed rice as a skin scent","codes":["edible","portrait","skin"]},
+{"id":"shiro-savon","name":"Savon","house":"Shiro","cty":"Japan","year":2009,"v":"aldehydic:2,musky:2.5,citrus:2,floralWhite:1.5,fruity:1","idea":"Clean soap, close to the skin","codes":["skin","ma"]},
+{"id":"satori","name":"Satori","house":"Parfum Satori","cty":"Japan","year":2006,"v":"woodyCreamy:2.5,smoky:1.5,spicyWarm:1.5,amber:1.5,sweet:1,cocoa:0.5","idea":"Kyara incense wood listened to in silence","codes":["listen","ma"]},
+{"id":"cdg-kyoto","name":"Kyoto (Incense series)","house":"Comme des Garçons","cty":"Japan","year":2002,"v":"smoky:2.5,woodyDry:3,aromatic:1,amber:1,earthy:1,cocoa:0.5","idea":"A Kyoto temple: incense, cypress, cold wood","codes":["listen","place"]},
+{"id":"cdg-hinoki","name":"Hinoki (with Monocle)","house":"Comme des Garçons","cty":"Japan","year":2008,"v":"woodyDry:3,aromatic:2.5,green:1,smoky:1,earthy:1","idea":"A hinoki bath in a Kyoto ryokan","codes":["portrait","place"]},
+{"id":"zen64","name":"Zen (original)","house":"Shiseido","cty":"Japan","year":1964,"v":"green:2,floralWhite:2,woodyDry:1.5,earthy:1.5,floralRose:1","idea":"Japanese restraint for a world market","codes":["ma"]},
+{"id":"dannam-coffee","name":"Vietnamese Coffee","house":"d'Annam","cty":"Vietnam","year":2021,"v":"cocoa:3,lactonic:2,sweet:2,nutty:1,woodyCreamy:0.5","idea":"Iced coffee with condensed milk","codes":["edible","place"]},
+{"id":"dannam-rice","name":"White Rice","house":"d'Annam","cty":"Vietnam","year":2021,"v":"lactonic:2.5,nutty:2,powdery:1.5,musky:2,sweet:0.5","idea":"A bowl of steamed rice","codes":["edible","portrait"]}
+];
+EAST.forEach(i=>{i.vv=vec(i.v);});
+const EGRAM=[
+["ma","Negative space","Few materials and room between them. The quiet is part of the design (ma in Japan, liubai in China, yeobaek in Korea)."],
+["portrait","Quiet material portrait","One humble material is painted on its own: tea, rice, ink, paper, hinoki, osmanthus."],
+["season","A seasonal moment","A scent for one point in the year, such as osmanthus in autumn or plum blossom in late winter."],
+["place","Place and memory","A named place or lived memory, not an abstract fantasy."],
+["listen","Incense listening","Wood and incense meant for calm attention, as in kodo and xiangdao."],
+["edible","Daily-life food codes","Rice, tea, coffee, herbs and fruit peel from the home kitchen, not dessert."],
+["skin","Skin distance","Made to be noticed at arm's length or less, for humid weather and shared space."],
+["object","The object as art","Bottle, ceramic, paper and shop are part of the work."]];
+const EG=Object.fromEntries(EGRAM.map(g=>[g[0],g]));
+const CTYC={China:"var(--f-spice)",Korea:"var(--f-aqua)",Japan:"var(--f-floral)",Vietnam:"var(--f-green)",Taiwan:"var(--f-amber)"};
+const meanV=list=>{const m=new Array(24).fill(0);list.forEach(i=>nrm(i.vv).forEach((x,k)=>m[k]+=x/list.length));return m;};
+const WESTC=meanV(ICONS),EASTC=meanV(EAST),EWD=EASTC.map((x,i)=>x-WESTC[i]),EWN=dot(EWD,EWD)||1;
+const leanOf=prof=>Math.max(0,Math.min(100,Math.round(dot(nrm(prof).map((x,i)=>x-WESTC[i]),EWD)/EWN*100)));
+EAST.forEach(e=>{let b=null;ICONS.forEach(ic=>{const c=cosv(e.vv,ic.vv);if(!b||c>b.c)b={ic,c};});e.west=b;});
+const qs=(arr,p)=>{const s=arr.slice().sort((a,b)=>a-b);return s[Math.floor(p*(s.length-1))];};
+const EBAND=[Math.round(qs(EAST.map(e=>e.west.c),.25)*100)/100,Math.round(qs(EAST.map(e=>e.west.c),.75)*100)/100];
+const AIM={v:"edge"};try{const a=localStorage.getItem("sion-aim");if(a)AIM.v=a;}catch(e){}
+const AIMS={mass:{label:"Crowd-pleaser",sub:"like the best sellers",band:[0.60,0.84]},edge:{label:"Critics' edge",sub:"new but wearable",band:[0.56,0.77]},quiet:{label:"East Asian quiet",sub:"space, tea, wood, paper",band:EBAND},nose:{label:"My nose",sub:"trained by your ratings",band:[0.50,0.80]}};
+if(!AIMS[AIM.v])AIM.v="edge";
+/* personal nose: ratings of reference perfumes, kept in this browser and, when signed in, in your private store */
+const NOSE={r:{},taste:null,n:0};try{NOSE.r=JSON.parse(localStorage.getItem("sion-nose")||"{}")||{};}catch(e){NOSE.r={};}
+const NW={avg:-0.6,good:1,awe:2.5,no:-2};
+const ALLREF=()=>[...ICONS,...GROUND.filter(g=>!ICONS.some(i=>i.name===g.name)),...EAST];
+const REFBASE=meanV([...ICONS,...GROUND,...EAST]);
+function noseFit(){
+  const refs=ALLREF(),t=new Array(24).fill(0);let n=0;
+  refs.forEach(x=>{const w=NW[NOSE.r[x.id]];if(!w)return;n++;nrm(x.vv).forEach((v,i)=>t[i]+=w*(v-REFBASE[i]));});
+  NOSE.n=n;NOSE.taste=n>=4&&Math.hypot(...t)>0?t:null;
+}
+noseFit();
+const noseScore=prof=>NOSE.taste?Math.round(50+50*Math.max(-1,Math.min(1,cosv(nrm(prof).map((x,i)=>x-REFBASE[i]),NOSE.taste)))):null;
+function aimVerdict(F){const b=AIMS[AIM.v].band;return F>b[1]?["warn","too familiar for this ambition"]:F<b[0]?[AIM.v==="mass"?"warn":"info","newer than this ambition's usual range"]:["pass","inside the target range"];}
+function aimSegs(){
+  document.querySelectorAll(".aimseg").forEach(el=>{
+    el.innerHTML=Object.entries(AIMS).map(([k,v])=>`<button data-k="${k}" aria-pressed="${AIM.v===k}">${esc(v.label)}<small>${esc(k==="nose"&&!NOSE.taste?"rate 4 or more perfumes first":v.sub)} · ${Math.round(v.band[0]*100)} to ${Math.round(v.band[1]*100)}</small></button>`).join("");
+    if(!el.dataset.b){el.dataset.b=1;el.addEventListener("click",ev=>{const b=ev.target.closest("button");if(!b)return;AIM.v=b.dataset.k;try{localStorage.setItem("sion-aim",AIM.v);}catch(e){}aimSegs();if(typeof lastRun!=="undefined"&&lastRun)run();if(typeof lastAudit!=="undefined"&&lastAudit)nRun();});}
+  });
+}
+
+GRAM.ma=["ma","Negative space (East Asian)","Few materials with room between them.","To Summer, Nonfiction, Shiro",true];
+GRAM.portrait=["portrait","Quiet material portrait (East Asian)","One humble material painted on its own.","rice, tea, ink, hinoki",true];
+seg($("#move"),Object.assign({auto:{label:"Brain chooses",sub:"contrast twist"}},Object.fromEntries([...GRAMMAR.filter(g=>g[4]),GRAM.ma,GRAM.portrait].map(g=>[g[0],{label:g[1],sub:g[3].split(" (")[0].split(",")[0]}]))),"move");
+aimSegs();
 const FAMG={floral:"var(--f-floral)",gourmand:"var(--f-gourmand)",amber:"var(--f-amber)",fresh:"var(--f-aqua)",aromatic:"var(--f-green)",woody:"var(--f-wood)",chypre:"var(--f-skin)",citrus:"var(--f-citrus)"};
 const ZONES=[
   [0.90,"copy","Near copy","Reads as a version of NAME. No reason for a new brand to exist here, and it invites dupe comparisons."],
@@ -1357,7 +1477,8 @@ function compass(prof){
   const sims=ICONS.map(ic=>({ic,s:Math.max(0,cosv(prof,ic.vv))})).sort((a,b)=>b.s-a.s);
   const F=sims[0].s,z=ZONES.find(z=>F>=z[0]);
   const gsims=GROUND.map(ic=>({ic,s:Math.max(0,cosv(prof,ic.vv))})).sort((a,b)=>b.s-a.s);
-  return{sims,gsims,F,zone:z,text:z[3].replace("NAME",sims[0].ic.name)};
+  const esims=EAST.map(ic=>({ic,s:Math.max(0,cosv(prof,ic.vv))})).sort((a,b)=>b.s-a.s);
+  return{sims,gsims,esims,lean:leanOf(prof),nose:noseScore(prof),aim:AIM.v,av:aimVerdict(F),F,zone:z,text:z[3].replace("NAME",sims[0].ic.name)};
 }
 function lifeProfile(A){const p=new Array(24).fill(0);A.tps.forEach(([t])=>{const v=nrm(A.tp[t].prof);v.forEach((x,i)=>p[i]+=x);});return p;}
 function heroOf(A){
@@ -1370,6 +1491,9 @@ function compassChecks(A){
   A.compass=C;A.hero=h;
   if(C.zone[1]==="copy")out.push({sev:"warn",area:"Compass",title:"Near copy of "+C.sims[0].ic.name+" (similarity "+Math.round(C.F*100)+")",detail:C.text});
   else out.push({sev:C.zone[1]==="breaker"?"info":"pass",area:"Compass",title:C.zone[2]+": closest icon is "+C.sims[0].ic.name+" at "+Math.round(C.F*100),detail:C.text});
+  out.push({sev:C.av[0],area:"Compass",title:"Ambition \""+AIMS[C.aim].label+"\": "+C.av[1]+" ("+Math.round(C.F*100)+", target "+Math.round(AIMS[C.aim].band[0]*100)+" to "+Math.round(AIMS[C.aim].band[1]*100)+")",detail:C.av[0]==="pass"?"The similarity to the closest best seller fits the ambition you set.":C.av[1]==="too familiar for this ambition"?"It sits closer to "+C.sims[0].ic.name+" than this ambition allows. Add an innovation move, cut the most familiar accord, or switch the ambition to Crowd-pleaser if that is what you want.":"It is further from every best seller than this ambition usually goes. Expect a slower start and test with a panel."});
+  if(C.aim==="quiet")out.push({sev:C.lean>=55?"pass":"info",area:"Compass",title:"East-West lean: "+C.lean+" of 100",detail:"0 is the centre of the Western best sellers, 100 the centre of the East Asian references. Closest East Asian reference: "+C.esims[0].ic.name+" by "+C.esims[0].ic.house+" ("+Math.round(C.esims[0].s*100)+")."+(C.lean<55?" To move east, lower sweet and amber, and give space to tea, wood, paper, rice or herbs.":"")});
+  if(C.nose!==null)out.push({sev:C.nose>=65?"pass":C.nose>=45?"info":"warn",area:"Compass",title:"Predicted for your nose: "+C.nose+" of 100",detail:"From the "+NOSE.n+" perfumes you rated. Above 65 is close to what you called good or awe. Below 45 is close to what you called average or disliked."});
   if(h)out.push({sev:h.sh>=0.12?"pass":h.sh>=0.08?"info":"warn",area:"Compass",title:"Hero: "+h.it.name+" carries "+Math.round(h.sh*100)+"% of the smell ("+h.t.toLowerCase()+")",detail:h.sh>=0.12?"Like most icons, one material leads. Make sure it is the idea you want people to remember.":"No single material leads. Most icons are built around one overdosed signature (aldehydes in No. 5, ethyl maltol in Angel, Ambroxan in Sauvage). Without one, the scent risks smelling generic."});
   return out;
 }
@@ -1377,6 +1501,8 @@ function compassHTML(C,h,label){
   return`<div class="panel fade"><div class="panel-h"><span class="eyebrow">${esc(label)} · familiarity-novelty compass</span><span class="zone z-${C.zone[1]}">${esc(C.zone[2])}</span></div>
   <p class="status">${esc(C.text)}</p>
   <div class="cmp">${C.sims.slice(0,4).map(x=>`<div class="cmp-r"><span>${esc(x.ic.name)} <span class="src">${x.ic.year} · ${esc(x.ic.fam)}</span></span><span class="cmp-b"><i style="width:${Math.round(x.s*100)}%"></i></span><span class="mono">${Math.round(x.s*100)}</span></div>`).join("")}</div>
+  <div class="axis" style="margin-top:10px"><span>West</span><span class="bar"><b style="left:${C.lean}%"></b></span><span>East Asia</span></div>
+  <p class="status" style="margin-top:8px">Ambition <b>${esc(AIMS[C.aim].label)}</b> (target ${Math.round(AIMS[C.aim].band[0]*100)} to ${Math.round(AIMS[C.aim].band[1]*100)}): ${esc(C.av[1])}. Closest East Asian reference: <b>${esc(C.esims[0].ic.name)}</b> by ${esc(C.esims[0].ic.house)} (${Math.round(C.esims[0].s*100)}).${C.nose!==null?` Predicted for your nose: <b>${C.nose}</b> of 100.`:""}</p>
   <p class="status" style="margin-top:8px">Closest groundbreaker: <b>${esc(C.gsims[0].ic.name)}</b> (${C.gsims[0].ic.year}, ${Math.round(C.gsims[0].s*100)}). Its move: ${esc(C.gsims[0].ic.moves.map(m=>GRAM[m][1].toLowerCase()).join(", "))}.</p>
   ${h?`<p class="status" style="margin-top:8px">Hero: <b>${esc(h.it.name)}</b> carries ${Math.round(h.sh*100)}% of the smell at its peak (${esc(h.t.toLowerCase())}).</p>`:""}
   <p class="status">Similarity of the whole-life smell profile, 0 to 100. Half of the 30 icons launched between 57 and 80 from their closest predecessor. See sections 05 to 07 for the studies behind it.</p></div>`;
@@ -2594,6 +2720,34 @@ $("#patterns").innerHTML=PATTERNS.map(([t,d,ex])=>`<div class="box"><h3>${esc(t)
 $("#timeline-t tbody").innerHTML=TIMELINE.map(r=>`<tr>${r.map((c,i)=>i===0?`<td class="mono">${esc(c)}</td>`:`<td>${esc(c)}</td>`).join("")}</tr>`).join("");
 $("#icon-note").textContent=ICON_NOTE;
 renderIcons();drawStudyMap();
+/* ---------- Your nose: rate what you have smelled ---------- */
+(function(){
+  const ST=["","avg","good","awe","no"],LB={"":"not smelled",avg:"average",good:"good",awe:"awe",no:"dislike"};
+  let ndb=null,nuid=null,saveT=null;
+  function draw(){
+    const groups=[["Best sellers",ICONS],["Critics' groundbreakers",GROUND.filter(g=>!ICONS.some(i=>i.name===g.name))],["East Asian references",EAST]];
+    $("#nose-list").innerHTML=groups.map(([t,l])=>`<div class="nose-g"><span class="eyebrow">${t}</span><div class="chips">${l.slice().sort((a,b)=>a.name.localeCompare(b.name)).map(x=>{const st=NOSE.r[x.id]||"";return`<button class="chip nz nz-${st||"none"}" data-id="${esc(x.id)}" title="${esc(x.house||"")}">${esc(x.name)}${st?` · ${LB[st]}`:""}</button>`;}).join("")}</div></div>`).join("");
+    const el=$("#nose-sum");
+    if(!NOSE.taste){el.innerHTML=`<p class="status">${NOSE.n} rated. Rate at least 4, with a mix of average and loved, and the brain will describe your nose.</p>`;return;}
+    const dims=DIMS.map((d,i)=>[d,NOSE.taste[i]]).sort((a,b)=>b[1]-a[1]);
+    const top=dims.slice(0,5).filter(x=>x[1]>0).map(x=>DS[x[0]]),low=dims.slice(-5).reverse().filter(x=>x[1]<0).map(x=>DS[x[0]]);
+    const preds=ALLREF().filter(x=>!NOSE.r[x.id]).map(x=>[x,noseScore(x.vv)]).sort((a,b)=>b[1]-a[1]).slice(0,5);
+    el.innerHTML=`<p><b>${NOSE.n} rated.</b> Your nose leans toward <b>${esc(top.join(", ").toLowerCase()||"nothing yet")}</b> and away from <b>${esc(low.join(", ").toLowerCase()||"nothing yet")}</b>.</p>
+      <p class="status">Worth smelling next, by predicted fit: ${preds.map(([x,s])=>esc(x.name)+" ("+s+")").join(", ")}.</p>
+      <p class="status">Every compass reading now shows a score for your nose, and the "My nose" ambition steers new scents toward it. This is a rough model from note profiles, so treat it as a guide and keep rating.</p>`;
+  }
+  function persist(){try{localStorage.setItem("sion-nose",JSON.stringify(NOSE.r));}catch(e){}
+    if(ndb&&nuid){clearTimeout(saveT);saveT=setTimeout(()=>{ndb.collection("data/users/"+nuid).doc("nose").set({ratings:NOSE.r,updated:new Date().toISOString()}).then(()=>{$("#nose-state").textContent="Saved to your private store.";},()=>{$("#nose-state").textContent="Saved in this browser only.";});},1200);}}
+  $("#nose-list").addEventListener("click",ev=>{const b=ev.target.closest(".nz");if(!b)return;const id=b.dataset.id,cur=NOSE.r[id]||"";const nx=ST[(ST.indexOf(cur)+1)%ST.length];if(nx)NOSE.r[id]=nx;else delete NOSE.r[id];
+    noseFit();draw();aimSegs();persist();if(typeof lastRun!=="undefined"&&lastRun)run();if(typeof lastAudit!=="undefined"&&lastAudit)nRun();});
+  $("#nose-clear").addEventListener("click",()=>{NOSE.r={};noseFit();draw();aimSegs();persist();});
+  draw();
+  const up=(window.claude&&typeof window.claude.use==="function")?Promise.all([window.claude.use("db").catch(()=>null),window.claude.use("user").catch(()=>null)]):Promise.resolve([null,null]);
+  up.then(async([db,user])=>{if(!db||!user)return;try{nuid=await user.id();if(!nuid)return;ndb=db;const snap=await db.collection("data/users/"+nuid).doc("nose").get();
+    if(snap.exists){const d=snap.data();if(d&&d.ratings&&Object.keys(d.ratings).length>=Object.keys(NOSE.r).length){NOSE.r=d.ratings;noseFit();draw();aimSegs();if(lastRun)run();if(lastAudit)nRun();}}
+    $("#nose-state").textContent="Connected to your private store.";}catch(e){}});
+})();
+
 /* ---------- Self-study: groundbreakers ---------- */
 (function(){
   const pool=[...ICONS,...GROUND.filter(g=>!ICONS.some(i=>i.name===g.name))];
@@ -2613,7 +2767,7 @@ renderIcons();drawStudyMap();
 /* ---------- Composer to Virtual Nose bridge ----------
    Each palette cartridge as a representative CAS-level recipe (est., an accord a supplier would build differently).
    Prohibited or CITES materials are replaced by reconstitutions (fig leaf, oud). */
-const CART={"BERG": [["68648-33-9", 100]], "LEMN": [["8008-56-8", 100]], "GRPF": [["8016-20-4", 100]], "MAND": [["8008-31-9", 100]], "YUZU": [["8008-56-8", 40], ["8016-20-4", 25], ["4674-50-4", 5], ["24851-98-7", 30]], "PEPB": [["87-44-5", 45], ["5989-27-5", 35], ["8000-66-6", 20]], "PINK": [["5989-27-5", 55], ["87-44-5", 35], ["106-22-9", 10]], "CARD": [["8000-66-6", 100]], "GING": [["8007-08-7", 100]], "MINT": [["8006-90-4", 100]], "GALB": [["8023-91-4", 100]], "VIOL": [["8024-08-6", 100]], "ALDH": [["112-31-2", 30], ["112-45-8", 40], ["110-41-8", 30]], "CALO": [["28940-11-6", 100]], "OZON": [["67634-15-5", 20], ["18479-58-8", 50], ["24851-98-7", 30]], "LAVN": [["8000-28-0", 100]], "ROSE": [["8007-01-0", 100]], "GERA": [["8000-46-2", 100]], "JASM": [["8022-96-6", 100]], "TUBR": [["8024-05-3", 100]], "ORFL": [["78-70-6", 30], ["115-95-7", 15], ["134-20-3", 5], ["24851-98-7", 30], ["140-11-4", 10], ["120-72-9", 0.5], ["5989-27-5", 9.5]], "IRIS": [["8002-73-1", 10], ["79-69-6", 10], ["127-51-5", 40], ["54464-57-2", 40]], "VIOI": [["127-51-5", 60], ["14901-07-6", 40]], "HEDI": [["24851-98-7", 100]], "MUGT": [["107-75-5", 30], ["63500-71-0", 30], ["13828-37-0", 20], ["24851-98-7", 20]], "CINN": [["8015-91-6", 100]], "CLOV": [["8000-34-8", 100]], "SAFF": [["54440-17-4", 15], ["116-26-7", 2], ["54464-57-2", 40], ["6790-58-5", 3], ["65442-31-1", 1], ["24851-98-7", 39]], "FIG": [["22457-23-4", 5], ["705-86-2", 5], ["65405-77-8", 30], ["24851-98-7", 30], ["54464-57-2", 30]], "TEA": [["36431-72-8", 3], ["38818-55-2", 1], ["24851-98-7", 40], ["14901-07-6", 10], ["17283-81-7", 15], ["60047-17-8", 5], ["54464-57-2", 26]], "TOMA": [["22457-23-4", 3], ["3681-71-8", 2], ["928-96-1", 5], ["65405-77-8", 40], ["24851-98-7", 50]], "PLUM": [["104-67-6", 8], ["2305-05-7", 5], ["4940-11-8", 1], ["102-20-5", 20], ["103-60-6", 30], ["24851-98-7", 36]], "PEAC": [["104-67-6", 30], ["705-86-2", 10], ["24851-98-7", 60]], "SOYB": [["705-86-2", 10], ["104-61-0", 5], ["91-64-5", 5], ["17092-92-1", 1], ["65405-77-8", 30], ["24851-98-7", 29], ["105-95-3", 20]], "RICE": [["705-86-2", 10], ["127-51-5", 20], ["91-64-5", 5], ["105-95-3", 30], ["24851-98-7", 35]], "SAND": [["65113-99-7", 50], ["67801-20-1", 10], ["198404-98-7", 1], ["54464-57-2", 39]], "CEDR": [["8000-27-9", 100]], "VETI": [["8016-96-4", 100]], "PATC": [["8014-09-3", 100]], "OUDA": [["65442-31-1", 2], ["8016-96-4", 15], ["8014-09-3", 15], ["54464-57-2", 40], ["6790-58-5", 5], ["8016-26-0", 10], ["87-44-5", 13]], "ISOE": [["54464-57-2", 100]], "CASH": [["33704-61-9", 100]], "AMBX": [["6790-58-5", 100]], "LABD": [["8016-26-0", 100]], "BENZ": [["9000-05-9", 100]], "INCN": [["8016-36-2", 100]], "MYRR": [["8016-37-3", 100]], "VANL": [["121-33-5", 100]], "TONK": [["8046-22-8", 100]], "COCO": [["8002-31-1", 100]], "COFF": [["38818-55-2", 2], ["8016-23-7", 20], ["121-33-5", 5], ["4940-11-8", 1], ["105-95-3", 30], ["54464-57-2", 42]], "HONY": [["102-20-5", 40], ["102-13-6", 20], ["8016-26-0", 5], ["105-95-3", 35]], "LEAT": [["65442-31-1", 3], ["8013-10-3", 2], ["54440-17-4", 10], ["8016-26-0", 15], ["54464-57-2", 40], ["6790-58-5", 5], ["105-95-3", 25]], "BIRC": [["8001-88-5", 100]], "GUNP": [["8013-10-3", 5], ["87-44-5", 20], ["6790-58-5", 10], ["54464-57-2", 40], ["112-45-8", 5], ["105-95-3", 20]], "ASH": [["8013-10-3", 3], ["6790-58-5", 10], ["54464-57-2", 50], ["127-51-5", 20], ["8016-96-4", 17]], "OAKM": [["90028-68-5", 100]], "PETR": [["8016-96-4", 30], ["19700-21-1", 0.01], ["6790-58-5", 10], ["18479-58-8", 30], ["54464-57-2", 29.99]], "SALT": [["6790-58-5", 20], ["67634-15-5", 5], ["28940-11-6", 1], ["54464-57-2", 40], ["1222-05-5", 34]], "METL": [["112-45-8", 20], ["18479-58-8", 40], ["6790-58-5", 10], ["54464-57-2", 30]], "MUSW": [["1222-05-5", 40], ["111879-80-2", 30], ["105-95-3", 30]], "SKIN": [["28645-51-4", 30], ["105-95-3", 30], ["1222-05-5", 20], ["6790-58-5", 5], ["54464-57-2", 15]], "CAST": [["65442-31-1", 5], ["8016-26-0", 30], ["542-46-1", 1], ["8016-96-4", 20], ["54464-57-2", 44]], "CIVT": [["120-72-9", 30], ["542-46-1", 10], ["8014-09-3", 30], ["105-95-3", 30]]};
+const CART={"BERG": [["68648-33-9", 100]], "LEMN": [["8008-56-8", 100]], "GRPF": [["8016-20-4", 100]], "MAND": [["8008-31-9", 100]], "YUZU": [["8008-56-8", 40], ["8016-20-4", 25], ["4674-50-4", 5], ["24851-98-7", 30]], "PEPB": [["87-44-5", 45], ["5989-27-5", 35], ["8000-66-6", 20]], "PINK": [["5989-27-5", 55], ["87-44-5", 35], ["106-22-9", 10]], "CARD": [["8000-66-6", 100]], "GING": [["8007-08-7", 100]], "MINT": [["8006-90-4", 100]], "GALB": [["8023-91-4", 100]], "VIOL": [["8024-08-6", 100]], "ALDH": [["112-31-2", 30], ["112-45-8", 40], ["110-41-8", 30]], "CALO": [["28940-11-6", 100]], "OZON": [["67634-15-5", 20], ["18479-58-8", 50], ["24851-98-7", 30]], "LAVN": [["8000-28-0", 100]], "ROSE": [["8007-01-0", 100]], "GERA": [["8000-46-2", 100]], "JASM": [["8022-96-6", 100]], "TUBR": [["8024-05-3", 100]], "ORFL": [["78-70-6", 30], ["115-95-7", 15], ["134-20-3", 5], ["24851-98-7", 30], ["140-11-4", 10], ["120-72-9", 0.5], ["5989-27-5", 9.5]], "IRIS": [["8002-73-1", 10], ["79-69-6", 10], ["127-51-5", 40], ["54464-57-2", 40]], "VIOI": [["127-51-5", 60], ["14901-07-6", 40]], "HEDI": [["24851-98-7", 100]], "MUGT": [["107-75-5", 30], ["63500-71-0", 30], ["13828-37-0", 20], ["24851-98-7", 20]], "CINN": [["8015-91-6", 100]], "CLOV": [["8000-34-8", 100]], "SAFF": [["54440-17-4", 15], ["116-26-7", 2], ["54464-57-2", 40], ["6790-58-5", 3], ["65442-31-1", 1], ["24851-98-7", 39]], "FIG": [["22457-23-4", 5], ["705-86-2", 5], ["65405-77-8", 30], ["24851-98-7", 30], ["54464-57-2", 30]], "TEA": [["36431-72-8", 3], ["38818-55-2", 1], ["24851-98-7", 40], ["14901-07-6", 10], ["17283-81-7", 15], ["60047-17-8", 5], ["54464-57-2", 26]], "TOMA": [["22457-23-4", 3], ["3681-71-8", 2], ["928-96-1", 5], ["65405-77-8", 40], ["24851-98-7", 50]], "PLUM": [["104-67-6", 8], ["2305-05-7", 5], ["4940-11-8", 1], ["102-20-5", 20], ["103-60-6", 30], ["24851-98-7", 36]], "PEAC": [["104-67-6", 30], ["705-86-2", 10], ["24851-98-7", 60]], "SOYB": [["705-86-2", 10], ["104-61-0", 5], ["91-64-5", 5], ["17092-92-1", 1], ["65405-77-8", 30], ["24851-98-7", 29], ["105-95-3", 20]], "RICE": [["705-86-2", 10], ["127-51-5", 20], ["91-64-5", 5], ["105-95-3", 30], ["24851-98-7", 35]], "SAND": [["65113-99-7", 50], ["67801-20-1", 10], ["198404-98-7", 1], ["54464-57-2", 39]], "CEDR": [["8000-27-9", 100]], "VETI": [["8016-96-4", 100]], "PATC": [["8014-09-3", 100]], "OUDA": [["65442-31-1", 2], ["8016-96-4", 15], ["8014-09-3", 15], ["54464-57-2", 40], ["6790-58-5", 5], ["8016-26-0", 10], ["87-44-5", 13]], "ISOE": [["54464-57-2", 100]], "CASH": [["33704-61-9", 100]], "AMBX": [["6790-58-5", 100]], "LABD": [["8016-26-0", 100]], "BENZ": [["9000-05-9", 100]], "INCN": [["8016-36-2", 100]], "MYRR": [["8016-37-3", 100]], "VANL": [["121-33-5", 100]], "TONK": [["8046-22-8", 100]], "COCO": [["8002-31-1", 100]], "COFF": [["38818-55-2", 2], ["8016-23-7", 20], ["121-33-5", 5], ["4940-11-8", 1], ["105-95-3", 30], ["54464-57-2", 42]], "HONY": [["102-20-5", 40], ["102-13-6", 20], ["8016-26-0", 5], ["105-95-3", 35]], "LEAT": [["65442-31-1", 3], ["8013-10-3", 2], ["54440-17-4", 10], ["8016-26-0", 15], ["54464-57-2", 40], ["6790-58-5", 5], ["105-95-3", 25]], "BIRC": [["8001-88-5", 100]], "GUNP": [["8013-10-3", 5], ["87-44-5", 20], ["6790-58-5", 10], ["54464-57-2", 40], ["112-45-8", 5], ["105-95-3", 20]], "ASH": [["8013-10-3", 3], ["6790-58-5", 10], ["54464-57-2", 50], ["127-51-5", 20], ["8016-96-4", 17]], "OAKM": [["90028-68-5", 100]], "PETR": [["8016-96-4", 30], ["19700-21-1", 0.01], ["6790-58-5", 10], ["18479-58-8", 30], ["54464-57-2", 29.99]], "SALT": [["6790-58-5", 20], ["67634-15-5", 5], ["28940-11-6", 1], ["54464-57-2", 40], ["1222-05-5", 34]], "METL": [["112-45-8", 20], ["18479-58-8", 40], ["6790-58-5", 10], ["54464-57-2", 30]], "MUSW": [["1222-05-5", 40], ["111879-80-2", 30], ["105-95-3", 30]], "SKIN": [["28645-51-4", 30], ["105-95-3", 30], ["1222-05-5", 20], ["6790-58-5", 5], ["54464-57-2", 15]], "CAST": [["65442-31-1", 5], ["8016-26-0", 30], ["542-46-1", 1], ["8016-96-4", 20], ["54464-57-2", 44]], "CIVT": [["120-72-9", 30], ["542-46-1", 10], ["8014-09-3", 30], ["105-95-3", 30]], "POME": [["8016-20-4", 50], ["4674-50-4", 3], ["8008-56-8", 15], ["5989-27-5", 12], ["24851-98-7", 20]], "SHIS": [["928-96-1", 4], ["78-70-6", 20], ["5989-27-5", 30], ["8006-90-4", 3], ["22457-23-4", 3], ["65405-77-8", 20], ["5392-40-5", 2], ["24851-98-7", 18]], "PINE": [["76-49-3", 15], ["5989-27-5", 20], ["8000-27-9", 20], ["8023-91-4", 1], ["88-41-5", 14], ["54464-57-2", 30]], "BAMB": [["928-96-1", 3], ["22457-23-4", 2], ["81782-77-6", 3], ["63500-71-0", 20], ["65405-77-8", 30], ["24851-98-7", 42]], "OSMA": [["104-67-6", 6], ["705-86-2", 3], ["14901-07-6", 15], ["17283-81-7", 15], ["36431-72-8", 2], ["78-70-6", 10], ["106-24-1", 5], ["54440-17-4", 2], ["24851-98-7", 42]], "GTEA": [["928-96-1", 3], ["65405-77-8", 25], ["24851-98-7", 35], ["60047-17-8", 5], ["36431-72-8", 2], ["17283-81-7", 10], ["705-86-2", 2], ["54464-57-2", 18]], "OOLG": [["38818-55-2", 2], ["36431-72-8", 2], ["17092-92-1", 2], ["8016-23-7", 15], ["91-64-5", 3], ["14901-07-6", 10], ["24851-98-7", 36], ["54464-57-2", 30]], "UMEP": [["123-11-5", 3], ["106-24-1", 10], ["55066-48-3", 20], ["104-67-6", 3], ["127-51-5", 20], ["24851-98-7", 31], ["97-53-0", 1], ["105-95-3", 12]], "SAKU": [["55066-48-3", 20], ["123-11-5", 2], ["55418-52-5", 3], ["127-51-5", 15], ["24851-98-7", 35], ["140-11-4", 5], ["91-64-5", 2], ["105-95-3", 18]], "LOTS": [["63500-71-0", 25], ["13828-37-0", 20], ["24851-98-7", 30], ["1205-17-0", 3], ["65405-77-8", 15], ["81782-77-6", 2], ["10339-55-6", 5]], "PAND": [["104-61-0", 8], ["705-86-2", 8], ["91-64-5", 4], ["65405-77-8", 20], ["24851-98-7", 30], ["105-95-3", 30]], "MUGW": [["8016-63-5", 20], ["8000-28-0", 15], ["8023-91-4", 2], ["65405-77-8", 20], ["8016-96-4", 8], ["24851-98-7", 35]], "HINO": [["8000-27-9", 40], ["76-49-3", 8], ["5989-27-5", 10], ["54464-57-2", 32], ["88-41-5", 10]], "INKA": [["8013-10-3", 2], ["8016-96-4", 20], ["54464-57-2", 40], ["6790-58-5", 5], ["8014-09-3", 10], ["8000-27-9", 22], ["65442-31-1", 1]], "TEMP": [["8024-35-9", 20], ["65113-99-7", 20], ["8016-36-2", 15], ["8016-26-0", 5], ["8016-96-4", 5], ["54464-57-2", 30], ["6790-58-5", 3], ["8000-27-9", 2]], "PAPR": [["127-51-5", 25], ["54464-57-2", 30], ["105-95-3", 20], ["111879-80-2", 15], ["8000-27-9", 8], ["112-45-8", 0.5], ["24851-98-7", 1.5]]};
 let curRes=null;
 const CPROP={};
 Object.entries(CART).forEach(([id,rec])=>{let ald=0,col=0,mar=0,lp=0,bp=0,tot=0;rec.forEach(([c,p])=>{const m=BYCAS[c];if(!m)return;tot+=p;lp+=m.logP*p;bp+=m.bp*p;if(m.chem.includes("a"))ald+=p;if(m.chem.includes("c"))col+=p;if((m.tags.includes("m")||m.tags.includes("ml"))&&m.imp>=15)mar+=p;});CPROP[id]={ald,col,mar,logP:tot?lp/tot:3.5,bp:tot?bp/tot:250};});
@@ -2663,8 +2817,8 @@ $("#cases-t").addEventListener("keydown",ev=>{if(ev.key==="Enter"){const r=ev.ta
 
 let famSel="all";
 function renderPal(){
-  $("#famchips").innerHTML=[["all","All 64"],...Object.entries(FAM)].map(([k,v])=>`<button data-f="${k}" aria-pressed="${famSel===k}">${k!=="all"?`<span class="dot" style="background:var(--f-${k})"></span>`:""}${esc(v)}</button>`).join("");
-  $("#pal-t tbody").innerHTML=PAL.filter(m=>famSel==="all"||m.fam===famSel).map(m=>`<tr><td class="mono">${m.id}</td><td>${esc(m.name)}</td><td>${TIER[m.tier]}</td><td><span class="dot" style="background:var(--f-${m.fam})"></span>${FAM[m.fam]}</td><td>${m.kind==="A"?"Bridge accord":"Material"}</td><td class="num">${m.cap}</td><td class="subdots">${[1,2,3].map(k=>`<i class="${k<=m.sub?"on":""}"></i>`).join("")}</td><td class="num">${"$".repeat(m.cost)}</td></tr>`).join("");
+  $("#famchips").innerHTML=[["all","All "+PAL.length],...Object.entries(FAM)].map(([k,v])=>`<button data-f="${k}" aria-pressed="${famSel===k}">${k!=="all"?`<span class="dot" style="background:var(--f-${k})"></span>`:""}${esc(v)}</button>`).join("");
+  $("#pal-t tbody").innerHTML=PAL.filter(m=>famSel==="all"||m.fam===famSel).map(m=>`<tr><td class="mono">${m.id}</td><td>${esc(m.name)}</td><td>${TIER[m.tier]}</td><td><span class="dot" style="background:var(--f-${m.fam})"></span>${FAM[m.fam]}</td><td>${m.ea?"East Asia shelf":m.kind==="A"?"Bridge accord":"Material"}</td><td class="num">${m.cap}</td><td class="subdots">${[1,2,3].map(k=>`<i class="${k<=m.sub?"on":""}"></i>`).join("")}</td><td class="num">${"$".repeat(m.cost)}</td></tr>`).join("");
 }
 $("#famchips").addEventListener("click",ev=>{const b=ev.target.closest("button");if(!b)return;famSel=b.dataset.f;renderPal();});
 renderPal();
