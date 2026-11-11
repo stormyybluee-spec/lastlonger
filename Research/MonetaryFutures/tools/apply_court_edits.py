@@ -58,8 +58,16 @@ for eid, ref, old, new in edits:
         cont[key] = json.loads(s.replace(o, n))
         continue
     done = False
-    if isinstance(cur, dict) and cur.get("type") == "table" and old.startswith("|"):
+    if isinstance(cur, dict) and cur.get("type") == "table" and ("|" in old) and not done:
         oc, nc = cells(old), cells(new)
+        # any contiguous run of cells in one row, quoted with or without the outer bars
+        if len(oc) == len(nc):
+            hits = [(k, j) for k, r in enumerate(cur["rows"]) for j in range(len(r) - len(oc) + 1)
+                    if [str(x) for x in r[j:j + len(oc)]] == oc]
+            if len(hits) == 1:
+                k, j = hits[0]
+                cur["rows"][k][j:j + len(oc)] = nc
+                done = True
         if oc == [str(x) for x in cur["cols"]]:
             cur["cols"], done = nc, True
         else:
@@ -102,7 +110,7 @@ for eid, ref, old, new in edits:
     if eid in failed_ids:
         continue
     probe = re.sub(r"^#+ ", "", new)
-    pieces = cells(probe) if probe.startswith("|") else [re.sub(r"^(Q: |A: )", "", re.sub(r"\s*\(builds on rb-[\w-]+\)$", "", probe)).strip("()")]
+    pieces = cells(probe) if "|" in probe else [re.sub(r"^(Q: |A: )", "", re.sub(r"\s*\(builds on rb-[\w-]+\)$", "", probe)).strip("()")]
     for piece in pieces:
         if piece and json.dumps(piece, ensure_ascii=False)[1:-1] not in final:
             fail.append((eid, ref, "applied but new text not found", piece[:80]))
