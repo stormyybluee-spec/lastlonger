@@ -54,6 +54,8 @@ This file is the backend. It is written so that any future AI (or human) can pic
 | `engine/test_bank_keys.md` | Held-out answer keys for the test bank. Scorekeeper only, never examinees |
 | `tools/xref.py` | Finds where the desk already says something (ledger, pages, data): `python3 -I tools/xref.py . "<regex>"` |
 | `tools/score_prereg.py` | Lists due predictions, records outcomes and reports Brier scores: `python3 -I tools/score_prereg.py .` |
+| `tools/apply_court_edits.py` | Applies a court's edit list to one chapter and verifies every new text landed: `python3 -I tools/apply_court_edits.py <site json> <out json> <DEBATE file> <chapter id>`. Replaces the Editor agent when the edit list is regular |
+| `round10/` | Round 10, the first Unseen mode round: frame, blind exam (EXAM_T9.md), base-rate check, data and footprints lane, two Pathfinders, 14 hole files in holes/, verifier, red team, court, cold reads |
 | `tools/lint_chapter.py` | Reading-level lint for a reader chapter, run before any cold reader: `python3 -I tools/lint_chapter.py site/rulebook.json <chapter_id>` |
 | `tools/build_ai_pack.py` | Builds the plain-text pack for outside AI assistants into site/ (llms.txt, ai/): `python3 -I tools/build_ai_pack.py . --date <today>`. Run after build_site.py (section 8.5) |
 | `engine/AI_BRIEF.md` | The hand-written guide that tells an outside AI how to use the site. Source of ai/brief.md |
@@ -369,6 +371,8 @@ Correction ledger so far:
 | 2026-10-24 | Rulebook money chapter: deposits rose $4.7T not $5.45T in 2020 to 2021, bank securities $1.9T not $2.1T, M2 40% not 41%, reverse repo peak $2.4T | Engine (R6B lane, verifier), unprompted | Numbers written before the v4 pipeline |
 | 2026-10-24 | Four Level 2 bridges claimed Level 1 taught things it did not (1942 to 1951 cap is in rb-08, not rb-03, and others) | Engine (red team, court), unprompted | Bridges written from memory of Level 1 |
 | 2026-11-05 | Round 8 draft said digital credit dollars "never leave Set 1". True for trades, but it hid the creation channel (bank loans against Bitcoin, bank buyers). Rebuilt as three meters: dollars, ownership and risk, market value | Engine (blind red team), unprompted, before publication | Case 2 shape repeated: a true trade-level headline hiding the creation channel |
+| 2026-11-12 | The base-rate checker removed the 1974 Saudi "outside the auctions" detail as unsupported. The Round 10 blind exam found the 1979 GAO audit that documents it, and the row was restored | Engine (blind exam), unprompted | One checker's search budget. A second independent search caught it |
+| 2026-11-12 | The Round 10 court printed 46% for the alignment chain H4-02. The hole file computes 42% | Engine (orchestrator cross-check during cold-read fixes), unprompted | A court figure not recomputed from the hole file. Rule: chapter figures are copied from tools/check_chain.py output |
 
 Owner test bank (held-out questions with known expert answers). The Scorekeeper runs one per round as a blind exam (section 6.3) and grades it pass, partial or fail. Add a case every time the owner catches the engine out. Keys for the held-out tests live in `engine/test_bank_keys.md`, which examinees never open. Cases 1 and 2 are public training cases, so their keys stay here.
 | Case | Question | An expert answer must contain | Result |
