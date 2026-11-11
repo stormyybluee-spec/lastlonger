@@ -57,6 +57,8 @@ Checkability classes: P = in the public record now. F = not stated anywhere, but
 - At least eight passages assign agency to a religious or ethnic group. Counted, not repeated. Where a real institution sits underneath (a lobby with filings, a company with a share register, a state with a budget), the claim can be rewritten around that institution and checked.
 
 ## F. Proposed Round 9 (Standard tier with Unseen mode, waits for the owner's go)
+Re-ranked 2026-11-11 by the two-stack rule (PLAN 1.1). Intelligence holes are chosen for bearing on the live question, will energy replace money: holes 1, 3 and 4 below, in that order. Hole 2 (B1, do the index managers control companies) is a missing fundamental and is proposed as the first Level 3 Rulebook chapter instead. Hole 5 stays as a test of the coordination rules.
+
 Five holes, chosen for checkability and for how much they bear on the owner's thesis:
 1. C2 with C1: where do Gulf oil dollars go now? (the worked example)
 2. B1: do the index managers control companies, or hold them?

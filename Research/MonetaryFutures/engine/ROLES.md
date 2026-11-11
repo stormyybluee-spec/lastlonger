@@ -11,7 +11,8 @@ Reusable prompt cards for every agent in the architecture in PLAN.md section 6. 
 - From version 5.0: your final reply is at most 150 words plus your file path. This overrides any longer limit in a card below. Everything else lives in your file.
 - From version 5.0: read the registries before you search (PLAN 8.3 data, 8.4 footprints, engine/SOURCES.md, engine/BASE_RATES.md). Search only for what is missing or stale. Stop at your budget and write what you have.
 - From version 5.0: an actor is a named legal entity or office with a verb it can perform. A bloc (MIC, FIC, TIC) is a label, not an actor. A people or a faith is never an actor. If a source blames a religious or ethnic group, count the passage, do not repeat it, and rewrite the claim around named institutions with documents or drop it.
-- Model tier per role (PLAN 6.4b): top for the framer, Pathfinder, red team and Judge. Strong for topic lanes and the Ledger lane. Mid for the Data and Sweep lanes, verifier, Editor, propagator and scorekeeper. Fast for cold readers once calibrated. The orchestrator sets it when it starts you.
+- Model tier per role (PLAN 6.4b). Normal setup, with the owner's session on the strong tier: strong for the framer, Pathfinder, red team, Judge, topic lanes and the Ledger lane. Mid for the Data and Sweep lanes, verifier, Editor, propagator and scorekeeper. Fast for cold readers once calibrated. Only when a top-tier session is funded do the framer, Pathfinder, red team and Judge move up. The orchestrator sets the tier when it starts you.
+- Say which stack your output feeds (PLAN 1.1): Fundamentals (Rulebook and Plan) or Intelligence (Desk and Landscape, the energy question). Inferred claims go to Intelligence.
 
 ---
 

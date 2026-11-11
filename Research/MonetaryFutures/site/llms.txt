@@ -1,0 +1,78 @@
+# Monetary Futures
+
+> A working knowledge base on how money works and where it is heading, built by a multi-agent research desk. Two stacks: Fundamentals (a four-level Rulebook and the method) and Intelligence (one live question: will energy replace money?). Every claim carries an evidence tier and a date. General education and research, not financial advice. Plan version 5.1, built 2026-11-11.
+
+Read https://neetmonetary.netlify.app/ai/brief.md first. It says how far to trust each part and how to build on it. Fundamentals are stable reference. Intelligence findings are graded hypotheses that age: check the as-of dates and fetch current data.
+
+## Start here
+
+- [How to use this site (the brief)](https://neetmonetary.netlify.app/ai/brief.md)
+- [The method: evidence ladder, seven moves, reasoning about the undisclosed](https://neetmonetary.netlify.app/ai/method.md)
+- [Intelligence: the report, scenario odds and every thesis card](https://neetmonetary.netlify.app/ai/intelligence.md)
+
+## Fundamentals: Rulebook Level 1, Foundations
+
+- [What money really is](https://neetmonetary.netlify.app/ai/rulebook/rb-01.md): Money is not a thing you hold. It is a promise that a whole society agrees to keep track of.
+- [Commodity money and the gold standard](https://neetmonetary.netlify.app/ai/rulebook/rb-02.md): Tying money to a metal makes it honest. It also makes it stiff, and stiff money breaks people who owe it.
+- [War, Bretton Woods and the dollar's crown](https://neetmonetary.netlify.app/ai/rulebook/rb-03.md): Two world wars moved the world's gold to America, and in 1944 the dollar became the hub of every other currency.
+- [How the world gets its dollars](https://neetmonetary.netlify.app/ai/rulebook/rb-04.md): Americans buy more than they sell, foreigners earn the difference in dollars, and those dollars come home as loans to the US government.
+- [1971, oil and the petrodollar](https://neetmonetary.netlify.app/ai/rulebook/rb-05.md): On a Sunday night in August 1971, the last thread between the dollar and gold was cut, and oil quietly took gold's place in the loop.
+- [How money is born today](https://neetmonetary.netlify.app/ai/rulebook/rb-06.md): Most new money is not printed by the government. It is typed into existence by a bank when it makes a loan.
+- [The musical chairs question](https://neetmonetary.netlify.app/ai/rulebook/rb-07.md): If all money is borrowed and interest is owed on top, can everyone ever pay? The honest answer is yes in a quiet world, and not always in a real one.
+- [The seasons of money](https://neetmonetary.netlify.app/ai/rulebook/rb-08.md): Money has weather. In some decades it melts, in others it hardens, and the same choice can make you rich in one season and poor in the next.
+- [The deflation debate: would anyone spend a money that grows?](https://neetmonetary.netlify.app/ai/rulebook/rb-defl.md): If a dollar buys more tomorrow, why spend it today? The oldest argument against hard money, why it never ends, and what both sides miss.
+- [Why empires and their currencies fall](https://neetmonetary.netlify.app/ai/rulebook/rb-09.md): No money has ruled forever. The ones that fell usually fell the same way: war, debt and a slow watering down of the promise.
+- [The country leaderboard: deep markets and the game nations play](https://neetmonetary.netlify.app/ai/rulebook/rb-leader.md): Why surplus nations park their savings in America, why climbing the leaderboard is so hard, and what it really took for each number one to get there and to fall.
+- [The view from a smaller currency: Malaysia, savings and where money lands first](https://neetmonetary.netlify.app/ai/rulebook/rb-em.md): Why a calm local price tag can hide a shrinking passport, how compulsory savings fund the home government, why talent and capital crowd into a few hubs, and whether Singapore was luck, strategy or someone else's plan.
+- [The yardstick problem](https://neetmonetary.netlify.app/ai/rulebook/rb-10.md): We measure prices with money, but money itself keeps changing size. It is like measuring a room with a rubber ruler.
+- [The new board game](https://neetmonetary.netlify.app/ai/rulebook/rb-11.md): In Monopoly the bank hands every player $1,500. In real life nobody does. So how does a new player get onto the board?
+- [Today's board: old anchors, new rails](https://neetmonetary.netlify.app/ai/rulebook/rb-12.md): The money in your app may look new, but under it sit the oldest anchors in the system: government bonds, bank credit and gold.
+- [Eye-openers: what most people never notice](https://neetmonetary.netlify.app/ai/rulebook/rb-13.md): Sixteen quiet facts about money that, once seen, cannot be unseen.
+- [When markets fall: buckets, collateral and rotation](https://neetmonetary.netlify.app/ai/rulebook/rb-buckets.md): A 20% crash does not hand 20% to someone else. But money really does slosh between buckets, and the timing of when you enter a bucket is most of the game.
+- [Nation Inc.: taxes, interest and the hubs](https://neetmonetary.netlify.app/ai/rulebook/rb-nation.md): Is tax a scam? Why did the Torah and the Quran forbid interest? Is a tax-free hub like the UAE cheating? Read the world's countries as companies competing on one leaderboard and the answers fall into place.
+- [The titled world: why abundance runs on credit, and who keeps the balance](https://neetmonetary.netlify.app/ai/rulebook/rb-titled.md): Divide the world's wealth by everyone and it looks like plenty. Here is why most of that plenty is a price set on future credit, why the base layer was titled long ago, and what role each big country plays in keeping a crowded system from tipping over.
+- [Crypto: Set 2 money, dissected](https://neetmonetary.netlify.app/ai/rulebook/rb-crypto.md): Bitcoin, stablecoins and twenty million other tokens, sorted into three families, tested against the jobs of money, and taken apart with six questions you can use on any coin you ever hear about.
+- [The Rulebook](https://neetmonetary.netlify.app/ai/rulebook/rb-14.md): What each generation learned the hard way, written down so the next one does not have to.
+
+## Fundamentals: Rulebook Level 2, The machinery
+
+- [Bonds: a ticket you can resell, and where it touches your life](https://neetmonetary.netlify.app/ai/rulebook/rb-bonds.md): A bond is a ticket you can resell: you pay RM100, it pays you RM4 a year, and you get RM100 back at the end. This chapter builds everything from that one ticket, then shows where bonds touch your own life, how to check your own exposure once a month, and how to weigh scary bond headlines before you feel them.
+- [Who really creates money: banks, the Fed and the Treasury](https://neetmonetary.netlify.app/ai/rulebook/rb-moneymake.md): Bank loans are one door, the busiest one in normal years. Level 2 adds the others: the Fed, the Treasury, the sponges that soak money up, the shredders that destroy it, the brakes on each printer, and how other countries do it.
+- [The world's balance sheet: what it owns, what it owes, and how countries are built](https://neetmonetary.netlify.app/ai/rulebook/rb-worldbs.md): You may have heard that the world owes $300 trillion, or $500 trillion, or more. Each can be true, depending on what you count, and the world owes all of it to itself. This chapter shows what the world really owns, why its debts cancel but still matter, how the numbers grew, and how each big country is built.
+- [The money clubs: who writes the rules, who can really print, and the game the world plays](https://neetmonetary.netlify.app/ai/rulebook/rb-clubs.md): The G7, G10 and G20 are clubs, not governments. This chapter shows what they can and cannot do, which countries can really print money and which cannot, why Malaysia sits outside every club but inside the game, and five questions that turn the world into a game board.
+
+## Fundamentals: Rulebook Level 3, Deeper still
+
+- Empty for now.
+
+## Fundamentals: Rulebook Level 4, Futures and debates
+
+- [Digital credit, dissected: Saylor's 12% and money moving between baskets](https://neetmonetary.netlify.app/ai/rulebook/rb-strc.md): Michael Saylor pitches Bitcoin as digital capital, STRC as digital credit paying 12%, and a future dollar token paying 8%. This chapter takes the pitch apart claim by claim, follows the money step by step, and asks what really moves when money moves between baskets.
+
+## Fundamentals: reference
+
+- [Rulebook index, every chapter with a one-line summary](https://neetmonetary.netlify.app/ai/rulebook/index.md)
+- [The rules, the mistakes and common questions](https://neetmonetary.netlify.app/ai/rulebook/rules.md)
+- [Glossary](https://neetmonetary.netlify.app/ai/rulebook/glossary.md)
+
+## Intelligence: the Landscape (findings as one story)
+
+- [The question and how we answered it](https://neetmonetary.netlify.app/ai/landscape/ls-01.md): A hunch about Washington, Tokyo and Paris became a test of how to find intent that nobody announces.
+- [The pressure: the debt treadmill](https://neetmonetary.netlify.app/ai/landscape/ls-02.md): The US debt grows on its own, mainly because the government spends more than it taxes even before paying interest.
+- [The response: how Washington is managing it](https://neetmonetary.netlify.app/ai/landscape/ls-03.md): They are not shrinking the debt. They are managing who must buy it.
+- [The players and what they want](https://neetmonetary.netlify.app/ai/landscape/ls-04.md): Intent and outcome are different things. Most players want more than they can get, and the gap shows where the real limits are.
+- [The rails: Set 1 absorbs Set 2](https://neetmonetary.netlify.app/ai/landscape/ls-05.md): New digital money is being built on top of the old system, by law. It is an acquisition, not a merger.
+- [The anchors: gold and Bitcoin](https://neetmonetary.netlify.app/ai/landscape/ls-06.md): Gold is gaining a job between nations. It is not coming back as the thing behind your dollars, and the math of revaluing it is smaller than the stories.
+- [Energy: gold's old job](https://neetmonetary.netlify.app/ai/landscape/ls-07.md): Energy will not replace the dollar you spend. It is replacing the job gold used to do: the scarce physical thing that limits what any money can buy.
+- [Labor, robots and a Universal High Income](https://neetmonetary.netlify.app/ai/landscape/ls-08.md): Three tiers behave like two classes. A UHI is limited by rent and the tax base, not by robots, and ownership is what moves people across the line.
+- [The next generation](https://neetmonetary.netlify.app/ai/landscape/ls-09.md): The ladder was not pulled up. One rung broke, one got cheap but lottery-like, and ownership decides the climb.
+- [The rivals and the shocks](https://neetmonetary.netlify.app/ai/landscape/ls-10.md): The rivals' strongest card is hardware, not currency. The shocks that matter in 2026 came from oil, the yen and Paris.
+- [Connecting the dots: the interconnection map](https://neetmonetary.netlify.app/ai/landscape/ls-11.md): Information arbitrage: the most useful insights sit between topics, where a cause in one area quietly drives an effect in another.
+- [Epilogue: the most probable path from here](https://neetmonetary.netlify.app/ai/landscape/ls-12.md): Not a prophecy. The single most likely story the evidence supports, the dates where it could fork, and what it means for you.
+- [If a giant falls: where the money goes](https://neetmonetary.netlify.app/ai/landscape/ls-13.md): The owner asked who takes over if the US declines, whether Europe has to fall, and where its money would go. The short answers: nobody whole, no, and mostly West.
+
+## Optional
+
+- [Claims ledger with sources (JSON)](https://neetmonetary.netlify.app/claims.json)
+- [The full plan](https://neetmonetary.netlify.app/PLAN.md)
+- [Everything in one file](https://neetmonetary.netlify.app/llms-full.txt)

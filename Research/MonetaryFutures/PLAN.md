@@ -1,6 +1,6 @@
 # Monetary Futures Intelligence Core: Master Plan
 
-Version 5.0. Last updated 2026-11-11. Version 5.0 (section 2C, 4.7, 6 and 8.4) adds Unseen mode, a graded way to reason past the point where documents stop, and a cost router that gives each role a model tier, moves checks into scripts and catches errors earlier. Rounds 6 to 8 added Rulebook Levels 2 and 4. Earlier status: Rounds 0 to 5 complete, plus a decoded-intent segment, a what-if lane and 23 Rulebook chapters. Version 4.0 rebuilt the backend after the owner's second test (Case 2, section 2B): the 7 moves are now a full intel flow with sourcing steps and pass tests (section 4.5), scored against known cases (section 4.6). Version 4.1 rebuilds the agent architecture around that flow (section 6): a cold framer, a librarian, standing Data, Ledger and Sweep lanes, a verifier, a blind red team, a completeness auditor, a propagator, a scorekeeper and tiers. Role prompts are in engine/ROLES.md. Run the flow on every question, above all on questions nobody on the desk knows the answer to.
+Version 5.1. Last updated 2026-11-11. Version 5.1 adds the two-stack rule (section 1.1), the AI reading pack that lets any outside AI read and build on the site (section 8.5), and model tiers set for the owner's usual model (section 6.4b). Version 5.0 (section 2C, 4.7, 6 and 8.4) added Unseen mode, a graded way to reason past the point where documents stop, and a cost router that gives each role a model tier, moves checks into scripts and catches errors earlier. Rounds 6 to 8 added Rulebook Levels 2 and 4. Earlier status: Rounds 0 to 5 complete, plus a decoded-intent segment, a what-if lane and 23 Rulebook chapters. Version 4.0 rebuilt the backend after the owner's second test (Case 2, section 2B): the 7 moves are now a full intel flow with sourcing steps and pass tests (section 4.5), scored against known cases (section 4.6). Version 4.1 rebuilds the agent architecture around that flow (section 6): a cold framer, a librarian, standing Data, Ledger and Sweep lanes, a verifier, a blind red team, a completeness auditor, a propagator, a scorekeeper and tiers. Role prompts are in engine/ROLES.md. Run the flow on every question, above all on questions nobody on the desk knows the answer to.
 Live site: https://claude.ai/artifact/2QJg4KuARQPAhm6FRbKmLq (header: Intelligence (sub-pages Desk and Landscape), Rulebook, Plan). Private until the owner shares it. The Plan page sits behind a password gate (ask the owner). The gate is a courtesy screen, not security: PLAN.md is also a published file of the artifact.
 
 This file is the backend. It is written so that any future AI (or human) can pick the project up cold and continue without the original conversation. Do not over-summarize when editing it. Keep the origin case (section 2) and the owner's thesis (section 3) intact: they define what "good" looks like.
@@ -55,6 +55,8 @@ This file is the backend. It is written so that any future AI (or human) can pic
 | `tools/xref.py` | Finds where the desk already says something (ledger, pages, data): `python3 -I tools/xref.py . "<regex>"` |
 | `tools/score_prereg.py` | Lists due predictions, records outcomes and reports Brier scores: `python3 -I tools/score_prereg.py .` |
 | `tools/lint_chapter.py` | Reading-level lint for a reader chapter, run before any cold reader: `python3 -I tools/lint_chapter.py site/rulebook.json <chapter_id>` |
+| `tools/build_ai_pack.py` | Builds the plain-text pack for outside AI assistants into site/ (llms.txt, ai/): `python3 -I tools/build_ai_pack.py . --date <today>`. Run after build_site.py (section 8.5) |
+| `engine/AI_BRIEF.md` | The hand-written guide that tells an outside AI how to use the site. Source of ai/brief.md |
 | `tools/check_chain.py` | Checks a rabbit-hole file against the Unseen mode rules (section 4.7): `python3 -I tools/check_chain.py roundN/holes/*.json`. `--template` prints an empty hole |
 | `tools/export_chapters.py`, `tools/build_ledger.py`, `tools/build_site.py` | Export chapters for review, rebuild the claims ledger, rebuild the site data |
 | `engine/BASE_RATES.md` | Reference classes: things once secret and later documented, used as priors in Unseen mode. Seed list, to verify before use |
@@ -73,6 +75,18 @@ The live question that started the project:
 > Will energy (watts, tonnage, compute) replace the value role that gold, then bonds, then fiat credit played? How, why, on what timeline, and what does that mean for governments, businesses, and people living on a Universal High Income (UHI)?
 
 The project runs repeatedly as policy changes. It is meant to become a timeline-captured intelligence source the owner can host for friends and family to compare and stay updated.
+
+### 1.1 Two stacks, kept apart (owner's rule, 2026-11-11)
+The site carries two separate jobs. Do not mix them.
+| Stack | Where | What it is | How far to trust it | What goes in |
+|---|---|---|---|---|
+| Fundamentals | Rulebook (Levels 1 to 4) and this Plan | The rule-based base: how money works, taught in levels, and the method the desk uses | Stable reference. Checked by a verifier, a red team and test readers | Documented mechanisms, definitions and the method. Level 4 may lay out a debate, with each reading labelled |
+| Intelligence | Desk and Landscape | The honed research direction, set by one live question: will energy replace money? | Graded hypotheses with dates. They age | Findings, odds, tests, and anything inferred in Unseen mode (section 4.7) |
+Rules that follow:
+- A new round says which stack it feeds before it starts.
+- An inferred claim (grades I1 to I4) is published in the Intelligence stack. The Rulebook teaches what is documented.
+- An Intelligence topic is chosen for how much it bears on the live question. A topic that is really a missing fundamental becomes a Rulebook chapter instead.
+- The owner cites the site to other AI assistants (section 8.5). Both stacks are published as plain text for that purpose, each labelled with its stack, so an outside AI does not quote a hypothesis as a rule.
 
 ---
 
@@ -433,7 +447,7 @@ Most "they are all aligned" claims are level 0 or 1. The evidence required rises
 
 **Words.** State likelihood and confidence separately. Likelihood: almost certain (over 90%), likely (65 to 90), about even (40 to 65), unlikely (15 to 40), remote (under 15). Confidence is about the evidence: high (documents and footprints), medium (footprints or structure), low (pattern or conjecture).
 
-**Publishing.** An inferred claim always shows its grade, the marks found and missing, the rival readings and the reveal date. Level 1 of the Rulebook carries no inferred claim as fact. The Desk may carry them under an "Inferred" label.
+**Publishing.** An inferred claim always shows its grade, the marks found and missing, the rival readings and the reveal date. Inferred claims belong to the Intelligence stack (section 1.1): the Desk and the Landscape carry them under an "Inferred" label. The Rulebook teaches what is documented. A Level 4 chapter may set out graded readings of a debate, each labelled, as Level 4 chapter 1 does.
 
 **Inference scorecard.** At each reveal date score the link right or wrong, by grade. Brier score per grade, kept with section 4.6. This is how the desk learns how good its guesses are, and how the caps get reset.
 
@@ -610,24 +624,26 @@ Measured on 2026-11-11 from the session log: 66 agents used 14.8 million tokens 
 | Round 7 | 109k | 270k and 255k | 205k | 264k | 454k | cold readers not captured | 1,557k | 29% |
 | Round 8 | 110k | 227k and 241k | 178k | 218k | 385k | 197k (two cold reads) | 1,556k | 25% |
 
-Four tiers. The weights come from the vendor's public price list as cached 2026-11-03 (dollars per million tokens in and out: 8 and 40, 4 and 20, 2 and 10, 0.10 and 0.50). On a subscription the weights show up as how fast the usage limit is spent, and may differ.
-| Tier | Weight | Roles |
-|---|---|---|
-| Top | 1.0 | Orchestrator, cold framer and pre-mortem, Pathfinder, red team, Judge and completeness auditor (court docket) |
-| Strong | 0.5 | Topic lanes, Ledger lane |
-| Mid | 0.25 | Data lane, Sweep lane, verifier, Editor, propagator, scorekeeper |
-| Fast | about 0.01 | Cold readers and extraction jobs, after one calibration run reproduces the known Round 7 and Round 8 scores. Until then they run on the mid tier |
-| Script | 0 | Librarian lookup, lint, chain check, style check, ledger build, export, word count |
-The orchestrator passes the tier through the agent tool's model setting. Left unset, an agent inherits the orchestrator's tier, which is the most expensive choice.
+Four model tiers. The weights come from the vendor's public price list as cached 2026-11-03 (dollars per million tokens in and out: 8 and 40 for the top tier, 4 and 20 for the strong tier, 2 and 10 for the mid tier, 0.10 and 0.50 for the fast tier). On a subscription the weights show up as how fast the usage limit is spent, and may differ.
 
-Budgets (targets to test in Round 9, not promises):
-| Tier of round | Token target | Was | Wall-clock target |
+The owner's usual session runs on the strong tier (owner's note, 2026-11-11). The top tier was used once, to write version 5.0, and will be rare until funding allows. So the strong tier is the normal ceiling and the unit of cost here.
+| Kind of role | Roles | Normal tier | If a top-tier session is funded |
 |---|---|---|---|
-| Quick | under 60k, orchestrator only | not measured | minutes |
-| Standard | about 1,520k raw, about 815k in top-tier units (a model: framer 110k, two lanes 460k, data 100k, verifier 150k, red team 180k, court docket 200k, Editor 120k, cold readers 200k) | 1,556k to 1,686k raw, 778k to 843k in top-tier units as run on the strong tier | under 60 minutes of agent time |
-| Standard with Unseen mode | about 1,770k raw, about 990k in top-tier units (a model: framer 110k, two lanes 460k, data and footprints 200k, Pathfinder 150k, verifier 150k, red team 180k, court docket 200k, Editor 120k, cold readers 200k) | no earlier run | under 75 minutes |
-| Full | set in the round brief | Round 5: about 1,680k for five lanes and the court | set in the brief |
-How to read the model: the Round 8 pattern costs 1,556k units if every agent runs on the top tier and 778k if every agent runs on the strong tier, which is how Round 8 actually ran. Version 5.0 with Unseen mode lands near 990k units: about a third less than the old pattern on the top tier, about a quarter more than Round 8, in exchange for the top tier on framing, lateral inference, attack and judging. The owner can ask for an all-strong run (about 670k units) at any time.
+| Judgment | Orchestrator, cold framer and pre-mortem, Pathfinder, red team, Judge and completeness auditor | Strong (the session's own model) | Top |
+| Research | Topic lanes, Ledger lane | Strong | Strong |
+| Checks and writing-up | Data lane, Sweep lane, verifier, Editor, propagator, scorekeeper | Mid | Mid |
+| Simulation and extraction | Cold readers, extraction jobs | Fast, after one calibration run reproduces the known Round 7 and Round 8 scores. Until then mid | Fast |
+| Mechanical | Librarian lookup, lint, chain check, style check, ledger build, export, word count, the AI pack | Script, no tokens | Script |
+Weights in strong-tier units: top 2.0, strong 1.0, mid 0.5, fast about 0.025. The orchestrator passes the tier through the agent tool's model setting. Left unset, an agent inherits the orchestrator's tier. The saving in the normal setup comes from moving checks to the mid tier, cold readers to the fast tier, mechanical work to scripts, and from a smaller court.
+
+Budgets (targets to test in Round 9, not promises). All figures are models built from the measured rounds above.
+| Tier of round | Raw tokens | In strong-tier units, normal setup | Was (every agent on the strong tier) | Wall-clock target |
+|---|---|---|---|---|
+| Quick | under 60k, orchestrator only | under 60k | not measured | minutes |
+| Standard | about 1,520k (framer 110k, two lanes 460k, data 100k, verifier 150k, red team 180k, court docket 200k, Editor 120k, cold readers 200k) | about 1,140k | 1,556k to 1,686k | under 60 minutes of agent time |
+| Standard with Unseen mode | about 1,770k (as above, plus data and footprints 200k in place of 100k, and the Pathfinder 150k) | about 1,340k | no earlier run | under 75 minutes |
+| Full | set in the round brief | set in the brief | Round 5: about 1,680k for five lanes and the court | set in the brief |
+How to read it: in the normal setup a Standard round should cost about a quarter less than Round 8 did, and a Standard round with Unseen mode about a seventh less, even though it adds the Pathfinder. Until the cold readers are calibrated on the fast tier, add about 95k units. With the judgment roles on the top tier the same rounds cost about 1,630k and 1,980k units.
 
 Cost rules:
 - Scripts before agents. Anything mechanical is a script: lookups, lint, style, word counts, chain checks, ledger builds. `tools/lint_chapter.py` flagged 9 of the 40 fixes the Round 8 cold readers later asked for (all vocabulary) at no token cost. It cannot see a concept failure, so cold readers stay.
@@ -662,7 +678,7 @@ Cost rules:
 8. Court docket with the completeness auditor: rulings, a list of changed rulings, and in Unseen mode the rival-readings table and coordination level for each inferred conclusion.
 9. Editor writes the edit file and page data from the rulings. Reloop on failed pass tests and decisive gaps (at most two).
 10. Cold readers on reader chapters (changed text only on a retest). Pass mark 8 of 10 for both readers.
-11. Publish: rebuild the ledger and the site, update REPORT.md and section 10. The propagator writes edit files for every page that still carries a changed view (Level 1 edits wait for the owner).
+11. Publish: rebuild the ledger and the site, then the AI reading pack (`tools/build_ai_pack.py`, section 8.5), update REPORT.md and section 10. The propagator writes edit files for every page that still carries a changed view (Level 1 edits wait for the owner).
 12. Scorekeeper: score due predictions and due inferred links, update the patch ledger and section 4.6, record the cost meter, run one blind exam.
 
 ### 6.7 Pipeline history: older versions (read only, not executed)
@@ -850,6 +866,34 @@ Used by Unseen mode (section 4.7). Not yet fetch-tested from this environment: t
 
 ---
 
+## 8.5 The AI reading pack: letting any outside AI read and build on the site (version 5.1, 2026-11-11)
+Why: the owner cites this site when asking other AI assistants (Gemini, Grok, ChatGPT and others) new questions, so that their answers start from this stack. Measured on 2026-11-11 against the public copy: a reader that does not run JavaScript saw about 3,400 words, the Desk summary only. The Rulebook and the Landscape were invisible to it, because the page builds them in the browser. The pack fixes that.
+
+What it is: plain-text copies of everything, built by `python3 -I tools/build_ai_pack.py . --base <public site address> --date <today>` after `tools/build_site.py`. 51 files, about 114,000 words.
+| File | Purpose |
+|---|---|
+| `llms.txt` | The entry point, following the llms.txt convention: what the site is, the two stacks, and a link with a one-line summary for every chapter |
+| `ai/brief.md` | How an outside AI should use the site: pick the relevant chapters, use the house vocabulary, run the method, separate fact from inference, check dates, push back, cite. Hand-written source: `engine/AI_BRIEF.md` |
+| `ai/method.md` | Section 4 of this plan: the evidence ladder, the seven moves, Unseen mode |
+| `ai/rulebook/<id>.md` | One small file per Rulebook chapter, each labelled Fundamentals, with its level, id and web address. Plus `index.md`, `rules.md`, `glossary.md` |
+| `ai/intelligence.md` | The report, scenario odds and every thesis card, labelled Intelligence with a warning to check dates |
+| `ai/landscape/<id>.md` | One file per Landscape chapter |
+| `llms-full.txt` | Everything in one file, for tools that want a single document |
+| `ai/index.html`, `ai/manifest.json`, `robots.txt`, `sitemap.xml` | A plain HTML index, a machine-readable file list, and crawler files |
+The page itself carries a block for readers without JavaScript and a footer line, both pointing to `llms.txt`.
+
+Rules:
+- Rebuild the pack on every publish (round step 11), so the plain text never lags the page.
+- One chapter, one file. An outside AI should be able to fetch two or three chapters, not the whole site. Keep `ai/brief.md` under about 1,500 words.
+- Every file names its stack and a build date. Intelligence files tell the reader to check as-of dates and fetch current data.
+- The brief asks the outside AI to disagree where its evidence differs, and to say which page. The owner brings those disagreements back here, and they enter the correction ledger (4.6) like any other.
+- The public address is set with `--base`. Default: the owner's public copy at https://neetmonetary.netlify.app
+- Hosting: the published artifact is private. The public copy is made by downloading the artifact as a zip, which includes these files, and dropping it on a static host. `--dist <folder>` also writes a complete deployable copy and a zip.
+- Everything in the public copy is readable by anyone, including PLAN.md and claims.json. The password on the Plan page is a courtesy screen, not protection. The proposal box and the waiting list need the artifact host and do nothing on the public copy.
+- Not tested: how each outside assistant fetches pages. Some cannot open links or stop reading after a limit. The fallback is to attach `ai/brief.md` and the one or two chapter files that matter.
+
+---
+
 ## 9. Continuous mode
 - Every round is versioned in git on branch `claude/agent-financial-futures-framework-5s5jlr`. Each refresh is a readable diff.
 - Refresh triggers: FOMC meetings, Treasury refunding (quarterly), NY Fed FX reports, major laws, the owner's proposals.
@@ -970,4 +1014,11 @@ New files: `tools/check_chain.py` (tested on a passing chain and two failing one
 Measured baseline: 66 agents, 14.8 million tokens over Rounds 0 to 8. A Standard round cost 1.56 to 1.69 million tokens, about a quarter of it in the court.
 Not done, on purpose: no research was run on the specimen's claims. Nothing in this upgrade is a finding about the world. Not built yet: the facts cache with refresh dates, the "Inferred" label on the site, the cold-reader calibration run on the fast tier.
 Waiting for the owner's go: Round 9, the first Unseen mode run, on the five most checkable claims in round9/CLAIMS_R9.md (Standard tier with Unseen mode, budget in section 6.4b).
+
+### Version 5.1 (2026-11-11): two stacks, the AI reading pack, model tiers for the owner's usual model
+Owner's notes: the top model was a one-off for writing the plan and the usual session is on the strong tier. The site is cited to other AI assistants from a public copy, so it must be structured to lift their answers. The Rulebook and the Plan are the rule-based fundamentals, and Intelligence is a separate job honed on "will energy replace money?".
+What changed: section 1.1 (two stacks), section 6.4b (tiers and budgets restated in strong-tier units, top tier optional), section 8.5 and `tools/build_ai_pack.py` (51 plain-text files, an llms.txt entry point, a brief for outside AIs, a no-JavaScript block on the page), section 4.7 (inferred claims go to the Intelligence stack).
+Checked: the public copy showed a no-JavaScript reader about 3,400 words before the pack. The pack carries about 114,000. The page still renders with no errors on desktop and phone, and with JavaScript off it shows the pointer to the pack.
+Review of version 5.0 against these notes: Unseen mode stands, and its output is now tied to the Intelligence stack. The Round 9 proposal is re-ranked by bearing on the energy question: Gulf oil dollars (C2 with C1) first, the three-kinds-of-country lens (B3) second, who funds the Treasury market (A4 to A6) third. "Do the index managers control companies?" (B1) is a missing fundamental, so it is proposed as the first Level 3 Rulebook chapter, not as Intelligence. The coordination claims (C3, C4) are kept as tests of the method.
+Not tested: how Gemini, Grok or ChatGPT actually fetch the pack.
 
