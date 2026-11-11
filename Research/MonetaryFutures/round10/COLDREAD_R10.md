@@ -227,3 +227,37 @@ New: The chance that the lens adds real predictive power is about 1% on this evi
 Author to confirm that this reading of the two numbers is intended.
 
 Expected effect: fixes 1 to 3 should lift (d) and (e) for Reader 1 to about 8 and overall to about 8. Reader 2 stays at 8 or better.
+
+
+## Third retest, Reader 1, on DRAFT_R10e.md
+
+Examiner date: 2026-11-11. Source: DRAFT_R10e.md only. Main path only: the GO DEEPER BOX ([26] to [26.2]) and every "A:" line skipped. Reader 1: Malaysian school leaver (ESL) with the Rulebook basics.
+
+| Test item | Reader 1 |
+|---|---|
+| (a) Gulf oil dollars now, claim parts | 8 |
+| (b) 1974 arrangement and what remains | 9 |
+| (c) Who funds the Treasury market | 8 |
+| (d) "Three kinds of country" test | 8 |
+| (e) Coordination level and why open | 7 |
+| (f) Grades, percentages, reveal dates | 8 |
+| Overall | 8 / 10, pass (borderline) |
+
+Better than R10d: [14] now explains why 46% and 1% fit together, [0] bullet 5 names the staged-conflict plan, and [24] row 1 and [5] read cleanly. (b) is strongest.
+
+### Remaining confusions
+- [0] bullet 5 and [17] row 4: 42% is given for levels 0 and 1 and 1% for the staged plan, but level 2 gets no number, so the reader cannot see where the other ~57% sits.
+- [24] row 2: the confirm column still has two measures ("China takes under half of Gulf crude" and "Gulf states stay under half of China's crude imports"). The kill column uses only the first, so the second clause has no matching kill and the result in between is unclear.
+- [14]: "the tie will probably hold" sits next to 46%, which the grade key calls "about even", not "likely".
+- [4] row 3 and [0]: "as at Norway's oil fund" is not explained for a reader who does not know that fund.
+- [8] vs [9] row 5: "more than double the money supply" against 0.63 times is settled only in words ("mixes up debt and money"), with no money supply figure on the main path.
+
+### Fixes
+
+Block [24], row 2.
+Old: China takes under half of Gulf crude, and Gulf states stay under half of China's crude imports
+New: China takes under half of Gulf crude in every month
+
+Block [0], bullet 5.
+Old: A quiet deal that can be denied (level 2) is not shown, but public data could miss a small one, so the desk cannot call it ruled out.
+New: A quiet deal that can be denied (level 2) is not shown and gets no separate percent. Public data could miss a small one, so the desk cannot call it ruled out, and the rest of the chance is spread over it and other readings.

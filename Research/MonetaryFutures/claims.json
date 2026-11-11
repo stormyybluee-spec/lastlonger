@@ -1,13 +1,13 @@
 {
  "built": "2026-11-11",
- "count": 1627,
+ "count": 1645,
  "by_status": {
   "confirmed": 927,
   "plausible": 431,
   "speculative": 82,
   "unverified": 3,
   "refuted": 15,
-  "other": 169
+  "other": 187
  },
  "claims": [
   {
@@ -2374,6 +2374,204 @@
    "as_of": "2026-10-21",
    "falsifier": "2y falls below EFFR",
    "file": "round1/lanes/L7-quant.md"
+  },
+  {
+   "id": "R10A-01",
+   "claim": "Saudi Arabia held 141.2 and UAE 116.1 in Treasuries, Aug 2026",
+   "tier": "T0",
+   "status": "fetched, label checked",
+   "source": "https://ticdata.treasury.gov/resource-center/data-chart-center/tic/Documents/slt_table5.txt",
+   "source_date": "2026-11-12",
+   "as_of": "2026-08",
+   "falsifier": "A later revision of the file",
+   "file": "round10/lanes/R10A-data-footprints.md"
+  },
+  {
+   "id": "R10A-02",
+   "claim": "Saudi plus UAE Treasuries 257.3 in Aug 2026 against 175.9 in Jan 2023 (current vintage)",
+   "tier": "T0",
+   "status": "computed python3 -I",
+   "source": "mfhhis01.txt and slt_table3.txt",
+   "source_date": "2026-11-12",
+   "as_of": "2026-08",
+   "falsifier": "Revision of history",
+   "file": "round10/lanes/R10A-data-footprints.md"
+  },
+  {
+   "id": "R10A-03",
+   "claim": "Jan 2023 UK was revised from 668.3 to 598.0 and total from 7402.5 to 7305.1",
+   "tier": "T0",
+   "status": "fetched both files",
+   "source": "https://ticdata.treasury.gov/Publish/mfh.txt and slt_table3.txt",
+   "source_date": "2026-11-12",
+   "as_of": "2023-01",
+   "falsifier": "None, two files disagree on their face",
+   "file": "round10/lanes/R10A-data-footprints.md"
+  },
+  {
+   "id": "R10A-04",
+   "claim": "Saudi Treasuries peaked at 184.4 in Feb 2020 and are 23% below that",
+   "tier": "T0",
+   "status": "computed",
+   "source": "slt_table3.txt",
+   "source_date": "2026-11-12",
+   "as_of": "2026-08",
+   "falsifier": "Revision",
+   "file": "round10/lanes/R10A-data-footprints.md"
+  },
+  {
+   "id": "R10A-05",
+   "claim": "Four custody centres 2411.2 against Japan plus China 1659.0, Aug 2026",
+   "tier": "T0",
+   "status": "computed",
+   "source": "slt_table5.txt",
+   "source_date": "2026-11-12",
+   "as_of": "2026-08",
+   "falsifier": "Revision",
+   "file": "round10/lanes/R10A-data-footprints.md"
+  },
+  {
+   "id": "R10A-06",
+   "claim": "China fell 1239.1 (Jan 2015) to 590.7 (Aug 2026), down 52%",
+   "tier": "T0",
+   "status": "computed",
+   "source": "mfhhis01.txt, slt_table3.txt",
+   "source_date": "2026-11-12",
+   "as_of": "2026-08",
+   "falsifier": "Revision",
+   "file": "round10/lanes/R10A-data-footprints.md"
+  },
+  {
+   "id": "R10A-07",
+   "claim": "Foreign official share of foreign holdings fell from 66.5% to 40.2%",
+   "tier": "T0",
+   "status": "computed",
+   "source": "same",
+   "source_date": "2026-11-12",
+   "as_of": "2026-08",
+   "falsifier": "Revision",
+   "file": "round10/lanes/R10A-data-footprints.md"
+  },
+  {
+   "id": "R10A-08",
+   "claim": "Saudi US equities 57 to 215 and long-term debt 121 to 119, June 2018 to June 2025",
+   "tier": "T0",
+   "status": "fetched, table checked",
+   "source": "https://ticdata.treasury.gov/resource-center/data-chart-center/tic/Documents/shl2025r.pdf",
+   "source_date": "2026-04",
+   "as_of": "2025-06",
+   "falsifier": "June 2026 survey differs",
+   "file": "round10/lanes/R10A-data-footprints.md"
+  },
+  {
+   "id": "R10A-09",
+   "claim": "UAE US equities 89 to 231, long-term debt 57 to 43 over the same dates",
+   "tier": "T0",
+   "status": "as above",
+   "source": "same",
+   "source_date": "2026-04",
+   "as_of": "2025-06",
+   "falsifier": "as above",
+   "file": "round10/lanes/R10A-data-footprints.md"
+  },
+  {
+   "id": "R10A-10",
+   "claim": "Norway equities 277 to 826 and debt 93 to 283 (control group moved the same way)",
+   "tier": "T0",
+   "status": "as above",
+   "source": "same",
+   "source_date": "2026-04",
+   "as_of": "2025-06",
+   "falsifier": "as above",
+   "file": "round10/lanes/R10A-data-footprints.md"
+  },
+  {
+   "id": "R10A-11",
+   "claim": "Fed H.4.1 marketable Treasury custody for foreign official accounts 2,543,700 million on 4 Nov 2026",
+   "tier": "T0",
+   "status": "fetched, label checked",
+   "source": "https://www.federalreserve.gov/releases/h41/current/",
+   "source_date": "2026-11-05",
+   "as_of": "2026-11-04",
+   "falsifier": "Next release revises",
+   "file": "round10/lanes/R10A-data-footprints.md"
+  },
+  {
+   "id": "R10A-12",
+   "claim": "That custody was 3116.0 billion in Mar 2021, down 18.4%",
+   "tier": "T0",
+   "status": "computed from DBnomics mirror",
+   "source": "https://api.db.nomics.world/v22/series/FED/H41/RESH4FG_N.WW",
+   "source_date": "2026-11-06",
+   "as_of": "2026-11-04",
+   "falsifier": "H.4.1 itself differs",
+   "file": "round10/lanes/R10A-data-footprints.md"
+  },
+  {
+   "id": "R10A-13",
+   "claim": "The Fed says TIC undercounts Cayman hedge fund Treasuries by about 1.4 trillion at end 2024",
+   "tier": "T1",
+   "status": "fetched, read",
+   "source": "https://www.federalreserve.gov/econres/notes/feds-notes/the-cross-border-trail-of-the-treasury-basis-trade-20251015.html",
+   "source_date": "2025-10-15",
+   "as_of": "2024-12",
+   "falsifier": "A Fed correction",
+   "file": "round10/lanes/R10A-data-footprints.md"
+  },
+  {
+   "id": "R10A-14",
+   "claim": "CBUAE gross international reserves 973.1 bn AED in Aug 2026, down 12.4% from Feb 2026 peak, with an equity definition break in March 2026",
+   "tier": "T0",
+   "status": "fetched, label checked",
+   "source": "https://centralbank.ae/media/njajo2nc/statistical-bulletin-august-2026.pdf",
+   "source_date": "2026-10 (bulletin, exact date not read)",
+   "as_of": "2026-08",
+   "falsifier": "Later bulletin restates",
+   "file": "round10/lanes/R10A-data-footprints.md"
+  },
+  {
+   "id": "R10A-15",
+   "claim": "SAMA reserve assets about SR1.85 trillion end June 2026",
+   "tier": "T3 secondary",
+   "status": "not checked against SAMA",
+   "source": "https://www.arabnews.com/node/2650099/business-economy",
+   "source_date": "2026-07-08",
+   "as_of": "2026-06",
+   "falsifier": "SAMA bulletin",
+   "file": "round10/lanes/R10A-data-footprints.md"
+  },
+  {
+   "id": "R10A-16",
+   "claim": "Renminbi about 3.13% of global payments by value, Jan 2026",
+   "tier": "unverified",
+   "status": "search snippet only, swift.com 403",
+   "source": "https://www.swift.com/sites/default/files/files/global-currency-tracker_september-2026.pdf",
+   "source_date": "unknown",
+   "as_of": "2026-01",
+   "falsifier": "SWIFT page",
+   "file": "round10/lanes/R10A-data-footprints.md"
+  },
+  {
+   "id": "R10A-17",
+   "claim": "Qatar has no monthly TIC line and the annual survey shows Qatar equities 58 and debt 24 in June 2025",
+   "tier": "T0",
+   "status": "fetched",
+   "source": "shl2025r.pdf",
+   "source_date": "2026-04",
+   "as_of": "2025-06",
+   "falsifier": "None",
+   "file": "round10/lanes/R10A-data-footprints.md"
+  },
+  {
+   "id": "R10A-18",
+   "claim": "13F data for PIF and other Gulf filers were not obtained",
+   "tier": "gap",
+   "status": "EDGAR returned 403 to an undeclared client",
+   "source": "https://www.sec.gov",
+   "source_date": "2026-11-12",
+   "as_of": "n/a",
+   "falsifier": "A declared-client fetch",
+   "file": "round10/lanes/R10A-data-footprints.md"
   },
   {
    "id": "R2A-01",

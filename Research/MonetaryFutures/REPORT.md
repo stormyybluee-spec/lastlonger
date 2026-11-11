@@ -34,6 +34,9 @@ If a giant falls, nobody inherits it whole and Europe's money keeps going West. 
 ## Round 5 in one paragraph
 Round 5 answered the fifteen open questions, audited the project's memory and wrote down 72 dated predictions before the events. The 2026 rise in real rates is mostly a higher expected Fed path, with Japan the clearest outside push. A yield cap is unlikely (15 by 2035). Japan pays for yen defense by selling Treasuries, the Gulf has no dollar line yet, and the central banks buying gold are the ones without a Fed backstop. One earlier finding was wrong and is now corrected: producer prices were not flat (the series was consumer foods). Moody's held France at Aa3 negative. Borrowing to invest at 6.19% for 13.6% adds little to the typical result and a lot to the bad one. Full rulings in round5/DEBATE_R5.md, predictions in round5/prereg.json.
 
+## Round 10 in one paragraph (2026-11-12, first Unseen mode round)
+The desk tested claims that oil dollars, Treasury buyers and the great powers move by hidden agreement, grading every guess and dating every test (Landscape chapter 14). Gulf states still add to US Treasuries (up 51% since January 2023) while also buying US shares, so "shares instead of Treasuries" fails for the states as a whole. China takes about a third of Gulf crude and no source shows 30% of Gulf oil paid in yuan. The 1974 Treasury arrangement was real and narrow, and ended by 2016. Private money, booked through custody centres, now funds the growth of the Treasury market. A secret staged three-way alignment of the US, the Gulf and China is remote (about 1%) and stays open. For the live question, energy trade has not pulled Gulf money off the dollar so far, which fits the dollar-extension scenario. A reading, with dated tests.
+
 ## Where everything lives
 | File | What |
 |---|---|

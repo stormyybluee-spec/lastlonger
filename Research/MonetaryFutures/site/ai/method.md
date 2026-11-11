@@ -112,6 +112,8 @@ Correction ledger so far:
 | 2026-10-24 | Rulebook money chapter: deposits rose $4.7T not $5.45T in 2020 to 2021, bank securities $1.9T not $2.1T, M2 40% not 41%, reverse repo peak $2.4T | Engine (R6B lane, verifier), unprompted | Numbers written before the v4 pipeline |
 | 2026-10-24 | Four Level 2 bridges claimed Level 1 taught things it did not (1942 to 1951 cap is in rb-08, not rb-03, and others) | Engine (red team, court), unprompted | Bridges written from memory of Level 1 |
 | 2026-11-05 | Round 8 draft said digital credit dollars "never leave Set 1". True for trades, but it hid the creation channel (bank loans against Bitcoin, bank buyers). Rebuilt as three meters: dollars, ownership and risk, market value | Engine (blind red team), unprompted, before publication | Case 2 shape repeated: a true trade-level headline hiding the creation channel |
+| 2026-11-12 | The base-rate checker removed the 1974 Saudi "outside the auctions" detail as unsupported. The Round 10 blind exam found the 1979 GAO audit that documents it, and the row was restored | Engine (blind exam), unprompted | One checker's search budget. A second independent search caught it |
+| 2026-11-12 | The Round 10 court printed 46% for the alignment chain H4-02. The hole file computes 42% | Engine (orchestrator cross-check during cold-read fixes), unprompted | A court figure not recomputed from the hole file. Rule: chapter figures are copied from tools/check_chain.py output |
 
 Owner test bank (held-out questions with known expert answers). The Scorekeeper runs one per round as a blind exam (section 6.3) and grades it pass, partial or fail. Add a case every time the owner catches the engine out. Keys for the held-out tests live in `engine/test_bank_keys.md`, which examinees never open. Cases 1 and 2 are public training cases, so their keys stay here.
 | Case | Question | An expert answer must contain | Result |
@@ -125,7 +127,7 @@ Owner test bank (held-out questions with known expert answers). The Scorekeeper 
 | Test 7 | Does buying a Bitcoin-backed preferred move money out of the dollar system? | Held out | Not yet run |
 | Case 3 (origin of Unseen mode) | What is undisclosed in X, and how sure can the desk be? | A grade for every link, marks found and missing, at least four rival readings, a coordination level, reveal dates, the chain probability | Opened 2026-11-11. First run planned as Round 9 |
 | Test 8 | Do the three largest index managers control American companies? | Held out | Not yet run |
-| Test 9 | Was there a secret deal in 1974 to put Gulf oil dollars into US Treasuries, and has it ended? | Held out | Not yet run |
+| Test 9 | Was there a secret deal in 1974 to put Gulf oil dollars into US Treasuries, and has it ended? | Held out | Partial, 2026-11-12 (Round 10 blind exam, round10/EXAM_T9.md): 8 of 9 key items with sources, including the 1974 add-on window from the GAO 1979 audit that the base-rate checker had missed. Missing: the share of Gulf oil sold to Asia, as a number |
 
 ### 4.7 Unseen mode: reasoning past where the documents stop (version 5.0, 2026-11-11)
 Built from Case 3 (section 2C). The seven moves stay. Unseen mode adds what they need when the answer is partly undisclosed.
