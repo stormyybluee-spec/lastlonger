@@ -382,7 +382,7 @@ Owner test bank (held-out questions with known expert answers). The Scorekeeper 
 | Test 7 | Does buying a Bitcoin-backed preferred move money out of the dollar system? | Held out | Not yet run |
 | Case 3 (origin of Unseen mode) | What is undisclosed in X, and how sure can the desk be? | A grade for every link, marks found and missing, at least four rival readings, a coordination level, reveal dates, the chain probability | Opened 2026-11-11. First run planned as Round 9 |
 | Test 8 | Do the three largest index managers control American companies? | Held out | Not yet run |
-| Test 9 | Was there a secret deal in 1974 to put Gulf oil dollars into US Treasuries, and has it ended? | Held out | Not yet run |
+| Test 9 | Was there a secret deal in 1974 to put Gulf oil dollars into US Treasuries, and has it ended? | Held out | Partial, 2026-11-12 (Round 10 blind exam, round10/EXAM_T9.md): 8 of 9 key items with sources, including the 1974 add-on window from the GAO 1979 audit that the base-rate checker had missed. Missing: the share of Gulf oil sold to Asia, as a number |
 
 ### 4.7 Unseen mode: reasoning past where the documents stop (version 5.0, 2026-11-11)
 Built from Case 3 (section 2C). The seven moves stay. Unseen mode adds what they need when the answer is partly undisclosed.
