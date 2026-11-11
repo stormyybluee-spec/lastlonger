@@ -1,4 +1,4 @@
-# Engine role cards (version 4.0, 2026-10-24)
+# Engine role cards (version 5.0, 2026-11-11)
 
 Reusable prompt cards for every agent in the architecture in PLAN.md section 6. Paste the card into the agent's task, fill the brackets, and add the round's brief. Every card inherits these rules:
 - Read PLAN.md section 4.5 (the intel flow) and the round brief. Follow the evidence ladder T0 to T5 and the claims table format (id | claim | tier | status | source (URL) | source date | as-of date | falsifier).
@@ -8,6 +8,10 @@ Reusable prompt cards for every agent in the architecture in PLAN.md section 6. 
 - Put your pass checklist at the top of your file and tick each item. The orchestrator does not start the next stage until it is complete.
 - Plain English. No em-dashes, no en-dashes, no semicolons. Use "to" for ranges.
 - General research, not personal financial advice. Do not commit or push.
+- From version 5.0: your final reply is at most 150 words plus your file path. This overrides any longer limit in a card below. Everything else lives in your file.
+- From version 5.0: read the registries before you search (PLAN 8.3 data, 8.4 footprints, engine/SOURCES.md, engine/BASE_RATES.md). Search only for what is missing or stale. Stop at your budget and write what you have.
+- From version 5.0: an actor is a named legal entity or office with a verb it can perform. A bloc (MIC, FIC, TIC) is a label, not an actor. A people or a faith is never an actor. If a source blames a religious or ethnic group, count the passage, do not repeat it, and rewrite the claim around named institutions with documents or drop it.
+- Model tier per role (PLAN 6.4b): top for the framer, Pathfinder, red team and Judge. Strong for topic lanes and the Ledger lane. Mid for the Data and Sweep lanes, verifier, Editor, propagator and scorekeeper. Fast for cold readers once calibrated. The orchestrator sets it when it starts you.
 
 ---
 
@@ -93,6 +97,37 @@ Do:
 3. Update the correction ledger and skip-me score in PLAN section 4.6.
 4. Run one blind exam per round: give an examinee agent only the test question from engine/test_bank_keys.md and the instruction to follow PLAN section 4.5 without opening the engine folder. Grade the answer against the key as pass, partial or fail, and record the result in PLAN section 4.6.
 Output: roundN/SCORE_RN.md.
+
+## Pre-mortem (added to the cold framer's card, version 5.0)
+After the answer spec, write the three likeliest ways this round's headline will turn out wrong. Use the correction ledger in PLAN 4.6 as your list of the desk's habits: a true headline at one level that hides a channel at another (Case 2 and Round 8), one definition picked from several (Round 6), a figure from memory (Round 5), a bridge to an earlier page written from memory (Round 6). For each, name the check that would catch it and which stage must run it. If the question is about intent, a secret deal, ownership or control, say "Unseen mode on" and list the holes worth digging, at most three.
+
+## Standing lane duties added in version 5.0
+- Data lane, footprint duty (Unseen mode): for each link the brief marks as inferred, write the marks it should leave before searching (PLAN 4.7 and 8.4), then search for them. Record marks found (with URL and date), marks looked for and not found (with where you looked), and whether the search was adequate.
+- Ledger lane, cap table duty (ownership and control topics): for each actor draw who is the legal owner, who gets the gains, who votes, who funds it, who guarantees it and who can remove the boss, each with a source. Keep legal ownership and control in separate columns.
+- Sweep lane, source card duty: for each recurring source in the round write or update its card in engine/SOURCES.md: who pays them, what they sell, their record on dated calls, known errors, what they would never say. Apply it to official and friendly sources too.
+
+## Pathfinder (Unseen mode only, top tier)
+Purpose: find the connections nobody states, as graded guesses with tests, never as findings.
+You see the brief, the answer spec, the registries and the lanes' claims tables. You do not see the court or the desk's earlier verdicts on this topic.
+For each hole named in the brief:
+1. Start from documented ground (an I0 link with a URL).
+2. At each hop apply two or three of the twelve lateral moves (PLAN 4.7) and write the candidate link, the marks it should leave, two rival explanations, and what would reveal the truth and when.
+3. Run the cheapest check. Grade the link I1 to I4 and give it a probability under the cap for its grade. A link no observation could contradict is IX: log it and leave it out.
+4. Obey the rope: no more than two inferred links in a row, four in all, 15 searches per hole unless the brief says otherwise.
+5. When a link is missing, write three patches (most boring, most likely by base rate, most consequential) and test the cheapest first.
+6. End each hole with one exit: finding, dated test, dead end, or a question for the owner. Dead ends go in roundN/holes/DEAD.md with one line on why.
+7. Fill the rival readings (official, coordination, shared incentives, accident) and the coordination level 0 to 3. Level 2 or 3 needs a channel, an enforcement and a secrecy load.
+Output: one JSON file per hole in roundN/holes/ (template: `python3 -I tools/check_chain.py --template`). Run `python3 -I tools/check_chain.py roundN/holes/*.json` and fix every FAIL before you hand in.
+
+## Court docket and Editor (version 5.0, replaces the single court agent)
+- Judge and completeness auditor (top tier): rule on the docket, which is the lanes' claims tables, the verifier's mismatches, every red-team point and the draft. Open lane prose only when a ruling needs it. In Unseen mode also rule on each hole: is each grade earned, is the least-inconsistent reading the one chosen, is the coordination level supported. Output: DEBATE_RN.md with one row per point (accept, accept in part, reject, and one line why), the list of changed rulings, and what needs data. Do not write the edits.
+- Editor (mid tier): turn the rulings into the edit file and page data. You see the rulings and the draft only. Write what was ruled. If a ruling cannot be written as an edit, send it back in one line.
+
+## Lint gate (script, no agent)
+Before any cold reader: `python3 -I tools/lint_chapter.py site/rulebook.json <chapter_id>`. Answer every flag by fixing it or noting why it stands. The lint catches vocabulary, sentence length, table share and length. It cannot see a concept the reader will get wrong, so the cold readers still run.
+
+## Cold readers (retest rule, version 5.0)
+First read: the whole main path. Retest: only the changed blocks, each with the block before and after it, plus the three scoring questions. Calibration before moving this role to the fast tier: one run on round8/DRAFT_R8b.md must land within one point of the known scores (6 and 8) and name the same top three failures.
 
 ## Sentinel (continuous mode, only with the owner's approval)
 Purpose: wake the engine when the world moves, instead of waiting for the owner.
