@@ -128,3 +128,58 @@ Old: a payment system it shared with China and others
 New: a cross-border payment system run by several central banks, China's among them
 
 Expected effect: fixes 1 to 6 should lift Reader 2 to 8 on most items. Reader 1 needs 1 to 10 to reach about 8.
+
+## Retest on DRAFT_R10c.md (after fixes)
+
+Examiner date: 2026-11-11. Source: DRAFT_R10c.md only. Main path only: the GO DEEPER BOX ([26] to [26.2]) and every "A:" line ([25]) skipped on the first read. Readers as before: Reader 1 Malaysian school leaver (ESL), Reader 2 American high-school graduate, both with the Rulebook basics.
+
+| Test item | Reader 1 | Reader 2 |
+|---|---|---|
+| (a) Gulf oil dollars now, claim parts | 7 | 8 |
+| (b) 1974 arrangement and what remains | 8 | 9 |
+| (c) Who funds the Treasury market | 7 | 8 |
+| (d) "Three kinds of country" test | 6 | 7 |
+| (e) Coordination level and why open | 7 | 8 |
+| (f) Grades, percentages, reveal dates | 8 | 8 |
+| Overall | 7 / 10, fail | 8 / 10, pass (borderline) |
+
+Better than R10b: Hormuz, the Fed, "partly borrowed" money, mBridge and the in-between rule are now clear, and (b) is solid for both.
+
+### Remaining confusions
+- [0] "where 3 means one command, about 46%": both readers cannot tell what the 46% belongs to (level 3? levels 0 and 1?). [17] repeats 46% for levels 0 and 1, [10] gives 47% for level 0.
+- [13] Row 1: neither reader knows what was predicted (4 of 5 right about what?). Reader 1 also cannot see why a tie means "no better".
+- [14] "46% on that result holding up" and "1% ... open question" still read as two unrelated percentages. Reader 1 cannot say what "that result" is.
+- [9] "Funded onshore" (Reader 1 unsure of onshore). [21] "new rails" and "leading scenario" (Reader 1 lost, Reader 2 guesses).
+- [4] "Asia as a whole takes 84%": 84% of what? Reader 1 unsure.
+- [0] percentages appear before the grade key in [1] (minor, both readers).
+
+### Fixes
+
+1. Block [0], the 46% attaches to nothing.
+Old: (levels 0 and 1 on a scale from 0 to 3, where 3 means one command, about 46%)
+New: (levels 0 and 1 on a scale from 0 to 3, where 3 means one command, and the desk puts about 46% on levels 0 and 1 being the whole story)
+Author to confirm that this is what the 46% measures.
+
+2. Block [13], missing prediction.
+Old: | Who holds the government's debt, checked in 5 countries |
+New: | Whether the government's debt is held mostly at home or abroad, checked in 5 countries |
+Author to confirm the wording of the prediction.
+
+3. Block [14], tie and the two percentages.
+Old: The desk puts about 46% on that result holding up (structural).
+New: The desk puts about 46% on this result, that the lens does no better than the plain one, still holding when more countries are added (structural).
+
+4. Block [9], "onshore".
+Old: Undercount documented. Funded onshore: structural, about 55%
+New: Undercount documented. That these funds borrow from US money funds, inside the US: structural, about 55%
+
+5. Block [21], rails.
+Old: the desk's leading scenario, the dollar extending onto new rails
+New: the desk's leading scenario for the big question, which is that the dollar stays central and spreads onto new payment systems
+
+6. Block [4], 84% of what.
+Old: Asia as a whole takes 84%
+New: Asia as a whole takes 84% of Gulf oil exports
+Author to confirm the denominator.
+
+Expected effect: fixes 1 to 3 should lift (d) and (e) for Reader 1 to about 7 or 8. Reader 1 overall likely reaches 8 with all six. Reader 2 stays at 8 or better.
