@@ -392,3 +392,88 @@ The post is right that household debt in Malaysia is a real burden.
 ```
 
 Projection: with Fixes 1 to 7, Reader 1 reaches 8 on both pieces, Reader 2 reaches 8 or 9. Fix 5 and Fix 6 matter most. Splitting [76] into three short paragraphs (one per check) would help Reader 1 further but needs a layout change, not a text swap.
+
+
+## Second retest on DRAFT_R9d.md
+
+Scope: rb-moves main path, and the debt-mix section of rb-moneymake. Boxes and "A:" lines skipped.
+
+| Piece | Reader 1 (Malaysia, ESL) | Reader 2 (US) |
+|---|---|---|
+| rb-moves | 7 | 8 |
+| Debt-mix section | 8 | 8 |
+
+What lands: watch versus share ([5] to [8], [16]), cash moved against value re-marked ([10], [13], [14]), the three verbs ([24], [25], [33]), 50% fall needs 100% rise ([50], [51]), rebalancing and borrowing in outline ([49], [53]). Debt mix: the stock-versus-flow bath image and the "clues, not birth record" framing in [72], [73] work well, and the Vietnam answer in [76] to [78] is honest and balanced (income clear, wealth undecidable).
+
+Remaining confusions
+- [8] "Part of that fall, 5.1%, came in the year to December 2024" reads as if 5.1% is part of a third. Both readers stall.
+- [36] "high-yield spread" and "not inverted" are unexplained jargon. "Calm but widening" is vague. Reader 1 cannot use these two dials.
+- [36] and [37] The table says high real rate is hard for gold and shares, yet [37] calls the season warm. Reader 1 is unsure which season it is. [35]'s rule helps, [37] "points both ways" resolves it only for a careful reader.
+- [48] The 1.5 and 0.75 appear with no working, and +6.07% is not derivable from the text. Reader 1 takes it on trust.
+- [52] The -20.9% for 150% has no working. Plain readers cannot see why borrowing hurts, only that it does.
+- [73] The sentence about "which borrowers stand behind part of the money" is dense for Reader 1. The Bank Negara dollar-buying point is a fourth idea after three limits.
+- [76] Malaysia is 70% in the quote and 85% in [75] and [77]. [75] explains it, but a reader meeting [76] first sees a clash.
+
+Fixes
+
+Fix 1. [8]
+Old:
+```
+Part of that fall, 5.1%, came in the year to December 2024.
+```
+New:
+```
+In the single year to December 2024 the index fell 5.1%.
+```
+
+Fix 2. [36]
+Old:
+```
+| Extra pay for risky borrowers (high-yield spread) | 3.14 points, 28 October 2026, up from 2.63 in late August | Calm but widening |
+```
+New:
+```
+| Extra pay for risky borrowers (high-yield spread): the extra interest that weaker firms must pay above the government | 3.14 points, 28 October 2026, up from 2.63 in late August | Still small, but growing, so lenders are slightly more nervous |
+```
+
+Fix 3. [36]
+Old:
+```
+| Positive, not inverted |
+```
+New:
+```
+| Positive. Lenders are still paid more for lending longer, which is normal. When short rates rise above long rates, some investors treat it as a warning sign |
+```
+
+Fix 4. [48]
+Old:
+```
+| Half in each, rebalanced back to half every period | 1.5 times or 0.75 times | +6.07% |
+```
+New:
+```
+| Half in each, rebalanced back to half every period. If the stock doubles, the cash half stays 0.5 and the stock half becomes 1, so 1.5. If it halves, 0.5 plus 0.25 makes 0.75 | 1.5 times or 0.75 times | +6.07% |
+```
+
+Fix 5. [52]
+Old:
+```
+| 150%, borrowing the extra at no interest | -20.9% |
+```
+New:
+```
+| 150%, borrowing the extra at no interest. A double turns the pot into 2.5 times, a halving into 0.25 times, and the typical result is the square root of 0.625, about 0.79 | -20.9% |
+```
+
+Fix 6. [73]
+Old:
+```
+So the bank loan part of those two columns gives a clue about which borrowers stand behind part of the money that exists today.
+```
+New:
+```
+So the bank loan part of those two columns hints at who borrowed some of today's money into existence.
+```
+
+Projection: with Fixes 1 to 6, Reader 1 reaches 8 on rb-moves, Reader 2 reaches 8 or 9. The debt-mix section already passes for both. Fixes 2, 3 and 4 matter most.

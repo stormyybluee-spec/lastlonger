@@ -7415,7 +7415,7 @@
     },
     {
      "type": "insider",
-     "text": "Where household and firm debt is bank loans, each loan created a deposit on the day it was made, and each repayment destroyed one (Step 1). So the bank loan part of those two columns gives a clue about which borrowers stand behind part of the money that exists today. The government column is different. It created money only where banks or the central bank bought the bonds (Step 2). Where pension funds or savers bought them, it moved money that already existed, though the buyers now own a bond the government owes. Three limits keep this from becoming a new simple story. The table is a stock built up over decades, like the water level in a bath. Money is created and destroyed as a flow, year by year, like the tap and the drain. The columns also count bonds bought by pension funds and other non-banks, and loans from abroad, which created no deposits at home. And one door is missing. When Bank Negara buys dollars to steady the ringgit, it creates ringgit at first with no local debt behind it.",
+     "text": "Where household and firm debt is bank loans, each loan created a deposit on the day it was made, and each repayment destroyed one (Step 1). So the bank loan part of those two columns hints at who borrowed some of today's money into existence. The government column is different. It created money only where banks or the central bank bought the bonds (Step 2). Where pension funds or savers bought them, it moved money that already existed, though the buyers now own a bond the government owes. Three limits keep this from becoming a new simple story. The table is a stock built up over decades, like the water level in a bath. Money is created and destroyed as a flow, year by year, like the tap and the drain. The columns also count bonds bought by pension funds and other non-banks, and loans from abroad, which created no deposits at home. And one door is missing. When Bank Negara buys dollars to steady the ringgit, it creates ringgit at first with no local debt behind it.",
      "label": "The statement"
     },
     {
@@ -11024,7 +11024,7 @@
     },
     {
      "type": "p",
-     "text": "Watches did fall. A widely followed index of pre-owned luxury watch prices, WatchCharts, lost roughly a third from its spring 2022 peak to 2024, by press reports. Higher interest rates cooled demand. Part of that fall, 5.1%, came in the year to December 2024. The index then recovered about 9% in the year to June 2026, as reported. But no index fund was forced to sell, and no headline said the world lost $X billion. Nobody multiplies one sale price by every watch in every drawer. A watch owner who did not sell had a paper loss that no screen showed."
+     "text": "Watches did fall. A widely followed index of pre-owned luxury watch prices, WatchCharts, lost roughly a third from its spring 2022 peak to 2024, by press reports. Higher interest rates cooled demand. In the single year to December 2024 the index fell 5.1%. The index then recovered about 9% in the year to June 2026, as reported. But no index fund was forced to sell, and no headline said the world lost $X billion. Nobody multiplies one sale price by every watch in every drawer. A watch owner who did not sell had a paper loss that no screen showed."
     },
     {
      "type": "h",
@@ -11357,14 +11357,14 @@
        "Rising, with gasoline over half of September's monthly rise (press reports of the US Bureau of Labor Statistics release)"
       ],
       [
-       "Extra pay for risky borrowers (high-yield spread)",
+       "Extra pay for risky borrowers (high-yield spread): the extra interest weaker firms pay above the government",
        "3.14 points, 28 October 2026, up from 2.63 in late August",
-       "Calm but widening"
+       "Still small, but growing, so lenders are a little more nervous"
       ],
       [
        "Long rates minus short rates (yield curve)",
        "+0.25 points (10-year 4.98%, 2-year 4.73%)",
-       "Positive, not inverted"
+       "Positive. Lenders are still paid more for lending longer, which is normal. When short rates rise above long rates, many investors treat it as a warning sign"
       ],
       [
        "The dollar against other currencies",
@@ -11509,7 +11509,7 @@
     },
     {
      "type": "p",
-     "text": "Two things that each go nowhere make about 6% a period together, in this made-up game. Real markets can pay far less for rebalancing, or nothing, as the box below shows. Rebalancing sells some of the stock after it doubles and buys more after it halves, so it earns from the swings themselves. In a computer run of 100,000 players over 20 periods, the rebalanced pot beat the stock alone three times in four. Yet one player in four still ended below where they started. A typical rate is not a promise to any one person."
+     "text": "Where the 1.5 and 0.75 come from: start with $1, half in cash and half in the stock. If the stock doubles, the cash half stays $0.50 and the stock half becomes $1, so the pot is $1.50. If it halves, $0.50 plus $0.25 makes $0.75. Two things that each go nowhere make about 6% a period together, in this made-up game. Real markets can pay far less for rebalancing, or nothing, as the box below shows. Rebalancing sells some of the stock after it doubles and buys more after it halves, so it earns from the swings themselves. In a computer run of 100,000 players over 20 periods, the rebalanced pot beat the stock alone three times in four. Yet one player in four still ended below where they started. A typical rate is not a promise to any one person."
     },
     {
      "type": "p",
@@ -11571,7 +11571,7 @@
     },
     {
      "type": "p",
-     "text": "Borrowing to hold more of a good bet can turn it into a losing one. Past the best mix, every extra borrowed dollar lowers the typical growth, and enough of them guarantee ruin."
+     "text": "At 150%, a double turns each $1 into $2.50 and a halving into $0.25. The typical result of one of each is the square root of 2.5 times 0.25, about 0.79, a loss of about 21% a period. Borrowing to hold more of a good bet can turn it into a losing one. Past the best mix, every extra borrowed dollar lowers the typical growth, and enough of them guarantee ruin."
     },
     {
      "type": "insider",
