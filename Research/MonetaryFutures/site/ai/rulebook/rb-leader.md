@@ -2,7 +2,7 @@
 
 Rulebook Level 1 (Foundations), chapter 11. Stack: Fundamentals. Id: rb-leader.
 
-Web page: https://neetmonetary.netlify.app/#rb-leader . Text built 2026-11-11. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-leader . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Why surplus nations park their savings in America, why climbing the leaderboard is so hard, and what it really took for each number one to get there and to fall.*
 

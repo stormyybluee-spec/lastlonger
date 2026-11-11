@@ -11347,7 +11347,7 @@
      ],
      "rows": [
       [
-       "Real interest rate: what a saver earns above inflation (10-year inflation-protected bond)",
+       "Real interest rate: what a saver earns above inflation (read from a 10-year US government bond whose payments rise with inflation)",
        "2.78%, 10 November 2026",
        "High. Cash and bonds pay well above inflation. A hard season for gold and for shares priced on distant profits"
       ],
@@ -11509,7 +11509,7 @@
     },
     {
      "type": "p",
-     "text": "Where the 1.5 and 0.75 come from: start with $1, half in cash and half in the stock. If the stock doubles, the cash half stays $0.50 and the stock half becomes $1, so the pot is $1.50. If it halves, $0.50 plus $0.25 makes $0.75. Two things that each go nowhere make about 6% a period together, in this made-up game. Real markets can pay far less for rebalancing, or nothing, as the box below shows. Rebalancing sells some of the stock after it doubles and buys more after it halves, so it earns from the swings themselves. In a computer run of 100,000 players over 20 periods, the rebalanced pot beat the stock alone three times in four. Yet one player in four still ended below where they started. A typical rate is not a promise to any one person."
+     "text": "Where the 1.5 and 0.75 come from: start with $1, half in cash and half in the stock. If the stock doubles, the cash half stays $0.50 and the stock half becomes $1, so the pot is $1.50. If it halves, $0.50 plus $0.25 makes $0.75. One of each multiplies to 1.5 times 0.75, which is 1.125 over two periods, so the typical period grows by the square root of 1.125, about 1.06, or 6%. Two things that each go nowhere make about 6% a period together, in this made-up game. Real markets can pay far less for rebalancing, or nothing, as the box below shows. Rebalancing sells some of the stock after it doubles and buys more after it halves, so it earns from the swings themselves. In a computer run of 100,000 players over 20 periods, the rebalanced pot beat the stock alone three times in four. Yet one player in four still ended below where they started. A typical rate is not a promise to any one person."
     },
     {
      "type": "p",
@@ -11571,7 +11571,7 @@
     },
     {
      "type": "p",
-     "text": "At 150%, a double turns each $1 into $2.50 and a halving into $0.25. The typical result of one of each is the square root of 2.5 times 0.25, about 0.79, a loss of about 21% a period. Borrowing to hold more of a good bet can turn it into a losing one. Past the best mix, every extra borrowed dollar lowers the typical growth, and enough of them guarantee ruin."
+     "text": "At 150%, a double turns each $1 into $2.50 and a halving into $0.25. One of each multiplies to 2.5 times 0.25, which is 0.625 over two periods. The square root of 0.625 is about 0.79, a loss of about 21% a period. Borrowing to hold more of a good bet can turn it into a losing one. Past the best mix, every extra borrowed dollar lowers the typical growth, and enough of them guarantee ruin."
     },
     {
      "type": "insider",
@@ -14339,8 +14339,8 @@
   {
    "n": 4,
    "id": "rb-l4",
-   "name": "Futures and debates",
-   "tag": "edge cases",
+   "name": "Money in motion",
+   "tag": "the investor's view",
    "blurb": [
     "Level 4 is where money meets the investor and the future. Chapter 1 follows how money really moves: who moves it, which season steers it, and the arithmetic that decides who keeps it. Chapter 2 takes one bold idea about where money is heading and tests it claim by claim.",
     "It assumes Levels 1 and 2. Nothing here is advice: these chapters are built to make you a sharper judge of money headlines and big claims, not to sell you anything."

@@ -2,7 +2,7 @@
 
 Rulebook Level 1 (Foundations), chapter 18. Stack: Fundamentals. Id: rb-nation.
 
-Web page: https://neetmonetary.netlify.app/#rb-nation . Text built 2026-11-11. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-nation . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Is tax a scam? Why did the Torah and the Quran forbid interest? Is a tax-free hub like the UAE cheating? Read the world's countries as companies competing on one leaderboard and the answers fall into place.*
 

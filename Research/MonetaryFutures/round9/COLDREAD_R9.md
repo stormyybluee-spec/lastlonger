@@ -477,3 +477,52 @@ So the bank loan part of those two columns hints at who borrowed some of today's
 ```
 
 Projection: with Fixes 1 to 6, Reader 1 reaches 8 on rb-moves, Reader 2 reaches 8 or 9. The debt-mix section already passes for both. Fixes 2, 3 and 4 matter most.
+
+## Third retest, Reader 1, rb-moves, on DRAFT_R9e.md
+
+Scope: rb-moves main path only. Boxes and "A:" lines skipped. Reader: Malaysian school leaver, 18, English as a second language.
+
+Score: 8 / 10 (was 7). Pass mark met, narrowly.
+
+What lands: watch versus share ([5] to [8], [16]); cash moved ($73 billion) against value re-marked ($236 billion) ([10], [13], [14]); the three verbs and the buyback example ([24], [25], [33]); the six dials with the [35] rule of thumb and the "points both ways" caution in [37]; 50% fall needs 100% rise, with the RM1,000 example and table ([50], [51]); rebalancing sells after a double and buys after a halving ([49]); borrowing past the best mix lowers growth ([52], [53]).
+
+Remaining confusions
+- [49] The reader sees 1.5 and 0.75 but cannot get from them to "about 6%". The step (multiply, then take the square root) is only in a box.
+- [53] "the square root of 2.5 times 0.25" can be read as (square root of 2.5) times 0.25, which is 0.40, not 0.79. An ESL reader stalls here.
+- [36] "10-year inflation-protected bond" is still unexplained jargon in the first dial.
+- [37] Dials say high real rates are hard for shares and gold, yet the season is called warm. Resolved only by a careful read of "points both ways". Minor.
+- [20] Dense paragraph with five dates and prices. Reader follows the conclusion (more than one cause) but not the detail. Minor.
+
+Fixes
+
+Fix 1. [49]
+Old:
+```
+Two things that each go nowhere make about 6% a period together, in this made-up game.
+```
+New:
+```
+One double and one halving multiply the pot by 1.5 times 0.75, which is 1.125. The typical result for each period is the square root of 1.125, about 1.06, so about 6% a period. Two things that each go nowhere make that together, in this made-up game.
+```
+
+Fix 2. [53]
+Old:
+```
+The typical result of one of each is the square root of 2.5 times 0.25, about 0.79, a loss of about 21% a period.
+```
+New:
+```
+One double and one halving multiply the pot by 2.5 times 0.25, which is 0.625. The typical result for each period is the square root of 0.625, about 0.79, a loss of about 21% a period.
+```
+
+Fix 3. [36]
+Old:
+```
+Real interest rate: what a saver earns above inflation (10-year inflation-protected bond)
+```
+New:
+```
+Real interest rate: what a saver earns above inflation, read from the yield on a 10-year US government bond that is protected against inflation
+```
+
+Projection: with Fixes 1 to 3, Reader 1 reaches 9.

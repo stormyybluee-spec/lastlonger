@@ -1,6 +1,6 @@
 # Intelligence: will energy replace money? (the Desk)
 
-Stack: Intelligence. These are graded, dated findings, not settled facts. Check each as-of date and fetch current data before relying on a number. Web page: https://neetmonetary.netlify.app/#desk . Text built 2026-11-11.
+Stack: Intelligence. These are graded, dated findings, not settled facts. Check each as-of date and fetch current data before relying on a number. Web page: https://neetmonetary.netlify.app/#desk . Text built 2026-11-12.
 
 ## Scenario odds by horizon
 

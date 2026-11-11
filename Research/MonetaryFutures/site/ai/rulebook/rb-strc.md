@@ -1,8 +1,8 @@
 # Digital credit, dissected: Saylor's 12% and money moving between baskets
 
-Rulebook Level 4 (Futures and debates), chapter 01. Stack: Fundamentals. Id: rb-strc.
+Rulebook Level 4 (Money in motion), chapter 02. Stack: Fundamentals. Id: rb-strc.
 
-Web page: https://neetmonetary.netlify.app/#rb-strc . Text built 2026-11-11. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-strc . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Michael Saylor pitches Bitcoin as digital capital, STRC as digital credit paying 12%, and a future dollar token paying 8%. This chapter takes the pitch apart claim by claim, follows the money step by step, and asks what really moves when money moves between baskets.*
 

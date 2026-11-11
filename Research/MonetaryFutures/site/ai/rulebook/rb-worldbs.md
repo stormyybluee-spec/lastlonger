@@ -2,7 +2,7 @@
 
 Rulebook Level 2 (The machinery), chapter 03. Stack: Fundamentals. Id: rb-worldbs.
 
-Web page: https://neetmonetary.netlify.app/#rb-worldbs . Text built 2026-11-11. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-worldbs . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *You may have heard that the world owes $300 trillion, or $500 trillion, or more. Each can be true, depending on what you count, and the world owes all of it to itself. This chapter shows what the world really owns, why its debts cancel but still matter, how the numbers grew, and how each big country is built.*
 

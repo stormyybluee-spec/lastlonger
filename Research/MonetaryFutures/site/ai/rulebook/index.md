@@ -1,6 +1,6 @@
 # Rulebook index (Fundamentals)
 
-One file per chapter. Read a level in order. Built 2026-11-11.
+One file per chapter. Read a level in order. Built 2026-11-12.
 
 
 ## Level 1: Foundations
@@ -44,8 +44,9 @@ Level 3 is empty for now. Topics arrive over time, each built on Levels 1 and 2.
 
 - Empty for now.
 
-## Level 4: Futures and debates
+## Level 4: Money in motion
 
-Level 4 is where the Rulebook argues with the future. Each chapter takes one bold idea about where money is heading, takes it apart piece by piece, tests every claim against the evidence, and ends with questions only time will answer. It assumes Levels 1 and 2. Nothing here is advice: these chapters are built to make you a sharper judge of big claims, not to sell you anything.
+Level 4 is where money meets the investor and the future. Chapter 1 follows how money really moves: who moves it, which season steers it, and the arithmetic that decides who keeps it. Chapter 2 takes one bold idea about where money is heading and tests it claim by claim. It assumes Levels 1 and 2. Nothing here is advice: these chapters are built to make you a sharper judge of money headlines and big claims, not to sell you anything.
 
-- [01. Digital credit, dissected: Saylor's 12% and money moving between baskets](https://neetmonetary.netlify.app/ai/rulebook/rb-strc.md): Michael Saylor pitches Bitcoin as digital capital, STRC as digital credit paying 12%, and a future dollar token paying 8%. This chapter takes the pitch apart claim by claim, follows the money step by step, and asks what really moves when money moves between baskets.
+- [01. How money moves: a field guide for investors](https://neetmonetary.netlify.app/ai/rulebook/rb-moves.md): A pre-owned luxury watch can lose a third of its price and nobody puts a dollar figure on it. A share slips 5% and $236 billion of market value is wiped off the screen. This chapter follows the money behind both: who moves it, what season steers it, and the arithmetic that decides who keeps it.
+- [02. Digital credit, dissected: Saylor's 12% and money moving between baskets](https://neetmonetary.netlify.app/ai/rulebook/rb-strc.md): Michael Saylor pitches Bitcoin as digital capital, STRC as digital credit paying 12%, and a future dollar token paying 8%. This chapter takes the pitch apart claim by claim, follows the money step by step, and asks what really moves when money moves between baskets.

@@ -1,6 +1,6 @@
 # Monetary Futures
 
-> A working knowledge base on how money works and where it is heading, built by a multi-agent research desk. Two stacks: Fundamentals (a four-level Rulebook and the method) and Intelligence (one live question: will energy replace money?). Every claim carries an evidence tier and a date. General education and research, not financial advice. Plan version 5.1, built 2026-11-11.
+> A working knowledge base on how money works and where it is heading, built by a multi-agent research desk. Two stacks: Fundamentals (a four-level Rulebook and the method) and Intelligence (one live question: will energy replace money?). Every claim carries an evidence tier and a date. General education and research, not financial advice. Plan version 5.1, built 2026-11-12.
 
 Read https://neetmonetary.netlify.app/ai/brief.md first. It says how far to trust each part and how to build on it. Fundamentals are stable reference. Intelligence findings are graded hypotheses that age: check the as-of dates and fetch current data.
 
@@ -45,8 +45,9 @@ Read https://neetmonetary.netlify.app/ai/brief.md first. It says how far to trus
 
 - Empty for now.
 
-## Fundamentals: Rulebook Level 4, Futures and debates
+## Fundamentals: Rulebook Level 4, Money in motion
 
+- [How money moves: a field guide for investors](https://neetmonetary.netlify.app/ai/rulebook/rb-moves.md): A pre-owned luxury watch can lose a third of its price and nobody puts a dollar figure on it. A share slips 5% and $236 billion of market value is wiped off the screen. This chapter follows the money behind both: who moves it, what season steers it, and the arithmetic that decides who keeps it.
 - [Digital credit, dissected: Saylor's 12% and money moving between baskets](https://neetmonetary.netlify.app/ai/rulebook/rb-strc.md): Michael Saylor pitches Bitcoin as digital capital, STRC as digital credit paying 12%, and a future dollar token paying 8%. This chapter takes the pitch apart claim by claim, follows the money step by step, and asks what really moves when money moves between baskets.
 
 ## Fundamentals: reference

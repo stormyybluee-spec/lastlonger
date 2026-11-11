@@ -2,7 +2,7 @@
 
 Rulebook Level 1 (Foundations), chapter 20. Stack: Fundamentals. Id: rb-crypto.
 
-Web page: https://neetmonetary.netlify.app/#rb-crypto . Text built 2026-11-11. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-crypto . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Bitcoin, stablecoins and twenty million other tokens, sorted into three families, tested against the jobs of money, and taken apart with six questions you can use on any coin you ever hear about.*
 

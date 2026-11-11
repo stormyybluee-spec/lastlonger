@@ -1,6 +1,6 @@
 # Monetary Futures
 
-> A working knowledge base on how money works and where it is heading, built by a multi-agent research desk. Two stacks: Fundamentals (a four-level Rulebook and the method) and Intelligence (one live question: will energy replace money?). Every claim carries an evidence tier and a date. General education and research, not financial advice. Plan version 5.1, built 2026-11-11.
+> A working knowledge base on how money works and where it is heading, built by a multi-agent research desk. Two stacks: Fundamentals (a four-level Rulebook and the method) and Intelligence (one live question: will energy replace money?). Every claim carries an evidence tier and a date. General education and research, not financial advice. Plan version 5.1, built 2026-11-12.
 
 Read https://neetmonetary.netlify.app/ai/brief.md first. It says how far to trust each part and how to build on it. Fundamentals are stable reference. Intelligence findings are graded hypotheses that age: check the as-of dates and fetch current data.
 
@@ -45,8 +45,9 @@ Read https://neetmonetary.netlify.app/ai/brief.md first. It says how far to trus
 
 - Empty for now.
 
-## Fundamentals: Rulebook Level 4, Futures and debates
+## Fundamentals: Rulebook Level 4, Money in motion
 
+- [How money moves: a field guide for investors](https://neetmonetary.netlify.app/ai/rulebook/rb-moves.md): A pre-owned luxury watch can lose a third of its price and nobody puts a dollar figure on it. A share slips 5% and $236 billion of market value is wiped off the screen. This chapter follows the money behind both: who moves it, what season steers it, and the arithmetic that decides who keeps it.
 - [Digital credit, dissected: Saylor's 12% and money moving between baskets](https://neetmonetary.netlify.app/ai/rulebook/rb-strc.md): Michael Saylor pitches Bitcoin as digital capital, STRC as digital credit paying 12%, and a future dollar token paying 8%. This chapter takes the pitch apart claim by claim, follows the money step by step, and asks what really moves when money moves between baskets.
 
 ## Fundamentals: reference
@@ -89,7 +90,7 @@ General education and research. Nothing here is personal financial advice, and y
 ## Two stacks. Keep them apart
 
 **1. Fundamentals: the Rulebook and the method.** How money works, taught from zero in four levels. Each chapter went through a verifier, a blind red team and test readers. It is stable reference material. Use it for mechanisms, definitions and vocabulary.
-- Level 1, Foundations (21 chapters). Level 2, The machinery (4 chapters). Level 3 is empty for now. Level 4, Futures and debates (1 chapter).
+- Level 1, Foundations (21 chapters). Level 2, The machinery (4 chapters). Level 3 is empty for now. Level 4, Money in motion (2 chapters: how money moves for an investor, and a bold claim tested).
 - The method is how the desk reaches an answer: seven moves, an evidence ladder and rules for reasoning about what is not disclosed.
 
 **2. Intelligence: the Desk and the Landscape.** One live research question: will energy replace money? The findings are dated and graded. Each has an evidence tier, a status, a confidence and a test that would settle it. Treat them as graded hypotheses that age, not as settled facts.
@@ -168,14 +169,14 @@ Scenario odds, thesis cards and round summaries: https://neetmonetary.netlify.ap
 - [The full plan](https://neetmonetary.netlify.app/PLAN.md)
 - [Everything in one file](https://neetmonetary.netlify.app/llms-full.txt)
 
-Plan version 5.1. Pack built 2026-11-11.
+Plan version 5.1. Pack built 2026-11-12.
 
 
 ---
 
 # The method (from the Plan, version 5.1)
 
-Stack: Fundamentals. How the desk turns a raw question into an answer. Built 2026-11-11. The full plan, with the origin cases and the agent architecture, is at https://neetmonetary.netlify.app/PLAN.md
+Stack: Fundamentals. How the desk turns a raw question into an answer. Built 2026-11-12. The full plan, with the origin cases and the agent architecture, is at https://neetmonetary.netlify.app/PLAN.md
 
 
 ### 4.1 Evidence ladder
@@ -553,7 +554,7 @@ No. Banks also create deposits when they buy securities, the Fed creates them wh
 
 Rulebook Level 1 (Foundations), chapter 01. Stack: Fundamentals. Id: rb-01.
 
-Web page: https://neetmonetary.netlify.app/#rb-01 . Text built 2026-11-11. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-01 . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Money is not a thing you hold. It is a promise that a whole society agrees to keep track of.*
 
@@ -631,7 +632,7 @@ A: Mainly the store of value, because savings lose buying power. The unit of acc
 
 Rulebook Level 1 (Foundations), chapter 02. Stack: Fundamentals. Id: rb-02.
 
-Web page: https://neetmonetary.netlify.app/#rb-02 . Text built 2026-11-11. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-02 . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Tying money to a metal makes it honest. It also makes it stiff, and stiff money breaks people who owe it.*
 
@@ -706,7 +707,7 @@ A: When two moneys have the same face value but different real value, people spe
 
 Rulebook Level 1 (Foundations), chapter 03. Stack: Fundamentals. Id: rb-03.
 
-Web page: https://neetmonetary.netlify.app/#rb-03 . Text built 2026-11-11. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-03 . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Two world wars moved the world's gold to America, and in 1944 the dollar became the hub of every other currency.*
 
@@ -777,7 +778,7 @@ A: The world needed a growing supply of dollars, which the US could only provide
 
 Rulebook Level 1 (Foundations), chapter 04. Stack: Fundamentals. Id: rb-04.
 
-Web page: https://neetmonetary.netlify.app/#rb-04 . Text built 2026-11-11. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-04 . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Americans buy more than they sell, foreigners earn the difference in dollars, and those dollars come home as loans to the US government.*
 
@@ -858,7 +859,7 @@ A: Benefit: cheaper imported goods and lower loan rates. Cost: jobs lost in indu
 
 Rulebook Level 1 (Foundations), chapter 05. Stack: Fundamentals. Id: rb-05.
 
-Web page: https://neetmonetary.netlify.app/#rb-05 . Text built 2026-11-11. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-05 . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *On a Sunday night in August 1971, the last thread between the dollar and gold was cut, and oil quietly took gold's place in the loop.*
 
@@ -941,7 +942,7 @@ A: Borrowers with fixed-rate loans and owners of real assets like gold, land and
 
 Rulebook Level 1 (Foundations), chapter 06. Stack: Fundamentals. Id: rb-06.
 
-Web page: https://neetmonetary.netlify.app/#rb-06 . Text built 2026-11-11. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-06 . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Most new money is not printed by the government. It is typed into existence by a bank when it makes a loan.*
 
@@ -1026,7 +1027,7 @@ A: Not directly. The Treasury borrows by selling securities at auction to dealer
 
 Rulebook Level 1 (Foundations), chapter 07. Stack: Fundamentals. Id: rb-07.
 
-Web page: https://neetmonetary.netlify.app/#rb-07 . Text built 2026-11-11. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-07 . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *If all money is borrowed and interest is owed on top, can everyone ever pay? The honest answer is yes in a quiet world, and not always in a real one.*
 
@@ -1104,7 +1105,7 @@ A: No. In a steady state, interest can be paid indefinitely as long as interest 
 
 Rulebook Level 1 (Foundations), chapter 08. Stack: Fundamentals. Id: rb-08.
 
-Web page: https://neetmonetary.netlify.app/#rb-08 . Text built 2026-11-11. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-08 . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Money has weather. In some decades it melts, in others it hardens, and the same choice can make you rich in one season and poor in the next.*
 
@@ -1187,7 +1188,7 @@ A: Households, firms and banks were focused on repairing their balance sheets af
 
 Rulebook Level 1 (Foundations), chapter 09. Stack: Fundamentals. Id: rb-defl.
 
-Web page: https://neetmonetary.netlify.app/#rb-defl . Text built 2026-11-11. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-defl . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *If a dollar buys more tomorrow, why spend it today? The oldest argument against hard money, why it never ends, and what both sides miss.*
 
@@ -1253,7 +1254,7 @@ A: Gresham's law. When two monies circulate side by side, people spend the one e
 
 Rulebook Level 1 (Foundations), chapter 10. Stack: Fundamentals. Id: rb-09.
 
-Web page: https://neetmonetary.netlify.app/#rb-09 . Text built 2026-11-11. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-09 . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *No money has ruled forever. The ones that fell usually fell the same way: war, debt and a slow watering down of the promise.*
 
@@ -1339,7 +1340,7 @@ A: It is based on a small number of historical cases, its stages are clearer in 
 
 Rulebook Level 1 (Foundations), chapter 11. Stack: Fundamentals. Id: rb-leader.
 
-Web page: https://neetmonetary.netlify.app/#rb-leader . Text built 2026-11-11. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-leader . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Why surplus nations park their savings in America, why climbing the leaderboard is so hard, and what it really took for each number one to get there and to fall.*
 
@@ -1452,7 +1453,7 @@ A: Because the value is captured mostly at later steps and by owners, while the 
 
 Rulebook Level 1 (Foundations), chapter 12. Stack: Fundamentals. Id: rb-em.
 
-Web page: https://neetmonetary.netlify.app/#rb-em . Text built 2026-11-11. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-em . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Why a calm local price tag can hide a shrinking passport, how compulsory savings fund the home government, why talent and capital crowd into a few hubs, and whether Singapore was luck, strategy or someone else's plan.*
 
@@ -1566,7 +1567,7 @@ A: Yes. The degree is priced in dollars, so it now costs about 11% more ringgit.
 
 Rulebook Level 1 (Foundations), chapter 13. Stack: Fundamentals. Id: rb-10.
 
-Web page: https://neetmonetary.netlify.app/#rb-10 . Text built 2026-11-11. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-10 . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *We measure prices with money, but money itself keeps changing size. It is like measuring a room with a rubber ruler.*
 
@@ -1642,7 +1643,7 @@ A: Because the consumer price index counts rents and an estimate of owners' rent
 
 Rulebook Level 1 (Foundations), chapter 14. Stack: Fundamentals. Id: rb-11.
 
-Web page: https://neetmonetary.netlify.app/#rb-11 . Text built 2026-11-11. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-11 . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *In Monopoly the bank hands every player $1,500. In real life nobody does. So how does a new player get onto the board?*
 
@@ -1721,7 +1722,7 @@ A: Each gave non-owners a productive asset or credential that was large relative
 
 Rulebook Level 1 (Foundations), chapter 15. Stack: Fundamentals. Id: rb-12.
 
-Web page: https://neetmonetary.netlify.app/#rb-12 . Text built 2026-11-11. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-12 . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *The money in your app may look new, but under it sit the oldest anchors in the system: government bonds, bank credit and gold.*
 
@@ -1801,7 +1802,7 @@ A: Because delivered energy is the scarce physical limit on how much real output
 
 Rulebook Level 1 (Foundations), chapter 16. Stack: Fundamentals. Id: rb-13.
 
-Web page: https://neetmonetary.netlify.app/#rb-13 . Text built 2026-11-11. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-13 . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Sixteen quiet facts about money that, once seen, cannot be unseen.*
 
@@ -1860,7 +1861,7 @@ A: Because it creates the currency its debts are paid in. It records losses as a
 
 Rulebook Level 1 (Foundations), chapter 17. Stack: Fundamentals. Id: rb-buckets.
 
-Web page: https://neetmonetary.netlify.app/#rb-buckets . Text built 2026-11-11. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-buckets . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *A 20% crash does not hand 20% to someone else. But money really does slosh between buckets, and the timing of when you enter a bucket is most of the game.*
 
@@ -1931,7 +1932,7 @@ A: Mostly nowhere. It was the paper value of all shares at the last traded price
 
 Rulebook Level 1 (Foundations), chapter 18. Stack: Fundamentals. Id: rb-nation.
 
-Web page: https://neetmonetary.netlify.app/#rb-nation . Text built 2026-11-11. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-nation . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Is tax a scam? Why did the Torah and the Quran forbid interest? Is a tax-free hub like the UAE cheating? Read the world's countries as companies competing on one leaderboard and the answers fall into place.*
 
@@ -2006,7 +2007,7 @@ A: Because compounding interest in a farming world turned bad harvests into lost
 
 Rulebook Level 1 (Foundations), chapter 19. Stack: Fundamentals. Id: rb-titled.
 
-Web page: https://neetmonetary.netlify.app/#rb-titled . Text built 2026-11-11. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-titled . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Divide the world's wealth by everyone and it looks like plenty. Here is why most of that plenty is a price set on future credit, why the base layer was titled long ago, and what role each big country plays in keeping a crowded system from tipping over.*
 
@@ -2162,7 +2163,7 @@ A: Because owners need newcomers to keep paying rent, interest and share prices.
 
 Rulebook Level 1 (Foundations), chapter 20. Stack: Fundamentals. Id: rb-crypto.
 
-Web page: https://neetmonetary.netlify.app/#rb-crypto . Text built 2026-11-11. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-crypto . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Bitcoin, stablecoins and twenty million other tokens, sorted into three families, tested against the jobs of money, and taken apart with six questions you can use on any coin you ever hear about.*
 
@@ -2355,7 +2356,7 @@ A: Gresham's law from chapter 9: people spend the money they expect to lose valu
 
 Rulebook Level 1 (Foundations), chapter 21. Stack: Fundamentals. Id: rb-14.
 
-Web page: https://neetmonetary.netlify.app/#rb-14 . Text built 2026-11-11. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-14 . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *What each generation learned the hard way, written down so the next one does not have to.*
 
@@ -2398,7 +2399,7 @@ A: Because the last crisis fades from memory, calm years breed confidence, and e
 
 Rulebook Level 2 (The machinery), chapter 01. Stack: Fundamentals. Id: rb-bonds.
 
-Web page: https://neetmonetary.netlify.app/#rb-bonds . Text built 2026-11-11. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-bonds . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *A bond is a ticket you can resell: you pay RM100, it pays you RM4 a year, and you get RM100 back at the end. This chapter builds everything from that one ticket, then shows where bonds touch your own life, how to check your own exposure once a month, and how to weigh scary bond headlines before you feel them.*
 
@@ -3039,7 +3040,7 @@ A: About 1.5 points a year. Malaysian individuals generally pay no income tax on
 
 Rulebook Level 2 (The machinery), chapter 02. Stack: Fundamentals. Id: rb-moneymake.
 
-Web page: https://neetmonetary.netlify.app/#rb-moneymake . Text built 2026-11-11. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-moneymake . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Bank loans are one door, the busiest one in normal years. Level 2 adds the others: the Fed, the Treasury, the sponges that soak money up, the shredders that destroy it, the brakes on each printer, and how other countries do it.*
 
@@ -3306,6 +3307,80 @@ A: Any two of: capital rules, liquidity rules, the 3.90% the Fed pays on reserve
 **Check yourself.** Q: When Bank Negara buys dollars to steady the ringgit, what does it pay with?
 A: New ringgit reserves, which it usually soaks back up afterwards.
 
+### Read a country's debt mix: clues to where its money was born
+
+A table of debt by country went round social media in late 2026. It splits each country's debt into what households, firms and the government owe, as a share of one year's output. It looks like a league table of who is most in debt. Read with Step 1 and Step 2 in mind, it is something more useful: a set of clues to where each country's money was born. It is not a full birth record, for reasons the next box sets out.
+
+> **The statement.** Where household and firm debt is bank loans, each loan created a deposit on the day it was made, and each repayment destroyed one (Step 1). So the bank loan part of those two columns hints at who borrowed some of today's money into existence. The government column is different. It created money only where banks or the central bank bought the bonds (Step 2). Where pension funds or savers bought them, it moved money that already existed, though the buyers now own a bond the government owes. Three limits keep this from becoming a new simple story. The table is a stock built up over decades, like the water level in a bath. Money is created and destroyed as a flow, year by year, like the tap and the drain. The columns also count bonds bought by pension funds and other non-banks, and loans from abroad, which created no deposits at home. And one door is missing. When Bank Negara buys dollars to steady the ringgit, it creates ringgit at first with no local debt behind it.
+
+**Chart: Debt by who owes it, % of one year's output, end of 2024**
+| Item | Households | Firms | Government |
+|---|---|---|---|
+| Hong Kong | 88.1 | 240.2 | 80.6 |
+| Japan | 65.1 | 116.3 | 212.5 |
+| Singapore | 44.3 | 122.8 | 173.1 |
+| China | 60.0 | 138.1 | 88.4 |
+| United States | 69.2 | 73.8 | 114.1 |
+| South Korea | 90.1 | 110.5 | 43.8 |
+| Thailand | 89.2 | 82.1 | 56.6 |
+| Malaysia | 69.5 | 87.5 | 64.6 |
+| Germany | 49.9 | 89.4 | 62.4 |
+Three shapes. Households hold their largest share of the debt in Thailand (39% of the total), South Korea (37%) and Malaysia (31%). Even so, firms owe more than households in South Korea and Malaysia. Firms owe the largest share in Hong Kong (59%), China (48%) and Germany (44%). Government owes about half in Japan (54%) and Singapore (51%), and 44% in the United States. For government bonds, who bought them decides whether money was created. Source: BIS total credit statistics, fourth quarter of 2024, via DBnomics. Government debt at face value except South Korea (market value). Rebuilt by this project from the BIS data, so it differs slightly from the image that circulated.
+
+| Who lent | Did it create money? | Example |
+|---|---|---|
+| A bank lends to a household or a firm | Yes. A new deposit appears the moment the loan is made | Malaysia: Bank Negara counts household debt at 85 points of output, and about 70 of those points are bank loans (June 2025). The rest comes from development banks and some other lenders. The chart shows 69.5, which is a separate count by the BIS and only happens to be close to the 70. Always check which lenders a number counts |
+| The central bank buys government bonds | Yes, as bank reserves upstairs, and as deposits if it buys from a non-bank | Japan: the Bank of Japan held about 47% of government bonds, excluding bills, in June 2026 (Ministry of Finance) |
+| A pension fund or saver buys government bonds | No. Existing money moves to the government | Singapore: its pension board, the CPF Board, is reported to invest members' savings in special government bonds (Singapore Ministry of Finance) |
+| A lender abroad | Not by itself. Money already created elsewhere crosses the border, and a local deposit appears only if the proceeds are deposited at a local bank | Hong Kong: described by the IMF as a hub where mainland Chinese firms raise money (IMF, 2025) |
+
+> **Vietnam against Malaysia.** The post that carried the table asked: Vietnam's household debt is 18% of output, Malaysia's 70%, and both own about the same fridges and washing machines, so who is really wealthier? The short answer: Malaysia is clearly ahead on income, but this data cannot say who holds more household wealth. Low debt is not the same as being wealthy. Three checks lead there.
+
+- Check 1. Vietnam's number is the weakest in the picture. A 2018 study found no official household debt series, this project found none since, and Vietnam is not in the BIS data. A central bank based measure that counts family businesses was 47% in 2016. On the World Bank's bank credit measure Vietnam was 125% of output against Malaysia's 113% in 2022, the latest year with both. Vietnam borrows a lot overall, and more of it may be counted as business debt. So the low household figure does not show that families there owe little.
+- Check 2. Debt is one side of a balance sheet. Malaysian households owe about 85% of output on Bank Negara's wide count and hold financial assets of 177%, about 2.1 times their debt. Three quarters of their debt was borrowed for homes and cars (Bank Negara, 2025). No comparable asset figure was found for Vietnam.
+- Check 3. Income. Output per person is 2.6 times higher in Malaysia (US$13,125 against US$5,066 in 2025, World Bank).
+
+The post is right that household debt in Malaysia is a real burden: the typical Malaysian borrower's repayments take about a third of income (median debt service ratio 33% on existing loans, Bank Negara, 2025). On income Malaysia is clearly ahead, but on household wealth the data found cannot settle the post's question. Low debt in a table can mean thrift, a narrow way of counting, or little access to credit.
+
+**Curiosity questions**
+- Q: Canada's households owe 100% of output, Germany's 50%. Did Canada create more money?
+  A: Canadian households owe about twice as much as German households relative to output, so more of the bank-made money behind Canada's deposits sits in household loans, where banks made those loans. The BIS figures do not say why. German firms also owe less (89% of output against Canada's 118%). And Germany's money is the euro, created by banks across the euro area, so one country's table cannot show all of it. (builds on [How money is born today](https://neetmonetary.netlify.app/ai/rulebook/rb-06.md))
+- Q: Japan's government owes 213% of output. Did that create 213% of money?
+  A: No. A debt figure is a stock, not a count of money. The Bank of Japan held about 47% of government bonds, excluding bills, in June 2026 (Ministry of Finance), paid for with new reserves, which are upstairs money. Where it bought from banks, only reserves rose. Where it bought from insurers, pension funds or households, deposits rose too. Do not add the bank part and the central bank part together, because the same bond can pass through both. Bonds still held by insurers and pension funds moved money that already existed. (builds on [The world's balance sheet: what it owns, what it owes, and how countries are built](https://neetmonetary.netlify.app/ai/rulebook/rb-worldbs.md))
+
+**Check yourself.** Q: A Malaysian family takes a RM400,000 home loan from a bank. Which column of the table grows, and does money appear?
+A: The household column. Yes: the bank credits RM400,000 to the seller's account that did not exist before. When the family repays, that money is destroyed again.
+
+### Go deeper: Every row checked: the image against the BIS data
+
+This project checked the circulated image against the BIS total credit statistics. The image's own source line is the Institute of International Finance, whose country detail is behind a subscription. Each cell reads households / firms / government, % of output.
+
+| Country | Image | BIS, end of 2024 | What differs |
+|---|---|---|---|
+| Hong Kong | 86 / 227 / 67 | 88 / 240 / 81 | Firms and government about 13 points higher in BIS |
+| Japan | 60 / 113 / 199 | 65 / 116 / 213 | Government about 14 points higher in BIS |
+| Singapore | 45 / 130 / 172 | 44 / 123 / 173 | Firms 7 points lower in BIS, otherwise close |
+| France | 59 / 156 / 110 | 61 / 155 / 113 | Close |
+| Canada | 100 / 118 / 97 | 100 / 118 / 98 | Matches |
+| China | 60 / 142 / 97 | 60 / 138 / 88 | Government 9 points lower in BIS |
+| United States | 68 / 73 / 123 | 69 / 74 / 114 | Government 9 points lower in BIS |
+| South Korea | 89 / 111 / 49 | 90 / 111 / 44 | Close (BIS values Korea's government debt at market prices) |
+| Italy | 36 / 59 / 141 | 36 / 58 / 136 | Close |
+| Malaysia | 70 / 88 / 66 | 70 / 88 / 65 | Matches |
+| Thailand | 88 / 76 / 60 | 89 / 82 / 57 | Firms 6 points higher in BIS, otherwise close |
+| United Kingdom | 74 / 59 / 81 | 76 / 61 / 101 | Government 20 points higher in BIS (BIS face value 101, market value 87, and the image's 81 matches neither) |
+| Germany | 49 / 89 / 63 | 50 / 89 / 62 | Matches |
+| Israel | 43 / 71 / 70 | 42 / 70 / 67 | Close, but the image matches about 2021 best |
+| Brazil | 36 / 50 / 92 | 36 / 57 / 87 | Close, image matches about 2021 |
+| India | 39 / 49 / 74 | 42 / 51 / 82 | Image matches about 2019 |
+| Hungary | 18 / 70 / 73 | 17 / 73 / 74 | Close, image matches about 2020 |
+| Chile | 41 / 86 / 31 | 45 / 94 / 42 | Total 23 points higher in BIS |
+| South Africa | 34 / 35 / 79 | 34 / 33 / 78 | Close |
+| Vietnam | 23 / 107 / 32 | not covered / not covered / 33 (IMF) | No official household series exists |
+| Bahrain, Jordan, Grenada, Maldives, Senegal | see image | Government only (IMF), 1 to 13 points apart | Household and firm figures could not be checked |
+
+The image mixes years. Canada, Germany, Malaysia, Singapore and South Africa come close to 2024, on a best-fit test that is only a weak signal. Israel, Brazil, Hungary and India match 2019 to 2021 best. The post says Vietnam's household debt is 18% while the image says 23%. Neither number matched a source this project could open. Treat any debt league table as a starting point: check the year, who counted, and whether government debt is at face value or market price.
+
 ### Part 3 of 3. Who printed, year by year, and what the critics say
 
 ### What the critics add
@@ -3407,7 +3482,7 @@ A: 2008 to 2014 and 2020 to 2021. After 2021 the Fed shrank its bonds by about $
 
 Rulebook Level 2 (The machinery), chapter 03. Stack: Fundamentals. Id: rb-worldbs.
 
-Web page: https://neetmonetary.netlify.app/#rb-worldbs . Text built 2026-11-11. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-worldbs . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *You may have heard that the world owes $300 trillion, or $500 trillion, or more. Each can be true, depending on what you count, and the world owes all of it to itself. This chapter shows what the world really owns, why its debts cancel but still matter, how the numbers grew, and how each big country is built.*
 
@@ -3792,7 +3867,7 @@ A: Inflation. Nominal output grew faster than debt, so the ratio fell without an
 
 Rulebook Level 2 (The machinery), chapter 04. Stack: Fundamentals. Id: rb-clubs.
 
-Web page: https://neetmonetary.netlify.app/#rb-clubs . Text built 2026-11-11. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-clubs . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *The G7, G10 and G20 are clubs, not governments. This chapter shows what they can and cannot do, which countries can really print money and which cannot, why Malaysia sits outside every club but inside the game, and five questions that turn the world into a game board.*
 
@@ -4200,11 +4275,290 @@ A: The ringgit, and through it import prices. Not automatic: in 2026 the ringgit
 
 ---
 
+# How money moves: a field guide for investors
+
+Rulebook Level 4 (Money in motion), chapter 01. Stack: Fundamentals. Id: rb-moves.
+
+Web page: https://neetmonetary.netlify.app/#rb-moves . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+
+*A pre-owned luxury watch can lose a third of its price and nobody puts a dollar figure on it. A share slips 5% and $236 billion of market value is wiped off the screen. This chapter follows the money behind both: who moves it, what season steers it, and the arithmetic that decides who keeps it.*
+
+**In short**
+- A share is re-priced every second, a watch only when one sells. On 10 November 2026 the market value of NVIDIA, a leading maker of AI chips, fell about $236 billion while about $73 billion of its shares changed hands. Fewer than 2 in 100 of its shares traded that day.
+- No cash vanished in that fall. Something real was still lost: borrowing power against shares, spending by people who feel poorer, pension values, and the price firms pay for fresh money.
+- Money moves in three ways. It is created (bank loans, central bank buying), moved (every trade, wage and buyback) and re-priced (the last trade re-marks everything). Headlines mix the three.
+- The movers are named institutions, each with a verb and a size. The Fed sets the price of overnight money. Banks create deposits. Index funds buy by rule, and companies buy back their shares.
+- Seasons decide which bucket fills. Read them from six dials, not one headline.
+- A growing pot follows its typical rate, not its average. A 50% fall needs a 100% rise. Rebalancing can earn from swings, and borrowing can turn a winner into ruin. Nothing here is advice.
+
+**Built on Levels 1 and 2: recall these before you start.** 
+- [When markets fall: buckets, collateral and rotation](https://neetmonetary.netlify.app/ai/rulebook/rb-buckets.md): Market value is the last price times every share. It is a price tag, not a pile of cash. Money rotates between buckets that are pledged as collateral for each other.
+- [The seasons of money](https://neetmonetary.netlify.app/ai/rulebook/rb-08.md): Money has seasons. Inflation melts savings and lightens debts, deflation does the reverse, and each asset works in some seasons and fails in others.
+- [The musical chairs question](https://neetmonetary.netlify.app/ai/rulebook/rb-07.md): Interest can be paid if the lender spends it back. The music stops when everyone wants cash at once.
+- [How money is born today](https://neetmonetary.netlify.app/ai/rulebook/rb-06.md): A bank loan creates a new deposit. Repaying it destroys one.
+- [Who really creates money: banks, the Fed and the Treasury](https://neetmonetary.netlify.app/ai/rulebook/rb-moneymake.md): Trades between people only move money. Banks also create it when they buy from someone who is not a bank.
+- [The money clubs: who writes the rules, who can really print, and the game the world plays](https://neetmonetary.netlify.app/ai/rulebook/rb-clubs.md): Game theory asks each player's best move, given what the others might do.
+
+**Map of this chapter: How money moves**
+- The watch and the share: Why a price on a screen matters (see [When markets fall: buckets, collateral and rotation](https://neetmonetary.netlify.app/ai/rulebook/rb-buckets.md))
+- Lost, or only re-priced?: $236 billion against $73 billion (see [When markets fall: buckets, collateral and rotation](https://neetmonetary.netlify.app/ai/rulebook/rb-buckets.md))
+- Created, moved, re-priced: Three verbs for every headline (see [Who really creates money: banks, the Fed and the Treasury](https://neetmonetary.netlify.app/ai/rulebook/rb-moneymake.md))
+- The hands on the taps: Movers and levers, with sizes (see [The money clubs: who writes the rules, who can really print, and the game the world plays](https://neetmonetary.netlify.app/ai/rulebook/rb-clubs.md))
+- Six dials for the season: Which bucket fills next (see [The seasons of money](https://neetmonetary.netlify.app/ai/rulebook/rb-08.md))
+- The arithmetic of a growing pot: Typical rate, swings and borrowing (see [The musical chairs question](https://neetmonetary.netlify.app/ai/rulebook/rb-07.md))
+
+> **How to read this chapter.** Four parts, about 40 minutes in all. Read the main path first and skip the boxes marked Go deeper. Every number has a date, because these numbers move.
+
+### Part 1 of 4. The watch and the share
+
+Picture two things in a drawer. One is a vintage Rolex your uncle left you. The other is a slip showing ten NVIDIA shares. Both are worth something. Both can lose value. Yet when the share falls, the news can put a dollar figure on it that same evening. When the watch falls, nobody can.
+
+The difference is not value. It is how often each one gets a price, and how many other people are tied to that price.
+
+|  | A vintage watch | A listed share |
+|---|---|---|
+| How often it gets a price | Only when a similar watch sells, in dealer and auction sales | Every second the market is open. 429 million NVIDIA shares traded on 10 November 2026 |
+| Who sees the price | Dealers, auction houses and a few price trackers | Everyone, live, for free |
+| Are units identical? | No. Condition and papers differ | Yes. Every share is the same |
+| Who must hold it | Nobody | Every fund that tracks an index it belongs to |
+| Used to borrow against | Rarely, through a pawn or specialist lender | Every day: Americans owed $1.48 trillion on loans against their shares (September 2026) |
+
+Watches did fall. A widely followed index of pre-owned luxury watch prices, WatchCharts, lost roughly a third from its spring 2022 peak to 2024, by press reports. Higher interest rates cooled demand. In the single year to December 2024 the index fell 5.1%. The index then recovered about 9% in the year to June 2026, as reported. But no index fund was forced to sell, and no headline said the world lost $X billion. Nobody multiplies one sale price by every watch in every drawer. A watch owner who did not sell had a paper loss that no screen showed.
+
+### The day NVIDIA lost $236 billion
+
+1. On Monday 9 November 2026 NVIDIA's shares closed at $178.67. On Tuesday they closed at $168.89, down 5.47%.
+2. NVIDIA has about 24.2 billion shares (market value divided by price, not a filing figure). A fall of $9.78 on each one re-marks the company's value down by about $236 billion.
+3. How much cash changed hands that day? 429 million shares, at about $170 each: about $73 billion.
+4. Every one of those dollars went from a buyer to a seller. None vanished.
+5. About 98 in every 100 shares did not trade at all. They were simply re-marked at the new price.
+
+**Chart: NVIDIA: market value change against cash that changed hands, billions of dollars**
+| Item | Fall in market value | Cash that changed hands |
+|---|---|---|
+| 5 Nov 2026 | 448 | 57 |
+| 9 Nov 2026 | 193 | 82 |
+| 10 Nov 2026 | 236 | 73 |
+On 5 November, the day with the biggest fall in value, the value tag moved almost eight times as much as the cash. The tag is a price times all shares. The cash is only what was traded. Source: Closing prices and volumes from stockanalysis.com (fetched 11 November 2026). Cash traded is volume times the day's typical price, a project estimate.
+
+### So was anything lost?
+
+Yes, and this is where many explainers stop too early. Nobody received the $236 billion, because it was never cash. But the holders of the shares that did not trade really can sell for less today. And a price on a screen is wired into other people's lives in ways a watch price is not.
+
+| What is wired to the price | What happens when it falls | Size |
+|---|---|---|
+| Loans against shares | Lenders lend less. Some borrowers must sell or add cash (a margin call) | US margin debt $1.48 trillion, September 2026 (FINRA) |
+| Spending | People who feel poorer spend less | About 3.2 cents less a year for every $1 of share wealth lost (a 2021 study in the American Economic Review) |
+| Pensions and national funds | They count holdings at market value every quarter | Norway's oil fund reported a loss of about 278 billion Norwegian kroner (-0.5% for the quarter) in July to September 2026 |
+| The company itself | Selling new shares raises less, and staff paid in shares get less | A lower price means new shares raise less money. No figure was found |
+
+> **The real difference.** A watch has these wires too, only thinner. A pawn lender lends against it, and its owner may feel poorer. What turns a price fall into a headline is how visible the price is and how many people are wired to it, not whether value changed.
+
+> **Closer to home.** For a Malaysian reader, the nearest wire is retirement savings. Deposits and savings in the EPF, Malaysia's national retirement fund, make up 68.4% of household financial assets (Bank Negara, Financial Stability Review, 2025). EPF invests part of them in shares, so a worker who never bought a share is still wired to share prices.
+
+### One headline, two causes
+
+The story going round said NVIDIA fell because of news about its chief executive. On Sunday 8 November the board said independent directors, with outside counsel, would investigate reports about the chief executive. The reports said the chief executive had been the target of a "foreign intelligence effort." The board said it had no reason to believe national security or company secrets were harmed (board statement, 8 November 2026). It had reached no finding when this chapter was written. This chapter leaves out reports about anyone's private life, because the lesson does not need them. Now line the days up against other large chip makers.
+
+| Day | NVIDIA | Chip fund (SMH, NVIDIA included) | What it tells you |
+|---|---|---|---|
+| 30 Oct | -4.2% | -7.0% | The chip fund fell more than NVIDIA |
+| 5 Nov | -9.3% | -11.2% | The chip fund fell further, two days after the midterm elections |
+| 9 Nov | -4.3% | +5.1% | NVIDIA alone. Rival chip makers rose: AMD +13.3%, Broadcom +8.8% |
+| 10 Nov | -5.5% | -0.8% | NVIDIA fell about 5 points more than the fund that holds it |
+
+The board's statement came on the Sunday before the last two days, when NVIDIA fell about 9.5% from $186.64 to $168.89. That is timing, and timing alone does not prove cause. The biggest single day, 5 November, hit the chip fund harder than NVIDIA, two days after the midterm elections and three days before the board's statement. Related press reports had appeared from 29 October, so even the timing is not clean. From its close of $239.24 on 6 October the share had already fallen 22% by 6 November. If a headline gives one cause for a fall that had at least two, it is telling you a story, not the full record.
+
+> **Where the money went.** On 9 November NVIDIA fell while its rivals jumped. That fits money rotating inside one bucket, from one chip maker to others. But this project did not measure where the cash went, and the whole market rose that day.
+
+**Check yourself.** Q: NVIDIA's market value fell about $236 billion in one day. Who has the $236 billion now?
+A: Almost nobody. It was never a pile of cash. Short sellers and buyers of put options gained, but only what the other side of their contracts lost, a small slice of $236 billion. About $73 billion did change hands, from buyers to sellers, and all of it still exists. What fell was the price tag on every share, and with it borrowing power, spending and fund values.
+
+### Part 2 of 4. Created, moved, re-priced: who really moves money
+
+Every money headline uses one of three verbs, often without saying which. Get the verb right and the headline usually makes sense.
+
+| Verb | What happens | Example from 2026 |
+|---|---|---|
+| Created | New money appears: a bank lends, or a bank or the central bank buys from someone who is not a bank | US bank loans grew by about $1 trillion in the year to September 2026, to $14.10 trillion, and that net growth became new deposits |
+| Moved | Existing money changes hands: a trade, a wage, a tax, a buyback, a factory order | Amazon, Alphabet, Microsoft and Meta guided to about $730 billion of capital spending in 2026 (press tallies of company guidance) |
+| Re-priced | No money moves. The last trade re-marks everything like it | NVIDIA's $236 billion on 10 November. More than $2 trillion of tech market value wiped out on 5 November (NPR) |
+
+Notice the scale. The technology firms' building plans for one year are about ten times the cash that traded in NVIDIA on 10 November. Once spent, that is real money paid to chip makers, builders and power companies, for things that get made. That flow shapes the economy far more than any one day's price tag.
+
+### The movers, each with a verb
+
+Picture a kitchen full of taps. Banks and the central bank can make new water appear. The Treasury moves water between the floors. Funds, companies and traders pour from one glass into another. When someone says the money is moving, ask whose hand is on which tap, and how far it is turned. Here are the biggest hands as of autumn 2026.
+
+| Who | What they do | How big |
+|---|---|---|
+| Federal Reserve | Sets the price of overnight money. Creates or retires bank reserves (the banks' own accounts at the Fed) by buying bonds or letting them mature | Policy rate 3.75% to 4.00% after a rise on 16 September 2026. Assets $6.75 trillion |
+| US Treasury | Borrows to cover the deficit and keeps its cash at the Fed | Plans to borrow a net $618 billion from private buyers in October to December 2026 |
+| Banks | Create deposits when they lend | Loans $14.10 trillion, growing 7.6% a year |
+| Index funds | Buy and sell by rule as money flows in or out | Morningstar reports they have held more than active funds in US funds since the end of 2023 |
+| The three largest fund managers | Gather savings into funds and vote the shares | BlackRock alone reported $15.49 trillion under management at the end of September 2026 |
+| Companies | Buy back their own shares with cash | About $1.1 trillion by S&P 500 firms in the year to June 2026, a reported record |
+| Market makers | Quote buy and sell prices and hold shares briefly | One firm, Citadel Securities, says it handles about 35% of US retail trading |
+| Borrowers on margin | Borrow against shares to buy more | $1.48 trillion, September 2026 |
+| Foreign holders of US debt | Lend to the US government | About $9.25 trillion in July 2026 data (press tally of Treasury figures), Japan the largest at about $1.10 trillion |
+
+> **Industry blocs are many firms, not one mind.** People talk about the financial industry, the technology industry and the defence industry as if each were one mind. Each is a group of named firms chasing their own profit. Finance: the three largest fund managers run roughly $33.5 trillion or more between them (a press tally using figures from different dates). Technology: four firms are spending about $730 billion on data centres this year. Defence: the US request for 2027 is $1.5 trillion, $350 billion of it hoped for from a separate bill (not passed as far as this project found). When they push the same way, much of it is shared incentive, the focal point game from Level 2 chapter 4. Some of it is open and organised: trade groups, lobbying that the law makes them record, and contracts with government. Ask of any claim: who, doing what, how much.
+
+### The levers: how policy moves money between buckets
+
+| Lever | How it moves money | A documented episode |
+|---|---|---|
+| Raising interest rates | Cash and bills pay more. Distant profits and long bonds are worth less today | 2022: US shares -18.0%, 10-year government bonds -17.8%, Treasury bills +2.1% (Damodaran, NYU) |
+| Central bank buying (QE) | The central bank takes bonds out of private hands. Sellers who are not banks get new deposits and look for something else to hold | 2020: the Fed bought bonds on a vast scale from March while the government sent stimulus checks. US shares ended the year up 18.0%, counting dividends (the cash firms pay out). One year cannot separate the causes |
+| Central bank shrinking (QT) | Bonds mature without replacement, so private buyers must absorb more | Ran from 1 June 2022 until 1 December 2025 |
+| Government deficits | Spending puts deposits in private hands, borrowing adds bonds others must buy | $618 billion of planned net borrowing in October to December 2026, which also refills the Treasury's cash account, so it is not the same as the deficit |
+| Proposed laws | Expected profits change before any law passes | 5 November 2026: chip shares fell 11.2% two days after the midterm elections. A bill to pause new data centres had been put forward in March 2026. Any link is reported, not proven |
+
+**Check yourself.** Q: A company spends $10 billion buying back its own shares. Is money created, moved or re-priced?
+A: Moved. The company's cash goes to the shareholders who sold. The price of the remaining shares may then rise, which is re-pricing, but no new money is created.
+
+### Part 3 of 4. Seasons, read from six dials
+
+Level 1 chapter 8 said money behaves like ice. It melts in a warm season and keeps its shape in a cold one. No single gauge tells you which season you are in. Six dials, read together, come close. As a rough rule, rising inflation and fast credit growth point to a warm season, and falling prices and shrinking credit point to a cold one.
+
+| Dial | Reading | What it says |
+|---|---|---|
+| Real interest rate: what a saver earns above inflation (read from a 10-year US government bond whose payments rise with inflation) | 2.78%, 10 November 2026 | High. Cash and bonds pay well above inflation. A hard season for gold and for shares priced on distant profits |
+| Inflation trend | 3.7% in the year to September 2026, up from 3.4% | Rising, with gasoline over half of September's monthly rise (press reports of the US Bureau of Labor Statistics release) |
+| Extra pay for risky borrowers (high-yield spread): the extra interest weaker firms pay above the government | 3.14 points, 28 October 2026, up from 2.63 in late August | Still small, but growing, so lenders are a little more nervous |
+| Long rates minus short rates (yield curve) | +0.25 points (10-year 4.98%, 2-year 4.73%) | Positive. Lenders are still paid more for lending longer, which is normal. When short rates rise above long rates, many investors treat it as a warning sign |
+| The dollar against other currencies | About 101.7, 21 October 2026 | Middling. One reading, not a trend |
+| Money and credit growth | Money supply +5.7%, bank loans +7.6% in a year | Banks are lending faster than prices are rising |
+
+> **One reading.** This project reads the dials as a warm season with high real rates: inflation rising, but rates well above it. One past period with high real rates is 1980 to 1982. The match is loose. Inflation then was 8.4% and falling, while today it is 3.7% and rising. Today's mix points both ways, so this is a reading to argue with, not a forecast.
+
+| Season | Inflation a year | Shares | Cash (bills) | Government bonds | Gold |
+|---|---|---|---|---|---|
+| 1971 to 1979, the great inflation | 7.6% | -1.3% | -1.2% | -3.1% | +24.3% |
+| 1980 to 1982, high real rates | 8.4% | +5.9% | +3.5% | +3.1% | -11.0% |
+| 1983 to 2007, the long calm | 3.1% | +9.2% | +2.0% | +5.3% | -0.7% |
+| 2008, the crash year | 0.1% | -36.6% | +1.3% | +20.0% | +4.2% |
+| 2022, the rate shock | 6.5% | -23.0% | -4.1% | -22.8% | -5.5% |
+| Whole period, 1970 to 2024 | 3.9% | +6.7% | +0.5% | +2.1% | +3.7% |
+
+Returns are a year, after inflation, compounded, from Aswath Damodaran's published US data (NYU Stern) and US consumer prices. No bucket wins every season. In 2008 cash beat shares, but long government bonds (+20.0% after inflation) and gold (+4.2%) beat cash. Over the 55 years from 1970 to 2024 cash beat inflation by just 0.5% a year. Gold won the 1970s and lost the early 1980s. Shares won the long run and lost more than a third of their value in a single year.
+
+### Who buys after the crash
+
+Every share sold in a crash has a buyer. On 9 and 10 November, buyers paid about $155 billion for NVIDIA shares (an estimate from volume times typical price). So the useful question is not whether someone buys, but who still has cash and cheap credit when others are forced to sell.
+
+> **Musical chairs, played in a market.** This is the musical chairs of Level 1 chapter 7, played in a market. In quiet years debts are paid slowly from a flow of income. In a panic everyone wants cash on the same day, and the chairs run out. An investor who borrows against shares can drift the way Minsky described: calm years tempt bigger loans, and a fall forces a sale. In March 2020, as the pandemic hit, the Fed bought US government bonds on a vast scale. Its holdings rose from about $2.52 trillion on 11 March to about $3.63 trillion on 8 April (Fed weekly balance sheet). That is a central bank adding chairs so the music can keep playing.
+
+After 2008 large investors bought foreclosed homes to rent out. By June 2022, 32 investors with more than 1,000 homes each owned nearly 450,000 US single-family homes, by one estimate cited by the US Government Accountability Office. That was about 3% of all single-family rentals.
+
+- **Myth:** Crashes are planned so that the rich can buy everything cheaply.
+- **Reality:** Those with spare cash and credit do buy cheaply after a crash, and some episodes are documented, such as large investors buying foreclosed homes after 2008. Planning the crash is a different claim, and it needs its own evidence: who acted, how, and what records that would leave behind. One part is documented. Rescues after a crash, such as rate cuts and central bank buying, lift asset prices first. That helps people who already own assets (the Cantillon effect from Level 1). It is not proof of a plan.
+
+### Part 4 of 4. The arithmetic of a growing pot
+
+Thomas Cover, an information theorist, asked a simple question in a recorded lecture on growth-optimal and universal portfolios. If you reinvest everything each day, what makes your money grow fastest over time? The answer fits on one page, and once you see it you will read every return figure differently.
+
+Start with a game. You can hold cash, which stays at $1. Or you can hold a stock that, each period, either doubles or halves, with equal odds. On average the stock looks great: half the time +100%, half the time -50%, an average of +25%. But a double and a halving cancel out. Over many periods the stock typically goes nowhere. Typical here means the result in the middle of many plays, not the plain average.
+
+| What you hold | Each period your pot becomes | Typical growth a period |
+|---|---|---|
+| Cash only | 1 times | 0% |
+| The stock only | 2 times or 0.5 times | 0%, even though the average looks like +25% |
+| Half in each, rebalanced back to half every period | 1.5 times or 0.75 times | +6.07% |
+
+Where the 1.5 and 0.75 come from: start with $1, half in cash and half in the stock. If the stock doubles, the cash half stays $0.50 and the stock half becomes $1, so the pot is $1.50. If it halves, $0.50 plus $0.25 makes $0.75. One of each multiplies to 1.5 times 0.75, which is 1.125 over two periods, so the typical period grows by the square root of 1.125, about 1.06, or 6%. Two things that each go nowhere make about 6% a period together, in this made-up game. Real markets can pay far less for rebalancing, or nothing, as the box below shows. Rebalancing sells some of the stock after it doubles and buys more after it halves, so it earns from the swings themselves. In a computer run of 100,000 players over 20 periods, the rebalanced pot beat the stock alone three times in four. Yet one player in four still ended below where they started. A typical rate is not a promise to any one person.
+
+Now go back to the drawer. Say the ten shares are worth RM1,000 and fall by half, to RM500. A 50% rise takes them back to just RM750. To get home they need 100%. Falls hurt more than rises help, because growth compounds from wherever you now stand.
+
+| If your pot falls by | It must then rise by this to get back |
+|---|---|
+| 10% | 11% |
+| 20% | 25% |
+| 30% | 43% |
+| 50% | 100% |
+| 80% | 400% |
+
+| Share of your pot in the coin-flip stock | Typical growth a period |
+|---|---|
+| 50% | +6.1% |
+| 100% | 0% |
+| 150%, borrowing the extra at no interest | -20.9% |
+| 200%, borrowing the extra | Ruin on the first halving |
+
+At 150%, a double turns each $1 into $2.50 and a halving into $0.25. One of each multiplies to 2.5 times 0.25, which is 0.625 over two periods. The square root of 0.625 is about 0.79, a loss of about 21% a period. Borrowing to hold more of a good bet can turn it into a losing one. Past the best mix, every extra borrowed dollar lowers the typical growth, and enough of them guarantee ruin.
+
+> **The catches.** The 6% needs a stock whose ups and downs cancel out. Real shares are not coin flips. Suppose the stock rises 60% or falls 20% with equal odds. Then holding it alone grows 13.1% a period, and half-and-half rebalancing only 8.2%. Rebalancing loses when one asset keeps climbing. Costs bite too: trading 1% of each dollar moved cuts the 6.07% to 5.89%, and taxes can fall due every year. Cover's best mix is only known in hindsight. His method that knows nothing in advance comes close to it only over very long periods.
+
+Cover added one more idea that is worth carrying everywhere. In Cover's theory, extra information, a tip or a forecast, can raise your growth rate only by as much as it actually tells you about what happens next. A tip that is right no more often than chance tells you nothing, so it adds nothing to your growth, however confident it sounds. Paying for it lowers your growth.
+
+### Five questions before you believe a money headline
+
+1. Created, moved or re-priced? Which verb is the headline really using?
+2. How much cash actually changed hands, against the number in the headline?
+3. Who is wired to this price: lenders, funds, pensions, the company itself?
+4. Which season are we in, and does this move fit it?
+5. Who acted, doing what, how much? Was a cause named only because it came first?
+
+**Curiosity questions**
+- Q: If the watch market had a listed index fund that people borrowed against, would a 30% fall become news?
+  A: Very likely. The fall would force margin calls and fund sales, and its price would be live on every screen. The value lost would be the same. The wiring would be new. (builds on [When markets fall: buckets, collateral and rotation](https://neetmonetary.netlify.app/ai/rulebook/rb-buckets.md))
+- Q: On 9 November NVIDIA fell 4% while chip shares rose 5%. Where did the money go?
+  A: Possibly in part to other chip makers. AMD rose 13.3% and Broadcom 8.8%, and the whole market rose that day. This project did not measure the flows, so rotation inside the bucket is a likely reading, not a measured fact. (builds on [When markets fall: buckets, collateral and rotation](https://neetmonetary.netlify.app/ai/rulebook/rb-buckets.md))
+- Q: Why might a central bank raise rates when shares are already falling?
+  A: Because its job is prices and jobs, not share prices. In 2022 the Fed kept raising rates while shares fell 18%, because inflation was far above its target. (builds on [The seasons of money](https://neetmonetary.netlify.app/ai/rulebook/rb-08.md))
+- Q: Level 1 chapter 7 showed that interest can be paid from a circulating flow, as long as the lender spends it back. What happens to that circulation when a crash makes everyone hoard cash?
+  A: It slows, just as the musical chairs chapter warned. Debts fall due while money sits still, which is why central banks lend freely in a panic. (builds on [The musical chairs question](https://neetmonetary.netlify.app/ai/rulebook/rb-07.md))
+- Q: If rebalancing earns from swings, why does nobody get rich from it easily?
+  A: Because real assets trend, costs and taxes eat the gain, and the best mix is only known afterwards. The edge is real but small, and it comes from discipline, not prediction. (builds on [The seasons of money](https://neetmonetary.netlify.app/ai/rulebook/rb-08.md))
+
+### Go deeper: Six NVIDIA trading days in full, and the method
+
+| Date | Close | Change | Shares traded |
+|---|---|---|---|
+| 29 Oct | $213.66 | -0.80% | 77.6 million |
+| 30 Oct | $204.64 | -4.22% | 168.4 million |
+| 5 Nov | $181.60 | -9.26% | 306.1 million |
+| 6 Nov | $186.64 | +2.78% | 180.2 million |
+| 9 Nov | $178.67 | -4.27% | 462.7 million |
+| 10 Nov | $168.89 | -5.47% | 429.2 million |
+
+Market value was $4.08 trillion at the 10 November close (the same site's history table shows $4.07 trillion), which implies about 24.16 billion shares. Cash traded is shares traded times the day's typical price, the average of its high, low and close, so the true figure lies between volume times the day's low and volume times its high. It is gross turnover. Some trades were dealers buying and selling the same shares within the day, so the cash that moved from final sellers to final buyers was less. A press figure of more than $470 billion lost over two days could not be traced to a source. This project's figure from closing prices is about $429 billion. NVIDIA's results were due on 17 November 2026, after this chapter was written.
+
+Legal note: a shareholder lawsuit was reported on 10 November. A lawsuit is an allegation, not a finding. The board's investigation had reached no finding when this chapter was written.
+
+### Go deeper: The season table in full, with property
+
+| Season | Shares | Cash | Bonds | Gold | Home prices |
+|---|---|---|---|---|---|
+| 1971 to 1979 | 6.2 / -1.3 | 6.3 / -1.2 | 4.2 / -3.1 | 33.7 / 24.3 | 8.8 / 1.1 |
+| 1980 to 1982 | 14.8 / 5.9 | 12.2 / 3.5 | 11.7 / 3.1 | -3.5 / -11.0 | 4.3 / -3.7 |
+| 1983 to 2007 | 12.6 / 9.2 | 5.2 / 2.0 | 8.5 / 5.3 | 2.4 / -0.7 | 5.2 / 2.0 |
+| 2008 to 2014 | 7.2 / 5.5 | 0.3 / -1.3 | 4.8 / 3.2 | 5.4 / 3.7 | -0.6 / -2.1 |
+| 2015 to 2019 | 11.6 / 9.6 | 1.1 / -0.7 | 2.8 / 1.0 | 4.8 / 2.9 | 5.0 / 3.1 |
+| 2020 to 2021 | 23.1 / 18.2 | 0.2 / -3.8 | 3.2 / -1.0 | 9.3 / 5.0 | 14.6 / 10.0 |
+| 2022 to 2024 | 8.9 / 4.5 | 4.2 / 0.0 | -5.7 / -9.5 | 12.8 / 8.2 | 5.1 / 0.8 |
+| 2025 alone, before inflation | 17.8 | 4.2 | 7.8 | 66.2 | 1.6 |
+
+Each cell is the compounded yearly return before / after inflation, in percent. Gold in the 1970s starts from a fixed official price, so its gain partly reflects the end of the gold peg. The real estate series leaves out rent and borrowing, so they understate what an owner earned. Source: Damodaran, Historical Returns on Stocks, Bonds and Bills, updated January 2026, and US consumer prices (BLS).
+
+### Go deeper: Cover's mathematics, for the curious
+
+The growth rate of a pot that is reinvested each period is the average of the logarithm of each period's gain. That is why the typical rate, the geometric mean, governs compounding, while the plain average does not. Maximizing it is the rule John Kelly set out in 1956 for repeated bets with an information edge and Cover generalized to portfolios.
+
+For the coin-flip stock, the best fixed mix is half stock and half cash, with growth equal to the square root of 1.5 times 0.75, about 1.0607 a period. Cover's universal portfolio, published in Mathematical Finance in 1991, spreads money across every fixed mix and lets the winners grow. For two assets, a refined version of the method has a proven worst-case bound of about 1 divided by twice the square root of the number of periods of what the best fixed mix chosen in hindsight would have made (this project has not checked the exact form against the papers): about 11% of it after 20 periods and under 1% after 20 years of trading days. Its growth rate catches up, but slowly.
+
+Sources: J. L. Kelly, A New Interpretation of Information Rate, Bell System Technical Journal, 1956. T. M. Cover, Universal Portfolios, Mathematical Finance, 1991. The lecture this chapter draws on is a recorded talk by Cover on growth-optimal and universal portfolios (video wsd8nsJg6D8), a teaching source, not a paper. The calculations here were rerun by this project.
+
+> **Not advice.** This chapter explains how money moves. It does not tell you what to buy, sell or hold. Every number here has a date and will change.
+
+
+---
+
 # Digital credit, dissected: Saylor's 12% and money moving between baskets
 
-Rulebook Level 4 (Futures and debates), chapter 01. Stack: Fundamentals. Id: rb-strc.
+Rulebook Level 4 (Money in motion), chapter 02. Stack: Fundamentals. Id: rb-strc.
 
-Web page: https://neetmonetary.netlify.app/#rb-strc . Text built 2026-11-11. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-strc . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Michael Saylor pitches Bitcoin as digital capital, STRC as digital credit paying 12%, and a future dollar token paying 8%. This chapter takes the pitch apart claim by claim, follows the money step by step, and asks what really moves when money moves between baskets.*
 
@@ -4754,7 +5108,7 @@ A: For example: is it a deposit or a share, who promises the $100, where does th
 
 # Intelligence: will energy replace money? (the Desk)
 
-Stack: Intelligence. These are graded, dated findings, not settled facts. Check each as-of date and fetch current data before relying on a number. Web page: https://neetmonetary.netlify.app/#desk . Text built 2026-11-11.
+Stack: Intelligence. These are graded, dated findings, not settled facts. Check each as-of date and fetch current data before relying on a number. Web page: https://neetmonetary.netlify.app/#desk . Text built 2026-11-12.
 
 ## Scenario odds by horizon
 
@@ -4901,7 +5255,7 @@ https://neetmonetary.netlify.app/claims.json holds the full ledger. Each entry h
 
 Landscape chapter 01. Stack: Intelligence (graded, dated findings). Id: ls-01. Facts as of 2026-10-23.
 
-Web page: https://neetmonetary.netlify.app/#ls-01 . Text built 2026-11-11. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#ls-01 . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *A hunch about Washington, Tokyo and Paris became a test of how to find intent that nobody announces.*
 
@@ -4968,7 +5322,7 @@ A: Because it was money that actually moved (T0), and it broke the default patte
 
 Landscape chapter 02. Stack: Intelligence (graded, dated findings). Id: ls-02. Facts as of 2026-10-23.
 
-Web page: https://neetmonetary.netlify.app/#ls-02 . Text built 2026-11-11. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#ls-02 . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *The US debt grows on its own, mainly because the government spends more than it taxes even before paying interest.*
 
@@ -5031,7 +5385,7 @@ A: No. Interest costs would fall over time, but the primary deficit of about 2.9
 
 Landscape chapter 03. Stack: Intelligence (graded, dated findings). Id: ls-03. Facts as of 2026-10-23.
 
-Web page: https://neetmonetary.netlify.app/#ls-03 . Text built 2026-11-11. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#ls-03 . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *They are not shrinking the debt. They are managing who must buy it.*
 
@@ -5094,7 +5448,7 @@ A: Because bills reprice within months, so any rate rise hits the budget fast, a
 
 Landscape chapter 04. Stack: Intelligence (graded, dated findings). Id: ls-04. Facts as of 2026-10-23.
 
-Web page: https://neetmonetary.netlify.app/#ls-04 . Text built 2026-11-11. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#ls-04 . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Intent and outcome are different things. Most players want more than they can get, and the gap shows where the real limits are.*
 
@@ -5162,7 +5516,7 @@ A: Because the Fed under Warsh is independent and hiking, the courts kept Govern
 
 Landscape chapter 05. Stack: Intelligence (graded, dated findings). Id: ls-05. Facts as of 2026-10-23.
 
-Web page: https://neetmonetary.netlify.app/#ls-05 . Text built 2026-11-11. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#ls-05 . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *New digital money is being built on top of the old system, by law. It is an acquisition, not a merger.*
 
@@ -5229,7 +5583,7 @@ A: Not under current law. Compliant stablecoins must hold Treasury bills, pay ho
 
 Landscape chapter 06. Stack: Intelligence (graded, dated findings). Id: ls-06. Facts as of 2026-10-23.
 
-Web page: https://neetmonetary.netlify.app/#ls-06 . Text built 2026-11-11. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#ls-06 . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Gold is gaining a job between nations. It is not coming back as the thing behind your dollars, and the math of revaluing it is smaller than the stories.*
 
@@ -5291,7 +5645,7 @@ A: No mechanism links gold to the debt. The ratio has wandered from 12x to 53x, 
 
 Landscape chapter 07. Stack: Intelligence (graded, dated findings). Id: ls-07. Facts as of 2026-10-23.
 
-Web page: https://neetmonetary.netlify.app/#ls-07 . Text built 2026-11-11. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#ls-07 . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Energy will not replace the dollar you spend. It is replacing the job gold used to do: the scarce physical thing that limits what any money can buy.*
 
@@ -5349,7 +5703,7 @@ A: Because solar keeps pushing the cost of energy down. If a kWh gets cheaper fa
 
 Landscape chapter 08. Stack: Intelligence (graded, dated findings). Id: ls-08. Facts as of 2026-10-23.
 
-Web page: https://neetmonetary.netlify.app/#ls-08 . Text built 2026-11-11. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#ls-08 . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Three tiers behave like two classes. A UHI is limited by rent and the tax base, not by robots, and ownership is what moves people across the line.*
 
@@ -5408,7 +5762,7 @@ A: Because almost half of UHI spending goes to housing, which robots cannot mult
 
 Landscape chapter 09. Stack: Intelligence (graded, dated findings). Id: ls-09. Facts as of 2026-10-23.
 
-Web page: https://neetmonetary.netlify.app/#ls-09 . Text built 2026-11-11. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#ls-09 . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *The ladder was not pulled up. One rung broke, one got cheap but lottery-like, and ownership decides the climb.*
 
@@ -5461,7 +5815,7 @@ A: It is right that ownership decides outcomes. It is wrong that the door is shu
 
 Landscape chapter 10. Stack: Intelligence (graded, dated findings). Id: ls-10. Facts as of 2026-10-23.
 
-Web page: https://neetmonetary.netlify.app/#ls-10 . Text built 2026-11-11. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#ls-10 . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *The rivals' strongest card is hardware, not currency. The shocks that matter in 2026 came from oil, the yen and Paris.*
 
@@ -5522,7 +5876,7 @@ A: Because the watt-dollar needs energy hardware that the US cannot print. A riv
 
 Landscape chapter 11. Stack: Intelligence (graded, dated findings). Id: ls-11. Facts as of 2026-10-23.
 
-Web page: https://neetmonetary.netlify.app/#ls-11 . Text built 2026-11-11. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#ls-11 . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Information arbitrage: the most useful insights sit between topics, where a cause in one area quietly drives an effect in another.*
 
@@ -5572,7 +5926,7 @@ A: Oil pushed inflation up, central banks hiked, Japan sold Treasuries to defend
 
 Landscape chapter 12. Stack: Intelligence (graded, dated findings). Id: ls-12. Facts as of 2026-10-23.
 
-Web page: https://neetmonetary.netlify.app/#ls-12 . Text built 2026-11-11. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#ls-12 . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Not a prophecy. The single most likely story the evidence supports, the dates where it could fork, and what it means for you.*
 
@@ -5644,7 +5998,7 @@ A: Not a bank holiday or a new currency. Several years of prices rising faster t
 
 Landscape chapter 13. Stack: Intelligence (graded, dated findings). Id: ls-13. Facts as of 2026-10-23.
 
-Web page: https://neetmonetary.netlify.app/#ls-13 . Text built 2026-11-11. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#ls-13 . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *The owner asked who takes over if the US declines, whether Europe has to fall, and where its money would go. The short answers: nobody whole, no, and mostly West.*
 

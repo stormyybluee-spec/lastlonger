@@ -2,7 +2,7 @@
 
 Rulebook Level 1 (Foundations), chapter 09. Stack: Fundamentals. Id: rb-defl.
 
-Web page: https://neetmonetary.netlify.app/#rb-defl . Text built 2026-11-11. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-defl . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *If a dollar buys more tomorrow, why spend it today? The oldest argument against hard money, why it never ends, and what both sides miss.*
 

@@ -2,7 +2,7 @@
 
 Rulebook Level 1 (Foundations), chapter 17. Stack: Fundamentals. Id: rb-buckets.
 
-Web page: https://neetmonetary.netlify.app/#rb-buckets . Text built 2026-11-11. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-buckets . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *A 20% crash does not hand 20% to someone else. But money really does slosh between buckets, and the timing of when you enter a bucket is most of the game.*
 

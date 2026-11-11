@@ -1,6 +1,6 @@
 # The method (from the Plan, version 5.1)
 
-Stack: Fundamentals. How the desk turns a raw question into an answer. Built 2026-11-11. The full plan, with the origin cases and the agent architecture, is at https://neetmonetary.netlify.app/PLAN.md
+Stack: Fundamentals. How the desk turns a raw question into an answer. Built 2026-11-12. The full plan, with the origin cases and the agent architecture, is at https://neetmonetary.netlify.app/PLAN.md
 
 
 ### 4.1 Evidence ladder

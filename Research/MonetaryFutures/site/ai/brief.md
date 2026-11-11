@@ -7,7 +7,7 @@ General education and research. Nothing here is personal financial advice, and y
 ## Two stacks. Keep them apart
 
 **1. Fundamentals: the Rulebook and the method.** How money works, taught from zero in four levels. Each chapter went through a verifier, a blind red team and test readers. It is stable reference material. Use it for mechanisms, definitions and vocabulary.
-- Level 1, Foundations (21 chapters). Level 2, The machinery (4 chapters). Level 3 is empty for now. Level 4, Futures and debates (1 chapter).
+- Level 1, Foundations (21 chapters). Level 2, The machinery (4 chapters). Level 3 is empty for now. Level 4, Money in motion (2 chapters: how money moves for an investor, and a bold claim tested).
 - The method is how the desk reaches an answer: seven moves, an evidence ladder and rules for reasoning about what is not disclosed.
 
 **2. Intelligence: the Desk and the Landscape.** One live research question: will energy replace money? The findings are dated and graded. Each has an evidence tier, a status, a confidence and a test that would settle it. Treat them as graded hypotheses that age, not as settled facts.
@@ -86,4 +86,4 @@ Scenario odds, thesis cards and round summaries: https://neetmonetary.netlify.ap
 - [The full plan](https://neetmonetary.netlify.app/PLAN.md)
 - [Everything in one file](https://neetmonetary.netlify.app/llms-full.txt)
 
-Plan version 5.1. Pack built 2026-11-11.
+Plan version 5.1. Pack built 2026-11-12.

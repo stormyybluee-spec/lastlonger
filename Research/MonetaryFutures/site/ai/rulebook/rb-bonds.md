@@ -2,7 +2,7 @@
 
 Rulebook Level 2 (The machinery), chapter 01. Stack: Fundamentals. Id: rb-bonds.
 
-Web page: https://neetmonetary.netlify.app/#rb-bonds . Text built 2026-11-11. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-bonds . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *A bond is a ticket you can resell: you pay RM100, it pays you RM4 a year, and you get RM100 back at the end. This chapter builds everything from that one ticket, then shows where bonds touch your own life, how to check your own exposure once a month, and how to weigh scary bond headlines before you feel them.*
 

@@ -2,7 +2,7 @@
 
 Rulebook Level 2 (The machinery), chapter 02. Stack: Fundamentals. Id: rb-moneymake.
 
-Web page: https://neetmonetary.netlify.app/#rb-moneymake . Text built 2026-11-11. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-moneymake . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Bank loans are one door, the busiest one in normal years. Level 2 adds the others: the Fed, the Treasury, the sponges that soak money up, the shredders that destroy it, the brakes on each printer, and how other countries do it.*
 
@@ -268,6 +268,80 @@ A: Any two of: capital rules, liquidity rules, the 3.90% the Fed pays on reserve
 
 **Check yourself.** Q: When Bank Negara buys dollars to steady the ringgit, what does it pay with?
 A: New ringgit reserves, which it usually soaks back up afterwards.
+
+### Read a country's debt mix: clues to where its money was born
+
+A table of debt by country went round social media in late 2026. It splits each country's debt into what households, firms and the government owe, as a share of one year's output. It looks like a league table of who is most in debt. Read with Step 1 and Step 2 in mind, it is something more useful: a set of clues to where each country's money was born. It is not a full birth record, for reasons the next box sets out.
+
+> **The statement.** Where household and firm debt is bank loans, each loan created a deposit on the day it was made, and each repayment destroyed one (Step 1). So the bank loan part of those two columns hints at who borrowed some of today's money into existence. The government column is different. It created money only where banks or the central bank bought the bonds (Step 2). Where pension funds or savers bought them, it moved money that already existed, though the buyers now own a bond the government owes. Three limits keep this from becoming a new simple story. The table is a stock built up over decades, like the water level in a bath. Money is created and destroyed as a flow, year by year, like the tap and the drain. The columns also count bonds bought by pension funds and other non-banks, and loans from abroad, which created no deposits at home. And one door is missing. When Bank Negara buys dollars to steady the ringgit, it creates ringgit at first with no local debt behind it.
+
+**Chart: Debt by who owes it, % of one year's output, end of 2024**
+| Item | Households | Firms | Government |
+|---|---|---|---|
+| Hong Kong | 88.1 | 240.2 | 80.6 |
+| Japan | 65.1 | 116.3 | 212.5 |
+| Singapore | 44.3 | 122.8 | 173.1 |
+| China | 60.0 | 138.1 | 88.4 |
+| United States | 69.2 | 73.8 | 114.1 |
+| South Korea | 90.1 | 110.5 | 43.8 |
+| Thailand | 89.2 | 82.1 | 56.6 |
+| Malaysia | 69.5 | 87.5 | 64.6 |
+| Germany | 49.9 | 89.4 | 62.4 |
+Three shapes. Households hold their largest share of the debt in Thailand (39% of the total), South Korea (37%) and Malaysia (31%). Even so, firms owe more than households in South Korea and Malaysia. Firms owe the largest share in Hong Kong (59%), China (48%) and Germany (44%). Government owes about half in Japan (54%) and Singapore (51%), and 44% in the United States. For government bonds, who bought them decides whether money was created. Source: BIS total credit statistics, fourth quarter of 2024, via DBnomics. Government debt at face value except South Korea (market value). Rebuilt by this project from the BIS data, so it differs slightly from the image that circulated.
+
+| Who lent | Did it create money? | Example |
+|---|---|---|
+| A bank lends to a household or a firm | Yes. A new deposit appears the moment the loan is made | Malaysia: Bank Negara counts household debt at 85 points of output, and about 70 of those points are bank loans (June 2025). The rest comes from development banks and some other lenders. The chart shows 69.5, which is a separate count by the BIS and only happens to be close to the 70. Always check which lenders a number counts |
+| The central bank buys government bonds | Yes, as bank reserves upstairs, and as deposits if it buys from a non-bank | Japan: the Bank of Japan held about 47% of government bonds, excluding bills, in June 2026 (Ministry of Finance) |
+| A pension fund or saver buys government bonds | No. Existing money moves to the government | Singapore: its pension board, the CPF Board, is reported to invest members' savings in special government bonds (Singapore Ministry of Finance) |
+| A lender abroad | Not by itself. Money already created elsewhere crosses the border, and a local deposit appears only if the proceeds are deposited at a local bank | Hong Kong: described by the IMF as a hub where mainland Chinese firms raise money (IMF, 2025) |
+
+> **Vietnam against Malaysia.** The post that carried the table asked: Vietnam's household debt is 18% of output, Malaysia's 70%, and both own about the same fridges and washing machines, so who is really wealthier? The short answer: Malaysia is clearly ahead on income, but this data cannot say who holds more household wealth. Low debt is not the same as being wealthy. Three checks lead there.
+
+- Check 1. Vietnam's number is the weakest in the picture. A 2018 study found no official household debt series, this project found none since, and Vietnam is not in the BIS data. A central bank based measure that counts family businesses was 47% in 2016. On the World Bank's bank credit measure Vietnam was 125% of output against Malaysia's 113% in 2022, the latest year with both. Vietnam borrows a lot overall, and more of it may be counted as business debt. So the low household figure does not show that families there owe little.
+- Check 2. Debt is one side of a balance sheet. Malaysian households owe about 85% of output on Bank Negara's wide count and hold financial assets of 177%, about 2.1 times their debt. Three quarters of their debt was borrowed for homes and cars (Bank Negara, 2025). No comparable asset figure was found for Vietnam.
+- Check 3. Income. Output per person is 2.6 times higher in Malaysia (US$13,125 against US$5,066 in 2025, World Bank).
+
+The post is right that household debt in Malaysia is a real burden: the typical Malaysian borrower's repayments take about a third of income (median debt service ratio 33% on existing loans, Bank Negara, 2025). On income Malaysia is clearly ahead, but on household wealth the data found cannot settle the post's question. Low debt in a table can mean thrift, a narrow way of counting, or little access to credit.
+
+**Curiosity questions**
+- Q: Canada's households owe 100% of output, Germany's 50%. Did Canada create more money?
+  A: Canadian households owe about twice as much as German households relative to output, so more of the bank-made money behind Canada's deposits sits in household loans, where banks made those loans. The BIS figures do not say why. German firms also owe less (89% of output against Canada's 118%). And Germany's money is the euro, created by banks across the euro area, so one country's table cannot show all of it. (builds on [How money is born today](https://neetmonetary.netlify.app/ai/rulebook/rb-06.md))
+- Q: Japan's government owes 213% of output. Did that create 213% of money?
+  A: No. A debt figure is a stock, not a count of money. The Bank of Japan held about 47% of government bonds, excluding bills, in June 2026 (Ministry of Finance), paid for with new reserves, which are upstairs money. Where it bought from banks, only reserves rose. Where it bought from insurers, pension funds or households, deposits rose too. Do not add the bank part and the central bank part together, because the same bond can pass through both. Bonds still held by insurers and pension funds moved money that already existed. (builds on [The world's balance sheet: what it owns, what it owes, and how countries are built](https://neetmonetary.netlify.app/ai/rulebook/rb-worldbs.md))
+
+**Check yourself.** Q: A Malaysian family takes a RM400,000 home loan from a bank. Which column of the table grows, and does money appear?
+A: The household column. Yes: the bank credits RM400,000 to the seller's account that did not exist before. When the family repays, that money is destroyed again.
+
+### Go deeper: Every row checked: the image against the BIS data
+
+This project checked the circulated image against the BIS total credit statistics. The image's own source line is the Institute of International Finance, whose country detail is behind a subscription. Each cell reads households / firms / government, % of output.
+
+| Country | Image | BIS, end of 2024 | What differs |
+|---|---|---|---|
+| Hong Kong | 86 / 227 / 67 | 88 / 240 / 81 | Firms and government about 13 points higher in BIS |
+| Japan | 60 / 113 / 199 | 65 / 116 / 213 | Government about 14 points higher in BIS |
+| Singapore | 45 / 130 / 172 | 44 / 123 / 173 | Firms 7 points lower in BIS, otherwise close |
+| France | 59 / 156 / 110 | 61 / 155 / 113 | Close |
+| Canada | 100 / 118 / 97 | 100 / 118 / 98 | Matches |
+| China | 60 / 142 / 97 | 60 / 138 / 88 | Government 9 points lower in BIS |
+| United States | 68 / 73 / 123 | 69 / 74 / 114 | Government 9 points lower in BIS |
+| South Korea | 89 / 111 / 49 | 90 / 111 / 44 | Close (BIS values Korea's government debt at market prices) |
+| Italy | 36 / 59 / 141 | 36 / 58 / 136 | Close |
+| Malaysia | 70 / 88 / 66 | 70 / 88 / 65 | Matches |
+| Thailand | 88 / 76 / 60 | 89 / 82 / 57 | Firms 6 points higher in BIS, otherwise close |
+| United Kingdom | 74 / 59 / 81 | 76 / 61 / 101 | Government 20 points higher in BIS (BIS face value 101, market value 87, and the image's 81 matches neither) |
+| Germany | 49 / 89 / 63 | 50 / 89 / 62 | Matches |
+| Israel | 43 / 71 / 70 | 42 / 70 / 67 | Close, but the image matches about 2021 best |
+| Brazil | 36 / 50 / 92 | 36 / 57 / 87 | Close, image matches about 2021 |
+| India | 39 / 49 / 74 | 42 / 51 / 82 | Image matches about 2019 |
+| Hungary | 18 / 70 / 73 | 17 / 73 / 74 | Close, image matches about 2020 |
+| Chile | 41 / 86 / 31 | 45 / 94 / 42 | Total 23 points higher in BIS |
+| South Africa | 34 / 35 / 79 | 34 / 33 / 78 | Close |
+| Vietnam | 23 / 107 / 32 | not covered / not covered / 33 (IMF) | No official household series exists |
+| Bahrain, Jordan, Grenada, Maldives, Senegal | see image | Government only (IMF), 1 to 13 points apart | Household and firm figures could not be checked |
+
+The image mixes years. Canada, Germany, Malaysia, Singapore and South Africa come close to 2024, on a best-fit test that is only a weak signal. Israel, Brazil, Hungary and India match 2019 to 2021 best. The post says Vietnam's household debt is 18% while the image says 23%. Neither number matched a source this project could open. Treat any debt league table as a starting point: check the year, who counted, and whether government debt is at face value or market price.
 
 ### Part 3 of 3. Who printed, year by year, and what the critics say
 

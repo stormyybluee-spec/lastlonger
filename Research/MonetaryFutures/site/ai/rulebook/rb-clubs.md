@@ -2,7 +2,7 @@
 
 Rulebook Level 2 (The machinery), chapter 04. Stack: Fundamentals. Id: rb-clubs.
 
-Web page: https://neetmonetary.netlify.app/#rb-clubs . Text built 2026-11-11. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-clubs . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *The G7, G10 and G20 are clubs, not governments. This chapter shows what they can and cannot do, which countries can really print money and which cannot, why Malaysia sits outside every club but inside the game, and five questions that turn the world into a game board.*
 

@@ -2,7 +2,7 @@
 
 Rulebook Level 1 (Foundations), chapter 19. Stack: Fundamentals. Id: rb-titled.
 
-Web page: https://neetmonetary.netlify.app/#rb-titled . Text built 2026-11-11. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-titled . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Divide the world's wealth by everyone and it looks like plenty. Here is why most of that plenty is a price set on future credit, why the base layer was titled long ago, and what role each big country plays in keeping a crowded system from tipping over.*
 
