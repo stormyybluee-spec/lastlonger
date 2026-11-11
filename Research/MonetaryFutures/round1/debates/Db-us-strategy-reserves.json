@@ -1,0 +1,988 @@
+[
+  {
+    "id": "Db-01",
+    "cluster": "us-strategy-reserves",
+    "title": "Captive demand is the dominant revealed US debt strategy",
+    "statement": "Treasury funds the deficit with bills and uses rules (eSLR, GENIUS reserve rules, FIMA, buybacks) to create buyers for them. The pattern is confirmed, whether it is a design or the default path is still open.",
+    "status": "Confirmed",
+    "confidence": 75,
+    "horizon": "H0",
+    "evidence": [
+      {
+        "text": "Nominal coupon sizes frozen, guidance 'for at least the next several quarters'. Treasury 'is monitoring SOMA purchases of Treasury bills and growing demand for Treasury bills from the private sector'",
+        "tier": "T1",
+        "url": "https://home.treasury.gov/news/press-releases/sb0590",
+        "date": "2026-08-05"
+      },
+      {
+        "text": "Bills 22.36% of marketable debt ($7.118T), up from 21.53% a year earlier",
+        "tier": "T0",
+        "url": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/debt/mspd/mspd_table_1",
+        "date": "2026-09-30"
+      },
+      {
+        "text": "Net bill supply up more than $550B in Jul-Aug 2026, money funds absorbed about 85%. Stablecoins hold nearly $200B of bills and short Treasuries. Bank holdings up more than $300B since end 2024",
+        "tier": "T2",
+        "url": "https://home.treasury.gov/news/press-releases/sb0633",
+        "date": "2026-09-22"
+      },
+      {
+        "text": "GENIUS reserves limited to cash, deposits, Treasuries of 93 days or less and bill repo",
+        "tier": "T1",
+        "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ27/html/PLAW-119publ27.htm",
+        "date": "2025-07-18"
+      },
+      {
+        "text": "Bessent: 'Just as President Abraham Lincoln's National Currency Act of 1863 established a national framework for bank-issued currency, the GENIUS Act establishes a federal framework for payment stablecoins'",
+        "tier": "T2",
+        "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-92.html",
+        "date": "2026-10-21"
+      },
+      {
+        "text": "Long-end buybacks raised to at least $4B per operation, ran at $6B. $230B of buybacks in 2026",
+        "tier": "T0",
+        "url": "https://home.treasury.gov/news/press-releases/sb0607",
+        "date": "2026-10-21"
+      }
+    ],
+    "mechanism": [
+      "$2T deficit with coupons frozen means bills fill the gap",
+      "Rules route demand to bills: money funds, bank portfolios (eSLR), stablecoins (93-day rule), Fed bill purchases",
+      "Treasury buys back long bonds, so the public holds less duration",
+      "Japan kept from selling via signals and FIMA",
+      "Term premium contained at the margin, but interest now resets with the policy rate"
+    ],
+    "falsifier": "The 4 Nov 2026 refunding raises coupon sizes materially and drops the 'several quarters' guidance, or the bill share falls below 21%.",
+    "tripwires": [
+      {
+        "indicator": "Bill share of marketable debt",
+        "current": "22.36% (Sep 2026)",
+        "threshold": "above 25%",
+        "meaning": "captive reliance deepening"
+      },
+      {
+        "indicator": "Nov 4 refunding coupon sizes",
+        "current": "frozen",
+        "threshold": "any increase",
+        "meaning": "terming out, strategy weakening"
+      },
+      {
+        "indicator": "Long-end buyback size",
+        "current": "$6B per operation",
+        "threshold": "made permanent at $6B or more",
+        "meaning": "deeper Treasury twist"
+      }
+    ],
+    "dissent": "Short issuance is simply the default for a large deficit with 10y yields above 5%. Bessent also wants banks to hold fewer safe assets, and TBAC expects coupon increases in FY2027.",
+    "views": {
+      "governance": "Debt management is now done through regulation, which hides its cost and ties federal interest to every Fed hike.",
+      "business": "Front-end Treasury paper has a structural bid, the long end does not. Expect more bill-like products.",
+      "uhi_citizen": "Cash in money funds and stablecoins is financing the deficit. The stablecoin version pays the holder nothing."
+    }
+  },
+  {
+    "id": "Db-02",
+    "cluster": "us-strategy-reserves",
+    "title": "Stablecoins as the petrodollar of the 2020s",
+    "statement": "In function, dollar stablecoins recycle foreign savers' demand into Treasury bills like petrodollars did. At today's size (4.3% of bills, under 1% of debt) they do not matter for the debt. They could by H1 if supply reaches $1T to $3T.",
+    "status": "Plausible",
+    "confidence": 55,
+    "horizon": "H1",
+    "evidence": [
+      {
+        "text": "Total stablecoins about $301B, USDT about 61% share, USAT about $183M",
+        "tier": "T0",
+        "url": "https://defillama.com/stablecoins",
+        "date": "2026-10-21"
+      },
+      {
+        "text": "Stablecoins total $305B = 4.3% of $7.12T bills. Tether direct bills 1.6% of bills",
+        "tier": "T0",
+        "url": "https://stablecoins.llama.fi/stablecoins",
+        "date": "2026-10-21"
+      },
+      {
+        "text": "Fed staff interquartile range of private estimates: $1T to $3T of stablecoins by end of decade",
+        "tier": "T2",
+        "url": "https://www.federalreserve.gov/newsevents/speech/miran20251107a.htm",
+        "date": "2025-11-07"
+      },
+      {
+        "text": "TBAC median dealer forecast implies a $1.45T funding shortfall in FY2027-28 at current coupon sizes",
+        "tier": "T2",
+        "url": "https://home.treasury.gov/news/press-releases/sb0592",
+        "date": "2026-08-05"
+      },
+      {
+        "text": "Collins (Tether co-founder): stablecoins are 'one extra customer buying a couple hundred billion dollars of treasuries'",
+        "tier": "T4",
+        "url": "",
+        "date": "2026"
+      },
+      {
+        "text": "RBI Deputy Governor: stablecoins 'would reduce demand for the local currency and raise the risk of dollarisation'",
+        "tier": "T2",
+        "url": "https://www.business-standard.com/amp/specials/bs-events/stablecoins-risk-currency-substitution-rbi-deputy-governor-t-rabi-sankar-125103001259_1.html",
+        "date": "2025-10-30"
+      }
+    ],
+    "mechanism": [
+      "Foreign savers swap weak local currency for dollar tokens",
+      "Issuers must hold bills, bill repo or deposits",
+      "New front-end demand lets Treasury tilt issuance to bills",
+      "Seigniorage moves from weak-currency countries to US issuers and the Treasury",
+      "Gross holdings overstate net new demand when dollars come from US money funds or bank deposits"
+    ],
+    "falsifier": "Supply stays below $500B through end 2028, or compliant tokens fail to displace offshore USDT after the 2028-07-18 DASP ban.",
+    "tripwires": [
+      {
+        "indicator": "Stablecoin supply",
+        "current": "$301-305B",
+        "threshold": "above $500B, then above $1T",
+        "meaning": "structural buyer emerging"
+      },
+      {
+        "indicator": "Stablecoins as share of bills",
+        "current": "4.3%",
+        "threshold": "above 10%",
+        "meaning": "comparable to a major buyer class"
+      },
+      {
+        "indicator": "Compliant share of supply after 2027-01-18",
+        "current": "USAT about $183M",
+        "threshold": "compliant above 50%",
+        "meaning": "US regime capturing the market"
+      }
+    ],
+    "dissent": "Supply stalled near $320B since May 2026 despite GENIUS, and much of the growth just moves dollars from money funds, so net new Treasury demand is small.",
+    "views": {
+      "governance": "Weak-currency governments face currency substitution and lost seigniorage, expect capital controls or CBDCs in response.",
+      "business": "The float income is the business model, the yield ban makes issuance a toll booth.",
+      "uhi_citizen": "Good for cheap payments and remittances, a poor savings vehicle because it pays no yield."
+    }
+  },
+  {
+    "id": "Db-03",
+    "cluster": "us-strategy-reserves",
+    "title": "US private rails vs China public CBDC",
+    "statement": "The US banned a retail CBDC to 2030 and licensed private bill-backed stablecoins, while China keeps digital money public and blocks private RMB tokens. The US turns digital dollar demand into Treasury demand while keeping control through freeze rules and Fed settlement.",
+    "status": "Confirmed",
+    "confidence": 80,
+    "horizon": "H0",
+    "evidence": [
+      {
+        "text": "H.R. 6644 law 2026-07-11: the Fed 'may not issue or create a central bank digital currency' through 2030-12-31, private permissionless dollar tokens exempt",
+        "tier": "T1",
+        "url": "https://financialservices.house.gov/news/documentsingle.aspx?DocumentID=411189",
+        "date": "2026-07-11"
+      },
+      {
+        "text": "GENIUS Act signed 2025-07-18, effective 2027-01-18. OCC final rule issued 2026-10-21",
+        "tier": "T1",
+        "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-92.html",
+        "date": "2026-10-21"
+      },
+      {
+        "text": "PBoC ordered stablecoin crackdown (Nov 2025). Reported CSRC ban on RMB stablecoins (Feb 2026, single source)",
+        "tier": "T4",
+        "url": "https://en.wikipedia.org/wiki/Stablecoin",
+        "date": "2026"
+      },
+      {
+        "text": "Kraken limited Fed master account, no discount window, no interest on reserves",
+        "tier": "T1",
+        "url": "https://www.coindesk.com/business/2026/03/04/kraken-becomes-first-crypto-company-to-secure-fed-master-account-access-wsj",
+        "date": "2026-03-04"
+      }
+    ],
+    "mechanism": [
+      "CBDC ban reserves the retail digital dollar for private issuers",
+      "Private issuers must hold Treasuries, so digital dollar growth equals bill demand",
+      "FinCEN/OFAC freeze obligations keep state control",
+      "Fed keeps final settlement via payment accounts",
+      "China keeps data and capital controls but limits e-CNY reach outside state deals"
+    ],
+    "falsifier": "The US repeals the ban and launches a retail CBDC, or China licenses an offshore CNH stablecoin at scale.",
+    "tripwires": [
+      {
+        "indicator": "US CBDC ban sunset",
+        "current": "2030-12-31",
+        "threshold": "extension or repeal",
+        "meaning": "direction of US digital money"
+      },
+      {
+        "indicator": "Fed payment accounts granted",
+        "current": "Kraken only (master account)",
+        "threshold": "multiple issuers by end 2027",
+        "meaning": "private rails wired to Fed"
+      },
+      {
+        "indicator": "Digital euro trilogue",
+        "current": "under way",
+        "threshold": "deal by end 2026",
+        "meaning": "third bloc forming"
+      }
+    ],
+    "dissent": "The ban is temporary and passed on a housing bill without the President's signature, so it could flip in a crisis, and stablecoin rails are permissioned enough to look like a CBDC run by banks.",
+    "views": {
+      "governance": "Two digital blocs: US private dollar apps that reach individuals directly versus state rails negotiated government to government.",
+      "business": "Build on licensed dollar rails and expect freeze and KYC obligations.",
+      "uhi_citizen": "Private issuance does not mean private or unsurveilled money."
+    }
+  },
+  {
+    "id": "Db-04",
+    "cluster": "us-strategy-reserves",
+    "title": "Gold as the neutral reserve layer, mostly by price",
+    "statement": "Central banks keep buying gold as a no-counterparty reserve between nations, but its jump in reserve share is mostly price, buying is lumpy and price-sensitive, and some preachers (Russia) are sellers.",
+    "status": "Confirmed",
+    "confidence": 75,
+    "horizon": "H0",
+    "evidence": [
+      {
+        "text": "Q2 2026 net official buying 289t, Q1 57t, H1 345t lowest since 2022. Russia -22t largest seller. Poland +51t, China +33t",
+        "tier": "T0",
+        "url": "https://www.gold.org/goldhub/research/gold-demand-trends/gold-demand-trends-q2-2026/central-banks",
+        "date": "2026-07-30"
+      },
+      {
+        "text": "ECB: at end-2025 prices gold 27% of official reserves, Treasuries 22%, euro 15%. At end-2023 prices gold would be about 16%",
+        "tier": "T2",
+        "url": "https://finance.yahoo.com/markets/commodities/articles/gold-surpasses-us-treasurys-top-154609593.html",
+        "date": "2026-06-02"
+      },
+      {
+        "text": "France withdrew all 129t of its gold from the NY Fed (Jul 2025 to Jan 2026)",
+        "tier": "T0",
+        "url": "https://fortune.com/2026/07/22/scott-bessent-fort-knox-1-trillion-gold-present-accounted-for/",
+        "date": "2026-07-22"
+      },
+      {
+        "text": "US gold still booked at $42.2222/oz, 261.5M oz, $11.04B book",
+        "tier": "T0",
+        "url": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v2/accounting/od/gold_reserve",
+        "date": "2026-09-30"
+      }
+    ],
+    "mechanism": [
+      "Sanctions risk on dollar and euro custody rises",
+      "Reserve managers buy gold and repatriate custody",
+      "Buying is value-driven, heavier when price falls",
+      "Share rises mostly by price, tonnage grows slowly",
+      "Gold settles trust between states, not daily commerce"
+    ],
+    "falsifier": "Two or more consecutive quarters of net official selling, or the gold reserve share falls back below 20% at constant prices.",
+    "tripwires": [
+      {
+        "indicator": "WGC quarterly official net buying",
+        "current": "289t (Q2 2026)",
+        "threshold": "below 100t for two quarters",
+        "meaning": "neutral-layer thesis weakens"
+      },
+      {
+        "indicator": "Gold price",
+        "current": "about $4,112-4,131",
+        "threshold": "below $3,300",
+        "meaning": "official share back near Treasuries"
+      },
+      {
+        "indicator": "Gold repatriation announcements",
+        "current": "France done, Poland onshore",
+        "threshold": "another G20 member repatriates from NY",
+        "meaning": "custody distrust spreading"
+      }
+    ],
+    "dissent": "A few large buyers (China, Poland) drive the totals, and the largest rhetorical champion (Russia) is selling, so this may be concentrated hedging rather than a system-wide layer.",
+    "views": {
+      "governance": "Gold custody location is now a sovereignty choice, expect more repatriation and less use of New York and London vaults.",
+      "business": "Gold is a reserve hedge and collateral of last resort, not a payment rail. Tokenized gold has struggled.",
+      "uhi_citizen": "Gold protects against the system failing, not inside the daily payment system."
+    }
+  },
+  {
+    "id": "Db-05",
+    "cluster": "us-strategy-reserves",
+    "title": "Bitcoin in H0: politically blessed risk asset, not a reserve asset",
+    "statement": "The US holds forfeited bitcoin but buys none, plans no revaluation and bars borrowing to buy, and collateral use is tiny. In H0 bitcoin is a risk asset with political status and a frozen sovereign stockpile.",
+    "status": "Confirmed",
+    "confidence": 80,
+    "horizon": "H0",
+    "evidence": [
+      {
+        "text": "No federal purchases. Witt (2026-10-14): priority is safeguarding and accounting, no purchase strategy, buying needs Congress",
+        "tier": "T2",
+        "url": "https://www.tradingview.com/news/cryptobriefing:45b4d1307094b:0-white-house-puts-bitcoin-security-ahead-of-any-new-purchases/",
+        "date": "2026-10-14"
+      },
+      {
+        "text": "ARMA (H.R. 8957) reported 28-21: 20-year hold, no acquisition authority, bars borrowing, new taxes, pledging federal assets",
+        "tier": "T1",
+        "url": "https://crypto.news/bitcoin-reserve-bill-clears-house-panel-28-21/",
+        "date": "2026-09-17"
+      },
+      {
+        "text": "Crypto-collateralised lending $56.16B (Q2 2026), down from $78.69B peak",
+        "tier": "T4",
+        "url": "https://cryptobriefing.com/galaxy-crypto-lending-q2-2026-decline/",
+        "date": "2026-08-19"
+      },
+      {
+        "text": "BTC $84,040, 52-week range $57,748 to $116,273",
+        "tier": "T3",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/BTC-USD",
+        "date": "2026-10-22"
+      }
+    ],
+    "mechanism": [
+      "EO and ARMA freeze forfeited BTC (198k-328k coins, about $17-28B)",
+      "No buying and a 20-year hold remove supply without adding sovereign demand",
+      "Price trades with liquidity and real rates",
+      "Live monetary niches are sanctions zones and weak-currency savers"
+    ],
+    "falsifier": "A federal bitcoin purchase, budget-neutral acquisition via gold revaluation or ESF, or a G20 central bank disclosing a BTC reserve.",
+    "tripwires": [
+      {
+        "indicator": "US government BTC wallet inflows from market purchases",
+        "current": "none",
+        "threshold": "any",
+        "meaning": "reserve status becomes real"
+      },
+      {
+        "indicator": "ARMA floor vote",
+        "current": "committee-reported",
+        "threshold": "enacted with acquisition authority",
+        "meaning": "active accumulation"
+      },
+      {
+        "indicator": "Crypto-collateralised lending",
+        "current": "$56B",
+        "threshold": "above $150B",
+        "meaning": "collateral role returning"
+      }
+    ],
+    "dissent": "Bitcoin rose while gold fell in mid-2026 and Russia legalized it for trade, so its neutral-money role may be growing outside the official sector faster than the data shows.",
+    "views": {
+      "governance": "Bitcoin has political status without balance-sheet status, the stockpile is a sanctions and forfeiture ledger.",
+      "business": "Treat BTC as a volatile risk asset, not reserve collateral.",
+      "uhi_citizen": "Size bitcoin as a speculation, not as savings that replaces cash or gold."
+    }
+  },
+  {
+    "id": "Db-06",
+    "cluster": "us-strategy-reserves",
+    "title": "Bessent 'sold France to help Japan' (literal)",
+    "statement": "The claim that the US euro sale was a plan to break France and solve the US debt is refuted on size, timing and outcome.",
+    "status": "Refuted",
+    "confidence": 85,
+    "horizon": "H0",
+    "evidence": [
+      {
+        "text": "ESF: yen holdings +$500M, euro holdings -$500M, operations 2026-07-31 settled 2026-08-05",
+        "tier": "T0",
+        "url": "https://home.treasury.gov/system/files/206/ESF-August-2026-FS-Trunc-Notes.pdf",
+        "date": "2026-09"
+      },
+      {
+        "text": "Japan bought ¥15.3993tn (about $97B) from 30 Jul to 26 Aug",
+        "tier": "T0",
+        "url": "https://www.mof.go.jp/english/policy/international_policy/reference/feio/monthly/20260828e.html",
+        "date": "2026-08-28"
+      },
+      {
+        "text": "OAT-Bund 10y spread 78bp (Jul avg), 82bp (Aug avg), 87bp (10 Sep), 157.5bp (21 Oct)",
+        "tier": "T3",
+        "url": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html",
+        "date": "2026-10-21"
+      },
+      {
+        "text": "US 10y 4.68% (30 Jul) to 5.13% (21 Oct)",
+        "tier": "T3",
+        "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026",
+        "date": "2026-10-21"
+      },
+      {
+        "text": "Germany trade surplus €146.0B Jan-Aug 2026 vs €140.4B. Bund flat as haven",
+        "tier": "T0",
+        "url": "https://tradingeconomics.com/germany/balance-of-trade",
+        "date": "2026-10"
+      },
+      {
+        "text": "DXY 101.7, +2.8% y/y, EUR/USD 1.123",
+        "tier": "T3",
+        "url": "https://tradingeconomics.com/united-states/currency",
+        "date": "2026-10-22"
+      }
+    ],
+    "mechanism": [
+      "Claimed: US sells euros, pushes adjustment onto the euro",
+      "Claimed: Japan sells Europe, France cracks",
+      "Claimed: safe-haven money lowers US yields, dollar then devalued",
+      "Observed: $500M is too small, spread lagged six weeks with other causes, US yields and dollar rose"
+    ],
+    "falsifier": "NY Fed Q3 FX report or ESF statements show a multi-billion or repeated euro sale, or documents show US-Japan agreement to route Japanese selling to the euro area.",
+    "tripwires": [
+      {
+        "indicator": "NY Fed Q3 FX operations report",
+        "current": "pending (mid-Nov 2026)",
+        "threshold": "US leg above $5B or repeated euro sales",
+        "meaning": "reopens the thesis"
+      },
+      {
+        "indicator": "Japan MoF quarterly intervention detail",
+        "current": "pending (2-9 Nov)",
+        "threshold": "Japan also sold euros",
+        "meaning": "coordinated euro funding choice"
+      },
+      {
+        "indicator": "TIC Japan holdings",
+        "current": "$1,068B (Aug)",
+        "threshold": "stabilize while OAT holdings fall sharply",
+        "meaning": "pattern becomes measured"
+      }
+    ],
+    "dissent": "Signals, not money, were the instrument, and the US did choose to make the euro the funding currency without telling the ECB.",
+    "views": {
+      "governance": "Treat it as a convention break (no ECB notice), not an attack.",
+      "business": "The short-France, short-EUR/JPY trade is crowded and already priced.",
+      "uhi_citizen": "No direct effect outside France, the bigger driver is the oil shock and rate hikes."
+    }
+  },
+  {
+    "id": "Db-06N",
+    "cluster": "us-strategy-reserves",
+    "title": "Narrow version: the euro area as the chosen shock absorber",
+    "statement": "The US chose a funding currency (euros) and a policy mix (pressing BoJ hikes, FIMA instead of Treasury sales) that pushed the cost of yen defence and Japanese portfolio rotation away from the dollar and Treasuries toward the euro area, where France is the most exposed link. Bessent welcomes the resulting flows. Intent to harm France is not shown.",
+    "status": "Plausible",
+    "confidence": 50,
+    "horizon": "H0",
+    "evidence": [
+      {
+        "text": "ESF sold euros, not dollars, for yen, ECB not told in advance",
+        "tier": "T0",
+        "url": "https://www.banking.senate.gov/imo/media/doc/letter_to_bessent_on_yen_intervention.pdf",
+        "date": "2026-08-13"
+      },
+      {
+        "text": "Bessent urged Fed to upsize FIMA, Japan MoF 'plans to use' FIMA",
+        "tier": "T2",
+        "url": "https://www.mof.go.jp/english/public_relations/statement/others/20260803073000.html",
+        "date": "2026-08-03"
+      },
+      {
+        "text": "Bessent on 20 Oct: 'money flow out of some countries of concern and into US Treasuries'",
+        "tier": "T2",
+        "url": "https://finance.biggo.com/news/3259e04c-c2af-4a33-91c3-41007ecfc22c",
+        "date": "2026-10-20"
+      },
+      {
+        "text": "Allianz: France 'first victim of the Japanese repatriation trade', Japanese hold about 5% of OATs",
+        "tier": "T4",
+        "url": "https://www.allianz.com/content/dam/onemarketing/azcom/Allianz_com/economic-research/publications/specials/en/2026/october/France-bond-market-rout.pdf",
+        "date": "2026-10-09"
+      },
+      {
+        "text": "Counter: Japanese net bought OATs Jun-Aug, AFT head says no Japanese selling seen, non-resident share 58.4% end-June",
+        "tier": "T4",
+        "url": "https://news.futunn.com/en/post/1000842652/are-japanese-investors-really-dumping-french-debt-they-recorded-net",
+        "date": "2026-10"
+      }
+    ],
+    "mechanism": [
+      "US avoids selling dollars or Treasuries",
+      "Japan pushed toward FIMA and higher domestic rates",
+      "Japanese investors rotate out of their most overweight, riskiest foreign holding",
+      "France absorbs part of the adjustment",
+      "Haven flows reach Treasuries at the margin"
+    ],
+    "falsifier": "Disclosure that the euro choice was purely operational (euros were the ESF's largest liquid asset) and the OAT spread compresses toward 80-100bp after the budget passes with no change in Japanese flows.",
+    "tripwires": [
+      {
+        "indicator": "OAT-Bund 10y spread",
+        "current": "157.5bp",
+        "threshold": "above 200bp",
+        "meaning": "TPI test, shock-absorber role deepens"
+      },
+      {
+        "indicator": "AFT/BdF Japanese holdings of OATs",
+        "current": "about €137B",
+        "threshold": "material fall in Q3 data",
+        "meaning": "flow channel confirmed"
+      },
+      {
+        "indicator": "FIMA repo usage on H.4.1",
+        "current": "zero",
+        "threshold": "Japan draws during next intervention",
+        "meaning": "Treasury-protection chain confirmed"
+      }
+    ],
+    "dissent": "France's spread is explained by its own budget, politics and the global term premium, and Japan's official sector sold Treasuries heavily anyway.",
+    "views": {
+      "governance": "Europe should expect to absorb adjustment when the US and Japan manage the yen, a reason to finish the digital euro and a backstop.",
+      "business": "Euro-area weak links carry a new exposure to Japanese flows.",
+      "uhi_citizen": "French savers and banks bear the cost through higher rates and weaker bank shares."
+    }
+  },
+  {
+    "id": "Db-07",
+    "cluster": "us-strategy-reserves",
+    "title": "Mar-a-Lago in practice: selective, not broad devaluation",
+    "statement": "In 2026 the US is weakening the dollar only against Asian surplus currencies (yen, yuan) through bilateral pressure, while the broad dollar rose. A broad devaluation needs Fed easing and is unlikely before 2027-28.",
+    "status": "Plausible",
+    "confidence": 65,
+    "horizon": "H0",
+    "evidence": [
+      {
+        "text": "US joint yen intervention, Bessent: yen 'substantially undervalued'",
+        "tier": "T2",
+        "url": "https://www.cnbc.com/2026/08/03/yen-intervention-us-japan-trump-bessent-katayama.html",
+        "date": "2026-08-03"
+      },
+      {
+        "text": "USD/CNY 6.67, yuan +6.35% y/y, strongest since mid-2022",
+        "tier": "T3",
+        "url": "https://tradingeconomics.com/china/currency",
+        "date": "2026-10-22"
+      },
+      {
+        "text": "DXY +2.8% y/y",
+        "tier": "T3",
+        "url": "https://tradingeconomics.com/united-states/currency",
+        "date": "2026-10-22"
+      },
+      {
+        "text": "Century bonds and foreign-holder user fees absent from refunding statements",
+        "tier": "T1",
+        "url": "https://home.treasury.gov/news/press-releases/sb0590",
+        "date": "2026-08-05"
+      },
+      {
+        "text": "Bessent: dollar benefits 'are no longer unconditional'",
+        "tier": "T2",
+        "url": "https://home.treasury.gov/news/press-releases/sb0539",
+        "date": "2026-06-23"
+      }
+    ],
+    "mechanism": [
+      "Tariffs and FX monitoring create leverage",
+      "Partners strengthen their own currencies (Japan intervenes, PBoC fixes stronger)",
+      "US avoids selling dollars",
+      "Fed hiking keeps the broad dollar firm",
+      "Broad weakening waits for Fed personnel change or a crisis"
+    ],
+    "falsifier": "PBoC reverses to weaken the yuan and the US declines the next joint operation, or a broad DXY fall below 97 with Fed cuts and a formal accord.",
+    "tripwires": [
+      {
+        "indicator": "DXY",
+        "current": "101.7",
+        "threshold": "below 97",
+        "meaning": "broad devaluation starting"
+      },
+      {
+        "indicator": "USD/CNY",
+        "current": "6.67",
+        "threshold": "above 7.0",
+        "meaning": "selective bargain broken"
+      },
+      {
+        "indicator": "ESF statements",
+        "current": "one $500M yen purchase",
+        "threshold": "dollar sales",
+        "meaning": "accord-style policy"
+      }
+    ],
+    "dissent": "Plaza (1985) also started with a strong dollar, and a quiet US-China currency bargain may already be in place, so a broad move could come faster than the Fed path suggests.",
+    "views": {
+      "governance": "Currency policy is now bilateral pressure tied to trade and security, not G7 communiques.",
+      "business": "Asian currency strength is policy-backed, hedge imported-input costs.",
+      "uhi_citizen": "Goods imported from Asia get dearer at the margin."
+    }
+  },
+  {
+    "id": "Db-08",
+    "cluster": "us-strategy-reserves",
+    "title": "Fiscal path: managed repression is the likeliest exit",
+    "statement": "Today the US relies on captive demand plus passive inflation (nominal growth above the average debt cost) plus hope for AI growth. As the debt reprices, the likeliest H1 exit is managed financial repression, not AI salvation or default.",
+    "status": "Plausible",
+    "confidence": 60,
+    "horizon": "H1",
+    "evidence": [
+      {
+        "text": "Average rate on marketable debt 3.518%",
+        "tier": "T0",
+        "url": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v2/accounting/od/avg_interest_rates",
+        "date": "2026-09-30"
+      },
+      {
+        "text": "FY2026 net interest $1,051.8B vs defense $965.2B, 19.5% of receipts",
+        "tier": "T0",
+        "url": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9",
+        "date": "2026-09-30"
+      },
+      {
+        "text": "10y real yield 2.76% (from 1.94%), breakeven about 2.37%",
+        "tier": "T3",
+        "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_real_yield_curve&field_tdr_date_value=2026",
+        "date": "2026-10-21"
+      },
+      {
+        "text": "70% of marketable debt reprices within 5 years. Interest to about $1.6T in 3 years and $1.9T in 5 if yields hold (L7 model)",
+        "tier": "T0",
+        "url": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/debt/mspd/mspd_table_3_market",
+        "date": "2026-09-30"
+      },
+      {
+        "text": "FOMC hiked 12-0 to 3.75-4.00%, Warsh: QE 'sparingly, if at all'",
+        "tier": "T1",
+        "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+        "date": "2026-09-16"
+      }
+    ],
+    "mechanism": [
+      "Effective rate 3.2% vs nominal growth 5.7% erodes the ratio about 2.5pp a year",
+      "Primary deficit 2.9% of GDP offsets most of that",
+      "Repricing closes the gap within five years",
+      "Pressure builds on the Fed to tolerate inflation or cap yields",
+      "Fed leadership turnover after 2028 makes repression feasible"
+    ],
+    "falsifier": "The primary deficit falls toward balance, or inflation drops to 2% while real yields fall, or real growth runs above 3.5% for several years with flat real rates.",
+    "tripwires": [
+      {
+        "indicator": "Avg rate on marketable debt",
+        "current": "3.518%",
+        "threshold": "above 4.0%",
+        "meaning": "escape valve closing"
+      },
+      {
+        "indicator": "10y breakeven vs real yield",
+        "current": "2.37% / 2.76%",
+        "threshold": "breakeven above 2.75% with real yields falling",
+        "meaning": "repression regime starting"
+      },
+      {
+        "indicator": "Net interest / receipts",
+        "current": "19.5%",
+        "threshold": "above 25%",
+        "meaning": "fiscal dominance pressure"
+      }
+    ],
+    "dissent": "Warsh's Fed is hiking against the President, and if inflation falls with high real rates the ratio climbs faster, forcing fiscal action instead of repression.",
+    "views": {
+      "governance": "Repression is the politically cheapest exit but needs a cooperative Fed, so Fed independence is the key institutional battleground.",
+      "business": "Own real assets and pricing power, avoid long fixed-rate claims.",
+      "uhi_citizen": "Fixed incomes and savings lose purchasing power quietly, wages and benefits must be indexed."
+    }
+  },
+  {
+    "id": "Db-09",
+    "cluster": "us-strategy-reserves",
+    "title": "Scenario probabilities S1 to S4 by horizon",
+    "statement": "Dominant regime at the end of each horizon: dollar extension leads in H0 and H1, while a neutral reserve layer and a disorderly reset gain weight over time. An energy or compute standard stays a small probability until H2.",
+    "status": "Speculative",
+    "confidence": 50,
+    "horizon": "H1",
+    "scenarios": {
+      "H0": {
+        "S1": 62,
+        "S2": 15,
+        "S3": 1,
+        "S4": 22
+      },
+      "H1": {
+        "S1": 45,
+        "S2": 22,
+        "S3": 3,
+        "S4": 30
+      },
+      "H2": {
+        "S1": 32,
+        "S2": 28,
+        "S3": 10,
+        "S4": 30
+      }
+    },
+    "scenarios_element_present": {
+      "H0": {
+        "S1": 85,
+        "S2": 65,
+        "S3": 3,
+        "S4": 30
+      },
+      "H1": {
+        "S1": 80,
+        "S2": 70,
+        "S3": 10,
+        "S4": 45
+      },
+      "H2": {
+        "S1": 70,
+        "S2": 75,
+        "S3": 25,
+        "S4": 55
+      }
+    },
+    "scenario_reasoning": "Main table: which scenario best describes the system at the end of the horizon, so rows sum to 100. Scenarios coexist (S1 plumbing can carry S4 repression, gold can grow under S1), so a second table gives the chance each element is materially present at all. H0 S1 is high because all binding law points to private dollar rails and the dollar is up. H0 S4 is 22 because of the oil shock, 5%+ yields, a shrinking official holder base and bill-heavy funding. H1 adds the CBDC-ban sunset, the 2028 offshore-stablecoin ban, repricing of 70% of debt and Fed turnover. H2 spreads probability, with S3 at 10 because any energy unit needs a scarcity rule.",
+    "evidence": [
+      {
+        "text": "GENIUS effective 2027-01-18, OCC final rule",
+        "tier": "T1",
+        "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-92.html",
+        "date": "2026-10-21"
+      },
+      {
+        "text": "CBDC ban through 2030-12-31",
+        "tier": "T1",
+        "url": "https://financialservices.house.gov/news/documentsingle.aspx?DocumentID=411189",
+        "date": "2026-07-11"
+      },
+      {
+        "text": "Foreign official Treasury holdings -$254B Feb-Aug 2026",
+        "tier": "T0",
+        "url": "https://ticdata.treasury.gov/resource-center/data-chart-center/tic/Documents/slt_table5.txt",
+        "date": "2026-10-16"
+      },
+      {
+        "text": "Official gold buying 289t in Q2 2026",
+        "tier": "T0",
+        "url": "https://www.gold.org/goldhub/research/gold-demand-trends/gold-demand-trends-q2-2026/central-banks",
+        "date": "2026-07-30"
+      },
+      {
+        "text": "A fixed-kWh unit is inflationary while energy costs fall (solar learning rate about 28%)",
+        "tier": "T4",
+        "url": "https://ourworldindata.org/grapher/solar-pv-prices",
+        "date": "2026-07-28"
+      }
+    ],
+    "mechanism": [
+      "S1 grows through H0 on law already enacted",
+      "A repression episode (S4-lite) in late H0 or H1 runs partly through S1 plumbing",
+      "Gold's neutral role expands underneath",
+      "Bitcoin stays private and sanctions-zone unless a G20 central bank breaks ranks",
+      "S3 only if machine economies grow large and adopt a scarcity-ruled unit"
+    ],
+    "falsifier": "By 2028: stablecoins below $500B and dollar reserve share below 50% (S1 down), or official gold net selling (S2 down), or 10y above 6% with Fed yield control (S4 up).",
+    "tripwires": [
+      {
+        "indicator": "Stablecoin supply",
+        "current": "$301-305B",
+        "threshold": "above $1T",
+        "meaning": "S1 up"
+      },
+      {
+        "indicator": "COFER USD share",
+        "current": "56.70% (Q2 2026)",
+        "threshold": "below 50%",
+        "meaning": "S1 down, S2 or S4 up"
+      },
+      {
+        "indicator": "10y yield",
+        "current": "5.13%",
+        "threshold": "above 6% or Fed yield control",
+        "meaning": "S4 up"
+      },
+      {
+        "indicator": "G20 central bank BTC disclosure",
+        "current": "none",
+        "threshold": "any",
+        "meaning": "S2 Bitcoin leg up"
+      }
+    ],
+    "dissent": "Probabilities beyond 2035 are judgment, not measurement, and the base rate of reserve-system change after a crisis argues S4 could be higher in H1.",
+    "views": {
+      "governance": "Plan for S1 as base case but build S4 contingencies (yield control rules, FIMA capacity, gold custody).",
+      "business": "Hold dollar liquidity on licensed rails, plus some neutral reserve exposure.",
+      "uhi_citizen": "Expect dollars to stay the daily money, protect savings against a repression episode."
+    }
+  },
+  {
+    "id": "Db-10",
+    "cluster": "us-strategy-reserves",
+    "title": "The merger is an acquisition: one dollar board with a gold corner",
+    "statement": "Set 1 and Set 2 are merging, but Set 1 is absorbing Set 2: dollar stablecoins are tokenized bill funds, tokenized Treasuries settle in DTC, crypto firms get Fed access without bank privileges, bitcoin is frozen, and gold sits in the corner as the neutral asset between nations.",
+    "status": "Plausible",
+    "confidence": 65,
+    "horizon": "H1",
+    "board": {
+      "bank_settlement": "Federal Reserve: reserves and Fedwire, payment accounts for crypto firms without interest on reserves or discount window",
+      "backing": "Short Treasuries (93 days or less), bill repo, bank deposits. Gold and BTC only at offshore issuers like Tether",
+      "issuers": "Federally permitted issuers: bank subsidiaries, licensed firms (Circle, Paxos, USAT), tokenized deposits. Offshore only via Treasury comparability",
+      "rails": "Public and permissioned blockchains for retail and AI-agent payments, tokenized securities settling back into DTC/NSCC",
+      "toll_booths": "Issuers (float yield, holders get none), exchanges (rewards), custodians (BNY, Anchorage, Cantor), compliance freeze points (FinCEN/OFAC), Treasury (cheaper bills), Fed (access)",
+      "neutral_corner": "Physical gold in domestic custody between nations",
+      "jail": "Secondary sanctions covering banking, digital assets and gold",
+      "rival_boards": "China e-CNY, CIPS, gold. EU MiCA plus digital euro around 2029"
+    },
+    "evidence": [
+      {
+        "text": "GENIUS reserve rule and 2028 ban on non-permitted stablecoins for US persons",
+        "tier": "T1",
+        "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ27/html/PLAW-119publ27.htm",
+        "date": "2025-07-18"
+      },
+      {
+        "text": "DTC tokenization pilot includes Treasuries, Nasdaq tokenized shares settle via NSCC/DTC",
+        "tier": "T1",
+        "url": "https://www.coindesk.com/policy/2026/03/18/sec-approves-nasdaq-s-move-to-allow-tokenized-securities-trading",
+        "date": "2026-03-18"
+      },
+      {
+        "text": "Tether reserves: T-bills $114.96B, gold 146.2t, BTC 98,933, against USDT $184.6B",
+        "tier": "T4",
+        "url": "https://forklog.com/en/news/tethers-excess-reserves-halve-in-q2",
+        "date": "2026-07-31"
+      },
+      {
+        "text": "Tokenized Treasuries about $14.7B to $15.4B, two thirds held outside the US",
+        "tier": "T0",
+        "url": "https://en.cryptonomist.ch/2026/10/18/tokenized-us-treasuries-market-2026/",
+        "date": "2026-10-18"
+      },
+      {
+        "text": "Bessent: GENIUS like the 1863 National Currency Act",
+        "tier": "T2",
+        "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-92.html",
+        "date": "2026-10-21"
+      }
+    ],
+    "mechanism": [
+      "Law makes every compliant token a holder of short Treasuries",
+      "Settlement stays at the Fed and DTC",
+      "Licences create a small set of toll collectors",
+      "Sanctions decide who may sit at the board",
+      "Nations that distrust the board hold gold in their own vaults"
+    ],
+    "falsifier": "Offshore stablecoins keep a majority share after 2028-07-18, or a non-dollar token (gold, BTC or compute unit) gains material share in machine commerce by 2035.",
+    "tripwires": [
+      {
+        "indicator": "Compliant vs offshore stablecoin share",
+        "current": "USDT about 61%",
+        "threshold": "compliant above 50% after 2028",
+        "meaning": "acquisition completes"
+      },
+      {
+        "indicator": "Treasury comparability findings",
+        "current": "none",
+        "threshold": "finding for Tether's home regime or reciprocity deal",
+        "meaning": "offshore folded in"
+      },
+      {
+        "indicator": "AI-agent payment share in stablecoins",
+        "current": "no data",
+        "threshold": "measurable majority in dollar tokens",
+        "meaning": "machine commerce on the dollar board"
+      }
+    ],
+    "dissent": "Offshore USDT, partly backed by gold and bitcoin, and China's public rails form a second board the US does not control, so the merger may be only half done.",
+    "views": {
+      "governance": "Treasury and the Fed write the board's rules, sanctions access is the enforcement tool, and the 2030 CBDC sunset is the next decision point.",
+      "business": "The scarce assets are licences: issuance, custody, compliance and Fed access.",
+      "uhi_citizen": "Payments get cheaper and faster, but the yield on your money goes to the issuer, and access can be frozen."
+    }
+  },
+  {
+    "id": "Db-11",
+    "cluster": "us-strategy-reserves",
+    "title": "Bitcoin as a future neutral reserve between nations",
+    "statement": "Bitcoin could join gold as a neutral reserve between nations in H2, but no central bank buying is confirmed and sanctions now target digital assets.",
+    "status": "Speculative",
+    "confidence": 20,
+    "horizon": "H2",
+    "evidence": [
+      {
+        "text": "Putin (Dec 2024): 'bitcoin, who can prohibit it? No one'",
+        "tier": "T2",
+        "url": "",
+        "date": "2024-12-04"
+      },
+      {
+        "text": "Russia legalized crypto trading, CBR says BTC, ETH and USDT qualify",
+        "tier": "T1",
+        "url": "https://thebell.io/putin-legalizoval-v-rossii-torgovlyu-kriptovalyutoy-no-platit-ey-vnutri-strany-budet-nelzya",
+        "date": "2026-08-04"
+      },
+      {
+        "text": "Operation Economic Outcast adds secondary sanctions on digital assets and gold",
+        "tier": "T2",
+        "url": "https://en.wikipedia.org/wiki/Economic_D-Day",
+        "date": "2026-08-24"
+      },
+      {
+        "text": "US spot ETFs hold about 1.293M BTC",
+        "tier": "T4",
+        "url": "https://pluang.com/en/news-feed/blackrocks-ibit-kuasai-62-persen-bitcoin-spot-etf",
+        "date": "2026-10-08"
+      }
+    ],
+    "mechanism": [
+      "Sanctions push states toward counterparty-free assets",
+      "Gold already fills the role",
+      "Bitcoin enters only if a G20 central bank breaks ranks",
+      "Volatility and sanctions targeting slow adoption"
+    ],
+    "falsifier": "No G20 central bank discloses a bitcoin reserve by 2035.",
+    "tripwires": [
+      {
+        "indicator": "G20 central bank BTC holdings",
+        "current": "none confirmed",
+        "threshold": "any disclosure",
+        "meaning": "neutral-reserve path opens"
+      }
+    ],
+    "dissent": "Fixed supply and no counterparty make bitcoin the natural digital twin of gold once custody and volatility improve.",
+    "views": {
+      "governance": "Watch sanctioned and swing states first.",
+      "business": "Optionality, not a base case.",
+      "uhi_citizen": "Do not plan savings around a sovereign bitcoin bid."
+    }
+  },
+  {
+    "id": "Db-12",
+    "cluster": "us-strategy-reserves",
+    "title": "Holder-base shift: official buyers out, leveraged private in",
+    "statement": "Foreign official holders are shrinking their Treasuries while custodial and leveraged holders replace them, which makes the market more price-sensitive and explains why Treasury builds captive demand.",
+    "status": "Confirmed",
+    "confidence": 80,
+    "horizon": "H0",
+    "evidence": [
+      {
+        "text": "Foreign official holdings $4,009.6B (Feb) to $3,755.6B (Aug 2026). Japan -$171B, China -$104B, UK above $1T",
+        "tier": "T0",
+        "url": "https://ticdata.treasury.gov/resource-center/data-chart-center/tic/Documents/slt_table5.txt",
+        "date": "2026-10-16"
+      },
+      {
+        "text": "NY Fed foreign official custody $2.549T, -$202B y/y",
+        "tier": "T0",
+        "url": "https://www.federalreserve.gov/releases/h41/current/default.htm",
+        "date": "2026-10-14"
+      }
+    ],
+    "mechanism": [
+      "Official holders sell to defend currencies or diversify",
+      "Basis traders, money funds and stablecoins replace them",
+      "Marginal buyer becomes price-sensitive and leveraged",
+      "Funding shocks transmit faster into yields"
+    ],
+    "falsifier": "Foreign official holdings recover above $4.0T.",
+    "tripwires": [
+      {
+        "indicator": "Foreign official Treasury holdings (TIC)",
+        "current": "$3,755.6B",
+        "threshold": "below $3.5T",
+        "meaning": "official exit accelerating"
+      },
+      {
+        "indicator": "Japan holdings",
+        "current": "$1,068B",
+        "threshold": "below $1.0T",
+        "meaning": "repatriation accelerating"
+      }
+    ],
+    "dissent": "Part of the fall is valuation from higher yields and Japan's sales funded intervention, not a strategic exit.",
+    "views": {
+      "governance": "Fragility rises, so FIMA and standing repo capacity matter more.",
+      "business": "Expect more volatility in Treasury yields and basis spreads.",
+      "uhi_citizen": "Mortgage and loan rates can jump on funding shocks."
+    }
+  }
+]

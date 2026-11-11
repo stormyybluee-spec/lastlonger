@@ -1,0 +1,241 @@
+{
+ "r5-realrate": {
+  "title": "What lifted the real 10-year yield in 2026",
+  "period": "2025-12-31 to 2026-10-23",
+  "unit": "basis points",
+  "identity": {
+   "nominal_10y": {
+    "start": 4.18,
+    "end": 5.0,
+    "change_bp": 82
+   },
+   "real_10y": {
+    "start": 1.93,
+    "end": 2.66,
+    "change_bp": 73
+   },
+   "breakeven_10y": {
+    "start": 2.25,
+    "end": 2.34,
+    "change_bp": 9
+   }
+  },
+  "desk_split": {
+   "total_bp": 73,
+   "components": [
+    {
+     "label": "Fed path in a strong, oil-hit economy",
+     "bp": 35,
+     "low": 30,
+     "high": 40
+    },
+    {
+     "label": "Japan and global spillover",
+     "bp": 18,
+     "low": 15,
+     "high": 20
+    },
+    {
+     "label": "Term premium and fiscal supply",
+     "bp": 10,
+     "low": 0,
+     "high": 20
+    },
+    {
+     "label": "Direct AI crowding-out",
+     "bp": 10,
+     "low": 5,
+     "high": 15
+    }
+   ]
+  },
+  "regression_model": {
+   "total_bp": 73,
+   "note": "Daily regression, n 449, low R-squared (0.05), indicative only. Components sum to 72 plus 1bp rounding",
+   "components": [
+    {
+     "label": "Japan (JGB 10-year 2.07% to 2.91%)",
+     "bp": 17
+    },
+    {
+     "label": "Oil (Brent $60.8 to $111.7)",
+     "bp": 10
+    },
+    {
+     "label": "AI equity proxy (semiconductor index)",
+     "bp": -2
+    },
+    {
+     "label": "Unexplained (Fed path, fiscal, AI demand, other)",
+     "bp": 47
+    },
+    {
+     "label": "Rounding",
+     "bp": 1
+    }
+   ]
+  },
+  "term_models": {
+   "ACM": {
+    "term_premium_bp": -3,
+    "expected_path_bp": 87,
+    "as_of": "2026-10-21"
+   },
+   "Kim-Wright": {
+    "term_premium_bp": 42,
+    "expected_path_bp": 45,
+    "as_of": "2026-10-16"
+   }
+  },
+  "source": "R5A table 7.1 (Treasury par curves, NY Fed ACM, Fed Kim-Wright, MoF, Yahoo), desk split by the Round 5 court"
+ },
+ "r5-spread": {
+  "title": "Borrow at 6.19% to earn 13.6%: $100 of own money over 10 years",
+  "unit": "dollars per $100 of own money, after tax",
+  "basis": "Block bootstrap of S&P 500 history 1928 to 2023, interest capitalized at 6.19%, 50% loan with a call at 70% loan-to-value, 30% loan with a call at 65%",
+  "outcomes": [
+   {
+    "case": "Unlevered",
+    "median": 216,
+    "p10": 107
+   },
+   {
+    "case": "Levered, 50% loan",
+    "median": 226,
+    "p10": 38
+   },
+   {
+    "case": "Levered, 30% loan",
+    "median": 229,
+    "p10": 62
+   }
+  ],
+  "margin_call_odds": [
+   {
+    "loan": "50%",
+    "ten_year_bootstrap_pct": 36.8,
+    "range_10_to_20_years_pct": [
+     35,
+     52
+    ]
+   },
+   {
+    "loan": "30%",
+    "ten_year_bootstrap_pct": 11.8,
+    "range_10_to_20_years_pct": [
+     8,
+     18
+    ]
+   }
+  ],
+  "volatility_drag_at_13_6": [
+   {
+    "vol_pct": 15,
+    "unlevered_compound_pct": 12.3,
+    "levered_compound_pct": 15.7
+   },
+   {
+    "vol_pct": 20,
+    "unlevered_compound_pct": 11.4,
+    "levered_compound_pct": 11.7
+   },
+   {
+    "vol_pct": 25,
+    "unlevered_compound_pct": 10.1,
+    "levered_compound_pct": 6.8
+   }
+  ],
+  "note": "Model, not data. General education, not advice. Source R5D tables T7 and T8"
+ },
+ "r5-calendar": {
+  "title": "Dated predictions written before the events",
+  "unit": "probability, percent",
+  "events": [
+   {
+    "date": "2026-10-28",
+    "label": "Fed holds rates",
+    "desk": 91,
+    "market": 92.5,
+    "prereg_id": "P5-01"
+   },
+   {
+    "date": "2026-10-29",
+    "label": "Q3 GDP above 3.0%",
+    "desk": 60,
+    "market": 61.5,
+    "prereg_id": "P5-09"
+   },
+   {
+    "date": "2026-10-29",
+    "label": "ECB holds at 2.50%",
+    "desk": 97,
+    "market": 97.9,
+    "prereg_id": "P5-65"
+   },
+   {
+    "date": "2026-10-30",
+    "label": "Central bank gold above 250t in Q3",
+    "desk": 45,
+    "market": null,
+    "prereg_id": "P5-33"
+   },
+   {
+    "date": "2026-10-31",
+    "label": "France downgrade by 31 Oct (pending score)",
+    "desk": 70,
+    "market": 90.5,
+    "prereg_id": "P5-72"
+   },
+   {
+    "date": "2026-11-03",
+    "label": "French Assembly adopts budget part one",
+    "desk": 30,
+    "market": null,
+    "prereg_id": "P5-56"
+   },
+   {
+    "date": "2026-11-04",
+    "label": "Refunding keeps coupon sizes",
+    "desk": 85,
+    "market": null,
+    "prereg_id": "P5-16"
+   },
+   {
+    "date": "2026-11-05",
+    "label": "Cook hearing held with her taking part",
+    "desk": 75,
+    "market": null,
+    "prereg_id": "P5-21"
+   },
+   {
+    "date": "2026-11-10",
+    "label": "China extends export-control pause",
+    "desk": 72,
+    "market": null,
+    "prereg_id": "P5-29"
+   },
+   {
+    "date": "2026-11-18",
+    "label": "Foreign official Treasuries fall (TIC)",
+    "desk": 90,
+    "market": null,
+    "prereg_id": "P5-35"
+   },
+   {
+    "date": "2026-11-30",
+    "label": "S&P cuts France below A+",
+    "desk": 25,
+    "market": 33,
+    "prereg_id": "P5-59"
+   },
+   {
+    "date": "2026-12-09",
+    "label": "Fed hikes in December",
+    "desk": 70,
+    "market": 72,
+    "prereg_id": "P5-26"
+   }
+  ],
+  "note": "Desk numbers written 2026-10-23. Market is the mid price on the snapshot or null where no market exists. Full ledger in round5/prereg.json"
+ }
+}

@@ -1,0 +1,99 @@
+# Glossary (Fundamentals)
+
+- **Algorithmic stablecoin:** A token that tries to hold $1 using its own sister token instead of real reserves. TerraUSD collapsed this way in 2022.
+- **Asian Dollar Market:** The offshore market for US dollar deposits and loans that Singapore opened in 1968.
+- **Asset:** Something you own that has value, such as cash, a house, a bond or a share in a company.
+- **Bank deposit:** Money in a bank account. Legally it is the bank's debt to you.
+- **Bank note reporter:** A booklet from the free banking era listing what each bank's notes were worth and which were forgeries.
+- **Bank reserves:** Money that commercial banks keep in accounts at the central bank, used to settle payments between banks.
+- **Barter:** Trading goods directly for other goods, with no money in between.
+- **Base money:** Paper cash plus the reserves that banks hold at the central bank.
+- **Blockchain:** A ledger copied across thousands of computers and updated in blocks, very hard to change after the fact.
+- **Bond:** An IOU sold by a government or company: it pays a fixed rent (the coupon) and returns the money on a set date.
+- **Breakeven inflation:** The inflation rate the bond market is pricing in, read from the gap between ordinary and inflation-protected bond yields.
+- **Bretton Woods:** The 1944 system that pegged other currencies to the dollar and the dollar to gold at $35 an ounce.
+- **Cantillon effect:** The idea that those who receive new money first gain, while those who receive it last face higher prices first.
+- **Capital account:** The record of money moving in and out of a country for investment. An open one lets money leave freely.
+- **Capital controls:** Rules that limit how much money can move in or out of a country.
+- **CBDC:** Central bank digital currency: digital money issued directly by a central bank to the public. A retail US version is banned by law.
+- **Central bank:** A public bank that issues a country's base money and manages its interest rates.
+- **Chartalism:** The idea that money gets its value from the state, mainly because taxes must be paid in it.
+- **Citizenship-based taxation:** Taxing citizens wherever they live. The US is the main example. Eritrea charges its citizens abroad a flat 2% diaspora tax.
+- **Collateral:** Something valuable you pledge to a lender, which the lender can take if you do not repay.
+- **Coupon:** The fixed interest a bond pays each year, set when it is issued.
+- **CPI:** The Consumer Price Index, which tracks the prices of a basket of goods and services households buy.
+- **Credit:** Trust that lets someone receive something now and pay later. Also the debt that results.
+- **Current account deficit:** When a country pays more to the world for imports and income than it receives, it must borrow or sell assets to cover the gap.
+- **Debasement:** Lowering the precious metal in coins while keeping their face value. The ancient form of printing money.
+- **Debt deflation:** A spiral where paying down debt pushes prices down, which makes remaining debts heavier.
+- **Deep market:** A market where huge sums can move quickly at fair prices under rules that will not change on you.
+- **Deflation:** A general fall in prices, so each unit of money buys more. Debts get heavier in real terms.
+- **Dutch disease:** When a resource export boom lifts the currency and makes other industries uncompetitive. Named after the Netherlands' gas boom of the 1960s.
+- **Economic rent:** Income earned from owning something scarce, such as land or a license, rather than from producing more.
+- **Exorbitant privilege:** The advantage the US gets because the world wants dollars and Treasuries, letting it borrow cheaply in its own currency.
+- **Face value:** The amount a bond repays at maturity, usually $1,000 per bond. Also called par.
+- **Federal Reserve (the Fed):** The US central bank. It sets short-term interest rates, supervises banks and acts as lender of last resort.
+- **Financial hub:** A city where money, banks, investors and talent concentrate, such as New York, London or Singapore.
+- **Financial repression:** Keeping interest rates below inflation so that debts, especially government debts, shrink in real terms.
+- **Floating exchange rate:** A currency whose price against others is set by markets every day.
+- **Four Horsemen of leveling:** Walter Scheidel's name for the four forces that historically shrank inequality: mass-mobilization war, revolution, state collapse and pandemics.
+- **Free banking:** The period from 1837 to 1863 when US banks issued their own paper notes, each trading at its own discount.
+- **GENIUS Act:** The US law setting rules for payment stablecoins, including reserves of cash, deposits and short Treasury bills, and no interest to holders.
+- **Gold standard:** A system where a currency is defined as a fixed weight of gold and paper notes can be swapped for gold.
+- **Gresham's law:** When two moneys have the same face value, people spend the worse one and hoard the better one.
+- **Halving:** The cut in Bitcoin's new-coin reward about every four years. The April 2024 halving set it at 3.125 coins per block.
+- **IMF:** The International Monetary Fund, created in 1944 to lend to countries with payment problems and oversee exchange rates.
+- **Imported inflation:** Rising prices caused by a weaker home currency or dearer foreign goods, not by anything happening at home.
+- **Impossible trinity:** The rule that a country cannot fix its exchange rate, allow free movement of money and set its own interest rates all at once.
+- **Inflation:** A general rise in prices, so each unit of money buys less. Debts get lighter in real terms.
+- **Jubilee:** The fiftieth-year release in Leviticus 25, when land returned to its original families and bonded servants went free. The release of debts every seventh year comes from Deuteronomy 15.
+- **Leverage:** Using borrowed money to buy assets. It magnifies gains and losses.
+- **Liability:** Something you owe, such as a loan. One person's liability is always another's asset.
+- **Maturity:** The date a bond repays its face value.
+- **Medium of exchange:** Whatever people hand over to settle a trade. Money's spending job.
+- **Meme coin:** A token with no purpose beyond attention and speculation.
+- **Middle-income trap:** When a country grows fast to a middle level and then stalls, often because the next step needs reforms its elites resist.
+- **Minsky moment:** The point when a long calm period of rising debt suddenly turns into forced selling and crisis.
+- **Money multiplier:** An old textbook idea that banks lend a fixed multiple of their reserves. Central banks now say it does not describe how lending works.
+- **Net worth:** Everything owned minus everything owed.
+- **Nominal:** Measured in current money, without adjusting for inflation.
+- **Nominal yield:** The interest rate as quoted, in dollars, before tax and inflation.
+- **Open market operations:** The Fed buying or selling securities in the market, with dealers, rather than directly from the Treasury.
+- **Peg:** A fixed exchange rate between one currency and another, defended by a central bank.
+- **Petrodollar:** The 1970s arrangement in which oil was priced in dollars and Gulf oil money was recycled into US Treasuries and banks.
+- **Primary dealer:** One of 25 banks and dealers that must bid at US Treasury auctions and trade with the New York Fed in its open market operations.
+- **Primary deficit:** The government's deficit before counting interest payments.
+- **Prisoner's dilemma:** A game where each player gains by cheating, but if all cheat, all end up worse off.
+- **Private key:** The secret code that controls tokens in a wallet. Whoever holds it controls the tokens.
+- **Provident fund:** A compulsory national savings scheme for retirement, such as Malaysia's EPF or Singapore's CPF.
+- **Quantitative easing (QE):** When a central bank creates reserves to buy bonds in the open market, to push down long-term interest rates.
+- **Real:** Adjusted for inflation, so values can be compared across time.
+- **Real yield:** The return left after inflation. In bond markets it is read from inflation-protected bonds (TIPS).
+- **Repo:** A short loan backed by bonds as collateral. The financial system's overnight pawnshop.
+- **Reserve currency:** A currency that foreign governments hold in large amounts as savings and for crisis use. Today mainly the dollar.
+- **Resource curse:** The pattern where countries rich in oil or minerals grow slower and govern worse than countries without them.
+- **Revaluation:** A change in the price of assets already owned, with no new things produced. Falling interest rates revalue assets upward.
+- **Reverse repo facility:** A Fed facility where money funds and others park cash overnight, taking it out of the banking system while it sits there.
+- **Riba:** The Arabic term for interest or unjust gain on loans, forbidden in Islam.
+- **Seigniorage:** The profit from issuing money, the gap between what money costs to make and what it buys.
+- **Sovereign wealth fund:** A state-owned fund that invests a country's surplus, often from oil, gas or trade, in assets at home and abroad.
+- **Stablecoin:** A crypto token designed to stay worth one unit of a currency, usually one dollar, backed by reserves.
+- **Store of value:** A way to carry buying power from today into the future. Money's saving job.
+- **Sukuk:** Islamic bonds that pay returns linked to real assets instead of interest.
+- **Tax competition:** Countries cutting taxes to attract people, companies and capital from other countries.
+- **Term premium:** The extra yield investors demand for locking money up for many years when the future is uncertain.
+- **Time preference:** The fact that people value having things sooner rather than later. It is why waiting must be paid for with interest.
+- **Time price:** The number of hours of work needed to buy something.
+- **Title:** The legal record of who owns something, such as land, a building or mineral rights.
+- **Token:** A unit recorded on a blockchain. It can represent a coin, a dollar, a share, a vote or nothing at all.
+- **Tokenization:** Recording ownership of a real asset, such as a Treasury bill or a building, on a blockchain.
+- **Toll booth:** In this guide, any player who earns by owning a crossing point others must pass, such as a platform, a payment rail or land.
+- **Treasury bill (T-bill):** Short-term US government debt, sold at a discount and repaid at full value within a year.
+- **Treasury General Account:** The US government's main checking account, held at the Federal Reserve.
+- **Treasury securities:** Debts of the US government. Bills last up to a year, notes 2 to 10 years, bonds 20 or 30 years.
+- **Triffin dilemma:** The conflict between supplying the world with enough of a reserve currency and keeping that currency's backing believable.
+- **Unit of account:** The measuring unit for prices, wages and debts, such as the dollar. Money's measuring job.
+- **Velocity:** How many times a unit of money is spent in a given period.
+- **Watt-dollar:** This project's name for dollar loans backed by energy assets such as power plants, data centers and chips.
+- **Yield:** The return on a bond or investment, expressed as a yearly percentage of its price.
+- **Yield curve:** Bond yields lined up from short to long maturities. Upward sloping is normal, inverted often warns of a slowdown.

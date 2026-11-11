@@ -1,0 +1,2298 @@
+{
+ "meta": {
+  "lane": "R6B",
+  "round": 6,
+  "built": "2026-10-24",
+  "note": "Chart-ready tables. Values from public sources, units in each table. Scripts in the session scratchpad (dbn.py, holders.py, plumbing.py, chan2.py, duration.py, stress.py)."
+ },
+ "treasury_holders_share": {
+  "unit": "percent of all Treasury securities held, and $T",
+  "source": "Fed Z.1 table L.210 via DBnomics (FED/Z1), annual year-end",
+  "caveat": "Z.1 valuation differs from H.4.1 face value for the Fed. Household line is a residual including hedge funds.",
+  "rows": [
+   {
+    "year": 1970,
+    "series": "Federal Reserve",
+    "value_tn": 0.036,
+    "share_pct": 15.2,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL713061125.A"
+   },
+   {
+    "year": 1980,
+    "series": "Federal Reserve",
+    "value_tn": 0.076,
+    "share_pct": 12.4,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL713061125.A"
+   },
+   {
+    "year": 1990,
+    "series": "Federal Reserve",
+    "value_tn": 0.123,
+    "share_pct": 5.8,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL713061125.A"
+   },
+   {
+    "year": 2000,
+    "series": "Federal Reserve",
+    "value_tn": 0.333,
+    "share_pct": 11.7,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL713061125.A"
+   },
+   {
+    "year": 2007,
+    "series": "Federal Reserve",
+    "value_tn": 0.513,
+    "share_pct": 11.8,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL713061125.A"
+   },
+   {
+    "year": 2014,
+    "series": "Federal Reserve",
+    "value_tn": 2.736,
+    "share_pct": 21.7,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL713061125.A"
+   },
+   {
+    "year": 2019,
+    "series": "Federal Reserve",
+    "value_tn": 2.372,
+    "share_pct": 14.0,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL713061125.A"
+   },
+   {
+    "year": 2021,
+    "series": "Federal Reserve",
+    "value_tn": 5.726,
+    "share_pct": 25.0,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL713061125.A"
+   },
+   {
+    "year": 2023,
+    "series": "Federal Reserve",
+    "value_tn": 4.189,
+    "share_pct": 17.3,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL713061125.A"
+   },
+   {
+    "year": 2025,
+    "series": "Federal Reserve",
+    "value_tn": 3.623,
+    "share_pct": 12.7,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL713061125.A"
+   },
+   {
+    "year": 1970,
+    "series": "Foreign (rest of world)",
+    "value_tn": 0.02,
+    "share_pct": 8.3,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL263061105.A"
+   },
+   {
+    "year": 1980,
+    "series": "Foreign (rest of world)",
+    "value_tn": 0.127,
+    "share_pct": 20.9,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL263061105.A"
+   },
+   {
+    "year": 1990,
+    "series": "Foreign (rest of world)",
+    "value_tn": 0.438,
+    "share_pct": 20.8,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL263061105.A"
+   },
+   {
+    "year": 2000,
+    "series": "Foreign (rest of world)",
+    "value_tn": 1.021,
+    "share_pct": 36.0,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL263061105.A"
+   },
+   {
+    "year": 2007,
+    "series": "Foreign (rest of world)",
+    "value_tn": 2.376,
+    "share_pct": 54.5,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL263061105.A"
+   },
+   {
+    "year": 2014,
+    "series": "Foreign (rest of world)",
+    "value_tn": 6.158,
+    "share_pct": 48.8,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL263061105.A"
+   },
+   {
+    "year": 2019,
+    "series": "Foreign (rest of world)",
+    "value_tn": 6.918,
+    "share_pct": 40.9,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL263061105.A"
+   },
+   {
+    "year": 2021,
+    "series": "Foreign (rest of world)",
+    "value_tn": 7.74,
+    "share_pct": 33.7,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL263061105.A"
+   },
+   {
+    "year": 2023,
+    "series": "Foreign (rest of world)",
+    "value_tn": 7.94,
+    "share_pct": 32.8,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL263061105.A"
+   },
+   {
+    "year": 2025,
+    "series": "Foreign (rest of world)",
+    "value_tn": 9.267,
+    "share_pct": 32.5,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL263061105.A"
+   },
+   {
+    "year": 1970,
+    "series": "Banks and credit unions",
+    "value_tn": 0.073,
+    "share_pct": 30.6,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL703061105.A"
+   },
+   {
+    "year": 1980,
+    "series": "Banks and credit unions",
+    "value_tn": 0.125,
+    "share_pct": 20.6,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL703061105.A"
+   },
+   {
+    "year": 1990,
+    "series": "Banks and credit unions",
+    "value_tn": 0.206,
+    "share_pct": 9.7,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL703061105.A"
+   },
+   {
+    "year": 2000,
+    "series": "Banks and credit unions",
+    "value_tn": 0.201,
+    "share_pct": 7.1,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL703061105.A"
+   },
+   {
+    "year": 2007,
+    "series": "Banks and credit unions",
+    "value_tn": 0.123,
+    "share_pct": 2.8,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL703061105.A"
+   },
+   {
+    "year": 2014,
+    "series": "Banks and credit unions",
+    "value_tn": 0.503,
+    "share_pct": 4.0,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL703061105.A"
+   },
+   {
+    "year": 2019,
+    "series": "Banks and credit unions",
+    "value_tn": 0.879,
+    "share_pct": 5.2,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL703061105.A"
+   },
+   {
+    "year": 2021,
+    "series": "Banks and credit unions",
+    "value_tn": 1.641,
+    "share_pct": 7.2,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL703061105.A"
+   },
+   {
+    "year": 2023,
+    "series": "Banks and credit unions",
+    "value_tn": 1.514,
+    "share_pct": 6.3,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL703061105.A"
+   },
+   {
+    "year": 2025,
+    "series": "Banks and credit unions",
+    "value_tn": 1.962,
+    "share_pct": 6.9,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL703061105.A"
+   },
+   {
+    "year": 1970,
+    "series": "Money market funds",
+    "value_tn": 0.0,
+    "share_pct": 0.0,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL633061105.A"
+   },
+   {
+    "year": 1980,
+    "series": "Money market funds",
+    "value_tn": 0.003,
+    "share_pct": 0.6,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL633061105.A"
+   },
+   {
+    "year": 1990,
+    "series": "Money market funds",
+    "value_tn": 0.045,
+    "share_pct": 2.2,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL633061105.A"
+   },
+   {
+    "year": 2000,
+    "series": "Money market funds",
+    "value_tn": 0.094,
+    "share_pct": 3.3,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL633061105.A"
+   },
+   {
+    "year": 2007,
+    "series": "Money market funds",
+    "value_tn": 0.182,
+    "share_pct": 4.2,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL633061105.A"
+   },
+   {
+    "year": 2014,
+    "series": "Money market funds",
+    "value_tn": 0.485,
+    "share_pct": 3.8,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL633061105.A"
+   },
+   {
+    "year": 2019,
+    "series": "Money market funds",
+    "value_tn": 1.123,
+    "share_pct": 6.6,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL633061105.A"
+   },
+   {
+    "year": 2021,
+    "series": "Money market funds",
+    "value_tn": 1.815,
+    "share_pct": 7.9,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL633061105.A"
+   },
+   {
+    "year": 2023,
+    "series": "Money market funds",
+    "value_tn": 2.269,
+    "share_pct": 9.4,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL633061105.A"
+   },
+   {
+    "year": 2025,
+    "series": "Money market funds",
+    "value_tn": 3.518,
+    "share_pct": 12.4,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL633061105.A"
+   },
+   {
+    "year": 1970,
+    "series": "Mutual funds and ETFs",
+    "value_tn": 0.001,
+    "share_pct": 0.4,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL653061105.A,FL563061103.A"
+   },
+   {
+    "year": 1980,
+    "series": "Mutual funds and ETFs",
+    "value_tn": 0.002,
+    "share_pct": 0.3,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL653061105.A,FL563061103.A"
+   },
+   {
+    "year": 1990,
+    "series": "Mutual funds and ETFs",
+    "value_tn": 0.081,
+    "share_pct": 3.9,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL653061105.A,FL563061103.A"
+   },
+   {
+    "year": 2000,
+    "series": "Mutual funds and ETFs",
+    "value_tn": 0.113,
+    "share_pct": 4.0,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL653061105.A,FL563061103.A"
+   },
+   {
+    "year": 2007,
+    "series": "Mutual funds and ETFs",
+    "value_tn": 0.206,
+    "share_pct": 4.7,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL653061105.A,FL563061103.A"
+   },
+   {
+    "year": 2014,
+    "series": "Mutual funds and ETFs",
+    "value_tn": 0.75,
+    "share_pct": 5.9,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL653061105.A,FL563061103.A"
+   },
+   {
+    "year": 2019,
+    "series": "Mutual funds and ETFs",
+    "value_tn": 1.515,
+    "share_pct": 8.9,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL653061105.A,FL563061103.A"
+   },
+   {
+    "year": 2021,
+    "series": "Mutual funds and ETFs",
+    "value_tn": 1.926,
+    "share_pct": 8.4,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL653061105.A,FL563061103.A"
+   },
+   {
+    "year": 2023,
+    "series": "Mutual funds and ETFs",
+    "value_tn": 1.892,
+    "share_pct": 7.8,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL653061105.A,FL563061103.A"
+   },
+   {
+    "year": 2025,
+    "series": "Mutual funds and ETFs",
+    "value_tn": 2.391,
+    "share_pct": 8.4,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL653061105.A,FL563061103.A"
+   },
+   {
+    "year": 1970,
+    "series": "Pensions and insurers",
+    "value_tn": 0.015,
+    "share_pct": 6.2,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL573061105.A,FL543061105.A,FL513061105.A,FL343061105.A,FL223061143.A"
+   },
+   {
+    "year": 1980,
+    "series": "Pensions and insurers",
+    "value_tn": 0.071,
+    "share_pct": 11.7,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL573061105.A,FL543061105.A,FL513061105.A,FL343061105.A,FL223061143.A"
+   },
+   {
+    "year": 1990,
+    "series": "Pensions and insurers",
+    "value_tn": 0.45,
+    "share_pct": 21.3,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL573061105.A,FL543061105.A,FL513061105.A,FL343061105.A,FL223061143.A"
+   },
+   {
+    "year": 2000,
+    "series": "Pensions and insurers",
+    "value_tn": 0.427,
+    "share_pct": 15.0,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL573061105.A,FL543061105.A,FL513061105.A,FL343061105.A,FL223061143.A"
+   },
+   {
+    "year": 2007,
+    "series": "Pensions and insurers",
+    "value_tn": 0.458,
+    "share_pct": 10.5,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL573061105.A,FL543061105.A,FL513061105.A,FL343061105.A,FL223061143.A"
+   },
+   {
+    "year": 2014,
+    "series": "Pensions and insurers",
+    "value_tn": 0.845,
+    "share_pct": 6.7,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL573061105.A,FL543061105.A,FL513061105.A,FL343061105.A,FL223061143.A"
+   },
+   {
+    "year": 2019,
+    "series": "Pensions and insurers",
+    "value_tn": 1.171,
+    "share_pct": 6.9,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL573061105.A,FL543061105.A,FL513061105.A,FL343061105.A,FL223061143.A"
+   },
+   {
+    "year": 2021,
+    "series": "Pensions and insurers",
+    "value_tn": 1.365,
+    "share_pct": 6.0,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL573061105.A,FL543061105.A,FL513061105.A,FL343061105.A,FL223061143.A"
+   },
+   {
+    "year": 2023,
+    "series": "Pensions and insurers",
+    "value_tn": 1.361,
+    "share_pct": 5.6,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL573061105.A,FL543061105.A,FL513061105.A,FL343061105.A,FL223061143.A"
+   },
+   {
+    "year": 2025,
+    "series": "Pensions and insurers",
+    "value_tn": 1.716,
+    "share_pct": 6.0,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL573061105.A,FL543061105.A,FL513061105.A,FL343061105.A,FL223061143.A"
+   },
+   {
+    "year": 1970,
+    "series": "Households and hedge funds (residual)",
+    "value_tn": 0.031,
+    "share_pct": 13.0,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL153061105.A"
+   },
+   {
+    "year": 1980,
+    "series": "Households and hedge funds (residual)",
+    "value_tn": 0.069,
+    "share_pct": 11.3,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL153061105.A"
+   },
+   {
+    "year": 1990,
+    "series": "Households and hedge funds (residual)",
+    "value_tn": 0.261,
+    "share_pct": 12.4,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL153061105.A"
+   },
+   {
+    "year": 2000,
+    "series": "Households and hedge funds (residual)",
+    "value_tn": 0.21,
+    "share_pct": 7.4,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL153061105.A"
+   },
+   {
+    "year": 2007,
+    "series": "Households and hedge funds (residual)",
+    "value_tn": -0.318,
+    "share_pct": -7.3,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL153061105.A"
+   },
+   {
+    "year": 2014,
+    "series": "Households and hedge funds (residual)",
+    "value_tn": 0.104,
+    "share_pct": 0.8,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL153061105.A"
+   },
+   {
+    "year": 2019,
+    "series": "Households and hedge funds (residual)",
+    "value_tn": 1.392,
+    "share_pct": 8.2,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL153061105.A"
+   },
+   {
+    "year": 2021,
+    "series": "Households and hedge funds (residual)",
+    "value_tn": 0.303,
+    "share_pct": 1.3,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL153061105.A"
+   },
+   {
+    "year": 2023,
+    "series": "Households and hedge funds (residual)",
+    "value_tn": 2.362,
+    "share_pct": 9.8,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL153061105.A"
+   },
+   {
+    "year": 2025,
+    "series": "Households and hedge funds (residual)",
+    "value_tn": 2.71,
+    "share_pct": 9.5,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL153061105.A"
+   },
+   {
+    "year": 1970,
+    "series": "State and local governments",
+    "value_tn": 0.023,
+    "share_pct": 9.7,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL213061103.A"
+   },
+   {
+    "year": 1980,
+    "series": "State and local governments",
+    "value_tn": 0.069,
+    "share_pct": 11.4,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL213061103.A"
+   },
+   {
+    "year": 1990,
+    "series": "State and local governments",
+    "value_tn": 0.25,
+    "share_pct": 11.8,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL213061103.A"
+   },
+   {
+    "year": 2000,
+    "series": "State and local governments",
+    "value_tn": 0.166,
+    "share_pct": 5.8,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL213061103.A"
+   },
+   {
+    "year": 2007,
+    "series": "State and local governments",
+    "value_tn": 0.408,
+    "share_pct": 9.4,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL213061103.A"
+   },
+   {
+    "year": 2014,
+    "series": "State and local governments",
+    "value_tn": 0.54,
+    "share_pct": 4.3,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL213061103.A"
+   },
+   {
+    "year": 2019,
+    "series": "State and local governments",
+    "value_tn": 0.61,
+    "share_pct": 3.6,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL213061103.A"
+   },
+   {
+    "year": 2021,
+    "series": "State and local governments",
+    "value_tn": 1.281,
+    "share_pct": 5.6,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL213061103.A"
+   },
+   {
+    "year": 2023,
+    "series": "State and local governments",
+    "value_tn": 1.438,
+    "share_pct": 5.9,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL213061103.A"
+   },
+   {
+    "year": 2025,
+    "series": "State and local governments",
+    "value_tn": 1.602,
+    "share_pct": 5.6,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL213061103.A"
+   },
+   {
+    "year": 1970,
+    "series": "Other (dealers, firms, GSEs)",
+    "value_tn": 0.013,
+    "share_pct": 5.4,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL663061105.A,FL103061103.A,FL403061105.A"
+   },
+   {
+    "year": 1980,
+    "series": "Other (dealers, firms, GSEs)",
+    "value_tn": 0.018,
+    "share_pct": 3.0,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL663061105.A,FL103061103.A,FL403061105.A"
+   },
+   {
+    "year": 1990,
+    "series": "Other (dealers, firms, GSEs)",
+    "value_tn": 0.125,
+    "share_pct": 5.9,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL663061105.A,FL103061103.A,FL403061105.A"
+   },
+   {
+    "year": 2000,
+    "series": "Other (dealers, firms, GSEs)",
+    "value_tn": 0.038,
+    "share_pct": 1.3,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL663061105.A,FL103061103.A,FL403061105.A"
+   },
+   {
+    "year": 2007,
+    "series": "Other (dealers, firms, GSEs)",
+    "value_tn": 0.011,
+    "share_pct": 0.2,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL663061105.A,FL103061103.A,FL403061105.A"
+   },
+   {
+    "year": 2014,
+    "series": "Other (dealers, firms, GSEs)",
+    "value_tn": 0.235,
+    "share_pct": 1.9,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL663061105.A,FL103061103.A,FL403061105.A"
+   },
+   {
+    "year": 2019,
+    "series": "Other (dealers, firms, GSEs)",
+    "value_tn": 0.467,
+    "share_pct": 2.8,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL663061105.A,FL103061103.A,FL403061105.A"
+   },
+   {
+    "year": 2021,
+    "series": "Other (dealers, firms, GSEs)",
+    "value_tn": 0.482,
+    "share_pct": 2.1,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL663061105.A,FL103061103.A,FL403061105.A"
+   },
+   {
+    "year": 2023,
+    "series": "Other (dealers, firms, GSEs)",
+    "value_tn": 0.604,
+    "share_pct": 2.5,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL663061105.A,FL103061103.A,FL403061105.A"
+   },
+   {
+    "year": 2025,
+    "series": "Other (dealers, firms, GSEs)",
+    "value_tn": 1.022,
+    "share_pct": 3.6,
+    "source": "Fed Z.1 L.210 via DBnomics, codes FL663061105.A,FL103061103.A,FL403061105.A"
+   }
+  ]
+ },
+ "ten_year_auction_bidders_by_year": {
+  "unit": "percent of competitive accepted (dealers, direct, indirect), yields percent, $bn offered",
+  "source": "Treasury auctions_query (fiscaldata), 10-year nominal notes incl. reopenings, TIPS excluded",
+  "rows": [
+   {
+    "year": 2008,
+    "dealers_pct": 71.8,
+    "direct_pct": 1.1,
+    "indirect_pct": 27.1,
+    "avg_bid_to_cover": 2.23,
+    "avg_high_yield": 3.61,
+    "n_auctions": 10,
+    "offered_bn": 131
+   },
+   {
+    "year": 2009,
+    "dealers_pct": 57.3,
+    "direct_pct": 4.9,
+    "indirect_pct": 37.8,
+    "avg_bid_to_cover": 2.62,
+    "avg_high_yield": 3.26,
+    "n_auctions": 12,
+    "offered_bn": 242
+   },
+   {
+    "year": 2010,
+    "dealers_pct": 44.2,
+    "direct_pct": 13.5,
+    "indirect_pct": 42.3,
+    "avg_bid_to_cover": 3.09,
+    "avg_high_yield": 3.24,
+    "n_auctions": 12,
+    "offered_bn": 265
+   },
+   {
+    "year": 2011,
+    "dealers_pct": 41.6,
+    "direct_pct": 9.9,
+    "indirect_pct": 48.5,
+    "avg_bid_to_cover": 3.14,
+    "avg_high_yield": 2.8,
+    "n_auctions": 12,
+    "offered_bn": 264
+   },
+   {
+    "year": 2012,
+    "dealers_pct": 41.8,
+    "direct_pct": 20.0,
+    "indirect_pct": 38.2,
+    "avg_bid_to_cover": 3.03,
+    "avg_high_yield": 1.79,
+    "n_auctions": 12,
+    "offered_bn": 264
+   },
+   {
+    "year": 2013,
+    "dealers_pct": 40.0,
+    "direct_pct": 19.8,
+    "indirect_pct": 40.3,
+    "avg_bid_to_cover": 2.71,
+    "avg_high_yield": 2.35,
+    "n_auctions": 12,
+    "offered_bn": 264
+   },
+   {
+    "year": 2014,
+    "dealers_pct": 38.6,
+    "direct_pct": 15.3,
+    "indirect_pct": 46.1,
+    "avg_bid_to_cover": 2.71,
+    "avg_high_yield": 2.59,
+    "n_auctions": 12,
+    "offered_bn": 264
+   },
+   {
+    "year": 2015,
+    "dealers_pct": 29.2,
+    "direct_pct": 12.0,
+    "indirect_pct": 58.8,
+    "avg_bid_to_cover": 2.63,
+    "avg_high_yield": 2.16,
+    "n_auctions": 12,
+    "offered_bn": 264
+   },
+   {
+    "year": 2016,
+    "dealers_pct": 27.3,
+    "direct_pct": 9.4,
+    "indirect_pct": 63.3,
+    "avg_bid_to_cover": 2.52,
+    "avg_high_yield": 1.83,
+    "n_auctions": 12,
+    "offered_bn": 253
+   },
+   {
+    "year": 2017,
+    "dealers_pct": 29.1,
+    "direct_pct": 7.2,
+    "indirect_pct": 63.8,
+    "avg_bid_to_cover": 2.44,
+    "avg_high_yield": 2.33,
+    "n_auctions": 12,
+    "offered_bn": 252
+   },
+   {
+    "year": 2018,
+    "dealers_pct": 27.2,
+    "direct_pct": 8.6,
+    "indirect_pct": 64.2,
+    "avg_bid_to_cover": 2.51,
+    "avg_high_yield": 2.93,
+    "n_auctions": 12,
+    "offered_bn": 278
+   },
+   {
+    "year": 2019,
+    "dealers_pct": 26.1,
+    "direct_pct": 13.9,
+    "indirect_pct": 60.0,
+    "avg_bid_to_cover": 2.51,
+    "avg_high_yield": 2.11,
+    "n_auctions": 14,
+    "offered_bn": 338
+   },
+   {
+    "year": 2020,
+    "dealers_pct": 25.4,
+    "direct_pct": 14.0,
+    "indirect_pct": 60.7,
+    "avg_bid_to_cover": 2.44,
+    "avg_high_yield": 0.95,
+    "n_auctions": 12,
+    "offered_bn": 377
+   },
+   {
+    "year": 2021,
+    "dealers_pct": 17.2,
+    "direct_pct": 16.9,
+    "indirect_pct": 65.9,
+    "avg_bid_to_cover": 2.47,
+    "avg_high_yield": 1.44,
+    "n_auctions": 12,
+    "offered_bn": 464
+   },
+   {
+    "year": 2022,
+    "dealers_pct": 16.6,
+    "direct_pct": 18.0,
+    "indirect_pct": 65.3,
+    "avg_bid_to_cover": 2.43,
+    "avg_high_yield": 2.91,
+    "n_auctions": 12,
+    "offered_bn": 409
+   },
+   {
+    "year": 2023,
+    "dealers_pct": 14.3,
+    "direct_pct": 18.7,
+    "indirect_pct": 66.9,
+    "avg_bid_to_cover": 2.48,
+    "avg_high_yield": 3.95,
+    "n_auctions": 12,
+    "offered_bn": 415
+   },
+   {
+    "year": 2024,
+    "dealers_pct": 14.6,
+    "direct_pct": 16.9,
+    "indirect_pct": 68.5,
+    "avg_bid_to_cover": 2.54,
+    "avg_high_yield": 4.19,
+    "n_auctions": 12,
+    "offered_bn": 478
+   },
+   {
+    "year": 2025,
+    "dealers_pct": 11.0,
+    "direct_pct": 18.5,
+    "indirect_pct": 70.5,
+    "avg_bid_to_cover": 2.54,
+    "avg_high_yield": 4.32,
+    "n_auctions": 12,
+    "offered_bn": 480
+   },
+   {
+    "year": 2026,
+    "dealers_pct": 8.8,
+    "direct_pct": 17.9,
+    "indirect_pct": 73.3,
+    "avg_bid_to_cover": 2.54,
+    "avg_high_yield": 4.53,
+    "n_auctions": 10,
+    "offered_bn": 399
+   }
+  ]
+ },
+ "auction_2026_10_07": {
+  "unit": "$bn",
+  "source": "Treasury auctions_query, CUSIP 91282CRF0",
+  "rows": [
+   {
+    "item": "offered",
+    "value": 39.0
+   },
+   {
+    "item": "tendered",
+    "value": 109.0
+   },
+   {
+    "item": "primary dealers accepted",
+    "value": 0.984
+   },
+   {
+    "item": "direct accepted",
+    "value": 6.618
+   },
+   {
+    "item": "indirect accepted",
+    "value": 31.063
+   },
+   {
+    "item": "noncompetitive",
+    "value": 0.335
+   },
+   {
+    "item": "SOMA rollover add-on",
+    "value": 0.926
+   },
+   {
+    "item": "high yield percent",
+    "value": 5.3
+   },
+   {
+    "item": "bid to cover",
+    "value": 2.77
+   },
+   {
+    "item": "price per 100",
+    "value": 94.864
+   }
+  ]
+ },
+ "duration": {
+  "unit": "price per 100, years, percent",
+  "source": "model (duration.py), yields H.15 21 Oct 2026",
+  "rows": [
+   {
+    "bond": "2-year",
+    "coupon": 0.0475,
+    "yield_": 0.0481,
+    "years": 2,
+    "price": 99.89,
+    "macaulay": 1.93,
+    "modified": 1.89,
+    "convexity": 4.6,
+    "pct_if_up_1pt": -1.86,
+    "pct_if_down_1pt": 1.91
+   },
+   {
+    "bond": "10-year (Oct 2026 reopening coupon 4.625%)",
+    "coupon": 0.04625,
+    "yield_": 0.0513,
+    "years": 10,
+    "price": 96.09,
+    "macaulay": 8.07,
+    "modified": 7.87,
+    "convexity": 74.6,
+    "pct_if_up_1pt": -7.51,
+    "pct_if_down_1pt": 8.26
+   },
+   {
+    "bond": "30-year",
+    "coupon": 0.05,
+    "yield_": 0.0542,
+    "years": 30,
+    "price": 93.81,
+    "macaulay": 15.39,
+    "modified": 14.98,
+    "convexity": 336.3,
+    "pct_if_up_1pt": -13.44,
+    "pct_if_down_1pt": 16.82
+   },
+   {
+    "bond": "Chapter check 10-year 5% coupon at 5%",
+    "coupon": 0.05,
+    "yield_": 0.05,
+    "years": 10,
+    "price": 100.0,
+    "macaulay": 7.99,
+    "modified": 7.79,
+    "convexity": 73.6,
+    "pct_if_up_1pt": -7.44,
+    "pct_if_down_1pt": 8.18
+   },
+   {
+    "bond": "Chapter check 30-year 5% coupon at 5%",
+    "coupon": 0.05,
+    "yield_": 0.05,
+    "years": 30,
+    "price": 100.0,
+    "macaulay": 15.84,
+    "modified": 15.45,
+    "convexity": 352.1,
+    "pct_if_up_1pt": -13.84,
+    "pct_if_down_1pt": 17.38
+   }
+  ]
+ },
+ "stress_windows_10y": {
+  "unit": "percent yield",
+  "source": "Fed H.15 daily 10-year constant maturity via DBnomics",
+  "rows": [
+   {
+    "low_date": "1979-07-02",
+    "low": 8.76,
+    "high_date": "1981-09-30",
+    "high": 15.84,
+    "window": "1979 to 1982 Volcker"
+   },
+   {
+    "low_date": "1993-10-15",
+    "low": 5.19,
+    "high_date": "1994-11-07",
+    "high": 8.05,
+    "window": "1994 bond massacre"
+   },
+   {
+    "low_date": "2008-12-18",
+    "low": 2.08,
+    "high_date": "2008-06-13",
+    "high": 4.27,
+    "window": "2008 crisis"
+   },
+   {
+    "low_date": "2020-03-09",
+    "low": 0.54,
+    "high_date": "2020-03-18",
+    "high": 1.18,
+    "window": "2020 dash for cash"
+   },
+   {
+    "low_date": "2021-12-03",
+    "low": 1.35,
+    "high_date": "2023-10-19",
+    "high": 4.98,
+    "window": "2022 to 2023 hiking"
+   },
+   {
+    "low_date": "2026-02-27",
+    "low": 3.97,
+    "high_date": "2026-10-05",
+    "high": 5.31,
+    "window": "2026 to date"
+   }
+  ],
+  "price_change_model_pct": {
+   "1979 to 1982 Volcker": -35.0,
+   "1994 bond massacre": -19.4,
+   "2008 crisis": 19.7,
+   "2020 dash for cash": -6.0,
+   "2022 to 2023 hiking": -28.3,
+   "2026 to date": -10.3
+  }
+ },
+ "channels": {
+  "unit": "$T change over window",
+  "source": "H.8 SA monthly, H.4.1 Wednesday, H.6 via DBnomics",
+  "rows": [
+   {
+    "window": "Normal year 2019",
+    "from": "2018-12-31",
+    "to": "2019-12-31",
+    "bank_loans": 0.45,
+    "bank_securities": 0.33,
+    "fed_securities": -0.13,
+    "tga_rise_drain": -0.02,
+    "rrp_rise_drain": 0.0,
+    "currency_rise": 0.09,
+    "reserves": -0.01,
+    "deposits": 0.79,
+    "m2": 0.96
+   },
+   {
+    "window": "Stress 2020 to 2021",
+    "from": "2019-12-31",
+    "to": "2021-12-31",
+    "bank_loans": 0.68,
+    "bank_securities": 1.86,
+    "fed_securities": 4.52,
+    "tga_rise_drain": -0.07,
+    "rrp_rise_drain": 1.64,
+    "currency_rise": 0.43,
+    "reserves": 2.39,
+    "deposits": 4.71,
+    "m2": 6.15
+   },
+   {
+    "window": "QT 2022 to 2023",
+    "from": "2021-12-31",
+    "to": "2023-12-31",
+    "bank_loans": 1.56,
+    "bank_securities": -0.61,
+    "fed_securities": -1.04,
+    "tga_rise_drain": 0.43,
+    "rrp_rise_drain": -0.82,
+    "currency_rise": 0.11,
+    "reserves": -0.61,
+    "deposits": -0.5,
+    "m2": -0.72
+   },
+   {
+    "window": "Latest year",
+    "from": "2025-09-30",
+    "to": "2026-09-30",
+    "bank_loans": 1.0,
+    "bank_securities": 0.14,
+    "fed_securities": 0.16,
+    "tga_rise_drain": 0.23,
+    "rrp_rise_drain": -0.02,
+    "currency_rise": 0.07,
+    "reserves": -0.12,
+    "deposits": 1.23,
+    "m2": 1.17
+   }
+  ],
+  "fiscal_deficits_tn": {
+   "FY2019": 0.984,
+   "FY2020": 3.132,
+   "FY2021": 2.772,
+   "FY2022": 1.375,
+   "FY2023": 1.695,
+   "FY2024": 1.833,
+   "FY2025": 1.775,
+   "FY2026": 1.992
+  },
+  "deficit_source": "Treasury MTS table 1 via fiscaldata"
+ },
+ "fed_plumbing": {
+  "unit": "$T, Wednesday levels",
+  "source": "Fed H.4.1 via DBnomics",
+  "rows": [
+   {
+    "date": "2007-12-26",
+    "series": "Reserves",
+    "value_tn": 0.004,
+    "source": "Fed H.4.1 via DBnomics RESH4R_N.WW"
+   },
+   {
+    "date": "2007-12-26",
+    "series": "TGA",
+    "value_tn": 0.005,
+    "source": "Fed H.4.1 via DBnomics RESPPLLDT_N.WW"
+   },
+   {
+    "date": "2007-12-26",
+    "series": "ON RRP (others)",
+    "value_tn": 0.0,
+    "source": "Fed H.4.1 via DBnomics RESPPLLRD_N.WW"
+   },
+   {
+    "date": "2007-12-26",
+    "series": "Foreign RRP pool",
+    "value_tn": 0.041,
+    "source": "Fed H.4.1 via DBnomics RESPPLLRF_N.WW"
+   },
+   {
+    "date": "2007-12-26",
+    "series": "Currency",
+    "value_tn": 0.829,
+    "source": "Fed H.4.1 via DBnomics RESTBC_N.WW"
+   },
+   {
+    "date": "2007-12-26",
+    "series": "Fed Treasuries",
+    "value_tn": 0.755,
+    "source": "Fed H.4.1 via DBnomics RESPPALGUM_N.WW"
+   },
+   {
+    "date": "2007-12-26",
+    "series": "Fed MBS",
+    "value_tn": 0.0,
+    "source": "Fed H.4.1 via DBnomics RESPPALGASMO_N.WW"
+   },
+   {
+    "date": "2007-12-26",
+    "series": "Reserve Bank credit",
+    "value_tn": 0.851,
+    "source": "Fed H.4.1 via DBnomics RESH4SC_N.WW"
+   },
+   {
+    "date": "2014-10-29",
+    "series": "Reserves",
+    "value_tn": 2.627,
+    "source": "Fed H.4.1 via DBnomics RESH4R_N.WW"
+   },
+   {
+    "date": "2014-10-29",
+    "series": "TGA",
+    "value_tn": 0.119,
+    "source": "Fed H.4.1 via DBnomics RESPPLLDT_N.WW"
+   },
+   {
+    "date": "2014-10-29",
+    "series": "ON RRP (others)",
+    "value_tn": 0.135,
+    "source": "Fed H.4.1 via DBnomics RESPPLLRD_N.WW"
+   },
+   {
+    "date": "2014-10-29",
+    "series": "Foreign RRP pool",
+    "value_tn": 0.102,
+    "source": "Fed H.4.1 via DBnomics RESPPLLRF_N.WW"
+   },
+   {
+    "date": "2014-10-29",
+    "series": "Currency",
+    "value_tn": 1.299,
+    "source": "Fed H.4.1 via DBnomics RESTBC_N.WW"
+   },
+   {
+    "date": "2014-10-29",
+    "series": "Fed Treasuries",
+    "value_tn": 2.462,
+    "source": "Fed H.4.1 via DBnomics RESPPALGUM_N.WW"
+   },
+   {
+    "date": "2014-10-29",
+    "series": "Fed MBS",
+    "value_tn": 1.718,
+    "source": "Fed H.4.1 via DBnomics RESPPALGASMO_N.WW"
+   },
+   {
+    "date": "2014-10-29",
+    "series": "Reserve Bank credit",
+    "value_tn": 4.445,
+    "source": "Fed H.4.1 via DBnomics RESH4SC_N.WW"
+   },
+   {
+    "date": "2019-09-11",
+    "series": "Reserves",
+    "value_tn": 1.459,
+    "source": "Fed H.4.1 via DBnomics RESH4R_N.WW"
+   },
+   {
+    "date": "2019-09-11",
+    "series": "TGA",
+    "value_tn": 0.184,
+    "source": "Fed H.4.1 via DBnomics RESPPLLDT_N.WW"
+   },
+   {
+    "date": "2019-09-11",
+    "series": "ON RRP (others)",
+    "value_tn": 0.004,
+    "source": "Fed H.4.1 via DBnomics RESPPLLRD_N.WW"
+   },
+   {
+    "date": "2019-09-11",
+    "series": "Foreign RRP pool",
+    "value_tn": 0.291,
+    "source": "Fed H.4.1 via DBnomics RESPPLLRF_N.WW"
+   },
+   {
+    "date": "2019-09-11",
+    "series": "Currency",
+    "value_tn": 1.765,
+    "source": "Fed H.4.1 via DBnomics RESTBC_N.WW"
+   },
+   {
+    "date": "2019-09-11",
+    "series": "Fed Treasuries",
+    "value_tn": 2.101,
+    "source": "Fed H.4.1 via DBnomics RESPPALGUM_N.WW"
+   },
+   {
+    "date": "2019-09-11",
+    "series": "Fed MBS",
+    "value_tn": 1.49,
+    "source": "Fed H.4.1 via DBnomics RESPPALGASMO_N.WW"
+   },
+   {
+    "date": "2019-09-11",
+    "series": "Reserve Bank credit",
+    "value_tn": 3.731,
+    "source": "Fed H.4.1 via DBnomics RESH4SC_N.WW"
+   },
+   {
+    "date": "2020-02-26",
+    "series": "Reserves",
+    "value_tn": 1.68,
+    "source": "Fed H.4.1 via DBnomics RESH4R_N.WW"
+   },
+   {
+    "date": "2020-02-26",
+    "series": "TGA",
+    "value_tn": 0.388,
+    "source": "Fed H.4.1 via DBnomics RESPPLLDT_N.WW"
+   },
+   {
+    "date": "2020-02-26",
+    "series": "ON RRP (others)",
+    "value_tn": 0.002,
+    "source": "Fed H.4.1 via DBnomics RESPPLLRD_N.WW"
+   },
+   {
+    "date": "2020-02-26",
+    "series": "Foreign RRP pool",
+    "value_tn": 0.218,
+    "source": "Fed H.4.1 via DBnomics RESPPLLRF_N.WW"
+   },
+   {
+    "date": "2020-02-26",
+    "series": "Currency",
+    "value_tn": 1.8,
+    "source": "Fed H.4.1 via DBnomics RESTBC_N.WW"
+   },
+   {
+    "date": "2020-02-26",
+    "series": "Fed Treasuries",
+    "value_tn": 2.474,
+    "source": "Fed H.4.1 via DBnomics RESPPALGUM_N.WW"
+   },
+   {
+    "date": "2020-02-26",
+    "series": "Fed MBS",
+    "value_tn": 1.372,
+    "source": "Fed H.4.1 via DBnomics RESPPALGASMO_N.WW"
+   },
+   {
+    "date": "2020-02-26",
+    "series": "Reserve Bank credit",
+    "value_tn": 4.12,
+    "source": "Fed H.4.1 via DBnomics RESH4SC_N.WW"
+   },
+   {
+    "date": "2021-12-29",
+    "series": "Reserves",
+    "value_tn": 4.04,
+    "source": "Fed H.4.1 via DBnomics RESH4R_N.WW"
+   },
+   {
+    "date": "2021-12-29",
+    "series": "TGA",
+    "value_tn": 0.284,
+    "source": "Fed H.4.1 via DBnomics RESPPLLDT_N.WW"
+   },
+   {
+    "date": "2021-12-29",
+    "series": "ON RRP (others)",
+    "value_tn": 1.643,
+    "source": "Fed H.4.1 via DBnomics RESPPLLRD_N.WW"
+   },
+   {
+    "date": "2021-12-29",
+    "series": "Foreign RRP pool",
+    "value_tn": 0.278,
+    "source": "Fed H.4.1 via DBnomics RESPPLLRF_N.WW"
+   },
+   {
+    "date": "2021-12-29",
+    "series": "Currency",
+    "value_tn": 2.236,
+    "source": "Fed H.4.1 via DBnomics RESTBC_N.WW"
+   },
+   {
+    "date": "2021-12-29",
+    "series": "Fed Treasuries",
+    "value_tn": 5.652,
+    "source": "Fed H.4.1 via DBnomics RESPPALGUM_N.WW"
+   },
+   {
+    "date": "2021-12-29",
+    "series": "Fed MBS",
+    "value_tn": 2.615,
+    "source": "Fed H.4.1 via DBnomics RESPPALGASMO_N.WW"
+   },
+   {
+    "date": "2021-12-29",
+    "series": "Reserve Bank credit",
+    "value_tn": 8.719,
+    "source": "Fed H.4.1 via DBnomics RESH4SC_N.WW"
+   },
+   {
+    "date": "2022-04-13",
+    "series": "Reserves",
+    "value_tn": 3.793,
+    "source": "Fed H.4.1 via DBnomics RESH4R_N.WW"
+   },
+   {
+    "date": "2022-04-13",
+    "series": "TGA",
+    "value_tn": 0.544,
+    "source": "Fed H.4.1 via DBnomics RESPPLLDT_N.WW"
+   },
+   {
+    "date": "2022-04-13",
+    "series": "ON RRP (others)",
+    "value_tn": 1.816,
+    "source": "Fed H.4.1 via DBnomics RESPPLLRD_N.WW"
+   },
+   {
+    "date": "2022-04-13",
+    "series": "Foreign RRP pool",
+    "value_tn": 0.255,
+    "source": "Fed H.4.1 via DBnomics RESPPLLRF_N.WW"
+   },
+   {
+    "date": "2022-04-13",
+    "series": "Currency",
+    "value_tn": 2.271,
+    "source": "Fed H.4.1 via DBnomics RESTBC_N.WW"
+   },
+   {
+    "date": "2022-04-13",
+    "series": "Fed Treasuries",
+    "value_tn": 5.762,
+    "source": "Fed H.4.1 via DBnomics RESPPALGUM_N.WW"
+   },
+   {
+    "date": "2022-04-13",
+    "series": "Fed MBS",
+    "value_tn": 2.74,
+    "source": "Fed H.4.1 via DBnomics RESPPALGASMO_N.WW"
+   },
+   {
+    "date": "2022-04-13",
+    "series": "Reserve Bank credit",
+    "value_tn": 8.929,
+    "source": "Fed H.4.1 via DBnomics RESH4SC_N.WW"
+   },
+   {
+    "date": "2022-06-01",
+    "series": "Reserves",
+    "value_tn": 3.357,
+    "source": "Fed H.4.1 via DBnomics RESH4R_N.WW"
+   },
+   {
+    "date": "2022-06-01",
+    "series": "TGA",
+    "value_tn": 0.781,
+    "source": "Fed H.4.1 via DBnomics RESPPLLDT_N.WW"
+   },
+   {
+    "date": "2022-06-01",
+    "series": "ON RRP (others)",
+    "value_tn": 1.965,
+    "source": "Fed H.4.1 via DBnomics RESPPLLRD_N.WW"
+   },
+   {
+    "date": "2022-06-01",
+    "series": "Foreign RRP pool",
+    "value_tn": 0.266,
+    "source": "Fed H.4.1 via DBnomics RESPPLLRF_N.WW"
+   },
+   {
+    "date": "2022-06-01",
+    "series": "Currency",
+    "value_tn": 2.28,
+    "source": "Fed H.4.1 via DBnomics RESTBC_N.WW"
+   },
+   {
+    "date": "2022-06-01",
+    "series": "Fed Treasuries",
+    "value_tn": 5.771,
+    "source": "Fed H.4.1 via DBnomics RESPPALGUM_N.WW"
+   },
+   {
+    "date": "2022-06-01",
+    "series": "Fed MBS",
+    "value_tn": 2.707,
+    "source": "Fed H.4.1 via DBnomics RESPPALGASMO_N.WW"
+   },
+   {
+    "date": "2022-06-01",
+    "series": "Reserve Bank credit",
+    "value_tn": 8.879,
+    "source": "Fed H.4.1 via DBnomics RESH4SC_N.WW"
+   },
+   {
+    "date": "2023-12-27",
+    "series": "Reserves",
+    "value_tn": 3.434,
+    "source": "Fed H.4.1 via DBnomics RESH4R_N.WW"
+   },
+   {
+    "date": "2023-12-27",
+    "series": "TGA",
+    "value_tn": 0.713,
+    "source": "Fed H.4.1 via DBnomics RESPPLLDT_N.WW"
+   },
+   {
+    "date": "2023-12-27",
+    "series": "ON RRP (others)",
+    "value_tn": 0.819,
+    "source": "Fed H.4.1 via DBnomics RESPPLLRD_N.WW"
+   },
+   {
+    "date": "2023-12-27",
+    "series": "Foreign RRP pool",
+    "value_tn": 0.347,
+    "source": "Fed H.4.1 via DBnomics RESPPLLRF_N.WW"
+   },
+   {
+    "date": "2023-12-27",
+    "series": "Currency",
+    "value_tn": 2.344,
+    "source": "Fed H.4.1 via DBnomics RESTBC_N.WW"
+   },
+   {
+    "date": "2023-12-27",
+    "series": "Fed Treasuries",
+    "value_tn": 4.791,
+    "source": "Fed H.4.1 via DBnomics RESPPALGUM_N.WW"
+   },
+   {
+    "date": "2023-12-27",
+    "series": "Fed MBS",
+    "value_tn": 2.432,
+    "source": "Fed H.4.1 via DBnomics RESPPALGASMO_N.WW"
+   },
+   {
+    "date": "2023-12-27",
+    "series": "Reserve Bank credit",
+    "value_tn": 7.676,
+    "source": "Fed H.4.1 via DBnomics RESH4SC_N.WW"
+   },
+   {
+    "date": "2024-12-25",
+    "series": "Reserves",
+    "value_tn": 3.218,
+    "source": "Fed H.4.1 via DBnomics RESH4R_N.WW"
+   },
+   {
+    "date": "2024-12-25",
+    "series": "TGA",
+    "value_tn": 0.735,
+    "source": "Fed H.4.1 via DBnomics RESPPLLDT_N.WW"
+   },
+   {
+    "date": "2024-12-25",
+    "series": "ON RRP (others)",
+    "value_tn": 0.181,
+    "source": "Fed H.4.1 via DBnomics RESPPLLRD_N.WW"
+   },
+   {
+    "date": "2024-12-25",
+    "series": "Foreign RRP pool",
+    "value_tn": 0.385,
+    "source": "Fed H.4.1 via DBnomics RESPPLLRF_N.WW"
+   },
+   {
+    "date": "2024-12-25",
+    "series": "Currency",
+    "value_tn": 2.367,
+    "source": "Fed H.4.1 via DBnomics RESTBC_N.WW"
+   },
+   {
+    "date": "2024-12-25",
+    "series": "Fed Treasuries",
+    "value_tn": 4.309,
+    "source": "Fed H.4.1 via DBnomics RESPPALGUM_N.WW"
+   },
+   {
+    "date": "2024-12-25",
+    "series": "Fed MBS",
+    "value_tn": 2.245,
+    "source": "Fed H.4.1 via DBnomics RESPPALGASMO_N.WW"
+   },
+   {
+    "date": "2024-12-25",
+    "series": "Reserve Bank credit",
+    "value_tn": 6.84,
+    "source": "Fed H.4.1 via DBnomics RESH4SC_N.WW"
+   },
+   {
+    "date": "2025-12-31",
+    "series": "Reserves",
+    "value_tn": 2.853,
+    "source": "Fed H.4.1 via DBnomics RESH4R_N.WW"
+   },
+   {
+    "date": "2025-12-31",
+    "series": "TGA",
+    "value_tn": 0.873,
+    "source": "Fed H.4.1 via DBnomics RESPPLLDT_N.WW"
+   },
+   {
+    "date": "2025-12-31",
+    "series": "ON RRP (others)",
+    "value_tn": 0.106,
+    "source": "Fed H.4.1 via DBnomics RESPPLLRD_N.WW"
+   },
+   {
+    "date": "2025-12-31",
+    "series": "Foreign RRP pool",
+    "value_tn": 0.356,
+    "source": "Fed H.4.1 via DBnomics RESPPLLRF_N.WW"
+   },
+   {
+    "date": "2025-12-31",
+    "series": "Currency",
+    "value_tn": 2.446,
+    "source": "Fed H.4.1 via DBnomics RESTBC_N.WW"
+   },
+   {
+    "date": "2025-12-31",
+    "series": "Fed Treasuries",
+    "value_tn": 4.228,
+    "source": "Fed H.4.1 via DBnomics RESPPALGUM_N.WW"
+   },
+   {
+    "date": "2025-12-31",
+    "series": "Fed MBS",
+    "value_tn": 2.039,
+    "source": "Fed H.4.1 via DBnomics RESPPALGASMO_N.WW"
+   },
+   {
+    "date": "2025-12-31",
+    "series": "Reserve Bank credit",
+    "value_tn": 6.592,
+    "source": "Fed H.4.1 via DBnomics RESH4SC_N.WW"
+   },
+   {
+    "date": "2026-10-21",
+    "series": "Reserves",
+    "value_tn": 2.97,
+    "source": "Fed H.4.1 via DBnomics RESH4R_N.WW"
+   },
+   {
+    "date": "2026-10-21",
+    "series": "TGA",
+    "value_tn": 0.945,
+    "source": "Fed H.4.1 via DBnomics RESPPLLDT_N.WW"
+   },
+   {
+    "date": "2026-10-21",
+    "series": "ON RRP (others)",
+    "value_tn": 0.0,
+    "source": "Fed H.4.1 via DBnomics RESPPLLRD_N.WW"
+   },
+   {
+    "date": "2026-10-21",
+    "series": "Foreign RRP pool",
+    "value_tn": 0.334,
+    "source": "Fed H.4.1 via DBnomics RESPPLLRF_N.WW"
+   },
+   {
+    "date": "2026-10-21",
+    "series": "Currency",
+    "value_tn": 2.485,
+    "source": "Fed H.4.1 via DBnomics RESTBC_N.WW"
+   },
+   {
+    "date": "2026-10-21",
+    "series": "Fed Treasuries",
+    "value_tn": 4.573,
+    "source": "Fed H.4.1 via DBnomics RESPPALGUM_N.WW"
+   },
+   {
+    "date": "2026-10-21",
+    "series": "Fed MBS",
+    "value_tn": 1.895,
+    "source": "Fed H.4.1 via DBnomics RESPPALGASMO_N.WW"
+   },
+   {
+    "date": "2026-10-21",
+    "series": "Reserve Bank credit",
+    "value_tn": 6.707,
+    "source": "Fed H.4.1 via DBnomics RESH4SC_N.WW"
+   }
+  ]
+ },
+ "fed_deferred_asset": {
+  "unit": "$bn, early-month Wednesdays",
+  "source": "H.4.1 RESPPLLOP_N.WW (sign flipped)",
+  "rows": [
+   {
+    "date": "2022-06-01",
+    "value_bn": -2.7
+   },
+   {
+    "date": "2022-07-06",
+    "value_bn": -1.4
+   },
+   {
+    "date": "2022-08-03",
+    "value_bn": -1.4
+   },
+   {
+    "date": "2022-09-07",
+    "value_bn": 0.2
+   },
+   {
+    "date": "2022-10-05",
+    "value_bn": 2.9
+   },
+   {
+    "date": "2022-11-02",
+    "value_bn": 7.2
+   },
+   {
+    "date": "2022-12-07",
+    "value_bn": 13.2
+   },
+   {
+    "date": "2023-01-04",
+    "value_bn": 20.5
+   },
+   {
+    "date": "2023-02-01",
+    "value_bn": 27.0
+   },
+   {
+    "date": "2023-03-01",
+    "value_bn": 38.2
+   },
+   {
+    "date": "2023-04-05",
+    "value_bn": 46.2
+   },
+   {
+    "date": "2023-05-03",
+    "value_bn": 54.5
+   },
+   {
+    "date": "2023-06-07",
+    "value_bn": 67.7
+   },
+   {
+    "date": "2023-07-05",
+    "value_bn": 76.3
+   },
+   {
+    "date": "2023-08-02",
+    "value_bn": 85.6
+   },
+   {
+    "date": "2023-09-06",
+    "value_bn": 97.8
+   },
+   {
+    "date": "2023-10-04",
+    "value_bn": 107.3
+   },
+   {
+    "date": "2023-11-01",
+    "value_bn": 115.0
+   },
+   {
+    "date": "2023-12-06",
+    "value_bn": 125.1
+   },
+   {
+    "date": "2024-01-03",
+    "value_bn": 134.5
+   },
+   {
+    "date": "2024-02-07",
+    "value_bn": 147.2
+   },
+   {
+    "date": "2024-03-06",
+    "value_bn": 155.0
+   },
+   {
+    "date": "2024-04-03",
+    "value_bn": 161.3
+   },
+   {
+    "date": "2024-05-01",
+    "value_bn": 166.7
+   },
+   {
+    "date": "2024-06-05",
+    "value_bn": 173.3
+   },
+   {
+    "date": "2024-07-03",
+    "value_bn": 179.4
+   },
+   {
+    "date": "2024-08-07",
+    "value_bn": 188.1
+   },
+   {
+    "date": "2024-09-04",
+    "value_bn": 195.1
+   },
+   {
+    "date": "2024-10-02",
+    "value_bn": 201.2
+   },
+   {
+    "date": "2024-11-06",
+    "value_bn": 208.4
+   },
+   {
+    "date": "2024-12-04",
+    "value_bn": 212.2
+   },
+   {
+    "date": "2025-01-01",
+    "value_bn": 216.6
+   },
+   {
+    "date": "2025-02-05",
+    "value_bn": 220.8
+   },
+   {
+    "date": "2025-03-05",
+    "value_bn": 223.8
+   },
+   {
+    "date": "2025-04-02",
+    "value_bn": 226.1
+   },
+   {
+    "date": "2025-05-07",
+    "value_bn": 228.3
+   },
+   {
+    "date": "2025-06-04",
+    "value_bn": 231.2
+   },
+   {
+    "date": "2025-07-02",
+    "value_bn": 234.0
+   },
+   {
+    "date": "2025-08-06",
+    "value_bn": 238.4
+   },
+   {
+    "date": "2025-09-03",
+    "value_bn": 241.1
+   },
+   {
+    "date": "2025-10-01",
+    "value_bn": 242.9
+   },
+   {
+    "date": "2025-11-05",
+    "value_bn": 243.8
+   },
+   {
+    "date": "2025-12-03",
+    "value_bn": 243.2
+   },
+   {
+    "date": "2026-01-07",
+    "value_bn": 243.1
+   },
+   {
+    "date": "2026-02-04",
+    "value_bn": 245.6
+   },
+   {
+    "date": "2026-03-04",
+    "value_bn": 245.2
+   },
+   {
+    "date": "2026-04-01",
+    "value_bn": 243.9
+   },
+   {
+    "date": "2026-05-06",
+    "value_bn": 241.6
+   },
+   {
+    "date": "2026-06-03",
+    "value_bn": 238.4
+   },
+   {
+    "date": "2026-07-01",
+    "value_bn": 235.6
+   },
+   {
+    "date": "2026-08-05",
+    "value_bn": 233.0
+   },
+   {
+    "date": "2026-09-02",
+    "value_bn": 233.4
+   },
+   {
+    "date": "2026-10-07",
+    "value_bn": 233.6
+   }
+  ]
+ },
+ "tic_major_holders": {
+  "unit": "$bn",
+  "source": "TIC slt_table5.txt",
+  "rows": [
+   {
+    "month": "2026-08",
+    "series": "Japan",
+    "value_bn": 1068.3
+   },
+   {
+    "month": "2026-07",
+    "series": "Japan",
+    "value_bn": 1103.9
+   },
+   {
+    "month": "2026-06",
+    "series": "Japan",
+    "value_bn": 1116.7
+   },
+   {
+    "month": "2026-05",
+    "series": "Japan",
+    "value_bn": 1143.1
+   },
+   {
+    "month": "2026-04",
+    "series": "Japan",
+    "value_bn": 1209.9
+   },
+   {
+    "month": "2026-03",
+    "series": "Japan",
+    "value_bn": 1191.6
+   },
+   {
+    "month": "2026-02",
+    "series": "Japan",
+    "value_bn": 1239.3
+   },
+   {
+    "month": "2026-01",
+    "series": "Japan",
+    "value_bn": 1225.3
+   },
+   {
+    "month": "2025-12",
+    "series": "Japan",
+    "value_bn": 1185.5
+   },
+   {
+    "month": "2025-11",
+    "series": "Japan",
+    "value_bn": 1202.7
+   },
+   {
+    "month": "2025-10",
+    "series": "Japan",
+    "value_bn": 1200.0
+   },
+   {
+    "month": "2025-09",
+    "series": "Japan",
+    "value_bn": 1189.3
+   },
+   {
+    "month": "2025-08",
+    "series": "Japan",
+    "value_bn": 1183.9
+   },
+   {
+    "month": "2026-08",
+    "series": "United Kingdom",
+    "value_bn": 1009.5
+   },
+   {
+    "month": "2026-07",
+    "series": "United Kingdom",
+    "value_bn": 998.3
+   },
+   {
+    "month": "2026-06",
+    "series": "United Kingdom",
+    "value_bn": 939.9
+   },
+   {
+    "month": "2026-05",
+    "series": "United Kingdom",
+    "value_bn": 948.6
+   },
+   {
+    "month": "2026-04",
+    "series": "United Kingdom",
+    "value_bn": 937.5
+   },
+   {
+    "month": "2026-03",
+    "series": "United Kingdom",
+    "value_bn": 927.1
+   },
+   {
+    "month": "2026-02",
+    "series": "United Kingdom",
+    "value_bn": 897.3
+   },
+   {
+    "month": "2026-01",
+    "series": "United Kingdom",
+    "value_bn": 879.8
+   },
+   {
+    "month": "2025-12",
+    "series": "United Kingdom",
+    "value_bn": 863.2
+   },
+   {
+    "month": "2025-11",
+    "series": "United Kingdom",
+    "value_bn": 879.8
+   },
+   {
+    "month": "2025-10",
+    "series": "United Kingdom",
+    "value_bn": 875.4
+   },
+   {
+    "month": "2025-09",
+    "series": "United Kingdom",
+    "value_bn": 862.5
+   },
+   {
+    "month": "2025-08",
+    "series": "United Kingdom",
+    "value_bn": 901.3
+   },
+   {
+    "month": "2026-08",
+    "series": "China, Mainland",
+    "value_bn": 590.7
+   },
+   {
+    "month": "2026-07",
+    "series": "China, Mainland",
+    "value_bn": 618.0
+   },
+   {
+    "month": "2026-06",
+    "series": "China, Mainland",
+    "value_bn": 633.4
+   },
+   {
+    "month": "2026-05",
+    "series": "China, Mainland",
+    "value_bn": 659.3
+   },
+   {
+    "month": "2026-04",
+    "series": "China, Mainland",
+    "value_bn": 651.1
+   },
+   {
+    "month": "2026-03",
+    "series": "China, Mainland",
+    "value_bn": 653.3
+   },
+   {
+    "month": "2026-02",
+    "series": "China, Mainland",
+    "value_bn": 694.2
+   },
+   {
+    "month": "2026-01",
+    "series": "China, Mainland",
+    "value_bn": 695.3
+   },
+   {
+    "month": "2025-12",
+    "series": "China, Mainland",
+    "value_bn": 684.4
+   },
+   {
+    "month": "2025-11",
+    "series": "China, Mainland",
+    "value_bn": 683.9
+   },
+   {
+    "month": "2025-10",
+    "series": "China, Mainland",
+    "value_bn": 687.7
+   },
+   {
+    "month": "2025-09",
+    "series": "China, Mainland",
+    "value_bn": 699.2
+   },
+   {
+    "month": "2025-08",
+    "series": "China, Mainland",
+    "value_bn": 699.7
+   },
+   {
+    "month": "2026-08",
+    "series": "Grand Total",
+    "value_bn": 9331.7
+   },
+   {
+    "month": "2026-07",
+    "series": "Grand Total",
+    "value_bn": 9248.4
+   },
+   {
+    "month": "2026-06",
+    "series": "Grand Total",
+    "value_bn": 9298.5
+   },
+   {
+    "month": "2026-05",
+    "series": "Grand Total",
+    "value_bn": 9368.5
+   },
+   {
+    "month": "2026-04",
+    "series": "Grand Total",
+    "value_bn": 9350.1
+   },
+   {
+    "month": "2026-03",
+    "series": "Grand Total",
+    "value_bn": 9352.4
+   },
+   {
+    "month": "2026-02",
+    "series": "Grand Total",
+    "value_bn": 9487.3
+   },
+   {
+    "month": "2026-01",
+    "series": "Grand Total",
+    "value_bn": 9289.1
+   },
+   {
+    "month": "2025-12",
+    "series": "Grand Total",
+    "value_bn": 9270.5
+   },
+   {
+    "month": "2025-11",
+    "series": "Grand Total",
+    "value_bn": 9350.4
+   },
+   {
+    "month": "2025-10",
+    "series": "Grand Total",
+    "value_bn": 9231.3
+   },
+   {
+    "month": "2025-09",
+    "series": "Grand Total",
+    "value_bn": 9238.2
+   },
+   {
+    "month": "2025-08",
+    "series": "Grand Total",
+    "value_bn": 9249.1
+   },
+   {
+    "month": "2026-08",
+    "series": "Of Which: Foreign Official",
+    "value_bn": 3755.6
+   },
+   {
+    "month": "2026-07",
+    "series": "Of Which: Foreign Official",
+    "value_bn": 3773.1
+   },
+   {
+    "month": "2026-06",
+    "series": "Of Which: Foreign Official",
+    "value_bn": 3778.1
+   },
+   {
+    "month": "2026-05",
+    "series": "Of Which: Foreign Official",
+    "value_bn": 3845.9
+   },
+   {
+    "month": "2026-04",
+    "series": "Of Which: Foreign Official",
+    "value_bn": 3904.5
+   },
+   {
+    "month": "2026-03",
+    "series": "Of Which: Foreign Official",
+    "value_bn": 3903.0
+   },
+   {
+    "month": "2026-02",
+    "series": "Of Which: Foreign Official",
+    "value_bn": 4009.6
+   },
+   {
+    "month": "2026-01",
+    "series": "Of Which: Foreign Official",
+    "value_bn": 3941.8
+   },
+   {
+    "month": "2025-12",
+    "series": "Of Which: Foreign Official",
+    "value_bn": 3877.7
+   },
+   {
+    "month": "2025-11",
+    "series": "Of Which: Foreign Official",
+    "value_bn": 3912.3
+   },
+   {
+    "month": "2025-10",
+    "series": "Of Which: Foreign Official",
+    "value_bn": 3866.4
+   },
+   {
+    "month": "2025-09",
+    "series": "Of Which: Foreign Official",
+    "value_bn": 3872.6
+   },
+   {
+    "month": "2025-08",
+    "series": "Of Which: Foreign Official",
+    "value_bn": 3919.8
+   }
+  ]
+ },
+ "backbone_test": {
+  "source": "see R6B claims",
+  "rows": [
+   {
+    "role": "Fed securities that are Treasuries",
+    "value": 70.7,
+    "unit": "percent",
+    "date": "2026-10-21",
+    "source": "H.4.1"
+   },
+   {
+    "role": "Foreign official Treasuries as share of world FX reserves",
+    "value": 28.4,
+    "unit": "percent",
+    "date": "2026-08 / 2026-Q2",
+    "source": "TIC, IMF COFER"
+   },
+   {
+    "role": "Dollar share of world FX reserves",
+    "value": 56.7,
+    "unit": "percent",
+    "date": "2026-Q2",
+    "source": "IMF COFER"
+   },
+   {
+    "role": "US repo daily exposures",
+    "value": 12.6,
+    "unit": "$T",
+    "date": "2025-Q3",
+    "source": "OFR"
+   },
+   {
+    "role": "Bank Treasury and agency securities plus cash",
+    "value": 7.88,
+    "unit": "$T",
+    "date": "2026-09",
+    "source": "H.8"
+   },
+   {
+    "role": "Money market fund assets",
+    "value": 7.98,
+    "unit": "$T",
+    "date": "2026-09-02",
+    "source": "ICI via press"
+   },
+   {
+    "role": "Stablecoin market value",
+    "value": 0.308,
+    "unit": "$T",
+    "date": "2026-08",
+    "source": "trackers via press"
+   },
+   {
+    "role": "Tether Treasury bills",
+    "value": 0.115,
+    "unit": "$T",
+    "date": "2026-06-30",
+    "source": "attestation via press"
+   }
+  ]
+ },
+ "world_bonds": {
+  "source": "SIFMA Capital Markets Fact Book 2026 key findings",
+  "rows": [
+   {
+    "year": 2024,
+    "series": "global fixed income",
+    "value_tn": 145.1
+   },
+   {
+    "year": 2025,
+    "series": "global fixed income",
+    "value_tn": 160.7
+   },
+   {
+    "year": 2025,
+    "series": "global equity",
+    "value_tn": 157.8
+   },
+   {
+    "year": 2025,
+    "series": "US share of fixed income pct",
+    "value": 38.1
+   }
+  ]
+ },
+ "malaysia_bonds": {
+  "source": "BIX Malaysia 1Q2026, MARC via Bernama, Kenanga, BNM via NST",
+  "rows": [
+   {
+    "item": "all bonds and sukuk",
+    "value": 2291,
+    "unit": "RM bn",
+    "date": "2026-03"
+   },
+   {
+    "item": "government MGS plus GII",
+    "value": 1309,
+    "unit": "RM bn",
+    "date": "2026-03"
+   },
+   {
+    "item": "foreign holdings MGS plus GII",
+    "value": 283.1,
+    "unit": "RM bn",
+    "date": "2026-03"
+   },
+   {
+    "item": "foreign share MGS plus GII computed",
+    "value": 21.6,
+    "unit": "percent",
+    "date": "2026-03"
+   },
+   {
+    "item": "foreign share MGS (MARC)",
+    "value": 20.1,
+    "unit": "percent",
+    "date": "2026-07"
+   },
+   {
+    "item": "10-year MGS yield",
+    "value": 3.985,
+    "unit": "percent",
+    "date": "2026-08-31"
+   },
+   {
+    "item": "BNM reserves",
+    "value": 130.63,
+    "unit": "US$ bn",
+    "date": "2026-05-31"
+   }
+  ]
+ }
+}
