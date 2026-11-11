@@ -37,7 +37,11 @@ for cid, pairs in R.items():
                     break
             else:
                 miss.append(a)
-            s = json.dumps(C[cid], ensure_ascii=False)
+            s2 = json.loads(s)  # keep the text edits made so far, then apply the cell edit to that copy
+            for blk in s2["blocks"]:
+                if blk.get("type") == "table" and blk["rows"] and blk["rows"][0][0] == "Created":
+                    blk["rows"][0][1] = "New money appears: a bank lends, or a bank or the central bank buys from someone who is not a bank"
+            s = json.dumps(s2, ensure_ascii=False)
             continue
         aj = json.dumps(a, ensure_ascii=False)[1:-1]
         if s.count(aj) != 1:

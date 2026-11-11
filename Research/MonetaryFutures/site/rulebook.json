@@ -7516,7 +7516,7 @@
       [
        "A bank lends to a household or a firm",
        "Yes. A new deposit appears the moment the loan is made",
-       "Malaysia: Bank Negara counts household debt at 85 points of output, and 70 of those points are bank loans (June 2025). The 85 also counts development banks and some other lenders. The chart's 70 is the BIS count, a different one. Check which lenders a number counts"
+       "Malaysia: Bank Negara counts household debt at 85 points of output, and about 70 of those points are bank loans (June 2025). The rest comes from development banks and some other lenders. The chart shows 69.5, which is a separate count by the BIS and only happens to be close to the 70. Always check which lenders a number counts"
       ],
       [
        "The central bank buys government bonds",
@@ -7537,8 +7537,20 @@
     },
     {
      "type": "insider",
-     "text": "The post that carried the table asked: Vietnam's household debt is 18% of output, Malaysia's 70%, and both own about the same fridges and washing machines, so who is really wealthier? The short answer is that Malaysia is clearly ahead on income, but this data cannot say who holds more household wealth. Low debt is not the same as being wealthy. Three checks lead there. First, Vietnam's number is the weakest in the picture. A 2018 study found no official household debt series, this project found none since, and it is not in the BIS data. A central bank based measure that counts family businesses was 47% in 2016, and Vietnam's credit to the economy was about 136% of output in 2024 (IMF). On the World Bank's bank credit measure Vietnam was 125% against Malaysia's 113% in 2022, the latest year with both. Vietnam borrows a lot overall, and more of it may be counted as business debt. So the low household figure does not show that families there owe little. Second, debt is one side of a balance sheet. Malaysian households hold financial assets of 177% of output, 2.1 times their debt, and three quarters of their debt was borrowed for homes and cars (Bank Negara, 2025). Third, income: output per person is 2.6 times higher in Malaysia (US$13,125 against US$5,066 in 2025, World Bank). So by the figures found, Malaysian households owe about 70% of output on the BIS count, or 85% on Bank Negara's wider count, and hold documented financial assets of 177%, which is the figure to compare with the 85%. The post is right that the burden is real. The typical Malaysian borrower's repayments take about a third of income (median debt service ratio 33% on existing loans, Bank Negara, 2025). No comparable asset figure was found for Vietnam. On income Malaysia is clearly ahead, but on household wealth the data found cannot settle the post's question. Low debt in a table can mean thrift, a narrow way of counting, or little access to credit.",
-     "label": "Vietnam against Malaysia"
+     "label": "Vietnam against Malaysia",
+     "text": "The post that carried the table asked: Vietnam's household debt is 18% of output, Malaysia's 70%, and both own about the same fridges and washing machines, so who is really wealthier? The short answer: Malaysia is clearly ahead on income, but this data cannot say who holds more household wealth. Low debt is not the same as being wealthy. Three checks lead there."
+    },
+    {
+     "type": "list",
+     "items": [
+      "Check 1. Vietnam's number is the weakest in the picture. A 2018 study found no official household debt series, this project found none since, and Vietnam is not in the BIS data. A central bank based measure that counts family businesses was 47% in 2016. On the World Bank's bank credit measure Vietnam was 125% of output against Malaysia's 113% in 2022, the latest year with both. Vietnam borrows a lot overall, and more of it may be counted as business debt. So the low household figure does not show that families there owe little.",
+      "Check 2. Debt is one side of a balance sheet. Malaysian households owe about 85% of output on Bank Negara's wide count and hold financial assets of 177%, about 2.1 times their debt. Three quarters of their debt was borrowed for homes and cars (Bank Negara, 2025). No comparable asset figure was found for Vietnam.",
+      "Check 3. Income. Output per person is 2.6 times higher in Malaysia (US$13,125 against US$5,066 in 2025, World Bank)."
+     ]
+    },
+    {
+     "type": "p",
+     "text": "The post is right that household debt in Malaysia is a real burden: the typical Malaysian borrower's repayments take about a third of income (median debt service ratio 33% on existing loans, Bank Negara, 2025). On income Malaysia is clearly ahead, but on household wealth the data found cannot settle the post's question. Low debt in a table can mean thrift, a narrow way of counting, or little access to credit."
     },
     {
      "type": "curiosity",
@@ -11012,7 +11024,7 @@
     },
     {
      "type": "p",
-     "text": "Watches did fall. A widely followed index of pre-owned luxury watch prices, WatchCharts, lost roughly a third from its spring 2022 peak to 2024, by press reports. Higher interest rates cooled demand. It fell 5.1% in the year to December 2024, which may overlap with the third above, and recovered about 9% in the year to June 2026, as reported. The fall was reported in the press. But no index fund was forced to sell, and no headline said the world lost $X billion. Nobody multiplies one sale price by every watch in every drawer. A watch owner who did not sell had a paper loss that no screen showed."
+     "text": "Watches did fall. A widely followed index of pre-owned luxury watch prices, WatchCharts, lost roughly a third from its spring 2022 peak to 2024, by press reports. Higher interest rates cooled demand. Part of that fall, 5.1%, came in the year to December 2024. The index then recovered about 9% in the year to June 2026, as reported. But no index fund was forced to sell, and no headline said the world lost $X billion. Nobody multiplies one sale price by every watch in every drawer. A watch owner who did not sell had a paper loss that no screen showed."
     },
     {
      "type": "h",
@@ -11061,7 +11073,7 @@
        ]
       }
      ],
-     "caption": "On its worst day the value tag moved almost eight times as much as the cash. The tag is a price times all shares. The cash is only what was traded.",
+     "caption": "On 5 November, the day with the biggest fall in value, the value tag moved almost eight times as much as the cash. The tag is a price times all shares. The cash is only what was traded.",
      "source": "Closing prices and volumes from stockanalysis.com (fetched 11 November 2026). Cash traded is volume times the day's typical price, a project estimate."
     },
     {
@@ -11098,7 +11110,7 @@
       [
        "The company itself",
        "Selling new shares raises less, and staff paid in shares get less",
-       "A lower price makes selling new shares raise less money (no size pulled)"
+       "A lower price means new shares raise less money. No figure was found"
       ]
      ]
     },
@@ -11157,7 +11169,7 @@
     },
     {
      "type": "p",
-     "text": "The board's statement came on the Sunday before the last two days, when NVIDIA fell about 9.5% from $186.64 to $168.89. That is timing, and timing alone does not prove cause. The biggest single day, 5 November, hit the chip fund harder than NVIDIA, two days after the midterm elections and three days before the board's statement. Related press reports had appeared from 29 October, so even the timing is not clean. From its close of $239.24 on 6 October the share had already fallen 22% by 6 November. A headline that names one cause for a fall with at least two is telling you a story, not the record."
+     "text": "The board's statement came on the Sunday before the last two days, when NVIDIA fell about 9.5% from $186.64 to $168.89. That is timing, and timing alone does not prove cause. The biggest single day, 5 November, hit the chip fund harder than NVIDIA, two days after the midterm elections and three days before the board's statement. Related press reports had appeared from 29 October, so even the timing is not clean. From its close of $239.24 on 6 October the share had already fallen 22% by 6 November. If a headline gives one cause for a fall that had at least two, it is telling you a story, not the full record."
     },
     {
      "type": "insider",
@@ -11224,13 +11236,13 @@
      "rows": [
       [
        "Federal Reserve",
-       "Sets the price of overnight money. Creates or retires bank reserves by buying or letting bonds mature",
+       "Sets the price of overnight money. Creates or retires bank reserves (the banks' own accounts at the Fed) by buying bonds or letting them mature",
        "Policy rate 3.75% to 4.00% after a rise on 16 September 2026. Assets $6.75 trillion"
       ],
       [
        "US Treasury",
        "Borrows to cover the deficit and keeps its cash at the Fed",
-       "Planned $618 billion of net privately-held marketable borrowing for October to December 2026"
+       "Plans to borrow a net $618 billion from private buyers in October to December 2026"
       ],
       [
        "Banks",
@@ -11324,7 +11336,7 @@
     },
     {
      "type": "p",
-     "text": "Level 1 chapter 8 said money behaves like ice. It melts in a warm season and keeps its shape in a cold one. No single gauge tells you which season you are in. Six dials, read together, come close."
+     "text": "Level 1 chapter 8 said money behaves like ice. It melts in a warm season and keeps its shape in a cold one. No single gauge tells you which season you are in. Six dials, read together, come close. As a rough rule, rising inflation and fast credit growth point to a warm season, and falling prices and shrinking credit point to a cold one."
     },
     {
      "type": "table",
@@ -11335,7 +11347,7 @@
      ],
      "rows": [
       [
-       "Real interest rate (10-year inflation-protected bond)",
+       "Real interest rate: what a saver earns above inflation (10-year inflation-protected bond)",
        "2.78%, 10 November 2026",
        "High. Cash and bonds pay well above inflation. A hard season for gold and for shares priced on distant profits"
       ],
@@ -11368,7 +11380,7 @@
     },
     {
      "type": "insider",
-     "text": "This project reads the dials as a warm season with high real rates: inflation rising, but rates well above it. One past period with high real rates is 1980 to 1982. The match is loose. Inflation then was 8.4% and falling, while today it is 3.7% and rising. That is a reading to argue with, not a forecast.",
+     "text": "This project reads the dials as a warm season with high real rates: inflation rising, but rates well above it. One past period with high real rates is 1980 to 1982. The match is loose. Inflation then was 8.4% and falling, while today it is 3.7% and rising. Today's mix points both ways, so this is a reading to argue with, not a forecast.",
      "label": "One reading"
     },
     {
@@ -11468,7 +11480,7 @@
     },
     {
      "type": "p",
-     "text": "Start with a game. You can hold cash, which stays at $1. Or you can hold a stock that, each period, either doubles or halves, with equal odds. On average the stock looks great: half the time +100%, half the time -50%, an average of +25%. But a double and a halving cancel out. Over many periods the stock typically goes nowhere."
+     "text": "Start with a game. You can hold cash, which stays at $1. Or you can hold a stock that, each period, either doubles or halves, with equal odds. On average the stock looks great: half the time +100%, half the time -50%, an average of +25%. But a double and a halving cancel out. Over many periods the stock typically goes nowhere. Typical here means the result in the middle of many plays, not the plain average."
     },
     {
      "type": "table",

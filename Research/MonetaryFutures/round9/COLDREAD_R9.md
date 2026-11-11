@@ -288,3 +288,107 @@ Even so, firms owe more than households in South Korea and Malaysia.
 - The two other numbers I checked by hand agree with the draft: 429 million shares of about 24.2 billion is under 2 in 100, and the Malaysia caption shares (31%, 37%, 39%) match the chart figures.
 - Reader 1's reading time on rb-moves, about 35 minutes, is well over the four ten-minute parts promised in [3]. Part 2 and Part 4 run longest. Fixes 4 and 12 add words, so no other additions are advised.
 - I did not read the answers, boxes or any other chapter.
+
+
+## Retest on DRAFT_R9c.md (after fixes)
+
+Source: DRAFT_R9c.md only, main path. rb-moves in full, and rb-moneymake from "Read a country's debt mix" to before "Part 3 of 3". All Go deeper boxes and all "A:" lines skipped. Block numbers are the draft's [n]. [72] to [78] are rb-moneymake, the rest are rb-moves.
+
+### Score table
+
+| Reader | rb-moves | Debt-mix section |
+|---|---|---|
+| Reader 1, Malaysian school leaver, English second language | 7 / 10, fail | 7 / 10, fail |
+| Reader 2, American high-school graduate | 8 / 10, pass | 8 / 10, pass |
+
+Pass mark 8. Reader 1 is one point short on both pieces. Strong now: the watch against the share [6] [7], cash traded against value tag [10] [11], the three verbs [25] (Created row now says "from someone who is not a bank"), the 50% to 100% rise [50] [51], borrowing [52] [53], the stock against flow bath image [73], and the chart caption [74] (the shares 39%, 37%, 31% check against the bars).
+
+### Remaining confusions
+
+Reader 1:
+- [8] "5.1% in the year to December 2024, which may overlap with the third above" still reads as two competing falls. Cannot tell if watches fell a third or 5%.
+- [14] "(no size pulled)" is still not parseable English.
+- [20] "A headline that names one cause for a fall with at least two" is still a broken sentence.
+- [29] "net privately-held marketable borrowing" is still opaque. Skips the row.
+- [36] [37] Each dial has a reading, but there is no rule for turning six readings into a warm or cold season. Accepts "warm season" without knowing why.
+- [75] Malaysia cell: "70 of those 85 points are bank loans" and then "the chart's 70 is the BIS count" uses the number 70 for two different things. Cannot tell which 70 is which.
+- [76] One very long block with about twenty numbers (18%, 47%, 136%, 125%, 113%, 85%, 177%, 33%). "The post is right that the burden is real" refers to a burden the post never mentioned. Gets the closing line (income clearly ahead, wealth not settled) but not the route to it.
+
+Reader 2:
+- [76] Same "burden" line. Also wonders if 13,125 against 5,066 dollars ignores cheaper prices in Vietnam, since the post is about fridges. Not a fail.
+- [36] Would like one sentence on what a real rate is. Not a fail.
+- [75] The 70 versus 70 clash, noticed but understood after a second read.
+
+### Fixes
+
+Fix 1. [8]
+Old:
+```
+It fell 5.1% in the year to December 2024, which may overlap with the third above, and recovered about 9% in the year to June 2026, as reported. The fall was reported in the press. But
+```
+New:
+```
+Part of that fall, 5.1%, came in the year to December 2024. The index then recovered about 9% in the year to June 2026, as reported. But
+```
+
+Fix 2. [14]
+Old:
+```
+A lower price makes selling new shares raise less money (no size pulled)
+```
+New:
+```
+A lower price means new shares raise less money. No figure was found
+```
+
+Fix 3. [20]
+Old:
+```
+A headline that names one cause for a fall with at least two is telling you a story, not the record.
+```
+New:
+```
+If a headline gives one cause for a fall that had at least two, it is telling you a story, not the full record.
+```
+
+Fix 4. [29]
+Old:
+```
+Planned $618 billion of net privately-held marketable borrowing for October to December 2026
+```
+New:
+```
+Plans to borrow a net $618 billion from private buyers in October to December 2026
+```
+
+Fix 5. [36]
+Old:
+```
+No single gauge tells you which season you are in. Six dials, read together, come close.
+```
+New:
+```
+No single gauge tells you which season you are in. Six dials, read together, come close. As a rough rule, rising inflation and fast credit growth point to a warm season, and falling prices and shrinking credit point to a cold one. The real interest rate is what a saver earns above inflation.
+```
+
+Fix 6. [75]
+Old:
+```
+and 70 of those points are bank loans (June 2025). The 85 also counts development banks and some other lenders. The chart's 70 is the BIS count, a different one. Check which lenders a number counts
+```
+New:
+```
+and about 70 of those points are bank loans (June 2025). The rest comes from development banks and some other lenders. The chart shows 69.5, which is a separate count by the BIS and only happens to be close to the 70. Always check which lenders a number counts
+```
+
+Fix 7. [76]
+Old:
+```
+The post is right that the burden is real.
+```
+New:
+```
+The post is right that household debt in Malaysia is a real burden.
+```
+
+Projection: with Fixes 1 to 7, Reader 1 reaches 8 on both pieces, Reader 2 reaches 8 or 9. Fix 5 and Fix 6 matter most. Splitting [76] into three short paragraphs (one per check) would help Reader 1 further but needs a layout change, not a text swap.
