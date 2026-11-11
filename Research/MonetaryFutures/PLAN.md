@@ -472,6 +472,50 @@ Escalation triggers (Quick to Standard): an anomaly, a contradiction with the le
 9. Publish: rebuild the ledger and the site, update REPORT.md and section 10. The propagator writes edit files for every page that still carries a changed view (Rulebook edits wait for the owner while section 5.7 is pending).
 10. Scorekeeper: score due predictions, update section 4.6, run one blind exam.
 
+### 6.7 Pipeline history: the OG version (read only, not executed)
+Kept so the owner can read how the engine started. Rounds run on the current pipeline in sections 6.2 to 6.6. Nothing here is a step to execute.
+
+**Version 1, the OG pipeline (2026-10-22, Round 0 and Round 1).** Five stages: plan, source, debate, reloop, confirm. All lanes ran in parallel and the debate started as soon as the first lane returned.
+```
+                 ORCHESTRATOR (main session)
+       question tree, horizons, claims ledger, stop rules
+                              |
+   L1 Fed and Treasury    L2 Law and regulation   L3 Energy money
+   L4 Labor, AI, robots, UHI   L5 Geopolitics and reserves
+   L6 Expert transcripts  L7 Quant data             (7 lanes in parallel)
+                              |
+          DEBATE COURT (one panel per thesis cluster)
+   Proponent, Skeptic, Accountant, Historian, Incentive mapper, Judge
+                              |
+   RELOOP: the Judge lists gaps, targeted re-search (max 2 loops)
+                              |
+   CONFIRM: thesis cards, scenario matrix, tripwires, timeline
+```
+- **Plan.** The orchestrator built the question tree and the horizons (H0 to H3), and kept the claims ledger and the stop rules.
+- **Source.** Seven topic lanes. Each returned claims (tier, date, URL), say/do gaps, anomalies and open questions.
+- **Debate.** One court panel per cluster: energy as money, US monetary strategy, AI and robots and debt, tiers and credit access, robots and food. The Proponent built the strongest case, the Skeptic the strongest case against, the Accountant checked that every claim balanced, the Historian found the closest precedent, the Incentive mapper asked who gains and who decides, and the Judge scored and listed gaps.
+- **Reloop.** The Judge's gaps became targeted searches, at most two loops per round. Stop early when every key claim is T0 or T1 backed or clearly marked Speculative.
+- **Confirm.** Thesis cards, a scenario matrix (S1 to S4 by H0 to H3, read as government, business and citizen), the claims ledger, a timeline, a tripwire dashboard and a thesis audit.
+
+**How it grew.**
+| Version | Date | What changed | Why |
+|---|---|---|---|
+| 1 (OG) | 2026-10-22 | Plan, source, debate, reloop, confirm. 7 lanes, about 15 agents | First build, modelled on how an expert (Mallers) works |
+| 2 | 2026-10-22 | About five lanes and one court per round, a Plan page proposal queue | Seven lanes cost too much for focused questions |
+| 3 | 2026-10-22 | A decoding panel for decoded intent and a what-if lane | Politicians rarely state the plan |
+| 4.0 | 2026-10-24 | The 7 moves rebuilt into a full intel flow (section 4.5) and a red team | Case 2: the engine missed money creation until the owner pushed |
+| 4.1 | 2026-10-24 | Cold framer, librarian, verifier, blind red team, completeness auditor, propagator, scorekeeper, tiers | Six structural gaps let Case 2 through (section 6.1) |
+| 4.1 plus | 2026-10-25 | Cold-reader test before any reader chapter is published | Round 7's first draft failed the 18-year-old test |
+
+**OG stage to today's stages.**
+| OG stage | Today (section 6.2) |
+|---|---|
+| Plan | Triage, cold framer, librarian, brief |
+| Source | Topic lanes plus the standing Data, Ledger and Sweep lanes, then the verifier |
+| Debate | Blind red team, then the court with the completeness auditor |
+| Reloop | Reloop on failed pass tests and decisive gaps (still max 2) |
+| Confirm | Publish, propagator, cold-reader test for reader chapters, scorekeeper. The sentinel waits for funding |
+
 ---
 
 ## 7. Sources registry: videos and transcripts
@@ -642,8 +686,9 @@ Owner proposals waiting (DEBATE_R7.md): the 1930s line in Level 1 rb-leader, EPF
 ### Round 8 (2026-11-05): L4.1 Digital credit, dissected: Saylor's 12% and money moving between baskets (Standard tier)
 Owner's ask: add Level 4 (Level 3 empty for now), dissect a Michael Saylor talk (video m1oXP7foM6E, transcript owner-pasted, kept out of the repo) and ask interesting questions, mainly to test the concept of future money moving between baskets.
 Pipeline: claim list (47 paraphrased claims), cold framer (FRAME_R8.md), librarian (CONTEXT_R8.md), lanes R8A (what STRC is, 28 talk claims checked) and R8B (flywheel stress test and the basket question), draft, verifier (VERIFY_R8.md), blind red team (REDTEAM_R8.md), court (DEBATE_R8.md, 183 points: 150 accepted, 30 in part, 3 rejected), cold-reader tests (COLDREAD_R8.md). First cold read: 6 and 8 of 10 (fail). After 30 fixes plus 10 more: 8 and 9 of 10 (pass mark 8).
+In OG terms (section 6.7): plan (claim list, framer, librarian), source (lanes R8A and R8B, verifier), debate (red team, court), reloop (none needed, the court ruled from files), confirm (chapter, cold readers, ledger, publish).
 Findings: STRC is a perpetual preferred share, not a loan or deposit, with the 12% set monthly by the company and paid in dollars from the reserve, new share sales or Bitcoin sales. Coverage 3.4 to 6.1 times depending on the ladder. The binding stress is $5.91B of convertible note puts from September 2027, not the dividends. In the third quarter of 2026 the flywheel ran backwards ($5.41B raised, $0.59B of Bitcoin bought). Talk claims: 11 hold, 11 spin, 3 wrong, 3 cannot be checked.
 Basket verdict: read three meters. Dollars only move in trades, while bank loans and bank purchases from nonbanks create them. Ownership and risk cross baskets. Market value changes with no dollar crossing. "Set 1 absorbs Set 2" is now five competing readings (A to E) with dated tests. A and D fit best, C is live, B fails the money meter, E is real but too small to measure.
 New: Level 4 in the Rulebook dropdown, the basket-pipe and flywheel-loop diagrams, held-out Test 7. Ledger 1,543 claims.
 Lesson for the engine: the draft repeated the Case 2 shape (a true trade-level headline, "no dollar leaves Set 1", hiding the creation channel). The blind red team caught it before publication (section 4.6). Cold readers again failed the first draft, so the cold-reader pass stays mandatory.
-Owner proposals waiting (DEBATE_R8.md section 8): P-4 and P-5 add "compliant" to the stablecoin lines in Level 1 rb-crypto and rb-12, P-6 gives every "only move money" line on the site the bank-loan exception, P-7 restates the Round 1 Set 1 versus Set 2 belief as readings A to E. Still needing data: the tokenized STRC swap walk, Asian and Malaysian holder pools, a public total of bank loans against Bitcoin.
+Owner proposals waiting (DEBATE_R8.md section 8): P-4 and P-5 add "compliant" to the stablecoin lines in Level 1 rb-crypto and rb-12, P-6 (checked 2026-11-11 with tools/xref.py: the only "only move money" line on the site already carries the bank exception, so no change is needed), P-7 restates the Round 1 Set 1 versus Set 2 belief as readings A to E. Still needing data: the tokenized STRC swap walk, Asian and Malaysian holder pools, a public total of bank loans against Bitcoin.
