@@ -345,3 +345,74 @@ NEW: The rate was above growth, which is the bad case, in only 5 or 6 of the las
 9. Block 23. Removes a vague phrase.
 OLD: No. Both sides agree
 NEW: No. Borrower and bank both agree to the deal
+
+
+# Retest 3 (draft R11e), 2026-11-15
+
+Main path only. GO DEEPER boxes and answer lines skipped.
+
+## Score table
+
+| Part | Reader 1 (Malaysian, ESL) | Reader 2 (American) |
+|---|---|---|
+| (a) Strongest case, one number | 8 | 9 |
+| (b) Ponzi, strict test, number to watch | 6 | 8 |
+| (c) Who gets new money first, who pays | 7 | 8 |
+| (d) What rebuilt Europe and Japan, and gold | 7 | 8 |
+| (e) Both systems tilt the board | 6 | 7 |
+| (f) Sword, and why about 2% | 6 | 8 |
+| (g) Verdict and five checks | 7 | 8 |
+| Overall (average, rounded) | 7 (6.7) | 8 (8.0) |
+
+Pass mark 8: Reader 1 FAILS (7). Reader 2 PASSES (8, with little room).
+
+## Fairness and the courtroom
+
+Reader 1: yes, fair to both sides. Hard money gets its own trial in Part 3 and the verdict says "Hard money is not innocent either". The courtroom story holds. The dock, charge, cross-examination, witness and jury all appear in order. It thins out in Part 3 and 4, where the table and numbers take over.
+
+Reader 2: yes, fair, with a small worry. The prosecution gets Keynes and a table of six charges. The reply to each charge is also on the page. Part 3 spends more words on hard money's failures than on printing's limits, so a sceptic may feel it leans a little toward credit money. The courtroom story holds, and the "toll" word lands as a fair middle.
+
+## Remaining confusions
+
+Reader 1
+- [15] and [17]: "deficit before interest" is new and abstract. The household test in [16] helps, but "rate against growth in dollars, price rises included" is hard in a second language.
+- [17]: "Passes" and "Fails" side by side feels like a contradiction. It is not clear why the answer is a warning and not a verdict.
+- [18]: "the bad case" does not say bad for whom.
+- [0] and [39]: "first-comer advantage" is jargon.
+- [53]: "the price index overstates inflation" and "a measured 2% is nearer a true 1%" is hard to follow.
+- [34]: long sentences. The twist about gold only at the top is easy to lose.
+- [42]: "Neither starts the new player level" is idiom heavy.
+- [31]: "Italy held $24 million worth" has no scale to compare with.
+
+Reader 2
+- [17]: why 2% to 2.6% is the safe size is not shown, only asserted.
+- [34]: ends with "cannot be tested", so the gold verdict feels like a shrug.
+- [53]: the 1996 unemployment estimate and the index point are quick.
+- [36] to [42]: Monopoly, Bitcoin, home ownership and Malaysia houses come fast. The thread back to "who each favours" arrives only in the last two sentences of [42].
+- [60]: "how big it is" is asked but the chapter never gives one size to hold on to beyond the $488 billion.
+
+## Ranked fixes
+
+1. Block [17]. OLD: `| Fails |`
+   NEW: `| Fails. The gap is bigger than the safe size |`
+
+2. Block [15]. OLD: `Doing this is not the same as collapsing.`
+   NEW: `Doing this is not the same as collapsing. It is a warning light, not a crash.`
+
+3. Block [18]. OLD: `which is the bad case, in only`
+   NEW: `which is the bad case for the debt, in only`
+
+4. Block [53]. OLD: `Price indexes miss some quality gains.`
+   NEW: `Price indexes miss some quality gains, such as a phone that gets better at the same price.`
+
+5. Block [34]. OLD: `So gold did not do the rebuilding, and a shortage of gold did not stop it.`
+   NEW: `So gold did not do the rebuilding. A shortage of gold did not stop it.`
+
+6. Block [0]. OLD: `A fixed money does not remove the first-comer advantage.`
+   NEW: `A fixed money does not remove the advantage of people who got in first.`
+
+7. Block [51]. OLD: `Being easy to pass on is the first job of money.`
+   NEW: `Being easy to pass on is the first job of money. A sword fails that test, so it is not money.`
+
+8. Block [36]. OLD: `And inflation strips the rich of little, since shares and property tend to keep pace with prices.`
+   NEW: `And inflation takes little from the rich, because their shares and property tend to rise with prices.`
