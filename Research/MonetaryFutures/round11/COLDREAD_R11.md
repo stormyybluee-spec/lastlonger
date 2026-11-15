@@ -416,3 +416,84 @@ Reader 2
 
 8. Block [36]. OLD: `And inflation strips the rich of little, since shares and property tend to keep pace with prices.`
    NEW: `And inflation takes little from the rich, because their shares and property tend to rise with prices.`
+
+
+# Retest 4 (draft R11f), 2026-11-15
+
+## Scores (main path only, GO DEEPER boxes and A: lines skipped)
+
+| Part | Reader 1 (Malaysian, ESL) | Reader 2 (American) |
+|---|---|---|
+| (a) Strongest case, one number | 8 | 9 |
+| (b) Ponzi, strict test, number to watch | 7 | 8 |
+| (c) Who gets new money first, who pays | 8 | 9 |
+| (d) Europe and Japan after 1945, gold | 7 | 8 |
+| (e) Both moneys tilt the board | 7 | 8 |
+| (f) Sword and the 2% | 7 | 9 |
+| (g) Verdict and five checks | 8 | 9 |
+| Average | 7.4 | 8.6 |
+| Overall (rounded) | 7 | 9 |
+| Pass mark 8 | FAIL | PASS |
+
+Why Reader 1 misses: a run of sevens, each from the same cause. Terms like deficit before interest, bond buying, rate against growth and hyperinflation arrive faster than they are unpacked, and Part 3 is long.
+
+## Fairness and the courtroom story
+
+Reader 2: yes, fair to both sides. The charge is built at full strength with a table and a Keynes witness. Hard money then gets the same treatment, and [34] says gold is a point for neither side. The verdict names a toll on each system.
+Reader 1: yes, fair, but the second half is dense enough that the balance is felt more than followed. Hard money gets a lot of space and the reader may lose the thread between [36] and [42].
+The courtroom story holds. The dock, the crowd, the cross-examination, the sword as last witness, the jury and the verdict all line up. It thins in Part 3 (little court language between [31] and [46]) and a stray line "Rules:" sits after the last block.
+
+## Remaining confusions
+
+Reader 1
+- [6] "the central bank or banks buy the debt" is hard to parse.
+- [8] "hyperinflation ... found 56 times by 2012 and 58 by 2019" reads as a riddle.
+- [15] "dollars, price rises included" and "deficit before interest" arrive together. Two numbers, and no single one to keep in mind.
+- [17] "lifted by inflation" is unclear. Why does inflation raise growth?
+- [18] "the bad case in 24 of 64 years" has no plain meaning yet.
+- [32] Europe is measured by industry and Japan by real spending, so the two are not comparable.
+- [34] "Gold did not do the rebuilding. A shortage of gold did not stop it" sounds like a contradiction on first read.
+- [39] The jump from gold to Bitcoin has no bridge, and the 32% figure for the top 1% is hard to place.
+- [41] The table is shown without saying what it proves.
+- [58] Income grew six times while the ringgit lost 82%. This seems to clash and is not explained.
+- [57] Six rows by two columns is a lot to hold in the second language.
+
+Reader 2
+- [15] and [17] Test one passes and test two fails. Which is "the number to watch"? The draft says both, so the answer is split.
+- [34] "Hard-money writers note US inflation stayed near 2% to 3%" is left hanging. Is it a point for gold or not?
+- [39] and [40] The Bitcoin paragraph feels like a side road before the home ownership point returns.
+- [42] The Malaysia housing figure appears with no link to the money question, then the tilt line comes as a quick conclusion.
+
+## Ranked fixes (8)
+
+1. Block [18], one number to keep.
+OLD: One test passes and one fails. So by the strict test today's answer is a warning, not a collapse. Watch both numbers.
+NEW: One test passes and one fails. So by the strict test today's answer is a warning, not a collapse. If you keep only one number, keep the deficit before interest, 3.6% of income in 2024, against the safe size of about 2% to 2.6%. Watch both numbers.
+
+2. Block [17], growth in dollars.
+OLD: Rate 3.57% against growth of 5.9% in October 2026, lifted by inflation
+NEW: Rate 3.57% against growth of 5.9% in October 2026. Growth is counted in dollars, so rising prices lift it
+
+3. Block [8], hyperinflation.
+OLD: Its far tail is hyperinflation, prices rising 50% or more a month, found 56 times by 2012 and 58 by 2019 in one count.
+NEW: Its far tail is hyperinflation, which means prices rising 50% or more in a month. One count found 56 cases by 2012 and 58 by 2019.
+
+4. Block [6], third meaning of printing.
+OLD: And a government creates it when it spends more than it taxes and the central bank or banks buy the debt.
+NEW: And a government creates it when it spends more than it taxes and the central bank or banks buy the bonds it sells to cover the gap.
+
+5. Block [34], the gold contradiction.
+OLD: A shortage of gold did not stop it.
+NEW: The lack of gold did not stop it either.
+
+6. Block [39], bridge to Bitcoin.
+OLD: Now a modern fixed money. Bitcoin is a digital coin
+NEW: Now a modern fixed money, a cousin of gold. Bitcoin is a digital coin
+
+7. Block [58], the ringgit clash.
+OLD: while the ringgit lost about 82% of its buying power.
+NEW: while the ringgit lost about 82% of its buying power. Both can be true, because pay and output grew faster than prices.
+
+8. Block [40], what the table shows.
+OLD: Cheap loans can push house prices up faster than pay, though later marriage and other changes matter too.
+NEW: Cheap loans can push house prices up faster than pay, though later marriage and other changes matter too. The table shows fewer young people owning homes.
