@@ -1,6 +1,6 @@
 # Intelligence: will energy replace money? (the Desk)
 
-Stack: Intelligence. These are graded, dated findings, not settled facts. Check each as-of date and fetch current data before relying on a number. Web page: https://neetmonetary.netlify.app/#desk . Text built 2026-11-12.
+Stack: Intelligence. These are graded, dated findings, not settled facts. Check each as-of date and fetch current data before relying on a number. Web page: https://neetmonetary.netlify.app/#desk . Text built 2026-11-15.
 
 ## Scenario odds by horizon
 
@@ -103,6 +103,9 @@ Round 5 answered the fifteen open questions, audited the project's memory and wr
 
 ### Round 10 in one paragraph (2026-11-12, first Unseen mode round)
 The desk tested claims that oil dollars, Treasury buyers and the great powers move by hidden agreement, grading every guess and dating every test (Landscape chapter 14). Gulf states still add to US Treasuries (up 51% since January 2023) while also buying US shares, so "shares instead of Treasuries" fails for the states as a whole. China takes about a third of Gulf crude and no source shows 30% of Gulf oil paid in yuan. The 1974 Treasury arrangement was real and narrow, and ended by 2016. Private money, booked through custody centres, now funds the growth of the Treasury market. A secret staged three-way alignment of the US, the Gulf and China is remote (about 1%) and stays open. For the live question, energy trade has not pulled Gulf money off the dollar so far, which fits the dollar-extension scenario. A reading, with dated tests.
+
+### Round 11 in one paragraph (2026-11-15, Rulebook Level 3 opens)
+Level 3, "The big arguments", now has its first chapter: "Is printing money a scam? The charge, the defence and the toll". It puts printing on trial, makes the case against it as strongly as it can be made, tests it, then puts hard money on trial too. Three questions drive it: could a world on gold have rebuilt after 1945, which money gives new players a fairer start, and does a sword that loses resale value explain the 2% target. The finding: not a scam in the plain sense and not a Ponzi by its features, but a real toll that falls hardest on cash holders, renters and late savers, with a warning on the strict Ponzi test (the US deficit before interest is too large). Hard money has its own toll, on borrowers and the young. So the real argument is who pays, how much, who decides and whether it can be seen. Both cold readers reached the pass mark of 8.
 
 ### Where everything lives
 | File | What |

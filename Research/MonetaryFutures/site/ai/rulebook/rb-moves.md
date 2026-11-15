@@ -2,7 +2,7 @@
 
 Rulebook Level 4 (Money in motion), chapter 01. Stack: Fundamentals. Id: rb-moves.
 
-Web page: https://neetmonetary.netlify.app/#rb-moves . Text built 2026-11-12. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-moves . Text built 2026-11-15. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *A pre-owned luxury watch can lose a third of its price and nobody puts a dollar figure on it. A share slips 5% and $236 billion of market value is wiped off the screen. This chapter follows the money behind both: who moves it, what season steers it, and the arithmetic that decides who keeps it.*
 

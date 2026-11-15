@@ -1,6 +1,6 @@
 # Rulebook index (Fundamentals)
 
-One file per chapter. Read a level in order. Built 2026-11-12.
+One file per chapter. Read a level in order. Built 2026-11-15.
 
 
 ## Level 1: Foundations
@@ -38,11 +38,11 @@ Level 2 opens the engine room under Level 1. First bonds, the ticket that sits u
 - [03. The world's balance sheet: what it owns, what it owes, and how countries are built](https://neetmonetary.netlify.app/ai/rulebook/rb-worldbs.md): You may have heard that the world owes $300 trillion, or $500 trillion, or more. Each can be true, depending on what you count, and the world owes all of it to itself. This chapter shows what the world really owns, why its debts cancel but still matter, how the numbers grew, and how each big country is built.
 - [04. The money clubs: who writes the rules, who can really print, and the game the world plays](https://neetmonetary.netlify.app/ai/rulebook/rb-clubs.md): The G7, G10 and G20 are clubs, not governments. This chapter shows what they can and cannot do, which countries can really print money and which cannot, why Malaysia sits outside every club but inside the game, and five questions that turn the world into a game board.
 
-## Level 3: Deeper still
+## Level 3: The big arguments
 
-Level 3 is empty for now. Topics arrive over time, each built on Levels 1 and 2.
+Level 3 takes the arguments people shout about money and puts each one on trial. Every chapter makes the popular charge as strong as it can be made, tests it, tests the alternative, and ends with who really pays. It assumes Levels 1 and 2. Nothing here is advice. These chapters are built so you can hold two sides of an argument in your head and still reach your own view.
 
-- Empty for now.
+- [01. Is printing money a scam? The charge, the defence and the toll](https://neetmonetary.netlify.app/ai/rulebook/rb-print.md): You have heard it a hundred times: printing is theft, the dollar has lost 97%, the whole thing is a Ponzi. This chapter puts that charge on trial at full strength, then puts hard money on trial too, and ends with the question that matters more than either: who pays the toll, and who decides.
 
 ## Level 4: Money in motion
 

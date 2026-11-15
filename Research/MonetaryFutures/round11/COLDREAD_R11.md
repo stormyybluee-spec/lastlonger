@@ -497,3 +497,81 @@ NEW: while the ringgit lost about 82% of its buying power. Both can be true, bec
 8. Block [40], what the table shows.
 OLD: Cheap loans can push house prices up faster than pay, though later marriage and other changes matter too.
 NEW: Cheap loans can push house prices up faster than pay, though later marriage and other changes matter too. The table shows fewer young people owning homes.
+
+
+# Retest 5, Reader 1 only (draft R11g), 2026-11-15
+
+Reader 1: Malaysian, 18, English as a second language, no finance background. Main path only. Go deeper boxes and "A:" lines skipped.
+
+## Score table
+
+| Part | Test | Score |
+|---|---|---|
+| a | Strongest case that printing is theft, with one number | 8 |
+| b | Ponzi: strict test and the number to watch | 7 |
+| c | Who gets new money first and who pays | 8 |
+| d | What rebuilt Europe and Japan, and what that says about gold | 8 |
+| e | Why both hard money and credit money tilt the board | 8 |
+| f | Sword story and why about 2% | 8 |
+| g | Verdict and the five checks | 8 |
+
+Average 7.9. Overall 8 out of 10 (rounded). Pass on the rounded mark, but only just. Part b is the weak one.
+
+## What the reader can say back
+
+(a) "Cash melts. A dollar buys what 3 cents bought in 1913. US cash holders lost about 488 billion dollars from 2021 to 2025 and nobody voted on it." Clear. Small gap: the reader may not see why 3 cents (1913) and 12 cents (1971) are both given.
+
+(b) "By its features it is not a Ponzi, because nothing is hidden and bonds are backed by taxes. By the strict test the US borrows to pay its interest. Watch the deficit before interest, 3.6% against a safe 2% to 2.6%." Mostly there. The reader is unsure how the US can pass test one yet still be called a Ponzi borrower at all. The household loan story in [16] helps a lot.
+
+(c) "Bank loans reach borrowers and house sellers first. Bond buying reaches bond sellers and asset owners first. Cheques reach households first. Later buyers, renters and cash holders pay." Good.
+
+(d) "Work and saving inside each country, plus aid, a new currency, credit between neighbours and debt relief. Gold was not the engine and its lack was not the brake." Good. Small stumble in [34] where "work and credit" sits next to "not new money" in [32].
+
+(e) "Hard money favours early holders and lenders and hurts borrowers and the young. Credit money favours owners of houses and shares and makes newcomers borrow." Good. The Monopoly picture is half useful.
+
+(f) "A sword is not money and spending is someone's income, so it does not explain 2%. Banks aim near 2% because pay is hard to cut, rates need room to fall, the price index overstates inflation, and falling prices are dangerous." Good. The index point is the hardest for an ESL reader.
+
+(g) "Not a scam, not theft in law but a transfer nobody voted on, a real toll, not a Ponzi by features but a warning by the strict test, and hard money has a toll too. Five checks: which printing, who pays and how much, compared with what, who got it first, what number proves them right." Good.
+
+## Fairness and the courtroom
+
+Yes, the reader would finish thinking the author was fair to both sides. The prosecution gets Keynes and the strict Ponzi test. The defence gets the point that cheques reached ordinary households. Hard money is put in the dock at equal length, with its own numbers (a quarter fall in prices, debts a third heavier, Bitcoin holdings). The courtroom story holds from [5] to [60]. Small wobble: in [50] the sword is called a witness, which is a strange fit, but it is short and does not break the frame.
+
+## Remaining confusions
+
+- [15], [17], [18]: the word Ponzi is used for the strict test, yet test one passes. The reader needs one line saying why that is a warning and not a verdict.
+- [17]: the reader is told to watch two numbers, then in [18] to keep one. It is not marked in the table which one matters most.
+- [32], [34]: "not new money" and then "work and credit" can look like a clash.
+- [36]: the Monopoly line "$200 for passing Go" is not tied to the point that it is equal for all.
+- [46]: "all five peaceful tools" while the table has six rows, so the count looks off.
+- [53]: "price index overstates inflation" is hard for a reader with no finance background.
+
+## Ranked fixes (7)
+
+1. Block [15]
+OLD: Doing this is not the same as collapsing. It is a warning light, not a crash.
+NEW: Doing this is not the same as collapsing. A country with strong enough growth can keep rolling its debt, which Ponzi never could. It is a warning light, not a crash.
+
+2. Block [18]
+OLD: One test passes and one fails.
+NEW: One test passes and one fails. So the US fits the strict Ponzi test only on the second one. That is why the word is a warning and not a verdict.
+
+3. Block [17]
+OLD: Fails. The gap is bigger than the safe size
+NEW: Fails. The gap is bigger than the safe size. This is the number to watch most.
+
+4. Block [34]
+OLD: So this is a story of work and credit under a gold anchor.
+NEW: So this is a story of work and credit between neighbours, under a gold anchor at the top.
+
+5. Block [36]
+OLD: In Monopoly every player gets $200 for passing Go. Real new money is not shared like that.
+NEW: In Monopoly every player gets $200 for passing Go, so new money reaches everyone equally. Real new money is not shared like that.
+
+6. Block [46]
+OLD: Notice that all five peaceful tools on the list use
+NEW: Notice that the first five tools on the list, the peaceful ones, all use
+
+7. Block [53]
+OLD: so a measured 2% is nearer a true 1%
+NEW: so a measured 2% is nearer a true 1%. In plain words, the index counts a better phone as a higher price.
