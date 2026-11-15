@@ -166,3 +166,101 @@ About 3,150 words of prose and about 1,330 words in tables.
 |---|---|---|---|
 | Reader 1 | 120 words a minute | 80 words a minute | about 43 minutes |
 | Reader 2 | 200 words a minute | 130 words a minute | about 26 minutes |
+
+
+# Retest 1 (draft R11c), 2026-11-15
+
+Method: main path only. GO DEEPER boxes and all "A:" lines skipped. Scores are strict and judged only on what is on the page.
+
+## Scores
+
+| Part | Reader 1 (Malaysian, ESL) | Reader 2 (American) |
+|---|---|---|
+| (a) Strongest case, one number | 8 | 9 |
+| (b) Ponzi: strict test, number to watch | 6 | 7 |
+| (c) Who gets new money first, who pays | 7 | 8 |
+| (d) Rebuild of Europe and Japan, and gold | 6 | 7 |
+| (e) Both moneys tilt the board | 7 | 8 |
+| (f) Sword and the 2% | 7 | 8 |
+| (g) Verdict and five checks | 8 | 9 |
+| Overall | 7 | 8 |
+
+Reader 1 overall: 49 out of 70, about 7.0. Fails the pass mark of 8.
+Reader 2 overall: 56 out of 70, 8.0. Just passes, with thin margin. Parts (b) and (d) are the weak spots.
+
+## Fair to both sides, and the courtroom
+
+Reader 1: mostly yes. The prosecution case in [7] and [8] is strong, and hard money gets real losses in [27] to [40]. Reader 1 may feel the hard money side never gets its own best case, only its costs. It is also hard to tell who the "defence" is in [48].
+
+Reader 2: yes, slightly more so. Reader 2 will like that hard money is put in the dock in [26]. A small lean remains because the hard money side has no single strongest-case block like [7].
+
+The courtroom story holds from [5] to [26], and returns at [48] and [54]. It thins in Part 3 and Part 4. The final verdict in [58] does not answer the three charges from [5] one by one. Theft is never ruled on in [58], only in the mid-chapter [22]. That is the main courtroom gap.
+
+## Remaining confusions, Reader 1 (Malaysian, ESL)
+
+- [15] and [16]: The text says the US plays a Ponzi game in the strict sense, then says it passes the first number. Reader 1 cannot tell if the answer is "yes Ponzi" or "no Ponzi". Also "deficit before interest" is a heavy phrase to carry across several blocks.
+- [16]: "5 or 6 of the 25 years ... but in 24 of the 64 years" is one long sentence with two ratios. The reader loses which is good and which is bad.
+- [26] and [29]: "a question put to this site" and "The question assumed three things" never say who asked. The reader does not know whose assumptions are being fixed.
+- [29] to [32]: What the rebuild says about gold is split across three blocks and ends with "cannot be tested". Reader 1 is left unsure whether the answer is for or against gold.
+- [34]: The Monopoly line packs two ideas in one sentence, the $200 for passing Go and real new money entering as loans.
+- [40]: "Why?" follows the Malaysia house price figure but the thing to explain is not named.
+- [48]: "The defence says money is like this too" is unclear. What exactly is the claim, and why does a stolen sword matter?
+- [51]: "The measuring stick runs fast" is a figure of speech that does not translate well.
+- [58]: No ruling on theft, although [5] opened with "Guilty of theft".
+
+## Remaining confusions, Reader 2 (American)
+
+- [15] and [16]: Same tension as above. "The US does" run a Ponzi game, yet "passes the first number". Reader 2 still gets there but needs a re-read.
+- [29]: "The question assumed" has no named asker.
+- [32]: "The question's instinct is right on one point" is muddled. The reader wants a clean line on what gold did and did not do.
+- [48]: The defence claim is not stated plainly.
+- [58]: Theft verdict missing.
+- [34]: The Monopoly comparison is half right and half wrong in the same sentence.
+
+## Ranked fixes (11)
+
+Each fix gives the block, the OLD text (occurs once in DRAFT_R11c.md) and the NEW text.
+
+1. Block [15]. Separate the strict label from collapse.
+OLD: Whether that can go on depends on two numbers:
+NEW: Doing this is not the same as collapsing. Whether that can go on depends on two numbers:
+
+2. Block [16]. Name which number passes and which fails.
+OLD: So by the strict test today's answer is a warning, not a collapse. Watch both.
+NEW: So by the strict test today's answer is a warning, not a collapse. The rate against growth passes. The deficit before interest fails. Watch both.
+
+3. Block [58]. Give the theft ruling in the final verdict.
+OLD: though few people are ever shown who pays.
+NEW: though few people are ever shown who pays. Not theft in law, but in effect a transfer nobody voted on.
+
+4. Block [29]. Say whose question it is.
+OLD: The question assumed three things that need fixing.
+NEW: People who ask this question often assume three things that need fixing.
+
+5. Block [32]. Make the gold lesson plain.
+OLD: So gold did not do the rebuilding, and a shortage of gold did not stop it.
+NEW: So gold did not do the rebuilding, and a shortage of gold did not stop it. That is a point for neither side.
+
+6. Block [16]. Split the long ratio sentence.
+OLD: in only 5 or 6 of the 25 years from 2001, but in 24 of the 64 years from 1962.
+NEW: in only 5 or 6 of the 25 years from 2001. It was the bad case in 24 of the 64 years from 1962.
+
+7. Block [48]. State the defence claim plainly.
+OLD: The defence says money is like this too, because once it is spent some of its value seems to vanish.
+NEW: The defence says money is like this too. Once you spend it, some of its value seems to vanish, so money must lose value each year.
+
+8. Block [26]. Remove the dangling "this site".
+OLD: starting with a question put to this site.
+NEW: starting with a question readers often ask.
+
+9. Block [34]. Split the Monopoly sentence.
+OLD: In Monopoly every player gets $200 for passing Go, but real new money enters as loans to people with income or property.
+NEW: In Monopoly every player gets $200 for passing Go. Real new money is not shared like that. It enters as loans to people with income or property.
+
+10. Block [40]. Name what is being explained.
+OLD: Why? A Bank of England study
+NEW: Why are houses so dear? A Bank of England study
+
+11. Block [51]. Plain label for the index row.
+OLD: The measuring stick runs fast
+NEW: The price index overstates inflation
