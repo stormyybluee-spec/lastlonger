@@ -264,3 +264,84 @@ NEW: Why are houses so dear? A Bank of England study
 11. Block [51]. Plain label for the index row.
 OLD: The measuring stick runs fast
 NEW: The price index overstates inflation
+
+
+# Retest 2 (draft R11d), 2026-11-15
+
+Main path only. GO DEEPER boxes and "A:" lines skipped. Scores judge only what is on the page.
+
+## Score table
+
+| Part | Reader 1 (Malaysian, ESL) | Reader 2 (American) |
+|---|---|---|
+| (a) Strongest case, one number | 8 | 9 |
+| (b) Ponzi, strict test, number to watch | 6 | 7 |
+| (c) Who gets new money first, who pays | 8 | 8 |
+| (d) What rebuilt Europe and Japan, and gold | 7 | 8 |
+| (e) Both moneys tilt the board | 7 | 8 |
+| (f) Sword and the 2% | 7 | 8 |
+| (g) Verdict and five checks | 8 | 9 |
+| Sum / 7 | 51 / 7 = 7.3 | 57 / 7 = 8.1 |
+| Overall | 7 | 8 |
+| Pass mark 8 | FAIL | PASS |
+
+## Fairness and the courtroom story
+
+- Reader 1: Yes, mostly fair. Part 1 gives the prosecution real numbers and Keynes as a witness. Part 3 gives hard money the same treatment. The reader may still feel the Ponzi section ends on "a warning" and finds hard money's case harder to follow because the sword and the 2% are explained in more detail than the hard money tilt.
+- Reader 2: Yes, fair. Both sides pay a toll and both get named losers. The American reader will notice the chapter concedes the strict Ponzi point and the hard money panics with equal bluntness.
+- Does the courtroom story hold? Mostly. Dock, charge, witness (Keynes, the sword) and jury all appear in blocks 5, 8, 48 and 54. It fades in the verdict, which switches to "toll", Monopoly and a bucket. Three or four pictures in one chapter is a lot, and the jury never visibly delivers its finding.
+
+## Remaining confusions
+
+Reader 1 (ESL):
+- [16] Dense. "Rate against growth", "deficit before interest" and "rolled" in one block. Two sets of year counts (5 or 6 of 25, 24 of 64) arrive together. The reader cannot say which single number to watch.
+- [29] Starts with "People who ask this question" but the question is only in the heading. Then "It assumed" switches subject and tense. Hard to follow.
+- [32] "A point for neither side" is not tied back to what it says about gold.
+- [50] The sword is "one object losing resale value" but the reader has just been told money is not like that. The contrast is thin.
+- [6], [20]: "bond buying", "asset prices", "cheques" are used with little help. Reader 1 half gets them.
+- [23] "No. Both sides agree" is vague.
+- [40] The tilt sentence is there but hard money's loser (borrowers, the young) is only stated back in [37] and [58].
+
+Reader 2 (American):
+- [15] and [16] The strict test is explained, but "passes first number, fails second" is the only plain summary and it is at the end of a long block.
+- [29] Same tense and subject wobble as Reader 1.
+- [34] "The top 1% share of US wealth hit a record in 2025" appears with no link to the point about new players.
+- [0] and [58] tell the reader to "watch" numbers but [0] never names them.
+
+## Ranked fixes (9)
+
+1. Block 29. Fixes the broken subject and tense.
+OLD: It assumed America held 75% of the world's official gold, but the share peaked at about 70% in 1948. It assumed rebuilding takes fifty years, but it took about five. And gold was not money for ordinary people in 1945, only for central banks.
+NEW: First, some say America held 75% of the world's official gold. The share peaked at about 70% in 1948. Second, some say rebuilding takes fifty years. It took about five. Third, gold was not money for ordinary people in 1945, only for central banks.
+
+2. Block 16. Gives the plain summary of the two tests.
+OLD: The rate against growth passes. The deficit before interest fails. Watch both.
+NEW: Test one is the rate against growth, and it passes. Test two is the deficit before interest, and it fails. Think of a household. Test one asks if your pay grows faster than your loan costs. Test two asks if you spend more than you earn before the loan costs. Watch both.
+
+3. Block 0. Names the Ponzi numbers up front.
+OLD: though by the strict test the US borrows to pay its interest.
+NEW: though by the strict test the US borrows to pay its interest. The two numbers to watch are the interest rate against growth, and the deficit before interest.
+
+4. Block 40. Makes the tilt for each money plain.
+OLD: Both systems tilt the board. Hard money favours people who already hold coins or lend. Credit money favours people who already own houses and shares, and it makes newcomers borrow to catch up.
+NEW: Both systems tilt the board, toward different people. Hard money favours people who already hold coins or lend, and it hurts borrowers and the young. Credit money favours people who already own houses and shares, and it makes newcomers borrow to catch up. Neither starts the new player level.
+
+5. Block 32. Ties the gold lesson in plain words.
+OLD: That is a point for neither side. Whether a world fully on gold could have done it cannot be tested.
+NEW: That is a point for neither side. Gold was not the engine, and its lack was not the brake. Whether a world fully on gold could have done it cannot be tested.
+
+6. Block 50. Sharpens the sword contrast.
+OLD: Here is why it does not explain the 2%. Its loss is one object losing resale value. Inflation is money itself losing value against goods and services in general.
+NEW: Here is why it does not explain the 2%. The sword loses value because it is one object that is hard to resell. Inflation is different. It is money itself buying less of everything.
+
+7. Block 58. Closes the courtroom story.
+OLD: Not a scam in the plain sense. The US target has been published since 2012,
+NEW: The jury's finding: not a scam in the plain sense. The US target has been published since 2012,
+
+8. Block 16. Simplifies the year counts.
+OLD: The rate was above growth, which is the bad case, in only 5 or 6 of the 25 years from 2001. It was the bad case in 24 of the 64 years from 1962.
+NEW: The rate was above growth, which is the bad case, in only 5 or 6 of the last 25 years, counting from 2001. Over the longer stretch from 1962 it was the bad case in 24 of 64 years.
+
+9. Block 23. Removes a vague phrase.
+OLD: No. Both sides agree
+NEW: No. Borrower and bank both agree to the deal

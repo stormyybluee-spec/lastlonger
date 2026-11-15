@@ -10896,7 +10896,7 @@
      "type": "tldr",
      "items": [
       "The charge is partly true. Cash does melt: a dollar buys what 3 cents bought in 1913, and a ringgit buys what 18 sen bought in 1971. From 2021 to 2025 people holding US cash lost an estimated $488 billion of buying power (our estimate), and no one voted on it.",
-      "It is not a scam in the plain sense today, since the target and the price index are published. It is not a Ponzi by its features, though by the strict test the US borrows to pay its interest. The honest name is a toll, paid by cash holders, renters and late savers.",
+      "It is not a scam in the plain sense today, since the target and the price index are published. It is not a Ponzi by its features, though by the strict test the US borrows to pay its interest. The two numbers to watch are the interest rate against growth, and the deficit before interest. The honest name is a toll, paid by cash holders, renters and late savers.",
       "Hard money has a toll too. It falls on borrowers and the young: from 1929 to 1933, as US prices fell by a quarter, debts grew a third heavier. A fixed money does not remove the first-comer advantage. It hands early holders the whole rise in value.",
       "After 1945 America held 60% to 70% of reported official gold, less than the 75% some people claim. Europe and Japan passed pre-war output by 1949 and 1951, in about five years, not the fifty some people expect. Work and home saving paid for most of it, not gold or new money.",
       "Both systems tilt the board, toward different people. The useful questions are who pays, how much, who gets new money first, and what number would show failure.",
@@ -11098,7 +11098,34 @@
     },
     {
      "type": "p",
-     "text": "Passing means growth beats the rate and the deficit before interest is small, so debt can roll without growing against income. Failing means debt outgrows income until taxes, spending cuts or inflation stop it. The rate was above growth, which is the bad case, in only 5 or 6 of the 25 years from 2001. It was the bad case in 24 of the 64 years from 1962. In October 2026 it was 3.57% against growth of 5.9%, lifted by inflation. So the US passes the first number. It fails the second. With debt a little over one year of income and growth a little over 2 points above the rate, the government can run a deficit before interest of only about 2% to 2.6% of income without debt growing against income (our arithmetic). The real figure was about 3.6% in 2024. So by the strict test today's answer is a warning, not a collapse. The rate against growth passes. The deficit before interest fails. Watch both."
+     "text": "Think of a household with a loan. Test one asks: does your pay grow faster than the interest rate on the loan? Test two asks: before the loan costs, do you spend more than you earn? Pass both and the loan stays small against your pay. Fail, and the loan outgrows your pay until something stops it. For a country that something is higher taxes, spending cuts or inflation."
+    },
+    {
+     "type": "table",
+     "cols": [
+      "The strict test",
+      "What it asks",
+      "The US today",
+      "Result"
+     ],
+     "rows": [
+      [
+       "Test one: the rate against growth",
+       "Is the interest rate on the debt below the growth of the economy?",
+       "Rate 3.57% against growth of 5.9% in October 2026, lifted by inflation",
+       "Passes"
+      ],
+      [
+       "Test two: the deficit before interest",
+       "Is the gap between spending and taxes small enough?",
+       "About 3.6% of income in 2024. With debt a little over one year of income, the most that keeps debt steady is about 2% to 2.6% (our arithmetic)",
+       "Fails"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "Test one does not always pass. The rate was above growth, which is the bad case, in only 5 or 6 of the last 25 years, counting from 2001. Over the longer stretch from 1962 it was the bad case in 24 of 64 years. So by the strict test today's answer is a warning, not a collapse. Watch both numbers."
     },
     {
      "type": "h",
@@ -11157,7 +11184,7 @@
      "rows": [
       [
        "Banks lend",
-       "No. Both sides agree",
+       "No. Borrower and bank both agree to the deal",
        "No. Each loan is matched by a promise to repay",
        "No, though chains of borrowers can become one, as in 2006 to 2008"
       ],
@@ -11241,7 +11268,7 @@
     },
     {
      "type": "p",
-     "text": "People who ask this question often assume three things that need fixing. It assumed America held 75% of the world's official gold, but the share peaked at about 70% in 1948. It assumed rebuilding takes fifty years, but it took about five. And gold was not money for ordinary people in 1945, only for central banks. The rest of the world held about 40% of the gold, and some ruined countries almost none: Italy held $24 million worth. Gold kept flowing to America until 1949."
+     "text": "People who ask this question often assume three things that need fixing. First, some say America held 75% of the world's official gold. The share peaked at about 70% in 1948. Second, some say rebuilding takes fifty years. It took about five. Third, gold was not money for ordinary people in 1945, only for central banks. The rest of the world held about 40% of the gold, and some ruined countries almost none: Italy held $24 million worth. Gold kept flowing to America until 1949."
     },
     {
      "type": "p",
@@ -11278,7 +11305,7 @@
     },
     {
      "type": "p",
-     "text": "Here is the twist. The world was tied to gold only at the top: the dollar for foreign central banks, other currencies to the dollar. So this is a story of work and credit inside a gold anchor, and hard-money writers note that US inflation stayed near 2% to 3% under it. The question is right on one point. The ruined countries lacked the gold and dollars to buy food and machines abroad, and American aid filled the gap. So gold did not do the rebuilding, and a shortage of gold did not stop it. Work, saving, aid and credit did the job. That is a point for neither side. Whether a world fully on gold could have done it cannot be tested."
+     "text": "Here is the twist. The world was tied to gold only at the top: the dollar for foreign central banks, other currencies to the dollar. So this is a story of work and credit inside a gold anchor, and hard-money writers note that US inflation stayed near 2% to 3% under it. The question is right on one point. The ruined countries lacked the gold and dollars to buy food and machines abroad, and American aid filled the gap. So gold did not do the rebuilding, and a shortage of gold did not stop it. Work, saving, aid and credit did the job. That is a point for neither side. Gold was not the engine, and its lack was not the brake. Whether a world fully on gold could have done it cannot be tested."
     },
     {
      "type": "h",
@@ -11329,7 +11356,7 @@
     },
     {
      "type": "p",
-     "text": "In Malaysia the median house cost 4.1 times the median household's yearly income in 2019. The usual line for affordable is 3, and Malaysia has been above it every year since 2002. Why are houses so dear? A Bank of England study found that falling interest rates, measured after inflation, explained most of the UK rise. US research points to limits on building. Malaysia has not been tested this way. Both systems tilt the board. Hard money favours people who already hold coins or lend. Credit money favours people who already own houses and shares, and it makes newcomers borrow to catch up."
+     "text": "In Malaysia the median house cost 4.1 times the median household's yearly income in 2019. The usual line for affordable is 3, and Malaysia has been above it every year since 2002. Why are houses so dear? A Bank of England study found that falling interest rates, measured after inflation, explained most of the UK rise. US research points to limits on building. Malaysia has not been tested this way. Both systems tilt the board, toward different people. Hard money favours people who already hold coins or lend, and it hurts borrowers and the young. Credit money favours people who already own houses and shares, and it makes newcomers borrow to catch up. Neither starts the new player level."
     },
     {
      "type": "h",
@@ -11398,7 +11425,7 @@
     },
     {
      "type": "p",
-     "text": "The defence calls one last witness: a sword. A collector pays 100,000 ringgit for a custom one. The blacksmith and the suppliers receive the 100,000 ringgit as income. The collector now owns a sword. If it were stolen and turned up in a pawn shop, it would fetch a fraction of the price. The defence says money is like this too. Once you spend it, some of its value seems to vanish, so money must lose value each year. Does that explain why money must lose a little value each year?"
+     "text": "The defence calls one last witness: a sword. A collector pays 100,000 ringgit for a custom one. The blacksmith and the suppliers receive the 100,000 ringgit as income. The collector now owns a sword. If it were stolen and turned up in a pawn shop, it would fetch a fraction of the price. The defence says money is like this too. Once you spend it, some of its value seems to vanish. Is that why money is made to lose a little value each year?"
     },
     {
      "type": "p",
@@ -11406,7 +11433,7 @@
     },
     {
      "type": "p",
-     "text": "Here is why it does not explain the 2%. Its loss is one object losing resale value. Inflation is money itself losing value against goods and services in general. Central banks aim for about 2% for four other reasons."
+     "text": "Here is why it does not explain the 2%. The sword loses value because it is one object that is hard to resell. Inflation is different. It is money itself buying less of everything. Central banks aim for about 2% for four other reasons."
     },
     {
      "type": "table",
@@ -11496,7 +11523,7 @@
     {
      "type": "steps",
      "items": [
-      "Not a scam in the plain sense. The US target has been published since 2012, though few people are ever shown who pays. Not theft in law, but in effect a transfer nobody voted on.",
+      "The jury's finding: not a scam in the plain sense. The US target has been published since 2012, though few people are ever shown who pays. Not theft in law, but in effect a transfer nobody voted on.",
       "A real toll. It falls on cash holders, renters and people who save late, and perhaps half of the toll on dollar notes falls on people outside America.",
       "Not a Ponzi by its features. By the strict test the US borrows to pay its interest, and today its deficit before interest is too large. Watch both numbers.",
       "Hard money is not innocent either. Its toll falls on borrowers and the young, and it limits rescue in a panic.",
@@ -11533,12 +11560,12 @@
       },
       {
        "q": "What rebuilt Europe and Japan after 1945?",
-       "a": "Work and home saving above all, helped by aid and credit between neighbours. Debt relief came later, in 1953. Gold was flowing to America, not from it, until 1949.",
+       "a": "Work and saving inside each country above all, helped by aid and credit between neighbours. Debt relief came later, in 1953. Gold was flowing to America, not from it, until 1949.",
        "from": "rb-03"
       },
       {
        "q": "Why 2% and not zero, and does the sword explain it?",
-       "a": "Sticky pay, room to cut rates, a fast measuring stick and fear of deflation. The sword explains something else: spending is income, and a thing you cannot resell quickly at a fair price is not money.",
+       "a": "Sticky pay, room to cut rates, a price index that overstates inflation, and fear of deflation. The sword explains something else: spending is income, and a thing you cannot resell quickly at a fair price is not money.",
        "from": "rb-08"
       },
       {
@@ -11633,7 +11660,7 @@
      "blocks": [
       {
        "type": "p",
-       "text": "The owner of this project asks a sharp question: if most wealth sits in houses and savings that do not circulate, how does a society advance? In the US each dollar of money was spent about 2.2 times a year in 1997, and only 1.2 times in 2020. Money did slow down, and by 2026 it was back to about 1.4. Japanese households hold about 47% of their financial wealth in cash and deposits."
+       "text": "Here is a sharp question: if most wealth sits in houses and savings that do not circulate, how does a society advance? In the US each dollar of money was spent about 2.2 times a year in 1997, and only 1.2 times in 2020. Money did slow down, and by 2026 it was back to about 1.4. Japanese households hold about 47% of their financial wealth in cash and deposits."
       },
       {
        "type": "p",
