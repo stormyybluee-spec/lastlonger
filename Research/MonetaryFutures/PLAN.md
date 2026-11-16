@@ -55,7 +55,7 @@ This file is the backend. It is written so that any future AI (or human) can pic
 | `tools/xref.py` | Finds where the desk already says something (ledger, pages, data): `python3 -I tools/xref.py . "<regex>"` |
 | `tools/score_prereg.py` | Lists due predictions, records outcomes and reports Brier scores: `python3 -I tools/score_prereg.py .` |
 | `tools/apply_court_edits.py` | Applies a court's edit list to one chapter and verifies every new text landed: `python3 -I tools/apply_court_edits.py <site json> <out json> <DEBATE file> <chapter id>`. Replaces the Editor agent when the edit list is regular |
-| `round12/` | Round 12, Rulebook Level 3 chapter 02 (rb-credit): owner input with the four-part thesis, frame with questions 4 to 10, lanes R12A and R12B, verifier, red team, court, cold reads, draft exports and three fix scripts |
+| `round12/` | Round 12, Rulebook Level 3 chapter 02 (rb-credit): owner input with the four-part thesis, frame with questions 4 to 10, lanes R12A and R12B, verifier, red team, court, cold reads, draft exports, three fix scripts and r12_ledger_rows.py (lane tables to ledger rows) |
 | `round11/` | Round 11, Rulebook Level 3 chapter 01 (rb-print): owner input, base, frame, lanes R11A and R11B, verifier, red team, court, cold reads (six passes), draft exports and seven fix scripts |
 | `round10/` | Round 10, the first Unseen mode round: frame, blind exam (EXAM_T9.md), base-rate check, data and footprints lane, two Pathfinders, 14 hole files in holes/, verifier, red team, court, cold reads |
 | `tools/lint_chapter.py` | Reading-level lint for a reader chapter, run before any cold reader: `python3 -I tools/lint_chapter.py site/rulebook.json <chapter_id>` |
