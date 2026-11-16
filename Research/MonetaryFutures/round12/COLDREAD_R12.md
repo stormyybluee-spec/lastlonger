@@ -204,3 +204,86 @@ NEW: Do you have something to put up as security, such as a house?
 8. Block [51], median ratio in plain words (part g, Reader 1).
 OLD: That means loan payments take 41% of income.
 NEW: That means the middle new borrower pays 41% of income on loans.
+
+
+# Retest 2, Reader 1 only (draft R12d), 2026-11-16
+
+Reader: Malaysian, 18, English as a second language, no finance background. Main path only. Boxes and A: lines skipped.
+
+## Score table
+
+| Part | Test | Score |
+|---|---|---|
+| a | Four-part claim | 8 |
+| b | Why peasants were poor, and Spain's silver | 7 |
+| c | Credit and 1971 | 8 |
+| d | Borrowing from the future, and the burden test | 7 |
+| e | Why the law leans, who gains, case for the system | 7 |
+| f | Why big printers are poor, three uses of new money | 8 |
+| g | Who gets through the gate, and what it costs | 8 |
+| h | When credit helps or harms, three tests | 8 |
+| i | Epilogue grading and rebuilt claim | 8 |
+
+Average: 69 / 9 = 7.7. Rounded overall: 8 out of 10. Pass mark 8: PASS, but only just. The one-decimal average is below 8.
+
+## What the reader can say
+
+- (a) Can list the four parts. Part 4 ("pushes everyone to take charge of their own future") is the vaguest to restate.
+- (b) Can say: output was scarce more than coins. Spain got silver and higher prices, not lasting riches. Cannot say why prices rose, and is told it is argued. The pesos unit is unexplained.
+- (c) Can say: no, credit is 4,400 years old. 1971 removed the last gold limit.
+- (d) Can say: you borrow a promise, not goods. Test: did it build something, and who holds the debt. Names Lerner and Buchanan blur the two sides for an ESL reader.
+- (e) Can say: five laws, each with a winner, and the failure table is the case for the safety net. The five-row table is dense. The Swiss vote and duck hunt story are remembered. The three reasons are clear in the insider box.
+- (f) Can say: Zimbabwe is a state printing to pay bills, not credit that builds. Can name the three uses in the table.
+- (g) Can say: lenders want income, security and a record. The poor lack them. Cost rises as security falls. Table has mixed kinds of number, and the chapter says so.
+- (h) Can state the three tests and the lever idea.
+- (i) Can say all four hold in part, and can say the rebuilt claim. Small slip: the Part 3 summary at [62] and the table at [63] read slightly differently.
+
+## Fairness, courtroom, advice
+
+- Fair to the reader who made the claim: yes. [66] says they "saw something true and important", and each insider box says what holds. Mild snag: "more strongly than its author may like" at [53] reads a little as a jab.
+- Fair to critics of credit: yes. Gate, payday loans, bankruptcies and Zimbabwe are all given weight. The hard-money objection is in a box, not hidden.
+- Courtroom story: holds. Trial, cross-examination, jury, findings and a "what would change this verdict" box all line up. The jury never visibly deliberates, but the epilogue works as the verdict.
+- Financial advice: no. The three tests are framed as "how the idea works" at [57], and [71] says not advice. The tests table comes close to a checklist, but the disclaimer sits right beside it.
+
+## Remaining confusions
+
+- [10] "pesos" is not explained. "Why is still argued" is clipped English.
+- [11] "different poverty lines" is jargon.
+- [24] Two economists named in brackets. The reader may not see which side each one is on.
+- [31] The five-row legal table is the heaviest block on the main path. "Legal tender" and "licence" take effort.
+- [32] The "duck hunt" detail is odd and not explained.
+- [53] "than its author may like" is slightly sharp.
+- [62] vs [63] The Part 3 wording differs. [62] says the figure cannot be tested. [63] says the fact is roughly right and the cause is not.
+- [67] "a fixed money could fund the same building through falling prices" is hard to picture.
+
+## Fixes, ranked
+
+1. Block 62.
+OLD: Part 3 gives a figure that this chapter cannot test.
+NEW: Part 3 has a figure this chapter cannot test, and the wrong cause.
+
+2. Block 10.
+OLD: A silver flood, higher prices, and no lasting riches. Why is still argued
+NEW: A silver flood brought higher prices, not lasting riches. Historians still argue about why
+
+3. Block 10.
+OLD: About 210 million pesos of silver from the Americas landed in Spain in the 1500s
+NEW: About 210 million pesos, a unit of silver money, from the Americas landed in Spain in the 1500s
+
+4. Block 24.
+OLD: The other side says future taxpayers carry a real burden (James Buchanan, 1958).
+NEW: The other side, James Buchanan in 1958, says future taxpayers carry a real burden.
+
+5. Block 11.
+OLD: on different poverty lines
+NEW: using different ways to measure poverty
+
+6. Block 53.
+OLD: Part 4 of the claim holds, and more strongly than its author may like.
+NEW: Part 4 of the claim holds, and its warning about requirements is the strongest part.
+
+7. Block 67.
+OLD: through falling prices and saving alone
+NEW: by saving alone while prices fall
+
+Seven fixes in total. None adds a new fact or number.

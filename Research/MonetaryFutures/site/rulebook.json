@@ -11819,7 +11819,7 @@
     {
      "type": "callout",
      "label": "How to read this chapter",
-     "text": "Seven questions and an epilogue, about 40 minutes in all. Each question ends with a short line on what it does to the claim. Read the main path first and skip the boxes marked Go deeper."
+     "text": "Seven questions and an epilogue, about 45 minutes in all. Each question ends with a short line on what it does to the claim. Read the main path first and skip the boxes marked Go deeper."
     },
     {
      "type": "h",
@@ -11864,8 +11864,8 @@
      "rows": [
       [
        "Spain's silver",
-       "About 210 million pesos of silver from the Americas landed in Spain in the 1500s, by one historian's count. By one estimate, prices in Western Europe rose 3 to 4 times in that century. The Spanish king still failed to pay his debts four times, in 1557, 1560, 1575 and 1596",
-       "A silver flood, higher prices, and no lasting riches. Why is still argued"
+       "About 210 million silver pesos, the coin of Spain, landed in Spain from the Americas in the 1500s, by one historian's count. By one estimate, prices in Western Europe rose 3 to 4 times in that century. The Spanish king still failed to pay his debts four times, in 1557, 1560, 1575 and 1596",
+       "A silver flood brought higher prices, not lasting riches. Historians still argue about why"
       ],
       [
        "The king's gold in Cairo",
@@ -11891,7 +11891,7 @@
     },
     {
      "type": "p",
-     "text": "So both things were true, but not equally. On the evidence here, the bigger cause of old poverty was scarce output. A bad harvest meant hunger no matter how many coins the king had. Scarce coins made trade harder at times. People also got round the shortage with credit: in early modern England, the historian Craig Muldrew found, most everyday buying and selling ran on credit between households. Our World in Data puts extreme poverty at about three quarters of the world in 1820 and about 8% today, on different poverty lines. As output grew, money had to stretch to keep up, which is the next question."
+     "text": "So both things were true, but not equally. On the evidence here, the bigger cause of old poverty was scarce output. A bad harvest meant hunger no matter how many coins the king had. Scarce coins made trade harder at times. People also got round the shortage with credit: in early modern England, the historian Craig Muldrew found, most everyday buying and selling ran on credit between households. Our World in Data puts extreme poverty at about three quarters of the world in 1820 and about 8% today, using different ways to measure poverty. As output grew, money had to stretch to keep up, which is the next question."
     },
     {
      "type": "insider",
@@ -11991,7 +11991,7 @@
     },
     {
      "type": "p",
-     "text": "Economists have argued over this for a long time. One side says a national debt owed inside the country is not a burden on the next generation as a whole, because the children inherit the government's IOUs (bonds) as well as the tax bills (Abba Lerner). Debt owed to foreigners is different. The other side says future taxpayers carry a real burden (James Buchanan, 1958). A 2003 review for the US Congress found the burden is heaviest when borrowing pays for spending that is used up, and that much of it can pass to the future."
+     "text": "Economists have argued over this for a long time. One side says a national debt owed inside the country is not a burden on the next generation as a whole, because the children inherit the government's IOUs (bonds) as well as the tax bills (Abba Lerner). Debt owed to foreigners is different. The other side, James Buchanan in 1958, says future taxpayers carry a real burden. A 2003 review for the US Congress found the burden is heaviest when borrowing pays for spending that is used up, and that much of it can pass to the future."
     },
     {
      "type": "table",
@@ -12253,7 +12253,7 @@
     },
     {
      "type": "insider",
-     "text": "Part 4 of the claim holds, and more strongly than its author may like. Credit does have requirements, and the requirements are the things the comfortable already have. In 2024 about a quarter of adults in poorer countries borrowed from a formal lender. Not borrowing is not always being shut out: some do not want a loan. The gate is wider than it was. It is still a gate.",
+     "text": "Part 4 of the claim holds, and its warning about requirements is the strongest part. Credit does have requirements, and the requirements are the things the comfortable already have. In 2024 about a quarter of adults in poorer countries borrowed from a formal lender. Not borrowing is not always being shut out: some do not want a loan. The gate is wider than it was. It is still a gate.",
      "label": "What question 9 does to the claim"
     },
     {
@@ -12330,7 +12330,7 @@
     },
     {
      "type": "p",
-     "text": "The jury has heard seven questions. Here is the reader's claim again, line by line, with the finding. All four hold in part, but each fails in a different place. Part 1 needs credit that builds. Part 2 mixes up scarce money with scarce output. Part 3 gives a figure that this chapter cannot test. Part 4 has the wrong date and is right that credit has a gate."
+     "text": "The jury has heard seven questions. Here is the reader's claim again, line by line, with the finding. All four hold in part, but each fails in a different place. Part 1 needs credit that builds. Part 2 mixes up scarce money with scarce output. Part 3 has a figure this chapter cannot test, and the wrong cause. Part 4 has the wrong date and is right that credit has a gate."
     },
     {
      "type": "table",
@@ -12382,7 +12382,7 @@
     },
     {
      "type": "insider",
-     "text": "This view would change if any of three things were shown. First, that countries with the most credit grow fastest even past 100% of income. Second, that access to credit, on its own, lifts the poor in careful trials. Third, that a fixed money could fund the same building through falling prices and saving alone. Today the evidence leans against the first, though it is disputed, and is against the second. The third has not been tested in a modern economy.",
+     "text": "This view would change if any of three things were shown. First, that countries with the most credit grow fastest even past 100% of income. Second, that access to credit, on its own, lifts the poor in careful trials. Third, that a fixed money could fund the same building by saving alone while prices fall. Today the evidence leans against the first, though it is disputed, and is against the second. The third has not been tested in a modern economy.",
      "label": "What would change this verdict"
     },
     {

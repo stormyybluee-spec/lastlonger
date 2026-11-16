@@ -1,6 +1,6 @@
 # Rulebook index (Fundamentals)
 
-One file per chapter. Read a level in order. Built 2026-11-15.
+One file per chapter. Read a level in order. Built 2026-11-16.
 
 
 ## Level 1: Foundations
@@ -43,6 +43,7 @@ Level 2 opens the engine room under Level 1. First bonds, the ticket that sits u
 Level 3 takes the arguments people shout about money and puts each one on trial. Every chapter makes the popular charge as strong as it can be made, tests it, tests the alternative, and ends with who really pays. It assumes Levels 1 and 2. Nothing here is advice. These chapters are built so you can hold two sides of an argument in your head and still reach your own view.
 
 - [01. Is printing money a scam? The charge, the defence and the toll](https://neetmonetary.netlify.app/ai/rulebook/rb-print.md): You have heard it a hundred times: printing is theft, the dollar has lost 97%, the whole thing is a Ponzi. This chapter puts that charge on trial at full strength, then puts hard money on trial too, and ends with the question that matters more than either: who pays the toll, and who decides.
+- [02. Money from the future: seven harder questions about credit](https://neetmonetary.netlify.app/ai/rulebook/rb-credit.md): The last chapter put printing on trial and found a toll, not a scam. Now the defence makes a bigger claim: that money made from nothing is the reason ordinary people are no longer peasants. Seven hard questions test that claim, and the epilogue grades it line by line.
 
 ## Level 4: Money in motion
 
