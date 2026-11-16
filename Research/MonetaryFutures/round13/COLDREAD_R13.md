@@ -263,3 +263,97 @@ NEW: Yet the rising prices stop, and trade begins to move again.
 ## Not fixed by text swaps (for the editor)
 - Move the table [60] and the callout [61] so the chapter ends on the line in [59]. They soften the ending for both readers.
 - Move the how-to-read callout and the bridge block [1] below the first story scene, or cut the code names. Both readers meet jargon before the first person.
+
+
+# Retest 2 (draft R13d), 2026-11-16
+
+## Score tables
+
+### A. Understanding (1 to 10)
+
+| Item | Reader 1 (Malaysian, ESL) | Reader 2 (American) |
+|---|---|---|
+| (a) money is a promise, farmer | 8 | 9 |
+| (b) Spain's silver, coin shortage | 7 | 8 |
+| (c) bridge, borrowing from the future | 7 | 8 |
+| (d) 1931 queue, two women, farmer | 7 | 8 |
+| (e) 1971, what did and did not follow | 6 | 7 |
+| (f) tin, granddaughter, toll, what is refused | 8 | 8 |
+| (g) three questions, no even start | 7 | 8 |
+| (h) two families, credit is a lever | 7 | 8 |
+| (i) final verdict | 7 | 8 |
+| Average | 7.1 | 8.0 |
+
+Overall understanding: 7.6, rounded 8. Pass mark 8: Reader 2 passes, Reader 1 fails by a small margin (7.1). The overall rounded score only passes because Reader 2 pulls it up.
+
+### B. Story (1 to 10)
+
+| Item | Reader 1 | Reader 2 |
+|---|---|---|
+| (j) held attention to the end | 7 | 7 |
+| (k) felt for people on both sides | 8 | 8 |
+| (l) reads as a story, not a report | 7 | 7 |
+| (m) ending landed | 8 | 8 |
+| Average | 7.5 | 7.5 |
+
+Strongest scene: The queue (the two women and the farmer) for both readers. Reader 1 also named the grandmother's tin as a close second, because ringgit and sen are familiar.
+Weakest scene: Reader 1 says The ships and The king's promise, too many figures (210 million, 1.2 million, 29 and 327 billion) and few people. Reader 2 says The sword and the rocket, which feels like an essay added at the end, with The lever a close second because of dollar figures.
+
+## Other questions
+
+Fair to both sides? Yes, for both readers. Each finished thinking the author was even-handed. The queue gives hard money a victim (the farmer, the first woman) and a winner (the second woman). The tin and the counter give credit its toll and its gate. Reader 2 felt the tone leaned slightly toward "credit won", because [58] says "the promise won over the metal", but [56] and the toll lines balanced it.
+
+Is it clear which people are imagined? Mostly yes. The word "Picture" marks them and [2] explains it. Two gaps: [19] and [34] have no "Picture" but are real events, which is fine. In [46] and [47] "the first is like the typical owner" blends imagined families with real averages, and Reader 1 was briefly unsure whether the $396,200 belonged to a real family.
+
+Anything like financial advice? No. [3] and the plain verdict keep it clear. Nothing tells the reader to save or borrow.
+
+## Remaining confusions
+
+Reader 1:
+- [30] "reported official gold" is hard wording.
+- [34] "official trading of dollars for gold is over" does not say what was traded between whom.
+- [38] "a ringgit buys what 18 sen bought" reads backward on first pass.
+- [42] "security" is unclear as a bank word.
+- [44] "While she saves, money gains value" is hard to follow, and "hard money" and "money that stretches" blur together.
+- [46] "worth $396,200 after debts" is unclear.
+- [37] the "what followed" in 1971 is spread over three blocks, so what did and did not follow is hard to hold.
+
+Reader 2:
+- [37] "debts came to one and a third years of what the country makes" needed a second read.
+- [44] "While she saves, money gains value."
+- [48] the lever picture is short. The reader wanted one line saying what the push is.
+- [51] and [52] feel like a lecture, not a scene.
+
+## Ranked fixes
+
+1. Block 34. Say what the president ended.
+OLD: the official trading of dollars for gold is over
+NEW: the promise to swap dollars for gold is over
+
+2. Block 44. Make the hard money saving point clear.
+OLD: While she saves, money gains value. But most of the money is already held by people who came before her.
+NEW: Under hard money, the coins she saves would buy a little more each year. But most of the money is already held by people who came before her.
+
+3. Block 37. Pull together what did and did not follow 1971.
+OLD: Room to build, and room to overreach.
+NEW: So two things followed. There was more room to borrow, and the toll went on. Growth did not clearly speed up. Room to build, and room to overreach.
+
+4. Block 38. Make the ringgit line easy.
+OLD: A ringgit buys what 18 sen bought in 1971, and there are 100 sen in a ringgit.
+NEW: A ringgit today buys only what 18 sen bought in 1971. There are 100 sen in a ringgit.
+
+5. Block 42. Explain "security".
+OLD: Do you have something to put up as security?
+NEW: Do you have something valuable to put up in case you cannot pay, like a house?
+
+6. Block 46. Clarify "after debts".
+OLD: Look at what the typical owner has, after debts. It is worth $396,200.
+NEW: Count what the typical owner has after paying off all debts. It comes to $396,200.
+
+7. Block 48. Say what the push is.
+OLD: It was the same tool. A lever makes a small push big, in both directions.
+NEW: It was the same tool. A lever makes a small push big, in both directions. Here the loan is the push. A rising house price makes the gain big. A falling one makes the loss big.
+
+8. Block 30. Plain words for the gold line.
+OLD: America holds most of the world's reported official gold
+NEW: America holds most of the gold that governments have reported
