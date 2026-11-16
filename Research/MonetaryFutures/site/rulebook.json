@@ -13220,7 +13220,7 @@
     {
      "type": "steps",
      "items": [
-      "Part 1. Output was scarce because the cycle of money and credit that creates output was scarce.",
+      "Part 1. Output was scarce because money and credit, which help people make and trade things, were scarce.",
       "Part 2. The other links of the chain were missing too: a central state, schools, and shared knowledge.",
       "Part 3. Every link needs large promises about the future before it can start. Armies, schools, roads and factories are paid for long before they pay back.",
       "Part 4. A country that started and was stopped by war, famine or old habit fell back into a loop, and did not progress as a whole."
@@ -13236,7 +13236,7 @@
     },
     {
      "type": "p",
-     "text": "In 1696 an Englishman named Gregory King set out to estimate how his country lived in 1688, group by group. His numbers are estimates. Near the bottom he listed 400,000 families of cottagers and paupers, about 1.3 million people. Each family lived on about six and a half pounds a year."
+     "text": "In 1696 an Englishman named Gregory King set out to estimate how his country lived in 1688, group by group. His numbers are estimates. Near the bottom he listed 400,000 families of cottagers and paupers, the poorest of the poor, about 1.3 million people. Each family lived on about six and a half pounds a year."
     },
     {
      "type": "p",
@@ -13269,7 +13269,7 @@
       [
        "Spain, 1500s",
        "First call on the silver of the Americas",
-       "About 1,118 dollars in 1500, 1,295 in 1600 and 1,009 in 1650, in 2011 dollars adjusted for prices. It rose, fell below where it began, and recovered to about 1,280 by 1700"
+       "It rose a little by 1600, then fell below where it began by 1650"
       ],
       [
        "England, 1600 to 1650",
@@ -13279,22 +13279,22 @@
       [
        "China, from 1023",
        "State paper money, centuries before Europe",
-       "In 1090 China was richer per person than England, by one estimate. It later fell far behind. Paper money worked for long stretches, and under the Mongols prices rose slowly for about fifty years. In the rebellion that ended their rule people stopped trusting the notes, and by 1368 they were back to barter"
+       "In 1090 China was richer per person than England, by one estimate. It later fell far behind. Its paper money worked for long stretches, then lost all trust when the Mongol rulers fell in the 1360s"
       ],
       [
        "Holland, 1600s",
-       "Very cheap credit for its time. Before 1688 Holland borrowed long term at 4%, while the English king paid 6% to 30% on short loans",
-       "It grew by more than half from 1500 to 1600, and in 1650 was two to three times as rich per person as England, depending on the data set. Output per person stayed flat from 1600 to 1750"
+       "Very cheap credit for its time. Its government borrowed at 4%, when the English king paid 6% to 30%",
+       "It grew rich first. In 1650 it was at least twice as rich per person as England. Then it stopped growing until 1750"
       ]
      ]
     },
     {
      "type": "p",
-     "text": "So four places had plenty of money or cheap credit for their time. Spain fell back, England's output shrank, China's paper money lost trust, and Holland rose and then stalled. But each case had another big cause. England fought a civil war, the Mongol state was breaking up, and Holland fought costly wars from about 1670. Spain, some scholars say, suffered a resource curse, where easy wealth weakens the rest of the economy. So money alone was not enough. That does not mean it did not matter."
+     "text": "So four places had plenty of money or cheap credit for their time, and none of them kept pulling ahead. But be careful. Each case had another big cause. England fought a civil war. The Mongol state was breaking up. Holland fought costly wars from about 1670. So these cases show that money alone was not enough. They do not show that money did not matter."
     },
     {
      "type": "p",
-     "text": "There is evidence on the other side too. The historian Nuno Palma argues that American silver helped England a great deal, in a quieter way. It let more people buy and sell with coins. In the 1520s about 40% of English households lived on wages. By the 1780s few households were outside the cash economy. Coins did not make the cloth, but they made it easier to sell. Palma also argues that more money made taxes easier to collect and helped England toward modern growth. Some historians, such as Peter Spufford, argue that trade suffered when Europe ran short of silver in the 1400s. Others, such as Carlo Cipolla, say credit made up for missing coin."
+     "text": "There is evidence on the other side too. The historian Nuno Palma argues that American silver helped England a great deal, in a quieter way. It let more people buy and sell with coins. In the 1520s about 40% of English households lived on wages. By the 1780s few households were outside the cash economy. Coins did not make the cloth, but they made it easier to sell, and they made taxes easier to collect. Some historians also find that trade suffered when Europe ran short of silver in the 1400s. Others say credit filled the gap."
     },
     {
      "type": "insider",
@@ -13344,7 +13344,7 @@
     },
     {
      "type": "p",
-     "text": "Schooling. In 1820 about 12% of the world's adults could read. In 1870 about 17% of the world's children were in primary school. By 1950 it was 57%, and by 1970 it was 72%. The reader's figure, a 70% chance that a child goes to school, matches the world in 1970. The Razak Report of 1956 planned a national school system for Malaysia, and one rough data set puts primary enrolment at about two in three children in 1950 and nearly all by 1960."
+     "text": "Schooling. In 1820 about 12% of the world's adults could read. In 1870 about 17% of the world's children were in primary school. By 1950 it was 57%, and by 1970 it was 72%. The reader who wrote in said a child has had about a 70% chance of going to school since the 1970s. That matches the world in 1970. The Razak Report of 1956 planned a national school system for Malaysia, and one rough data set puts primary enrolment at about two in three children in 1950 and nearly all by 1960."
     },
     {
      "type": "p",
@@ -13374,8 +13374,8 @@
       ],
       [
        "Reading",
-       "Estimates disagree. A model from book sales gives 53% in 1650 and 54% in 1750. Signature counts show men rising from about 30% in the 1640s to 50% by 1714, and women from 10% to 25%",
-       "Before, but how fast it rose is unclear"
+       "About 30% of men could sign their names in the 1640s, and about 50% by 1714. Other estimates differ",
+       "Before, and rising slowly"
       ],
       [
        "Schools for every child",
@@ -13399,7 +13399,7 @@
     },
     {
      "type": "p",
-     "text": "The state borrowed, on a scale never seen before in England. In 1688 the English government owed about 1 million pounds. Nine years of war later it owed nearly 17 million, about 40% of everything the country made in a year. By the end of the wars with Napoleon the debt was close to 180% of a year's output on one measure, and about 150% on another. That looks like the reader's picture: enormous promises about the future. But most of it paid for war."
+     "text": "The state borrowed, on a scale never seen before in England. In 1688 the English government owed about 1 million pounds. Nine years of war later it owed nearly 17 million, about 40% of everything the country made in a year. By the end of the wars with Napoleon the debt was about 150% to 180% of a year's output, depending on the measure. That looks like the reader's picture: enormous promises about the future. But most of it paid for war."
     },
     {
      "type": "p",
@@ -13407,7 +13407,11 @@
     },
     {
      "type": "p",
-     "text": "The factories borrowed little for their buildings and machines. The first cotton mills were small. A small one cost about 1,000 to 2,000 pounds to start, a large one over 3,000. A famous Manchester firm, M'Connel and Kennedy, began with about 1,700 pounds. Most scholars agree that owners paid for these mainly from their own funds and from profits put back into the firm. Others, such as Joel Mokyr, argue that weak loan markets kept firms small. The law also held private lending down. From 1714 no lender could charge more than 5%. Peter Temin and Hans-Joachim Voth find that war borrowing made banks lend less to others. Jaume Ventura and Voth disagree. Safe bonds, they argue, drew landowners away from weak farm investments and left room for new industry."
+     "text": "The factories borrowed little for their buildings and machines. The first cotton mills were small. A small one cost about 1,000 to 2,000 pounds to start, a large one over 3,000. A famous Manchester firm, M'Connel and Kennedy, began with about 1,700 pounds. Most scholars agree that owners paid for these mainly from their own funds, and from profits put back into the firm."
+    },
+    {
+     "type": "p",
+     "text": "Did the state's huge borrowing help the factories or hurt them? Historians disagree. One view is that it hurt. When the state borrowed so much, banks had less left to lend to others, and from 1714 the law let no lender charge more than 5%. The other view is that it helped. Safe government bonds drew the money of rich landowners away from poor farm projects, and left room for new industry."
     },
     {
      "type": "p",
@@ -13430,13 +13434,13 @@
       ],
       [
        "Japan is reported to have borrowed 1 million pounds in London in 1870, at 9% interest, for its first railway. The line from Tokyo to Yokohama opened in 1872. Repayment is not checked here",
-       "Indiana issued over 10 million dollars of bonds for canals, a railway and roads, but got only about 5.5 million in cash. About 3 million went on credit to a bank that failed in 1839, and work stopped"
+       "Indiana issued over 10 million dollars of bonds for canals, a railway and roads, but received only about half of that in cash. Part had been sold on credit to a bank that failed in 1839, and work stopped"
       ]
      ]
     },
     {
      "type": "p",
-     "text": "So in these cases a promise worked when something real was pledged behind it. A tax, a canal that earns tolls, a railway that sells tickets. A promise with nothing behind it often failed. Every state that refused to pay had also borrowed to fund banks. A few cases show a pattern, not a law."
+     "text": "So in these cases a promise worked when something real was pledged behind it. A tax, a canal that earns tolls, a railway that sells tickets. A promise with nothing behind it often failed. A few cases show a pattern, not a law."
     },
     {
      "type": "p",
@@ -13465,7 +13469,7 @@
      "cols": [
       "England",
       "People (millions)",
-      "What a day's pay could buy (an index, Bank of England data set)"
+      "What a day's pay could buy (a higher number is better)"
      ],
      "rows": [
       [
@@ -13492,7 +13496,7 @@
     },
     {
      "type": "p",
-     "text": "The plague killed so many that workers became scarce. On this index, what a day's pay could buy doubled within a few years. John Munro finds a slower rise, over a generation, because prices rose too. Either way, survivors lived better for a century. Then the people came back. By 1650 there were almost three times as many mouths as in 1450, and a day's pay bought about the same as before the plague. The gain had been eaten. This is the trap that Thomas Malthus described in 1798."
+     "text": "The plague killed so many that workers became scarce. On this index, what a day's pay could buy doubled within a few years. Some historians find a slower rise, over a generation. Either way, survivors lived better for a century. Then the people came back. By 1650 there were almost three times as many mouths as in 1450, and a day's pay bought about the same as before the plague. The gain had been eaten. This is the trap that Thomas Malthus described in 1798."
     },
     {
      "type": "p",
@@ -13529,50 +13533,11 @@
     },
     {
      "type": "p",
-     "text": "And yet the loop was not perfectly closed, even in England. Output per person tells a softer story. It stayed roughly flat from 1400 to 1600 while a day's pay fell, then dipped in the civil war. Then, from 1650 to 1700, output per person jumped."
-    },
-    {
-     "type": "table",
-     "cols": [
-      "England, then Great Britain from 1700",
-      "Output per person, Maddison data set (2011 dollars)",
-      "Output per person, Broadberry and others (1990 dollars)"
-     ],
-     "rows": [
-      [
-       "1500",
-       "1,697",
-       "1,114"
-      ],
-      [
-       "1600",
-       "1,691",
-       "1,123"
-      ],
-      [
-       "1650",
-       "1,446",
-       "1,110"
-      ],
-      [
-       "1700",
-       "2,412",
-       "1,563"
-      ],
-      [
-       "1800",
-       "3,343",
-       "2,080"
-      ]
-     ]
+     "text": "And yet the loop was not perfectly closed, even in England. A day's pay is one measure. Everything the country made, shared out per person, is another, and it tells a softer story. It stayed roughly flat from 1500 to 1600 while a day's pay fell, and it dipped in the civil war. Then it began to rise. By 1800 it was nearly double its level of 1600, on two different data sets. The real break came later still. By 1850 there were three times as many people as in 1700, and a day's pay bought about twice what it had in 1650. More people and better pay at the same time: the loop was broken."
     },
     {
      "type": "p",
-     "text": "Read each column on its own, since the dollars differ. Both show output flat or falling up to 1650, then rising. But the jump to 1700 is about two thirds in one and two fifths in the other. Part of it is only because 1650 was a low year after civil war, and because the number of people had stopped growing. The real break came later. By 1850 there were three times as many people as in 1700, and a day's pay bought about twice what it had in 1650."
-    },
-    {
-     "type": "p",
-     "text": "What broke the loop? Scholars have argued for two hundred years, and each has part of the evidence."
+     "text": "What broke the loop? Scholars have argued for two hundred years, and each has part of the evidence. Here are six of the main answers. Do not try to learn the list. Just notice how many different causes are named. A box at the end gives four more, with the critics of each."
     },
     {
      "type": "table",
@@ -13585,22 +13550,17 @@
       [
        "People",
        "Thomas Malthus, Gregory Clark",
-       "More food meant more people until the land could feed no more. Clark adds that the habits of the better off, such as saving, spread through their many children. Wrigley calls his evidence slim"
-      ],
-      [
-       "Marriage",
-       "John Hajnal, E. A. Wrigley",
-       "People in north-west Europe married late, or not at all, in hard times, so the loop turned more slowly"
+       "More food meant more people, until the land could feed no more. Something had to break that link"
       ],
       [
        "Rules",
        "Douglass North and Barry Weingast",
-       "After 1688 the king could no longer seize property or cancel his debts at will, so lenders trusted the state. Critics answer that interest rates stayed high for about forty years"
+       "After 1688 the king could no longer seize property or cancel his debts at will, so people dared to lend and invest"
       ],
       [
        "Prices",
        "Robert Allen",
-       "English wages were high and coal was cheap, so it paid to invent machines that saved workers and burned coal. Jane Humphries answers that the first mills used cheap child and female labour"
+       "English wages were high and coal was cheap, so it paid to invent machines that saved workers and burned coal"
       ],
       [
        "Knowledge",
@@ -13610,33 +13570,18 @@
       [
        "The state",
        "John Brewer, Mark Dincecco",
-       "A state that could tax and borrow could keep order and fight. Critics answer that China, India and the Ottoman lands kept order too"
+       "A state that could tax and borrow could keep order and fight"
       ],
       [
-       "Money",
-       "Nuno Palma",
-       "More silver coin drew people into markets and made taxes easier to collect. Critics answer that Spain, which got the silver first, fell behind"
-      ],
-      [
-       "Finance",
-       "Peter Rousseau and Richard Sylla",
-       "Banks and markets helped to start growth in several countries. Critics answer that English law held private credit down"
-      ],
-      [
-       "Coal and colonies",
-       "Kenneth Pomeranz",
-       "Cheap coal and land overseas freed Britain from limits that held back the richest parts of China"
-      ],
-      [
-       "Atlantic trade",
-       "Daron Acemoglu, Simon Johnson, James Robinson",
-       "Profits from Atlantic trade made merchants strong enough to limit kings"
+       "Money and finance",
+       "Nuno Palma, Peter Rousseau and Richard Sylla",
+       "More silver coin drew people into markets, and banks helped to start growth. Critics answer that Spain got the silver first and fell behind, and that English law held private credit down"
       ]
      ]
     },
     {
      "type": "p",
-     "text": "Read down that list. Money and credit lead in two rows, and both have strong critics. Credit also sits inside the rules and state rows. But read it again and the reader's larger point survives. Nearly every scholar names a different link, and some look outside Britain. The reader argues that each link leaned on the others. A state needs taxes, taxes need trade, trade needs safe roads and coins, machines need knowledge, knowledge needs books. This chapter does not prove that each link needed all the others. That part is still to be tested."
+     "text": "Read down that list. Money and credit lead in one row of six, and that row has strong critics. Credit also matters inside the rules row and the state row, because lenders need to trust the state. But read it again and the reader's larger point survives. Nearly every scholar names a different link. The reader argues that each link leaned on the others. A state needs taxes, taxes need trade, trade needs safe roads and coins, machines need knowledge, knowledge needs books. This chapter does not prove that each link needed all the others. That part is still to be tested."
     },
     {
      "type": "p",
@@ -13644,7 +13589,7 @@
     },
     {
      "type": "insider",
-     "text": "Part 4 holds as a description. Loops were real, in wages and in whole countries. What broke the loop in England is still argued. The leading accounts point to people, rules, prices, knowledge, the state, and coal and colonies. Two give money or credit a leading part, and both are disputed. Most treat money as a helper, not the missing piece.",
+     "text": "Part 4 holds as a description. Loops were real, in wages and in whole countries. What broke the loop in England is still argued. The leading accounts point to people, rules, prices, knowledge, the state, and coal and colonies. A few give money or credit a leading part, and they are disputed. Most treat money as a helper, not the missing piece.",
      "label": "What test 4 does to the claim"
     },
     {
@@ -13653,11 +13598,11 @@
     },
     {
      "type": "p",
-     "text": "This chapter's numbers come mostly from Europe, where the long data series are best. That limits the verdict. The historian Anthony Reid calls the years from about 1450 to 1680 Southeast Asia's age of commerce, when Melaka was one of the world's great ports. He links its end to a crisis in the 1600s and to Dutch power, though others question that story. China took in huge amounts of Japanese and American silver from about 1550, and the historian Richard von Glahn links this to a fast boom in late Ming trade. There, more money came with more trade."
+     "text": "This chapter's numbers come mostly from Europe, where the long data series are best. That limits the verdict. It fits Europe best. The historian Anthony Reid calls the years from about 1450 to 1680 Southeast Asia's age of commerce, when Melaka was one of the world's great ports. He links its end to a crisis in the 1600s and to Dutch power, though others question that story. China took in huge amounts of Japanese and American silver from about 1550, and the historian Richard von Glahn links this to a fast boom in late Ming trade. There, more money came with more trade."
     },
     {
      "type": "p",
-     "text": "India was the world's great maker of cotton cloth. On one estimate its output per person fell by about a fifth from 1600 to 1850. The historian Prasannan Parthasarathi argues that its industry fell back after about 1780, as the East India Company took control and Britain protected its own mills against Indian cloth. Many leading historians doubt that this was the main cause. Whether colonial rule, or the profits of slavery, shaped who grew rich is a large open question that this chapter has not weighed."
+     "text": "India was the world's great maker of cotton cloth. On one estimate its output per person fell by about a fifth from 1600 to 1850. The historian Prasannan Parthasarathi argues that its industry fell back after about 1780, as the East India Company took control and Britain protected its own mills against Indian cloth. Many leading historians doubt that this was the main cause. Whether colonial rule, or the profits of slavery, shaped who grew rich is a large open question. This chapter has not weighed it. So for Asia the fair answer is: more money did come with more trade in some places, and why the take-off came elsewhere is not settled here."
     },
     {
      "type": "h",
@@ -13714,6 +13659,117 @@
      "type": "insider",
      "text": "This view would change if any of three things were shown. First, that the early leaders stalled because money or credit ran short, and not for other reasons. Second, that Britain's first factories depended on bank credit after all. Third, that countries with deeper credit markets before 1800 grew faster than their neighbours. Holland's record so far is mixed.",
      "label": "What would change this verdict"
+    },
+    {
+     "type": "deeper",
+     "label": "The full list of explanations, with the critics of each",
+     "blocks": [
+      {
+       "type": "table",
+       "cols": [
+        "The explanation",
+        "Who",
+        "In one line"
+       ],
+       "rows": [
+        [
+         "People",
+         "Thomas Malthus, Gregory Clark",
+         "More food meant more people until the land could feed no more. Clark adds that the habits of the better off, such as saving, spread through their many children. Wrigley calls his evidence slim"
+        ],
+        [
+         "Marriage",
+         "John Hajnal, E. A. Wrigley",
+         "People in north-west Europe married late, or not at all, in hard times, so the loop turned more slowly"
+        ],
+        [
+         "Rules",
+         "Douglass North and Barry Weingast",
+         "After 1688 the king could no longer seize property or cancel his debts at will, so lenders trusted the state. Critics answer that interest rates stayed high for about forty years"
+        ],
+        [
+         "Prices",
+         "Robert Allen",
+         "English wages were high and coal was cheap, so it paid to invent machines that saved workers and burned coal. Jane Humphries answers that the first mills used cheap child and female labour"
+        ],
+        [
+         "Knowledge",
+         "Joel Mokyr",
+         "A culture grew up that treated useful knowledge as something to be shared, tested and improved"
+        ],
+        [
+         "The state",
+         "John Brewer, Mark Dincecco",
+         "A state that could tax and borrow could keep order and fight. Critics answer that China, India and the Ottoman lands kept order too"
+        ],
+        [
+         "Money",
+         "Nuno Palma",
+         "More silver coin drew people into markets and made taxes easier to collect. Critics answer that Spain, which got the silver first, fell behind"
+        ],
+        [
+         "Finance",
+         "Peter Rousseau and Richard Sylla",
+         "Banks and markets helped to start growth in several countries. Critics answer that English law held private credit down"
+        ],
+        [
+         "Coal and colonies",
+         "Kenneth Pomeranz",
+         "Cheap coal and land overseas freed Britain from limits that held back the richest parts of China"
+        ],
+        [
+         "Atlantic trade",
+         "Daron Acemoglu, Simon Johnson, James Robinson",
+         "Profits from Atlantic trade made merchants strong enough to limit kings"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "type": "deeper",
+     "label": "England's output per person on two data sets",
+     "blocks": [
+      {
+       "type": "table",
+       "cols": [
+        "England, then Great Britain from 1700",
+        "Output per person, Maddison data set (2011 dollars)",
+        "Output per person, Broadberry and others (1990 dollars)"
+       ],
+       "rows": [
+        [
+         "1500",
+         "1,697",
+         "1,114"
+        ],
+        [
+         "1600",
+         "1,691",
+         "1,123"
+        ],
+        [
+         "1650",
+         "1,446",
+         "1,110"
+        ],
+        [
+         "1700",
+         "2,412",
+         "1,563"
+        ],
+        [
+         "1800",
+         "3,343",
+         "2,080"
+        ]
+       ]
+      },
+      {
+       "type": "p",
+       "text": "Read each column on its own, since the dollars differ. Both show output flat or falling up to 1650, then rising. The jump to 1700 is about two thirds in one and two fifths in the other. Part of it is only because 1650 was a low year after civil war, and because the number of people had stopped growing. The series also changes from England to Great Britain in 1700."
+      }
+     ]
     },
     {
      "type": "deeper",
