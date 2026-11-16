@@ -235,3 +235,105 @@ Source: Bank Negara Malaysia, "Significant milestones in the Malaysian foreign e
 FRED monthly average ringgit per US dollar (https://fred.stlouisfed.org/series/EXMAUS, computed annual averages, python3 -I): 3.03 (1971), 2.45 (1973), 2.18 (1980), 2.71 (1990), 2.82 (1997), 3.93 (1998), 3.80 (2000), 3.79 (2005), 3.22 (2010), 4.20 (2020), 4.28 (2025). So the ringgit has lost about 29 percent against the dollar since 1971 (3.03 to 4.28) and lost nearly half of its dollar value in the 1997 to 1998 crisis (2.82 to 4.2 at the trough, not shown in the annual means above).
 Observation for H4 and H2: a country like Malaysia lived through the gold-sterling link, the dollar link, a float, a basket, a hard peg with capital controls, and a managed float. Its growth per person (section 4) was high through all of these, so the regime label alone explains little.
 
+## 8. Research and development, and venture capital (H4, rough check on the "technology" claim)
+
+Source: NSF National Center for Science and Engineering Statistics, "U.S. R&D-to-GDP Ratio Reached 3.43% in 2022, Driven by Experimental Development", https://ncses.nsf.gov/pubs/nsf25335 . Opened. Status verified.
+
+| year | US total R&D as percent of GDP |
+|---|---|
+| 1953 | 1.33 |
+| 1964 | 2.79 (earlier peak) |
+| 1967 | 2.71 |
+| 1978 | 2.07 (lowest in the table, 1959 to 2023) |
+| 2000 | 2.61 |
+| 2009 | 2.78 |
+| 2010 | 2.70 |
+| 2019 | 3.09 |
+| 2020 | 3.36 |
+| 2022 | 3.43 (highest) |
+| 2023 | 3.39 (estimate) |
+
+An older NSF brief (1999 vintage) put the 1964 peak at 2.87 percent, so levels are revised between editions. Use the 2025 edition numbers.
+Reading for H4: US R&D intensity peaked in 1964, in the gold link era, fell to a low in 1978 (just after 1971), and only passed the 1964 peak in the late 2010s. The rise from 2.07 to 3.43 percent over 1978 to 2022 is real but 1971 itself did not cause an immediate rise. So the data do not show that the post-1971 monetary system sped up research spending. Much of the 1960s spending was federal (space and defence), the later rise is largely business funded, but I did not pull the funder split (gap).
+
+Venture capital (status secondary, search summaries only, not opened as primary): the US VC industry was small in the 1970s (no more than about 30 firms of substance by mid-1970s). Funds raised about 750 million dollars in 1978 (one source) and the Poterba NBER paper gives net commitments in 1987 dollars of about 380 million a year in 1976 to 1978, 1.01 billion in 1979 to 1981, 3.93 billion in 1982 to 1984. The rise followed the 1978 cut of the top capital gains rate from 49.5 to 28 percent and the 1978 to 1979 Labor Department clarification of pension "prudent man" rules, which are tax and regulatory changes, not changes to money. No clean long series was opened. I make no claim from this.
+
+## Evidence for and against H1 and H4
+
+H1 (before 1971, credit rested on something limited because money was tied to scarce gold)
+
+For H1:
+- Gold cover was a legal limit on the Federal Reserve until 1968. In February 1968 the Fed chairman told Congress the US had $12 billion of gold, $10.7 billion of it needed as 25 percent cover, leaving $1.3 billion of free gold and about two years before the limit bound (hearing, FRASER).
+- Foreign claims on the US passed the gold stock: all foreign liquid claims by about 1960 and official claims by about 1964 to 1965 (Treasury, Bordo and McCauley). By June 1971 official claims were 2.9 times the gold stock. A fixed gold price with growing claims was a real constraint on the US.
+- Bank credit to GDP in 1970 (18 country mean 53.4) was still below its 1913 level (58.1), and then roughly doubled by 2007 (110.9). Total world debt to GDP rose from about 100 percent (1950s and 1960s) to 235 percent (2024). Credit was higher after 1971.
+- The two-tier gold market (March 1968) and the London Gold Pool (1961 to 1968) show governments spent heavily to hold the gold price.
+
+Against H1:
+- The gold cover rule was waived or repealed whenever it pinched, in 1945, 1965 and 1968. It limited the promise of convertibility to foreigners, not domestic credit.
+- Real bank loan growth was fastest in 1950 to 1970 (9.0 percent a year, 18 country mean), faster than after 1971 (5.8, then 3.3). The ratio was low because it started low after the war.
+- Even in the classical gold standard, gold coin was about 5 to 9 percent of British broad money (1914 estimate) and the Bank of England held under 5 percent gold against its liabilities. Credit was mostly bank money resting on trust and central bank action, so "scarce gold" was a loose cap.
+- Bordo and McCauley: the 1960s US gold position was no worse than Britain in 1900, and better US policies could have saved Bretton Woods. The end was a policy and politics choice, not a physical shortage of gold.
+- US private debt to GDP was flat at about 145 percent from 1960 to 1971 and US government debt to GDP fell from 83 to 46 percent (1950 to 1970), so the US was not leveraging fast under gold.
+
+H4 (the post-1971 world's purpose is to let productivity and technology advance)
+
+For H4:
+- Late developers grew fast after 1973: Korea 7.9 percent a year (1973 to 1990), China 6.2 (1990 to 2019), India 4.4, Malaysia about 4 (Maddison 2023).
+- US R&D to GDP rose from 2.07 percent (1978) to 3.43 (2022). World trade to world GDP rose from 25.8 percent (1970) to a peak of about 60 (2008).
+- World GDP per person growth recovered from 1.3 (1973 to 1990) to 2.3 (1990 to 2019) as China and India grew.
+
+Against H4:
+- Rich countries grew most under Bretton Woods (19 economy average 3.7 percent a year, 1950 to 1973) and slower after (2.2 then 1.5). Catch-up after the war explains much of this, so the data neither prove nor disprove causes.
+- Crisis frequency since 1973 is higher than under the gold standard or Bretton Woods: 10.7 against 7.9 and 6.4 percent of country years (BEKM alternative count), or double on the headline count (12.2 against about 5 to 6). Currency crises account for most of the rise.
+- Inflation: about 0 to 0.5 percent a year before 1913, 2.5 to 3.8 under Bretton Woods, 7.5 to 10 in 1971 to 1982, about 2.7 since 1983. High inflation for a decade followed 1971.
+- World growth fell in 1973 to 1990 and total debt to GDP rose much faster than output after 1971.
+- US R&D intensity peaked in 1964, hit a low in 1978, and VC grew because of 1978 tax and pension rule changes. Nothing here shows the monetary regime caused the technology gains.
+- Korea, China and Malaysia grew under controls and managed rates (Malaysia fixed the ringgit at 3.80 with capital controls in 1998), not a free floating system.
+
+## Gaps
+- 1949 foreign official dollar claims not found (Treasury table starts 1958). 
+- US gold coin and certificate share of the money stock c.1900 (Friedman and Schwartz) not found. Only the British 1914 estimate.
+- The 1945 reduction in the gold reserve ratio (from 40 and 35 percent to 25 percent) and the exact 1965 and 1968 statute text were not opened. Dates come from a hearing and search summaries.
+- Gold annual averages for 1971, 1980 and 2000 and the latest price are from secondary sites, not LBMA directly. The "latest" will change.
+- BEKM exact counts of crises by era (numbers, not percentages) and the 1945 to 1971 headline percentage were not found. I give the alternative count only.
+- Inflation 1880 to 1913 for the US alone is JST (rated verified data) not BLS. 2021 to 2025 US World Bank data for 2025 not posted. World Bank API was blocked, so I read it through FRED.
+- Maddison "world" and "advanced" figures are my aggregation of country data, not a published Maddison world series.
+- IMF debt table was read from an image, advanced and emerging columns need an eye check. No global debt before 1950. Debt ratios from different vintages differ.
+- R&D funder split (federal against business) and a clean long equity issuance or venture series not obtained.
+- Malaysia inflation by decade from the World Bank only for 1960 onwards. Not cross-checked with Bank Negara. Malaysia GDP per person growth is Maddison only (World Bank not checked).
+- No first-hand human accounts collected, this lane was data only.
+
+## Ledger
+
+| id | claim | tier | status | source URL | source date | as-of date | falsifier |
+|---|---|---|---|---|---|---|---|
+| R14A-01 | US gold stock was $24,563 million at end 1949, $17,804 million 1960, $10,892 million 1968, $10,206 million 1971 | T1 | confirmed | https://fraser.stlouisfed.org/docs/publications/ERP/1972/ERP_1972.pdf | 1972 | end 1949, 1960, 1968, 1971 | A later Treasury or Fed series with different stock values |
+| R14A-02 | Foreign official liquid claims on the US were $10.5bn (June 1960), $14.2bn (1964), $14.1bn (1967), $12.1bn (1968), $30.8bn (June 1971) | T1 | confirmed | https://fraser.stlouisfed.org/files/docs/publications/treasar/AR_TREASURY_1971_2.pdf | 1971 | fiscal years to June 1971 | A revised Treasury series that reclassifies the 1968 dip |
+| R14A-03 | All foreign liquid claims passed the US gold stock about 1958 to 1960 and official claims about 1964 to 1965 | T2 | confirmed | https://www.nber.org/papers/w24195 | 2017 | 1958 to 1971 | A series showing official claims below gold until after 1967 |
+| R14A-04 | By June 1971 official claims were about 2.9 times the gold stock | T1 | confirmed | https://fraser.stlouisfed.org/files/docs/publications/treasar/AR_TREASURY_1971_2.pdf | 1971 | June 1971 | Different June 1971 values for either series |
+| R14A-05 | The Fed had to hold 25 percent gold certificate cover on Federal Reserve notes until the March 1968 repeal, with free gold of $1.3bn in early 1968 | T1 | confirmed | https://fraser.stlouisfed.org/title/removal-gold-cover-1015/fulltext | 1968 | Feb 1968 | A statute showing the cover removed earlier or a different free gold figure |
+| R14A-06 | Public Law 90-269 of 18 March 1968 eliminated the note reserve requirement, and Public Law 89-3 of 1965 removed the deposit requirement | T2 | plausible | https://www.govinfo.gov/link/statute/82/50 | 1968 | 1965 and 1968 | The statute text giving other dates |
+| R14A-07 | The cover was loosened in 1945 (to 25 percent) | T3 | unverified | https://fraser.stlouisfed.org/title/removal-gold-cover-1015/fulltext | 1968 | 1945 | The 1945 Act showing a different ratio |
+| R14A-08 | The London Gold Pool ran from 1 Nov 1961 to March 1968, followed by a two-tier market until Aug 1971 | T2 | confirmed | https://www.federalreservehistory.org/essays/gold-convertibility-ends | 2013 | 1961 to 1971 | Archival Fed or BIS records with different dates |
+| R14A-09 | Gold Pool lost $3bn Dec 1967 to Mar 1968, US share $2.2bn | T3 | confirmed | https://www.nber.org/chapters/c6867.pdf | 1993 | Dec 1967 to Mar 1968 | Solomon (1976) or Fed minutes with other totals |
+| R14A-10 | US bank loans to GDP: 24.0 (1950), 37.9 (1960), 47.7 (1970), 53.4 (1980), 50.4 (2000), 69.5 (2020) percent | T1 | confirmed | https://www.macrohistory.net/database/ | 2022 | 1950 to 2020 | A later JST release that revises tloans or gdp |
+| R14A-11 | 18 country mean bank loans to GDP was 58.1 (1913), 53.4 (1970), 78.8 (1990), 110.9 (2007) | T1 | confirmed | https://www.macrohistory.net/database/ | 2022 | 1913 to 2007 | A different country set or release |
+| R14A-12 | Real bank loan growth averaged 5.5 (1880 to 1913), 9.0 (1950 to 1970), 5.8 (1971 to 1990), 3.3 (1991 to 2019) percent a year | T3 | confirmed | https://www.macrohistory.net/database/ | 2022 | 1880 to 2019 | Weighted rather than simple means giving a different ordering |
+| R14A-13 | British gold coin was about 123m pounds in mid 1914 against bank deposits of 1,322m, roughly 5 to 9 percent of broad money | T2 | plausible | https://api.parliament.uk/historic-hansard/written_answers/1920/mar/04/gold-production-wholesale-prices | 1920 | mid 1914 | A better estimate of coin or a different deposit definition |
+| R14A-14 | The Bank of England held under 5 percent gold against liabilities and 3.4 percent of official world gold in 1913 | T3 | plausible | https://www.nber.org/papers/w24195 | 2017 | 1900 to 1913 | Hardy (1936) or Sayers giving other ratios |
+| R14A-15 | Crisis frequency, alternative count: 6.4 (1880 to 1913), 13.4 (1919 to 1939), 7.9 (1945 to 1971), 10.7 (1973 to 1997) percent of country years | T3 | confirmed | https://typeset.io/pdf/is-the-crisis-problem-growing-more-severe-52qyneo06w.pdf | 2001 | 1880 to 1997 | Replication with other crisis dating, or the published Economic Policy version |
+| R14A-16 | Headline crisis frequency post 1972 is 12.2 percent (56 countries) against 4.9 percent for 1880 to 1913 | T3 | confirmed | https://typeset.io/pdf/is-the-crisis-problem-growing-more-severe-52qyneo06w.pdf | 2001 | 1972 to 1998 | The 21 country figure of 8.8 percent is the like for like check |
+| R14A-17 | No systemic banking crisis flagged in the 18 JST economies between 1945 and 1971 | T1 | confirmed | https://www.macrohistory.net/database/ | 2022 | 1945 to 1971 | JST later adding crises to the list |
+| R14A-18 | US CPI inflation averaged 2.5 percent a year 1949 to 1970, 7.8 percent 1970 to 1982, 2.7 percent 1982 to 2019, 3.9 percent 2019 to 2025 | T1 | confirmed | https://fred.stlouisfed.org/series/CPIAUCNS | 2026 | Oct 2026 | A BLS rebasing or use of CPI-U SA instead |
+| R14A-19 | 18 country mean inflation: 0.49 (1880 to 1913), 3.77 (1950 to 1970), 10.37 (1971 to 1982), 2.69 (1983 to 2019) percent | T1 | confirmed | https://www.macrohistory.net/database/ | 2022 | 1880 to 2019 | Median or weighted measure with a different ordering |
+| R14A-20 | OECD inflation averaged 3.6 (1960s), 11.0 (1971 to 1982), 3.4 (1983 to 2019), 3.8 (2020 to 2025) percent, and world inflation 4.2 (2020 to 2025) | T2 | confirmed | https://fred.stlouisfed.org/series/FPCPITOTLZGOED | 2026 | 2025 | World Bank revisions |
+| R14A-21 | Real GDP per person growth 1950 to 1973, 1973 to 1990, 1990 to 2019: US 2.45, 1.96, 1.47 and Korea 6.01, 7.88, 3.62 and Malaysia 2.18, 4.17, 4.07 and China 2.81, 4.07, 6.16 and India 1.40, 2.55, 4.41 percent | T1 | confirmed | https://dataverse.nl/api/access/datafile/421302 | 2023 | 2019 | Maddison 2020 or World Bank PPP series giving other rates |
+| R14A-22 | World GDP per person (population weighted) grew 3.0 (1950 to 1973), 1.3 (1973 to 1990), 2.3 (1990 to 2019) percent a year and 19 advanced economies 3.7, 2.2, 1.5 | T3 | plausible | https://dataverse.nl/api/access/datafile/421302 | 2023 | 2019 | Published Maddison regional aggregates or a different country mix |
+| R14A-23 | The ringgit timeline: sterling link June 1967, USD intervention 24 June 1972, float 21 June 1973, basket 27 Sept 1975, RM3.80 peg 1 to 2 Sept 1998, managed float 21 July 2005 | T2 | confirmed | https://www.bnm.gov.my/significant-milestones-in-the-malaysian-foreign-exchange-market | 2024 | 2005 | A BNM annual report with other dates |
+| R14A-24 | Malaysia inflation averaged 0.9 (1960s), 6.3 (1971 to 1982), 2.6 (1983 to 2019), 1.7 (2020 to 2025) percent, and GDP per person grew 5.8 (1970s), 3.5 (1980s), 5.1 (1990s), 3.3 (2000s) | T2 | plausible | https://fred.stlouisfed.org/series/FPCPITOTLZGMYS | 2026 | 2025 | Department of Statistics Malaysia series |
+| R14A-25 | World trade rose from 25.8 percent of world GDP (1970) to 56.7 percent (2024), peak 62.1 in 2022 | T2 | confirmed | https://ourworldindata.org/grapher/trade-as-share-of-gdp | 2025 | 2024 | World Bank revision |
+| R14A-26 | World total debt to GDP: 96.9 (1950s), 107.0 (1968), 115.7 (1970s), 258.3 (2020 peak), 235.5 (2024) percent | T2 | confirmed | https://www.imf.org/external/datamapper/GDD/2025%20Global%20Debt%20Monitor.pdf | 2025 | 2024 | A later GDD vintage |
+| R14A-27 | US private debt to GDP was flat at about 145 to 160 percent between 1960 and 1980 and US government debt fell from 83 to 46 percent (1950 to 1970) | T2 | confirmed | https://www.imf.org/external/datamapper/api/v1/GG_DEBT_GDP | 2025 | 2024 | A later GDD vintage |
+| R14A-28 | Gold: $35 official, record about $5,590 on 28 Jan 2026, about $3,883 on 16 Nov 2026, $850 peak 21 Jan 1980, 2000 average about $279 | T3 | plausible | https://metalcharts.org/gold-all-time-high | 2026 | 16 Nov 2026 | LBMA price history |
+| R14A-29 | US R&D to GDP: 2.79 percent (1964), 2.07 (1978), 2.61 (2000), 3.43 (2022) | T2 | confirmed | https://ncses.nsf.gov/pubs/nsf25335 | 2025 | 2022 | A later NSF revision of the series |
+| R14A-30 | US venture capital funds raised about $750m in 1978 after the 1978 capital gains cut | T3 | unverified | https://www.richmondfed.org/publications/research/econ_focus/2019/q4/book_review | 2019 | 1978 | NVCA Yearbook table |
