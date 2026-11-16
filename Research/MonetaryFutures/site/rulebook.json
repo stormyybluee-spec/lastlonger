@@ -13240,11 +13240,11 @@
     },
     {
      "type": "p",
-     "text": "Then King drew a line across his table. Above it were the families who added to the wealth of the kingdom. Below it were 849,000 families who, in his words, were \"decreasing the wealth of the kingdom\". By King's count they used up more than they earned. Poor relief, charity and odd jobs filled the gap, and the group also held seamen and soldiers. Still, about three in five families had nothing left over each year."
+     "text": "Then King drew a line across his table. Above it were the families who added to the wealth of the kingdom. Below it were 849,000 families who, in his words, were \"decreasing the wealth of the kingdom\". The 400,000 poorest families were among them. By King's count they used up more than they earned. Poor relief, charity and odd jobs filled the gap, and the group also held seamen and soldiers. Still, about three in five families had nothing left over each year."
     },
     {
      "type": "p",
-     "text": "In France, two famines between 1693 and 1710 killed over two million people, by one careful study. In the world as a whole in 1800, an estimated 43 of every 100 children died before they were five. In Britain it was about 33."
+     "text": "In France, two famines between 1693 and 1710 killed over two million people, by one careful study. In the world as a whole in 1800, an estimated 43 of every 100 children died before they were five. In Britain it was about 33. Even in the richer country, one child in three died."
     },
     {
      "type": "p",
@@ -13279,7 +13279,7 @@
       [
        "China, from 1023",
        "State paper money, centuries before Europe",
-       "In 1090 China was richer per person than England, by one estimate. It later fell far behind. Its paper money worked for long stretches. Then people stopped trusting it when the Mongol rulers fell in the 1360s"
+       "In 1090 China was richer per person than England, by one estimate. It later fell far behind. Its paper money worked for long stretches. People stopped trusting it in the 1360s, when the Mongol rulers fell"
       ],
       [
        "Holland, 1600s",
@@ -13415,7 +13415,7 @@
     },
     {
      "type": "p",
-     "text": "Did the state's huge borrowing help the factories or hurt them? Historians disagree. One view is that it hurt. When the state borrowed so much, banks had less left to lend to others, and from 1714 the law let no lender charge more than 5%. The other view is that it helped. Safe government bonds drew the money of rich landowners away from poor farm projects, and left room for new industry."
+     "text": "Did the state's huge borrowing help the factories or hurt them? Historians disagree. One view is that it hurt. The state borrowed so much that banks had less left to lend to others, and from 1714 the law let no lender charge more than 5%. The other view is that it helped. Safe government bonds drew the money of rich landowners away from poor farm projects, and left room for new industry."
     },
     {
      "type": "p",
@@ -13423,7 +13423,7 @@
     },
     {
      "type": "p",
-     "text": "The big networks did borrow, and here the record is mixed. Two stories from America show both sides. Canals and railways were far bigger, too big for most families alone."
+     "text": "The big networks did borrow, and here the record is mixed. Canals and railways were far bigger, too big for most families alone. Two stories from America show both sides."
     },
     {
      "type": "p",
@@ -13464,7 +13464,7 @@
      "cols": [
       "England",
       "People (millions)",
-      "What a day's pay could buy (a higher number is better)"
+      "What a day's pay could buy (an index, so compare the rows, and a higher number is better)"
      ],
      "rows": [
       [
@@ -13491,7 +13491,7 @@
     },
     {
      "type": "p",
-     "text": "The plague killed so many that workers became scarce. On this index, what a day's pay could buy doubled within a few years. Some historians find a slower rise, over a generation. Either way, survivors lived better for a century. Then the people came back. By 1650 there were almost three times as many mouths as in 1450, and a day's pay bought about the same as before the plague. The gain was gone. This is the trap that Thomas Malthus described in 1798."
+     "text": "The plague killed so many that workers became scarce. On this index, what a day's pay could buy doubled within a few years. Some historians find a slower rise, over a generation. Either way, survivors lived better for a century. Then the people came back. By 1650 there were almost three times as many mouths as in 1450, and a day's pay bought about the same as before the plague. The gain was gone. Thomas Malthus described this trap in 1798. More food led to more people, and then food ran short again."
     },
     {
      "type": "p",
@@ -13532,51 +13532,44 @@
     },
     {
      "type": "p",
-     "text": "What broke the loop? Scholars have argued for two hundred years, and each has part of the evidence. Here are six of the main answers. Do not try to learn the list. Just notice how many different causes are named. A box at the end gives four more, with the critics of each."
+     "text": "What broke the loop? Scholars have argued for two hundred years, and each has part of the evidence. Here are six of the main answers. Just notice how many different causes are named. A box at the end gives four more, with the names of the scholars behind each one."
     },
     {
      "type": "table",
      "cols": [
-      "The explanation",
-      "Who",
+      "The cause",
       "In one line"
      ],
      "rows": [
       [
        "People",
-       "Thomas Malthus, Gregory Clark",
        "More food meant more people, until the land could feed no more. Something had to break that link"
       ],
       [
        "Rules",
-       "Douglass North and Barry Weingast",
        "After 1688 the king could no longer seize property or cancel his debts at will, so people dared to lend and invest"
       ],
       [
        "Prices",
-       "Robert Allen",
        "English wages were high and coal was cheap, so it paid to invent machines that saved workers and burned coal"
       ],
       [
        "Knowledge",
-       "Joel Mokyr",
        "A culture grew up that treated useful knowledge as something to be shared, tested and improved"
       ],
       [
        "The state",
-       "John Brewer, Mark Dincecco",
        "A state that could tax and borrow could keep order and fight"
       ],
       [
        "Money and finance",
-       "Nuno Palma, Peter Rousseau and Richard Sylla",
        "More silver coin drew people into markets, and banks helped to start growth. Critics answer that Spain got the silver first and fell behind, and that English law held private credit down"
       ]
      ]
     },
     {
      "type": "p",
-     "text": "Read down that list. Six different causes are named. Money and credit lead in only one row, and that row has strong critics. Credit also matters inside the rules row and the state row, because lenders need to trust the state. But read it again and the reader's larger point survives. Nearly every scholar names a different link. The reader argues that each link leaned on the others. A state needs taxes, taxes need trade, trade needs safe roads and coins, machines need knowledge, knowledge needs books. This chapter does not prove that each link needed all the others. That part is still to be tested."
+     "text": "Read down that list. Six different causes are named, and each has scholars behind it. Money and credit lead in only one row, and that row has strong critics. Credit also matters inside the rules row and the state row, because lenders need to trust the state. But read it again and the reader's larger point survives. Nearly every scholar names a different link. The reader argues that each link leaned on the others. A state needs taxes, taxes need trade, trade needs safe roads and coins, machines need knowledge, knowledge needs books. This chapter does not prove that each link needed all the others. That part is still to be tested."
     },
     {
      "type": "p",
@@ -13601,7 +13594,11 @@
     },
     {
      "type": "p",
-     "text": "India was the world's great maker of cotton cloth. On one estimate its output per person fell by about a fifth from 1600 to 1850. The historian Prasannan Parthasarathi argues that its industry fell back after about 1780, as the East India Company took control and Britain protected its own mills against Indian cloth. Many leading historians doubt that this was the main cause. Whether colonial rule, or the profits of slavery, shaped who grew rich is a large open question. This chapter has not weighed it. So for Asia the fair answer is short. More money did come with more trade in some places. Why the take-off came elsewhere is not settled here."
+     "text": "India was the world's great maker of cotton cloth. On one estimate its output per person fell by about a fifth from 1600 to 1850. The historian Prasannan Parthasarathi argues that its industry fell back after about 1780, as the East India Company took control and Britain protected its own mills against Indian cloth. Many leading historians doubt that this was the main cause. Whether colonial rule, or the profits of slavery, shaped who grew rich is a large open question. This chapter has not weighed it."
+    },
+    {
+     "type": "p",
+     "text": "So for Asia the fair answer is short. It is a limit of this chapter, not a finding. More money did come with more trade in some places. Why the take-off came elsewhere is not settled here."
     },
     {
      "type": "h",

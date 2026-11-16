@@ -234,3 +234,68 @@ NEW: This chapter weighs an argument about history and is about the past only.
 12. [37] Make "big push" plainer.
 OLD: Starting many things at once takes money up front.
 NEW: Starting many things at once takes a lot of money before any of it pays back.
+
+
+# Retest 2 (draft R15d), 2026-11-16
+
+## Score table (1 to 10, main path only)
+
+| Part | Reader 1 (Malaysian, ESL) | Reader 2 (American) |
+|---|---|---|
+| (a) four-part claim | 8 | 9 |
+| (b) King's count | 7 | 9 |
+| (c) Spain, England, China, Holland | 7 | 8 |
+| (d) missing links, one number, order surprise | 7 | 8 |
+| (e) who borrowed, when a promise worked | 7 | 8 |
+| (f) the loop, plague, one stalled leader | 7 | 9 |
+| (g) explanations and where money sits | 6 | 8 |
+| (h) Asia and limits | 6 | 8 |
+| (i) verdicts and rebuilt claim | 8 | 9 |
+| Average of nine | 7.0 | 8.4 |
+| Overall (rounded) | 7 | 8 |
+| Pass mark 8 | FAIL | PASS |
+| (j) held attention to the end | 6 | 8 |
+| (k) told story, not a report of numbers | 6 | 7 |
+
+## Strongest and weakest sections
+
+- Reader 1 strongest: "The kingdom, counted" [8]-[11] and the plague story in Test 4 [43]-[45]. Both are concrete and short. Weakest: Test 3 [29]-[40], which stacks bonds, bills, usury limits, big push and Gerschenkron in one run, and the table of named scholars [51].
+- Reader 2 strongest: Test 4 plague and loop [43]-[49], the cleanest told story with a turn at the end. Weakest: Test 3, which is long and moves from war debt to mills to America to theory without a clear thread.
+
+## Fairness
+
+- To the reader who made the claim: both readers think the chapter is fair. It restates the claim in four parts [5], says the idea has serious company [39], and says the claim "survives" in a larger form [52] and may be strongest for later catch-up countries [63].
+- To the doubters: also fair. The scholars named in [51] and [65.0] each get a line and their critics get a line. The chapter says what it did not test [56], [58], [62], [68].
+- No people, faith or region is described unfairly. The Middle East box [68.0] is careful. It separates the faith from the bargain between rulers and religious leaders, and notes Kuran and Rubin are both disputed. Reader 1 may notice the faith is mentioned only in the collapsed box, which is fine. The India paragraph [58] gives both sides.
+- No financial advice. [69] says plainly that it is not advice and nothing reads as a tip.
+
+## Remaining confusions
+
+Reader 1:
+- [9] "849,000 families" after "400,000 families" in [8]. It is unclear if the 400,000 are inside the 849,000.
+- [9] "decreasing the wealth of the kingdom" is odd English. The next sentence helps but a gloss would help more.
+- [30]-[34] "bond", "bill", "interest", "crowding out" come fast. [33] is the hardest paragraph.
+- [39] "big push" and "Gerschenkron" are abstract with no example.
+- [44] "What a day's pay could buy" as an index number (26, 52, 70) is hard to picture.
+- [51] eleven names across six rows. The note says not to learn them, but it still feels heavy.
+- [56] "age of commerce", [58] "colonial rule" and "profits of slavery" are left open with little context.
+- [10] Two numbers (43 and 33) with no comparison sentence.
+
+Reader 2:
+- [14] The China cell is long and the order of events is hard to follow.
+- [35] "Two stories from America" comes before the reason for them.
+- [45] "the trap that Thomas Malthus described" is named but not explained there.
+- [52] The long last paragraph mixes the list result with the reader's chain of needs.
+- [63] "a country catching up in the 1900s" is a hint with no example, though the chapter says later chapters cover it.
+
+## Ranked fixes (9)
+
+1. Block [44]. OLD: `What a day's pay could buy (a higher number is better)` NEW: `What a day's pay could buy (an index, so compare the rows, and a higher number is better)`
+2. Block [45]. OLD: `This is the trap that Thomas Malthus described in 1798.` NEW: `Thomas Malthus described this trap in 1798. More food led to more people, and then food ran short again.`
+3. Block [50]. OLD: `Do not try to learn the list.` NEW: `Do not try to remember the names.`
+4. Block [35]. OLD: `Two stories from America show both sides. Canals and railways were far bigger, too big for most families alone.` NEW: `Canals and railways were far bigger, too big for most families alone. Two stories from America show both sides.`
+5. Block [14], China cell. OLD: `Then people stopped trusting it when the Mongol rulers fell in the 1360s` NEW: `People stopped trusting it in the 1360s, when the Mongol rulers fell`
+6. Block [10]. OLD: `In Britain it was about 33.` NEW: `In Britain it was about 33. Even in the richer country, one child in three died.`
+7. Block [9]. OLD: `By King's count they used up more than they earned.` NEW: `By King's count they used up more than they earned. In plain words, their families were poor and did not add to savings.`
+8. Block [33]. OLD: `One view is that it hurt. When the state borrowed so much, banks had less left to lend to others,` NEW: `One view is that it hurt. The state borrowed so much that banks had less left to lend to others,`
+9. Block [58]. OLD: `So for Asia the fair answer is short.` NEW: `So for Asia the fair answer is short. It is a limit of this chapter, not a finding.`
