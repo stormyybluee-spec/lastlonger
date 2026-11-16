@@ -17,3 +17,6 @@ Order of work: the epilogue first (no new research needed). Then chapter 04 (197
 
 ## Update after Round 14 (2026-11-16)
 Deep chapters are numbered in the order they are published, and the epilogue always stays last. rb-1971 (question 5, what 1971 really changed) is published as chapter 03, and the epilogue rb-promise is now chapter 04. Six deep chapters remain: scarce money or scarce output, the law, borrowing from the future, the printers, the gate, the lever.
+
+## Update after Round 15 (2026-11-16)
+rb-peasant (question 4, why the peasants stayed poor) is published as chapter 04, and the epilogue rb-promise is now chapter 05. Five deep chapters remain: the law, borrowing from the future, the printers, the gate, the lever. The idea that the reader's chain fits late developers better than the first industrial country is carried forward as a hypothesis for those chapters.

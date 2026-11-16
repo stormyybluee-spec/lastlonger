@@ -299,3 +299,106 @@ Reader 2:
 7. Block [9]. OLD: `By King's count they used up more than they earned.` NEW: `By King's count they used up more than they earned. In plain words, their families were poor and did not add to savings.`
 8. Block [33]. OLD: `One view is that it hurt. When the state borrowed so much, banks had less left to lend to others,` NEW: `One view is that it hurt. The state borrowed so much that banks had less left to lend to others,`
 9. Block [58]. OLD: `So for Asia the fair answer is short.` NEW: `So for Asia the fair answer is short. It is a limit of this chapter, not a finding.`
+
+
+# Retest 3, Reader 1 only (draft R15e), 2026-11-16
+
+Reader 1: Malaysian, 18, English as a second language, no finance or history background. Main path only. Deeper boxes and "A:" lines skipped.
+
+## Score table
+
+| Part | What the reader can say | Score |
+|---|---|---|
+| a | The four-part claim | 8 |
+| b | What King's count shows | 8 |
+| c | Spain, England, China, Holland, and what else was going on | 7 |
+| d | Other missing links, one number, the order surprise | 8 |
+| e | Who borrowed, who did not, when a promise worked | 8 |
+| f | The loop, England after the plague, one leader that stalled | 7 |
+| g | Explanations of what broke the loop, and where money sits | 7 |
+| h | Asia and the chapter's limits | 7 |
+| i | Verdict on each part and the rebuilt claim | 8 |
+
+Average of the nine parts: 68 / 9 = 7.6. Rounded overall: 8. Pass mark 8. Result: pass on the rounded score, but borderline, since the raw average is under 8.0.
+
+| Extra | Score |
+|---|---|
+| j Held attention to the end | 7 |
+| k Told story with explanation, not a report of numbers | 7 |
+
+Strongest section: Test 3 (the mill season, the Erie Canal against the broken state debts). It has pictures, a clear contrast and a plain lesson.
+Weakest section: Test 4 and the six-cause table. The wage index is hard to read, and the six causes are short labels with little to hold onto. "Beyond Europe" is also thin and name-heavy.
+
+## Why each part scored as it did
+
+- a. The four parts in [5] are short and numbered. "Promises about the future" is abstract on first meeting, and "loop" is not explained until Test 4. The reader could restate parts 1 and 2 well, parts 3 and 4 less well.
+- b. King's 400,000 poorest families, about six and a half pounds a year, 849,000 families below the line, and the child deaths (33 or 43 in 100) all land. The reader would say most people lived with nothing left over and many children died. Small gap: the total number of families is never given, so "three in five" is taken on trust.
+- c. The table in [14] is clear in outline. The reader knows each place had money or cheap credit and each had a war or a collapse. The numbers (2.7 times, 14%, 4% against 6% to 30%) are many, and the China cell is long. The reader would get Spain and England right and China and Holland partly.
+- d. The state (2%), reading (12% in 1820), books (thirteen times as many) and the order table are clear. The surprise that schools for all came about a century after the factories is easy to state.
+- e. Clear. State borrowed for war, mills used own funds and short credit, canals and railways borrowed, Erie worked and the eight states failed. The rule "something real stood behind it" is easy to repeat.
+- f. The plague story is good. The index in [44] is hard for an ESL reader. Italy, Holland and China as leaders that stalled are easy to name.
+- g. The reader can list the six causes and say money is one among them with critics. The labels "Rules" and "Prices" mean little without the one-liners. [54] names causes that are not in the table in [51].
+- h. The reader can say the data are mostly from Europe, Asia is not settled, and India and colonial rule are not weighed. Reid, von Glahn and Parthasarathi are names without much hold. The reader gets "this is a limit, not a finding".
+- i. The verdict table and the four rebuilt lines are clear. The "later countries may lean on banks" line is understood as untested.
+
+## Fairness and tone
+
+- Fair to the reader who made the claim: yes. Each part is given a "holds" or "holds in part", and the claim is called serious, with big push and Gerschenkron as company.
+- Fair to doubters: yes. Critics are named for each cause, and the limits are stated.
+- No people, faith or region is described unfairly. The Middle East box (skipped on the main path) keeps faith and law apart. The Elizabeth Bentley paragraph notes the committee led its witnesses. Asia is handled with care.
+- Financial advice: no. The closing callout says so plainly, and the text never says to borrow, save or invest.
+
+## Remaining confusions
+
+- [1] "gold was a loose limit on lending" and "elastic money" mean little to a reader with no finance background.
+- [5] Part 4 uses "loop" before it is explained.
+- [9] "three in five" has no total to check against.
+- [14] "Coins per person rose 2.7 times" is not tied to "more money".
+- [21] The Ottoman row uses a different measure from the other rows.
+- [26] Why signing a name counts for reading is not said.
+- [33] The "helped" view is hard to follow ("drew the money of rich landowners away from poor farm projects").
+- [39] "Big push" is jargon and its link to the claim is left to the reader.
+- [44] The wage index is hard to read.
+- [54] Names "coal and colonies" as a cause, but the main-path table [51] has no such row. It also leaves out money and finance, which the table has.
+
+## Ranked fixes
+
+1. Block [54]. 
+OLD: The leading accounts point to people, rules, prices, knowledge, the state, and coal and colonies.
+NEW: The leading accounts point to people, rules, prices, knowledge and the state.
+
+2. Block [44].
+OLD: (an index, so compare the rows, and a higher number is better)
+NEW: (an index number. A higher number means a day's pay bought more. Compare the rows)
+
+3. Block [26].
+OLD: About 30% of men could sign their names in the 1640s, and about 50% by 1714.
+NEW: About 30% of men could sign their names in the 1640s, and about 50% by 1714. Signing is a rough sign of who could read.
+
+4. Block [1].
+OLD: Chapter 03 found that gold was a loose limit on lending, and that elastic money is not unlimited.
+NEW: Chapter 03 found that gold only loosely limited how much banks could lend. Money that can stretch is still not unlimited.
+
+5. Block [5].
+OLD: Part 4. A country that started and was stopped by war, famine or old habit fell back into a loop, and did not progress as a whole.
+NEW: Part 4. A country that started to grow and was stopped by war, famine or old habit fell back into a loop. It went round the same poor cycle again and did not progress as a whole.
+
+6. Block [21].
+OLD: Per person, at most three days of an Istanbul labourer's pay each year, and usually under two, 1500 to 1914
+NEW: This is counted per person, not as a share of output. At most three days of an Istanbul labourer's pay each year, and usually under two, 1500 to 1914
+
+7. Block [33].
+OLD: Safe government bonds drew the money of rich landowners away from poor farm projects, and left room for new industry.
+NEW: Safe government bonds gave rich landowners a better place for their money than weak farm projects. That left room for new industry.
+
+8. Block [14].
+OLD: Coins per person rose 2.7 times
+NEW: Coins per person rose 2.7 times, so there was much more money to use
+
+9. Block [39].
+OLD: Starting many things at once takes a lot of money before any of it pays back.
+NEW: Starting many things at once takes a lot of money before any of it pays back. That is why the idea fits the reader's claim.
+
+10. Block [9].
+OLD: Still, about three in five families had nothing left over each year.
+NEW: Still, about three in five of the families in King's table had nothing left over each year.
