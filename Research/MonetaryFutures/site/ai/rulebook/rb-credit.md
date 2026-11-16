@@ -4,7 +4,7 @@ Rulebook Level 3 (The big arguments), chapter 02. Stack: Fundamentals. Id: rb-cr
 
 Web page: https://neetmonetary.netlify.app/#rb-credit . Text built 2026-11-16. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
-*The last chapter put printing on trial and found a toll, not a scam. Now the defence makes a bigger claim: that money made from nothing is the reason ordinary people are no longer peasants. Seven hard questions test that claim, and the epilogue grades it line by line.*
+*The last chapter put printing on trial and found a toll, not a scam. Now the defence makes a bigger claim: that money made from nothing is the reason ordinary people are no longer peasants. Seven hard questions test that claim, and the last section grades it line by line.*
 
 **In short**
 - Credit is a promise that lets you build today and pay from tomorrow's income. It is thousands of years old. It was not born in 1971. What 1971 did was remove the last gold limit on it.
@@ -19,7 +19,7 @@ Web page: https://neetmonetary.netlify.app/#rb-credit . Text built 2026-11-16. G
 - [The musical chairs question](https://neetmonetary.netlify.app/ai/rulebook/rb-07.md): Interest can be paid if money keeps moving. Trouble starts when debt grows faster than income.
 - [Commodity money and the gold standard](https://neetmonetary.netlify.app/ai/rulebook/rb-02.md): Rulers watered down coins long before paper money. Hard money protects savers and squeezes borrowers.
 
-> **How to read this chapter.** Seven questions and an epilogue, about 45 minutes in all. Each question ends with a short line on what it does to the claim. Read the main path first and skip the boxes marked Go deeper.
+> **How to read this chapter.** Seven questions and a grading of the claim, about 45 minutes in all. Each question ends with a short line on what it does to the claim. Read the main path first and skip the boxes marked Go deeper.
 
 ### The defence makes a bigger claim
 
@@ -194,7 +194,7 @@ So the same tool that goes with the owners' wealth also wiped out the wealth of 
 **Check yourself.** Q: Two people each borrow RM50,000. One ends up better off and one ends up bankrupt. Name three things that could explain the difference.
 A: What the loan bought: a skill or tool that earns, against spending that is used up. What it cost: a bank rate, against a moneylender or card rate. And the cushion: whether the borrower could keep paying through a bad year.
 
-### Epilogue. The claim, graded
+### The claim, graded
 
 The jury has heard seven questions. Here is the reader's claim again, line by line, with the finding. All four hold in part, but each fails in a different place. Part 1 needs credit that builds. Part 2 mixes up scarce money with scarce output. Part 3 has a figure this chapter cannot test, and the wrong cause. Part 4 has the wrong date and is right that credit has a gate.
 

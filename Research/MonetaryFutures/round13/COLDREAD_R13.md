@@ -357,3 +357,91 @@ NEW: It was the same tool. A lever makes a small push big, in both directions. H
 8. Block 30. Plain words for the gold line.
 OLD: America holds most of the world's reported official gold
 NEW: America holds most of the gold that governments have reported
+
+
+# Retest 3, Reader 1 only (draft R13e), 2026-11-16
+
+Reader 1: Malaysian, 18, English as a second language, no finance background, has not read the two earlier chapters. One read of the main path. The GO DEEPER boxes were skipped.
+
+## A. Understanding scores
+
+| Item | What the reader can say | Score |
+|---|---|---|
+| (a) Money is a promise | The farmer asks the neighbour for seed and says "I will pay after harvest". Money is first a promise between people. Gold only made it harder to break. | 8 |
+| (b) Spain's silver and the coin shortage | Silver made prices rise but did not make goods. Too little coin in Ghent and Bruges also hurt trade. Both too much and too little money are a sickness. | 8 |
+| (c) The bridge | Nobody brings cement back from 2050. Only the promise travels. If the bridge makes children richer, they pay easily. If not, they pay for a meal they never ate. | 8 |
+| (d) The 1931 queue | Woman one lost her savings when her bank shut. Woman two kept her savings and they bought more bread. The farmer owed more each year. Hard money helps savers and hurts borrowers, and it did not protect woman one. | 8 |
+| (e) 1971 | The president ended the swap of dollars for gold. More room to borrow followed. Faster growth did not clearly follow. The reader is a little unsure what "the last metal limit" means in daily life. | 7 |
+| (f) Grandmother's tin | The tin lost about 82% of what it could buy, and nobody asked her. That is the toll. Her granddaughter grew richer in the same years. The chapter does not say the toll caused the growth. | 8 |
+| (g) The counter | Income, security and a record are easier if you already have money. Hard money means a long wait. Credit money means starting by paying. The Monopoly lines are the hazy part. | 7 |
+| (h) The two families | Same loan, one family gained when house prices rose, one lost nearly everything when they fell. A lever makes a push bigger in both directions. The "owe 80 of every 100" idea needs a second look. | 7 |
+| (i) The verdict | Not a scam, but a toll. Hard money is not innocent and not a villain. Credit is not a gift because it has a gate. | 8 |
+
+Understanding average: 69 / 9 = 7.7. Rounded overall: 8. Pass mark 8 is met only after rounding. A strict reading of 7.7 is a narrow miss. Items (e), (g) and (h) hold the average down.
+
+## B. Story scores
+
+| Item | Question | Score |
+|---|---|---|
+| (j) | Held attention to the end | 7 |
+| (k) | Felt for the people, on both sides | 8 |
+| (l) | Reads as a story, not a report | 7 |
+| (m) | The ending landed | 8 |
+
+Story average: 30 / 4 = 7.5.
+
+Strongest scene: The queue ([24] to [26]). Two women in one line, one ruined and one rewarded, with the farmer behind them. It makes the saver and the borrower both real and it shows hard money cutting both ways.
+
+Weakest scene: The weekend ([34] to [37]). It turns into growth rates and debt ratios, and the people drop out until the tin in [38]. The reader slows down here. A close second is The lever ([46] to [48]), where dollar figures crowd the two families.
+
+## Other questions
+
+Fair to both sides? Yes. The reader ends thinking the author gave hard money its due (the second woman, the savers) and also its cost (the farmer, the first woman). Credit gets the same treatment (the bridge, the second family). The line "hard money is not innocent... not a villain either" ([56]) is what shows this.
+
+Always clear who is imagined? Mostly yes. Each person is introduced with "Picture". The two places that blur it are [34] and [35], where real people (the president, the reader who wrote in) appear next to imagined ones with no label. The reader had to guess that the president was real.
+
+Financial advice? No. The "Not advice" callout [3] plus the Monopoly passage [44], which tells no one what to do. One risky sentence is "Hard money would tell her to save first. Money that stretches tells her to start now and owe." It reads as two voices, not as advice, but a careless reader could take it as a tip.
+
+## Remaining confusions
+
+- [7] "toll" is an unfamiliar word for an ESL reader. It is the key word of the whole chapter and is explained only as "the slow loss of what each coin can buy".
+- [34] "The last metal limit on money is gone" is abstract. What does the reader lose or gain when the limit goes?
+- [44] The sentence "But most of the money is already held by people who came before her" does not say why this hurts the saver. The Monopoly picture is good but the hard-money and credit lines are packed together.
+- [47] "they owe about 80" for every 100: the reader does not at once see that this leaves only 20 that is truly theirs.
+- [57] "Plenty comes from what people make" arrives suddenly after the long verdict in [56].
+- [17] Ghent and Bruges mean nothing to this reader. It does not stop the point.
+- [37] Debt as "years of what the country makes" is hard to picture.
+
+## Ranked fixes
+
+1. Block [44]
+OLD: Under hard money, the coins she saves would buy a little more each year. But most of the money is already held by people who came before her.
+NEW: Under hard money, the coins she saves would buy a little more each year. But she must save first, and most of the money is already held by people who came before her.
+
+2. Block [7]
+OLD: It is the toll, the slow loss of what each coin can buy.
+NEW: It is the toll, like a fee paid on a road. Here the fee is the slow loss of what each coin can buy.
+
+3. Block [34]
+OLD: The last metal limit on money is gone.
+NEW: From now on, no gold stands behind the dollar at all.
+
+4. Block [47]
+OLD: For every 100 dollars of things they own, they owe about 80.
+NEW: For every 100 dollars of things they own, they owe about 80, so only about 20 is truly theirs.
+
+5. Block [57]
+OLD: Plenty comes from what people make.
+NEW: Think of the field and the ships. Plenty comes from what people make.
+
+6. Block [35]
+OLD: The reader who wrote in has a sharper way to say what changed.
+NEW: The reader who wrote in, a real person and not one of our pictures, has a sharper way to say what changed.
+
+7. Block [37]
+OLD: Room to build, and room to overreach.
+NEW: Room to build, and room to overreach, like a family that can now borrow far more than before.
+
+8. Block [44]
+OLD: Money that stretches tells her to start now and owe.
+NEW: Money that stretches says she can start now, and she will owe.
