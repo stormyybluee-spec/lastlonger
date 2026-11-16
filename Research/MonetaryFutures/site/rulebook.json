@@ -13240,7 +13240,7 @@
     },
     {
      "type": "p",
-     "text": "Then King drew a line across his table. Above it were the families who added to the wealth of the kingdom. Below it were 849,000 families who, in his words, were \"decreasing the wealth of the kingdom\". In King's reckoning they used up more than they earned. Poor relief, charity and odd jobs filled the gap, and the group also held seamen and soldiers. Still, about three in five families had nothing left over each year."
+     "text": "Then King drew a line across his table. Above it were the families who added to the wealth of the kingdom. Below it were 849,000 families who, in his words, were \"decreasing the wealth of the kingdom\". By King's count they used up more than they earned. Poor relief, charity and odd jobs filled the gap, and the group also held seamen and soldiers. Still, about three in five families had nothing left over each year."
     },
     {
      "type": "p",
@@ -13279,7 +13279,7 @@
       [
        "China, from 1023",
        "State paper money, centuries before Europe",
-       "In 1090 China was richer per person than England, by one estimate. It later fell far behind. Its paper money worked for long stretches, then lost all trust when the Mongol rulers fell in the 1360s"
+       "In 1090 China was richer per person than England, by one estimate. It later fell far behind. Its paper money worked for long stretches. Then people stopped trusting it when the Mongol rulers fell in the 1360s"
       ],
       [
        "Holland, 1600s",
@@ -13344,7 +13344,11 @@
     },
     {
      "type": "p",
-     "text": "Schooling. In 1820 about 12% of the world's adults could read. In 1870 about 17% of the world's children were in primary school. By 1950 it was 57%, and by 1970 it was 72%. The reader who wrote in said a child has had about a 70% chance of going to school since the 1970s. That matches the world in 1970. The Razak Report of 1956 planned a national school system for Malaysia, and one rough data set puts primary enrolment at about two in three children in 1950 and nearly all by 1960."
+     "text": "Schooling. In 1820 about 12% of the world's adults could read. In 1870 about 17% of the world's children were in primary school. By 1950 it was 57%, and by 1970 it was 72%. The reader who wrote in said a child has had about a 70% chance of going to school since the 1970s. The data agree. It was 72% in 1970."
+    },
+    {
+     "type": "p",
+     "text": "Malaysia shows how fast this link can now be built. The Razak Report of 1956 planned a national school system, and one rough data set puts primary enrolment at about two in three children in 1950 and nearly all by 1960."
     },
     {
      "type": "p",
@@ -13415,36 +13419,27 @@
     },
     {
      "type": "p",
-     "text": "Promises were still inside the factory, though. Picture one season at a mill. The owner buys raw cotton on credit and pays months later. He sells his cloth for a bill, a paper that promises payment in a few months. If he needs cash now, a local bank pays him a little less than the bill's value. Some country banks went further. The historian Liam Brunt describes a Truro bank that paid for Watt steam engines in Cornish mines. So the buildings came mostly from savings, but a mill's daily life ran on short promises."
+     "text": "Promises were still inside the factory, though. Picture one season at a mill. The owner buys raw cotton on credit and pays months later. He sells his cloth for a bill, a paper that promises payment in a few months. If he needs cash now, a local bank pays him a little less than the bill says. Then the bank waits for the buyer to pay. Some small local banks went further. The historian Liam Brunt describes a Truro bank that paid for Watt steam engines in Cornish mines. So the buildings came mostly from savings, but a mill's daily life ran on short promises."
     },
     {
      "type": "p",
-     "text": "The big networks did borrow, and here the record is mixed. Canals and railways were far bigger, too big for most families alone."
-    },
-    {
-     "type": "table",
-     "cols": [
-      "A promise that was kept",
-      "Promises that were broken"
-     ],
-     "rows": [
-      [
-       "New York built the Erie Canal from 1817 with borrowed money. When it began to borrow, it set aside taxes on salt and on auctions to pay the interest. The canal earned well and the debt was repaid easily",
-       "Pennsylvania and some other states copied the idea without pledged taxes. In 1841 and 1842 eight states and the territory of Florida stopped paying their debts"
-      ],
-      [
-       "Japan is reported to have borrowed 1 million pounds in London in 1870, at 9% interest, for its first railway. The line from Tokyo to Yokohama opened in 1872. Repayment is not checked here",
-       "Indiana issued over 10 million dollars of bonds for canals, a railway and roads, but received only about half of that in cash. Part had been sold on credit to a bank that failed in 1839, and work stopped"
-      ]
-     ]
+     "text": "The big networks did borrow, and here the record is mixed. Two stories from America show both sides. Canals and railways were far bigger, too big for most families alone."
     },
     {
      "type": "p",
-     "text": "So in these cases a promise worked when something real was pledged behind it. A tax, a canal that earns tolls, a railway that sells tickets. A promise with nothing behind it often failed. A few cases show a pattern, not a law."
+     "text": "First, a promise that was kept. New York built the Erie Canal from 1817 with borrowed money. When it began to borrow, it set aside taxes on salt and on auctions to pay the interest. The canal earned well, and the debt was repaid easily."
     },
     {
      "type": "p",
-     "text": "The reader's idea has serious company among economists. The \"big push\" theory says that one factory alone may fail in a poor country, because nobody nearby earns enough to buy what it makes, while many factories started together can succeed. Starting many things at once takes money up front. The economic historian Alexander Gerschenkron argued that countries that came late, such as Germany and Russia, leaned on big banks or on the state to do this. Neither idea was built to explain Britain, the first case, and tests of Gerschenkron's idea are mixed."
+     "text": "Then, promises that were broken. Pennsylvania and some other states copied the idea without setting taxes aside. In 1841 and 1842 eight states and the territory of Florida stopped paying their debts. Indiana issued over 10 million dollars of bonds for canals, a railway and roads, but received only about half of that in cash. Part had been sold on credit to a bank that failed in 1839, and the work stopped."
+    },
+    {
+     "type": "p",
+     "text": "So in these cases a promise worked when something real stood behind it, something that would pay the lender back. A tax, a canal that earns tolls, a railway that sells tickets. A promise with nothing behind it often failed. A few cases show a pattern, not a law."
+    },
+    {
+     "type": "p",
+     "text": "The reader's idea has serious company among economists. The \"big push\" theory says that one factory alone may fail in a poor country, because nobody nearby earns enough to buy what it makes, while many factories started together can succeed. Starting many things at once takes a lot of money before any of it pays back. The economic historian Alexander Gerschenkron argued that countries that built their industry later, such as Germany and Russia, leaned on big banks or on the state to do this. Neither idea was built to explain Britain, the first case, and tests of Gerschenkron's idea are mixed."
     },
     {
      "type": "insider",
@@ -13496,11 +13491,11 @@
     },
     {
      "type": "p",
-     "text": "The plague killed so many that workers became scarce. On this index, what a day's pay could buy doubled within a few years. Some historians find a slower rise, over a generation. Either way, survivors lived better for a century. Then the people came back. By 1650 there were almost three times as many mouths as in 1450, and a day's pay bought about the same as before the plague. The gain had been eaten. This is the trap that Thomas Malthus described in 1798."
+     "text": "The plague killed so many that workers became scarce. On this index, what a day's pay could buy doubled within a few years. Some historians find a slower rise, over a generation. Either way, survivors lived better for a century. Then the people came back. By 1650 there were almost three times as many mouths as in 1450, and a day's pay bought about the same as before the plague. The gain was gone. This is the trap that Thomas Malthus described in 1798."
     },
     {
      "type": "p",
-     "text": "Why was the gain eaten? When pay was good, more children lived. Gregory Clark finds that the richest Englishmen left about twice as many surviving children as the poorest. A generation later there were more mouths on the same fields, so food grew dear and pay bought less. But north-west Europe had a brake. In hard times people married late, or not at all. E. A. Wrigley argues that this kept living standards there well above bare need."
+     "text": "Why was the gain lost? When pay was good, more children lived. Gregory Clark finds that the richest Englishmen left about twice as many surviving children as the poorest. A generation later there were more mouths on the same fields, so food grew dear and pay bought less. But north-west Europe had a brake. In hard times people married late, or not at all. E. A. Wrigley argues that this kept living standards there well above the level of hunger."
     },
     {
      "type": "p",
@@ -13581,7 +13576,7 @@
     },
     {
      "type": "p",
-     "text": "Read down that list. Money and credit lead in one row of six, and that row has strong critics. Credit also matters inside the rules row and the state row, because lenders need to trust the state. But read it again and the reader's larger point survives. Nearly every scholar names a different link. The reader argues that each link leaned on the others. A state needs taxes, taxes need trade, trade needs safe roads and coins, machines need knowledge, knowledge needs books. This chapter does not prove that each link needed all the others. That part is still to be tested."
+     "text": "Read down that list. Six different causes are named. Money and credit lead in only one row, and that row has strong critics. Credit also matters inside the rules row and the state row, because lenders need to trust the state. But read it again and the reader's larger point survives. Nearly every scholar names a different link. The reader argues that each link leaned on the others. A state needs taxes, taxes need trade, trade needs safe roads and coins, machines need knowledge, knowledge needs books. This chapter does not prove that each link needed all the others. That part is still to be tested."
     },
     {
      "type": "p",
@@ -13598,11 +13593,15 @@
     },
     {
      "type": "p",
-     "text": "This chapter's numbers come mostly from Europe, where the long data series are best. That limits the verdict. It fits Europe best. The historian Anthony Reid calls the years from about 1450 to 1680 Southeast Asia's age of commerce, when Melaka was one of the world's great ports. He links its end to a crisis in the 1600s and to Dutch power, though others question that story. China took in huge amounts of Japanese and American silver from about 1550, and the historian Richard von Glahn links this to a fast boom in late Ming trade. There, more money came with more trade."
+     "text": "This chapter's numbers come mostly from Europe, where the long data series are best. That limits the verdict. It fits Europe best. The historian Anthony Reid calls the years from about 1450 to 1680 Southeast Asia's age of commerce, when Melaka was one of the world's great ports. He links its end to a crisis in the 1600s and to Dutch power, though others question that story."
     },
     {
      "type": "p",
-     "text": "India was the world's great maker of cotton cloth. On one estimate its output per person fell by about a fifth from 1600 to 1850. The historian Prasannan Parthasarathi argues that its industry fell back after about 1780, as the East India Company took control and Britain protected its own mills against Indian cloth. Many leading historians doubt that this was the main cause. Whether colonial rule, or the profits of slavery, shaped who grew rich is a large open question. This chapter has not weighed it. So for Asia the fair answer is: more money did come with more trade in some places, and why the take-off came elsewhere is not settled here."
+     "text": "China took in huge amounts of Japanese and American silver from about 1550, and the historian Richard von Glahn links this to a fast boom in late Ming trade. There, more money came with more trade."
+    },
+    {
+     "type": "p",
+     "text": "India was the world's great maker of cotton cloth. On one estimate its output per person fell by about a fifth from 1600 to 1850. The historian Prasannan Parthasarathi argues that its industry fell back after about 1780, as the East India Company took control and Britain protected its own mills against Indian cloth. Many leading historians doubt that this was the main cause. Whether colonial rule, or the profits of slavery, shaped who grew rich is a large open question. This chapter has not weighed it. So for Asia the fair answer is short. More money did come with more trade in some places. Why the take-off came elsewhere is not settled here."
     },
     {
      "type": "h",
@@ -13845,10 +13844,6 @@
         [
          "The Erie Canal and the state defaults",
          "Wallis, Sylla and Grinath, 2004"
-        ],
-        [
-         "Japan's 1870 loan",
-         "Reported in histories of Meiji finance. Not checked against a primary record"
         ],
         [
          "Big push and late developers",

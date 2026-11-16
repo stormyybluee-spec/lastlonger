@@ -127,3 +127,110 @@ Fix 11. Block [1].
 - NEW: Debt is a promise.
 
 Not fixed here but worth a later look: table [50] still has ten rows. Cutting it to the five main rows on the main path, and moving the rest to a GO DEEPER box, would lift part (g) and the story score for both readers more than any small fix. That is a larger change than this list allows.
+
+
+# Retest 1 (draft R15c), 2026-11-16
+
+Main path only. GO DEEPER boxes and "A:" lines skipped.
+
+## Score table
+
+| Part | Reader 1 (Malaysian, ESL) | Reader 2 (American) |
+|---|---|---|
+| a. Four-part claim | 7 | 8 |
+| b. King's count | 7 | 8 |
+| c. Spain, England, China, Holland | 6 | 8 |
+| d. Missing links, one number, order surprise | 7 | 8 |
+| e. Who borrowed, when a promise worked | 6 | 7 |
+| f. The loop, plague, one stalled leader | 7 | 8 |
+| g. What broke the loop, where money sits | 6 | 8 |
+| h. Asia and the chapter's limits | 6 | 7 |
+| i. Verdicts and rebuilt claim | 7 | 8 |
+| Average of nine | 6.6 | 7.8 |
+| Overall (rounded) | 7 | 8 |
+| j. Held attention to the end | 6 | 7 |
+| k. Told story, not a report of numbers | 6 | 7 |
+
+Pass mark 8. Reader 1 fails (7). Reader 2 passes on the rounded score, but 7.8 is borderline. Overall: FAIL until Reader 1 reaches 8.
+
+## Story and attention
+
+Reader 1. Strongest: the opening count of King's kingdom [8 to 11], which is concrete and short. Also the plague table with its plain explanation [41 to 43]. Weakest: Test 1 [13 to 17] and Test 3 [28 to 38]. The tables hold several ideas in one cell, and the bills, bonds and "crowding out" ideas [30 to 33] arrive fast. Attention drifts in the table of explanations [49] and in the Asia section [54, 55], where many names pile up.
+
+Reader 2. Strongest: the Elizabeth Bentley paragraph [51] and the King count [8 to 11]. Also the mill season in [33]. Weakest: Test 2 [19 to 26], a run of percentages for tax, schooling and books. Attention drifts in [49 to 50] (many names) and in the verdict table [57], which repeats earlier numbers.
+
+Both readers feel a told story in the opening, the plague and Bentley. Both feel a report of numbers in the Test 1 and Test 2 tables.
+
+## Fairness
+
+Both readers would call the author fair. The reader who made the claim is treated as partly right, and the chapter keeps saying where the claim holds [26, 38, 50, 60]. Doubters are given real arguments too, such as Palma on silver [16] and the critics in [49]. Gerschenkron and the big push are not dismissed [37]. No people, faith or region is described unfairly. The Mongol, Ottoman and Indian cases are given with hedges and open questions [55]. The Islam material is in the deeper box and is careful, and it was not on the main path. The Bentley paragraph [51] warns that the committee led its witnesses. Nothing reads as financial advice. The "Not advice" callout [66] sits at the very end, and a reader who stops early never sees it. That is a small risk, not a fault.
+
+## Remaining confusions
+
+Reader 1
+- [9] "decreasing the wealth of the kingdom" is a hard phrase. The gloss helps but "nothing left over" comes late.
+- [14] The China cell carries three facts and the phrase "lost all trust".
+- [22] A string of percentages, and the link between "70%" and the reader's letter is unclear.
+- [30, 33] "bond", "bill" and "country banks" are new words. "Pays him a little less than the bill's value" is hard to follow.
+- [35] The two-column table mixes the Erie Canal, Japan, Pennsylvania and Indiana. "Pledged" is not explained until [36].
+- [37] "Big push" and "late developers" are abstract.
+- [43, 44] "The gain had been eaten" is an idiom.
+- [49] Six names and six causes with no anchor. [50] helps but late.
+- [54, 55] Many names and hedges. It is not clear what the reader should keep.
+
+Reader 2
+- [14, 15] Clear overall, but "cheap credit for its time" is vague.
+- [22] Why Malaysia appears in a chapter on England is unexplained.
+- [35] Japan's loan is marked unchecked, so it is unclear why it is there.
+- [49 to 50] Which answer does the chapter lean to? [52] says most treat money as a helper, which only partly settles it.
+- [54 to 55] The Asia section reads as a list of open questions and gives little to hold.
+
+## Ranked fixes
+
+1. [43] Idiom for ESL.
+OLD: The gain had been eaten.
+NEW: The gain was gone.
+
+2. [44] Same idiom.
+OLD: Why was the gain eaten?
+NEW: Why was the gain lost?
+
+3. [33] Make the bill step clear.
+OLD: If he needs cash now, a local bank pays him a little less than the bill's value.
+NEW: If he needs cash now, a local bank pays him a little less than the bill says. Then the bank waits for the buyer to pay.
+
+4. [14] Split the China cell.
+OLD: Its paper money worked for long stretches, then lost all trust when the Mongol rulers fell in the 1360s
+NEW: Its paper money worked for long stretches. Then people stopped trusting it when the Mongol rulers fell in the 1360s
+
+5. [35] Plain words for the Japan cell.
+OLD: Repayment is not checked here
+NEW: We have not checked if it was repaid
+
+6. [22] Link the 70% to the data.
+OLD: That matches the world in 1970.
+NEW: The data agree. It was 72% in 1970.
+
+7. [50] Give the six causes an anchor before the reader moves on.
+OLD: Read down that list. Money and credit lead in one row of six, and that row has strong critics.
+NEW: Read down that list. Six different causes are named. Money and credit lead in only one row, and that row has strong critics.
+
+8. [44] Plain words.
+OLD: kept living standards there well above bare need
+NEW: kept living standards there well above the level of hunger
+
+9. [36] Explain "pledged" where it first matters.
+OLD: So in these cases a promise worked when something real was pledged behind it.
+NEW: So in these cases a promise worked when something real stood behind it, a thing the lender could claim if payment failed.
+
+10. [55] Give the Asia section a clear last line.
+OLD: So for Asia the fair answer is: more money did come with more trade in some places, and why the take-off came elsewhere is not settled here.
+NEW: So for Asia the fair answer is short. More money did come with more trade in some places. Why the take-off came elsewhere is not settled here.
+
+11. [66] Put the "not advice" idea earlier for readers who stop early.
+OLD: This chapter weighs an argument about history.
+NEW: This chapter weighs an argument about history and is about the past only.
+
+12. [37] Make "big push" plainer.
+OLD: Starting many things at once takes money up front.
+NEW: Starting many things at once takes a lot of money before any of it pays back.
