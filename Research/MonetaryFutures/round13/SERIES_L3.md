@@ -14,3 +14,6 @@
 | Last | rb-promise | Round 13 | Epilogue. The story of money in ten questions | Narrated, human, facts from chapters 01 and 02 only. To be revised when the deep chapters land |
 
 Order of work: the epilogue first (no new research needed). Then chapter 04 (1971), which the owner names as the main subject. Then 03, 06, 05, 07, 08, 09. Each deep chapter is one Standard round.
+
+## Update after Round 14 (2026-11-16)
+Deep chapters are numbered in the order they are published, and the epilogue always stays last. rb-1971 (question 5, what 1971 really changed) is published as chapter 03, and the epilogue rb-promise is now chapter 04. Six deep chapters remain: scarce money or scarce output, the law, borrowing from the future, the printers, the gate, the lever.

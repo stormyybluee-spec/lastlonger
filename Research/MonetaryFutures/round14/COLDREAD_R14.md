@@ -148,3 +148,91 @@ Each OLD string occurs once in the draft. Fixes are ordered by gain for the weak
     - NEW: But gold is a poor yardstick because its own price jumps around,
 
 Not fixed here because they need table-cell work that cannot be matched as plain text: the two blank cells in [39], and the repeated 56.7% in [34] and [50]. The editor may fill the blank cells with "n/a" or a short note, and may add a few words in [50] to say that the trade share figure is a different number from the reserve share.
+
+# Retest 1, Reader 1 only (draft R14c), 2026-11-16
+
+Reader: Malaysian, 18, English as a second language, no finance background. Main path only.
+
+## Score table
+
+| Part | What the reader can say | Score |
+|---|---|---|
+| (a) | The four-part claim | 9 |
+| (b) | The 1971 weekend and why America could not keep its promise | 8 |
+| (c) | How tightly gold limited credit, both sides, and the sum-up | 7 |
+| (d) | Three limits with one example each | 8 |
+| (e) | Asia 1997 to 1998 and what was different in Malaysia | 8 |
+| (f) | Who borrows with the fewest limits and why | 7 |
+| (g) | What replaced gold, how long, how well | 7 |
+| (h) | Growth numbers and why they prove no cause | 7 |
+| (i) | Verdict on each part and the rebuilt claim | 8 |
+
+Average of the nine parts: 7.7. Overall rounded: 8. Pass mark 8: pass, but only just. The rounding carries it.
+
+(j) Held attention to the end: 7. (k) Told story with explanation, not a report of numbers: 7.
+
+Strongest section: "The weekend". The cloakroom picture, Camp David and the Nixon speech make the promise problem easy to see. Close second: the Penang factory debt example in Test 2.
+Weakest section: Test 3 and Test 4 tables. Test 3 packs inflation targets, crises per 100 country-years and four hard-money quotes into a short space. Test 4 has a six-row growth table, then a productivity table and research numbers. Both read like reports.
+
+## Notes per part
+
+- (a) The four steps are plain and short. Easy.
+- (b) Clear. The reader can say: America promised gold for dollars, foreign claims grew to about three times the gold, Nixon closed the gold window. Small gap: why a "run" is the same as the claims problem, and what "floating" means for daily life, though [16] helps.
+- (c) The reader can say gold limited governments more than banks, and was lifted when it pulled. The table in [19] is dense, with percentages of "yearly output" and growth "after inflation". The reader would remember the rope-not-wall line but not the lending numbers.
+- (d) Inflation (America 1981), lenders (Britain 2022), currency (Mexico 1982 or Asia 1997). Good. Words like "bonds" and "pension funds" are only half clear.
+- (e) The Penang factory table works well. The reader can say Malaysia put controls on money leaving, fixed the ringgit and took no IMF loan, and had less short-term foreign debt. Small gap: why that debt matters so much.
+- (f) The answer "the country whose money everyone else saves in" is short. "Official currency reserves" is a hard phrase for this reader.
+- (g) The reader gets "inflation target, about twenty years, America in 2012". "How well" is mixed: calm for 35 years, a miss in 2022, more crises. Words "anchor" and "target" are used before inflation is defined.
+- (h) The two stories (rich slower, late developers faster) are clear. The reasons for no proof (catch-up after war, oil shocks, many changes at once) are present but spread over several paragraphs.
+- (i) The verdict table and rebuilt claim are clear. The last gold-price paragraph [62] is a bit hard to follow.
+
+## Fairness and advice
+
+Fair to the reader who made the claim: yes. Each part is stated, tested and given a partial credit ("holds in part"). The rebuilt claim keeps the reader's core idea. Fair to hard-money critics: yes. Hayek, Lehrman and Eichengreen are quoted, and the 99% gold number is given to the hard-money side in [62]. The reader would call the author even-handed. Nothing reads like financial advice. The "Not advice" callout [67] says so plainly.
+
+## Remaining confusions
+
+- [10] Grammar slip "which piled up dollars and were slow", which an ESL reader may stumble on.
+- [19] "binds", "free gold" and "percent of yearly output" are hard words and ideas.
+- [26] Bonds, pension funds and "30-year bonds" are not familiar to this reader.
+- [35] "Official currency reserves" is never explained.
+- [39] "Inflation" and "anchor" are used before they are explained in simple words.
+- [41] and [42] "Country-years" appears in the table header before it is explained in [43].
+- [53] "Freer movement of capital" is abstract.
+- [62] The 99% loss and the 12 cents in [63] could be mixed up.
+
+## Ranked fixes
+
+1. Block [35]
+OLD: the world's official currency reserves
+NEW: the money that governments around the world keep in store, called reserves
+
+2. Block [35]
+OLD: The country whose money everyone else saves in and trades in.
+NEW: The country whose money everyone else saves in and trades in. Today that is America, and its money is the US dollar.
+
+3. Block [39]
+OLD: Something did replace gold as the anchor.
+NEW: Something did replace gold as the anchor. Inflation means prices rising over time.
+
+4. Block [41]
+OLD: Crises are a second test, counted by Michael Bordo, Barry Eichengreen and two colleagues in 21 countries.
+NEW: Crises are a second test. Michael Bordo, Barry Eichengreen and two colleagues counted them in 21 countries. They count per country-year, which is one country in one year.
+
+5. Block [19]
+OLD: A limit that is lifted when it binds is a loose limit
+NEW: A limit that is lifted when it starts to hurt is a loose limit
+
+6. Block [19]
+OLD: Bank lending in 18 rich countries was 53% of yearly output in 1970
+NEW: Bank lending in 18 rich countries was 53% of what those countries made in a year, in 1970
+
+7. Block [10]
+OLD: which piled up dollars and were slow to change their exchange rates
+NEW: which piled up dollars and was slow to change its exchange rate
+
+8. Block [53]
+OLD: freer movement of capital
+NEW: freer movement of money across borders
+
+Fix count: 8.

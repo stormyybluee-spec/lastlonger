@@ -12527,7 +12527,7 @@
     {
      "type": "callout",
      "label": "How to read this chapter",
-     "text": "A scene, four tests and a verdict, about 50 minutes in all. Each test ends with a short line on what it does to the claim. This is the first of seven deeper chapters that follow the overview in chapter 02."
+     "text": "A scene, four tests and a verdict, about 40 minutes in all. Each test ends with a short line on what it does to the claim. This is the first of seven deeper chapters that follow the overview in chapter 02."
     },
     {
      "type": "h",
@@ -12633,14 +12633,14 @@
      "rows": [
       [
        "Until March 1968 America's central bank had to hold gold worth 25% of the banknotes it issued. In February 1968 Congress was told that of about 12 billion dollars of gold, only 1.3 billion was still free, meaning not already locked up as cover for banknotes",
-       "Congress removed the rule in two steps: for bank deposits in 1965, and for banknotes in 1968, when the free gold was about to run out. A limit that is lifted when it binds is a loose limit"
+       "Congress removed the rule in two steps: for bank deposits in 1965, and for banknotes in 1968, when the free gold was about to run out. A limit that is lifted when it starts to hurt is a loose limit"
       ],
       [
        "America's gold could not cover its promises to foreign governments, as the table above shows. That is what forced the weekend at Camp David",
        "The promise was to foreign governments only. No rule tied a home loan in Ohio to an ounce of gold"
       ],
       [
-       "Bank lending in 18 rich countries was 53% of yearly output in 1970, lower than the 58% of 1913. By 2007 it was 111%",
+       "Bank lending in 18 rich countries was 53% of what those countries made in a year, in 1970, lower than the 58% of 1913. By 2007 it was 111%",
        "Lending grew fastest while the gold link was still there, though from a low post-war base: 9.0% a year after inflation from 1950 to 1970, against 5.8% from 1971 to 1990 and 3.3% from 1991 to 2019"
       ],
       [
@@ -12776,7 +12776,7 @@
     },
     {
      "type": "p",
-     "text": "So who can borrow with the fewest limits? The country whose money everyone else saves in and trades in. In mid 2026 the US dollar was 56.7% of the world's official currency reserves. Other countries need dollars to trade and to save, so America can usually sell its debt more easily. Even so, it met the first limit in 1980, and again in 2022."
+     "text": "So who can borrow with the fewest limits? The country whose money everyone else saves in and trades in. Today that is America, and its money is the US dollar. In mid 2026 the US dollar was 56.7% of the money that governments around the world keep in store, called reserves. Other countries need dollars to trade and to save, so America can usually sell its debt more easily. Even so, it met the first limit in 1980, and again in 2022."
     },
     {
      "type": "insider",
@@ -12794,7 +12794,7 @@
     },
     {
      "type": "p",
-     "text": "The reader says the new system runs under stable, controlled governance. Something did replace gold as the anchor. It is a promise by a central bank to keep inflation near a target, which in America is 2%. But that promise was not ready in 1971. New Zealand's came about twenty years later, in 1990. America announced its own in 2012, forty-one years after 1971."
+     "text": "The reader says the new system runs under stable, controlled governance. Something did replace gold as the anchor. Inflation means prices rising over time. It is a promise by a central bank to keep inflation near a target, which in America is 2%. But that promise was not ready in 1971. New Zealand's came about twenty years later, in 1990. America announced its own in 2012, forty-one years after 1971."
     },
     {
      "type": "table",
@@ -12833,7 +12833,7 @@
     },
     {
      "type": "p",
-     "text": "So after a decade of fast-rising prices, American inflation stayed near 2 to 3% a year for about 35 years, much as in the gold-linked years after the war. Crises are a second test, counted by Michael Bordo, Barry Eichengreen and two colleagues in 21 countries."
+     "text": "So after a decade of fast-rising prices, American inflation stayed near 2 to 3% a year for about 35 years, much as in the gold-linked years after the war. Crises are a second test. Michael Bordo, Barry Eichengreen and two colleagues counted them in 21 countries. They count per country-year, which is one country in one year."
     },
     {
      "type": "table",
@@ -12956,7 +12956,7 @@
     },
     {
      "type": "p",
-     "text": "A world of floating money and freer movement of capital may have helped them. But Korea, China and Malaysia often grew while managing their exchange rates and limiting money crossing borders. The numbers cannot show which mattered more, because so many things changed at the same time. Productivity, the most direct test, slowed in America too."
+     "text": "A world of floating money and freer movement of money across borders may have helped them. But Korea, China and Malaysia often grew while managing their exchange rates and limiting money crossing borders. The numbers cannot show which mattered more, because so many things changed at the same time. Productivity, the most direct test, slowed in America too."
     },
     {
      "type": "table",

@@ -14,9 +14,9 @@
   ]
  },
  "files": {
-  "ai/brief.md": 7802,
-  "ai/index.html": 15502,
-  "ai/intelligence.md": 22697,
+  "ai/brief.md": 7854,
+  "ai/index.html": 15918,
+  "ai/intelligence.md": 23562,
   "ai/landscape/ls-01.md": 7138,
   "ai/landscape/ls-02.md": 6985,
   "ai/landscape/ls-03.md": 6992,
@@ -33,7 +33,7 @@
   "ai/landscape/ls-14.md": 20937,
   "ai/method.md": 26809,
   "ai/rulebook/glossary.md": 11453,
-  "ai/rulebook/index.md": 10550,
+  "ai/rulebook/index.md": 10947,
   "ai/rulebook/rb-01.md": 8728,
   "ai/rulebook/rb-02.md": 7924,
   "ai/rulebook/rb-03.md": 8176,
@@ -48,6 +48,7 @@
   "ai/rulebook/rb-12.md": 9090,
   "ai/rulebook/rb-13.md": 7782,
   "ai/rulebook/rb-14.md": 3084,
+  "ai/rulebook/rb-1971.md": 30648,
   "ai/rulebook/rb-bonds.md": 61944,
   "ai/rulebook/rb-buckets.md": 7268,
   "ai/rulebook/rb-clubs.md": 38860,
@@ -65,9 +66,9 @@
   "ai/rulebook/rb-titled.md": 19510,
   "ai/rulebook/rb-worldbs.md": 47120,
   "ai/rulebook/rules.md": 19383,
-  "llms-full.txt": 814682,
-  "llms.txt": 13742,
+  "llms-full.txt": 846647,
+  "llms.txt": 14135,
   "robots.txt": 78,
-  "sitemap.xml": 6090
+  "sitemap.xml": 6199
  }
 }

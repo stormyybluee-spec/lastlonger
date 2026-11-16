@@ -1,6 +1,6 @@
 # Epilogue. The promise: the story of money in ten questions
 
-Rulebook Level 3 (The big arguments), chapter 03. Stack: Fundamentals. Id: rb-promise.
+Rulebook Level 3 (The big arguments), chapter 04. Stack: Fundamentals. Id: rb-promise.
 
 Web page: https://neetmonetary.netlify.app/#rb-promise . Text built 2026-11-16. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 

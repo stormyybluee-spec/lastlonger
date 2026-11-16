@@ -113,6 +113,9 @@ Level 3, "The big arguments", now has its first chapter: "Is printing money a sc
 ### Round 13 in one paragraph (2026-11-16, the Level 3 epilogue as a story)
 "The promise: the story of money in ten questions" retells the findings of the two Level 3 chapters as a narrated story in ten scenes: the field of 1522, the silver ships, the king's promise, the two women in the bank queue of 1931, the ruins of 1945, the Camp David weekend, the grandmother's tin, the bank counter in Kuala Lumpur, the two families and the lever, and the sword and the rocket. The people are imagined and marked as such, and every number comes from the two chapters. Its line: money is a promise about a future nobody has seen, hard money and stretching money each keep the promise for some and break it for others, and the argument is still about who pays, how much, who decides and who is let in. The owner's four new points are listed at the end as open questions, not findings. Next: each of the seven questions gets a deep chapter of its own, starting with 1971.
 
+### Round 14 in one paragraph (2026-11-16, the first deep Level 3 chapter)
+"The weekend that cut the anchor: what 1971 really changed" tests the owner's claim that 1971 is the hinge of modern money. Before 1971 gold was a real limit on what America could promise foreign governments and a loose limit on bank lending at home. After 1971 borrowing became elastic, not unlimited: inflation, lenders and foreign-currency debt took the place of gold, and they bind a small country harder than they bind the issuer of the dollar. The governance that replaced gold, the inflation target, came late, held for long spells and missed badly at times, with more frequent crises than the gold-linked years. Late developers, Malaysia among them, grew faster after 1973 and the rich world slower, but the evidence does not tie either to the gold link. Six deep chapters remain.
+
 ### Where everything lives
 | File | What |
 |---|---|
