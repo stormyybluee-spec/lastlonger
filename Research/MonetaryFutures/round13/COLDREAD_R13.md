@@ -143,3 +143,36 @@ Each fix gives the block, the exact OLD text and the NEW text.
 - Move the "Not advice" callout [57] up, near [2], so it is read before the story.
 - Consider a short scene break or a spoken line in [37] and [41 to 43] so the later scenes sound less like a report. Most of the chapter's warmth sits in [4 to 7], [19 to 21], [33 to 34] and [54].
 - The last third has the heaviest numbers. [31 to 32], [38], and [41 to 42] are where both readers go quiet.
+
+
+# Retest 1 (draft R13c), 2026-11-16
+
+## Score tables
+
+### A. Understanding (1 to 10, pass mark 8)
+
+| Item | Reader 1 (Malaysian, ESL) | Reader 2 (American) |
+|---|---|---|
+| (a) money is a promise, the farmer | 8 | 8 |
+| (b) Spain's silver and the coin shortage | 7 | 8 |
+| (c) the bridge and borrowing from the future | 7 | 9 |
+| (d) the two women in the queue and the farmer | 6 | 7 |
+| (e) 1971, what did and did not follow | 7 | 8 |
+| (f) the tin, the granddaughter, what is not claimed | 8 | 8 |
+| (g) three questions at the counter, no even start | 6 | 7 |
+| (h) two families, credit is a lever | 6 | 8 |
+| (i) final verdict | 7 | 9 |
+| Average | 6.9 | 8.0 |
+| Rounded overall | 7 | 8 |
+
+Result: Reader 1 fails (6.9). Reader 2 passes, only just (8.0). Combined average 7.5, so the chapter as a whole is a narrow fail for the weaker reader.
+
+### B. Story (1 to 10)
+
+| Item | Reader 1 | Reader 2 |
+|---|---|---|
+| (j) held attention to the end | 7 | 7 |
+| (k) felt for people on both sides | 8 | 8 |
+| (l) reads as a story, not a report | 8 | 7 |
+| (m) the ending landed | 8 | 8 |
+| Average | 7.8 | 7.5 |
