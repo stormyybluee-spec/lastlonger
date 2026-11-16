@@ -12556,7 +12556,7 @@
     },
     {
      "type": "p",
-     "text": "On Friday 13 August 1971 President Richard Nixon flew to Camp David, the presidential retreat. With him were fifteen advisers, among them Arthur Burns, the head of the central bank, John Connally, the Treasury Secretary, and a senior Treasury official named Paul Volcker. They had a problem that could not wait."
+     "text": "On Friday 13 August 1971 President Richard Nixon flew to Camp David, the presidential retreat. With him were fifteen advisers, among them Arthur Burns, the head of America's central bank, which sets interest rates, John Connally, the Treasury Secretary, and a senior Treasury official named Paul Volcker. They had a problem that could not wait."
     },
     {
      "type": "p",
@@ -12632,7 +12632,7 @@
      ],
      "rows": [
       [
-       "Until March 1968 America's central bank had to hold gold worth 25% of the banknotes it issued. In February 1968 Congress was told that of about 12 billion dollars of gold, only 1.3 billion was still free",
+       "Until March 1968 America's central bank had to hold gold worth 25% of the banknotes it issued. In February 1968 Congress was told that of about 12 billion dollars of gold, only 1.3 billion was still free, meaning not already locked up as cover for banknotes",
        "Congress removed the rule in two steps: for bank deposits in 1965, and for banknotes in 1968, when the free gold was about to run out. A limit that is lifted when it binds is a loose limit"
       ],
       [
@@ -12651,7 +12651,11 @@
     },
     {
      "type": "p",
-     "text": "Put the two columns together. Gold was a real limit at the top of the system, on what America could promise other governments. It was a weak limit on lending inside each country, and it was loosened when it pulled tight. Rules on interest rates and on money crossing borders also held lending down. And in the 1960s dollar lending outside America, called eurodollars, grew fast beyond both America's rules and the gold rule. Credit grew fast under the gold link partly because it started from a low level after the war. But its level against income climbed far higher once the link was gone."
+     "text": "Put the two columns together. Gold was a real limit at the top of the system, on what America could promise other governments. It was a weak limit on lending inside each country, and it was loosened when it pulled tight."
+    },
+    {
+     "type": "p",
+     "text": "Rules on interest rates and on money crossing borders also held lending down. And in the 1960s dollar lending outside America, called eurodollars, grew fast beyond both America's rules and the gold rule. Credit grew fast under the gold link partly because it started from a low level after the war. But its level against income climbed far higher once the link was gone."
     },
     {
      "type": "insider",
@@ -12672,11 +12676,11 @@
     },
     {
      "type": "p",
-     "text": "The second limit is the lender. In September 2022 Britain's government announced large tax cuts paid for by borrowing. Within days the interest rate on its 30-year bonds jumped by 1.6 percentage points. Pension funds that had borrowed to hold these bonds had to sell as prices fell, which made the fall worse, until the Bank of England stepped in to buy bonds for a short time. Most of the tax cuts were withdrawn within about a month, and the prime minister resigned after 44 days in office, press reports say."
+     "text": "The second limit is the lender. In September 2022 Britain's government announced large tax cuts paid for by borrowing. Within days the interest rate on its 30-year bonds, which are loans investors make to the government, jumped by 1.6 percentage points. Pension funds that had borrowed to hold these bonds had to sell as prices fell, which made the fall worse, until the Bank of England stepped in to buy bonds for a short time. Most of the tax cuts were withdrawn within about a month, and the prime minister resigned after 44 days in office, press reports say."
     },
     {
      "type": "p",
-     "text": "The third limit is the currency. A country that borrows in money its own central bank issues can always print to repay, at the cost of inflation. So, some economists stress, its true limit is inflation, not the size of its debt. A country that borrows in someone else's money cannot. Mexico told American officials and the IMF in August 1982 that it could not service about 80 billion dollars of debt. In 1997 a similar trap closed on much of East Asia, though not on every country in the same way."
+     "text": "The third limit is the currency. A country that borrows in money its own central bank issues can always print to repay, at the cost of inflation. So, some economists stress, the real limit is how fast prices rise, not how big the debt is. A country that borrows in someone else's money cannot. Mexico told American officials and the IMF in August 1982 that it could not pay what was due on about 80 billion dollars of debt. In 1997 a similar trap closed on much of East Asia, though not on every country in the same way."
     },
     {
      "type": "table",
@@ -12691,7 +12695,7 @@
       ],
       [
        "Malaysia",
-       "The ringgit fell from about 2.50 to the dollar in mid 1997 to a low near 4.88 in January 1998, according to press reports. On 1 September 1998 Bank Negara put controls on money leaving the country, aimed mainly at short-term money and ringgit held abroad, and the next day it fixed the ringgit at 3.80 to the dollar. The peg lasted until 2005"
+       "The ringgit fell from about 2.50 to the dollar in mid 1997 to a low near 4.88 in January 1998, according to press reports. On 1 September 1998 Bank Negara put controls on money leaving the country, aimed mainly at short-term money and ringgit held abroad, and the next day it fixed the ringgit at 3.80 to the dollar. That fixed rate lasted until 2005"
       ],
       [
        "South Korea",
@@ -12772,7 +12776,7 @@
     },
     {
      "type": "p",
-     "text": "So who can borrow almost without limit? The country whose money everyone else saves in. In mid 2026 the US dollar was 56.7% of the world's official currency reserves. Other countries need dollars to trade and to save, so America can usually sell its debt more easily. Even so, it met the first limit in 1980, and again in 2022."
+     "text": "So who can borrow with the fewest limits? The country whose money everyone else saves in and trades in. In mid 2026 the US dollar was 56.7% of the world's official currency reserves. Other countries need dollars to trade and to save, so America can usually sell its debt more easily. Even so, it met the first limit in 1980, and again in 2022."
     },
     {
      "type": "insider",
@@ -12790,7 +12794,7 @@
     },
     {
      "type": "p",
-     "text": "The reader says the new system runs under stable, controlled governance. Something did replace gold as the anchor. It is a promise by a central bank to keep inflation near a target, which in America is 2%. But that promise was not ready in 1971. New Zealand's came about twenty years later, America's after forty-one."
+     "text": "The reader says the new system runs under stable, controlled governance. Something did replace gold as the anchor. It is a promise by a central bank to keep inflation near a target, which in America is 2%. But that promise was not ready in 1971. New Zealand's came about twenty years later, in 1990. America announced its own in 2012, forty-one years after 1971."
     },
     {
      "type": "table",
@@ -12808,7 +12812,7 @@
       [
        "1990",
        "New Zealand became the first country to give its central bank an inflation target. By 2010, 26 countries had one",
-       ""
+       "No single figure"
       ],
       [
        "1983 to 2019",
@@ -12818,7 +12822,7 @@
       [
        "2007 to 2009",
        "The financial crisis. American output fell 4.3% and unemployment reached 10%. Congress approved up to 700 billion dollars to buy bad assets and support banks and other firms",
-       ""
+       "No single figure"
       ],
       [
        "2022",
@@ -12862,7 +12866,7 @@
        "1973 to 1997",
        "After Bretton Woods",
        "10.7",
-       "3.1 (1973 to 2017)"
+       "3.1 (1973 to 2017, a longer span)"
       ]
      ]
     },
@@ -12944,7 +12948,15 @@
     },
     {
      "type": "p",
-     "text": "Neither story proves a cause. Until about 1973 the rich countries were catching up after a war, and that probably explains much of their fast growth. The oil shocks also began in 1973. Dearer oil makes almost everything cost more to make and move, so prices rise while factories slow. And Japan, the star late developer of the gold-linked years, grew about 8% a year per person from 1950 to 1973. The late developers changed many things at once: schools, factories, trade rules. Malaysia passed a Free Trade Zone Act in 1971, and electronics factories soon rose in Penang. World trade rose from 25.8% of world output in 1970 to 56.7% in 2024. A world of floating money and freer movement of capital may have helped them. But Korea, China and Malaysia often grew while managing their exchange rates and limiting money crossing borders. The numbers cannot show which mattered more. Productivity, the most direct test, slowed in America too."
+     "text": "Neither story proves a cause. Until about 1973 the rich countries were catching up after a war, and that probably explains much of their fast growth. The oil shocks also began in 1973. Dearer oil makes almost everything cost more to make and move, so prices rise while factories slow. And Japan, the star late developer of the gold-linked years, grew about 8% a year per person from 1950 to 1973."
+    },
+    {
+     "type": "p",
+     "text": "The late developers changed many things at once: schools, factories, trade rules. Malaysia passed a Free Trade Zone Act in 1971, and electronics factories soon rose in Penang. World trade rose from about a quarter of world output in 1970 to more than half in 2024."
+    },
+    {
+     "type": "p",
+     "text": "A world of floating money and freer movement of capital may have helped them. But Korea, China and Malaysia often grew while managing their exchange rates and limiting money crossing borders. The numbers cannot show which mattered more, because so many things changed at the same time. Productivity, the most direct test, slowed in America too."
     },
     {
      "type": "table",
@@ -12955,7 +12967,7 @@
      ],
      "rows": [
       [
-       "What workers and machines make together, growth a year (Brookings)",
+       "Productivity, meaning what workers and machines make together, growth a year (Brookings)",
        "about 2.1%",
        "about 0.5%"
       ]
@@ -12967,7 +12979,7 @@
     },
     {
      "type": "p",
-     "text": "For a Malaysian reader the picture is mixed in a familiar way. Prices rose 0.9% a year in the 1960s, 6.3% a year from 1971 to 1982, and 2.5% a year from 1983 to 2019, by World Bank figures. Growth per person rose from 2.2% a year before 1973 to about 4% after. The toll rose for a decade and then fell back, while income grew faster."
+     "text": "For a Malaysian reader the picture is mixed in a familiar way. Prices rose 0.9% a year in the 1960s, 6.3% a year from 1971 to 1982, and 2.5% a year from 1983 to 2019, by World Bank figures. Growth per person rose from 2.2% a year before 1973 to about 4% after. The cost of rising prices, the toll, rose for a decade and then fell back, while income grew faster."
     },
     {
      "type": "insider",
@@ -13023,7 +13035,7 @@
     },
     {
      "type": "p",
-     "text": "One number speaks for the hard-money side. An ounce of gold cost 35 dollars on that weekend. On 16 November 2026 it cost about 3,900 dollars, by one price chart. Measured in gold, the dollar has lost about 99% of its value since the anchor was cut. But gold is a jumpy ruler, from about 850 dollars in January 1980 to about 5,590 in January 2026, by price charts. Measured in what people buy, the loss is smaller, as the table below shows. One number speaks for the other side. In those same years income per person in Malaysia, after inflation, grew about 4% a year, as the growth table shows. Neither number proves the case for its side."
+     "text": "One number speaks for the hard-money side. An ounce of gold cost 35 dollars on that weekend. On 16 November 2026 it cost about 3,900 dollars, by one price chart. Measured in gold, the dollar has lost about 99% of its value since the anchor was cut. But gold is a poor yardstick because its own price jumps around, from about 850 dollars in January 1980 to about 5,590 in January 2026, by price charts. Measured in what people buy, the loss is smaller, as the table below shows. One number speaks for the other side. In those same years income per person in Malaysia, after inflation, grew about 4% a year, as the growth table shows. Neither number proves the case for its side."
     },
     {
      "type": "table",
