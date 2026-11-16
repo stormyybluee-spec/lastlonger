@@ -100,7 +100,8 @@ for eid, ref, old, new in edits:
     if not done:
         fail.append((eid, ref, s.count(o), old[:80]))
 
-for after, blk, nid in sorted(inserts, key=lambda x: -x[0]):
+# several new blocks after the same position keep the order the court listed them in
+for after, blk, nid in sorted(reversed(inserts), key=lambda x: -x[0]):
     ch["blocks"].insert(after + 1, blk)
 
 # verify after apply: each new text must now be present
