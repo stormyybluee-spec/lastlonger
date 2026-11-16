@@ -176,3 +176,90 @@ Result: Reader 1 fails (6.9). Reader 2 passes, only just (8.0). Combined average
 | (l) reads as a story, not a report | 8 | 7 |
 | (m) the ending landed | 8 | 8 |
 | Average | 7.8 | 7.5 |
+
+## Story notes
+
+Strongest scene. Reader 1: the tin and the granddaughter, blocks [38] and [39]. It is her own money and her own family, and the last line ("hard to hold both in one heart") is the best sentence in the chapter. Reader 2: the queue, blocks [24] to [26]. Two women in one line, and one rule that crushes one and rewards the other.
+
+Weakest scene. Reader 1: the lever, blocks [46] to [49]. Dollar figures for American owners and renters mean little, the "typical owner" figure has no face, and the word lever is explained only at the very end of [49]. Reader 2: also the lever, plus the ruins, blocks [30] to [31], which are mostly numbers.
+
+Where attention drifts.
+- Reader 1: the front matter [0] to [3] (code names such as rb-print, a tl;dr before the story starts), the number runs in [15] to [16], [30] to [31] and [36] to [37], and the table and the closing callout after the ending line [59].
+- Reader 2: the same front matter, the long list of figures in [36] and [37], the Swiss vote in [28], and the table [60] and callout [61], which come after the best last line and so soften it.
+
+Fairness to both sides. Both readers finish thinking the author was fair. Savers get faces (the second woman in the queue, the German mother, the grandmother). Borrowers get faces (the farmer, the Latin American parents, the second family, the young woman at the counter). The verdict in [56] names what is wrong with each side. Reader 2 might feel a slight lean toward credit from [57] ("A promise lets them start") and [58] ("the promise won over the metal"), but the toll and the gate keep it balanced. Reader 1 reads it as even.
+
+Is it clear which people are imagined? Yes. Every invented person is introduced with "Picture" and the how-to-read callout [2] says so. The real ones (the reader who wrote in, the president, Swiss voters) are not introduced with "Picture". One small risk: "the reader who wrote in" in [21], [35] and [52] could be taken as a character in the story. It is explained in [6], so this is minor.
+
+Does anything read like financial advice? No. The callout [3] says so. The nearest line is [44], where hard money "would tell her to save first" and stretching money "tells her to start now and owe". It is framed as what each system tells her, so it does not read as advice.
+
+## Remaining confusions
+
+### Reader 1 (Malaysian, ESL)
+- [0] to [3]: the labels rb-print and rb-credit, "Questions 1 to 3" and "the old board and the new players" mean nothing to someone who has not read the earlier chapters.
+- [5] to [7]: the word toll first appears in [0] and [28] but is not tied to the scam voices where the reader meets them. The reader is not sure what "toll" means until [38].
+- [19]: "the Crown" is unclear. The reader may not know it means the king.
+- [25] and [26]: why falling prices make debts heavier and savings stronger is a hard idea in a second language. It is also unclear whether the first woman's bank failed, because [24] only says "if".
+- [28]: "Banks make new money when they lend" and the Swiss vote on stopping it comes with no setup.
+- [32]: "And the rising prices stop" reads as odd after a loss.
+- [38]: "18 sen" is clear to this reader, but "the toll found her there" is figurative.
+- [44]: "While she saves, money gains value" and the Monopoly picture lose the thread of why neither money gives an even start.
+- [46] to [48]: "like the typical owner" and "like the poorest fifth of owners" are hard to hold. Years later is unclear. The meaning of lever comes late.
+- [49]: "the borrower is servant to the lender" is a hard line.
+- [60] row 3: "the 2% target" is never explained in the story.
+
+### Reader 2 (American)
+- [0] to [3]: same front matter issue, milder.
+- [26]: it is not clear that the first woman's bank was the one that failed.
+- [28]: "Banks make new money when they lend" is a surprise, and the Swiss vote needs a line of setup.
+- [38]: "18 sen" is unfamiliar.
+- [44]: "While she saves, money gains value" is puzzling, and the home ownership figures at the end of the block feel dropped in.
+- [46]: "Years later" in a block about 2007 is confusing.
+- [60] row 3: "the 2% target" is never explained.
+- [61]: four new claims come after the ending and read like a report.
+
+## Ranked fixes (10)
+
+1. Block [26]. The first woman's bank is not shown failing, yet [56] says her bank's promise broke.
+OLD: Now picture another woman, a little further up the same line. Her bank opens.
+NEW: Now picture another woman, a little further up the same line. The first woman's bank stays shut, but hers opens.
+
+2. Block [7]. Plant the word toll at the start so every later use lands.
+OLD: Two chapters tested both voices with numbers.
+NEW: Two chapters tested both voices with numbers. One word will come back again and again. It is the toll, the slow loss of what each coin can buy.
+
+3. Block [48]. Say what a lever is when the two families part ways, not only in [49].
+OLD: It was the same tool.
+NEW: It was the same tool. A lever makes a small push big, in both directions.
+
+4. Block [28]. Tie the toll to prices in the Swiss vote.
+OLD: anger at the toll.
+NEW: anger at the toll of rising prices.
+
+5. Block [44]. Make the even start line say what each road costs her.
+OLD: Neither gives her an even start.
+NEW: Neither gives her an even start. Saving means a long wait while others move ahead. Owing means she can start now, but she begins by paying.
+
+6. Block [60], row 3. The 2% target is never explained in the story.
+OLD: Does the sword explain the 2% target?
+NEW: Does the sword explain why prices are meant to rise a little each year?
+
+7. Block [38]. Help readers outside Malaysia with sen.
+OLD: A ringgit buys what 18 sen bought in 1971.
+NEW: A ringgit buys what 18 small coins called sen bought in 1971.
+
+8. Block [46]. Remove the confusing time jump.
+OLD: Years later, everything the typical owner has, after debts, is worth $396,200.
+NEW: Look at what the typical owner has, after debts. It is worth $396,200.
+
+9. Block [19]. Make the Crown plain.
+OLD: to lend the Crown 1.2 million pounds
+NEW: to lend the king 1.2 million pounds
+
+10. Block [32]. Smooth the turn after the loss.
+OLD: And the rising prices stop, and trade begins to move again.
+NEW: Yet the rising prices stop, and trade begins to move again.
+
+## Not fixed by text swaps (for the editor)
+- Move the table [60] and the callout [61] so the chapter ends on the line in [59]. They soften the ending for both readers.
+- Move the how-to-read callout and the bridge block [1] below the first story scene, or cut the code names. Both readers meet jargon before the first person.
