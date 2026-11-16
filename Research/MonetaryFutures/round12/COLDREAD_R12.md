@@ -121,3 +121,86 @@ NEW: 3. About 80% could not save and grow their savings
 14. Block [4].
 OLD: money stood in the dock and the jury found a toll, not a scam.
 NEW: money stood on trial in a courtroom and the jury found a toll, not a scam.
+
+
+# Retest 1 (draft R12c), 2026-11-16
+
+## Score table (main path only, no Go deeper boxes, no A: lines)
+
+| Part | Reader 1 (Malaysian, ESL) | Reader 2 (American) |
+|---|---|---|
+| (a) four-part claim | 7 | 9 |
+| (b) peasants and Spain | 7 | 9 |
+| (c) 1971 | 8 | 9 |
+| (d) borrowing from the future, the test | 7 | 8 |
+| (e) why the law leans, who gains, the case for it | 6 | 8 |
+| (f) big printers poor, three uses of new money | 7 | 9 |
+| (g) the credit gate and its cost | 7 | 8 |
+| (h) help or harm, three tests | 8 | 9 |
+| (i) epilogue grading and rebuilt claim | 6 | 8 |
+| Average | 7.0 | 8.6 |
+| Overall (rounded) | 7 | 9 |
+| Pass mark 8 | FAIL | PASS |
+
+## Fairness, courtroom, advice
+
+- Fairness to the reader who made the claim: both readers would say yes. [7] says parts of it are right, [66] says the reader "saw something true and important", and the grading is "holds in part" four times, not "wrong".
+- Fairness to critics of credit: both would say yes. The poor-borrower cases in [56], the gate in [47] to [53], and the Proverbs warning in [55] get real space. Reader 1 may feel the case for the safety net in [34] to [37] is argued harder than the case against it, because the Swiss vote in [36] and [37] is offered as support but is not explained.
+- Courtroom story: it holds. [4] and [7] set it up, [7] calls the questions cross-examination, and [62] returns to the jury. A small drift: in the epilogue every part gets the same verdict, so the "jury" feels less like it decided anything.
+- Financial advice: none. [57] and [71] say so plainly. The ask-questions list in [68] is about arguments, not about what to do with money.
+
+## Remaining confusions
+
+Reader 1 (Malaysian, ESL)
+- [6] Part 4 "standing on their own feet" is an idiom. Hard to restate.
+- [30] and [31] The jump from "money made from nothing" to legal tender, licence and "pillar" is not linked. Why do these laws make money from nothing?
+- [31] "Legal tender" and "bank licence" row wording is dense.
+- [37] The "case for that system" is spread over three sentences and ends with one short line. The reader may not name it as "before the safety net thousands of banks failed".
+- [47] "Pledge" is unfamiliar. "Security" in [49] is not linked back to it.
+- [51] "Median debt service ratio" is hard.
+- [52] "Riba" and "risk in a different way" lose them. Not needed for the test.
+- [62] and [63] All four parts get "holds in part". The reader cannot tell which part failed where without reading each cell.
+- [27] Test for the burden on the next generation is only half there (what it built). The foreign-holder test is in [25] and [28] but not in the summary.
+- [12], [20] and the other "insider" boxes: the label is odd and the box name does not say it is a summary.
+
+Reader 2 (American)
+- [10] Table is dense. Hamilton, Seville and the four defaults are many facts for one point.
+- [19] Several percent-of-GDP figures in a row.
+- [33] The IMF subsidy figure is hard to place.
+- [24] Lerner and Buchanan names add little for a first read.
+- [62] and [63] All four "holds in part" blur together on first read.
+- [37] The case for the system reads as a list, with the Swiss vote doing odd work.
+
+## Ranked fixes (8)
+
+1. Block [62], clearer epilogue grading (helps part i for both readers).
+OLD: All four hold in part, for different reasons.
+NEW: All four hold in part, but each fails in a different place. Part 1 needs credit that builds. Part 2 mixes up scarce money with scarce output. Part 3 gives a figure that this chapter cannot test. Part 4 is right that credit has a gate.
+
+2. Block [30], link "money from nothing" to the laws (helps part e, Reader 1).
+OLD: Money made from nothing is not an accident. It stands on laws.
+NEW: Money made from nothing is not an accident. A bank loan makes new money, and laws let it happen.
+
+3. Block [37], name the case for the system (part e).
+OLD: It was also chosen because the old way broke thousands of banks.
+NEW: The strongest case for the system is simple. Before the safety net, thousands of banks failed.
+
+4. Block [27], complete the test for burden on the next generation (part d).
+OLD: If it did not, the children really do pay.
+NEW: If it did not, or if foreigners hold the debt, the children really do pay.
+
+5. Block [31], plain wording of legal tender row (part e, Reader 1).
+OLD: Makes the state's money the money a lender must accept as payment of a debt
+NEW: A lender must accept the state's money when a debt is paid
+
+6. Block [6], idiom in Part 4 (part a, Reader 1).
+OLD: pushes everyone toward standing on their own feet through credit
+NEW: pushes everyone to look after themselves by borrowing
+
+7. Block [47], word "pledge" (part g, Reader 1).
+OLD: Do you have something to pledge, such as a house?
+NEW: Do you have something to put up as security, such as a house?
+
+8. Block [51], median ratio in plain words (part g, Reader 1).
+OLD: That means loan payments take 41% of income.
+NEW: That means the middle new borrower pays 41% of income on loans.
