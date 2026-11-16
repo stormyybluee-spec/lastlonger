@@ -102,10 +102,84 @@ Status key: verified = source opened and the figure seen. secondary = reliable s
 |---|---|---|---|---|---|
 | Six randomized studies of microcredit (Bosnia, Ethiopia, India, Mexico, Morocco, Mongolia, 2003 to 2012) found "modestly positive, but not transformative, effects". More business activity and choice, but no evidence of a fall in poverty or a big rise in living standards | 6 studies, 7 lenders | 2015 | Banerjee, Karlan and Zinman, AEJ Applied 7(1) 1 to 21 | https://economics.mit.edu/sites/default/files/publications/Six%20Randomized%20Evaluations%20of%20Microcredit.pdf | secondary |
 
-## Q10 continued. How the law treats a failed borrower (Malaysia)
+## Q10 continued. How the law treats a failed borrower (Malaysia and England)
 
 | Claim | Number | Year | Source | URL | Status |
 |---|---|---|---|---|---|
 | Minimum debt to make someone bankrupt raised from RM30,000 to RM50,000 (2017), then to RM100,000 (Insolvency Amendment 2020). The Bankruptcy Act 1967 was renamed the Insolvency Act 1967 | RM100,000 | 2017, 2020 | RinggitPlus, Mondaq | https://ringgitplus.com/en/blog/personal-finance-news/government-amends-insolvency-law-raises-bankruptcy-threshold-from-rm50000-to-rm100000.html , https://www.mondaq.com/insolvencybankruptcy/1421500/revamp-of-bankruptcy-laws-in-malaysia | secondary |
 | Automatic discharge: a bankrupt is discharged three years after filing the statement of affairs, if they paid the amount the Director General set and kept proper accounts. Non-compliance can delay it. Amendment 2023 in force 6 Oct 2023 widened discharge | 3 years | 2017, 2023 | The Vibes, Azhar and Wong | https://www.thevibes.com/articles/news/99502/light-at-end-of-tunnel-for-insolvents-under-amended-act | secondary |
 
+| England: the Debtors Act 1869 abolished most imprisonment for debt. Exceptions stayed (for example debtors able to pay who refused, up to six weeks). Wider abolition came with the Administration of Justice Act 1970 | 1869, 1970 | 1869 | legislation.gov.uk (Act text, cross-heading "Abolition of imprisonment for debt"), Wikipedia summary | https://legislation.gov.uk/ukpga/Vict/32-33/62/part/I/crossheading/abolition-of-imprisonment-for-debt/enacted | secondary |
+
+### Student debt (US)
+
+| Claim | Number | Year | Source | URL | Status |
+|---|---|---|---|---|---|
+| US student loan debt US$1.63 trillion in Q1 2025. 7.74% of it was 90 days or more delinquent, against under 1% in Q4 2024 (after the pause on reporting ended) | US$1.63 trillion | Q1 2025 | New York Fed press release, 13 May 2025 | https://www.newyorkfed.org/newsevents/news/research/2025/20250513 | secondary |
+| A figure of US$1.866 trillion (March 2026) is quoted by College Investor and Motley Fool. It likely uses a different base (federal portfolio plus private). Do not mix with the NY Fed series | US$1.866 trillion | 2026 | College Investor | https://thecollegeinvestor.com/student-loan-debt-statistics/ | secondary, use with care |
+
+## Q7 continued. Defence of the system and how the rules were made
+
+| Claim | Number | Year | Source | URL | Status |
+|---|---|---|---|---|---|
+| US: more than 600 banks a year failed on average 1921 to 1929. Suspensions: 1,350 in 1930, about 2,300 in 1931, and about 4,000 banks never reopened after the 1933 bank holiday | 600 a year, 1,350, 2,300, 4,000 | 1921 to 1933 | FDIC, "A Brief History of Deposit Insurance", chapter 3 | https://www.fdic.gov/resources/publications/brief-history-of-deposit-insurance/book/brief-history-deposit-insurance-3.pdf | verified |
+| Banking Act of 1933 signed 16 June 1933. Section 8 created the FDIC. Temporary insurance began 1 January 1934, cover US$2,500, raised to US$5,000 from 1 July 1934 | US$2,500 then US$5,000 | 1933, 1934 | FDIC, same chapter | same URL | verified |
+| In 1934 only nine insured banks and 52 uninsured licensed banks suspended. But the FDIC's own 1934 report credited other causes too: RFC rescue money, weak banks already removed in 1933, and a better economy. The banking industry had fiercely opposed deposit insurance and only endorsed it in April 1934 | 9 insured failures | 1934 | FDIC, same chapter | same URL | verified |
+| Total US bank suspensions 1921 to 1936 | 14,943 | 1937 | Federal Reserve Bulletin, "Bank Suspensions 1921 to 1936" | https://fraser.stlouisfed.org/title/bank-suspensions-1921-1936-683/fulltext | secondary |
+| Federal Reserve Act: the first draft came from a secret November 1910 meeting at Jekyll Island of Senator Aldrich and leading bankers (including Davison and Warburg), disguised as a duck hunt. The Aldrich Plan (1911) died after the 1912 Democratic platform opposed it. A changed version passed Congress and was signed by President Wilson on 23 December 1913. So it was a law passed by elected Congress, but drafted with heavy banker input | 1910, 1913 | 1910 to 1913 | St Louis Fed FRASER blog, Federal Reserve Act summary | https://fraser.stlouisfed.org/blog/?p=869 | secondary (exact House and Senate vote counts not found) |
+| End of gold convertibility: Nixon and fifteen advisers (including Fed Chair Burns, Treasury Secretary Connally and Volcker) met at Camp David 13 to 15 August 1971. Announced in a Sunday TV speech on 15 August 1971. An executive decision, not a vote of Congress | 15 advisers | 1971 | Federal Reserve History, "Nixon Ends Convertibility" | https://www.federalreservehistory.org/essays/gold-convertibility-ends | secondary. Whether Congress was told in advance: not found |
+
+## Q8 continued. Cases
+
+| Claim | Number | Year | Source | URL | Status |
+|---|---|---|---|---|---|
+| Zimbabwe: peak annual inflation estimated at 89.7 sextillion percent (89.7 x 10^21) in November 2008, monthly 79.6 billion percent, prices doubling every 24.7 hours. The central bank stopped publishing data, so these are Hanke estimates | 89.7 sextillion % | Nov 2008 | Steve Hanke, Cato / Johns Hopkins | https://www.cato.org/commentary/zimbabwe-inflates-again | secondary |
+| Venezuela: annual inflation highest in the world in 2018. Peak estimates vary from about 80,000% to about 1,300,000%. Living standards fell about 74% between 2013 and 2023 (one cited estimate). A clean IMF or World Bank GDP per person figure was not found | estimates vary | 2018, 2013 to 2023 | Cato (Hanke), Economics Observatory via search digest | https://www.cato.org/commentary/three-ms-milosevic-mugabe-maduro | secondary, numbers disputed. Pick one sourced figure before printing |
+| Argentina inflation peaks and income per person change | not checked | | | | memory, do not print |
+| Werner: splits credit into credit for "real" (GDP) transactions and credit for financial transactions. Excess credit into the financial circuit drives asset booms. Main evidence is Japan in the 1980s, where Bank of Japan "window guidance" told banks how much to lend. Almost all the evidence is Werner's own work | framework | 1997 | Werner, Kredit und Kapital 30(2), doi 10.3790/ccm.30.2.276 | https://elibrary.duncker-humblot.com/article/69451/towards-a-new-monetary-paradigm-a-quantity-theorem-of-disaggregated-credit-with-evidence-from-japan | secondary |
+| South Korea, Japan, China, Malaysia credit to GDP and growth during directed credit eras | not checked | | | | memory, do not print |
+
+## Q7 items not checked this round (memory, do not print without a source)
+
+| Claim | Status |
+|---|---|
+| Bagehot, "Lombard Street" 1873: lend freely, at a high rate, against good collateral | memory |
+| Basel I capital accord 1988, Basel III after 2010 | memory |
+| US legal tender clause and the rule that federal taxes are paid in dollars | memory |
+| Seigniorage size (state profit from issuing notes), for the US Fed or Bank Negara | memory, gap |
+| Desan, "Making Money" (2014): money is a legal and political design, not a natural thing | memory |
+| Pistor, "The Code of Capital" (2019): lawyers code assets to give priority, durability and convertibility, and the state backs it | memory |
+| Chicago Plan 1933 (100% reserves), and Benes and Kumhof IMF 2012 "The Chicago Plan Revisited" | memory |
+| Bank of England 2014 "Money creation in the modern economy" and a figure for share of UK bank lending to non-financial business against property | memory, gap |
+| Malaysia CCRIS (BNM) and CTOS credit reports, and any BNM debt service ratio cap | memory, gap |
+| Malaysia Findex 2025 figures (account ownership, formal borrowing) | gap |
+
+## Evidence for and against the owner's thesis
+
+For the thesis
+- The law does lean toward bank-made money and shields it. Deposit insurance (US 1933 to 1934, Malaysia 2005, RM250,000 since 2010), and an implicit "too big to fail" subsidy worth up to US$70 billion (US) and US$300 billion (euro area) in 2012 (IMF).
+- The backstop did stop panics. US bank suspensions ran at 600 a year in the 1920s and 1,350 to 2,300 a year in 1930 to 1931, then only nine insured banks failed in 1934 (FDIC). Swiss voters rejected the full-reserve Vollgeld plan 75.7% to 24.3% in 2018.
+- Credit for assets lines up with wealth. US owners had a median net worth of US$396,200 against US$10,400 for renters (SCF 2022). Microcredit gave people more choice in what work they did and what they bought (Banerjee, Karlan and Zinman 2015).
+- Access has widened. 79% of adults worldwide now have an account, up from 50% in 2011 (Findex 2025).
+
+Against the thesis
+- The gate is narrow and uneven. 1.3 billion adults have no account. Only 24% of adults in low and middle income countries borrowed formally in 2024, and 35% relied on family and friends. 26 million US adults had no credit record, and 45 million had no usable score (CFPB 2015).
+- The price at the gate rises as you get poorer: about 6% for a prime US mortgage, about 21 to 23% on cards, almost 400% APR for a payday loan. US card users paid US$105 billion in interest in 2022, and nearly one in ten are in persistent debt.
+- More credit is not always more output. Growth turns negative when private credit goes past about 100% of GDP (Arcand, Berkes and Panizza, and BIS). Most new bank lending now funds existing homes: mortgages went from about 30% of bank loans in 1900 to about 60% in 2007 (Jorda, Schularick and Taylor). Zimbabwe and Venezuela show money growth with output collapse.
+- Leverage makes the borrower fragile, not sovereign. The poorest US homeowners had debt near 80% of assets and lost almost all their net worth between 2007 and 2010 (Mian). Malaysia household debt is 84.8% of GDP. About 5,000 to 6,000 Malaysians go bankrupt a year, nearly half over personal loans, mostly aged 25 to 54. PTPTN has RM11.18 billion in arrears and 1.2 million defaulters.
+- Microcredit did not reduce poverty in six randomized trials.
+- The rules were not chosen in a clearly democratic way. The Fed plan was first drafted in secret by bankers (1910), and the 1971 end of gold conversion was decided by the President and advisers at Camp David, with no vote in Congress.
+- Credit and bank backstops are older than 1971. Deposit insurance dates from 1933 and the Fed from 1913, so "after Nixon" is not where the credit system starts.
+
+## Gaps
+
+- Global Findex 2025: no high-income formal borrowing figure for 2024, and no Malaysia figures. Need the Findex country data page or the full report (PDF was too large to fetch).
+- Jorda, Schularick and Taylor 1928 figure: the VoxEU page returned 403. The 30% to 60% figure is secondary.
+- Malaysia: share of household debt that is housing loans (BNM FSR full text), CCRIS and CTOS rules, any DSR cap, Ah Long rates, AKPK case numbers. PTPTN total loan book (as distinct from arrears) not found.
+- Venezuela and Argentina: need World Bank or IMF GDP per person series and a single sourced inflation peak.
+- Directed credit (Korea, Japan, China, Malaysia) credit to GDP and growth: not searched.
+- Seigniorage size and any Bank of England or Positive Money figure for UK lending to business against property: not found.
+- Desan, Pistor, Chicago Plan, Bagehot, Basel: listed from memory only.
+- Exact US House and Senate vote counts for the 1913 Federal Reserve Act, and whether Congress was told before 15 August 1971.
+- Research on debt and mental stress: not searched.
+- Malaysia Currency Act 2020 text: only secondary sources seen for the legal tender wording and the 25 coin limit.
