@@ -262,3 +262,117 @@ OWID net primary enrolment (Lee and Lee 2016), percent:
 | Malaysia | 1.1 | 7.4 | 67.0 | 96 | 92.4 | 95 | 97.2 |
 Source and status: verified (CSV opened in parts through the fetch tool). The series is modelled in places, for example Malaysia 67.0 in 1950 then 52.3 in 1955 then 96 in 1960 and UK 100 in 1950 then 86.7 in 1960, so single-year values carry noise and early years are estimates. The World value of about 72 percent in 1970 matches the owner's "roughly 70 percent chance that a child goes to school" (net enrolment, 1970). Malaysia: no 1957 value in the series. Nearest 1955 52.3 percent and 1960 96 percent. Adult literacy about 52 percent around 1957 is from an unattributed secondary document, unverified.
 Cross-check of two data sets for Malaysia in 1950: OWID literacy 37.5 percent (Section 2) against net enrolment 67 percent. These measure different things. Do not mix them.
+
+## Section 12. Interest rates, Dutch finance, Spanish silver (H1)
+- Schmelzing (2020), Bank of England Staff Working Paper 845, https://www.bankofengland.co.uk/working-paper/2020/eight-centuries-of-global-real-interest-rates-r-g-and-the-suprasecular-decline-1311-2018 . Opened the abstract page. Verified: coverage 1311 to 2018, about 78 percent of advanced economy GDP, a trend decline of 0.6 to 1.6 basis points a year. Bank Underground summary (https://bankunderground.co.uk/2020/07/07/global-real-rates-1311-2018/, opened): higher-rate periods around 1320 to 1480 and 1520 to 1650, private safe real rate trend of -0.6 basis points a year, average R minus G spread over the past 500 years just under 2.5 percent. Level of real rates by century: NOT obtained (the numbers sit in charts and in the PDF, which my fetch tool could not read, and the file is saved at /root/.claude/projects/-home-user-lastlonger/41b7d58e-bedc-5a4f-859e-bd3e52b76ed8/tool-results/webfetch-1794814567669-jxdcyz.pdf for a later read with pdftotext). Note a basis point is one hundredth of a percent, so 0.6 to 1.6 basis points a year is 0.006 to 0.016 percentage points a year, about 5 to 13 points over 800 years if it ran the whole time (hand check: 0.006 x 800 = 4.8, 0.016 x 800 = 12.8).
+- Same paper, as a caution from a secondary summary: a Rothschild note says real rates in the distant past look much higher than today's, and Schmelzing does not argue cause. Status: secondary.
+- Dutch yields: Global Financial Data says its Dutch government bond series runs 1606 to 1699 and yields settled around 4 percent from the mid 1600s (search summary, page failed to load when I tried to open it). Another search summary says Holland borrowed at 3 to 4 percent when the Bank of England borrowed at 8 percent in 1694 and that Venice and Genoa paid 6 to 10 percent in the medieval period against 10 to 15 percent for other rulers. Both secondary, unverified. https://globalfinancialdata.com/7-centuries-of-government-bond-yields
+- English comparison from the BoE workbook (Section 4d): government long yield 6.0 percent in 1705, 4.0 in 1720, 3.0 in 1740 and 1750. So England reached the Dutch level about 50 years later.
+- Bank of Amsterdam: opened 31 January 1609 (secondary, search summary, https://en.wikipedia.com/wiki/Wisselbank). Gelderblom and Jonker (2004) JEH say private finance came before public finance in the Republic and the Amsterdam market by 1609 was strong enough to dictate terms on new public debt (secondary, https://ideas.repec.org/a/cup/jechis/v64y2004i03p641-672_00.html). So the sequence ran from market to state, the opposite of the usual "state credit then growth" order. That cuts against a simple reading of North and Weingast.
+- Counter-evidence to North and Weingast (1989): Clark (1996) found no break in private returns to land and capital around 1688. Sussman and Yafeh (2006) found interest rates rose for about three decades after 1688. A study of London Corporation borrowing shows rates diverging between 1688 and the 1730s (all secondary, from the search summary of https://voxeu.org/article/historical-view-government-defaults-lessons-17th-century and https://people.bu.edu/chamley/HSFref/PincusRobinson11.pdf , not opened). My own BoE reading (Section 4d) is consistent with that: the first government yield I have is 6.0 percent in 1705, equal to the private mortgage rate, and 8.3 percent in 1710.
+- Spain's silver (secondary, https://en.wikipedia.org/wiki/Price_revolution): Hamilton's totals give about 3,915 tonnes of silver and about 210 million pesos of specie in the 16th century recorded at Seville (undercount). Combined with the data in Section 5, Spain's output per head was 889 in 1500 and 944 in 1600 (1990 dollars) and prices rose. Money arrived in volume and output per head did not. The Crown went bankrupt in 1575 and 1579 per one summary, other dates unverified. Status: secondary. This is the strongest single case against "more money means more output" in the lane.
+
+## Evidence for and against H1 to H4
+
+### H1. Money, credit and output
+For:
+- Netherlands, the richest place in 1600 to 1650 (4270 and 4316 in 2011 dollars, Section 1), had an early deep credit market (Bank of Amsterdam 1609, public yields near 3 to 4 percent) and had the highest output per head in Europe (Sections 1, 5, 12).
+- England's debt rose from 6 percent to 74 percent of output between 1700 and 1750 and government yields fell from 6 to 3 percent, in the same decades that output per head rose from 1446 (1650) to 2412 (1700) to 2702 (1750) (Sections 1, 4).
+- Yuan China shows that when paper money is overissued, the money system collapses to barter by 1368 (Section 6). Money needs a state behind it.
+Against:
+- Spain: silver poured in and output per head was 1118 (1500) and 1295 (1600) in 2011 dollars, flat over 150 years (Sections 1, 5, 12).
+- England 1600 to 1650: coin per head rose 2.7 times while output per head fell 14 percent (Section 4a). From 1500 to 1700 coin per head rose about 7.7 times and output per head 45 percent.
+- Song China had paper money by the 1020s and was about a third richer than England per head at the time of the Domesday survey (878 against 754 in 1090), and still fell back to 614 by 1800 (Section 5). Early money did not lock in growth.
+- The Dutch Republic had the best credit of its day and stalled from 1600 to 1750 (Section 5).
+- England 1688: private rates did not clearly fall right away (Section 4d, Section 12), so the link from credit rights to cheaper credit is weaker than the textbook story.
+- Output per head did not start moving until about 1650 to 1700 in England, long after coin and credit had grown. Direction of cause is not shown by these series.
+
+### H2. State, schooling, knowledge
+For:
+- Old states took under 5 percent of output in the 1500s (Karaman and Pamuk). England 2.2 percent in 1500 (BoE). The richest states (England, Netherlands) later took more than 10 percent (Section 7).
+- Literacy was 53 percent in Britain and the Netherlands in 1650, against 5 percent in Spain. Spain's income was flat (Sections 2, 5).
+- Book supply rose 13 times in Britain in the half century after the press and far faster in the north than in Spain (Section 8).
+- World net primary enrolment was about 17 percent in 1870 and about 72 percent in 1970 (Section 11).
+Against:
+- English literacy was flat at 53 and 54 percent from 1650 to 1750 while output per head rose from 1446 to 2702 (Sections 1, 2). So rising literacy did not run with the rise.
+- Italy and Song China had books, schools, and rich states and still stalled (Sections 5, 8).
+- England's mass schooling came late: net enrolment was 39 percent in 1870 and 97.8 percent in 1900, well after income per head had doubled since 1700 (Sections 1, 11). In England, income came first, and mass schooling after it. Elite and grammar literacy came earlier.
+- The Netherlands had enrolment of about 80 percent in 1870 and Sweden 100 percent, yet Sweden was not richer than Britain then. (Sweden income not pulled, a gap.)
+
+### H3. Borrowing for the first big projects
+For:
+- GB funded debt moved from 6 percent of output (1700) to 74 percent (1750) to 152 percent (1815) in BoE data, and OBR gives 22, 155 and about 180 percent (Section 10a). War borrowing peaked at 5 to 11 percent of GDP in major wars.
+- Railways were a very large borrowed project. Parliament passed 263 railway Acts in 1846 for 9,500 miles (Section 10c). One third of lines authorised in 1844 to 1847 never got built.
+- A schooling decree in Prussia (1763) was paid by municipalities and the English 1870 Act created tax-paid school boards (Section 10d).
+Against:
+- Early factories were financed mostly by profits and local credit, per Allen and others, not by new borrowing (Section 10b, secondary).
+- The investment share was only about 9 percent in the 1760s and perhaps 10 to 14 percent by the 1830s to 1850s (Section 10b). Industrial take-off in Britain was not a huge borrowed leap.
+- Old states took a few percent of output in tax, so the "very large threshold of promises" for armies may have been met by war borrowing and not by the other links (schools, roads). I have no sourced number for schooling as a share of output.
+
+### H4. The trap
+For:
+- English real earnings fell from 70.5 (1450) to 28.7 (1650) while population rose 2.8 times, back to the level of 1300 (Section 4b).
+- About 43 in 100 children died before five in 1800 (world), 33 in Britain, and the figure was almost unchanged to 1900 for the world (42.8 to 40.9) (Section 3).
+- The great powers were at war about 71 percent of the time in 1550 to 1600 and 66 percent in 1600 to 1650 (Section 9a, secondary).
+- Famine lists show millions dead in single events (Section 9b, secondary).
+- Early leaders stalled: Italy 1668 (1450) to 1244 (1600), Holland flat 1600 to 1750, China 1103 (1700) to 614 (1800) (Sections 5, 9e).
+Against:
+- Output per head in England rose about 0.20 percent a year from 1270 to 1700 and doubled, even though daily wages did not (Broadberry and co-authors, secondary), so the trap in output is looser than in wages. The BoE/Maddison England series is 1159 in 1300 and 2412 in 1700 (Section 1).
+- Real earnings after 1700 stopped following population down: 48.6 in 1750 with population 5.89 million, compared with 28.7 in 1650 at 5.31 million (Section 4b).
+- The trap evidence is about England. For China the Maddison series shows 1543 in 1700, higher than 1207 in 1500, so the Qing fall after 1700 is the core of that case.
+- War frequency fell to 29 percent by 1750 to 1800 before the take-off, so it may have been a condition that eased, not a cause that persisted.
+
+## Gaps
+1. Velocity of money for England 1300 to 1700 is not in the BoE workbook as a series. Palma's indirect coin series uses assumed velocity, so it cannot test H1. Only the direct series was used.
+2. Level of real interest rates by century from Schmelzing (1300s, 1500s, 1700s, today) not read. Saved PDF needs pdftotext. Homer and Sylla not opened.
+3. Dutch Republic government bond yields (3 to 4 percent) rest on secondary summaries only. No Gelderblom and Jonker table opened.
+4. Song China issue volumes of jiaozi (1024) and Southern Song output not found. Song output per head vs England at the same year only for 1090.
+5. Northern Italy alone is not separated. The Italy series (Malanima) is for all Italy. Maddison 2023 has no Italy value before 1820.
+6. Share of the British budget spent on war (Brewer, O'Brien) not found as a number. BoE sheets A27, A28 were not read.
+7. Railway capital as a share of GDP not found. Retained profit share of early factory finance not found. Education spending as a share of output not found.
+8. Karaman and Pamuk per head silver figures are in Figure 5 only. Dincecco's per head table not opened.
+9. Famine counts are from a Wikipedia list only. Hoffman's war share table was seen in a search summary only. Levy's own counts not seen.
+10. Malaysia literacy at 1957 not found. Nearest are enrolment in 1955 (52.3 percent) and 1960 (96 percent) in a noisy series.
+11. Life expectancy before 1800 for England not pulled (BoE or OWID has UK life expectancy 33.9 in 1543 and 42.8 in 1850 in the OWID life-expectancy file, I saw the numbers but did not use them above, so treat as noted, not a result).
+12. My shell failed during the last third of the work, so the python3 -I check is done for Sections 1, 4 and 5 (and the percentages shown there) and NOT for Sections 8 to 12 (hand arithmetic only, marked).
+13. Colonial American paper money (named in the frame) was outside my lane list and not searched.
+14. Dating: the OBR debt ratio (22 percent in 1700) and BoE funded debt (5.9 percent) differ. Needs a decision on which one the chapter will use.
+
+## Ledger
+| id | claim | tier | status | source URL | source date | as-of date | falsifier |
+|---|---|---|---|---|---|---|---|
+| R15A-01 | England/GB GDP per person (2011 dollars) 1159 in 1300, 1446 in 1650, 2412 in 1700, 3343 in 1800 | T1 | confirmed | https://dataverse.nl/api/access/datafile/421302 | 2023 | 2026-11-16 | A newer Maddison release or Broadberry revision that changes the 1650 to 1700 values |
+| R15A-02 | Netherlands output per head 4316 in 1650 was 2.98 times England's 1446 | T1 | confirmed | https://dataverse.nl/api/access/datafile/421302 | 2023 | 2026-11-16 | Revised Dutch or English 1650 estimate |
+| R15A-03 | Spain output per head 1118 (1500) to 1295 (1600) to 1009 (1650) | T1 | confirmed | https://dataverse.nl/api/access/datafile/421302 | 2023 | 2026-11-16 | Revised Alvarez-Nogal and Prados de la Escosura series |
+| R15A-04 | China output per head fell 43 percent from 1543 in 1700 to 882 in 1820 | T1 | confirmed | https://dataverse.nl/api/access/datafile/421302 | 2023 | 2026-11-16 | Revised China series (the 1700 point is a single benchmark) |
+| R15A-05 | World output per head about 1128 in 1820 (2011 dollars) | T1 | confirmed | https://dataverse.nl/api/access/datafile/421302 | 2023 | 2026-11-16 | Revised regional weights |
+| R15A-06 | Northern Song China 878 versus England 754 in 1090 (1990 dollars), China peak 1006 in 1020 | T1 | confirmed | https://ora.ox.ac.uk/objects/uuid:1aa49524-f613-4668-a34b-8a7fcc485b74/files/scz30pt16x | 2017 | 2026-11-16 | Critique of the Song benchmark (for example a different grain wage or population base) |
+| R15A-07 | Italy 1668 in 1450 fell to 1244 in 1600 and 1350 in 1850 (1990 dollars) | T1 | confirmed | https://ora.ox.ac.uk/objects/uuid:1aa49524-f613-4668-a34b-8a7fcc485b74/files/scz30pt16x | 2017 | 2026-11-16 | Regional split showing northern Italy rising |
+| R15A-08 | Holland output per head 2372 (1600) and 2440 (1750), flat 150 years | T1 | confirmed | https://ora.ox.ac.uk/objects/uuid:1aa49524-f613-4668-a34b-8a7fcc485b74/files/scz30pt16x | 2017 | 2026-11-16 | Revised van Zanden and van Leeuwen series |
+| R15A-09 | English coin per head 0.27 pounds (1500), 0.85 (1600), 2.26 (1650), 2.07 (1700), direct method | T1 | confirmed | https://www.bankofengland.co.uk/-/media/boe/files/statistics/research-datasets/a-millennium-of-macroeconomic-data-for-the-uk.xlsx | 2017 data, workbook v3.1 | 2026-11-16 | New direct coin estimates by Palma or Mayhew |
+| R15A-10 | 1600 to 1650 coin per head rose 2.7 times while real GDP per head fell 14 percent | T1 | confirmed | same BoE workbook | same | 2026-11-16 | Revision to 1650 GDP (the Civil War dip is a thin point) |
+| R15A-11 | English real earnings index 26.4 (1347), 51.9 (1350), 70.5 (1450), 28.7 (1650) with population 1.90 million (1450) and 5.31 million (1650) | T1 | confirmed | same BoE workbook | same | 2026-11-16 | Different wage series (for example adjusting for days worked) |
+| R15A-12 | English tax revenue about 2.2 percent of output in 1500, 1.7 percent in 1600, 4.1 percent in 1650 | T1 | confirmed | same BoE workbook (O'Brien and Hunt) | same | 2026-11-16 | New revenue or GDP estimates for the 1500s |
+| R15A-13 | GB funded debt 5.9 percent of output in 1700, 74 percent in 1750, 152 percent in 1815 | T1 | plausible | same BoE workbook | same | 2026-11-16 | OBR figures of 22 percent (1700) and about 180 percent (1815) differ because of definitions |
+| R15A-14 | UK debt 22 percent of GDP in 1700, 155 percent before Napoleonic wars, about 180 percent after Waterloo, taxes 8 percent of GDP in 1700s | T2 | confirmed | https://articles.obr.uk/300-years-of-uk-public-finance-data/ | undated | 2026-11-16 | OBR revision |
+| R15A-15 | Private mortgage rate 6 percent (1688 to 1700) to 4 percent (1735), government yield 6.0 (1705), 8.3 (1710), 4.0 (1720), 3.0 (1750) | T1 | plausible | same BoE workbook (Allen 1988 for mortgage rate) | same | 2026-11-16 | Evidence the private series is a legal ceiling and not a market rate |
+| R15A-16 | Central revenue under 5 percent of GDP in the 1500s in most European states and over 10 percent in Britain and the Netherlands by the 1780s | T2 | confirmed | https://psi427.cankaya.edu.tr/uploads/files/Pamuk%2C%20Ott%20State%20Finances%2C%201500-1914%20%282010%29.pdf | 2010 | 2026-11-16 | Karaman and Pamuk data base revision |
+| R15A-17 | Ottoman per head cash revenue under three days of an unskilled wage | T2 | confirmed | same Karaman and Pamuk PDF | 2010 | 2026-11-16 | Other Ottoman budget series |
+| R15A-18 | Literacy 53 percent in Britain and Netherlands in 1650, 5 percent in Spain, 85 in Netherlands and 54 in Britain in 1750 | T2 | confirmed | https://ourworldindata.org/grapher/cross-country-literacy-rates | undated | 2026-11-16 | Revision of the Buringh and van Zanden model (values are modelled from books) |
+| R15A-19 | World literacy 12.0 percent in 1820, 21.4 in 1900, 36.0 in 1950, 87.7 in 2024 | T2 | confirmed | https://ourworldindata.org/grapher/cross-country-literacy-rates | undated | 2026-11-16 | Revision of OECD How Was Life or UNESCO |
+| R15A-20 | World net primary enrolment 16.7 percent (1870), 56.6 (1950), 71.9 (1970), UK 39 (1870) and 97.8 (1900) | T2 | confirmed | https://ourworldindata.org/grapher/primary-enrollment-selected-countries | undated | 2026-11-16 | Revision of Lee and Lee 2016 (values are noisy, see Malaysia 1950 to 1960) |
+| R15A-21 | Malaysia net primary enrolment 52.3 percent (1955), 96 (1960) | T2 | plausible | same | undated | 2026-11-16 | National census data for 1957 |
+| R15A-22 | Britain printed books 208,000 (1450 to 1499) to 2,807,000 (1500 to 1549), about 13 times | T2 | confirmed | https://ourworldindata.org/grapher/production-printed-books-half-century | undated | 2026-11-16 | Revised print run assumptions |
+| R15A-23 | Manuscripts in Italy rose 62 percent from 879,364 (1300s) to 1,423,668 (1400s) | T2 | plausible | https://ourworldindata.org/grapher/manuscript-production-century | undated | 2026-11-16 | Different counting of lost manuscripts |
+| R15A-24 | World share of children dying before five 42.8 percent in 1800, 40.9 in 1900, 24.7 in 1950, 3.8 in 2023. Britain 32.9 in 1800 | T2 | confirmed | https://ourworldindata.org/grapher/child-mortality-complete-gapminder | undated | 2026-11-16 | New demographic estimates for 1800 (modelled values) |
+| R15A-25 | Yuan paper money: 80 percent discount on old notes in 1287, inflation 11.0 percent a year 1260 to 1290, barter by 1368 | T1 | confirmed | https://hummedia.manchester.ac.uk/schools/soss/economics/discussionpapers/EDP-2207.pdf | 2024 | 2026-11-16 | Final published version of the paper changes the figures |
+| R15A-26 | Great powers at war 71 percent of time in 1550 to 1600, 66 in 1600 to 1650, 29 in 1750 to 1800 | T3 | unverified | https://typeset.io/pdf/why-was-it-europeans-who-conquered-the-world-1vckprfet9.pdf | 2012 | 2026-11-16 | Levy or Wright tables show different shares |
+| R15A-27 | Famines: 1315 to 1317 Europe 7.5 million, 1693 to 1694 France 0.7 to 1.3 million, Bengal 1770 disputed 2 to 10 million | T3 | unverified | https://en.wikipedia.org/wiki/List_of_famines | undated | 2026-11-16 | Scholarly demographic estimates below those listed |
+| R15A-28 | Investment about 9 percent of national income in the 1760s and almost 14 percent in the 1850s (Feinstein), against about 10 percent by 1830s (Broadberry and de Pleijt) | T3 | unverified | https://www.taylorfrancis.com/books/9781136588952/chapters/10.4324%2F9781315019383-17 | undated | 2026-11-16 | Feinstein tables read directly |
+| R15A-29 | Railway Mania: 263 Acts in 1846 for 9,500 miles, one third of lines authorised 1844 to 1847 never built | T3 | plausible | https://en.wikipedia.org/wiki/Railway_Mania | undated | 2026-11-16 | Casson or Campbell primary counts |
+| R15A-30 | Schmelzing: real rates fell 0.6 to 1.6 basis points a year since the late medieval upheavals, 78 percent of advanced economy GDP covered | T2 | confirmed | https://www.bankofengland.co.uk/working-paper/2020/eight-centuries-of-global-real-interest-rates-r-g-and-the-suprasecular-decline-1311-2018 | 2020 | 2026-11-16 | Alternative reconstructions (for example a critique of the private safe asset series) |
+| R15A-31 | Dutch government yields near 3 to 4 percent in the 1600s and Bank of Amsterdam opened 1609 | T3 | unverified | https://globalfinancialdata.com/7-centuries-of-government-bond-yields | undated | 2026-11-16 | Gelderblom and Jonker annuity yield tables |
+| R15A-32 | Clark found no break in private returns around 1688 and Sussman and Yafeh found rates rose for three decades after | T3 | plausible | https://voxeu.org/article/historical-view-government-defaults-lessons-17th-century | undated | 2026-11-16 | Original papers contradict the summary |
+| R15A-33 | Spain silver: about 3,915 tonnes recorded at Seville in the 1500s (Hamilton) | T3 | unverified | https://en.wikipedia.org/wiki/Price_revolution | undated | 2026-11-16 | Later archive totals such as TePaste |
+| R15A-34 | Output per head England grew about 0.20 percent a year 1270 to 1700 and doubled while daily real wages did not rise | T3 | plausible | https://www.economics.ox.ac.uk/node/1851746 | 2015 | 2026-11-16 | The book tables read directly |
+| R15A-35 | Prussia 1763 school decree funded mostly by municipalities, England 1870 school boards, 1880 compulsory, 1891 free | T3 | unverified | https://www.Wikipedia.com/wiki/Prussian_education_system | undated | 2026-11-16 | Statute texts |
