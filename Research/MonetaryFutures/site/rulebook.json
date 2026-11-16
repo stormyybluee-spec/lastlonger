@@ -12497,7 +12497,7 @@
      "type": "tldr",
      "items": [
       "Money is a promise people make to each other about a future nobody has seen. Gold was one way to make the promise hard to break. Credit is the other way, and it is thousands of years old.",
-      "Hard money keeps the promise scarce and rewards the saver, and it makes the borrower and the young wait. Money that stretches lets more people start, but it charges a quiet toll, and its gate opens most easily for those who already have money.",
+      "Hard money keeps the promise scarce and rewards the saver, and it makes the borrower and the young wait. Money that stretches lets more people start, but it charges a quiet toll, the slow loss of what each coin can buy, and its gate opens most easily for those who already have money.",
       "No system has ended the argument. It is still about who pays, how much, who decides and who is let in."
      ]
     },
@@ -12519,6 +12519,27 @@
      "type": "callout",
      "label": "How to read this chapter",
      "text": "This is a story, about 25 minutes long. When you see the word picture, the person is imagined. Every number comes from the two chapters before, where its source is given. A table at the end ties each scene to its question."
+    },
+    {
+     "type": "callout",
+     "label": "Not advice",
+     "text": "This chapter tells a story about how money works. It does not tell you to borrow, save or buy anything."
+    },
+    {
+     "type": "h",
+     "text": "Two angry voices"
+    },
+    {
+     "type": "p",
+     "text": "Some people say that printing money is a scam. Governments and banks make new money from nothing, they say, and everyone who saved the old money is quietly robbed. They want hard money: money tied to something scarce, like gold, that nobody can make more of at will."
+    },
+    {
+     "type": "p",
+     "text": "Other people say the opposite. One of them, a reader of this site, wrote in to argue that money made from promises is the reason most of us are no longer poor farmers. Without it, the reader says, nobody could build anything before they had saved for it."
+    },
+    {
+     "type": "p",
+     "text": "Two chapters tested both voices with numbers. This chapter walks through what they found, by way of the people who lived it."
     },
     {
      "type": "h",
@@ -12550,7 +12571,7 @@
     },
     {
      "type": "p",
-     "text": "He is wrong, and it will hurt. Across Western Europe prices rise three to four times in that century, by one estimate. The king of Spain, with all that silver, fails to pay his debts four times. Historians still argue about why. But the silver could buy things. It could not make them."
+     "text": "He is wrong, and it will hurt. He will grow old in a country where everything costs more. Across Western Europe prices rise three to four times in that century, by one estimate. The king of Spain, with all that silver, fails to pay his debts four times. Historians still argue about why. But the silver could buy things. It could not make them."
     },
     {
      "type": "p",
@@ -12566,7 +12587,7 @@
     },
     {
      "type": "p",
-     "text": "London, 1694. The Bank of England is founded to lend the Crown 1.2 million pounds at about 8% interest. It begins as a debt. By 1815, after the long wars with Napoleon, Britain owes more than two years of everything it makes. It sounds like ruin."
+     "text": "London, 1694. The Bank of England is founded to lend the Crown 1.2 million pounds at about 8% interest. So the bank begins with a loan to the king. By 1815, after the long wars with Napoleon, Britain owes more than two years of everything it makes. It sounds like ruin."
     },
     {
      "type": "p",
@@ -12574,7 +12595,7 @@
     },
     {
      "type": "p",
-     "text": "A reader of this site calls credit a token we borrow from our own future. It is a fine picture, and it needs one gentle correction. Nobody can ship cement back from the year 2050. A bridge built this year is built with this year's hands. What travels through time is only the promise: who will be paid, later, out of what is made later."
+     "text": "The reader who wrote in calls credit a token we borrow from our own future. It is a fine picture, and it needs one gentle correction. Nobody can ship cement back from the year 2050. A bridge built this year is built with this year's hands. What travels through time is only the promise: who will be paid, later, out of what is made later."
     },
     {
      "type": "p",
@@ -12590,7 +12611,7 @@
     },
     {
      "type": "p",
-     "text": "Money is hard in her world. From 1930 to 1933 the supply of money falls by nearly 30%, and prices fall by about a quarter in those years. That makes debts about a third heavier. Picture a farmer who borrowed honestly and never borrowed another cent. Each year he owes more in real things than the year before. Economists still argue whether the gold rules or the central bank's own choices did more harm. The farmer does not care which."
+     "text": "Money is hard in her world. It is tied to gold, and nobody can simply make more. From 1930 to 1933 the supply of money falls by nearly 30%, and prices fall by about a quarter in those years. That makes debts about a third heavier, because a borrower still owes the same dollars and each dollar is harder to earn. Picture a farmer who borrowed honestly and never borrowed another cent. Each year he owes more in real things than the year before. Economists still argue whether the gold rules or the central bank's own choices did more harm. The farmer does not care which."
     },
     {
      "type": "p",
@@ -12602,7 +12623,7 @@
     },
     {
      "type": "p",
-     "text": "Who wrote the rules of this system? Insiders had a large hand. The plan behind America's central bank law was drawn up in private in 1910, on a trip its authors called a duck hunt. Congress passed a changed version in 1913. Voters were seldom asked directly. When Swiss voters were asked, in 2018, whether to stop banks creating money, 75.7% said no. One vote cannot say why people chose as they did. But in that vote, the fear of a bank failing seems to have weighed more than anger at the toll."
+     "text": "Who wrote the rules of this system? Insiders had a large hand, and lawmakers passed them. Voters were seldom asked directly. Here is one time they were. Banks make new money when they lend. In 2018 Swiss voters were asked whether to stop them, and 75.7% said no. One vote cannot say why people chose as they did. But in that vote, the fear of a bank failing seems to have weighed more than anger at the toll."
     },
     {
      "type": "h",
@@ -12610,7 +12631,7 @@
     },
     {
      "type": "p",
-     "text": "1945. Europe and Japan are in ruins. America holds most of the world's reported official gold, and its share will peak at about 70% in 1948. Italy holds 24 million dollars' worth. If gold had been the only way to begin again, the ruined countries would have faced a long wait."
+     "text": "1945. Europe and Japan are in ruins. America holds most of the world's reported official gold, and its share will peak at about 70% in 1948. Some ruined countries hold almost none. If gold had been the only way to begin again, the ruined countries would have faced a long wait."
     },
     {
      "type": "p",
@@ -12618,7 +12639,7 @@
     },
     {
      "type": "p",
-     "text": "Picture a mother in West Germany in June 1948, holding a new kind of banknote. Her old savings have just been converted at 6.5 new marks for every 100 old ones. Most of what she saved through the war is gone, and nothing she did caused it either. And the inflation stops, and trade begins to move again. Both things are true in the same summer. That is what a new start cost, and savers paid it."
+     "text": "Picture a mother in West Germany in June 1948, holding a new kind of banknote. Her old savings have just been converted at 6.5 new marks for every 100 old ones. Most of what she saved through the war is gone, and nothing she did caused it either. And the rising prices stop, and trade begins to move again. Both things are true in the same summer. That is what a new start cost, and savers paid it."
     },
     {
      "type": "h",
@@ -12630,7 +12651,7 @@
     },
     {
      "type": "p",
-     "text": "The same reader has a sharper way to say what changed. Before that weekend, promises leaned in the end on something scarce. After it, they lean only on laws, central banks and human judgment. That is close to right, and a later chapter will test how close. Whether the judgment has been good enough is the argument of our time."
+     "text": "The reader who wrote in has a sharper way to say what changed. Before that weekend, promises leaned in the end on something scarce. After it, they lean only on laws, central banks and human judgment. That is close to right, and a later chapter will test how close. Whether the judgment has been good enough is the argument of our time."
     },
     {
      "type": "p",
@@ -12638,7 +12659,7 @@
     },
     {
      "type": "p",
-     "text": "What it brought was room. In America all credit to households, firms and government went from about 133% of a year's output in 1971 to about 251% in 2024. Room to build, and room to overreach."
+     "text": "What it brought was room. In 1971 all the debts of American households, firms and government came to about one and a third years of what the country makes. By 2024 they came to about two and a half years. Room to build, and room to overreach."
     },
     {
      "type": "p",
@@ -12654,7 +12675,7 @@
     },
     {
      "type": "p",
-     "text": "Today. Picture a young woman in Kuala Lumpur, in her first job, sitting at a bank counter. She wants a small flat. In 2019 the median house in Malaysia cost 4.1 times what the median household earns in a year."
+     "text": "Today. Picture a young woman in Kuala Lumpur, in her first job, sitting at a bank counter. She wants a small flat. In 2019 the middle-priced house in Malaysia cost 4.1 times what the middle household earns in a year."
     },
     {
      "type": "p",
@@ -12662,11 +12683,11 @@
     },
     {
      "type": "p",
-     "text": "If the answer is yes, she gets a key and a debt. The middle new borrower in Malaysia pays 41% of income on loans. If the answer is no, there is the licensed moneylender, where the law caps interest at 12% a year with a pledge and 18% without. She is still luckier than many. Around the world 1.3 billion adults had no account at all in 2024."
+     "text": "If the answer is yes, she gets a key and a debt. The middle new borrower in Malaysia pays 41% of income on loans. If the answer is no, there is the licensed moneylender, who may charge more. She is still luckier than many. Around the world 1.3 billion adults had no account at all in 2024."
     },
     {
      "type": "p",
-     "text": "This is the old Monopoly board from the first chapter. The streets were bought long before she sat down. Hard money would tell her to save first. While she saves, the coins gain value. Most of them are held by people who came before her. Money that stretches tells her to start now and owe. Neither gives her an even start. By one American count, about 58% of the early baby boomers owned a home at 30. Of the early millennials, about 41% did."
+     "text": "Think of a game of Monopoly that began long before she sat down. The streets were already bought. Hard money would tell her to save first. While she saves, money gains value. But most of the money is already held by people who came before her. Money that stretches tells her to start now and owe. Neither gives her an even start. By one American count, about 58% of one older generation owned a home by the age of 30. Of a younger one, about 41% did."
     },
     {
      "type": "h",
@@ -12674,11 +12695,11 @@
     },
     {
      "type": "p",
-     "text": "Picture two families in America in 2007. Both have borrowed to buy a home. The first is like the typical owner. Years later the typical owner is worth $396,200, against $10,400 for the typical renter. Owners and renters differ in many ways, so the house is not the whole reason. But about half of that wealth is the home."
+     "text": "Picture two families in America in 2007. Both have borrowed to buy a home. The first is like the typical owner. Years later, everything the typical owner has, after debts, is worth $396,200. For the typical renter it is $10,400. Owners and renters differ in many ways, so the house is not the whole reason. But about half of that wealth is the home."
     },
     {
      "type": "p",
-     "text": "The second family is like the poorest fifth of owners. They owe about 80% of the value of what they own. Then prices fall. By 2010 a net worth of about $30,000 has become almost nothing."
+     "text": "The second family is like the poorest fifth of owners. For every 100 dollars of things they own, they owe about 80. Then house prices fall. In 2007 they were worth about $30,000 after debts. By 2010 it is almost nothing."
     },
     {
      "type": "p",
@@ -12694,11 +12715,11 @@
     },
     {
      "type": "p",
-     "text": "Remember the imagined collector from the first chapter, who paid 100,000 ringgit for a sword. The money was not destroyed. It became the blacksmith's income and went on moving, because one person's spending is another person's pay. That is the quiet wonder inside money. It is also why it is so frightening when many people stop spending at once."
+     "text": "Picture a collector who pays 100,000 ringgit for a hand-made sword. People sometimes say that money spent like this is gone. It is not gone. It became the blacksmith's income and went on moving, because one person's spending is another person's pay. That is the quiet wonder inside money. It is also why it is so frightening when many people stop spending at once."
     },
     {
      "type": "p",
-     "text": "The reader's largest hope goes further. It is that promises about the future are how people attempt things no saver could pay for alone. The reader's example is a rocket, built for years before it earns anything. The two chapters support one part of that hope. America's interstate highways, built from the 1950s, gave a large one-time lift to the output of the industries that used them."
+     "text": "The largest hope of the reader who wrote in goes further. It is that promises about the future are how people attempt things no saver could pay for alone. The reader's example is a rocket, built for years before it earns anything. The two chapters support one part of that hope. America's interstate highways, built from the 1950s, gave a large one-time lift to the output of the industries that used them."
     },
     {
      "type": "p",
@@ -12714,7 +12735,7 @@
     },
     {
      "type": "p",
-     "text": "Printing is not a scam in the plain sense. It is a toll, and the grandmother with the tin paid it. Hard money is not innocent. Ask the farmer whose debt grew heavier every year he worked. Ask the first woman in the queue too. Her bank's promise broke, and tight money helped to break it. But hard money is not a villain either. Ask the second woman, whose savings bought more bread. And credit is not a gift. It is a lever with a gate in front of it, and the young woman at the counter is standing at the gate."
+     "text": "Is printing money a scam? Not in the plain sense, because nothing about it is hidden. It is a toll, and the grandmother with the tin paid it. Hard money is not innocent. Ask the farmer of the 1930s, whose debt grew heavier every year he worked. Ask the first woman in the queue too. Her bank's promise broke, and tight money helped to break it. But hard money is not a villain either. Ask the second woman, whose savings bought more bread. And credit is not a gift. It is a lever with a gate in front of it, and the young woman at the counter is standing at the gate."
     },
     {
      "type": "p",
@@ -12791,12 +12812,7 @@
     {
      "type": "insider",
      "label": "The argument goes on",
-     "text": "The reader who began all this has replied with four new points. Before 1971 credit rested on scarce gold, and after it on governance alone. Output was scarce in the past because the whole chain of money, schooling, knowledge and central power was missing. Moving money was once dangerous, because a merchant on the road could be robbed. And new technology costs an enormous price before it pays, so someone must issue the promises that fund it. None of these has been tested yet. Later chapters will test them. Until then they are open questions, not findings."
-    },
-    {
-     "type": "callout",
-     "label": "Not advice",
-     "text": "This chapter tells a story about how money works. The people in it are imagined. It does not tell you to borrow, save or buy anything."
+     "text": "The reader who wrote in has replied with four new points. Before 1971 credit rested on scarce gold, and after it on the judgment of governments and central banks alone. Output was scarce in the past because the whole chain of money, schooling, knowledge and central power was missing. Moving money was once dangerous, because a merchant on the road could be robbed. And new technology costs an enormous price before it pays, so someone must issue the promises that fund it. None of these has been tested yet. Later chapters will test them. Until then they are open questions, not findings."
     }
    ]
   },
