@@ -238,3 +238,95 @@ NEW: The first two are not settled in this chapter, and the third has been teste
 - Block 39: 43 to 25 was the Senate vote on the final conference report on 23 December 1913. Correct as written.
 - Block 22: "Nobody hides this" sits awkwardly beside "seldom said out loud" in block 28. Choose one.
 
+## 2. Eight voices: the single most important miss for each
+
+- A central banker. Block 26 and the summary in block 0 treat a published 2% target as a quiet transfer to the state. Expected inflation is priced into interest rates. Only surprise inflation, or rates held down by rules, moves wealth on a large scale. See RT-02.
+- A free-banking economist. The Scottish row and the Canada note are fair, but the chapter never states the core free-banking point plainly: competing issuers lose customers if their notes lose value, so the discipline comes from the market, not the law. Add one sentence in block 61.0.
+- A modern monetary theory economist. The chapter treats the central bank's payment to the government as income for the state. For this school, a state that issues its own money is limited by inflation and real resources, not by its debt, so "who gains from inflation" is the wrong frame. One sentence in the go-deeper box would give this view a fair hearing.
+- A historian of Malaysia's economy. The 1967 change was mainly about the failed shared currency with Singapore and Brunei, not about growth. Bank Negara existed from 1959. See RT-01.
+- An official from a country with a currency board. Our record is not one of pain alone. Singapore, Brunei and Hong Kong kept tied hands for decades and became wealthy places. The chapter shows our worst years and none of our best. See RT-09.
+- A citizen who lived through high inflation. The chapter shows Zimbabwe's note and the queues, but not what high inflation does to a household over years: savings that vanish and wages that never catch up. That human cost is the strongest case for strict rules, and it deserves the same scene treatment that Argentina's pots and pans get.
+- A Malaysian 18-year-old reader. My own country's crisis in 1997 and 1998, the fixed ringgit at 3.80, and how the US dollar moves the ringgit today are missing. These are the parts of the story I can check with my family. See RT-09 and RT-13.
+- A constitutional lawyer. The table hides that both Britain and Malaysia appoint the governor through the monarch acting on the government's advice. It leaves Britain's override power blank. It also misses the live US case on removal "for cause", decided in part by the Supreme Court in June 2026. See RT-06 and RT-07.
+
+## 3. Flattery check (both directions)
+
+Where the draft flatters the reader.
+- Block 13 calls Malaya "the reader's claim in one story". The 1967 change was mainly a political split, and Singapore grew fast without untying its hands. This makes the reader look more right than the record allows.
+- Block 53 says tied hands are "why Malaya untied its own". Same problem.
+- Block 17 says Malaysia's law is "closer to the reader's picture than most". That is fair, and it is earned by the law's words. Keep it.
+
+Where the draft leans against the reader to look balanced.
+- Block 0, block 26 and block 58 call the state the biggest winner of mild inflation without saying that only surprise inflation, or capped rates, does this on a large scale. This is the largest lean against. See RT-02.
+- Block 19 calls the Alesina and Summers study evidence that "cuts against Part 1". It tests whether independence changes growth, not whether central banks foster growth. See RT-05.
+- Test 1 as a whole judges purpose by founding words, which favours the oldest banks. The reader's claim is about what the issuer is for today, and today's Malaysian law names growth. The test design itself leans against the reader.
+- Block 36 uses a confidence poll as evidence about governance. A poll measures mood, not control.
+- Block 43 and block 56 say Part 4 "holds only weakly" while setting aside elected lawmakers and the 1992 referendums that said yes. See RT-08.
+- Block 59 ends on "Under whose control is the better question", which hints at something hidden without a finding behind it. See RT-12.
+
+Overall direction. Unlike the previous chapter, this draft is roughly even in spirit, but its leans against the reader sit in the places a reader remembers: the summary, the verdict table and the last line. The flattering errors sit in the opening scene. Fixing RT-01, RT-02, RT-08 and RT-12 would bring it close to even.
+
+Is the rebuilt claim (block 58) supported line by line?
+- Line 1. Supported for the general history. The Malaya clause is not, as written. Use the RT-01 fix.
+- Line 2. Supported by Test 5 and the 2008 example. Good.
+- Line 3. Not supported as written. Test 2 shows a large gain to the state only from surprise inflation or capped rates. Use the RT-02 fix.
+- Line 4. Supported for the three votes found. "When asked they have kept what they had" needs the 1992 counter cases. Use the RT-08 fix or soften to "in the votes found here".
+
+## 4. Depth and narration
+
+Three places where one more layer would help an 18-year-old most.
+1. Block 9, the currency board. Add the mechanism: the board's money could only grow as fast as Malaya earned pounds, mostly from selling rubber and tin abroad. So a fall in rubber prices meant less money at home, just when people needed it. This makes "could not soften the blow" concrete. (Mechanism only, from block 62's description of the board and the draft's own rubber and tin scene.)
+2. Block 26, who pays for inflation. Add a small worked case in words: if a lender expects 2% and gets 2%, nobody is cheated, because the interest covered it. If the lender expected 2% and got 4%, the extra 2 points is the surprise, and that part is the hidden tax. The St Louis Fed post uses this exact example. https://www.stlouisfed.org/on-the-economy/2022/mar/how-much-are-we-taxed-surprise-inflation
+3. Block 47 onward, a Malaysian scene for tied hands. On 2 September 1998 Bank Negara fixed the ringgit at 3.80 to the US dollar and limited money leaving the country. The fixed rate lasted until 2005. This gives the reader a scene from home that shows a free issuer choosing to tie its own hands. https://www.mfpc.org.my/will-ghost-1998-haunt-ringgit/
+
+Where the story sags into report voice.
+- Blocks 15 to 19. A table, then a summary of the table, then two study citations in a row. Lead with one human or concrete detail (the war loan of 1694 is a good hook) and cut the study citations to one line each.
+- Blocks 31 to 33. Two lead-in sentences and a six-row table with blanks. The table reads as a form. Either fill it (RT-06) or cut it to three rows and tell the rest in prose.
+- Blocks 39 to 41. The Senate vote count and date read as a record. One sentence would do.
+- The four "What test N does to the claim" boxes repeat "holds in part" four times. Vary the wording, or let each box say one new thing the test showed.
+
+Strongest scene. Block 47, the pots and pans in Buenos Aires, closely followed by blocks 48 and 49 in El Salvador with Rosa Martha Perez. Both use a place, a time and a person. The Malaya opening could match them with one named detail, such as the rubber planter in a bad year already in block 10.
+
+What could move to a go-deeper box to make room. The main path is already about 3,800 words, so each addition above needs a cut.
+- Block 19 (Alesina and Summers) moves well into the box at block 61.
+- The Scotland row of table 46 fits better beside the Canada note in block 61.0.
+- Block 39's Senate vote details (count and date) can move to block 62.
+- Table 25's middle row (the Fed's losses) can shrink to one clause in block 24.
+- Table 27 could become two sentences, since block 28 already says the same thing.
+These moves free roughly as many words as RT-01, RT-02, RT-08 and RT-09 add.
+
+## 5. Word audit
+
+| Block | Word | Earned? | Softer wording |
+|---|---|---|---|
+| 0 | biggest winner | No. True only for surprise inflation | a large winner, when inflation is higher than expected |
+| 0 | rarely said out loud | No. Not shown, and block 22 says "Nobody hides this" | less often explained |
+| 9 | Nobody feared | No. Cannot be known | Few people feared |
+| 9 | not print a dollar more | Mostly. Block 62 notes limited exceptions | could print almost nothing beyond its reserves |
+| 10 | do nothing | No. Block 62 says it could finance crops from 1961 | do very little |
+| 17 | in most laws they come second | Earned for the six laws shown | in most of these laws |
+| 22 | Nobody hides this | Partly. Clashes with blocks 0, 28 and 29 | It is published openly |
+| 24 | Most of the profit | No. Bank Negara paid about two fifths in 2024 | Much of the profit |
+| 25 | the most ever | Unclear. Check 2015 | by its audited accounts |
+| 26 | every old debt | No. Only fixed-rate debts in money | old debts at fixed rates |
+| 26 | biggest debtor in any country | No. Not true everywhere | in most countries the biggest debtor |
+| 28 | seldom said out loud | Not shown | less often explained |
+| 29 | rarely named | Not shown | less often explained |
+| 33 | In every column | Earned for the three countries shown | keep |
+| 33 | No voter chooses a governor | Earned for these three | keep |
+| 36 | only 39% | Number earned, "only" adds tone | 39%, near the lowest Gallup had recorded |
+| 40 | Very rarely | Roughly earned for national votes | Rarely |
+| 42 | Each time | Earned for the three, but the sample is chosen | In these three votes |
+| 43 | which was rare | Earned | keep |
+| 46 | through every storm | Earned for the fixed rate itself | keep |
+| 48 | Only one firm in five | Earned by the study | keep |
+| 50 | nobody had to accept | Earned, this is what the law says | keep |
+| 52 | Usually steadier | Earned with Argentina's end as the warning | keep |
+| 52 | Not possible | No. The state can steer credit by other means | Not through the issuer |
+| 52 | No rescue | No. Hong Kong's government stepped into the share market in 1998 | Little room to rescue |
+| 56 | Holds only weakly | Leans against. See RT-08 | Holds in part, through elected lawmakers |
+| 58 | largest gain | No. See RT-02 | much of the gain, when inflation is a surprise |
+| 58 | almost never asked | Earned | keep |
+| 61.0 | always be tempted | Earned as a statement of that view | keep |
+| 61.0 | none of its banks failed | Widely reported, keep with source in block 62 | keep |
+| 61.1 | never been tried on a whole country | Earned | keep |
