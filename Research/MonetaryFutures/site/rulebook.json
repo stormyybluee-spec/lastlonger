@@ -13924,7 +13924,7 @@
     },
     {
      "type": "p",
-     "text": "A central bank is the body that issues a country's money and stands behind its banks. In Malaysia it is Bank Negara. In America it is the Federal Reserve. The reader who wrote in has a view about what such a body is for. Here it is in four parts."
+     "text": "A central bank is the body that issues a country's money and stands behind its banks, which means it can lend to them when they are in trouble. In Malaysia it is Bank Negara. In America it is the Federal Reserve. The reader who wrote in has a view about what such a body is for. Here it is in four parts."
     },
     {
      "type": "steps",
@@ -13970,7 +13970,7 @@
     },
     {
      "type": "p",
-     "text": "The Bank of England put most of that gap down to a young money economy, where money and banks were still new to many people. But the rule played a part. Money at home could grow only when more pounds came in from abroad. And the board could do very little to help. It did not lend, and it could not make loans easier to get when times were bad. Only from December 1961 could it issue some money against crop loans. In 1962 the Bank of England named two standard complaints about old-style boards like this one: reserves locked up abroad, and what a passive board could not do."
+     "text": "The Bank of England put most of that gap down to a young money economy, where money and banks were still new to many people. But the rule played a part. Money at home could grow only when more pounds came in from abroad. And the board could do very little to help. It did not lend, and it could not make loans easier to get when times were bad. Only from December 1961 could it issue some money against crop loans. In 1962 the Bank of England named two standard complaints about old-style boards like this one: reserves held abroad that could not be used at home, and a board that could only wait and could not act."
     },
     {
      "type": "quote",
@@ -14039,7 +14039,7 @@
     },
     {
      "type": "p",
-     "text": "New countries after 1945 had the reader's idea too. By one count, at least 25 developing countries set up or rebuilt central banks in those years, with powers to steer credit toward development. The economist Gerald Epstein argues that, for many central banks, financing the government and directing credit were among the reasons they were set up. He also grants that it sometimes went badly."
+     "text": "New countries after 1945 had the reader's idea too. By one count, at least 25 developing countries set up or rebuilt central banks in those years, with powers to steer loans toward chosen industries, to help development. The economist Gerald Epstein argues that, for many central banks, financing the government and directing credit were among the reasons they were set up. He also grants that it sometimes went badly."
     },
     {
      "type": "insider",
@@ -14115,7 +14115,7 @@
     },
     {
      "type": "p",
-     "text": "The second collector is the government as a borrower. When prices rise, a debt fixed in money is easier to pay back, because each unit of money buys less, and in most countries the biggest debtor is the state. But lenders know this. If they expect 2% inflation, they ask for interest that covers it, and nobody is cheated. If prices then rise 4%, the extra 2 points is a surprise. The lender is paid back in money that buys less than expected, so the lender loses and the borrower gains. That works like a hidden tax on the lender. So the state gains most when inflation beats what lenders expected, or when rules hold interest rates below inflation. Both have happened."
+     "text": "The second collector is the government as a borrower. When prices rise, a debt fixed as a set sum of money is easier to pay back, because each unit of money buys less, and in most countries the biggest debtor is the state. But lenders know this. If they expect 2% inflation, they ask for interest that covers it, and nobody is cheated. If prices then rise 4%, the extra 2 points is a surprise. The lender is paid back in money that buys less than expected, so the lender loses and the borrower gains. That works like a hidden tax on the lender. So the state gains most when inflation beats what lenders expected, or when rules hold interest rates below inflation. Both have happened."
     },
     {
      "type": "table",
@@ -14268,7 +14268,7 @@
      "rows": [
       [
        "Who appoints the leader",
-       "The President, with the consent of the Senate",
+       "The President, with the consent of the Senate, which is the upper house of lawmakers",
        "The Yang di-Pertuan Agong, the King, appoints the governor"
       ],
       [
@@ -14381,7 +14381,7 @@
      ],
      "rows": [
       [
-       "Hong Kong, linked to the US dollar at about 7.8 since 1983, as reported",
+       "Hong Kong, linked to the US dollar at about 7.8 Hong Kong dollars for each US dollar since 1983, as reported",
        "A link that has held for over forty years",
        "Output fell about 5% in 1998, in a crisis across the region"
       ],
@@ -14448,7 +14448,7 @@
     },
     {
      "type": "p",
-     "text": "The newest experiment is in El Salvador, which already used the US dollar. So it tested something else: whether a government can bring in a new kind of money from the top down. On 7 September 2021 it made Bitcoin legal money beside the US dollar, and gave 30 dollars' worth of bitcoin to everyone who downloaded the state's phone wallet. By early 2022 about half of all households had done so. More than 60% of the early users made no payment at all once the 30 dollars was spent. Only one firm in five accepted Bitcoin, and about 5% of all sales were paid in it. The government says the law drew tourists and investment. On the first day a reporter found a market trading in dollars as usual."
+     "text": "The newest experiment is in El Salvador, which already used the US dollar. So it tested something else: whether a government can order its people to use a new kind of money. On 7 September 2021 it made Bitcoin legal money beside the US dollar, and gave 30 dollars' worth of bitcoin to everyone who downloaded the state's phone wallet. By early 2022 about half of all households had done so. More than 60% of the early users made no payment at all once the 30 dollars was spent. Only one firm in five accepted Bitcoin, and about 5% of all sales were paid in it. The government says the law drew tourists and investment. On the first day a reporter found a market trading in dollars as usual."
     },
     {
      "type": "quote",
@@ -14489,7 +14489,7 @@
       [
        "The main danger",
        "A crisis the rule cannot bend to meet",
-       "A government that prints its way out of its debts"
+       "A government that creates new money to pay off its debts"
       ]
      ]
     },

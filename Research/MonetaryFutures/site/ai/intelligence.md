@@ -1,6 +1,6 @@
 # Intelligence: will energy replace money? (the Desk)
 
-Stack: Intelligence. These are graded, dated findings, not settled facts. Check each as-of date and fetch current data before relying on a number. Web page: https://neetmonetary.netlify.app/#desk . Text built 2026-11-16.
+Stack: Intelligence. These are graded, dated findings, not settled facts. Check each as-of date and fetch current data before relying on a number. Web page: https://neetmonetary.netlify.app/#desk . Text built 2026-11-19.
 
 ## Scenario odds by horizon
 
@@ -118,6 +118,9 @@ Level 3, "The big arguments", now has its first chapter: "Is printing money a sc
 
 ### Round 15 in one paragraph (2026-11-16, the second deep Level 3 chapter)
 "Why the peasants stayed poor: money, output and the missing chain" tests the owner's claim that old poverty came from a missing chain of money, credit, a strong state, schools and knowledge, each needing promises about the future to start. Money helped but was not enough alone: Spain, China and Holland had plenty of money or cheap credit and each later stalled. The other links really were missing, and the owner's schooling figure matches the record. Promises about the future built the state and the great networks, and worked when something real stood behind them, while the first factories were built mostly from their owners' funds and ran on short credit. The loop was real, and what broke it is still argued among people, rules, prices, knowledge, the state and, for some scholars, money and finance. The chapter's evidence is mostly European and it says so. Five deep chapters remain.
+
+### Round 16 in one paragraph (2026-11-19, the third deep Level 3 chapter)
+"Who wrote the rules of money, and for whom?" opens in Malaya in the 1950s, when the country's money came from a currency board that could not steer credit, and asks what central banks are for. The first ones were built to fund wars and stop bank panics, and growth was written into their laws later, usually second. Malaysia's law of 2009 asks for stability that helps the economy grow. Mild inflation is on purpose and published, and the big gains to the state come when inflation beats what lenders expected or when rates are held down. Central banks are controlled by governments, laws and rules on what they must publish, not directly by voters, and the public chose the rules at one remove, through lawmakers. Places that tied the issuer's hands got steadier prices and no rescue in a crisis. Four deep chapters remain.
 
 ### Where everything lives
 | File | What |

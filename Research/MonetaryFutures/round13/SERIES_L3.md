@@ -20,3 +20,6 @@ Deep chapters are numbered in the order they are published, and the epilogue alw
 
 ## Update after Round 15 (2026-11-16)
 rb-peasant (question 4, why the peasants stayed poor) is published as chapter 04, and the epilogue rb-promise is now chapter 05. Five deep chapters remain: the law, borrowing from the future, the printers, the gate, the lever. The idea that the reader's chain fits late developers better than the first industrial country is carried forward as a hypothesis for those chapters.
+
+## Update after Round 16 (2026-11-19)
+rb-law (question 7, who wrote the rules of money) is published as chapter 05, and the epilogue rb-promise is now chapter 06. Four deep chapters remain: borrowing from the future, the printers, the gate, the lever.

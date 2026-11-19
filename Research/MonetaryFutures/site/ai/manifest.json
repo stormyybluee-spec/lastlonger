@@ -1,7 +1,7 @@
 {
  "site": "https://neetmonetary.netlify.app",
  "plan_version": "5.1",
- "built": "2026-11-16",
+ "built": "2026-11-19",
  "stacks": {
   "fundamentals": [
    "ai/method.md",
@@ -14,9 +14,9 @@
   ]
  },
  "files": {
-  "ai/brief.md": 7890,
-  "ai/index.html": 16339,
-  "ai/intelligence.md": 24535,
+  "ai/brief.md": 7923,
+  "ai/index.html": 16797,
+  "ai/intelligence.md": 25437,
   "ai/landscape/ls-01.md": 7138,
   "ai/landscape/ls-02.md": 6985,
   "ai/landscape/ls-03.md": 6992,
@@ -33,7 +33,7 @@
   "ai/landscape/ls-14.md": 20937,
   "ai/method.md": 26809,
   "ai/rulebook/glossary.md": 11453,
-  "ai/rulebook/index.md": 11354,
+  "ai/rulebook/index.md": 11798,
   "ai/rulebook/rb-01.md": 8728,
   "ai/rulebook/rb-02.md": 7924,
   "ai/rulebook/rb-03.md": 8176,
@@ -56,6 +56,7 @@
   "ai/rulebook/rb-crypto.md": 22163,
   "ai/rulebook/rb-defl.md": 6724,
   "ai/rulebook/rb-em.md": 13068,
+  "ai/rulebook/rb-law.md": 37082,
   "ai/rulebook/rb-leader.md": 13688,
   "ai/rulebook/rb-moneymake.md": 51516,
   "ai/rulebook/rb-moves.md": 32157,
@@ -67,9 +68,9 @@
   "ai/rulebook/rb-titled.md": 19510,
   "ai/rulebook/rb-worldbs.md": 47120,
   "ai/rulebook/rules.md": 19383,
-  "llms-full.txt": 878846,
-  "llms.txt": 14538,
+  "llms-full.txt": 917310,
+  "llms.txt": 14978,
   "robots.txt": 78,
-  "sitemap.xml": 6311
+  "sitemap.xml": 6419
  }
 }

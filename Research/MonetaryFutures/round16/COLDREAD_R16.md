@@ -228,3 +228,100 @@ NEW: So there is control. But notice who holds it, and it is not the voter.
 12. Block [57]
 OLD: It is a pattern, not a law, because each case has its own history.
 NEW: It is a pattern, not a law. Each case has its own history, so none of them proves the rule.
+
+
+# Retest 2 (draft R16d), 2026-11-19
+
+Method: main path only. GO DEEPER boxes and "A:" lines skipped. Judged only on the page.
+
+## Score table
+
+| Part | Reader 1 (Malaysian, ESL) | Reader 2 (American) |
+|---|---|---|
+| (a) four-part claim | 9 | 9 |
+| (b) currency board in Malaya | 8 | 8 |
+| (c) founding laws, growth, Malaysia | 7 | 8 |
+| (d) mild inflation, who gains and pays | 7 | 8 |
+| (e) control, publishing, risks both ways | 7 | 8 |
+| (f) did the public choose | 8 | 9 |
+| (g) tied hands, one success, one failure, El Salvador | 7 | 9 |
+| (h) tied hands against free hands | 8 | 9 |
+| (i) verdicts and rebuilt claim | 8 | 8 |
+| Average of nine | 7.7 | 8.4 |
+| Overall (rounded) | 8 | 8 |
+
+Pass mark 8. Both pass on the rounded overall. Reader 1 is borderline, because the unrounded average is 7.7.
+
+| Extra score | Reader 1 | Reader 2 |
+|---|---|---|
+| (j) held attention to the end | 7 | 8 |
+| (k) told story with explanation, not a report of numbers | 7 | 7 |
+
+Strongest section. Reader 1: "A country without its own money" (the Malaya story, blocks 8 to 14). Reader 2: Test 5 (Argentina's pots and pans, El Salvador, blocks 54 to 58).
+Weakest section. Reader 1: Test 1 (blocks 16 to 20), a dense table of laws with unfamiliar terms. Reader 2: Test 1 as well, a table of laws read as a list, though Test 3 comes close.
+Story against numbers: the Malaya opening, the worked loan of 100, the Argentina pots and pans and the El Salvador market are told. Tests 1, 3 and 4 lean on tables, so the middle reads closer to a report. Each test does end with a short plain line on the claim, which helps.
+
+## Fairness and tone
+
+Fair to the reader who made the claim: yes. Both readers would say the claim is stated in full (blocks 4 and 5), tested part by part, and given credit where it holds ("Malaysia's law is closer to the reader's picture than most", "For Malaysia, more than for Britain or America"). The verdict is "holds in part", not "wrong".
+Fair to the doubters: yes. Tied hands are given a real success (Hong Kong, Singapore, decades of steady prices), and free hands are shown failing (Zimbabwe, Venezuela) and also failing when left alone (the 2008 inquiry). The Swiss and Danish votes are read carefully ("people are careful with something as serious as money"), not as a sneer at voters.
+Unfair or disrespectful description: none found. The King is named only as the appointing office, with the law's own section. Bank Negara is described by what its law says, its dividend and its 1998 fixed rate, with no blame. The Argentine protest, the Salvadoran marcher and the Zimbabwe queues are shown without mockery. Scotland, Canada and the Swiss central bank head are quoted or summarised neutrally. One small point: "No voter chooses a governor directly" (block 38) is a plain fact and reads neutrally.
+Financial advice: none. Block 71 says so plainly, and nothing tells the reader what to hold, buy or sell.
+
+## Remaining confusions
+
+Reader 1 (Malaysian, ESL)
+- [4] "stands behind its banks" is not explained. The reader may not know it means lending to banks in trouble.
+- [11] "reserves locked up abroad" and "a passive board" are abstract words.
+- [13] "deflationary correctives" sits inside a quote. The plain-words line after it helps, but the word "cushion" is still hard.
+- [17] The table mixes years, long names and legal phrases. "Elastic currency" and "conducive" are explained, but "maximum employment, stable prices, and moderate long-term interest rates" and "sections 5 and 22" are heavy.
+- [19] "steer credit" and "directing credit" are not explained on the main path (the plain version is only in the deeper box).
+- [27] "a debt fixed in money" and "hidden tax on the lender" take a second read. The table in [28] rescues it.
+- [30] "3% to 4% of everything the country made that year" and "6.5% tax on holders of bonds" are hard to hold together. "Caps" is unclear.
+- [37] "Senate" and "for cause" are not explained.
+- [38] "answers to the law and to the government of the day" is idiom.
+- [52] "linked to the US dollar at about 7.8" does not say 7.8 of what.
+- [54] "The money could not give way, so output and jobs gave way instead" is clever but abstract.
+- [56] "from the top down" is idiom. "Legal money beside the US dollar" is a little unclear.
+- [60] "prints its way out of its debts" is idiom. "Hands tied" is a metaphor carried by the table only.
+
+Reader 2 (American)
+- [17] The Fed 1977 cell "Money should grow with the economy's power to produce" is vague.
+- [27] and [28] The idea that 102 buys "about 98" needs one slow read, but works.
+- [30] Two different measures (3% to 4% a year against 3.3% in one year against 6.5% tax) are close together and can blur.
+- [38] and [42] A little odd that the Fed was "independent" yet its failure is blamed, with no link back to the Test 3 point. Still clear enough.
+- [62] and the main path are fine otherwise. No block was found unclear beyond the above.
+
+## Ranked fixes (8)
+
+1. Block [52], Hong Kong cell. Says 7.8 without a unit.
+OLD: Hong Kong, linked to the US dollar at about 7.8 since 1983, as reported
+NEW: Hong Kong, linked to the US dollar at about 7.8 Hong Kong dollars for each US dollar since 1983, as reported
+
+2. Block [19]. "Steer credit" is first used here and never explained on the main path.
+OLD: with powers to steer credit toward development
+NEW: with powers to steer loans toward chosen industries, to help development
+
+3. Block [4]. Explain "stands behind its banks".
+OLD: stands behind its banks.
+NEW: stands behind its banks, which means it can lend to them when they are in trouble.
+
+4. Block [11]. Abstract phrasing.
+OLD: reserves locked up abroad, and what a passive board could not do
+NEW: reserves held abroad that could not be used at home, and a board that could only wait and could not act
+
+5. Block [27]. Make the debt idea concrete.
+OLD: a debt fixed in money is easier to pay back
+NEW: a debt fixed as a set sum of money is easier to pay back
+
+6. Block [56]. Idiom.
+OLD: whether a government can bring in a new kind of money from the top down
+NEW: whether a government can order its people to use a new kind of money
+
+7. Block [37]. Explain the Senate for readers outside America.
+OLD: The President, with the consent of the Senate
+NEW: The President, with the consent of the Senate, which is the upper house of lawmakers
+
+8. Block [60]. Idiom.
+OLD: A government that prints its way out of its debts
+NEW: A government that creates new money to pay off its debts
