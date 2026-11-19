@@ -1,0 +1,299 @@
+{
+ "r5-lead": {
+  "title": "Round 5: answers, an audit and predictions written down in advance",
+  "oneLine": "Round 5 answered the fifteen open questions, checked the project's memory, and wrote down 72 dated predictions before the events happen.",
+  "picture": "Think of a weather forecaster who not only explains yesterday's storm but also writes tomorrow's forecast on the board with a number, so everyone can check it later.",
+  "steps": [
+   "Real interest rates rose because the Fed is fighting oil-driven inflation in a strong economy, with Japan adding a push.",
+   "Crisis dollars for most countries now depend on politics: the Gulf has no US line, and Japan sells Treasuries rather than borrow.",
+   "Moody's held France. A one-notch cut would have mattered little, a fall into the BBB band would matter.",
+   "Housing supply is shrinking, and borrowing to invest mostly adds downside.",
+   "The memory audit found six corrections, none changing the odds.",
+   "The scenario odds stay at 62/15/1/22, 44/23/3/30 and 31/28/10/31, with five new conditional rules."
+  ],
+  "terms": [
+   {
+    "t": "Real interest rate",
+    "d": "The interest rate after expected inflation. In this project it is measured by the yield on inflation-protected Treasury bonds."
+   },
+   {
+    "t": "Pre-registration",
+    "d": "Writing a prediction down with a number, a date and a rule for deciding the outcome before the event happens."
+   },
+   {
+    "t": "Conditional rule",
+    "d": "A rule set in advance that says how the scenario odds move if a named event happens."
+   },
+   {
+    "t": "Brier score",
+    "d": "A way to score probability forecasts: the squared gap between the forecast and what happened. Lower is better."
+   }
+  ],
+  "why": "It turns opinions into checkable numbers. In a few weeks you will be able to see whether the desk's judgment beat the markets on the Fed, the French budget and China's deadline.",
+  "connects": [
+   {
+    "id": "scenarios",
+    "how": "The four scenarios stay at 62/15/1/22, 44/23/3/30 and 31/28/10/31 after Round 5."
+   },
+   {
+    "id": "r4-lead",
+    "how": "Round 4 left the open questions and the French tripwires that Round 5 answers and dates."
+   },
+   {
+    "id": "r5-audit",
+    "how": "The full prediction ledger and the memory audit."
+   }
+  ],
+  "check": {
+   "q": "Why does the desk write predictions with numbers and dates instead of just describing what might happen?",
+   "a": "Because a numbered, dated prediction with a clear rule can be scored later. That shows whether the desk's judgment is any good, for example the Moody's call where the desk said 70 and a thin market said about 90."
+  },
+  "visual": "money-layers"
+ },
+ "r5-rates": {
+  "title": "Why borrowing got dearer in 2026",
+  "oneLine": "Real interest rates rose 73bp in 2026 mainly because markets expect a tighter Fed, with Japan adding a push, and the accord Warsh wants would shrink the Fed rather than cap yields.",
+  "picture": "Think of the price of renting money for ten years. It went up mostly because the landlord (the Fed) signalled higher rent ahead, and a neighbour (Japan) raised its rents too, not because tenants feared default.",
+  "steps": [
+   "The 10-year yield rose 82bp in 2026, and 73bp of that was the real yield, so it was not an inflation scare.",
+   "The desk splits the 73bp: Fed path about 35, Japan about 18, term premium and fiscal supply about 10, direct AI crowding-out about 10.",
+   "A yield cap is unlikely without a crisis: 15 by 2035. The live idea is a balance-sheet accord that shrinks the Fed.",
+   "The corporate tax drop comes from expensing AI investment and fades when capex stops growing.",
+   "The 'flat producer prices' puzzle was a mislabelled food series. Producer energy rose 35%."
+  ],
+  "terms": [
+   {
+    "t": "Breakeven inflation",
+    "d": "The gap between a normal Treasury yield and an inflation-protected one. It shows the inflation markets expect."
+   },
+   {
+    "t": "Term premium",
+    "d": "The extra yield investors want for locking money up for a long time instead of rolling short loans."
+   },
+   {
+    "t": "Yield cap",
+    "d": "A central bank promise to buy bonds so their yield cannot rise above a set level, as the Fed did from 1942 to 1951."
+   },
+   {
+    "t": "Expensing",
+    "d": "Deducting the full cost of an investment from taxable income at once, instead of spreading it over years."
+   }
+  ],
+  "why": "Mortgage, car-loan and business rates follow the real 10-year yield. Knowing it is mostly the Fed path tells you rates fall when the Fed signals a pause, not when AI cools.",
+  "connects": [
+   {
+    "id": "debt",
+    "how": "The debt treadmill depends on real rates staying below real growth. 2026 pushed them above it."
+   },
+   {
+    "id": "r3-plumbing",
+    "how": "Round 3 showed Treasury leaning on bills and foreign selling, which feeds the term premium leg."
+   },
+   {
+    "id": "r5-rates",
+    "how": "The full answers on rates, the accord, corporate tax and producer prices."
+   }
+  ],
+  "check": {
+   "q": "If the 10-year yield rose 82bp and the real yield 73bp, what does that say about inflation fears?",
+   "a": "Very little of the rise came from expected inflation: the breakeven rose only 9bp. The move was in the real price of money, mostly because markets expect the Fed to stay tight."
+  },
+  "visual": "r5-realrate"
+ },
+ "r5-access": {
+  "title": "Who gets dollars when it matters",
+  "oneLine": "Most dollar stablecoins are held abroad, Japan sells Treasuries instead of borrowing, the Gulf has no US line, and central banks without a Fed line buy gold.",
+  "picture": "Think of a fire brigade that serves five neighbours by right and everyone else only by special arrangement. The others buy their own extinguishers (gold), keep buckets at home, and some borrow from a different brigade (China).",
+  "steps": [
+   "About two thirds of dollar stablecoins sit outside the US, mostly in emerging economies.",
+   "Japan funded both 2026 yen defenses by selling dollar securities. The Fed's FIMA line stayed at zero.",
+   "No Gulf state has a US dollar line. The Treasury's fund has only about $25B of dollar securities behind its $219B headline.",
+   "Central banks without a Fed line bought gold in 2026 and more of them now store it at home.",
+   "China grows the yuan through refinancing, panda bonds and 32 swap agreements, not through solar loans."
+  ],
+  "terms": [
+   {
+    "t": "FIMA repo",
+    "d": "A Fed facility that lets foreign central banks borrow dollars against their Treasuries instead of selling them."
+   },
+   {
+    "t": "Exchange Stabilization Fund (ESF)",
+    "d": "A Treasury fund that can lend dollars or swap currencies with other countries without a vote in Congress."
+   },
+   {
+    "t": "Special Drawing Rights (SDR)",
+    "d": "An IMF reserve asset. Most of the ESF's assets are SDRs, matched by SDR liabilities, so they are not spare dollars."
+   },
+   {
+    "t": "Swap line",
+    "d": "An agreement between central banks to exchange currencies for a period, used to supply dollars or yuan in a squeeze."
+   }
+  ],
+  "why": "If crisis dollars become political, countries self-insure with gold and sell Treasuries in a squeeze, which raises US borrowing costs and slowly widens the neutral reserve layer.",
+  "connects": [
+   {
+    "id": "r3-plumbing",
+    "how": "Round 3 first showed FIMA unused and foreign governments selling Treasuries."
+   },
+   {
+    "id": "r3-ownership",
+    "how": "Who owns Treasuries and stablecoins decides who sells in a squeeze."
+   },
+   {
+    "id": "r5-access",
+    "how": "The full answers on stablecoins, Japan, the Gulf, gold and the yuan."
+   }
+  ],
+  "check": {
+   "q": "The ESF shows about $219B of assets. Why does the desk say it has only about $25B of firepower?",
+   "a": "Because $173B of its assets are SDRs that are matched by SDR liabilities, and its dollar securities are only $24.9B. A large Gulf line would need more SDR certificates sold to the Fed or Fed help."
+  },
+  "visual": "recycle-loop"
+ },
+ "r5-europe": {
+  "title": "France's rating, new residents' finances and where Europeans move",
+  "oneLine": "Moody's held France and a one-notch cut would have changed little, official fiscal studies agree that route, age and earnings decide the result, and Europeans are not moving to Latin America or Southeast Asia in rising shares.",
+  "picture": "A credit rating is like a school report that arrives after the exam marks are already public. The marks (bond spreads) move first, and the report mostly confirms them, unless it drops a whole grade band.",
+  "steps": [
+   "Moody's kept France at Aa3 negative on 23 October, conditional on a 2027 budget.",
+   "Past French downgrades moved the spread a median 4bp tighter. The BBB band is the real cliff (conditional C11).",
+   "The budget calendar: debate resumes 27 October, solemn vote 3 November, S&P on 27 November.",
+   "Official studies: work routes positive, family lower, humanitarian most negative on fiscal accounts, and arrival in the 20s best.",
+   "Latin America took about 4% of emigrants from six EU countries in both 2019 and 2024, Southeast Asia 1.6%."
+  ],
+  "terms": [
+   {
+    "t": "Spread",
+    "d": "The extra yield France pays over Germany on 10-year bonds, a measure of how risky markets think France is."
+   },
+   {
+    "t": "BBB band",
+    "d": "The lowest group of investment-grade ratings, where central bank haircuts and investor rules start to bite."
+   },
+   {
+    "t": "Article 49.3",
+    "d": "A French constitutional tool that lets the government pass a budget without a vote unless a censure motion succeeds."
+   },
+   {
+    "t": "Present value",
+    "d": "What a stream of future amounts is worth today after discounting, used in lifetime fiscal studies."
+   }
+  ],
+  "why": "It separates noise from signals: a rating letter matters less than the budget vote and the spread, and headline fiscal totals depend on method choices you should look for.",
+  "connects": [
+   {
+    "id": "r4-europe",
+    "how": "Round 4 named France as the euro area's weak link and set the spread conditionals."
+   },
+   {
+    "id": "r4-markets",
+    "how": "The Moody's market call (87.5 to 90.5) the desk disagreed with at 70."
+   },
+   {
+    "id": "r5-europe",
+    "how": "The full answers on France, fiscal studies and emigration."
+   }
+  ],
+  "check": {
+   "q": "Why would a Moody's cut from Aa3 to A1 have changed little for French borrowing costs?",
+   "a": "Because indices already used the middle rating of A+, the ECB's backstop ignores ratings, EU banks hold the debt at zero risk weight, and the spread already priced worse than A1. Past cuts moved the spread a median 4bp tighter."
+  },
+  "visual": "yield-parts"
+ },
+ "r5-households": {
+  "title": "Homes, handmade goods, dividends and borrowing to invest",
+  "oneLine": "US housing supply is shrinking under 7% mortgages, the human-made premium shows up as an AI discount, a new dividend would be less protected than Social Security, and borrowing at 6.19% to earn 13.6% mostly adds risk.",
+  "picture": "Borrowing to invest is like walking a dog on a stretchy lead tied to your belt. On a calm walk you cover more ground. When the dog bolts (a crash), the lead yanks you over and the lender takes the dog.",
+  "steps": [
+   "Completions are down 12.5% in 2026, and new homes meet only 15% to 25% of a demand shock within ten years.",
+   "Buyers pay less for AI-made goods (2.6% of sales on 17% of uploads at one marketplace), but no cash premium is measured yet.",
+   "A new AI dividend would not get Social Security's bank shield unless the law adds it.",
+   "Leverage doubles volatility and quadruples the drag. A 50% loan is called after a 23% early fall.",
+   "Over 10 years the levered median beats unlevered by about $10 per $100, but the bad case is about a third."
+  ],
+  "terms": [
+   {
+    "t": "Supply elasticity",
+    "d": "How much new supply appears when prices rise. An elasticity of 1 means a 10% price rise brings about 10% more construction over time."
+   },
+   {
+    "t": "Volatility drag",
+    "d": "The gap between the average yearly return and the compound return, which grows with the square of volatility."
+   },
+   {
+    "t": "Margin call",
+    "d": "A lender's demand to add cash or sell assets when the loan becomes too large compared with the position."
+   },
+   {
+    "t": "Loan-to-value (LTV)",
+    "d": "The loan as a share of what the position is worth. A 50% LTV means half the position is borrowed."
+   }
+  ],
+  "why": "These are the decisions ordinary people actually face: where rent goes, what sells, how safe a payment is, and what leverage really does. This is general education, not advice.",
+  "connects": [
+   {
+    "id": "r3-supply",
+    "how": "Round 3 found housing is the limit on any UHI. Round 5 measures how slow supply is."
+   },
+   {
+    "id": "r3-ownership",
+    "how": "Ownership is what moves people up, and leverage is the risky shortcut."
+   },
+   {
+    "id": "r5-households",
+    "how": "The full answers on housing, the premium, dividends and the spread trade."
+   }
+  ],
+  "check": {
+   "q": "If stocks average 13.6% a year with 20% volatility, why does borrowing half the money barely raise the compound return?",
+   "a": "Because leverage doubles volatility to about 40%, and volatility drag grows with its square, so the compound return is about 11.7% against 11.4% unlevered, while margin calls lock in losses in crashes."
+  },
+  "visual": "r5-spread"
+ },
+ "r5-audit": {
+  "title": "Keeping score: the prediction ledger and the memory audit",
+  "oneLine": "The desk wrote 72 dated predictions to be scored later, and a check of 52 remembered figures found six corrections, none changing the odds.",
+  "picture": "Think of a pilot's checklist and flight log. Before take-off you write down what you expect, and after landing you check what happened and fix anything you remembered wrong.",
+  "steps": [
+   "Each prediction has a number, a date and a rule that decides the outcome.",
+   "Where a market above $1M exists, the desk is within 15 points of it.",
+   "The first item is already decided in practice: Moody's held France, so the desk's 70 likely beats the market's 90.5.",
+   "The audit confirmed 38 of 52 remembered figures and corrected 6, mostly fund sizes labelled as estimates.",
+   "Scores will be computed with the Brier rule in a later round."
+  ],
+  "terms": [
+   {
+    "t": "Resolution rule",
+    "d": "The exact source and test that decides whether a prediction came true."
+   },
+   {
+    "t": "Thin market",
+    "d": "A prediction market with little money traded, whose price can be moved easily and is a weak signal."
+   },
+   {
+    "t": "Memory figure",
+    "d": "A number written from recall and flagged for checking against a primary source."
+   }
+  ],
+  "why": "A desk that scores itself in public earns or loses trust on the record, not on its confidence.",
+  "connects": [
+   {
+    "id": "r4-markets",
+    "how": "Round 4's market check that set the 15-point rule the ledger follows."
+   },
+   {
+    "id": "answer",
+    "how": "The project's overall answer, whose figures the audit checked."
+   },
+   {
+    "id": "r5-lead",
+    "how": "The Round 5 summary."
+   }
+  ],
+  "check": {
+   "q": "The desk said 70 for a France downgrade by 31 October and the market said 90.5. If no downgrade happens, who scored better?",
+   "a": "The desk. With the Brier rule, the desk's error is 0.7 squared, about 0.49, and the market's is 0.905 squared, about 0.82. Lower is better."
+  },
+  "visual": "r5-calendar"
+ }
+}

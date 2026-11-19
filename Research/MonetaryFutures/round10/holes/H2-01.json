@@ -1,0 +1,239 @@
+{
+ "id": "H2-01",
+ "question": "Does the 'three kinds of country' box predict who holds a government's debt and how it acts in a crisis, better than a plain lens (reserve issuer, net creditor or debtor, rich or emerging)?",
+ "start": "Pre-registered sort in round10/PATHFINDER_B.md section 2.0, built on the Chinn and Ito 2023 file https://web.pdx.edu/~ito/kaopen_2023.xls",
+ "links": [
+  {
+   "n": 1,
+   "claim": "Countries can be sorted by written rules using a public capital-openness score. In 2023 China, India, Russia and Brazil all score 0.16 (closed), Saudi Arabia and Kuwait 0.70, and the US, UK, Germany, France, Italy, Japan, Switzerland, Korea, Norway, UAE, Qatar and Singapore 1.00 (open). The score is built from the IMF's AREAER rule records",
+   "grade": "I0",
+   "p": 0.95,
+   "actor": {
+    "name": "International Monetary Fund",
+    "kind": "international body"
+   },
+   "evidence": [
+    {
+     "what": "Chinn and Ito KAOPEN file, year 2023 rows, ka_open column, read with python3 -I",
+     "url": "https://web.pdx.edu/~ito/kaopen_2023.xls",
+     "tier": "T1",
+     "date": "2026-01-05"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "claim": "Holder mix of government debt, latest: US foreign 31% of debt held by the public (end 2025) and Fed about 14% of marketable debt (Q1 2025). UK overseas 33.6% and Bank of England APF 16.6% (Q1 2026). Japan foreign 12.8% and Bank of Japan 43.1% (Dec 2025). China commercial banks 69.2% (end 2025) and foreign about 6%. Saudi Arabia external debt 38% of direct debt (SAR 575.7 bn of 1,519.0 bn, end 2025)",
+   "grade": "I0",
+   "p": 0.95,
+   "actor": {
+    "name": "UK Debt Management Office",
+    "kind": "office"
+   },
+   "evidence": [
+    {
+     "what": "Japan JGB and T-bill holders, Dec 2025",
+     "url": "https://www.mof.go.jp/english/policy/jgbs/publication/debt_management_report/2026/esaimu2026-2-3.pdf",
+     "tier": "T0",
+     "date": "2026"
+    },
+    {
+     "what": "Gilt holdings by sector, Q1 2026",
+     "url": "https://dmo.gov.uk/media/r2ejghpr/apr-jun-2026a.pdf",
+     "tier": "T0",
+     "date": "2026"
+    },
+    {
+     "what": "China Treasury bond holders, Q4 2025",
+     "url": "https://asianbondsonline.adb.org/documents/abm/abm_mar_2026_bond_market_developments_4qtr_2025.pdf",
+     "tier": "T2",
+     "date": "2026-03"
+    },
+    {
+     "what": "Foreign share of Chinese government bonds about 5.9%",
+     "url": "https://www.yicaiglobal.com/news/foreign-institutions-raise-chinese-yuan-bonds-holdings",
+     "tier": "T3",
+     "date": "2025-04"
+    },
+    {
+     "what": "Saudi direct debt split, end Dec 2025",
+     "url": "https://ndmc.gov.sa/en/reports-and-statistics",
+     "tier": "T0",
+     "date": "2026"
+    },
+    {
+     "what": "Foreign 31% of US publicly held debt, end 2025",
+     "url": "https://www.ssga.com/us/en/individual/insights/mind-on-the-market-05-october-2026",
+     "tier": "T3",
+     "date": "2026-10-05"
+    },
+    {
+     "what": "Fed 14% of marketable Treasury debt, Q1 2025",
+     "url": "https://economic-research.bnpparibas.com/html/en-US/US-Treasuries-market-idol-feet-clay-safe-haven-test-9/12/2025,51826",
+     "tier": "T3",
+     "date": "2025-12-09"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "claim": "The box predicts the debt holder mix better than the plain lens",
+   "grade": "I2",
+   "p": 0.25,
+   "actor": {
+    "name": "Japan Ministry of Finance",
+    "kind": "agency"
+   },
+   "move": "balance sheet",
+   "footprints_expected": [
+    "Box A countries with foreign shares over 25% and box C under 10%, in national debt office tables, with at least one country where the plain lens fails and the box succeeds"
+   ],
+   "footprints_found": [
+    {
+     "what": "Japan, a box A country by the rules, has only 12.8% foreign holders, which the box gets wrong and the net creditor lens gets right",
+     "url": "https://www.mof.go.jp/english/policy/jgbs/publication/debt_management_report/2026/esaimu2026-2-3.pdf",
+     "date": "2026"
+    },
+    {
+     "what": "Saudi Arabia, a net creditor, has 38% external debt, which the plain lens gets wrong and the box gets right",
+     "url": "https://ndmc.gov.sa/en/reports-and-statistics",
+     "date": "2026"
+    }
+   ],
+   "footprints_missing": [
+    "Holder mix for Germany, France, Italy, Switzerland, Korea, Norway, UAE, Qatar, Kuwait, Singapore, India, Russia, Brazil: not pulled (budget). IMF investor base dataset not reachable as country numbers through search. the SUERF note on a 95 country dataset gives only averages"
+   ],
+   "rivals": [
+    "The box is a relabelling of net creditor or debtor status, so the two tie on every country",
+    "Home bias and the size of domestic savings set the foreign share, whatever the box"
+   ],
+   "reveal": "Holder mix for the remaining 13 sealed countries, from national debt offices. Next pass, no later than Round 11. Japan Q3 2026 flow of funds about 18 December 2026"
+  },
+  {
+   "n": 4,
+   "claim": "Documented crisis acts: Bank of England bought 19.3 bn pounds of gilts from 28 Sep to 14 Oct 2022 after LDI fire sales. Norway's and Singapore's government funds had the largest withdrawals in Q2 2020 (37 and 36 bn dollars), and 24 governments on six continents drew on funds that quarter. In China, China Securities Finance and Central Huijin bought shares from July 2015 to end 2016",
+   "grade": "I0",
+   "p": 0.95,
+   "actor": {
+    "name": "Bank of England",
+    "kind": "central bank"
+   },
+   "evidence": [
+    {
+     "what": "Bank of England case study of the 2022 gilt operation",
+     "url": "https://www.bankofengland.co.uk/quarterly-bulletin/2023/2023/financial-stability-buy-sell-tools-a-gilt-market-case-study",
+     "tier": "T0",
+     "date": "2023"
+    },
+    {
+     "what": "Global SWF count of fund withdrawals, Q2 2020, reported by Reuters",
+     "url": "https://news.yahoo.com/sovereigns-raid-rainy-day-funds-071711229.html",
+     "tier": "T3",
+     "date": "2020"
+    },
+    {
+     "what": "China national team purchases 2015 to 2016",
+     "url": "https://cepr.org/voxeu/columns/saving-chinas-stock-market",
+     "tier": "T2",
+     "date": "2016"
+    },
+    {
+     "what": "Caixin explainer on the national team",
+     "url": "https://www.caixinglobal.com/2018-10-19/caixin-explains-how-a-stock-market-crash-created-chinas-national-team-101337087.html",
+     "tier": "T3",
+     "date": "2018-10-19"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "claim": "The box predicts crisis behaviour (central bank backstop in A, fund draw in B, state buyers and controls in C) better than the plain lens",
+   "grade": "I2",
+   "p": 0.25,
+   "actor": {
+    "name": "Norges Bank Investment Management",
+    "kind": "fund"
+   },
+   "move": "precedent",
+   "footprints_expected": [
+    "Fund draws only in box B in 2020, and state directed buying only in box C, in fund reports and central bank statements"
+   ],
+   "footprints_found": [
+    {
+     "what": "24 governments on six continents drew on funds in Q2 2020, not only box B, so 'has a fund' predicts the draw as well as the box",
+     "url": "https://investmentnews.co.nz/investment-news/global-governments-smash-sovereign-fund-piggy-banks-for-crisis-money",
+     "date": "2020"
+    },
+    {
+     "what": "The Bank of England 2022 operation is what any reserve currency central bank with a dysfunctional bond market does",
+     "url": "https://www.bankofengland.co.uk/quarterly-bulletin/2023/2023/financial-stability-buy-sell-tools-a-gilt-market-case-study",
+     "date": "2023"
+    }
+   ],
+   "footprints_missing": [
+    "2008 acts not coded (budget). Brazil, India and Russia crisis acts not coded, which is where the box and the 'emerging' lens would part"
+   ],
+   "rivals": [
+    "A fund is drawn wherever a fund exists, whatever the box",
+    "Reserve currency central banks backstop their bond markets because they can, whatever the box"
+   ],
+   "reveal": "Code 2008, 2020 and 2022 acts for Brazil, India and Russia next pass. Forward test: the next crisis, with box responses pre-registered here"
+  },
+  {
+   "n": 6,
+   "claim": "The box shows whom the state answers to (capital, the ruling house through a fund, or the party state)",
+   "grade": "I4",
+   "p": 0.15,
+   "actor": {
+    "name": "State Council of the People's Republic of China",
+    "kind": "state"
+   },
+   "move": "cap table",
+   "footprints_expected": [
+    "Who bears losses in a crisis: bank creditors paid in full in box A while taxpayers pay, depositors and state banks carry losses in box C (bail-in and resolution records such as Baoshang Bank 2019)"
+   ],
+   "footprints_found": [],
+   "footprints_missing": [
+    "Not searched. Treated as conjecture because links 3 and 5 did not hold"
+   ],
+   "rivals": [
+    "Loss sharing follows the legal resolution regime of each country, not the box",
+    "Loss sharing follows the size of the bank and the fiscal room of the state"
+   ],
+   "reveal": "Compare EU bank resolution cases with China's Baoshang Bank 2019 resolution. Next pass, no fixed date"
+  }
+ ],
+ "rival_hypotheses": [
+  {
+   "kind": "official",
+   "text": "Standard economics: net creditor or debtor status, reserve currency status and capital openness explain holder mix and crisis tools. No power story is needed",
+   "inconsistent_evidence": 0
+  },
+  {
+   "kind": "coordination",
+   "text": "Box A states and their central banks coordinate rescues for private capital",
+   "inconsistent_evidence": 1
+  },
+  {
+   "kind": "incentives",
+   "text": "Each state protects whoever holds its debt, so behaviour tracks the holder mix and the boxes only look real",
+   "inconsistent_evidence": 0
+  },
+  {
+   "kind": "accident",
+   "text": "Custody centres and reserve managers blur holder data, so the foreign shares are mismeasured (TIC China line fell while Belgium rose)",
+   "inconsistent_evidence": 0
+  }
+ ],
+ "coordination": {
+  "level": 0,
+  "channel": "none claimed between states",
+  "enforcement": "not applicable",
+  "secrecy_load": "not applicable"
+ },
+ "exit": "test",
+ "budget_used": {
+  "searches": 14,
+  "tokens": 0
+ }
+}

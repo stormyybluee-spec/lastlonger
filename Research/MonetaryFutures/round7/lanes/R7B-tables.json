@@ -1,0 +1,1999 @@
+{
+ "meta": {
+  "lane": "R7B",
+  "date": "2026-10-24",
+  "note": "Chart-ready tables for Rulebook L2.4. Every row has a source. Models are labelled."
+ },
+ "club_shares": {
+  "unit": "percent of world",
+  "year": 2024,
+  "source": "World Bank WDI API (NY.GDP.MKTP.CD, SP.POP.TOTL, NE.EXP.GNFS.CD), computed by scripts/clubs.py",
+  "rows": [
+   {
+    "group": "G7",
+    "output": 44.5,
+    "people": 9.6,
+    "exports": 30.2
+   },
+   {
+    "group": "G10 (11 countries)",
+    "output": 47.6,
+    "people": 10.3,
+    "exports": 38.1
+   },
+   {
+    "group": "G20: 19 countries only",
+    "output": 78.0,
+    "people": 58.0,
+    "exports": 57.2
+   },
+   {
+    "group": "G20 with EU",
+    "output": 86.3,
+    "people": 61.0,
+    "exports": 75.8
+   },
+   {
+    "group": "G20 with EU and AU",
+    "output": 88.5,
+    "people": 78.8,
+    "exports": 77.5
+   },
+   {
+    "group": "Malaysia",
+    "output": 0.38,
+    "people": 0.44,
+    "exports": 0.93
+   }
+  ]
+ },
+ "club_membership": {
+  "source": "Section A1 of R7B-clubs-print.md",
+  "rows": [
+   {
+    "club": "G7",
+    "founded": 1975,
+    "members": [
+     "US",
+     "Japan",
+     "Germany",
+     "UK",
+     "France",
+     "Italy",
+     "Canada"
+    ],
+    "attends": [
+     "EU"
+    ]
+   },
+   {
+    "club": "G10",
+    "founded": 1962,
+    "members": [
+     "Belgium",
+     "Canada",
+     "France",
+     "Germany",
+     "Italy",
+     "Japan",
+     "Netherlands",
+     "Sweden",
+     "UK",
+     "US",
+     "Switzerland (1964)"
+    ]
+   },
+   {
+    "club": "G20",
+    "founded": 1999,
+    "leaders_from": 2008,
+    "members": [
+     "Argentina",
+     "Australia",
+     "Brazil",
+     "Canada",
+     "China",
+     "France",
+     "Germany",
+     "India",
+     "Indonesia",
+     "Italy",
+     "Japan",
+     "Korea",
+     "Mexico",
+     "Russia",
+     "Saudi Arabia",
+     "South Africa",
+     "Turkey",
+     "UK",
+     "US",
+     "EU",
+     "African Union (2023)"
+    ]
+   }
+  ]
+ },
+ "g20_scorecard": {
+  "unit": "grade",
+  "source": "Section B, our grading (model) on T0 to T4 evidence",
+  "rows": [
+   {
+    "item": "London 2009 $1.1T package",
+    "year": 2009,
+    "grade": "Delivered"
+   },
+   {
+    "item": "No new protectionism",
+    "year": 2009,
+    "grade": "Not delivered"
+   },
+   {
+    "item": "Financial Stability Board",
+    "year": 2009,
+    "grade": "Delivered"
+   },
+   {
+    "item": "Basel III",
+    "year": 2010,
+    "grade": "Partly delivered"
+   },
+   {
+    "item": "Fossil fuel subsidies",
+    "year": 2009,
+    "grade": "Not delivered"
+   },
+   {
+    "item": "DSSI",
+    "year": 2020,
+    "grade": "Partly delivered",
+    "value": "$12.9B suspended, 48 of 73 countries, 1 private creditor"
+   },
+   {
+    "item": "Common Framework",
+    "year": 2020,
+    "grade": "Partly delivered",
+    "value": "2 to 5+ years per case"
+   },
+   {
+    "item": "Global minimum tax",
+    "year": 2021,
+    "grade": "Partly delivered",
+    "value": "US carve-out 5 Jan 2026"
+   },
+   {
+    "item": "2025 and 2026 summits",
+    "year": 2026,
+    "grade": "Stalled (consensus broken)"
+   }
+  ]
+ },
+ "common_framework_cases": {
+  "unit": "dates",
+  "source": "IMF GSDR progress report April 2024, press 2024 to 2026",
+  "rows": [
+   {
+    "country": "Chad",
+    "requested": "2021-01",
+    "deal": "2022-11",
+    "note": "assurances 11 months"
+   },
+   {
+    "country": "Zambia",
+    "requested": "2021-02",
+    "deal": "2024-06 (bondholders)",
+    "note": "about 1,300 days from default"
+   },
+   {
+    "country": "Ghana",
+    "requested": "2023-01",
+    "deal": "2024-10 bond exchange (to verify)",
+    "note": "assurances about 8 months"
+   },
+   {
+    "country": "Ethiopia",
+    "requested": "2021-02",
+    "deal": "2026-06-29 bondholder agreement in principle",
+    "note": "OCC MoU July 2025, $3.5B relief, settlement not confirmed"
+   }
+  ]
+ },
+ "cofer_2026q2": {
+  "unit": "percent of allocated reserves",
+  "period": "2026Q2",
+  "source": "IMF Data Brief, 30 September 2026",
+  "rows": [
+   {
+    "currency": "USD",
+    "value": 56.7
+   },
+   {
+    "currency": "EUR",
+    "value": 20.6
+   },
+   {
+    "currency": "JPY",
+    "value": 4.96
+   },
+   {
+    "currency": "CNY",
+    "value": 2.11
+   },
+   {
+    "currency": "Other (incl GBP, CAD, AUD, CHF)",
+    "value": "about 15.6 (residual, includes others above 6)"
+   }
+  ],
+  "total_reserves_usd_tn": 13.22
+ },
+ "printing_matrix": {
+  "source": "scripts/matrix.py: BIS WS_DEBT_SEC2_PUB 2026Q2, Chinn-Ito 2023, World Bank CPI, IMF 2023 de facto classification via relay, central bank holdings as cited. Rung is a model.",
+  "rows": [
+   {
+    "country": "United States",
+    "test1_own_currency": "Yes",
+    "imf_de_facto_2023": "Free floating",
+    "fx_govt_bonds_abroad_usd_bn_2026q2": 0.5,
+    "fx_govt_bonds_abroad_pct_gdp": 0.0,
+    "central_bank_holds_govt_debt": "14.0% (Fed $4.57T of $32.6T held by public, Oct 2026)",
+    "reserve_share_cofer_2026q2": "USD 56.70%",
+    "chinn_ito_2023": 1.0,
+    "cpi_latest": 2.9,
+    "cpi_year": "2024",
+    "cpi_peak_2021_2025": 8.0,
+    "rung": "1 Reserve issuer"
+   },
+   {
+    "country": "Euro area as a whole (ECB)",
+    "test1_own_currency": "Yes, at area level",
+    "imf_de_facto_2023": "Free floating",
+    "fx_govt_bonds_abroad_usd_bn_2026q2": null,
+    "fx_govt_bonds_abroad_pct_gdp": null,
+    "central_bank_holds_govt_debt": "not checked",
+    "reserve_share_cofer_2026q2": "EUR 20.60%",
+    "chinn_ito_2023": null,
+    "cpi_latest": null,
+    "cpi_year": null,
+    "cpi_peak_2021_2025": null,
+    "rung": "1 Reserve issuer"
+   },
+   {
+    "country": "Japan",
+    "test1_own_currency": "Yes",
+    "imf_de_facto_2023": "Free floating",
+    "fx_govt_bonds_abroad_usd_bn_2026q2": 4.1,
+    "fx_govt_bonds_abroad_pct_gdp": 0.1,
+    "central_bank_holds_govt_debt": "about 41% (June 2026, L2.3)",
+    "reserve_share_cofer_2026q2": "JPY 4.96%",
+    "chinn_ito_2023": 1.0,
+    "cpi_latest": 3.2,
+    "cpi_year": "2025",
+    "cpi_peak_2021_2025": 3.3,
+    "rung": "1 Reserve issuer"
+   },
+   {
+    "country": "United Kingdom",
+    "test1_own_currency": "Yes",
+    "imf_de_facto_2023": "Free floating",
+    "fx_govt_bonds_abroad_usd_bn_2026q2": 0.1,
+    "fx_govt_bonds_abroad_pct_gdp": 0.0,
+    "central_bank_holds_govt_debt": "not checked",
+    "reserve_share_cofer_2026q2": "GBP, share not given in the brief",
+    "chinn_ito_2023": 1.0,
+    "cpi_latest": 3.9,
+    "cpi_year": "2025",
+    "cpi_peak_2021_2025": 7.9,
+    "rung": "1 Reserve issuer"
+   },
+   {
+    "country": "Canada",
+    "test1_own_currency": "Yes",
+    "imf_de_facto_2023": "Free floating",
+    "fx_govt_bonds_abroad_usd_bn_2026q2": 217.3,
+    "fx_govt_bonds_abroad_pct_gdp": 9.6,
+    "central_bank_holds_govt_debt": "not checked",
+    "reserve_share_cofer_2026q2": "CAD, small",
+    "chinn_ito_2023": 1.0,
+    "cpi_latest": 2.1,
+    "cpi_year": "2025",
+    "cpi_peak_2021_2025": 6.8,
+    "rung": "2 Sovereign printer"
+   },
+   {
+    "country": "Australia",
+    "test1_own_currency": "Yes",
+    "imf_de_facto_2023": "Free floating",
+    "fx_govt_bonds_abroad_usd_bn_2026q2": 2.0,
+    "fx_govt_bonds_abroad_pct_gdp": 0.1,
+    "central_bank_holds_govt_debt": "not checked",
+    "reserve_share_cofer_2026q2": "AUD, small",
+    "chinn_ito_2023": 1.0,
+    "cpi_latest": 2.9,
+    "cpi_year": "2025",
+    "cpi_peak_2021_2025": 6.6,
+    "rung": "2 Sovereign printer"
+   },
+   {
+    "country": "Switzerland (G10 only)",
+    "test1_own_currency": "Yes",
+    "imf_de_facto_2023": "Floating (to verify)",
+    "fx_govt_bonds_abroad_usd_bn_2026q2": null,
+    "fx_govt_bonds_abroad_pct_gdp": null,
+    "central_bank_holds_govt_debt": "not checked",
+    "reserve_share_cofer_2026q2": "CHF, small",
+    "chinn_ito_2023": 1.0,
+    "cpi_latest": 0.2,
+    "cpi_year": "2025",
+    "cpi_peak_2021_2025": 2.8,
+    "rung": "2 Sovereign printer"
+   },
+   {
+    "country": "Korea",
+    "test1_own_currency": "Yes",
+    "imf_de_facto_2023": "Floating",
+    "fx_govt_bonds_abroad_usd_bn_2026q2": 13.9,
+    "fx_govt_bonds_abroad_pct_gdp": 0.7,
+    "central_bank_holds_govt_debt": "not checked",
+    "reserve_share_cofer_2026q2": "none",
+    "chinn_ito_2023": 1.0,
+    "cpi_latest": 2.1,
+    "cpi_year": "2025",
+    "cpi_peak_2021_2025": 5.1,
+    "rung": "2 Sovereign printer"
+   },
+   {
+    "country": "China",
+    "test1_own_currency": "Yes",
+    "imf_de_facto_2023": "Other managed",
+    "fx_govt_bonds_abroad_usd_bn_2026q2": 33.2,
+    "fx_govt_bonds_abroad_pct_gdp": 0.2,
+    "central_bank_holds_govt_debt": "not checked",
+    "reserve_share_cofer_2026q2": "CNY 2.11%",
+    "chinn_ito_2023": 0.16,
+    "cpi_latest": 0.1,
+    "cpi_year": "2025",
+    "cpi_peak_2021_2025": 2.0,
+    "rung": "3 Constrained printer (controls)"
+   },
+   {
+    "country": "India",
+    "test1_own_currency": "Yes",
+    "imf_de_facto_2023": "Floating",
+    "fx_govt_bonds_abroad_usd_bn_2026q2": 0.0,
+    "fx_govt_bonds_abroad_pct_gdp": null,
+    "central_bank_holds_govt_debt": "not checked",
+    "reserve_share_cofer_2026q2": "none",
+    "chinn_ito_2023": 0.16,
+    "cpi_latest": 2.4,
+    "cpi_year": "2025",
+    "cpi_peak_2021_2025": 6.7,
+    "rung": "3 Constrained printer"
+   },
+   {
+    "country": "Brazil",
+    "test1_own_currency": "Yes",
+    "imf_de_facto_2023": "Floating",
+    "fx_govt_bonds_abroad_usd_bn_2026q2": 65.0,
+    "fx_govt_bonds_abroad_pct_gdp": 3.0,
+    "central_bank_holds_govt_debt": "not checked",
+    "reserve_share_cofer_2026q2": "none",
+    "chinn_ito_2023": 0.16,
+    "cpi_latest": 5.0,
+    "cpi_year": "2025",
+    "cpi_peak_2021_2025": 9.3,
+    "rung": "3 Constrained printer"
+   },
+   {
+    "country": "Mexico",
+    "test1_own_currency": "Yes",
+    "imf_de_facto_2023": "Free floating",
+    "fx_govt_bonds_abroad_usd_bn_2026q2": 154.2,
+    "fx_govt_bonds_abroad_pct_gdp": 8.4,
+    "central_bank_holds_govt_debt": "not checked",
+    "reserve_share_cofer_2026q2": "none",
+    "chinn_ito_2023": 0.7,
+    "cpi_latest": 3.8,
+    "cpi_year": "2025",
+    "cpi_peak_2021_2025": 7.9,
+    "rung": "3 Constrained printer"
+   },
+   {
+    "country": "Indonesia",
+    "test1_own_currency": "Yes",
+    "imf_de_facto_2023": "Floating",
+    "fx_govt_bonds_abroad_usd_bn_2026q2": 88.0,
+    "fx_govt_bonds_abroad_pct_gdp": 6.3,
+    "central_bank_holds_govt_debt": "29.4% (Bank Indonesia, June 2026, ADB)",
+    "reserve_share_cofer_2026q2": "none",
+    "chinn_ito_2023": 0.42,
+    "cpi_latest": 1.9,
+    "cpi_year": "2025",
+    "cpi_peak_2021_2025": 4.2,
+    "rung": "3 Constrained printer"
+   },
+   {
+    "country": "South Africa",
+    "test1_own_currency": "Yes",
+    "imf_de_facto_2023": "Floating",
+    "fx_govt_bonds_abroad_usd_bn_2026q2": 24.8,
+    "fx_govt_bonds_abroad_pct_gdp": 6.2,
+    "central_bank_holds_govt_debt": "not checked",
+    "reserve_share_cofer_2026q2": "none",
+    "chinn_ito_2023": 0.16,
+    "cpi_latest": 3.2,
+    "cpi_year": "2025",
+    "cpi_peak_2021_2025": 7.0,
+    "rung": "3 Constrained printer"
+   },
+   {
+    "country": "Russia",
+    "test1_own_currency": "Yes",
+    "imf_de_facto_2023": "Free floating",
+    "fx_govt_bonds_abroad_usd_bn_2026q2": 47.7,
+    "fx_govt_bonds_abroad_pct_gdp": 2.2,
+    "central_bank_holds_govt_debt": "not checked",
+    "reserve_share_cofer_2026q2": "none (reserves frozen 2022)",
+    "chinn_ito_2023": 0.16,
+    "cpi_latest": 8.7,
+    "cpi_year": "2025",
+    "cpi_peak_2021_2025": 13.7,
+    "rung": "3 Constrained printer (sanctioned)"
+   },
+   {
+    "country": "Malaysia (outlier, no club)",
+    "test1_own_currency": "Yes",
+    "imf_de_facto_2023": "Floating",
+    "fx_govt_bonds_abroad_usd_bn_2026q2": 3.5,
+    "fx_govt_bonds_abroad_pct_gdp": 0.8,
+    "central_bank_holds_govt_debt": "3.8% (BNM, June 2026, MOF)",
+    "reserve_share_cofer_2026q2": "none",
+    "chinn_ito_2023": 0.42,
+    "cpi_latest": 1.4,
+    "cpi_year": "2025",
+    "cpi_peak_2021_2025": 3.4,
+    "rung": "3 Constrained printer, upper end"
+   },
+   {
+    "country": "Turkey",
+    "test1_own_currency": "Yes",
+    "imf_de_facto_2023": "Crawl-like",
+    "fx_govt_bonds_abroad_usd_bn_2026q2": 100.4,
+    "fx_govt_bonds_abroad_pct_gdp": 7.4,
+    "central_bank_holds_govt_debt": "not checked",
+    "reserve_share_cofer_2026q2": "none",
+    "chinn_ito_2023": 0.16,
+    "cpi_latest": 34.9,
+    "cpi_year": "2025",
+    "cpi_peak_2021_2025": 72.3,
+    "rung": "4 Fragile printer"
+   },
+   {
+    "country": "Argentina",
+    "test1_own_currency": "Yes",
+    "imf_de_facto_2023": "Crawling peg (2023, regime changed since)",
+    "fx_govt_bonds_abroad_usd_bn_2026q2": 62.7,
+    "fx_govt_bonds_abroad_pct_gdp": 9.8,
+    "central_bank_holds_govt_debt": "not checked",
+    "reserve_share_cofer_2026q2": "none",
+    "chinn_ito_2023": 0.16,
+    "cpi_latest": 219.9,
+    "cpi_year": "2024",
+    "cpi_peak_2021_2025": 219.9,
+    "rung": "4 Fragile printer"
+   },
+   {
+    "country": "Sri Lanka",
+    "test1_own_currency": "Yes",
+    "imf_de_facto_2023": "Crawl-like",
+    "fx_govt_bonds_abroad_usd_bn_2026q2": 7.0,
+    "fx_govt_bonds_abroad_pct_gdp": 7.0,
+    "central_bank_holds_govt_debt": "not checked",
+    "reserve_share_cofer_2026q2": "none",
+    "chinn_ito_2023": 0.0,
+    "cpi_latest": -4.8,
+    "cpi_year": "2025",
+    "cpi_peak_2021_2025": 49.7,
+    "rung": "4 Fragile printer (defaulted 2022)"
+   },
+   {
+    "country": "Zimbabwe",
+    "test1_own_currency": "Yes since April 2024 (ZiG), to verify",
+    "imf_de_facto_2023": "Other managed",
+    "fx_govt_bonds_abroad_usd_bn_2026q2": null,
+    "fx_govt_bonds_abroad_pct_gdp": null,
+    "central_bank_holds_govt_debt": "not checked",
+    "reserve_share_cofer_2026q2": "none",
+    "chinn_ito_2023": 0.42,
+    "cpi_latest": 104.7,
+    "cpi_year": "2022",
+    "cpi_peak_2021_2025": 104.7,
+    "rung": "4 Fragile printer"
+   },
+   {
+    "country": "Saudi Arabia",
+    "test1_own_currency": "Yes, but pegged",
+    "imf_de_facto_2023": "Conventional peg",
+    "fx_govt_bonds_abroad_usd_bn_2026q2": 147.2,
+    "fx_govt_bonds_abroad_pct_gdp": 11.7,
+    "central_bank_holds_govt_debt": "not checked",
+    "reserve_share_cofer_2026q2": "none",
+    "chinn_ito_2023": 0.7,
+    "cpi_latest": 2.0,
+    "cpi_year": "2025",
+    "cpi_peak_2021_2025": 3.1,
+    "rung": "5a Tied by choice (peg)"
+   },
+   {
+    "country": "Hong Kong",
+    "test1_own_currency": "Yes, but currency board",
+    "imf_de_facto_2023": "Currency board",
+    "fx_govt_bonds_abroad_usd_bn_2026q2": 24.3,
+    "fx_govt_bonds_abroad_pct_gdp": 6.0,
+    "central_bank_holds_govt_debt": "not checked",
+    "reserve_share_cofer_2026q2": "none",
+    "chinn_ito_2023": 1.0,
+    "cpi_latest": 1.4,
+    "cpi_year": "2025",
+    "cpi_peak_2021_2025": 2.1,
+    "rung": "5a Tied by choice (board)"
+   },
+   {
+    "country": "Germany",
+    "test1_own_currency": "No (euro member)",
+    "imf_de_facto_2023": "Euro, free floating at area level",
+    "fx_govt_bonds_abroad_usd_bn_2026q2": 16.4,
+    "fx_govt_bonds_abroad_pct_gdp": 0.3,
+    "central_bank_holds_govt_debt": "ECB, not split",
+    "reserve_share_cofer_2026q2": "part of EUR",
+    "chinn_ito_2023": 1.0,
+    "cpi_latest": 2.2,
+    "cpi_year": "2025",
+    "cpi_peak_2021_2025": 6.9,
+    "rung": "5b No printer of its own"
+   },
+   {
+    "country": "France",
+    "test1_own_currency": "No (euro member)",
+    "imf_de_facto_2023": "Euro",
+    "fx_govt_bonds_abroad_usd_bn_2026q2": 37.9,
+    "fx_govt_bonds_abroad_pct_gdp": 1.2,
+    "central_bank_holds_govt_debt": "ECB, not split",
+    "reserve_share_cofer_2026q2": "part of EUR",
+    "chinn_ito_2023": 1.0,
+    "cpi_latest": 0.9,
+    "cpi_year": "2025",
+    "cpi_peak_2021_2025": 5.2,
+    "rung": "5b No printer of its own"
+   },
+   {
+    "country": "Italy",
+    "test1_own_currency": "No (euro member)",
+    "imf_de_facto_2023": "Euro",
+    "fx_govt_bonds_abroad_usd_bn_2026q2": 12.5,
+    "fx_govt_bonds_abroad_pct_gdp": 0.5,
+    "central_bank_holds_govt_debt": "ECB, not split",
+    "reserve_share_cofer_2026q2": "part of EUR",
+    "chinn_ito_2023": 1.0,
+    "cpi_latest": 1.5,
+    "cpi_year": "2025",
+    "cpi_peak_2021_2025": 8.2,
+    "rung": "5b No printer of its own"
+   },
+   {
+    "country": "Greece",
+    "test1_own_currency": "No (euro member)",
+    "imf_de_facto_2023": "Euro",
+    "fx_govt_bonds_abroad_usd_bn_2026q2": 0.0,
+    "fx_govt_bonds_abroad_pct_gdp": 0.0,
+    "central_bank_holds_govt_debt": "ECB, not split",
+    "reserve_share_cofer_2026q2": "part of EUR",
+    "chinn_ito_2023": 1.0,
+    "cpi_latest": 2.5,
+    "cpi_year": "2025",
+    "cpi_peak_2021_2025": 9.6,
+    "rung": "5b No printer of its own"
+   },
+   {
+    "country": "Ecuador",
+    "test1_own_currency": "No (US dollar since 2000)",
+    "imf_de_facto_2023": "No separate legal tender",
+    "fx_govt_bonds_abroad_usd_bn_2026q2": 19.9,
+    "fx_govt_bonds_abroad_pct_gdp": 16.1,
+    "central_bank_holds_govt_debt": "n.a.",
+    "reserve_share_cofer_2026q2": "n.a.",
+    "chinn_ito_2023": 0.7,
+    "cpi_latest": 0.7,
+    "cpi_year": "2025",
+    "cpi_peak_2021_2025": 3.5,
+    "rung": "5b No printer of its own"
+   },
+   {
+    "country": "Panama",
+    "test1_own_currency": "No (US dollar since 1904)",
+    "imf_de_facto_2023": "No separate legal tender",
+    "fx_govt_bonds_abroad_usd_bn_2026q2": 36.1,
+    "fx_govt_bonds_abroad_pct_gdp": 41.7,
+    "central_bank_holds_govt_debt": "n.a.",
+    "reserve_share_cofer_2026q2": "n.a.",
+    "chinn_ito_2023": 1.0,
+    "cpi_latest": -0.2,
+    "cpi_year": "2025",
+    "cpi_peak_2021_2025": 2.9,
+    "rung": "5b No printer of its own"
+   }
+  ]
+ },
+ "printing_ladder": {
+  "source": "Section C3 (model)",
+  "rows": [
+   {
+    "rung": "1 Reserve issuer",
+    "members": [
+     "US",
+     "Euro area as a whole",
+     "Japan",
+     "UK"
+    ]
+   },
+   {
+    "rung": "2 Sovereign printer",
+    "members": [
+     "Canada",
+     "Australia",
+     "Switzerland",
+     "Korea"
+    ]
+   },
+   {
+    "rung": "3 Constrained printer",
+    "members": [
+     "China",
+     "India",
+     "Brazil",
+     "Mexico",
+     "Indonesia",
+     "South Africa",
+     "Russia",
+     "Malaysia"
+    ]
+   },
+   {
+    "rung": "4 Fragile printer",
+    "members": [
+     "Turkey",
+     "Argentina",
+     "Sri Lanka",
+     "Zimbabwe"
+    ]
+   },
+   {
+    "rung": "5a Tied by choice",
+    "members": [
+     "Saudi Arabia",
+     "Hong Kong"
+    ]
+   },
+   {
+    "rung": "5b No printer of its own",
+    "members": [
+     "Germany",
+     "France",
+     "Italy",
+     "Greece",
+     "Ecuador",
+     "Panama"
+    ]
+   }
+  ]
+ },
+ "fx_govt_bonds_abroad": {
+  "unit": "USD bn and percent of 2024 GDP",
+  "period": "2026Q2",
+  "source": "BIS debt securities statistics, general government, international market, foreign currency. scripts/fxbonds.py",
+  "rows": [
+   {
+    "country": "US",
+    "period": "2026-Q2",
+    "intl_all_usd_bn": 2.5,
+    "intl_fx_usd_bn": 0.5,
+    "fx_pct_gdp_2024": 0.0
+   },
+   {
+    "country": "JP",
+    "period": "2026-Q2",
+    "intl_all_usd_bn": 4.1,
+    "intl_fx_usd_bn": 4.1,
+    "fx_pct_gdp_2024": 0.1
+   },
+   {
+    "country": "DE",
+    "period": "2026-Q2",
+    "intl_all_usd_bn": 130.4,
+    "intl_fx_usd_bn": 16.4,
+    "fx_pct_gdp_2024": 0.3
+   },
+   {
+    "country": "GB",
+    "period": "2026-Q2",
+    "intl_all_usd_bn": 21.5,
+    "intl_fx_usd_bn": 0.1,
+    "fx_pct_gdp_2024": 0.0
+   },
+   {
+    "country": "FR",
+    "period": "2026-Q2",
+    "intl_all_usd_bn": 74.2,
+    "intl_fx_usd_bn": 37.9,
+    "fx_pct_gdp_2024": 1.2
+   },
+   {
+    "country": "IT",
+    "period": "2026-Q2",
+    "intl_all_usd_bn": 124.5,
+    "intl_fx_usd_bn": 12.5,
+    "fx_pct_gdp_2024": 0.5
+   },
+   {
+    "country": "CA",
+    "period": "2026-Q2",
+    "intl_all_usd_bn": 218.8,
+    "intl_fx_usd_bn": 217.3,
+    "fx_pct_gdp_2024": 9.6
+   },
+   {
+    "country": "CN",
+    "period": "2026-Q2",
+    "intl_all_usd_bn": 53.6,
+    "intl_fx_usd_bn": 33.2,
+    "fx_pct_gdp_2024": 0.2
+   },
+   {
+    "country": "IN",
+    "period": "",
+    "intl_all_usd_bn": null,
+    "intl_fx_usd_bn": 0.0,
+    "fx_pct_gdp_2024": 0.0
+   },
+   {
+    "country": "BR",
+    "period": "2026-Q2",
+    "intl_all_usd_bn": 65.9,
+    "intl_fx_usd_bn": 65.0,
+    "fx_pct_gdp_2024": 3.0
+   },
+   {
+    "country": "RU",
+    "period": "2026-Q2",
+    "intl_all_usd_bn": 47.7,
+    "intl_fx_usd_bn": 47.7,
+    "fx_pct_gdp_2024": 2.2
+   },
+   {
+    "country": "ZA",
+    "period": "2026-Q2",
+    "intl_all_usd_bn": 24.8,
+    "intl_fx_usd_bn": 24.8,
+    "fx_pct_gdp_2024": 6.2
+   },
+   {
+    "country": "MX",
+    "period": "2026-Q2",
+    "intl_all_usd_bn": 154.2,
+    "intl_fx_usd_bn": 154.2,
+    "fx_pct_gdp_2024": 8.4
+   },
+   {
+    "country": "KR",
+    "period": "2026-Q2",
+    "intl_all_usd_bn": 13.9,
+    "intl_fx_usd_bn": 13.9,
+    "fx_pct_gdp_2024": 0.7
+   },
+   {
+    "country": "AU",
+    "period": "2026-Q2",
+    "intl_all_usd_bn": 2.0,
+    "intl_fx_usd_bn": 2.0,
+    "fx_pct_gdp_2024": 0.1
+   },
+   {
+    "country": "ID",
+    "period": "2026-Q2",
+    "intl_all_usd_bn": 88.0,
+    "intl_fx_usd_bn": 88.0,
+    "fx_pct_gdp_2024": 6.3
+   },
+   {
+    "country": "TR",
+    "period": "2026-Q2",
+    "intl_all_usd_bn": 100.4,
+    "intl_fx_usd_bn": 100.4,
+    "fx_pct_gdp_2024": 7.4
+   },
+   {
+    "country": "SA",
+    "period": "2026-Q2",
+    "intl_all_usd_bn": 147.2,
+    "intl_fx_usd_bn": 147.2,
+    "fx_pct_gdp_2024": 11.7
+   },
+   {
+    "country": "AR",
+    "period": "2026-Q2",
+    "intl_all_usd_bn": 62.7,
+    "intl_fx_usd_bn": 62.7,
+    "fx_pct_gdp_2024": 9.8
+   },
+   {
+    "country": "MY",
+    "period": "2026-Q2",
+    "intl_all_usd_bn": 3.5,
+    "intl_fx_usd_bn": 3.5,
+    "fx_pct_gdp_2024": 0.8
+   },
+   {
+    "country": "TH",
+    "period": "",
+    "intl_all_usd_bn": null,
+    "intl_fx_usd_bn": 0.0,
+    "fx_pct_gdp_2024": 0.0
+   },
+   {
+    "country": "SG",
+    "period": "",
+    "intl_all_usd_bn": null,
+    "intl_fx_usd_bn": 0.0,
+    "fx_pct_gdp_2024": 0.0
+   },
+   {
+    "country": "HK",
+    "period": "2026-Q2",
+    "intl_all_usd_bn": 25.4,
+    "intl_fx_usd_bn": 24.3,
+    "fx_pct_gdp_2024": 6.0
+   },
+   {
+    "country": "EC",
+    "period": "2026-Q2",
+    "intl_all_usd_bn": 19.9,
+    "intl_fx_usd_bn": 19.9,
+    "fx_pct_gdp_2024": 16.1
+   },
+   {
+    "country": "PA",
+    "period": "2026-Q2",
+    "intl_all_usd_bn": 36.1,
+    "intl_fx_usd_bn": 36.1,
+    "fx_pct_gdp_2024": 41.7
+   },
+   {
+    "country": "GR",
+    "period": "2026-Q2",
+    "intl_all_usd_bn": 73.0,
+    "intl_fx_usd_bn": 0.0,
+    "fx_pct_gdp_2024": 0.0
+   },
+   {
+    "country": "LK",
+    "period": "2026-Q2",
+    "intl_all_usd_bn": 7.0,
+    "intl_fx_usd_bn": 7.0,
+    "fx_pct_gdp_2024": 7.0
+   },
+   {
+    "country": "CH",
+    "period": "",
+    "intl_all_usd_bn": null,
+    "intl_fx_usd_bn": 0.0,
+    "fx_pct_gdp_2024": 0.0
+   },
+   {
+    "country": "EG",
+    "period": "2026-Q2",
+    "intl_all_usd_bn": 57.6,
+    "intl_fx_usd_bn": 57.6,
+    "fx_pct_gdp_2024": 14.8
+   },
+   {
+    "country": "NG",
+    "period": "2026-Q2",
+    "intl_all_usd_bn": 30.8,
+    "intl_fx_usd_bn": 30.8,
+    "fx_pct_gdp_2024": 12.2
+   }
+  ]
+ },
+ "asia_reserves": {
+  "unit": "USD bn, total reserves incl gold",
+  "source": "World Bank FI.RES.TOTL.CD",
+  "rows": [
+   {
+    "country": "CHN",
+    "year": 1996,
+    "value": 111.7
+   },
+   {
+    "country": "CHN",
+    "year": 1997,
+    "value": 146.4
+   },
+   {
+    "country": "CHN",
+    "year": 1998,
+    "value": 152.8
+   },
+   {
+    "country": "CHN",
+    "year": 1999,
+    "value": 161.4
+   },
+   {
+    "country": "CHN",
+    "year": 2000,
+    "value": 171.8
+   },
+   {
+    "country": "CHN",
+    "year": 2001,
+    "value": 220.1
+   },
+   {
+    "country": "CHN",
+    "year": 2002,
+    "value": 297.7
+   },
+   {
+    "country": "CHN",
+    "year": 2003,
+    "value": 416.2
+   },
+   {
+    "country": "CHN",
+    "year": 2004,
+    "value": 622.9
+   },
+   {
+    "country": "CHN",
+    "year": 2005,
+    "value": 831.4
+   },
+   {
+    "country": "CHN",
+    "year": 2006,
+    "value": 1080.8
+   },
+   {
+    "country": "CHN",
+    "year": 2007,
+    "value": 1546.4
+   },
+   {
+    "country": "CHN",
+    "year": 2008,
+    "value": 1966.0
+   },
+   {
+    "country": "CHN",
+    "year": 2009,
+    "value": 2452.9
+   },
+   {
+    "country": "CHN",
+    "year": 2010,
+    "value": 2913.7
+   },
+   {
+    "country": "CHN",
+    "year": 2011,
+    "value": 3254.7
+   },
+   {
+    "country": "CHN",
+    "year": 2012,
+    "value": 3387.5
+   },
+   {
+    "country": "CHN",
+    "year": 2013,
+    "value": 3880.4
+   },
+   {
+    "country": "CHN",
+    "year": 2014,
+    "value": 3900.0
+   },
+   {
+    "country": "CHN",
+    "year": 2015,
+    "value": 3405.3
+   },
+   {
+    "country": "CHN",
+    "year": 2016,
+    "value": 3097.7
+   },
+   {
+    "country": "CHN",
+    "year": 2017,
+    "value": 3235.7
+   },
+   {
+    "country": "CHN",
+    "year": 2018,
+    "value": 3168.2
+   },
+   {
+    "country": "CHN",
+    "year": 2019,
+    "value": 3222.9
+   },
+   {
+    "country": "CHN",
+    "year": 2020,
+    "value": 3357.2
+   },
+   {
+    "country": "CHN",
+    "year": 2021,
+    "value": 3427.9
+   },
+   {
+    "country": "CHN",
+    "year": 2022,
+    "value": 3306.8
+   },
+   {
+    "country": "CHN",
+    "year": 2023,
+    "value": 3449.5
+   },
+   {
+    "country": "CHN",
+    "year": 2024,
+    "value": 3456.0
+   },
+   {
+    "country": "IDN",
+    "year": 1996,
+    "value": 19.4
+   },
+   {
+    "country": "IDN",
+    "year": 1997,
+    "value": 17.5
+   },
+   {
+    "country": "IDN",
+    "year": 1998,
+    "value": 23.6
+   },
+   {
+    "country": "IDN",
+    "year": 1999,
+    "value": 27.3
+   },
+   {
+    "country": "IDN",
+    "year": 2000,
+    "value": 29.4
+   },
+   {
+    "country": "IDN",
+    "year": 2001,
+    "value": 28.1
+   },
+   {
+    "country": "IDN",
+    "year": 2002,
+    "value": 32.0
+   },
+   {
+    "country": "IDN",
+    "year": 2003,
+    "value": 36.3
+   },
+   {
+    "country": "IDN",
+    "year": 2004,
+    "value": 36.3
+   },
+   {
+    "country": "IDN",
+    "year": 2005,
+    "value": 34.7
+   },
+   {
+    "country": "IDN",
+    "year": 2006,
+    "value": 42.6
+   },
+   {
+    "country": "IDN",
+    "year": 2007,
+    "value": 56.9
+   },
+   {
+    "country": "IDN",
+    "year": 2008,
+    "value": 51.6
+   },
+   {
+    "country": "IDN",
+    "year": 2009,
+    "value": 66.1
+   },
+   {
+    "country": "IDN",
+    "year": 2010,
+    "value": 96.2
+   },
+   {
+    "country": "IDN",
+    "year": 2011,
+    "value": 110.1
+   },
+   {
+    "country": "IDN",
+    "year": 2012,
+    "value": 112.8
+   },
+   {
+    "country": "IDN",
+    "year": 2013,
+    "value": 99.4
+   },
+   {
+    "country": "IDN",
+    "year": 2014,
+    "value": 111.9
+   },
+   {
+    "country": "IDN",
+    "year": 2015,
+    "value": 105.9
+   },
+   {
+    "country": "IDN",
+    "year": 2016,
+    "value": 116.4
+   },
+   {
+    "country": "IDN",
+    "year": 2017,
+    "value": 130.2
+   },
+   {
+    "country": "IDN",
+    "year": 2018,
+    "value": 120.7
+   },
+   {
+    "country": "IDN",
+    "year": 2019,
+    "value": 129.2
+   },
+   {
+    "country": "IDN",
+    "year": 2020,
+    "value": 135.9
+   },
+   {
+    "country": "IDN",
+    "year": 2021,
+    "value": 144.9
+   },
+   {
+    "country": "IDN",
+    "year": 2022,
+    "value": 137.2
+   },
+   {
+    "country": "IDN",
+    "year": 2023,
+    "value": 146.4
+   },
+   {
+    "country": "IDN",
+    "year": 2024,
+    "value": 155.7
+   },
+   {
+    "country": "KOR",
+    "year": 1996,
+    "value": 34.2
+   },
+   {
+    "country": "KOR",
+    "year": 1997,
+    "value": 20.5
+   },
+   {
+    "country": "KOR",
+    "year": 1998,
+    "value": 52.1
+   },
+   {
+    "country": "KOR",
+    "year": 1999,
+    "value": 74.1
+   },
+   {
+    "country": "KOR",
+    "year": 2000,
+    "value": 96.3
+   },
+   {
+    "country": "KOR",
+    "year": 2001,
+    "value": 102.9
+   },
+   {
+    "country": "KOR",
+    "year": 2002,
+    "value": 121.5
+   },
+   {
+    "country": "KOR",
+    "year": 2003,
+    "value": 155.5
+   },
+   {
+    "country": "KOR",
+    "year": 2004,
+    "value": 199.2
+   },
+   {
+    "country": "KOR",
+    "year": 2005,
+    "value": 210.6
+   },
+   {
+    "country": "KOR",
+    "year": 2006,
+    "value": 239.1
+   },
+   {
+    "country": "KOR",
+    "year": 2007,
+    "value": 262.5
+   },
+   {
+    "country": "KOR",
+    "year": 2008,
+    "value": 201.5
+   },
+   {
+    "country": "KOR",
+    "year": 2009,
+    "value": 270.4
+   },
+   {
+    "country": "KOR",
+    "year": 2010,
+    "value": 292.1
+   },
+   {
+    "country": "KOR",
+    "year": 2011,
+    "value": 306.9
+   },
+   {
+    "country": "KOR",
+    "year": 2012,
+    "value": 327.7
+   },
+   {
+    "country": "KOR",
+    "year": 2013,
+    "value": 345.7
+   },
+   {
+    "country": "KOR",
+    "year": 2014,
+    "value": 362.8
+   },
+   {
+    "country": "KOR",
+    "year": 2015,
+    "value": 366.7
+   },
+   {
+    "country": "KOR",
+    "year": 2016,
+    "value": 370.2
+   },
+   {
+    "country": "KOR",
+    "year": 2017,
+    "value": 388.8
+   },
+   {
+    "country": "KOR",
+    "year": 2018,
+    "value": 403.1
+   },
+   {
+    "country": "KOR",
+    "year": 2019,
+    "value": 408.8
+   },
+   {
+    "country": "KOR",
+    "year": 2020,
+    "value": 443.5
+   },
+   {
+    "country": "KOR",
+    "year": 2021,
+    "value": 463.3
+   },
+   {
+    "country": "KOR",
+    "year": 2022,
+    "value": 423.4
+   },
+   {
+    "country": "KOR",
+    "year": 2023,
+    "value": 420.9
+   },
+   {
+    "country": "KOR",
+    "year": 2024,
+    "value": 418.2
+   },
+   {
+    "country": "MYS",
+    "year": 1996,
+    "value": 27.9
+   },
+   {
+    "country": "MYS",
+    "year": 1997,
+    "value": 21.5
+   },
+   {
+    "country": "MYS",
+    "year": 1998,
+    "value": 26.2
+   },
+   {
+    "country": "MYS",
+    "year": 1999,
+    "value": 30.9
+   },
+   {
+    "country": "MYS",
+    "year": 2000,
+    "value": 28.7
+   },
+   {
+    "country": "MYS",
+    "year": 2001,
+    "value": 29.8
+   },
+   {
+    "country": "MYS",
+    "year": 2002,
+    "value": 33.8
+   },
+   {
+    "country": "MYS",
+    "year": 2003,
+    "value": 44.3
+   },
+   {
+    "country": "MYS",
+    "year": 2004,
+    "value": 66.4
+   },
+   {
+    "country": "MYS",
+    "year": 2005,
+    "value": 70.5
+   },
+   {
+    "country": "MYS",
+    "year": 2006,
+    "value": 82.9
+   },
+   {
+    "country": "MYS",
+    "year": 2007,
+    "value": 102.0
+   },
+   {
+    "country": "MYS",
+    "year": 2008,
+    "value": 92.2
+   },
+   {
+    "country": "MYS",
+    "year": 2009,
+    "value": 96.7
+   },
+   {
+    "country": "MYS",
+    "year": 2010,
+    "value": 106.5
+   },
+   {
+    "country": "MYS",
+    "year": 2011,
+    "value": 133.6
+   },
+   {
+    "country": "MYS",
+    "year": 2012,
+    "value": 139.7
+   },
+   {
+    "country": "MYS",
+    "year": 2013,
+    "value": 134.9
+   },
+   {
+    "country": "MYS",
+    "year": 2014,
+    "value": 116.0
+   },
+   {
+    "country": "MYS",
+    "year": 2015,
+    "value": 95.3
+   },
+   {
+    "country": "MYS",
+    "year": 2016,
+    "value": 94.5
+   },
+   {
+    "country": "MYS",
+    "year": 2017,
+    "value": 102.4
+   },
+   {
+    "country": "MYS",
+    "year": 2018,
+    "value": 101.5
+   },
+   {
+    "country": "MYS",
+    "year": 2019,
+    "value": 103.6
+   },
+   {
+    "country": "MYS",
+    "year": 2020,
+    "value": 107.6
+   },
+   {
+    "country": "MYS",
+    "year": 2021,
+    "value": 116.9
+   },
+   {
+    "country": "MYS",
+    "year": 2022,
+    "value": 114.7
+   },
+   {
+    "country": "MYS",
+    "year": 2023,
+    "value": 113.5
+   },
+   {
+    "country": "MYS",
+    "year": 2024,
+    "value": 116.2
+   },
+   {
+    "country": "SGP",
+    "year": 1996,
+    "value": 77.0
+   },
+   {
+    "country": "SGP",
+    "year": 1997,
+    "value": 71.4
+   },
+   {
+    "country": "SGP",
+    "year": 1998,
+    "value": 75.1
+   },
+   {
+    "country": "SGP",
+    "year": 1999,
+    "value": 77.0
+   },
+   {
+    "country": "SGP",
+    "year": 2000,
+    "value": 81.1
+   },
+   {
+    "country": "SGP",
+    "year": 2001,
+    "value": 76.6
+   },
+   {
+    "country": "SGP",
+    "year": 2002,
+    "value": 83.4
+   },
+   {
+    "country": "SGP",
+    "year": 2003,
+    "value": 97.7
+   },
+   {
+    "country": "SGP",
+    "year": 2004,
+    "value": 114.2
+   },
+   {
+    "country": "SGP",
+    "year": 2005,
+    "value": 118.1
+   },
+   {
+    "country": "SGP",
+    "year": 2006,
+    "value": 138.7
+   },
+   {
+    "country": "SGP",
+    "year": 2007,
+    "value": 166.2
+   },
+   {
+    "country": "SGP",
+    "year": 2008,
+    "value": 177.5
+   },
+   {
+    "country": "SGP",
+    "year": 2009,
+    "value": 192.0
+   },
+   {
+    "country": "SGP",
+    "year": 2010,
+    "value": 231.3
+   },
+   {
+    "country": "SGP",
+    "year": 2011,
+    "value": 243.8
+   },
+   {
+    "country": "SGP",
+    "year": 2012,
+    "value": 265.9
+   },
+   {
+    "country": "SGP",
+    "year": 2013,
+    "value": 277.8
+   },
+   {
+    "country": "SGP",
+    "year": 2014,
+    "value": 261.6
+   },
+   {
+    "country": "SGP",
+    "year": 2015,
+    "value": 251.9
+   },
+   {
+    "country": "SGP",
+    "year": 2016,
+    "value": 251.1
+   },
+   {
+    "country": "SGP",
+    "year": 2017,
+    "value": 285.0
+   },
+   {
+    "country": "SGP",
+    "year": 2018,
+    "value": 292.7
+   },
+   {
+    "country": "SGP",
+    "year": 2019,
+    "value": 285.5
+   },
+   {
+    "country": "SGP",
+    "year": 2020,
+    "value": 369.8
+   },
+   {
+    "country": "SGP",
+    "year": 2021,
+    "value": 425.1
+   },
+   {
+    "country": "SGP",
+    "year": 2022,
+    "value": 296.6
+   },
+   {
+    "country": "SGP",
+    "year": 2023,
+    "value": 359.8
+   },
+   {
+    "country": "SGP",
+    "year": 2024,
+    "value": 383.9
+   },
+   {
+    "country": "THA",
+    "year": 1996,
+    "value": 38.6
+   },
+   {
+    "country": "THA",
+    "year": 1997,
+    "value": 26.9
+   },
+   {
+    "country": "THA",
+    "year": 1998,
+    "value": 29.5
+   },
+   {
+    "country": "THA",
+    "year": 1999,
+    "value": 34.8
+   },
+   {
+    "country": "THA",
+    "year": 2000,
+    "value": 32.7
+   },
+   {
+    "country": "THA",
+    "year": 2001,
+    "value": 33.0
+   },
+   {
+    "country": "THA",
+    "year": 2002,
+    "value": 38.9
+   },
+   {
+    "country": "THA",
+    "year": 2003,
+    "value": 42.2
+   },
+   {
+    "country": "THA",
+    "year": 2004,
+    "value": 49.8
+   },
+   {
+    "country": "THA",
+    "year": 2005,
+    "value": 52.1
+   },
+   {
+    "country": "THA",
+    "year": 2006,
+    "value": 67.0
+   },
+   {
+    "country": "THA",
+    "year": 2007,
+    "value": 87.5
+   },
+   {
+    "country": "THA",
+    "year": 2008,
+    "value": 111.0
+   },
+   {
+    "country": "THA",
+    "year": 2009,
+    "value": 138.4
+   },
+   {
+    "country": "THA",
+    "year": 2010,
+    "value": 172.0
+   },
+   {
+    "country": "THA",
+    "year": 2011,
+    "value": 174.9
+   },
+   {
+    "country": "THA",
+    "year": 2012,
+    "value": 181.5
+   },
+   {
+    "country": "THA",
+    "year": 2013,
+    "value": 167.2
+   },
+   {
+    "country": "THA",
+    "year": 2014,
+    "value": 157.2
+   },
+   {
+    "country": "THA",
+    "year": 2015,
+    "value": 156.5
+   },
+   {
+    "country": "THA",
+    "year": 2016,
+    "value": 171.8
+   },
+   {
+    "country": "THA",
+    "year": 2017,
+    "value": 202.5
+   },
+   {
+    "country": "THA",
+    "year": 2018,
+    "value": 205.6
+   },
+   {
+    "country": "THA",
+    "year": 2019,
+    "value": 224.4
+   },
+   {
+    "country": "THA",
+    "year": 2020,
+    "value": 258.1
+   },
+   {
+    "country": "THA",
+    "year": 2021,
+    "value": 246.0
+   },
+   {
+    "country": "THA",
+    "year": 2022,
+    "value": 216.5
+   },
+   {
+    "country": "THA",
+    "year": 2023,
+    "value": 224.5
+   },
+   {
+    "country": "THA",
+    "year": 2024,
+    "value": 236.9
+   }
+  ]
+ },
+ "malaysia_debt_holders": {
+  "unit": "percent of federal government debt",
+  "as_of": "2026-06-30",
+  "source": "MOF Fiscal Outlook 2027 via The Vibes, 2026-10-10",
+  "rows": [
+   {
+    "holder": "EPF",
+    "value": 30.5
+   },
+   {
+    "holder": "Banking institutions",
+    "value": 28.5
+   },
+   {
+    "holder": "Insurance companies",
+    "value": 5.2
+   },
+   {
+    "holder": "Bank Negara Malaysia",
+    "value": 3.8
+   },
+   {
+    "holder": "KWAP",
+    "value": 2.2
+   },
+   {
+    "holder": "Development financial institutions",
+    "value": 2.1
+   },
+   {
+    "holder": "Other domestic",
+    "value": 6.2
+   },
+   {
+    "holder": "Rest, mostly non-residents (implied)",
+    "value": 21.5
+   }
+  ]
+ },
+ "malaysia_key_numbers": {
+  "source": "BNM, MOF, ADB as cited in section D",
+  "rows": [
+   {
+    "series": "Federal debt, RM tn",
+    "as_of": "2026-06-30",
+    "value": 1.38
+   },
+   {
+    "series": "Federal debt, % of GDP",
+    "as_of": "2026-06-30",
+    "value": 63.1
+   },
+   {
+    "series": "Domestic share of federal debt, %",
+    "as_of": "2026-06-30",
+    "value": 98.8
+   },
+   {
+    "series": "Islamic share of federal debt, %",
+    "as_of": "2026-06-30",
+    "value": 47.9
+   },
+   {
+    "series": "Debt service, % of revenue",
+    "as_of": "2026",
+    "value": 15.8
+   },
+   {
+    "series": "Foreign share of LCY govt securities, %",
+    "as_of": "2026-03-31",
+    "value": 21.4
+   },
+   {
+    "series": "BNM reserves, USD bn",
+    "as_of": "2026-06-30",
+    "value": 132.6
+   },
+   {
+    "series": "Reserves / short-term external debt",
+    "as_of": "2026-06-30",
+    "value": 0.9
+   },
+   {
+    "series": "Ringgit per USD, worst 1997 to 1998",
+    "as_of": "1998-01",
+    "value": 4.885
+   },
+   {
+    "series": "Peg, ringgit per USD",
+    "as_of": "1998-09-02 to 2005-07-21",
+    "value": 3.8
+   }
+  ]
+ },
+ "asean_peers": {
+  "source": "Section D5: ADB Asia Bond Monitor Sep 2026, BIS, World Bank, Chinn-Ito",
+  "rows": [
+   {
+    "country": "Malaysia",
+    "foreign_share": 21.4,
+    "central_bank_share": 3.8,
+    "chinn_ito": 0.42,
+    "reserves_2024": 116.2,
+    "cpi_2025": 1.4
+   },
+   {
+    "country": "Indonesia",
+    "foreign_share": 12.8,
+    "central_bank_share": 29.4,
+    "chinn_ito": 0.42,
+    "reserves_2024": 155.7,
+    "cpi_2025": 1.9
+   },
+   {
+    "country": "Thailand",
+    "foreign_share": null,
+    "central_bank_share": 8.0,
+    "chinn_ito": 0.42,
+    "reserves_2024": 236.9,
+    "cpi_2025": -0.1
+   },
+   {
+    "country": "Singapore",
+    "foreign_share": null,
+    "central_bank_share": null,
+    "chinn_ito": 1.0,
+    "reserves_2024": 383.9,
+    "cpi_2025": 0.9
+   }
+  ]
+ },
+ "regime_counts_2023": {
+  "unit": "number of economies",
+  "source": "IMF de facto classification 2023 via Wikipedia relay (T4)",
+  "rows": [
+   {
+    "regime": "No separate legal tender",
+    "value": 17
+   },
+   {
+    "regime": "Currency board",
+    "value": 12
+   },
+   {
+    "regime": "Conventional peg",
+    "value": 43
+   },
+   {
+    "regime": "Stabilized",
+    "value": 22
+   },
+   {
+    "regime": "Crawling peg",
+    "value": 3
+   },
+   {
+    "regime": "Crawl-like",
+    "value": 24
+   },
+   {
+    "regime": "Pegged within bands",
+    "value": 1
+   },
+   {
+    "regime": "Other managed",
+    "value": 12
+   },
+   {
+    "regime": "Floating",
+    "value": 32
+   },
+   {
+    "regime": "Free floating",
+    "value": 33
+   }
+  ]
+ },
+ "sweep_reach": {
+  "source": "vidIQ YouTube search, 2026-10-24",
+  "rows": [
+   {
+    "title": "Why Can't We Print Unlimited Money",
+    "channel": "FactoHolic",
+    "date": "2025-11-01",
+    "views": 74845561
+   },
+   {
+    "title": "The G20 Summit, What is it Exactly?",
+    "channel": "Dhruv Rathee",
+    "date": "2023-09-08",
+    "views": 8273710
+   },
+   {
+    "title": "Why Can't Governments Print Unlimited Money?",
+    "channel": "Nitish Rajput",
+    "date": "2022-04-02",
+    "views": 4472237
+   },
+   {
+    "title": "Why Can't We Just Print Money to Pay Off Debt?",
+    "channel": "WonderWhy",
+    "date": "2013-08-31",
+    "views": 4197887
+   },
+   {
+    "title": "Why G20 is VERY IMPORTANT for India?",
+    "channel": "Abhi and Niyu",
+    "date": "2022-12-22",
+    "views": 3106072
+   },
+   {
+    "title": "Why Every Country Is in Debt? And Who Do They Owe?",
+    "channel": "Explains 101",
+    "date": "2025-03-15",
+    "views": 2692079
+   }
+  ]
+ }
+}

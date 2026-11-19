@@ -1,0 +1,204 @@
+{
+ "id": "H4-01",
+ "question": "C3 as claimed: are the White House, the Saudi state and China's leadership aligned in a secret arrangement (level 2 or 3) while the public sees a march to war?",
+ "start": "https://www.mfa.gov.cn/eng/gjhdq_665435/2675_665437/2818_663626/2819_663628/202303/t20230311_11039241.html",
+ "links": [
+  {
+   "n": 1,
+   "claim": "On 10 March 2023 in Beijing, Saudi Arabia and Iran agreed, in a statement with China, to resume diplomatic relations and reopen embassies within two months. Signed for Saudi Arabia by National Security Adviser Musaad Al-Aiban, for Iran by Ali Shamkhani, for China by Wang Yi. Iran's embassy in Riyadh reopened 6 June 2023",
+   "grade": "I0",
+   "p": 0.97,
+   "actor": {
+    "name": "Ministry of Foreign Affairs of the People's Republic of China",
+    "kind": "agency"
+   },
+   "evidence": [
+    {
+     "what": "Joint trilateral statement, official text",
+     "url": "https://www.mfa.gov.cn/eng/gjhdq_665435/2675_665437/2818_663626/2819_663628/202303/t20230311_11039241.html",
+     "tier": "T0",
+     "date": "2023-03-11"
+    },
+    {
+     "what": "Embassy reopening date",
+     "url": "https://iranprimer.usip.org/node/11521",
+     "tier": "T2",
+     "date": "2023-06"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "claim": "In May 2025 the White House announced a 600 bn dollar Saudi investment commitment and a near 142 bn dollar arms sale (13 May), a 1.2 trillion dollar Qatar 'economic commitment' (14 May) and 200 bn dollars of UAE deals plus an accelerated 1.4 trillion dollar 10-year UAE framework (15 May). These are pledges, not completed flows",
+   "grade": "I0",
+   "p": 0.97,
+   "actor": {
+    "name": "The White House (Executive Office of the President)",
+    "kind": "office"
+   },
+   "evidence": [
+    {
+     "what": "Saudi fact sheet",
+     "url": "https://www.whitehouse.gov/fact-sheets/2025/05/fact-sheet-president-donald-j-trump-secures-historic-600-billion-investment-commitment-in-saudi-arabia",
+     "tier": "T0",
+     "date": "2025-05-13"
+    },
+    {
+     "what": "Qatar fact sheet",
+     "url": "https://www.whitehouse.gov/fact-sheets/2025/05/fact-sheet-president-donald-j-trump-secures-historic-1-2-trillion-economic-commitment-in-qatar/",
+     "tier": "T0",
+     "date": "2025-05-14"
+    },
+    {
+     "what": "UAE fact sheet",
+     "url": "https://www.whitehouse.gov/fact-sheets/2025/05/fact-sheet-president-donald-j-trump-secures-200-billion-in-new-u-s-uae-deals-and-accelerates-previously-committed-1-4-trillion-uae-investment",
+     "tier": "T0",
+     "date": "2025-05-15"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "claim": "From 28 February 2026 the US and Israel struck Iran. Iran's IRGC announced the closure of the Strait of Hormuz on 2 March. A two-week ceasefire was agreed 8 April. US Central Command began a naval blockade of Iranian ports on 13 April 2026 after talks in Islamabad failed",
+   "grade": "I0",
+   "p": 0.85,
+   "actor": {
+    "name": "United States Central Command",
+    "kind": "agency"
+   },
+   "evidence": [
+    {
+     "what": "ABC News timeline of the 2026 Iran war, four phases",
+     "url": "https://www.goodmorningamerica.com/news/story/4-phases-iran-war-key-moments-start-epic-132703824",
+     "tier": "T2",
+     "date": "2026-05-07"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "claim": "China's foreign ministry said US and Israeli strikes were the 'root cause' of the Hormuz blockage, called the US blockade of Iranian ports 'irresponsible and dangerous' (April 2026) and in August 2026 urged the US and Iran to avoid a return to war",
+   "grade": "I0",
+   "p": 0.9,
+   "actor": {
+    "name": "Ministry of Foreign Affairs of the People's Republic of China",
+    "kind": "agency"
+   },
+   "evidence": [
+    {
+     "what": "Spokesman Guo Jiakun on the blockade",
+     "url": "https://capeargus.co.za/news/world/2026-04-14-dangerous-and-irresponsible-china-condemns-us-blockade-of-iranian-ports/",
+     "tier": "T3",
+     "date": "2026-04-14"
+    },
+    {
+     "what": "Root cause statement",
+     "url": "https://arabnews.com/node/2638507/world",
+     "tier": "T3",
+     "date": "2026-03"
+    },
+    {
+     "what": "August statement by spokesman Lin Jian",
+     "url": "https://tribune.com.pk/story/2618169/china-urges-us-iran-to-avoid-return-of-war-backs-lawful-rights-of-coastal-nations-in-hormuz",
+     "tier": "T3",
+     "date": "2026-08-04"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "claim": "Each of the three (White House, Saudi state, China's State Council) has an interest in Hormuz reopening quickly and trade continuing (level 0)",
+   "grade": "I2",
+   "p": 0.5,
+   "actor": {
+    "name": "Kingdom of Saudi Arabia",
+    "kind": "state"
+   },
+   "move": "chokepoint",
+   "footprints_expected": [
+    "Public calls by each to reopen the strait",
+    "No party gains from a long closure in its own official accounts"
+   ],
+   "footprints_found": [
+    {
+     "what": "China called for early restoration of free and safe passage",
+     "url": "https://tribune.com.pk/story/2618169/china-urges-us-iran-to-avoid-return-of-war-backs-lawful-rights-of-coastal-nations-in-hormuz",
+     "date": "2026-08-04"
+    },
+    {
+     "what": "The US set a 48 hour ultimatum on 21 March to reopen the strait",
+     "url": "https://www.goodmorningamerica.com/news/story/4-phases-iran-war-key-moments-start-epic-132703824",
+     "date": "2026-05-07"
+    }
+   ],
+   "footprints_missing": [
+    "A Saudi official statement on the closure was not searched (budget)"
+   ],
+   "rivals": [
+    "The US blockade of Iranian ports shows the White House accepted a closed strait as a cost of pressure on Iran, so interests did not point the same way",
+    "China gained relative access when Iran let ships serving friendly countries pass, so its interest was not the same as the Gulf's"
+   ],
+   "reveal": "Saudi and US statements on Hormuz in the next escalation. Monthly China crude imports by origin (China customs, about the 20th of each month)"
+  },
+  {
+   "n": 6,
+   "claim": "The three run a level 2 secret arrangement in which the public conflict is staged or managed",
+   "grade": "I4",
+   "p": 0.03,
+   "actor": {
+    "name": "State Council of the People's Republic of China",
+    "kind": "state"
+   },
+   "move": "same people",
+   "footprints_expected": [
+    "A named trilateral channel with dated meetings (a readout, a leak, a mirror account in Chinese or Gulf media)",
+    "An enforcement that stops one side cheating",
+    "Matched timing of moves by all three",
+    "No large real costs borne by any of the three"
+   ],
+   "footprints_found": [],
+   "footprints_missing": [
+    "No trilateral channel found in White House fact sheets, China foreign ministry statements or press searched this hole",
+    "Inconsistent marks found instead: China publicly condemned the US blockade. the strait was shut for months at real cost to China's oil imports. SAMA quietly left China's mBridge rail on 13 May 2025, the day of the US-Saudi package (see H4-03)"
+   ],
+   "rivals": [
+    "Level 0: overlapping interests on oil flow, with open rivalry on Iran and payment rails",
+    "Bilateral public deals (US-Gulf in May 2025, US-China in May 2026) that the public can read, so nothing is behind the scenes"
+   ],
+   "reveal": "Class L: declassification, memoirs, court records. No date. Near term: any readout of a US-Saudi-China meeting on Iran, or a leak of one"
+  }
+ ],
+ "rival_hypotheses": [
+  {
+   "kind": "official",
+   "text": "Official: each state pursues its own stated aims. China brokered a Saudi-Iran deal for its own standing and oil security, the Gulf states bought US security and technology with investment pledges, and the US went to war with Iran over its nuclear programme",
+   "inconsistent_evidence": 0
+  },
+  {
+   "kind": "coordination",
+   "text": "Coordination: the White House, the Saudi state and China's leadership agreed a shared plan in secret and the public conflict is staged or managed",
+   "inconsistent_evidence": 4
+  },
+  {
+   "kind": "incentives",
+   "text": "Shared incentives: all three want Gulf oil to flow and trade to continue, so they often push the same way without a deal, and diverge where their interests split (Iran, payment rails)",
+   "inconsistent_evidence": 0
+  },
+  {
+   "kind": "accident",
+   "text": "Accident: the war and the Hormuz closure were escalations nobody planned, and the overlap of interests is coincidence of timing",
+   "inconsistent_evidence": 1
+  }
+ ],
+ "coordination": {
+  "level": 0,
+  "channel": "Claimed level 2. No trilateral channel found, so the level drops to 0",
+  "enforcement": "None found. Nothing stops China or Saudi Arabia from defecting, and both took public positions against US moves (China on the blockade) or against China's rail (SAMA on mBridge)",
+  "secrecy_load": "A staged war would need US Central Command, Israeli forces, Iran's IRGC and three governments' staff, thousands of people for over a year. Too heavy for the evidence"
+ },
+ "exit": "dead_end",
+ "budget_used": {
+  "searches": 6,
+  "tokens": 0
+ }
+}

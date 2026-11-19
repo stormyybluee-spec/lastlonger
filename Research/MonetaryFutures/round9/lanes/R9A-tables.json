@@ -1,0 +1,686 @@
+{
+ "as_of": "2026-11-11",
+ "note": "Percent of GDP. Gap is infographic minus verified. BIS values are the latest quarter in the DBnomics mirror (2024-Q4). Government at nominal value where BIS publishes it.",
+ "rows": [
+  {
+   "country": "Hong Kong",
+   "iso2": "HK",
+   "infographic": {
+    "h": 86,
+    "c": 227,
+    "g": 67,
+    "total": 380
+   },
+   "verified": {
+    "h": 88.1,
+    "c": 240.2,
+    "g": 80.6,
+    "total": 408.9,
+    "gov_valuation": "nominal",
+    "date": "2024-Q4",
+    "source": "BIS total credit WS_TC via DBnomics",
+    "url": "https://api.db.nomics.world/v22/series/BIS/WS_TC/Q.HK.H.A.M.770.A"
+   },
+   "gap": {
+    "h": -2.1,
+    "c": -13.2,
+    "g": -13.6,
+    "total": -28.9
+   }
+  },
+  {
+   "country": "Japan",
+   "iso2": "JP",
+   "infographic": {
+    "h": 60,
+    "c": 113,
+    "g": 199,
+    "total": 372
+   },
+   "verified": {
+    "h": 65.1,
+    "c": 116.3,
+    "g": 212.5,
+    "total": 393.9,
+    "gov_valuation": "nominal",
+    "date": "2024-Q4",
+    "source": "BIS total credit WS_TC via DBnomics",
+    "url": "https://api.db.nomics.world/v22/series/BIS/WS_TC/Q.JP.H.A.M.770.A"
+   },
+   "gap": {
+    "h": -5.1,
+    "c": -3.3,
+    "g": -13.5,
+    "total": -21.9
+   }
+  },
+  {
+   "country": "Singapore",
+   "iso2": "SG",
+   "infographic": {
+    "h": 45,
+    "c": 130,
+    "g": 172,
+    "total": 347
+   },
+   "verified": {
+    "h": 44.3,
+    "c": 122.8,
+    "g": 173.1,
+    "total": 340.2,
+    "gov_valuation": "nominal",
+    "date": "2024-Q4",
+    "source": "BIS total credit WS_TC via DBnomics",
+    "url": "https://api.db.nomics.world/v22/series/BIS/WS_TC/Q.SG.H.A.M.770.A"
+   },
+   "gap": {
+    "h": 0.7,
+    "c": 7.2,
+    "g": -1.1,
+    "total": 6.8
+   }
+  },
+  {
+   "country": "France",
+   "iso2": "FR",
+   "infographic": {
+    "h": 59,
+    "c": 156,
+    "g": 110,
+    "total": 326
+   },
+   "verified": {
+    "h": 60.5,
+    "c": 155.0,
+    "g": 113.1,
+    "total": 328.6,
+    "gov_valuation": "nominal",
+    "date": "2024-Q4",
+    "source": "BIS total credit WS_TC via DBnomics",
+    "url": "https://api.db.nomics.world/v22/series/BIS/WS_TC/Q.FR.H.A.M.770.A"
+   },
+   "gap": {
+    "h": -1.5,
+    "c": 1.0,
+    "g": -3.1,
+    "total": -2.6
+   }
+  },
+  {
+   "country": "Canada",
+   "iso2": "CA",
+   "infographic": {
+    "h": 100,
+    "c": 118,
+    "g": 97,
+    "total": 315
+   },
+   "verified": {
+    "h": 100.0,
+    "c": 117.9,
+    "g": 97.9,
+    "total": 315.8,
+    "gov_valuation": "nominal",
+    "date": "2024-Q4",
+    "source": "BIS total credit WS_TC via DBnomics",
+    "url": "https://api.db.nomics.world/v22/series/BIS/WS_TC/Q.CA.H.A.M.770.A"
+   },
+   "gap": {
+    "h": 0.0,
+    "c": 0.1,
+    "g": -0.9,
+    "total": -0.8
+   }
+  },
+  {
+   "country": "China",
+   "iso2": "CN",
+   "infographic": {
+    "h": 60,
+    "c": 142,
+    "g": 97,
+    "total": 298
+   },
+   "verified": {
+    "h": 60.0,
+    "c": 138.1,
+    "g": 88.4,
+    "total": 286.5,
+    "gov_valuation": "nominal",
+    "date": "2024-Q4",
+    "source": "BIS total credit WS_TC via DBnomics",
+    "url": "https://api.db.nomics.world/v22/series/BIS/WS_TC/Q.CN.H.A.M.770.A"
+   },
+   "gap": {
+    "h": 0.0,
+    "c": 3.9,
+    "g": 8.6,
+    "total": 11.5
+   }
+  },
+  {
+   "country": "United States",
+   "iso2": "US",
+   "infographic": {
+    "h": 68,
+    "c": 73,
+    "g": 123,
+    "total": 264
+   },
+   "verified": {
+    "h": 69.2,
+    "c": 73.8,
+    "g": 114.1,
+    "total": 257.1,
+    "gov_valuation": "nominal",
+    "date": "2024-Q4",
+    "source": "BIS total credit WS_TC via DBnomics",
+    "url": "https://api.db.nomics.world/v22/series/BIS/WS_TC/Q.US.H.A.M.770.A"
+   },
+   "gap": {
+    "h": -1.2,
+    "c": -0.8,
+    "g": 8.9,
+    "total": 6.9
+   }
+  },
+  {
+   "country": "South Korea",
+   "iso2": "KR",
+   "infographic": {
+    "h": 89,
+    "c": 111,
+    "g": 49,
+    "total": 249
+   },
+   "verified": {
+    "h": 90.1,
+    "c": 110.5,
+    "g": 43.8,
+    "total": 244.4,
+    "gov_valuation": "market",
+    "date": "2024-Q4",
+    "source": "BIS total credit WS_TC via DBnomics",
+    "url": "https://api.db.nomics.world/v22/series/BIS/WS_TC/Q.KR.H.A.M.770.A"
+   },
+   "gap": {
+    "h": -1.1,
+    "c": 0.5,
+    "g": 5.2,
+    "total": 4.6
+   }
+  },
+  {
+   "country": "Italy",
+   "iso2": "IT",
+   "infographic": {
+    "h": 36,
+    "c": 59,
+    "g": 141,
+    "total": 236
+   },
+   "verified": {
+    "h": 36.1,
+    "c": 58.2,
+    "g": 135.5,
+    "total": 229.8,
+    "gov_valuation": "nominal",
+    "date": "2024-Q4",
+    "source": "BIS total credit WS_TC via DBnomics",
+    "url": "https://api.db.nomics.world/v22/series/BIS/WS_TC/Q.IT.H.A.M.770.A"
+   },
+   "gap": {
+    "h": -0.1,
+    "c": 0.8,
+    "g": 5.5,
+    "total": 6.2
+   }
+  },
+  {
+   "country": "Malaysia",
+   "iso2": "MY",
+   "infographic": {
+    "h": 70,
+    "c": 88,
+    "g": 66,
+    "total": 224
+   },
+   "verified": {
+    "h": 69.5,
+    "c": 87.5,
+    "g": 64.6,
+    "total": 221.6,
+    "gov_valuation": "nominal",
+    "date": "2024-Q4",
+    "source": "BIS total credit WS_TC via DBnomics",
+    "url": "https://api.db.nomics.world/v22/series/BIS/WS_TC/Q.MY.H.A.M.770.A"
+   },
+   "gap": {
+    "h": 0.5,
+    "c": 0.5,
+    "g": 1.4,
+    "total": 2.4
+   }
+  },
+  {
+   "country": "Thailand",
+   "iso2": "TH",
+   "infographic": {
+    "h": 88,
+    "c": 76,
+    "g": 60,
+    "total": 223
+   },
+   "verified": {
+    "h": 89.2,
+    "c": 82.1,
+    "g": 56.6,
+    "total": 227.9,
+    "gov_valuation": "nominal",
+    "date": "2024-Q4",
+    "source": "BIS total credit WS_TC via DBnomics",
+    "url": "https://api.db.nomics.world/v22/series/BIS/WS_TC/Q.TH.H.A.M.770.A"
+   },
+   "gap": {
+    "h": -1.2,
+    "c": -6.1,
+    "g": 3.4,
+    "total": -4.9
+   }
+  },
+  {
+   "country": "Bahrain",
+   "iso2": "BH",
+   "infographic": {
+    "h": 24,
+    "c": 56,
+    "g": 143,
+    "total": 223
+   },
+   "verified": {
+    "h": null,
+    "c": null,
+    "g": 133.7,
+    "total": null,
+    "date": "2024 (g only)",
+    "source": "IMF Global Debt Database (h,c) and WEO (g) via DataMapper API",
+    "url": "https://www.imf.org/external/datamapper/api/v1/GGXWDG_NGDP"
+   },
+   "gap": {
+    "h": null,
+    "c": null,
+    "g": 9.3
+   }
+  },
+  {
+   "country": "United Kingdom",
+   "iso2": "GB",
+   "infographic": {
+    "h": 74,
+    "c": 59,
+    "g": 81,
+    "total": 214
+   },
+   "verified": {
+    "h": 76.3,
+    "c": 61.2,
+    "g": 101.4,
+    "total": 238.9,
+    "gov_valuation": "nominal",
+    "date": "2024-Q4",
+    "source": "BIS total credit WS_TC via DBnomics",
+    "url": "https://api.db.nomics.world/v22/series/BIS/WS_TC/Q.GB.H.A.M.770.A"
+   },
+   "gap": {
+    "h": -2.3,
+    "c": -2.2,
+    "g": -20.4,
+    "total": -24.9
+   }
+  },
+  {
+   "country": "Germany",
+   "iso2": "DE",
+   "infographic": {
+    "h": 49,
+    "c": 89,
+    "g": 63,
+    "total": 200
+   },
+   "verified": {
+    "h": 49.9,
+    "c": 89.4,
+    "g": 62.4,
+    "total": 201.7,
+    "gov_valuation": "nominal",
+    "date": "2024-Q4",
+    "source": "BIS total credit WS_TC via DBnomics",
+    "url": "https://api.db.nomics.world/v22/series/BIS/WS_TC/Q.DE.H.A.M.770.A"
+   },
+   "gap": {
+    "h": -0.9,
+    "c": -0.4,
+    "g": 0.6,
+    "total": -1.7
+   }
+  },
+  {
+   "country": "Israel",
+   "iso2": "IL",
+   "infographic": {
+    "h": 43,
+    "c": 71,
+    "g": 70,
+    "total": 184
+   },
+   "verified": {
+    "h": 42.3,
+    "c": 69.6,
+    "g": 67.4,
+    "total": 179.3,
+    "gov_valuation": "nominal",
+    "date": "2024-Q4",
+    "source": "BIS total credit WS_TC via DBnomics",
+    "url": "https://api.db.nomics.world/v22/series/BIS/WS_TC/Q.IL.H.A.M.770.A"
+   },
+   "gap": {
+    "h": 0.7,
+    "c": 1.4,
+    "g": 2.6,
+    "total": 4.7
+   }
+  },
+  {
+   "country": "Brazil",
+   "iso2": "BR",
+   "infographic": {
+    "h": 36,
+    "c": 50,
+    "g": 92,
+    "total": 178
+   },
+   "verified": {
+    "h": 36.4,
+    "c": 57.1,
+    "g": 87.3,
+    "total": 180.8,
+    "gov_valuation": "nominal",
+    "date": "2024-Q4",
+    "source": "BIS total credit WS_TC via DBnomics",
+    "url": "https://api.db.nomics.world/v22/series/BIS/WS_TC/Q.BR.H.A.M.770.A"
+   },
+   "gap": {
+    "h": -0.4,
+    "c": -7.1,
+    "g": 4.7,
+    "total": -2.8
+   }
+  },
+  {
+   "country": "Jordan",
+   "iso2": "JO",
+   "infographic": {
+    "h": 27,
+    "c": 56,
+    "g": 90,
+    "total": 172
+   },
+   "verified": {
+    "h": 36.9,
+    "c": 39.0,
+    "g": 82.1,
+    "total": 158.0,
+    "date": "2023 (h,c), 2024 (g)",
+    "source": "IMF Global Debt Database (h,c) and WEO (g) via DataMapper API",
+    "url": "https://www.imf.org/external/datamapper/api/v1/GGXWDG_NGDP"
+   },
+   "gap": {
+    "h": -9.9,
+    "c": 17.0,
+    "g": 7.9
+   }
+  },
+  {
+   "country": "Grenada",
+   "iso2": "GD",
+   "infographic": {
+    "h": 37,
+    "c": 64,
+    "g": 68,
+    "total": 168
+   },
+   "verified": {
+    "h": null,
+    "c": null,
+    "g": 72.8,
+    "total": null,
+    "date": "2024 (g only)",
+    "source": "IMF Global Debt Database (h,c) and WEO (g) via DataMapper API",
+    "url": "https://www.imf.org/external/datamapper/api/v1/GGXWDG_NGDP"
+   },
+   "gap": {
+    "h": null,
+    "c": null,
+    "g": -4.8
+   }
+  },
+  {
+   "country": "Maldives",
+   "iso2": "MV",
+   "infographic": {
+    "h": 18,
+    "c": 17,
+    "g": 132,
+    "total": 167
+   },
+   "verified": {
+    "h": null,
+    "c": null,
+    "g": 133.4,
+    "total": null,
+    "date": "2024 (g only)",
+    "source": "IMF Global Debt Database (h,c) and WEO (g) via DataMapper API",
+    "url": "https://www.imf.org/external/datamapper/api/v1/GGXWDG_NGDP"
+   },
+   "gap": {
+    "h": null,
+    "c": null,
+    "g": -1.4
+   }
+  },
+  {
+   "country": "India",
+   "iso2": "IN",
+   "infographic": {
+    "h": 39,
+    "c": 49,
+    "g": 74,
+    "total": 163
+   },
+   "verified": {
+    "h": 41.9,
+    "c": 51.1,
+    "g": 82.1,
+    "total": 175.1,
+    "gov_valuation": "nominal",
+    "date": "2024-Q4",
+    "source": "BIS total credit WS_TC via DBnomics",
+    "url": "https://api.db.nomics.world/v22/series/BIS/WS_TC/Q.IN.H.A.M.770.A"
+   },
+   "gap": {
+    "h": -2.9,
+    "c": -2.1,
+    "g": -8.1,
+    "total": -12.1
+   }
+  },
+  {
+   "country": "Vietnam",
+   "iso2": "VN",
+   "infographic": {
+    "h": 23,
+    "c": 107,
+    "g": 32,
+    "total": 161
+   },
+   "verified": {
+    "h": null,
+    "c": null,
+    "g": 32.9,
+    "total": null,
+    "date": "2024 (g only)",
+    "source": "IMF Global Debt Database (h,c) and WEO (g) via DataMapper API",
+    "url": "https://www.imf.org/external/datamapper/api/v1/GGXWDG_NGDP"
+   },
+   "gap": {
+    "h": null,
+    "c": null,
+    "g": -0.9
+   }
+  },
+  {
+   "country": "Hungary",
+   "iso2": "HU",
+   "infographic": {
+    "h": 18,
+    "c": 70,
+    "g": 73,
+    "total": 161
+   },
+   "verified": {
+    "h": 17.0,
+    "c": 72.8,
+    "g": 73.6,
+    "total": 163.4,
+    "gov_valuation": "nominal",
+    "date": "2024-Q4",
+    "source": "BIS total credit WS_TC via DBnomics",
+    "url": "https://api.db.nomics.world/v22/series/BIS/WS_TC/Q.HU.H.A.M.770.A"
+   },
+   "gap": {
+    "h": 1.0,
+    "c": -2.8,
+    "g": -0.6,
+    "total": -2.4
+   }
+  },
+  {
+   "country": "Chile",
+   "iso2": "CL",
+   "infographic": {
+    "h": 41,
+    "c": 86,
+    "g": 31,
+    "total": 158
+   },
+   "verified": {
+    "h": 44.8,
+    "c": 94.2,
+    "g": 41.7,
+    "total": 180.7,
+    "gov_valuation": "nominal",
+    "date": "2024-Q4",
+    "source": "BIS total credit WS_TC via DBnomics",
+    "url": "https://api.db.nomics.world/v22/series/BIS/WS_TC/Q.CL.H.A.M.770.A"
+   },
+   "gap": {
+    "h": -3.8,
+    "c": -8.2,
+    "g": -10.7,
+    "total": -22.7
+   }
+  },
+  {
+   "country": "Senegal",
+   "iso2": "SN",
+   "infographic": {
+    "h": 5,
+    "c": 29,
+    "g": 123,
+    "total": 156
+   },
+   "verified": {
+    "h": null,
+    "c": null,
+    "g": 136.1,
+    "total": null,
+    "date": "2024 (g only)",
+    "source": "IMF Global Debt Database (h,c) and WEO (g) via DataMapper API",
+    "url": "https://www.imf.org/external/datamapper/api/v1/GGXWDG_NGDP"
+   },
+   "gap": {
+    "h": null,
+    "c": null,
+    "g": -13.1
+   }
+  },
+  {
+   "country": "South Africa",
+   "iso2": "ZA",
+   "infographic": {
+    "h": 34,
+    "c": 35,
+    "g": 79,
+    "total": 149
+   },
+   "verified": {
+    "h": 33.7,
+    "c": 33.1,
+    "g": 77.9,
+    "total": 144.7,
+    "gov_valuation": "nominal",
+    "date": "2024-Q4",
+    "source": "BIS total credit WS_TC via DBnomics",
+    "url": "https://api.db.nomics.world/v22/series/BIS/WS_TC/Q.ZA.H.A.M.770.A"
+   },
+   "gap": {
+    "h": 0.3,
+    "c": 1.9,
+    "g": 1.1,
+    "total": 4.3
+   }
+  }
+ ],
+ "vietnam_vs_malaysia": {
+  "household_debt_post": {
+   "VN": 18,
+   "MY": 70
+  },
+  "household_debt_image": {
+   "VN": 23,
+   "MY": 70
+  },
+  "household_debt_bis_2024Q4": {
+   "VN": null,
+   "MY": 69.5
+  },
+  "household_debt_bnm_total_2025H1": 84.8,
+  "household_debt_bnm_banking_only_2025H1": 70.0,
+  "vn_household_proxy_sbv_2016": 47.0,
+  "bank_credit_to_economy_vn_2024": 136.4,
+  "wb_private_credit_by_banks_2022": {
+   "VN": 125.0,
+   "MY": 113.1
+  },
+  "my_fin_assets_pct_gdp_2025H1": 177.1,
+  "my_fin_assets_over_debt": 2.1,
+  "my_housing_plus_car_share_pct": 75,
+  "gdp_pc_usd_2025": {
+   "VN": 5066,
+   "MY": 13125
+  },
+  "gdp_pc_ppp_2025": {
+   "VN": 18088,
+   "MY": 41498
+  },
+  "vn_hh_deposits_vnd_quadrillion": {
+   "2025-10": 8.0,
+   "2026-07": 11.2
+  },
+  "home_ownership_pct": {
+   "VN": 88.1,
+   "MY": 78,
+   "note": "VN secondary source"
+  }
+ }
+}

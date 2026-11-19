@@ -1,0 +1,131 @@
+{
+ "id": "H3-01",
+ "question": "Are the custody-centre lines in the Treasury tables mostly hedge funds, and who lends them the cash?",
+ "start": "TIC table 5, August 2026: UK, Belgium, Cayman Islands and Luxembourg hold 2411.2 billion against Japan plus China 1659.0 billion (R10A-05)",
+ "links": [
+  {
+   "n": 1,
+   "claim": "The UK, Belgium, the Cayman Islands and Luxembourg together hold 2411.2 billion of Treasuries in August 2026, more than Japan and China combined (1659.0). In January 2023 they held 1539.6 against 1962.2",
+   "grade": "I0",
+   "p": 0.97,
+   "actor": {
+    "name": "US Department of the Treasury",
+    "kind": "agency"
+   },
+   "evidence": [
+    {
+     "what": "TIC country lines, computed by the Data lane",
+     "url": "https://ticdata.treasury.gov/resource-center/data-chart-center/tic/Documents/slt_table5.txt",
+     "tier": "T0",
+     "date": "2026-11-12"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "claim": "Form PF shows Cayman hedge funds held about 1.85 trillion of Treasuries at end 2024, about 1.4 trillion more than the TIC Cayman line, likely because repo collateral moves the bonds to other custodians",
+   "grade": "I0",
+   "p": 0.95,
+   "actor": {
+    "name": "Board of Governors of the Federal Reserve System",
+    "kind": "central bank"
+   },
+   "evidence": [
+    {
+     "what": "FEDS Note, The Cross-Border Trail of the Treasury Basis Trade",
+     "url": "https://www.federalreserve.gov/econres/notes/feds-notes/the-cross-border-trail-of-the-treasury-basis-trade-20251015.html",
+     "tier": "T1",
+     "date": "2025-10-15"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "claim": "Hedge funds held about 2.4 trillion long (4.0 trillion gross) in Treasuries in September 2025, about 8.5% of privately held Treasuries, up from 4.5% at the start of 2023. The basis trade was about 830 billion. Hedge fund repo borrowing was 3.0 trillion",
+   "grade": "I0",
+   "p": 0.95,
+   "actor": {
+    "name": "Board of Governors of the Federal Reserve System",
+    "kind": "central bank"
+   },
+   "evidence": [
+    {
+     "what": "FEDS Note (P. Monin), Decomposing Hedge Funds' U.S. Treasury Exposures",
+     "url": "https://www.federalreserve.gov/econres/notes/feds-notes/decomposing-hedge-funds-u-s-treasury-exposures-20260622.html",
+     "tier": "T1",
+     "date": "2026-06-22"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "claim": "The cash behind those holdings is mostly domestic: US money market funds lend it through repo. Money fund repo assets rose from 1.24 trillion (end 2019) to 3.07 trillion (second quarter 2026), close to the 3.0 trillion hedge fund repo borrowing. So the custody centres hold the bonds, and US money funds and dealers fund much of the holding",
+   "grade": "I2",
+   "p": 0.55,
+   "actor": {
+    "name": "US money market fund sector (Fed Z.1 sector 63)",
+    "kind": "fund"
+   },
+   "move": "counterparty and balance sheet",
+   "footprints_expected": [
+    "Money fund repo assets growing in step with hedge fund repo borrowing",
+    "Sponsored and cleared repo volumes rising",
+    "Repo rates spiking when money funds pull back (for example at quarter ends)"
+   ],
+   "footprints_found": [
+    {
+     "what": "Z.1 money market funds, security repurchase agreements, asset: 1,242.6 billion Q4 2019 to 3,074.6 billion Q2 2026",
+     "url": "https://fred.stlouisfed.org/series/BOGZ1FL632051000Q",
+     "date": "2026-09"
+    },
+    {
+     "what": "FEDS Note: hedge fund repo cash borrowing 3.0 trillion, September 2025",
+     "url": "https://www.federalreserve.gov/econres/notes/feds-notes/decomposing-hedge-funds-u-s-treasury-exposures-20260622.html",
+     "date": "2026-06-22"
+    }
+   ],
+   "footprints_missing": [
+    "Money fund repo is not all lent to hedge funds. Part goes to dealers and the Fed's reverse repo. The split by borrower (OFR money fund monitor) was not pulled",
+    "UK dealer and foreign bank repo cash not measured"
+   ],
+   "rivals": [
+    "Foreign banks and dealers in London fund the repo with offshore dollars, so the cash is foreign too",
+    "The Fed's standing repo facility is the real backstop lender, and money funds only lend while it is cheap"
+   ],
+   "reveal": "OFR US money market fund monitor, monthly. Fed Z.1 for the third quarter of 2026, December 2026. A repo stress day at the year end, 31 December 2026"
+  }
+ ],
+ "rival_hypotheses": [
+  {
+   "kind": "official",
+   "text": "A broad investor base, with the Fed and dealers as backstop. Custody lines are asset managers and funds",
+   "inconsistent_evidence": 0
+  },
+  {
+   "kind": "coordination",
+   "text": "Offshore centres are a channel for states to fund the deficit quietly",
+   "inconsistent_evidence": 2
+  },
+  {
+   "kind": "incentives",
+   "text": "The basis trade pays, so leveraged funds and their repo lenders grow it alone",
+   "inconsistent_evidence": 0
+  },
+  {
+   "kind": "accident",
+   "text": "Custody and repo collateral moves make holders look offshore and undercount the Caymans",
+   "inconsistent_evidence": 0
+  }
+ ],
+ "coordination": {
+  "level": 0,
+  "channel": "",
+  "enforcement": "",
+  "secrecy_load": ""
+ },
+ "exit": "finding",
+ "budget_used": {
+  "searches": 3,
+  "tokens": 0
+ }
+}

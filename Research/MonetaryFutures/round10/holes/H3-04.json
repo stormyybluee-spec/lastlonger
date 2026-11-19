@@ -1,0 +1,137 @@
+{
+ "id": "H3-04",
+ "question": "Which sectors grew their Treasury holdings since 2019, and are states still the main funders?",
+ "start": "Fed Z.1 financial accounts, second quarter 2026, Treasury securities by holder (via FRED)",
+ "links": [
+  {
+   "n": 1,
+   "claim": "Of about 29.0 trillion Treasury securities held (Z.1, second quarter 2026), the rest of the world held about 9.27 trillion at market value (about 32%), the Fed 4.08, money funds 3.28, US banks 1.80 and the household residual (which includes hedge funds) 2.83. At end 2019 the rest of the world held 6.92 of 16.93 (about 41%), money funds 1.12 and the household residual 1.39",
+   "grade": "I0",
+   "p": 0.9,
+   "actor": {
+    "name": "Board of Governors of the Federal Reserve System",
+    "kind": "central bank"
+   },
+   "evidence": [
+    {
+     "what": "Z.1 all sectors, Treasury securities, asset",
+     "url": "https://fred.stlouisfed.org/series/BOGZ1FL893061105Q",
+     "tier": "T0",
+     "date": "2026-09"
+    },
+    {
+     "what": "Z.1 rest of the world, Treasury securities, market value",
+     "url": "https://fred.stlouisfed.org/series/BOGZ1LM263061105Q",
+     "tier": "T0",
+     "date": "2026-09"
+    },
+    {
+     "what": "Z.1 money market funds, Treasury securities",
+     "url": "https://fred.stlouisfed.org/series/BOGZ1FL633061105Q",
+     "tier": "T0",
+     "date": "2026-09"
+    },
+    {
+     "what": "Z.1 monetary authority, Treasury securities",
+     "url": "https://fred.stlouisfed.org/series/BOGZ1FL713061103Q",
+     "tier": "T0",
+     "date": "2026-09"
+    },
+    {
+     "what": "Z.1 households and nonprofits, Treasury securities, market value",
+     "url": "https://fred.stlouisfed.org/series/BOGZ1LM153061105Q",
+     "tier": "T0",
+     "date": "2026-09"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "claim": "Foreign official holdings fell from 66.5% of foreign holdings (January 2015) to 40.2% (August 2026). Official holdings in dollars fell 9.2% while all foreign holdings rose 50%",
+   "grade": "I0",
+   "p": 0.95,
+   "actor": {
+    "name": "US Department of the Treasury",
+    "kind": "agency"
+   },
+   "evidence": [
+    {
+     "what": "TIC history and table 3, computed by the Data lane (R10A-07)",
+     "url": "https://ticdata.treasury.gov/resource-center/data-chart-center/tic/Documents/slt_table3.txt",
+     "tier": "T0",
+     "date": "2026-11-12"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "claim": "States no longer fund the growth. Since 2019 the new money came from domestic money funds (about plus 2.2 trillion), the leveraged household residual with hedge funds (about plus 1.4 trillion), the Fed, and private foreign buyers booked in custody centres. Official foreign holders shrank",
+   "grade": "I2",
+   "p": 0.55,
+   "actor": {
+    "name": "US Department of the Treasury",
+    "kind": "agency"
+   },
+   "move": "balance sheet and scale",
+   "footprints_expected": [
+    "Z.1 sector levels growing as stated",
+    "TIC official flat while private grows",
+    "Auction allotments shifting to investment funds and others"
+   ],
+   "footprints_found": [
+    {
+     "what": "Z.1 money funds 1.12 to 3.28 trillion, household residual 1.39 to 2.83",
+     "url": "https://fred.stlouisfed.org/series/BOGZ1FL633061105Q",
+     "date": "2026-09"
+    },
+    {
+     "what": "TIC foreign official 3,703.8 (Jan 2023) to 3,755.6 (Aug 2026) while total rose about 2 trillion",
+     "url": "https://ticdata.treasury.gov/resource-center/data-chart-center/tic/Documents/slt_table5.txt",
+     "date": "2026-11-12"
+    }
+   ],
+   "footprints_missing": [
+    "Auction allotments by investor class not pulled",
+    "Z.1 mixes face and market value across series, so shares are approximate"
+   ],
+   "rivals": [
+    "Official holders still fund it, but through private custodians that TIC counts as private (Treasury warns of this)",
+    "The Fed's holdings growth since 2019 (about plus 1.5 trillion) was the biggest single funder over the period, and QT is now reversing that"
+   ],
+   "reveal": "Fed Z.1 for the third quarter of 2026, about 11 December 2026. TIC annual survey, end of February 2027"
+  }
+ ],
+ "rival_hypotheses": [
+  {
+   "kind": "official",
+   "text": "A broad domestic and foreign investor base, with a shrinking role for foreign states",
+   "inconsistent_evidence": 0
+  },
+  {
+   "kind": "coordination",
+   "text": "Foreign states agree to fund the deficit",
+   "inconsistent_evidence": 2
+  },
+  {
+   "kind": "incentives",
+   "text": "Money funds, hedge funds and private foreigners buy because the yields and trades pay",
+   "inconsistent_evidence": 0
+  },
+  {
+   "kind": "accident",
+   "text": "Custody bias moves official money into private lines",
+   "inconsistent_evidence": 0
+  }
+ ],
+ "coordination": {
+  "level": 0,
+  "channel": "",
+  "enforcement": "",
+  "secrecy_load": ""
+ },
+ "exit": "finding",
+ "budget_used": {
+  "searches": 1,
+  "tokens": 0
+ }
+}

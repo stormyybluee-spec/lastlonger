@@ -1,0 +1,1246 @@
+{
+ "lane": "R8B",
+ "date": "2026-11-05",
+ "note": "Chart-ready tables. Each table has source, unit, date range. Models are labelled.",
+ "tables": [
+  {
+   "id": "btc_quarterly",
+   "title": "Bitcoin price, last weekly close in each quarter (2026Q4 to date)",
+   "unit": "USD per BTC",
+   "source": "Kraken public OHLC XBTUSD weekly, https://api.kraken.com/0/public/OHLC?pair=XBTUSD&interval=10080",
+   "cols": [
+    "quarter",
+    "week_start",
+    "close"
+   ],
+   "rows": [
+    [
+     "2024Q1",
+     "2024-03-28",
+     65992
+    ],
+    [
+     "2024Q2",
+     "2024-06-27",
+     60147
+    ],
+    [
+     "2024Q3",
+     "2024-09-26",
+     60635
+    ],
+    [
+     "2024Q4",
+     "2024-12-26",
+     94381
+    ],
+    [
+     "2025Q1",
+     "2025-03-27",
+     82508
+    ],
+    [
+     "2025Q2",
+     "2025-06-26",
+     108847
+    ],
+    [
+     "2025Q3",
+     "2025-09-25",
+     118600
+    ],
+    [
+     "2025Q4",
+     "2025-12-25",
+     87500
+    ],
+    [
+     "2026Q1",
+     "2026-03-26",
+     68098
+    ],
+    [
+     "2026Q2",
+     "2026-06-25",
+     59959
+    ],
+    [
+     "2026Q3",
+     "2026-09-24",
+     83565
+    ],
+    [
+     "2026Q4",
+     "2026-11-05",
+     80514
+    ]
+   ],
+   "label_checked": true,
+   "model": false
+  },
+  {
+   "id": "btc_monthly_365d",
+   "title": "Bitcoin price on the first day of each month, Nov 2025 to Nov 2026",
+   "unit": "USD per BTC",
+   "source": "CoinGecko market_chart days=365 daily",
+   "cols": [
+    "date",
+    "price"
+   ],
+   "rows": [
+    [
+     "2025-12-01",
+     90360
+    ],
+    [
+     "2026-01-01",
+     87575
+    ],
+    [
+     "2026-02-01",
+     78647
+    ],
+    [
+     "2026-03-01",
+     67017
+    ],
+    [
+     "2026-04-01",
+     68107
+    ],
+    [
+     "2026-05-01",
+     76297
+    ],
+    [
+     "2026-06-01",
+     73599
+    ],
+    [
+     "2026-07-01",
+     58566
+    ],
+    [
+     "2026-08-01",
+     62820
+    ],
+    [
+     "2026-09-01",
+     78553
+    ],
+    [
+     "2026-10-01",
+     83576
+    ],
+    [
+     "2026-11-01",
+     77521
+    ]
+   ],
+   "label_checked": true,
+   "model": false
+  },
+  {
+   "id": "strategy_balance",
+   "title": "Strategy Bitcoin held, cost, fair value, preferred liquidation preference and long-term debt",
+   "unit": "BTC and USD billion",
+   "source": "SEC XBRL company facts CIK0001050446 (10-Q and 10-K), last row 8-K 2026-11-02",
+   "cols": [
+    "date",
+    "btc",
+    "cost_bn",
+    "fair_value_bn",
+    "preferred_liq_pref_bn",
+    "long_term_debt_bn"
+   ],
+   "rows": [
+    [
+     "2023-12-31",
+     189150,
+     5.9,
+     3.63,
+     null,
+     2.18
+    ],
+    [
+     "2024-12-31",
+     447470,
+     27.97,
+     23.91,
+     null,
+     7.19
+    ],
+    [
+     "2025-12-31",
+     672500,
+     50.44,
+     58.85,
+     8.03,
+     8.19
+    ],
+    [
+     "2026-03-31",
+     762099,
+     57.69,
+     51.65,
+     10.0,
+     8.2
+    ],
+    [
+     "2026-06-30",
+     846000,
+     63.94,
+     49.67,
+     15.46,
+     6.71
+    ],
+    [
+     "2026-09-30",
+     847666,
+     63.95,
+     70.82,
+     14.11,
+     6.72
+    ],
+    [
+     "2026-11-01",
+     849327,
+     64.08,
+     null,
+     null,
+     null
+    ]
+   ],
+   "label_checked": true,
+   "model": false
+  },
+  {
+   "id": "strategy_capital",
+   "title": "Strategy capital raised and uses by period (cash-flow tags)",
+   "unit": "USD billion",
+   "source": "SEC XBRL company facts: ProceedsFromIssuanceOfCommonStock, ProceedsFromIssuanceOfPreferredStockAndPreferenceStock, ProceedsFromConvertibleDebt, PaymentForAcquisitionCryptoAsset (PaymentsToAcquireIntangibleAssets for 2022), PaymentsOfDividendsPreferredStock, CryptoAssetSale, PaymentsForRepurchaseOfPreferredStock. Quarters derived from year-to-date tags",
+   "cols": [
+    "period",
+    "common",
+    "preferred",
+    "converts",
+    "btc_bought",
+    "pref_dividends_paid",
+    "btc_sold",
+    "pref_bought_back"
+   ],
+   "rows": [
+    [
+     "2022",
+     0.05,
+     0,
+     0,
+     0.29,
+     0,
+     0.012,
+     0
+    ],
+    [
+     "2024",
+     16.36,
+     0,
+     6.21,
+     22.07,
+     0,
+     0,
+     0
+    ],
+    [
+     "2025",
+     16.27,
+     7.04,
+     2.0,
+     22.47,
+     0.38,
+     0,
+     0
+    ],
+    [
+     "2026Q1",
+     5.3,
+     2.07,
+     0,
+     7.25,
+     0.23,
+     0,
+     0
+    ],
+    [
+     "2026Q2",
+     2.95,
+     5.47,
+     0,
+     6.42,
+     0.4,
+     0.08,
+     0
+    ],
+    [
+     "2026Q3",
+     5.41,
+     0,
+     0,
+     0.59,
+     0.42,
+     0.35,
+     1.34
+    ],
+    [
+     "2026_9M",
+     13.66,
+     7.53,
+     0,
+     14.26,
+     1.05,
+     0.43,
+     1.34
+    ]
+   ],
+   "label_checked": true,
+   "model": false
+  },
+  {
+   "id": "usd_reserve",
+   "title": "Strategy USD Reserve",
+   "unit": "USD billion",
+   "source": "Decrypt 2025-12-01 (T4), Forklog 2026-06-29 (T4), Decrypt late July 2026 (T4), SEC FWP 2026-08-24 (T0), Q3 release (T2), 8-K 2026-11-02 (T0)",
+   "cols": [
+    "date",
+    "reserve_bn",
+    "tier"
+   ],
+   "rows": [
+    [
+     "2025-12-01",
+     1.44,
+     "T4"
+    ],
+    [
+     "2026-06-22",
+     2.55,
+     "T4"
+    ],
+    [
+     "2026-07 (late)",
+     3.75,
+     "T4"
+    ],
+    [
+     "2026-08-23",
+     5.1,
+     "T0"
+    ],
+    [
+     "2026-10-25",
+     4.83,
+     "T2"
+    ],
+    [
+     "2026-11-01",
+     4.79,
+     "T0"
+    ]
+   ],
+   "label_checked": true,
+   "model": false
+  },
+  {
+   "id": "mnav_history",
+   "title": "Strategy mNAV readings (definitions vary)",
+   "unit": "ratio",
+   "source": "Press summaries (T4), SEC FWP 2026-08-24 (T2), desk model",
+   "cols": [
+    "date",
+    "mnav",
+    "definition",
+    "tier"
+   ],
+   "rows": [
+    [
+     "2024-11",
+     "3.2 to 3.89",
+     "mixed",
+     "T4"
+    ],
+    [
+     "2025-10-10",
+     1.17,
+     "company style",
+     "T4"
+    ],
+    [
+     "2025-11-12",
+     0.97,
+     "basic",
+     "T4"
+    ],
+    [
+     "2026-02",
+     1.09,
+     "unclear",
+     "T4"
+    ],
+    [
+     "2026-05 (Q1 call)",
+     1.27,
+     "company",
+     "T4"
+    ],
+    [
+     "2026-06-25",
+     1.03,
+     "company",
+     "T4"
+    ],
+    [
+     "2026-06-28",
+     "below 1",
+     "enterprise",
+     "T4"
+    ],
+    [
+     "2026-08-21",
+     1.01,
+     "company",
+     "T2"
+    ],
+    [
+     "2026-11-05",
+     1.08,
+     "enterprise, desk model",
+     "model"
+    ],
+    [
+     "2026-11-05",
+     0.86,
+     "market cap over Bitcoin, desk model",
+     "model"
+    ]
+   ],
+   "label_checked": false,
+   "model": false
+  },
+  {
+   "id": "converts",
+   "title": "Strategy convertible notes",
+   "unit": "USD billion and USD per share",
+   "source": "10-Q Q3 2026",
+   "cols": [
+    "series",
+    "principal_bn",
+    "coupon_pct",
+    "put_date",
+    "conversion_price"
+   ],
+   "rows": [
+    [
+     "2028",
+     1.01,
+     0.625,
+     "2027-09-15",
+     183.19
+    ],
+    [
+     "2030B",
+     2.0,
+     0,
+     "2028-03-01",
+     433.43
+    ],
+    [
+     "2029",
+     1.5,
+     0,
+     "2028-06-01",
+     672.4
+    ],
+    [
+     "2030A",
+     0.8,
+     0.625,
+     "2028-09-15",
+     149.77
+    ],
+    [
+     "2031",
+     0.6037,
+     0.875,
+     "2028-09-15",
+     232.72
+    ],
+    [
+     "2032",
+     0.8,
+     2.25,
+     "2029-06-15",
+     204.33
+    ]
+   ],
+   "label_checked": true,
+   "model": false
+  },
+  {
+   "id": "stress_model",
+   "title": "Stress model rows (MODEL)",
+   "unit": "mixed",
+   "source": "scratchpad/scripts/r8b_stress.py, inputs in file",
+   "cols": [
+    "scenario",
+    "btc_price",
+    "mnav",
+    "mcap_bn",
+    "mstr_px",
+    "btc_vs_cost_pct",
+    "cover_all_gross",
+    "cover_all_net",
+    "cover_strc_net",
+    "years_div_in_btc",
+    "months_reserve",
+    "months_before_12m_floor",
+    "btc_to_sell_per_yr_if_no_equity",
+    "sell_pct_holdings",
+    "sell_pct_mined",
+    "need_24m_bn",
+    "gap_24m_bn",
+    "gap_24m_btc",
+    "funding_route"
+   ],
+   "rows": [
+    [
+     "today (market MSTR price)",
+     80512,
+     1.08,
+     58.9,
+     139.2,
+     6.7,
+     3.39,
+     3.64,
+     4.46,
+     45.6,
+     39.4,
+     27.4,
+     18631,
+     2.19,
+     11.3,
+     8.91,
+     3.99,
+     49570,
+     "common issuance neutral-to-accretive per BTC (mNAV>=1), BTC sale not required"
+    ],
+    [
+     "BTC -30%, mNAV 1.0",
+     56358,
+     1.0,
+     32.6,
+     77.0,
+     -25.3,
+     2.37,
+     2.62,
+     3.21,
+     31.9,
+     39.4,
+     27.4,
+     26615,
+     3.13,
+     16.2,
+     8.91,
+     3.99,
+     70815,
+     "common issuance neutral-to-accretive per BTC (mNAV>=1), BTC sale not required"
+    ],
+    [
+     "BTC -30%, mNAV 0.8",
+     56358,
+     0.8,
+     23.1,
+     54.4,
+     -25.3,
+     2.37,
+     2.62,
+     3.21,
+     31.9,
+     39.4,
+     27.4,
+     26615,
+     3.13,
+     16.2,
+     8.91,
+     3.99,
+     70815,
+     "common issuance dilutes BTC per share (mNAV<1): company policy says sell BTC or derivatives"
+    ],
+    [
+     "BTC -50%, mNAV 1.0",
+     40256,
+     1.0,
+     19.0,
+     44.8,
+     -46.6,
+     1.7,
+     1.94,
+     2.38,
+     22.8,
+     39.4,
+     27.4,
+     37262,
+     4.39,
+     22.7,
+     8.91,
+     3.99,
+     99141,
+     "common issuance neutral-to-accretive per BTC (mNAV>=1), BTC sale not required"
+    ],
+    [
+     "BTC -50%, mNAV 0.8",
+     40256,
+     0.8,
+     12.1,
+     28.6,
+     -46.6,
+     1.7,
+     1.94,
+     2.38,
+     22.8,
+     39.4,
+     27.4,
+     37262,
+     4.39,
+     22.7,
+     8.91,
+     3.99,
+     99141,
+     "common issuance dilutes BTC per share (mNAV<1): company policy says sell BTC or derivatives"
+    ],
+    [
+     "BTC -70%, mNAV 1.0",
+     24154,
+     1.0,
+     5.3,
+     12.5,
+     -68.0,
+     1.02,
+     1.26,
+     1.55,
+     13.7,
+     39.4,
+     27.4,
+     62103,
+     7.31,
+     37.8,
+     8.91,
+     3.99,
+     165234,
+     "common issuance neutral-to-accretive per BTC (mNAV>=1), BTC sale not required"
+    ],
+    [
+     "BTC -70%, mNAV 0.8",
+     24154,
+     0.8,
+     1.2,
+     2.8,
+     -68.0,
+     1.02,
+     1.26,
+     1.55,
+     13.7,
+     39.4,
+     27.4,
+     62103,
+     7.31,
+     37.8,
+     8.91,
+     3.99,
+     165234,
+     "common issuance dilutes BTC per share (mNAV<1): company policy says sell BTC or derivatives"
+    ]
+   ],
+   "label_checked": true,
+   "model": true
+  },
+  {
+   "id": "stress_breakevens",
+   "title": "Break-even Bitcoin prices (MODEL)",
+   "unit": "USD per BTC",
+   "source": "r8b_stress.py",
+   "cols": [
+    "item",
+    "value"
+   ],
+   "rows": [
+    [
+     "btc_price_all_pref_cover_1x_net_of_cash",
+     17937
+    ],
+    [
+     "btc_price_all_pref_cover_1x_gross",
+     23733
+    ],
+    [
+     "btc_price_strc_cover_1x_net_of_cash",
+     13541
+    ],
+    [
+     "btc_price_debt_only_cover_1x",
+     7952
+    ],
+    [
+     "btc_price_where_mcap_zero_at_mnav_1",
+     17937
+    ],
+    [
+     "convert_puts_24m_bn",
+     5.91
+    ],
+    [
+     "mstr_price_vs_lowest_conversion",
+     [
+      139.15,
+      149.77
+     ]
+    ],
+    [
+     "months_reserve_high_oblig",
+     36.9
+    ]
+   ],
+   "label_checked": true,
+   "model": true
+  },
+  {
+   "id": "stablecoin_supply",
+   "title": "USD-pegged stablecoin supply, quarterly",
+   "unit": "USD billion",
+   "source": "DefiLlama https://stablecoins.llama.fi/stablecoincharts/all",
+   "cols": [
+    "date",
+    "supply_bn"
+   ],
+   "rows": [
+    [
+     "2020-01-01",
+     4.2
+    ],
+    [
+     "2020-04-01",
+     5.5
+    ],
+    [
+     "2020-07-01",
+     11.4
+    ],
+    [
+     "2020-10-01",
+     19.2
+    ],
+    [
+     "2021-01-01",
+     27.4
+    ],
+    [
+     "2021-04-01",
+     63.8
+    ],
+    [
+     "2021-07-01",
+     110.1
+    ],
+    [
+     "2021-10-01",
+     127.1
+    ],
+    [
+     "2022-01-01",
+     161.9
+    ],
+    [
+     "2022-04-01",
+     186.6
+    ],
+    [
+     "2022-07-01",
+     152.7
+    ],
+    [
+     "2022-10-01",
+     148.2
+    ],
+    [
+     "2023-01-01",
+     137.4
+    ],
+    [
+     "2023-04-01",
+     131.2
+    ],
+    [
+     "2023-07-01",
+     127.1
+    ],
+    [
+     "2023-10-01",
+     123.6
+    ],
+    [
+     "2024-01-01",
+     129.8
+    ],
+    [
+     "2024-04-01",
+     149.8
+    ],
+    [
+     "2024-07-01",
+     160.5
+    ],
+    [
+     "2024-10-01",
+     171.5
+    ],
+    [
+     "2025-01-01",
+     203.2
+    ],
+    [
+     "2025-04-01",
+     233.1
+    ],
+    [
+     "2025-07-01",
+     251.1
+    ],
+    [
+     "2025-10-01",
+     296.0
+    ],
+    [
+     "2026-01-01",
+     303.7
+    ],
+    [
+     "2026-04-01",
+     309.2
+    ],
+    [
+     "2026-07-01",
+     303.4
+    ],
+    [
+     "2026-10-01",
+     305.8
+    ],
+    [
+     "2026-11-05",
+     294.6
+    ]
+   ],
+   "label_checked": true,
+   "model": false
+  },
+  {
+   "id": "tbills",
+   "title": "Marketable Treasury bills outstanding, month end",
+   "unit": "USD billion",
+   "source": "Treasury MSPD table 1 (fiscaldata)",
+   "cols": [
+    "date",
+    "bills_bn"
+   ],
+   "rows": [
+    [
+     "2023-06-30",
+     4466.7
+    ],
+    [
+     "2023-07-31",
+     4770.5
+    ],
+    [
+     "2023-08-31",
+     5073.9
+    ],
+    [
+     "2023-09-30",
+     5260.4
+    ],
+    [
+     "2023-10-31",
+     5457.0
+    ],
+    [
+     "2023-11-30",
+     5671.1
+    ],
+    [
+     "2023-12-31",
+     5675.8
+    ],
+    [
+     "2024-01-31",
+     5780.2
+    ],
+    [
+     "2024-02-29",
+     6011.2
+    ],
+    [
+     "2024-03-31",
+     6062.9
+    ],
+    [
+     "2024-04-30",
+     5866.8
+    ],
+    [
+     "2024-05-31",
+     5866.8
+    ],
+    [
+     "2024-06-30",
+     5765.8
+    ],
+    [
+     "2024-07-31",
+     5915.8
+    ],
+    [
+     "2024-08-31",
+     6121.8
+    ],
+    [
+     "2024-09-30",
+     6004.8
+    ],
+    [
+     "2024-10-31",
+     6186.8
+    ],
+    [
+     "2024-11-30",
+     6389.8
+    ],
+    [
+     "2024-12-31",
+     6186.9
+    ],
+    [
+     "2025-01-31",
+     6379.9
+    ],
+    [
+     "2025-02-28",
+     6368.0
+    ],
+    [
+     "2025-03-31",
+     6156.0
+    ],
+    [
+     "2025-04-30",
+     6060.0
+    ],
+    [
+     "2025-05-31",
+     6003.0
+    ],
+    [
+     "2025-06-30",
+     5784.1
+    ],
+    [
+     "2025-07-31",
+     5995.9
+    ],
+    [
+     "2025-08-31",
+     6369.0
+    ],
+    [
+     "2025-09-30",
+     6397.0
+    ],
+    [
+     "2025-10-31",
+     6593.2
+    ],
+    [
+     "2025-11-30",
+     6723.3
+    ],
+    [
+     "2025-12-31",
+     6547.3
+    ],
+    [
+     "2026-01-31",
+     6595.7
+    ],
+    [
+     "2026-02-28",
+     6808.1
+    ],
+    [
+     "2026-03-31",
+     6819.6
+    ],
+    [
+     "2026-04-30",
+     6622.0
+    ],
+    [
+     "2026-05-31",
+     6758.8
+    ],
+    [
+     "2026-06-30",
+     6690.7
+    ],
+    [
+     "2026-07-31",
+     6988.9
+    ],
+    [
+     "2026-08-31",
+     7248.1
+    ],
+    [
+     "2026-09-30",
+     7118.1
+    ]
+   ],
+   "label_checked": true,
+   "model": false
+  },
+  {
+   "id": "mmf_z1",
+   "title": "Money market funds, total financial assets, quarterly",
+   "unit": "USD billion",
+   "source": "Fed Z.1 FL634090005.Q via DBnomics",
+   "cols": [
+    "date",
+    "assets_bn"
+   ],
+   "rows": [
+    [
+     "2021-12-31",
+     5205.5
+    ],
+    [
+     "2022-12-31",
+     5223.1
+    ],
+    [
+     "2023-12-31",
+     6357.6
+    ],
+    [
+     "2024-12-31",
+     7243.2
+    ],
+    [
+     "2025-12-31",
+     8190.2
+    ],
+    [
+     "2026-03-31",
+     8289.6
+    ],
+    [
+     "2026-06-30",
+     8441.4
+    ]
+   ],
+   "label_checked": true,
+   "model": false
+  },
+  {
+   "id": "pools",
+   "title": "Set 1 and Set 2 pool sizes and digital credit share",
+   "unit": "USD billion",
+   "source": "ICI 2026-10-28, Fed Z.1, MSPD 2026-09-30, Fed H.8 Sep 2026, DefiLlama 2026-11-05, CoinGecko 2026-11-05, desk derivation",
+   "cols": [
+    "pool",
+    "size_bn",
+    "as_of",
+    "digital_credit_share_pct",
+    "strategy_2025_raise_share_pct"
+   ],
+   "rows": [
+    [
+     "Money market funds (ICI)",
+     7901.3,
+     "2026-10-28",
+     0.19,
+     0.32
+    ],
+    [
+     "Treasury bills",
+     7118.1,
+     "2026-09-30",
+     0.21,
+     0.36
+    ],
+    [
+     "Bank deposits (H.8 SA)",
+     19636.7,
+     "2026-09",
+     0.075,
+     0.13
+    ],
+    [
+     "Stablecoins",
+     294.6,
+     "2026-11-05",
+     5.0,
+     8.6
+    ],
+    [
+     "Bitcoin market cap",
+     1620.0,
+     "2026-11-05",
+     0.91,
+     1.6
+    ],
+    [
+     "New Bitcoin per year",
+     13.2,
+     "2026-11-05",
+     111,
+     192
+    ],
+    [
+     "Digital credit outstanding",
+     14.7,
+     "2026-10 (derived)",
+     100,
+     null
+    ]
+   ],
+   "label_checked": true,
+   "model": false
+  },
+  {
+   "id": "channels",
+   "title": "Channel table, both directions",
+   "unit": "USD billion unless noted",
+   "source": "Section D1 of R8B-flywheel-baskets.md",
+   "cols": [
+    "channel",
+    "direction",
+    "latest",
+    "stress_2022"
+   ],
+   "rows": [
+    [
+     "Strategy preferred issuance",
+     "toward",
+     "7.04 (2025), 7.53 (2026 9M)",
+     "0"
+    ],
+    [
+     "Strategy common ATM",
+     "toward or reserve",
+     "16.27 (2025), 13.66 (2026 9M)",
+     "0.05"
+    ],
+    [
+     "Strategy converts",
+     "toward",
+     "2.0 (2025), 0 (2026)",
+     "0"
+    ],
+    [
+     "Strategy Bitcoin purchases",
+     "toward",
+     "22.47 (2025), 14.26 (2026 9M)",
+     "0.29"
+    ],
+    [
+     "Strive SATA notional",
+     "toward",
+     "1.29 (2026-09-30)",
+     "n/a"
+    ],
+    [
+     "US spot ETFs",
+     "both",
+     "about +0.3 to +1.2 2026 YTD early Oct (T4)",
+     "n/a"
+    ],
+    [
+     "Strategy dollar reserve build",
+     "back into Set 1",
+     "+3.35 (Dec 2025 to Nov 2026)",
+     "n/a"
+    ],
+    [
+     "STRC buybacks",
+     "back",
+     "2.04 (2026 YTD)",
+     "n/a"
+    ],
+    [
+     "Convert repurchase",
+     "back",
+     "1.38 (2026)",
+     "0"
+    ],
+    [
+     "Strategy Bitcoin sales",
+     "back",
+     "0.43 (2026 9M)",
+     "0.012"
+    ],
+    [
+     "Preferred dividends paid",
+     "inside Set 1",
+     "0.38 (2025), 1.05 (2026 9M)",
+     "0"
+    ],
+    [
+     "Stablecoin supply change",
+     "into Set 1",
+     "+100.5 (2025), -9.1 (2026 YTD)",
+     "-24.5"
+    ],
+    [
+     "Money fund asset change (Z.1)",
+     "into Set 1",
+     "+947 (2025)",
+     "+18"
+    ]
+   ],
+   "label_checked": true,
+   "model": false
+  },
+  {
+   "id": "rates",
+   "title": "Treasury yields",
+   "unit": "percent",
+   "source": "Treasury daily par yield curve",
+   "cols": [
+    "date",
+    "3m",
+    "10y"
+   ],
+   "rows": [
+    [
+     "2025-12-31",
+     3.67,
+     4.18
+    ],
+    [
+     "2026-11-04",
+     4.21,
+     4.9
+    ]
+   ],
+   "label_checked": true,
+   "model": false
+  }
+ ]
+}

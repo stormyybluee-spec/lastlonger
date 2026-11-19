@@ -1,0 +1,147 @@
+{
+ "id": "H1-03",
+ "question": "Do Gulf funds buy US shares instead of Treasuries?",
+ "start": "TIC Major Foreign Holders: Saudi Arabia, UAE and Kuwait Treasuries 219.2 billion in January 2023 and 330.3 billion in August 2026 (Data lane R10A-02)",
+ "links": [
+  {
+   "n": 1,
+   "claim": "Saudi Arabia, UAE and Kuwait together held 330.3 billion dollars of Treasuries in August 2026, up from 219.2 billion in January 2023. Saudi Arabia alone is 23% below its February 2020 peak",
+   "grade": "I0",
+   "p": 0.97,
+   "actor": {
+    "name": "US Department of the Treasury",
+    "kind": "agency"
+   },
+   "evidence": [
+    {
+     "what": "TIC table 5 and history file, computed by the Data lane",
+     "url": "https://ticdata.treasury.gov/resource-center/data-chart-center/tic/Documents/slt_table5.txt",
+     "tier": "T0",
+     "date": "2026-11-12"
+    },
+    {
+     "what": "TIC history file",
+     "url": "https://ticdata.treasury.gov/Publish/mfhhis01.txt",
+     "tier": "T0",
+     "date": "2026-11-12"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "claim": "In the annual survey Saudi US equities rose from 57 to 215 billion (June 2018 to June 2025) while Saudi US long-term debt stayed near 120. UAE equities rose 89 to 231 while its debt fell 57 to 43. Norway's fund, a non-Gulf control, shows the same shape",
+   "grade": "I0",
+   "p": 0.95,
+   "actor": {
+    "name": "US Department of the Treasury",
+    "kind": "agency"
+   },
+   "evidence": [
+    {
+     "what": "Report on Foreign Holdings of US Securities as of June 2025, tables A1 to A3",
+     "url": "https://ticdata.treasury.gov/resource-center/data-chart-center/tic/Documents/shl2025r.pdf",
+     "tier": "T0",
+     "date": "2026-04"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "claim": "PIF's directly filed US stock portfolio (13F, via secondary sources) peaked at 56.7 billion at end 2021 and fell to about 12 billion in March 2026. Mubadala's rose to 20.5 billion. An aggregator shows PIF at about 37.9 billion in June 2026 (not checked)",
+   "grade": "I0",
+   "p": 0.8,
+   "actor": {
+    "name": "Public Investment Fund",
+    "kind": "fund"
+   },
+   "evidence": [
+    {
+     "what": "Enterprise AM citing PIF 13F: peak 56.7bn at end 2021, 12.95bn Q4 2025, 12bn Q1 2026. Mubadala 20.5bn Q1 2026 from 17.9bn",
+     "url": "https://enterpriseam.com/menaplus/2026/05/18/tale-of-two-funds-pif-trims-us-equities-as-mubadala-ramps-up/",
+     "tier": "T3",
+     "date": "2026-05-18"
+    },
+    {
+     "what": "Arkolith 13F aggregator: about 37.91bn in 5 positions at 30 June 2026, filed 14 August 2026 (labelled secondary, not verified)",
+     "url": "https://arkolith.com/fund/public-investment-fund-1767640",
+     "tier": "T4",
+     "date": "2026-08"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "claim": "'Instead of' fails as a substitution. Gulf Treasuries did not fall to pay for shares. The rise in Gulf-attributed US equities comes from price gains and from holders other than PIF's own filed book (central bank equity mandates, external managers, other funds), the same pattern as Norway",
+   "grade": "I2",
+   "p": 0.55,
+   "actor": {
+    "name": "Saudi Central Bank (SAMA)",
+    "kind": "central bank"
+   },
+   "move": "balance sheet and counterparty",
+   "footprints_expected": [
+    "Treasuries flat or rising while equities rise (TIC)",
+    "PIF's own 13F moving differently from the TIC Saudi equity line",
+    "The control fund (Norway) showing the same shift with no Gulf deal"
+   ],
+   "footprints_found": [
+    {
+     "what": "TIC: Gulf Treasuries up 51% since January 2023",
+     "url": "https://ticdata.treasury.gov/resource-center/data-chart-center/tic/Documents/slt_table5.txt",
+     "date": "2026-11-12"
+    },
+    {
+     "what": "PIF 13F fell from 56.7bn to 12bn while the survey's Saudi equity line rose",
+     "url": "https://enterpriseam.com/menaplus/2026/05/18/tale-of-two-funds-pif-trims-us-equities-as-mubadala-ramps-up/",
+     "date": "2026-05-18"
+    },
+    {
+     "what": "Norway equities 277 to 826 and debt 93 to 283, same shape",
+     "url": "https://ticdata.treasury.gov/resource-center/data-chart-center/tic/Documents/shl2025r.pdf",
+     "date": "2026-04"
+    }
+   ],
+   "footprints_missing": [
+    "No split of the Saudi equity line between SAMA, PIF and private holders. ADIA, QIA and KIA do not file 13F as far as found"
+   ],
+   "rivals": [
+    "Custody: Gulf Treasuries held through Belgium, Luxembourg or the UK hide a real sale, so substitution happened unseen",
+    "PIF holds US shares through funds and managers that file their own 13F, so its own book understates its US equity"
+   ],
+   "reveal": "13F for 30 September 2026, due 16 November 2026. TIC annual survey as of June 2026, preliminary about end of February 2027"
+  }
+ ],
+ "rival_hypotheses": [
+  {
+   "kind": "official",
+   "text": "Funds diversify for return. Central banks keep Treasuries for the peg",
+   "inconsistent_evidence": 0
+  },
+  {
+   "kind": "coordination",
+   "text": "A deal steered Gulf money from Treasuries to US shares",
+   "inconsistent_evidence": 2
+  },
+  {
+   "kind": "incentives",
+   "text": "Shares paid more, every big fund raised its US equity share alone, Norway included",
+   "inconsistent_evidence": 0
+  },
+  {
+   "kind": "accident",
+   "text": "Measurement: custody hides holdings, and price gains make equity look like buying",
+   "inconsistent_evidence": 1
+  }
+ ],
+ "coordination": {
+  "level": 0,
+  "channel": "",
+  "enforcement": "",
+  "secrecy_load": ""
+ },
+ "exit": "finding",
+ "budget_used": {
+  "searches": 2,
+  "tokens": 0
+ }
+}

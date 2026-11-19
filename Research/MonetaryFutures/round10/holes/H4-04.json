@@ -1,0 +1,240 @@
+{
+ "id": "H4-04",
+ "question": "C4: did finance push trade toward China on purpose with the 2025 tariffs?",
+ "start": "https://www.federalregister.gov/documents/2025/04/07/2025-06063/regulating-imports-with-a-reciprocal-tariff-to-rectify-trade-practices-that-contribute-to-large-and",
+ "links": [
+  {
+   "n": 1,
+   "claim": "Executive Order 14257 (2 April 2025) declared a national emergency over 'large and persistent annual U.S. goods trade deficits', set a 10% base tariff and country rates from 9 April. The stated aim is to cut deficits and restore manufacturing, not to move trade toward China",
+   "grade": "I0",
+   "p": 0.97,
+   "actor": {
+    "name": "The White House (Executive Office of the President)",
+    "kind": "office"
+   },
+   "evidence": [
+    {
+     "what": "Federal Register text of EO 14257",
+     "url": "https://www.federalregister.gov/documents/2025/04/07/2025-06063/regulating-imports-with-a-reciprocal-tariff-to-rectify-trade-practices-that-contribute-to-large-and",
+     "tier": "T0",
+     "date": "2025-04-07"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "claim": "China customs, full year 2025: exports up 5.5% to 3.77 trillion dollars, exports to the US down 20%, to ASEAN up 13.4%, to Africa up 25.8%, to the EU up 8.4%, record surplus 1.19 trillion dollars",
+   "grade": "I0",
+   "p": 0.93,
+   "actor": {
+    "name": "General Administration of Customs of the People's Republic of China",
+    "kind": "agency"
+   },
+   "evidence": [
+    {
+     "what": "2025 trade data as reported",
+     "url": "https://www.scmp.com/economy/economic-indicators/article/3339811/china-records-us119-trillion-trade-surplus-2025-exports-jump-55",
+     "tier": "T3",
+     "date": "2026-01-14"
+    },
+    {
+     "what": "Reuters wrap of the same release",
+     "url": "https://www.nst.com.my/amp/business/economy/2026/01/1356455/chinas-trade-ends-2025-record-us12-trillion-surplus-despite-trump",
+     "tier": "T3",
+     "date": "2026-01-14"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "claim": "US data, 2025: imports from China fell to 308.4 bn dollars from 438.7 bn (about 30% down), China's share of US goods imports about 9% at end 2025 against 22% before 2018, record imports from Mexico (534.9 bn), Taiwan (201.4 bn) and Vietnam (193.8 bn)",
+   "grade": "I0",
+   "p": 0.93,
+   "actor": {
+    "name": "U.S. Census Bureau",
+    "kind": "agency"
+   },
+   "evidence": [
+    {
+     "what": "BEA and Census release, December and annual 2025",
+     "url": "https://www.bea.gov/news/2026/us-international-trade-goods-and-services-december-and-annual-2025",
+     "tier": "T0",
+     "date": "2026-02-19"
+    },
+    {
+     "what": "Summary with China totals",
+     "url": "https://issuenumberone.journalism.cuny.edu/2026/02/23/us-goods-deficit-increased-trade-deficit-little-changed-despite-trump-tariffs/",
+     "tier": "T3",
+     "date": "2026-02-23"
+    },
+    {
+     "what": "China share of US imports",
+     "url": "https://www.piie.com/blogs/realtime-economics/2026/trump-china-trade-wars-five-takeaways-us-imports-2025",
+     "tier": "T2",
+     "date": "2026"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "claim": "Part of the third-country rise is Chinese content rerouted or relabelled, not new trade 'toward China'",
+   "grade": "I2",
+   "p": 0.5,
+   "actor": {
+    "name": "General Administration of Customs of the People's Republic of China",
+    "kind": "agency"
+   },
+   "move": "mirror",
+   "footprints_expected": [
+    "A mirror gap: China's reported exports to the US fall less than US reported imports from China",
+    "Record US deficits with transit countries at the same time as China's exports to them rise",
+    "HS product-level matches for Vietnam and Mexico"
+   ],
+   "footprints_found": [
+    {
+     "what": "China reports exports to the US down 20%, the US reports imports from China down about 30%",
+     "url": "https://www.scmp.com/economy/economic-indicators/article/3339811/china-records-us119-trillion-trade-surplus-2025-exports-jump-55",
+     "date": "2026-01-14"
+    },
+    {
+     "what": "Record US deficits with Mexico, Vietnam and Taiwan in 2025",
+     "url": "https://www.bea.gov/news/2026/us-international-trade-goods-and-services-december-and-annual-2025",
+     "date": "2026-02-19"
+    }
+   ],
+   "footprints_missing": [
+    "HS product-level mirror data for Vietnam and Mexico not pulled (budget). Part of the gap is normal timing, freight and Hong Kong re-export differences"
+   ],
+   "rivals": [
+    "Real diversion: Chinese firms found new final buyers in ASEAN, Africa and the EU",
+    "Measurement: the de minimis change and valuation rules account for the mirror gap"
+   ],
+   "reveal": "China customs October 2026 exports by destination, about 20 November 2026. US Census September 2026 trade release"
+  },
+  {
+   "n": 5,
+   "claim": "Finance's documented reaction was against the tariffs: Treasury yields jumped in a selloff before the 9 April 2025 90-day pause, JPMorgan's chief executive called recession a 'likely scenario' on 9 April, the President said markets were 'yippy', and the US Chamber of Commerce asked the appeals court in July 2025 to strike the IEEPA tariffs down. Tariff lobbying filings hit records in 2025",
+   "grade": "I0",
+   "p": 0.9,
+   "actor": {
+    "name": "JPMorgan Chase & Co.",
+    "kind": "company"
+   },
+   "evidence": [
+    {
+     "what": "Bond market and the pause",
+     "url": "https://www.bloomberg.com/news/articles/2025-04-09/short-term-treasuries-plunge-as-trump-pauses-most-tariffs",
+     "tier": "T2",
+     "date": "2025-04-09"
+    },
+    {
+     "what": "Wall Street liquidity worries and Bessent",
+     "url": "https://fortune.com/2025/04/09/bond-sell-off-wall-street-worried-liquidity-crisis-treasury-secretary-scott-bessent/",
+     "tier": "T3",
+     "date": "2025-04-09"
+    },
+    {
+     "what": "Dimon recession comment",
+     "url": "https://bnnbloomberg.ca/tariffs/2025/04/10/us-futures-sink-as-mood-shifts-to-trade-war-damage-markets-wrap",
+     "tier": "T2",
+     "date": "2025-04-10"
+    },
+    {
+     "what": "Chamber of Commerce amicus brief",
+     "url": "https://www.eenews.net/articles/business-groups-urge-court-to-strike-down-trumps-emergency-tariffs/",
+     "tier": "T2",
+     "date": "2025-07"
+    },
+    {
+     "what": "Tariff lobbying counts",
+     "url": "https://news.bgov.com/tariff-news/lobbyists-brace-for-tariff-chaos-after-court-rules-against-trump",
+     "tier": "T2",
+     "date": "2026-02"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "claim": "On 20 February 2026 the Supreme Court held 6 to 3 in Learning Resources v. Trump that IEEPA does not authorise tariffs. The same day the President ended the IEEPA tariff actions and set a time-limited Section 122 tariff from 24 February to 24 July 2026",
+   "grade": "I0",
+   "p": 0.95,
+   "actor": {
+    "name": "Supreme Court of the United States",
+    "kind": "court"
+   },
+   "evidence": [
+    {
+     "what": "Law firm summary of the ruling",
+     "url": "https://www.dlapiper.com/en/insights/publications/2026/02/us-supreme-court-holds-ieepa-does-not-authorize-tariffs",
+     "tier": "T2",
+     "date": "2026-02-24"
+    },
+    {
+     "what": "Summary of the termination and Section 122 replacement",
+     "url": "https://perkinscoie.com/insights/update/supreme-court-holds-ieepa-tariffs-unlawful-president-trump-terminates-and-partially",
+     "tier": "T2",
+     "date": "2026-02"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "claim": "Named finance firms pushed the 2025 tariffs with the aim of shifting trade toward China",
+   "grade": "I4",
+   "p": 0.03,
+   "actor": {
+    "name": "JPMorgan Chase & Co.",
+    "kind": "company"
+   },
+   "move": "same people",
+   "footprints_expected": [
+    "Senate LD-2 filings by banks or asset managers lobbying for the tariffs",
+    "Positions taken ahead of tariff announcements (CFTC, options)",
+    "Statements of aim by named firms or officials",
+    "Finance gaining from the shift in its own filings"
+   ],
+   "footprints_found": [],
+   "footprints_missing": [
+    "No bank or asset manager lobbying for the tariffs found in the search of tariff lobbying reports. Bank-level LD-2 issue filings not opened (budget). Inconsistent marks found: bond selloff before the pause, the largest bank's chief executive warning of recession, the business lobby suing against the tariffs"
+   ],
+   "rivals": [
+    "The diversion was a foreseeable side effect of tariffs aimed at the US-China deficit",
+    "Exporters in China and transit countries adapted on their own"
+   ],
+   "reveal": "Senate LD-2 filings, quarterly (Q3 2026 already filed, Q4 2026 due 20 January 2027). Class L for internal records"
+  }
+ ],
+ "rival_hypotheses": [
+  {
+   "kind": "official",
+   "text": "Official: tariffs aimed at deficits and manufacturing, diversion a side effect",
+   "inconsistent_evidence": 0
+  },
+  {
+   "kind": "coordination",
+   "text": "Coordination: finance agreed the outcome with the offices that set the tariffs",
+   "inconsistent_evidence": 3
+  },
+  {
+   "kind": "incentives",
+   "text": "Shared incentives: each exporter and buyer adapted on its own",
+   "inconsistent_evidence": 0
+  },
+  {
+   "kind": "accident",
+   "text": "Accident or measurement: rerouting and relabelling make China's trade look shifted",
+   "inconsistent_evidence": 0
+  }
+ ],
+ "coordination": {
+  "level": 0,
+  "channel": "None found",
+  "enforcement": "None found",
+  "secrecy_load": "Not estimated: no channel to load"
+ },
+ "exit": "dead_end",
+ "budget_used": {
+  "searches": 8,
+  "tokens": 0
+ }
+}

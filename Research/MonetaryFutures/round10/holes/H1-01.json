@@ -1,0 +1,153 @@
+{
+ "id": "H1-01",
+ "question": "Does most Gulf crude go to China?",
+ "start": "EIA, Strait of Hormuz chokepoint note, 16 June 2025: 84% of Hormuz crude and condensate went to Asia in 2024, China, India, Japan and South Korea took 69% together",
+ "links": [
+  {
+   "n": 1,
+   "claim": "In 2024 about 84% of crude and condensate through the Strait of Hormuz went to Asia, and China, India, Japan and South Korea together took 69%. Saudi Arabia shipped about 5.5 million barrels a day of it, 38% of the total (so the total is about 14.5 million a day, computed)",
+   "grade": "I0",
+   "p": 0.95,
+   "actor": {
+    "name": "US Energy Information Administration",
+    "kind": "agency"
+   },
+   "evidence": [
+    {
+     "what": "EIA Today in Energy: 84% to Asia, four buyers 69%, Saudi 5.5 mb/d is 38%",
+     "url": "https://www.eia.gov/todayinenergy/detail.php?id=65504",
+     "tier": "T0",
+     "date": "2025-06-16"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "claim": "China imported a record 11.6 million barrels a day in 2025. China customs recorded 80.75 million tonnes from Saudi Arabia (about 1.6 million barrels a day) and 64.62 million tonnes from Iraq. About half of China's seaborne crude, near 5.4 million barrels a day, came from the Middle East including Iran (Kpler, via press)",
+   "grade": "I0",
+   "p": 0.9,
+   "actor": {
+    "name": "General Administration of Customs of the People's Republic of China",
+    "kind": "agency"
+   },
+   "evidence": [
+    {
+     "what": "Columbia CGEP (E. Downs): 11.6 mb/d record in 2025, Iranian crude relabelled as Malaysian 1.3 mb/d",
+     "url": "https://www.energypolicy.columbia.edu/where-china-gets-its-oil-crude-imports-in-2025-reveal-stockpiling-and-changing-fortunes-of-certain-suppliers-including-those-sanctioned/",
+     "tier": "T2",
+     "date": "2026-01-29"
+    },
+    {
+     "what": "TASS citing China customs: Saudi 80.75 Mt, Iraq 64.62 Mt in 2025 (search summary, page not opened)",
+     "url": "https://tass.com/economy/2074135",
+     "tier": "T3",
+     "date": "2026-01"
+    },
+    {
+     "what": "Baird Maritime opinion citing Kpler: about half of seaborne imports, 5.4 mb/d, from the Middle East (search summary)",
+     "url": "https://www.bairdmaritime.com/shipping/tankers/opinion-how-chinas-massive-oil-and-gas-stockpile-acts-as-a-buffer-against-war",
+     "tier": "T3",
+     "date": "2026"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "claim": "China is the largest single buyer of Gulf crude but takes roughly a third of it (about 30% to 40% with Iranian barrels counted), not most of it",
+   "grade": "I1",
+   "p": 0.7,
+   "actor": {
+    "name": "General Administration of Customs of the People's Republic of China",
+    "kind": "agency"
+   },
+   "move": "scale and mirror",
+   "footprints_expected": [
+    "China's Gulf intake (customs, tanker data) divided by Gulf crude exports (EIA Hormuz total plus Saudi Red Sea loadings) should come out well under 50% if the claim fails",
+    "The EIA four-buyer share (69%) must leave room for India, Japan and Korea, so China alone cannot be most",
+    "A Gulf exporter statement or tracker giving China over half would contradict it"
+   ],
+   "footprints_found": [
+    {
+     "what": "EIA: four Asian buyers 69% of Hormuz crude in 2024 and 74% in the first half of 2025, total about 14.5 mb/d",
+     "url": "https://www.eia.gov/todayinenergy/detail.php?id=65504",
+     "date": "2025-06-16"
+    },
+    {
+     "what": "Kpler via press: about 5.4 mb/d of China's seaborne imports from the Middle East including Iran. 5.4 over about 15 is about 36% (computed)",
+     "url": "https://www.bairdmaritime.com/shipping/tankers/opinion-how-chinas-massive-oil-and-gas-stockpile-acts-as-a-buffer-against-war",
+     "date": "2026"
+    },
+    {
+     "what": "Argaam: Saudi crude was 1.72 mb/d, 21% of China's imports in 2025. Against Saudi exports of about 6 mb/d that is under 30% of Saudi crude (computed)",
+     "url": "https://weekend.argaam.com/97/en/Petroyuan_Balancing_Act",
+     "date": "2026-05"
+    }
+   ],
+   "footprints_missing": [
+    "No customs total for UAE, Oman, Kuwait or Qatar in 2025 was found in three searches. No Gulf-side destination table (GASTAT, UAE statistics) was reached"
+   ],
+   "rivals": [
+    "Mostly means largest buyer, not a majority, so the specimen is loosely right in its own words",
+    "Counting Iranian crude relabelled as Malaysian and Gulf refined products and LNG would raise China's share, perhaps near 40%, still under half"
+   ],
+   "reveal": "China customs detailed imports by origin for October 2026, about 20 November 2026, and full-year 2026 tables in January 2027. EIA Hormuz update in 2027"
+  },
+  {
+   "n": 4,
+   "claim": "The 2026 war with Iran and Tehran's hold on the Strait of Hormuz cut China's crude imports to the lowest since July 2022 in April 2026, and the Middle East share of China's oil imports fell to about 31% in May 2026. Brent stayed largely above 100 dollars",
+   "grade": "I0",
+   "p": 0.85,
+   "actor": {
+    "name": "Government of the Islamic Republic of Iran",
+    "kind": "state"
+   },
+   "evidence": [
+    {
+     "what": "Bloomberg via The Star: imports lowest since July 2022 in April, seaborne 6.5 to 6.6 mb/d, Brent largely above 100 dollars",
+     "url": "https://www.thestar.com.my/business/business-news/2026/05/29/chinas-declining-appetite-for-oil-laid-bare-by-iran-war",
+     "tier": "T2",
+     "date": "2026-05-29"
+    },
+    {
+     "what": "Search summary of Kpler-based press: Middle East share of China's oil imports at a multi-year low of 31% in May 2026 (page not opened)",
+     "url": "https://www.bairdmaritime.com/shipping/tankers/opinion-how-chinas-massive-oil-and-gas-stockpile-acts-as-a-buffer-against-war",
+     "tier": "T3",
+     "date": "2026"
+    }
+   ]
+  }
+ ],
+ "rival_hypotheses": [
+  {
+   "kind": "official",
+   "text": "Gulf crude goes to many Asian buyers by price and refinery fit. China is the biggest of several",
+   "inconsistent_evidence": 0
+  },
+  {
+   "kind": "coordination",
+   "text": "Gulf exporters agreed with China to steer most crude there",
+   "inconsistent_evidence": 2
+  },
+  {
+   "kind": "incentives",
+   "text": "Each exporter sells where demand grows. China grew most to 2025, then stockpiled and cut back in 2026",
+   "inconsistent_evidence": 0
+  },
+  {
+   "kind": "accident",
+   "text": "Measurement: relabelled Iranian barrels and tonnes against barrels make China's Gulf share look different by source",
+   "inconsistent_evidence": 0
+  }
+ ],
+ "coordination": {
+  "level": 0,
+  "channel": "",
+  "enforcement": "",
+  "secrecy_load": ""
+ },
+ "exit": "finding",
+ "budget_used": {
+  "searches": 6,
+  "tokens": 0
+ }
+}
