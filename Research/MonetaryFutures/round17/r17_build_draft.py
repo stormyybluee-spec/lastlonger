@@ -25,7 +25,7 @@ ch = {"id": "rb-future", "num": "06", "level": 3,
   {"type": "tldr", "items": [
     "The reader is right that new technology costs a great deal before it pays back. British railway building took about 6% of the whole country's output each year at its peak. Many bets failed.",
     "Promises did pay for it, but not mostly the kind the reader means. The biggest early payers were savers buying shares and governments buying the product. Easy money from central banks lines up with only some of the booms.",
-    "The government's most useful role was often as a first customer, not a lender. It bought every microchip sold in 1962. NASA paid a rocket company for results, not for promises.",
+    "The government's most useful role was often as a first customer, not a lender. It bought every microchip sold in 1962. America's space agency, NASA, paid a rocket company for results, not for promises.",
     "Late developers did use created money and directed credit. Korea grew fast with it and paid with inflation and a crisis. Malaysia's biggest success, electronics in Penang, needed little borrowing at all."]},
   {"type": "bridge", "label": "Built on earlier chapters: recall these before you start", "items": [
     {"id": "rb-peasant", "text": "Chapter 04 found the first factories were built mostly from their owners' money, while canals and railways needed promises from many people."},
