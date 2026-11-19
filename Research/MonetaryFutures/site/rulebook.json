@@ -13885,10 +13885,10 @@
     {
      "type": "tldr",
      "items": [
-      "Central banks were first built to pay for wars and stop bank panics. Growth was written into the law later, and usually in second place. Malaysia's law does name growth: it asks for stability that helps the economy grow.",
-      "Mild inflation is on purpose, and it is published. Its biggest winner is the government as a borrower, and that is rarely said out loud.",
-      "The people who run the money answer to the governments that appoint them, and they must publish what they do. They do not answer to voters. When voters were asked directly, they kept the system they already had.",
-      "Countries that tied their own hands got steadier prices and paid for it in a crisis. Countries that kept their hands free could rescue and steer, and some were ruined by it."
+      "Central banks were first built to pay for wars and stop bank panics. Growth was written into the law later, and often behind stable prices. Malaysia's law does name growth: it asks for stability that helps the economy grow.",
+      "Mild inflation is on purpose, and it is published. When inflation runs above what lenders expected, or rules hold interest rates down, a large winner is the government as a borrower.",
+      "The people who run the money answer to the governments that appoint them, and they must publish what they do. Voters elect the lawmakers who write these laws but are rarely asked directly. When asked, they mostly kept what they had.",
+      "Countries that tied their own hands usually got steadier prices, some for decades, and paid for it in a crisis. Countries that kept their hands free could rescue and steer, and some were ruined by it."
      ]
     },
     {
@@ -13945,28 +13945,45 @@
     },
     {
      "type": "p",
-     "text": "Start close to home, in Malaya in the early 1950s. The country had banknotes, but it had no central bank. Its money was issued by a currency board. The board followed one hard rule. For every Malayan dollar it printed, it had to hold British pounds in reserve. It could not print a dollar more."
+     "text": "Start close to home, in Malaya in the early 1950s. The country had banknotes, but it had no central bank. Its money was issued by a currency board. The board followed one hard rule. It issued a Malayan dollar only in exchange for British pounds, which it kept in reserve. In the early 1950s it had almost no power to issue more. The same board also issued Singapore's money."
     },
     {
      "type": "p",
-     "text": "That rule kept the money sound. Nobody feared that a Malayan dollar would turn worthless. But look at what it cost. In the early 1950s there was about 17 pounds' worth of money for each person in Malaya. In Britain there was about 120."
+     "text": "That rule kept the money sound. A Malayan dollar was as good as the pounds behind it. But there was not much money to go round."
+    },
+    {
+     "type": "table",
+     "cols": [
+      "Place",
+      "Money for each person, early 1950s (Bank of England, 1962)"
+     ],
+     "rows": [
+      [
+       "Federation of Malaya",
+       "About 17 pounds"
+      ],
+      [
+       "Britain",
+       "About 120 pounds"
+      ]
+     ]
     },
     {
      "type": "p",
-     "text": "And the board could do nothing about it. It could not lend to a rubber planter in a bad year. It could not make credit easier when tin prices fell. In 1962 the Bank of England, looking back at boards like this one, named the weakness plainly."
+     "text": "The Bank of England put most of that gap down to a young money economy, where money and banks were still new to many people. But the rule played a part. Money at home could grow only when more pounds came in from abroad. And the board could do very little to help. It did not lend, and it could not ease credit when times were bad. Only from December 1961 could it issue some money against crop loans. In 1962 the Bank of England named two standard complaints about old-style boards like this one: reserves locked up abroad, and what a passive board could not do."
     },
     {
      "type": "quote",
      "text": "to exert positive influence on credit conditions",
-     "by": "What a currency board could not do, in the words of the Bank of England, 1962"
+     "by": "What old-style currency boards in general could not do, in the words of the Bank of England, 1962"
     },
     {
      "type": "p",
-     "text": "The same report said such boards forced \"painful deflationary correctives in times of depression\". In plain words: when times were bad, a board made them worse. So Malaya built a central bank, which began work in 1959. On 12 June 1967 it became the only issuer of the country's money."
+     "text": "The same passage said this led to \"painful deflationary correctives in times of depression\". In plain words: a board could not cushion a slump, so the pain came through falling prices and wages. Malaya wanted an issuer that could manage credit and free its reserves. Bank Negara began work in 1959. But the board kept issuing the money until 1967, because the places that shared it hoped to keep one currency. That plan failed after Singapore left Malaysia in 1965. On 12 June 1967 Bank Negara became the only issuer of Malaysia's money."
     },
     {
      "type": "p",
-     "text": "That is the reader's claim in one story. A new country wanted an issuer that could steer credit toward its own growth, and it wrote a law to get one. The question is how far that story holds for the rest of the world, and what the freedom has cost."
+     "text": "That is part of the reader's claim in one story. A new country wanted an issuer that could manage its own credit, and it wrote a law to get one. But the final step in 1967 came from a failed plan to share a currency. And Singapore took the other road. It kept a currency board until 2002, and its economy still grew fast, by most accounts. The question is how far that story holds for the rest of the world, and what each road has cost."
     },
     {
      "type": "h",
@@ -13992,12 +14009,12 @@
       [
        "America's Federal Reserve",
        "1913",
-       "Its founding law speaks of an elastic currency, meaning money that can stretch in a panic, and of watching over the banks"
+       "Its founding law speaks of an elastic currency, meaning money that can stretch in a panic, and of better supervision of the banks"
       ],
       [
        "America's Federal Reserve",
        "1977",
-       "A new line was added: \"maximum employment, stable prices, and moderate long-term interest rates\""
+       "A new line was added: \"maximum employment, stable prices, and moderate long-term interest rates\". Money should grow with the economy's power to produce"
       ],
       [
        "Bank of England",
@@ -14006,32 +14023,54 @@
       ],
       [
        "European Central Bank",
-       "1999",
+       "Treaty as in force today",
        "Stable prices are the main aim. Anything else comes only if prices are safe"
       ],
       [
        "Bank Negara Malaysia",
        "2009",
-       "Stability \"conducive to the sustainable growth of the Malaysian economy\". Stable prices are the main aim of its interest rate decisions. Jobs are not named"
+       "Stability \"conducive to the sustainable growth of the Malaysian economy\". Stable prices are the main aim of its interest rate decisions. Jobs are not named in sections 5 and 22"
       ]
      ]
     },
     {
      "type": "p",
-     "text": "Read down the last column. The oldest central bank was built to pay for a war. America's was built to stop bank panics. Growth and jobs were written in later, and in most laws they come second, behind stable prices. Malaysia's law is closer to the reader's picture than most. It says the point of stability is growth."
+     "text": "Read down the last column. The oldest central bank was built to pay for a war. America's was built to stop bank panics. Growth and jobs were written in later. Britain, Europe and Malaysia put them after stable prices. America's 1977 law lists jobs and prices side by side. Malaysia's law is closer to the reader's picture than most. It says the point of stability is growth."
     },
     {
      "type": "p",
-     "text": "New countries after 1945 had the reader's idea too. About 25 developing countries set up or rebuilt central banks in those years, and steering credit toward industry was part of the plan. The economist Gerald Epstein argues that directing credit is one of the reasons central banks exist at all. He also grants that it sometimes went badly."
-    },
-    {
-     "type": "p",
-     "text": "One more piece of evidence cuts against Part 1. The best-known study of central banks that are kept apart from politicians covered 16 rich countries from 1955 to 1988. It found that they had lower inflation. It is reported to have found no clear effect on growth or jobs, one way or the other."
+     "text": "New countries after 1945 had the reader's idea too. By one count, at least 25 developing countries set up or rebuilt central banks in those years, with powers to steer credit toward development. The economist Gerald Epstein argues that, for many central banks, financing the government and directing credit were among the reasons they were set up. He also grants that it sometimes went badly."
     },
     {
      "type": "insider",
-     "text": "Part 1 holds in part. The first central banks were built for war and for panics, not for progress. Growth entered the law later and usually second. But for countries that came later, Malaysia among them, steering credit toward growth was a stated aim from the start.",
+     "text": "Part 1 holds in part. The first central banks were built for war and for panics, not for progress. Growth entered the law later, often behind stable prices. But many central banks set up after 1945 were given powers to steer credit toward development, and Malaysia's law today names growth as the point of stability.",
      "label": "What test 1 does to the claim"
+    },
+    {
+     "type": "deeper",
+     "label": "Steering credit: where it helped and where it hurt",
+     "blocks": [
+      {
+       "type": "p",
+       "text": "Several countries that grew fast after 1945 used their banks to steer money toward chosen industries. In Japan, by one account, savings collected through the post office were passed by the finance ministry, of which the central bank was then a part, to the industries seen as best for growth. Epstein concludes that central banks helped development most in late developers, where they were part of a government's plan for industry. He also grants that these tools in some cases had bad results in the end."
+      },
+      {
+       "type": "p",
+       "text": "South Korea shows both sides. In the 1970s it is reported to have steered bank lending to heavy and chemical industries. A Korean government research body later said this lending left large firms with weak finances and small firms short of credit, and most cheap policy loans were ended in June 1982. Several Latin American countries that used similar tools, Argentina among them, later had very high inflation."
+      },
+      {
+       "type": "p",
+       "text": "Malaysia still uses a milder form. Six development banks, such as Bank Rakyat, Agrobank and SME Bank, work under their own law and are supervised by Bank Negara. In January 2026 Bank Negara is reported to have added 2.5 billion ringgit to its fund for small firms."
+      },
+      {
+       "type": "p",
+       "text": "Words in a law are not the same as practice. A study of 72 countries, as others report it, found that in poorer countries how often the governor was replaced said more about inflation than what the law said."
+      },
+      {
+       "type": "p",
+       "text": "One more study is often quoted here, though it tests something narrower than the reader's claim. It asked whether central banks kept apart from politicians do better. Across 16 rich countries from 1955 to 1988, they had lower inflation. It is reported to have found no clear effect on growth or jobs, one way or the other. It did not cover poorer countries."
+      }
+     ]
     },
     {
      "type": "h",
@@ -14043,11 +14082,11 @@
     },
     {
      "type": "p",
-     "text": "There are two collectors, and the second is much bigger than the first."
+     "text": "There are two collectors. When inflation is a surprise, the second can be much bigger than the first."
     },
     {
      "type": "p",
-     "text": "The first is the profit on issuing money. A central bank pays almost nothing to create money and earns interest on what it buys with it. Most of the profit is handed to the government."
+     "text": "The first is the profit on issuing money. A central bank pays almost nothing to create money and earns interest on what it buys with it. Part of the profit goes to the government, as each country's law decides."
     },
     {
      "type": "table",
@@ -14060,23 +14099,43 @@
       [
        "America's Federal Reserve",
        "2021",
-       "109 billion dollars, the most ever"
+       "109 billion dollars, its largest regular payment in 2011 to 2022"
       ],
       [
        "America's Federal Reserve",
        "2023 to 2025",
-       "Nothing. It was paying out more interest than it earned, and by the end of 2025 it had 243.5 billion dollars of losses to make up first"
+       "Nothing. It was paying out more interest than it earned. By the end of 2025 the shortfall it must earn back before payments resume was 243.5 billion dollars"
       ],
       [
        "Bank Negara Malaysia",
        "2024",
-       "A dividend of 5.25 billion ringgit, from a profit of 13.16 billion"
+       "A recommended dividend of 5.25 billion ringgit, about 40% of a profit of 13.16 billion"
       ]
      ]
     },
     {
      "type": "p",
-     "text": "The second collector is the government as a borrower. When prices rise, every old debt becomes lighter, and the biggest debtor in any country is the state. From 1945 to 1980, low interest rates and rising prices together shrank the debts of America and Britain by an amount equal to 3% to 4% of everything those countries made, every year. In 2021 alone, a year of surprise inflation, the real weight of America's debt fell by 3.3% of its output. One study by a branch of the central bank called it a \"6.5% tax\" on the people who held the government's bonds. About 38% of those bonds were held abroad."
+     "text": "The second collector is the government as a borrower. When prices rise, old debts at fixed rates become lighter, and in most countries the biggest debtor is the state. But lenders know this. If they expect 2% inflation, they ask for interest that covers it, and nobody is cheated. If prices then rise 4%, the extra 2 points is a surprise. That part works like a hidden tax on the lender. So the state gains most when inflation beats what lenders expected, or when rules hold interest rates below inflation. Both have happened."
+    },
+    {
+     "type": "table",
+     "cols": [
+      "Case",
+      "What happened",
+      "Fall in the real weight of state debt"
+     ],
+     "rows": [
+      [
+       "America and Britain, about 1945 to 1980",
+       "Interest rates were kept below inflation, often by caps and by rules that made banks hold government bonds",
+       "3% to 4% of output a year, on average, by one estimate"
+      ],
+      [
+       "America, 2021",
+       "Prices rose much faster than lenders expected",
+       "3.3% of output in one year. A staff study at the Federal Reserve Bank of St. Louis called it a 6.5% tax on holders of government bonds of a year or more. About 38% of those bonds, leaving out the central bank's own, were held abroad"
+      ]
+     ]
     },
     {
      "type": "table",
@@ -14086,7 +14145,7 @@
      ],
      "rows": [
       [
-       "The government, whose debts grow lighter",
+       "The government, whose debts grow lighter, most when inflation is a surprise",
        "Anyone who lent to the government at a fixed rate, at home or abroad"
       ],
       [
@@ -14094,18 +14153,18 @@
        "Savers who hold cash or accounts that pay little"
       ],
       [
-       "Taxpayers, who might otherwise pay more tax to service the debt",
+       "Taxpayers, who may need to pay less tax to service the debt",
        "People on fixed incomes"
       ]
      ]
     },
     {
      "type": "p",
-     "text": "So does it serve the public? It depends which part of the public. A taxpayer and a saver are often the same person, gaining with one hand and losing with the other. The earlier chapters gave the reasons for a small target: room to cut interest rates, and a cushion against falling prices. Those reasons are real. But the gain to the state as a borrower is real too, and it is the part that is seldom said out loud."
+     "text": "So does it serve the public? It depends which part of the public. A taxpayer and a saver are often the same person, gaining with one hand and losing with the other. The earlier chapters gave the reasons for a small target: room to cut interest rates, and a cushion against falling prices. Those reasons are real. But the gain to the state as a borrower is real too, mostly when inflation is a surprise or rates are held down, and it is less often explained."
     },
     {
      "type": "insider",
-     "text": "Part 2 holds in part. Mild inflation is on purpose and it is published. It has public reasons. It also moves a great deal of wealth from savers and lenders to the state, and that transfer is rarely named.",
+     "text": "Part 2 holds in part. Mild inflation is on purpose and it is published. It has public reasons. When it beats what lenders expected, or rates are held down, it also moves a great deal of wealth from savers and lenders to the state. That transfer is less often explained.",
      "label": "What test 2 does to the claim"
     },
     {
@@ -14114,58 +14173,70 @@
     },
     {
      "type": "p",
-     "text": "The reader says the system runs under stable, controlled governance. The laws do set controls. Here are three central banks side by side."
+     "text": "The reader says the system runs under stable, controlled governance. The laws do set controls. In America, Britain and Malaysia the law says who appoints the leaders, for how long, and what they must publish. The box below sets the three side by side."
     },
     {
-     "type": "table",
-     "cols": [
-      "",
-      "America",
-      "Britain",
-      "Malaysia"
-     ],
-     "rows": [
-      [
-       "Who appoints the top people",
-       "The President, with the consent of the Senate",
-       "The government",
-       "The governor is appointed by the King, the Yang di-Pertuan Agong"
-      ],
-      [
-       "For how long",
-       "14 years for a governor",
-       "",
-       "Five years, and can be renewed"
-      ],
-      [
-       "Can they be removed?",
-       "Only \"for cause\"",
-       "",
-       "Only on grounds listed in the law, such as misconduct"
-      ],
-      [
-       "What must be published",
-       "Notes of each meeting after about three weeks. Full records after about five years",
-       "A public letter each time inflation misses the target by more than one point. Twelve were written from 2021 to 2024",
-       "A statement after each policy meeting. Accounts checked by the Auditor General and laid before Parliament"
-      ],
-      [
-       "Can it lend to the government?",
-       "",
-       "",
-       "Yes, but only for a short time, and up to 12.5% of the government's expected yearly income"
-      ],
-      [
-       "Who has the last word?",
-       "",
-       "",
-       "If the Bank and the Finance Minister disagree, the Cabinet may decide"
-      ]
+     "type": "deeper",
+     "label": "Three central banks side by side",
+     "blocks": [
+      {
+       "type": "table",
+       "cols": [
+        "Rule",
+        "America",
+        "Britain",
+        "Malaysia"
+       ],
+       "rows": [
+        [
+         "Who appoints the top people",
+         "The President appoints the Board's members, with the consent of the Senate",
+         "Not checked in this chapter",
+         "The Yang di-Pertuan Agong, the King, appoints the governor, as section 15 of the 2009 Act sets out. The Finance Minister appoints the deputy governors"
+        ],
+        [
+         "For how long",
+         "14 years for a Board member",
+         "Not checked in this chapter",
+         "Five years for the governor, and can be renewed"
+        ],
+        [
+         "Can they be removed?",
+         "Only \"for cause\". In June 2026 the Supreme Court is reported to have kept one governor in office while a case on this goes on",
+         "Not checked in this chapter",
+         "On grounds the law lists, such as serious misconduct. A disagreement over policy is not among them"
+        ],
+        [
+         "Who sets the inflation goal",
+         "Its own policy committee, which announced a 2% goal in 2012",
+         "The Chancellor, the finance minister, in the Bank's remit",
+         "No number in the law. Stable prices are the main aim"
+        ],
+        [
+         "What must be published",
+         "Minutes of each meeting after about three weeks. Word-for-word records after about five years",
+         "A public letter whenever inflation is more than one point above or below the target. Twelve were written from 2021 to 2024",
+         "A statement after each policy meeting. Accounts checked by the Auditor General and laid before Parliament"
+        ],
+        [
+         "Can it lend to the government?",
+         "Not checked in this chapter",
+         "Not checked in this chapter",
+         "Yes, as short-term help, repaid within three months after the government's year ends. Such loans, plus government bonds it buys outside its normal market work, may not pass 12.5% of the federal government's expected receipts"
+        ],
+        [
+         "Who has the last word?",
+         "Not checked in this chapter",
+         "Not checked in this chapter",
+         "On the Bank's main aims, if the Bank and the Finance Minister cannot agree, the Cabinet may decide. The Bank can then put its objections before Parliament. Another section says the Bank sets monetary policy on its own, without outside influence. The Act does not say how the two fit together"
+        ]
+       ]
+      }
      ]
     },
     {
      "type": "p",
-     "text": "So there is control. But notice who holds it. In every column the central bank answers to the government that appoints it, and to the public only through what it must publish. No voter chooses a governor."
+     "text": "So there is control. But notice who holds it. In each country the central bank answers to the law and to the government of the day, and to the public mainly through what it must publish. No voter chooses a governor directly."
     },
     {
      "type": "p",
@@ -14173,15 +14244,15 @@
     },
     {
      "type": "p",
-     "text": "Here is what can happen when a government takes the printing press for itself. In January 2009 Zimbabwe issued a banknote for 100 trillion dollars. It was worth about 33 American dollars. People queued for hours outside banks to draw out barely enough to buy a loaf of bread. Venezuela's own central bank reported inflation of 130,060% for 2018. Turkey is reported to have removed three central bank governors between 2019 and 2021, and its inflation is reported to have reached about 85% in 2022."
+     "text": "Here is what can happen when a government bends the issuer to its own needs, though other things went wrong in each place too. In January 2009 Zimbabwe's central bank announced a banknote for 100 trillion dollars. On the black market it was worth about 33 American dollars. People often queued for hours outside banks to draw out barely enough to buy a loaf of bread. Farm seizures and drought had also hurt. Venezuela's own central bank reported inflation of 130,060% for 2018, and outside estimates were higher. Oil prices and sanctions also hurt. Turkey is reported to have removed three central bank governors between 2019 and 2021, and its inflation is reported to have reached about 85% in 2022, a year of high energy prices."
     },
     {
      "type": "p",
-     "text": "And here is what can happen when the issuer is left alone. America's central bank was independent in the years before the crash of 2008. An official inquiry is reported to have found that it failed in its legal duty to set standards for home loans. Being free of politicians did not make it right. In 2024 only 39% of Americans told a pollster they had confidence in the head of their central bank."
+     "text": "And here is what can happen when the issuer is left alone. America's central bank was independent in the years before the crash of 2008. An official inquiry is reported to have found that it failed in its legal duty to set standards for home loans, though four of its members disagreed. So it was free of politicians and still made a serious mistake."
     },
     {
      "type": "insider",
-     "text": "Part 3 holds in part. The governance is controlled, by governments and by rules on what must be published. It is not controlled by voters. Keeping the issuer apart from politicians has protected money from the worst abuse, and has also let serious mistakes go unchecked.",
+     "text": "Part 3 holds in part. The governance is controlled, by governments and by rules on what must be published. It is not controlled directly by voters. Keeping the issuer apart from politicians has gone with lower inflation in rich countries, and it has not prevented serious mistakes.",
      "label": "What test 3 does to the claim"
     },
     {
@@ -14190,11 +14261,11 @@
     },
     {
      "type": "p",
-     "text": "Laws about money were passed by elected lawmakers. America's central bank law passed the Senate by 43 votes to 25 on 23 December 1913, and was signed the same day. But lawmakers are not the same as the public, and some of the biggest changes had no vote at all. Chapter 03 told how the dollar's link to gold was ended by a president over one weekend."
+     "text": "Laws about money were passed by elected lawmakers. America's central bank law passed the Senate by 43 votes to 25 in December 1913. But lawmakers are not the same as the public, and some of the biggest changes had no vote at all. Chapter 03 told how the dollar's link to gold was ended by a president over one weekend."
     },
     {
      "type": "p",
-     "text": "How often has the public been asked directly? Very rarely. Here are the cases this chapter could find."
+     "text": "How often has the public been asked directly? Rarely. Here are the cases this chapter could find."
     },
     {
      "type": "table",
@@ -14204,6 +14275,11 @@
       "The answer"
      ],
      "rows": [
+      [
+       "Switzerland, 1999",
+       "Accept a new constitution, which also ended the old tie between the franc and gold?",
+       "Yes, by about 59%, as reported. This vote changed a rule"
+      ],
       [
        "Denmark, 2000",
        "Give up the krone for the euro?",
@@ -14223,11 +14299,11 @@
     },
     {
      "type": "p",
-     "text": "Look at what the three answers have in common. Each time, voters kept what they already had. The Danes and Swedes kept their own money. The Swiss kept their banks. That is not quite the same as choosing the system. It may only mean that people are careful with something as serious as money, and prefer the rules they know."
+     "text": "Look at the four answers. Three times, voters kept what they already had. Once, in Switzerland in 1999, they accepted a change. The Danes and Swedes kept their own money. The Swiss kept their banks in 2018. That is not quite the same as choosing the system. It may only mean that people are careful with something as serious as money, and prefer the rules they know."
     },
     {
      "type": "insider",
-     "text": "Part 4 holds only weakly. The rules were passed by lawmakers and some were set with no vote. When the public was asked directly, which was rare, it kept whatever it already had.",
+     "text": "Part 4 holds at one remove. Voters elect the lawmakers who passed the money laws, but some big changes had no vote at all. When the public was asked directly, which was rare, it mostly kept what it already had.",
      "label": "What test 4 does to the claim"
     },
     {
@@ -14236,7 +14312,7 @@
     },
     {
      "type": "p",
-     "text": "Some countries tied their own hands. They wrote rules that stopped the issuer from creating money freely. If the reader is right that a free issuer is what lets a country grow, these places are the test. Each case had other causes too, and they are named."
+     "text": "Some countries tied their own hands. They wrote rules that stopped the issuer from creating money freely. If the reader is right that a free issuer is what lets a country grow, these places are the test. Each case had other causes too. The box after the table names them."
     },
     {
      "type": "table",
@@ -14247,47 +14323,87 @@
      ],
      "rows": [
       [
-       "Hong Kong, since 1983. The currency is fixed at 7.8 to the US dollar, and every note is backed",
-       "The fixed rate has held for over forty years, through every storm",
-       "On 23 October 1997, to defend the rate, the interest rate for an overnight loan touched about 280%. In 1998 output fell 5% and property and shares lost over half their value. The whole region was in crisis that year"
+       "Hong Kong, linked to the US dollar at about 7.8 since 1983, as reported",
+       "A link that has held for over forty years",
+       "Output fell about 5% in 1998, in a crisis across the region"
       ],
       [
-       "Argentina, 1991 to 2001. One peso fixed at one US dollar by law",
-       "Inflation fell from 27% a month in February 1991 to under 10% a year by mid 1993. The economy grew nearly 6% a year to 1998",
-       "From 1998 to 2002 output fell nearly 20% and more than one worker in five had no job. The government had also kept borrowing: its debt rose from 38% to 62% of output in four years"
+       "Argentina, peso tied to the US dollar by law, 1991 to 2001",
+       "Inflation fell from 27% a month in 1991 to single figures a year by mid 1993",
+       "Output fell nearly 20% from 1998 to 2002, and bank deposits were partly frozen"
       ],
       [
-       "Ecuador, since 2000. It gave up its own money and uses the US dollar",
-       "Inflation had reached 90% a year and output had fallen 8% in 1999. Inflation is reported to have stayed in single figures since 2003",
-       "It has no central bank that can rescue its banks or lend to its government"
+       "Ecuador, using the US dollar since 2000",
+       "Inflation is reported to have stayed in single figures since 2003",
+       "No issuer at home that can create money to rescue its banks"
       ],
       [
-       "Scotland, 1716 to 1845. No central bank. Banks issued their own notes and competed",
-       "From 1809 to 1830 Scottish banks failed far less often than English ones, by one count",
-       "Another count, starting in 1772, finds no real difference. And the Bank of England is reported to have lent to Scottish banks in trouble more than once"
+       "Scotland, competing banks issuing notes, until 1844 and 1845",
+       "Fewer bank failures than England from 1809 to 1830, by one count",
+       "A critic's count finds the gap unclear. The Bank of England is reported to have lent to Scottish banks in trouble"
       ]
      ]
     },
     {
-     "type": "p",
-     "text": "Argentina's end is worth seeing up close. In December 2001 the government partly froze bank deposits. People could not get at their own savings. In the last days of that month, in the middle-class streets of Buenos Aires, families came out of their flats and banged pots and pans, night after night. The fixed rule had kept their money sound for ten years. Now it kept the state from helping them."
+     "type": "deeper",
+     "label": "The four cases in full, with their other causes",
+     "blocks": [
+      {
+       "type": "table",
+       "cols": [
+        "The rule",
+        "What it bought",
+        "What it cost"
+       ],
+       "rows": [
+        [
+         "Hong Kong, since 1983, as reported. The currency is linked to the US dollar at about 7.8, inside a band of 7.75 to 7.85 since 2005. The money its authority issues is backed in full by US dollar reserves",
+         "The link has held for over forty years, including through the attacks of 1997 and 1998. In August 1998 its monetary authority bought shares on a huge scale to fight speculators",
+         "On 23 October 1997, with the link under attack, the interest rate for an overnight loan between banks touched 280% to almost 300% for a few hours. Output fell about 5% in 1998. By mid 1998 shares and homes were more than 50% below their 1997 peak. A crisis across the whole region was a large cause too"
+        ],
+        [
+         "Argentina, 1991 to 2001. A peso tied by law to the US dollar, one for one from 1992. A rule close to a currency board",
+         "Inflation fell from 27% a month in February 1991 to under 10% a year by mid 1993. Growth averaged nearly 6% a year from 1991 to 1998",
+         "From 1998 to 2002 output fell nearly 20% and more than one worker in five had no job. Public debt rose from 38% to 62% of output from 1997 to 2001, as the economy shrank and the budget worsened. Brazil's devaluation in 1999 and a strong dollar also hurt"
+        ],
+        [
+         "Ecuador, since 2000. It gave up its own money and uses the US dollar",
+         "Before the change, output fell 8% in 1999 and prices rose 90% in the year to February 2000. Inflation is reported to have peaked at about 102% in mid 2000, then to have stayed in single figures since 2003",
+         "It cannot create the dollars it uses, so no issuer at home can create money to rescue its banks. It is reported to have defaulted on its debts in 2008 and 2020"
+        ],
+        [
+         "Scotland, until the laws of 1844 and 1845. No central bank. Banks issued their own notes and competed",
+         "From 1809 to 1830 Scottish banks failed far less often than English ones, by one economist's count",
+         "A critic's count, starting in 1772, finds the gap too small to pass a strict statistical test. And the Bank of England is reported to have lent to Scottish banks in trouble more than once"
+        ]
+       ]
+      }
+     ]
     },
     {
      "type": "p",
-     "text": "The newest experiment is in El Salvador. On 7 September 2021 it made Bitcoin legal money beside the US dollar, and gave 30 dollars to everyone who downloaded the state's phone wallet. About half of all households did. More than 60% of the early users made no payment at all once the 30 dollars was spent. Only one firm in five accepted Bitcoin, and it made up about 5% of their sales. On the first day a reporter found a market trading in dollars as usual."
+     "text": "Argentina's end is worth seeing up close. In December 2001 the government partly froze bank deposits. People could not get at their own savings. In the last days of that month, middle-class people in Buenos Aires took to the streets, banging pots and pans in protest. The fixed rule had kept their money sound for ten years. Now, with the rate fixed and many debts in dollars, the only way left to adjust was through lost output and jobs."
+    },
+    {
+     "type": "p",
+     "text": "Malaysia has tied its own hands too, by choice, as earlier chapters told. On 2 September 1998, in the middle of the Asian crisis, Bank Negara fixed the ringgit at 3.80 to the US dollar and limited money leaving the country. The fixed rate lasted until 2005. How much it helped is still argued over. But it shows that a country with its own central bank can tie its hands for a while, and untie them later."
+    },
+    {
+     "type": "p",
+     "text": "The newest experiment is in El Salvador, which already used the US dollar. So it tested something else: whether a government can bring in a new kind of money from the top down. On 7 September 2021 it made Bitcoin legal money beside the US dollar, and gave 30 dollars' worth of bitcoin to everyone who downloaded the state's phone wallet. By early 2022 about half of all households had done so. More than 60% of the early users made no payment at all once the 30 dollars was spent. Only one firm in five accepted Bitcoin, and about 5% of all sales were paid in it. The government says the law drew tourists and investment. On the first day a reporter found a market trading in dollars as usual."
     },
     {
      "type": "quote",
      "text": "We don't want that bitcoin.",
-     "by": "Rosa Martha Perez, 68, in San Salvador on the day the law took effect (AFP, 7 September 2021)"
+     "by": "Rosa Martha Perez, 68, who marched against the law in San Salvador on the day it took effect (AFP, 7 September 2021)"
     },
     {
      "type": "p",
-     "text": "In 2025, as a condition of a loan of 1.4 billion dollars from the International Monetary Fund, El Salvador changed its law so that nobody had to accept Bitcoin."
+     "text": "In 2025, as a condition of a loan of 1.4 billion dollars from the International Monetary Fund, El Salvador changed its law so that private firms no longer had to accept Bitcoin, and taxes are paid only in dollars."
     },
     {
      "type": "p",
-     "text": "Put these cases beside Malaya's currency board and a pattern appears. It is a pattern, not a law, because each case has its own history."
+     "text": "Put these cases beside Malaya's currency board, Singapore's, and Malaysia's fixed rate of 1998, and a pattern appears. It is a pattern, not a law, because each case has its own history."
     },
     {
      "type": "table",
@@ -14299,17 +14415,17 @@
      "rows": [
       [
        "Prices",
-       "Usually steadier",
+       "Usually steadier, in these cases",
        "Depends on who controls the issuer"
       ],
       [
        "In a crisis",
-       "No rescue. The pain falls on jobs, wages and savers",
+       "Little room to rescue. Most of the pain falls on jobs, wages and savers",
        "The issuer can lend, rescue and cut rates"
       ],
       [
        "Steering credit toward growth",
-       "Not possible",
+       "Not through the issuer, though the state can use its budget",
        "Possible. It has worked and it has failed"
       ],
       [
@@ -14321,13 +14437,13 @@
     },
     {
      "type": "insider",
-     "text": "Test 5 gives the reader's claim real support and a real warning. A country with tied hands cannot steer credit or rescue its banks, which is why Malaya untied its own. But free hands are only as good as the people and rules that guide them. Zimbabwe had free hands too.",
+     "text": "Test 5 gives the reader's claim some support and a real warning. A country with tied hands has little power to steer credit or rescue its banks, which was one reason Malaya wanted a central bank. Tied hands have also lasted for decades, in Hong Kong and Singapore. But free hands are only as good as the people and rules that guide them. Zimbabwe had free hands too.",
      "label": "What test 5 does to the claim"
     },
     {
      "type": "check",
      "q": "A friend says central banks should be abolished and money should follow a fixed rule. Give one point for and one against, each with a case.",
-     "a": "For: a fixed rule can end wild inflation. Argentina's fell from 27% a month to under 10% a year in about two years. Against: a fixed rule cannot bend in a crisis. Argentina's output then fell nearly 20% and deposits were frozen, and Hong Kong paid for its fixed rate with a 5% fall in output in 1998."
+     "a": "For: a fixed rule can end wild inflation. Argentina's fell from 27% a month to under 10% a year in about two and a half years. Against: a fixed rule cannot bend in a crisis. Argentina's output then fell nearly 20% and deposits were frozen, and Hong Kong's output fell 5% in 1998 while its rate held, in a crisis across the region."
     },
     {
      "type": "h",
@@ -14343,23 +14459,23 @@
      "rows": [
       [
        "1. The issuer exists so that output and progress can grow",
-       "Holds in part. True of later central banks, not of the first",
+       "Holds in part. True of many later central banks, not of the first",
        "The Bank of England was founded in 1694 to fund a war. Malaysia's law of 2009 asks for stability that helps the economy grow"
       ],
       [
        "2. It inflates a little on purpose, for the public good",
-       "Holds in part. On purpose, yes. The public pays as well as gains",
-       "From 1945 to 1980 inflation and low rates cut American and British debt by 3% to 4% of output a year"
+       "Holds in part. On purpose and published. Large gains to the state come from surprise inflation or capped rates",
+       "Rates held below inflation, often by rules, cut American and British debt by 3% to 4% of output a year, about 1945 to 1980. Surprise inflation in 2021 cut America's by 3.3%"
       ],
       [
        "3. Stable, controlled governance",
-       "Holds in part. Controlled by governments and by publication, not by voters",
-       "A governor is appointed for 14 years in America and five in Malaysia. Zimbabwe printed a note for 100 trillion dollars"
+       "Holds in part. Controlled by governments, laws and publication rules, not directly by voters",
+       "Terms and grounds for removal are set in law. Bank Negara's accounts go before Parliament, and Britain's governor wrote 12 public letters from 2021 to 2024"
       ],
       [
        "4. The public chose these rules",
-       "Holds only weakly",
-       "Three direct votes found here, and each kept what was already in place"
+       "Holds at one remove, through elected lawmakers",
+       "Elected lawmakers passed the laws, as in the Senate vote of 1913. Of four direct votes found here, three kept what was in place and one changed a rule"
       ]
      ]
     },
@@ -14370,19 +14486,19 @@
     {
      "type": "steps",
      "items": [
-      "The first central banks were built to fund governments and to stop panics. Later ones, in countries trying to catch up, were built to steer credit toward growth as well. Malaya gave up a currency board to get one.",
-      "A free issuer can do three things a tied one cannot: rescue banks, soften a slump, and direct credit. Each of these can be done well or badly.",
-      "The price is a toll, mild inflation, whose largest gain goes to the state as a borrower. It is published, but few people are shown who pays.",
-      "The issuer answers to the government that appoints it and to rules on what it must publish. Voters are almost never asked, and when asked they have kept what they had."
+      "The first central banks were built to fund governments and to stop panics. Many later ones, in countries trying to catch up, were also given powers to steer credit toward growth. Malaya's began work in 1959 and became the only issuer in 1967, when a shared currency failed.",
+      "A free issuer has more room than a tied one to rescue banks, soften a slump and direct credit. Each can be done well or badly. Tied hands have also lasted for decades.",
+      "The price is a toll, mild inflation, and it is published. When it beats what lenders expected, or rates are held down, much of the gain goes to the state as a borrower.",
+      "The issuer answers to the government that appoints it and to rules on what it must publish. Voters choose the lawmakers who write those laws but are rarely asked directly. When asked, they have mostly kept what they had."
      ]
     },
     {
      "type": "p",
-     "text": "So was the reader right that the issuer exists for progress? For Malaysia, more than for Britain or America. And was the reader right that it is under control? Under control, yes. Under whose control is the better question."
+     "text": "So was the reader right that the issuer exists for progress? For Malaysia, more than for Britain or America. And was the reader right that it is under control? Under control, yes: by governments, by the law and by what must be published. How much direct say voters should have is a fair question, and this chapter leaves it open."
     },
     {
      "type": "insider",
-     "text": "This view would change if any of three things were shown. First, that countries with free central banks grow faster over the long run than countries with tied hands, with other causes set aside. Second, that directed credit has succeeded more often than it has failed. Third, that the public, asked plainly, would choose a different system. The first two are not settled in this chapter, and the third has been tested only a few times.",
+     "text": "This view would change if any of three things were shown. First, that countries with free central banks grow faster over the long run than countries with tied hands, with other causes set aside. Second, that directed credit has succeeded more often than it has failed. Third, that the public, asked plainly, would choose a different system. The first two are not settled in this chapter, and the third has been tested only a few times. This chapter also did not test the rules for ordinary banks, which make most money.",
      "label": "What would change this verdict"
     },
     {
@@ -14391,11 +14507,11 @@
      "blocks": [
       {
        "type": "p",
-       "text": "Economists disagree about why a central bank should exist at all. One old view says it is there to lend freely in a panic, so that sound banks do not fall with weak ones. A second says it must be kept apart from politicians, because a government facing an election will always be tempted to print. A third, held by free-banking economists, says it should not exist: banks issuing their own notes in competition would be kept honest by each other. Canada is often named in that argument. It had no central bank until 1935 and none of its banks failed in the Depression, though its economy fell about as far as America's."
+       "text": "Economists disagree about why a central bank should exist at all. One old view says it is there to lend freely in a panic, so that sound banks do not fall with weak ones. A second says it must be kept apart from politicians, because a government facing an election will always be tempted to print. A third, held by free-banking economists, says it should not exist: banks issuing their own notes in competition would be kept honest by each other. Canada is often named in that argument. It had no central bank until 1935, by the Bank of Canada's own account, and none of its banks failed in the Depression, though its economy fell about as far as America's. Economists also credit its few large banks, with branches across the country."
       },
       {
        "type": "p",
-       "text": "One plan has never been tried on a whole country. It would stop banks from creating money and leave that to the state alone. An economic model published at the International Monetary Fund in 2012 claimed large gains from it. Swiss voters rejected a version of it in 2018, and the head of the Swiss central bank is reported to have called it an unnecessary and dangerous experiment."
+       "text": "One plan is not known to have been tried on a whole country. It would stop banks from creating money and leave that to the state alone. A 2012 working paper by two economists at the International Monetary Fund, which does not speak for the Fund, found output gains close to 10% in a model. Swiss voters rejected a version of it in 2018, and the head of the Swiss central bank is reported to have called it an unnecessary and dangerous experiment."
       }
      ]
     },
@@ -14412,11 +14528,11 @@
        "rows": [
         [
          "Malaya's currency board, money per head, and the quoted words",
-         "Bank of England Quarterly Bulletin, 1962. The board also had limited powers to hold local government securities and, from 1961, to finance crops, so its backing was not a pure 100%"
+         "Bank of England Quarterly Bulletin, 1962. The money figure is money supply per head in the Federation of Malaya. The two quoted phrases describe old-style currency boards in general, not Malaya alone. A 1960 agreement first gave the board limited powers to hold local government securities, and from December 1961 it could issue against crop finance"
         ],
         [
          "Bank Negara's start and sole issue in 1967",
-         "Bank of England Quarterly Bulletin and Bank Negara's own history. The 1959 start date is from a secondary source"
+         "Bank Negara's own pages, for the 26 January 1959 start and the 12 June 1967 sole issue. The failed shared currency of 1967: an encyclopedia entry on the Malaya and British Borneo dollar. Singapore's currency board to 2002: Singapore's Ministry of Finance. Malaysia's fixed rate of 1998 to 2005: an article at mfpc.org.my"
         ],
         [
          "Founding purposes and legal aims",
@@ -14424,7 +14540,7 @@
         ],
         [
          "New central banks after 1945, and directed credit",
-         "Arthur Bloomfield, 1957. Gerald Epstein, Central Banks as Agents of Economic Development"
+         "Arthur Bloomfield, 1957. Gerald Epstein, Central Banks as Agents of Economic Development. Japan and the Latin American cases: Epstein. Korea: the Korea Development Institute, as summarised. Malaysia's development banks and the 2026 fund: The Star. The study of 72 countries: Cukierman, Webb and Neyapti, 1992, as summarised"
         ],
         [
          "Independence and inflation",
@@ -14432,15 +14548,15 @@
         ],
         [
          "The 2% goal",
-         "Federal Reserve statement of January 2012"
+         "Federal Reserve statement of January 2012. The worked case of 2% against 4% follows the St. Louis Fed study cited below"
         ],
         [
          "Payments to governments",
-         "Federal Reserve annual statements. Bank Negara Malaysia financial statements for 2024"
+         "Federal Reserve Banks' audited statements, 2011 to 2025. In 2015 a one-off extra transfer of 26 billion dollars made that year's total 117.1 billion, so 2021 was the largest regular payment only. Bank Negara Malaysia annual report for 2024, where 7.91 billion ringgit went to a reserve against risks, and the Central Bank of Malaysia Act 2009, section 7"
         ],
         [
          "Debt made lighter by inflation",
-         "Reinhart and Sbrancia, The Liquidation of Government Debt. For 2021: Federal Reserve Bank of St Louis, March 2022"
+         "Reinhart and Sbrancia, The Liquidation of Government Debt. Their 3% to 4% is the effect of negative real interest rates, helped by rules that held rates down, not of inflation alone. For 2021: Federal Reserve Bank of St Louis, March 2022"
         ],
         [
          "Appointment, removal, lending to government and the Cabinet's last word in Malaysia",
@@ -14448,7 +14564,7 @@
         ],
         [
          "America's rules on appointment and publication",
-         "Federal Reserve Act and the Federal Reserve's own pages"
+         "Federal Reserve Act and the Federal Reserve's own pages. The 2026 Supreme Court case on removal: a law firm summary and news reports, with the court's opinion not read. Who sets Britain's target: the government's published list of letters"
         ],
         [
          "Britain's public letters",
@@ -14456,23 +14572,19 @@
         ],
         [
          "Zimbabwe's note",
-         "Radio New Zealand, 17 January 2009. Venezuela: its central bank's own release. Turkey: press reports, not checked against official records"
+         "Radio New Zealand, 17 January 2009. Venezuela: Reuters, reporting its central bank's website. Turkey: press reports, not checked against official records"
         ],
         [
          "The 2008 inquiry",
-         "US Financial Crisis Inquiry Commission, 2011, as summarised"
-        ],
-        [
-         "Confidence in the head of the central bank",
-         "Gallup, 2024"
+         "US Financial Crisis Inquiry Commission, 2011, as summarised in the press, with the dissent of four members"
         ],
         [
          "Votes",
-         "US Senate record for 1913. The Danish, Swedish and Swiss results are from secondary reports"
+         "US Senate record: passed on 23 December 1913 and signed the same day, with 27 senators paired or not voting. The Danish, Swedish and Swiss results, including the Swiss vote of 1999, are from secondary reports"
         ],
         [
          "Hong Kong",
-         "Hong Kong Monetary Authority"
+         "Hong Kong Monetary Authority and the IMF. The 1983 start was not checked on an official page. The band since 2005 and the full backing of the monetary base are from the authority's 2023 annual report, as found in a search"
         ],
         [
          "Argentina",
@@ -14480,15 +14592,15 @@
         ],
         [
          "Ecuador",
-         "International Monetary Fund papers. The single-figure inflation since 2003 is from a secondary source"
+         "International Monetary Fund papers. The 102% of mid 2000, the single-figure inflation since 2003 and the defaults of 2008 and 2020 are from secondary sources"
         ],
         [
          "Scotland and Canada",
-         "Lawrence White, 1984, and his critic Larry Sechrest. The Bank of England's loans to Scottish banks are from a secondary source"
+         "Lawrence White, 1984, and his critic Larry Sechrest. The end date is from the Acts of 1844 and 1845. Canada's 1935 date: the Bank of Canada's history page. The rival cause for Canada: Bordo, Redish and Rockoff. The Bank of England's loans to Scottish banks are from a secondary source"
         ],
         [
          "El Salvador",
-         "A study of the wallet's users, the International Monetary Fund, and AFP, 7 September 2021"
+         "A study of the wallet's users (NBER, survey of February 2022), the International Monetary Fund, and AFP, 7 September 2021. The claim of tourism and investment is the government's own"
         ]
        ]
       }
