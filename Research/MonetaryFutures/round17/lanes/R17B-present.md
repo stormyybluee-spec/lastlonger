@@ -47,7 +47,7 @@ The leading company (Space Exploration Technologies, "SpaceX") is private and fi
 | Estimated Starlink revenue, of which government about 28% | $7.8B | 2024 | Quilty Space estimate via Via Satellite | https://www.satellitetoday.com/finance/2025/01/22/quilty-space-issues-estimate-on-spacexs-starlink-2024-revenue-growth/ | secondary |
 | Estimated launch revenue, growth driven mainly by defence launches | $4.2B | 2024 | Payload Space | https://payloadspace.com/estimating-spacexs-2024-revenue/ | secondary |
 
-Reading for the writer. In the early years (2006 to 2012) NASA's COTS milestones ($396M) were larger than the company's own stated cost of developing the Falcon 9 (about $300M), and NASA's 2008 cargo resupply order gave it a buyer. By 2024 outside estimates put government work (NASA, defence launch, government Starlink) at a minority of revenue, perhaps a quarter to a third, with consumer and business Starlink the largest single part. The public sector was the decisive early customer, not the majority funder of today. Exact shares are unknown because the company does not publish accounts.
+Reading for the writer. In the early years (2006 to 2012) NASA's COTS milestones ($396M) were larger than the company's own stated cost of developing the Falcon 9 (about $300M), and NASA's 2008 cargo resupply order gave it a buyer (memory, not checked in this lane). By 2024 outside estimates put government work (NASA, defence launch, government Starlink) at a minority of revenue, perhaps a quarter to a third, with consumer and business Starlink the largest single part. The public sector was the decisive early customer, not the majority funder of today. Exact shares are unknown because the company does not publish accounts.
 
 Note: the funding totals on aggregator sites disagree with each other by billions. Do not print a lifetime total.
 
@@ -100,7 +100,7 @@ Nuance for the claim. The mRNA case shows that the early cost was small ($337M o
 
 ### 2a. South Korea
 
-Main tools: state control of the banks (nationalised in 1961), central bank refinancing of export and policy loans at low rates, the National Investment Fund (1974) for the Heavy and Chemical Industry (HCI) drive from 1973, and a few large business groups (chaebol) as the chosen borrowers.
+Main tools: state control of the banks (nationalised in 1961, memory, not checked), central bank refinancing of export and policy loans at low rates, the National Investment Fund (1974) for the Heavy and Chemical Industry (HCI) drive from 1973, and a few large business groups (chaebol) as the chosen borrowers.
 
 | claim | number | year | source | URL | status |
 |---|---|---|---|---|---|
@@ -117,7 +117,7 @@ Main tools: state control of the banks (nationalised in 1961), central bank refi
 | IMF standby arrangement approved 4 December 1997 (headline package with other lenders about $57B to $58B) | $58.4B (as counted by Dallas Fed) | 1997 | Dallas Fed 2001 | https://www.dallasfed.org/~/media/documents/research/efr/2001/efr0104c.pdf | secondary |
 
 Best case for. Directed credit, much of it backed by central bank money, built steel, shipbuilding, chemicals and electronics firms that still lead world markets. Exports shifted almost wholly to heavy and high technology goods.
-Best case against. The same tool left a debt overhang. Inflation ran at 10 to 20% for two decades. By 1997 the largest groups carried debt about five times their equity, and the crisis forced an IMF rescue, mass layoffs and the break-up of Daewoo. The 1979 to 1980 slump (oil shock, overcapacity in heavy industry, political crisis) was a first warning. Rival causes for the growth: education, land reform, US aid and the export discipline of world markets.
+Best case against. The same tool left a debt overhang. Inflation ran at 10 to 20% for two decades. By 1997 the largest groups carried debt about five times their equity, and the crisis forced an IMF rescue, mass layoffs and the break-up of Daewoo. The 1979 to 1980 slump (oil shock, overcapacity in heavy industry, political crisis) was a first warning (Daewoo and 1979 to 1980 details are memory, not checked). Rival causes for the growth: education, land reform, US aid and the export discipline of world markets.
 
 ### 2b. Taiwan
 
@@ -138,7 +138,7 @@ Best case against. The public bill was small, not "enormous". The key inputs wer
 
 ### 2c. Malaysia
 
-Main tools, in order. (1) Tax incentives for foreign firms: Investment Incentives Act 1968, pioneer status tax holidays, the Free Trade Zone Act 1971, and MIDA (set up 1967 as FIDA) to find and sign investors. (2) Penang's Bayan Lepas Free Trade Zone from 1972, pushed by the Penang state government after unemployment reached about 16% in 1969. (3) The heavy industries push of the 1980s through a state holding company, HICOM (November 1980), with Proton (1983, a joint venture with Mitsubishi) and the steel maker Perwaja. (4) Khazanah Nasional (1993), the state investment fund. (5) The Multimedia Super Corridor (1996). (6) Development finance institutions, which lend at policy rates.
+Main tools, in order. (1) Tax incentives for foreign firms: Investment Incentives Act 1968, pioneer status tax holidays, the Free Trade Zone Act 1971, and MIDA (set up 1967 as FIDA, memory, not checked) to find and sign investors. (2) Penang's Bayan Lepas Free Trade Zone from 1972, pushed by the Penang state government after unemployment reached about 16% in 1969. (3) The heavy industries push of the 1980s through a state holding company, HICOM (November 1980), with Proton (1983, a joint venture with Mitsubishi) and the steel maker Perwaja. (4) Khazanah Nasional (1993), the state investment fund. (5) The Multimedia Super Corridor (1996). (6) Development finance institutions, which lend at policy rates.
 
 Note on money creation. Unlike Korea, the electronics zone was paid for mostly with foreign firms' own capital, attracted by tax holidays and cheap disciplined labour. The state's cost was mostly taxes not collected. The heavy industries push was paid for with state equity, state backed loans and tariff protection, that is, from the budget and by car buyers paying higher prices.
 
@@ -230,3 +230,120 @@ Writer's note: the landing came five years after the first Falcon 9 flight. NASA
 Scene 5. United States, 2001. The dot-com layoffs.
 The outplacement firm Challenger, Gray and Christmas counted 100,925 jobs cut at internet companies in 2001, more than double the 41,515 of 2000. The worst month was April 2001, with 17,554. Across all US industries it counted 1,956,876 announced job cuts in 2001, the most since it began counting in 1993.
 Source: Computerworld, "Dot-com layoffs eased at end of 2001", January 2002, https://www.computerworld.com/article/1354274/dot-com-layoffs-eased-at-end-of-2001.html (secondary, via search). No named individual found. Gap.
+
+## Flattery check, both directions
+
+- Toward the owner. It would flatter the owner's point to say "the rocket industry proves public promises pay for new technology". The record shows a public promise to buy (COTS, $396M, then cargo and crew contracts) was decisive early. But it was a modest sum paid on results, not money creation, and private equity carried most of the risk and most of the later losses (OneWeb, Virgin Orbit).
+- Against the owner. It would be unfair to say the owner is wrong. Korea's heavy industry drive was financed by central bank backed directed credit, a true promise on the future paid for partly by inflation, and its groups lead world markets today. Taiwan and Korea both show the state carrying risk that private capital would not.
+
+## Evidence for and against H4 and H5
+
+H4 (the reader's rocket example)
+
+For:
+- NASA paid $396M on milestones (2006 to 2012), more than the company's own stated Falcon 9 development cost (about $300M). NASA's lessons say its commitment to buy services "greatly improves the ability for companies to raise funds".
+- NASA's own model estimated $1.4B to $4.0B for the same rocket built the traditional way. Launch price per kg to LEO fell about 20 times from the Shuttle, according to a NASA Ames paper.
+- Commercial crew ceilings ($2.6B and $4.2B) and defence launch remain large public revenue streams.
+
+Against:
+- The public sum was small and paid for results, out of the ordinary budget. Nothing in this case needs money creation by a central bank.
+- Private equity, not public promises, financed most of the leading company's growth, and by 2024 outside estimates put most of its revenue in commercial satellite internet.
+- Large sums raised did not guarantee success. OneWeb ($3.4B) went bankrupt in 2020, and Virgin Orbit sold its assets for about $36M in 2023.
+- The biggest promised paybacks (Mars travel, fully reusable super heavy rockets) are unproven as of November 2026.
+
+H5 (late developers)
+
+For:
+- Korea: central bank lending supplied most of the growth in bank reserves (20.2 of 25.1 points a year, 1973 to 1981) and backed directed credit. Heavy and chemical goods rose from 13% of exports in 1970 to 92% in 2008.
+- Taiwan: a public research institute and a 48% state stake in TSMC seeded what is now the world's leading contract foundry (61% share in Q4 2023).
+- Scholars Amsden, Wade, Chang and, by 2025, the World Bank report's own co-author Birdsall, argue the state's role was central.
+
+Against:
+- Korea's model ended in the 1997 crisis, with top-30 group debt about five times equity and an IMF rescue. Inflation ran at 10 to 20% for two decades.
+- Malaysia's most successful tool (tax holidays for foreign firms in Penang) required little borrowing from the future, and its most promise-heavy tool (Proton, Perwaja, HICOM) did worst.
+- China's flagship chip fund faced corruption probes and chip imports stay near $350B a year. The IMF counts augmented government debt at 124% of GDP (2024), rising.
+- Krugman and Young argue growth came from piling up inputs, not productivity. Misallocation work (Hsieh and Klenow) finds large losses from steered capital.
+- Taiwan's early cost was small (about $10M licence, a NT$210M institute). Success there does not need an "enormous price".
+
+Overall reading for the chapter (a hypothesis, not a finding). The evidence fits a narrower claim: a public promise to buy, or patient state risk capital, tied to hard performance tests, has helped new technology. Size of the promise does not predict success, and the cases with the largest open-ended credit (Korea's HCI in 1979 and 1997, Malaysia's heavy industry, China's LGFVs) show the largest costs.
+
+## Gaps
+
+- No company accounts exist for the leading launch company. All revenue splits are estimates. No reliable lifetime total of private funding.
+- NASA's COTS final report (NASA/SP-2014-617) not opened. Figures come from the 2013 NASA lessons learned deck.
+- Rocketplane Kistler's COTS payments and termination not checked (memory only).
+- Virgin Orbit: total sums invested by its parent and its 2021 market listing valuation not checked.
+- BMJ mRNA paper opened only through reports (site returned 403).
+- TSMC's founding shares (48.3% and 27.5%) not checked against a TSMC filing or Executive Yuan record. Initial capital figures conflict (NT$1.3B to NT$1.38B, one outlier NT$10B).
+- Korea: no primary Bank of Korea series on the share of policy loans in total bank credit. NBER and Dallas Fed figures read only through search summaries.
+- Malaysia: no primary figure for E&E share of exports in 1970 or 1990. Rasiah's WIDER paper could not be downloaded. No World Bank evaluation of HICOM found. Proton's accumulated losses and market share at peak not verified. MIDA founding year (1967, as FIDA) and the 1986 Promotion of Investments Act not checked in this lane.
+- China: no single verified figure on state bank lending shares to state firms. Chip self-sufficiency rate has no official measure.
+- No named first-hand account found for a 1970s Penang worker or a 2001 dot-com worker. The Penang Monthly worker profile (Jan 2010) is behind a sign-up wall.
+- Krugman's text and Young (1995) read via reprints and reviews, not the journals.
+
+## Ledger
+
+| id | claim | tier | status | source URL | source date | as-of date | falsifier |
+|---|---|---|---|---|---|---|---|
+| R17B-01 | NASA paid SpaceX $396M under COTS, all 40 milestones done Aug 2012 | T1 | confirmed | https://ntrs.nasa.gov/api/citations/20150009324/downloads/20150009324.pdf | 2013-11-13 | 2012-08 | NASA final report SP-2014-617 giving a different total |
+| R17B-02 | NASA paid Orbital Sciences $288M under COTS, 29 milestones done Nov 2013 | T1 | confirmed | https://ntrs.nasa.gov/api/citations/20150009324/downloads/20150009324.pdf | 2013-11-13 | 2013-11 | as above |
+| R17B-03 | NASA lesson: commitment to buy services greatly improves companies' ability to raise funds | T1 | confirmed | https://ntrs.nasa.gov/api/citations/20150009324/downloads/20150009324.pdf | 2013-11-13 | 2013 | company statements that private funds were raised independently of NASA commitments |
+| R17B-04 | Original COTS awards were $278M (SpaceX, 2006) and $170M (Orbital, 2008) | T2 | plausible | https://science.house.gov/_cache/files/3/a/3a9b5024-7993-43b2-b091-a8aff341bc48/8AF67DE38DF10A82FBC80645DD36B599438F5E5399AC5DD177F6400B74B2097F.052611-charter-commcargo.pdf | 2011-05-26 | 2011 | NASA award notices with other amounts |
+| R17B-05 | CCtCap 2014 ceilings: Boeing $4.2B, SpaceX $2.6B, same scope | T2 | plausible | https://appel.nasa.gov/2014/09/17/nasa-selects-two-commercial-partners-for-crew-transport-in-low-earth-orbit/ | 2014-09-17 | 2014-09 | NASA contract award text with other ceilings |
+| R17B-06 | NASA NAFCOM estimated Falcon 9 development at $3,977M (traditional, cost plus) and $1,695M (commercial), FY2010 dollars | T1 | confirmed | https://www.nasa.gov/wp-content/uploads/2015/01/586023main_8-3-11_NAFCOM.pdf | 2011-08 | 2011 | a later NASA correction of the deck |
+| R17B-07 | NAFCOM updated after site visit: $1,383M cost plus, $443M firm fixed price | T1 | confirmed | https://www.nasa.gov/wp-content/uploads/2015/01/586023main_8-3-11_NAFCOM.pdf | 2011-08 | 2011 | as above |
+| R17B-08 | NASA says the estimates are not budget estimates and it did not analyse the gap in detail | T1 | confirmed | https://www.nasa.gov/wp-content/uploads/2015/01/586023main_8-3-11_NAFCOM.pdf | 2011-08 | 2011 | none expected |
+| R17B-09 | Company told Congress Falcon 1 and Falcon 9 development cost about $390M ($300M Falcon 9) | T2 | plausible | https://democrats-science.house.gov/imo/media/doc/2011%2005%2026%20SpaceX%20Shotwell%20Testimony%20Final.pdf | 2011-05-26 | 2011 | audited figures showing a different cost |
+| R17B-10 | Google and Fidelity invested about $1B for just under 10%, about $10B valuation | T3 | plausible | https://www.satellitetoday.com/finance/2015/01/21/spacex-satellite-projects-boosted-by-1-billion-google-fidelity-investment/ | 2015-01-21 | 2015-01 | a filing showing different terms |
+| R17B-11 | Company raised $850M at about $74B valuation | T3 | plausible | https://techcrunch.com/2021/02/17/spacex-reportedly-raises-850m-in-new-funding/ | 2021-02-17 | 2021-02 | SEC Form D showing other amount |
+| R17B-12 | Estimated 2024 company revenue $13.1B | T3 | unverified | https://payloadspace.com/estimating-spacexs-2024-revenue/ | 2025 | 2024 | company disclosure of actual revenue |
+| R17B-13 | Estimated 2024 Starlink revenue $7.8B, government about 28% of it | T3 | unverified | https://www.satellitetoday.com/finance/2025/01/22/quilty-space-issues-estimate-on-spacexs-starlink-2024-revenue-growth/ | 2025-01-22 | 2024 | company disclosure |
+| R17B-14 | Shuttle about $54,500 per kg to LEO, Falcon 9 advertised $2,720 per kg, about 20 times lower | T2 | confirmed | https://ntrs.nasa.gov/api/citations/20200001093/downloads/20200001093.pdf | 2018-07 | 2018 | an audited cost series showing a smaller gap |
+| R17B-15 | Average launch cost 1970 to 2000 about $18,500 per kg (2018 dollars). Major drop dated to 2010 | T2 | confirmed | https://ntrs.nasa.gov/api/citations/20200001093/downloads/20200001093.pdf | 2018-07 | 2018 | as above |
+| R17B-16 | Cost to ISS fell only about 4 times ($93,400 to $23,300 per kg) | T2 | confirmed | https://ntrs.nasa.gov/api/citations/20200001093/downloads/20200001093.pdf | 2018-07 | 2018 | NASA OIG cargo cost data showing otherwise |
+| R17B-17 | First orbital launch first stage landing, 21 Dec 2015, Landing Zone 1, 11 ORBCOMM satellites | T2 | plausible | https://www.patrick.spaceforce.mil/News/Article-Display/Article/732882/45th-space-wing-successfully-launches-orbcomm-historically-lands-first-stage-bo/ | 2015-12-22 | 2015-12 | none expected |
+| R17B-18 | OneWeb raised $3.4B, filed Chapter 11 March 2020 with 74 of about 650 satellites up | T3 | confirmed | https://spaceflightnow.com/2020/03/30/oneweb-files-for-bankruptcy/ | 2020-03-30 | 2020-03 | court filing with other totals |
+| R17B-19 | OneWeb sold to a UK government and Bharti group, plan confirmed 2 Oct 2020 | T3 | plausible | https://milbank.com/en/news/milbank-guides-oneweb-global-through-chapter-11-plan-confirmation.html | 2020-10 | 2020-10 | court docket |
+| R17B-20 | Virgin Orbit flew six missions with two failures, filed Chapter 11 in April 2023, assets sold for about $36M | T3 | confirmed | https://www.cnbc.com/amp/2023/05/23/virgin-orbit-bankruptcy-sale-rocket-lab-stratolaunch-vasts-launcher.html | 2023-05-23 | 2023-05 | court sale order with other totals |
+| R17B-21 | Rocketplane Kistler's COTS agreement was ended in 2007 after missing private funding milestones | T3 | unverified | n/a | n/a | 2007 | NASA termination notice |
+| R17B-22 | US public investment in mRNA covid vaccines $31.9B, of which $337M before the pandemic, 92% for purchases | T2 | plausible | https://www.bmj.com/content/380/bmj-2022-073747 | 2023-03 | 2022 | the BMJ paper text giving other figures |
+| R17B-23 | SEC charged Theranos and two executives with raising over $700M through misstatements | T3 | plausible | https://www.nbcnews.com/business/business-news/sec-charges-theranos-founder-elizabeth-holmes-massive-fraud-n856641 | 2018-03-14 | 2018-03 | SEC complaint text |
+| R17B-24 | Korean banks relied on the central bank for 89% of export credit funding, 1973 to 1981 | T2 | confirmed | https://www.kdevelopedia.org/k-db-originals/export-promotion-and-koreas-government-led-industrialization-1960s-1970s | 2026 (page date) | 1981 | Bank of Korea series showing otherwise |
+| R17B-25 | Korean reserve base grew 25.1% a year, 20.2 points from central bank lending, 1973 to 1981 | T2 | confirmed | same | 2026 | 1981 | as above |
+| R17B-26 | Korean CPI inflation 10 to 20% through the 1960s and 1970s | T2 | confirmed | same | 2026 | 1979 | official CPI series |
+| R17B-27 | Heavy and chemical goods rose from 13% of Korea's exports (1970) to 92% (2008) | T2 | confirmed | same | 2026 | 2008 | trade statistics with other shares |
+| R17B-28 | National Investment Fund gave 57% of equipment loans, 1974 to 1981 | T2 | unverified | https://hasp.ub.uni-heidelberg.de/journals/iaf/article/download/2516/2609/5151 | n/a | 1981 | KDI or BOK data |
+| R17B-29 | Korean firms' average debt to equity 396% in 1997 (US 154%, Japan 193%) | T2 | plausible | https://www.nber.org/chapters/c10187.pdf | n/a | 1997 | Bank of Korea financial statement analysis |
+| R17B-30 | Top 30 chaebol debt to equity about 500%, IMF standby $58.4B approved 4 Dec 1997 | T2 | plausible | https://www.dallasfed.org/~/media/documents/research/efr/2001/efr0104c.pdf | 2001 | 1997 | IMF press release with other amount |
+| R17B-31 | ITRI founded 1973 with NT$210M and 400 staff | T3 | plausible | https://asteriskmag.com/issues/13/the-institute-behind-taiwan-s-chip-dominance | 2026 | 1973 | ITRI official history |
+| R17B-32 | ITRI and RCA signed CMOS transfer 5 Mar 1976, about $10M, 19 engineers in first group | T2 | confirmed | https://taiwaninsight.org/2024/05/10/a-short-history-of-semiconductor-technology-in-taiwan-during-the-1970s-and-the-1980s/ | 2024-05-10 | 1976 | ITRI records |
+| R17B-33 | ITRI demonstration plant made watch chips by end 1977 with yield over 70%, above RCA's | T2 | confirmed | same | 2024-05-10 | 1977 | ITRI records |
+| R17B-34 | UMC spun out of ITRI in 1980 | T2 | plausible | same | 2024-05-10 | 1980 | UMC filing (some say 1981) |
+| R17B-35 | TSMC incorporated 21 Feb 1987, state fund about 48%, Philips 27.5% | T3 | plausible | https://britannica.com/topic/Taiwan-Semiconductor-Manufacturing-Co | n/a | 1987 | TSMC prospectus or 20-F history |
+| R17B-36 | TSMC held 61% of world contract foundry market in Q4 2023 | T3 | plausible | https://taiwaninsight.org/2024/05/10/a-short-history-of-semiconductor-technology-in-taiwan-during-the-1970s-and-the-1980s/ | 2024-05-10 | 2023-Q4 | TrendForce series |
+| R17B-37 | Penang unemployment about 16% in 1969 before the Free Trade Zone | T3 | plausible | https://investpenang.gov.my/?p=19292 | n/a | 1969 | census or state data |
+| R17B-38 | Intel opened its first offshore plant in Penang in 1972, with seven other multinationals arriving 1971 to 1974 | T3 | plausible | https://mida.gov.my/?p=76341 | n/a | 1972 | company histories |
+| R17B-39 | About 19,000 women in Penang electronics plants, women 90% of assembly workers | T3 | confirmed | https://multinationalmonitor.org/hyper/issues/1980/03/grossman.html | 1980-03 | 1980 | labour department data |
+| R17B-40 | Pioneer status tax holidays up to 8 years, tax credits up to 40% | T3 | plausible | https://issuu.com/world.bank.publications/docs/9781464816833/s/12601578 | n/a | 1970s | text of the 1968 Act |
+| R17B-41 | Electronics share of Malaysia's manufactured exports rose from under 50% (1980) to over 70% (2000) | T2 | plausible | https://eastasiaforum.org/2015/10/07/the-structural-regression-of-malaysian-manufacturing/ | 2015-10-07 | 2000 | DOSM trade series |
+| R17B-42 | E&E were 40.4% of Malaysia's exports in 2023 (RM575.5B) | T1 | plausible | https://dosm.gov.my/portal-main/release-content/external-trade-statistics-malaysia-2023 | 2024 | 2023 | DOSM revision |
+| R17B-43 | HICOM set up Nov 1980, car sector the most protected in Malaysian manufacturing | T3 | plausible | https://carnegieendowment.org/china/research/2012/03/modern-industrial-policy-lessons-from-malaysias-auto-industry | 2012-03 | 2012 | tariff schedules showing otherwise |
+| R17B-44 | RM1.5B soft loan to Proton approved April 2016 | T3 | plausible | https://paultan.org/2017/04/11/proton-seeks-up-to-rm1-8bil-more-from-government-geely-back-in-contention-as-foreign-strategic-partner | 2017-04-11 | 2016 | Ministry of Finance statement |
+| R17B-45 | Geely bought 49.9% of Proton in 2017, prime minister said up to RM1B loss that year without the deal | T3 | plausible | https://paultan.org/2017/06/05/proton-poised-to-face-rm1-billion-loss-this-year-without-geely-deal-prime-minister-najib-tun-razak | 2017-06-05 | 2017 | Proton accounts |
+| R17B-46 | MSC passed 500 status firms target (541), but a McKinsey review found it had not contributed as hoped | T3 | plausible | https://www.malaysiakini.com/news/1362 | c.2001 | 2001 | MDeC evaluation |
+| R17B-47 | Khazanah posted RM6.27B pre-tax loss in 2018 | T3 | plausible | https://thestar.com.my/business/business-news/2019/03/05/khazanah-records-weaker-2018-performance-reveals-fresh-mandate | 2019-03-05 | 2018 | Khazanah annual review |
+| R17B-48 | Khazanah paid RM1B dividend for 2023, RM18.1B since 2004 | T3 | plausible | https://www.thestar.com.my/business/business-news/2024/03/11/khazanah-nasional-records-better-profit-from-operations-of-rm59bil-in-fy23 | 2024-03-11 | 2023 | Khazanah annual review |
+| R17B-49 | Big Fund phases: 138.7B yuan (2014), about 204B (2019), 344B (2024) | T3 | plausible | https://thestar.com.my/business/business-news/2024/05/27/china-sets-up-third-fund-with-us475bil-to-boost-semiconductor-sector | 2024-05-27 | 2024 | registry filings with other sums (one source gives 98.7B for phase I) |
+| R17B-50 | Big Fund chief executive placed under investigation July 2022, more Sino IC Capital executives followed | T3 | plausible | https://www.technologyreview.com/2022/08/05/1056975/corruption-chinas-chipmaking-industry/ | 2022-08-05 | 2022 | official CCDI statement |
+| R17B-51 | China chip imports about $349B in 2023, down 15.4% | T3 | plausible | https://globaltimes.cn/page/202401/1305308.shtml | 2024-01 | 2023 | China customs data |
+| R17B-52 | LGFV debt about 56.7T yuan in 2022 (IMF staff) | T2 | plausible | https://theprint.in/world/why-chinas-local-government-debt-nearly-doubled-in-5-yrs-and-why-problem-may-get-worse/1666439 | 2023 | 2022 | IMF staff report table |
+| R17B-53 | IMF augmented debt 86.3% of GDP (2019), 124.0% (2024), 148.2% projected (2029) | T1 | confirmed | https://www.imf.org/en/News/Articles/2024/07/31/pr24295-china-imf-exec-board-concludes-2024-art-iv-consult | 2024-07-31 | 2024 | later IMF revision |
+| R17B-54 | IMF directors: scaling back industrial policy could reduce resource misallocation | T1 | confirmed | same | 2024-07-31 | 2024 | none expected |
+| R17B-55 | Hsieh and Klenow: equalising marginal products would raise China's manufacturing TFP 30 to 50% | T2 | plausible | https://econpapers.repec.org/RePEc:oup:qjecon:v:124:y:2009:i:4:p:1403-1448. | 2009 | 2005 | replications (Rotemberg and White) showing mostly measurement error |
+| R17B-56 | World Bank 1993 report dismissed industrial policy as central and said contests needed competent insulated civil servants | T2 | confirmed | https://www.cgdev.org/publication/worldbanks-east-asian-miracle-too-much-product-its-time | 2025-11 | 1993 | report text read otherwise |
+| R17B-57 | Birdsall (2025) says the "failure" reading of Korea's heavy industry drive is harder to defend now | T2 | confirmed | same | 2025-11 | 2025 | none expected |
+| R17B-58 | Amsden (1994) criticised the report's "market fundamentalism" | T2 | confirmed | same (quoted) | 2025-11 | 1994 | original article text |
+| R17B-59 | Krugman (1994) argued Asian growth came from inputs, not productivity, citing Young | T2 | plausible | https://vault.hanover.edu/%7Eeiriksson/classes/214/files/MythOfAsiasMiraclePaulKrugman.pdf | 1994-11 | 1994 | Foreign Affairs text |
+| R17B-60 | Chang (2002) argued rich countries used infant industry protection, then preached free trade | T2 | plausible | https://eh.net/book_reviews/kicking-away-the-ladder-development-strategy-in-historical-perspective/ | 2004 | 2002 | book text |
+| R17B-61 | Brontë sisters' railway shares: £50 issue, peak 120, down to 20 by Sept 1849 | T3 | plausible | https://www.annebronte.org/2020/09/27/2164/ | 2020-09-27 | 1849 | edited letters showing other figures |
+| R17B-62 | Challenger counted 100,925 dot-com job cuts in 2001, 41,515 in 2000 | T3 | plausible | https://www.computerworld.com/article/1354274/dot-com-layoffs-eased-at-end-of-2001.html | 2002-01 | 2001 | Challenger release |
