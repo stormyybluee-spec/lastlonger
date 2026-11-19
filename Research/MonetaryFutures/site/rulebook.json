@@ -13929,7 +13929,7 @@
     {
      "type": "steps",
      "items": [
-      "Part 1. The body that issues money exists so that output and progress can grow.",
+      "Part 1. The body that issues money exists so that output, meaning everything a country makes in a year, and progress can grow.",
       "Part 2. It lets prices rise a little each year on purpose, and that serves the public.",
       "Part 3. It runs under stable, controlled governance.",
       "Part 4. These are rules the public has chosen."
@@ -13970,7 +13970,7 @@
     },
     {
      "type": "p",
-     "text": "The Bank of England put most of that gap down to a young money economy, where money and banks were still new to many people. But the rule played a part. Money at home could grow only when more pounds came in from abroad. And the board could do very little to help. It did not lend, and it could not ease credit when times were bad. Only from December 1961 could it issue some money against crop loans. In 1962 the Bank of England named two standard complaints about old-style boards like this one: reserves locked up abroad, and what a passive board could not do."
+     "text": "The Bank of England put most of that gap down to a young money economy, where money and banks were still new to many people. But the rule played a part. Money at home could grow only when more pounds came in from abroad. And the board could do very little to help. It did not lend, and it could not make loans easier to get when times were bad. Only from December 1961 could it issue some money against crop loans. In 1962 the Bank of England named two standard complaints about old-style boards like this one: reserves locked up abroad, and what a passive board could not do."
     },
     {
      "type": "quote",
@@ -14104,7 +14104,7 @@
       [
        "America's Federal Reserve",
        "2023 to 2025",
-       "Nothing. It was paying out more interest than it earned. By the end of 2025 the shortfall it must earn back before payments resume was 243.5 billion dollars"
+       "Nothing. It was paying out more interest than it earned. It must first earn back a shortfall of 243.5 billion dollars, as at the end of 2025"
       ],
       [
        "Bank Negara Malaysia",
@@ -14122,7 +14122,7 @@
      "cols": [
       "Case",
       "What happened",
-      "Fall in the real weight of state debt"
+      "How much lighter the state's debt became"
      ],
      "rows": [
       [
@@ -14173,7 +14173,7 @@
     },
     {
      "type": "p",
-     "text": "The reader says the system runs under stable, controlled governance. The laws do set controls. In America, Britain and Malaysia the law says who appoints the leaders, for how long, and what they must publish. The box below sets the three side by side."
+     "text": "The reader says the system runs under stable, controlled governance. The laws do set controls. In America, Britain and Malaysia the law says who appoints the leaders, for how long, and what they must publish. The table below shows the main rules in two of them. A box sets all three side by side, with more detail."
     },
     {
      "type": "deeper",
@@ -14235,8 +14235,38 @@
      ]
     },
     {
+     "type": "table",
+     "cols": [
+      "",
+      "America",
+      "Malaysia"
+     ],
+     "rows": [
+      [
+       "Who appoints the leader",
+       "The President, with the consent of the Senate",
+       "The Yang di-Pertuan Agong, the King, appoints the governor"
+      ],
+      [
+       "For how long",
+       "14 years for a Board member",
+       "Five years for the governor, and can be renewed"
+      ],
+      [
+       "Can they be removed?",
+       "Only \"for cause\"",
+       "Only on grounds the law lists, such as serious misconduct"
+      ],
+      [
+       "What must be published",
+       "Minutes of each meeting after about three weeks",
+       "A statement after each policy meeting, and accounts laid before Parliament"
+      ]
+     ]
+    },
+    {
      "type": "p",
-     "text": "So there is control. But notice who holds it. In each country the central bank answers to the law and to the government of the day, and to the public mainly through what it must publish. No voter chooses a governor directly."
+     "text": "So there is control. But notice who holds it. In each country the central bank answers to the law and to the government of the day, and to the public mainly through what it must publish. Britain's governor must write a public letter whenever inflation misses the target by more than one point. No voter chooses a governor directly."
     },
     {
      "type": "p",
@@ -14244,7 +14274,11 @@
     },
     {
      "type": "p",
-     "text": "Here is what can happen when a government bends the issuer to its own needs, though other things went wrong in each place too. In January 2009 Zimbabwe's central bank announced a banknote for 100 trillion dollars. On the black market it was worth about 33 American dollars. People often queued for hours outside banks to draw out barely enough to buy a loaf of bread. Farm seizures and drought had also hurt. Venezuela's own central bank reported inflation of 130,060% for 2018, and outside estimates were higher. Oil prices and sanctions also hurt. Turkey is reported to have removed three central bank governors between 2019 and 2021, and its inflation is reported to have reached about 85% in 2022, a year of high energy prices."
+     "text": "Here is what can happen when a government bends the issuer to its own needs, though other things went wrong in each place too. In January 2009 Zimbabwe's central bank announced a banknote for 100 trillion dollars. On the black market it was worth about 33 American dollars. People often queued for hours outside banks to draw out barely enough to buy a loaf of bread. Farm seizures and drought had also hurt."
+    },
+    {
+     "type": "p",
+     "text": "Venezuela's own central bank reported inflation of 130,060% for 2018, and outside estimates were higher. Oil prices and sanctions also hurt. Turkey is reported to have removed three central bank governors between 2019 and 2021, and its inflation is reported to have reached about 85% in 2022, a year of high energy prices."
     },
     {
      "type": "p",
@@ -14292,7 +14326,7 @@
       ],
       [
        "Switzerland, 2018",
-       "Stop banks from creating money when they lend?",
+       "Stop banks from creating money when they lend, and leave that to the state?",
        "No, by about 76%, as reported. About one voter in three took part"
       ]
      ]
@@ -14338,7 +14372,7 @@
        "No issuer at home that can create money to rescue its banks"
       ],
       [
-       "Scotland, competing banks issuing notes, until 1844 and 1845",
+       "Scotland, with no central bank, and banks issuing their own notes, until 1844 and 1845",
        "Fewer bank failures than England from 1809 to 1830, by one count",
        "A critic's count finds the gap unclear. The Bank of England is reported to have lent to Scottish banks in trouble"
       ]
@@ -14399,11 +14433,11 @@
     },
     {
      "type": "p",
-     "text": "In 2025, as a condition of a loan of 1.4 billion dollars from the International Monetary Fund, El Salvador changed its law so that private firms no longer had to accept Bitcoin, and taxes are paid only in dollars."
+     "text": "In 2025, as a condition of a loan of 1.4 billion dollars from the International Monetary Fund, El Salvador changed its law so that private firms no longer had to accept Bitcoin, and taxes are paid only in dollars. The law could make Bitcoin legal money, but it could not make people use it."
     },
     {
      "type": "p",
-     "text": "Put these cases beside Malaya's currency board, Singapore's, and Malaysia's fixed rate of 1998, and a pattern appears. It is a pattern, not a law, because each case has its own history."
+     "text": "Put these cases beside Malaya's currency board, Singapore's, and Malaysia's fixed rate of 1998, and a pattern appears. Hong Kong's link has held for over forty years. Argentina's ended in 2001 after output fell nearly 20%. It is a pattern, not a law, because each case has its own history."
     },
     {
      "type": "table",
