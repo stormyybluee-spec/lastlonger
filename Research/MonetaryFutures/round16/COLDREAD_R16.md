@@ -108,3 +108,123 @@ NEW: Scotland, no central bank, banks issuing their own notes, until 1844 and 18
 11. Block [33]. Tell the reader the main points follow, so the skipped box is not missed.
 OLD: The box below sets the three side by side.
 NEW: The box below sets the three side by side. The main points follow here.
+
+
+# Retest 1 (draft R16c), 2026-11-19
+
+Method: main path only. GO DEEPER boxes and "A:" lines skipped. Two simulated first-time readers.
+
+## Score table (1 to 10)
+
+| Part | Reader 1 (Malaysian, ESL) | Reader 2 (American) |
+|---|---|---|
+| (a) Four-part claim | 8 | 8 |
+| (b) Malaya currency board and move to central bank | 8 | 8 |
+| (c) Founding laws, growth, Malaysia's law | 7 | 8 |
+| (d) Mild inflation, who gains and pays, big gain to state | 6 | 7 |
+| (e) Appointment, publication, what goes wrong both ways | 7 | 8 |
+| (f) Did the public choose, with evidence | 8 | 8 |
+| (g) Tied hands, one success, one failure, El Salvador | 7 | 8 |
+| (h) Trade-off tied vs free hands | 8 | 8 |
+| (i) Verdicts and rebuilt claim | 8 | 8 |
+| Average of nine | 7.4 | 7.9 |
+| Rounded overall | 7 | 8 |
+| (j) Held attention to the end | 7 | 8 |
+| (k) Told story, not a report of numbers | 7 | 7 |
+
+Pass mark 8. Reader 1 fails (7.4). Reader 2 reaches 8 only by rounding (7.9), so it is a borderline pass.
+
+## Strongest and weakest section
+
+- Reader 1: strongest is "A country without its own money" (the Malaya scene, short, concrete, close to home). Weakest is Test 2, the inflation test, where fixed-rate debt, "hidden tax" and "3.3% of output" arrive fast with few steps between them.
+- Reader 2: strongest is also the Malaya scene, with the Argentina pots and pans and the El Salvador story close behind. Weakest is Test 2 for the same reason, and then the Test 5 table, which packs four cases into short cells.
+
+## Notes on each part
+
+- (a) Both can say the four parts from [5]. The kicker and [0] repeat them well.
+- (b) Both can say it: pounds in, dollars out, little money about, no lending, no help in a slump, Bank Negara in 1959, sole issuer 1967 after a shared currency failed. Reader 1 may blur "began work in 1959" and "only issuer in 1967".
+- (c) Both can say war, panics, then growth later, often behind stable prices. Malaysia's law names growth. Reader 1 may stumble on "conducive" and "elastic currency".
+- (d) Both get "on purpose" and "published". Reader 1 does not fully grasp why a fixed-rate debt gets lighter, or why a surprise matters. Reader 2 gets the gist but the 2 versus 4 point and "6.5% tax" are hazy.
+- (e) The main-path table [35] works. Both see who appoints, how long, what is published. Both see Zimbabwe, Venezuela, Turkey on one side and the 2008 inquiry on the other. Reader 1 may not know why a King appoints a governor.
+- (f) Clear. The vote table and the "careful with money" reading are easy to say back.
+- (g) Hong Kong as success and Argentina as failure are clear. El Salvador shows that a law cannot force people to use a money. Reader 1 may find the Test 5 table dense.
+- (h) [58] gives a clean two-column answer.
+- (i) The verdict table and the rebuilt claim are easy to follow. "Holds in part" repeated three times reads a little flat but it is clear.
+
+## Fairness, respect, advice
+
+- Fair to the reader who made the claim: yes. It is called "the reader who wrote in", the claim is tested part by part, and credit is given where it holds, for example Malaysia's growth wording and post-1945 credit steering.
+- Fair to doubters: yes. The chapter gives the case for free hands and for tied hands, and says the verdict leaves voter say open.
+- Unfair or disrespectful description: none found. The King is named by his office and role only. Bank Negara is described as acting by law and as having tied the ringgit for a while, with the debate noted. Zimbabwe, Venezuela and Turkey are named as failures of government control, but each carries a caveat naming other causes. Argentine protesters are shown with sympathy. The El Salvador quote is from a named marcher and the government's view is also given. A Malaysian reader might still feel Zimbabwe, Venezuela and Turkey are three hits on governments in a row. The 2008 inquiry case balances this.
+- Financial advice: none. [69] says so. The tables about who gains and loses from inflation are descriptive.
+
+## Remaining confusions
+
+Reader 1 (Malaysian, ESL)
+- [27] "old debts at fixed rates become lighter" and "hidden tax on the lender". Why does the debt get lighter?
+- [27] The 2 point surprise is hard to follow without a worked number.
+- [28] "3% to 4% of output a year" and "3.3% of output". What is output as a share?
+- [26] "It must first earn back a shortfall of 243.5 billion dollars". What does that mean?
+- [17] "conducive" is a hard word.
+- [13] Bank Negara began in 1959, yet the board kept issuing until 1967. Who issued what in between?
+- [35] Why does a King appoint the governor, and does that mean the King controls the bank?
+- [46] "The Swiss kept their banks in 2018" is vague about what was voted on.
+- [52] "the only way left to adjust" is abstract.
+- [50] The table cells use short fragments that are hard for a second-language reader.
+
+Reader 2 (American)
+- [27] and [28] The "6.5% tax" and "3.3% of output" sit together and the link is not spelled out.
+- [26] The shortfall line is confusing, and why the Fed paid nothing in 2023 to 2025 is not explained.
+- [46] "The Swiss kept their banks" reads oddly.
+- [35] Britain is missing from the main-path table, though [33] and [36] mention it. This is minor.
+- [52] The line on adjusting is abstract.
+
+## Ranked fixes (12 or fewer)
+
+1. Block [27]
+OLD: That part works like a hidden tax on the lender.
+NEW: The lender is paid back in money that buys less than expected, so the lender loses and the state gains. That works like a hidden tax on the lender.
+
+2. Block [27]
+OLD: When prices rise, old debts at fixed rates become lighter,
+NEW: When prices rise, a debt fixed in money terms is easier to pay back, because each unit of money buys less,
+
+3. Block [28]
+OLD: 3% to 4% of output a year, on average, by one estimate
+NEW: By one estimate, the debt got lighter each year by an amount equal to 3% to 4% of a year's output, on average
+
+4. Block [26]
+OLD: It was paying out more interest than it earned. It must first earn back a shortfall
+NEW: It was paying out more interest than it earned. Before it can pay the government again, it must first earn back a shortfall
+
+5. Block [17]
+OLD: Stability "conducive to the sustainable growth of the Malaysian economy".
+NEW: Stability "conducive to the sustainable growth of the Malaysian economy". Conducive means helpful.
+
+6. Block [52]
+OLD: Now, with the rate fixed and many debts in dollars, the only way left to adjust was through lost output and jobs.
+NEW: Now the rate was fixed and many debts were in dollars. The money could not give way, so output and jobs gave way instead.
+
+7. Block [46]
+OLD: The Swiss kept their banks in 2018.
+NEW: In 2018 the Swiss kept the right of banks to make money when they lend.
+
+8. Block [13]
+OLD: But the board kept issuing the money until 1967,
+NEW: But the board kept issuing the money until 1967, so for those years Bank Negara was open but the board still issued the notes,
+
+9. Block [30]
+OLD: But the gain to the state as a borrower is real too,
+NEW: But the gain to the state as a borrower is real too. It is a gain for the state and a loss for the lender,
+
+10. Block [29]
+OLD: Taxpayers, who may need to pay less tax to service the debt
+NEW: Taxpayers, who may need to pay less tax to pay the interest on the debt
+
+11. Block [36]
+OLD: So there is control. But notice who holds it.
+NEW: So there is control. But notice who holds it, and it is not the voter.
+
+12. Block [57]
+OLD: It is a pattern, not a law, because each case has its own history.
+NEW: It is a pattern, not a law. Each case has its own history, so none of them proves the rule.

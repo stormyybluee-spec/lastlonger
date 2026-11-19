@@ -13979,7 +13979,7 @@
     },
     {
      "type": "p",
-     "text": "The same passage said this led to \"painful deflationary correctives in times of depression\". In plain words: a board could not cushion a slump, so the pain came through falling prices and wages. Malaya wanted an issuer that could manage credit and free its reserves. Bank Negara began work in 1959. But the board kept issuing the money until 1967, because the places that shared it hoped to keep one currency. That plan failed after Singapore left Malaysia in 1965. On 12 June 1967 Bank Negara became the only issuer of Malaysia's money."
+     "text": "The same passage said this led to \"painful deflationary correctives in times of depression\". In plain words: a board could not cushion a slump, so the pain came through falling prices and wages. Malaya wanted an issuer that could manage credit and free its reserves. Bank Negara began work in 1959. But for eight more years the board still issued the notes, because the places that shared it hoped to keep one currency. Bank Negara was open, but it did not yet issue the money. That plan failed after Singapore left Malaysia in 1965. On 12 June 1967 Bank Negara became the only issuer of Malaysia's money."
     },
     {
      "type": "p",
@@ -14029,7 +14029,7 @@
       [
        "Bank Negara Malaysia",
        "2009",
-       "Stability \"conducive to the sustainable growth of the Malaysian economy\". Stable prices are the main aim of its interest rate decisions. Jobs are not named in sections 5 and 22"
+       "Stability \"conducive to the sustainable growth of the Malaysian economy\". Conducive means helpful. Stable prices are the main aim of its interest rate decisions. Jobs are not named in sections 5 and 22"
       ]
      ]
     },
@@ -14104,7 +14104,7 @@
       [
        "America's Federal Reserve",
        "2023 to 2025",
-       "Nothing. It was paying out more interest than it earned. It must first earn back a shortfall of 243.5 billion dollars, as at the end of 2025"
+       "Nothing. It was paying out more interest than it earned. Before it can pay the government again, it must earn back a shortfall of 243.5 billion dollars, as at the end of 2025"
       ],
       [
        "Bank Negara Malaysia",
@@ -14115,7 +14115,31 @@
     },
     {
      "type": "p",
-     "text": "The second collector is the government as a borrower. When prices rise, old debts at fixed rates become lighter, and in most countries the biggest debtor is the state. But lenders know this. If they expect 2% inflation, they ask for interest that covers it, and nobody is cheated. If prices then rise 4%, the extra 2 points is a surprise. That part works like a hidden tax on the lender. So the state gains most when inflation beats what lenders expected, or when rules hold interest rates below inflation. Both have happened."
+     "text": "The second collector is the government as a borrower. When prices rise, a debt fixed in money is easier to pay back, because each unit of money buys less, and in most countries the biggest debtor is the state. But lenders know this. If they expect 2% inflation, they ask for interest that covers it, and nobody is cheated. If prices then rise 4%, the extra 2 points is a surprise. The lender is paid back in money that buys less than expected, so the lender loses and the borrower gains. That works like a hidden tax on the lender. So the state gains most when inflation beats what lenders expected, or when rules hold interest rates below inflation. Both have happened."
+    },
+    {
+     "type": "table",
+     "cols": [
+      "A loan of 100 for one year",
+      "Lenders expect prices to rise 2%, so they ask 2% interest",
+      "Prices really rise 4%"
+     ],
+     "rows": [
+      [
+       "What the borrower pays back",
+       "102",
+       "102"
+      ],
+      [
+       "What 102 buys, in last year's prices",
+       "About 100. The lender is no worse off",
+       "About 98. The lender has lost about 2, and the borrower has gained it"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "This is a made-up example with round numbers. The same thing happens to a government's debt, on a much larger scale."
     },
     {
      "type": "table",
@@ -14128,7 +14152,7 @@
       [
        "America and Britain, about 1945 to 1980",
        "Interest rates were kept below inflation, often by caps and by rules that made banks hold government bonds",
-       "3% to 4% of output a year, on average, by one estimate"
+       "By one estimate, each year the debt got lighter by an amount equal to 3% to 4% of everything the country made that year"
       ],
       [
        "America, 2021",
@@ -14153,7 +14177,7 @@
        "Savers who hold cash or accounts that pay little"
       ],
       [
-       "Taxpayers, who may need to pay less tax to service the debt",
+       "Taxpayers, who may need to pay less tax to pay the interest on the debt",
        "People on fixed incomes"
       ]
      ]
@@ -14266,7 +14290,7 @@
     },
     {
      "type": "p",
-     "text": "So there is control. But notice who holds it. In each country the central bank answers to the law and to the government of the day, and to the public mainly through what it must publish. Britain's governor must write a public letter whenever inflation misses the target by more than one point. No voter chooses a governor directly."
+     "text": "So there is control. But notice who holds it. Appointing a governor is not the same as running the bank: Malaysia's law says the Bank sets monetary policy on its own. In each country the central bank answers to the law and to the government of the day, and to the public mainly through what it must publish. Britain's governor must write a public letter whenever inflation misses the target by more than one point. No voter chooses a governor directly."
     },
     {
      "type": "p",
@@ -14333,7 +14357,7 @@
     },
     {
      "type": "p",
-     "text": "Look at the four answers. Three times, voters kept what they already had. Once, in Switzerland in 1999, they accepted a change. The Danes and Swedes kept their own money. The Swiss kept their banks in 2018. That is not quite the same as choosing the system. It may only mean that people are careful with something as serious as money, and prefer the rules they know."
+     "text": "Look at the four answers. Three times, voters kept what they already had. Once, in Switzerland in 1999, they accepted a change. The Danes and Swedes kept their own money. In 2018 the Swiss kept the right of banks to make money when they lend. That is not quite the same as choosing the system. It may only mean that people are careful with something as serious as money, and prefer the rules they know."
     },
     {
      "type": "insider",
@@ -14416,7 +14440,7 @@
     },
     {
      "type": "p",
-     "text": "Argentina's end is worth seeing up close. In December 2001 the government partly froze bank deposits. People could not get at their own savings. In the last days of that month, middle-class people in Buenos Aires took to the streets, banging pots and pans in protest. The fixed rule had kept their money sound for ten years. Now, with the rate fixed and many debts in dollars, the only way left to adjust was through lost output and jobs."
+     "text": "Argentina's end is worth seeing up close. In December 2001 the government partly froze bank deposits. People could not get at their own savings. In the last days of that month, middle-class people in Buenos Aires took to the streets, banging pots and pans in protest. The fixed rule had kept their money sound for ten years. Now the rate was fixed and many debts were in dollars. The money could not give way, so output and jobs gave way instead."
     },
     {
      "type": "p",
@@ -14437,7 +14461,7 @@
     },
     {
      "type": "p",
-     "text": "Put these cases beside Malaya's currency board, Singapore's, and Malaysia's fixed rate of 1998, and a pattern appears. Hong Kong's link has held for over forty years. Argentina's ended in 2001 after output fell nearly 20%. It is a pattern, not a law, because each case has its own history."
+     "text": "Put these cases beside Malaya's currency board, Singapore's, and Malaysia's fixed rate of 1998, and a pattern appears. Hong Kong's link has held for over forty years. Argentina's ended in 2001 after output fell nearly 20%. It is a pattern, not a law. Each case has its own history, so no single case proves the rule."
     },
     {
      "type": "table",
