@@ -14726,7 +14726,7 @@
      "type": "steps",
      "items": [
       "Part 1. New technology and new discovery cost an enormous price before they make life better and more stable.",
-      "Part 2. Promises about the future, credit, are what pay that price.",
+      "Part 2. Promises about the future, called credit, are what pay that price. A promise to pay later is credit.",
       "Part 3. Money made by a central bank, and by banks when they lend, is what makes those promises possible.",
       "Part 4. The reader's example: a company building reusable rockets, and the growth and new technology that may follow from it."
      ]
@@ -14741,7 +14741,7 @@
     },
     {
      "type": "p",
-     "text": "Emily looked after the money. She put it into shares of the York and North Midland Railway. It was the age of railway fever. In 1846 alone Parliament considered 516 bills for new railways and passed 246. A buyer often paid only a small deposit at first, about a tenth, as reported, and the rest when the company called for it."
+     "text": "Emily looked after the money. She put it into shares of the York and North Midland Railway. It was the age of railway fever. In 1846 alone Parliament considered 516 bills for new railways and passed 246. A buyer often paid only a small deposit at first, about a tenth, as reported, and the rest when the company called for it. So owners could be asked for more money later."
     },
     {
      "type": "p",
@@ -14754,7 +14754,7 @@
     },
     {
      "type": "p",
-     "text": "She could not persuade her sisters. In September 1849, after Emily and Anne had both died, she described the shares in a letter to her publisher. They had been issued at 50 pounds. At the top they were worth 120. For some years they paid 10% a year. Now they were \"down at 20\"."
+     "text": "She could not persuade her sisters. In September 1849, after Emily and Anne had both died, she described the shares in a letter to her publisher. They had been issued at 50 pounds. At the top they were worth 120. For some years they paid 10% a year. Now they were \"down at 20\". Each share was worth 20 pounds, less than half of the 50 pounds first paid."
     },
     {
      "type": "p",
@@ -14762,7 +14762,7 @@
     },
     {
      "type": "p",
-     "text": "Keep the sisters in mind. Every test in this chapter comes back to the same question: when a society pays for tomorrow, who holds the promise, and who is left holding the loss?"
+     "text": "The sisters show one thing plainly. A railway can be built, and work, and still leave many of its owners with a loss. Keep them in mind. Every test in this chapter comes back to the same question: when a society pays for tomorrow, who holds the promise, and who is left holding the loss?"
     },
     {
      "type": "h",
@@ -14931,36 +14931,36 @@
     },
     {
      "type": "p",
-     "text": "This is the boldest part of the claim. If money made by central banks and by bank lending is what paid for new technology, the great technology booms should come when money is easy: when interest rates are low and the supply of money grows fast. Here is what happened."
+     "text": "This is the boldest part of the claim. Think of an interest rate as the price of borrowing money. When that price is low, borrowing is cheap, and banks and central banks are creating new money fast. If created money is what paid for new technology, the great technology booms should come when borrowing is cheap. Here is what happened in three booms."
     },
     {
      "type": "table",
      "cols": [
       "Boom",
-      "Interest rates at the time",
-      "Money conditions"
+      "Was money cheap to borrow?",
+      "What happened"
      ],
      "rows": [
       [
        "British railway fever, 1843 to 1845",
-       "The Bank of England's rate was 2.5% to 3.5%, low for the time, as reported",
-       "Easy. Share prices broke in late 1845, before the big rises of 1847, when a crisis took the rate to 5.5% and then 8%"
+       "Yes. The Bank of England's rate was 2.5% to 3.5%, low for the time, as reported",
+       "Railway shares broke in late 1845. In the crisis of 1847 the rate rose to 5.5% and then 8%"
       ],
       [
        "The internet boom, 1995 to 2000",
-       "America's main interest rate was between about 4.6% and 6.5%, cut briefly in late 1998",
-       "Mostly ordinary. The amount of money in the economy grew about 6% a year from the end of 1994 to the end of 1999"
+       "Not especially. America's main rate stayed between about 4.6% and 6.5%, well above zero, with a short cut in late 1998",
+       "The amount of money in the economy grew at an ordinary pace, about 6% a year to the end of 1999"
       ],
       [
-       "The young-firm boom, 2020 to 2021",
-       "America's main interest rate was close to zero",
-       "Very easy. The money supply grew 26.8% in the year to February 2021"
+       "The boom in young firms, 2020 to 2021",
+       "Yes, very. America's main rate was close to zero",
+       "The amount of money in the economy grew 26.8% in the year to February 2021"
       ]
      ]
     },
     {
      "type": "p",
-     "text": "So money was cheap in two booms, the railway fever and 2020 to 2021. The internet boom grew while America's main rate stayed between about 4.6% and 6.5%. Carlota Perez, an economist who studies technology bubbles, wrote this in 2009."
+     "text": "So borrowing was cheap in two of the three booms, the railway fever and 2020 to 2021. But the internet boom, which left the most lasting technology of the three, grew while America's main rate was between about 4.6% and 6.5%. Carlota Perez, an economist who studies technology bubbles, wrote this in 2009."
     },
     {
      "type": "quote",
@@ -14969,7 +14969,7 @@
     },
     {
      "type": "p",
-     "text": "In plain words, she says great technology booms start because people see a huge chance, not mainly because money is cheap. But she also calls bubbles \"massive episodes of credit creation\", and says the 2000s bubble was driven by easy credit."
+     "text": "In plain words, she says great technology booms start because people see a huge chance to win, not mainly because borrowing is cheap. Cheap money can pour fuel on the fire once it is lit. But she also calls bubbles \"massive episodes of credit creation\", and says the 2000s bubble was driven by easy credit."
     },
     {
      "type": "p",
@@ -14977,7 +14977,7 @@
     },
     {
      "type": "p",
-     "text": "How could created money reach new technology? By two roads. A bank can lend to someone who buys new shares in a young firm, and the bank creates the new money as it makes the loan. In March 2000, as the internet boom peaked, borrowing to buy shares in America hit a record, by one count. Or a government can borrow for research by selling bonds, which a central bank can buy with money it creates. This chapter did not measure that road, so it is left open, not rejected."
+     "text": "How could created money reach new technology? By two roads. A bank can lend to someone who buys new shares in a young firm, and the bank creates the new money as it makes the loan. In March 2000, as the internet boom peaked, borrowing to buy shares in America hit a record, by one count. Or a government can borrow for research by selling bonds, which are promises to repay later. A central bank can buy those bonds with money it creates. This chapter did not measure that road, so it is left open, not rejected."
     },
     {
      "type": "insider",
@@ -14999,7 +14999,7 @@
     },
     {
      "type": "p",
-     "text": "In 2006 NASA, America's space agency, wanted cargo flights to the space station. Instead of designing a rocket and paying a contractor its costs, it offered fixed payments to private companies for reaching set goals. The company that went on to build reusable rockets was paid 396 million dollars, for a rocket and a capsule, when it had met all 40 of its goals in 2012. Another company was paid 288 million dollars by 2013. Was that cheap? NASA had a model that guessed what the rocket alone would have cost to build. There were two ways to use it. The old way, NASA pays all the builder's costs. The new way, NASA pays a fixed price."
+     "text": "In 2006 NASA, America's space agency, wanted cargo flights to the space station. Instead of designing a rocket and paying a contractor its costs, it offered fixed payments to private companies for reaching set goals. The company that went on to build reusable rockets was paid 396 million dollars, for a rocket and a capsule, when it had met all 40 of its goals in 2012. Another company was paid 288 million dollars by 2013. Was that cheap? NASA had a model that guessed what the rocket alone would have cost to build. The model gave two guesses. One was for the old way, where NASA pays all the builder's costs. The other was for the new way, where NASA pays a fixed price."
     },
     {
      "type": "table",
@@ -15075,7 +15075,7 @@
     },
     {
      "type": "p",
-     "text": "What is still unknown? A great deal. Whether satellite internet on a huge scale will repay what it has cost, and whether travel to Mars will ever pay back at all, cannot be known yet. The reader's hope about what may follow cannot yet be tested, and the record so far supports only its first steps."
+     "text": "What is still unknown? A great deal. Nobody yet knows how much reuse itself saves, because the price fell before the first landing. Whether satellite internet on a huge scale will repay what it has cost, and whether travel to Mars will ever pay back at all, cannot be known yet. The reader's hope about what may follow cannot yet be tested, and the record so far supports only its first steps."
     },
     {
      "type": "insider",
@@ -15092,7 +15092,7 @@
     },
     {
      "type": "p",
-     "text": "Korea fits the reader's picture most closely. From 1973 to 1981 its banks relied on the central bank for 89% of the money they lent to exporters. Most of the growth in the money banks could lend came from the central bank itself. In other words, much of the money for export loans was created by the central bank. In those years Korea pushed into steel, ships and chemicals. Heavy and chemical goods rose from 13% of Korea's exports in 1970 to 92% by 2008. Schooling and land reform also helped, some scholars say. Prices often rose 10% to 20% a year, by one Korean account. That rise began before the heavy industry push. Savers paid too, as their money bought less. By 1997 the biggest groups are reported to have owed about five times what they owned, and Korea needed a rescue package of 58.4 billion dollars. That crisis also had newer causes, such as short-term foreign loans."
+     "text": "Korea fits the reader's picture most closely. From 1973 to 1981 its banks relied on the central bank for 89% of the money they lent to exporters. Most of the growth in the money banks could lend came from the central bank itself. In other words, the central bank made new money, and much of it went out as loans to exporters. In those years Korea pushed into steel, ships and chemicals. Heavy and chemical goods rose from 13% of Korea's exports in 1970 to 92% by 2008. Schooling and land reform also helped, some scholars say. Prices often rose 10% to 20% a year, by one Korean account. That rise began before the heavy industry push. Savers paid too, as their money bought less. By 1997 the biggest groups are reported to have owed about five times what they owned, and Korea needed a rescue package of 58.4 billion dollars. That crisis also had newer causes, such as short-term foreign loans."
     },
     {
      "type": "p",
