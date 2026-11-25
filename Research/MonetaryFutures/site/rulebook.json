@@ -14758,7 +14758,7 @@
     },
     {
      "type": "p",
-     "text": "Here is the strange part. The railway was built. Trains ran on it. But the company had not told its owners the truth. The website that quotes the letters says its profits were greatly overstated, and part of its dividends came out of the owners' own capital. So some of that 10% was their own money coming back."
+     "text": "Here is the strange part. The railway was built. Trains ran on it. But the company had not told its owners the truth. The website that quotes the letters says its profits were greatly overstated, and part of its dividends, the yearly payouts to owners, came out of the owners' own capital, the money they had put in. So some of that 10% was their own money coming back."
     },
     {
      "type": "p",
@@ -14770,7 +14770,7 @@
     },
     {
      "type": "p",
-     "text": "Yes, for these cases, which all won in the end. Not every start was costly. Taiwan's first chip lessons cost about 10 million dollars, as reported."
+     "text": "Yes, for these cases. In each one the technology itself worked in the end, even where investors lost. Not every start was costly. Taiwan's first chip lessons cost about 10 million dollars, as reported."
     },
     {
      "type": "table",
@@ -14797,7 +14797,7 @@
       ],
       [
        "The internet boom, 1995 to 2000",
-       "Investors poured money into new internet firms. The Nasdaq share index then fell 77.9% from March 2000 to October 2002. Firms cut about 100,000 jobs in 2001, by one count",
+       "Investors poured money into new internet firms. The Nasdaq, an American index of share prices, then fell 77.9% from March 2000 to October 2002. Firms cut about 100,000 jobs in 2001, by one count",
        "Cables, data centres and firms that survived"
       ]
      ]
@@ -14949,7 +14949,7 @@
       [
        "The internet boom, 1995 to 2000",
        "America's main interest rate was between about 4.6% and 6.5%, cut briefly in late 1998",
-       "Mostly ordinary. The money supply grew about 6% a year from the end of 1994 to the end of 1999"
+       "Mostly ordinary. The amount of money in the economy grew about 6% a year from the end of 1994 to the end of 1999"
       ],
       [
        "The young-firm boom, 2020 to 2021",
@@ -14960,7 +14960,7 @@
     },
     {
      "type": "p",
-     "text": "So money was cheap in two booms. The internet boom grew while America's main rate stayed between about 4.6% and 6.5%. Carlota Perez, an economist who studies technology bubbles, wrote this in 2009."
+     "text": "So money was cheap in two booms, the railway fever and 2020 to 2021. The internet boom grew while America's main rate stayed between about 4.6% and 6.5%. Carlota Perez, an economist who studies technology bubbles, wrote this in 2009."
     },
     {
      "type": "quote",
@@ -14977,7 +14977,7 @@
     },
     {
      "type": "p",
-     "text": "How could created money reach new technology? By two roads. A bank can lend to someone who buys new shares in a young firm, and the loan creates new money. In March 2000, as the internet boom peaked, borrowing to buy shares in America hit a record, by one count. Or a government can borrow for research by selling bonds, which a central bank can buy with money it creates. This chapter did not measure that road, so it is left open, not rejected."
+     "text": "How could created money reach new technology? By two roads. A bank can lend to someone who buys new shares in a young firm, and the bank creates the new money as it makes the loan. In March 2000, as the internet boom peaked, borrowing to buy shares in America hit a record, by one count. Or a government can borrow for research by selling bonds, which a central bank can buy with money it creates. This chapter did not measure that road, so it is left open, not rejected."
     },
     {
      "type": "insider",
@@ -14999,7 +14999,7 @@
     },
     {
      "type": "p",
-     "text": "In 2006 NASA, America's space agency, wanted cargo flights to the space station. Instead of designing a rocket and paying a contractor its costs, it offered fixed payments to private companies for reaching set goals. The company that went on to build reusable rockets was paid 396 million dollars, for a rocket and a capsule, when it had met all 40 of its goals in 2012. Another company was paid 288 million dollars by 2013."
+     "text": "In 2006 NASA, America's space agency, wanted cargo flights to the space station. Instead of designing a rocket and paying a contractor its costs, it offered fixed payments to private companies for reaching set goals. The company that went on to build reusable rockets was paid 396 million dollars, for a rocket and a capsule, when it had met all 40 of its goals in 2012. Another company was paid 288 million dollars by 2013. Was that cheap? NASA had a model that guessed what the rocket alone would have cost to build. There were two ways to use it. The old way, NASA pays all the builder's costs. The new way, NASA pays a fixed price."
     },
     {
      "type": "table",
@@ -15009,11 +15009,11 @@
      ],
      "rows": [
       [
-       "NASA's model, the traditional way, where NASA pays the builder's costs",
+       "NASA's model, the old way, where NASA pays all the builder's costs",
        "About 1.4 billion to 4.0 billion dollars, depending on the version of the model"
       ],
       [
-       "NASA's model, the commercial way, with a fixed price",
+       "NASA's model, the new way, with a fixed price",
        "About 0.4 billion to 1.7 billion dollars"
       ],
       [
@@ -15032,7 +15032,7 @@
     },
     {
      "type": "p",
-     "text": "Did reuse make launches cheaper? The timing is a surprise. A 2018 paper by a NASA engineer found the price per kilogram to low orbit fell about 20 times, from the old shuttle's cost to the new rocket's advertised price. But it dates the big drop to 2010, before the first booster landed safely in December 2015. A cheaper way of building and buying rockets came first. Reuse came later."
+     "text": "Did reuse make launches cheaper? The timing is a surprise. A 2018 paper by a NASA engineer found the price per kilogram to low orbit fell about 20 times, from the old shuttle's cost to the new rocket's advertised price. But it dates the big drop to 2010, before the first rocket stage flew back and landed safely in December 2015. A cheaper way of building and buying rockets came first. Reuse came later."
     },
     {
      "type": "deeper",
@@ -15075,7 +15075,7 @@
     },
     {
      "type": "p",
-     "text": "What is still unknown? A great deal. Whether satellite internet on a huge scale will repay what it has cost, and whether travel to Mars will ever pay back at all, cannot be known yet. The reader's hope about what may follow is a hope, and the record so far supports only its first steps."
+     "text": "What is still unknown? A great deal. Whether satellite internet on a huge scale will repay what it has cost, and whether travel to Mars will ever pay back at all, cannot be known yet. The reader's hope about what may follow cannot yet be tested, and the record so far supports only its first steps."
     },
     {
      "type": "insider",
@@ -15092,15 +15092,15 @@
     },
     {
      "type": "p",
-     "text": "Korea fits the reader's picture most closely. From 1973 to 1981 its banks relied on the central bank for 89% of the money they lent to exporters. Most of the growth in the money banks could lend came from the central bank itself. In other words, much of the money for export loans was created by the central bank. In those years Korea pushed into steel, ships and chemicals. Heavy and chemical goods rose from 13% of Korea's exports in 1970 to 92% by 2008. Schooling and land reform also helped, some scholars say. Prices often rose 10% to 20% a year, by one Korean account, and the rise began before the heavy industry push. Savers paid too, as their money bought less. By 1997 the biggest groups are reported to have owed about five times what they owned, and Korea needed a rescue package of 58.4 billion dollars. That crisis also had newer causes, such as short-term foreign loans."
+     "text": "Korea fits the reader's picture most closely. From 1973 to 1981 its banks relied on the central bank for 89% of the money they lent to exporters. Most of the growth in the money banks could lend came from the central bank itself. In other words, much of the money for export loans was created by the central bank. In those years Korea pushed into steel, ships and chemicals. Heavy and chemical goods rose from 13% of Korea's exports in 1970 to 92% by 2008. Schooling and land reform also helped, some scholars say. Prices often rose 10% to 20% a year, by one Korean account. That rise began before the heavy industry push. Savers paid too, as their money bought less. By 1997 the biggest groups are reported to have owed about five times what they owned, and Korea needed a rescue package of 58.4 billion dollars. That crisis also had newer causes, such as short-term foreign loans."
     },
     {
      "type": "p",
-     "text": "Taiwan took a different road. In 1976 its state research institute paid an American firm about 10 million dollars, as reported, to teach it how to make chips, and sent 19 engineers to learn. By the end of 1977 its small test plant was making watch chips, reportedly with fewer faulty chips than the teacher's plants. In 1980 the institute set up a first chip company, as reported. In 1987 the state helped found a second, reported to own about 48% of it, with the Dutch firm Philips holding about 27.5%. That firm is reported to have made 61% of the world's chips made to order in late 2023. So the money was public and foreign, and it went into skills and a few firms."
+     "text": "Taiwan took a different road. In 1976 its state research institute paid an American firm about 10 million dollars, as reported, to teach it how to make chips, and sent 19 engineers to learn. By the end of 1977 its small test plant was making watch chips, reportedly with fewer faulty chips than the teacher's plants. In 1980 the institute set up a first chip company, as reported. In 1987 the state helped found a second, reported to own about 48% of it, with the Dutch firm Philips holding about 27.5%. That firm is reported to have made 61% of the world's chips made to order in late 2023. So the money was public and foreign, and it went into skills and a few firms. Its cost was not measured here against Korea's loans."
     },
     {
      "type": "p",
-     "text": "Malaysia took a third road. Penang had unemployment of about 16% in 1969, by one report. In 1972 a free trade zone opened, and foreign firms were offered up to eight years free of tax. In 1972 Intel opened its first factory outside America there, and other chip and electronics firms followed. A state agency built the zone, as reported. The foreign firms paid for their own factories, as far as these sources show."
+     "text": "Malaysia took a third road. Penang had unemployment of about 16% in 1969, by one report. In 1972 a free trade zone opened, and foreign firms were offered up to eight years free of tax. In 1972 Intel opened its first factory outside America there, and other chip and electronics firms followed. A state agency built the zone, as reported. The foreign firms paid for their own factories, as far as these sources show. The cost to Malaysia was the tax it did not collect and the cost of the zone."
     },
     {
      "type": "p",
@@ -15109,6 +15109,31 @@
     {
      "type": "p",
      "text": "Malaysia's push into heavy industry did less well. A state car maker, Proton, was set up in the 1980s behind high protection, and by the late 1980s led car sales at home, as reported. In 2016, after years of losses, it was approved a soft loan of 1.5 billion ringgit, and in 2017 a Chinese car maker bought almost half of it. Its sales have since more than doubled, as reported."
+    },
+    {
+     "type": "table",
+     "cols": [
+      "Road",
+      "What it bought",
+      "What it cost"
+     ],
+     "rows": [
+      [
+       "Korea: bank loans aimed by the state, much of the money created by the central bank",
+       "Steel, ships and chemicals that sell worldwide",
+       "High inflation, heavy company debt, and a crisis in 1997"
+      ],
+      [
+       "Taiwan: public and foreign money for skills and a few firms",
+       "A world-leading chip maker",
+       "Not measured here against Korea's loans"
+      ],
+      [
+       "Malaysia, Penang: tax holidays and a state-built zone that drew foreign firms",
+       "Electronics, about 40% of exports in 2023",
+       "Taxes not collected, the cost of the zone, and hard factory work"
+      ]
+     ]
     },
     {
      "type": "deeper",
