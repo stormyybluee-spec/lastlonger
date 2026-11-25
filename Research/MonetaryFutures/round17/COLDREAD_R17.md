@@ -196,3 +196,86 @@ OLD: In other words, much of the money for export loans was created by the centr
 NEW: In other words, the central bank made new money, and much of it went out as export loans.
 
 10. No tenth fix needed. The remaining confusions are covered by fixes 1 to 9.
+
+# Retest 2 (draft R17d), 2026-11-25
+
+## Score table (main path only, GO DEEPER boxes and A: lines skipped)
+
+| Part | Reader 1 (Malaysian, ESL) | Reader 2 (American) |
+|---|---|---|
+| (a) four-part claim | 8 | 9 |
+| (b) Brontë shares and what they show | 8 | 9 |
+| (c) cost before payback, one example | 8 | 9 |
+| (d) kinds of promise, state as buyer | 7 | 8 |
+| (e) cheap money, two booms, what was not tested | 7 | 8 |
+| (f) rocket funding, what is unknown | 6 | 8 |
+| (g) Korea, Taiwan, Malaysia and their costs | 7 | 8 |
+| (h) verdicts and rebuilt claim | 8 | 9 |
+| Average | 7.4 | 8.5 |
+| Overall (rounded) | 7 | 9 (8.5) |
+| (j) held attention to the end | 7 | 8 |
+| (k) told story, not report of numbers | 7 | 8 |
+
+Pass mark 8: Reader 1 FAILS (7.4). Reader 2 PASSES (8.5).
+
+Strongest section: both readers, the Brontë sisters opening [7-13]. Weakest: Reader 1, Test 4 the rocket [39-41], where the cost model and the two kinds of estimate pile up. Reader 2, Test 5 [50-54], long paragraphs dense with figures.
+
+## Fairness
+
+- Fair to the reader who made the claim: yes. Part 1 is granted fully, Part 2 and Part 4 are "holds, with a correction" and "holds in part", and Korea is called the closest fit. The reader's hope is not mocked.
+- Fair to doubters: yes. Perez is quoted on both sides [32], the World Bank doubt and the later reversal are given in the deeper box, and Korea's costs are named.
+- Unfair description of a person, people, faith or country: none found. The women workers of Penang [53] are described with respect. Korea, Taiwan and Malaysia each get gains and costs. Proton is described plainly.
+- Business leaders praised or attacked: none named. Firms are named only for facts (Intel, OneWeb, Virgin Orbit). The rocket company is not named and gets no praise.
+- Financial advice: none. The Not advice callout [67] is clear and the text never says to buy anything.
+
+## Remaining confusions
+
+Reader 1:
+- [8] "called for it" and "deposit" are hard. The idea that owners owed more later is only half caught.
+- [12] "capital" and "dividends" together. The point that some of the 10% was the owners' own money is faint.
+- [28-29] "interest rate as the price of borrowing" is helped, but "money supply" in the table is not explained.
+- [39-41] The model, the two guesses, "old way" and "new way", and mixed rocket and capsule figures. Hard to say what the 396 million proves.
+- [43] "low orbit" is not explained.
+- [50] "relied on the central bank for 89%" is easy to misread.
+- [51] "That firm" is unclear. Also "chips made to order" is hard.
+
+Reader 2:
+- [12] Dividends paid from capital is understood but needs a second read.
+- [41] The rocket versus rocket and capsule mismatch is stated in one dense sentence.
+- [50] One very long paragraph holds many figures. The 1997 point is easy to lose.
+- [51] "That firm" could be read as Philips.
+- [22] "How business raises its share" is vague.
+
+## Ranked fixes
+
+1. Block [41]
+OLD: And the two sides differ: the 396 million also paid for a capsule, while the model priced the rocket alone.
+NEW: So the two sides do not match. The 396 million paid for a rocket and a capsule. The model priced only the rocket.
+
+2. Block [51]
+OLD: That firm is reported to have made 61%
+NEW: The second firm is reported to have made 61%
+
+3. Block [12]
+OLD: came out of the owners' own capital, the money they had put in.
+NEW: came out of the money the owners had put in.
+
+4. Block [43]
+OLD: price per kilogram to low orbit fell about 20 times
+NEW: price per kilogram to reach orbit close to Earth fell about 20 times
+
+5. Block [50]
+OLD: From 1973 to 1981 its banks relied on the central bank for 89% of the money they lent to exporters.
+NEW: From 1973 to 1981 the central bank supplied 89% of the money its banks lent to exporters.
+
+6. Block [8]
+OLD: and the rest when the company called for it.
+NEW: and the rest later, when the company asked for it.
+
+7. Block [51]
+OLD: 61% of the world's chips made to order in late 2023
+NEW: 61% of the world's chips made to order for other companies in late 2023
+
+8. Block [22]
+OLD: How business raises its share was not checked here.
+NEW: Where business gets its money was not checked here.
