@@ -279,3 +279,114 @@ NEW: 61% of the world's chips made to order for other companies in late 2023
 8. Block [22]
 OLD: How business raises its share was not checked here.
 NEW: Where business gets its money was not checked here.
+
+# Retest 3, Reader 1 only (draft R17e), 2026-11-25
+
+Reader 1: Malaysian, 18 years old, English as a second language, no finance background. Main path only. Go-deeper boxes and "A:" lines skipped.
+
+## Score table
+
+| Part | What the reader must say | Score (1 to 10) |
+|---|---|---|
+| a | The four-part claim | 8 |
+| b | The Brontë shares and what they show | 9 |
+| c | New technology costs a lot before it pays, with an example | 9 |
+| d | Kinds of promise, and the state as a buyer | 8 |
+| e | Cheap money and the booms, with evidence, and what was not tested | 7 |
+| f | How the reusable rocket was paid for, and what is unknown | 7 |
+| g | How Korea, Taiwan and Malaysia paid, and what each cost | 7 |
+| h | Verdict on each part and the rebuilt claim | 8 |
+
+Average: 63 / 8 = 7.9. Overall, rounded: 8. Pass mark is 8. Result: PASS, but only just. Without rounding it is 7.9.
+
+| Extra score | Score |
+|---|---|
+| j. Held attention to the end | 7 |
+| k. Told story with explanation, not a report of numbers | 6 |
+
+Strongest section: "Three sisters and a railway" (blocks 7 to 13). It is a short scene with a letter, a loss and a plain lesson. The reader keeps it and the final return to it in [64] works well.
+
+Weakest section: Test 5 (blocks 50 to 56). Block [51] is one long paragraph with about ten numbers and several new ideas (central bank share of loans, inflation, group debt, rescue package, short-term foreign loans). Tests 3 and 4 are next, because of the interest-rate and cost-model tables.
+
+## What the reader could say after one read
+
+(a) Four parts: technology costs a lot first, promises (credit) pay for it, central bank and bank money makes the promises possible, and the rocket company is the example. Clear and in order. Small gap: "created money" is used before it is explained.
+
+(b) Emily put the sisters' money in railway shares, Charlotte warned, and the shares fell from 120 pounds to 20 against 50 paid. The railway worked but profits were overstated and some dividends came from owners' own money. It shows that a thing can be built and still leave owners with a loss. Clear.
+
+(c) Yes. Railway building took 4.7% to 6.7% of Britain's output a year. Edison's station also fits. Many bets fail even when the technology wins. Clear.
+
+(d) Shares, bank loans, state as buyer, state as payer for research, kept profits. The state bought every chip in 1962 and NASA promised payment for goals. The reader may blur "buyer" and "payer for research". Mostly clear.
+
+(e) Railway fever had low rates, the internet boom did not (4.6% to 6.5%), 2020 to 2021 had near zero rates. Perez says opportunity pulls, not credit pushes. Not tested: government bonds bought by a central bank. The reader gets the result but may stumble on "main rate", "money supply" and the two roads in [34].
+
+(f) NASA paid fixed sums for goals (396 million dollars), the model guessed billions for the old way, and the firm raised private money. Price fell before the first landing, so what reuse saves is unknown. The cost-model table [41] and the unnamed company are hard for this reader.
+
+(g) Korea: central bank money in export loans, cost was inflation, debt and the 1997 crisis. Taiwan: public and foreign money for skills, cost not measured. Penang: tax holidays and a zone, cost was lost tax, the zone and hard work. The reader can say these but will mix up the numbers.
+
+(h) Part 1 holds, 2 holds with a correction, 3 holds in part, 4 holds in part. Rebuilt claim: the reader's chain fits Korea best but is one road among several. Fairly clear. "Holds in part" in two rows is vague without a short reason in plain words.
+
+## Fairness and tone
+
+- Fair to the reader who made the claim: yes. It says "The reader is right" in the summary, calls the rocket "a fair test", and gives Korea as the strongest support.
+- Fair to doubters: yes. The internet boom evidence, Perez, and the scholars' dispute are all set out without mocking either side.
+- Any person, people, faith or country described unfairly: no. Korea's debt and inflation, Malaysia's Proton, and the Penang women's hard work are told with sources and "as reported". The women are shown with respect.
+- Any business leader praised or attacked: no leader is named. The rocket firm is called "the winner" once in [46] and others "losers". This is mild and about firms, but a careful reader might sense praise.
+- Anything like financial advice: no. The not-advice note [68] is clear and the tone is analytic.
+
+## Remaining confusions, by block
+
+- [28] "creating new money" is not defined before it is used in the key test.
+- [29] and [30] "America's main rate" is not named or explained. Is a high rate bad for borrowing? The reader must infer.
+- [31] The Perez quote is dense for an ESL reader. [32] helps.
+- [34] "two roads" mixes bank loans for shares and government bonds. The second road is hard to follow.
+- [35] "Government borrowing bought by a central bank" is the key untested item but is worded in a heavy way.
+- [39] The rocket company is never named and is only "the company that went on to build reusable rockets".
+- [40] to [42] "a model" and "old way, new way" are unexplained. The 396 million against billions comparison takes work.
+- [44] "an orbit close to Earth" and "20 times" are fine, but "advertised price" is only in the deeper box.
+- [51] Very long. "central bank supplied 89% of the money Korea's banks lent to exporters" is hard to picture.
+- [52] "chips made to order for other companies" is unclear.
+- [61] Rows 3 and 4 "Holds only in part" and "Holds in part" do not say in plain words what part held.
+- [16] "saved the economy about 4% of its yearly output in freight costs" is hard to read.
+
+## Ranked fixes (at most 10)
+
+1. Block [51]
+OLD: In other words, the central bank made new money, and much of it went out as loans to exporters.
+NEW: In plain words, the central bank made new money, and banks lent much of it to firms that sold goods abroad.
+
+2. Block [39]
+OLD: The company that went on to build reusable rockets was paid 396 million dollars
+NEW: The company that went on to build reusable rockets, the reader's example, was paid 396 million dollars
+
+3. Block [40]
+OLD: NASA had a model that guessed what the rocket alone would have cost to build.
+NEW: NASA made a guess, using a model, of what the rocket alone would have cost to build.
+
+4. Block [35]
+OLD: Government borrowing bought by a central bank was not tested.
+NEW: Whether a central bank bought government bonds that paid for research was not tested.
+
+5. Block [28]
+OLD: and banks and central banks are creating new money fast
+NEW: and banks and central banks are creating new money fast. Created money is money that did not exist until a bank made a loan or a central bank made it
+
+6. Block [30]
+OLD: grew while America's main rate was between about 4.6% and 6.5%.
+NEW: grew while America's main rate was between about 4.6% and 6.5%. That is not cheap borrowing.
+
+7. Block [51]
+OLD: By 1997 the biggest groups are reported to have owed about five times what they owned, and Korea needed a rescue package of 58.4 billion dollars.
+NEW: By 1997 the biggest groups are reported to have owed about five times what they owned. Korea then needed a rescue package of 58.4 billion dollars.
+
+8. Block [61]
+OLD: Holds only in part. One road was not tested
+NEW: Holds only in part. Low rates matched two of three booms. One road, government borrowing, was not tested
+
+9. Block [16]
+OLD: saved the economy about 4% of its yearly output in freight costs by 1865
+NEW: saved the economy about 4% of its yearly output in the cost of moving goods by 1865
+
+10. Block [52]
+OLD: So the money was public and foreign, and it went into skills and a few firms.
+NEW: So the money came from the state and from abroad, and it went into skills and a few firms.

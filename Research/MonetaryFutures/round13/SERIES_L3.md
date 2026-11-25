@@ -23,3 +23,6 @@ rb-peasant (question 4, why the peasants stayed poor) is published as chapter 04
 
 ## Update after Round 16 (2026-11-19)
 rb-law (question 7, who wrote the rules of money) is published as chapter 05, and the epilogue rb-promise is now chapter 06. Four deep chapters remain: borrowing from the future, the printers, the gate, the lever.
+
+## Update after Round 17 (2026-11-25)
+rb-future (question 6, paying for tomorrow) is published as chapter 06, and the epilogue rb-promise is now chapter 07. Three deep chapters remain: the printers, the gate, the lever. Open for a later round: government borrowing bought by a central bank, as a road by which created money reaches research and infrastructure.

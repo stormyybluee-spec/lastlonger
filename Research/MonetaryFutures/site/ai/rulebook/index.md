@@ -1,6 +1,6 @@
 # Rulebook index (Fundamentals)
 
-One file per chapter. Read a level in order. Built 2026-11-19.
+One file per chapter. Read a level in order. Built 2026-11-25.
 
 
 ## Level 1: Foundations
@@ -47,7 +47,8 @@ Level 3 takes the arguments people shout about money and puts each one on trial.
 - [03. The weekend that cut the anchor: what 1971 really changed](https://neetmonetary.netlify.app/ai/rulebook/rb-1971.md): One weekend in August 1971 ended the dollar's last link to gold. A reader says that weekend is the hinge of modern money: before it credit was limited, after it borrowing became unlimited, under stable and controlled governance. This chapter tests each word of that claim.
 - [04. Why the peasants stayed poor: money, output and the missing chain](https://neetmonetary.netlify.app/ai/rulebook/rb-peasant.md): For most of history most people were poor, and stayed poor for centuries. A reader says the cause was a missing chain: money, credit, a strong state, schools and knowledge, each needing promises about the future to get started. This chapter tests that chain link by link.
 - [05. Who wrote the rules of money, and for whom?](https://neetmonetary.netlify.app/ai/rulebook/rb-law.md): Every country has a body that issues its money, and a law that says what that body is for. A reader says it exists to let output and progress grow, that it inflates a little on purpose for the public good, and that it is kept under control. This chapter reads the laws, follows the money, and visits the places that tried other rules.
-- [06. Epilogue. The promise: the story of money in ten questions](https://neetmonetary.netlify.app/ai/rulebook/rb-promise.md): Two chapters put money on trial with tables and tests. This one tells what they found as a story, through people who might have lived it. The people are imagined. The numbers are not.
+- [06. Paying for tomorrow: who funds the things that pay back later?](https://neetmonetary.netlify.app/ai/rulebook/rb-future.md): Railways, electricity, microchips, the internet and rockets all cost a fortune before they paid anyone back. A reader says promises about the future, credit and money made by a central bank, are what paid for them. This chapter follows the money behind five great technologies, and then asks how Korea, Taiwan and Malaysia paid for theirs.
+- [07. Epilogue. The promise: the story of money in ten questions](https://neetmonetary.netlify.app/ai/rulebook/rb-promise.md): Two chapters put money on trial with tables and tests. This one tells what they found as a story, through people who might have lived it. The people are imagined. The numbers are not.
 
 ## Level 4: Money in motion
 

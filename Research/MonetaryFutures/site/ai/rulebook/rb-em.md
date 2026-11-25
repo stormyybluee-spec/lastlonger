@@ -2,7 +2,7 @@
 
 Rulebook Level 1 (Foundations), chapter 12. Stack: Fundamentals. Id: rb-em.
 
-Web page: https://neetmonetary.netlify.app/#rb-em . Text built 2026-11-19. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-em . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Why a calm local price tag can hide a shrinking passport, how compulsory savings fund the home government, why talent and capital crowd into a few hubs, and whether Singapore was luck, strategy or someone else's plan.*
 

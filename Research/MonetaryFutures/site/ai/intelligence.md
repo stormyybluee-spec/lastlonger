@@ -1,6 +1,6 @@
 # Intelligence: will energy replace money? (the Desk)
 
-Stack: Intelligence. These are graded, dated findings, not settled facts. Check each as-of date and fetch current data before relying on a number. Web page: https://neetmonetary.netlify.app/#desk . Text built 2026-11-19.
+Stack: Intelligence. These are graded, dated findings, not settled facts. Check each as-of date and fetch current data before relying on a number. Web page: https://neetmonetary.netlify.app/#desk . Text built 2026-11-25.
 
 ## Scenario odds by horizon
 
@@ -121,6 +121,9 @@ Level 3, "The big arguments", now has its first chapter: "Is printing money a sc
 
 ### Round 16 in one paragraph (2026-11-19, the third deep Level 3 chapter)
 "Who wrote the rules of money, and for whom?" opens in Malaya in the 1950s, when the country's money came from a currency board that could not steer credit, and asks what central banks are for. The first ones were built to fund wars and stop bank panics, and growth was written into their laws later, usually second. Malaysia's law of 2009 asks for stability that helps the economy grow. Mild inflation is on purpose and published, and the big gains to the state come when inflation beats what lenders expected or when rates are held down. Central banks are controlled by governments, laws and rules on what they must publish, not directly by voters, and the public chose the rules at one remove, through lawmakers. Places that tied the issuer's hands got steadier prices and no rescue in a crisis. Four deep chapters remain.
+
+### Round 17 in one paragraph (2026-11-25, the fourth deep Level 3 chapter)
+"Paying for tomorrow: who funds the things that pay back later?" opens with the Brontë sisters' railway shares, which rose to 120 pounds and fell to 20 while the railway itself was built and served the country. New technology does cost a fortune before it pays back, and most single bets fail. In the cases tested, the promises that paid were largely shares bought by savers and governments promising to buy the product, as with the microchip in 1962 and NASA's fixed-price cargo contracts. Cheap borrowing fed two of three booms but not the internet boom, and government borrowing bought by a central bank was not tested. Korea did aim created money at export loans while its heavy industry grew, at a price in inflation and debt, while Taiwan and Penang built industries by other roads. Three deep chapters remain.
 
 ### Where everything lives
 | File | What |

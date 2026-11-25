@@ -2,7 +2,7 @@
 
 Rulebook Level 3 (The big arguments), chapter 05. Stack: Fundamentals. Id: rb-law.
 
-Web page: https://neetmonetary.netlify.app/#rb-law . Text built 2026-11-19. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-law . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Every country has a body that issues its money, and a law that says what that body is for. A reader says it exists to let output and progress grow, that it inflates a little on purpose for the public good, and that it is kept under control. This chapter reads the laws, follows the money, and visits the places that tried other rules.*
 

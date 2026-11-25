@@ -2,7 +2,7 @@
 
 Rulebook Level 3 (The big arguments), chapter 01. Stack: Fundamentals. Id: rb-print.
 
-Web page: https://neetmonetary.netlify.app/#rb-print . Text built 2026-11-19. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-print . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *You have heard it a hundred times: printing is theft, the dollar has lost 97%, the whole thing is a Ponzi. This chapter puts that charge on trial at full strength, then puts hard money on trial too, and ends with the question that matters more than either: who pays the toll, and who decides.*
 

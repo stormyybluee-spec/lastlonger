@@ -2,7 +2,7 @@
 
 Rulebook Level 3 (The big arguments), chapter 02. Stack: Fundamentals. Id: rb-credit.
 
-Web page: https://neetmonetary.netlify.app/#rb-credit . Text built 2026-11-19. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-credit . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *The last chapter put printing on trial and found a toll, not a scam. Now the defence makes a bigger claim: that money made from nothing is the reason ordinary people are no longer peasants. Seven hard questions test that claim, and the last section grades it line by line.*
 
