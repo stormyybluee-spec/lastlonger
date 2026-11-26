@@ -317,3 +317,84 @@ OLD: Argentina, which has had high inflation for most of the last fifty years ap
 NEW: Argentina, which has had high inflation for most of fifty years, saw
 
 Fix 1 adds a short clause. Fixes 3, 7 and 8 cut words and make room for it. Each OLD string was checked to occur once in the draft.
+
+
+# Retest 3 (draft R18e), 2026-11-26
+
+## Scores (main path only, no GO DEEPER boxes, no A: lines)
+
+| Part | Reader 1 (Malaysian, ESL) | Reader 2 (American) |
+|---|---|---|
+| a. Three ideas and the question | 8 | 9 |
+| b. Zweig story | 7 | 8 |
+| c. Supply and demand, evidence for and against | 6 | 8 |
+| d. Velocity, America, Germany, trust | 7 | 8 |
+| e. Why big printers collapse, one case, bonds not clean | 7 | 8 |
+| f. Malaysia, pass-through, 1998 and 2022, who paid | 6 | 7 |
+| g. Imported falling prices with example | 6 | 7 |
+| h. Verdicts and rebuilt claim | 7 | 8 |
+| Average | 6.8 | 7.9 |
+| Overall (rounded) | 7 | 8 |
+| Pass mark 8 | FAIL | PASS (borderline) |
+| j. Held attention to the end | 7 | 8 |
+| k. Told story, not a report of numbers | 6 | 7 |
+
+## Strongest and weakest section
+
+- Reader 1 strongest: the Zweig newspaper scene [7-11] and the 10 ringgit note in Test 2 [22]. Weakest: Test 4 [49-53], where "points", "core inflation" and an unstated "rule" pile up.
+- Reader 2 strongest: the Zweig scene and the close [62], which ties the newspaper to the chicken. Weakest: Test 4 [50-53] for the same reasons.
+
+## Fairness and advice
+
+- Both readers would find the author fair. The reader who wrote in is treated as having "a real piece of the puzzle" [22], and [36] says the worry about modern central banks "is not foolish". Doubters get the 0.88 and 0.51 figures, the 2022 jump, and a fair open question on subsidies [63].
+- No person, people, faith, country or office is described unfairly. Turkey is hedged [39], Hungary's gap is admitted [34], and Bank Negara and the IMF are both given their view [57].
+- Nothing reads as financial advice. The callout [66] says so plainly.
+
+## Remaining confusions
+
+Reader 1:
+- [13] "match score" is a new idea. The 1 to 0 scale helps, but "match" is still vague.
+- [26] "reserves" and "bond" in one breath. Reserves are defined, but the chain from bond to deposit to reserve is long.
+- [27] 2,000 times against 380 times is hard to hold. The "five times ahead" line saves it.
+- [50] "points" versus percent, and "core inflation".
+- [53] and [56] "Bank Negara's rule" is never stated on the main path, so 1998 is hard to judge.
+- [48] "IMF" is not explained. [19] Bernanke and Blanchard are bare names.
+- [54] "pegs" and "the tie" are used as if known, though one gloss is given.
+
+Reader 2:
+- [53], [56] the same unstated rule.
+- [50] "points" and "core inflation".
+- [29] "ratio".
+- [34] Germany's output grew then fell. The reader may not see why that matters for "goods that were few".
+- [2] "fifth of seven deeper chapters" means nothing to a first-time reader.
+- [10] to [11] "that last point" is not named.
+
+## Ranked fixes (7)
+
+1. [53] Drop the unstated rule.
+OLD: In 1998 Malaysia's prices rose by about as much as Bank Negara's own rough rule predicted, far less
+NEW: In 1998 Malaysia's prices rose 5.3%, far less
+
+2. [56] Same rule, same problem.
+OLD: but in 1998 about as much as Bank Negara's rule predicted
+NEW: but in 1998 more did
+
+3. [59] Same rule in the verdict table.
+OLD: In 1998 inflation rose about as much as Bank Negara's rule predicted.
+NEW: In 1998 inflation rose to 5.3%.
+
+4. [11] Name the last point.
+OLD: Keep that last point in mind. It is the key to this whole chapter.
+NEW: Keep this in mind. Money that loses value is spent at once. That is the key to this whole chapter.
+
+5. [50] Percent, not points, for imports.
+OLD: Rises about 2.1 points, so about 40% of the fall gets through
+NEW: Rises about 2.1%, so about 40% of the fall gets through
+
+6. [29] Drop the jargon word.
+OLD: But speed is a ratio, a result of trust
+NEW: But speed is a result of trust
+
+7. [2] Cut the empty line.
+OLD: Each test ends with a short line on what it does to the claim. This is the fifth of seven deeper chapters.
+NEW: Each test ends with a short line on what it does to the claim.
