@@ -140,3 +140,91 @@ NEW: Hong Kong ties its dollar to the US dollar at a fixed rate.
 ## What would lift the score most
 
 Fixes 1 to 3 target the weakest parts (g, c, d). Reader 1 would still find Test 1 and the Test 3 table dense. A plain one-line takeaway before each of the tables [15], [17] and [32] would help story feel, but that adds words and is left to the author.
+
+
+# Retest 1 (draft R18c), 2026-11-26
+
+## Score table (main path only, GO DEEPER boxes and "A:" lines skipped)
+
+| Part | Reader 1 (Malaysian, 18, ESL) | Reader 2 (American, 18) |
+|---|---|---|
+| (a) three ideas and the question | 8 | 9 |
+| (b) Zweig's newspaper | 8 | 9 |
+| (c) supply and demand, evidence for and against | 6 | 8 |
+| (d) velocity, America, Germany, trust | 7 | 8 |
+| (e) why the big printers collapsed, one case, bonds not clean | 6 | 8 |
+| (f) Malaysia, how much gets through, 1998, 2022, who paid | 7 | 8 |
+| (g) imported falling prices with an example | 6 | 8 |
+| (h) verdict on each idea and rebuilt claim | 7 | 8 |
+| Average | 6.9 | 8.3 |
+| Overall (rounded) | 7 | 8 |
+| (j) held attention to the end | 7 | 8 |
+| (k) told story with explanation, not a report of numbers | 6 | 7 |
+
+Pass mark 8: Reader 1 fails (7). Reader 2 passes (8).
+
+## Strongest and weakest section
+
+- Reader 1: strongest is "A newspaper in the morning, and again at night" [7]-[11]. It is short, vivid and the lesson is stated. Weakest is Test 1 [13]-[19]. The scale "1 is a perfect match", four correlation figures, a negative figure and three central bank rows arrive in one go.
+- Reader 2: strongest is the same Zweig scene, with the chicken scene [48]-[50] and the closing [59] that echoes both. Weakest is Test 3 [31]-[35], where a four-column table carries four countries and the "line is not a wall" turn comes fast.
+
+## Fairness and advice
+
+- Fair to the reader who made the claim: yes. The chapter says "the reader points to a real piece of the puzzle" [21], "the reader's worry about modern central banks is not foolish" [35], and the claim is rebuilt rather than dismissed [57]-[58].
+- Fair to doubters: yes. Bernanke and Blanchard, Sargent, the two Bank Negara governors and both sides of the 1998 controls debate are given. The chapter admits what it did not check (Hungary's share, Turkey's budget, Japan).
+- Unfair description of any person, people, faith, country or office: none found. Small watch points: [32] says price caps in Venezuela "set too low hurt producers" while the sanctions are placed in the same cell, which is balanced. [38] Turkey "looks more like a currency losing trust" is hedged. Malaysia's subsidies are not praised or blamed [60].
+- Financial advice: none. [63] states it plainly and nothing in the body tells the reader to buy, hold or avoid anything.
+
+## Remaining confusions
+
+Reader 1 (ESL):
+- [13]-[16]: "match", "scale where 1 means a perfect match" and "below zero, at -0.33" are hard. He may not see that 0.88 means strong and 0.51 means middling.
+- [18]: "House and share prices did move, by one estimate about 7% and 5%." He cannot tell if this is a rise, or over what time.
+- [23]: "velocity of M2" is a label never explained in the table, though [18] says "cash and deposits".
+- [25]: "paid interest on reserves, which stopped interest rates from falling lower" is the hardest sentence in the chapter.
+- [35]: "create money against the state's debt" and "degree" are abstract.
+- [44]: "2.1 points" is not clearly percentage points. "Core inflation" is only loosely defined.
+- [46]: cells such as "absorbed costs in a slump", "state-set prices" and "scale back" are dense.
+- [51] and [52]: "ties" then "pegging" are not linked, so he may not know they mean the same thing.
+
+Reader 2 (American):
+- [13]-[16]: correlation is explained only by a one-line gloss. Fine, but the two tables back to back feel heavy.
+- [25]: reserves and interest on reserves, as above.
+- [32]: four countries and four columns is a lot to hold.
+- [38]: Turkey's "scheme protecting savers" is vague on the main path.
+- [46]: very dense table. He gets the headline (5.3% against 58.4%, and 3.3% against 8.0%) but not the reasons.
+- [56]: the verdict table repeats numbers already given and reads quickly as a report.
+
+## Ranked fixes (small, no new facts)
+
+1. Block [25]
+OLD: From October 2008 the central bank also paid interest on reserves, which stopped interest rates from falling lower. So much of the money did not reach the shops.
+NEW: From October 2008 the central bank also paid banks interest to keep their reserves. So much of the money did not reach the shops.
+
+2. Block [23]
+OLD: velocity of M2, measured in one quarter of each year
+NEW: velocity of cash and deposits, measured in one quarter of each year
+
+3. Block [44]
+OLD: Rises about 2.1 points, so about 40% of the fall gets through
+NEW: Rises about 2.1 percentage points, so about 40% of the fall gets through
+
+4. Block [51]
+OLD: Hong Kong ties its dollar to the US dollar at a fixed rate.
+NEW: Hong Kong pegs, or ties, its dollar to the US dollar at a fixed rate.
+
+5. Block [16]
+OLD: So the link is strong when inflation is high and weaker when it is low, by how much is disputed.
+NEW: So the link is strong when inflation is high and weaker when it is low.
+
+6. Block [18]
+OLD: House and share prices did move, by one estimate about 7% and 5%.
+NEW: House and share prices did rise, by one estimate about 7% and 5%.
+
+7. Block [13]
+OLD: The link was very strong: on a scale where 1 means a perfect match, it scored 0.88.
+NEW: The link was very strong. On a scale where 1 is a perfect match and 0 is no link, it scored 0.88.
+
+8. Block [35]
+OLD: Both kinds of buying create money against the state's debt.
+NEW: Both kinds of buying create new money and take the state's debt in return.

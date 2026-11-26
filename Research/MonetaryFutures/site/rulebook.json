@@ -15487,7 +15487,7 @@
     },
     {
      "type": "p",
-     "text": "If the reader is right, countries that create money fast should have prices that rise fast. Over long periods, they do. For this chapter, we used World Bank data to check 144 countries from 2000 to 2019. It is our own calculation, not a published study. It compared how fast each country's money grew with how fast its prices rose. The link was very strong: on a scale where 1 means a perfect match, it scored 0.88. A few countries with very high inflation pull this score up."
+     "text": "Picture a market with 100 loaves of bread and 100 ringgit to spend on them. Each loaf costs about 1 ringgit. Now double the money to 200 ringgit and keep the bread the same. If people spend it all, each loaf ends up costing about 2 ringgit. That is supply and demand for money. This is a made-up example with round numbers. Does the real world work like this? For this chapter, we used World Bank data to compare 144 countries from 2000 to 2019. It is our own calculation, not a published study. We asked: did countries whose money grew fastest also have prices that rose fastest? We scored the match on a scale where 1 is a perfect match and 0 is no link at all. Across all 144 countries the match scored 0.88, very strong. A few countries with very high inflation pull this score up."
     },
     {
      "type": "p",
@@ -15497,30 +15497,35 @@
      "type": "table",
      "cols": [
       "Which countries, and which years",
-      "How closely money growth matched price rises (1 is a perfect match)"
+      "Match score",
+      "In plain words"
      ],
      "rows": [
       [
        "All 144 countries, 2000 to 2019",
-       "0.88"
+       "0.88",
+       "Very strong. Countries that made money fastest had the fastest price rises"
       ],
       [
        "The 88 countries with inflation under 6% a year, 2000 to 2019",
-       "0.51"
+       "0.51",
+       "Middling. In calm countries money and prices often go separate ways"
       ],
       [
        "America, year by year, 1960 to 2019",
-       "0.14"
+       "0.14",
+       "Weak. In a single year, more money says little about prices"
       ],
       [
        "America, in blocks of five years, 1960 to 2019",
-       "0.65"
+       "0.65",
+       "Fairly strong. Over five years the link shows up again"
       ]
      ]
     },
     {
      "type": "p",
-     "text": "So the link is strong when inflation is high and weaker when it is low, by how much is disputed. In America from 1985 to 2019 the year by year match was even below zero, at -0.33, which means money and prices tended to move opposite ways. In a calm economy, the amount of money can rise a lot one year without prices following. Then came the biggest test of all. The next table counts the money central banks created and used to buy bonds, which are loans to a government or a company. The short version: they created huge sums, and for years shop prices barely moved."
+     "text": "So the link is strong when inflation is high and weaker when it is low. In America from 1985 to 2019 the year by year match was even below zero, at -0.33, which means money and prices tended to move opposite ways. In a calm economy, the amount of money can rise a lot one year without prices following. Then came the biggest test of all. The next table counts the money central banks created and used to buy bonds, which are loans to a government or a company. The short version: America's central bank created huge sums, and for years shop prices barely moved. Europe and Japan did the same, as a box below shows."
     },
     {
      "type": "table",
@@ -15534,22 +15539,42 @@
        "America's Federal Reserve",
        "Its holdings grew from 0.87 trillion dollars in August 2007 to 4.50 trillion in January 2015",
        "Prices rose between 0.6% and 3.1% a year from 2009 to 2015, and under 1% in 2014 and 2015"
-      ],
-      [
-       "The European Central Bank",
-       "Its holdings grew from 1.2 trillion euros in August 2007 to 8.8 trillion in June 2022",
-       "Prices rose 1.7% a year at most from 2013 to 2019, then 8.5% in 2022"
-      ],
-      [
-       "The Bank of Japan",
-       "Its base money roughly doubled between 2012 and 2014, by one estimate, and rose by 74 trillion yen in 2014 alone",
-       "Prices rose 2.8% in 2014, the year a sales tax went up, and 0.8% in 2015"
       ]
      ]
     },
     {
+     "type": "deeper",
+     "label": "Europe and Japan did the same",
+     "blocks": [
+      {
+       "type": "table",
+       "cols": [
+        "Central bank",
+        "How much it created",
+        "What prices did"
+       ],
+       "rows": [
+        [
+         "The European Central Bank",
+         "Its holdings grew from 1.2 trillion euros in August 2007 to 8.8 trillion in June 2022",
+         "Prices rose 1.7% a year at most from 2013 to 2019, then 8.5% in 2022"
+        ],
+        [
+         "The Bank of Japan",
+         "Its base money roughly doubled between 2012 and 2014, by one estimate, and rose by 74 trillion yen in 2014 alone",
+         "Prices rose 2.8% in 2014, the year a sales tax went up, and 0.8% in 2015"
+        ]
+       ]
+      },
+      {
+       "type": "p",
+       "text": "Both created huge sums. In both, shop prices rose slowly for years. In Europe they then jumped in 2022."
+      }
+     ]
+    },
+    {
      "type": "p",
-     "text": "Those are some of the largest money creations in history, and for years shop prices barely moved. House and share prices did move, by one estimate about 7% and 5%. Then America's money, counting cash and deposits, grew 26.8% in the year to February 2021, and by June 2022 prices were rising about 9% a year. Did the money cause it? Economists still argue. Ben Bernanke and Olivier Blanchard found that most of the rise came from shocks, such as dearer energy and food and shortages of goods. The link was loose and slow."
+     "text": "Those are some of the largest money creations in history, and for years shop prices barely moved. House and share prices did rise, by one estimate about 7% and 5%. Then America's money, counting cash and deposits, grew 26.8% in the year to February 2021, and by June 2022 prices were rising about 9% a year. Did the money cause it? Economists still argue. Ben Bernanke and Olivier Blanchard found that most of the rise came from shocks, such as dearer energy and food and shortages of goods. The link was loose and slow."
     },
     {
      "type": "insider",
@@ -15572,7 +15597,7 @@
      "type": "table",
      "cols": [
       "America",
-      "How many times a year each dollar was spent (velocity of M2, measured in one quarter of each year)"
+      "How many times a year each dollar was spent (velocity of cash and deposits, measured in one quarter of each year)"
      ],
      "rows": [
       [
@@ -15603,7 +15628,7 @@
     },
     {
      "type": "p",
-     "text": "So where did the new money go? When the central bank buys a bond from an investor, the investor's bank account grows, and the investor's bank gets new reserves, money that banks keep at the central bank. People cannot spend reserves, and reserves are not in the velocity table. The deposits could be spent, but by one reading much was saved. From October 2008 the central bank also paid interest on reserves, which stopped interest rates from falling lower. So much of the money did not reach the shops."
+     "text": "So where did the new money go? When the central bank buys a bond from an investor, the investor's bank account grows, and the investor's bank gets new reserves, money that banks keep at the central bank. People cannot spend reserves, and reserves are not in the velocity table. The deposits could be spent, but by one reading much was saved. From October 2008 the central bank also paid banks interest to keep their reserves. So much of the money did not reach the shops."
     },
     {
      "type": "p",
@@ -15636,33 +15661,33 @@
      "cols": [
       "Country",
       "What the printing paid for",
-      "What prices did",
+      "How fast prices rose",
       "The other big blow"
      ],
      "rows": [
       [
        "Germany, 1923",
-       "Almost all government spending, by October 1923",
+       "Almost all government spending",
        "Doubling about every 3.7 days",
-       "War payments owed to the victors of the First World War, and the occupation of its main industrial region, the Ruhr"
+       "War payments to the victors of the First World War, and the occupation of its industrial heart"
       ],
       [
        "Hungary, 1946",
-       "A government rebuilding after war, with a budget gap, by secondary accounts",
-       "Doubling about every 15 hours, the fastest on record",
-       "About 40% of the country's wealth destroyed in the war, and income less than half its pre-war level"
+       "A government rebuilding after war",
+       "Doubling about every 15 hours, the fastest ever",
+       "About 40% of the country's wealth destroyed in the war"
       ],
       [
        "Zimbabwe, 2008",
-       "Central bank spending of many kinds, such as cheap loans and farm inputs, equal to 29% to 36% of output by two IMF estimates, paid for partly by printing",
+       "Central bank spending of many kinds, paid for partly by printing",
        "Doubling about every 25 hours, by one estimate",
-       "Output had already fallen about 40% from 2000 to 2007, after a collapse in farming and a break with foreign lenders"
+       "Output had already fallen about 40% after a collapse in farming"
       ],
       [
        "Venezuela, 2018",
-       "A government deficit of an estimated 15% of output. Base money grew over 73,000% in the year to mid 2019",
-       "Up over 1.6 million percent in 2018, by one estimate",
-       "The oil price fell 71% from mid 2014 to early 2016. Price caps set too low hurt producers, and output fell about 17% in 2016 and 16% in 2017. America imposed sanctions in 2017"
+       "A large government deficit",
+       "Up over 1.6 million percent in a year, by one estimate",
+       "The oil price fell 71%, and later sanctions"
       ]
      ]
     },
@@ -15676,7 +15701,7 @@
     },
     {
      "type": "p",
-     "text": "But the line is not a wall. In 2020 the same central bank bought government bonds while the government spent a record 3.1 trillion dollars more than it took in. From March to August 2020 the central bank's share of all government bonds rose from 15% to 22%. In 2021 and 2022 prices rose fast. Both kinds of buying create money against the state's debt. What keeps them apart is degree, how much and for how long. It is trust, whether people believe the debt will be repaid from future taxes and the central bank will stop when prices rise. And it is output, whether the economy can make enough goods to meet the spending. So the reader's worry about modern central banks is not foolish."
+     "text": "But the line is not a wall. In 2020 the same central bank bought government bonds while the government spent a record 3.1 trillion dollars more than it took in. From March to August 2020 the central bank's share of all government bonds rose from 15% to 22%. In 2021 and 2022 prices rose fast. Both kinds of buying create new money and take the state's debt in return. What keeps them apart is degree, how much and for how long. It is trust, whether people believe the debt will be repaid from future taxes and the central bank will stop when prices rise. And it is output, whether the economy can make enough goods to meet the spending. So the reader's worry about modern central banks is not foolish."
     },
     {
      "type": "p",
@@ -15699,6 +15724,47 @@
      "type": "insider",
      "text": "The question has a partial answer. In the four cases here, printing to pay the state's bills deepened another heavy blow, until people would not hold the money. But 2020 to 2022 shows the line with ordinary bond buying is one of degree and trust, not a wall. Whether the biggest printers end up poorest was not tested.",
      "label": "What test 3 does to the claim"
+    },
+    {
+     "type": "deeper",
+     "label": "The four printers in more detail",
+     "blocks": [
+      {
+       "type": "table",
+       "cols": [
+        "Country",
+        "What the printing paid for",
+        "What prices did",
+        "The other big blow"
+       ],
+       "rows": [
+        [
+         "Germany, 1923",
+         "Almost all government spending, by October 1923",
+         "Doubling about every 3.7 days",
+         "War payments owed to the victors of the First World War, and the occupation of its main industrial region, the Ruhr"
+        ],
+        [
+         "Hungary, 1946",
+         "A government rebuilding after war, with a budget gap, by secondary accounts",
+         "Doubling about every 15 hours, the fastest on record",
+         "About 40% of the country's wealth destroyed in the war, and income less than half its pre-war level"
+        ],
+        [
+         "Zimbabwe, 2008",
+         "Central bank spending of many kinds, such as cheap loans and farm inputs, equal to 29% to 36% of output by two IMF estimates, paid for partly by printing",
+         "Doubling about every 25 hours, by one estimate",
+         "Output had already fallen about 40% from 2000 to 2007, after a collapse in farming and a break with foreign lenders"
+        ],
+        [
+         "Venezuela, 2018",
+         "A government deficit of an estimated 15% of output. Base money grew over 73,000% in the year to mid 2019",
+         "Up over 1.6 million percent in 2018, by one estimate",
+         "The oil price fell 71% from mid 2014 to early 2016. Price caps set too low hurt producers, and output fell about 17% in 2016 and 16% in 2017. America imposed sanctions in 2017"
+        ]
+       ]
+      }
+     ]
     },
     {
      "type": "deeper",
@@ -15739,7 +15805,7 @@
      "rows": [
       [
        "The price of imports",
-       "Rises about 2.1 points, so about 40% of the fall gets through"
+       "Rises about 2.1 percentage points, so about 40% of the fall gets through"
       ],
       [
        "Core inflation, the prices people pay for most things",
@@ -15804,7 +15870,7 @@
     },
     {
      "type": "p",
-     "text": "A country can also catch falling prices. Hong Kong ties its dollar to the US dollar at a fixed rate. From November 1998 Hong Kong's prices fell for 68 months in a row, while America's kept rising. A strong US dollar was one cause. Because of the tie, Hong Kong's dollar rose with it, so imports got cheaper. A crash in property prices was another cause. Argentina, tied to the dollar until 2001, saw prices fall three years in a row. So a tie to the dollar does not simply pass on America's inflation. It takes away the choice to let the currency fall. So when times are hard at home, prices and wages have to fall instead."
+     "text": "A country can also catch falling prices. Hong Kong pegs, or ties, its dollar to the US dollar at a fixed rate. From November 1998 Hong Kong's prices fell for 68 months in a row, while America's kept rising. A strong US dollar was one cause. Because of the tie, Hong Kong's dollar rose with it, so imports got cheaper. A crash in property prices was another cause. Argentina, tied to the dollar until 2001, saw prices fall three years in a row. So a tie to the dollar does not simply pass on America's inflation. It takes away the choice to let the currency fall. So when times are hard at home, prices and wages have to fall instead."
     },
     {
      "type": "p",
