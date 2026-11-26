@@ -27,6 +27,7 @@ blocks = [
     ("DECODE_DATA", "DC", (lambda d, w: (d and w and d.update(groups=[g for g in d["groups"] if g["id"] != w["id"]] + [w])) or d)(load("round3/dc_data.json"), load("round3/wif_group.json"))),
     ("ROUND4_DATA", "R4", load("round4/r4_data.json")),
     ("ROUND5_DATA", "R5", load("round5/r5_data.json")),
+    ("ROUND20_DATA", "R20", load("round20/r20_data.json")),
     ("LEARN_DATA", "LEARN", merged(["site/learn101.json", "site/r3_learn.json", "site/dc_learn.json", "site/r4_learn.json", "site/r5_learn.json"])),
     ("ODDS_DATA", "ODDS", merged(["site/r2_odds.json", "site/r3_odds.json", "site/dc_odds.json", "site/wif_odds.json", "site/r4_odds.json", "site/r5_odds.json"])),
     ("RULEBOOK_DATA", "RULEBOOK", load("site/rulebook.json")),
