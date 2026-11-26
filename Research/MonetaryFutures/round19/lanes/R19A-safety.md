@@ -24,7 +24,7 @@ Hypotheses are tested, not assumed. Evidence against is sought as hard as eviden
 
 ## Section 5. H2 numbers: bank robbery
 - Verified (FBI Bank Crime Statistics 2023, https://www.fbi.gov/file-repository/bank-crime-statistics-2023-091724.pdf, PDF text read): 1,263 robberies, 95 burglaries, 4 larcenies, 1,362 violations in all, at federally insured institutions in 2023. Loss figures are not in that report's text.
-- Verified (FBI Bank Crime Statistics 2012, https://www.fbi.gov/file-repository/bank-crime-statistics-2012.pdf): 4,332 robberies, 4,412 violations in all. Loot taken in 3,919 incidents totalled $32,383,685.41, of which $5,933,882.70 was recovered. Average take per incident with loot taken, python3 -I: $8,263 (about $7,340 net of recovery is not computed here because recovery is for 846 incidents, so only the gross is stated).
+- Verified (FBI Bank Crime Statistics 2012, https://www.fbi.gov/file-repository/bank-crime-statistics-2012.pdf): 4,332 robberies, 4,412 violations in all. Loot taken in 3,919 incidents totalled $32,383,685.41, of which $5,933,882.70 was recovered. Average take per incident with loot taken, python3 -I: $8,263 (gross, before recovery).
 - Verified (FBI Bank Crime Statistics 2019 same file pattern): 2,405 robberies, 2,440 violations.
 - Early figure, secondary (NCJRS abstract of the FBI summary for 2001, https://www.ojp.gov/ncjrs/virtual-library/abstracts/summary-and-interpretation-bank-crime-statistics-2001, opened): 8,496 bank robberies in 2001. Average loss $4,587 in 2001 came from a search summary of the FBI figures, not opened, so secondary.
 - Arithmetic (python3 -I): robberies fell from 8,496 (2001) to 1,263 (2023), a fall of 85.1 percent. Caveat: the 2001 and 2023 counts may use slightly different coverage, and the FBI notes not all bank crime is reported to it.
@@ -68,5 +68,80 @@ Hypotheses are tested, not assumed. Evidence against is sought as hard as eviden
 - Not found: an insurance rate for silver or gold specifically, the Manila galleon loss share, and the share of Spanish silver fleets lost. Do not print any.
 
 ## Section 3b. Hawala, firmer source (replaces the thin IMF row above)
-- Verified (FATF, "The role of hawala and other similar service providers in money laundering and terrorist financing", October 2013; original at https://www.fatf-gafi.org/en/publications/Methodsandtrends/Role-hawalas-in-ml-tf.html, text read from a copy at https://cbr.ru/StaticHtml/File/36805/The_role.pdf): hawala is "traditionally associated with a money transfer mechanism that operated extensively in South Asia many centuries ago", with links along trade routes in the Middle East and East Africa, "a closed system within corridors linked by family, tribe or ethnicity". Providers settle "through trade, cash courier or net settlement, often without any direct wire transfer". Today they serve migrant remittances, and in places such as parts of Somalia and Afghanistan they are "often the only channel", described as "the safest, easiest and cheapest way". FATF's main concern is money laundering and terrorist financing risk, and it says most are legitimate services, with hybrid and criminal types also found. No dollar volume was found. No exact start date: "many centuries ago".
+- Verified (FATF, "The role of hawala and other similar service providers in money laundering and terrorist financing", October 2013, original at https://www.fatf-gafi.org/en/publications/Methodsandtrends/Role-hawalas-in-ml-tf.html, text read from a copy at https://cbr.ru/StaticHtml/File/36805/The_role.pdf): hawala is "traditionally associated with a money transfer mechanism that operated extensively in South Asia many centuries ago", with links along trade routes in the Middle East and East Africa, "a closed system within corridors linked by family, tribe or ethnicity". Providers settle "through trade, cash courier or net settlement, often without any direct wire transfer". Today they serve migrant remittances, and in places such as parts of Somalia and Afghanistan they are "often the only channel", described as "the safest, easiest and cheapest way". FATF's main concern is money laundering and terrorist financing risk, and it says most are legitimate services, with hybrid and criminal types also found. No dollar volume was found. No exact start date: "many centuries ago".
 - Link to H1: hawala is the same idea as the bill of exchange, a debt between two partners settled by trade or net balance so no coins travel. The FATF text names a lack of banking access as the reason it persists today, which points to access and cost as much as safety.
+
+## Section 9b. Crypto theft, an earlier year
+- Secondary (CryptoSlate citing Chainalysis, https://cryptoslate.com/hackers-steal-record-3-8b-during-2022-chainalysis/, opened): about $3.8 billion stolen in 2022, a record then, and the largest hack that year was the Ronin bridge (Axie Infinity) in March 2022, about $612 million (other outlets give $540 to $625 million depending on valuation). Chainalysis's own 2022 page was not reachable (404 on my guess of the URL).
+- Arithmetic (python3 -I): Bybit $1.5 billion is 44 percent of the $3.4 billion 2025 total, about 2.5 times the Ronin figure ($612 million). 2025 ($3.4 billion) is below 2022 ($3.8 billion), so crypto theft is large and lumpy but not on a steady rise. Chainalysis counts hacks of services and wallets, which is separate from scams (investment fraud losses are in the IC3 series).
+
+## Section 13. Templars, second look
+- A second search found no scholar's own paper on Templar transfers, only popular sites, some marked as AI-written, with unsourced "first international transfer" claims. Treat the Templar row as secondary and plausible. A line for the chapter that is safe: the Order, a religious and military order, held deposits and moved money for popes, kings and pilgrims in the 12th and 13th centuries, a service that worked like a bill on a network of houses.
+
+# Evidence for and against H1 and H2
+
+## H1: paper promises replaced carried metal because they were safer
+For:
+- Munro (primary source on how bills worked) says a bill "obviated the necessity of shipping specie and bullion", and bills were issued in numbered copies against "theft, loss, or fraud".
+- England in 1285 ordered roadsides cleared 200 foot each side against robbers, and made lords liable for robberies there (Statute of Winchester).
+- Hawala today is called "the safest, easiest and cheapest way" in places with no banks (FATF 2013), the same logic as the bill.
+- The Spanish fleets sailed under armed escort, and Haring records a large storm and capture loss record, so states did treat the sea route as dangerous.
+Against or not showing it:
+- The scholars who studied the ledgers (Bolton and Guidi-Bruscoli 2021, Kohn 1999) list remittance and credit together, call the bill an instrument of credit, and do not rank safety first.
+- Munro ties the bill to the usury ban: the uncertain return was "profit and not interest". Bolton and Guidi-Bruscoli say usury is "not our prime concern" and exchange and re-change had only a "minimal role" in the Borromei books.
+- The Atlantic insurance premium of 7 to 9 percent one way (Casado Alonso) was judged "not very costly" by him, and the Carrera loss record in Haring is mostly storms, which a paper bill does not cure.
+- No source found gives a robbery rate, so "safety was the main reason" is untested. Coin shortage (Kohn) is another reason.
+
+## H2: the danger moved from robbers on the road to fraud, hacks and scams
+For:
+- US bank robberies fell from 8,496 (2001) to 1,263 (2023), down 85 percent, while IC3 reported losses rose to $20.877 billion in 2025, five times the 2020 figure of $4.2 billion.
+- Malaysia: online scam losses RM1.57 billion (2024) to RM2.97 billion (2025), up 89 percent (Home Minister's written reply).
+- 95 percent of mule account transactions were authorised by the victim (Deputy Finance Minister, Feb 2025), so money leaves by persuasion, as in the TD case.
+- Crypto theft was $3.4 billion in 2025 with a single $1.5 billion theft.
+Against or not showing it:
+- UK payment fraud losses were flat across six years (£1,204.6m in 2020, £1,279.8m in 2025, +6 percent), and unauthorised fraud fell.
+- Crypto theft in 2025 ($3.4 billion) was lower than in 2022 ($3.8 billion).
+- The bank robbery fall may come from cameras, cash handling and fewer branches as much as from a move of criminals. The FBI 2012 average take was $8,263 and the 2001 average was $4,587, but they come from different report formats and are not a clean series.
+- IC3 reported-loss growth also reflects more reporting. Different countries, definitions and years cannot be added. A robbery count and a fraud dollar total are not the same unit, so the move is a claim about kind, not a measured transfer.
+- Highway robbery and fraud both existed before: no source here counts medieval or early modern losses, so there is no old baseline to compare with.
+
+# Gaps
+- Loss share of Spanish silver fleets and Manila galleon: not found. Insurance rate for gold or silver alone: not found.
+- A robbery rate on medieval roads: not found. A highway robbery eyewitness account: not found (only the 1285 statute).
+- Hawala age with a date and a present-day volume: not found.
+- Templar scholarship: no scholar's paper opened.
+- Bank Negara loss figure and money mule counts for Malaysia: only the Deputy Finance Minister's 95 percent and RM399 million frozen, and a search note of 1,600 high-risk mule accounts (not opened).
+- Malaysia police figure is partial year (January to November 2025, over RM2.7 billion, from a search summary). Full year figure is the Home Minister's RM2.97 billion.
+- FBI average loss for 2023 is not in the 2023 report text. 2001 average loss of $4,587 and the 2012 gross average of $8,263 (computed) are not like for like.
+- Spufford, de Roover originals not opened, only Munro's quotation of de Roover 1948.
+- Chainalysis 2022 original page not opened.
+
+# Ledger
+| id | claim | tier | status | source URL | source date | as-of date | falsifier |
+|---|---|---|---|---|---|---|---|
+| R19A-01 | A bill of exchange was a letter ordering an agent in another city to pay, combining loan and transfer, avoiding shipping specie except to settle imbalances | T2 | confirmed | https://www.economics.utoronto.ca/munro5/Bill of Exchange.pdf | 2007 | 2026-11-26 | A scholar's source showing bills did not substitute for shipments |
+| R19A-02 | Bruges to Barcelona bill, 12 Dec 1399, 600 ecus, return bill 12 Feb 1400, 625 ecus (+4.17 percent), from de Roover 1948 Datini archive | T2 | confirmed | https://www.economics.utoronto.ca/munro5/Bill of Exchange.pdf | 2007 (quoting 1948) | 2026-11-26 | De Roover's text giving other amounts |
+| R19A-03 | Bill returns were uncertain so counted as profit not interest, escaping the usury ban | T2 | confirmed | https://www.economics.utoronto.ca/munro5/Bill of Exchange.pdf | 2007 | 2026-11-26 | Evidence that Church courts treated bills as usury |
+| R19A-04 | Ledger evidence (about 2,000 bills, Borromei 1436-8) says the main purpose was transfer of capital, with exchange and re-change minimal | T2 | confirmed | https://flore.unifi.it/retrieve/e398c381-830e-179a-e053-3705fe0a4cff/GUIDI%20BOLTON%20Your_flexible_friend_PRINT.pdf | 2021 | 2026-11-26 | A larger ledger sample showing interest disguise dominant |
+| R19A-05 | The bill gave remittance without shipping specie and was also the basis of commercial credit | T2 | confirmed | https://www.gwern.net/doc/economics/1999-kohn.pdf | 1999 | 2026-11-26 | Scholarship ranking safety or coin shortage as the main motive with data |
+| R19A-06 | The Templars held deposits and moved funds for popes and pilgrims, 12th to 13th century | T3 | plausible | https://publications.innertemple.org.uk/yearbook/articles/2023-2024/the-knights-templars-the-first-city-bankers/ | 2023-24 | 2026-11-26 | Templar scholarship showing the service was small or different |
+| R19A-07 | Hawala is a centuries-old South Asian transfer system settled by trade or net balance, and is still the main channel in parts of Somalia and Afghanistan | T2 | confirmed | https://www.fatf-gafi.org/en/publications/Methodsandtrends/Role-hawalas-in-ml-tf.html | 2013-10 | 2026-11-26 | Newer FATF work revising the description (a 2026 FATF report exists, not read) |
+| R19A-08 | England in 1285 ordered highways cleared 200 foot each side against robbers and made lords liable | T1 | confirmed | https://statutes.org.uk/site/the-statutes/thirteenth-century/1285-13-edward-1-the-statute-of-winchester/ | 1285 | 2026-11-26 | Statutes of the Realm text differing from this translation |
+| R19A-09 | Carrera de Indias insurance premiums in Burgos policies were about 7 to 9.3 percent one way, about 20 percent round trip, 1565-1587 | T2 | confirmed | https://digital.csic.es/bitstream/10261/186650/1/XIII%20R.Cient%c3%adfica_Sevilla_2014_pp.943-960_Casado_Alonso.pdf | 2014 | 2026-11-26 | The Burgos register tables giving other rates |
+| R19A-10 | In 1628 Piet Heyn took the Spanish fleet at Matanzas, only three vessels escaped, sold for 15,000,000 guilders | T2 | confirmed | https://archive.org/download/tradenavigationb00haririch/tradenavigationb00haririch.pdf | 1918 | 2026-11-26 | Newer figures from Dutch archives |
+| R19A-11 | Haring lists repeated storm wrecks of the flotas (for example 14 ships at Vera Cruz in 1601) | T2 | confirmed | https://archive.org/download/tradenavigationb00haririch/tradenavigationb00haririch.pdf | 1918 | 2026-11-26 | Archival loss tables |
+| R19A-12 | Share of Spanish silver fleets lost | T3 | unverified | none found | n/a | 2026-11-26 | Any scholarly loss table such as Chaunu or Haring tables |
+| R19A-13 | US bank robberies were 8,496 in 2001 | T2 | confirmed | https://www.ojp.gov/ncjrs/virtual-library/abstracts/summary-and-interpretation-bank-crime-statistics-2001 | 2002 | 2026-11-26 | FBI 2001 original table |
+| R19A-14 | US bank robberies were 4,332 in 2012 and 1,263 in 2023, with 1,362 violations of all types in 2023 | T1 | confirmed | https://www.fbi.gov/file-repository/bank-crime-statistics-2023-091724.pdf | 2024-09 | 2026-11-26 | A later FBI revision |
+| R19A-15 | Loot taken in 2012 was $32,383,685.41 in 3,919 incidents, an average of $8,263 | T1 | confirmed | https://www.fbi.gov/file-repository/bank-crime-statistics-2012.pdf | 2013 | 2026-11-26 | FBI revision. The average is my calculation (python3 -I) |
+| R19A-16 | Average bank robbery loss was $4,587 in 2001 | T3 | unverified | https://www.ojp.gov/ncjrs/virtual-library/abstracts/summary-and-interpretation-bank-crime-statistics-2001 | 2002 | 2026-11-26 | FBI 2001 table (the abstract page opened had no dollar figure) |
+| R19A-17 | IC3 reported losses were $20.877 billion in 2025 (1,008,597 complaints) and $16.6 billion in 2024 | T1 | confirmed | https://www.ic3.gov/AnnualReport/Reports/2025_IC3Report.pdf | 2026 | 2026-11-26 | IC3 revision |
+| R19A-18 | IC3 losses in 2020 were $4.2 billion | T1 | plausible | https://www.ic3.gov/AnnualReport/Reports/2025_IC3Report.pdf | 2026 | 2026-11-26 | IC3 2020 report (chart label order read from text) |
+| R19A-19 | UK payment fraud losses were £1,279.8m in 2025 and £1,204.6m in 2020, scams (authorised) £576.4m in 2025 | T1 | confirmed | https://www.ukfinance.org.uk/system/files/2026-06/UK%20Finance%20Fraud%20Report%202026.pdf | 2026-06 | 2026-11-26 | UK Finance restatement |
+| R19A-20 | Malaysian online scam losses RM1.57 billion in 2024 and RM2.97 billion in 2025, per the Home Minister | T3 | confirmed | https://www.nst.com.my/amp/news/nation/2026/06/1471348/saifuddin-billions-lost-scammers-only-rm109mil-returned-victims | 2026-06-24 | 2026-11-26 | The Dewan Rakyat written reply text or a police series |
+| R19A-21 | NSRC seized RM32.49 million and returned RM10.9 million since 2022 | T3 | confirmed | https://www.nst.com.my/amp/news/nation/2026/06/1471348/saifuddin-billions-lost-scammers-only-rm109mil-returned-victims | 2026-06-24 | 2026-11-26 | NSRC statement |
+| R19A-22 | 95 percent of online fraud transactions involving mule accounts were voluntarily authorised by victims, and banks froze RM399 million in 2024 | T3 | confirmed | https://www.thestar.com.my/news/nation/2025/02/18/majority-of-mule-accounts-authorised-by-victims | 2025-02-18 | 2026-11-26 | Bank Negara data |
+| R19A-23 | Crypto thefts totalled over $3.4 billion in 2025 with Bybit at $1.5 billion | T2 | confirmed | https://www.chainalysis.com/blog/crypto-hacking-stolen-funds-2026/ | 2025-12-18 | 2026-11-26 | Chainalysis year-end update |
+| R19A-24 | Crypto thefts were about $3.8 billion in 2022, largest the Ronin bridge at about $612 million | T3 | plausible | https://cryptoslate.com/hackers-steal-record-3-8b-during-2022-chainalysis/ | 2023 | 2026-11-26 | Chainalysis 2022 page |
+| R19A-25 | A Malaysian lawyer lost RM155,000 in 10 days to a part-time job scam, paying an account flagged on Semakmule six to eight times | T3 | confirmed | https://www.freemalaysiatoday.com/category/nation/2026/05/16/scam-victim-asks-why-banks-bnm-allowed-transactions-to-flagged-accounts | 2026-05-16 | 2026-11-26 | The bank's or BNM's account of the case |
+| R19A-26 | Police data: over RM2.7 billion lost, 67,735 online crime cases, January to November 2025 | T3 | plausible | https://www.thevibes.com/articles/news/116658/malaysia-hit-with-over-67000-online-crime-cases-in-11-months-losses-surpass-rm2.7-billion | 2025-12 | 2026-11-26 | PDRM original release (not opened, search summary only) |
