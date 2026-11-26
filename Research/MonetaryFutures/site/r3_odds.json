@@ -1,0 +1,167 @@
+{
+ "R3-1": {
+  "likely": 55,
+  "headline": "A bit better than even: the court leans to stablecoins taking almost nothing net from US deposits and money funds lately, and to most past growth being foreign, but nobody measures holders by country.",
+  "up": [
+   "Issuer reports or the 2028-07-18 ban on non-permitted coins show a small US-held share of USDT",
+   "Supply grows again while US deposits and money funds keep rising",
+   "New IMF or Chainalysis flow studies again show North America as a net exporter of tokens"
+  ],
+  "down": [
+   "Regulator or issuer data put the US-held share above 50%",
+   "Supply passes $350B while US bank deposits fall",
+   "Stablecoins pass 10% of T-bills with mostly US buyers"
+  ],
+  "watch": "Tether's Q3 attestation (about 2026-10-31), then total supply against $350B (new growth) or $250B (contraction)"
+ },
+ "R3-9": {
+  "likely": 70,
+  "headline": "About 7 in 10: likely that in a crisis Gulf and Asian states keep getting dollars mostly from their own reserves and Treasury sales, with the yuan as a trade top-up only.",
+  "up": [
+   "The next Japan intervention again shows zero FIMA use while custody falls",
+   "Gulf states keep funding through record bond and sukuk issuance",
+   "Qatar-style PBoC swap renewals stay small next to Gulf dollar needs"
+  ],
+  "down": [
+   "H.4.1 shows FIMA above $1B or swap lines above $5B in a shock",
+   "An ESF statement reveals a Gulf or Asian swap line in use",
+   "A Gulf state signs a yuan-settled crude term contract"
+  ],
+  "watch": "Weekly H.4.1 FIMA and custody lines, foreign official custody against $2.5T"
+ },
+ "R3-10": {
+  "likely": 65,
+  "headline": "About 2 in 3: if bills ever fall below 1.5%, issuers more likely cut payouts and fold into bank-type charters than win a gold door from Congress, and that test is unlikely before 2028.",
+  "up": [
+   "The OCC approves floating-rate or short notes under clause (vii) without new law",
+   "More issuers take national trust charters after Circle",
+   "Circle cuts its 61.5% distributor payout as rates fall"
+  ],
+  "down": [
+   "A GENIUS amendment adds gold or longer notes as eligible reserves",
+   "Offshore issuers gain a large share and Congress widens reserves to compete",
+   "The OCC approves notes beyond 2 years"
+  ],
+  "watch": "Fed path (December hike priced 75 to 79%), Circle's Q3 payout share, first clause (vii) requests after 2027-01-18"
+ },
+ "R3-2": {
+  "likely": 60,
+  "headline": "About 3 in 5: likely that housing caps how much of a printed UHI robots can meet, so a Musk-scale UHI runs about 6 to 10% inflation now rather than Round 2's 0.9%.",
+  "up": [
+   "Shelter inflation stays above goods inflation in any period with large transfers",
+   "Productivity stays near 2% a year while capacity utilization stays below 79.4%",
+   "Housing completions stay near 1% of stock"
+  ],
+  "down": [
+   "Productivity above 4% a year with flat shelter inflation",
+   "Housing completions double with stable land prices",
+   "Humanoid shipments above 500,000 a year before 2029"
+  ],
+  "watch": "Q3 productivity and labor share (early November 2026), then shelter vs core goods CPI"
+ },
+ "R3-8": {
+  "likely": 70,
+  "headline": "About 7 in 10: likely that the first US AI dividend is equity into locked accounts or a fund, not printed cash, and that no bill makes it pledgeable or programmable.",
+  "up": [
+   "Treasury routes AI equity into Trump Accounts",
+   "The Sanders bill gains a number and cosponsors without a cash payout design",
+   "More states ban local guaranteed income"
+  ],
+  "down": [
+   "A bill with money finance or a CBO-scored cash UHI advances",
+   "Bill text allows assignment, payroll-deduction lending or token payment",
+   "A federal benefit is paid on a stablecoin rail"
+  ],
+  "watch": "Any Treasury or White House AI equity announcement, and the first CBO score of an AI-dividend bill"
+ },
+ "R3-4": {
+  "likely": 65,
+  "headline": "About 2 in 3: likely that China extends the 10 November pause in some form, finalizes the solar know-how ban by mid-2027, and pairs it with only a thin yuan finance layer.",
+  "up": [
+   "A numbered MOFCOM notice between 7 and 10 November extends Announcement 70",
+   "The final solar catalogue keeps the 70 µm and fluidized-bed bans",
+   "Yuan grows mainly through refinancing (Kenya-style) rather than new solar loans"
+  ],
+  "down": [
+   "Announcement 70 lapses with no replacement on 10 November",
+   "China drops the solar proposal after comments close on 15 November",
+   "Yuan-financed solar and battery projects abroad surge"
+  ],
+  "watch": "MOFCOM announcement list from 7 to 10 November 2026, then comments closing 15 November"
+ },
+ "R3-12": {
+  "likely": 70,
+  "headline": "About 7 in 10: likely that electric freight swaps an oil flow dependence for a more concentrated but slower-acting battery stock dependence, centered on Chinese anode and LFP cathode.",
+  "up": [
+   "IEA N-1 bars for anode and LFP cathode outside China stay below 100%",
+   "China's new-energy heavy truck share stays above 40%",
+   "No US LFP cathode plant reaches commercial scale by 2028"
+  ],
+  "down": [
+   "A China battery-material cut halts existing fleets within weeks",
+   "Non-China anode and LFP capacity exceeds demand outside China by 2030",
+   "US class 8 electric sales pass 2% with non-Chinese packs"
+  ],
+  "watch": "EO 14421 rules on 24 December 2026, then IEA GEVO 2027 (May 2027)"
+ },
+ "R3-5": {
+  "likely": 65,
+  "headline": "About 2 in 3: likely that factory and robot building lowers home prices where land is cheap, while in coastal metros land absorbs most of the savings unless broad upzoning lets more homes share it.",
+  "up": [
+   "Coastal cities delay broad upzoning (Los Angeles on SB 79)",
+   "Land shares keep rising in the FHFA update",
+   "Factory builders stay small (Reframe short of 114 units by about September 2027)"
+  ],
+  "down": [
+   "Factory-built homes sell near 20% below site-built in coastal metros",
+   "Montana or California by-right laws produce a permit surge with flat land prices",
+   "Coastal price to income falls without a demand drop"
+  ],
+  "watch": "NAR first-time buyer profile (early November 2026) and SB 79 implementation fights"
+ },
+ "R3-6": {
+  "likely": 55,
+  "headline": "A bit better than even: likely that a human-made premium exists as a label effect in gifts, art and identity goods, but its cash size is unmeasured and platforms capture part of it.",
+  "up": [
+   "The published Mandel and Imas paper reports sizable bid gaps",
+   "A marketplace discloses prices by provenance label with a premium",
+   "Provenance labeling rules spread"
+  ],
+  "down": [
+   "Replications find no label effect on what people pay",
+   "AI-made goods take share in gift and art categories at equal prices",
+   "Etsy's gross sales keep falling while its take rate rises"
+  ],
+  "watch": "Etsy Q3 2026 (early November): take rate above 24% and gross sales trend"
+ },
+ "R3-11": {
+  "likely": 70,
+  "headline": "About 7 in 10: likely that child accounts as designed lift the bottom half's share of equities by tenths of a point at most, leaving it below 1% by 2045.",
+  "up": [
+   "Seeds still need a family claim and top-ups stay flat rather than progressive",
+   "Employer contributions flow mainly to children of well-paid staff",
+   "The DFA bottom-half share stays between 0.53% and 0.66%"
+  ],
+  "down": [
+   "A statute routes $500B or more of AI equity to accounts",
+   "A national baby bond aimed at poorer children is enacted",
+   "Treasury data show contributions concentrated in low-income accounts"
+  ],
+  "watch": "Fed DFA 2026 Q3 (about mid-December 2026), watching the 0.58% line"
+ },
+ "R3-13": {
+  "likely": 75,
+  "headline": "About 3 in 4: likely that deep prediction markets and the desk agree on direction on most shared events, with the desk's October hike line the one real miss.",
+  "up": [
+   "The Fed holds on 28 October and hikes on 9 December",
+   "Stablecoins stay under $500B and CLARITY stays unsigned in 2026",
+   "Moody's affirms or cuts France roughly as the court expects"
+  ],
+  "down": [
+   "A deep market moves more than 15 points on Fed capture or Hormuz before year-end",
+   "The Fed hikes on 28 October",
+   "A federal Bitcoin purchase is announced"
+  ],
+  "watch": "FOMC 28 October and 9 December, Moody's on France 23 October, then score the ledger on 31 December"
+ }
+}

@@ -1,0 +1,38 @@
+72 predictions, 0 scored, 37 due and unscored (as of 2026-11-26)
+  DUE P5-01 2026-10-28 desk 91 market 92.5 | FOMC holds the target range at 3.75% to 4.00% | rule: Fed statement target range
+  DUE P5-02 2026-10-28 desk 8 market 7.5 | FOMC hikes 25bp | rule: Fed statement target range
+  DUE P5-03 2026-10-28 desk 78 market 73.5 | At least one dissent at the FOMC | rule: Vote list in the FOMC statement
+  DUE P5-04 2026-10-28 desk 50 market 58 | Two or more dissents at the FOMC | rule: Vote list in the FOMC statement
+  DUE P5-05 2026-10-28 desk 15 market None | FOMC statement changes balance-sheet policy (restart of reserve purchases or new SOMA composition language) | rule: FOMC statement and implementation note
+  DUE P5-06 2026-10-28 desk 2 market None | FOMC statement or implementation note contains the word 'accord' or names a Treasury yield level | rule: Text search of both documents
+  DUE P5-07 2026-10-28 desk 80 market None | 10-year Treasury yield moves less than 10bp on FOMC day | rule: Treasury par yield 2026-10-28 minus 2026-10-27
+  DUE P5-43 2026-10-28 desk 4 market None | FOMC changes the FIMA facility or adds a swap-line partner | rule: FOMC statement or implementation note
+  DUE P5-08 2026-10-29 desk 90 market 90 | Q3 real GDP advance estimate above 2.0% annualized (desk point 3.3%) | rule: BEA advance release, 8:30 ET
+  DUE P5-09 2026-10-29 desk 60 market 61.5 | Q3 real GDP advance estimate above 3.0% annualized | rule: BEA advance release, 8:30 ET
+  DUE P5-10 2026-10-29 desk 30 market 29.5 | Q3 real GDP advance estimate above 3.5% annualized | rule: BEA advance release, 8:30 ET
+  DUE P5-11 2026-10-29 desk 12 market 11.5 | Q3 real GDP advance estimate above 4.0% annualized | rule: BEA advance release, 8:30 ET
+  DUE P5-12 2026-10-29 desk 85 market 90 | September core PCE price index, month on month, rounded, 0.3% or more (desk point 0.3%) | rule: BEA Personal Income and Outlays, 8:30 ET
+  DUE P5-13 2026-10-29 desk 20 market 19.5 | September core PCE price index, month on month, above 0.3% | rule: BEA Personal Income and Outlays, 8:30 ET
+  DUE P5-14 2026-10-29 desk 65 market None | September headline PCE price index, year on year, between 3.0% and 3.6% | rule: BEA Personal Income and Outlays
+  DUE P5-65 2026-10-29 desk 97 market 97.9 | ECB deposit rate unchanged at 2.50% | rule: ECB monetary policy decision
+  DUE P5-66 2026-10-29 desk 50 market None | Lagarde names TPI at the press conference | rule: ECB transcript contains 'TPI' or 'Transmission Protection Instrument'
+  DUE P5-33 2026-10-30 desk 45 market None | WGC Q3 2026 central bank net gold demand above 250 tonnes (desk point 240) | rule: Headline central bank figure in the first Gold Demand Trends Q3 release
+  DUE P5-34 2026-10-30 desk 25 market None | WGC Q3 2026 central bank net gold demand above Q2's 289 tonnes | rule: Same release
+  DUE P5-40 2026-10-30 desk 95 market None | Japan MOF reports zero intervention for 29 September to 28 October | rule: MOF monthly intervention release
+  DUE P5-72 2026-10-31 desk 70 market 90.5 | Moody's or S&P downgrades France by 31 October 2026 (R3E C16, R4E M7) | rule: Polymarket rule: a rating cut announced by either agency by 2026-10-31. Moody's held Aa3 negative on 2026-10-23. Score on 2026-10-31 unless S&P acts off-calendar. If No: desk Brier 0.49, market 0.82
+  DUE P5-15 2026-11-02 desk 60 market None | October to December privately held net marketable borrowing estimate above the August estimate of $628B | rule: Treasury borrowing estimate press release
+  DUE P5-56 2026-11-03 desk 30 market None | The Assembly adopts the first part of the PLF 2027 in its solemn vote | rule: Adopted by recorded vote. Rejection, a 49.3 instead of a vote, or postponement past 2026-11-10 count as No
+  DUE P5-16 2026-11-04 desk 85 market None | Nominal coupon auction sizes unchanged at the November refunding | rule: Refunding statement table (3-year $58B, 10-year $42B, 30-year $25B and the 2, 5 and 7-year sizes)
+  DUE P5-17 2026-11-04 desk 40 market None | Refunding guidance 'for at least the next several quarters' dropped or softened | rule: Refunding statement text compared with 2026-08-05
+  DUE P5-18 2026-11-04 desk 75 market None | Long-end buybacks kept at or above $4B per operation for November to January | rule: Refunding statement buyback schedule
+  DUE P5-19 2026-11-04 desk 1 market None | Any new tenor, century bond or fee on foreign official holders | rule: Refunding statement
+  DUE P5-21 2026-11-05 desk 75 market None | The Cook removal hearing is held with Cook or her counsel taking part (in person or in writing) | rule: Credible press reports
+  DUE P5-70 2026-11-05 desk 65 market None | Etsy Q3 2026 take rate at or above 24% | rule: Q3 2026 revenue divided by gross merchandise sales
+  DUE P5-49 2026-11-07 desk 90 market None | PBoC reports a 24th straight monthly gold addition (October) | rule: PBoC or SAFE reserve data, gold ounces above September
+  DUE P5-29 2026-11-10 desk 72 market None | China issues a numbered extension of all six suspended export-control measures (Nos. 55 to 58, 61 and 62) | rule: MOFCOM or GAC numbered announcement dated on or before 2026-11-10 Beijing time
+  DUE P5-30 2026-11-10 desk 16 market None | China extends only some measures or uses general licences (partial) | rule: Same source. Partial if some measures lapse or licences replace the suspension
+  DUE P5-31 2026-11-10 desk 12 market None | China's suspension fully lapses with no notice | rule: No notice by 2026-11-11 00:00 Beijing time
+  DUE P5-35 2026-11-18 desk 90 market None | TIC September: foreign official Treasury holdings below August's $3,755.6B (desk point $3,675B) | rule: TIC table 'of which foreign official', September 2026, first print
+  DUE P5-36 2026-11-18 desk 85 market None | TIC September: Japan's holdings below August's $1,068.3B | rule: TIC major foreign holders table, September 2026, first print
+  DUE P5-67 2026-11-18 desk 80 market None | Census October housing completions below 1.30M annual rate | rule: First print in the October 2026 New Residential Construction release
+  DUE P5-68 2026-11-18 desk 70 market None | Census October housing starts below 1.35M annual rate | rule: First print

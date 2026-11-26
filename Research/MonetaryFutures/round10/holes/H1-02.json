@@ -1,0 +1,149 @@
+{
+ "id": "H1-02",
+ "question": "Is about 30% of Gulf oil settled in yuan?",
+ "start": "PIIE (M. Chorzempa), 2 September 2026: yuan share of SWIFT payments peaked at 4.7% in July 2024 then fell to 2.75%. Official data put China's goods trade settled in yuan at 28% in the first half of 2025",
+ "links": [
+  {
+   "n": 1,
+   "claim": "The yuan is about 2.75% to 3.1% of SWIFT payments in 2026, sixth or fifth place. China's own goods trade settled in yuan was 28% in the first half of 2025 on official data",
+   "grade": "I0",
+   "p": 0.9,
+   "actor": {
+    "name": "People's Bank of China",
+    "kind": "central bank"
+   },
+   "evidence": [
+    {
+     "what": "PIIE: SWIFT share 4.7% peak July 2024, 2.75% after. 28% of China's goods trade in yuan, first half 2025. CIPS about 33,000 transactions a day, 210 direct participants",
+     "url": "https://www.piie.com/blogs/realtime-economics/2026/has-chinese-yuans-rise-global-usage-hit-wall",
+     "tier": "T2",
+     "date": "2026-09-02"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "claim": "The specimen's 'about 30%' is most likely China's own yuan trade-settlement share (28%) relabelled as a Gulf oil figure, a definition swap",
+   "grade": "I2",
+   "p": 0.45,
+   "actor": {
+    "name": "People's Bank of China",
+    "kind": "central bank"
+   },
+   "move": "silence and mirror",
+   "footprints_expected": [
+    "A Gulf-specific 30% figure from Aramco, ADNOC, SAMA, CBUAE or a tracker would have to exist if the claim were measured",
+    "Gulf sources (the mirror) would report large yuan receipts",
+    "A matching 28 to 30% figure in a Chinese aggregate"
+   ],
+   "footprints_found": [
+    {
+     "what": "PIIE: 28% of China's goods trade settled in yuan, first half 2025",
+     "url": "https://www.piie.com/blogs/realtime-economics/2026/has-chinese-yuans-rise-global-usage-hit-wall",
+     "date": "2026-09-02"
+    },
+    {
+     "what": "Argaam 2026 piece on the petroyuan gives no share and names no yuan cargo",
+     "url": "https://weekend.argaam.com/97/en/Petroyuan_Balancing_Act",
+     "date": "2026-05"
+    }
+   ],
+   "footprints_missing": [
+    "No Gulf-specific yuan share found in three searches (Aramco, ADNOC, SAMA, S&P, Argaam)",
+    "S&P Global says yuan use remains limited in Saudi-China oil trade"
+   ],
+   "rivals": [
+    "The 30% is a real private estimate for China's total crude import bill, inflated by Russian and Iranian barrels that are paid largely in yuan, then misapplied to the Gulf",
+    "A real but unpublished Gulf figure exists, for example yuan paid on some UAE cargoes through CIPS or mBridge"
+   ],
+   "reveal": "SWIFT tracker each month. Aramco annual report for 2026, March 2027. PBoC RMB internationalisation report, about September 2027. Any Aramco or ADNOC statement of yuan settlement"
+  },
+  {
+   "n": 3,
+   "claim": "Accounting bounds the claim. 30% of all Gulf crude sales would be over 100 billion dollars a year in yuan, which the visible Gulf yuan plumbing (CBUAE swap line 35 billion yuan, about 5 billion dollars) and falling CBUAE reserves do not show. 30% of the Gulf's sales to China alone (about 35 billion dollars a year) cannot be ruled out if converted at once",
+   "grade": "I2",
+   "p": 0.55,
+   "actor": {
+    "name": "Central Bank of the UAE",
+    "kind": "central bank"
+   },
+   "move": "scale and chokepoint",
+   "footprints_expected": [
+    "A yuan stock or large swap drawings on SAMA or CBUAE books",
+    "Gulf bank yuan claims in BIS locational data",
+    "Swap lines sized near the flow"
+   ],
+   "footprints_found": [
+    {
+     "what": "CBUAE renewed a 35 billion yuan (18 billion dirham) swap with PBoC in November 2023 for five years",
+     "url": "https://www.centralbank.ae/media/uqmntf04/cbuae-and-peoples-bank-of-china-renew-bilateral-currency-swap-agreement-and-sign-a-memorandum-of-understanding-on-digital-currency-development-en.pdf",
+     "date": "2023-11"
+    },
+    {
+     "what": "CBUAE gross reserves fell 12.4% from February to August 2026, with an equity definition break in March",
+     "url": "https://centralbank.ae/media/njajo2nc/statistical-bulletin-august-2026.pdf",
+     "date": "2026-10"
+    }
+   ],
+   "footprints_missing": [
+    "SAMA currency mix not reachable. BIS yuan claims by Gulf banks not pulled. No SAMA-PBoC swap figure found this search"
+   ],
+   "rivals": [
+    "Yuan received for oil is spent at once on Chinese imports and never sits on a balance sheet, so no stock appears",
+    "Yuan is held by Aramco, ADNOC or commercial banks, not the central bank, and would show only in BIS data"
+   ],
+   "reveal": "BIS locational banking statistics by currency, third quarter 2026, late January 2027. SAMA monthly bulletin if reachable"
+  },
+  {
+   "n": 4,
+   "claim": "SAMA left the mBridge cross-border platform after its proof of concept ended on 13 May 2025 (reported September 2026), so one yuan settlement channel for Saudi oil is not in use by SAMA",
+   "grade": "I0",
+   "p": 0.75,
+   "actor": {
+    "name": "Saudi Central Bank (SAMA)",
+    "kind": "central bank"
+   },
+   "evidence": [
+    {
+     "what": "Crowdfund Insider citing SAMA and the FT: Saudi Arabia ends public role in mBridge after the trial (via EXAM_T9)",
+     "url": "https://www.crowdfundinsider.com/2026/09/312023-saudi-arabia-ends-public-role-in-china-linked-mbridge-cbdc-platform-after-completing-trial/",
+     "tier": "T3",
+     "date": "2026-09"
+    }
+   ]
+  }
+ ],
+ "rival_hypotheses": [
+  {
+   "kind": "official",
+   "text": "Oil is priced and mostly settled in dollars. Yuan use is small and case by case",
+   "inconsistent_evidence": 0
+  },
+  {
+   "kind": "coordination",
+   "text": "Gulf exporters and China agreed to move about 30% of oil to yuan",
+   "inconsistent_evidence": 3
+  },
+  {
+   "kind": "incentives",
+   "text": "Some sellers take yuan where they buy Chinese goods, without any wider agreement",
+   "inconsistent_evidence": 0
+  },
+  {
+   "kind": "accident",
+   "text": "Measurement: a China-wide 28% trade figure, or a Russia and Iran heavy figure, was read as a Gulf oil share",
+   "inconsistent_evidence": 0
+  }
+ ],
+ "coordination": {
+  "level": 0,
+  "channel": "",
+  "enforcement": "",
+  "secrecy_load": ""
+ },
+ "exit": "test",
+ "budget_used": {
+  "searches": 5,
+  "tokens": 0
+ }
+}

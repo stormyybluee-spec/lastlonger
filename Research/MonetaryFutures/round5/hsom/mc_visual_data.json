@@ -1,0 +1,379 @@
+{
+ "chapter": "rb-moneymake",
+ "unit": "billions of US dollars unless stated",
+ "asOf": "2026-10-24",
+ "sources": {
+  "H41": {
+   "url": "https://www.federalreserve.gov/releases/h41/20261022/",
+   "note": "Week ended 2026-10-21, weekly averages unless marked Wednesday"
+  },
+  "H6": {
+   "url": "https://www.federalreserve.gov/releases/h6/current/default.htm",
+   "note": "Released 2026-09-22, August 2026 data, seasonally adjusted"
+  },
+  "H8": {
+   "url": "https://www.federalreserve.gov/releases/h8/current/default.htm",
+   "note": "Released 2026-10-23, September 2026 monthly, seasonally adjusted"
+  },
+  "FEDS2022": {
+   "url": "https://www.federalreserve.gov/econres/notes/feds-notes/understanding-bank-deposit-growth-during-the-covid-19-pandemic-20220603.htm",
+   "note": "Castro, Cavallo and Zarutskie, FEDS Notes 2022-06-03, Financial Accounts data 2019 Q4 to 2021 Q4"
+  },
+  "H41_2020": {
+   "url": "https://www.federalreserve.gov/releases/h41/20200312/",
+   "note": "Week ended 2020-03-11"
+  },
+  "H41_2022": {
+   "url": "https://www.federalreserve.gov/releases/h41/20220317/",
+   "note": "Week ended 2022-03-16"
+  },
+  "MTS": {
+   "url": "https://api.fiscaldata.treasury.gov/",
+   "note": "FY2026 deficit via desk claim R5A-10"
+  },
+  "NYFED_PD": {
+   "url": "https://www.newyorkfed.org/markets/primarydealers",
+   "note": "List as of 2026-10-24"
+  }
+ },
+ "diagrams": {
+  "mc-two-tier": {
+   "title": "Two floors of money",
+   "upper": {
+    "label": "Upstairs: the Fed's books (banks and the Treasury only)",
+    "items": [
+     {
+      "label": "Bank reserves",
+      "value": 2962.6,
+      "src": "H41"
+     },
+     {
+      "label": "Treasury General Account",
+      "value": 952.0,
+      "src": "H41"
+     },
+     {
+      "label": "Overnight reverse repo, money funds and others",
+      "value": 0.3,
+      "src": "H41"
+     },
+     {
+      "label": "Reverse repo, foreign official pool",
+      "value": 326.9,
+      "src": "H41"
+     }
+    ],
+    "assets": [
+     {
+      "label": "Fed Treasuries",
+      "value": 4571.2,
+      "src": "H41"
+     },
+     {
+      "label": "Fed mortgage bonds",
+      "value": 1897.3,
+      "src": "H41"
+     },
+     {
+      "label": "Fed total assets (Wednesday)",
+      "value": 6753.6,
+      "src": "H41"
+     }
+    ]
+   },
+   "bridge": {
+    "label": "Paper cash (a Fed liability held by the public)",
+    "value": 2486.3,
+    "src": "H41"
+   },
+   "lower": {
+    "label": "Downstairs: the public's money",
+    "items": [
+     {
+      "label": "Commercial bank deposits (September 2026)",
+      "value": 19636.6,
+      "src": "H8"
+     },
+     {
+      "label": "M2 (August 2026)",
+      "value": 23342.8,
+      "src": "H6"
+     },
+     {
+      "label": "Currency held by the public, in M2",
+      "value": 2389.7,
+      "src": "H6"
+     },
+     {
+      "label": "Retail money market funds, in M2",
+      "value": 3073.9,
+      "src": "H6"
+     }
+    ]
+   },
+   "arrows": [
+    {
+     "move": "Bank loan or bank buys from a nonbank",
+     "upper": "0",
+     "lower": "+",
+     "label": "Downstairs only"
+    },
+    {
+     "move": "Fed buys from a bank",
+     "upper": "+",
+     "lower": "0",
+     "label": "Upstairs only"
+    },
+    {
+     "move": "Fed buys from a nonbank",
+     "upper": "+",
+     "lower": "+",
+     "label": "Both floors"
+    },
+    {
+     "move": "Treasury spends",
+     "upper": "+ reserves, - TGA",
+     "lower": "+",
+     "label": "Down the stairs"
+    },
+    {
+     "move": "Taxes or auction bought by a nonbank",
+     "upper": "- reserves, + TGA",
+     "lower": "-",
+     "label": "Up the stairs"
+    }
+   ],
+   "baseMoney": {
+    "label": "Base money = cash plus reserves",
+    "value": 5448.9,
+    "deskOld": 5510.4,
+    "deskOldDate": "week ended 2026-10-14",
+    "src": "H41"
+   }
+  },
+  "mc-qe-paths": {
+   "title": "Same $100 purchase, two outcomes",
+   "pathA": {
+    "label": "Fed buys from a bank",
+    "steps": [
+     "Primary dealer passes the bond from the bank to the Fed",
+     "Fed credits the bank with new reserves",
+     "No customer deposit changes"
+    ],
+    "effects": {
+     "reserves": 100,
+     "publicDeposits": 0,
+     "fedTreasuries": 100
+    }
+   },
+   "pathB": {
+    "label": "Fed buys from a pension fund",
+    "steps": [
+     "Primary dealer passes the bond from the fund to the Fed",
+     "Fed credits the fund's bank with new reserves",
+     "The bank credits the fund's deposit"
+    ],
+    "effects": {
+     "reserves": 100,
+     "publicDeposits": 100,
+     "fedTreasuries": 100
+    }
+   },
+   "note": "If a broker-dealer sells from its own stock, its deposit rises first. If it repays a bank loan, path A results. If it repays a money fund, path B results.",
+   "history2020to2022": {
+    "label": "March 2020 to March 2022",
+    "items": [
+     {
+      "label": "Fed Treasuries",
+      "from": 2515.9,
+      "to": 5757.9,
+      "change": 3242.0,
+      "src": "H41_2020, H41_2022"
+     },
+     {
+      "label": "Fed mortgage bonds",
+      "from": 1371.8,
+      "to": 2708.4,
+      "change": 1336.6,
+      "src": "H41_2020, H41_2022"
+     },
+     {
+      "label": "Bank reserves",
+      "from": 1744.5,
+      "to": 3961.7,
+      "change": 2217.2,
+      "src": "H41_2020, H41_2022"
+     },
+     {
+      "label": "M2, February 2020 to February 2022",
+      "from": 15473.4,
+      "to": 21811.8,
+      "change": 6338.4,
+      "src": "H6 releases 2021-03-23 and 2022-03-22"
+     }
+    ]
+   },
+   "primaryDealers": {
+    "count": 25,
+    "asOf": "2026-10-24",
+    "src": "NYFED_PD"
+   }
+  },
+  "mc-deficit-loop": {
+   "title": "Auctions, spending and taxes",
+   "loop": [
+    {
+     "step": "Auction bought by a nonbank",
+     "publicDeposits": -100,
+     "reserves": -100,
+     "tga": 100
+    },
+    {
+     "step": "Auction bought by a bank",
+     "publicDeposits": 0,
+     "reserves": -100,
+     "tga": 100
+    },
+    {
+     "step": "Treasury spends",
+     "publicDeposits": 100,
+     "reserves": 100,
+     "tga": -100
+    },
+    {
+     "step": "Taxes paid",
+     "publicDeposits": -100,
+     "reserves": -100,
+     "tga": 100
+    }
+   ],
+   "whoBuys": [
+    {
+     "buyer": "Households and funds from their deposits",
+     "netDeposits": 0
+    },
+    {
+     "buyer": "Banks",
+     "netDeposits": 100
+    },
+    {
+     "buyer": "Fed, indirectly via nonbank sellers",
+     "netDeposits": 100
+    },
+    {
+     "buyer": "Money funds using reverse repo cash",
+     "netDeposits": 100
+    }
+   ],
+   "live": {
+    "label": "Week ended 2026-10-21",
+    "tgaChange": 68.6,
+    "reservesChange": -59.5,
+    "tgaLevel": 952.0,
+    "src": "H41"
+   },
+   "fy2026Deficit": {
+    "value": 1992.5,
+    "src": "MTS"
+   }
+  },
+  "mc-channels": {
+   "title": "Every door in and out of the public's deposits",
+   "columns": [
+    "Latest year",
+    "2020 to 2021"
+   ],
+   "rows": [
+    {
+     "channel": "Bank loans",
+     "sign": "creates",
+     "latest": 999.6,
+     "latestNote": "H.8, Sep 2025 to Sep 2026",
+     "y2020_21": null,
+     "y2020_21Note": "small net, credit lines about 500 drawn early 2020 then repaid"
+    },
+    {
+     "channel": "Bank purchases of securities",
+     "sign": "creates",
+     "latest": 138.6,
+     "latestNote": "H.8",
+     "y2020_21": 2079.9,
+     "y2020_21Note": "Treasuries 775.6 plus agency 1304.3, FEDS2022"
+    },
+    {
+     "channel": "Fed purchases (net)",
+     "sign": "creates reserves, and deposits when sellers are nonbanks",
+     "latest": 187.5,
+     "latestNote": "H.4.1 year to 2026-10-21, Treasuries +374.8, MBS -187.3",
+     "y2020_21": 4578.6,
+     "y2020_21Note": "Treasuries +3242.0, MBS +1336.6, March 2020 to March 2022"
+    },
+    {
+     "channel": "Deficit spending",
+     "sign": "creates unless funded from nonbank deposits",
+     "latest": 1992.5,
+     "latestNote": "FY2026 deficit, gross",
+     "y2020_21": 5928.5,
+     "y2020_21Note": "net marketable Treasury issuance, 72% bought by the Fed and banks"
+    },
+    {
+     "channel": "Cash withdrawn into wallets",
+     "sign": "destroys deposits",
+     "latest": -68.7,
+     "latestNote": "H.4.1 currency, year on year",
+     "y2020_21": -446.9,
+     "y2020_21Note": "currency in circulation March 2020 to March 2022"
+    },
+    {
+     "channel": "Treasury account build-up",
+     "sign": "destroys while it lasts",
+     "latest": -44.0,
+     "latestNote": "TGA year on year",
+     "y2020_21": null,
+     "y2020_21Note": "large build in 2020"
+    },
+    {
+     "channel": "Reverse repo at the Fed",
+     "sign": "destroys while parked",
+     "latest": 4.5,
+     "latestNote": "domestic use fell 4.5 to 0.3",
+     "y2020_21": null,
+     "y2020_21Note": "total reached 1831.7 by March 2022"
+    },
+    {
+     "channel": "Interest on reserves",
+     "sign": "creates reserves, deposits if passed on",
+     "latest": 115,
+     "latestNote": "model, about 3.9% on 2962.6",
+     "y2020_21": null,
+     "y2020_21Note": "near zero rates"
+    },
+    {
+     "channel": "Stablecoins",
+     "sign": "rearranges",
+     "latest": 304.5,
+     "latestNote": "supply level, desk R5",
+     "y2020_21": null,
+     "y2020_21Note": "small"
+    }
+   ],
+   "result": [
+    {
+     "label": "Bank deposits",
+     "latest": 1225.0,
+     "latestNote": "H.8, +6.7%",
+     "y2020_21": 5452.7,
+     "y2020_21Note": "FEDS2022, +35.1%"
+    },
+    {
+     "label": "M2",
+     "latest": 1250.2,
+     "latestNote": "H.6, Aug to Aug, +5.7%",
+     "y2020_21": 6338.4,
+     "y2020_21Note": "H.6, Feb 2020 to Feb 2022, +41.0%"
+    }
+   ],
+   "note": "Rows overlap, so they do not sum to the result. Signs are for public deposits."
+  }
+ }
+}

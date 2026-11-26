@@ -1,0 +1,205 @@
+[
+ {
+  "file": "site/rulebook.json",
+  "old": "\"Reserve investor\",\n       \"over $1T (estimate)\"",
+  "new": "\"Reserve investor\",\n       \"$1.57T total assets (end 2024, published)\"",
+  "why": "CIC publishes its balance sheet. Total assets were $1,567.3B at 31 December 2024 (CIC annual report 2024, via Reuters). It is not an estimate.",
+  "source": "https://www.marketscreener.com/news/china-s-cic-profit-jumps-30-4-on-investment-gains-financial-capital-under-management-grows-ce7d51d2dc88f223"
+ },
+ {
+  "file": "site/index.html",
+  "old": "\"Reserve investor\", \"over $1T (estimate)\"",
+  "new": "\"Reserve investor\",, \"$1.57T total assets (end 2024, published)\"",
+  "why": "CIC publishes its balance sheet. Total assets were $1,567.3B at 31 December 2024 (CIC annual report 2024, via Reuters). It is not an estimate.",
+  "source": "https://www.marketscreener.com/news/china-s-cic-profit-jumps-30-4-on-investment-gains-financial-capital-under-management-grows-ce7d51d2dc88f223"
+ },
+ {
+  "file": "site/rulebook.json",
+  "old": "\"Developer and strategic arm: new cities, sports, games\",\n       \"about $1T (estimate)\"",
+  "new": "\"Developer and strategic arm: new cities, sports, games\",\n       \"about $905B (2025, published)\"",
+  "why": "PIF's 2025 annual report (published 17 August 2026) gives assets under management of SAR 3.396T, about $904.5B, slightly down from SAR 3.434T. The figure is published and below $1T.",
+  "source": "https://www.zawya.com/en/special-coverage/corporate-earnings/saudi-pif-annualised-total-shareholder-returns-fall-to-5.8-as-some-assets-lose-value-459122"
+ },
+ {
+  "file": "site/index.html",
+  "old": "\"Developer and strategic arm: new cities, sports, games\", \"about $1T (estimate)\"",
+  "new": "\"Developer and strategic arm: new cities, sports, games\",, \"about $905B (2025, published)\"",
+  "why": "PIF's 2025 annual report (published 17 August 2026) gives assets under management of SAR 3.396T, about $904.5B, slightly down from SAR 3.434T. The figure is published and below $1T.",
+  "source": "https://www.zawya.com/en/special-coverage/corporate-earnings/saudi-pif-annualised-total-shareholder-returns-fall-to-5.8-as-some-assets-lose-value-459122"
+ },
+ {
+  "file": "site/rulebook.json",
+  "old": "\"Stabilizer behind the Hong Kong dollar peg\",\n       \"hundreds of billions\"",
+  "new": "\"Stabilizer behind the Hong Kong dollar peg\",\n       \"about $530B (HK$4.15T, end 2025, published)\"",
+  "why": "The HKMA publishes the Exchange Fund balance sheet monthly. Total assets were HK$4,151.4B at 31 December 2025 (unaudited), about US$532B at 7.8.",
+  "source": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/01/20260130-5/"
+ },
+ {
+  "file": "site/index.html",
+  "old": "\"Stabilizer behind the Hong Kong dollar peg\", \"hundreds of billions\"",
+  "new": "\"Stabilizer behind the Hong Kong dollar peg\",, \"about $530B (HK$4.15T, end 2025, published)\"",
+  "why": "The HKMA publishes the Exchange Fund balance sheet monthly. Total assets were HK$4,151.4B at 31 December 2025 (unaudited), about US$532B at 7.8.",
+  "source": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/01/20260130-5/"
+ },
+ {
+  "file": "site/rulebook.json",
+  "old": "\"Owner of national champions\",\n       \"hundreds of billions\"",
+  "new": "\"Owner of national champions\",\n       \"S$518B, about $400B (March 2026, published)\"",
+  "why": "Temasek publishes its net portfolio value. It was S$518B at 31 March 2026 (Temasek Review 2026, 8 July 2026).",
+  "source": "https://www.temasek.com.sg/en/news-and-resources/news-room/news/2026/temasek-net-portfolio-value-grows-to-518b-up-49b-from-last-year"
+ },
+ {
+  "file": "site/index.html",
+  "old": "\"Owner of national champions\", \"hundreds of billions\"",
+  "new": "\"Owner of national champions\",, \"S$518B, about $400B (March 2026, published)\"",
+  "why": "Temasek publishes its net portfolio value. It was S$518B at 31 March 2026 (Temasek Review 2026, 8 July 2026).",
+  "source": "https://www.temasek.com.sg/en/news-and-resources/news-room/news/2026/temasek-net-portfolio-value-grows-to-518b-up-49b-from-last-year"
+ },
+ {
+  "file": "site/rulebook.json",
+  "old": "1961: Dutch economist Albert Winsemius leads a UN mission and becomes Singapore's long-time economic adviser",
+  "new": "1960 to 1961: Dutch economist Albert Winsemius leads a UN mission, reports in 1961 and becomes Singapore's long-time economic adviser",
+  "why": "Winsemius arrived in Singapore on 5 October 1960 at the head of the UN EPTA team and made his first report in 1961. The mission started in 1960, not 1961.",
+  "source": "https://eresources.nlb.gov.sg/infopedia/articles/SIP_1457_2009-02-11.html"
+ },
+ {
+  "file": "site/index.html",
+  "old": "1961: Dutch economist Albert Winsemius leads a UN mission and becomes Singapore's long-time economic adviser",
+  "new": "1960 to 1961: Dutch economist Albert Winsemius leads a UN mission, reports in 1961 and becomes Singapore's long-time economic adviser",
+  "why": "Winsemius arrived in Singapore on 5 October 1960 at the head of the UN EPTA team and made his first report in 1961. The mission started in 1960, not 1961.",
+  "source": "https://eresources.nlb.gov.sg/infopedia/articles/SIP_1457_2009-02-11.html"
+ },
+ {
+  "file": "site/rulebook.json",
+  "old": "The fiftieth-year release in Leviticus, when debts were forgiven and land returned to its original families.",
+  "new": "The fiftieth-year release in Leviticus 25, when land returned to its original families and bonded servants went free. The release of debts every seventh year comes from Deuteronomy 15.",
+  "why": "Precision. Leviticus 25 ties the Jubilee to the return of land and the freeing of bonded servants. The cancellation of debts is the seventh-year release in Deuteronomy 15:1 to 2.",
+  "source": "https://www.sefaria.org/Leviticus.25 and https://www.sefaria.org/Deuteronomy.15"
+ },
+ {
+  "file": "site/index.html",
+  "old": "The fiftieth-year release in Leviticus, when debts were forgiven and land returned to its original families.",
+  "new": "The fiftieth-year release in Leviticus 25, when land returned to its original families and bonded servants went free. The release of debts every seventh year comes from Deuteronomy 15.",
+  "why": "Precision. Leviticus 25 ties the Jubilee to the return of land and the freeing of bonded servants. The cancellation of debts is the seventh-year release in Deuteronomy 15:1 to 2.",
+  "source": "https://www.sefaria.org/Leviticus.25 and https://www.sefaria.org/Deuteronomy.15"
+ },
+ {
+  "file": "site/rulebook.json",
+  "old": "Taxing citizens wherever they live. The US and Eritrea are the only countries that do it.",
+  "new": "Taxing citizens wherever they live. The US is the main example. Eritrea charges its citizens abroad a flat 2% diaspora tax.",
+  "why": "Precision. Eritrea's citizenship tax is a flat 2% Recovery and Rehabilitation Tax on income earned abroad, not a full income tax like the US system.",
+  "source": "https://en.wikipedia.org/wiki/Expatriation_tax"
+ },
+ {
+  "file": "site/index.html",
+  "old": "Taxing citizens wherever they live. The US and Eritrea are the only countries that do it.",
+  "new": "Taxing citizens wherever they live. The US is the main example. Eritrea charges its citizens abroad a flat 2% diaspora tax.",
+  "why": "Precision. Eritrea's citizenship tax is a flat 2% Recovery and Rehabilitation Tax on income earned abroad, not a full income tax like the US system.",
+  "source": "https://en.wikipedia.org/wiki/Expatriation_tax"
+ },
+ {
+  "file": "site/rulebook.json",
+  "old": "The United States is one of only two countries, with Eritrea, that taxes its citizens wherever they live.",
+  "new": "The United States is the only major country that taxes its citizens' full income wherever they live. Eritrea, the other usual example, charges its citizens abroad a flat 2%.",
+  "why": "Precision, same reason as the glossary entry. The two-country claim is common but Eritrea's levy is a flat 2% diaspora tax.",
+  "source": "https://en.wikipedia.org/wiki/Expatriation_tax"
+ },
+ {
+  "file": "site/index.html",
+  "old": "The United States is one of only two countries, with Eritrea, that taxes its citizens wherever they live.",
+  "new": "The United States is the only major country that taxes its citizens' full income wherever they live. Eritrea, the other usual example, charges its citizens abroad a flat 2%.",
+  "why": "Precision, same reason as the glossary entry. The two-country claim is common but Eritrea's levy is a flat 2% diaspora tax.",
+  "source": "https://en.wikipedia.org/wiki/Expatriation_tax"
+ },
+ {
+  "file": "site/landscape.json",
+  "old": "(model, with the 1990 price a memory figure to verify)",
+  "new": "(model, using NAR's 1990 median of $92,000 as reported in a secondary table)",
+  "why": "The $92,000 NAR 1990 median existing-home price is matched by a secondary source citing NAR Existing Home Sales data. The primary NAR and HUD tables could not be loaded (HUD returned empty pages). Status moves from memory to secondary-confirmed.",
+  "source": "https://housingalmanac.com/year/1990"
+ },
+ {
+  "file": "site/index.html",
+  "old": "(model, with the 1990 price a memory figure to verify)",
+  "new": "(model, using NAR's 1990 median of $92,000 as reported in a secondary table)",
+  "why": "The $92,000 NAR 1990 median existing-home price is matched by a secondary source citing NAR Existing Home Sales data. The primary NAR and HUD tables could not be loaded (HUD returned empty pages). Status moves from memory to secondary-confirmed.",
+  "source": "https://housingalmanac.com/year/1990"
+ },
+ {
+  "file": "round2/r2_data.json",
+  "old": "(model, 1990 price from memory)",
+  "new": "(model, 1990 price of $92,000 from NAR via a secondary table)",
+  "why": "Same check as the landscape sentence.",
+  "source": "https://housingalmanac.com/year/1990"
+ },
+ {
+  "file": "site/index.html",
+  "old": "(model, 1990 price from memory)",
+  "new": "(model, 1990 price of $92,000 from NAR via a secondary table)",
+  "why": "Same check as the landscape sentence.",
+  "source": "https://housingalmanac.com/year/1990"
+ },
+ {
+  "file": "round2/r2_data.json",
+  "old": "NAR existing $92,000 (1990, memory, not re-verified)",
+  "new": "NAR existing $92,000 (1990, NAR via a secondary table)",
+  "why": "Same check as the landscape sentence.",
+  "source": "https://housingalmanac.com/year/1990"
+ },
+ {
+  "file": "site/index.html",
+  "old": "NAR existing $92,000 (1990, memory, not re-verified)",
+  "new": "NAR existing $92,000 (1990, NAR via a secondary table)",
+  "why": "Same check as the landscape sentence.",
+  "source": "https://housingalmanac.com/year/1990"
+ },
+ {
+  "file": "round4/lanes/R4E-markets-odds.md",
+  "old": "up from about 2.6% at the start of 2025 [memory for the 2025 level]",
+  "new": "up from about 2.4% at the start of 2025 (2.36% at the end of 2024)",
+  "why": "The 10-year Bund closed 2024 at 2.36% and traded 2.31% to 2.38% on 2 January 2025. About 2.6% was reached only in mid-January 2025.",
+  "source": "https://ibir.deutschebahn.com/2024/en/combined-management-report/business-development/financial-position/interest-rate-environment/"
+ },
+ {
+  "file": "round3/decode/DCC-reset-cbdc.md",
+  "old": "UK 2022 LDI spiral (30y gilt up about 160bp in days, memory)",
+  "new": "UK 2022 LDI spiral (30y gilt up about 160bp in days, BoE letter of 5 October 2022)",
+  "why": "Verified. The Cunliffe letter says the 30-year nominal gilt yield rose by 160 basis points in just a few days.",
+  "source": "https://www.bankofengland.co.uk/-/media/boe/files/letter/2022/october/letter-from-jon-cunliffe-ldi-5-october-2022"
+ },
+ {
+  "file": "round3/decode/DCC-reset-cbdc.md",
+  "old": "BoE 2022-09-28 (about GBP 19.3B bought, memory)",
+  "new": "BoE 2022-09-28 (GBP 19.3B bought, of which 12.1B long conventional and 7.2B index-linked)",
+  "why": "Verified. The BoE bought GBP 19.3B between 28 September and 14 October 2022 and sold the whole portfolio by 12 January 2023.",
+  "source": "https://www.bankofengland.co.uk/news/2023/january/boe-completes-unwind-of-recent-financial-stability-gilt-purchases"
+ },
+ {
+  "file": "round3/decode/DCC-reset-cbdc.md",
+  "old": "US 1946 to 1948 (CPI about 20% y/y at the 1947 peak, memory)",
+  "new": "US 1946 to 1948 (CPI 19.7% y/y at the March 1947 peak)",
+  "why": "Verified. CPI peaked at 19.7% year on year in March 1947 (unadjusted CPI-U, as reported by Gallup and others from BLS data).",
+  "source": "https://news.gallup.com/vault/405026/gallup-vault-americans-reaction-record-inflation.aspx"
+ },
+ {
+  "file": "round3/decode/DCC-reset-cbdc.md",
+  "old": "Confirmed (memory, amount to refetch)",
+  "new": "Confirmed (amount verified in R5E, GBP 19.3B)",
+  "why": "Verified, see the BoE unwind notice.",
+  "source": "https://www.bankofengland.co.uk/news/2023/january/boe-completes-unwind-of-recent-financial-stability-gilt-purchases"
+ },
+ {
+  "file": "round3/decode/WIF-whatif.md",
+  "old": "Profit about $2.8B, $2B to the ESF [memory, DCD]",
+  "new": "Profit about $2.8B, $2B to the ESF (Schwartz, NBER w5699, verified R5E)",
+  "why": "Verified. The ESF was funded with $2B of the $2.8B gold profit, only $200M of it as working capital.",
+  "source": "https://www.nber.org/papers/w5699.pdf"
+ },
+ {
+  "file": "round3/decode/WIF-whatif.md",
+  "old": "with CPI near 20% at the 1947 peak [memory]",
+  "new": "with CPI at 19.7% at the March 1947 peak",
+  "why": "Verified, see the DCC entry.",
+  "source": "https://news.gallup.com/vault/405026/gallup-vault-americans-reaction-record-inflation.aspx"
+ }
+]

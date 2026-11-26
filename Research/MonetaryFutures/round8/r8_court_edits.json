@@ -1,0 +1,2012 @@
+[
+ {
+  "chapter": "rb-strc",
+  "block": "0",
+  "action": "replace",
+  "new": {
+   "type": "tldr",
+   "items": [
+    "In October 2026 Michael Saylor of Strategy (once MicroStrategy) pitched a ladder of new money: Bitcoin as digital capital, STRC as digital credit paying 12%, the company's shares as digital equity, and one day a dollar token paying 8%.",
+    "STRC is a preferred share, not a loan or a deposit. It has no end date, no right to your $100 back and no vote, and the company sets its 12% each month. Bitcoin covers it about 4 to 6 times today, and new borrowing would lower that.",
+    "Of 28 claims checked, 11 hold, 11 are spin, 3 are wrong and 3 cannot be checked. The numbers about today hold. The labels are where it slips: \"strongest credit in the world\" for a junk-rated issuer, and a dollar token paying 8% that US law does not allow.",
+    "The flywheel runs both ways. In 2025 Strategy bought more Bitcoin than was mined. In the third quarter of 2026 it raised $5.41 billion, spent only $0.59 billion on Bitcoin and sold Bitcoin to help pay dividends.",
+    "Money moving between baskets? Read three meters. Dollars: trades only move them, bank loans against Bitcoin create new ones. Ownership and risk: these cross, Bitcoin into listed companies, its risk onto savers. Market value: it changes with no dollar crossing.",
+    "Before you believe any account paying 12%, ask who promises the $100, where the 12% comes from, and what happens if the asset halves. Nothing here is advice."
+   ]
+  },
+  "why": "RT 3.13 and B1: no absolute about dollars, three meters in the headline. Tally recounted (rulings S16, S31, S13, S22). RT 3.1 coverage is a snapshot. Word audit: 'mostly' removed"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "1",
+  "action": "replace",
+  "new": {
+   "type": "bridge",
+   "label": "Built on Levels 1 and 2: recall these before you start",
+   "items": [
+    {
+     "id": "rb-crypto",
+     "text": "Money sits in two baskets: Set 1, the old anchors (gold, government bonds, bank credit), and Set 2, the new rails (stablecoins, tokens, crypto). Stablecoins are Set 1 wearing Set 2 clothes."
+    },
+    {
+     "id": "rb-12",
+     "text": "Under the US GENIUS Act a compliant stablecoin holds cash, deposits or short bills, and may not pay holders interest."
+    },
+    {
+     "id": "rb-bonds",
+     "text": "A bond is a ticket you can resell. Free of default is not free of price."
+    },
+    {
+     "id": "rb-06",
+     "text": "A bank loan creates a new deposit. Repaying it destroys one."
+    },
+    {
+     "id": "rb-moneymake",
+     "text": "Trades between people only move money. Banks also create it when they buy from someone who is not a bank."
+    },
+    {
+     "id": "rb-clubs",
+     "text": "Game theory asks each player's best move, given what the others might do."
+    }
+   ]
+  },
+  "why": "Court bridge check: the old rb-moneymake line ('most deals only move money') is not in that chapter and drops its creation rule (Case 2). RT 3.6: one basket for stablecoins. rb-06 added for the bank-loan door"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "2",
+  "action": "replace",
+  "new": {
+   "type": "radiant",
+   "center": "Digital credit: a pipe between baskets",
+   "caption": "The chapter in one picture. Outlined boxes link to the chapter each idea builds on.",
+   "rays": [
+    {
+     "t": "The pitch",
+     "s": "Capital, credit, equity, money",
+     "link": "rb-crypto"
+    },
+    {
+     "t": "What STRC really is",
+     "s": "A preferred share: no end date, no vote",
+     "link": "rb-bonds"
+    },
+    {
+     "t": "Claim by claim",
+     "s": "11 hold, 11 spin, 3 wrong",
+     "link": "rb-13"
+    },
+    {
+     "t": "The flywheel and its brakes",
+     "s": "Bitcoin down 30%, 50%, 70%",
+     "link": "rb-buckets"
+    },
+    {
+     "t": "Three meters",
+     "s": "Dollars, ownership and risk, value",
+     "link": "rb-moneymake"
+    },
+    {
+     "t": "The wrapper map",
+     "s": "Old and new wrappers, old and new assets",
+     "link": "rb-12"
+    },
+    {
+     "t": "The players",
+     "s": "Who gains in a boom, who pays in a bust",
+     "link": "rb-clubs"
+    },
+    {
+     "t": "Before you believe 12%",
+     "s": "Ten questions and a ringgit example",
+     "link": "rb-em"
+    }
+   ]
+  },
+  "why": "Rays follow the new Part 4 and the recount"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "3",
+  "action": "replace",
+  "new": {
+   "type": "p",
+   "text": "This chapter comes in four parts of about ten minutes each. Each part ends with a stop box. The six words you need are in the box below. Nothing here is advice. The aim is to make you a sharper judge of a big pitch."
+  },
+  "why": "Points to the glossary"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "3",
+  "action": "insert_after",
+  "new": {
+   "type": "cards",
+   "label": "Six words you need",
+   "items": [
+    {
+     "t": "Preferred stock",
+     "d": "A share paid before the ordinary shares but after every lender. Not a loan, so nothing has to be repaid."
+    },
+    {
+     "t": "Par",
+     "d": "The $100 STRC aims to trade at. A target the company works to hold, not a promise."
+    },
+    {
+     "t": "Perpetual",
+     "d": "No end date. You get money back only by selling to someone else."
+    },
+    {
+     "t": "Convertible note and put",
+     "d": "A loan that can turn into shares. The put lets the lender ask for cash back on set dates, which it does when the share price is below the conversion price."
+    },
+    {
+     "t": "mNAV",
+     "d": "The company's value over the Bitcoin it holds: about 1.1 counting its debt and preferred, about 0.9 counting the ordinary shares alone (4 November 2026)."
+    },
+    {
+     "t": "Gross and net coverage",
+     "d": "Times the Bitcoin covers the claims. Net first subtracts the company's cash from the claims, so it reads higher."
+    }
+   ]
+  },
+  "why": "RT cold readers A and B: shared fix, six-term glossary on the main path"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "8",
+  "action": "replace",
+  "new": {
+   "type": "p",
+   "text": "His argument in one line: if gold rising 10% a year let you sell credit paying 5%, then Bitcoin rising 20% a year lets you sell credit paying 10%. Strategy sells that credit to the public, buys Bitcoin with the money, and keeps the difference for its shareholders. Part 2 tests this argument against history."
+  },
+  "why": "RT 4(a) Q2: S13 shown but never tested. Now tested in [22]"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "11",
+  "action": "replace",
+  "new": {
+   "type": "table",
+   "cols": [
+    "Question",
+    "The answer in STRC's own documents"
+   ],
+   "rows": [
+    [
+     "Does it end?",
+     "No. It is perpetual. There is no date when you get your money back"
+    ],
+    [
+     "Can I demand $100 back?",
+     "No. Only if someone takes over the company. Otherwise you sell at the market price"
+    ],
+    [
+     "Who sets the 12%?",
+     "The company, each month, at its \"sole and absolute discretion\". It can cut by up to 0.25 point a month, plus any fall in one-month SOFR (a short-term dollar rate, about 4%), but never below that rate"
+    ],
+    [
+     "Must it pay?",
+     "Only \"when, as and if declared\" by the board. Missed dividends pile up and must be paid before any on junior shares"
+    ],
+    [
+     "Where does it rank?",
+     "Behind about $6.75 billion of debt, almost all convertible notes, and behind another preferred, STRF"
+    ],
+    [
+     "Can I vote?",
+     "No, not even to elect directors if dividends stop. Only on changes that hurt STRC and some mergers"
+    ],
+    [
+     "Can claims be put ahead of mine?",
+     "Yes. Any new debt ranks ahead of STRC without asking you"
+    ],
+    [
+     "What backs it?",
+     "849,327 Bitcoin (about $68 billion at $80,500) and a $4.79 billion dollar reserve. Nothing is pledged to STRC alone"
+    ],
+    [
+     "How big is it?",
+     "About $8.2 billion on 1 November 2026, down from about $10.5 billion in July, after buybacks"
+    ],
+    [
+     "How is the issuer rated?",
+     "B-, which is junk, by S&P (October 2025)"
+    ]
+   ]
+  },
+  "why": "RT 3.1 voting and new-debt rows. V [11] floor rate is one-month SOFR, about 4%. V [11] debt is not all convertible. V R8V-01 size dated"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "12",
+  "action": "replace",
+  "new": {
+   "type": "p",
+   "text": "So why does it trade so close to $100? The company sells new STRC only above $100, buys it back below, and raises the rate when buyers lose interest. That $100 is a target, not a promise. And the board that sets your rate owes its main legal duty to the ordinary shareholders. Your rights are only what the contract says."
+  },
+  "why": "RT 3.2 board duty (Trados). V [34] buybacks start below $100"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "13",
+  "action": "replace",
+  "new": {
+   "type": "myth",
+   "myth": "STRC is like a bank account that pays 12%.",
+   "reality": "A bank account is a debt the bank must repay, and in Malaysia PIDM insures it up to RM250,000. STRC is a share with no repayment date and no insurance, and it closed at $74.57 on 26 June 2026. It is well backed today, but it is not a deposit."
+  },
+  "why": "V: name the close"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "15.0",
+  "action": "replace",
+  "new": {
+   "type": "table",
+   "cols": [
+    "Instrument",
+    "What backs it",
+    "Who promises par",
+    "Worst loss on record"
+   ],
+   "rows": [
+    [
+     "STRC",
+     "Strategy's Bitcoin and dollar reserve, after all debt and STRF",
+     "Nobody. The company aims at $100",
+     "Closed at $74.57 on 26 June 2026, 25% below par"
+    ],
+    [
+     "British consol (perpetual government debt)",
+     "The UK state's power to tax",
+     "Nobody had to repay. Redeemed in 2015",
+     "About 85% below its peak by 1974, before inflation (model from yields)"
+    ],
+    [
+     "Gold-standard credit",
+     "Gold reserves plus the issuer",
+     "The issuer, by law",
+     "The US cancelled gold clauses in 1933 and raised gold from $20.67 to $35, a 41% loss in gold terms"
+    ],
+    [
+     "Bank preferred stock",
+     "The bank's assets after depositors and lenders",
+     "Nobody",
+     "Fannie Mae and Freddie Mac preferreds lost about 95% in 2008. Lehman's went to zero"
+    ],
+    [
+     "Closed-end fund preferred",
+     "A diversified portfolio, at least twice the preferred by law",
+     "Nobody, but the law forces the fund to cut leverage",
+     "Auction-rate versions froze in February 2008. Holders were repaid at par in most cases, after months to years"
+    ],
+    [
+     "Money market fund",
+     "Short government bills and loans",
+     "The fund aims at $1, no guarantee",
+     "The Reserve Primary Fund fell to $0.97 in 2008"
+    ],
+    [
+     "Payment stablecoin",
+     "Cash, insured deposits, short bills, by law",
+     "The issuer, one for one",
+     "USDC fell to about $0.87 for a few days in March 2023"
+    ],
+    [
+     "High-yield bond",
+     "The company's cash flow, ahead of all shares",
+     "The company must repay at the end date",
+     "The US junk bond index fell about 26% in 2008"
+    ]
+   ]
+  },
+  "why": "RT word audit [15.0] 'mostly'. V consol row labelled as a model"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "n15a",
+  "action": "move_into",
+  "target": "15",
+  "position": "end",
+  "why": "RT 4(a) Q1.2 and Q1.4 (Delaware surplus, GAAP), blind spot 15 (founder control), V [14]",
+  "new": {
+   "type": "p",
+   "text": "Accounting and law, briefly. Since 2025 Strategy carries Bitcoin at market value, so reported profit swings with the price: $19.53 billion of net income in the third quarter of 2026 came from unrealized Bitcoin gains, not cash. The preferred shares sit in its accounts as temporary equity. Delaware law lets a company pay dividends only out of surplus, which on today's numbers binds only if Bitcoin falls to about $17,700 to $23,500. The founder's class B shares carry ten votes each, about a third of all votes on the company's share counts (to be confirmed in the proxy)."
+  }
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "18",
+  "action": "replace",
+  "new": {
+   "type": "check",
+   "q": "Who decides STRC's rate each month?",
+   "a": "Strategy, at its own discretion, within limits: no more than about 0.25 point down a month plus any fall in one-month SOFR, and never below that rate."
+  },
+  "why": "V floor rate"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "21",
+  "action": "replace",
+  "new": {
+   "type": "p",
+   "text": "We checked 28 of the talk's claims against Strategy's own SEC filings, market data, history and the law. \"Spin\" means the facts are true but the frame misleads. The claims about today's numbers hold. The words wrapped around them are where it slips."
+  },
+  "why": "RT word audit 'mostly'. Internal 'research lanes' wording removed. 28 claims with S13 and S22"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "22",
+  "action": "replace",
+  "new": {
+   "type": "table",
+   "cols": [
+    "What he said",
+    "Verdict",
+    "The honest version"
+   ],
+   "rows": [
+    [
+     "STRC is \"six times over-collateralized\"",
+     "Holds, on his method",
+     "6.1 times if you subtract the company's cash first, 4.2 without. Nothing is pledged to STRC, and new debt would lower both"
+    ],
+    [
+     "About 48 years of dividends are covered",
+     "Holds, with both yardsticks",
+     "About 46 years in Bitcoin, 3.2 to 3.4 years in dollars, and he gave the dollar figure himself. Paying from Bitcoin means selling it"
+    ],
+    [
+     "It is \"the strongest credit in the world\"",
+     "Wrong",
+     "The issuer is rated junk (B-) and STRC is a share behind about $8 billion of claims. Fair version: well covered for now"
+    ],
+    [
+     "For a New Yorker it is like a bank account paying 24%",
+     "Spin",
+     "Only for a top-bracket New York City taxpayer, and only as a delay: each payment lowers your cost price, so the tax returns when you sell"
+    ],
+    [
+     "Gold rising 10% a year let you sell credit at 5%, so Bitcoin rising 20% lets you sell it at 10%",
+     "Spin",
+     "Gold-backed credit never paid out of gold's rise: the gold price was fixed by law ($20.67 an ounce in the US until 1933) and consols paid 3% from taxes. STRC's 12% is owed in dollars whatever Bitcoin does"
+    ],
+    [
+     "Money needed in four months to four years belongs in digital credit",
+     "Spin",
+     "STRC fell 25% below par within weeks in June 2026, and swung about five times as much as a US bond fund over the year. It pays more than a money fund because it can fall like a share"
+    ],
+    [
+     "A Bitcoin-backed dollar token could pay 6% to 8%",
+     "Wrong for a US payment stablecoin",
+     "The GENIUS Act bans issuer yield and Bitcoin reserves. Offshore a token can hold some Bitcoin (USDT does), but it still pays holders nothing"
+    ],
+    [
+     "Since August 2020, Bitcoin returned 37% a year and MSTR 51%",
+     "Spin",
+     "Bitcoin's 37% reproduces, MSTR's comes out near 46%. Of seven start dates tested, MSTR led from five, gold led from the November 2021 peak, and MSTR was last from January 2025"
+    ]
+   ]
+  },
+  "why": "RT 3.9 S16 both yardsticks, RT 3.12 S31 overstated, RT 4(a) S13 added, RT 3.5 S22 added, RT 3.6 S41 scope, RT 3.9 and 3.11 neutral start dates, V R8V-05 MSTR 46%, RT 3.8 gold-standard break, word audit 'mostly'. $10B-a-year row moved to [25]"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "23",
+  "action": "replace",
+  "new": {
+   "type": "insider",
+   "label": "The pattern behind the verdicts",
+   "text": "The claims that hold are about today's numbers on the company's own method. The claims that fail come in three kinds: labels that borrow trust from safer products (credit, bank account, stablecoin, strongest), stories with the dates bent (the Bank of England, the return table), and sums that skip a step ($10 billion \"made\"). So ask first what a thing is in law, then what it pays."
+  },
+  "why": "RT word audit: 'Every claim that fails is a label' was false (1940 Act, arithmetic)"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "25",
+  "action": "replace",
+  "new": {
+   "type": "deeper",
+   "label": "The full audit: 28 claims and what each flips on",
+   "blocks": "KEEP_CHILDREN"
+  },
+  "why": "Count 28"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "25.0",
+  "action": "replace",
+  "new": {
+   "type": "p",
+   "text": "Tally: 11 hold, 11 spin, 3 wrong, 3 cannot be checked (the 20 times liquidity gain from monthly dividends, the claim that a third of all capital was once preferred stock, and the $10 trillion to $100 trillion scale). Sources: Strategy's SEC filings (the 8-K of 2 November 2026, the third-quarter 10-Q and the results release of 29 October 2026), the STRC prospectus supplement of 2 November 2026, Nasdaq and exchange prices to 4 November 2026, the Investment Company Act, the GENIUS Act and Bank of England history."
+  },
+  "why": "RT 4(a) Q2: internal file path removed, sources named"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "25.1",
+  "action": "replace",
+  "new": {
+   "type": "table",
+   "cols": [
+    "Recomputed",
+    "Result",
+    "Inputs"
+   ],
+   "rows": [
+    [
+     "Coverage of STRC, company method (Bitcoin over debt, STRF and STRC, less dollar assets)",
+     "6.1 times",
+     "849,327 BTC at $80,536, debt $6.75B, dollar assets $4.92B, STRC about $8.2B, STRF about $1.2B (model)"
+    ],
+    [
+     "Coverage of STRC, gross",
+     "4.2 times",
+     "Same, without subtracting dollars"
+    ],
+    [
+     "Coverage of the whole stack, gross",
+     "3.4 times",
+     "All debt and all preferred, about $20B"
+    ],
+    [
+     "Bitcoin price where STRC coverage falls to 1 time",
+     "about $13,250",
+     "Company method, model. Depends on STRF's size, which is not disclosed by series"
+    ],
+    [
+     "Years of dividends and interest in dollars",
+     "3.2 to 3.4 years",
+     "About $1.5B a year against $4.79B to $5.07B"
+    ],
+    [
+     "Volatility, last 90 days and last 12 months",
+     "Bitcoin 39 and 44, MSTR 85 and 81, STRC 9 and 22, US bond fund 5 and 4",
+     "Daily closes to 4 November 2026"
+    ],
+    [
+     "Tax-equivalent yield of 12% as return of capital",
+     "27% top-bracket New York City, 19.5% against a qualified dividend, 12% tax-free account",
+     "Federal, state and city top rates"
+    ]
+   ]
+  },
+  "why": "V resolution 3: about $13,250. Gross STRC row added for the ladder. AGG volatility from R8A for the S22 row"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "n25a",
+  "action": "move_into",
+  "target": "25",
+  "position": "end",
+  "why": "The other 20 claims, so the box holds the whole audit once the file path is removed. 1940 Act verdict Overstated (RT 3.12), gold-standard break (RT 3.8)",
+  "new": {
+   "type": "table",
+   "cols": [
+    "Other claims",
+    "Verdict",
+    "Honest version"
+   ],
+   "rows": [
+    [
+     "Credit on a stock index would be illegal under the 1940 Act",
+     "Spin (overstated)",
+     "A registered fund may issue one class of preferred on a stock portfolio, with assets covering it at least twice. Strategy's stack of five preferreds plus convertible notes would not be allowed on a stock basket. It is allowed on Bitcoin because Bitcoin is not a security"
+    ],
+    [
+     "Selling $10 billion of credit and beating the hurdle \"means you just made $10 billion\"",
+     "Wrong",
+     "Money raised is not profit. Shareholders gain only the yearly gap between Bitcoin's return and the 12% cost, which can be negative"
+    ],
+    [
+     "STRC fell below par in early summer and a dollar reserve fixed it",
+     "Spin",
+     "It closed as low as $74.57 on 26 June 2026. The repair took a rate rise to 12%, a reserve rebuilt from new share sales and Bitcoin sales, and about $2.1 billion of buybacks"
+    ],
+    [
+     "The Bank of England raised capital, bought gold and issued credit against it",
+     "Spin",
+     "It was founded in 1694 to lend £1.2 million to the government for a war. Consols, from 1751, were backed by taxes. Britain's legal gold standard ran from 1821 to 1931, with a break from 1914 to 1925"
+    ],
+    [
+     "STRC is the most liquid preferred stock in the world",
+     "Holds",
+     "About $156 million a day, far ahead of the JPMorgan, Citigroup and Boeing preferreds checked"
+    ],
+    [
+     "$10 billion of credit buys a year of new Bitcoin",
+     "Holds, at one price",
+     "At $80,500 it buys about nine months of new coins. It is exactly a year near $61,000"
+    ],
+    [
+     "STRC terms: perpetual, $100 target, 12%, daily dividends after the vote",
+     "Holds",
+     "Daily record dates from 1 November 2026, 12% for November"
+    ],
+    [
+     "Strategy sells STRC above $100 and buys back below",
+     "Holds",
+     "A policy, not a right: $2.04 billion spent at an average of $97.39 in 2026"
+    ],
+    [
+     "About $8.8 billion outstanding, from zero to $10.5 billion in under a year, about $150 million a day",
+     "Holds",
+     "Peak about $10.5 billion in mid 2026, about $8.2 billion now, about $156 million a day"
+    ],
+    [
+     "Credit is an alloy: 70% Bitcoin and 30% cash holds",
+     "Spin",
+     "The dollar years are right, but the mix today is about 93% Bitcoin and 7% dollars"
+    ],
+    [
+     "Strategy holds about 4% of all Bitcoin, about $75 billion of capital",
+     "Holds",
+     "4.04% of 21 million, about $73 billion with dollars"
+    ],
+    [
+     "Raised $21 billion this year, $25 billion and $24 billion before",
+     "Holds",
+     "2026 and 2025 match the filings. 2024 cash flows show $22.6 billion"
+    ],
+    [
+     "Volatility moves from the credit to the equity",
+     "Spin",
+     "The idea is sound, but STRC's calm was partly bought with buybacks and rate rises, and it swung 22 over the past year"
+    ],
+    [
+     "Strategy alone can buy all Bitcoin mined forever",
+     "Spin",
+     "True for January to September 2026, not in the third quarter alone, and \"forever\" depends on the premium"
+    ],
+    [
+     "Monthly dividends made STRC 20 times as liquid",
+     "Cannot check",
+     "Not reproducible"
+    ],
+    [
+     "The spread is about 700 basis points over the 10-year and will compress to 400 to 500",
+     "Holds",
+     "About 710 today. The compression is a forecast with no date"
+    ],
+    [
+     "Credit investors want three years of record, this is the sophomore year",
+     "Holds",
+     "About 15 months of payments, one break below par, no missed dividend"
+    ],
+    [
+     "A third of all capital was preferred stock 100 years ago",
+     "Cannot check",
+     "Not sourced"
+    ],
+    [
+     "Credit risk on STRF is \"like three basis points\"",
+     "Spin",
+     "The company's own model. A B- issuer rating has historically carried default odds of several percent a year"
+    ],
+    [
+     "A $1.5 trillion to $2 trillion system can scale to $10 trillion to $100 trillion",
+     "Cannot check",
+     "A forecast with no date. All Bitcoin is worth about $1.62 trillion today. If digital credit kept today's ratio to Bitcoin (0.9%), a $10 trillion to $100 trillion system would carry about $90 billion to $900 billion of it, 1.1% to 11% of today's money fund assets (model)"
+    ]
+   ]
+  }
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "27",
+  "action": "replace",
+  "new": {
+   "type": "check",
+   "q": "Why do \"48 years\" and \"3.4 years\" of dividends both hold?",
+   "a": "48 years (about 46 today) counts the Bitcoin, which pays only if it is sold. 3.2 to 3.4 years counts the dollars on hand, which pay without selling anything. Saylor gave both."
+  },
+  "why": "RT 3.9 S16 ruling"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "28",
+  "action": "replace",
+  "new": {
+   "type": "check",
+   "q": "Why can a US payment stablecoin not pay 8% backed by Bitcoin?",
+   "a": "The 2025 GENIUS Act bans issuers from paying holders yield and allows only cash-like reserves, not Bitcoin or preferred stock."
+  },
+  "why": "RT 3.6 scope: US payment stablecoins"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "29",
+  "action": "replace",
+  "new": {
+   "type": "check",
+   "q": "What does the return table depend on most?",
+   "a": "The start date. From August 2020 Bitcoin and MSTR lead. From the November 2021 peak, gold and the S&P 500 beat both, and from January 2025 MSTR is last."
+  },
+  "why": "Neutral start dates"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "32",
+  "action": "replace",
+  "new": {
+   "type": "diagram",
+   "key": "flywheel-loop",
+   "caption": "Eight links. In a bull market each pushes the next. In a bear market each link can run backwards, and the question is which brake holds first."
+  },
+  "why": "RT word audit [32] 'every'"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "33",
+  "action": "replace",
+  "new": {
+   "type": "p",
+   "text": "The key link is the premium, mNAV: the company's value compared with its Bitcoin. Above 1, selling new shares buys more Bitcoin per share. Below 1, it does the opposite, and the company has said it may then sell Bitcoin instead (reported December 2025). The premium was about 2.5 to 3.5 at the late-2024 peak (press estimates). On 4 November 2026 it was about 1.1 on the company's measure, which adds debt and preferred less cash, and about 0.9 on the shares alone."
+  },
+  "why": "RT 3.4 why two readings differ and stated policy below 1. V [33] late-2024 range and 4 November values"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "34",
+  "action": "replace",
+  "new": {
+   "type": "table",
+   "cols": [
+    "Brake",
+    "Where it bites",
+    "Reading in early November 2026"
+   ],
+   "rows": [
+    [
+     "Bitcoin against what Strategy paid",
+     "Below $75,451 the whole pile is worth less than it cost",
+     "$80,500, only 6.7% above cost. The 2026 low was about $57,700 on 1 July"
+    ],
+    [
+     "The premium (mNAV)",
+     "Below 1, selling shares to pay dividends shrinks Bitcoin per share, and the company says it may sell Bitcoin instead",
+     "About 1.1 on the company's measure, 0.9 on the shares alone (4 November)"
+    ],
+    [
+     "Dollars on hand",
+     "Company policy, as reported: keep at least 12 months of dividends",
+     "$4.92 billion, about 39 months"
+    ],
+    [
+     "STRC's price",
+     "Below $100 the company stops selling and starts buying back",
+     "$99.98 (4 November). It paid about $99.50 a share in buybacks in the week to 1 November"
+    ],
+    [
+     "Convertible notes",
+     "Holders can demand cash when the share price is below the conversion price",
+     "$5.91 billion can be put back for cash from September 2027 to September 2028. Every conversion price is above today's share price"
+    ]
+   ]
+  },
+  "why": "V [34] 2026 low date, buyback trigger, reserve rule labelled as reported. RT 3.4 policy below 1. RT 4(a) Q3.2 index brake"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "35",
+  "action": "replace",
+  "new": {
+   "type": "insider",
+   "label": "The real stress point",
+   "text": "Not the 12% dividends. The convertible notes. Two years of dividends plus the notes holders can cash in come to about $8.9 billion, against $4.92 billion of dollars on hand, a gap of about $4 billion. Strategy can refinance, sell shares or sell Bitcoin. Closing the gap by selling Bitcoin would take about 99,000 coins if Bitcoin halved, 60% of a year's new supply. A put is a refinancing test, not a default, as long as lenders and share buyers are still willing."
+  },
+  "why": "RT 3.10 convert gap in Bitcoin. Cold reader A: 'as long as markets stay open' replaced"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "36",
+  "action": "replace",
+  "new": {
+   "type": "table",
+   "cols": [
+    "If Bitcoin falls",
+    "Price",
+    "Bitcoin over all debt and preferred (gross, cash not counted)",
+    "Months of dollar dividends (held fixed)",
+    "Bitcoin to sell a year for dividends once the reserve runs low, if no shares are sold",
+    "Bitcoin to sell for the 2027 to 2028 note puts, if not refinanced"
+   ],
+   "rows": [
+    [
+     "Today",
+     "$80,500",
+     "3.4 times",
+     "39",
+     "about 19,000 (11% of a year's new coins)",
+     "about 50,000 (30%)"
+    ],
+    [
+     "Down 30%",
+     "$56,400",
+     "2.4 times",
+     "39",
+     "about 27,000 (16%)",
+     "about 71,000 (43%)"
+    ],
+    [
+     "Down 50%",
+     "$40,300",
+     "1.7 times",
+     "39",
+     "about 37,000 (23%)",
+     "about 99,000 (60%)"
+    ],
+    [
+     "Down 70%",
+     "$24,200",
+     "1.0 times",
+     "39",
+     "about 62,000 (38%)",
+     "about 165,000 (a full year)"
+    ]
+   ]
+  },
+  "why": "RT 3.10 and B4: gross labelled, months held fixed by design (cold reader A), convert gap column from R8B B"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "37",
+  "action": "replace",
+  "new": {
+   "type": "p",
+   "text": "This is a model, not a forecast, with debts and reserve held fixed. First, the reserve could pay about 27 months of dividends before it reaches the 12-month floor. That is the best case, not a promise: in the third quarter of 2026 Strategy sold Bitcoin for dividends with about $5 billion in the reserve. Second, see the ladder below for where each kind of cover runs out. Third, the note puts, not the dividends, are the big bill: at minus 70% they would take a full year of new Bitcoin. Fourth, cover is not price: STRC fell 25% in June 2026 while its Bitcoin was still worth more than twice every claim up to STRC."
+  },
+  "why": "RT B4 and 3.10: contradiction fixed (gross versus net), 27 months as best case, convert gap, coverage is not price. V R8V-09 break-evens"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "37",
+  "action": "insert_after",
+  "new": {
+   "type": "table",
+   "cols": [
+    "One backing ladder (1 November 2026, model)",
+    "Times covered today",
+    "Bitcoin price where it falls to 1 time"
+   ],
+   "rows": [
+    [
+     "STRC, company method: claims up to STRC, less dollars",
+     "6.1",
+     "about $13,250"
+    ],
+    [
+     "STRC, gross",
+     "4.2",
+     "about $19,000"
+    ],
+    [
+     "All debt and preferred, less dollars",
+     "4.5",
+     "about $17,700"
+    ],
+    [
+     "All debt and preferred, gross",
+     "3.4",
+     "about $23,500"
+    ]
+   ]
+  },
+  "why": "RT 3.10 and 7(d) item 2: one ladder used everywhere, net and gross labelled"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "39",
+  "action": "replace",
+  "new": {
+   "type": "p",
+   "text": "In the third quarter of 2026 Strategy raised $5.41 billion by selling shares, but spent only $0.59 billion on Bitcoin. The rest went into its dollar reserve, buying back STRC below $100, and dividends. It sold $348.6 million of Bitcoin in the quarter (at the value on its books), $239.9 million of it to pay dividends. The share sales were defending the credit instead of buying Bitcoin. The talk did not mention it."
+  },
+  "why": "V [39] carrying value"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "41.0",
+  "action": "replace",
+  "new": {
+   "type": "table",
+   "cols": [
+    "Case",
+    "What powered it",
+    "What broke it, and how fast",
+    "Who was paid first",
+    "Same and different now"
+   ],
+   "rows": [
+    [
+     "South Sea Company, 1720",
+     "A premium: shares above the value of its real asset, interest-paying government debt, let it take in more debt cheaply",
+     "Shares fell from about £1,000 in June to about £135 by the end of 1720, within about three months",
+     "Insiders who sold early, and the government, which refinanced its debt",
+     "Same: a premium over a real asset can vanish while the asset stays. The company survived, but late buyers lost about 85%. Different: Strategy's asset is public and trades every day"
+    ],
+    [
+     "Mississippi Company, 1719 to 1720",
+     "The issuer pegged its own share price by printing notes",
+     "The peg was dropped and shares fell about 90% within a year",
+     "Holders who switched to land or coin early",
+     "Same: an issuer defending its own paper. Different: Strategy defends STRC with a finite reserve, so the defence ends when the reserve does"
+    ],
+    [
+     "Goldman Sachs Trading Corporation, 1928 to 1932",
+     "Trusts stacked on trusts, financed with preferred stock and debt",
+     "Issued at $104, above $220 in early 1929, under $2 by 1932",
+     "Debt and preferred before common",
+     "Same: common shares levered by preferred and debt, priced above their assets at the peak. Different: Strategy holds one asset directly, with no cross-holdings"
+    ],
+    [
+     "MicroStrategy itself, March 2000",
+     "A dot-com valuation",
+     "A restatement of results cut the stock 62% in one day",
+     "No debt crisis",
+     "Same founder and company. Different: the asset can now be checked on the blockchain by anyone"
+    ],
+    [
+     "UK split-capital zero shares, 2001 to 2002",
+     "Low-risk shares sold to savers, paid at a set date if the trust's assets were enough",
+     "A bear market plus hidden cross-holdings and bank debt, over about two years. Compensation averaged about 40% of losses",
+     "Bank lenders, then the zeros",
+     "Same: a safe-sounding class resting on a volatile pool. Different: zeros had an end date and hidden holdings. STRC has none and Strategy's holdings are public"
+    ],
+    [
+     "Closed-end fund discounts, a standing puzzle",
+     "A fixed pool on an exchange with no right to redeem",
+     "Discounts can last for years and widen in stress (Lee, Shleifer and Thaler, 1991)",
+     "Not applicable",
+     "Same: MSTR's shares alone trade near 0.9 of its Bitcoin. Different: Strategy can buy back shares or sell Bitcoin faster than a fund board usually acts"
+    ],
+    [
+     "GBTC premium to discount, 2021 to 2022",
+     "The only easy wrapper for Bitcoin in a brokerage account",
+     "Rival wrappers arrived. A premium of about 35% became a discount of about 47% to 50% within about 22 months",
+     "Holders who sold at the premium, and the sponsor's fees",
+     "Same: a premium from wrapper scarcity. Different: ETFs now offer the wrapper at no premium, and GBTC had no fixed claims"
+    ],
+    [
+     "Celsius, BlockFi and Terra, 2022",
+     "Double-digit yields on crypto, payable on demand",
+     "Runs within days to weeks. Withdrawals frozen, then bankruptcies",
+     "Secured lenders and early redeemers",
+     "Same: a yield far above bills sold to savers. Different: STRC has no right to redeem, so a run shows up as a lower price, not a frozen account"
+    ]
+   ]
+  },
+  "why": "RT B5 South Sea correction, RT 3.8 Goldman peak, RT 3.4 closed-end fund row, RT 4(a) Q3.4 columns (how long, who was paid first)"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "41.1",
+  "action": "replace",
+  "new": {
+   "type": "p",
+   "text": "What is the same across the table: the premium is the engine, the premium rests on one volatile asset, the issuer defends its own paper with a finite pool, and the product is sold to savers as near-cash (the talk's four-months-to-four-years ladder)."
+  },
+  "why": "Links the S22 ruling"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "43",
+  "action": "replace",
+  "new": {
+   "type": "check",
+   "q": "What is mNAV, and why does it matter if it falls below 1?",
+   "a": "The company's value compared with the Bitcoin it holds. Below 1, selling new shares to pay dividends or buy Bitcoin shrinks the Bitcoin each share owns. The company's measure adds its debt and preferred, so it reads higher (about 1.1) than the shares alone (about 0.9)."
+  },
+  "why": "RT 3.4 two readings"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "44",
+  "action": "replace",
+  "new": {
+   "type": "check",
+   "q": "What happened to Strategy's new money in the third quarter of 2026?",
+   "a": "It raised $5.41 billion from shares but spent only $0.59 billion on Bitcoin. The other 89% went to the dollar reserve, STRC buybacks and dividends, and it sold Bitcoin to help pay them."
+  },
+  "why": "RT word audit 'most'"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "45",
+  "action": "replace",
+  "new": {
+   "type": "check",
+   "q": "What is the binding stress point before 2029?",
+   "a": "About $5.91 billion of convertible notes that holders can cash in from September 2027, more than the dollars on hand."
+  },
+  "why": "RT 3.10"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "46",
+  "action": "replace",
+  "new": {
+   "type": "h",
+   "text": "Part 4 of 4. Money moving between baskets: three meters"
+  },
+  "why": "Court ruling on the core dispute"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "47",
+  "action": "replace",
+  "new": {
+   "type": "p",
+   "text": "Here is the big idea to test, in the owner's words: future money moving between baskets. The pitch says digital credit pulls money out of the old basket (money funds, government bills, bank deposits) and into the new one (Bitcoin). To see what really moves, read three meters, not one."
+  },
+  "why": "Extends the concept instead of answering it with no (RT 3.13)"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "47",
+  "action": "insert_after",
+  "new": {
+   "type": "table",
+   "cols": [
+    "Meter",
+    "What moves it",
+    "Digital credit",
+    "Stablecoins"
+   ],
+   "rows": [
+    [
+     "1. Dollars",
+     "Trades move dollars between people. A bank loan, or a bank buying from a non-bank, creates new ones. Repaying destroys them",
+     "Buying STRC and Bitcoin moves dollars to the Bitcoin seller. A bank loan against Bitcoin creates new ones",
+     "Buying a bill moves dollars to the bill's seller"
+    ],
+    [
+     "2. Ownership and risk",
+     "Who holds which asset and carries its swings",
+     "Bitcoin into a listed company, its risk onto savers",
+     "Bills behind crypto tokens, the issuer's risk onto holders"
+    ],
+    [
+     "3. Market value",
+     "The last price revalues every unit, with no dollar crossing",
+     "Buying can lift all 20 million mined coins by more than was spent, or fail to",
+     "Near $1 while the backing holds"
+    ]
+   ]
+  },
+  "why": "RT 3.13 three meters, ledger test applied to both pipes (RT 3.6)"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "48",
+  "action": "replace",
+  "new": {
+   "type": "diagram",
+   "key": "basket-pipe",
+   "caption": "Follow one $10,000. The saver's dollars pass through the wrapper to whoever sold the Bitcoin and stay in the dollar basket. What crosses the line is Bitcoin, into a listed company, and Bitcoin's risk, onto the saver. A bank loan against Bitcoin, not drawn here, would add new dollars."
+  },
+  "why": "RT B1: no absolute. SVG labels need a matching change (section 7 of DEBATE_R8)"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "49",
+  "action": "replace",
+  "new": {
+   "type": "steps",
+   "items": [
+    "A saver moves $10,000 from a money market fund into STRC. The fund sells $10,000 of bills. If a household or another fund buys them, dollars only move. If a bank buys them, it creates a new deposit to pay. The saver's dollars go to Strategy.",
+    "Strategy buys $10,000 of Bitcoin from a miner or an early holder. The dollars go to the seller, who parks them in a bank, a bill or a money fund. No dollar enters Bitcoin. Bitcoin enters a listed company.",
+    "Strategy pays the saver a daily dividend from its dollar reserve, which was raised by selling new shares. In effect new shareholders pay the preferred holders.",
+    "In a bear market Strategy sells Bitcoin to pay the dividend. A Bitcoin buyer's dollars go to the saver, and Bitcoin leaves the wrapper. This happened in the third quarter of 2026.",
+    "A different door: a bank lends $10,000 to someone who pledges Bitcoin. The bank creates a new $10,000 deposit, so the new basket helps create old-basket dollars. Repaying destroys it. Saylor calls this a tailwind. Its size today is unknown: no public total was found."
+   ]
+  },
+  "why": "RT 3.13 fifth step (bank loan creates deposits), court ledger fix on step 1 (bank buyer of the bill creates deposits, rb-moneymake). Word audit 'mostly'"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "50",
+  "action": "replace",
+  "new": {
+   "type": "insider",
+   "label": "What really crosses the line",
+   "text": "In steps 1 to 4 dollars change hands inside the dollar basket, adding a little only if a bank buys the bills in step 1. What moves is ownership and risk: a listed company holds the Bitcoin in boom years, outside buyers in bust years, and the saver's claim on bills becomes a share resting on Bitcoin. In step 5 the owner's picture is literally true: pledged Bitcoin brings new dollars into being. And market value moves with no dollar crossing. So money does move between baskets, as ownership, risk and value, and at the edges as new money."
+  },
+  "why": "Court ruling: extend, not deny. Replaces 'Money does not move between baskets' (RT 6(c) overcorrection)"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "50",
+  "action": "insert_after",
+  "new": {
+   "type": "table",
+   "cols": [
+    "Channel",
+    "Direction",
+    "2025 (Bitcoin boom)",
+    "2026 to date (the turn)",
+    "2022 (crypto bear)"
+   ],
+   "rows": [
+    [
+     "Strategy preferred sales, including STRC",
+     "Toward Bitcoin",
+     "$7.04 billion",
+     "$7.53 billion in nine months, none in the third quarter",
+     "none"
+    ],
+    [
+     "Strategy ordinary share sales",
+     "Toward Bitcoin, or into the dollar reserve",
+     "$16.27 billion",
+     "$13.66 billion in nine months",
+     "$0.05 billion"
+    ],
+    [
+     "Strategy Bitcoin purchases (the pipe's exit)",
+     "Dollars to Bitcoin sellers",
+     "$22.47 billion",
+     "$14.26 billion in nine months, $0.59 billion in the third quarter",
+     "$0.29 billion"
+    ],
+    [
+     "Bank loans against Bitcoin",
+     "Creates new dollars",
+     "no public figure",
+     "no public figure",
+     "no public figure"
+    ],
+    [
+     "Strategy's dollar reserve",
+     "Back into bills and money funds",
+     "set up with $1.44 billion in December (reported)",
+     "up $3.35 billion to 1 November",
+     "did not exist"
+    ],
+    [
+     "STRC buybacks below $100",
+     "Back: dollars to sellers of STRC",
+     "none",
+     "about $2.04 billion",
+     "did not exist"
+    ],
+    [
+     "Strategy Bitcoin sales",
+     "Back: Bitcoin out of the wrapper",
+     "none",
+     "$431.8 million in nine months",
+     "$11.8 million (for tax)"
+    ],
+    [
+     "US spot Bitcoin ETFs",
+     "Both ways, no leverage",
+     "not checked",
+     "about minus $5.8 billion by mid July, about plus $0.3 billion to $1.2 billion by early October (press reports)",
+     "did not exist"
+    ],
+    [
+     "Stablecoin supply",
+     "Bills and cash put behind crypto tokens",
+     "up $100.5 billion",
+     "down $9.1 billion to 5 November",
+     "down $24.5 billion"
+    ]
+   ]
+  },
+  "why": "RT B2 and spec Q4.1: channel table, both directions, sizes in the boom, the turn and the 2022 stress year (R8B D1, V confirmed). Unsized channels marked needs data"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "50",
+  "action": "insert_after",
+  "new": {
+   "type": "p",
+   "text": "Read it by regime. In the 2025 boom the channels toward Bitcoin ran hard. In the third quarter of 2026 the channels back to dollars took over. In the 2022 bear the pipe barely existed. The biggest flow, stablecoins, is not digital credit at all."
+  },
+  "why": "Which channel dominates when (Move 5 pass test)"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "50",
+  "action": "insert_after",
+  "new": {
+   "type": "deeper",
+   "label": "The ledger in detail: both floors, and the smaller channels",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Two floors. Upstairs are bank reserves and the Fed's reverse repo. Downstairs are the deposits the public holds. A money fund that pays out by drawing on the Fed's reverse repo pushes new reserves and deposits into being, but money funds and other non-banks used only about $0.2 billion of it on 28 October 2026, so today the pipe barely touches the upstairs floor. Downstairs, the final buyer decides: a bill sold to a household or another fund only moves deposits, a bill sold to a bank creates them, and when Strategy's reserve buys bills from a bank, deposits shrink again. Nobody publishes who the final buyers were, so the net effect is not known."
+    },
+    {
+     "type": "table",
+     "cols": [
+      "Smaller channel",
+      "Direction",
+      "2025",
+      "2026 to date",
+      "2022"
+     ],
+     "rows": [
+      [
+       "Strategy convertible notes",
+       "Toward Bitcoin",
+       "$2.0 billion",
+       "none",
+       "none"
+      ],
+      [
+       "Convertible notes bought back",
+       "Back",
+       "not checked",
+       "$1.38 billion",
+       "none"
+      ],
+      [
+       "Strive's SATA preferred",
+       "Toward Bitcoin",
+       "not checked",
+       "$1.29 billion outstanding on 30 September",
+       "did not exist"
+      ],
+      [
+       "Other listed Bitcoin companies",
+       "Toward Bitcoin",
+       "No yearly flow found. Listed companies hold about 1.30 million Bitcoin in all, 849,327 of it Strategy's",
+       "",
+       ""
+      ],
+      [
+       "Preferred dividends paid in cash",
+       "Inside the dollar basket",
+       "$0.38 billion",
+       "$1.05 billion in nine months",
+       "none"
+      ],
+      [
+       "US money fund assets",
+       "Into the old basket",
+       "up $0.95 trillion",
+       "not checked",
+       "up $0.02 trillion"
+      ]
+     ]
+    }
+   ]
+  },
+  "why": "R8B D1 rows 3, 5, 6, 11, 13, 15 and D3 floors (spec Q1.3 and Q4.3). Court ledger fix: bank buyers create deposits"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "51",
+  "action": "replace",
+  "new": {
+   "type": "table",
+   "cols": [
+    "Pool (late 2026)",
+    "Size",
+    "Digital credit (about $14.7 billion: Strategy's preferreds plus Strive's SATA) as a share"
+   ],
+   "rows": [
+    [
+     "US money market funds",
+     "$7.9 trillion",
+     "0.19%"
+    ],
+    [
+     "US government bills",
+     "$7.1 trillion",
+     "0.21%"
+    ],
+    [
+     "US bank deposits",
+     "$19.6 trillion",
+     "0.08%"
+    ],
+    [
+     "Dollar stablecoins (dollar claims on new rails)",
+     "$295 billion",
+     "5.0%"
+    ],
+    [
+     "All Bitcoin",
+     "$1.62 trillion",
+     "0.9%"
+    ],
+    [
+     "New Bitcoin mined in a year",
+     "about $13 billion",
+     "about 110%"
+    ]
+   ]
+  },
+  "why": "Cold reader A: $8 billion versus $14.7 billion explained. Bitcoin market value added (R8B D2)"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "52",
+  "action": "replace",
+  "new": {
+   "type": "p",
+   "text": "Against the dollar pools digital credit is under a quarter of one percent. Against new coins it is large. But Bitcoin's price is set by everyone holding the 20 million coins already mined. Strategy bought more than every new coin in 2025 and in the first nine months of 2026, yet Bitcoin fell from about $126,000 in October 2025 to about $57,700 on 1 July 2026. Big buying can lift the price. It cannot promise to."
+  },
+  "why": "RT 3.7 'the whole trick' replaced with the 2025 to 2026 counterexample (R8B-04, V R8V-07, R8A S35)"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "53",
+  "action": "replace",
+  "new": {
+   "type": "p",
+   "text": "Now run the same test on stablecoins. When an issuer buys a bill, its dollars go to the bill's seller. What changes is who owns the bills: in 2025 stablecoin growth put about $100.5 billion more of bills and cash behind crypto tokens, about 14 times Strategy's preferred sales ($7.04 billion). In 2026 it shrank by $9.1 billion. From 18 January 2027 at the latest, a licensed US issuer must hold only cash-like reserves. Offshore issuers are not bound the same way: Tether's USDT reported about $8.4 billion of Bitcoin and $19.1 billion of gold among about $191 billion of assets on 30 September 2026 (as summarized from its accountant's report)."
+  },
+  "why": "RT B3 and 3.6: 'every stablecoin dollar must' limited to licensed US issuers, ledger test applied, like-for-like comparison, Tether reserves (court fetch, T4), GENIUS Act sections 3(b) and 20 (court fetch)"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "53",
+  "action": "insert_after",
+  "new": {
+   "type": "table",
+   "cols": [
+    "Wrapper, then what sits inside",
+    "Old-basket asset inside (bills, deposits, gold)",
+    "New-basket asset inside (Bitcoin)"
+   ],
+   "rows": [
+    [
+     "Old-basket wrapper (US law, listed, regulated)",
+     "Money market fund, bank deposit",
+     "STRC and other digital credit, spot Bitcoin ETFs, Strategy's shares, a bank loan secured on Bitcoin"
+    ],
+    [
+     "New-basket wrapper (a token on a blockchain)",
+     "Compliant stablecoins such as USDC, tokenized bill funds",
+     "Bitcoin itself. USDT, with some Bitcoin and gold behind it, is a partial case"
+    ]
+   ]
+  },
+  "why": "RT 3.13 wrapper map"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "53",
+  "action": "insert_after",
+  "new": {
+   "type": "p",
+   "text": "Saylor's 8% digital money would stack three layers: a token (new wrapper) holding digital credit (old wrapper) holding Bitcoin (new asset). Ask of any product which wrapper it wears, what sits inside, and which meter it moves."
+  },
+  "why": "RT 3.13 the owner's phrase as a reusable tool"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "54",
+  "action": "move_into",
+  "target": "64",
+  "position": "start",
+  "why": "Word budget: Box 1 to the players box, relabelled for whom (cold reader A)",
+  "new": {
+   "type": "table",
+   "cols": [
+    "Box 1. The treasury-company race (outcome for your company)",
+    "Others buy Bitcoin with new paper",
+    "Others hold back"
+   ],
+   "rows": [
+    [
+     "You buy Bitcoin with new paper",
+     "Middle: everyone's premium shrinks toward 1 as Bitcoin exposure becomes common",
+     "Best: you keep the premium and become the default wrapper"
+    ],
+    [
+     "You hold back",
+     "Worst: your premium vanishes as rivals grow",
+     "Middle: nothing changes"
+    ]
+   ]
+  }
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "55",
+  "action": "move_into",
+  "target": "64",
+  "position": "start",
+  "why": "Settles and Misses renamed (cold readers)",
+  "new": {
+   "type": "p",
+   "text": "Where it ends up: everyone issues while any premium exists, so the premium is competed away. By June 2026 two rivals, Metaplanet and Nakamoto, traded near 0.9 times their Bitcoin (press reports). What it leaves out: Strategy's size gave it an edge, and Bitcoin ETFs cap plain exposure at 1 time."
+  }
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "56",
+  "action": "move_into",
+  "target": "64",
+  "position": "start",
+  "why": "RT 3.11 outcomes, not advice. V resolution 2 intraday and close. Moved to the players box for the word cap",
+  "new": {
+   "type": "table",
+   "cols": [
+    "Box 2. A run on the preferred",
+    "Other holders sell",
+    "Other holders hold"
+   ],
+   "rows": [
+    [
+     "You sell",
+     "Outcome for you: a lower price, as low as $71.25 during 26 June 2026 and $74.57 at the close",
+     "Best outcome for you: you got out near $100 before the fall"
+    ],
+    [
+     "You hold",
+     "Bad outcome: the price gaps, but dividends continue while the reserve lasts",
+     "Good outcome: 12% at a steady price"
+    ]
+   ]
+  }
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "57",
+  "action": "move_into",
+  "target": "64",
+  "position": "start",
+  "why": "Settles and Misses renamed. 'mark prices daily' explained. Moved with Box 2",
+  "new": {
+   "type": "p",
+   "text": "Where it ends up: with no right to redeem, a run only moves the price. The issuer can change the outcomes by raising the rate and buying back below $100. That worked in 2026, at the cost of the reserve and new shares. What it leaves out: funds that must value their holdings at market prices every day sell regardless, which is why June gapped."
+  }
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "58",
+  "action": "move_into",
+  "target": "64",
+  "position": "start",
+  "why": "Word budget: Box 3 to the players box",
+  "new": {
+   "type": "table",
+   "cols": [
+    "Box 3. The regulator's choice on stablecoin yield",
+    "Industry pays yield through exchanges and sister companies",
+    "Industry pays no yield"
+   ],
+   "rows": [
+    [
+     "Regulator allows yield",
+     "Stablecoins compete with money funds and deposits, and an 8% Bitcoin-backed token becomes possible in form",
+     "Same, with less friction"
+    ],
+    [
+     "Regulator bans yield, sister companies included",
+     "Fights over enforcement. Yield moves into tokenized funds or tokenized STRC",
+     "Today's rule: issuers keep the bill income, banks keep deposits"
+    ]
+   ]
+  }
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "59",
+  "action": "move_into",
+  "target": "64",
+  "position": "start",
+  "why": "Settles and Misses renamed",
+  "new": {
+   "type": "p",
+   "text": "Where it ends up: banks want a full ban, exchanges a narrow one. The winner decides whether \"digital money paying 8%\" can ever be a payment stablecoin or only an investment product. What it leaves out: tokenized money funds already pay holders the bill yield legally."
+  }
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "60",
+  "action": "move_into",
+  "target": "64",
+  "position": "start",
+  "why": "Regime grid to the players box with who gains and who loses (spec Q4.5). The channel table carries the regimes on the main path",
+  "new": {
+   "type": "table",
+   "cols": [
+    "If this happens",
+    "What the pipe does",
+    "Who gains",
+    "Who loses",
+    "Tell to watch"
+   ],
+   "rows": [
+    [
+     "Bitcoin boom, premium above 1.2",
+     "Toward Bitcoin: shares and credit sold, Bitcoin bought, perhaps more than is mined",
+     "Common holders, Bitcoin sellers",
+     "Short sellers",
+     "The premium above 1.2 for a month, in Strategy's weekly filings"
+    ],
+    [
+     "Bitcoin bust, premium at or below 1",
+     "Backwards: buybacks, a bigger dollar reserve, Bitcoin sold to pay dividends",
+     "Bitcoin buyers at low prices",
+     "Common holders first, then STRC's price",
+     "Bitcoin sales in a weekly filing, or the reserve below 12 months"
+    ],
+    [
+     "Interest rates fall",
+     "Easier: 12% looks better against 4% bills",
+     "Strategy",
+     "Money funds",
+     "Federal Reserve decisions"
+    ],
+    [
+     "Interest rates rise",
+     "Harder: savers compare 12% with 4% to 5% risk-free",
+     "Money funds, stablecoin issuers",
+     "Bitcoin treasury companies",
+     "The 10-year yield above 5% (4.90% on 4 November)"
+    ],
+    [
+     "Stablecoin yield allowed",
+     "A competing yield, but also a door to Bitcoin-backed digital money",
+     "Stablecoin issuers, exchanges",
+     "Banks, through lost deposits",
+     "The final stablecoin rules and the market-structure bill in Congress"
+    ],
+    [
+     "Tax treatment changes",
+     "STRC's tax edge shrinks if its payments become taxable dividends",
+     "No one in particular",
+     "STRC holders",
+     "Strategy's 2026 annual report and tax notice, early 2027"
+    ],
+    [
+     "MSTR dropped from an index",
+     "Passive selling, the premium falls",
+     "Arbitrageurs",
+     "Common holders",
+     "MSCI's November 2026 review (press reports)"
+    ]
+   ]
+  }
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "60",
+  "action": "insert_after",
+  "new": {
+   "type": "table",
+   "cols": [
+    "Reading of \"Set 1 absorbs Set 2\"",
+    "Evidence to November 2026",
+    "Test that would settle it, and when"
+   ],
+   "rows": [
+    [
+     "A. Absorption: old-basket wrappers swallow Bitcoin",
+     "Listed companies hold about 1.3 million Bitcoin, 6.5% of coins mined so far. US spot ETFs hold about $106 billion to $111 billion (press)",
+     "Wrappers' share of Bitcoin keeps rising through a bust. Each quarter end, next 31 December 2026"
+    ],
+    [
+     "B. Leakage: old-basket cash drains into Bitcoin",
+     "$7.53 billion of preferreds sold in nine months of 2026, but the dollars stay, and digital credit is 0.19% of money funds",
+     "Money fund assets or bills fall in a quarter of heavy digital credit sales. First quarter 2027"
+    ],
+    [
+     "C. Two-way valve: toward Bitcoin in booms, back in busts",
+     "2026 shows both: $431.8 million of Bitcoin sold and $3.35 billion parked in dollars",
+     "Bitcoin sold for dividends two quarters in a row. Reports for late 2026 and early 2027"
+    ],
+    [
+     "D. Risk transfer: savers carry Bitcoin's risk under a credit label",
+     "STRC closed 25% below par in June 2026",
+     "STRC below $90 for 20 trading days while Bitcoin is above Strategy's cost. Any month"
+    ],
+    [
+     "E. Collateral bridge: Bitcoin starts backing new dollars",
+     "Bank loans against Bitcoin have no public total. USDT holds about $8.4 billion of Bitcoin",
+     "Bitcoin's share of the biggest stablecoin's reserves rises. Tether's next report, early 2027"
+    ]
+   ]
+  },
+  "why": "Spec Q4.6 and RT 4(a): competing hypotheses with dated tests (R8B G), plus E for the creation channel the red team found"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "61",
+  "action": "replace",
+  "new": {
+   "type": "insider",
+   "label": "Verdict on the project's earlier view",
+   "text": "An earlier finding of this project was that Set 1 is absorbing Set 2. On the evidence to November 2026, A and D fit best, C is live, B fails the money meter, and E is real but too small to measure. Extended: old wrappers absorb Bitcoin, some savers take on its risk under a credit label, in a bust the wrapper sells Bitcoin back into dollars, and at the edges Bitcoin starts to back new dollars. That is money moving between baskets, read on three meters."
+  },
+  "why": "Cold readers: 'Round 1' and '70 out of 100' replaced with plain words. RT word audit 'mostly'. V R8V-10 'of the coins mined so far'"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "62",
+  "action": "replace",
+  "new": {
+   "type": "curiosity",
+   "label": "Questions worth asking",
+   "items": [
+    {
+     "q": "You pay $100 for STRC. Where are your dollars a week later?",
+     "a": "With whoever sold Strategy its Bitcoin, or in Strategy's dollar reserve. In the third quarter of 2026 only about $0.59 billion of the $5.41 billion raised reached Bitcoin sellers.",
+     "from": "rb-moneymake"
+    },
+    {
+     "q": "A bank lends you $10,000 against your Bitcoin. Did money move between baskets, or was new money made?",
+     "a": "New money was made. The loan creates a new $10,000 deposit, backed by new-basket collateral. It is the clearest case where the new basket helps create old-basket dollars. When you repay, that money disappears again.",
+     "from": "rb-06"
+    },
+    {
+     "q": "The biggest stablecoin holds about 100,000 Bitcoin. Is that already Saylor's digital money?",
+     "a": "Partly. USDT is a dollar token with some Bitcoin and gold behind it, issued offshore. But it pays holders nothing, and its Bitcoin is about 4% of its assets. Saylor's version would pay 6% to 8%, which a US payment stablecoin may not do.",
+     "from": "rb-12"
+    }
+   ]
+  },
+  "why": "RT 3.13 curiosity questions (bank loan, USDT, gold share from the framer), word audit 'mostly' and 'only while'"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "63",
+  "action": "replace",
+  "new": {
+   "type": "callout",
+   "label": "Before you believe any account paying 12%",
+   "text": "Ask ten questions. Is it a deposit, or a share? Who promises the $100, if anyone? Who sets the rate, and can they cut it? Where does the money come from: profits, new investors, or selling the asset? What happens if the asset behind it halves? What do I rank behind? Can I vote? Who is selling it to me, and what do they earn? What tax applies to me? What currency risk do I take? This is general education, not advice."
+  },
+  "why": "Spec Q5.1 ten questions, RT 3.11 advice line repeated"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "63",
+  "action": "insert_after",
+  "new": {
+   "type": "callout",
+   "label": "For a Malaysian saver",
+   "text": "PIDM covers bank deposits up to RM250,000, not shares. Malaysia does not tax foreign income that resident individuals bring home until the end of 2036, with conditions and exceptions (check the latest LHDN guideline). There is no US tax treaty with Malaysia: Strategy expects its payments to be return of capital, but a broker may still hold back 30%, and getting it back means filing a US tax return. US estate tax can apply above $60,000 of US shares. And the currency cuts both ways: when the ringgit rose about 22% against the dollar from February 2024 to February 2026, a dollar asset lost about 18% in ringgit."
+  },
+  "why": "RT 3.3 Malaysian exemption to 2036, withholding nuance, ringgit direction. V R8V-11 Fed H.10 dates"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "63",
+  "action": "insert_after",
+  "new": {
+   "type": "p",
+   "text": "Worked example (a model, not a forecast): RM10,000 at 4.05 ringgit to the dollar on 5 November 2026 buys $2,469 of STRC at $100. A year at 12% pays $296. The end rates are past levels, used only to show the range."
+  },
+  "why": "Spec Q5.3 labelled ringgit example"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "63",
+  "action": "insert_after",
+  "new": {
+   "type": "table",
+   "cols": [
+    "After one year",
+    "Dividend kept",
+    "Ringgit per dollar",
+    "Worth",
+    "Result"
+   ],
+   "rows": [
+    [
+     "No US tax held back, ringgit unchanged",
+     "$296",
+     "4.05",
+     "RM11,200",
+     "gain of 12.0%"
+    ],
+    [
+     "30% held back, ringgit unchanged",
+     "$207",
+     "4.05",
+     "RM10,840",
+     "gain of 8.4%"
+    ],
+    [
+     "30% held back, ringgit as strong as February 2026",
+     "$207",
+     "3.91",
+     "RM10,465",
+     "gain of 4.7%"
+    ],
+    [
+     "30% held back, ringgit as weak as February 2024",
+     "$207",
+     "4.77",
+     "RM12,767",
+     "gain of 27.7%"
+    ],
+    [
+     "30% held back, sold at the June 2026 low close of $74.57",
+     "$207",
+     "4.05",
+     "RM8,297",
+     "loss of 17.0%"
+    ]
+   ]
+  },
+  "why": "Spec Q5.3. Inputs: USD/MYR 4.05 (R8A, 2026-11-05), H.10 3.911 and 4.7655 (V R8V-11), close $74.57 (V R8V-02). Court script r8court/calc.py"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "64",
+  "action": "replace",
+  "new": {
+   "type": "deeper",
+   "label": "The players, their payoff boxes, and the classic yield traps",
+   "blocks": "KEEP_CHILDREN"
+  },
+  "why": "Box now holds Boxes 1 and 3 and the regime grid"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "64.0",
+  "action": "replace",
+  "new": {
+   "type": "table",
+   "cols": [
+    "Player",
+    "Wants",
+    "Best move in a boom",
+    "Best move in a bust"
+   ],
+   "rows": [
+    [
+     "Strategy's management",
+     "More Bitcoin per share, an unbroken dividend record",
+     "Sell shares and credit, buy Bitcoin",
+     "Build the dollar reserve, buy back STRC, sell Bitcoin if needed"
+    ],
+    [
+     "Common shareholders",
+     "Bitcoin per share up faster than Bitcoin",
+     "Hold",
+     "They pay for the reserve through dilution"
+    ],
+    [
+     "STRC buyers",
+     "12% near $100, liquidity, a tax delay",
+     "Buy near par",
+     "Hold through price gaps, or sell at a discount"
+    ],
+    [
+     "Convertible note holders",
+     "Their money back",
+     "Convert into shares",
+     "Demand cash from 2027"
+    ],
+    [
+     "Bitcoin sellers (miners, early holders)",
+     "Dollars at a good price",
+     "Sell into Strategy's demand",
+     "Buy back cheaply from forced sellers"
+    ],
+    [
+     "Copycat companies",
+     "A premium of their own",
+     "Issue and buy Bitcoin",
+     "Trade below their Bitcoin"
+    ],
+    [
+     "Bitcoin ETFs",
+     "Fees",
+     "Offer plain Bitcoin at no premium",
+     "Absorb redemptions"
+    ],
+    [
+     "Banks",
+     "Keep deposits, lend against Bitcoin once they can hold it",
+     "Offer Bitcoin-backed loans, which create new dollars",
+     "Take losses on those loans"
+    ],
+    [
+     "Stablecoin issuers",
+     "Keep the bill income",
+     "Grow supply",
+     "Shrink, as in 2026"
+    ],
+    [
+     "US Treasury",
+     "Cheap funding for its bills",
+     "Welcome stablecoin demand for bills",
+     "Note that digital credit competes with bills for savers"
+    ],
+    [
+     "The Fed",
+     "Stable prices",
+     "Higher rates make 12% look smaller",
+     "Cuts help the spread story"
+    ],
+    [
+     "Index providers (MSCI, S&P)",
+     "Credible indexes",
+     "Include MSTR, bringing passive buying",
+     "Exclude it, forcing passive selling"
+    ],
+    [
+     "Short sellers and arbitrageurs",
+     "Spread income",
+     "Sell the premium",
+     "Cover"
+    ],
+    [
+     "US regulators (SEC, OCC)",
+     "Disclosure and stability",
+     "Few moves",
+     "Scrutiny of words like credit and bank account"
+    ],
+    [
+     "Malaysian regulators (Securities Commission, Bank Negara)",
+     "Protect local savers",
+     "Keep a list of licensed brokers",
+     "Warn about unlicensed platforms on an alert list"
+    ]
+   ]
+  },
+  "why": "RT 4(a) Q4.4 players: banks, Treasury, Fed, index providers, short sellers, Malaysian regulators (R8B E1, R8A E13)"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "64.1",
+  "action": "replace",
+  "new": {
+   "type": "table",
+   "cols": [
+    "Yield trap",
+    "Promised",
+    "What happened"
+   ],
+   "rows": [
+    [
+     "Goldman Sachs Trading Corporation, 1928 to 1932",
+     "Leveraged returns on stacked trusts",
+     "Issued at $104, above $220 in early 1929, under $2 by 1932"
+    ],
+    [
+     "UK split-capital zeros, 2000 to 2002",
+     "Low-risk fixed growth",
+     "Many lost most of their value. Buyers were not told about cross-holdings"
+    ],
+    [
+     "Terra's Anchor, 2021 to 2022",
+     "About 19.5% on a dollar stablecoin",
+     "Fell to near zero in May 2022"
+    ],
+    [
+     "Celsius, 2020 to 2022",
+     "Double-digit yields on crypto deposits",
+     "Froze withdrawals in June 2022"
+    ]
+   ]
+  },
+  "why": "RT 3.8 and V: Goldman issue and peak"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "65.0",
+  "action": "replace",
+  "new": {
+   "type": "table",
+   "cols": [
+    "Tripwire",
+    "When",
+    "What it would mean"
+   ],
+   "rows": [
+    [
+     "Strategy sells Bitcoin to pay dividends in two quarters in a row",
+     "Quarterly reports, next early 2027",
+     "The reverse valve is the normal state, not a one-off"
+    ],
+    [
+     "The dollar reserve falls below 12 months (about $1.5 billion)",
+     "Any weekly filing",
+     "The company's own floor is breached"
+    ],
+    [
+     "STRC below $90 for 20 trading days while Bitcoin is above Strategy's cost",
+     "Any month",
+     "Buyers price STRC as equity, not credit"
+    ],
+    [
+     "Convertible note holders demand cash",
+     "From 15 September 2027",
+     "The first real refinancing test"
+    ],
+    [
+     "Strategy's payments become taxable dividends",
+     "2026 annual report and tax notice, early 2027",
+     "STRC's tax edge shrinks for US holders"
+    ],
+    [
+     "A US rule allows stablecoin yield, or bans it through sister companies too",
+     "Stablecoin rules and the market-structure bill, 2026 to 2027",
+     "Decides whether digital money paying 8% can exist"
+    ],
+    [
+     "STRC's rate cut below 12% with the price at or above $100 for three months",
+     "Monthly rate notices",
+     "The bull case working: buyers accept less for the same paper"
+    ],
+    [
+     "Three years of unbroken STRC dividends",
+     "August 2028 (Saylor's own test)",
+     "Digital credit passes the test its promoter set"
+    ],
+    [
+     "Bitcoin's share of the biggest stablecoin's reserves rises",
+     "Tether's quarterly reports, next early 2027",
+     "The collateral bridge (reading E) is growing"
+    ],
+    [
+     "MSCI's new screen drops MSTR from its indexes",
+     "November 2026 review (press reports)",
+     "Index funds must sell, and the premium brake bites"
+    ]
+   ]
+  },
+  "why": "RT 3.9 confirming tripwires, reading E test. Index brake moved here from [34] for the word cap (RT 4(a) Q3.2)"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "67",
+  "action": "replace",
+  "new": {
+   "type": "check",
+   "q": "When a saver buys STRC and Strategy buys Bitcoin, where do the saver's dollars end up?",
+   "a": "With whoever sold the Bitcoin, who usually puts them back into deposits, bills or money funds. The trade moves dollars. It does not create or destroy them."
+  },
+  "why": "RT B1: no absolute"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "68",
+  "action": "replace",
+  "new": {
+   "type": "check",
+   "q": "Name the three meters, and one thing each shows.",
+   "a": "Dollars: trades move them, bank loans against Bitcoin create them. Ownership and risk: Bitcoin moves into a listed company and its risk onto the saver. Market value: every trade reprices all the coins, with no dollar crossing."
+  },
+  "why": "Three meters"
+ },
+ {
+  "chapter": "rb-strc",
+  "field": "rules",
+  "block": "chapter",
+  "action": "set_field",
+  "new": [
+   "Read the contract before the label. Credit, bank account and stablecoin are claims to test, not facts.",
+   "Ask who ends up holding the dollars. Trades move money between people. Bank loans and bank purchases create it.",
+   "A 12% yield in a 4% world is pay for risk. Find the risk before you take the yield.",
+   "Coverage in the asset is not coverage in dollars. Paying from the asset means selling it.",
+   "Read three meters: dollars, ownership and risk, and market value. Money can cross between baskets on one meter and not the others.",
+   "Reflexive structures run both ways. Watch the brake that bites first."
+  ],
+  "why": "RT word audit rules 'most deals' (the Case 2 sentence). Three meters rule"
+ },
+ {
+  "chapter": "rb-strc",
+  "field": "connects",
+  "block": "chapter",
+  "action": "set_field",
+  "new": [
+   {
+    "id": "rb-crypto",
+    "how": "The two baskets, and the three families of crypto."
+   },
+   {
+    "id": "rb-12",
+    "how": "Stablecoins as Set 1 wearing Set 2 clothes, and the yield ban."
+   },
+   {
+    "id": "rb-06",
+    "how": "Loans create deposits: the door where Bitcoin collateral makes new dollars."
+   },
+   {
+    "id": "rb-moneymake",
+    "how": "Follow the dollars, and who ends up holding them."
+   },
+   {
+    "id": "rb-clubs",
+    "how": "The payoff boxes behind the treasury-company race."
+   }
+  ],
+  "why": "rb-06 for the creation channel. rb-moneymake line corrected"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "n62a",
+  "action": "move_into",
+  "target": "65",
+  "position": "end",
+  "why": "Gold share (framer Q10) and category question kept in the tripwires box for the word cap. The 8% token question is answered in check [28] and Box 3",
+  "new": {
+   "type": "curiosity",
+   "label": "Two more questions",
+   "items": [
+    {
+     "q": "Strategy holds about 4% of all the Bitcoin that will ever exist. The US government holds 8,133 tonnes of gold. What share of all gold is that?",
+     "a": "About 3.6% of the roughly 224,200 tonnes above ground at the end of September 2026. One company now holds a bigger share of Bitcoin than the largest official holder does of gold.",
+     "from": "rb-02"
+    },
+    {
+     "q": "Is digital credit a new asset class or one company's funding tool?",
+     "a": "Today it is about $14.7 billion, about 91% of it from one issuer ($13.4 billion), plus a few copies. Saylor says credit investors want three years of unbroken dividends. STRC has about 15 months. Ask again in 2028, after the convertible notes come due.",
+     "from": "rb-crypto"
+    }
+   ]
+  }
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "14",
+  "action": "move_into",
+  "target": "15",
+  "position": "start",
+  "why": "RT 3.11 and V [14]: the super-voting aside is unverified and did not change the result. Removed. Moved into the Part 1 box for the word cap",
+  "new": {
+   "type": "curiosity",
+   "items": [
+    {
+     "q": "STRC's daily dividends started on 3 November 2026. Did the change raise what it pays?",
+     "a": "No. Shareholders approved it on 28 October with about 99.3% of votes cast. The company's filing says the total paid, the rate and its obligations are unchanged. Only the timing changed.",
+     "from": "rb-bonds"
+    },
+    {
+     "q": "Can you get exactly $100 back from Strategy?",
+     "a": "Not on demand. You can sell to another investor at whatever the market pays, which was $99.98 on 4 November 2026 and $74.57 at the close on 26 June. The company may buy all of it back at $101 if it chooses.",
+     "from": "rb-13"
+    }
+   ]
+  }
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "40",
+  "action": "move_into",
+  "target": "41",
+  "position": "start",
+  "why": "V [40]: bought about 18%, net about 4%. Moved into the Part 3 box for the word cap",
+  "new": {
+   "type": "curiosity",
+   "items": [
+    {
+     "q": "Does Strategy really buy all the Bitcoin that is mined?",
+     "a": "Sometimes. In 2025 it bought 225,030 against 164,250 mined, 137%. In the third quarter of 2026 it bought about 18% of the new coins but sold most of that back, adding only about 4%. Its buying swings with the premium.",
+     "from": "rb-crypto"
+    },
+    {
+     "q": "What is the biggest bill Strategy faces before 2029: the 12% dividends or something else?",
+     "a": "Something else: $5.91 billion of convertible notes that holders can cash in from September 2027, because every conversion price is above today's share price.",
+     "from": "rb-bonds"
+    }
+   ]
+  }
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "15",
+  "action": "replace",
+  "new": {
+   "type": "deeper",
+   "label": "Two questions, eight instruments compared, and the accounting",
+   "blocks": "KEEP_CHILDREN"
+  },
+  "why": "Label matches the box after the Part 1 curiosity moved in"
+ },
+ {
+  "chapter": "rb-strc",
+  "block": "41",
+  "action": "replace",
+  "new": {
+   "type": "deeper",
+   "label": "Two questions, and precedents: when reflexive structures turned",
+   "blocks": "KEEP_CHILDREN"
+  },
+  "why": "Label matches the box after the Part 3 curiosity moved in"
+ }
+]

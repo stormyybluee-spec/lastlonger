@@ -1,0 +1,117 @@
+{
+ "id": "H3-03",
+ "question": "Are there about 15 trillion offshore dollars, more than double the US money supply?",
+ "start": "BIS global liquidity indicators release, 31 July 2026: US dollar-denominated foreign currency debt of borrowers outside the US was 14.7 trillion at end-March 2026",
+ "links": [
+  {
+   "n": 1,
+   "claim": "Dollar credit to non-banks outside the US (loans and bonds) was 14.7 trillion at end-March 2026, about 30% of it owed by emerging and developing economies",
+   "grade": "I0",
+   "p": 0.95,
+   "actor": {
+    "name": "Bank for International Settlements",
+    "kind": "international body"
+   },
+   "evidence": [
+    {
+     "what": "BIS GLI at end-March 2026",
+     "url": "https://www.bis.org/statistics/gli2607.htm",
+     "tier": "T0",
+     "date": "2026-07-31"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "claim": "US M2 was 23,413.9 billion and M1 20,061.2 billion in September 2026",
+   "grade": "I0",
+   "p": 0.97,
+   "actor": {
+    "name": "Board of Governors of the Federal Reserve System",
+    "kind": "central bank"
+   },
+   "evidence": [
+    {
+     "what": "Fed H.6 via FRED M2SL",
+     "url": "https://fred.stlouisfed.org/series/M2SL",
+     "tier": "T0",
+     "date": "2026-10"
+    },
+    {
+     "what": "Fed H.6 via FRED M1SL",
+     "url": "https://fred.stlouisfed.org/series/M1SL",
+     "tier": "T0",
+     "date": "2026-10"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "claim": "The 15 trillion is real but it is debt owed in dollars, not money held. It is about 0.63 times M2, not double. No single BIS definition gives both 15 trillion and more than double M2",
+   "grade": "I2",
+   "p": 0.6,
+   "actor": {
+    "name": "Bank for International Settlements",
+    "kind": "international body"
+   },
+   "move": "scale",
+   "footprints_expected": [
+    "A BIS definition matching 15 trillion (found: credit to non-banks)",
+    "A comparison base where 15 trillion is more than double (only pre-2020 M1 near 4 trillion, which is out of date)"
+   ],
+   "footprints_found": [
+    {
+     "what": "BIS: 14.7 trillion is outstanding dollar debt of non-residents",
+     "url": "https://www.bis.org/statistics/gli2607.htm",
+     "date": "2026-07-31"
+    },
+    {
+     "what": "FRED M2 23.4 trillion, September 2026. 14.7 over 23.4 is 0.63 (computed)",
+     "url": "https://fred.stlouisfed.org/series/M2SL",
+     "date": "2026-10"
+    }
+   ],
+   "footprints_missing": [
+    "The BIS estimate of off-balance-sheet dollar debt in FX swaps and forwards (a much larger, different measure) was not fetched this round"
+   ],
+   "rivals": [
+    "The specimen meant offshore dollar deposits (eurodollars), a stock no agency measures as one number",
+    "The specimen meant FX swap dollar obligations, which BIS puts far above M2, but then the 15 trillion is the wrong number"
+   ],
+   "reveal": "BIS GLI at end-September 2026, late January 2027. Ask the specimen's author for the source definition"
+  }
+ ],
+ "rival_hypotheses": [
+  {
+   "kind": "official",
+   "text": "BIS measures dollar credit outside the US at about 15 trillion. It is borrowing, not a money stock",
+   "inconsistent_evidence": 0
+  },
+  {
+   "kind": "coordination",
+   "text": "Offshore dollars are a hidden money supply steered by banks and states",
+   "inconsistent_evidence": 1
+  },
+  {
+   "kind": "incentives",
+   "text": "Borrowers abroad borrow in dollars because rates and markets are deepest there",
+   "inconsistent_evidence": 0
+  },
+  {
+   "kind": "accident",
+   "text": "A credit figure was compared with a money figure, or an old M1 figure",
+   "inconsistent_evidence": 0
+  }
+ ],
+ "coordination": {
+  "level": 0,
+  "channel": "",
+  "enforcement": "",
+  "secrecy_load": ""
+ },
+ "exit": "finding",
+ "budget_used": {
+  "searches": 2,
+  "tokens": 0
+ }
+}

@@ -1,0 +1,211 @@
+[
+ {
+  "id": "P20-01",
+  "event": "FOMC raises the target range by 50bp or more on 9 December 2026",
+  "date": "2026-12-09",
+  "desk": 5,
+  "market": null,
+  "market_source": "none recorded. The lanes recorded only the 25bp hike market (Polymarket 94, Kalshi 92, as reported on 2026-11-25, R20B-16)",
+  "resolution_rule": "Federal Reserve FOMC statement of 2026-12-09: upper bound of the target range at 4.50% or higher",
+  "lane": "R20B",
+  "status": "open"
+ },
+ {
+  "id": "P20-02",
+  "event": "At least one dissent at the 9 December 2026 FOMC",
+  "date": "2026-12-09",
+  "desk": 45,
+  "market": null,
+  "market_source": "none recorded",
+  "resolution_rule": "Vote list in the Federal Reserve FOMC statement of 2026-12-09",
+  "lane": "R20B",
+  "status": "open"
+ },
+ {
+  "id": "P20-03",
+  "event": "The 9 December FOMC starts reserve management purchases above zero, starts long-end purchases, or names a Treasury yield level",
+  "date": "2026-12-09",
+  "desk": 7,
+  "market": null,
+  "market_source": "none",
+  "resolution_rule": "Federal Reserve FOMC statement and implementation note of 2026-12-09. Any one of the three counts as Yes",
+  "lane": "R20B",
+  "status": "open"
+ },
+ {
+  "id": "P20-04",
+  "event": "November 2026 core CPI, month on month, rounded, 0.3% or more",
+  "date": "2026-12-10",
+  "desk": 55,
+  "market": null,
+  "market_source": "none recorded",
+  "resolution_rule": "BLS CPI news release for November 2026: seasonally adjusted one-month change in all items less food and energy, as printed to one decimal",
+  "lane": "R20B",
+  "status": "open"
+ },
+ {
+  "id": "P20-05",
+  "event": "TIC October: foreign official Treasury holdings below September's $3,674.7B",
+  "date": "2026-12-15",
+  "desk": 70,
+  "market": null,
+  "market_source": "none",
+  "resolution_rule": "Treasury TIC Major Foreign Holders table, line 'of which foreign official', October 2026, first print",
+  "lane": "R20B",
+  "status": "open"
+ },
+ {
+  "id": "P20-06",
+  "event": "TIC October: Japan's Treasury holdings below September's $1,063.1B",
+  "date": "2026-12-15",
+  "desk": 60,
+  "market": null,
+  "market_source": "none",
+  "resolution_rule": "Treasury TIC Major Foreign Holders table, Japan, October 2026, first print",
+  "lane": "R20B",
+  "status": "open"
+ },
+ {
+  "id": "P20-07",
+  "event": "Japan MOF reports zero yen intervention for 29 October to 26 November 2026",
+  "date": "2026-11-30",
+  "desk": 85,
+  "market": null,
+  "market_source": "none",
+  "resolution_rule": "Japan Ministry of Finance monthly Foreign Exchange Intervention Operations release for the period from 29 October 2026 (total JPY 0 counts as Yes). If the release period ends on another day in late November, score on that release",
+  "lane": "R20B",
+  "status": "open"
+ },
+ {
+  "id": "P20-08",
+  "event": "Bank of Japan raises its policy rate to around 1.5% or higher at its December 2026 meeting",
+  "date": "2026-12-18",
+  "desk": 65,
+  "market": null,
+  "market_source": "none recorded as a point price. Press reports say December hike odds are above 70% (Investing.com calendar and BigGo, secondary)",
+  "resolution_rule": "Bank of Japan Statement on Monetary Policy from the December 2026 meeting: guideline for the uncollateralized overnight call rate at around 1.5% or higher",
+  "lane": "R20B",
+  "status": "open"
+ },
+ {
+  "id": "P20-09",
+  "event": "ECB raises the deposit facility rate to 2.75% or higher at its December 2026 meeting",
+  "date": "2026-12-31",
+  "desk": 72,
+  "market": 80,
+  "market_source": "Trading Economics report of market rate pricing, about 80% for a 25bp December hike, 2026-11-12 (R20C-28). Rates pricing, not a prediction market",
+  "resolution_rule": "ECB press release on monetary policy decisions from the December 2026 Governing Council meeting. Score on the deposit facility rate. No December meeting by 2026-12-31 counts as No",
+  "lane": "R20C",
+  "status": "open"
+ },
+ {
+  "id": "P20-10",
+  "event": "OPEC+ at its 29 November meeting announces a group-wide cut, with 2027 production levels below those in force for December 2026",
+  "date": "2026-11-29",
+  "desk": 25,
+  "market": null,
+  "market_source": "none",
+  "resolution_rule": "OPEC Secretariat press release on the OPEC and non-OPEC ministerial meeting of 2026-11-29 (opec.org). A delay of the meeting past 2026-12-31 counts as No",
+  "lane": "R20C",
+  "status": "open"
+ },
+ {
+  "id": "P20-11",
+  "event": "The French Senate adopts the 2027 finance bill (PLF 2027) in a vote on the whole bill by 9 December 2026",
+  "date": "2026-12-09",
+  "desk": 70,
+  "market": null,
+  "market_source": "none",
+  "resolution_rule": "Senate legislative file for the PLF 2027 (senat.fr) shows adoption of the whole bill on or before 2026-12-09. Rejection or no vote by that date counts as No",
+  "lane": "R20C",
+  "status": "open"
+ },
+ {
+  "id": "P20-12",
+  "event": "France brings its 2027 budget into force by ordinance under Article 47 of the Constitution by 31 January 2027",
+  "date": "2027-01-31",
+  "desk": 15,
+  "market": null,
+  "market_source": "none",
+  "resolution_rule": "Journal officiel publishes an ordinance under Article 47 putting the 2027 finance bill into force by 2027-01-31. A special law (loi spéciale) or an enacted finance law does not count",
+  "lane": "R20C",
+  "status": "open"
+ },
+ {
+  "id": "P20-13",
+  "event": "France to Germany 10-year spread closes above 175bp on any day from 27 November 2026 to 31 January 2027",
+  "date": "2027-01-31",
+  "desk": 12,
+  "market": null,
+  "market_source": "none",
+  "resolution_rule": "Agence France Trésor daily TEC10 minus the Bundesbank daily 10-year federal bond yield, same day, above 1.75 percentage points on any day in the window",
+  "lane": "R20C",
+  "status": "open"
+ },
+ {
+  "id": "P20-14",
+  "event": "Two of Moody's, S&P and Fitch rate France in the BBB band (Baa1 or BBB+ or lower) by 31 January 2027 (conditional C11)",
+  "date": "2027-01-31",
+  "desk": 2,
+  "market": null,
+  "market_source": "none",
+  "resolution_rule": "Rating action press releases of the three agencies dated on or before 2027-01-31",
+  "lane": "R20C",
+  "status": "open"
+ },
+ {
+  "id": "P20-15",
+  "event": "China keeps all six suspended export-control measures suspended beyond 10 January 2027, or revokes them",
+  "date": "2027-01-10",
+  "desk": 70,
+  "market": null,
+  "market_source": "none",
+  "resolution_rule": "MOFCOM numbered announcement (with or without the General Administration of Customs) dated on or before 2027-01-10 Beijing time, covering Nos. 55 to 58, 61 and 62 of 2025. Partial extension, general licences in place of the suspension, or a lapse with no notice count as No",
+  "lane": "R20B",
+  "status": "open"
+ },
+ {
+  "id": "P20-16",
+  "event": "The White House committee of inquiry holds its hearing on Governor Cook by 31 December 2026 (scheduled for 14 December)",
+  "date": "2026-12-31",
+  "desk": 60,
+  "market": null,
+  "market_source": "none",
+  "resolution_rule": "A Federal Register notice or White House statement that the hearing took place, or reports of it by at least two major news organisations, by 2026-12-31",
+  "lane": "R20B",
+  "status": "open"
+ },
+ {
+  "id": "P20-17",
+  "event": "Governor Cook or her counsel takes part in that hearing, in person, by video, or by a written submission entered into the hearing record",
+  "date": "2026-12-31",
+  "desk": 30,
+  "market": null,
+  "market_source": "none",
+  "resolution_rule": "Statement by the committee, the White House or Cook's counsel, or reports by at least two major news organisations, by 2026-12-31. Letters about the procedure sent before the hearing do not count. No hearing counts as No",
+  "lane": "R20B",
+  "status": "open"
+ },
+ {
+  "id": "P20-18",
+  "event": "The Federal Reserve Board or the FDIC publishes a final rule implementing the GENIUS stablecoin law by 18 January 2027",
+  "date": "2027-01-18",
+  "desk": 55,
+  "market": null,
+  "market_source": "none",
+  "resolution_rule": "Federal Register publication, or a Board or FDIC press release announcing a final rule, dated on or before 2027-01-18",
+  "lane": "R20C",
+  "status": "open"
+ },
+ {
+  "id": "P20-19",
+  "event": "Bank Negara Malaysia holds the OPR at 2.75% at its first Monetary Policy Committee meeting of 2027",
+  "date": "2027-01-31",
+  "desk": 85,
+  "market": null,
+  "market_source": "none",
+  "resolution_rule": "Bank Negara Malaysia Monetary Policy Statement from the first 2027 meeting. If no meeting is held by 2027-01-31, the item is void and not scored",
+  "lane": "R20C",
+  "status": "open"
+ }
+]

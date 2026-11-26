@@ -1,0 +1,148 @@
+{
+ "id": "H4-03",
+ "question": "Timing: was the Saudi central bank's quiet exit from China's mBridge payment rail on 13 May 2025 part of the US-Saudi package announced that day?",
+ "start": "https://www.centralbanking.com/node/7962626",
+ "links": [
+  {
+   "n": 1,
+   "claim": "The BIS handed mBridge over to its central bank members in October 2024 (announced 31 Oct). It said it had 'graduated out' and denied political motives. Reporting says the US had lobbied for the exit. SAMA had joined as a full participant in June 2024",
+   "grade": "I0",
+   "p": 0.9,
+   "actor": {
+    "name": "Bank for International Settlements",
+    "kind": "international body"
+   },
+   "evidence": [
+    {
+     "what": "BIS to hand over Project mBridge to central banks",
+     "url": "https://www.centralbanking.com/node/7962626",
+     "tier": "T2",
+     "date": "2024-10"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "claim": "SAMA ended its formal participation in mBridge after completing its proof of concept on 13 May 2025. This went unannounced until the Financial Times reported it on 20 September 2026, about 16 months later. The platform continues with the PBoC, HKMA, Bank of Thailand and the Central Bank of the UAE",
+   "grade": "I0",
+   "p": 0.8,
+   "actor": {
+    "name": "Saudi Central Bank (SAMA)",
+    "kind": "central bank"
+   },
+   "evidence": [
+    {
+     "what": "Report of SAMA exit amid governance and compliance concerns, citing the FT (read through a search summary, page not opened)",
+     "url": "https://www.businesstoday.in/world/story/saudi-arabia-exits-china-backed-mbridge-platform-amid-governance-and-compliance-concerns-556677-2026-09-20",
+     "tier": "T3",
+     "date": "2026-09-20"
+    },
+    {
+     "what": "Same report, citing the FT",
+     "url": "https://cointelegraph.com/news/saudi-arabia-exits-china-backed-mbridge-cbdc-project-ft",
+     "tier": "T3",
+     "date": "2026-09"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "claim": "In May 2025 the White House announced a 600 bn dollar Saudi investment commitment and a near 142 bn dollar arms sale (13 May), a 1.2 trillion dollar Qatar 'economic commitment' (14 May) and 200 bn dollars of UAE deals plus an accelerated 1.4 trillion dollar 10-year UAE framework (15 May). These are pledges, not completed flows",
+   "grade": "I0",
+   "p": 0.97,
+   "actor": {
+    "name": "The White House (Executive Office of the President)",
+    "kind": "office"
+   },
+   "evidence": [
+    {
+     "what": "Saudi fact sheet",
+     "url": "https://www.whitehouse.gov/fact-sheets/2025/05/fact-sheet-president-donald-j-trump-secures-historic-600-billion-investment-commitment-in-saudi-arabia",
+     "tier": "T0",
+     "date": "2025-05-13"
+    },
+    {
+     "what": "Qatar fact sheet",
+     "url": "https://www.whitehouse.gov/fact-sheets/2025/05/fact-sheet-president-donald-j-trump-secures-historic-1-2-trillion-economic-commitment-in-qatar/",
+     "tier": "T0",
+     "date": "2025-05-14"
+    },
+    {
+     "what": "UAE fact sheet",
+     "url": "https://www.whitehouse.gov/fact-sheets/2025/05/fact-sheet-president-donald-j-trump-secures-200-billion-in-new-u-s-uae-deals-and-accelerates-previously-committed-1-4-trillion-uae-investment",
+     "tier": "T0",
+     "date": "2025-05-15"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "claim": "SAMA's exit was a term, stated or understood, of the May 2025 US-Saudi package",
+   "grade": "I4",
+   "p": 0.2,
+   "actor": {
+    "name": "Saudi Central Bank (SAMA)",
+    "kind": "central bank"
+   },
+   "move": "timing",
+   "footprints_expected": [
+    "A mention of payment rails or mBridge in the US-Saudi fact sheet, a Treasury readout or a later congressional letter",
+    "US officials' statements against mBridge in 2024 to 2025",
+    "The FT's own sourcing on why SAMA left"
+   ],
+   "footprints_found": [
+    {
+     "what": "Same-day timing: exit date 13 May 2025, Saudi fact sheet 13 May 2025",
+     "url": "https://www.whitehouse.gov/fact-sheets/2025/05/fact-sheet-president-donald-j-trump-secures-historic-600-billion-investment-commitment-in-saudi-arabia",
+     "date": "2025-05-13"
+    },
+    {
+     "what": "Reported US lobbying for the BIS exit in 2024",
+     "url": "https://www.centralbanking.com/node/7962626",
+     "date": "2024-10"
+    }
+   ],
+   "footprints_missing": [
+    "The fact sheet text was not searched for payment terms. The FT article was not opened. A SAMA statement was not found"
+   ],
+   "rivals": [
+    "The proof of concept ended on its own schedule and the date match is chance",
+    "Governance and sanctions compliance risk on a rail with Iranian or Russian exposure, a cue any dollar-pegged central bank would follow without a deal (level 1)"
+   ],
+   "reveal": "SAMA annual report for 2025 and any SAMA statement. The FT article text. A US Treasury or congressional record naming mBridge. Next pass, no fixed date"
+  }
+ ],
+ "rival_hypotheses": [
+  {
+   "kind": "official",
+   "text": "Official: the proof of concept was finished and SAMA moved on",
+   "inconsistent_evidence": 0
+  },
+  {
+   "kind": "coordination",
+   "text": "Coordination: the exit was agreed with the White House as part of the May 2025 package",
+   "inconsistent_evidence": 0
+  },
+  {
+   "kind": "incentives",
+   "text": "Shared incentives: a dollar-pegged central bank avoids sanctions risk on a China-led rail with no deal needed",
+   "inconsistent_evidence": 0
+  },
+  {
+   "kind": "accident",
+   "text": "Accident: the date match is chance",
+   "inconsistent_evidence": 0
+  }
+ ],
+ "coordination": {
+  "level": 1,
+  "channel": "No channel shown. The cue is US sanctions and compliance risk on a rail used near sanctioned parties, the same cue the BIS reportedly faced in 2024",
+  "enforcement": "At level 1 none is needed. If level 2, US security guarantees, arms sales and chip export licences would be the lever (not shown)",
+  "secrecy_load": "Small if level 2: a few officials at SAMA, the Saudi Royal Court and the US Treasury and White House. The exit itself stayed unreported for 16 months, so a small load did hold that long"
+ },
+ "exit": "test",
+ "budget_used": {
+  "searches": 1,
+  "tokens": 0
+ }
+}

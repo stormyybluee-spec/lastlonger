@@ -1,0 +1,387 @@
+{
+ "r3-lead": {
+  "title": "The pipes held, the pressure moved",
+  "oneLine": "Round 3 found the dollar's plumbing held through the 2026 shock, while the real limits on what money buys are rent, the tax base and Chinese hardware.",
+  "picture": "Think of a city water system after a storm. The shiny new smart pipes (stablecoins) carried almost no water, the old mains (the Fed, money funds, Treasuries) did all the work, and the real shortages showed up somewhere else: housing, taxes and imported parts.",
+  "steps": [
+   "Stablecoins were flat for a year at about $304B, while bank deposits grew $1.23T and the Fed added $370B of Treasury bills.",
+   "In the 2026 oil shock, foreign governments raised dollars by selling $254B of Treasuries. The Fed's FIMA crisis line sat at zero.",
+   "A printed UHI spends 40 to 48% of each dollar on housing, which grows about 1% a year, so robots alone cannot stop the inflation.",
+   "Wage and payroll taxes carry 86.2% of federal receipts. Taxes on electricity or compute would raise under 1%.",
+   "China extended the trade truce politically to 10 January 2027 but kept its solar factory know-how off limits.",
+   "Scenario odds barely moved: dollar extension stays the most likely regime in every horizon."
+  ],
+  "terms": [
+   {
+    "t": "Stablecoin",
+    "d": "A digital token that tries to stay worth exactly one dollar, backed by cash and short Treasury bills."
+   },
+   {
+    "t": "FIMA repo",
+    "d": "A Fed facility where foreign central banks can borrow dollars against their Treasuries instead of selling them."
+   },
+   {
+    "t": "Sigma",
+    "d": "The desk's name for the share of extra spending that is met by extra goods and services rather than by higher prices."
+   },
+   {
+    "t": "Tax base",
+    "d": "The income or activity a government taxes, such as wages, profits or sales."
+   },
+   {
+    "t": "Scenario odds",
+    "d": "The court's judgment of how likely each of four money regimes is at the end of a time window."
+   }
+  ],
+  "why": "It tells you where to look. Your paycheck stays in dollars, but what those dollars buy depends on rent, on who pays tax, and on whether parts from China keep flowing.",
+  "connects": [
+   {
+    "id": "scenarios",
+    "how": "The four scenarios this round updates: H1 becomes 44/23/3/30 and H2 31/28/10/31."
+   },
+   {
+    "id": "r2-lead",
+    "how": "Round 2's 'new rails, old anchors' picture, which Round 3 tested with a year of data."
+   },
+   {
+    "id": "r3-plumbing",
+    "how": "The stablecoin and crisis-dollar evidence in detail."
+   }
+  ],
+  "check": {
+   "q": "Why did the court lower the dollar-extension odds for 2028 to 2035 by only one point when R3A asked for two?",
+   "a": "Because the stablecoin finding is hard data (flat for a year), but the step from conditional Treasury crisis lines to more gold buying is inference with no new gold data behind it. The court accepted half the move."
+  },
+  "visual": "branches"
+ },
+ "r3-plumbing": {
+  "title": "Dollar plumbing under stress",
+  "oneLine": "Stablecoins did not grow, the Fed's crisis line went unused, and foreign governments raised dollars by selling Treasuries.",
+  "picture": "A fire station (the Fed's FIMA line) stood ready all year, but the neighbors put out their fires with their own buckets (their cash and Treasury sales). The new sprinkler system (stablecoins) never switched on.",
+  "steps": [
+   "Stablecoin supply: $304.9B a year ago, $303.8B now. Bank deposits rose $1,225B and money funds about $505B over the same year.",
+   "When stablecoins did grow (end 2023 to October 2025), about two thirds went to holders outside the US (model).",
+   "FIMA repo was zero every week from 18 February to 14 October 2026, even through Japan's ¥27.1T of interventions.",
+   "Foreign official Treasuries held at the Fed fell $254B, so governments sold bonds instead of borrowing.",
+   "Gulf states asked for swap lines through Treasury's Exchange Stabilization Fund, then borrowed a record $102.7B in markets.",
+   "Bills under 1.5%, the point where stablecoin issuers stop making money, are priced at under 5% through 2027."
+  ],
+  "terms": [
+   {
+    "t": "Swap line",
+    "d": "An agreement where the Fed lends dollars to a foreign central bank in exchange for its own currency."
+   },
+   {
+    "t": "Exchange Stabilization Fund (ESF)",
+    "d": "A Treasury fund of about $219B that can lend to foreign governments, decided by the Treasury Secretary rather than the Fed."
+   },
+   {
+    "t": "Breakeven yield",
+    "d": "The interest rate an issuer must earn on its reserves to cover its costs. About 1.5% for Circle today."
+   },
+   {
+    "t": "Money market fund",
+    "d": "A fund that holds short, safe debt such as Treasury bills and pays savers close to the bill rate."
+   },
+   {
+    "t": "Distributor payout",
+    "d": "The share of reserve income an issuer passes to partners such as exchanges. Circle passes on 61.5%."
+   }
+  ],
+  "why": "When foreign governments sell Treasuries to raise dollars, US long-term rates rise, which lifts mortgage and loan rates for you in exactly the weeks when money is tight.",
+  "connects": [
+   {
+    "id": "r2-set1",
+    "how": "Round 2 said stablecoins take over petrodollar recycling. Round 3 narrows that to 'only when crypto demand grows'."
+   },
+   {
+    "id": "debt",
+    "how": "Captive demand for Treasuries came from the Fed and money funds in 2026, not tokens."
+   },
+   {
+    "id": "r3-markets",
+    "how": "Markets price stablecoins above $500B before 2027 at only 3%."
+   }
+  ],
+  "check": {
+   "q": "If T-bill yields fell to 0.25%, why could Circle not just buy longer Treasuries to stay profitable?",
+   "a": "In the zero-rate years the 2-year averaged 0.45% and the 5-year 1.34%, both below Circle's roughly 1.5% breakeven, and the OCC already refused longer Treasuries for the backstop. Cutting distributor payouts and adding fees come first."
+  },
+  "visual": "recycle"
+ },
+ "r3-supply": {
+  "title": "Can robots and taxes pay for a UHI?",
+  "oneLine": "Housing, not robots, caps how much of a printed UHI turns into real goods, and the federal budget is leaning harder on wages.",
+  "picture": "Hand everyone in a town extra cash. The toy store can order more toys overnight, but the town has the same number of apartments, so most of the new money bids up rent.",
+  "steps": [
+   "Productivity grew 3.0% in 2024 and 2.1% in 2025. Mainstream estimates put AI's extra growth at 0.1 to 1.5 points a year.",
+   "About 40% of UHI spending goes to housing (48% for lower-income households, an assumption). Housing supply grows about 1% a year.",
+   "So even unlimited robot goods meet at most 57 to 76% of extra demand until housing supply opens.",
+   "Model: a printed Musk-scale UHI runs about 5.8 to 9.8% inflation now and 1.4 to 5.8% in 2028 to 2035.",
+   "Federal receipts: 86.2% from income and payroll taxes, 7.1% from corporate tax as AI capex is written off at once.",
+   "The live AI-dividend plans are equity (a Sanders fund paying about $1,000 a person, AI shares into Trump Accounts), not printed checks."
+  ],
+  "terms": [
+   {
+    "t": "Labor share",
+    "d": "The part of national income paid to workers as wages and benefits. 52.8% now, a record low."
+   },
+   {
+    "t": "Expensing",
+    "d": "Deducting the full cost of an investment from taxable profit in the year it is bought, which cuts tax now."
+   },
+   {
+    "t": "Equity levy",
+    "d": "A tax paid in company shares rather than cash, as in the Sanders AI fund proposal."
+   },
+   {
+    "t": "Anti-assignment clause",
+    "d": "A rule that stops a benefit from being sold or pledged to a lender, like the one protecting Social Security."
+   },
+   {
+    "t": "Money-financed",
+    "d": "Paid for by creating new money rather than by taxes or borrowing from savers."
+   }
+  ],
+  "why": "A printed UHI would feel generous on food and gadgets and thin on rent within two to three years, and today wages fund most of the federal budget.",
+  "connects": [
+   {
+    "id": "r2-uhi",
+    "how": "Round 2's UHI model, whose robot-abundance case Round 3 relabels as conditional on housing."
+   },
+   {
+    "id": "debt",
+    "how": "Corporate tax fell 15.6% in FY2026, one reason AI does not fix the debt in H0."
+   },
+   {
+    "id": "r3-ownership",
+    "how": "Housing supply (R3-5) is the binding limit on any UHI's real value."
+   }
+  ],
+  "check": {
+   "q": "Why can't unlimited robot output push sigma above about 0.76 in 2035 to 2050?",
+   "a": "Because about 40% of UHI spending goes to housing, and even in H2 the model lets housing meet only 40% of its extra demand. 1 minus 0.395 x 0.6 is about 0.76, so roughly a quarter of total demand goes unmet whatever robots do."
+  },
+  "visual": "basket"
+ },
+ "r3-hardware": {
+  "title": "China's controls and the battery swap",
+  "oneLine": "China trades goods for tariffs but keeps factory know-how, and electric freight swaps an oil flow dependence for a slower battery stock dependence.",
+  "picture": "Oil is like the water bill: cut it off and the house is dry within days. A battery is like the roof: cut off roof supplies and you still live in the house, you just cannot build new rooms or fix old ones quickly.",
+  "steps": [
+   "Bessent and MOFCOM extended the trade truce to 10 January 2027, but the legal pause on rare earths still ends 10 November.",
+   "Court odds for 10 November: numbered extension 72%, partial replacement 16%, full lapse 12%.",
+   "China's proposed solar ban covers factory know-how (thin wafers, new cell types) but not panels, so it sells product and keeps the factory.",
+   "China makes over 80% of battery cells and more than 90% of anode material. Oil's largest producer has 22%.",
+   "A battery cutoff hits new trucks and the 8 to 12% of packs replaced each year, not the fleet already running.",
+   "China itself electrified 38% of heavy trucks sold this year. The US sold about 17,000 e-trucks in 2025, mostly vans."
+  ],
+  "terms": [
+   {
+    "t": "Announcement 70",
+    "d": "MOFCOM's notice pausing China's October 2025 rare-earth and battery controls, legally until 10 November 2026."
+   },
+   {
+    "t": "HHI",
+    "d": "A concentration score from 0 to 10,000. Above 2,500 means a market is highly concentrated."
+   },
+   {
+    "t": "Flow vs stock dependence",
+    "d": "A flow (oil) is used up daily, a stock (a battery) keeps working once installed."
+   },
+   {
+    "t": "LFP",
+    "d": "Lithium iron phosphate, a cheaper battery chemistry made almost entirely with Chinese materials."
+   },
+   {
+    "t": "N-1 test",
+    "d": "The IEA's check of whether the rest of the world could meet its needs if the largest supplier dropped out."
+   }
+  ],
+  "why": "No change to the money you are paid in. A China squeeze would show up slowly as dearer EVs, delivery vans and home batteries, while electric freight makes goods prices less sensitive to oil shocks.",
+  "connects": [
+   {
+    "id": "r2-rivals",
+    "how": "Round 2 ranked hardware levers above currency moves. Round 3 rescores them with solar controls on top."
+   },
+   {
+    "id": "answer",
+    "how": "The watt-dollar depends on magnets, cells and wafers that Treasury cannot issue."
+   },
+   {
+    "id": "r3-tables",
+    "how": "The China controls odds table lists every date and score."
+   }
+  ],
+  "check": {
+   "q": "Why is a battery cutoff less acute than an oil cutoff, even though batteries are more concentrated?",
+   "a": "Oil is used up every day, so trucks stop within weeks. Batteries are a stock: existing fleets keep running and only new trucks and the 8 to 12% of packs replaced each year are exposed, which can be buffered with stockpiles."
+  },
+  "visual": "watt"
+ },
+ "r3-ownership": {
+  "title": "Homes, human labels, ad tolls and child accounts",
+  "oneLine": "Cheaper production does not reach people on its own: land takes housing savings, platforms take a rising cut, and child accounts move ownership by tenths of a point.",
+  "picture": "Picture a cheaper house kit arriving on a plot in San Jose. The kit is 20% cheaper, but the plot is most of the price, so the buyer saves about 6%, and the seller of the plot may pocket part of that too.",
+  "steps": [
+   "Land is 68% of single-family value in San Jose and Los Angeles, 40% nationally and 21% in St. Louis (FHFA, 2022).",
+   "A 20% cheaper structure lowers prices about 6% in San Jose and 16% in St. Louis (model).",
+   "Broad upzoning works: Auckland doubled construction and three-bedroom rents ended 22 to 35% below comparison cities.",
+   "Buyers rate 'human-made' higher in experiments, but no study yet measures a cash premium in real sales.",
+   "Amazon ads grew from 23.5% to 41.9% of its seller-services revenue (2019 to H1 2026), and Meta's price per ad is up 12 to 14% a year in 2026.",
+   "The bottom half own 0.58% of directly held stocks. Trump Accounts as designed lift that to about 0.60 to 0.70% by 2045."
+  ],
+  "terms": [
+   {
+    "t": "Land share",
+    "d": "The part of a home's value that is the land under it rather than the building."
+   },
+   {
+    "t": "Upzoning",
+    "d": "Changing local rules so more homes can be built on the same land."
+   },
+   {
+    "t": "Take rate",
+    "d": "The share of each sale a marketplace keeps in fees and ads."
+   },
+   {
+    "t": "Distributional Financial Accounts (DFA)",
+    "d": "The Fed's quarterly data on who owns what, split by wealth group."
+   },
+   {
+    "t": "Baby bond",
+    "d": "A public deposit into an account for a child, often larger for poorer families, paid out at adulthood."
+   }
+  ],
+  "why": "Your rent, your shop's margins and your child's account are set by land rules, platform fees and deposit design more than by robots.",
+  "connects": [
+   {
+    "id": "r2-entry",
+    "how": "Round 2 found the housing rung broken. Round 3 shows why factory homes alone will not fix it on the coasts."
+   },
+   {
+    "id": "r2-founders",
+    "how": "Round 2's cheap launch, dear attention split, now backed by company filings."
+   },
+   {
+    "id": "tiers",
+    "how": "Ownership is still the line between asset owners and income-stream dependents."
+   }
+  ],
+  "check": {
+   "q": "A factory cuts the cost of building a house by 20%. Why do prices fall about 16% in St. Louis but only about 6% in San Jose?",
+   "a": "The cut applies only to the structure. Land is about 21% of value in St. Louis and 68% in San Jose, so 20% x 79% is about 16% and 20% x 32% is about 6%."
+  },
+  "visual": "ladder"
+ },
+ "r3-markets": {
+  "title": "Checking the desk against prediction markets",
+  "oneLine": "Deep prediction markets agree with most desk calls, corrected the timing of the next Fed hike, and supply three odds the desk lacked.",
+  "picture": "It is like checking your own weather forecast against the betting at the racetrack. Where lots of money is riding, the crowd is usually well informed. Where only a few dollars are riding, the price is just noise.",
+  "steps": [
+   "Deep markets give an October Fed hike 11 to 12% and a December hike 75 to 79%. The desk had the October date wrong.",
+   "Markets agree with the desk's skeptical calls: stablecoins above $500B before 2027 at 3%, the CLARITY Act in 2026 at 5%.",
+   "Markets see little Fed capture: Warsh out by mid-2027 at 9.5%.",
+   "The desk borrows three numbers: a 2027 recession about 21%, Hormuz normal before 2028 about 48%, a Le Pen presidency about 46%.",
+   "Where a market is thin (a $4.5k Bitcoin purchase market), the desk keeps its own number when its reasoning is stronger.",
+   "New rule: if a market with over $1M traded is more than 15 points from the desk, the desk must explain why."
+  ],
+  "terms": [
+   {
+    "t": "Prediction market",
+    "d": "A market where people trade contracts that pay $1 if an event happens, so the price reads as a probability."
+   },
+   {
+    "t": "Implied probability",
+    "d": "The chance a market price suggests. A price of 0.12 means about a 12% chance."
+   },
+   {
+    "t": "Thin market",
+    "d": "A market with little money traded, so one trader can move the price a lot."
+   },
+   {
+    "t": "Brier score",
+    "d": "A way to grade forecasts after the fact: the average squared gap between the odds and what happened."
+   },
+   {
+    "t": "Term premium",
+    "d": "The extra yield investors demand to hold long bonds instead of rolling short ones."
+   }
+  ],
+  "why": "Markets tell you what the money expects: no rate cuts soon, fuel staying dear into 2027, and borrowing staying expensive, which matters for any fixed income or transfer.",
+  "connects": [
+   {
+    "id": "scenarios",
+    "how": "Markets do not move the scenario numbers but change what the disorderly reset path rests on."
+   },
+   {
+    "id": "watch",
+    "how": "The tripwire table now includes market-based rows for Hormuz and recession odds."
+   },
+   {
+    "id": "r3-hardware",
+    "how": "The China truce lapse has no direct market, so the desk uses R3C's 12%."
+   }
+  ],
+  "check": {
+   "q": "Thin markets give a France downgrade by 31 October 87.5%. Why does the court say about 70?",
+   "a": "The market is thin ($8.4k traded), Moody's has held through earlier crises, and S&P and Fitch already rate France lower, so a cut is likely but not as certain as the price implies."
+  },
+  "visual": "tiers"
+ },
+ "r3-tables": {
+  "title": "The Round 3 numbers",
+  "oneLine": "Seven tables turn Round 3 into numbers you can check: market odds, live tripwires, revised scenarios, UHI inflation, bottom-half ownership, land shares and China's control dates.",
+  "picture": "Think of the dashboard in a car. The answers are the driver's judgment, and these tables are the gauges: speed, fuel and warning lights you can read for yourself.",
+  "steps": [
+   "Market check: 14 events where prediction markets and the desk can be compared, with a verdict on who is likely right.",
+   "Tripwires now: live readings such as the 10-year real yield at 2.76%, already past its 2.5% line.",
+   "Scenario odds: H0 unchanged, H1 44/23/3/30, H2 31/28/10/31.",
+   "UHI inflation: a printed Musk-scale UHI at about 5.8 to 9.2% inflation in H0 across AI growth cases, falling in later horizons.",
+   "Bottom-half equity: from 0.58% today to about 0.60 to 1.27% by 2045 depending on how much public money goes in.",
+   "Land and China: land share by metro with factory savings, and the odds and dates for China's export controls."
+  ],
+  "terms": [
+   {
+    "t": "Model",
+    "d": "Arithmetic on stated inputs, not measured data. It shows what follows if the assumptions hold."
+   },
+   {
+    "t": "Horizon",
+    "d": "H0 is now to 2028, H1 2028 to 2035, H2 2035 to 2050."
+   },
+   {
+    "t": "Tripwire",
+    "d": "A level of an indicator that, once crossed, tells the desk to change a view."
+   },
+   {
+    "t": "Lever score",
+    "d": "The desk's judgment score for a rival's move: cost to the US x likelihood x (6 minus cost to the rival) / 25."
+   },
+   {
+    "t": "Real 2026 dollars",
+    "d": "Future amounts shrunk back to what they would buy today."
+   }
+  ],
+  "why": "Numbers make claims testable. You can see which gauges are close to their lines and check the court's answers against them.",
+  "connects": [
+   {
+    "id": "r2-tables",
+    "how": "The Round 2 tables these update, including the UHI table's robot column."
+   },
+   {
+    "id": "r3-supply",
+    "how": "The UHI inflation table comes from the R3-2 recalibration."
+   },
+   {
+    "id": "r3-ownership",
+    "how": "The bottom-half equity and land tables back R3-11 and R3-5."
+   }
+  ],
+  "check": {
+   "q": "In the bottom-half equity model, why does the share rise more in the Fed's view (0.70%) than by family of origin (0.62%)?",
+   "a": "Because at 18 account owners are counted in their own new, low-wealth households, so children from richer families show up as bottom-half owners even though no poorer family gained."
+  },
+  "visual": "timescale"
+ }
+}

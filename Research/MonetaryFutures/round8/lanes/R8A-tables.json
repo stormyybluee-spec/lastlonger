@@ -1,0 +1,1270 @@
+{
+ "lane": "R8A",
+ "as_of": "2026-11-05",
+ "note": "Chart-ready tables. Models labelled. Sources per table.",
+ "tables": {
+  "strc_monthly": {
+   "source": "Nasdaq historical API, api.nasdaq.com/api/quote/STRC/historical",
+   "unit": "$ per share, $ millions a day",
+   "range": "2025-07 to 2026-11-04",
+   "columns": [
+    "month",
+    "last_close",
+    "min_close",
+    "avg_daily_dollar_volume_m"
+   ],
+   "rows": [
+    [
+     "2025-07",
+     94.48,
+     88.6,
+     179.8
+    ],
+    [
+     "2025-08",
+     97.75,
+     93.6,
+     107.1
+    ],
+    [
+     "2025-09",
+     97.06,
+     96.9,
+     35.8
+    ],
+    [
+     "2025-10",
+     99.38,
+     97.3,
+     72.5
+    ],
+    [
+     "2025-11",
+     96.66,
+     92.79,
+     144.3
+    ],
+    [
+     "2025-12",
+     98.795,
+     96.41,
+     54.1
+    ],
+    [
+     "2026-01",
+     98.99,
+     98.19,
+     121.3
+    ],
+    [
+     "2026-02",
+     100.0,
+     93.67,
+     118.3
+    ],
+    [
+     "2026-03",
+     100.02,
+     99.48,
+     257.5
+    ],
+    [
+     "2026-04",
+     99.75,
+     99.06,
+     370.6
+    ],
+    [
+     "2026-05",
+     98.99,
+     98.57,
+     360.2
+    ],
+    [
+     "2026-06",
+     84.86,
+     74.57,
+     416.0
+    ],
+    [
+     "2026-07",
+     89.46,
+     84.94,
+     120.0
+    ],
+    [
+     "2026-08",
+     97.1,
+     92.32,
+     143.8
+    ],
+    [
+     "2026-09",
+     99.35,
+     96.8,
+     147.2
+    ],
+    [
+     "2026-10",
+     99.13,
+     97.72,
+     164.5
+    ],
+    [
+     "2026-11",
+     99.98,
+     99.28,
+     192.3
+    ]
+   ]
+  },
+  "strc_rate_history": {
+   "source": "Strategy Q3 2026 results release (2026 months), Nasdaq dividend amounts x12 (2025 months)",
+   "unit": "% a year",
+   "columns": [
+    "month",
+    "rate_pct"
+   ],
+   "rows": [
+    [
+     "2025-07",
+     9.0
+    ],
+    [
+     "2025-08",
+     9.6
+    ],
+    [
+     "2025-09",
+     10.0
+    ],
+    [
+     "2025-10",
+     10.25
+    ],
+    [
+     "2025-11",
+     10.5
+    ],
+    [
+     "2025-12",
+     10.75
+    ],
+    [
+     "2026-01",
+     11.0
+    ],
+    [
+     "2026-02",
+     11.25
+    ],
+    [
+     "2026-03",
+     11.5
+    ],
+    [
+     "2026-04",
+     11.5
+    ],
+    [
+     "2026-05",
+     11.5
+    ],
+    [
+     "2026-06",
+     11.5
+    ],
+    [
+     "2026-07",
+     12.0
+    ],
+    [
+     "2026-08",
+     12.0
+    ],
+    [
+     "2026-09",
+     12.0
+    ],
+    [
+     "2026-10",
+     12.0
+    ],
+    [
+     "2026-11",
+     12.0
+    ]
+   ],
+   "note": "August 2025 figure is the first full payment implied from Nasdaq amount (0.80 x 12) and may include a partial period. Launch rate 9.00%."
+  },
+  "digital_credit_family": {
+   "source": "Strategy and Strive SEC filings, Yahoo closes 2026-11-04",
+   "columns": [
+    "series",
+    "issuer",
+    "rate_pct",
+    "cumulative",
+    "rank",
+    "price",
+    "effective_yield_pct",
+    "avg_dollar_vol_60d_m"
+   ],
+   "rows": [
+    [
+     "STRF",
+     "Strategy",
+     10.0,
+     "yes",
+     "1 (most senior preferred)",
+     102.79,
+     9.7,
+     6.0
+    ],
+    [
+     "STRC",
+     "Strategy",
+     12.0,
+     "yes",
+     "2",
+     99.98,
+     12.0,
+     155.5
+    ],
+    [
+     "STRE",
+     "Strategy",
+     10.0,
+     "yes (euro)",
+     "3",
+     null,
+     null,
+     null
+    ],
+    [
+     "STRK",
+     "Strategy",
+     8.0,
+     "yes, convertible",
+     "4",
+     70.8,
+     11.3,
+     6.6
+    ],
+    [
+     "STRD",
+     "Strategy",
+     10.0,
+     "no",
+     "5 (most junior preferred)",
+     71.48,
+     14.0,
+     6.5
+    ],
+    [
+     "SATA",
+     "Strive",
+     13.0,
+     "yes",
+     "Strive senior preferred",
+     98.0,
+     13.3,
+     48.6
+    ]
+   ],
+   "note": "SATA rate 13% is the latest confirmed (from 2026-04-15). STRE not retrieved."
+  },
+  "preferred_liquidity_60d": {
+   "source": "Yahoo chart API, 60 sessions to 2026-11-04",
+   "unit": "$ millions a day",
+   "columns": [
+    "ticker",
+    "name",
+    "avg_dollar_volume_m"
+   ],
+   "rows": [
+    [
+     "STRC",
+     "Strategy Stretch",
+     155.5
+    ],
+    [
+     "SATA",
+     "Strive Series A",
+     48.6
+    ],
+    [
+     "BA-PA",
+     "Boeing mandatory convertible preferred",
+     48.6
+    ],
+    [
+     "JPM-PD",
+     "JPMorgan preferred DD",
+     6.4
+    ],
+    [
+     "STRK",
+     "Strategy Strike",
+     6.6
+    ],
+    [
+     "STRD",
+     "Strategy Stride",
+     6.5
+    ],
+    [
+     "STRF",
+     "Strategy Strife",
+     6.0
+    ],
+    [
+     "C-PN",
+     "Citigroup Capital XIII",
+     2.9
+    ]
+   ]
+  },
+  "coverage_model": {
+   "source": "Model, scripts/r8a_coverage.py. Inputs: 8-K 2026-11-02, 10-Q Q3 2026, XBRL, FWP 2026-08-24, CoinGecko 2026-11-05",
+   "label": "MODEL",
+   "inputs": {
+    "btc_units": 849327,
+    "btc_price": 80536,
+    "usd_reserve_b": 4.79,
+    "usd_cash_b": 0.1327,
+    "debt_b": 6.75,
+    "strf_b_model": 1.24,
+    "strc_b_model": 8.19,
+    "all_preferred_b_model": 13.18,
+    "annual_obligations_b_model": 1.49
+   },
+   "columns": [
+    "measure",
+    "value",
+    "unit"
+   ],
+   "rows": [
+    [
+     "Bitcoin value",
+     68.4,
+     "$B"
+    ],
+    [
+     "Years covered in Bitcoin, gross",
+     46.0,
+     "years"
+    ],
+    [
+     "Years covered in Bitcoin, after debt principal",
+     41.5,
+     "years"
+    ],
+    [
+     "Years covered by USD Reserve",
+     3.2,
+     "years"
+    ],
+    [
+     "Company stated USD cover (2026-10-25)",
+     3.4,
+     "years"
+    ],
+    [
+     "STRC coverage, company net method",
+     6.08,
+     "x"
+    ],
+    [
+     "STRC coverage, gross",
+     4.23,
+     "x"
+    ],
+    [
+     "Whole stack, gross",
+     3.43,
+     "x"
+    ],
+    [
+     "Whole stack, net of USD",
+     4.56,
+     "x"
+    ],
+    [
+     "Asset coverage, 40 Act style",
+     368,
+     "%"
+    ],
+    [
+     "BTC price for STRC 1x (company method)",
+     13250,
+     "$"
+    ],
+    [
+     "BTC price for whole stack 1x net",
+     17670,
+     "$"
+    ],
+    [
+     "BTC price for whole stack 1x gross",
+     23466,
+     "$"
+    ],
+    [
+     "New BTC a year",
+     164250,
+     "BTC"
+    ],
+    [
+     "Value of new BTC a year",
+     13.2,
+     "$B"
+    ],
+    [
+     "Years of supply bought by $10B",
+     0.76,
+     "years"
+    ],
+    [
+     "Share of 21M held",
+     4.04,
+     "%"
+    ]
+   ]
+  },
+  "tax_equivalent": {
+   "source": "Model on 26 USC 301(c), federal, NY State and NYC top rates",
+   "label": "MODEL",
+   "columns": [
+    "holder",
+    "combined_tax_rate_pct",
+    "bank_rate_needed_to_net_12_pct"
+   ],
+   "rows": [
+    [
+     "NYC top bracket, ordinary income",
+     55.6,
+     27.0
+    ],
+    [
+     "NYC top bracket, qualified dividend",
+     38.6,
+     19.5
+    ],
+    [
+     "US 24% bracket, no state",
+     24.0,
+     15.8
+    ],
+    [
+     "US tax-exempt account",
+     0.0,
+     12.0
+    ],
+    [
+     "Malaysian non-resident if 30% withheld",
+     30.0,
+     17.1
+    ]
+   ]
+  },
+  "returns_by_start_date": {
+   "source": "Yahoo adjusted closes (BIL, AGG, TLT, VNQ, GLD, SPY, MSTR, BTC-USD), end 2026-11-04, scripts/r8a_returns.py",
+   "unit": "% a year compound",
+   "label": "MODEL",
+   "columns": [
+    "start",
+    "BIL",
+    "AGG",
+    "TLT",
+    "VNQ",
+    "GLD",
+    "SPY",
+    "BTC",
+    "MSTR"
+   ],
+   "rows": [
+    [
+     "2020-08-11",
+     2.9,
+     -0.4,
+     -8.0,
+     7.0,
+     12.4,
+     15.9,
+     36.8,
+     46.0
+    ],
+    [
+     "2021-01-04",
+     3.1,
+     -0.5,
+     -7.7,
+     6.9,
+     13.0,
+     14.9,
+     17.1,
+     23.1
+    ],
+    [
+     "2021-11-10",
+     3.6,
+     -0.3,
+     -8.1,
+     1.7,
+     16.6,
+     12.1,
+     4.4,
+     11.8
+    ],
+    [
+     "2022-01-03",
+     3.7,
+     -0.1,
+     -7.9,
+     0.5,
+     17.9,
+     11.7,
+     12.0,
+     21.4
+    ],
+    [
+     "2022-11-21",
+     4.3,
+     3.4,
+     -1.2,
+     7.7,
+     23.5,
+     19.9,
+     50.9,
+     74.7
+    ],
+    [
+     "2023-01-03",
+     4.3,
+     3.3,
+     -1.7,
+     8.7,
+     22.5,
+     21.5,
+     50.7,
+     81.4
+    ],
+    [
+     "2024-01-02",
+     4.1,
+     2.8,
+     -2.4,
+     7.3,
+     26.6,
+     19.9,
+     22.7,
+     29.4
+    ],
+    [
+     "2025-01-02",
+     3.6,
+     3.3,
+     0.3,
+     9.8,
+     25.5,
+     17.1,
+     -9.7,
+     -33.3
+    ]
+   ],
+   "talk_claim": {
+    "start": "2020-08",
+    "bonds": "negative",
+    "money_market": 3,
+    "real_estate": 5,
+    "gold": 13,
+    "sp500": 15,
+    "bitcoin": 37,
+    "mstr": 51
+   }
+  },
+  "volatility": {
+   "source": "Yahoo adjusted closes, annualized st. dev. of daily log returns (BTC 365, others 252)",
+   "unit": "%",
+   "label": "MODEL",
+   "columns": [
+    "series",
+    "12m_to_2026-11-04",
+    "last_90d",
+    "talk"
+   ],
+   "rows": [
+    [
+     "Bitcoin",
+     44.1,
+     39.4,
+     39
+    ],
+    [
+     "MSTR",
+     80.8,
+     85.1,
+     87
+    ],
+    [
+     "STRC",
+     22.2,
+     9.0,
+     "under 8"
+    ],
+    [
+     "STRF",
+     23.7,
+     9.5,
+     null
+    ],
+    [
+     "STRK",
+     37.5,
+     34.2,
+     null
+    ],
+    [
+     "STRD",
+     32.4,
+     21.4,
+     null
+    ],
+    [
+     "PFF",
+     7.8,
+     8.1,
+     null
+    ],
+    [
+     "AGG",
+     4.1,
+     4.8,
+     null
+    ]
+   ]
+  },
+  "comparison_eight": {
+   "source": "Section C of R8A-instrument-claims.md",
+   "columns": [
+    "instrument",
+    "legal_form",
+    "backing",
+    "par_promised_by",
+    "worst_loss"
+   ],
+   "rows": [
+    [
+     "STRC",
+     "Delaware perpetual preferred",
+     "Strategy Bitcoin and USD Reserve after debt and STRF",
+     "nobody (company target)",
+     "close $74.57 on 2026-06-26, -25% vs par"
+    ],
+    [
+     "British consol",
+     "UK perpetual government bond",
+     "UK taxing power",
+     "nobody (callable)",
+     "about -85% nominal 1897 peak to 1974 (model)"
+    ],
+    [
+     "Gold-standard credit",
+     "gold-payable debt",
+     "gold plus issuer credit",
+     "issuer",
+     "US gold clause abrogation 1933 to 1935, -41% in gold terms"
+    ],
+    [
+     "Bank preferred",
+     "non-cumulative perpetual preferred",
+     "bank assets after debt",
+     "nobody",
+     "Fannie and Freddie preferred about -95% (2008)"
+    ],
+    [
+     "Closed-end fund preferred",
+     "40 Act fund preferred, 200% coverage",
+     "diversified portfolio",
+     "nobody",
+     "auction-rate freeze 2008, mostly repaid at par"
+    ],
+    [
+     "Money market fund",
+     "2a-7 fund",
+     "short bills and repo",
+     "fund aim, no guarantee",
+     "Reserve Primary $0.97 (2008)"
+    ],
+    [
+     "Payment stablecoin",
+     "GENIUS Act token",
+     "cash, deposits, T-bills up to 93 days",
+     "issuer",
+     "USDC $0.87 (2023-03-11)"
+    ],
+    [
+     "High-yield bond",
+     "corporate debt",
+     "issuer cash flow, ahead of equity",
+     "issuer at maturity",
+     "index about -26% (2008)"
+    ]
+   ]
+  },
+  "usd_myr_monthly": {
+   "source": "Yahoo MYR=X monthly",
+   "unit": "ringgit per US dollar",
+   "range": "2016-11 to 2026-11",
+   "columns": [
+    "month",
+    "usd_myr"
+   ],
+   "rows": [
+    [
+     "2016-12",
+     4.4835
+    ],
+    [
+     "2017-01",
+     4.4272
+    ],
+    [
+     "2017-02",
+     4.4375
+    ],
+    [
+     "2017-03",
+     4.423
+    ],
+    [
+     "2017-03",
+     4.3395
+    ],
+    [
+     "2017-04",
+     4.2883
+    ],
+    [
+     "2017-05",
+     4.291
+    ],
+    [
+     "2017-06",
+     4.279
+    ],
+    [
+     "2017-07",
+     4.268
+    ],
+    [
+     "2017-08",
+     4.2249
+    ],
+    [
+     "2017-09",
+     4.2291
+    ],
+    [
+     "2017-11",
+     4.087
+    ],
+    [
+     "2017-12",
+     4.0589
+    ],
+    [
+     "2018-01",
+     3.8985
+    ],
+    [
+     "2018-02",
+     3.915
+    ],
+    [
+     "2018-03",
+     3.86
+    ],
+    [
+     "2018-03",
+     3.9165
+    ],
+    [
+     "2018-04",
+     3.985
+    ],
+    [
+     "2018-05",
+     4.0405
+    ],
+    [
+     "2018-06",
+     4.0555
+    ],
+    [
+     "2018-07",
+     4.1134
+    ],
+    [
+     "2018-08",
+     4.136
+    ],
+    [
+     "2018-09",
+     4.18
+    ],
+    [
+     "2018-11",
+     4.1818
+    ],
+    [
+     "2018-12",
+     4.151
+    ],
+    [
+     "2019-01",
+     4.088
+    ],
+    [
+     "2019-02",
+     4.064
+    ],
+    [
+     "2019-03",
+     4.08
+    ],
+    [
+     "2019-03",
+     4.1313
+    ],
+    [
+     "2019-04",
+     4.184
+    ],
+    [
+     "2019-05",
+     4.14
+    ],
+    [
+     "2019-06",
+     4.1225
+    ],
+    [
+     "2019-07",
+     4.2155
+    ],
+    [
+     "2019-08",
+     4.1905
+    ],
+    [
+     "2019-09",
+     4.1751
+    ],
+    [
+     "2019-11",
+     4.172
+    ],
+    [
+     "2019-12",
+     4.107
+    ],
+    [
+     "2020-01",
+     4.084
+    ],
+    [
+     "2020-02",
+     4.2085
+    ],
+    [
+     "2020-03",
+     4.331
+    ],
+    [
+     "2020-03",
+     4.3415
+    ],
+    [
+     "2020-04",
+     4.348
+    ],
+    [
+     "2020-05",
+     4.2825
+    ],
+    [
+     "2020-06",
+     4.237
+    ],
+    [
+     "2020-07",
+     4.163
+    ],
+    [
+     "2020-08",
+     4.155
+    ],
+    [
+     "2020-09",
+     4.1545
+    ],
+    [
+     "2020-11",
+     4.067
+    ],
+    [
+     "2020-12",
+     4.035
+    ],
+    [
+     "2021-01",
+     4.04
+    ],
+    [
+     "2021-02",
+     4.037
+    ],
+    [
+     "2021-03",
+     4.149
+    ],
+    [
+     "2021-03",
+     4.1
+    ],
+    [
+     "2021-04",
+     4.131
+    ],
+    [
+     "2021-05",
+     4.1495
+    ],
+    [
+     "2021-06",
+     4.236
+    ],
+    [
+     "2021-07",
+     4.1545
+    ],
+    [
+     "2021-08",
+     4.1823
+    ],
+    [
+     "2021-09",
+     4.148
+    ],
+    [
+     "2021-11",
+     4.236
+    ],
+    [
+     "2021-12",
+     4.1715
+    ],
+    [
+     "2022-01",
+     4.188
+    ],
+    [
+     "2022-02",
+     4.1985
+    ],
+    [
+     "2022-03",
+     4.2025
+    ],
+    [
+     "2022-03",
+     4.3615
+    ],
+    [
+     "2022-04",
+     4.3638
+    ],
+    [
+     "2022-05",
+     4.3973
+    ],
+    [
+     "2022-06",
+     4.45
+    ],
+    [
+     "2022-07",
+     4.474
+    ],
+    [
+     "2022-08",
+     4.6305
+    ],
+    [
+     "2022-09",
+     4.72
+    ],
+    [
+     "2022-11",
+     4.5063
+    ],
+    [
+     "2022-12",
+     4.4
+    ],
+    [
+     "2023-01",
+     4.2415
+    ],
+    [
+     "2023-02",
+     4.473
+    ],
+    [
+     "2023-03",
+     4.42
+    ],
+    [
+     "2023-03",
+     4.46
+    ],
+    [
+     "2023-04",
+     4.598
+    ],
+    [
+     "2023-05",
+     4.669
+    ],
+    [
+     "2023-06",
+     4.552
+    ],
+    [
+     "2023-07",
+     4.6375
+    ],
+    [
+     "2023-08",
+     4.706
+    ],
+    [
+     "2023-09",
+     4.76
+    ],
+    [
+     "2023-11",
+     4.6705
+    ],
+    [
+     "2023-12",
+     4.605
+    ],
+    [
+     "2024-01",
+     4.7255
+    ],
+    [
+     "2024-02",
+     4.7665
+    ],
+    [
+     "2024-03",
+     4.7305
+    ],
+    [
+     "2024-03",
+     4.763
+    ],
+    [
+     "2024-04",
+     4.7015
+    ],
+    [
+     "2024-05",
+     4.717
+    ],
+    [
+     "2024-06",
+     4.62
+    ],
+    [
+     "2024-07",
+     4.309
+    ],
+    [
+     "2024-08",
+     4.119
+    ],
+    [
+     "2024-09",
+     4.3763
+    ],
+    [
+     "2024-11",
+     4.4425
+    ],
+    [
+     "2024-12",
+     4.4625
+    ],
+    [
+     "2025-01",
+     4.3875
+    ],
+    [
+     "2025-02",
+     4.4525
+    ],
+    [
+     "2025-03",
+     4.432
+    ],
+    [
+     "2025-03",
+     4.325
+    ],
+    [
+     "2025-04",
+     4.2375
+    ],
+    [
+     "2025-05",
+     4.226
+    ],
+    [
+     "2025-06",
+     4.2425
+    ],
+    [
+     "2025-07",
+     4.2075
+    ],
+    [
+     "2025-08",
+     4.2125
+    ],
+    [
+     "2025-09",
+     4.1975
+    ],
+    [
+     "2025-11",
+     4.128
+    ],
+    [
+     "2025-12",
+     4.045
+    ],
+    [
+     "2026-01",
+     3.925
+    ],
+    [
+     "2026-02",
+     3.882
+    ],
+    [
+     "2026-03",
+     4.03
+    ],
+    [
+     "2026-03",
+     3.9503
+    ],
+    [
+     "2026-04",
+     3.9759
+    ],
+    [
+     "2026-05",
+     4.0685
+    ],
+    [
+     "2026-06",
+     4.0712
+    ],
+    [
+     "2026-07",
+     4.0233
+    ],
+    [
+     "2026-08",
+     4.0804
+    ],
+    [
+     "2026-09",
+     4.0568
+    ],
+    [
+     "2026-11",
+     4.0746
+    ],
+    [
+     "2026-11",
+     4.046
+    ]
+   ]
+  },
+  "strategy_quarterly_xbrl": {
+   "source": "SEC XBRL company facts CIK0001050446",
+   "columns": [
+    "quarter_end",
+    "btc_units",
+    "btc_fair_value_b",
+    "preferred_liq_pref_b"
+   ],
+   "rows": [
+    [
+     "2025-12-31",
+     672500,
+     58.85,
+     8.03
+    ],
+    [
+     "2026-03-31",
+     762099,
+     51.65,
+     10.0
+    ],
+    [
+     "2026-06-30",
+     846000,
+     49.67,
+     15.46
+    ],
+    [
+     "2026-09-30",
+     847666,
+     70.82,
+     14.11
+    ]
+   ]
+  },
+  "claims_audit_summary": {
+   "columns": [
+    "verdict",
+    "count"
+   ],
+   "rows": [
+    [
+     "holds",
+     10
+    ],
+    [
+     "spin",
+     9
+    ],
+    [
+     "wrong",
+     4
+    ],
+    [
+     "cannot check",
+     3
+    ]
+   ]
+  }
+ }
+}

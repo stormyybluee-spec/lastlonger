@@ -1,0 +1,130 @@
+{
+ "id": "H1-04",
+ "question": "What was the 1974 Saudi arrangement and what remains of it?",
+ "start": "GAO EMD-79-45, 11 June 1979: Treasury gave Saudi Arabia an add-on purchase window in 1974 and kept its holdings confidential (EXAM_T9 links L1 and L2)",
+ "links": [
+  {
+   "n": 1,
+   "claim": "In 1974 the US Treasury gave Saudi Arabia a non-auction add-on purchase window as part of a bilateral financial package and kept Saudi holdings inside a regional total. The window was opened to all official buyers in 1975",
+   "grade": "I0",
+   "p": 0.95,
+   "actor": {
+    "name": "US Department of the Treasury",
+    "kind": "agency"
+   },
+   "evidence": [
+    {
+     "what": "GAO audit, chapter 3, as read in EXAM_T9",
+     "url": "https://www.gao.gov/assets/emd-79-45.pdf",
+     "tier": "T1",
+     "date": "1979-06-11"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "claim": "The secrecy ended on 16 May 2016 when Treasury published Saudi holdings, 116.8 billion for March 2016",
+   "grade": "I0",
+   "p": 0.98,
+   "actor": {
+    "name": "US Department of the Treasury",
+    "kind": "agency"
+   },
+   "evidence": [
+    {
+     "what": "CNBC report of the first release",
+     "url": "https://www.cnbc.com/2016/05/16/saudi-arabia-holds-117b-in-us-debt-report.html",
+     "tier": "T2",
+     "date": "2016-05-16"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "claim": "In November 2025 the US and Saudi Arabia signed a public Strategic Defense Agreement, named Saudi Arabia a major non-NATO ally, and the Crown Prince raised Saudi investment commitments to nearly 1 trillion dollars into US infrastructure, technology and industry",
+   "grade": "I0",
+   "p": 0.95,
+   "actor": {
+    "name": "Executive Office of the President of the United States",
+    "kind": "office"
+   },
+   "evidence": [
+    {
+     "what": "White House fact sheet",
+     "url": "https://www.whitehouse.gov/fact-sheets/2025/11/fact-sheet-president-donald-j-trump-solidifies-economic-and-defense-partnership-with-the-kingdom-of-saudi-arabia",
+     "tier": "T1",
+     "date": "2025-11"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "claim": "What remains is an open security-for-investment exchange aimed at real assets and arms, not a duty to hold Treasuries. Saudi Treasuries move with oil and budgets (minus 59 billion in early 2020, 160.4 to 141.2 billion from February to August 2026 during the Hormuz crisis)",
+   "grade": "I2",
+   "p": 0.55,
+   "actor": {
+    "name": "Saudi Central Bank (SAMA)",
+    "kind": "central bank"
+   },
+   "move": "precedent and timing",
+   "footprints_expected": [
+    "A holding floor would show as Saudi Treasuries holding steady in stress months",
+    "Public commitments would name Treasuries if they were part of the bargain",
+    "A side letter would leak or be cited in Congress"
+   ],
+   "footprints_found": [
+    {
+     "what": "TIC: Saudi holdings fell about 59bn in February to April 2020 and from 160.4 to 141.2bn in February to August 2026",
+     "url": "https://ticdata.treasury.gov/Publish/mfhhis01.txt",
+     "date": "2026-11-12"
+    },
+    {
+     "what": "White House fact sheet names infrastructure, technology, industry, arms and nuclear, not Treasuries",
+     "url": "https://www.whitehouse.gov/fact-sheets/2025/11/fact-sheet-president-donald-j-trump-solidifies-economic-and-defense-partnership-with-the-kingdom-of-saudi-arabia",
+     "date": "2025-11"
+    }
+   ],
+   "footprints_missing": [
+    "No document of a Treasury-holding clause after 1975 found (EXAM_T9 and one search here)"
+   ],
+   "rivals": [
+    "An unwritten understanding on reserve currency (keep the peg and dollar pricing) survives beside the public deal, graded I2 in EXAM_T9 at 55%",
+    "The 1 trillion figure is mostly a relabel of existing plans, so even the public exchange is thinner than stated"
+   ],
+   "reveal": "Release of the July 1974 Simon cables (no date). Monthly TIC through 2027: a fall below 100 billion with no oil shock would show active diversification"
+  }
+ ],
+ "rival_hypotheses": [
+  {
+   "kind": "official",
+   "text": "Saudi Arabia holds Treasuries for safety and the peg, and invests for returns",
+   "inconsistent_evidence": 1
+  },
+  {
+   "kind": "coordination",
+   "text": "A standing secret deal still obliges Saudi dollar recycling into Treasuries",
+   "inconsistent_evidence": 2
+  },
+  {
+   "kind": "incentives",
+   "text": "Both sides want security and dollar assets. The public 2025 deal states the trade openly",
+   "inconsistent_evidence": 0
+  },
+  {
+   "kind": "accident",
+   "text": "The 50-year treaty story is a misreading of the public 1974 Joint Commission",
+   "inconsistent_evidence": 0
+  }
+ ],
+ "coordination": {
+  "level": 2,
+  "channel": "For 1974 to 2016: US Treasury, Federal Reserve Bank of New York and SAMA through the add-on window and TIC reporting. Today the exchange is public (White House fact sheet), not deniable",
+  "enforcement": "Saudi money would not come without the confidentiality pledge. The US security guarantee and arms sales on the other side",
+  "secrecy_load": "A handful of Treasury and New York Fed officials for 41 years (1974 to 2016), with GAO and Congress partly aware from 1979"
+ },
+ "exit": "finding",
+ "budget_used": {
+  "searches": 1,
+  "tokens": 0
+ }
+}
