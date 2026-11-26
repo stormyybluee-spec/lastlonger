@@ -68,3 +68,29 @@ Reading. The Fed moved from "hold and watch" to an openly signalled December hik
 
 Reading. Growth is strong (4.3% in Q3 on the second estimate) and core PCE inflation rose to 3.3%. Headline consumer inflation runs near 3.8%. Unemployment fell to 4.1%. This is the mix the minutes describe and the reason a December hike is priced. Market breakevens fell anyway, which reads as confidence that the Fed will tighten.
 
+## 3. The Treasury: refunding, borrowing, deficits, buyers
+
+| claim | number or fact | date | source | URL | status |
+|---|---|---|---|---|---|
+| November refunding size | $125B: 3-year $58B, 10-year $42B, 30-year $25B, refinancing about $97B maturing, raising about $28B new cash | 2026-11-04 | Treasury, Quarterly Refunding Statement (Assistant Secretary Hunter McMaster) | https://home.treasury.gov/news/press-releases/sb0678 | verified |
+| Coupon guidance | "anticipates maintaining nominal coupon and FRN auction sizes for the next several quarters", without the earlier "at least". Changes to be guided by lowest cost over time | 2026-11-04 | same | same | verified |
+| Coupon sizes Nov to Jan | 2y 69, 3y 58, 5y 70, 7y 44, 10y 42/39/39, 20y 16/13/13, 30y 25/22/22, FRN 28/28/30 ($B). Unchanged pattern (new issue then reopenings) | 2026-11-04 | same | same | verified |
+| Structural change | 7-year note moves from a monthly new issue to a quarterly new issue with two reopenings from March 2027 | 2026-11-04 | same | same | verified |
+| TIPS | sizes unchanged: Nov 10y reopening $19B, Dec 5y reopening $24B, Jan 10y new $21B | 2026-11-04 | same | same | verified |
+| Bills | Benchmark sizes held through late November, shorter bills cut around mid-December taxes, bill sizes up across the curve in January. Treasury cites "strong demand" for bills and is watching SOMA bill purchases and private demand | 2026-11-04 | same | same | verified |
+| Buybacks, Nov to Jan | up to $70B liquidity-support buybacks across buckets, up to $25B cash-management buybacks in the 1-month to 2-year bucket | 2026-11-04 | same | same | verified |
+| Cash balance | End-December TGA assumption $850B. Peak about $1.025T (plus or minus $50B) in late November and late January | 2026-11-04 | same | same | verified |
+| Borrowing estimate | $618B privately held net marketable borrowing for Oct to Dec 2026 (end-Dec cash $850B), $800B for Jan to Mar 2027 (end-Mar cash $1T). Oct to Dec figure about $10B below the August estimate | 2026-11-02 | Treasury borrowing estimate, as reported | https://www.marketreview.com/news/us-treasury-125-billion-refunding/ | secondary |
+| October 2026 deficit | $404.1B, the largest October on record, against $284.3B a year earlier. MTS released 12 Nov | 2026-11-12 | MTS table 9 (API), 247wallst for "record" | https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9 | verified (number), secondary (record) |
+| October receipts | $368.9B, down 8.8% on a year. Customs $19.2B against $31.4B (down 39%), linked by press to tariff refunds after the February 2026 Supreme Court tariff decision and a high prior-year base | 2026-11-12 | MTS table 9, Transport Topics | https://www.ttnews.com/articles/us-budget-deficit-up-october | verified (numbers), secondary (cause) |
+| TIC, total foreign holdings of Treasuries | $9,241.2B in September, down $75.5B from August ($9,316.7B) | 2026-09 | TIC table 5, Major Foreign Holders (released 18 Nov) | https://ticdata.treasury.gov/resource-center/data-chart-center/tic/Documents/slt_table5.txt | verified |
+| TIC, foreign official holdings | $3,674.7B, down $80.9B in the month and down $334.9B from the February peak of $4,009.6B. Official bills $288.5B (were $453.3B in February) | 2026-09 | same | same | verified |
+| Japan | $1,063.1B, down $5.2B in September, down $176.2B from February ($1,239.3B). Still the largest holder | 2026-09 | same | same | verified |
+| China, Mainland | $563.9B, down $26.8B in September, down $130.3B from February. Lowest in this table's span | 2026-09 | same | same | verified |
+| United Kingdom | $985.8B (down $8.7B), second largest, a custody centre | 2026-09 | same | same | verified |
+| Custody centres | Belgium $507.9B (up $17.4B), Cayman $486.8B (up $23.8B), Luxembourg $445.0B, Ireland $344.8B, Canada $467.7B | 2026-09 | same | same | verified |
+| France | $332.0B, down $31.4B in September | 2026-09 | same | same | verified |
+| September TIC flows | Net TIC inflow $261.0B (private +$267.0B, official minus $6.0B). Net foreign purchases of long-term Treasuries: private $53.1B, official $27.6B. Official bill holdings minus $23.7B | 2026-11-18 | Treasury press release, TIC data for September | https://home.treasury.gov/news/press-releases/sb0693 | verified |
+
+Reading. Treasury kept the captive-demand plan intact: no coupon increases, bills stay the flex, buybacks continue at up to $70B a quarter for liquidity, and the 7-year moves to a quarterly cycle, which concentrates liquidity rather than adding supply. The softer guidance wording opens the door to increases later. Foreign official holdings keep falling, by about $335B since February, led by Japan and China. Official accounts bought long-term Treasuries in September on a flow basis but holdings fell, so price falls and bill run-offs did most of the work. Private and custody-centre buyers (Cayman, Belgium) are taking up the supply, which fits the Desk's "leveraged private buyers replace official ones" line. Next TIC (October data) is due 15 December.
+

@@ -31,3 +31,49 @@
 | P5-72 | Moody's or S&P downgrades France by 31 Oct | 0 | Moody's held Aa3 negative 23 Oct. S&P held A+ stable, next review 27 Nov, no off-calendar action found. Fitch moved outlook to negative on 30 Oct but Fitch does not count under the rule | https://www.morningstar.com/news/dow-jones/202610239456/moodys-keeps-frances-credit-rating-unchanged | secondary |
 | P5-56 | Assembly adopts first part of PLF 2027 | 0 | Rejected 4 Nov 2026, 0 for, 458 against (datan tally 0 / 2 abstain / 458) | https://lcp.fr/actualites/budget-2027-l-assemblee-rejette-a-l-unanimite-la-partie-recettes-le-projet-de-loi-de | secondary |
 | P5-21 | Cook removal hearing held with Cook or counsel taking part | 0 | No hearing on 5 Nov. White House committee delayed it to 14 Dec. Counsel Abbe Lowell wrote on 16 Nov that Cook will not attend without fair procedures | https://www.cnbc.com/2026/11/17/lisa-cook-trump-fed-committee-hearing.html | secondary |
+| P5-70 | Etsy Q3 2026 take rate at or above 24% | 1 | Revenue $692.5M over marketplace GMS $2.65B = about 26.1%, company states 26.2%. (Reported on continuing operations after Depop sale) | https://www.valueaddedresource.net/etsy-q3-2026-earnings/ | secondary |
+| P5-49 | PBoC 24th straight monthly gold addition (Oct) | 1 | Reserves 78.30M oz end Oct vs 77.47M end Sep, +830k oz (about 25.8t), 24th month. Press report of the PBoC/SAFE release of 7 Nov, official page not fetched | https://www.chinadailyhk.com/article/642391 | secondary |
+| P5-29 | China numbered extension of all six suspended measures by 10 Nov | 1 | MOFCOM and GAC Announcement No. 58 of 2026 dated 9 Nov extends the suspension of the six Oct 2025 measures (Nos. 55 to 58, 61, 62) to 10 Jan 2027. MOFCOM text itself not retrieved, scope per two trade-law and analyst write-ups | https://www.prcwire.org/posts/2026-11-11-ministry-commerce-extends-rare-earth-export-pause/ | secondary |
+| P5-30 | China extends only some or uses general licences | 0 | No lapse of any of the six and no licence substitution reported | https://casrai.org/news/china-mofcom-extends-rare-earth-export-control-suspension-2027 | secondary |
+| P5-31 | Suspension fully lapses with no notice | 0 | Notice issued 9 Nov | https://www.prcwire.org/posts/2026-11-11-ministry-commerce-extends-rare-earth-export-pause/ | secondary |
+| P5-35 | TIC Sep: foreign official Treasury holdings below Aug $3,755.6B | 1 | Sept $3,674.7B (Aug $3,755.6B) | https://ticdata.treasury.gov/resource-center/data-chart-center/tic/Documents/slt_table5.html | verified |
+| P5-36 | TIC Sep: Japan below Aug $1,068.3B | 1 | Sept $1,063.1B | https://ticdata.treasury.gov/resource-center/data-chart-center/tic/Documents/slt_table5.html | verified |
+| P5-67 | Census Oct completions below 1.30M | 1 | 1,272,000 SAAR, first print (up 6.5% on Sept) | https://www.census.gov/construction/nrc/pdf/newresconst_202610.pdf | verified |
+| P5-68 | Census Oct starts below 1.35M | 1 | 1,309,000 SAAR, first print (up 9.9%) | https://www.census.gov/construction/nrc/pdf/newresconst_202610.pdf | verified |
+
+All 37 resolved, none unresolved. Releases were not delayed. The BEA page carried a notice about an appropriations lapse but the Q3 advance and September income releases were published on 29 Oct on schedule.
+
+## Brier scores (python3 -I, script /tmp/claude-0/brier.py)
+```
+n resolved 37 outcome 1: 22
+desk Brier all 0.1167
+items with market 12
+desk Brier on market items 0.0951
+market Brier on same items 0.1153
+worst desk misses:
+P5-34 outcome 1 desk 0.25 market None sq err 0.562
+P5-21 outcome 0 desk 0.75 market None sq err 0.562
+P5-72 outcome 0 desk 0.7 market 0.905 sq err 0.49
+P5-15 outcome 0 desk 0.6 market None sq err 0.36
+P5-17 outcome 1 desk 0.4 market None sq err 0.36
+P5-33 outcome 1 desk 0.45 market None sq err 0.303
+P5-04 outcome 1 desk 0.5 market 0.58 sq err 0.25
+P5-66 outcome 0 desk 0.5 market None sq err 0.25
+```
+
+Brier = mean of (p - outcome)^2, p = desk probability / 100, over the 37 resolved items. Market Brier uses the 12 items with a recorded market probability.
+
+## Ambiguities
+- P5-14: "between 3.0% and 3.6%" with a 3.6% print. Scored as inside (inclusive). If exclusive, outcome 0 and desk Brier for that item rises from 0.12 to 0.42.
+- P5-13: "above 0.3%" read on the rounded one-decimal print, which is 0.3, so No. Unrounded value not published in the release.
+- P5-33 and P5-34: due date 30 Oct but WGC published on 3 Nov. Scored on the first Q3 release regardless. Q2 figure of 289t taken from the prereg.
+- P5-15: headline estimate fell $10B to $618B, but excluding cash balance effects it rose $24B. Rule says the estimate, so scored No.
+- P5-18: "long-end" read as nominal coupon operations of 7 years and longer. TIPS operations are $0.5B to $0.75B and a stricter reading including them would be No.
+- P5-21: Cook's counsel wrote letters but no hearing was held in the window. Scored No.
+- P5-56: the 4 Nov rejection was a recorded vote (458 against) but the sources do not use the label "solemn". Outcome is No either way.
+- P5-29: one omnibus Announcement No. 58 of 2026 covers all six measures. Scored Yes. MOFCOM text not retrieved, so secondary.
+- P5-66: transcript check done by a fetch summariser, not a raw text search.
+- P5-72: market probability (90.5) was the Polymarket price, thin at $10.2k. S&P next review is 27 Nov, outside the window.
+
+## What the scores say
+The desk was well calibrated on scheduled data and rate decisions: the Fed hold, the 10-year move under 10bp, GDP above 2% and 3%, core PCE at 0.3, ECB unchanged, zero yen intervention, TIC declines and housing below thresholds all landed on the confident side. Overall desk Brier is 0.117, and on the 12 items with a market it beat the market, 0.095 against 0.115. The market had a large miss on France, where it priced a downgrade at 90 percent and none came. The desk was wrong where it leaned on political process or underestimated trend strength: it put the Cook hearing at 75 percent and it slipped to December, it put the Treasury estimate rising at 60 percent, it gave central bank gold buying only 25 percent to beat Q2 when it hit 321 tonnes, and it thought the refunding wording would probably stay.
