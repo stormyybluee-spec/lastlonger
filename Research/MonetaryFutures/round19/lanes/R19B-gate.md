@@ -136,3 +136,161 @@ Rival reading on AIM. A very low portfolio at risk can mean careful borrowers, s
 | AKPK found about 53,000 people aged 30 and below in debt totalling nearly RM1.9 billion | 53,000, RM1.9 billion | 2024 | Yahoo News Malaysia and The Star | https://www.thestar.com.my/news/nation/2024/11/02/easy-credit-and-living-beyond-their-means-straining-young-adults-financially | secondary |
 | Youth bankruptcies (people aged 34 and below), reported by the Youth and Sports Minister | 5,272 since 2020. 877 in 2024 | to early 2025 | Malay Mail 13 Mar 2025 | https://www.malaymail.com/news/malaysia/2025/03/13/bankruptcy-among-youths-on-the-rise-877-cases-recorded-in-2024-more-than-5000-since-2020-says-hannah-yeoh/169459 | secondary |
 
+### Credit scoring with new data
+
+| claim | number | year | source | URL | status |
+|---|---|---|---|---|---|
+| Simple digital footprint variables (device, email provider, time of purchase) predict default about as well as a credit bureau score, work for customers with no score, and add to the bureau score when combined (area under curve 68.3% bureau alone to 73.6% combined in the VoxEU summary). Data from a German online retailer. Authors warn such variables may proxy for characteristics that law forbids lenders to use | 68.3% to 73.6% | Review of Financial Studies 33(7), 2020, pp. 2845 to 2897 | Tobias Berg, Valentin Burg, Ana Gombovic and Manju Puri, "On the Rise of FinTechs: Credit Scoring Using Digital Footprints" | https://voxeu.org/article/digital-footprints-and-credit-scoring and https://www.nber.org/papers/w24551 | secondary (summaries and bibliographic pages, not the article itself) |
+
+Rival reading. New data can open the gate for thin file borrowers, but the same paper names the risk that it quietly sorts people by protected traits. A Malaysian figure for how many thin file borrowers were approved using alternative data was not found in this lane.
+
+## 5. H3. Decentralized finance
+
+### What it is, in plain words
+
+Decentralized finance (DeFi) is a set of programs that run on public blockchains and do the jobs of a bank or exchange, such as lending, borrowing and swapping, with no company in the middle. You hold the coins in your own digital wallet, connect it to the program, and the program's code holds the collateral and pays out by fixed rules. Anyone with a phone, an internet link and some crypto can use it. No one asks for a payslip or a credit record.
+
+Plain picture, made up. You want to borrow 100 dollars of a stablecoin. The program asks you to lock up, say, 150 dollars of another coin. If the value of your locked coin falls close to 100 dollars, the program sells it automatically to repay the lender. The program does not need to trust you, because it holds more than you owe. That is also why it cannot lend to someone who has nothing to lock up.
+
+### Size, total value locked (DefiLlama, all chains)
+
+| claim | number | date | source | URL | status |
+|---|---|---|---|---|---|
+| Peak total value locked in DeFi | 177.5 billion dollars | 9 Nov 2021 | DefiLlama public API, historicalChainTvl | https://api.llama.fi/v2/historicalChainTvl | verified (downloaded and read the series) |
+| Just before the Terra collapse | 135.8 billion dollars | 1 May 2022 | same | same | verified |
+| Two weeks later | 79.3 billion dollars | 15 May 2022 | same | same | verified |
+| Low after FTX | 37.8 billion dollars | 1 Jan 2023 | same | same | verified |
+| Second peak | 167.0 billion dollars | 7 Oct 2025 | same | same | verified |
+| Latest | 68.6 billion dollars | 26 Nov 2026 | same | same | verified |
+
+Caution for the chapter. Total value locked is measured in dollars at market prices, so it rises and falls with crypto prices, not only with use. It also counts the same coins more than once when they are reposted as collateral. It is a rough gauge of size, not a count of users or loans. The BIS article below gives a narrower figure: outstanding loans on major DeFi lending platforms of about 20 billion dollars in late 2021.
+
+### Over-collateralisation, the official view
+
+| claim | quote or number | date | source | URL | status |
+|---|---|---|---|---|---|
+| "Lending in DeFi tends to be overcollateralised", which the authors tie to the lack of trust in anonymous transactions and the volatility of crypto collateral. This limits lending for uses such as "house purchases or productive investment" | quotes under 25 words | 6 Dec 2021 | Sirio Aramonte, Wenqian Huang and Andreas Schrimpf, "DeFi risks and the decentralisation illusion", BIS Quarterly Review | https://www.bis.org/publ/qtrpdf/r_qt2112b.htm | verified |
+| "There is a decentralisation illusion in DeFi": some central governance is unavoidable and concentrates power | quote | same | same | same | verified |
+| Outstanding loans on major DeFi lending platforms | about 20 billion dollars | late 2021 | same | same | verified |
+| The article does not discuss financial inclusion of the unbanked | absence noted | same | same | same | verified |
+
+### Losses
+
+| claim | number | date | source | URL | status |
+|---|---|---|---|---|---|
+| TerraUSD (a so-called algorithmic stablecoin) lost its peg to the dollar in May 2022, and it and the linked Luna token collapsed | market value lost about 40 billion dollars within about a week (an estimate, measured as market value, not counted losses) | May 2022 | Reuters via Yahoo Finance and Business Insurance, 12 to 13 June 2024 | https://www.businessinsurance.com/sec-reaches-447-billion-settlement-with-bankrupt-crypto-firm-terraform-labs/ | secondary |
+| A US jury found Terraform Labs liable for fraud in an SEC civil case. Terraform agreed a 4.47 billion dollar judgment (4.05 billion disgorgement and interest, 420 million civil penalty), treated as an unsecured claim in its bankruptcy, so much may never be paid | 4.47 billion dollars | April and June 2024 | same, and Bloomberg | https://www.bloomberg.com/news/articles/2024-06-12/terraform-agrees-to-pay-4-47-billion-penalty-in-sec-case | secondary |
+| FTX, a centralised crypto exchange, collapsed in November 2022. The US Department of Justice says customer funds were misappropriated. The court found the loss to FTX customers was about 8 billion dollars | about 8 billion dollars | sentencing 28 Mar 2024 | US Department of Justice press release (page did not render), and NBC News | https://www.justice.gov/archives/opa/pr/samuel-bankman-fried-sentenced-25-years-his-orchestration-multiple-fraudulent-schemes | secondary |
+| FTX bankruptcy plan confirmed 7 Oct 2024 by the Delaware Bankruptcy Court. About 98% of creditors by number to receive about 119% of their allowed claim, valued in dollars at the November 2022 filing date. Customers argued this short-changes them because crypto prices later rose | 119% | 7 Oct 2024 | FTX press release via PR Newswire, and DL News | https://prnewswire.com/news-releases/ftx-receives-us-bankruptcy-court-confirmation-of-its-plan-of-reorganization-302269152.html | secondary |
+
+Correction to guard against. FTX was not decentralized finance. It was a centralised company that held customers' coins, much like an unregulated broker. The chapter must not list FTX as a DeFi loss. It belongs in a sentence about crypto losses in general, or as the case of a new gatekeeper that failed. Terra was a blockchain project, and its stablecoin was widely used inside DeFi lending programs, so it is closer to a DeFi loss, but it was run by a company.
+
+### Yearly hack losses (Chainalysis)
+
+| claim | number | year | source | URL | status |
+|---|---|---|---|---|---|
+| Crypto stolen by hackers, all kinds | about 3.3 billion dollars (2021), 3.8 billion (2022, a record at the time) | 2021 to 2022 | Chainalysis 2023 Crypto Crime Report, via Infosecurity Magazine and others | https://www.infosecurity-magazine.com/news/record-38bn-was-stolen-crypto/ | secondary |
+| Share stolen from DeFi protocols | 82.1%, about 3.1 billion dollars (2022), up from 73.3% (2021). Cross-chain bridges were 64% of the DeFi total | 2022 | same | same | secondary |
+| Crypto stolen in 2023 and 2024 | about 2.0 billion (2023), 2.2 billion (2024) | 2023 to 2024 | Chainalysis via TechCrunch, 23 Dec 2025 | https://techcrunch.com/2025/12/23/hackers-stole-over-2-7-billion-in-crypto-in-2025-data-shows/ | secondary |
+| Crypto stolen in 2025 | over 3.4 billion dollars (January to early December). One theft from the centralised exchange Bybit in February was about 1.5 billion. Groups linked to North Korea stole at least 2.02 billion | 2025 | Chainalysis blog, 18 Dec 2025 | https://www.chainalysis.com/blog/crypto-hacking-stolen-funds-2026/ | verified |
+| DeFi hack losses "remained suppressed in 2024-2025" despite higher total value locked | trend, no number | 2024 to 2025 | same | same | verified |
+
+Reading note. The worst DeFi year for hacks was 2022. In 2025 the largest loss came from a centralised exchange, not a DeFi program. The tidy story "DeFi is where the theft is" was true in 2022 and is weaker now. Report both.
+
+### Who uses it and where
+
+| claim | number | year | source | URL | status |
+|---|---|---|---|---|---|
+| Chainalysis Global Crypto Adoption Index ranks: Vietnam 4, Indonesia 7, Philippines 9, Thailand 17. Top of the index: India, then the United States | ranks out of 151 countries | published 2 Sep 2025 | Chainalysis 2025 Global Crypto Adoption Index | https://www.chainalysis.com/blog/2025-global-crypto-adoption-index/ | verified |
+| Malaysia's rank | not shown on the page opened | 2025 | same | same | gap |
+| Method: four sub-indices of value received by centralised services (total, retail, institutional) and DeFi, each weighted by income per head at purchasing power parity, combined by geometric mean | method | 2025 | same | same | verified |
+| DeFi is a large share of transaction value but a much smaller share of user activity than centralised platforms, so Chainalysis dropped its retail DeFi sub-index | statement | 2025 | same | same | verified |
+
+Reading note for H3. The adoption index measures crypto in general, and most of it runs through centralised exchanges, which are gatekeepers with identity checks. Ordinary users in Southeast Asia mostly reach crypto through a new gate, not through no gate.
+
+### Malaysia's rules on digital assets (Securities Commission Malaysia)
+
+| claim | fact | date | source | URL | status |
+|---|---|---|---|---|---|
+| Digital currencies and digital tokens are prescribed as securities under the Capital Markets and Services (Prescription of Securities) (Digital Currency and Digital Token) Order 2019, in force 15 January 2019 | legal fact (the SC page links the Order) | 2019 | SC list of registered digital asset exchanges | https://www.sc.com.my/regulation/guidelines/recognizedmarkets/list-of-registered-digital-asset-exchanges | verified that the page cites the Order |
+| Registered digital asset exchanges (Recognized Market Operators): HATA Digital, Luno Malaysia, MX Global, SINEGY DAX, Kinetic DAX | 5 | list updated 20 July 2026 | same | same | verified |
+| Unregistered operators must cease all activities and return investors' money and assets | rule | same | same | same | verified |
+| Trading value on regulated exchanges | RM13.93 billion (2024), RM17.14 billion (2025) | 2025 | search summary of SC or press data | https://www.thestar.com.my/business/business-news/2026/05/20/sc-revises-guidelines-to--strengthen-malaysia039s-digital-asset-market | secondary |
+| SC revised its Guidelines on Recognized Markets for digital asset exchanges | revision | May 2026 | SC media release | https://www.sc.com.my/resources/media/media-release/sc-issues-revised-guidelines-on-recognized-markets-for-digital-asset-exchange | secondary (title seen) |
+
+### Remittance costs
+
+| claim | number | date | source | URL | status |
+|---|---|---|---|---|---|
+| Global average cost of sending 200 dollars | 6.49% (Q1 2025), up from 6.26% (Q4 2024). A later landing page figure of 6.36% (2025) | 2025 | World Bank Remittance Prices Worldwide, Issue 53 and site | https://remittanceprices.worldbank.org | secondary (report PDF blocked, figures from search excerpts of the report) |
+| Cost by provider type for 200 dollars: banks 14.55%, post offices 7.71%, money transfer operators 5.04%, mobile operators 4.97%. Digital 4.85% against non-digital 7.16% | as stated | Q1 2025 | South African Reserve Bank conference paper quoting World Bank Table 1 | https://www.resbank.co.za/content/dam/sarb/what-we-do/payments-and-settlements/cross-border-payments-conference/documents/paper-cost-patterns-remittance.pdf | secondary |
+| UN Sustainable Development Goal target for remittance cost | 3% by 2030 | goal 10.c | not opened | | memory, do not print without a check |
+| Crypto remittances cheaper than mobile money | no official average found | | | | gap |
+
+Reading note. For the question "is crypto cheaper than mobile money for sending money home", this lane found no official cost series for crypto transfers. The World Bank series shows that the cheap road today is mobile and digital transfers through licensed operators, and the dear road is banks. Any crypto transfer also pays to get in and out of local money at an exchange. A claim that crypto is cheaper must not be printed without a source.
+
+### Both sides' best case, one sourced sentence each
+
+| side | sentence | source | URL | status |
+|---|---|---|---|---|
+| For | The IMF's April 2022 Global Financial Stability Report found that DeFi is vulnerable to market, liquidity and cyber risks but "potentially offers benefits from higher efficiency and financial inclusion", and that it had the lowest marginal cost compared with financial institutions | IMF, GFSR April 2022, chapter 3 (summaries by Cointelegraph and Crypto.com research) | https://www.imf.org/ja/Publications/GFSR/Issues/2022/04/19/global-financial-stability-report-april-2022 | secondary (primary PDF blocked, wording must be checked against chapter 3 before printing as a quote) |
+| Against | BIS economists wrote that "lending in DeFi tends to be overcollateralised", which limits its use for "house purchases or productive investment", and that its decentralisation is "illusory" | Aramonte, Huang and Schrimpf, BIS Quarterly Review, 6 Dec 2021 | https://www.bis.org/publ/qtrpdf/r_qt2112b.htm | verified |
+
+Note on deposit insurance. Bank deposits in Malaysia are protected by Perbadanan Insurans Deposit Malaysia up to a set limit, and DeFi deposits have no such cover. The limit (believed to be RM250,000 per depositor per member bank) is from memory and must be checked before printing.
+
+## 6. Human detail for narration
+
+Each scene uses only what the source gives. Where the page was blocked and only a search excerpt was seen, the status says so, and the writer must open the page before printing.
+
+1. A RM300 loan in Kelantan. In 2021 a borrower in the Kota Bharu area took RM300 from an unlicensed lender through a phone app called "mariwang" and received only RM150 in hand. He said he had paid back about RM1,000, yet was told to pay RM10,000. Police later detained two suspected unlicensed lenders believed to have splashed red paint on a client's house. Source: New Straits Times, January 2024, "RM300 borrowing via mariwang application turns into RM10,000 nightmare", https://api.nst.com.my/news/crime-courts/2024/01/1003575/rm300-borrowing-mariwang-application-turns-rm10000-nightmare-ends. Status: secondary (search excerpt, page returned 403). This scene fits the police statement that illegal lending has moved online.
+
+2. A family in Ipoh. In December 2025 a family in Ipoh said illegal lenders kept harassing them, splashing paint on their car and gate, even after they had cut ties with their son over his debts. It was their second police report since the threats began five years earlier. Source: The Star, 30 Dec 2025, https://www.thestar.com.my/news/nation/2025/12/30/ipoh-family-harassed-by-ah-long-even-after-cutting-ties-with-son-over-his-debts. Status: secondary (search excerpt). The scene shows the cost of the illegal door landing on people who never borrowed.
+
+3. An AIM member in Kelantan. Othman Yusof, 55, runs a motorcycle workshop in Kampung Padang Raja, Melor. He started about 20 years earlier with RM3,000 of AIM financing. Source: The Star, 22 Oct 2023, "AIM-ing to improve living standards and livelihoods", https://thestar.com.my/news/nation/2023/10/22/aim-ing-to-improve-living-standards-and-livelihoods. Status: verified (the free preview of the page was opened). Note he is a man, while AIM serves mostly women, so he is not a typical member. A woman member's scene is a gap.
+
+4. A Kenyan farmer who borrows by phone. Mercy Biyaki, a farmer, often borrows through KCB M-Pesa and M-Shwari loans for her farm. Source: Business Daily Africa, "Kenyans ride on mobile banking to grow businesses", https://www.businessdailyafrica.com/bd/corporate/technology/kenyans-ride-on-mobile-banking-to-grow-businesses-2115648. Status: secondary, date not seen. Balance scene: Nation Africa reported Kenyans saying "Mobile money loans have left us broke, embarrassed and in ruins", https://nation.africa/kenya/business/mobile-money-loans-have-left-us-broke-embarrassed-and-in-ruins-4046776, secondary, date not seen.
+
+5. A forum during the Terra collapse. As TerraUSD and Luna collapsed in May 2022, members of the Reddit forum r/TerraLuna wrote of losing their savings, and the moderators pinned a list of suicide helplines to the top of the page. One version of the pinned post read "For everyone panicking, here are some national helpline numbers." Source: Fortune, 11 May 2022, https://fortune.com/crypto/2022/05/11/luna-ust-reddit-stablecoins-crypto-crash, and Yahoo News. Status: secondary. Handle with care in narration: no individual is named and no death should be implied.
+
+## 7. Evidence for and against H3 and H4
+
+### H4, the gate (lenders' requirements shut many out, and being outside costs more)
+
+For
+- Formal borrowing is a minority activity. About 24% of adults in low and middle income economies borrowed formally in 2024 (secondary), and only 6% borrowed formally for health against 19% who borrowed for health at all (verified).
+- In Malaysia, where 93% of adults have an active deposit account, only 41.7% hold a loan account (BNM, verified). The door that matters is credit, and lenders open it with records, collateral and income proof.
+- The price of being outside is visible in law and in police records: 12% and 18% ceilings for licensed moneylenders, 2% a month at pawnshops, and 1,452 illegal lending cases in ten months of 2025 with RM4.89 million lost (verified).
+
+Against
+- Findex says lack of money is the main reason people have no account, which is a poverty problem more than a gatekeeping problem (verified slide title).
+- The gate has been widening quickly. Malaysian sub-districts with an access point rose from 46.4% in 2011 to about 95%, and mobile banking from 5.4% to 106.4% (verified). BNPL opened a low-requirement door to 7.5 million accounts with overdue debt of only 3.2% (verified).
+- Opening the gate is not the same as lifting incomes. Six randomised trials found microcredit effects "modestly positive, but not transformative" (verified). The requirements also protect borrowers from debts they cannot carry, as the youth bankruptcy and AKPK numbers suggest (secondary).
+
+### H3, decentralized finance as a gate without requirements
+
+For
+- DeFi asks for no credit record, payslip or bank, and the IMF said it potentially offers efficiency and inclusion gains at the lowest marginal cost (secondary).
+- It reached a large size quickly, 177.5 billion dollars locked at its November 2021 peak and 167.0 billion again in October 2025 (verified), and DeFi hack losses have stayed low in 2024 to 2025 despite that (verified).
+- About 900 million adults without an account own a mobile phone (verified), so a phone based system could in principle reach them.
+
+Against
+- DeFi lending is over-collateralised (BIS, verified). It removes the credit record requirement but keeps, and raises, the collateral requirement, so it does not open the gate to people with no assets. This is the central finding against the owner's framing.
+- Losses are large and uninsured: about 40 billion dollars of market value lost in the Terra collapse (secondary), DeFi was 82.1% of the 3.8 billion dollars hacked in 2022 (secondary), and value locked fell from 135.8 to 79.3 billion dollars in two weeks of May 2022 (verified, partly a price effect).
+- Most crypto use in Southeast Asia runs through centralised, licensed or unlicensed exchanges (Chainalysis method note, verified), which are gatekeepers of their own. Malaysia treats digital currencies as securities and allows only five registered exchanges (SC, verified). The cheapest remittance road in the World Bank series is mobile and digital licensed operators, not crypto (secondary).
+
+## 8. Gaps
+
+- Malaysia's Global Findex 2025 country figures (account ownership, formal borrowing) were not reached. The data portal needs a direct download.
+- The full Findex 2025 report text for world formal borrowing (24% is secondary).
+- The text of the Moneylenders Act 1951 section on the 12% and 18% ceilings (the section number is disputed in secondary sources, 17A is the likely one) and the Pawnbrokers Act regulation giving 2% a month.
+- A full year 2025 police count of illegal lending cases, and a consistent multi-year series from one source.
+- AIM's own annual report: repayment rate, portfolio at risk, the share of women members, and the name and size of the charge under its Islamic financing contracts.
+- Bank Negara's Financial Inclusion Framework 2023 to 2026 targets addendum.
+- Malaysia's rank in the Chainalysis 2025 index.
+- A crypto remittance cost series from a named institution, to compare with mobile money.
+- The IMF GFSR April 2022 chapter 3 wording (primary PDF blocked).
+- Deposit insurance limit at PIDM, and the SDG 3% remittance target (both from memory).
+- Stiglitz and Weiss 1981 (from memory).
+- A woman AIM member's scene, and a dated Kenyan M-Pesa user scene from a primary interview.
+- The US Department of Justice FTX press release text did not render. The 8 billion dollar customer loss figure rests on press reports of the judge's finding.
+
