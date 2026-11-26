@@ -2,7 +2,7 @@
 
 Rulebook Level 2 (The machinery), chapter 02. Stack: Fundamentals. Id: rb-moneymake.
 
-Web page: https://neetmonetary.netlify.app/#rb-moneymake . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-moneymake . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Bank loans are one door, the busiest one in normal years. Level 2 adds the others: the Fed, the Treasury, the sponges that soak money up, the shredders that destroy it, the brakes on each printer, and how other countries do it.*
 

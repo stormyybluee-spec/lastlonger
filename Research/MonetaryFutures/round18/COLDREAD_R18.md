@@ -398,3 +398,97 @@ NEW: But speed is a result of trust
 7. [2] Cut the empty line.
 OLD: Each test ends with a short line on what it does to the claim. This is the fifth of seven deeper chapters.
 NEW: Each test ends with a short line on what it does to the claim.
+
+
+# Retest 4, Reader 1 only (draft R18f), 2026-11-26
+
+Reader 1: Malaysian, 18, English as a second language, no finance background. Main path only. GO DEEPER boxes and "A:" lines skipped.
+
+## Score table
+
+| Part | What the reader can say | Score |
+|---|---|---|
+| a | Three ideas and the question | 8 |
+| b | Zweig's newspaper and what it shows | 8 |
+| c | Supply and demand, evidence for and against | 7 |
+| d | Velocity, America, Germany, trust | 7 |
+| e | Why big printers collapsed, one case, bonds not clean | 8 |
+| f | Malaysia, pass-through, 1998, 2022, who paid | 8 |
+| g | Imported falling prices, one example | 7 |
+| h | Verdicts and rebuilt claim | 7 |
+| Average | Sum 60 over 8 | 7.5 |
+| Overall (rounded) | Pass mark is 8 | 8 (a narrow pass, on the rounding) |
+
+Attention to the end (j): 7. Told story or report of numbers (k): 7.
+
+Strongest section: the opening Zweig scene and the "key to this whole chapter" line, with the Kuala Lumpur chicken scene a close second. Both give a face and a feeling before the numbers.
+
+Weakest section: Test 1, then the reserves paragraph in Test 2. Test 1 stacks four score tables and uses "match score" without saying what is being matched. The reserves paragraph uses words (reserves, holdings) that the reader has never met.
+
+## What the reader could say, by part
+
+- (a) Can name the three ideas and the question in plain words. The question is easy to hold because it is a short sentence.
+- (b) Says money was losing value so fast that you spent it at once, and that people stopped trusting it. Clear.
+- (c) Says money and prices move together over long periods and in high inflation, but in calm times and after 2008 the link was loose. Unsure what the 0.88 and 0.51 mean as numbers, and unsure what "bonds" and "holdings" are doing in the America row.
+- (d) Says velocity is how often money is spent, it fell by almost half in America, and it rose in Germany. Links it to trust. Muddy on why reserves matter and on how a lower velocity relates to "money grew faster than spending".
+- (e) Can give Germany with war payments and the Ruhr. Can say that in 2020 the line between bond buying and printing for bills blurred. Does not fully see why "degree" and "trust" decide it.
+- (f) Says the ringgit fall passes through about 40% to import prices and little to core inflation. Says 1998 was 5.3% and 2022 was 3.3%. Says the state budget, farmers and buyers abroad paid. Good.
+- (g) Says Hong Kong prices fell 68 months because of the dollar tie. Cannot say clearly why a strong US dollar made Hong Kong imports cheaper.
+- (h) Can repeat the verdicts. The rebuilt claim has three bullets with several clauses each, so the reader remembers the gist but not the exact wording.
+
+## Fairness and advice
+
+- Fair to the reader who made the claim. Yes. Each idea is called "real" or "holds in part", and the text says the worry about modern central banks "is not foolish". The reader would feel taken seriously.
+- Fair to doubters. Yes. Economists who disagree (Bernanke and Blanchard, Sargent, Kaplan and Rodrik, Athukorala) are named with what they found, and open disputes are marked "still argue".
+- Any person, people, faith, country or office described unfairly? No. Germany, Zimbabwe, Venezuela, Turkey and Argentina are shown with the other blow beside the printing. Turkey is hedged ("looks more like"). Hungary's gap is flagged as not found. One small risk is the title word "poor" and the phrase "printed themselves into ruin" in [32], which could read as blaming the countries. The same paragraph then explains the other blows, so the effect is mild.
+- Financial advice? No. The "Not advice" callout [66] is clear, and nothing tells the reader to buy or avoid anything.
+
+## Remaining confusions
+
+- [13] "match score": the reader does not know what is matched or why 0.88 is "very strong" and 0.51 "middling". Also "144 countries" and "88 countries" come fast.
+- [15] and [16] The negative number (-0.33) is hard for an ESL reader without a short reminder of the scale.
+- [16], [17] "bonds", "holdings", "trillion": the America row does not say that the holdings are bonds bought with newly created money.
+- [19] "money, counting cash and deposits, grew 26.8%" then "9% a year": two figures in one run, and "sudden blows" is vague.
+- [25] "velocity is just a year's spending divided by the amount of money" is a hard sentence for this reader.
+- [26] "reserves": the reader does not know who holds them or why people cannot spend them.
+- [27] "2,000 times while notes rose 380 times" then "more than five times ahead": the sum is left for the reader to do.
+- [36] "central bank's share of all government bonds rose from 15% to 22%": the link to "printing for bills" needs one plain line.
+- [50] "0.2 points": a "point" is not explained.
+- [54] Why a strong US dollar made Hong Kong's imports cheaper, and "takes away the choice to let the currency fall" is dense.
+- [61] The three rebuilt claims are long.
+
+## Ranked fixes
+
+Each fix lists block, exact OLD text, and NEW text.
+
+1. Block [13]
+   OLD: We scored the match on a scale where 1 is a perfect match and 0 is no link at all.
+   NEW: We scored the match from 0 to 1. A score of 1 means money and prices moved together perfectly. A score of 0 means no link at all.
+
+2. Block [26]
+   OLD: People cannot spend reserves, and reserves are not in the velocity table.
+   NEW: People and shops cannot spend reserves. Only banks hold them. So reserves are not in the velocity table.
+
+3. Block [27]
+   OLD: Prices ran more than five times ahead of the printing press, because each note changed hands faster.
+   NEW: Prices grew more than five times as much as the number of notes. Each note changed hands faster.
+
+4. Block [54]
+   OLD: Because of the tie, Hong Kong's dollar rose with it, so imports got cheaper.
+   NEW: Because of the tie, Hong Kong's dollar rose with the US dollar. So Hong Kong paid fewer of its own dollars for imports, and imports got cheaper.
+
+5. Block [54]
+   OLD: So when times are hard at home, prices and wages have to fall instead.
+   NEW: So when times are hard at home, the currency cannot fall to help. Prices and wages have to fall instead.
+
+6. Block [17]
+   OLD: Its holdings grew from 0.87 trillion dollars in August 2007 to 4.50 trillion in January 2015
+   NEW: Its holdings of bonds, bought with newly created money, grew from 0.87 trillion dollars in August 2007 to 4.50 trillion in January 2015
+
+7. Block [59]
+   OLD: In this chapter's own check of 144 countries the match was 0.88. Among low-inflation countries it was 0.51.
+   NEW: In this chapter's own check of 144 countries the match was 0.88 out of 1. Among low-inflation countries it was 0.51 out of 1.
+
+8. Block [50]
+   OLD: Rises only about 0.2 points on average, and about 0.4 points in past sharp falls
+   NEW: Rises only about 0.2 points on average, and about 0.4 points in past sharp falls. One point means one percentage point of yearly inflation

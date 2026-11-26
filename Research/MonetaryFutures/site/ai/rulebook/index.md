@@ -1,6 +1,6 @@
 # Rulebook index (Fundamentals)
 
-One file per chapter. Read a level in order. Built 2026-11-25.
+One file per chapter. Read a level in order. Built 2026-11-26.
 
 
 ## Level 1: Foundations
@@ -48,7 +48,8 @@ Level 3 takes the arguments people shout about money and puts each one on trial.
 - [04. Why the peasants stayed poor: money, output and the missing chain](https://neetmonetary.netlify.app/ai/rulebook/rb-peasant.md): For most of history most people were poor, and stayed poor for centuries. A reader says the cause was a missing chain: money, credit, a strong state, schools and knowledge, each needing promises about the future to get started. This chapter tests that chain link by link.
 - [05. Who wrote the rules of money, and for whom?](https://neetmonetary.netlify.app/ai/rulebook/rb-law.md): Every country has a body that issues its money, and a law that says what that body is for. A reader says it exists to let output and progress grow, that it inflates a little on purpose for the public good, and that it is kept under control. This chapter reads the laws, follows the money, and visits the places that tried other rules.
 - [06. Paying for tomorrow: who funds the things that pay back later?](https://neetmonetary.netlify.app/ai/rulebook/rb-future.md): Railways, electricity, microchips, the internet and rockets all cost a fortune before they paid anyone back. A reader says promises about the future, credit and money made by a central bank, are what paid for them. This chapter follows the money behind five great technologies, and then asks how Korea, Taiwan and Malaysia paid for theirs.
-- [07. Epilogue. The promise: the story of money in ten questions](https://neetmonetary.netlify.app/ai/rulebook/rb-promise.md): Two chapters put money on trial with tables and tests. This one tells what they found as a story, through people who might have lived it. The people are imagined. The numbers are not.
+- [07. Why do the biggest printers end up poor? Speed, trust and the price of money](https://neetmonetary.netlify.app/ai/rulebook/rb-printers.md): Some countries printed so much money that it became worthless. Others created even larger sums and, for years, saw little rise in shop prices. A reader says money obeys supply and demand, that the speed at which it changes hands matters, and that a small country can catch inflation from abroad. This chapter tests all three, and ends at a market in Kuala Lumpur.
+- [08. Epilogue. The promise: the story of money in ten questions](https://neetmonetary.netlify.app/ai/rulebook/rb-promise.md): Two chapters put money on trial with tables and tests. This one tells what they found as a story, through people who might have lived it. The people are imagined. The numbers are not.
 
 ## Level 4: Money in motion
 

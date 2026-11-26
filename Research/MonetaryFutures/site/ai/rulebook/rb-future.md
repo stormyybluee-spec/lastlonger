@@ -2,7 +2,7 @@
 
 Rulebook Level 3 (The big arguments), chapter 06. Stack: Fundamentals. Id: rb-future.
 
-Web page: https://neetmonetary.netlify.app/#rb-future . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-future . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Railways, electricity, microchips, the internet and rockets all cost a fortune before they paid anyone back. A reader says promises about the future, credit and money made by a central bank, are what paid for them. This chapter follows the money behind five great technologies, and then asks how Korea, Taiwan and Malaysia paid for theirs.*
 

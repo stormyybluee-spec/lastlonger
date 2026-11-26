@@ -1,6 +1,6 @@
 # Intelligence: will energy replace money? (the Desk)
 
-Stack: Intelligence. These are graded, dated findings, not settled facts. Check each as-of date and fetch current data before relying on a number. Web page: https://neetmonetary.netlify.app/#desk . Text built 2026-11-25.
+Stack: Intelligence. These are graded, dated findings, not settled facts. Check each as-of date and fetch current data before relying on a number. Web page: https://neetmonetary.netlify.app/#desk . Text built 2026-11-26.
 
 ## Scenario odds by horizon
 
@@ -124,6 +124,9 @@ Level 3, "The big arguments", now has its first chapter: "Is printing money a sc
 
 ### Round 17 in one paragraph (2026-11-25, the fourth deep Level 3 chapter)
 "Paying for tomorrow: who funds the things that pay back later?" opens with the Brontë sisters' railway shares, which rose to 120 pounds and fell to 20 while the railway itself was built and served the country. New technology does cost a fortune before it pays back, and most single bets fail. In the cases tested, the promises that paid were largely shares bought by savers and governments promising to buy the product, as with the microchip in 1962 and NASA's fixed-price cargo contracts. Cheap borrowing fed two of three booms but not the internet boom, and government borrowing bought by a central bank was not tested. Korea did aim created money at export loans while its heavy industry grew, at a price in inflation and debt, while Taiwan and Penang built industries by other roads. Three deep chapters remain.
+
+### Round 18 in one paragraph (2026-11-26, the fifth deep Level 3 chapter)
+"Why do the biggest printers end up poor? Speed, trust and the price of money" opens with Stefan Zweig paying 50,000 marks for a newspaper in the morning and 100,000 at night. Money growth and price rises go together over long periods and in high inflation, and loosely in calm times: the largest money creations of the 2010s barely moved shop prices for years, because much of the new money sat still. The speed at which money changes hands rises when trust falls. The four great printers paid their governments' bills with new money while another heavy blow struck, and the line between that and central bank bond buying is one of degree and trust. Malaysia catches part of the world's inflation through food and the dollar, kept prices far calmer than its neighbours in 1998 and than the West in 2022, and the state's budget paid much of the cost. Two deep chapters remain.
 
 ### Where everything lives
 | File | What |

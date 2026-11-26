@@ -1,6 +1,6 @@
 # Monetary Futures
 
-> A working knowledge base on how money works and where it is heading, built by a multi-agent research desk. Two stacks: Fundamentals (a four-level Rulebook and the method) and Intelligence (one live question: will energy replace money?). Every claim carries an evidence tier and a date. General education and research, not financial advice. Plan version 5.1, built 2026-11-25.
+> A working knowledge base on how money works and where it is heading, built by a multi-agent research desk. Two stacks: Fundamentals (a four-level Rulebook and the method) and Intelligence (one live question: will energy replace money?). Every claim carries an evidence tier and a date. General education and research, not financial advice. Plan version 5.1, built 2026-11-26.
 
 Read https://neetmonetary.netlify.app/ai/brief.md first. It says how far to trust each part and how to build on it. Fundamentals are stable reference. Intelligence findings are graded hypotheses that age: check the as-of dates and fetch current data.
 
@@ -49,6 +49,7 @@ Read https://neetmonetary.netlify.app/ai/brief.md first. It says how far to trus
 - [Why the peasants stayed poor: money, output and the missing chain](https://neetmonetary.netlify.app/ai/rulebook/rb-peasant.md): For most of history most people were poor, and stayed poor for centuries. A reader says the cause was a missing chain: money, credit, a strong state, schools and knowledge, each needing promises about the future to get started. This chapter tests that chain link by link.
 - [Who wrote the rules of money, and for whom?](https://neetmonetary.netlify.app/ai/rulebook/rb-law.md): Every country has a body that issues its money, and a law that says what that body is for. A reader says it exists to let output and progress grow, that it inflates a little on purpose for the public good, and that it is kept under control. This chapter reads the laws, follows the money, and visits the places that tried other rules.
 - [Paying for tomorrow: who funds the things that pay back later?](https://neetmonetary.netlify.app/ai/rulebook/rb-future.md): Railways, electricity, microchips, the internet and rockets all cost a fortune before they paid anyone back. A reader says promises about the future, credit and money made by a central bank, are what paid for them. This chapter follows the money behind five great technologies, and then asks how Korea, Taiwan and Malaysia paid for theirs.
+- [Why do the biggest printers end up poor? Speed, trust and the price of money](https://neetmonetary.netlify.app/ai/rulebook/rb-printers.md): Some countries printed so much money that it became worthless. Others created even larger sums and, for years, saw little rise in shop prices. A reader says money obeys supply and demand, that the speed at which it changes hands matters, and that a small country can catch inflation from abroad. This chapter tests all three, and ends at a market in Kuala Lumpur.
 - [Epilogue. The promise: the story of money in ten questions](https://neetmonetary.netlify.app/ai/rulebook/rb-promise.md): Two chapters put money on trial with tables and tests. This one tells what they found as a story, through people who might have lived it. The people are imagined. The numbers are not.
 
 ## Fundamentals: Rulebook Level 4, Money in motion
@@ -97,7 +98,7 @@ General education and research. Nothing here is personal financial advice, and y
 ## Two stacks. Keep them apart
 
 **1. Fundamentals: the Rulebook and the method.** How money works, taught from zero in four levels. Each chapter went through a verifier, a blind red team and test readers. It is stable reference material. Use it for mechanisms, definitions and vocabulary.
-- Level 1, Foundations (21 chapters). Level 2, The machinery (4 chapters). Level 3, The big arguments (7 chapters: is printing money a scam, seven harder questions about credit that test a reader's thesis, deep chapters on what 1971 really changed, on why old societies stayed poor, on who wrote the rules of money and on how new technology is paid for, and a narrated epilogue that retells the findings as a story. The people in the epilogue are imagined. For facts, cite the first two chapters). Level 4, Money in motion (2 chapters: how money moves for an investor, and a bold claim tested).
+- Level 1, Foundations (21 chapters). Level 2, The machinery (4 chapters). Level 3, The big arguments (8 chapters: is printing money a scam, seven harder questions about credit that test a reader's thesis, deep chapters on what 1971 really changed, on why old societies stayed poor, on who wrote the rules of money, on how new technology is paid for and on why the biggest printers end up poor, and a narrated epilogue that retells the findings as a story. The people in the epilogue are imagined. For facts, cite the first two chapters). Level 4, Money in motion (2 chapters: how money moves for an investor, and a bold claim tested).
 - The method is how the desk reaches an answer: seven moves, an evidence ladder and rules for reasoning about what is not disclosed.
 
 **2. Intelligence: the Desk and the Landscape.** One live research question: will energy replace money? The findings are dated and graded. Each has an evidence tier, a status, a confidence and a test that would settle it. Treat them as graded hypotheses that age, not as settled facts.
@@ -176,14 +177,14 @@ Scenario odds, thesis cards and round summaries: https://neetmonetary.netlify.ap
 - [The full plan](https://neetmonetary.netlify.app/PLAN.md)
 - [Everything in one file](https://neetmonetary.netlify.app/llms-full.txt)
 
-Plan version 5.1. Pack built 2026-11-25.
+Plan version 5.1. Pack built 2026-11-26.
 
 
 ---
 
 # The method (from the Plan, version 5.1)
 
-Stack: Fundamentals. How the desk turns a raw question into an answer. Built 2026-11-25. The full plan, with the origin cases and the agent architecture, is at https://neetmonetary.netlify.app/PLAN.md
+Stack: Fundamentals. How the desk turns a raw question into an answer. Built 2026-11-26. The full plan, with the origin cases and the agent architecture, is at https://neetmonetary.netlify.app/PLAN.md
 
 
 ### 4.1 Evidence ladder
@@ -563,7 +564,7 @@ No. Banks also create deposits when they buy securities, the Fed creates them wh
 
 Rulebook Level 1 (Foundations), chapter 01. Stack: Fundamentals. Id: rb-01.
 
-Web page: https://neetmonetary.netlify.app/#rb-01 . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-01 . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Money is not a thing you hold. It is a promise that a whole society agrees to keep track of.*
 
@@ -641,7 +642,7 @@ A: Mainly the store of value, because savings lose buying power. The unit of acc
 
 Rulebook Level 1 (Foundations), chapter 02. Stack: Fundamentals. Id: rb-02.
 
-Web page: https://neetmonetary.netlify.app/#rb-02 . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-02 . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Tying money to a metal makes it honest. It also makes it stiff, and stiff money breaks people who owe it.*
 
@@ -716,7 +717,7 @@ A: When two moneys have the same face value but different real value, people spe
 
 Rulebook Level 1 (Foundations), chapter 03. Stack: Fundamentals. Id: rb-03.
 
-Web page: https://neetmonetary.netlify.app/#rb-03 . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-03 . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Two world wars moved the world's gold to America, and in 1944 the dollar became the hub of every other currency.*
 
@@ -787,7 +788,7 @@ A: The world needed a growing supply of dollars, which the US could only provide
 
 Rulebook Level 1 (Foundations), chapter 04. Stack: Fundamentals. Id: rb-04.
 
-Web page: https://neetmonetary.netlify.app/#rb-04 . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-04 . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Americans buy more than they sell, foreigners earn the difference in dollars, and those dollars come home as loans to the US government.*
 
@@ -868,7 +869,7 @@ A: Benefit: cheaper imported goods and lower loan rates. Cost: jobs lost in indu
 
 Rulebook Level 1 (Foundations), chapter 05. Stack: Fundamentals. Id: rb-05.
 
-Web page: https://neetmonetary.netlify.app/#rb-05 . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-05 . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *On a Sunday night in August 1971, the last thread between the dollar and gold was cut, and oil quietly took gold's place in the loop.*
 
@@ -951,7 +952,7 @@ A: Borrowers with fixed-rate loans and owners of real assets like gold, land and
 
 Rulebook Level 1 (Foundations), chapter 06. Stack: Fundamentals. Id: rb-06.
 
-Web page: https://neetmonetary.netlify.app/#rb-06 . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-06 . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Most new money is not printed by the government. It is typed into existence by a bank when it makes a loan.*
 
@@ -1036,7 +1037,7 @@ A: Not directly. The Treasury borrows by selling securities at auction to dealer
 
 Rulebook Level 1 (Foundations), chapter 07. Stack: Fundamentals. Id: rb-07.
 
-Web page: https://neetmonetary.netlify.app/#rb-07 . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-07 . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *If all money is borrowed and interest is owed on top, can everyone ever pay? The honest answer is yes in a quiet world, and not always in a real one.*
 
@@ -1114,7 +1115,7 @@ A: No. In a steady state, interest can be paid indefinitely as long as interest 
 
 Rulebook Level 1 (Foundations), chapter 08. Stack: Fundamentals. Id: rb-08.
 
-Web page: https://neetmonetary.netlify.app/#rb-08 . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-08 . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Money has weather. In some decades it melts, in others it hardens, and the same choice can make you rich in one season and poor in the next.*
 
@@ -1197,7 +1198,7 @@ A: Households, firms and banks were focused on repairing their balance sheets af
 
 Rulebook Level 1 (Foundations), chapter 09. Stack: Fundamentals. Id: rb-defl.
 
-Web page: https://neetmonetary.netlify.app/#rb-defl . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-defl . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *If a dollar buys more tomorrow, why spend it today? The oldest argument against hard money, why it never ends, and what both sides miss.*
 
@@ -1263,7 +1264,7 @@ A: Gresham's law. When two monies circulate side by side, people spend the one e
 
 Rulebook Level 1 (Foundations), chapter 10. Stack: Fundamentals. Id: rb-09.
 
-Web page: https://neetmonetary.netlify.app/#rb-09 . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-09 . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *No money has ruled forever. The ones that fell usually fell the same way: war, debt and a slow watering down of the promise.*
 
@@ -1349,7 +1350,7 @@ A: It is based on a small number of historical cases, its stages are clearer in 
 
 Rulebook Level 1 (Foundations), chapter 11. Stack: Fundamentals. Id: rb-leader.
 
-Web page: https://neetmonetary.netlify.app/#rb-leader . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-leader . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Why surplus nations park their savings in America, why climbing the leaderboard is so hard, and what it really took for each number one to get there and to fall.*
 
@@ -1462,7 +1463,7 @@ A: Because the value is captured mostly at later steps and by owners, while the 
 
 Rulebook Level 1 (Foundations), chapter 12. Stack: Fundamentals. Id: rb-em.
 
-Web page: https://neetmonetary.netlify.app/#rb-em . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-em . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Why a calm local price tag can hide a shrinking passport, how compulsory savings fund the home government, why talent and capital crowd into a few hubs, and whether Singapore was luck, strategy or someone else's plan.*
 
@@ -1576,7 +1577,7 @@ A: Yes. The degree is priced in dollars, so it now costs about 11% more ringgit.
 
 Rulebook Level 1 (Foundations), chapter 13. Stack: Fundamentals. Id: rb-10.
 
-Web page: https://neetmonetary.netlify.app/#rb-10 . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-10 . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *We measure prices with money, but money itself keeps changing size. It is like measuring a room with a rubber ruler.*
 
@@ -1652,7 +1653,7 @@ A: Because the consumer price index counts rents and an estimate of owners' rent
 
 Rulebook Level 1 (Foundations), chapter 14. Stack: Fundamentals. Id: rb-11.
 
-Web page: https://neetmonetary.netlify.app/#rb-11 . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-11 . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *In Monopoly the bank hands every player $1,500. In real life nobody does. So how does a new player get onto the board?*
 
@@ -1731,7 +1732,7 @@ A: Each gave non-owners a productive asset or credential that was large relative
 
 Rulebook Level 1 (Foundations), chapter 15. Stack: Fundamentals. Id: rb-12.
 
-Web page: https://neetmonetary.netlify.app/#rb-12 . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-12 . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *The money in your app may look new, but under it sit the oldest anchors in the system: government bonds, bank credit and gold.*
 
@@ -1811,7 +1812,7 @@ A: Because delivered energy is the scarce physical limit on how much real output
 
 Rulebook Level 1 (Foundations), chapter 16. Stack: Fundamentals. Id: rb-13.
 
-Web page: https://neetmonetary.netlify.app/#rb-13 . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-13 . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Sixteen quiet facts about money that, once seen, cannot be unseen.*
 
@@ -1870,7 +1871,7 @@ A: Because it creates the currency its debts are paid in. It records losses as a
 
 Rulebook Level 1 (Foundations), chapter 17. Stack: Fundamentals. Id: rb-buckets.
 
-Web page: https://neetmonetary.netlify.app/#rb-buckets . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-buckets . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *A 20% crash does not hand 20% to someone else. But money really does slosh between buckets, and the timing of when you enter a bucket is most of the game.*
 
@@ -1941,7 +1942,7 @@ A: Mostly nowhere. It was the paper value of all shares at the last traded price
 
 Rulebook Level 1 (Foundations), chapter 18. Stack: Fundamentals. Id: rb-nation.
 
-Web page: https://neetmonetary.netlify.app/#rb-nation . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-nation . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Is tax a scam? Why did the Torah and the Quran forbid interest? Is a tax-free hub like the UAE cheating? Read the world's countries as companies competing on one leaderboard and the answers fall into place.*
 
@@ -2016,7 +2017,7 @@ A: Because compounding interest in a farming world turned bad harvests into lost
 
 Rulebook Level 1 (Foundations), chapter 19. Stack: Fundamentals. Id: rb-titled.
 
-Web page: https://neetmonetary.netlify.app/#rb-titled . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-titled . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Divide the world's wealth by everyone and it looks like plenty. Here is why most of that plenty is a price set on future credit, why the base layer was titled long ago, and what role each big country plays in keeping a crowded system from tipping over.*
 
@@ -2172,7 +2173,7 @@ A: Because owners need newcomers to keep paying rent, interest and share prices.
 
 Rulebook Level 1 (Foundations), chapter 20. Stack: Fundamentals. Id: rb-crypto.
 
-Web page: https://neetmonetary.netlify.app/#rb-crypto . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-crypto . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Bitcoin, stablecoins and twenty million other tokens, sorted into three families, tested against the jobs of money, and taken apart with six questions you can use on any coin you ever hear about.*
 
@@ -2365,7 +2366,7 @@ A: Gresham's law from chapter 9: people spend the money they expect to lose valu
 
 Rulebook Level 1 (Foundations), chapter 21. Stack: Fundamentals. Id: rb-14.
 
-Web page: https://neetmonetary.netlify.app/#rb-14 . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-14 . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *What each generation learned the hard way, written down so the next one does not have to.*
 
@@ -2408,7 +2409,7 @@ A: Because the last crisis fades from memory, calm years breed confidence, and e
 
 Rulebook Level 2 (The machinery), chapter 01. Stack: Fundamentals. Id: rb-bonds.
 
-Web page: https://neetmonetary.netlify.app/#rb-bonds . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-bonds . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *A bond is a ticket you can resell: you pay RM100, it pays you RM4 a year, and you get RM100 back at the end. This chapter builds everything from that one ticket, then shows where bonds touch your own life, how to check your own exposure once a month, and how to weigh scary bond headlines before you feel them.*
 
@@ -3049,7 +3050,7 @@ A: About 1.5 points a year. Malaysian individuals generally pay no income tax on
 
 Rulebook Level 2 (The machinery), chapter 02. Stack: Fundamentals. Id: rb-moneymake.
 
-Web page: https://neetmonetary.netlify.app/#rb-moneymake . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-moneymake . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Bank loans are one door, the busiest one in normal years. Level 2 adds the others: the Fed, the Treasury, the sponges that soak money up, the shredders that destroy it, the brakes on each printer, and how other countries do it.*
 
@@ -3491,7 +3492,7 @@ A: 2008 to 2014 and 2020 to 2021. After 2021 the Fed shrank its bonds by about $
 
 Rulebook Level 2 (The machinery), chapter 03. Stack: Fundamentals. Id: rb-worldbs.
 
-Web page: https://neetmonetary.netlify.app/#rb-worldbs . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-worldbs . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *You may have heard that the world owes $300 trillion, or $500 trillion, or more. Each can be true, depending on what you count, and the world owes all of it to itself. This chapter shows what the world really owns, why its debts cancel but still matter, how the numbers grew, and how each big country is built.*
 
@@ -3876,7 +3877,7 @@ A: Inflation. Nominal output grew faster than debt, so the ratio fell without an
 
 Rulebook Level 2 (The machinery), chapter 04. Stack: Fundamentals. Id: rb-clubs.
 
-Web page: https://neetmonetary.netlify.app/#rb-clubs . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-clubs . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *The G7, G10 and G20 are clubs, not governments. This chapter shows what they can and cannot do, which countries can really print money and which cannot, why Malaysia sits outside every club but inside the game, and five questions that turn the world into a game board.*
 
@@ -4288,7 +4289,7 @@ A: The ringgit, and through it import prices. Not automatic: in 2026 the ringgit
 
 Rulebook Level 3 (The big arguments), chapter 01. Stack: Fundamentals. Id: rb-print.
 
-Web page: https://neetmonetary.netlify.app/#rb-print . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-print . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *You have heard it a hundred times: printing is theft, the dollar has lost 97%, the whole thing is a Ponzi. This chapter puts that charge on trial at full strength, then puts hard money on trial too, and ends with the question that matters more than either: who pays the toll, and who decides.*
 
@@ -4585,7 +4586,7 @@ US share of the world's reported official gold, not counting the Soviet Union: 5
 
 Rulebook Level 3 (The big arguments), chapter 02. Stack: Fundamentals. Id: rb-credit.
 
-Web page: https://neetmonetary.netlify.app/#rb-credit . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-credit . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *The last chapter put printing on trial and found a toll, not a scam. Now the defence makes a bigger claim: that money made from nothing is the reason ordinary people are no longer peasants. Seven hard questions test that claim, and the last section grades it line by line.*
 
@@ -4840,7 +4841,7 @@ From the reformers: some want banks stopped from creating money at all, so that 
 
 Rulebook Level 3 (The big arguments), chapter 03. Stack: Fundamentals. Id: rb-1971.
 
-Web page: https://neetmonetary.netlify.app/#rb-1971 . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-1971 . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *One weekend in August 1971 ended the dollar's last link to gold. A reader says that weekend is the hinge of modern money: before it credit was limited, after it borrowing became unlimited, under stable and controlled governance. This chapter tests each word of that claim.*
 
@@ -5076,7 +5077,7 @@ Some economists argue the system could have been saved. Michael Bordo and Robert
 
 Rulebook Level 3 (The big arguments), chapter 04. Stack: Fundamentals. Id: rb-peasant.
 
-Web page: https://neetmonetary.netlify.app/#rb-peasant . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-peasant . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *For most of history most people were poor, and stayed poor for centuries. A reader says the cause was a missing chain: money, credit, a strong state, schools and knowledge, each needing promises about the future to get started. This chapter tests that chain link by link.*
 
@@ -5329,7 +5330,7 @@ Deirdre McCloskey argues that secure property existed in China, India and much o
 
 Rulebook Level 3 (The big arguments), chapter 05. Stack: Fundamentals. Id: rb-law.
 
-Web page: https://neetmonetary.netlify.app/#rb-law . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-law . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Every country has a body that issues its money, and a law that says what that body is for. A reader says it exists to let output and progress grow, that it inflates a little on purpose for the public good, and that it is kept under control. This chapter reads the laws, follows the money, and visits the places that tried other rules.*
 
@@ -5601,7 +5602,7 @@ One plan is not known to have been tried on a whole country. It would stop banks
 
 Rulebook Level 3 (The big arguments), chapter 06. Stack: Fundamentals. Id: rb-future.
 
-Web page: https://neetmonetary.netlify.app/#rb-future . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-future . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Railways, electricity, microchips, the internet and rockets all cost a fortune before they paid anyone back. A reader says promises about the future, credit and money made by a central bank, are what paid for them. This chapter follows the money behind five great technologies, and then asks how Korea, Taiwan and Malaysia paid for theirs.*
 
@@ -5859,11 +5860,261 @@ The internet's first network was paid for by America's defence department from 1
 
 ---
 
+# Why do the biggest printers end up poor? Speed, trust and the price of money
+
+Rulebook Level 3 (The big arguments), chapter 07. Stack: Fundamentals. Id: rb-printers.
+
+Web page: https://neetmonetary.netlify.app/#rb-printers . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+
+*Some countries printed so much money that it became worthless. Others created even larger sums and, for years, saw little rise in shop prices. A reader says money obeys supply and demand, that the speed at which it changes hands matters, and that a small country can catch inflation from abroad. This chapter tests all three, and ends at a market in Kuala Lumpur.*
+
+**In short**
+- Over long periods, countries that create money much faster than others have much higher inflation. Among low-inflation countries the link is much weaker.
+- How fast money changes hands matters a great deal, but it is partly a result of trust. In Germany in 1923 people spent money the moment they got it. In America after 2008 much of the new money sat still.
+- In the four cases here, printing to pay the government's bills came on top of another big blow, such as war costs, a farm collapse or an oil crash. The line with buying bonds is one of degree and trust.
+- Malaysia does catch some inflation from abroad, mainly through food and the US dollar. In 2022 its prices rose far less than America's, and the state's budget paid part of the bill. In 1998 it fixed its currency to the dollar.
+
+**Built on earlier chapters: recall these before you start.** 
+- [Money from the future: seven harder questions about credit](https://neetmonetary.netlify.app/ai/rulebook/rb-credit.md): Chapter 02 said that money printed to pay a state's bills, while output falls, brings inflation, as in Zimbabwe.
+- [Who wrote the rules of money, and for whom?](https://neetmonetary.netlify.app/ai/rulebook/rb-law.md): Chapter 05 found that central banks aim for mild inflation on purpose, and that the big gains to the state come when inflation is a surprise.
+- [The weekend that cut the anchor: what 1971 really changed](https://neetmonetary.netlify.app/ai/rulebook/rb-1971.md): Chapter 03 found that inflation is one of the limits that took the place of gold after 1971.
+- [The seasons of money](https://neetmonetary.netlify.app/ai/rulebook/rb-08.md): Money has seasons. Inflation melts savings and lightens debts. Deflation does the reverse.
+
+> **How to read this chapter.** A scene, four tests and a verdict, about 40 minutes in all. Each test ends with a short line on what it does to the claim. This is the fifth of seven deeper chapters.
+
+### The claim on trial
+
+The reader who wrote in has three ideas about the price of money itself. Here they are, with a question the reader asked.
+
+1. Part 1. Money obeys supply and demand. Make more of it than people want to hold, and each unit is worth less.
+2. Part 2. The speed at which money changes hands, its velocity, decides how hard a given amount of money pushes on prices.
+3. Part 3. A country can import inflation, or falling prices, from abroad, through its exchange rate and the things it buys.
+4. The question. If a body that holds reserves can create money, why do the countries that create the most end up among the poorest?
+
+### A newspaper in the morning, and again at night
+
+In June 1922 the Austrian writer Stefan Zweig was at Westerland, a seaside town in Germany. From then on, he later wrote, the inflation took hold. Years later, in his memoir, he described what money had become.
+
+> "I have known days when I had to pay fifty thousand marks for a newspaper in the morning and a hundred thousand in the evening" (Stefan Zweig, The World of Yesterday, written in 1941 and 1942)
+
+He sent his publisher a manuscript and asked his publisher to pay him early for ten thousand copies. By the time the payment reached the bank, he wrote, it "hardly paid the postage". Some two weeks later, he wrote, one could find notes of a hundred thousand marks lying in the gutter.
+
+At the worst point, in October 1923, prices in Germany were doubling about every 3.7 days. The government was paying for almost all of its spending by printing notes. And Germans had learned a lesson that families in a runaway inflation soon learn. Do not hold money. Spend it the moment you are paid, before it shrinks again.
+
+Keep this in mind: money that loses value is spent at once. That is the key to this whole chapter.
+
+### Test 1. Does money obey supply and demand?
+
+Picture a market with 100 loaves of bread and 100 ringgit to spend on them. Each loaf costs about 1 ringgit. Now double the money to 200 ringgit and keep the bread the same. If people spend it all, each loaf ends up costing about 2 ringgit. That is supply and demand for money. This is a made-up example with round numbers. Does the real world work like this? For this chapter, we used World Bank data to compare 144 countries from 2000 to 2019. It is our own calculation, not a published study. We asked: did countries whose money grew fastest also have prices that rose fastest? We scored the match from 0 to 1. A score of 1 means money and prices moved together perfectly. A score of 0 means no link at all. Across all 144 countries the match scored 0.88, very strong. A few countries with very high inflation pull this score up.
+
+But look closer and the picture changes. The short version of the next table: the link is strong in high inflation and weak in calm times.
+
+| Which countries, and which years | Match score | In plain words |
+|---|---|---|
+| All 144 countries, 2000 to 2019 | 0.88 | Very strong. Countries that made money fastest had the fastest price rises |
+| The 88 countries with inflation under 6% a year, 2000 to 2019 | 0.51 | Middling. In calm countries money and prices often go separate ways |
+| America, year by year, 1960 to 2019 | 0.14 | Weak. In a single year, more money says little about prices |
+| America, in blocks of five years, 1960 to 2019 | 0.65 | Fairly strong. Over five years the link shows up again |
+
+So the link is strong when inflation is high and weaker when it is low. In America from 1985 to 2019 the year by year match was even below zero, at -0.33, which means money and prices tended to move opposite ways. In a calm economy, the amount of money can rise a lot one year without prices following. Then came the biggest test of all. The next table counts the money central banks created and used to buy bonds, which are loans to a government or a company. The short version: America's central bank created huge sums, and for years shop prices barely moved. Europe and Japan did the same, as a box below shows.
+
+| Central bank | How much it created | What prices did |
+|---|---|---|
+| America's Federal Reserve | Its holdings, mostly bonds bought with newly created money, grew from 0.87 trillion dollars in August 2007 to 4.50 trillion in January 2015 | Prices rose between 0.6% and 3.1% a year from 2009 to 2015, and under 1% in 2014 and 2015 |
+
+### Go deeper: Europe and Japan did the same
+
+| Central bank | How much it created | What prices did |
+|---|---|---|
+| The European Central Bank | Its holdings grew from 1.2 trillion euros in August 2007 to 8.8 trillion in June 2022 | Prices rose 1.7% a year at most from 2013 to 2019, then 8.5% in 2022 |
+| The Bank of Japan | Its base money roughly doubled between 2012 and 2014, by one estimate, and rose by 74 trillion yen in 2014 alone | Prices rose 2.8% in 2014, the year a sales tax went up, and 0.8% in 2015 |
+
+Both created huge sums. In both, shop prices rose slowly for years. In Europe they then jumped in 2022.
+
+Those are some of the largest money creations in history, and for years shop prices barely moved. House and share prices did rise, by one estimate about 7% and 5%. Then America's money, counting cash and deposits, grew 26.8% in the year to February 2021, and by June 2022 prices were rising about 9% a year. Did the money cause it? Economists still argue. Ben Bernanke and Olivier Blanchard found that most of the rise came from sudden blows, such as dearer energy and food and shortages of goods. The link was loose and slow.
+
+> **What test 1 does to the claim.** Part 1 holds over long periods and in high inflation. In calm times it is loose. The largest money creations of the 2010s barely moved shop prices for years, which supply and demand alone does not explain. They did lift house and share prices.
+
+### Test 2. Does the speed of money matter?
+
+Here the reader points to a real piece of the puzzle. Picture one banknote of 10 ringgit, in a made-up example. If it is spent once a year, it does 10 ringgit of buying. If it is spent ten times a year, passing from shop to worker to shop, it does 100 ringgit of buying. The same note, ten times the push on prices. That speed is called the velocity of money.
+
+Now look at what happened to velocity in America.
+
+| America | How many times a year each dollar was spent (velocity of cash and deposits, measured in one quarter of each year) |
+|---|---|
+| 1960 | 1.82 |
+| 1997, the peak | 2.19 |
+| 2008 | 1.94 |
+| 2020, the low | 1.13 |
+| 2026 | 1.42 |
+
+From the 1997 peak to the 2020 low the speed of money in America fell by almost half. But velocity is just a year's spending divided by the amount of money. A fall says that money grew faster than spending, not why. Many economists see it as a result of saving, interest rates and trust.
+
+So where did the new money go? When the central bank buys a bond from an investor, the investor's bank account grows, and the investor's bank gets new reserves, money that banks keep at the central bank. People and shops cannot spend reserves. Only banks hold them. So reserves are not in the velocity table. The deposits could be spent, but by one reading much was saved. From October 2008 the central bank also paid banks interest to keep their reserves. So much of the money did not reach the shops.
+
+In a runaway inflation the opposite happens. People spend as fast as they can. In Germany from January 1922 to July 1923, prices rose about 2,000 times while the number of notes rose about 380 times. Prices grew more than five times as much as the number of notes. Each note changed hands faster. The economist Thomas Sargent reads this as Germans holding as little money as they could. In Zimbabwe the speed of money rose by about 70% from 2007 to 2008, by the IMF's count.
+
+So inflation is not just more money. It is more money multiplied by how fast people spend it, set against the goods there are to buy. Economists who study runaway inflations argue that this depends mostly on what people expect prices to do, which is a matter of trust. When people trust money to keep its value, they hold it. When they stop trusting it, they throw it at the nearest shop.
+
+> **What test 2 does to the claim.** Part 2 holds as a description. A fall in speed is how the 2010s stayed calm, and a rise is how Germany ran ahead of its printing. But speed is measured by dividing spending by money, so it is a result of trust, saving and interest rates as much as a cause.
+
+**Check yourself.** Q: A friend says the American central bank printed trillions of dollars after 2008, so prices should have exploded. Why didn't they, for years?
+A: Because much of the new money was not spent. Much became bank reserves, which people cannot spend, and much of what reached people's accounts was saved. Velocity fell by almost half from 1997 to 2020. More money that moves slowly can push prices less than less money that moves fast. But prices did rise fast in 2021 and 2022.
+
+### Test 3. Why do the biggest printers end up poor?
+
+Now the reader's question. If creating money can be harmless, why did some countries print themselves into ruin? Look at what each one printed for, and what else was going on. The short version: each printed to pay its government's bills, and each was hit by another heavy blow at the same time.
+
+| Country | What the printing paid for | How fast prices rose | The other big blow |
+|---|---|---|---|
+| Germany, 1923 | Almost all government spending | Doubling about every 3.7 days | War payments to the victors of the First World War, and the occupation of its industrial heart |
+| Hungary, 1946 | A government rebuilding after war | Doubling about every 15 hours, the fastest ever | About 40% of the country's wealth destroyed in the war |
+| Zimbabwe, 2008 | Central bank spending of many kinds, paid for partly by printing | Doubling about every 25 hours, by one estimate | Output had already fallen about 40% after a collapse in farming |
+| Venezuela, 2018 | A large government deficit | Up over 1.6 million percent in a year, by one estimate | The oil price fell 71%, and later sanctions |
+
+Read the second and fourth columns together. In each case the record points to a government printing to pay its own bills, though Hungary's share was not found. And each economy had been badly hurt. Venezuela's output halved from 2013 to 2018, and Zimbabwe's fell 14% to 18% more in 2008 alone. Germany is different. By one study its output grew strongly until mid 1922, while prices already rose fast, then fell by about a third in 1923. Hungary was rebuilding from ruins. So the new money chased goods that were few, falling, or both.
+
+It looks like a clean line between buying bonds and printing for bills. In the 2010s America's central bank bought bonds, which are loans to a government or a company. The economy kept working, and much of the new money was held. Zimbabwe's central bank paid for spending a shrinking economy could not support, and few people wanted to hold the result. Trust broke, speed rose, and prices ran.
+
+But the line is not a wall. In 2020 the same central bank bought government bonds while the government spent a record 3.1 trillion dollars more than it took in. From March to August 2020 the central bank's share of all government bonds rose from 15% to 22%. In 2021 and 2022 prices rose fast. Both kinds of buying create new money and take the state's debt in return. What keeps them apart is degree, how much and for how long. It is trust, whether people believe the debt will be repaid from future taxes and the central bank will stop when prices rise. And it is output, whether the economy can make enough goods to meet the spending. So the reader's worry about modern central banks is not foolish.
+
+In Caracas in early 2018 a young man named Wilmer Rojas worked outside a subway station, sewing handbags out of banknotes that had lost their value. He needed up to 800 notes for one purse.
+
+> "People throw them away because they are no good to buy anything." (Wilmer Rojas, 25, Caracas (AFP, February 2018))
+
+Some cases are less clear. Turkey's central bank cut interest rates in 2021 and 2022 while prices rose, and inflation reached 85.5% in October 2022. But Turkey's economy grew every year from 2021 to 2024, and this chapter did not check how much of the budget its central bank paid for. The state did carry costs through a scheme protecting savers. Turkey looks more like a currency losing trust while interest rates were held far below inflation.
+
+And how do these stories end? Germany's ended in October and November 1923, by the economist Thomas Sargent's account. A new currency was set up with strict limits, the central bank stopped lending to the government, and taxes rose and spending fell. People believed the printing had ended, so they held money again, and prices stopped rising. The new currency was in place by 1924. Argentina, which has had high inflation for most of fifty years, saw prices rise 211% in 2023. In 2024 its central bank stopped paying for the government directly, the budget showed a surplus before interest, and inflation fell to about 118%. Zimbabwe dropped its own currency in early 2009, and its output grew 13.3% that year.
+
+> **What test 3 does to the claim.** The question has a partial answer. In the four cases here, printing to pay the state's bills deepened another heavy blow, until people would not hold the money. But 2020 to 2022 shows the line with ordinary bond buying is one of degree and trust, not a wall. Whether the biggest printers end up poorest was not tested.
+
+### Go deeper: The four printers in more detail
+
+| Country | What the printing paid for | What prices did | The other big blow |
+|---|---|---|---|
+| Germany, 1923 | Almost all government spending, by October 1923 | Doubling about every 3.7 days | War payments owed to the victors of the First World War, and the occupation of its main industrial region, the Ruhr |
+| Hungary, 1946 | A government rebuilding after war, with a budget gap, by secondary accounts | Doubling about every 15 hours, the fastest on record | About 40% of the country's wealth destroyed in the war, and income less than half its pre-war level |
+| Zimbabwe, 2008 | Central bank spending of many kinds, such as cheap loans and farm inputs, equal to 29% to 36% of output by two IMF estimates, paid for partly by printing | Doubling about every 25 hours, by one estimate | Output had already fallen about 40% from 2000 to 2007, after a collapse in farming and a break with foreign lenders |
+| Venezuela, 2018 | A government deficit of an estimated 15% of output. Base money grew over 73,000% in the year to mid 2019 | Up over 1.6 million percent in 2018, by one estimate | The oil price fell 71% from mid 2014 to early 2016. Price caps set too low hurt producers, and output fell about 17% in 2016 and 16% in 2017. America imposed sanctions in 2017 |
+
+### Go deeper: How the printers ended, Turkey, and Japan in the 1930s
+
+Germany, 1923, step by step. By October 1923 the government was paying for virtually all of its spending by printing notes. On 15 October the Rentenmark was set up, with strict limits on how much could be issued. From 15 November the central bank stopped lending to the government by buying its short-term debt. In late November prices suddenly stopped rising. Thomas Sargent's lesson is that the change worked because it was binding enough to be widely believed.
+
+Argentina, 2024. Besides ending direct payments from the central bank, the government took in more than it spent before paying interest. By an analysis from the bank Itaú, this surplus was about 1.8% of output.
+
+Turkey. From late 2021 a scheme promised savers that the state would make up their losses if the lira fell. By May 2023 it had cost the budget 95.3 billion lira, by the finance minister's figure, as reported by Daily Sabah. Economists link later losses at the central bank to it.
+
+Japan from 1932, a partial test of the first point under "What would change this verdict". From November 1932 the Bank of Japan bought new government bonds directly to pay for a budget deficit, and Japan recovered from the Great Depression. Inflation rose fast only after 1936, when the finance minister who ran the policy, Takahashi Korekiyo, was killed and those after him did not stop the funding. Historians still argue how much of the recovery to credit to the policy itself. This case was not checked in this chapter's own research. Sources: a Kobe University discussion paper and a Bank of Japan governor's speech.
+
+### Test 4. Can a country catch inflation from abroad?
+
+In February 2022 a shopper named Meena Tharshini was buying food at a market in Kuala Lumpur. She told a reporter how her family's chicken had changed. They used to buy two a week.
+
+> "But nowadays, I can only budget for one." (Meena Tharshini, 41, on buying one chicken a week instead of two, Kuala Lumpur (Malay Mail, February 2022))
+
+The government had capped the price of a standard chicken at 8.90 ringgit a kilogram, from 5 February to 5 June 2022. One poultryman told the same paper, "We honestly barely make any profits from this." Sellers blamed the cap and festive demand. Trade reports point back to the farm. Chicken feed is largely imported maize and soy, and it cost more as the ringgit weakened and the war in Ukraine disrupted grain. That is imported inflation, as the next picture shows. The government set aside money to pay farmers part of the gap, and from 1 June Malaysia stopped exporting chickens for a time, as reported. The cost moved to farmers, the budget and buyers abroad.
+
+Picture a bag of flour that Malaysia buys from abroad for 1 US dollar. If 1 dollar costs 4 ringgit, the bag costs 4 ringgit. If the ringgit falls and 1 dollar costs 5 ringgit, the same bag now costs 5 ringgit, though nothing about the flour has changed. That is imported inflation. This is a made-up example with round numbers. Malaysia buys much of its food and many goods from abroad, and by an IMF estimate most of its trade is priced in US dollars.
+
+So how much of a fall in the ringgit reaches the shops? Bank Negara measured it.
+
+| If the ringgit falls 5% against the dollar | What happens within a year, by Bank Negara's 2022 estimate |
+|---|---|
+| The price of imports | Rises about 2.1%, so about 40% of the fall gets through |
+| Core inflation, the prices people pay for most things | Rises only about 0.2 points on average, and about 0.4 points in past sharp falls. One point means one percentage point of yearly inflation |
+| Food | Rises more than other goods |
+
+Why so little? About a quarter of what Malaysian households spend is imported, counting imported parts. Firms often take some of the extra cost themselves. And the state caps some prices and pays part of the cost, called a subsidy. The test came twice.
+
+|  | 1998 | 2022 |
+|---|---|---|
+| How far the ringgit fell against the dollar | 28.3%, comparing yearly averages | 5.4% over the year |
+| Malaysia's inflation | 5.3% | 3.3% |
+| Inflation elsewhere | Indonesia 58.4%. America 1.5% | America 8.0%. Britain 9.1% |
+
+In 1998 Bank Negara's own rough rule said a fall that big would add about 5 points to inflation. Prices rose 5.3%, close to the rule, and far less than Indonesia's but far more than America's. From September 1998 the ringgit was also fixed at 3.80 to the dollar. Economists still argue how much that helped. In 2022 Malaysia's inflation was less than half of America's. Fixed pump prices and price caps held it down. The state planned 37.3 billion ringgit of fuel subsidies that year, so the calm was paid for partly by the state's budget, now and later.
+
+A country can also catch falling prices. Hong Kong pegs, or ties, its dollar to the US dollar at a fixed rate. From November 1998 Hong Kong's prices fell for 68 months in a row, while America's kept rising. A strong US dollar was one cause. Because of the tie, Hong Kong's dollar rose with the US dollar. So Hong Kong paid fewer of its own dollars for imports, and imports got cheaper. A crash in property prices was another cause. Argentina, tied to the dollar until 2001, saw prices fall three years in a row. So a tie to the dollar does not simply pass on America's inflation. It takes away the choice to let the currency fall. So when times are hard at home, the currency cannot fall to help. Prices and wages have to fall instead.
+
+In 2017 Bank Negara's governor said the spread of world money conditions to economies like Malaysia's "is unavoidable", though countries "should not be starved of policy autonomy", meaning the freedom to set their own policy. In May 2022, when some called for the ringgit to be fixed again, Bank Negara's governor, by then a different person, said "pegging the ringgit will not be in the best interest of Malaysia".
+
+> **What test 4 does to the claim.** Part 3 holds in part. Malaysia does catch inflation from abroad, mainly through food and the US dollar. In 2022 little of the currency fall reached the shops, but in 1998 about as much as Bank Negara's rough rule said it would. In 1998 its prices rose less than its hard-hit neighbours' but more than America's or Britain's. In 2022 they rose less than America's or Britain's.
+
+### Go deeper: More on Malaysia and Hong Kong
+
+|  | 1998 | 2022 |
+|---|---|---|
+| What the ringgit did against the dollar | Fell 28.3%, comparing yearly averages | Fell 5.4% from the start to the end of the year, and 12.2% from its high to its low |
+| Malaysia's inflation | 5.3% for the year | 3.3% for the year |
+| Inflation elsewhere | Indonesia, 58.4%. Thailand, 8.0%. Korea, 7.5%. America, 1.5%. Britain, 1.6% | America, 8.0%. Britain, 9.1% |
+| What held prices down | Firms absorbed costs in a slump, and oil was cheap. From September the ringgit was fixed at 3.80 to the dollar, with controls on money leaving. About 11% of the basket had state-set prices, which the IMF in April urged Malaysia to scale back | Fixed pump prices and price ceilings. The state planned 37.3 billion ringgit of fuel subsidies, and the Auditor-General later counted about 45 billion, as reported |
+
+Malaysia, 1998. Bank Negara wrote that about 11% of the price basket had prices set by the state, for goods such as sugar, flour, petrol, bread, chicken and cooking oil. It added that there were "no price controls as such, contrary to general perceptions". The government also raised several of those ceilings in late 1997 and early 1998, which added nearly 1.1 points to inflation. In April 1998 the IMF asked Malaysia to scale price controls back to basic food eaten by the poorest households. The two institutions described the same system with different weight. On 1 September 1998 controls on money leaving the country began, and the next day the ringgit was fixed at 3.80 to the dollar. Economists still argue about the controls. Kaplan and Rodrik think they did more good than critics say, and Athukorala argues they did little.
+
+Malaysia, 2022. The ringgit ended the year 5.4% down, but at its weakest it had fallen 12.2% from its high. The state planned 37.3 billion ringgit of fuel subsidies. The Auditor-General later counted about 45 billion ringgit of claims paid for petrol, diesel and bottled gas from December 2021 to October 2022, as reported by Malay Mail. Malaysia also earns from oil and gas. Bank Negara expected petroleum to bring 27.3% of the government's revenue in 2022. So the high oil price that raised the subsidy bill also raised part of the income that paid it.
+
+Hong Kong, 1998 to 2004. Hong Kong's monetary authority estimated that the property crash explained about half of the fall in consumer prices. It also named prices moving closer to those in mainland China, and a world slowdown. Its chief, Joseph Yam, said in 2001 that Hong Kong's monetary arrangements had not been contributing to the fall.
+
+The governors. In 2017 Bank Negara's governor was Muhammad bin Ibrahim. He called the choice of interest rates for a small open economy a "catch 22": raise rates and money flows in, cut them and money may flow out. In 2022 the governor was Nor Shamsiah Mohd Yunus. She said a peg "will have substantial risks", and that an earlier peg had taken up a sizeable amount of reserves.
+
+### The verdict on the printers
+
+| The claim | Finding | The fact that decides it |
+|---|---|---|
+| 1. Money obeys supply and demand | Holds over long periods and in high inflation. Loose in calm times, by how much is disputed | In this chapter's own check of 144 countries the match was 0.88 out of 1. Among low-inflation countries it was 0.51 out of 1. America's central bank grew its holdings about five times from 2007 to 2015, with low shop price inflation |
+| 2. The speed of money matters | Holds as a description. Speed is partly a result of trust | America's velocity fell by almost half from 1997 to 2020, as money grew faster than spending. German prices from January 1922 to July 1923 ran more than five times ahead of the printing |
+| 3. A country can import inflation and deflation | Holds in part. In most years less gets through than the fall suggests, and the state decides who pays | A 5% fall in the ringgit lifts import prices about 2.1 points and core inflation about 0.2 points on average. In 1998 inflation rose about as much as Bank Negara's rule predicted. Hong Kong, tied to the US dollar, saw prices fall for 68 months |
+| The question: why are the biggest printers poor? | In the four cases here, printing to pay the state's bills deepened another heavy blow. The line with buying bonds is one of degree and trust | Zimbabwe's central bank spending was 29% to 36% of output in 2008, after a 40% fall in output. In 2020 America's central bank raised its share of government bonds from 15% to 22% |
+
+Here is the reader's idea again, rebuilt so the record can carry it.
+
+1. The value of money depends on how much there is, how fast it moves, and how much people trust it to keep its value. How fast it moves is partly a result of that trust.
+2. Creating money to buy bonds and printing money to pay the state's bills can blur. In the 2010s much new money sat still. In the four printer cases it was spent as fast as people could. The line is one of degree, trust, and whether output can keep up.
+3. A small open country like Malaysia catches part of the world's inflation through food and the dollar. It can soften the blow with subsidies and price caps, and someone still pays, through the budget, at the farm or through shortages.
+
+So why do the biggest printers end up poor? Not because creating money is poison in itself. In the cases here, they used it to cover a hole that a war, a farm collapse or an oil crash had torn open, and people stopped believing the hole would be closed. A newspaper that cost fifty thousand marks in the morning cost a hundred thousand at night. A family in Kuala Lumpur bought one chicken instead of two. Both were feeling prices rise. In Germany the money itself had lost people's trust. In Kuala Lumpur the ringgit still bought a chicken, and the strain showed up in the basket, the budget and the farms.
+
+> **What would change this verdict.** This view would change if any of three things were shown. First, that a country printed to pay its government's bills on a large scale, in a growing economy, without high inflation. Second, that the slowdown in the speed of money after 2008 had a cause that will not reverse. Third, that Malaysia's subsidies cost more over time than the inflation they prevented. The third is a fair question this chapter did not settle. The first has a partial test, Japan from 1932, told in the box after Test 3.
+
+### Go deeper: Two more printer stories
+
+Hungary, 1946. After the Second World War about 40% of Hungary's national wealth had been destroyed, and its income was less than half its pre-war level. Prices then rose faster than anywhere ever recorded, doubling about every 15 hours at the peak. The new currency of August 1946, the forint, was set at 200,000 tax pengő each. This chapter could not find how much of Hungary's spending in 1946 was paid by printing. Secondary accounts point to the budget gap, the cost of rebuilding, war payments and weak tax income.
+
+Argentina. A senior official of Argentina's central bank has said that over two decades, the central bank moved financing in pesos and reserves worth more than 60% of a year's output to the Treasury, by the bank's own count. In 2023 its direct advances and transfers to the Treasury came to about 0.9% of output, plus about 2.7% through buying government bonds in the market. In 2024 they stopped.
+
+### Go deeper: Where each number comes from
+
+| Number | Source |
+|---|---|
+| Stefan Zweig | The World of Yesterday, English edition. Translations word the passages differently |
+| Germany 1923: prices doubling, spending paid by notes, notes against prices | Doubling time: the Hanke and Krus table of hyperinflations, read from a copy hosted elsewhere. Notes against prices, spending paid by notes, and the end in 1923 with the budget change: Thomas Sargent, The Ends of Four Big Inflations. German output to mid 1922: an NBER conference paper on the German inflation. The fall of about a third in 1923: Rolf Wagenführ, via German History in Documents and Images. Zweig at Westerland in June 1922: the memoir itself |
+| Money growth against inflation across countries | World Bank data on broad money and consumer prices, 2000 to 2019, computed for this chapter. Earlier studies found a strong link overall and a weaker one at low inflation (Dwyer and Fisher found 0.47, De Grauwe and Polan near zero). America: FRED data, December to December, with the five-year figure from averages of yearly rates in twelve blocks, also computed for this chapter |
+| American money, velocity and prices | Federal Reserve Bank of St Louis data (FRED), prices December to December. The 2020 share of government bonds: the Federal Reserve's balance sheet report of August 2020. The 2020 deficit: the St Louis Fed. House and share prices: Josh Bivens, Brookings Institution working paper. The 2021 to 2022 debate: Ben Bernanke and Olivier Blanchard, NBER working paper 31417. Reserves and deposits: NBER working paper 31050 |
+| The European Central Bank and the Bank of Japan | Their own balance sheets, and World Bank price data. The 2012 level of Japan's base money is from a secondary summary. Japan in the 1930s: a Kobe University discussion paper and a Bank of Japan governor's speech (BIS) |
+| Hungary and Zimbabwe peaks | The Hanke and Krus table |
+| Zimbabwe's central bank spending and output | International Monetary Fund notices 09/53 (36%, velocity) and 10/62 (29%), and World Bank data for output and the 2009 rebound |
+| Venezuela | Peterson Institute for International Economics, Policy Brief 19-13, with the deficit from a CEDICE estimate. The 1.6 million percent is one estimate. Oil and sanctions: US Congressional Research Service. Price caps: Economics Observatory. Output: World Bank |
+| Wilmer Rojas | AFP, 11 February 2018, via the Taipei Times |
+| Turkey | Turkey's central bank and statistics office. Growth: World Bank. The savers' scheme cost: Daily Sabah, citing the finance minister |
+| Argentina | Argentina's statistics office and central bank. The 2024 surplus: an analysis by the bank Itaú |
+| Imported inflation in Malaysia and the 1998 and 2022 comparisons | Bank Negara Malaysia, Annual Report 1998 (the peg, the controls, the 11% of administered prices and the rule of thumb) and its 2022 review of exchange rate pass-through. The IMF's advice: IMF Public Information Notice 98/31. The debate on the controls: Kaplan and Rodrik (NBER) and Athukorala. Other countries' inflation: IMF World Economic Outlook |
+| Fuel subsidies in 2022 | Malaysia's Ministry of Finance, as projected. The later count: the Auditor-General, as reported by Malay Mail, 10 October 2023. The oil revenue share: Bank Negara's 2022 review |
+| Meena Tharshini and the chicken price cap | Malay Mail, 21 February 2022, including the poultryman Zainal Jamali, 47. Feed costs, the export halt and the government's help for farmers: press and trade reports, including New Zealand's trade ministry and The Poultry Site |
+| Hong Kong and Argentina under dollar ties | Yearly prices: IMF World Economic Outlook. Causes and the 68 months: Hong Kong Monetary Authority, including its chief Joseph Yam, 20 September 2001. International Monetary Fund evaluation office on Argentina |
+| Bank Negara's governor | Governor in 2017: Muhammad bin Ibrahim, speech of 24 July 2017 (BIS). Governor in 2022: Nor Shamsiah Mohd Yunus, The Star, 13 May 2022 |
+
+> **Not advice.** This chapter weighs an argument about inflation and money. It does not tell you to hold or avoid any currency, metal or investment. Figures have dates and will change.
+
+
+---
+
 # Epilogue. The promise: the story of money in ten questions
 
-Rulebook Level 3 (The big arguments), chapter 07. Stack: Fundamentals. Id: rb-promise.
+Rulebook Level 3 (The big arguments), chapter 08. Stack: Fundamentals. Id: rb-promise.
 
-Web page: https://neetmonetary.netlify.app/#rb-promise . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-promise . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Two chapters put money on trial with tables and tests. This one tells what they found as a story, through people who might have lived it. The people are imagined. The numbers are not.*
 
@@ -6018,7 +6269,7 @@ The reader who wrote in has replied with four new points. Before 1971 credit res
 
 Rulebook Level 4 (Money in motion), chapter 01. Stack: Fundamentals. Id: rb-moves.
 
-Web page: https://neetmonetary.netlify.app/#rb-moves . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-moves . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *A pre-owned luxury watch can lose a third of its price and nobody puts a dollar figure on it. A share slips 5% and $236 billion of market value is wiped off the screen. This chapter follows the money behind both: who moves it, what season steers it, and the arithmetic that decides who keeps it.*
 
@@ -6297,7 +6548,7 @@ Sources: J. L. Kelly, A New Interpretation of Information Rate, Bell System Tech
 
 Rulebook Level 4 (Money in motion), chapter 02. Stack: Fundamentals. Id: rb-strc.
 
-Web page: https://neetmonetary.netlify.app/#rb-strc . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-strc . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Michael Saylor pitches Bitcoin as digital capital, STRC as digital credit paying 12%, and a future dollar token paying 8%. This chapter takes the pitch apart claim by claim, follows the money step by step, and asks what really moves when money moves between baskets.*
 
@@ -6847,7 +7098,7 @@ A: For example: is it a deposit or a share, who promises the $100, where does th
 
 # Intelligence: will energy replace money? (the Desk)
 
-Stack: Intelligence. These are graded, dated findings, not settled facts. Check each as-of date and fetch current data before relying on a number. Web page: https://neetmonetary.netlify.app/#desk . Text built 2026-11-25.
+Stack: Intelligence. These are graded, dated findings, not settled facts. Check each as-of date and fetch current data before relying on a number. Web page: https://neetmonetary.netlify.app/#desk . Text built 2026-11-26.
 
 ## Scenario odds by horizon
 
@@ -6972,6 +7223,9 @@ Level 3, "The big arguments", now has its first chapter: "Is printing money a sc
 ### Round 17 in one paragraph (2026-11-25, the fourth deep Level 3 chapter)
 "Paying for tomorrow: who funds the things that pay back later?" opens with the Brontë sisters' railway shares, which rose to 120 pounds and fell to 20 while the railway itself was built and served the country. New technology does cost a fortune before it pays back, and most single bets fail. In the cases tested, the promises that paid were largely shares bought by savers and governments promising to buy the product, as with the microchip in 1962 and NASA's fixed-price cargo contracts. Cheap borrowing fed two of three booms but not the internet boom, and government borrowing bought by a central bank was not tested. Korea did aim created money at export loans while its heavy industry grew, at a price in inflation and debt, while Taiwan and Penang built industries by other roads. Three deep chapters remain.
 
+### Round 18 in one paragraph (2026-11-26, the fifth deep Level 3 chapter)
+"Why do the biggest printers end up poor? Speed, trust and the price of money" opens with Stefan Zweig paying 50,000 marks for a newspaper in the morning and 100,000 at night. Money growth and price rises go together over long periods and in high inflation, and loosely in calm times: the largest money creations of the 2010s barely moved shop prices for years, because much of the new money sat still. The speed at which money changes hands rises when trust falls. The four great printers paid their governments' bills with new money while another heavy blow struck, and the line between that and central bank bond buying is one of degree and trust. Malaysia catches part of the world's inflation through food and the dollar, kept prices far calmer than its neighbours in 1998 and than the West in 2022, and the state's budget paid much of the cost. Two deep chapters remain.
+
 ### Where everything lives
 | File | What |
 |---|---|
@@ -7019,7 +7273,7 @@ https://neetmonetary.netlify.app/claims.json holds the full ledger. Each entry h
 
 Landscape chapter 01. Stack: Intelligence (graded, dated findings). Id: ls-01. Facts as of 2026-10-23.
 
-Web page: https://neetmonetary.netlify.app/#ls-01 . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#ls-01 . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *A hunch about Washington, Tokyo and Paris became a test of how to find intent that nobody announces.*
 
@@ -7086,7 +7340,7 @@ A: Because it was money that actually moved (T0), and it broke the default patte
 
 Landscape chapter 02. Stack: Intelligence (graded, dated findings). Id: ls-02. Facts as of 2026-10-23.
 
-Web page: https://neetmonetary.netlify.app/#ls-02 . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#ls-02 . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *The US debt grows on its own, mainly because the government spends more than it taxes even before paying interest.*
 
@@ -7149,7 +7403,7 @@ A: No. Interest costs would fall over time, but the primary deficit of about 2.9
 
 Landscape chapter 03. Stack: Intelligence (graded, dated findings). Id: ls-03. Facts as of 2026-10-23.
 
-Web page: https://neetmonetary.netlify.app/#ls-03 . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#ls-03 . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *They are not shrinking the debt. They are managing who must buy it.*
 
@@ -7212,7 +7466,7 @@ A: Because bills reprice within months, so any rate rise hits the budget fast, a
 
 Landscape chapter 04. Stack: Intelligence (graded, dated findings). Id: ls-04. Facts as of 2026-10-23.
 
-Web page: https://neetmonetary.netlify.app/#ls-04 . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#ls-04 . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Intent and outcome are different things. Most players want more than they can get, and the gap shows where the real limits are.*
 
@@ -7280,7 +7534,7 @@ A: Because the Fed under Warsh is independent and hiking, the courts kept Govern
 
 Landscape chapter 05. Stack: Intelligence (graded, dated findings). Id: ls-05. Facts as of 2026-10-23.
 
-Web page: https://neetmonetary.netlify.app/#ls-05 . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#ls-05 . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *New digital money is being built on top of the old system, by law. It is an acquisition, not a merger.*
 
@@ -7347,7 +7601,7 @@ A: Not under current law. Compliant stablecoins must hold Treasury bills, pay ho
 
 Landscape chapter 06. Stack: Intelligence (graded, dated findings). Id: ls-06. Facts as of 2026-10-23.
 
-Web page: https://neetmonetary.netlify.app/#ls-06 . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#ls-06 . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Gold is gaining a job between nations. It is not coming back as the thing behind your dollars, and the math of revaluing it is smaller than the stories.*
 
@@ -7409,7 +7663,7 @@ A: No mechanism links gold to the debt. The ratio has wandered from 12x to 53x, 
 
 Landscape chapter 07. Stack: Intelligence (graded, dated findings). Id: ls-07. Facts as of 2026-10-23.
 
-Web page: https://neetmonetary.netlify.app/#ls-07 . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#ls-07 . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Energy will not replace the dollar you spend. It is replacing the job gold used to do: the scarce physical thing that limits what any money can buy.*
 
@@ -7467,7 +7721,7 @@ A: Because solar keeps pushing the cost of energy down. If a kWh gets cheaper fa
 
 Landscape chapter 08. Stack: Intelligence (graded, dated findings). Id: ls-08. Facts as of 2026-10-23.
 
-Web page: https://neetmonetary.netlify.app/#ls-08 . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#ls-08 . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Three tiers behave like two classes. A UHI is limited by rent and the tax base, not by robots, and ownership is what moves people across the line.*
 
@@ -7526,7 +7780,7 @@ A: Because almost half of UHI spending goes to housing, which robots cannot mult
 
 Landscape chapter 09. Stack: Intelligence (graded, dated findings). Id: ls-09. Facts as of 2026-10-23.
 
-Web page: https://neetmonetary.netlify.app/#ls-09 . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#ls-09 . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *The ladder was not pulled up. One rung broke, one got cheap but lottery-like, and ownership decides the climb.*
 
@@ -7579,7 +7833,7 @@ A: It is right that ownership decides outcomes. It is wrong that the door is shu
 
 Landscape chapter 10. Stack: Intelligence (graded, dated findings). Id: ls-10. Facts as of 2026-10-23.
 
-Web page: https://neetmonetary.netlify.app/#ls-10 . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#ls-10 . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *The rivals' strongest card is hardware, not currency. The shocks that matter in 2026 came from oil, the yen and Paris.*
 
@@ -7640,7 +7894,7 @@ A: Because the watt-dollar needs energy hardware that the US cannot print. A riv
 
 Landscape chapter 11. Stack: Intelligence (graded, dated findings). Id: ls-11. Facts as of 2026-10-23.
 
-Web page: https://neetmonetary.netlify.app/#ls-11 . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#ls-11 . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Information arbitrage: the most useful insights sit between topics, where a cause in one area quietly drives an effect in another.*
 
@@ -7690,7 +7944,7 @@ A: Oil pushed inflation up, central banks hiked, Japan sold Treasuries to defend
 
 Landscape chapter 12. Stack: Intelligence (graded, dated findings). Id: ls-12. Facts as of 2026-10-23.
 
-Web page: https://neetmonetary.netlify.app/#ls-12 . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#ls-12 . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *Not a prophecy. The single most likely story the evidence supports, the dates where it could fork, and what it means for you.*
 
@@ -7762,7 +8016,7 @@ A: Not a bank holiday or a new currency. Several years of prices rising faster t
 
 Landscape chapter 13. Stack: Intelligence (graded, dated findings). Id: ls-13. Facts as of 2026-10-23.
 
-Web page: https://neetmonetary.netlify.app/#ls-13 . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#ls-13 . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *The owner asked who takes over if the US declines, whether Europe has to fall, and where its money would go. The short answers: nobody whole, no, and mostly West.*
 
@@ -7854,7 +8108,7 @@ A: Because financial money goes to the deepest, safest, most liquid market, not 
 
 Landscape chapter 14. Stack: Intelligence (graded, dated findings). Id: ls-14. Facts as of 2026-10-23.
 
-Web page: https://neetmonetary.netlify.app/#ls-14 . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#ls-14 . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *A three-hour interview claimed that oil dollars, Treasury buyers and the great powers move by hidden agreement. Much of that is not in any public document the desk could find. This chapter is the desk's first try at reasoning past where the documents stop, with every guess graded and dated.*
 

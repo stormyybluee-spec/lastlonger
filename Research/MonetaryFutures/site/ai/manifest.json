@@ -1,7 +1,7 @@
 {
  "site": "https://neetmonetary.netlify.app",
  "plan_version": "5.1",
- "built": "2026-11-25",
+ "built": "2026-11-26",
  "stacks": {
   "fundamentals": [
    "ai/method.md",
@@ -14,9 +14,9 @@
   ]
  },
  "files": {
-  "ai/brief.md": 7958,
-  "ai/index.html": 17282,
-  "ai/intelligence.md": 26332,
+  "ai/brief.md": 7999,
+  "ai/index.html": 17807,
+  "ai/intelligence.md": 27285,
   "ai/landscape/ls-01.md": 7138,
   "ai/landscape/ls-02.md": 6985,
   "ai/landscape/ls-03.md": 6992,
@@ -33,7 +33,7 @@
   "ai/landscape/ls-14.md": 20937,
   "ai/method.md": 26809,
   "ai/rulebook/glossary.md": 11453,
-  "ai/rulebook/index.md": 12269,
+  "ai/rulebook/index.md": 12780,
   "ai/rulebook/rb-01.md": 8728,
   "ai/rulebook/rb-02.md": 7924,
   "ai/rulebook/rb-03.md": 8176,
@@ -64,14 +64,15 @@
   "ai/rulebook/rb-nation.md": 9305,
   "ai/rulebook/rb-peasant.md": 30780,
   "ai/rulebook/rb-print.md": 39698,
+  "ai/rulebook/rb-printers.md": 35414,
   "ai/rulebook/rb-promise.md": 20041,
   "ai/rulebook/rb-strc.md": 58503,
   "ai/rulebook/rb-titled.md": 19510,
   "ai/rulebook/rb-worldbs.md": 47120,
   "ai/rulebook/rules.md": 19383,
-  "llms-full.txt": 950547,
-  "llms.txt": 15445,
+  "llms-full.txt": 987469,
+  "llms.txt": 15952,
   "robots.txt": 78,
-  "sitemap.xml": 6530
+  "sitemap.xml": 6643
  }
 }

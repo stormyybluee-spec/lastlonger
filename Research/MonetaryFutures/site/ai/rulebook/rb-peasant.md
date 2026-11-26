@@ -2,7 +2,7 @@
 
 Rulebook Level 3 (The big arguments), chapter 04. Stack: Fundamentals. Id: rb-peasant.
 
-Web page: https://neetmonetary.netlify.app/#rb-peasant . Text built 2026-11-25. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
+Web page: https://neetmonetary.netlify.app/#rb-peasant . Text built 2026-11-26. Guide for AI readers: https://neetmonetary.netlify.app/llms.txt
 
 *For most of history most people were poor, and stayed poor for centuries. A reader says the cause was a missing chain: money, credit, a strong state, schools and knowledge, each needing promises about the future to get started. This chapter tests that chain link by link.*
 
