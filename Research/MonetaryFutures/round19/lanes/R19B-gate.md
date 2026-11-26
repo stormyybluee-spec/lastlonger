@@ -2,7 +2,7 @@
 
 Lane started 2026-11-26. General education, not financial advice. Status in the working rows: "verified" means the source was opened and the figure seen, "secondary" means a reliable summary, "memory" means not checked and must not be printed. The owner's point is treated as a hypothesis, with evidence sought against it as hard as for it.
 
-Work in progress. Sections are appended as they are checked.
+Complete as of 2026-11-26. About 50 web searches and fetches were used.
 
 ## 1. H4. Who is shut out (first rows)
 
@@ -294,3 +294,69 @@ Against
 - A woman AIM member's scene, and a dated Kenyan M-Pesa user scene from a primary interview.
 - The US Department of Justice FTX press release text did not render. The 8 billion dollar customer loss figure rests on press reports of the judge's finding.
 
+## 9. Ledger
+
+| id | claim | tier | status | source URL | source date | as-of date | falsifier |
+|---|---|---|---|---|---|---|---|
+| R19B-01 | Nearly 80% of adults worldwide have an account | T2 | confirmed | https://www.worldbank.org/en/news/press-release/2025/07/16/mobile-phone-technology-powers-saving-surge-in-developing-economies | 2025-07-16 | 2024 survey | Findex 2025 report table gives a different world figure |
+| R19B-02 | 1.3 billion adults have no account | T2 | confirmed | same as R19B-01 | 2025-07-16 | 2024 | Findex report table differs |
+| R19B-03 | About 900 million unbanked adults own a mobile phone, 530 million a smartphone | T2 | confirmed | same as R19B-01 | 2025-07-16 | 2024 | Findex report table differs |
+| R19B-04 | 40% of adults in developing economies saved in a financial account, up 16 points since 2021 | T2 | confirmed | same as R19B-01 | 2025-07-16 | 2024 | Findex report table differs |
+| R19B-05 | 24% of adults in low and middle income economies borrowed formally | T3 | plausible | https://nairametrics.com/2025/07/18/world-bank-59-of-adults-in-nigeria-and-others-borrowed-in-2024 | 2025-07-18 | 2024 | Findex 2025 borrowing chapter gives another share |
+| R19B-06 | 19% of adults in low and middle income economies borrowed for health, 6% formally | T2 | confirmed | https://thedocs.worldbank.org/en/doc/a4aaae5a017a5bea7922686af0ed3636-0050022025/original/PolicyResearchTalk-GlobalFindex-September2025.pdf | 2025-10-01 | 2024 | Findex report table differs |
+| R19B-07 | Lack of money is the main barrier to account ownership | T2 | confirmed | same as R19B-06 | 2025-10-01 | 2024 | Findex reasons table ranks another reason first |
+| R19B-08 | Malaysia adults with an active deposit account 93.0% (2024), 97.3% (2023) | T1 | confirmed | https://www.bnm.gov.my/documents/20124/18988132/Key_Indicators_of_FINC_Hbook_2024.pdf | 2025 | end-2024 | BNM revises the 2024 figure or explains a method change |
+| R19B-09 | Malaysia adults with a loan account 41.7% (2024), 37.0% (2011) | T1 | confirmed | same as R19B-08 | 2025 | end-2024 | BNM revision |
+| R19B-10 | Malaysian sub-districts with a financial access point 46.4% (2011), 94.9% (2024) | T1 | confirmed | same as R19B-08 | 2025 | end-2024 | BNM revision |
+| R19B-11 | Malaysia mobile banking penetration 5.4% (2011), 106.4% (2024) | T1 | confirmed | same as R19B-08 | 2025 | end-2024 | BNM revision |
+| R19B-12 | BNM demand survey: adults with financing accounts 61% (2021) | T1 | confirmed | same as R19B-08 | 2025 | 2021 | Newer BNM survey or different definition |
+| R19B-13 | CCRIS exists to support informed and responsible lending decisions, run by BNM's Credit Bureau since 1982 | T1 | confirmed | https://www.bnm.gov.my/web/credit-bureau/about | current page | 2026-11-26 | BNM page states a different purpose or date |
+| R19B-14 | CCRIS gives no score and BNM does not blacklist, the report covers 12 months of conduct | T1 | plausible | https://www.bnm.gov.my/faqs/ccris | current page | 2026-11-26 | FAQ text says otherwise |
+| R19B-15 | Credit reporting agencies such as CTOS may see CCRIS data with borrower consent under the Credit Reporting Agencies Act 2010 | T1 | plausible | https://www.bnm.gov.my/web/credit-bureau/faqs | current page | 2026-11-26 | Act or FAQ text differs |
+| R19B-16 | BNM requires affordability checks on a prudent debt service ratio, banks set the ratio | T1 | plausible | https://www.bnm.gov.my/-/responsible-lending-guidelines-ensures-borrowers-affordability | 2012 and 2018 | 2018 | Current BNM policy document sets a national cap |
+| R19B-17 | Licensed moneylender ceilings 12% a year secured, 18% unsecured | T3 | confirmed | https://bernama.com/en/news.php?id=2439180 | 2025-06-28 | 2025 | Act 400 text or KPKT gives other ceilings |
+| R19B-18 | Penalty for exceeding ceiling up to RM20,000 fine, 18 months jail, or both | T3 | plausible | https://www.thevibes.com/articles/news/115088/licensed-moneylenders-charging-excessive-interest-face-fines-and-jail-warns-ministry | 2025 | 2025 | Act 400 text differs |
+| R19B-19 | Conventional pawnbroker ceiling 2% a month | T3 | plausible | https://www.thevibes.com/articles/opinion/16818/pawnbrokers-lifeline-or-death-knell-for-the-poor-sothi-rachagan | 2021 | 2021 | Pawnbrokers Act regulations give another rate |
+| R19B-20 | Ar-Rahnu charges a safekeeping fee of about RM0.50 to RM0.85 per RM100 a month, varying by provider and loan size | T3 | plausible | https://www.tekun.gov.my/en/frequently-asked-questions-ar-rahnu/ | current page | 2026 | Provider rate cards differ |
+| R19B-21 | 1,452 illegal lending cases January to October 2025, RM4.89 million lost, 450 solved | T3 | confirmed | https://www.thestar.com.my/news/nation/2025/11/13/saifuddin-1452-illegal-loan-cases-lodged-as-of-october | 2025-11-13 | Oct 2025 | Hansard written reply gives other figures |
+| R19B-22 | Illegal lending cases 977 (2021), 989 (2022), 1,162 (2023) | T3 | plausible | https://malaymail.com/news/malaysia/2024/11/26/police-say-already-booked-777-loan-shark-cases-this-year/158088 | 2024-11-26 | 2023 | PDRM series uses other counts |
+| R19B-23 | About 1,965 loan shark violence cases 2020 to 2024 | T3 | plausible | https://www.thestar.com.my/news/nation/2024/11/06/nearly-2000-cases-of-loan-shark-violence-reported-since-2020-says-home-ministry | 2024-11-06 | 2024 | Home Ministry reply differs |
+| R19B-24 | BNPL transactions RM9.3 billion (1H 2025) and RM11.9 billion (2H 2025) | T3 | confirmed | https://www.bernama.com/en/news.php?id=2539245 | 2026-03-31 | end-2025 | BNM FSR 2H 2025 text differs |
+| R19B-25 | Active BNPL accounts 7.5 million, outstanding RM4.9 billion, 0.3% of household debt | T3 | confirmed | same as R19B-24 | 2026-03-31 | end-2025 | BNM FSR text differs |
+| R19B-26 | Overdue BNPL debt 3.2%, peak 6% in March 2023 | T3 | confirmed | same as R19B-24 | 2026-03-31 | end-2025 | BNM FSR text differs |
+| R19B-27 | 40% of BNPL transactions by people aged 30 and under | T3 | plausible | https://www.thevibes.com/articles/news/111314/bnpl-transactions-surge-past-rm9-billion-in-h1-2025-with-40-attributed-to-youths | 2025-08 | 1H 2025 | Hansard reply gives another share |
+| R19B-28 | Consumer Credit Act 2025 gazetted 31 Dec 2025, in force 1 Mar 2026, licensing from 1 Jun 2026, regulator the Consumer Credit Commission | T1 | confirmed | https://mof.gov.my/portal/en/news/press-citations/credit-providers-credit-service-providers-require-licensing-registration-effective-june-1 | 2026-03-02 | 2026-03 | Gazette gives other dates |
+| R19B-29 | M-Pesa lifted about 194,000 Kenyan households (2%) out of extreme poverty, larger effects for women | T2 | plausible | https://news.mit.edu/2016/mobile-money-kenyans-out-poverty-1208 | 2016-12-08 | 2014 data | Science abstract gives other figures, or replication fails |
+| R19B-30 | Critique: agent placement may follow wealth, so Suri and Jack's causal claim is contested | T2 | plausible | https://ideas.repec.org/a/taf/revape/v46y2019i161p480-495.html | 2019 | 2019 | Authors' reply or later work resolves the placement concern |
+| R19B-31 | Six randomised microcredit trials find modestly positive, not transformative effects | T2 | confirmed | https://www.aeaweb.org/articles?id=10.1257/app.20140287 | 2015-01 | 2015 | Later meta-analysis finds large average effects |
+| R19B-32 | Digital footprint data predict default as well as bureau scores and work for the unscored | T2 | plausible | https://www.nber.org/papers/w24551 | 2020 | 2020 | Published RFS article states otherwise |
+| R19B-33 | AIM founded 17 September 1987 | T1 | confirmed | https://www.aim.gov.my/ | current page | 2026-11-26 | AIM records give another date |
+| R19B-34 | AIM has 320,069 members in 117 branches | T1 | confirmed | https://www.aim.gov.my/ | Sep 2026 | Sep 2026 | AIM annual report differs |
+| R19B-35 | AIM uses Grameen style five person groups, weekly repayment, no collateral | T3 | plausible | https://www.fao.org/4/AC154E/AC154E03.htm | undated | undated | AIM scheme terms describe another model |
+| R19B-36 | AIM portfolio at risk 0.02% (2024) | T3 | plausible | https://www.theborneopost.com/2025/01/12/dpm-lauds-aim-for-helping-women-break-poverty-cycle/ | 2025-01-12 | 2024 | AIM annual report differs |
+| R19B-37 | BNM's Financial Inclusion Framework 2023 to 2026 was published June 2023, aligned with the Financial Sector Blueprint 2022 to 2026 | T1 | plausible | https://www.bnm.gov.my/-/2nd-fin-incl-frmwk | 2023-06-23 | 2023 | BNM page gives another date |
+| R19B-38 | AKPK found about 53,000 people aged 30 and under in debt of nearly RM1.9 billion | T3 | plausible | https://www.thestar.com.my/news/nation/2024/11/02/easy-credit-and-living-beyond-their-means-straining-young-adults-financially | 2024-11-02 | 2024 | AKPK report differs |
+| R19B-39 | DeFi total value locked peaked at 177.5 billion dollars on 9 Nov 2021 | T1 | confirmed | https://api.llama.fi/v2/historicalChainTvl | 2026-11-26 | 2021-11-09 | Another tracker or DefiLlama revision gives a different peak |
+| R19B-40 | DeFi total value locked 68.6 billion dollars | T1 | confirmed | same as R19B-39 | 2026-11-26 | 2026-11-26 | Next day's reading or revision |
+| R19B-41 | DeFi value locked fell from 135.8 to 79.3 billion dollars in the first half of May 2022 | T1 | confirmed | same as R19B-39 | 2026-11-26 | 2022-05-15 | DefiLlama revision |
+| R19B-42 | BIS: DeFi lending tends to be overcollateralised, limiting it for house purchase or productive investment | T2 | confirmed | https://www.bis.org/publ/qtrpdf/r_qt2112b.htm | 2021-12-06 | 2021 | Data show most DeFi loans under-collateralised |
+| R19B-43 | Terra and Luna collapse wiped out about 40 billion dollars of market value | T3 | plausible | https://www.businessinsurance.com/sec-reaches-447-billion-settlement-with-bankrupt-crypto-firm-terraform-labs/ | 2024-06-13 | 2022-05 | SEC filing or market data give a different figure |
+| R19B-44 | Terraform Labs agreed a 4.47 billion dollar SEC judgment after a fraud verdict | T3 | plausible | https://www.bloomberg.com/news/articles/2024-06-12/terraform-agrees-to-pay-4-47-billion-penalty-in-sec-case | 2024-06-12 | 2024 | Court docket shows another sum |
+| R19B-45 | FTX customer loss found by the court about 8 billion dollars | T3 | plausible | https://www.justice.gov/archives/opa/pr/samuel-bankman-fried-sentenced-25-years-his-orchestration-multiple-fraudulent-schemes | 2024-03-28 | 2024 | DOJ text gives another figure |
+| R19B-46 | FTX plan pays about 98% of creditors about 119% of claims valued at November 2022 | T3 | plausible | https://prnewswire.com/news-releases/ftx-receives-us-bankruptcy-court-confirmation-of-its-plan-of-reorganization-302269152.html | 2024-10-07 | 2024 | Plan documents differ |
+| R19B-47 | FTX was a centralised exchange, not DeFi | T3 | plausible | same as R19B-45 | 2024 | 2024 | None expected, definitional |
+| R19B-48 | Crypto hacks 3.8 billion dollars in 2022, 82.1% from DeFi | T3 | plausible | https://www.infosecurity-magazine.com/news/record-38bn-was-stolen-crypto/ | 2023-02 | 2022 | Chainalysis report gives other figures |
+| R19B-49 | Crypto stolen in 2025 over 3.4 billion dollars, DeFi losses suppressed in 2024 to 2025 | T2 | confirmed | https://www.chainalysis.com/blog/crypto-hacking-stolen-funds-2026/ | 2025-12-18 | early Dec 2025 | Full year 2025 figure differs |
+| R19B-50 | Chainalysis 2025 index: Vietnam 4, Indonesia 7, Philippines 9, Thailand 17 | T2 | confirmed | https://www.chainalysis.com/blog/2025-global-crypto-adoption-index/ | 2025-09-02 | 2025 | Full report table differs |
+| R19B-51 | Malaysia prescribes digital currencies and tokens as securities under a 2019 Order | T1 | plausible | https://www.sc.com.my/regulation/guidelines/recognizedmarkets/list-of-registered-digital-asset-exchanges | 2026-07-20 | 2026 | Order text differs |
+| R19B-52 | Five registered digital asset exchanges in Malaysia | T1 | confirmed | same as R19B-51 | 2026-07-20 | 2026-07-20 | SC list updated |
+| R19B-53 | Global average cost of sending 200 dollars 6.49% | T2 | plausible | https://remittanceprices.worldbank.org | 2025-03 | Q1 2025 | RPW report gives another figure |
+| R19B-54 | Banks 14.55%, mobile operators 4.97% for 200 dollars | T3 | plausible | https://www.resbank.co.za/content/dam/sarb/what-we-do/payments-and-settlements/cross-border-payments-conference/documents/paper-cost-patterns-remittance.pdf | 2025 | Q1 2025 | RPW table differs |
+| R19B-55 | IMF: DeFi potentially offers efficiency and inclusion benefits, lowest marginal cost | T3 | plausible | https://www.imf.org/ja/Publications/GFSR/Issues/2022/04/19/global-financial-stability-report-april-2022 | 2022-04 | 2022 | Chapter 3 text says otherwise |
+| R19B-56 | Kota Bharu RM300 app loan, RM150 received, RM10,000 demanded | T3 | plausible | https://api.nst.com.my/news/crime-courts/2024/01/1003575/rm300-borrowing-mariwang-application-turns-rm10000-nightmare-ends | 2024-01 | 2024 | Article text differs |
+| R19B-57 | Ipoh family harassed after cutting ties with indebted son | T3 | plausible | https://www.thestar.com.my/news/nation/2025/12/30/ipoh-family-harassed-by-ah-long-even-after-cutting-ties-with-son-over-his-debts | 2025-12-30 | 2025 | Article text differs |
+| R19B-58 | AIM member Othman Yusof started with RM3,000 about 20 years ago | T3 | confirmed | https://thestar.com.my/news/nation/2023/10/22/aim-ing-to-improve-living-standards-and-livelihoods | 2023-10-22 | 2023 | Full article differs |
+| R19B-59 | r/TerraLuna moderators pinned helpline numbers in May 2022 | T3 | plausible | https://fortune.com/crypto/2022/05/11/luna-ust-reddit-stablecoins-crypto-crash | 2022-05-11 | 2022-05 | Article text differs |
+| R19B-60 | PIDM deposit cover RM250,000 per depositor per bank | T3 | unverified | not checked | | | PIDM page gives another limit |
+| R19B-61 | Stiglitz and Weiss 1981 credit rationing under imperfect information | T2 | unverified | not checked | 1981 | | Paper says otherwise |
+| R19B-62 | Kenyan farmer Mercy Biyaki borrows through KCB M-Pesa and M-Shwari | T3 | plausible | https://www.businessdailyafrica.com/bd/corporate/technology/kenyans-ride-on-mobile-banking-to-grow-businesses-2115648 | undated | | Article text differs |
