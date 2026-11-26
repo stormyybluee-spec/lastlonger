@@ -523,3 +523,50 @@ Rebuilt claim (block 54): the "trust can change overnight" line is cut, the seco
 ```json
 {"type": "deeper", "label": "More on Malaysia and Hong Kong", "blocks": [{"type": "p", "text": "Malaysia, 1998. Bank Negara wrote that about 11% of the price basket had prices set by the state, for goods such as sugar, flour, petrol, bread, chicken and cooking oil. It added that there were \"no price controls as such, contrary to general perceptions\". The government also raised several of those ceilings in late 1997 and early 1998, which added nearly 1.1 points to inflation. In April 1998 the IMF asked Malaysia to scale price controls back to basic food eaten by the poorest households. The two institutions described the same system with different weight. On 1 September 1998 controls on money leaving the country began, and the next day the ringgit was fixed at 3.80 to the dollar. Economists still argue about the controls. Kaplan and Rodrik think they did more good than critics say, and Athukorala argues they did little."}, {"type": "p", "text": "Malaysia, 2022. The ringgit ended the year 5.4% down, but at its weakest it had fallen 12.2% from its high. The state planned 37.3 billion ringgit of fuel subsidies. The Auditor-General later counted about 45 billion ringgit of claims paid for petrol, diesel and bottled gas from December 2021 to October 2022, as reported by Malay Mail. Malaysia also earns from oil and gas. Bank Negara expected petroleum to bring 27.3% of the government's revenue in 2022. So the high oil price that raised the subsidy bill also raised part of the income that paid it."}, {"type": "p", "text": "Hong Kong, 1998 to 2004. Hong Kong's monetary authority estimated that the property crash explained about half of the fall in consumer prices. It also named prices moving closer to those in mainland China, and a world slowdown. Its chief, Joseph Yam, said in 2001 that Hong Kong's monetary arrangements had not been contributing to the fall."}, {"type": "p", "text": "The governors. In 2017 Bank Negara's governor was Muhammad bin Ibrahim. He called the choice of interest rates for a small open economy a \"catch 22\": raise rates and money flows in, cut them and money may flow out. In 2022 the governor was Nor Shamsiah Mohd Yunus. She said a peg \"will have substantial risks\", and that an earlier peg had taken up a sizeable amount of reserves."}]}
 ```
+
+## 4. Open items
+
+### Tables and blocks to delete by hand
+
+None. Every table change is made cell by cell, with no row added or removed, and no block is removed.
+
+### Other hand edits for the Editor
+
+| item | where | what to do |
+|---|---|---|
+| Kicker (not a numbered block, so the script cannot reach it) | chapter kicker | Replace "Others created even larger sums and saw almost no rise in prices." with "Others created even larger sums and, for years, saw little rise in shop prices." (RT-05) |
+| Insertion order | after block 33 | N2 goes right after block 33, before the Rojas scene (block 34). |
+| Bridge and callout claims | blocks 1, 2 | Check "fifth of seven deeper chapters" and the chapter 02, 03 and 05 summaries against round13/SERIES_L3.md and the earlier chapters (VF-102). The lanes cannot check them. |
+| Quote attribution | block 35 | Optional: "AFP, 11 February 2018" to match the sources box. |
+
+### Facts that need a source before they can be printed
+
+| fact | status now | what is needed |
+|---|---|---|
+| How far Indonesia's rupiah fell in 1998 | lane B memory row, removed from block 44 | A primary exchange rate source (Bank Indonesia or IMF) |
+| Interest rate rises by Bank Negara and the Federal Reserve in 2022 (RT omission 7) | not printed | Central bank statements with dates and levels |
+| Share of the Fed's new liabilities held as bank reserves | not printed, mechanism hedged in N1 | Fed H.4.1 reserve balances |
+| Chicken subsidy of 729.43 million ringgit, and how little of it was claimed | not printed, block 47 says only that money was set aside | A Ministry of Agriculture or Malaysian government source, not Wikipedia |
+| Feed costs, the Ukraine grain link and the 1 June 2022 export halt | printed with "trade reports" and "as reported" (lane B-53, secondary) | A Malaysian government statement or the full Reuters piece |
+| Auditor-General's 45 billion ringgit for fuel | printed with "as reported" (lane B-24, secondary, page fetch refused) | The Auditor-General report itself |
+| Economic Report totals of 70.3 billion ringgit in all and 52 billion for fuel (RT-10) | not printed | Ministry of Finance Economic Report |
+| German output growth of more than 90% from 1919 to 1922 (RT-02) | not printed, "grew strongly" used | The NBER conference paper's own table |
+| Reparations debate (RT voice) | not printed | A historian's source, not Wikipedia |
+| Survival detail from ordinary people in Venezuela or Zimbabwe | none exists in the lanes | A sourced human detail, for example a switch to US dollars |
+| Hungary's share of 1946 spending paid by printing | not found (lane A-24) | KSH or a Hungarian central bank history |
+| Turkey's central bank financing of the budget | gap (lane A-39) | Central bank of Turkey or Treasury data |
+| Cagan's own coefficients | secondary (A-17, A-57) | Cagan 1956 text, if the chapter wants to name him |
+| Japan's base money at the end of 2012 | secondary (A-42), printed with "by one estimate" | A Bank of Japan table |
+| 80% of Malaysian trade priced in dollars | IMF snippet (B-42), printed as "by an IMF estimate most" | The IMF Article IV report opened |
+| Rojas "bus stop, 30 January" in lane B-H5 | conflicts with the page the Verifier opened | Lane owner to correct the lane row |
+
+### Red team facts printed on the Court's authority, for the Verifier to re-fetch next round
+
+These come from red team evidence with URLs and are named in the text or the sources box, but no lane has opened them: the 2020 bond share of 15% to 22% and the 3.1 trillion dollar deficit, the house and share price estimate (Bivens), the Bernanke and Blanchard finding, Germany's output to mid 1922 and its fall of about a third in 1923, the IMF 10/62 figure of about 29% for Zimbabwe, Venezuela's price caps (Economics Observatory), Turkey's 95.3 billion lira, Argentina's 1.8% surplus (Itaú), the HKMA's 68 months and "about half", the 1932 Japan case, and the Kaplan and Rodrik against Athukorala debate.
+
+### Rejected or deferred
+
+| item | reason |
+|---|---|
+| Modern monetary theory named (RT omission 6) | Untested, and adds a name on the main path. |
+| Islamic finance's view of money (RT omission 8) | Outside this chapter's tests. Consider for a later chapter. |
