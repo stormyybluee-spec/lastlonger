@@ -1,0 +1,17 @@
+# Round 19 frame (2026-11-26): Level 3 deep chapter on the credit gate
+
+Chapter: working id rb-gate, the sixth of the seven deep chapters (round13/SERIES_L3.md). Working title: "The gate: who can borrow, who is kept out, and the road money travels".
+It deepens question 9 of rb-credit and tests the owner's point 4 (round13/OWNER_R13.md: moving money or gold between places was once dangerous, a merchant or peasant could be robbed, while a state moved its money under armed guard) and point 5 on decentralized against centralized finance.
+
+## Hypotheses to test (with the question-mark rule)
+- H1. In the past, carrying money was dangerous, and paper promises (bills of exchange, bank notes, letters of credit) replaced carried metal because they were safer. Test: the history of bills of exchange (medieval Italy, the Champagne fairs), the hawala system, the Knights Templar as an early transfer network, highway robbery and piracy and what they cost, and the cost of shipping gold (insurance rates).
+- H2. Today the danger has moved: from robbers on the road to fraud, hacks and scams. Test: the scale of payment fraud and bank fraud now (for example UK Finance, the FBI's internet crime report, Malaysia's online scam losses reported by the police or Bank Negara), and crypto thefts (Chainalysis totals by year), against bank robbery, which has nearly vanished (FBI bank robbery counts over time).
+- H3. Centralized finance (banks under a central bank) opens a gate with requirements, and decentralized finance (crypto, peer-to-peer lending) promises a gate without them. Test: who uses decentralized finance and for what, the share of decentralized lending that needs collateral larger than the loan (over-collateralisation), losses from hacks and collapses (Terra and Luna 2022, FTX 2022), and the evidence on peer-to-peer lending and microfinance.
+- H4. The gate itself. Test: what the requirements are and why (credit records, collateral, income proof), who is shut out (the World Bank Global Findex 2025 numbers, Malaysia's figures if found), what it costs to be outside (moneylenders, pawnshops, Ah Long cases reported by the police, buy-now-pay-later growth in Malaysia), and what has opened the gate (credit records for thin-file borrowers, mobile money such as M-Pesa, Malaysia's financial inclusion plans, Islamic microfinance such as Amanah Ikhtiar Malaysia).
+
+## Lanes
+- R19A, history and safety: H1 and H2.
+- R19B, the gate today and decentralized finance: H3 and H4, with Malaysia in detail, both sides' best case, and sourced human detail.
+
+## Rules carried from Rounds 11 to 18
+Tables for any two-number comparison. A correction states the claim first. A case offered as a test names its rival causes. One data series per comparison. Run the flattery check in both directions explicitly, including on tidy contrasts that flatter the chapter's own answer. Test the strongest form of the claim, or say which form was not tested. Check who held an office in the year of each quotation. A quotation must not be trimmed so it misstates its author. A court may move detail to a go-deeper box, never the only statement of a tested comparison. Explain hard ideas with one plain made-up picture, marked as made up. A rewrite must be checked for orphaned references. Aim for a clear cold-read pass, not a rounded one. Main path under about 3,900 words. Each lane ends with a ledger table with claim ids, collects sourced human detail, and writes to disk within its first few steps. No em-dashes, en-dashes or semi-colons.
