@@ -15437,7 +15437,7 @@
     {
      "type": "callout",
      "label": "How to read this chapter",
-     "text": "A scene, four tests and a verdict, about 40 minutes in all. Each test ends with a short line on what it does to the claim. This is the fifth of seven deeper chapters that follow the overview in chapter 02."
+     "text": "A scene, four tests and a verdict, about 40 minutes in all. Each test ends with a short line on what it does to the claim. This is the fifth of seven deeper chapters."
     },
     {
      "type": "h",
@@ -15574,7 +15574,7 @@
     },
     {
      "type": "p",
-     "text": "Those are some of the largest money creations in history, and for years shop prices barely moved. House and share prices did rise, by one estimate about 7% and 5%. Then America's money, counting cash and deposits, grew 26.8% in the year to February 2021, and by June 2022 prices were rising about 9% a year. Did the money cause it? Economists still argue. Ben Bernanke and Olivier Blanchard found that most of the rise came from shocks, such as dearer energy and food and shortages of goods. The link was loose and slow."
+     "text": "Those are some of the largest money creations in history, and for years shop prices barely moved. House and share prices did rise, by one estimate about 7% and 5%. Then America's money, counting cash and deposits, grew 26.8% in the year to February 2021, and by June 2022 prices were rising about 9% a year. Did the money cause it? Economists still argue. Ben Bernanke and Olivier Blanchard found that most of the rise came from sudden blows, such as dearer energy and food and shortages of goods. The link was loose and slow."
     },
     {
      "type": "insider",
@@ -15697,7 +15697,7 @@
     },
     {
      "type": "p",
-     "text": "It looks like a clean line. In the 2010s America's central bank bought bonds, which are loans to a government or a company. The economy kept working, and much of the new money was held. Zimbabwe's central bank paid for spending a shrinking economy could not support, and few people wanted to hold the result. Trust broke, speed rose, and prices ran."
+     "text": "It looks like a clean line between buying bonds and printing for bills. In the 2010s America's central bank bought bonds, which are loans to a government or a company. The economy kept working, and much of the new money was held. Zimbabwe's central bank paid for spending a shrinking economy could not support, and few people wanted to hold the result. Trust broke, speed rose, and prices ran."
     },
     {
      "type": "p",
@@ -15718,7 +15718,7 @@
     },
     {
      "type": "p",
-     "text": "And how do these stories end? Germany's ended in October and November 1923, by the economist Thomas Sargent's account. A new currency was set up with strict limits, the central bank stopped lending to the government, and taxes rose and spending fell. People believed the printing had ended, so they held money again, and prices stopped rising. The new currency was in place by 1924. Argentina, which has had high inflation for most of the last fifty years apart from the 1990s, saw prices rise 211% in 2023. In 2024 its central bank stopped paying for the government directly, the budget showed a surplus before interest, and inflation fell to about 118%. Zimbabwe dropped its own currency in early 2009, and its output grew 13.3% that year."
+     "text": "And how do these stories end? Germany's ended in October and November 1923, by the economist Thomas Sargent's account. A new currency was set up with strict limits, the central bank stopped lending to the government, and taxes rose and spending fell. People believed the printing had ended, so they held money again, and prices stopped rising. The new currency was in place by 1924. Argentina, which has had high inflation for most of fifty years, saw prices rise 211% in 2023. In 2024 its central bank stopped paying for the government directly, the budget showed a surplus before interest, and inflation fell to about 118%. Zimbabwe dropped its own currency in early 2009, and its output grew 13.3% that year."
     },
     {
      "type": "insider",
@@ -15794,7 +15794,24 @@
     },
     {
      "type": "p",
-     "text": "Malaysia buys much of its food and many of its goods from abroad, and by an IMF estimate most of its trade is priced in US dollars. So when the ringgit falls against the dollar, the things Malaysia buys cost more. That is imported inflation. How much of it really gets through? Bank Negara measured it."
+     "text": "In February 2022 a shopper named Meena Tharshini was buying food at a market in Kuala Lumpur. She told a reporter how her family's chicken had changed. They used to buy two a week."
+    },
+    {
+     "type": "quote",
+     "text": "But nowadays, I can only budget for one.",
+     "by": "Meena Tharshini, 41, on buying one chicken a week instead of two, Kuala Lumpur (Malay Mail, February 2022)"
+    },
+    {
+     "type": "p",
+     "text": "The government had capped the price of a standard chicken at 8.90 ringgit a kilogram, from 5 February to 5 June 2022. One poultryman told the same paper, \"We honestly barely make any profits from this.\" Sellers blamed the cap and festive demand. Trade reports point back to the farm. Chicken feed is largely imported maize and soy, and it cost more as the ringgit weakened and the war in Ukraine disrupted grain. That is imported inflation, as the next picture shows. The government set aside money to pay farmers part of the gap, and from 1 June Malaysia stopped exporting chickens for a time, as reported. The cost moved to farmers, the budget and buyers abroad."
+    },
+    {
+     "type": "p",
+     "text": "Picture a bag of flour that Malaysia buys from abroad for 1 US dollar. If 1 dollar costs 4 ringgit, the bag costs 4 ringgit. If the ringgit falls and 1 dollar costs 5 ringgit, the same bag now costs 5 ringgit, though nothing about the flour has changed. That is imported inflation. This is a made-up example with round numbers. Malaysia buys much of its food and many goods from abroad, and by an IMF estimate most of its trade is priced in US dollars."
+    },
+    {
+     "type": "p",
+     "text": "So how much of a fall in the ringgit reaches the shops? Bank Negara measured it."
     },
     {
      "type": "table",
@@ -15805,7 +15822,7 @@
      "rows": [
       [
        "The price of imports",
-       "Rises about 2.1 percentage points, so about 40% of the fall gets through"
+       "Rises about 2.1 points, so about 40% of the fall gets through"
       ],
       [
        "Core inflation, the prices people pay for most things",
@@ -15819,7 +15836,7 @@
     },
     {
      "type": "p",
-     "text": "Why so little in shops? About a quarter of what Malaysian households spend is imported, counting imported parts. Firms often take some of the cost themselves, and the state caps some prices and pays subsidies. The test came twice, and the two years differed."
+     "text": "Why so little? About a quarter of what Malaysian households spend is imported, counting imported parts. Firms often take some of the extra cost themselves. And the state caps some prices and pays part of the cost, called a subsidy. The test came twice."
     },
     {
      "type": "table",
@@ -15830,43 +15847,25 @@
      ],
      "rows": [
       [
-       "What the ringgit did against the dollar",
-       "Fell 28.3%, comparing yearly averages",
-       "Fell 5.4% from the start to the end of the year, and 12.2% from its high to its low"
+       "How far the ringgit fell against the dollar",
+       "28.3%, comparing yearly averages",
+       "5.4% over the year"
       ],
       [
        "Malaysia's inflation",
-       "5.3% for the year",
-       "3.3% for the year"
+       "5.3%",
+       "3.3%"
       ],
       [
        "Inflation elsewhere",
-       "Indonesia, 58.4%. Thailand, 8.0%. Korea, 7.5%. America, 1.5%. Britain, 1.6%",
-       "America, 8.0%. Britain, 9.1%"
-      ],
-      [
-       "What held prices down",
-       "Firms absorbed costs in a slump, and oil was cheap. From September the ringgit was fixed at 3.80 to the dollar, with controls on money leaving. About 11% of the basket had state-set prices, which the IMF in April urged Malaysia to scale back",
-       "Fixed pump prices and price ceilings. The state planned 37.3 billion ringgit of fuel subsidies, and the Auditor-General later counted about 45 billion, as reported"
+       "Indonesia 58.4%. America 1.5%",
+       "America 8.0%. Britain 9.1%"
       ]
      ]
     },
     {
      "type": "p",
-     "text": "Look at 1998. Malaysia's currency fell hard. Bank Negara's own rough rule said that would add about 5 points to inflation, and prices rose 5.3%. In the same crisis Indonesia's prices rose 58.4%. So the size of a fall alone does not decide what happens. Trust, the state of the economy and what people buy all matter. So may a country's choices, such as fixing its currency in 1998, though economists argue how much that helped."
-    },
-    {
-     "type": "p",
-     "text": "Look at 2022. Malaysia's inflation was less than half of America's. But the calm had a price, paid partly by the state's budget, which means by taxpayers and the country's oil income, now and later. And the pressure showed up in other ways. In February 2022 a shopper named Meena Tharshini, shopping at a market in Kuala Lumpur, told a reporter how her family's chicken had changed."
-    },
-    {
-     "type": "quote",
-     "text": "But nowadays, I can only budget for one.",
-     "by": "Meena Tharshini, 41, on buying one chicken a week instead of two, Kuala Lumpur (Malay Mail, February 2022)"
-    },
-    {
-     "type": "p",
-     "text": "The government had capped the price of a standard chicken at 8.90 ringgit a kilogram, from 5 February to 5 June 2022. One poultryman told the same paper, \"We honestly barely make any profits from this.\" Sellers blamed the cap and festive demand. Trade reports point back to the farm. Chicken feed is largely imported maize and soy, and it cost more as the ringgit weakened and the war in Ukraine disrupted grain. That is imported inflation too. The government set aside money to pay farmers part of the gap, and from 1 June Malaysia stopped exporting chickens for a time, as reported. The cost moved to farmers, the budget and buyers abroad."
+     "text": "In 1998 Malaysia's prices rose by about as much as Bank Negara's own rough rule predicted, far less than Indonesia's but far more than America's. From September 1998 the ringgit was also fixed at 3.80 to the dollar. Economists still argue how much that helped. In 2022 Malaysia's inflation was less than half of America's. Fixed pump prices and price caps held it down. The state planned 37.3 billion ringgit of fuel subsidies that year, so the calm was paid for partly by the state's budget, now and later."
     },
     {
      "type": "p",
@@ -15885,6 +15884,36 @@
      "type": "deeper",
      "label": "More on Malaysia and Hong Kong",
      "blocks": [
+      {
+       "type": "table",
+       "cols": [
+        "",
+        "1998",
+        "2022"
+       ],
+       "rows": [
+        [
+         "What the ringgit did against the dollar",
+         "Fell 28.3%, comparing yearly averages",
+         "Fell 5.4% from the start to the end of the year, and 12.2% from its high to its low"
+        ],
+        [
+         "Malaysia's inflation",
+         "5.3% for the year",
+         "3.3% for the year"
+        ],
+        [
+         "Inflation elsewhere",
+         "Indonesia, 58.4%. Thailand, 8.0%. Korea, 7.5%. America, 1.5%. Britain, 1.6%",
+         "America, 8.0%. Britain, 9.1%"
+        ],
+        [
+         "What held prices down",
+         "Firms absorbed costs in a slump, and oil was cheap. From September the ringgit was fixed at 3.80 to the dollar, with controls on money leaving. About 11% of the basket had state-set prices, which the IMF in April urged Malaysia to scale back",
+         "Fixed pump prices and price ceilings. The state planned 37.3 billion ringgit of fuel subsidies, and the Auditor-General later counted about 45 billion, as reported"
+        ]
+       ]
+      },
       {
        "type": "p",
        "text": "Malaysia, 1998. Bank Negara wrote that about 11% of the price basket had prices set by the state, for goods such as sugar, flour, petrol, bread, chicken and cooking oil. It added that there were \"no price controls as such, contrary to general perceptions\". The government also raised several of those ceilings in late 1997 and early 1998, which added nearly 1.1 points to inflation. In April 1998 the IMF asked Malaysia to scale price controls back to basic food eaten by the poorest households. The two institutions described the same system with different weight. On 1 September 1998 controls on money leaving the country began, and the next day the ringgit was fixed at 3.80 to the dollar. Economists still argue about the controls. Kaplan and Rodrik think they did more good than critics say, and Athukorala argues they did little."
@@ -15928,7 +15957,7 @@
       [
        "3. A country can import inflation and deflation",
        "Holds in part. In most years less gets through than the fall suggests, and the state decides who pays",
-       "A 5% fall in the ringgit lifts import prices about 2.1 points and core inflation about 0.2 points on average. In 1998 inflation rose about as much as Bank Negara's rule predicted"
+       "A 5% fall in the ringgit lifts import prices about 2.1 points and core inflation about 0.2 points on average. In 1998 inflation rose about as much as Bank Negara's rule predicted. Hong Kong, tied to the US dollar, saw prices fall for 68 months"
       ],
       [
        "The question: why are the biggest printers poor?",

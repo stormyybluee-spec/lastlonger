@@ -228,3 +228,92 @@ NEW: The link was very strong. On a scale where 1 is a perfect match and 0 is no
 8. Block [35]
 OLD: Both kinds of buying create money against the state's debt.
 NEW: Both kinds of buying create new money and take the state's debt in return.
+
+
+# Retest 2 (draft R18d), 2026-11-26
+
+## Score table (main path only, no GO DEEPER boxes, no A: lines)
+
+| Part | What it tests | Reader 1 (Malaysia, ESL) | Reader 2 (America) |
+|---|---|---|---|
+| a | Three ideas and the question | 8 | 9 |
+| b | Zweig's newspaper story | 8 | 9 |
+| c | Supply and demand, evidence for and against | 6 | 8 |
+| d | Velocity, America, Germany, trust | 7 | 8 |
+| e | Why big printers collapsed, one case, bonds blur | 7 | 8 |
+| f | Malaysia imported inflation, 1998, 2022, who paid | 6 | 8 |
+| g | Imported falling prices, one example | 6 | 7 |
+| h | Verdict on each idea and rebuilt claim | 7 | 8 |
+| Average | | 6.9 | 8.1 |
+| Overall (rounded) | | 7 | 8 |
+| Pass mark 8 | | FAIL | PASS |
+| j | Held attention to the end | 6 | 8 |
+| k | Told story with explanation, not a report of numbers | 6 | 7 |
+
+## Strongest and weakest section
+
+- Reader 1: strongest is the Zweig opening [7]-[11] and the chicken close [50]-[52] and [61]. Weakest is Test 4 [45]-[49], where terms such as percentage points, absorbed costs, subsidies and pass-through come in a block beside two number tables.
+- Reader 2: strongest is the Zweig opening [7]-[11] with the chicken close [61]. Weakest is Test 3 [32]-[40], where the table, the "clean line" turn and the three-country ending paragraph [40] come close together.
+
+## Fairness and advice
+
+- Both readers would find the author fair to the reader who made the claim. [36] says the worry about modern central banks "is not foolish", [20] and [29] credit what holds, and [60] rebuilds the claim instead of dropping it. Doubters are also treated fairly. [19] gives both sides of the 2021 to 2022 debate, [39] says Turkey is unclear, and [41] says what was not tested.
+- No person, people, faith, country or office is described unfairly. Bank Negara and the IMF are given the same weight in the 1998 account [48]. Germany, Zimbabwe and Venezuela are tied to specific blows, not to national character. The one place to watch is [10], "Do not hold money. Spend it the moment you are paid." It is clearly the lesson Germans learned, but a hurried reader could take it as a tip.
+- Nothing reads as financial advice. The callout [65] says so plainly.
+
+## Remaining confusions
+
+Reader 1 (Malaysia, ESL):
+- [13] "match score" is hard to picture as a correlation. The 0.88 and 0.51 are followed but not felt.
+- [19] "shocks" and the Bernanke and Blanchard finding are abstract.
+- [26] reserves and deposits are the hardest idea. The reader knows the money did not reach shops but not the route.
+- [46] "percentage points", "core inflation" and "gets through" are three new terms in one table.
+- [47] "absorbed costs" and "subsidies" are not explained.
+- [48] the four-row table mixes five countries and several policies.
+- [53] "pegs", "68 months" and the property crash are packed in. Deflation as a gain or a harm is left open.
+- [58] row 3 says "deflation" but gives no falling-price fact.
+- [2] "chapter 02" and "fifth of seven" point to things the reader has not seen.
+- [40] three countries and many figures in one paragraph.
+
+Reader 2 (America):
+- [13] the 0.88 score is clear but why a few countries lift it is only half said.
+- [35] "It looks like a clean line" does not say which line.
+- [36] the 15% to 22% share is a number with no picture. The point that both kinds of buying look alike lands late.
+- [40] the Germany, Argentina and Zimbabwe endings are squeezed into one paragraph.
+- [53] Hong Kong falling prices are described, but the link to the example in [58] is missing.
+
+## Ranked fixes (8)
+
+1. Block [58], row 3, third cell. The imported falling prices part has no example at the verdict.
+OLD: A 5% fall in the ringgit lifts import prices about 2.1 points and core inflation about 0.2 points on average. In 1998 inflation rose about as much as Bank Negara's rule predicted
+NEW: A 5% fall in the ringgit lifts import prices about 2.1 points and core inflation about 0.2 points on average. In 1998 inflation rose about as much as Bank Negara's rule predicted. Hong Kong, tied to the US dollar, saw prices fall for 68 months
+
+2. Block [35]. Says which line.
+OLD: It looks like a clean line. In the 2010s
+NEW: It looks like a clean line between buying bonds and printing for bills. In the 2010s
+
+3. Block [46]. Same term as the rest of the chapter, one word fewer.
+OLD: Rises about 2.1 percentage points, so about 40% of the fall gets through
+NEW: Rises about 2.1 points, so about 40% of the fall gets through
+
+4. Block [47]. Explains subsidies in place.
+OLD: the state caps some prices and pays subsidies
+NEW: the state caps some prices and pays part of the cost, called a subsidy
+
+5. Block [48], 1998 cell. Plainer verb for an ESL reader.
+OLD: Firms absorbed costs in a slump
+NEW: Firms took the extra costs themselves in a slump
+
+6. Block [19]. Plainer word for an abstract term.
+OLD: most of the rise came from shocks, such as
+NEW: most of the rise came from sudden blows, such as
+
+7. Block [2]. Removes a pointer to a chapter the reader has not seen, and saves words.
+OLD:  This is the fifth of seven deeper chapters that follow the overview in chapter 02.
+NEW:  This is the fifth of seven deeper chapters.
+
+8. Block [40]. Saves words and keeps the point that Argentina's inflation was long running.
+OLD: Argentina, which has had high inflation for most of the last fifty years apart from the 1990s, saw
+NEW: Argentina, which has had high inflation for most of fifty years, saw
+
+Fix 1 adds a short clause. Fixes 3, 7 and 8 cut words and make room for it. Each OLD string was checked to occur once in the draft.
